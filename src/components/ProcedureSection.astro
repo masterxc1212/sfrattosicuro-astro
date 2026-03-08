@@ -1,0 +1,66 @@
+---
+import sedi from '../data/sedi.json';
+
+interface SedeItem { nome: string; slug: string; tribunale?: string; procedureIntro?: string; }
+interface Props { sedeSlug?: string; }
+
+const { sedeSlug = 'nazionale' } = Astro.props;
+const normalized = sedeSlug.trim().toLowerCase();
+const isNazionale = normalized === 'nazionale';
+const sede = (sedi as SedeItem[]).find((item) => item.slug === normalized);
+const nome = sede?.nome ?? 'la tua città';
+const tribunale = sede?.tribunale ?? `Tribunale di ${nome}`;
+
+const title = isNazionale ? 'Come sfrattare un inquilino: la procedura legale' : `Come sfrattare un inquilino a ${nome}`;
+const introBase = 'Un proprietario può ottenere il rilascio dell’immobile attraverso la procedura di sfratto prevista dal codice di procedura civile. L’assistenza di un avvocato consente di avviare correttamente l’intimazione di sfratto e ottenere la convalida davanti al giudice.';
+const introLocal = sede?.procedureIntro ?? `Per le pratiche relative agli immobili situati a ${nome}, la procedura viene trattata presso il ${tribunale}.`;
+
+const steps = [
+  { n: '01', icon: 'doc', title: 'Intimazione di sfratto', text: 'L’avvocato redige l’intimazione di sfratto per morosità o finita locazione e cita l’inquilino davanti al giudice.' },
+  { n: '02', icon: 'court', title: 'Udienza di convalida', text: 'Il giudice verifica la posizione delle parti e può emettere l’ordinanza di convalida dello sfratto.' },
+  { n: '03', icon: 'order', title: 'Ordinanza di rilascio', text: 'Il giudice ordina all’inquilino di lasciare l’immobile entro il termine stabilito.' },
+  { n: '04', icon: 'door', title: 'Esecuzione dello sfratto', text: 'Se l’immobile non viene liberato interviene l’ufficiale giudiziario.' }
+];
+---
+
+<section class="section section--compact" id="procedura-sfratto" aria-labelledby="procedure-title">
+  <div class="container">
+    <h2 id="procedure-title">{title}</h2>
+    <p>{introBase}</p>
+    {!isNazionale && <p>{introLocal}</p>}
+
+    <div class="grid4">
+      {steps.map((step) => (
+        <article class="step-card">
+          <p class="step-number">{step.n}</p>
+          <span class="icon" aria-hidden="true">
+            {step.icon === 'doc' && <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7zM14 3v5h5M9 13h6M9 17h6"/></svg>}
+            {step.icon === 'court' && <svg viewBox="0 0 24 24" fill="none"><path d="M3 10h18M5 10V7l7-4 7 4v3M6 10v8m4-8v8m4-8v8m4-8v8M3 21h18"/></svg>}
+            {step.icon === 'order' && <svg viewBox="0 0 24 24" fill="none"><path d="M8 3h8l4 4v14H8zM16 3v4h4M11 12h6M11 16h6M8 8h3"/></svg>}
+            {step.icon === 'door' && <svg viewBox="0 0 24 24" fill="none"><path d="M5 21h14M8 21V4h8v17M12 12h.01"/></svg>}
+          </span>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section { padding: 56px 0; }
+  .section--compact { padding: 40px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 28px; color: var(--blue-navy); }
+  p { margin: 0 0 16px; line-height: 1.6; color: #334155; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .step-card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 4px 12px rgba(0,0,0,.05); border: 1px solid #e5e7eb; }
+  .step-number { margin: 0 0 10px; font-size: 32px; font-weight: 700; color: var(--blue-navy); line-height: 1; }
+  .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
+  .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  h3 { margin: 0 0 10px; color: var(--blue-navy); }
+  .step-card p:last-child { margin: 0; }
+
+  @media (max-width: 1024px) { .section { padding: 44px 0; } .section--compact { padding: 32px 0; } .grid4 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) { .section { padding: 32px 0; } .section--compact { padding: 24px 0; } .grid4 { grid-template-columns: 1fr; } }
+</style>

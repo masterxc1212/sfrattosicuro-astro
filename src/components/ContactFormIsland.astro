@@ -1,0 +1,143 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Richiedi una consulenza gratuita',
+  description = 'In meno di 24 ore possiamo analizzare il tuo caso e indicarti la strategia legale più adatta.'
+} = Astro.props;
+---
+
+<section id="contatti" class="section" aria-labelledby="contatti-heading">
+  <div class="container">
+    <header class="head">
+      <h2 id="contatti-heading">{title}</h2>
+      <p>{description}</p>
+    </header>
+
+    <div class="contacts-grid">
+      <article class="form-card">
+        <h3>Scrivici ora</h3>
+
+        <form action="/php/invia-email.php" method="POST" class="form" data-contact-form aria-label="Form di richiesta consulenza">
+          <div class="fields-grid">
+            <label>Nome *<input type="text" name="nome" required placeholder="Il tuo nome" /></label>
+            <label>Cognome *<input type="text" name="cognome" required placeholder="Il tuo cognome" /></label>
+            <label>Telefono *<input type="tel" name="telefono" required placeholder="Il tuo numero di telefono" /></label>
+            <label>Email *<input type="email" name="email" required placeholder="La tua email" /></label>
+            <label>Città immobile *<input type="text" name="città" required placeholder="In che città si trova l'immobile" /></label>
+            <label>Da quanto non paga *
+              <select name="morosità" required>
+                <option value="">Seleziona periodo</option>
+                <option value="1-2 mesi">1-2 mesi</option>
+                <option value="3-6 mesi">3-6 mesi</option>
+                <option value="6-12 mesi">6-12 mesi</option>
+                <option value="Oltre 12 mesi">Oltre 12 mesi</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="full">Note<textarea name="note" rows="4" placeholder="Raccontaci brevemente la situazione..."></textarea></label>
+
+          <p class="privacy">I tuoi dati sono protetti e non verranno condivisi.</p>
+          <button type="submit" class="btn-primary">Richiedi una consulenza gratuita</button>
+          <p class="tiny">✓ Gratuita, sicura e senza impegno</p>
+        </form>
+      </article>
+
+      <aside class="info-card">
+        <h3>Contatti diretti</h3>
+        <div class="badge-row">
+          <span class="badge">Risposta in 24h</span>
+          <span class="badge">Prima analisi gratuita</span>
+        </div>
+
+        <div class="contact-item">
+          <h4>Centralino Unico Nazionale</h4>
+          <p><a href="tel:+390280898395">+39 02 80898395</a></p>
+          <small>Prefisso Milano · supporto per tutte le sedi territoriali</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-item">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer">+39 329 117 5957</a></p>
+          <small>Risposte rapide</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-item">
+          <h4>Email</h4>
+          <p><a href="mailto:consulenza@sfrattosicuro.it">consulenza@sfrattosicuro.it</a></p>
+          <small>Ti ricontatteremo entro 24 ore</small>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+  form.addEventListener('submit', () => {
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Invio in corso...';
+      setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi una consulenza gratuita'; }, 3500);
+    }
+  });
+  form.querySelectorAll('input[required],select[required],textarea[required]').forEach((field) => {
+    field.addEventListener('blur', () => {
+      if (!field.checkValidity()) field.classList.add('field-error');
+      else field.classList.remove('field-error');
+    });
+  });
+})();
+</script>
+
+<style>
+  .section { padding: 56px 0; background: var(--gray-pearl); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 22px; color: var(--blue-navy); }
+  p { margin: 0 0 14px; line-height: 1.6; }
+
+  .contacts-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+  .form-card, .info-card { background: #fff; border-radius: 12px; padding: 24px; border: 1px solid #e5e7eb; }
+  .form-card h3, .info-card h3 { margin: 0 0 16px; color: var(--blue-navy); }
+
+  .form { display: grid; gap: 16px; }
+  .fields-grid { display:grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .full { grid-column: 1 / -1; }
+  label { display:grid; gap:8px; font-weight:600; color:var(--blue-navy); }
+  input, select, textarea { width:100%; padding:12px; border-radius:8px; border:1px solid #d1d5db; font:inherit; background:#fff; }
+
+  .btn-primary { background:#22c55e; color:#fff; border-radius:8px; padding:14px 24px; min-height:46px; font-weight:600; border:none; cursor:pointer; width: fit-content; }
+  .btn-primary:hover { background:#16a34a; }
+  .privacy, .tiny { color:#64748b; font-size:.9rem; }
+
+  .info-card { background: #334b79; color:#fff; }
+  .info-card h3 { color:#fff; }
+  .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 14px; }
+  .badge { font-size:12px; padding:6px 10px; border-radius:999px; background: rgba(255,255,255,.16); color: #eef2ff; border:1px solid rgba(255,255,255,.24); }
+
+  .contact-item h4 { margin:0 0 6px; }
+  .contact-item p { margin:0; }
+  .contact-item a { color:#f4d08a; text-decoration:none; font-weight:700; }
+  .contact-item small { color:#d5deef; }
+  .divider { height:1px; background: rgba(255,255,255,.18); margin: 14px 0; }
+  .field-error { border-color:#dc2626; }
+
+  @media (max-width: 1024px) { .section { padding: 44px 0; } .contacts-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 767px) {
+    .section { padding: 32px 0; }
+    .fields-grid { grid-template-columns: 1fr; }
+    .btn-primary { width: 100%; min-height: 48px; }
+    .contact-item a { display: inline-flex; align-items: center; min-height: 44px; }
+  }
+</style>

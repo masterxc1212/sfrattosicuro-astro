@@ -1,0 +1,75 @@
+---
+import sedi from '../data/sedi.json';
+
+interface SedeItem {
+  nome: string;
+  slug: string;
+  intro?: string;
+  tribunale?: string;
+}
+
+interface Props { sedeSlug?: string; }
+
+const { sedeSlug = 'nazionale' } = Astro.props;
+const normalized = sedeSlug.trim().toLowerCase();
+const isNazionale = normalized === 'nazionale';
+const sede = (sedi as SedeItem[]).find((item) => item.slug === normalized);
+
+const nome = sede?.nome ?? 'la tua città';
+const tribunale = sede?.tribunale ?? `Tribunale di ${nome}`;
+const title = isNazionale ? 'Avvocato per Sfratto in tutta Italia' : `Avvocato per Sfratto a ${nome}`;
+const subtitle = isNazionale
+  ? 'Siamo operativi su tutto il territorio nazionale per assistere i proprietari nella procedura di sfratto e nella gestione delle locazioni.'
+  : (sede?.intro?.trim() ?? `Presidio territoriale dedicato per le procedure di sfratto a ${nome}.`);
+
+const pillars = isNazionale
+  ? [
+      { icon: 'scale', title: 'Strategia legale strutturata', text: 'Analizziamo il contratto di locazione e impostiamo la procedura di sfratto più efficace per ottenere il rilascio dell’immobile.' },
+      { icon: 'court', title: 'Operatività nei tribunali italiani', text: 'Gestione delle procedure di sfratto presso i tribunali competenti su tutto il territorio nazionale.' },
+      { icon: 'doc', title: 'Gestione completa della pratica', text: 'Assistenza legale dalla fase iniziale fino alla liberazione dell’immobile.' }
+    ]
+  : [
+      { icon: 'scale', title: `Strategia locale su ${nome}`, text: `Impostiamo la strategia processuale in base alla prassi del ${tribunale}.` },
+      { icon: 'court', title: 'Presidio territoriale diretto', text: `Seguiamo le procedure presso il ${tribunale}, con coordinamento continuo.` },
+      { icon: 'doc', title: 'Pratica seguita end-to-end', text: 'Dalla prima intimazione fino alla fase esecutiva con ufficiale giudiziario.' }
+    ];
+---
+
+<section class="section" aria-label={`Presentazione sede ${isNazionale ? 'nazionale' : nome}`}>
+  <div class="container">
+    <h2>{title}</h2>
+    <p class="subtitle">{subtitle}</p>
+
+    <div class="grid3">
+      {pillars.map((item) => (
+        <article class="card">
+          <span class="icon" aria-hidden="true">
+            {item.icon === 'scale' && <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 7h10M5 7l-3 5h6l-3-5Zm14 0-3 5h6l-3-5ZM9 21h6"/></svg>}
+            {item.icon === 'court' && <svg viewBox="0 0 24 24" fill="none"><path d="M3 10h18M5 10V7l7-4 7 4v3M6 10v8m4-8v8m4-8v8m4-8v8M3 21h18"/></svg>}
+            {item.icon === 'doc' && <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7zM14 3v5h5M9 13h6M9 17h6"/></svg>}
+          </span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section { padding: 56px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 22px; color: var(--blue-navy); }
+  p { margin: 0 0 14px; line-height: 1.6; color: #334155; }
+  .subtitle { max-width: 80ch; }
+
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,.05); border: 1px solid #e5e7eb; }
+  .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
+  .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  h3 { margin: 0 0 10px; color: var(--blue-navy); }
+  .card p { margin: 0; }
+
+  @media (max-width: 1024px) { .section { padding: 44px 0; } .grid3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) { .section { padding: 32px 0; } .grid3 { grid-template-columns: 1fr; } }
+</style>

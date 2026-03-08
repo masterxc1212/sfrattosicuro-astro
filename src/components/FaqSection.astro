@@ -1,0 +1,61 @@
+---
+import sedi from '../data/sedi.json';
+
+type FaqItem = { q: string; a: string };
+interface SedeItem { nome: string; slug: string; tribunale?: string; faqLocalIntro?: string; faqLocal?: FaqItem[]; }
+interface Props { sedeSlug?: string; faqItems?: FaqItem[]; }
+
+const { sedeSlug = 'nazionale', faqItems } = Astro.props;
+const normalized = sedeSlug.trim().toLowerCase();
+const isNazionale = normalized === 'nazionale';
+const sede = (sedi as SedeItem[]).find((item) => item.slug === normalized);
+const localIntro = sede?.faqLocalIntro ?? `Domande frequenti sulla procedura di sfratto a ${sede?.nome ?? 'livello locale'}.`;
+
+const standardLocalFaq: FaqItem[] = [
+  { q: `Quanto tempo richiede uno sfratto a ${sede?.nome ?? 'questa città'}?`, a: `I tempi dipendono dal calendario del ${sede?.tribunale ?? 'tribunale competente'} e dall'eventuale opposizione dell'inquilino.` },
+  { q: `Quando si può avviare lo sfratto per morosità a ${sede?.nome ?? 'questa città'}?`, a: 'La procedura può essere avviata quando l’inquilino non paga i canoni nei termini previsti dal contratto.' },
+  { q: `Serve un avvocato per sfrattare un inquilino a ${sede?.nome ?? 'questa città'}?`, a: 'Sì. L’assistenza legale è necessaria per impostare correttamente la procedura e seguire udienza di convalida ed eventuale fase esecutiva.' }
+];
+
+const nationalFaq: FaqItem[] = [
+  { q: 'Quanto tempo serve per sfrattare un inquilino?', a: 'La durata dipende dal tribunale competente e dall’eventuale opposizione dell’inquilino.' },
+  { q: 'Quanti mesi di affitto non pagato servono per lo sfratto?', a: 'In genere è possibile avviare la procedura quando l’inquilino non paga il canone nei termini previsti dal contratto.' },
+  { q: 'È possibile sfrattare un inquilino con figli minori?', a: 'La presenza di minori non impedisce la procedura di sfratto ma può incidere sui tempi dell’esecuzione.' }
+];
+
+const items = (faqItems && faqItems.length)
+  ? faqItems
+  : isNazionale
+    ? nationalFaq
+    : (sede?.faqLocal && sede.faqLocal.length ? sede.faqLocal.slice(0, 3) : standardLocalFaq);
+---
+
+<section class="section section--compact" id="faq-sfratto" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title">Domande frequenti sulla procedura di sfratto</h2>
+    {!isNazionale && <p class="intro">{localIntro}</p>}
+
+    <div class="faq-list">
+      {items.map((item) => (
+        <details>
+          <summary>{item.q}</summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section { padding: 56px 0; }
+  .section--compact { padding: 40px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 28px; color: var(--blue-navy); }
+  p { margin: 0 0 16px; line-height: 1.6; color: #334155; }
+  .faq-list { display: grid; gap: 16px; }
+  details { border: 1px solid #dbe3ef; border-radius: 12px; padding: 16px 18px; background: #fff; }
+  summary { cursor: pointer; font-weight: 700; color: var(--blue-navy); }
+  details p { margin: 12px 0 0; }
+  @media (max-width: 1024px) { .section { padding: 44px 0; } .section--compact { padding: 32px 0; } }
+  @media (max-width: 767px) { .section { padding: 32px 0; } .section--compact { padding: 24px 0; } }
+</style>

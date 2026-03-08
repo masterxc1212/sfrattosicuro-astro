@@ -1,0 +1,96 @@
+---
+interface Props {
+  measurementId: string;
+}
+
+const { measurementId } = Astro.props;
+---
+
+<script is:inline define:vars={{ measurementId }}>
+  (() => {
+    if (!measurementId) return;
+
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+    const gaDisableKey = `ga-disable-${measurementId}`;
+
+    const readConsent = () => {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const applyDeniedState = () => {
+      window[gaDisableKey] = true;
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+      }
+    };
+
+    const initGaIfNeeded = (consent) => {
+      if (!consent?.analytics) return;
+      if (window.__ga4IslandLoaded) {
+        window[gaDisableKey] = false;
+        if (typeof window.gtag === 'function') {
+          window.gtag('consent', 'update', {
+            analytics_storage: 'granted',
+            ad_storage: consent?.marketing ? 'granted' : 'denied',
+            ad_user_data: consent?.marketing ? 'granted' : 'denied',
+            ad_personalization: consent?.marketing ? 'granted' : 'denied'
+          });
+        }
+        return;
+      }
+
+      window.__ga4IslandLoaded = true;
+      window[gaDisableKey] = false;
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = window.gtag || gtag;
+
+      window.gtag('consent', 'default', {
+        analytics_storage: 'granted',
+        ad_storage: consent?.marketing ? 'granted' : 'denied',
+        ad_user_data: consent?.marketing ? 'granted' : 'denied',
+        ad_personalization: consent?.marketing ? 'granted' : 'denied'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId, {
+        send_page_view: true,
+        transport_type: 'beacon'
+      });
+
+      if (!document.querySelector(`script[data-ga4-island="${measurementId}"]`)) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+        s.setAttribute('data-ga4-island', measurementId);
+        document.head.appendChild(s);
+      }
+    };
+
+    const consent = readConsent();
+    if (consent?.analytics) {
+      initGaIfNeeded(consent);
+    } else {
+      applyDeniedState();
+    }
+
+    window.addEventListener('ss:cookie-consent-updated', (event) => {
+      const detail = event?.detail || {};
+      if (detail.analytics) {
+        initGaIfNeeded(detail);
+      } else {
+        applyDeniedState();
+      }
+    });
+  })();
+</script>

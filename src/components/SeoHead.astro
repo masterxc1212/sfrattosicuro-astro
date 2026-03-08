@@ -1,0 +1,44 @@
+---
+import site from '../data/site.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  robots?: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title = site.name,
+  description = site.meta_description_default,
+  canonicalPath,
+  robots = 'index,follow',
+  image = '/assets/icons/apple-touch-icon.png',
+  type = 'website'
+} = Astro.props;
+
+const siteUrl = (site.siteUrl || site.url).replace(/\/$/, '');
+const pathname = Astro.url.pathname || '/';
+const canonicalUrl = new URL(canonicalPath || pathname, `${siteUrl}/`).toString();
+const ogImage = image.startsWith('http') ? image : new URL(image, `${siteUrl}/`).toString();
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content={robots} />
+<link rel="canonical" href={canonicalUrl} />
+
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:image" content={ogImage} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />

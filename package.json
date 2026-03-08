@@ -1,0 +1,19 @@
+{
+  "name": "retrograde-ring",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "predev": "node scripts/generate-provvedimenti-mock.mjs",
+    "dev": "astro dev",
+    "prebuild": "node scripts/generate-provvedimenti-mock.mjs",
+    "build": "astro build",
+    "postbuild": "node scripts/generate-sitemaps.mjs",
+    "prepreview": "node scripts/generate-provvedimenti-mock.mjs",
+    "preview": "astro preview",
+    "seo:check:endpoints": "node scripts/check-seo-endpoints.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.17.1"
+  }
+}

@@ -1,0 +1,116 @@
+---
+const services = [
+  {
+    icon: '⚖️',
+    title: 'Sfratto per morosità',
+    text: 'Assistiamo i proprietari nelle procedure di sfratto per morosità quando l’inquilino non paga il canone o gli oneri accessori previsti dal contratto di locazione. Seguiamo tutte le fasi della procedura fino alla liberazione dell’immobile.'
+  },
+  {
+    icon: '📄',
+    title: 'Sfratto per finita locazione',
+    text: 'Supportiamo i proprietari nelle procedure di rilascio dell’immobile quando il contratto di locazione è scaduto e il conduttore non restituisce l’immobile.'
+  },
+  {
+    icon: '💼',
+    title: 'Recupero crediti per canoni di locazione non pagati',
+    text: 'Assistiamo i proprietari nel recupero dei canoni di locazione non pagati e degli oneri accessori dovuti dall’inquilino. L’azione di recupero crediti può essere avviata autonomamente oppure congiuntamente alla procedura di sfratto.'
+  },
+  {
+    icon: '🛡️',
+    title: 'Controversie in materia di locazione',
+    text: 'Assistiamo i proprietari nelle controversie derivanti dal contratto di locazione e nelle contestazioni tra locatore e conduttore.'
+  },
+  {
+    icon: '🖊️',
+    title: 'Predisposizione contratti di locazione',
+    text: 'Redigiamo contratti di locazione chiari e strutturati per prevenire contenziosi e tutelare il proprietario nella gestione del rapporto con l’inquilino.'
+  },
+  {
+    icon: '🏠',
+    title: 'Tutela del proprietario',
+    text: 'Forniamo assistenza continuativa nella gestione del rapporto con l’inquilino e nelle problematiche che possono insorgere durante la locazione.'
+  }
+];
+---
+
+<section class="section services-grid-section" id="servizi-legali" aria-labelledby="services-grid-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Servizi principali</p>
+      <h2 id="services-grid-title">I nostri servizi legali</h2>
+    </div>
+
+    <div class="cards-grid" role="list">
+      {services.map((service) => (
+        <article class="card" role="listitem">
+          <p class="icon" aria-hidden="true">{service.icon}</p>
+          <h3>{service.title}</h3>
+          <p>{service.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-grid-section {
+    background: linear-gradient(180deg, #f8fbff 0%, #f1f6fd 100%);
+    border-top: 1px solid #e6edf7;
+    border-bottom: 1px solid #e6edf7;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  .section-head { margin-bottom: 16px; }
+  .kicker {
+    margin: 0 0 8px;
+    color: #c6902a;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .78rem;
+    font-weight: 700;
+  }
+
+  h2 { margin: 0; color: var(--blue-navy); }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 22px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+    border-top-width: 3px;
+  }
+
+  .card:nth-child(1), .card:nth-child(4) { border-top-color: #3bae5d; }
+  .card:nth-child(2), .card:nth-child(5) { border-top-color: #1b2951; }
+  .card:nth-child(3), .card:nth-child(6) { border-top-color: #c6902a; }
+
+  .icon {
+    margin: 0 0 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: #eef3fb;
+    border: 1px solid #d8e1ef;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  h3 { margin: 0 0 10px; color: var(--blue-navy); font-size: 1.05rem; }
+  p { margin: 0; color: #334155; line-height: 1.65; }
+
+  @media (max-width: 1024px) { .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 767px) {
+    .container { padding: 0 16px; }
+    .cards-grid { grid-template-columns: 1fr; }
+  }
+</style>

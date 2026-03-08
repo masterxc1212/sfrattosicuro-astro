@@ -1,0 +1,309 @@
+{
+  "pages": {
+    "chi-siamo": {
+      "path": "C:\\Users\\danil\\Dropbox\\DESKTOP\\astro\\sfrattosicuro-astro\\retrograde-ring\\dist\\chi-siamo\\index.html",
+      "lang": "it",
+      "title": "Studio legale sfratti e locazioni | Sfratto Sicuro",
+      "titleLen": 50,
+      "metaDescriptionPresent": true,
+      "metaDescriptionLen": 158,
+      "canonical": "https://www.sfrattosicuro.it/chi-siamo/",
+      "robots": "index,follow",
+      "hCounts": {
+        "h1": 1,
+        "h2": 6,
+        "h3": 9,
+        "h4": 6,
+        "h5": 0,
+        "h6": 0
+      },
+      "headingIssues": [],
+      "landmarks": {
+        "header": 2,
+        "nav": 2,
+        "main": 1,
+        "footer": 1
+      },
+      "images": {
+        "total": 4,
+        "missingAlt": 0
+      },
+      "ogPresent": [
+        "og:description",
+        "og:image",
+        "og:locale",
+        "og:site_name",
+        "og:title",
+        "og:type",
+        "og:url"
+      ],
+      "twitterPresent": [
+        "twitter:card",
+        "twitter:description",
+        "twitter:image",
+        "twitter:title"
+      ],
+      "jsonld": {
+        "blocks": 1,
+        "invalid": 0,
+        "types": [
+          "BreadcrumbList",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "placeholderSignals": []
+      }
+    },
+    "servizi": {
+      "path": "C:\\Users\\danil\\Dropbox\\DESKTOP\\astro\\sfrattosicuro-astro\\retrograde-ring\\dist\\servizi\\index.html",
+      "lang": "it",
+      "title": "Servizi legali per sfratti e locazioni | Sfratto Sicuro",
+      "titleLen": 55,
+      "metaDescriptionPresent": true,
+      "metaDescriptionLen": 135,
+      "canonical": "https://www.sfrattosicuro.it/servizi/",
+      "robots": "index,follow",
+      "hCounts": {
+        "h1": 1,
+        "h2": 6,
+        "h3": 15,
+        "h4": 6,
+        "h5": 0,
+        "h6": 0
+      },
+      "headingIssues": [],
+      "landmarks": {
+        "header": 2,
+        "nav": 2,
+        "main": 1,
+        "footer": 1
+      },
+      "images": {
+        "total": 6,
+        "missingAlt": 0
+      },
+      "ogPresent": [
+        "og:description",
+        "og:image",
+        "og:locale",
+        "og:site_name",
+        "og:title",
+        "og:type",
+        "og:url"
+      ],
+      "twitterPresent": [
+        "twitter:card",
+        "twitter:description",
+        "twitter:image",
+        "twitter:title"
+      ],
+      "jsonld": {
+        "blocks": 1,
+        "invalid": 0,
+        "types": [
+          "BreadcrumbList",
+          "Country",
+          "LegalService",
+          "ListItem",
+          "WebPage"
+        ],
+        "placeholderSignals": []
+      }
+    },
+    "sedi-hub": {
+      "path": "C:\\Users\\danil\\Dropbox\\DESKTOP\\astro\\sfrattosicuro-astro\\retrograde-ring\\dist\\sedi\\index.html",
+      "lang": "it",
+      "title": "Sedi territoriali | Sfratto Sicuro",
+      "titleLen": 34,
+      "metaDescriptionPresent": true,
+      "metaDescriptionLen": 110,
+      "canonical": "https://www.sfrattosicuro.it/sedi/",
+      "robots": "index,follow",
+      "hCounts": {
+        "h1": 1,
+        "h2": 20,
+        "h3": 0,
+        "h4": 3,
+        "h5": 0,
+        "h6": 0
+      },
+      "headingIssues": [
+        "salto 2->4"
+      ],
+      "landmarks": {
+        "header": 1,
+        "nav": 2,
+        "main": 1,
+        "footer": 1
+      },
+      "images": {
+        "total": 2,
+        "missingAlt": 0
+      },
+      "ogPresent": [
+        "og:description",
+        "og:image",
+        "og:locale",
+        "og:site_name",
+        "og:title",
+        "og:type",
+        "og:url"
+      ],
+      "twitterPresent": [
+        "twitter:card",
+        "twitter:description",
+        "twitter:image",
+        "twitter:title"
+      ],
+      "jsonld": {
+        "blocks": 1,
+        "invalid": 0,
+        "types": [
+          "BreadcrumbList",
+          "ListItem",
+          "WebPage"
+        ],
+        "placeholderSignals": []
+      }
+    },
+    "home": {
+      "path": "C:\\Users\\danil\\Dropbox\\DESKTOP\\astro\\sfrattosicuro-astro\\retrograde-ring\\dist\\index.html",
+      "lang": "it",
+      "title": "Avvocato per sfratto per morosità | Sfratto Sicuro",
+      "titleLen": 50,
+      "metaDescriptionPresent": true,
+      "metaDescriptionLen": 142,
+      "canonical": "https://www.sfrattosicuro.it/",
+      "robots": "index,follow",
+      "hCounts": {
+        "h1": 1,
+        "h2": 13,
+        "h3": 17,
+        "h4": 6,
+        "h5": 0,
+        "h6": 0
+      },
+      "headingIssues": [],
+      "landmarks": {
+        "header": 3,
+        "nav": 2,
+        "main": 1,
+        "footer": 1
+      },
+      "images": {
+        "total": 8,
+        "missingAlt": 0
+      },
+      "ogPresent": [
+        "og:description",
+        "og:image",
+        "og:locale",
+        "og:site_name",
+        "og:title",
+        "og:type",
+        "og:url"
+      ],
+      "twitterPresent": [
+        "twitter:card",
+        "twitter:description",
+        "twitter:image",
+        "twitter:title"
+      ],
+      "jsonld": {
+        "blocks": 1,
+        "invalid": 0,
+        "types": [
+          "AdministrativeArea",
+          "Answer",
+          "City",
+          "ContactPoint",
+          "Country",
+          "FAQPage",
+          "ImageObject",
+          "LegalService",
+          "Organization",
+          "PostalAddress",
+          "Question",
+          "WebPage",
+          "WebSite"
+        ],
+        "placeholderSignals": []
+      }
+    },
+    "sedi-milano": {
+      "path": "C:\\Users\\danil\\Dropbox\\DESKTOP\\astro\\sfrattosicuro-astro\\retrograde-ring\\dist\\sedi\\milano\\index.html",
+      "lang": "it",
+      "title": "Avvocato per sfratto a Milano | Sfratto Sicuro",
+      "titleLen": 46,
+      "metaDescriptionPresent": true,
+      "metaDescriptionLen": 123,
+      "canonical": "https://www.sfrattosicuro.it/sedi/milano/",
+      "robots": "index,follow",
+      "hCounts": {
+        "h1": 1,
+        "h2": 13,
+        "h3": 17,
+        "h4": 6,
+        "h5": 0,
+        "h6": 0
+      },
+      "headingIssues": [],
+      "landmarks": {
+        "header": 3,
+        "nav": 3,
+        "main": 1,
+        "footer": 1
+      },
+      "images": {
+        "total": 8,
+        "missingAlt": 0
+      },
+      "ogPresent": [
+        "og:description",
+        "og:image",
+        "og:locale",
+        "og:site_name",
+        "og:title",
+        "og:type",
+        "og:url"
+      ],
+      "twitterPresent": [
+        "twitter:card",
+        "twitter:description",
+        "twitter:image",
+        "twitter:title"
+      ],
+      "jsonld": {
+        "blocks": 1,
+        "invalid": 0,
+        "types": [
+          "AdministrativeArea",
+          "Answer",
+          "BreadcrumbList",
+          "City",
+          "Country",
+          "FAQPage",
+          "LegalService",
+          "ListItem",
+          "Question",
+          "WebPage"
+        ],
+        "placeholderSignals": []
+      }
+    }
+  },
+  "sediMassive": {
+    "totalCityPages": 137,
+    "issues": {
+      "missingJsonLd": [],
+      "invalidJsonLd": [],
+      "jsonLdPlaceholders": [],
+      "h1NotOne": [],
+      "missingCanonical": []
+    }
+  }
+}

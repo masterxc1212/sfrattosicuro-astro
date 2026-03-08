@@ -1,0 +1,62 @@
+---
+import sedi from '../data/sedi.json';
+
+interface SedeItem { nome: string; slug: string; tribunale?: string; timelineIntro?: string; }
+interface Props { sedeSlug?: string; }
+
+const { sedeSlug = 'nazionale' } = Astro.props;
+const normalized = sedeSlug.trim().toLowerCase();
+const isNazionale = normalized === 'nazionale';
+const sede = (sedi as SedeItem[]).find((item) => item.slug === normalized);
+const nome = sede?.nome ?? 'la tua città';
+const tribunale = sede?.tribunale ?? `Tribunale di ${nome}`;
+
+const title = isNazionale ? 'Quanto tempo serve per sfrattare un inquilino moroso' : `Tempi dello sfratto a ${nome}`;
+const supportText = isNazionale
+  ? 'La durata della procedura può variare in base al tribunale competente e alla presenza di eventuali opposizioni dell’inquilino.'
+  : (sede?.timelineIntro ?? `La durata della procedura a ${nome} dipende anche dal calendario udienze del ${tribunale}.`);
+
+const steps = ['Deposito intimazione', 'Udienza di convalida', 'Ordinanza di rilascio', 'Esecuzione con ufficiale giudiziario'];
+---
+
+<section class="section" id="tempi-sfratto" aria-labelledby="timeline-title">
+  <div class="container">
+    <h2 id="timeline-title">{title}</h2>
+
+    <div class="timeline" aria-label="Timeline procedura sfratto">
+      {steps.map((step, i) => (
+        <div class="timeline-step">
+          <span class="dot" aria-hidden="true"></span>
+          {i < steps.length - 1 && <span class="line" aria-hidden="true"></span>}
+          <p>{step}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="note">{supportText}</p>
+  </div>
+</section>
+
+<style>
+  .section { padding: 56px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 22px; color: var(--blue-navy); }
+  p { margin: 0 0 14px; line-height: 1.6; color: #334155; }
+
+  .timeline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .timeline-step { flex: 1; min-width: 0; text-align: center; position: relative; }
+  .dot { width: 16px; height: 16px; border-radius: 50%; background: var(--blue-navy); display: block; margin: 0 auto 10px; }
+  .line { position: absolute; top: 7px; left: calc(50% + 12px); width: calc(100% - 24px); height: 2px; background: #d1d5db; }
+  .timeline-step p { margin: 0; font-weight: 600; }
+  .note { margin-top: 16px; }
+
+  @media (max-width: 1024px) {
+    .section { padding: 44px 0; }
+    .timeline { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .line { display: none; }
+  }
+  @media (max-width: 767px) {
+    .section { padding: 32px 0; }
+    .timeline { grid-template-columns: 1fr; }
+  }
+</style>

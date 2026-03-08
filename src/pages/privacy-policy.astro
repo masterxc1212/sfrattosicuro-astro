@@ -1,0 +1,147 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HeaderIsland from '../components/HeaderIsland.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/JsonLd.astro';
+import PageJumpNavIsland from '../components/PageJumpNavIsland.astro';
+import site from '../data/site.json';
+
+const title = 'Privacy Policy | Sfratto Sicuro';
+const description = 'Informativa privacy ai sensi del Regolamento (UE) 2016/679 (GDPR) relativa ai servizi di Sfratto Sicuro.';
+
+const org = site.organization;
+const orgAddress = org.nationalAddress;
+const orgFullAddress = `${orgAddress.streetAddress}, ${orgAddress.postalCode} ${orgAddress.addressLocality} (${orgAddress.addressRegion}), Italia`;
+
+const privacyGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${site.siteUrl}/privacy-policy/#webpage`,
+      url: `${site.siteUrl}/privacy-policy/`,
+      name: title,
+      description,
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${site.siteUrl}/#website` },
+      about: { '@id': `${site.siteUrl}/#organization` }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${site.siteUrl}/privacy-policy/#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${site.siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: `${site.siteUrl}/privacy-policy/` }
+      ]
+    }
+  ]
+};
+---
+
+<SiteLayout title={title} description={description} canonicalPath="/privacy-policy/">
+  <Fragment slot="head">
+    <JsonLd graph={privacyGraph} />
+  </Fragment>
+
+  <HeaderIsland />
+  <PageJumpNavIsland
+    title="Sezioni privacy"
+    items={[
+      { href: '#titolare', label: 'Titolare' },
+      { href: '#finalita', label: 'Finalità' },
+      { href: '#diritti', label: 'Diritti' },
+      { href: '#aggiornamenti', label: 'Aggiornamenti' }
+    ]}
+  />
+
+  <main id="main-content" class="legal-main">
+    <section class="legal-hero">
+      <div class="container">
+        <p class="kicker">Documentazione legale</p>
+        <h1>Informativa sulla Privacy</h1>
+        <p>Ai sensi dell’art. 13 del Regolamento (UE) 2016/679 (“GDPR”).</p>
+      </div>
+    </section>
+
+    <section class="container legal-body">
+      <article class="card" id="titolare">
+        <h2>1. Titolare del trattamento</h2>
+        <p>
+          Il Titolare del trattamento dei dati personali è <strong>{org.legalName}</strong>.
+          <br />
+          Sede: {orgFullAddress}
+          <br />
+          P. IVA: {org.vatID.replace(/^IT/i, '')}
+          <br />
+          E-mail: <a href={`mailto:${org.email}`}>{org.email}</a>
+          <br />
+          Telefono: <a href={`tel:${org.telephone.replace(/\s+/g, '')}`}>{org.telephone}</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. Dati trattati</h2>
+        <ul>
+          <li>Dati anagrafici e di contatto inviati tramite form e canali diretti;</li>
+          <li>Dati relativi alla situazione locativa comunicata dall’utente;</li>
+          <li>Dati di navigazione e log tecnici;</li>
+          <li>Cookie e strumenti di tracciamento secondo la Cookie Policy.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="finalita">
+        <h2>3. Finalità e base giuridica</h2>
+        <ul>
+          <li>Gestione richieste e pre-contrattuale (art. 6.1.b GDPR);</li>
+          <li>Adempimenti normativi, fiscali e legali (art. 6.1.c GDPR);</li>
+          <li>Sicurezza del sito e prevenzione abusi (art. 6.1.f GDPR);</li>
+          <li>Comunicazioni informative, ove applicabile, su consenso (art. 6.1.a GDPR).</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>4. Conservazione e destinatari</h2>
+        <p>
+          I dati sono conservati per il tempo necessario alle finalità indicate e agli obblighi di legge.
+          Possono essere comunicati a professionisti incaricati, fornitori tecnici nominati responsabili
+          e autorità competenti nei casi previsti.
+        </p>
+      </article>
+
+      <article class="card" id="diritti">
+        <h2>5. Diritti dell’interessato</h2>
+        <p>
+          L’interessato può esercitare i diritti previsti dagli artt. 15–22 GDPR (accesso, rettifica,
+          cancellazione, limitazione, opposizione, portabilità e revoca del consenso, ove applicabile)
+          scrivendo a <a href={`mailto:${org.email}`}>{org.email}</a>.
+        </p>
+      </article>
+
+      <article class="card" id="aggiornamenti">
+        <h2>6. Reclamo e aggiornamenti</h2>
+        <p>
+          È sempre possibile proporre reclamo al Garante per la Protezione dei Dati Personali.
+          La presente informativa può essere aggiornata nel tempo.
+        </p>
+        <p class="last-update">Ultimo aggiornamento: marzo 2026</p>
+      </article>
+    </section>
+  </main>
+
+  <Footer sedeSlug="nazionale" />
+</SiteLayout>
+
+<style>
+  .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  .legal-hero { background: linear-gradient(180deg, #f8fbff 0%, #f2f7fd 100%); border-bottom: 1px solid #e3ecf7; }
+  .kicker { margin: 0 0 8px; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
+  h1 { margin: 0 0 8px; color: var(--blue-navy); }
+  .legal-hero p { margin: 0; color: #475569; }
+  .legal-body { display: grid; gap: 14px; padding-top: 20px; padding-bottom: 20px; }
+  .card { background: #fff; border: 1px solid #e5eaf3; border-radius: 12px; padding: 18px; box-shadow: 0 6px 16px rgba(15,23,42,.04); }
+  h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.1rem; }
+  p, li { color: #334155; line-height: 1.65; }
+  a { color: #1e3a8a; }
+  ul { margin: 0; padding-left: 20px; }
+  .last-update { font-size: .9rem; color: #64748b; margin-top: 8px; }
+</style>

@@ -1,0 +1,142 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HeaderIsland from '../components/HeaderIsland.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/JsonLd.astro';
+import PageJumpNavIsland from '../components/PageJumpNavIsland.astro';
+import site from '../data/site.json';
+
+const title = 'Termini e Condizioni | Sfratto Sicuro';
+const description = 'Termini e condizioni di utilizzo del sito e dei servizi informativi Sfratto Sicuro.';
+
+const org = site.organization;
+const orgAddress = org.nationalAddress;
+const orgFullAddress = `${orgAddress.streetAddress}, ${orgAddress.postalCode} ${orgAddress.addressLocality} (${orgAddress.addressRegion}), Italia`;
+
+const termsGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${site.siteUrl}/termini/#webpage`,
+      url: `${site.siteUrl}/termini/`,
+      name: title,
+      description,
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${site.siteUrl}/#website` },
+      about: { '@id': `${site.siteUrl}/#organization` }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${site.siteUrl}/termini/#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${site.siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Termini', item: `${site.siteUrl}/termini/` }
+      ]
+    }
+  ]
+};
+---
+
+<SiteLayout title={title} description={description} canonicalPath="/termini/">
+  <Fragment slot="head">
+    <JsonLd graph={termsGraph} />
+  </Fragment>
+
+  <HeaderIsland />
+  <PageJumpNavIsland
+    title="Sezioni termini"
+    items={[
+      { href: '#titolare', label: 'Titolare' },
+      { href: '#incarico', label: 'Incarico' },
+      { href: '#responsabilita', label: 'Responsabilità' },
+      { href: '#foro', label: 'Foro' }
+    ]}
+  />
+
+  <main id="main-content" class="legal-main">
+    <section class="legal-hero">
+      <div class="container">
+        <p class="kicker">Documentazione legale</p>
+        <h1>Termini e Condizioni di utilizzo</h1>
+        <p>Informazioni principali sui contenuti e sui servizi di Sfratto Sicuro.</p>
+      </div>
+    </section>
+
+    <section class="container legal-body">
+      <article class="card" id="titolare">
+        <h2>1. Titolare del sito</h2>
+        <p>
+          Il sito è gestito da <strong>{org.legalName}</strong> ({org.name}).
+          <br />
+          Sede: {orgFullAddress}
+          <br />
+          P. IVA: {org.vatID.replace(/^IT/i, '')}
+          <br />
+          E-mail: <a href={`mailto:${org.email}`}>{org.email}</a>
+          <br />
+          Telefono: <a href={`tel:${org.telephone.replace(/\s+/g, '')}`}>{org.telephone}</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. Natura dei contenuti</h2>
+        <p>
+          I contenuti del sito hanno finalità informativa e non costituiscono parere legale su casi
+          specifici. Il rapporto professionale nasce solo con conferimento formale dell’incarico.
+        </p>
+      </article>
+
+      <article class="card" id="incarico">
+        <h2>3. Incarico professionale e condizioni economiche</h2>
+        <p>
+          L’invio di una richiesta non equivale all’accettazione dell’incarico. Le attività legali
+          vengono avviate solo dopo sottoscrizione di mandato scritto, con indicazione puntuale di
+          oggetto, compensi, eventuali spese vive e modalità di pagamento.
+        </p>
+      </article>
+
+      <article class="card" id="responsabilita">
+        <h2>4. Limitazioni di responsabilità</h2>
+        <p>
+          Pur curando l’accuratezza dei contenuti, non è garantita l’applicabilità automatica a ogni
+          singolo caso concreto. L’utente è tenuto a richiedere valutazione professionale specifica
+          prima di decisioni operative.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>5. Proprietà intellettuale</h2>
+        <p>
+          Testi, layout, grafica, marchi e contenuti del sito sono protetti dalla normativa vigente.
+          È vietato l’uso non autorizzato, salvo utilizzo personale e non commerciale.
+        </p>
+      </article>
+
+      <article class="card" id="foro">
+        <h2>6. Legge applicabile e foro</h2>
+        <p>
+          I presenti termini sono regolati dalla legge italiana. Per le controversie, salvo diritti
+          inderogabili del consumatore, il foro competente è quello di Salerno.
+        </p>
+        <p class="last-update">Ultimo aggiornamento: marzo 2026</p>
+      </article>
+    </section>
+  </main>
+
+  <Footer sedeSlug="nazionale" />
+</SiteLayout>
+
+<style>
+  .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  .legal-hero { background: linear-gradient(180deg, #f8fbff 0%, #f2f7fd 100%); border-bottom: 1px solid #e3ecf7; }
+  .kicker { margin: 0 0 8px; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
+  h1 { margin: 0 0 8px; color: var(--blue-navy); }
+  .legal-hero p { margin: 0; color: #475569; }
+  .legal-body { display: grid; gap: 14px; padding-top: 20px; padding-bottom: 20px; }
+  .card { background: #fff; border: 1px solid #e5eaf3; border-radius: 12px; padding: 18px; box-shadow: 0 6px 16px rgba(15,23,42,.04); }
+  h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.1rem; }
+  p { color: #334155; line-height: 1.65; }
+  a { color: #1e3a8a; }
+  .last-update { font-size: .9rem; color: #64748b; margin-top: 8px; }
+</style>

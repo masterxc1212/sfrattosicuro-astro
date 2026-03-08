@@ -1,0 +1,114 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HeaderIsland from '../components/HeaderIsland.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/JsonLd.astro';
+import PageJumpNavIsland from '../components/PageJumpNavIsland.astro';
+import site from '../data/site.json';
+
+const title = 'Cookie Policy | Sfratto Sicuro';
+const description = 'Informazioni sull’uso dei cookie e strumenti di tracciamento sul sito Sfratto Sicuro.';
+
+const cookieGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${site.siteUrl}/cookie-policy/#webpage`,
+      url: `${site.siteUrl}/cookie-policy/`,
+      name: title,
+      description,
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${site.siteUrl}/#website` }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${site.siteUrl}/cookie-policy/#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${site.siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Cookie Policy', item: `${site.siteUrl}/cookie-policy/` }
+      ]
+    }
+  ]
+};
+---
+
+<SiteLayout title={title} description={description} canonicalPath="/cookie-policy/">
+  <Fragment slot="head">
+    <JsonLd graph={cookieGraph} />
+  </Fragment>
+
+  <HeaderIsland />
+  <PageJumpNavIsland
+    title="Sezioni cookie"
+    items={[
+      { href: '#definizione-cookie', label: 'Cosa sono' },
+      { href: '#tipologie-cookie', label: 'Tipologie' },
+      { href: '#consenso-cookie', label: 'Consenso' },
+      { href: '#contatti-cookie', label: 'Contatti' }
+    ]}
+  />
+
+  <main id="main-content" class="legal-main">
+    <section class="legal-hero">
+      <div class="container">
+        <p class="kicker">Documentazione legale</p>
+        <h1>Cookie Policy</h1>
+        <p>Informazioni su cookie tecnici, analitici e strumenti di tracciamento.</p>
+      </div>
+    </section>
+
+    <section class="container legal-body">
+      <article class="card" id="definizione-cookie">
+        <h2>1. Cosa sono i cookie</h2>
+        <p>
+          I cookie sono piccoli file di testo inviati al browser durante la navigazione e usati per
+          migliorare l’esperienza utente, misurare le performance del sito e gestire preferenze.
+        </p>
+      </article>
+
+      <article class="card" id="tipologie-cookie">
+        <h2>2. Tipologie utilizzate</h2>
+        <ul>
+          <li><strong>Cookie tecnici:</strong> necessari al funzionamento del sito.</li>
+          <li><strong>Cookie analitici:</strong> utili per statistiche aggregate sul traffico.</li>
+          <li><strong>Cookie di profilazione/marketing:</strong> attivati solo con consenso, ove previsti.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="consenso-cookie">
+        <h2>3. Gestione del consenso</h2>
+        <p>
+          Puoi modificare in qualsiasi momento le preferenze cookie tramite il browser e gli eventuali
+          strumenti di gestione del consenso presenti sul sito.
+        </p>
+      </article>
+
+      <article class="card" id="contatti-cookie">
+        <h2>4. Contatti</h2>
+        <p>
+          Per chiarimenti sul trattamento dei dati e sull’uso dei cookie puoi contattarci a
+          <a href={`mailto:${site.organization.email}`}>{site.organization.email}</a>.
+        </p>
+        <p class="last-update">Ultimo aggiornamento: marzo 2026</p>
+      </article>
+    </section>
+  </main>
+
+  <Footer sedeSlug="nazionale" />
+</SiteLayout>
+
+<style>
+  .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  .legal-hero { background: linear-gradient(180deg, #f8fbff 0%, #f2f7fd 100%); border-bottom: 1px solid #e3ecf7; }
+  .kicker { margin: 0 0 8px; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
+  h1 { margin: 0 0 8px; color: var(--blue-navy); }
+  .legal-hero p { margin: 0; color: #475569; }
+  .legal-body { display: grid; gap: 14px; padding-top: 20px; padding-bottom: 20px; }
+  .card { background: #fff; border: 1px solid #e5eaf3; border-radius: 12px; padding: 18px; box-shadow: 0 6px 16px rgba(15,23,42,.04); }
+  h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.1rem; }
+  p, li { color: #334155; line-height: 1.65; }
+  a { color: #1e3a8a; }
+  ul { margin: 0; padding-left: 20px; }
+  .last-update { font-size: .9rem; color: #64748b; margin-top: 8px; }
+</style>

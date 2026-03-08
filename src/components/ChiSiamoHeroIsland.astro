@@ -1,0 +1,160 @@
+---
+const kicker = 'Studio legale sfratti e locazioni';
+
+const h1 = 'Studio legale specializzato in sfratti e locazioni';
+
+const subtitle = 'Sfratto Sicuro è un progetto legale dedicato alla tutela dei proprietari di immobili e alla gestione delle procedure di sfratto su tutto il territorio nazionale. Attraverso un metodo di lavoro strutturato e una rete di avvocati selezionati, assistiamo i proprietari nelle procedure di sfratto per morosità e finita locazione fino al recupero del possesso dell\'immobile.';
+
+const bullets = [
+  'Procedure di sfratto per morosità e finita locazione',
+  'Assistenza in diritto delle locazioni con metodo strutturato',
+  'Tutela dei proprietari fino al recupero del possesso dell\'immobile'
+];
+
+const trustRow = [
+  'Studio legale focalizzato su sfratti e locazioni',
+  'Rete di avvocati selezionati',
+  'Operatività su tutto il territorio nazionale'
+];
+
+const heroBg = '/assets/img/ufficio/hero_chi_siamo.webp';
+---
+
+<section class="hero-institutional" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">{kicker}</p>
+      <h1 id="hero-title">{h1}</h1>
+      <p class="subtitle">{subtitle}</p>
+
+      <ul class="bullets" aria-label="Elementi principali">
+        {bullets.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+
+      <div class="cta-row">
+        <a href="#contatti" class="btn btn-primary">Richiedi consulenza gratuita</a>
+        <a href="#metodo-lavoro" class="btn btn-secondary">Scopri il metodo</a>
+      </div>
+
+      <div class="trust-row" aria-label="Elementi di affidabilità">
+        {trustRow.map((item) => (
+          <span>{item}</span>
+        ))}
+      </div>
+    </div>
+
+    <picture class="hero-media">
+      <source srcset={heroBg} type="image/webp" />
+      <img src={heroBg} alt="Studio legale Sfratto Sicuro – sede e team operativo" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
+</section>
+
+<style>
+  .hero-institutional {
+    margin: 0 0 24px;
+    padding: clamp(20px, 2.8vw, 34px);
+    border-radius: 0;
+    background: #f7f9fc;
+    border: 1px solid #e2e8f0;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(16px, 2.5vw, 30px);
+    align-items: center;
+  }
+
+  .hero-copy { max-width: 74ch; }
+
+  .kicker {
+    margin: 0 0 8px;
+    color: #c6902a;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .78rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 3.4vw, 2.7rem);
+    line-height: 1.12;
+    color: var(--blue-navy);
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    margin: 14px 0 0;
+    color: #334155;
+    line-height: 1.65;
+    max-width: 66ch;
+    font-size: clamp(1rem, 1.15vw, 1.06rem);
+  }
+
+  .bullets {
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    max-width: 70ch;
+  }
+
+  .bullets li {
+    position: relative;
+    padding-left: 22px;
+    color: #1e293b;
+    line-height: 1.5;
+  }
+
+  .bullets li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green-security);
+    font-weight: 700;
+  }
+
+  .cta-row { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; border-radius: 10px; padding: 12px 16px; }
+  .btn-primary { background: var(--green-security); color: #fff; }
+  .btn-secondary { background: #fff; color: var(--blue-navy); border: 1px solid #d8e1ef; }
+
+  .trust-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .trust-row span {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: #eef3fb;
+    border: 1px solid #d8e1ef;
+    color: var(--blue-navy);
+    font-size: 12px;
+  }
+
+  .hero-media {
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    border: 1px solid #dbe4f2;
+    background: #fff;
+    aspect-ratio: 16 / 10;
+  }
+
+  .hero-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  @media (min-width: 980px) {
+    .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
+    .hero-copy { max-width: 62ch; }
+    .hero-media { justify-self: end; max-width: 560px; aspect-ratio: 4 / 3; }
+  }
+</style>

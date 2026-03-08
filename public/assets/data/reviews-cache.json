@@ -1,0 +1,39 @@
+{
+    "ok": true,
+    "rating": 5,
+    "total_reviews": 12,
+    "total": 12,
+    "updated_at": "2026-02-04T13:51:24+00:00",
+    "reviews": [
+        {
+            "author": "Raffaella Striamo",
+            "rating": 5,
+            "text": "Avevo un contratto transitorio che non riuscivo a chiudere. Con Sfratto Sicuro ho risolto tutto in poco tempo, mi hanno guidato senza complicazioni. Mi sono trovato molto bene.",
+            "time": "2 mesi fa"
+        },
+        {
+            "author": "antonino zinna",
+            "rating": 5,
+            "text": "Esposizione iniziale del caso per cui ho subito ricevuto consigli molto utili che mostrano la profonda conoscenza della materia. Se avro’ un altro sfratto da eseguire lo passero’ senz’altro a questi avvocati.",
+            "time": "2 mesi fa"
+        },
+        {
+            "author": "Mario Gambina",
+            "rating": 5,
+            "text": "Contattato da vocato esperto e molto chiaro",
+            "time": "2 mesi fa"
+        },
+        {
+            "author": "Rocco",
+            "rating": 5,
+            "text": "Per caso ho trovato il servizio legale di sfratto sicuro e mi sono affidato a loro,  ho sperimentato gentilezza e professionalità. Sono contento",
+            "time": "3 mesi fa"
+        },
+        {
+            "author": "Antonio Angelico",
+            "rating": 5,
+            "text": "Mi hanno aiutato con l’inquilino che non pagava.",
+            "time": "3 mesi fa"
+        }
+    ]
+}

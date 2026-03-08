@@ -1,0 +1,118 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HomeModel from '../../components/HomeModel.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import sedi from '../../data/sedi.json';
+import site from '../../data/site.json';
+import {
+  getTerritorialFaq,
+  getTerritorialHomeSeo,
+  getTerritorialIntroText,
+  type SedeItem
+} from '../../lib/home-model';
+
+export function getStaticPaths() {
+  const allSedi = sedi as SedeItem[];
+  return allSedi.map((item) => ({
+    params: { slug: item.slug },
+    props: { sede: item }
+  }));
+}
+
+const { sede } = Astro.props as { sede: SedeItem };
+const siteUrl = site.siteUrl.replace(/\/$/, '');
+const seo = getTerritorialHomeSeo(sede);
+const { canonicalPath, title, description } = seo;
+
+const faqVisible = getTerritorialFaq(sede);
+const faqEntities = faqVisible.map((item) => ({
+  '@type': 'Question',
+  name: item.q,
+  acceptedAnswer: {
+    '@type': 'Answer',
+    text: item.a
+  }
+}));
+
+const hasRealAddress = !!(sede.officeAddress && sede.officeAddress.streetAddress && sede.officeAddress.addressLocality);
+
+const legalServiceNode: Record<string, unknown> = {
+  '@type': 'LegalService',
+  '@id': `${siteUrl}${canonicalPath}#legalservice`,
+  name: `Avvocato per sfratto a ${sede.nome}`,
+  url: `${siteUrl}${canonicalPath}`,
+  areaServed: [
+    { '@type': 'Country', name: 'IT' },
+    { '@type': 'AdministrativeArea', name: sede.regione },
+    { '@type': 'City', name: sede.nome }
+  ],
+  serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
+  provider: { '@id': `${siteUrl}/#organization` }
+};
+
+if (hasRealAddress) {
+  legalServiceNode.address = {
+    '@type': 'PostalAddress',
+    streetAddress: sede.officeAddress?.streetAddress,
+    addressLocality: sede.officeAddress?.addressLocality,
+    postalCode: sede.officeAddress?.postalCode,
+    addressRegion: sede.officeAddress?.addressRegion,
+    addressCountry: sede.officeAddress?.addressCountry || 'IT'
+  };
+}
+
+const sedeGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}${canonicalPath}#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Sedi', item: `${siteUrl}/sedi/` },
+        { '@type': 'ListItem', position: 3, name: sede.nome, item: `${siteUrl}${canonicalPath}` }
+      ]
+    },
+    legalServiceNode,
+    {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}${canonicalPath}#webpage`,
+      url: `${siteUrl}${canonicalPath}`,
+      name: title,
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      about: { '@id': `${siteUrl}${canonicalPath}#legalservice` },
+      mainEntity: { '@id': `${siteUrl}${canonicalPath}#legalservice` }
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${siteUrl}${canonicalPath}#faq`,
+      mainEntity: faqEntities
+    }
+  ]
+};
+---
+
+<SiteLayout title={title} description={description} canonicalPath={canonicalPath} image="/og-sedi.jpg">
+  <Fragment slot="head">
+    <JsonLd graph={sedeGraph} />
+  </Fragment>
+
+  <HomeModel
+    sedeSlug={sede.slug}
+    jumpTitle={`Percorso rapido · ${sede.nome}`}
+    jumpItems={[
+      { href: '#procedura-sfratto', label: 'Procedura' },
+      { href: '#faq-sfratto', label: 'FAQ locali' },
+      { href: '#contatti', label: 'Contatti' },
+      { href: '/sedi/', label: 'Tutte le sedi' }
+    ]}
+    breadcrumb={{ city: sede.nome }}
+    introText={getTerritorialIntroText(sede)}
+    faqItems={faqVisible}
+    showDoveOperiamo={false}
+    showBlogLatest={true}
+    showVideoReviews={false}
+  />
+</SiteLayout>
+

@@ -1,0 +1,97 @@
+---
+import SeoHead from '../components/SeoHead.astro';
+import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
+import CookieConsentBanner from '../components/CookieConsentBanner.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  robots?: string;
+  image?: string;
+}
+
+const {
+  title = 'Sfratto Sicuro',
+  description = 'Sito ufficiale Sfratto Sicuro',
+  canonicalPath,
+  robots = 'index,follow',
+  image
+} = Astro.props;
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SeoHead
+      title={title}
+      description={description}
+      canonicalPath={canonicalPath}
+      robots={robots}
+      image={image}
+    />
+    <slot name="head" />
+    <style is:global>
+      :root {
+        --blue-navy: #1b2951;
+        --green-security: #3bae5d;
+        --gray-pearl: #f7f8fc;
+        --anthracite: #2c3e50;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: clip;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        color: var(--anthracite);
+        background: #fff;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+        overflow-x: clip;
+      }
+
+      img,
+      svg,
+      video,
+      iframe {
+        max-width: 100%;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .section--compact {
+        padding: 40px 0;
+      }
+
+      @media (max-width: 767px) {
+        .section {
+          padding: 32px 0;
+        }
+
+        .section--compact {
+          padding: 24px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+    <CookieConsentBanner />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
+  </body>
+</html>

@@ -1,0 +1,39 @@
+# ===================================================================
+# robots.txt — sfrattosicuro.it — SEO + AI visibility (updated 2025-08-25)
+# ===================================================================
+
+# Default: massima accessibilità
+User-agent: *
+Allow: /
+
+# Crawler principali (esplicitati per chiarezza)
+User-agent: Googlebot
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawler AI / LLM (consentiti per favorire presenza nelle risposte generative)
+# Nota: *Google-Extended* e *Applebot-Extended* sono meccanismi di opt-out: lasciali non bloccati per consentire l'uso.
+User-agent: Google-Extended
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: CCBot
+Allow: /
+
+# Sitemap canonica (apex domain)
+Sitemap: https://sfrattosicuro.it/sitemap.xml

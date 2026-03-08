@@ -1,0 +1,49 @@
+﻿---
+interface Props { sedeSlug: string; }
+const { sedeSlug = 'nazionale' } = Astro.props;
+
+const points = [
+  { icon: 'scale', title: 'Procedura corretta', text: 'Corretta impostazione della procedura di sfratto.' },
+  { icon: 'clock', title: 'Riduzione dei tempi', text: 'Gestione strategica della pratica per evitare ritardi.' },
+  { icon: 'court', title: 'Assistenza in tribunale', text: 'Rappresentanza legale durante lâ€™udienza di convalida.' },
+  { icon: 'home', title: 'Liberazione dellâ€™immobile', text: 'Gestione completa della fase esecutiva.' }
+];
+---
+
+<section class="section" id="perche-avvocato" aria-labelledby="why-title">
+  <div class="container">
+    <h2 id="why-title">PerchÃ© affidarsi a un avvocato per sfratto</h2>
+
+    <div class="grid4">
+      {points.map((point) => (
+        <article class="box">
+          <span class="icon" aria-hidden="true">
+            {point.icon === 'scale' && <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 7h10M5 7l-3 5h6l-3-5Zm14 0-3 5h6l-3-5ZM9 21h6"/></svg>}
+            {point.icon === 'clock' && <svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z"/></svg>}
+            {point.icon === 'court' && <svg viewBox="0 0 24 24" fill="none"><path d="M3 10h18M5 10V7l7-4 7 4v3M6 10v8m4-8v8m4-8v8m4-8v8M3 21h18"/></svg>}
+            {point.icon === 'home' && <svg viewBox="0 0 24 24" fill="none"><path d="M3 11.5 12 4l9 7.5M5 10.5V20h14v-9.5"/></svg>}
+          </span>
+          <h3>{point.title}</h3>
+          <p>{point.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section { padding: 56px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 28px; color: var(--blue-navy); }
+  p { margin: 0 0 16px; line-height: 1.6; color: #334155; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .box { background: #f9fafb; border-radius: 12px; padding: 24px; border: 1px solid #e5e7eb; }
+  .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
+  .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  h3 { margin: 0 0 10px; color: var(--blue-navy); }
+  .box p { margin: 0; }
+
+  @media (max-width: 1024px) { .grid4 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) { .section { padding: 32px 0; } .grid4 { grid-template-columns: 1fr; } }
+</style>
+

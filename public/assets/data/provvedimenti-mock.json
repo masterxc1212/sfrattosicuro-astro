@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "source": "local-mock",
+  "totalProvvedimenti": 4,
+  "lastUpdated": "2026-03-08T09:48:40.136Z",
+  "provvedimenti": [
+    {
+      "image": "/assets/img/provvedimenti/01.webp",
+      "alt": "Provvedimento di convalida sfratto 1",
+      "title": "Convalida ottenuta",
+      "description": "Provvedimento reale emesso dal tribunale competente.",
+      "badge": "Certificato"
+    },
+    {
+      "image": "/assets/img/provvedimenti/02.webp",
+      "alt": "Provvedimento di convalida sfratto 2",
+      "title": "Convalida ottenuta",
+      "description": "Provvedimento reale emesso dal tribunale competente.",
+      "badge": "Certificato"
+    },
+    {
+      "image": "/assets/img/provvedimenti/03.webp",
+      "alt": "Provvedimento di convalida sfratto 3",
+      "title": "Convalida ottenuta",
+      "description": "Provvedimento reale emesso dal tribunale competente.",
+      "badge": "Certificato"
+    },
+    {
+      "image": "/assets/img/provvedimenti/04.webp",
+      "alt": "Provvedimento di convalida sfratto 4",
+      "title": "Convalida ottenuta",
+      "description": "Provvedimento reale emesso dal tribunale competente.",
+      "badge": "Certificato"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+---
+import HeaderIsland from './HeaderIsland.astro';
+import HeroInstitutionalIsland from './HeroInstitutionalIsland.astro';
+import SedeIdentityIsland from './SedeIdentityIsland.astro';
+import TerritorialCtaIsland from './TerritorialCtaIsland.astro';
+import WhenPossibleSection from './WhenPossibleSection.astro';
+import ProcedureSection from './ProcedureSection.astro';
+import TypesSection from './TypesSection.astro';
+import TimelineSection from './TimelineSection.astro';
+import WhyLawyerSection from './WhyLawyerSection.astro';
+import TerritoryCoverageSection from './TerritoryCoverageSection.astro';
+import DoveOperiamoSection from './DoveOperiamoSection.astro';
+import StudioSection from './StudioSection.astro';
+import ProvvedimentiIsland from './ProvvedimentiIsland.astro';
+import ReviewsIsland from './ReviewsIsland.astro';
+import LatestBlogPostsIsland from './LatestBlogPostsIsland.astro';
+import VideoReviewsIsland from './VideoReviewsIsland.astro';
+import FaqSection from './FaqSection.astro';
+import ContactFormIsland from './ContactFormIsland.astro';
+import Footer from './Footer.astro';
+import SmoothScrollIsland from './SmoothScrollIsland.astro';
+import PageJumpNavIsland from './PageJumpNavIsland.astro';
+
+interface JumpItem {
+  href: string;
+  label: string;
+}
+
+interface Breadcrumb {
+  city: string;
+}
+
+interface Props {
+  sedeSlug?: string;
+  jumpTitle?: string;
+  jumpItems?: JumpItem[];
+  breadcrumb?: Breadcrumb;
+  introText?: string;
+  showDoveOperiamo?: boolean;
+  showVideoReviews?: boolean;
+  showBlogLatest?: boolean;
+  faqItems?: { q: string; a: string }[];
+}
+
+const {
+  sedeSlug = 'nazionale',
+  jumpTitle = 'Percorso rapido',
+  jumpItems = [
+    { href: '#procedura-sfratto', label: 'Procedura' },
+    { href: '#faq-sfratto', label: 'FAQ' },
+    { href: '#contatti', label: 'Contatti' }
+  ],
+  breadcrumb,
+  introText,
+  showDoveOperiamo = false,
+  showVideoReviews = false,
+  showBlogLatest = true,
+  faqItems
+} = Astro.props;
+
+const isNational = sedeSlug === 'nazionale';
+---
+
+<HeaderIsland />
+<PageJumpNavIsland title={jumpTitle} items={jumpItems} />
+
+<main id="main-content">
+  {breadcrumb && (
+    <nav class="breadcrumb container" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/sedi/">Sedi</a>
+      <span>/</span>
+      <span aria-current="page">{breadcrumb.city}</span>
+    </nav>
+  )}
+
+  <HeroInstitutionalIsland sedeSlug={sedeSlug} />
+  <SedeIdentityIsland sedeSlug={sedeSlug} />
+  <TerritorialCtaIsland sedeSlug={sedeSlug} />
+
+  {introText && (
+    <section class="section section--compact intro container">
+      <p>{introText}</p>
+      {!isNational && <a class="back-link" href="/sedi/">← Torna all'elenco sedi</a>}
+    </section>
+  )}
+
+  <WhenPossibleSection sedeSlug={sedeSlug} />
+  <ProcedureSection sedeSlug={sedeSlug} />
+  <TypesSection sedeSlug={sedeSlug} />
+  <TimelineSection sedeSlug={sedeSlug} />
+  <WhyLawyerSection sedeSlug={sedeSlug} />
+  <TerritoryCoverageSection sedeSlug={sedeSlug} />
+
+  {showDoveOperiamo && <DoveOperiamoSection />}
+
+  <StudioSection sedeSlug={sedeSlug} />
+  <ProvvedimentiIsland />
+  <ReviewsIsland />
+
+  {showBlogLatest && <LatestBlogPostsIsland />}
+  {showVideoReviews && <VideoReviewsIsland />}
+
+  <FaqSection sedeSlug={sedeSlug} faqItems={faqItems} />
+  <ContactFormIsland />
+</main>
+
+<Footer sedeSlug={sedeSlug} />
+<SmoothScrollIsland />
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 18px;
+    font-size: .95rem;
+    color: #64748b;
+  }
+
+  .breadcrumb a { color: #1e3a8a; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .intro p { margin: 0 0 12px; line-height: 1.65; color: #334155; }
+  .back-link { color: #1e3a8a; text-decoration: none; font-weight: 600; }
+</style>

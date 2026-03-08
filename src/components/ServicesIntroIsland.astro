@@ -1,0 +1,77 @@
+<section class="section section--compact" aria-labelledby="services-intro-title">
+  <div class="container intro-grid">
+    <div class="intro-copy">
+      <p class="kicker">Gestione locazioni</p>
+      <h2 id="services-intro-title">Assistenza legale nella gestione delle locazioni</h2>
+      <p>
+        La gestione di un immobile locato può comportare diverse problematiche: ritardi nei pagamenti,
+        violazioni contrattuali, controversie con l’inquilino o difficoltà nel rilascio dell’immobile.
+      </p>
+      <p>
+        Sfratto Sicuro offre assistenza legale ai proprietari nelle principali attività legate alla locazione,
+        con servizi specifici per la gestione delle criticità che possono insorgere durante il rapporto locativo.
+      </p>
+    </div>
+
+    <aside class="intro-highlights" aria-label="Punti chiave del servizio">
+      <p class="chip">Sfratto per morosità</p>
+      <p class="chip">Sfratto per finita locazione</p>
+      <p class="chip">Recupero canoni non pagati</p>
+      <p class="chip">Tutela continuativa del proprietario</p>
+    </aside>
+  </div>
+</section>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .kicker {
+    margin: 0 0 8px;
+    color: #c6902a;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .78rem;
+    font-weight: 700;
+  }
+
+  h2 { margin: 0 0 14px; color: var(--blue-navy); }
+  p { margin: 0 0 12px; color: #334155; line-height: 1.7; }
+
+  .intro-highlights {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 18px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    display: grid;
+    gap: 8px;
+  }
+
+  .chip {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: #eef3fb;
+    border: 1px solid #d8e1ef;
+    color: var(--blue-navy);
+    font-size: .9rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 900px) {
+    .intro-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 767px) {
+    .container { padding: 0 16px; }
+  }
+</style>

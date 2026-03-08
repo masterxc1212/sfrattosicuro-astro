@@ -1,0 +1,71 @@
+---
+const fallbackProvvedimenti = [
+  { image: '/assets/img/provvedimenti/01.webp', alt: 'Provvedimento di convalida sfratto 1', title: 'Convalida ottenuta', description: 'Provvedimento reale emesso dal tribunale competente.' },
+  { image: '/assets/img/provvedimenti/02.webp', alt: 'Provvedimento di convalida sfratto 2', title: 'Convalida ottenuta', description: 'Documentazione anonimizzata a tutela della privacy.' },
+  { image: '/assets/img/provvedimenti/03.webp', alt: 'Provvedimento di convalida sfratto 3', title: 'Convalida ottenuta', description: 'Esito concreto su procedura di morosità.' },
+  { image: '/assets/img/provvedimenti/04.webp', alt: 'Provvedimento di convalida sfratto 4', title: 'Convalida ottenuta', description: 'Esempio di rilascio ottenuto in sede giudiziale.' }
+];
+
+const metrics = [
+  { title: 'Documentazione verificabile', text: 'Esempi reali di atti e provvedimenti anonimizzati.' },
+  { title: 'Aggiornamento costante', text: 'Archivio aggiornato con nuovi esiti.' },
+  { title: 'Trasparenza documentale', text: 'Risultati consultabili per comprendere la procedura.' }
+];
+---
+
+<section class="section" id="risultati-concreti" aria-labelledby="provvedimenti-title">
+  <div class="container">
+    <header class="head">
+      <h2 id="provvedimenti-title">I Nostri Risultati Concreti</h2>
+      <p>Mostriamo esempi reali di provvedimenti di convalida ottenuti.</p>
+    </header>
+
+    <div class="metrics">
+      {metrics.map((m) => (
+        <article class="metric-card">
+          <p class="m-title">{m.title}</p>
+          <p class="m-text">{m.text}</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="gallery" role="list">
+      {fallbackProvvedimenti.map((item, index) => (
+        <article class="doc" role="listitem" data-index={index}>
+          <img src={item.image} alt={item.alt} loading="lazy" width="600" height="800" decoding="async" />
+          <div class="overlay"></div>
+          <div class="text">
+            <p class="t">{item.title}</p>
+            <p class="d">{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/provvedimenti-loader.js" defer></script>
+
+<style>
+  .section { padding: 56px 0; background: linear-gradient(180deg,#fff 0%,var(--gray-pearl) 100%); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 22px; color: var(--blue-navy); }
+  p { margin: 0 0 14px; line-height: 1.6; color: #334155; }
+  .head { text-align: center; }
+
+  .metrics { display:grid; grid-template-columns: repeat(3,1fr); gap:24px; margin-bottom: 24px; }
+  .metric-card { background:#fff; border-radius:12px; padding:24px; border:1px solid #e5e7eb; box-shadow: 0 4px 10px rgba(0,0,0,.04); }
+  .m-title { margin:0 0 8px; color: var(--blue-navy); font-weight:700; }
+  .m-text { margin:0; color:#475569; }
+
+  #risultati-concreti :global(.gallery) { display:grid; grid-template-columns: repeat(4,1fr); gap:24px; }
+  #risultati-concreti :global(.doc) { position:relative; overflow:hidden; border-radius:12px; aspect-ratio: 3 / 4; background:#e5e7eb; }
+  #risultati-concreti :global(.doc img) { width:100%; height:100%; object-fit:cover; display:block; }
+  #risultati-concreti :global(.overlay) { position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,.6), transparent); }
+  #risultati-concreti :global(.text) { position:absolute; left:16px; bottom:16px; color:#fff; }
+  #risultati-concreti :global(.doc .t) { margin:0; font-weight:700; color:#fff; }
+  #risultati-concreti :global(.doc .d) { margin:4px 0 0; color:#fff; font-size:.85rem; opacity:.95; }
+
+  @media (max-width: 1024px){ .section{padding:44px 0;} .metrics{grid-template-columns:1fr;} #risultati-concreti :global(.gallery){grid-template-columns:repeat(2,1fr)} }
+  @media (max-width: 767px){ .section{padding:32px 0;} #risultati-concreti :global(.gallery){grid-template-columns:1fr} }
+</style>

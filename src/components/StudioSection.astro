@@ -1,0 +1,61 @@
+---
+interface Props { sedeSlug: string; }
+const { sedeSlug = 'nazionale' } = Astro.props;
+---
+
+<section class="section" id="lo-studio" aria-labelledby="studio-title">
+  <div class="container studio-grid">
+    <div class="studio-copy">
+      <h2 id="studio-title">Uno studio legale focalizzato sulle procedure di sfratto</h2>
+      <p>Assistiamo proprietari di immobili nella gestione delle procedure di sfratto per morosità e finita locazione fino al rilascio dell’immobile.</p>
+    </div>
+
+    <picture class="studio-media">
+      <source srcset="/assets/img/ufficio/elemento_home.webp" type="image/webp" />
+      <img src="/assets/img/ufficio/elemento_home.webp" alt="Studio legale Sfratto Sicuro - ufficio" loading="lazy" />
+    </picture>
+  </div>
+</section>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  h2 { margin: 0 0 18px; color: var(--blue-navy); }
+  p { margin: 0; line-height: 1.7; color: #334155; font-size: 1.06rem; }
+
+  .studio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(20px, 3vw, 36px);
+    align-items: center;
+  }
+
+  .studio-copy { max-width: 62ch; }
+
+  .studio-media {
+    justify-self: end;
+    width: min(100%, 520px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.12);
+    aspect-ratio: 4 / 3;
+  }
+
+  .studio-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  @media (max-width: 900px) {
+    .studio-grid { grid-template-columns: 1fr; }
+    .studio-copy { max-width: none; }
+    .studio-media {
+      order: -1;
+      width: 100%;
+      max-width: 680px;
+      justify-self: center;
+      aspect-ratio: 16 / 10;
+    }
+  }
+</style>

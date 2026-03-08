@@ -1,0 +1,81 @@
+<section id="calcolatore-perdite" class="block">
+  <h2>Calcola le Tue Perdite Reali</h2>
+
+  <div class="calc-grid">
+    <label>Canone mensile (€)
+      <input id="canone" type="number" value="1200" min="0" step="50" />
+    </label>
+    <label>Oneri condominiali (€)
+      <input id="oneri" type="number" value="180" min="0" step="10" />
+    </label>
+    <label>Tasse/IMU mensili (€)
+      <input id="tasse" type="number" value="200" min="0" step="10" />
+    </label>
+    <label>Usura/Danni mensili (€)
+      <input id="usura" type="number" value="100" min="0" step="10" />
+    </label>
+    <label>Mesi di morosità
+      <input id="mesi" type="number" value="3" min="1" max="60" step="1" />
+    </label>
+  </div>
+
+  <div class="results">
+    <p>Perdita canoni: <strong>€ <span id="perdita-canoni">0</span></strong></p>
+    <p>Perdita oneri: <strong>€ <span id="perdita-oneri">0</span></strong></p>
+    <p>Perdita tasse: <strong>€ <span id="perdita-tasse">0</span></strong></p>
+    <p>Perdita usura: <strong>€ <span id="perdita-usura">0</span></strong></p>
+    <p class="tot">Perdita totale: <strong>€ <span id="perdita-totale">0</span></strong></p>
+    <p class="tot">Perdita mensile: <strong>€ <span id="perdita-mensile">0</span></strong></p>
+    <p style="display:none">mirror: <span id="perdita-mensile-2">0</span></p>
+  </div>
+</section>
+
+<script>
+(() => {
+  const calc = () => {
+    const canone = parseFloat(document.getElementById('canone').value || '0') || 0;
+    const oneri = parseFloat(document.getElementById('oneri').value || '0') || 0;
+    const tasse = parseFloat(document.getElementById('tasse').value || '0') || 0;
+    const usura = parseFloat(document.getElementById('usura').value || '0') || 0;
+    const mesi = parseInt(document.getElementById('mesi').value || '1', 10) || 1;
+
+    const perditaCanoni = canone * mesi;
+    const perditaOneri = oneri * mesi;
+    const perditaTasse = tasse * mesi;
+    const perditaUsura = usura * mesi;
+    const perditaTotale = perditaCanoni + perditaOneri + perditaTasse + perditaUsura;
+    const perditaMensile = canone + oneri + tasse + usura;
+
+    const elementi = {
+      'perdita-canoni': perditaCanoni,
+      'perdita-oneri': perditaOneri,
+      'perdita-tasse': perditaTasse,
+      'perdita-usura': perditaUsura,
+      'perdita-totale': perditaTotale,
+      'perdita-mensile': perditaMensile,
+      'perdita-mensile-2': perditaMensile
+    };
+
+    Object.entries(elementi).forEach(([id, valore]) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = Number(valore).toLocaleString('it-IT');
+    });
+  };
+
+  ['canone','oneri','tasse','usura','mesi'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calc, { passive: true });
+  });
+
+  calc();
+})();
+</script>
+
+<style>
+  .block { margin: 2.5rem 0; padding: 1.2rem; border: 1px solid #e7edf5; border-radius: 12px; }
+  .calc-grid { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  label { display: grid; gap: .35rem; font-weight: 600; color: var(--blue-navy); }
+  input { padding: .65rem; border: 1px solid #ccd7e6; border-radius: 8px; }
+  .results { margin-top: 1rem; display: grid; gap: .35rem; }
+  .tot { color: var(--blue-navy); }
+</style>

@@ -1,0 +1,626 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HeaderIsland from '../../components/HeaderIsland.astro';
+import Footer from '../../components/Footer.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import PageJumpNavIsland from '../../components/PageJumpNavIsland.astro';
+import sedi from '../../data/sedi.json';
+import site from '../../data/site.json';
+
+type SedeItem = {
+  nome: string;
+  slug: string;
+  regione: string;
+};
+
+const list = (sedi as SedeItem[])
+  .slice()
+  .sort((a, b) => a.regione.localeCompare(b.regione, 'it') || a.nome.localeCompare(b.nome, 'it'));
+
+const grouped = list.reduce((acc, item) => {
+  if (!acc[item.regione]) acc[item.regione] = [];
+  acc[item.regione].push(item);
+  return acc;
+}, {} as Record<string, SedeItem[]>);
+
+const regionNames = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'it'));
+const totalSedi = list.length;
+const totalRegioni = regionNames.length;
+
+const topCities = ['Milano', 'Roma', 'Napoli', 'Torino', 'Bologna', 'Firenze'];
+
+const macroAreaByRegione: Record<string, 'Nord' | 'Centro' | 'Sud' | 'Isole'> = {
+  "Valle d'Aosta": 'Nord',
+  Piemonte: 'Nord',
+  Lombardia: 'Nord',
+  Liguria: 'Nord',
+  Veneto: 'Nord',
+  'Trentino Alto Adige': 'Nord',
+  'Friuli Venezia Giulia': 'Nord',
+  'Emilia Romagna': 'Nord',
+  Toscana: 'Centro',
+  Umbria: 'Centro',
+  Marche: 'Centro',
+  Lazio: 'Centro',
+  Abruzzo: 'Sud',
+  Molise: 'Sud',
+  Campania: 'Sud',
+  Puglia: 'Sud',
+  Basilicata: 'Sud',
+  Calabria: 'Sud',
+  Sicilia: 'Isole',
+  Sardegna: 'Isole'
+};
+
+const macroAreaStats = list.reduce(
+  (acc, item) => {
+    const area = macroAreaByRegione[item.regione] ?? 'Nord';
+    acc[area] += 1;
+    return acc;
+  },
+  { Nord: 0, Centro: 0, Sud: 0, Isole: 0 } as Record<'Nord' | 'Centro' | 'Sud' | 'Isole', number>
+);
+
+const regionToId = (region: string) => `regione-${region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
+const regionMapLayout: Array<{ name: string; short: string; col: number; row: number }> = [
+  { name: "Valle d'Aosta", short: 'VDA', col: 1, row: 1 },
+  { name: 'Piemonte', short: 'PIE', col: 2, row: 1 },
+  { name: 'Lombardia', short: 'LOM', col: 3, row: 1 },
+  { name: 'Trentino Alto Adige', short: 'TAA', col: 4, row: 1 },
+  { name: 'Veneto', short: 'VEN', col: 5, row: 1 },
+  { name: 'Friuli Venezia Giulia', short: 'FVG', col: 6, row: 1 },
+  { name: 'Liguria', short: 'LIG', col: 2, row: 2 },
+  { name: 'Emilia Romagna', short: 'EMR', col: 4, row: 2 },
+  { name: 'Toscana', short: 'TOS', col: 3, row: 3 },
+  { name: 'Umbria', short: 'UMB', col: 4, row: 3 },
+  { name: 'Marche', short: 'MAR', col: 5, row: 3 },
+  { name: 'Lazio', short: 'LAZ', col: 3, row: 4 },
+  { name: 'Abruzzo', short: 'ABR', col: 5, row: 4 },
+  { name: 'Molise', short: 'MOL', col: 5, row: 5 },
+  { name: 'Campania', short: 'CAM', col: 4, row: 5 },
+  { name: 'Puglia', short: 'PUG', col: 6, row: 6 },
+  { name: 'Basilicata', short: 'BAS', col: 5, row: 6 },
+  { name: 'Calabria', short: 'CAL', col: 5, row: 7 },
+  { name: 'Sardegna', short: 'SAR', col: 1, row: 6 },
+  { name: 'Sicilia', short: 'SIC', col: 3, row: 8 }
+].filter((item) => regionNames.includes(item.name));
+
+const siteUrl = site.siteUrl.replace(/\/$/, '');
+
+const sediItemList = list.map((item, index) => ({
+  '@type': 'ListItem',
+  position: index + 1,
+  name: `Avvocato per sfratto a ${item.nome}`,
+  url: `${siteUrl}/sedi/${item.slug}/`
+}));
+
+const sediGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: `${siteUrl}/`,
+      name: site.organization.name,
+      inLanguage: 'it-IT',
+      publisher: { '@id': `${siteUrl}/#organization` }
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: site.organization.name,
+      legalName: site.organization.legalName,
+      url: `${siteUrl}/`,
+      logo: {
+        '@type': 'ImageObject',
+        url: site.organization.logoUrl
+      }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}/sedi/#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Sedi', item: `${siteUrl}/sedi/` }
+      ]
+    },
+    {
+      '@type': 'CollectionPage',
+      '@id': `${siteUrl}/sedi/#collectionpage`,
+      url: `${siteUrl}/sedi/`,
+      name: 'Sedi territoriali | Sfratto Sicuro',
+      description: 'Elenco delle sedi territoriali e presidi operativi in Italia per assistenza legale nelle procedure di sfratto.',
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      about: { '@id': `${siteUrl}/#organization` },
+      breadcrumb: { '@id': `${siteUrl}/sedi/#breadcrumbs` },
+      mainEntity: { '@id': `${siteUrl}/sedi/#itemlist` }
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${siteUrl}/sedi/#itemlist`,
+      name: 'Elenco sedi territoriali',
+      numberOfItems: totalSedi,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      itemListElement: sediItemList
+    }
+  ]
+};
+---
+
+<SiteLayout
+  title="Sedi territoriali | Sfratto Sicuro"
+  description="Elenco delle sedi territoriali e presidi operativi in Italia per assistenza legale nelle procedure di sfratto."
+  canonicalPath="/sedi/"
+>
+  <Fragment slot="head">
+    <JsonLd graph={sediGraph} />
+  </Fragment>
+
+  <HeaderIsland />
+  <PageJumpNavIsland
+    title="Percorso rapido"
+    items={[
+      { href: '#citySearch', label: 'Cerca città' },
+      { href: '#regionIndex', label: 'Indice regioni' },
+      { href: '#regionList', label: 'Elenco sedi' },
+      { href: '/servizi/#contatti', label: 'Richiedi consulenza' }
+    ]}
+  />
+
+  <main id="main-content">
+    <section class="section section--compact sedi-hero">
+      <div class="container">
+        <p class="kicker">Rete territoriale</p>
+        <h1>Sedi territoriali</h1>
+        <p class="hero-sub">Trova rapidamente la sede di riferimento per città o regione e accedi alla pagina locale dedicata.</p>
+
+        <div class="stats" aria-label="Statistiche sedi">
+          <span>{totalSedi} sedi operative</span>
+          <span>{totalRegioni} regioni coperte</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact coverage-visual" aria-label="Copertura nazionale">
+      <div class="container coverage-grid">
+        <div class="coverage-copy">
+          <h2>Copertura nazionale a colpo d'occhio</h2>
+          <p>
+            La rete è distribuita su tutto il territorio italiano, con presidi operativi nelle principali aree
+            geografiche. Seleziona una regione dalla mappa per saltare direttamente alla sezione dedicata.
+          </p>
+
+          <div class="macro-stats" aria-label="Sedi per macro area">
+            <span><strong>{macroAreaStats.Nord}</strong> Nord</span>
+            <span><strong>{macroAreaStats.Centro}</strong> Centro</span>
+            <span><strong>{macroAreaStats.Sud}</strong> Sud</span>
+            <span><strong>{macroAreaStats.Isole}</strong> Isole</span>
+          </div>
+        </div>
+
+        <div class="italy-map-card" role="img" aria-label="Mappa schematica dell'Italia con regioni cliccabili">
+          <p class="map-caption">Mappa operativa (schematica)</p>
+          <div class="italy-map-grid">
+            {regionMapLayout.map((region) => (
+              <a
+                href={`#${regionToId(region.name)}`}
+                class="region-node"
+                style={`grid-column:${region.col};grid-row:${region.row};`}
+                aria-label={`Vai alla sezione ${region.name}`}
+                title={region.name}
+              >
+                <span>{region.short}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact sticky-tools" aria-label="Ricerca e filtri">
+      <div class="container tools-grid">
+        <label class="field">
+          <span>Cerca città</span>
+          <input id="citySearch" type="search" placeholder="Es. Milano, Roma, Napoli" aria-label="Cerca una città" />
+        </label>
+
+        <label class="field">
+          <span>Filtra per regione</span>
+          <select id="regionFilter" aria-label="Filtra per regione">
+            <option value="">Tutte le regioni</option>
+            {regionNames.map((region) => (
+              <option value={region}>{region}</option>
+            ))}
+          </select>
+        </label>
+
+        <button id="resetFilters" type="button" class="btn-reset">Reset</button>
+      </div>
+
+      <div class="container quick-links">
+        <p class="quick-title">Città più cercate</p>
+        <div class="chips">
+          {topCities.map((city) => (
+            <button type="button" class="city-chip" data-city-chip={city}>{city}</button>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container region-index" id="regionIndex" aria-label="Indice regioni">
+        {regionNames.map((region) => (
+          <a href={`#${regionToId(region)}`}>{region}</a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <p id="resultsCounter" class="results-counter" aria-live="polite"></p>
+        <p id="noResults" class="no-results" hidden>Nessuna sede trovata con i filtri selezionati.</p>
+
+        <div class="region-list" id="regionList">
+          {regionNames.map((region, index) => {
+            const isOpen = index < 2;
+            return (
+              <details class="region" open={isOpen} data-region={region} id={regionToId(region)}>
+                <summary>
+                  <h2>{region}</h2>
+                  <span>{grouped[region].length} sedi</span>
+                </summary>
+                <ul class="city-grid">
+                  {grouped[region].map((item) => (
+                    <li data-city={item.nome.toLowerCase()}>
+                      <a href={`/sedi/${item.slug}/`}>Avvocato per sfratto a {item.nome}</a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</SiteLayout>
+
+<script>
+  const searchInput = document.getElementById('citySearch');
+  const regionFilter = document.getElementById('regionFilter');
+  const resetBtn = document.getElementById('resetFilters');
+  const regionList = Array.from(document.querySelectorAll('.region'));
+  const resultsCounter = document.getElementById('resultsCounter');
+  const noResults = document.getElementById('noResults');
+  const cityChips = Array.from(document.querySelectorAll('[data-city-chip]'));
+
+  const updateCounter = (count) => {
+    if (!resultsCounter) return;
+    resultsCounter.textContent = count === 1 ? '1 sede trovata' : `${count} sedi trovate`;
+  };
+
+  const applyFilters = () => {
+    const query = (searchInput?.value || '').trim().toLowerCase();
+    const selectedRegion = regionFilter?.value || '';
+    let totalVisibleCities = 0;
+
+    regionList.forEach((regionEl) => {
+      const regionName = regionEl.getAttribute('data-region') || '';
+      const matchesRegion = !selectedRegion || regionName === selectedRegion;
+
+      let visibleCities = 0;
+      regionEl.querySelectorAll('li[data-city]').forEach((li) => {
+        const city = li.getAttribute('data-city') || '';
+        const show = city.includes(query);
+        li.style.display = show ? '' : 'none';
+        if (show) visibleCities++;
+      });
+
+      const showRegion = matchesRegion && visibleCities > 0;
+      regionEl.style.display = showRegion ? '' : 'none';
+      if (showRegion && query) regionEl.setAttribute('open', 'open');
+      totalVisibleCities += showRegion ? visibleCities : 0;
+    });
+
+    updateCounter(totalVisibleCities);
+    if (noResults) noResults.hidden = totalVisibleCities !== 0;
+  };
+
+  searchInput?.addEventListener('input', applyFilters);
+  regionFilter?.addEventListener('change', applyFilters);
+
+  resetBtn?.addEventListener('click', () => {
+    if (searchInput) searchInput.value = '';
+    if (regionFilter) regionFilter.value = '';
+    applyFilters();
+  });
+
+  cityChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const city = chip.getAttribute('data-city-chip') || '';
+      if (searchInput) searchInput.value = city;
+      applyFilters();
+    });
+  });
+
+  applyFilters();
+</script>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  .sedi-hero {
+    background: linear-gradient(180deg, #f8fbff 0%, #f3f7fd 100%);
+    border-bottom: 1px solid #e6edf7;
+  }
+
+  .kicker {
+    margin: 0 0 8px;
+    color: #c6902a;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .78rem;
+    font-weight: 700;
+  }
+
+  h1 { margin: 0 0 10px; color: var(--blue-navy); }
+  .hero-sub { margin: 0; max-width: 760px; color: #334155; line-height: 1.65; }
+
+  .stats {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .stats span {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: #eef3fb;
+    border: 1px solid #d8e1ef;
+    color: var(--blue-navy);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .coverage-visual {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border-bottom: 1px solid #ecf1f7;
+  }
+
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .coverage-copy h2 {
+    margin: 0 0 10px;
+    color: var(--blue-navy);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+
+  .coverage-copy p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.65;
+    max-width: 68ch;
+  }
+
+  .macro-stats {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .macro-stats span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: #eef3fb;
+    border: 1px solid #d8e1ef;
+    color: var(--blue-navy);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .macro-stats strong { color: #c6902a; }
+
+  .italy-map-card {
+    border: 1px solid #d8e1ef;
+    border-radius: 14px;
+    background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 52%);
+    padding: 14px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .map-caption {
+    margin: 0 0 10px;
+    color: #64748b;
+    font-size: .82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .italy-map-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(8, 34px);
+    gap: 8px;
+  }
+
+  .region-node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    border-radius: 10px;
+    border: 1px solid #cfe0f5;
+    background: #f8fbff;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .78rem;
+    transition: transform .15s ease, background-color .2s ease, box-shadow .2s ease;
+  }
+
+  .region-node:hover,
+  .region-node:focus-visible {
+    background: #e8f2ff;
+    box-shadow: 0 6px 14px rgba(30, 64, 175, 0.18);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .sticky-tools {
+    position: sticky;
+    top: 78px;
+    z-index: 20;
+    background: #fff;
+    border-bottom: 1px solid #ecf1f7;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px auto;
+    gap: 12px;
+    align-items: end;
+  }
+
+  .field { display: grid; gap: 6px; }
+  .field span { color: #475569; font-size: .85rem; font-weight: 600; }
+
+  input, select {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font: inherit;
+    background: #fff;
+  }
+
+  .btn-reset {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: var(--blue-navy);
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .quick-links { margin-top: 10px; }
+  .quick-title { margin: 0 0 8px; font-size: .84rem; font-weight: 700; color: #64748b; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .city-chip {
+    border: 1px solid #d8e1ef;
+    background: #f8fbff;
+    color: var(--blue-navy);
+    border-radius: 999px;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: .92rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .region-index { display: flex; flex-wrap: wrap; gap: 10px; }
+  .region-index a {
+    text-decoration: none;
+    color: var(--blue-navy);
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-weight: 600;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .results-counter { margin: 0 0 10px; color: #475569; font-weight: 600; }
+  .no-results {
+    margin: 0 0 14px;
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+
+  .region-list { display: grid; gap: 12px; }
+  .region {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 4px 16px 14px;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.04);
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 0;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+  h2 { margin: 0; color: var(--blue-navy); font-size: 1.02rem; }
+  summary span { color: #64748b; font-weight: 700; font-size: .85rem; }
+
+  .city-grid {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 14px;
+  }
+
+  .city-grid a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    line-height: 1.35;
+  }
+  .city-grid a:hover { text-decoration: underline; }
+
+  @media (max-width: 1024px) {
+    .coverage-grid { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: 1fr 1fr auto; }
+  }
+
+  @media (max-width: 900px) {
+    .sticky-tools { top: 70px; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .btn-reset { width: fit-content; }
+    .city-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .italy-map-grid { grid-template-rows: repeat(8, 44px); gap: 8px; }
+    .region-node { font-size: .74rem; min-height: 44px; }
+  }
+
+  @media (max-width: 767px) {
+    .container { padding: 0 16px; }
+  }
+
+  @media (max-width: 640px) {
+    .city-grid { grid-template-columns: 1fr; }
+  }
+</style>

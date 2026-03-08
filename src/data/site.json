@@ -1,0 +1,29 @@
+{
+  "name": "Sfratto Sicuro",
+  "siteUrl": "https://www.sfrattosicuro.it",
+  "url": "https://www.sfrattosicuro.it",
+  "language": "it",
+  "meta_description_default": "Assistenza legale specializzata per sfratti per morosità. Recupera il tuo immobile in 60 giorni.",
+  "organization": {
+    "name": "Sfratto Sicuro",
+    "legalName": "D1 S.R.L.S.",
+    "vatID": "IT06177400659",
+    "email": "consulenza@sfrattosicuro.it",
+    "telephone": "+39 02 8089 8395",
+    "whatsappUrl": "https://wa.me/393291175957",
+    "logoUrl": "https://www.sfrattosicuro.it/assets/img/logo/logo.png",
+    "nationalAddress": {
+      "streetAddress": "Via Francesco Paolo Volpe 2",
+      "addressLocality": "Salerno",
+      "postalCode": "84122",
+      "addressRegion": "Campania",
+      "addressCountry": "IT"
+    },
+    "sameAs": [
+      "https://www.google.com/maps/dir//Sfratto+Sicuro,+Via+Francesco+Paolo+Volpe,+2,+84122+Salerno+SA/@40.6780298,14.7637623,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xa8aa8f35a7b31523:0x135b9ac0f4c4c73f!2m2!1d14.7664777!2d40.6780005?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
+    ]
+  },
+  "social": {
+    "whatsapp": "https://wa.me/393519179179"
+  }
+}

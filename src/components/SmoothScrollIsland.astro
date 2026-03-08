@@ -1,0 +1,22 @@
+<script>
+  if (typeof window !== 'undefined') {
+    const onScroll = () => {
+      document.body.classList.toggle('scrolled', window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const anchor = target.closest('a[href^="#"]');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#') return;
+      const el = document.querySelector(href);
+      if (!el) return;
+      event.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+</script>

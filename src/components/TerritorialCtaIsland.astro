@@ -1,0 +1,105 @@
+---
+import sedi from '../data/sedi.json';
+
+interface SedeItem {
+  nome: string;
+  slug: string;
+  tribunale?: string;
+  regione?: string;
+}
+
+interface Props {
+  sedeSlug?: string;
+}
+
+const { sedeSlug = 'nazionale' } = Astro.props;
+const isNational = !sedeSlug || sedeSlug === 'nazionale';
+const sede = (sedi as SedeItem[]).find((item) => item.slug === sedeSlug);
+
+const title = isNational
+  ? 'Parla con un team specializzato in sfratti'
+  : `Richiedi supporto territoriale per ${sede?.nome ?? 'la tua città'}`;
+
+const subtitle = isNational
+  ? 'Valutiamo il tuo caso e definiamo il percorso operativo più adatto, con copertura su tutta Italia.'
+  : `Ti affianchiamo nelle attività presso ${sede?.tribunale ?? `il tribunale di ${sede?.nome ?? 'competenza'}`}, con gestione completa della pratica.`;
+
+const chip = isNational
+  ? 'Copertura nazionale'
+  : `${sede?.nome ?? 'Sede locale'}${sede?.regione ? ` · ${sede.regione}` : ''}`;
+---
+
+<section class="territorial-cta" aria-label="Contatto rapido">
+  <div class="territorial-cta__inner">
+    <div>
+      <p class="chip">{chip}</p>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+    </div>
+    <div class="actions">
+      <a href="#contatti" class="btn btn-primary">Richiedi consulenza</a>
+      <a href="/sedi/" class="btn btn-secondary">Vedi sedi territoriali</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .territorial-cta {
+    padding: 16px 24px;
+  }
+
+  .territorial-cta__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #d9e5f4;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .chip {
+    margin: 0 0 6px;
+    color: #c6902a;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 0;
+    color: var(--blue-navy);
+    font-size: clamp(1.1rem, 1.9vw, 1.35rem);
+  }
+
+  p { margin: 6px 0 0; color: #334155; line-height: 1.6; }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .btn {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-weight: 700;
+    font-size: .9rem;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary { background: #2b8f42; color: #fff; }
+  .btn-secondary { background: #fff; color: #1e3a8a; border-color: #cbd5e1; }
+
+  @media (max-width: 900px) {
+    .territorial-cta { padding: 10px 16px; }
+    .territorial-cta__inner { grid-template-columns: 1fr; }
+    .actions { justify-content: flex-start; }
+  }
+</style>

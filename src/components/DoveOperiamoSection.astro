@@ -1,0 +1,62 @@
+---
+const topSedi = [
+  { name: 'Milano', slug: 'milano' },
+  { name: 'Roma', slug: 'roma' },
+  { name: 'Napoli', slug: 'napoli' },
+  { name: 'Torino', slug: 'torino' },
+  { name: 'Bologna', slug: 'bologna' },
+  { name: 'Firenze', slug: 'firenze' },
+  { name: 'Palermo', slug: 'palermo' },
+  { name: 'Bari', slug: 'bari' }
+];
+---
+
+<section class="section" id="dove-operiamo" aria-labelledby="dove-operiamo-title">
+  <div class="container">
+    <div class="layout">
+      <div>
+        <h2 id="dove-operiamo-title">Dove operiamo</h2>
+        <p class="subtitle">Presidi territoriali e gestione pratiche presso i tribunali competenti in tutta Italia.</p>
+        <p>Trova la sede territoriale più vicina e consulta le informazioni operative per avviare la procedura con un avvocato per sfratto.</p>
+        <a class="btn" href="/sedi/">Vedi tutte le sedi</a>
+      </div>
+
+      <div class="list-box" aria-label="Sedi principali">
+        <ul>
+          {topSedi.map((sede) => (
+            <li><a href={`/sedi/${sede.slug}/`}>Avvocato per sfratto a {sede.name}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  h2 { margin: 0 0 14px; color: var(--blue-navy); }
+  .subtitle { margin: 0 0 10px; color: #334155; font-weight: 600; }
+  p { margin: 0 0 14px; line-height: 1.6; color: #334155; }
+
+  .btn {
+    display: inline-block;
+    margin-top: 6px;
+    background: var(--green-security);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+
+  .list-box { border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; background: #fff; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
+  a { color: var(--blue-navy); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    ul { grid-template-columns: 1fr; }
+  }
+</style>
