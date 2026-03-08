@@ -35,7 +35,7 @@ jobs:
           server: ${{ secrets.SG_FTP_HOST }}
           username: ${{ secrets.SG_FTP_USERNAME }}
           password: ${{ secrets.SG_FTP_PASSWORD }}
-          protocol: ftps
+          protocol: ftp
           port: 21
           local-dir: ./dist/
           server-dir: /public_html/
