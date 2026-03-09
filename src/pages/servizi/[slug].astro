@@ -102,6 +102,7 @@ const graph = {
     items={[
       { href: '#quando-serve', label: 'Quando serve' },
       { href: '#cosa-include', label: 'Cosa include' },
+      { href: '#costi-tempi', label: 'Costi e tempi' },
       { href: '#faq-servizio', label: 'FAQ' },
       { href: '#contatti', label: 'Contatti' }
     ]}
@@ -156,6 +157,24 @@ const graph = {
             <li>{item}</li>
           ))}
         </ul>
+      </div>
+    </section>
+
+    <section id="costi-tempi" class="section section-light" aria-labelledby="costi-tempi-title">
+      <div class="container narrow">
+        <h2 id="costi-tempi-title">Costi e tempi (allineati alla landing)</h2>
+        <div class="pricing-box">
+          <ul class="check-list">
+            <li><strong>1.300 € tutto incluso</strong> fino alla convalida dello sfratto.</li>
+            <li><strong>Nessun anticipo</strong>: pagamento al momento della convalida.</li>
+            <li><strong>60 giorni medi</strong> per ottenere dal Giudice l’ordinanza di rilascio dell’immobile.</li>
+            <li>Assistenza con <strong>avvocato dedicato</strong> e aggiornamenti costanti sulla pratica.</li>
+          </ul>
+          <p class="pricing-note">
+            Nota: i tempi possono variare in base al Tribunale competente e alla situazione specifica della pratica,
+            ma il metodo operativo resta uniformato al protocollo della landing.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -323,6 +342,20 @@ const graph = {
     padding: 12px 14px;
     color: #334155;
     line-height: 1.6;
+  }
+
+  .pricing-box {
+    border: 1px solid #d9e5f4;
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+  }
+
+  .pricing-note {
+    margin: 12px 0 0;
+    color: #475569;
+    line-height: 1.65;
+    font-size: .95rem;
   }
 
   .faq-list {
