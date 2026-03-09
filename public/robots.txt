@@ -35,5 +35,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Sitemap canonica (apex domain)
-Sitemap: https://sfrattosicuro.it/sitemap.xml
+# Sitemap canonica (www domain)
+Sitemap: https://www.sfrattosicuro.it/sitemap.xml
