@@ -3,31 +3,37 @@ const services = [
   {
     icon: '⚖️',
     title: 'Sfratto per morosità',
+    href: '/servizi/sfratto-per-morosita/',
     text: 'Assistiamo i proprietari nelle procedure di sfratto per morosità quando l’inquilino non paga il canone o gli oneri accessori previsti dal contratto di locazione. Seguiamo tutte le fasi della procedura fino alla liberazione dell’immobile.'
   },
   {
     icon: '📄',
     title: 'Sfratto per finita locazione',
+    href: '/servizi/sfratto-per-finita-locazione/',
     text: 'Supportiamo i proprietari nelle procedure di rilascio dell’immobile quando il contratto di locazione è scaduto e il conduttore non restituisce l’immobile.'
   },
   {
     icon: '💼',
     title: 'Recupero crediti per canoni di locazione non pagati',
+    href: '/servizi/recupero-canoni-non-pagati/',
     text: 'Assistiamo i proprietari nel recupero dei canoni di locazione non pagati e degli oneri accessori dovuti dall’inquilino. L’azione di recupero crediti può essere avviata autonomamente oppure congiuntamente alla procedura di sfratto.'
   },
   {
     icon: '🛡️',
     title: 'Controversie in materia di locazione',
+    href: '/servizi/controversie-locazione/',
     text: 'Assistiamo i proprietari nelle controversie derivanti dal contratto di locazione e nelle contestazioni tra locatore e conduttore.'
   },
   {
     icon: '🖊️',
     title: 'Predisposizione contratti di locazione',
+    href: '/servizi/contratti-di-locazione/',
     text: 'Redigiamo contratti di locazione chiari e strutturati per prevenire contenziosi e tutelare il proprietario nella gestione del rapporto con l’inquilino.'
   },
   {
     icon: '🏠',
     title: 'Tutela del proprietario',
+    href: '/servizi/tutela-proprietario/',
     text: 'Forniamo assistenza continuativa nella gestione del rapporto con l’inquilino e nelle problematiche che possono insorgere durante la locazione.'
   }
 ];
@@ -44,8 +50,9 @@ const services = [
       {services.map((service) => (
         <article class="card" role="listitem">
           <p class="icon" aria-hidden="true">{service.icon}</p>
-          <h3>{service.title}</h3>
+          <h3><a href={service.href}>{service.title}</a></h3>
           <p>{service.text}</p>
+          <p class="card-cta"><a href={service.href}>Approfondisci il servizio</a></p>
         </article>
       ))}
     </div>
@@ -106,7 +113,12 @@ const services = [
   }
 
   h3 { margin: 0 0 10px; color: var(--blue-navy); font-size: 1.05rem; }
+  h3 a { color: inherit; text-decoration: none; }
+  h3 a:hover { text-decoration: underline; }
   p { margin: 0; color: #334155; line-height: 1.65; }
+  .card-cta { margin-top: 12px; }
+  .card-cta a { color: #1e3a8a; font-weight: 700; text-decoration: none; }
+  .card-cta a:hover { text-decoration: underline; }
 
   @media (max-width: 1024px) { .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 767px) {
