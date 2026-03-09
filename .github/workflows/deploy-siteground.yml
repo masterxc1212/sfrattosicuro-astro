@@ -32,8 +32,8 @@ jobs:
       - name: Deploy dist/ via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.SG_FTP_HOST }}
-          username: ${{ secrets.SG_FTP_USERNAME }}
+          server: ftp.sfrattosicuro.it
+          username: ghdeploy@sfrattosicuro.it
           password: ${{ secrets.SG_FTP_PASSWORD }}
           protocol: ftp
           port: 21
