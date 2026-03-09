@@ -101,7 +101,8 @@ const graph = {
     title="Percorso rapido"
     items={[
       { href: '#quando-serve', label: 'Quando serve' },
-      { href: '#cosa-include', label: 'Cosa include' },
+      { href: '#procedura', label: 'Procedura' },
+      { href: '#caso-pratico', label: 'Caso pratico' },
       { href: '#costi-tempi', label: 'Costi e tempi' },
       { href: '#faq-servizio', label: 'FAQ' },
       { href: '#contatti', label: 'Contatti' }
@@ -110,31 +111,24 @@ const graph = {
 
   <main id="main-content">
     <section class="service-hero section" aria-labelledby="service-title">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker">Servizi legali in diritto delle locazioni</p>
-          <h1 id="service-title">{service.h1}</h1>
-          <p class="lead">{service.intro}</p>
+      <div class="container narrow">
+        <p class="kicker">Servizi legali in diritto delle locazioni</p>
+        <h1 id="service-title">{service.h1}</h1>
+        <p class="lead">{service.intro}</p>
 
-          <div class="keyword-meta" aria-label="focus keyword">
-            <span>Keyword principale:</span>
-            <strong>{service.primaryKeyword}</strong>
-          </div>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#contatti">Richiedi una consulenza</a>
-            <a class="btn btn-secondary" href="/servizi/">Torna a tutti i servizi</a>
-          </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contatti">Richiedi una consulenza</a>
+          <a class="btn btn-secondary" href="/servizi/">Torna a tutti i servizi</a>
         </div>
+      </div>
+    </section>
 
-        <aside class="hero-box" aria-label="keyword correlate">
-          <h2>Ricerche correlate utili</h2>
-          <ul>
-            {service.secondaryKeywords.map((kw) => (
-              <li>{kw}</li>
-            ))}
-          </ul>
-        </aside>
+    <section class="section" aria-labelledby="overview-title">
+      <div class="container narrow prose">
+        <h2 id="overview-title">Come funziona questo servizio</h2>
+        {service.overview.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
       </div>
     </section>
 
@@ -143,6 +137,31 @@ const graph = {
         <h2 id="when-title">Quando è utile questo servizio</h2>
         <ul class="check-list">
           {service.whenToUse.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section id="procedura" class="section" aria-labelledby="procedura-title">
+      <div class="container narrow">
+        <h2 id="procedura-title">Come si sviluppa la procedura</h2>
+        <div class="step-list">
+          {service.procedureSteps.map((step) => (
+            <article class="step-card">
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" aria-labelledby="documenti-title">
+      <div class="container narrow">
+        <h2 id="documenti-title">Documenti utili per partire</h2>
+        <ul class="check-list">
+          {service.documents.map((item) => (
             <li>{item}</li>
           ))}
         </ul>
@@ -160,20 +179,28 @@ const graph = {
       </div>
     </section>
 
-    <section id="costi-tempi" class="section section-light" aria-labelledby="costi-tempi-title">
+    <section id="caso-pratico" class="section section-light" aria-labelledby="case-title">
       <div class="container narrow">
-        <h2 id="costi-tempi-title">Costi e tempi (allineati alla landing)</h2>
+        <h2 id="case-title">Esempio di caso trattato</h2>
+        <article class="case-card">
+          <h3>{service.caseExample.title}</h3>
+          <p><strong>Scenario:</strong> {service.caseExample.scenario}</p>
+          <p><strong>Attività svolta:</strong> {service.caseExample.activity}</p>
+          <p><strong>Esito:</strong> {service.caseExample.outcome}</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="costi-tempi" class="section" aria-labelledby="costi-tempi-title">
+      <div class="container narrow">
+        <h2 id="costi-tempi-title">Costi e tempi</h2>
         <div class="pricing-box">
           <ul class="check-list">
-            <li><strong>1.300 € tutto incluso</strong> fino alla convalida dello sfratto.</li>
-            <li><strong>Nessun anticipo</strong>: pagamento al momento della convalida.</li>
-            <li><strong>60 giorni medi</strong> per ottenere dal Giudice l’ordinanza di rilascio dell’immobile.</li>
-            <li>Assistenza con <strong>avvocato dedicato</strong> e aggiornamenti costanti sulla pratica.</li>
+            <li><strong>{service.pricing.fee}</strong></li>
+            <li><strong>{service.pricing.payment}</strong></li>
+            <li><strong>{service.pricing.timing}</strong></li>
           </ul>
-          <p class="pricing-note">
-            Nota: i tempi possono variare in base al Tribunale competente e alla situazione specifica della pratica,
-            ma il metodo operativo resta uniformato al protocollo della landing.
-          </p>
+          <p class="pricing-note">{service.pricing.note}</p>
         </div>
       </div>
     </section>
@@ -225,13 +252,6 @@ const graph = {
     border-bottom: 1px solid #e2e8f0;
   }
 
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: 20px;
-    align-items: start;
-  }
-
   .kicker {
     margin: 0 0 10px;
     color: #c6902a;
@@ -260,17 +280,10 @@ const graph = {
     font-size: 1.05rem;
   }
 
-  .keyword-meta {
-    margin-top: 16px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid #d7e3f3;
-    background: #fff;
+  .prose p {
+    margin: 0 0 10px;
     color: #334155;
-    font-size: .92rem;
+    line-height: 1.75;
   }
 
   .cta-row {
@@ -302,25 +315,6 @@ const graph = {
     color: var(--blue-navy);
   }
 
-  .hero-box {
-    border: 1px solid #d9e5f4;
-    border-radius: 12px;
-    background: #fff;
-    padding: 16px;
-  }
-
-  .hero-box h2 {
-    font-size: 1.02rem;
-    margin-bottom: 10px;
-  }
-
-  .hero-box ul {
-    margin: 0;
-    padding-left: 18px;
-    color: #334155;
-    line-height: 1.7;
-  }
-
   .section-light {
     background: #f8fafc;
     border-top: 1px solid #edf2f7;
@@ -342,6 +336,48 @@ const graph = {
     padding: 12px 14px;
     color: #334155;
     line-height: 1.6;
+  }
+
+  .step-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .step-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+  }
+
+  .step-card h3 {
+    margin: 0 0 6px;
+    color: var(--blue-navy);
+    font-size: 1rem;
+  }
+
+  .step-card p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  .case-card {
+    background: #fff;
+    border: 1px solid #d9e5f4;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .case-card h3 {
+    margin: 0 0 10px;
+    color: var(--blue-navy);
+  }
+
+  .case-card p {
+    margin: 0 0 8px;
+    color: #334155;
+    line-height: 1.7;
   }
 
   .pricing-box {
@@ -411,7 +447,6 @@ const graph = {
   }
 
   @media (max-width: 900px) {
-    .hero-grid,
     .related-grid {
       grid-template-columns: 1fr;
     }
