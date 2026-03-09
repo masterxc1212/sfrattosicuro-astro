@@ -243,10 +243,10 @@ export const servicePages: ServicePage[] = [
         'Il credito viene trattato in modo strutturato, con percorso coordinato rispetto alla situazione dell’immobile.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      fee: '10% delle somme effettivamente recuperate.',
+      payment: 'Compenso legato al recuperato, con impostazione orientata al risultato.',
+      timing: 'Avvio operativo rapido dopo verifica documentale e quantificazione del credito.',
+      note: 'Il compenso si applica alle somme realmente incassate. Eventuali spese vive e oneri di procedura restano regolati separatamente.'
     },
     faqs: [
       {
@@ -322,10 +322,10 @@ export const servicePages: ServicePage[] = [
         'La controversia viene riportata su un percorso gestibile, con obiettivi chiari e riduzione delle aree di incertezza.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      fee: 'Da 990 € per fase stragiudiziale; da 1.490 € per giudiziale di primo grado (base).',
+      payment: 'Percorso a step, con investimento progressivo in base alla complessità della pratica.',
+      timing: 'Piano operativo iniziale entro tempi rapidi dopo presa in carico documentale.',
+      note: 'Il preventivo definitivo viene calibrato su urgenza, valore della controversia e attività necessarie.'
     },
     faqs: [
       {
@@ -397,10 +397,10 @@ export const servicePages: ServicePage[] = [
         'Il contratto finale risulta più leggibile e più solido in ottica preventiva.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      fee: 'Revisione contratto da 149 €; redazione completa da 290 €; versione premium da 590 €.',
+      payment: 'Corrispettivo chiaro e predeterminato in base al livello di personalizzazione richiesto.',
+      timing: 'Prima bozza operativa in tempi rapidi dopo raccolta delle informazioni essenziali.',
+      note: 'Il prezzo finale dipende da complessità, numero clausole speciali e livello di approfondimento richiesto.'
     },
     faqs: [
       {
@@ -476,10 +476,10 @@ export const servicePages: ServicePage[] = [
         'La gestione resta sotto controllo e, in caso di peggioramento, è già pronto il percorso legale più adatto.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      fee: 'Abbonamento mensile: Base 79 €, Plus 129 €, Pro 199 €.',
+      payment: 'Formula continuativa con livello di supporto modulabile in base alle esigenze del proprietario.',
+      timing: 'Attivazione del piano dopo onboarding documentale e definizione priorità operative.',
+      note: 'I piani differiscono per intensità di supporto, priorità e profondità della gestione continuativa.'
     },
     faqs: [
       {
