@@ -93,7 +93,7 @@ export const servicePages: ServicePage[] = [
     faqs: [
       {
         q: 'Lo sfratto per morosità si usa anche per ogni altro inadempimento contrattuale?',
-        a: 'No. È lo strumento tipico per morosità su canoni (e, nei casi previsti, oneri accessori). Per contestazioni diverse si valuta un percorso legale differente.'
+        a: 'No. È lo strumento tipico per la morosità economica. Nelle locazioni abitative, in generale, il riferimento è l’art. 5 L. 392/1978 (ritardo sul canone oltre 20 giorni e/o oneri accessori per importi rilevanti). Per inadempimenti diversi si valuta un percorso legale differente.'
       },
       {
         q: 'Si può affiancare il recupero dei canoni non pagati?',
