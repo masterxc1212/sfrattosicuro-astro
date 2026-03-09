@@ -123,6 +123,20 @@ const graph = {
       </div>
     </section>
 
+    <section class="section section-light" aria-labelledby="link-servizi-title">
+      <div class="container narrow">
+        <div class="service-links-box">
+          <h2 id="link-servizi-title">Servizi principali collegati</h2>
+          <div class="service-links-grid">
+            <a href="/servizi/sfratto-per-morosita/">Sfratto per morosità</a>
+            <a href="/servizi/sfratto-per-finita-locazione/">Sfratto per finita locazione</a>
+            <a href="/servizi/recupero-canoni-non-pagati/">Recupero canoni non pagati</a>
+            <a href="/servizi/tutela-proprietario/">Tutela continuativa del proprietario</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" aria-labelledby="overview-title">
       <div class="container narrow prose">
         <h2 id="overview-title">Come funziona questo servizio</h2>
@@ -289,6 +303,36 @@ const graph = {
     color: #334155;
     line-height: 1.75;
   }
+
+  .service-links-box {
+    border: 1px solid #d9e5f4;
+    border-radius: 12px;
+    background: #fff;
+    padding: 16px;
+  }
+
+  .service-links-box h2 {
+    font-size: 1.02rem;
+    margin-bottom: 10px;
+  }
+
+  .service-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .service-links-grid a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #1e3a8a;
+    border: 1px solid #dbe4f1;
+    background: #f8fbff;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+
+  .service-links-grid a:hover { text-decoration: underline; background: #eef4fd; }
 
   .cta-row {
     margin-top: 18px;
@@ -457,6 +501,7 @@ const graph = {
   }
 
   @media (max-width: 900px) {
+    .service-links-grid,
     .related-grid {
       grid-template-columns: 1fr;
     }
