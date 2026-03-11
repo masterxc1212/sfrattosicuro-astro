@@ -30,8 +30,19 @@ Stato su file `blog_queue.json` (workspace agente `blog-intel`):
 - Linguaggio professionale, fluido, persuasivo, non aggressivo.
 - Non citare sentenze.
 - Quando richiami norme, verifica online prima.
-- SEO on-page completo: title, meta, slug, H1/H2/H3, FAQ, schema, link interni.
 - CTA naturale + form contatto in chiusura.
+
+## Regole SEO esplicite (must-have)
+- Keyword principale in: title SEO, H1, primo paragrafo, almeno un H2, slug.
+- Title SEO: 50-60 caratteri.
+- Meta description: 140-160 caratteri.
+- Un solo H1, gerarchia H2/H3 pulita.
+- Keyword density naturale (~0.8%-1.5%), no stuffing.
+- Minimo 3 link interni pertinenti.
+- 4-6 FAQ utili con intento reale.
+- Schema consigliato: Article + FAQPage.
+- Minimo 1 immagine con alt descrittivo coerente.
+- Controllo anti-cannibalizzazione prima della pubblicazione.
 
 ## Approvazione umana
 - Il batch 30 titoli va approvato prima della fase di pubblicazione giornaliera.
