@@ -1,52 +1,45 @@
-# Blog Daily Intelligence — Sfratto Architet
+# Blog Daily Intelligence — Sfratto Architet (v2)
 
 ## Obiettivo
-Creare un ciclo editoriale giornaliero che unisca:
-- analisi articoli già pubblicati,
-- analisi intenti di ricerca su sfratti/locazioni,
-- selezione keyword ad alto potenziale,
-- bozza articolo SEO pronta revisione,
-- approvazione umana prima della pubblicazione.
+Gestire un ciclo editoriale continuo per il blog su sfratti/locazioni, con:
+- prevenzione duplicazioni,
+- selezione keyword sostenibili per authority bassa,
+- batch titoli pre-approvati,
+- pubblicazione giornaliera controllata.
 
-## Regola chiave
-Il sistema **non pubblica automaticamente**. Invia su Telegram un report completo e una bozza, poi decide il responsabile umano.
+## Logica operativa (queue)
+Stato su file `blog_queue.json` (workspace agente `blog-intel`):
+- `candidates`: 30 proposte titolo+keyword
+- `approved`: titoli approvati dall’umano
+- `published`: articoli già pubblicati
 
-## Workflow (ore 06:00 Europe/Rome)
-1. Scansione blog (`/blog/`) e analisi contenuti recenti.
-2. Verifica sovrapposizioni/cannibalizzazione keyword.
-3. Ricerca intenti (informazionale, commerciale, transazionale).
-4. Query su Keyword Planner (se disponibile); fallback su fonti alternative se non accessibile.
-5. Selezione keyword del giorno con criterio: volume + difficoltà + probabilità posizionamento authority bassa.
-6. Produzione brief SEO:
-   - keyword principale/secondarie,
-   - intento,
-   - outline H1/H2/H3,
-   - FAQ,
-   - entità semantiche,
-   - internal links,
-   - meta title/description,
-   - slug,
-   - schema consigliato.
-7. Redazione bozza articolo completa pronta revisione umana.
-8. Invio report su Telegram.
+## Flusso quotidiano ore 06:00
+1. Audit articoli già pubblicati + keyword implicite (anti cannibalizzazione).
+2. Se `approved` è vuota:
+   - ricerca intenti + Keyword Planner (fallback dichiarato se non accessibile),
+   - genera 30 keyword nuove,
+   - genera 30 titoli SEO,
+   - invia batch su Telegram per approvazione.
+3. Se `approved` contiene titoli:
+   - seleziona il primo non pubblicato,
+   - redige articolo completo,
+   - pubblica 1 articolo via WP API (autore: Redazione),
+   - aggiorna `published` e invia report Telegram.
 
-## Template report Telegram (obbligatorio)
-- Keyword principale
-- Perché è stata scelta oggi
-- Intento di ricerca prevalente
-- Gap rispetto ai contenuti già pubblicati
-- Outline proposto
-- Bozza articolo
-- Checklist pre-pubblicazione (fatti/fonti/SEO/on-page)
+## Vincoli editoriali obbligatori
+- Linguaggio professionale, fluido, persuasivo, non aggressivo.
+- Non citare sentenze.
+- Quando richiami norme, verifica online prima.
+- SEO on-page completo: title, meta, slug, H1/H2/H3, FAQ, schema, link interni.
+- CTA naturale + form contatto in chiusura.
 
-## KPI (monitor mensile)
-- Articoli prodotti / approvati / pubblicati
-- Nuove query indicizzate in Search Console
-- Impression/click organici pagine blog
-- Lead generati da articoli
-- Tempo medio da bozza a pubblicazione
+## Approvazione umana
+- Il batch 30 titoli va approvato prima della fase di pubblicazione giornaliera.
+- In assenza di approvazione, nessuna pubblicazione automatica.
 
-## Governance
-- Owner: team Sfratto Architet
-- Frequenza revisione SOP: ogni 30 giorni
-- Condizione di stop: errori giuridici ripetuti o calo qualità bozza
+## KPI
+- Titoli approvati / mese
+- Articoli pubblicati / mese
+- Impression e click organici (Search Console)
+- Query nuove in top 20
+- Lead da articoli
