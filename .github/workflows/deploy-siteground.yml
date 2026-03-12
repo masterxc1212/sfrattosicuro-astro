@@ -38,7 +38,7 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: ./dist/
-          server-dir: /sfrattosicuro.it/public_html/dist_publish/
+          server-dir: /sfrattosicuro.it/public_html/
           dangerous-clean-slate: false
           exclude: |
             **/.git*
