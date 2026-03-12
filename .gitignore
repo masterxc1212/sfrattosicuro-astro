@@ -23,3 +23,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local QA / backup residue
+dist-jsoncheck/
+backups/
+tmp_local_audit_output.json
+
