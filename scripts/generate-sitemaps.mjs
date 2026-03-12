@@ -7,7 +7,12 @@ const SITE = 'https://www.sfrattosicuro.it';
 
 const EXCLUDE_PATHS = new Set([
   '/blog-astro-backup/',
-  '/preview-sede/'
+  '/preview-sede/',
+  '/cookie-policy.html',
+  '/privacy.html',
+  '/termini-condizioni.html',
+  '/errore.html',
+  '/grazie.html'
 ]);
 
 const EXTRA_URLS = [
