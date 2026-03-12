@@ -1,18 +1,18 @@
-﻿---
+---
 interface Props { sedeSlug: string; }
 const { sedeSlug = 'nazionale' } = Astro.props;
 
 const points = [
   { icon: 'scale', title: 'Procedura corretta', text: 'Corretta impostazione della procedura di sfratto.' },
   { icon: 'clock', title: 'Riduzione dei tempi', text: 'Gestione strategica della pratica per evitare ritardi.' },
-  { icon: 'court', title: 'Assistenza in tribunale', text: 'Rappresentanza legale durante lâ€™udienza di convalida.' },
-  { icon: 'home', title: 'Liberazione dellâ€™immobile', text: 'Gestione completa della fase esecutiva.' }
+  { icon: 'court', title: 'Assistenza in tribunale', text: 'Rappresentanza legale durante l’udienza di convalida.' },
+  { icon: 'home', title: 'Liberazione dell’immobile', text: 'Gestione completa della fase esecutiva.' }
 ];
 ---
 
 <section class="section" id="perche-avvocato" aria-labelledby="why-title">
   <div class="container">
-    <h2 id="why-title">PerchÃ© affidarsi a un avvocato per sfratto</h2>
+    <h2 id="why-title">Perché affidarsi a un avvocato per sfratto</h2>
 
     <div class="grid4">
       {points.map((point) => (
@@ -46,4 +46,3 @@ const points = [
   @media (max-width: 1024px) { .grid4 { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 767px) { .section { padding: 32px 0; } .grid4 { grid-template-columns: 1fr; } }
 </style>
-
