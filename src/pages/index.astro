@@ -9,32 +9,33 @@ const seo = getNationalHomeSeo();
 const { title, description } = seo;
 const siteUrl = site.siteUrl.replace(/\/$/, '');
 
-const faqEntities = [
+const faqItems = [
   {
-    '@type': 'Question',
-    name: 'Quanto tempo serve per sfrattare un inquilino?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'La durata dipende dal tribunale competente e dall’eventuale opposizione dell’inquilino.'
-    }
+    q: 'Quanto tempo serve per ottenere la convalida di sfratto?',
+    a: 'Grazie a un protocollo interno di gestione della pratica e di ottimizzazione dei tempi di notifica, in molti casi puntiamo ad arrivare all’udienza per la convalida di sfratto in circa 60 giorni.'
   },
   {
-    '@type': 'Question',
-    name: 'Quanti mesi di affitto non pagato servono per lo sfratto?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'In genere è possibile avviare la procedura quando l’inquilino non paga il canone nei termini previsti dal contratto.'
-    }
+    q: 'Quando si può avviare lo sfratto per morosità?',
+    a: 'La procedura può essere avviata quando il conduttore non paga i canoni o gli oneri dovuti nei termini previsti dal contratto, con assistenza legale nella predisposizione dell’intimazione e nella successiva fase di convalida.'
   },
   {
-    '@type': 'Question',
-    name: 'È possibile sfrattare un inquilino con figli minori?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'La presenza di minori non impedisce la procedura di sfratto ma può incidere sui tempi dell’esecuzione.'
-    }
+    q: 'Cosa succede se l’inquilino si oppone allo sfratto?',
+    a: 'Se l’inquilino propone opposizione, la procedura può richiedere attività ulteriori e tempi più lunghi. In questi casi è necessario valutare subito la strategia processuale più adatta per tutelare il proprietario.'
+  },
+  {
+    q: 'Che cos’è il termine di grazia nello sfratto per morosità?',
+    a: 'Nel procedimento per sfratto per morosità il giudice può, in presenza dei presupposti di legge, concedere un termine per sanare la morosità. Si tratta di una variabile che può incidere sui tempi della procedura e che va valutata caso per caso.'
   }
 ];
+
+const faqEntities = faqItems.map((item) => ({
+  '@type': 'Question',
+  name: item.q,
+  acceptedAnswer: {
+    '@type': 'Answer',
+    text: item.a
+  }
+}));
 
 const org = site.organization;
 const mapUrl = org.sameAs?.[0] || '';
@@ -131,5 +132,6 @@ const homeGraph = {
     showDoveOperiamo={true}
     showBlogLatest={true}
     showVideoReviews={false}
+    faqItems={faqItems}
   />
 </SiteLayout>

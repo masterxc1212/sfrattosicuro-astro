@@ -6,6 +6,9 @@ interface SedeItem {
   slug: string;
   tribunale?: string;
   regione?: string;
+  localAngles?: {
+    closingAngle?: string;
+  };
 }
 
 interface Props {
@@ -22,7 +25,7 @@ const title = isNational
 
 const subtitle = isNational
   ? 'Valutiamo il tuo caso e definiamo il percorso operativo più adatto, con copertura su tutta Italia.'
-  : `Ti affianchiamo nelle attività presso ${sede?.tribunale ?? `il tribunale di ${sede?.nome ?? 'competenza'}`}, con gestione completa della pratica.`;
+  : (sede?.localAngles?.closingAngle?.trim() || `Ti affianchiamo nelle attività presso ${sede?.tribunale ?? `il tribunale di ${sede?.nome ?? 'competenza'}`}, con gestione completa della pratica.`);
 
 const chip = isNational
   ? 'Copertura nazionale'

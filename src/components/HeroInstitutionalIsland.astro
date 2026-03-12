@@ -70,7 +70,9 @@ const sediList = sedi as SedeItem[];
 const sede = sediList.find((item) => item.slug === effectiveSlug);
 const vars = sede?.heroVars ?? {};
 
-const defaultKicker = 'Specialisti in sfratti e diritto delle locazioni';
+const defaultKicker = isNazionale
+  ? 'Avvocato per sfratto per morosità'
+  : (vars.kicker ?? 'Specialisti in sfratti e diritto delle locazioni');
 
 const defaultH1 = isNazionale
   ? 'Avvocato per Sfratto'
@@ -83,7 +85,7 @@ const normalizeLocalCopy = (text?: string) =>
     .trim();
 
 const defaultSubtitle = isNazionale
-  ? 'Ti assistiamo in tutta Italia per sfrattare un inquilino moroso o a fine locazione, con gestione completa della procedura fino al rilascio dell\'immobile.'
+  ? 'Assistiamo proprietari e locatori nelle procedure di sfratto per morosità e finita locazione, con un protocollo operativo orientato ad arrivare, in molti casi, all’udienza per la convalida di sfratto in circa 60 giorni.'
   : normalizeLocalCopy(vars.subtitleLocal)
     || `Ti assistiamo per la procedura di sfratto presso il Tribunale di ${sede?.nome ?? 'competenza territoriale'}, fino al rilascio dell'immobile.`;
 
@@ -95,8 +97,8 @@ const defaultBullets = [
 
 const defaultTrustRow = isNazionale
   ? [
-      'Specialisti in sfratti',
-      'Esperti in diritto delle locazioni',
+      'Specialisti in sfratti e diritto delle locazioni',
+      'Protocollo operativo orientato alla convalida in circa 60 giorni',
       'Operativi su tutto il territorio nazionale'
     ]
   : [
@@ -258,182 +260,109 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
     color: #c6902a;
     text-transform: uppercase;
     letter-spacing: .05em;
-    font-size: .78rem;
     font-weight: 700;
   }
 
   h1 {
-    margin: 0;
-    font-size: clamp(1.7rem, 3.4vw, 2.7rem);
-    line-height: 1.12;
+    margin: 0 0 12px;
     color: var(--blue-navy);
-    text-wrap: balance;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.05;
   }
 
   .subtitle {
-    margin: 14px 0 0;
+    margin: 0 0 16px;
     color: #334155;
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
     line-height: 1.65;
-    max-width: 66ch;
-    font-size: clamp(1rem, 1.15vw, 1.06rem);
   }
 
   .bullets {
-    margin: 16px 0 0;
-    padding: 0;
-    list-style: none;
+    margin: 0 0 18px;
+    padding-left: 18px;
+    color: #334155;
     display: grid;
     gap: 8px;
-    max-width: 70ch;
   }
 
-  .bullets li {
-    position: relative;
-    padding-left: 22px;
-    color: #1e293b;
-    line-height: 1.5;
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 18px;
   }
 
-  .bullets li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--green-security);
+  .btn {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px 14px;
     font-weight: 700;
+    border: 1px solid transparent;
   }
 
-  .cta-row { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; border-radius: 10px; padding: 12px 16px; }
-  .btn-primary { background: var(--green-security); color: #fff; }
-  .btn-secondary { background: #fff; color: var(--blue-navy); border: 1px solid #d8e1ef; }
+  .btn-primary { background: #2b8f42; color: #fff; }
+  .btn-secondary { background: #fff; color: #1e3a8a; border-color: #cbd5e1; }
 
-  .trust-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .trust-row span {
     display: inline-flex;
     align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: .92rem;
     border-radius: 999px;
-    padding: 6px 10px;
-    background: #eef3fb;
-    border: 1px solid #d8e1ef;
-    color: var(--blue-navy);
-    font-size: 12px;
   }
 
   .hero-media {
     width: 100%;
-    border-radius: 0;
+    border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #dbe4f2;
-    background: #fff;
-    aspect-ratio: 16 / 10;
-    position: relative;
+    border: 1px solid #dbe3ef;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, .08);
+    min-height: 320px;
+    background: #e8eef7;
   }
 
-  .hero-media img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+  .hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .hero-carousel { position: relative; }
+  .carousel-track, .slide { height: 100%; min-height: 320px; }
+  .slide { position: relative; }
+  .slide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,23,42,.1) 0%, rgba(15,23,42,.52) 100%); }
+  .slide-text { position: absolute; left: 18px; right: 18px; bottom: 18px; color: #fff; }
+  .slide-title { margin: 0 0 6px; font-weight: 700; font-size: 1.15rem; }
+  .slide-description { margin: 0; line-height: 1.55; }
+  .carousel-btn {
+    position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+    width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(255,255,255,.85); color: #0f172a; font-size: 1.4rem; font-weight: 700;
+  }
+  .carousel-btn.prev { left: 12px; }
+  .carousel-btn.next { right: 12px; }
+  .carousel-dots {
+    position: absolute; left: 0; right: 0; bottom: 10px; z-index: 2;
+    display: flex; justify-content: center; gap: 8px;
+  }
+  .dot {
+    width: 10px; height: 10px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(255,255,255,.6);
+  }
+  .dot.is-active { background: #fff; }
+
+  @media (min-width: 1024px) {
+    .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(380px, .9fr); }
   }
 
-  .hero-carousel .carousel-track { position: relative; width: 100%; height: 100%; }
-  .hero-carousel .slide {
-    position: absolute;
-    inset: 0;
-    display: none;
-    animation: fadeIn .35s ease;
-    background: #f8fafc;
-  }
-  .hero-carousel .slide.is-active {
-    display: block;
-  }
-
-  .hero-carousel .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #f8fafc;
-  }
-
-  .hero-carousel .slide-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.08) 58%, rgba(15, 23, 42, 0.02) 100%);
-    pointer-events: none;
-  }
-
-  .hero-carousel .slide-text {
-    position: absolute;
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-    color: #fff;
-  }
-
-  .hero-carousel .slide-title {
-    margin: 0;
-    font-weight: 700;
-    font-size: .95rem;
-    line-height: 1.3;
-    color: #fff;
-  }
-
-  .hero-carousel .slide-description {
-    margin: 4px 0 0;
-    font-size: .82rem;
-    line-height: 1.4;
-    color: #e2e8f0;
-  }
-
-  .hero-carousel .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    width: 34px;
-    height: 34px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,.45);
-    background: rgba(15, 23, 42, .45);
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 1;
-    cursor: pointer;
-  }
-
-  .hero-carousel .carousel-btn.prev { left: 10px; }
-  .hero-carousel .carousel-btn.next { right: 10px; }
-
-  .hero-carousel .carousel-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 8px;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    z-index: 2;
-  }
-
-  .hero-carousel .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 999px;
-    border: 0;
-    background: rgba(255,255,255,.55);
-    cursor: pointer;
-  }
-
-  .hero-carousel .dot.is-active { background: #fff; }
-
-  @keyframes fadeIn {
-    from { opacity: .25; }
-    to { opacity: 1; }
-  }
-
-  @media (min-width: 980px) {
-    .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
-    .hero-copy { max-width: 62ch; }
-    .hero-media { justify-self: end; max-width: 560px; aspect-ratio: 4 / 3; }
+  @media (max-width: 767px) {
+    .hero-institutional { padding: 18px; }
+    .hero-media, .carousel-track, .slide { min-height: 240px; }
   }
 </style>
