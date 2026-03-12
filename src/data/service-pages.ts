@@ -87,7 +87,7 @@ export const servicePages: ServicePage[] = [
     pricing: {
       fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
       payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
+      timing: 'In molti casi puntiamo ad arrivare all’udienza per la convalida in circa 60 giorni.',
       note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
     },
     faqs: [
@@ -166,7 +166,7 @@ export const servicePages: ServicePage[] = [
     pricing: {
       fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
       payment: 'Nessun anticipo: pagamento al momento della convalida.',
-      timing: '60 giorni medi per ottenere dal Giudice l’ordinanza di rilascio.',
+      timing: 'In molti casi puntiamo ad arrivare all’udienza per la convalida in circa 60 giorni.',
       note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
     },
     faqs: [
@@ -243,7 +243,7 @@ export const servicePages: ServicePage[] = [
         'Il credito viene trattato in modo strutturato, con percorso coordinato rispetto alla situazione dell’immobile.'
     },
     pricing: {
-      fee: '10% delle somme effettivamente recuperate.',
+      fee: '10% delle somme da recuperare.',
       payment: 'Compenso orientato al risultato: paghi in funzione di quanto viene realmente recuperato.',
       timing: 'Avvio operativo rapido dopo verifica documentale e quantificazione del credito.',
       note: 'Il compenso si applica alle somme effettivamente incassate. Eventuali spese vive e oneri di procedura sono indicati con trasparenza in preventivo.'
