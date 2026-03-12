@@ -69,7 +69,7 @@
     render(Array.isArray(data.reviews) ? data.reviews : []);
   };
 
-  fetch('/php/get-reviews.php', { credentials: 'same-origin' })
+  fetch('/php/get-reviews.php?refresh=1&t=' + Date.now(), { credentials: 'same-origin' })
     .then(r => (r.ok ? r.json() : Promise.reject()))
     .then(handle)
     .catch(() => fetch('/assets/data/reviews-cache.json?t=' + Date.now(), { credentials: 'same-origin' })

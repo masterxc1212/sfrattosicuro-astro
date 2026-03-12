@@ -1,39 +1,40 @@
 {
-    "ok": true,
-    "rating": 5,
-    "total_reviews": 12,
-    "total": 12,
-    "updated_at": "2026-02-04T13:51:24+00:00",
-    "reviews": [
-        {
-            "author": "Raffaella Striamo",
-            "rating": 5,
-            "text": "Avevo un contratto transitorio che non riuscivo a chiudere. Con Sfratto Sicuro ho risolto tutto in poco tempo, mi hanno guidato senza complicazioni. Mi sono trovato molto bene.",
-            "time": "2 mesi fa"
-        },
-        {
-            "author": "antonino zinna",
-            "rating": 5,
-            "text": "Esposizione iniziale del caso per cui ho subito ricevuto consigli molto utili che mostrano la profonda conoscenza della materia. Se avro’ un altro sfratto da eseguire lo passero’ senz’altro a questi avvocati.",
-            "time": "2 mesi fa"
-        },
-        {
-            "author": "Mario Gambina",
-            "rating": 5,
-            "text": "Contattato da vocato esperto e molto chiaro",
-            "time": "2 mesi fa"
-        },
-        {
-            "author": "Rocco",
-            "rating": 5,
-            "text": "Per caso ho trovato il servizio legale di sfratto sicuro e mi sono affidato a loro,  ho sperimentato gentilezza e professionalità. Sono contento",
-            "time": "3 mesi fa"
-        },
-        {
-            "author": "Antonio Angelico",
-            "rating": 5,
-            "text": "Mi hanno aiutato con l’inquilino che non pagava.",
-            "time": "3 mesi fa"
-        }
-    ]
+  "ok": true,
+  "rating": 4.9,
+  "total_reviews": 19,
+  "total": 19,
+  "updated_at": "2026-03-12T18:00:00+01:00",
+  "source": "google_places_seed_cache",
+  "reviews": [
+    {
+      "author": "aAa Six",
+      "rating": 5,
+      "text": "Servizio comodo perché gestito a distanza in ogni sua fase. Prezzo e condizioni chiare e senza sorprese. Disamina dei casi in modo leale e trasparente.",
+      "time": "nell'ultima settimana"
+    },
+    {
+      "author": "Maison D'art Rossella Gozio",
+      "rating": 5,
+      "text": "Quando un inquilino smette di pagarti, inizia un calvario per il proprietario. Ho contattato Sfratto Sicuro e l'avvocato Ansalone mi ha confortato subito. Tempi eccezionalmente brevissimi: contattati a novembre 2025, il 15 gennaio 2026 avevo l'udienza. Sono uscita con uno sfratto esecutivo. Il percorso non è ancora finito, ma oggi sono molto più serena perché ho un team di avvocati al mio fianco.",
+      "time": "2 settimane fa"
+    },
+    {
+      "author": "Marco In -",
+      "rating": 5,
+      "text": "Pensavo fosse una procedura lunga e complicata, invece è stata gestita in modo ordinato e senza perdite di tempo. Mi hanno tolto un peso, occupandosi di tutto con grande semplicità.",
+      "time": "un mese fa"
+    },
+    {
+      "author": "Max",
+      "rating": 5,
+      "text": "Ho apprezzato molto la comunicazione: risposte rapide, spiegazioni comprensibili e aggiornamenti costanti. Anche non essendo pratico di queste procedure, mi sono sempre sentito tranquillo e informato.",
+      "time": "un mese fa"
+    },
+    {
+      "author": "Marco \"Mark\" Bianchin",
+      "rating": 5,
+      "text": "Mi sono rivolto a Sfratto Sicuro e fin da subito mi è stato spiegato tutto in modo chiaro. Non ho versato acconti e ho pagato solo dopo la decisione del giudice. Ho partecipato anche all'udienza e mi sono sentito seguito in ogni passaggio. Esperienza positiva.",
+      "time": "un mese fa"
+    }
+  ]
 }

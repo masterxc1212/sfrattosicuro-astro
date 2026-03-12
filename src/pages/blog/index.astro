@@ -4,15 +4,266 @@ import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
 ---
 
-<SiteLayout title="Blog | Sfratto Sicuro" description="Approfondimenti legali sullo sfratto per morosità e finita locazione." canonicalPath="/blog/">
+<SiteLayout
+  title="Blog | Sfratto Sicuro"
+  description="Archivio articoli e approfondimenti legali su sfratti, morosità, finita locazione e tutela del proprietario."
+  canonicalPath="/blog/"
+>
   <HeaderIsland />
+
   <main class="page">
-    <h1>Blog</h1>
-    <p>Pagina in costruzione.</p>
+    <section class="hero">
+      <p class="eyebrow">Blog</p>
+      <h1>Archivio articoli su sfratti e locazioni</h1>
+      <p class="lead">
+        Approfondimenti pratici su sfratto per morosità, finita locazione, tempi, costi,
+        recupero canoni e tutela del proprietario.
+      </p>
+    </section>
+
+    <section class="archive" aria-labelledby="archive-title">
+      <div class="archive-head">
+        <div>
+          <h2 id="archive-title">Ultimi articoli</h2>
+          <p class="sub">Contenuti aggiornati dal blog WordPress di Sfratto Sicuro.</p>
+        </div>
+      </div>
+
+      <div id="blog-archive-grid" class="grid" aria-live="polite">
+        <article class="card skeleton"></article>
+        <article class="card skeleton"></article>
+        <article class="card skeleton"></article>
+      </div>
+
+      <p id="blog-archive-status" class="status">Caricamento articoli in corso…</p>
+    </section>
   </main>
+
   <Footer />
 </SiteLayout>
 
+<script>
+(() => {
+  const grid = document.getElementById('blog-archive-grid');
+  const status = document.getElementById('blog-archive-status');
+  if (!grid || !status) return;
+
+  const decode = (value) => {
+    const txt = document.createElement('textarea');
+    txt.innerHTML = value || '';
+    return txt.value;
+  };
+
+  const stripHtml = (html) => {
+    const div = document.createElement('div');
+    div.innerHTML = html || '';
+    return (div.textContent || div.innerText || '').trim();
+  };
+
+  const formatDate = (iso) => {
+    try {
+      return new Intl.DateTimeFormat('it-IT', { day: '2-digit', month: 'long', year: 'numeric' }).format(new Date(iso));
+    } catch {
+      return '';
+    }
+  };
+
+  const pickCategories = (post) => {
+    const groups = post?._embedded?.['wp:term'];
+    if (!Array.isArray(groups)) return [];
+    const cats = groups.flat().filter((item) => item?.taxonomy === 'category');
+    return cats.map((cat) => ({
+      name: cat?.name || '',
+      link: cat?.link || '#'
+    })).filter((cat) => cat.name && cat.name.toLowerCase() !== 'uncategorized');
+  };
+
+  const render = (posts) => {
+    if (!Array.isArray(posts) || !posts.length) {
+      grid.innerHTML = '<p class="empty">Nessun articolo disponibile al momento.</p>';
+      status.textContent = 'Archivio momentaneamente vuoto.';
+      return;
+    }
+
+    grid.innerHTML = posts.map((post) => {
+      const title = decode(post?.title?.rendered || 'Articolo');
+      const excerpt = stripHtml(post?.excerpt?.rendered || '');
+      const summary = excerpt.length > 220 ? excerpt.slice(0, 220).trim() + '…' : excerpt;
+      const link = post?.link || '#';
+      const date = formatDate(post?.date);
+      const categories = pickCategories(post);
+      const categoriesHtml = categories.length
+        ? `<div class="cats">${categories.map((cat) => `<a class="cat" href="${cat.link}">${cat.name}</a>`).join('')}</div>`
+        : '';
+
+      return `<article class="card">
+        ${categoriesHtml}
+        <h3><a href="${link}">${title}</a></h3>
+        <p class="meta">${date}</p>
+        <p class="excerpt">${summary || 'Apri l’articolo per leggere l’approfondimento completo.'}</p>
+        <a class="read-more" href="${link}">Leggi l’articolo</a>
+      </article>`;
+    }).join('');
+
+    status.textContent = `${posts.length} articolo${posts.length === 1 ? '' : 'i'} caricati.`;
+  };
+
+  fetch('/blog/wp-json/wp/v2/posts?per_page=24&_embed&orderby=date&order=desc', { credentials: 'same-origin' })
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error('fetch_failed'))))
+    .then(render)
+    .catch(() => {
+      grid.innerHTML = '<p class="empty">Impossibile caricare l’archivio in questo momento.</p>';
+      status.textContent = 'Riprova tra poco.';
+    });
+})();
+</script>
+
 <style>
-  .page { max-width: 1200px; margin: 0 auto; padding: 56px 24px; }
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 56px;
+  }
+
+  .hero {
+    padding: 20px 0 28px;
+  }
+
+  .eyebrow {
+    margin: 0 0 8px;
+    color: #c6902a;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin: 0 0 14px;
+    color: var(--blue-navy);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+  }
+
+  .lead,
+  .sub,
+  .status {
+    color: #475569;
+    line-height: 1.7;
+  }
+
+  .archive-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: end;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin: 0 0 6px;
+    color: var(--blue-navy);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .skeleton {
+    min-height: 220px;
+    background: linear-gradient(90deg, #eef2f7 25%, #f8fafc 37%, #eef2f7 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.4s ease infinite;
+  }
+
+  .cats {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .cat {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eef6ff;
+    border: 1px solid #dbeafe;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: .82rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.18rem;
+    line-height: 1.35;
+  }
+
+  h3 a,
+  .read-more {
+    color: var(--blue-navy);
+    text-decoration: none;
+  }
+
+  h3 a:hover,
+  .read-more:hover {
+    color: var(--green-security);
+  }
+
+  .meta {
+    margin: 0;
+    color: #64748b;
+    font-size: .92rem;
+  }
+
+  .excerpt {
+    margin: 0;
+    color: #334155;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .read-more {
+    font-weight: 700;
+  }
+
+  .empty {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 28px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px dashed #cbd5e1;
+    color: #475569;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  @media (max-width: 1024px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 767px) {
+    .page { padding: 28px 16px 40px; }
+    .grid { grid-template-columns: 1fr; }
+    .archive-head { align-items: start; }
+  }
 </style>
