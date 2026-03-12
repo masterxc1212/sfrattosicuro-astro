@@ -44,3 +44,16 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+
+      - name: Cleanup old dist_publish directory
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.sfrattosicuro.it
+          username: ghdeploy@sfrattosicuro.it
+          password: ${{ secrets.SG_FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          state-name: .ftp-state-cleanup
+          script: |
+            cd /sfrattosicuro.it/public_html
+            rm -rf dist_publish
