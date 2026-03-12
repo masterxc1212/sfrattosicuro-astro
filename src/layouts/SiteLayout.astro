@@ -32,7 +32,7 @@ const {
       image={image}
     />
     <slot name="head" />
-    <style is:global>
+    <style is:inline>
       :root {
         --blue-navy: #1b2951;
         --green-security: #3bae5d;
@@ -68,24 +68,6 @@ const {
       video,
       iframe {
         max-width: 100%;
-      }
-
-      .section {
-        padding: 56px 0;
-      }
-
-      .section--compact {
-        padding: 40px 0;
-      }
-
-      @media (max-width: 767px) {
-        .section {
-          padding: 32px 0;
-        }
-
-        .section--compact {
-          padding: 24px 0;
-        }
       }
     </style>
   </head>
