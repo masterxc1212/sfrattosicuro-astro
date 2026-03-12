@@ -2,6 +2,23 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
+
+const categoryCards = [
+  {
+    name: 'Sfratti',
+    href: 'https://www.sfrattosicuro.it/blog/category/sfratto-per-morosita/',
+    description:
+      'Guide pratiche su sfratto per morosità, finita locazione, convalida, rilascio dell’immobile, tempi, costi e fase esecutiva.',
+    eyebrow: 'Procedura'
+  },
+  {
+    name: 'Locazioni',
+    href: 'https://www.sfrattosicuro.it/blog/category/procedura-e-convalida/',
+    description:
+      'Approfondimenti su contratti di locazione, disdetta, recesso, canone, registrazione, deposito cauzionale e rapporto locatore-conduttore.',
+    eyebrow: 'Contratti e rapporto locativo'
+  }
+];
 ---
 
 <SiteLayout
@@ -21,8 +38,30 @@ import Footer from '../../components/Footer.astro';
       </p>
     </section>
 
+    <section class="category-section" aria-labelledby="category-title">
+      <div class="section-head">
+        <div>
+          <h2 id="category-title">Esplora per categoria</h2>
+          <p class="sub">
+            Due macro-aree chiare per orientarti subito tra procedura di sfratto e temi legati alle locazioni.
+          </p>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        {categoryCards.map((category) => (
+          <article class="category-card">
+            <p class="category-eyebrow">{category.eyebrow}</p>
+            <h3>{category.name}</h3>
+            <p>{category.description}</p>
+            <a href={category.href} class="category-link">Vai alla categoria</a>
+          </article>
+        ))}
+      </div>
+    </section>
+
     <section class="archive" aria-labelledby="archive-title">
-      <div class="archive-head">
+      <div class="section-head archive-head">
         <div>
           <h2 id="archive-title">Ultimi articoli</h2>
           <p class="sub">Contenuti aggiornati dal blog WordPress di Sfratto Sicuro.</p>
@@ -105,7 +144,7 @@ import Footer from '../../components/Footer.astro';
       </article>`;
     }).join('');
 
-    status.textContent = `${posts.length} articolo${posts.length === 1 ? '' : 'i'} caricati.`;
+    status.textContent = `${posts.length} ${posts.length === 1 ? 'articolo caricato' : 'articoli caricati'}.`;
   };
 
   fetch('/blog/wp-json/wp/v2/posts?per_page=24&_embed&orderby=date&order=desc', { credentials: 'same-origin' })
@@ -126,10 +165,11 @@ import Footer from '../../components/Footer.astro';
   }
 
   .hero {
-    padding: 20px 0 28px;
+    padding: 20px 0 18px;
   }
 
-  .eyebrow {
+  .eyebrow,
+  .category-eyebrow {
     margin: 0 0 8px;
     color: #c6902a;
     text-transform: uppercase;
@@ -144,14 +184,25 @@ import Footer from '../../components/Footer.astro';
     line-height: 1.05;
   }
 
+  h2,
+  h3 {
+    color: var(--blue-navy);
+  }
+
   .lead,
   .sub,
-  .status {
+  .status,
+  .category-card p {
     color: #475569;
     line-height: 1.7;
   }
 
-  .archive-head {
+  .category-section,
+  .archive {
+    margin-top: 22px;
+  }
+
+  .section-head {
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -159,26 +210,60 @@ import Footer from '../../components/Footer.astro';
     margin-bottom: 20px;
   }
 
-  h2 {
-    margin: 0 0 6px;
-    color: var(--blue-navy);
+  .archive-head {
+    margin-top: 6px;
   }
 
+  h2 {
+    margin: 0 0 6px;
+  }
+
+  .category-grid,
   .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
 
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-card,
   .card {
     background: #fff;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 22px;
+    border-radius: 18px;
+    padding: 24px;
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .category-card {
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  }
+
+  .category-card h3,
+  .card h3 {
+    margin: 0;
+    font-size: 1.18rem;
+    line-height: 1.35;
+  }
+
+  .category-link,
+  .read-more,
+  .card h3 a {
+    color: var(--blue-navy);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .category-link:hover,
+  .read-more:hover,
+  .card h3 a:hover {
+    color: var(--green-security);
   }
 
   .skeleton {
@@ -208,23 +293,6 @@ import Footer from '../../components/Footer.astro';
     font-weight: 700;
   }
 
-  h3 {
-    margin: 0;
-    font-size: 1.18rem;
-    line-height: 1.35;
-  }
-
-  h3 a,
-  .read-more {
-    color: var(--blue-navy);
-    text-decoration: none;
-  }
-
-  h3 a:hover,
-  .read-more:hover {
-    color: var(--green-security);
-  }
-
   .meta {
     margin: 0;
     color: #64748b;
@@ -236,10 +304,6 @@ import Footer from '../../components/Footer.astro';
     color: #334155;
     line-height: 1.7;
     flex: 1;
-  }
-
-  .read-more {
-    font-weight: 700;
   }
 
   .empty {
@@ -258,12 +322,16 @@ import Footer from '../../components/Footer.astro';
   }
 
   @media (max-width: 1024px) {
-    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .category-grid,
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   @media (max-width: 767px) {
     .page { padding: 28px 16px 40px; }
+    .category-grid,
     .grid { grid-template-columns: 1fr; }
-    .archive-head { align-items: start; }
+    .section-head { align-items: start; }
   }
 </style>
