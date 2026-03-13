@@ -3,17 +3,18 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
 
-const categoryCards = [
+// Categorie estratte da /wp-json/wp/v2/categories (Sfratti=13, Locazioni=15)
+const categoryFilters = [
   {
+    id: 13,
     name: 'Sfratti',
-    href: 'https://www.sfrattosicuro.it/blog/category/sfratto-per-morosita/',
     description:
       'Guide pratiche su sfratto per morosità, finita locazione, convalida, rilascio dell’immobile, tempi, costi e fase esecutiva.',
     eyebrow: 'Procedura'
   },
   {
+    id: 15,
     name: 'Locazioni',
-    href: 'https://www.sfrattosicuro.it/blog/category/procedura-e-convalida/',
     description:
       'Approfondimenti su contratti di locazione, disdetta, recesso, canone, registrazione, deposito cauzionale e rapporto locatore-conduttore.',
     eyebrow: 'Contratti e rapporto locativo'
@@ -41,20 +42,25 @@ const categoryCards = [
     <section class="category-section" aria-labelledby="category-title">
       <div class="section-head">
         <div>
-          <h2 id="category-title">Esplora per categoria</h2>
+          <h2 id="category-title">Filtra per categoria</h2>
           <p class="sub">
-            Due macro-aree chiare per orientarti subito tra procedura di sfratto e temi legati alle locazioni.
+            Seleziona una categoria per visualizzare solo gli articoli correlati.
           </p>
+        </div>
+        <div class="filter-controls">
+          <button type="button" class="filter-btn active" data-category="all">Tutti gli articoli</button>
         </div>
       </div>
 
       <div class="category-grid">
-        {categoryCards.map((category) => (
+        {categoryFilters.map((category) => (
           <article class="category-card">
             <p class="category-eyebrow">{category.eyebrow}</p>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
-            <a href={category.href} class="category-link">Vai alla categoria</a>
+            <button type="button" class="category-link filter-btn" data-category={category.id}>
+              Vedi articoli
+            </button>
           </article>
         ))}
       </div>
@@ -63,8 +69,7 @@ const categoryCards = [
     <section class="archive" aria-labelledby="archive-title">
       <div class="section-head archive-head">
         <div>
-          <h2 id="archive-title">Ultimi articoli</h2>
-          <p class="sub">Contenuti aggiornati dal blog WordPress di Sfratto Sicuro.</p>
+          <h2 id="archive-title">Elenco articoli</h2>
         </div>
       </div>
 
@@ -84,8 +89,12 @@ const categoryCards = [
 <script>
 (() => {
   const grid = document.getElementById('blog-archive-grid');
-  const status = document.getElementById('blog-archive-status');
-  if (!grid || !status) return;
+  const statusEl = document.getElementById('blog-archive-status');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (!grid || !statusEl || !filterBtns.length) return;
+
+  let allPosts = [];
+  let currentFilter = 'all';
 
   const decode = (value) => {
     const txt = document.createElement('textarea');
@@ -102,9 +111,7 @@ const categoryCards = [
   const formatDate = (iso) => {
     try {
       return new Intl.DateTimeFormat('it-IT', { day: '2-digit', month: 'long', year: 'numeric' }).format(new Date(iso));
-    } catch {
-      return '';
-    }
+    } catch { return ''; }
   };
 
   const pickCategories = (post) => {
@@ -112,15 +119,16 @@ const categoryCards = [
     if (!Array.isArray(groups)) return [];
     const cats = groups.flat().filter((item) => item?.taxonomy === 'category');
     return cats.map((cat) => ({
+      id: cat?.id,
       name: cat?.name || '',
       link: cat?.link || '#'
-    })).filter((cat) => cat.name && cat.name.toLowerCase() !== 'uncategorized');
+    })).filter((cat) => cat.id && cat.name && cat.name.toLowerCase() !== 'uncategorized');
   };
 
   const render = (posts) => {
     if (!Array.isArray(posts) || !posts.length) {
-      grid.innerHTML = '<p class="empty">Nessun articolo disponibile al momento.</p>';
-      status.textContent = 'Archivio momentaneamente vuoto.';
+      grid.innerHTML = '<p class="empty">Nessun articolo trovato per questa categoria.</p>';
+      statusEl.textContent = '0 articoli caricati.';
       return;
     }
 
@@ -132,7 +140,7 @@ const categoryCards = [
       const date = formatDate(post?.date);
       const categories = pickCategories(post);
       const categoriesHtml = categories.length
-        ? `<div class="cats">${categories.map((cat) => `<a class="cat" href="${cat.link}">${cat.name}</a>`).join('')}</div>`
+        ? `<div class="cats">${categories.map((cat) => `<span class="cat">${cat.name}</span>`).join('')}</div>`
         : '';
 
       return `<article class="card">
@@ -144,194 +152,80 @@ const categoryCards = [
       </article>`;
     }).join('');
 
-    status.textContent = `${posts.length} ${posts.length === 1 ? 'articolo caricato' : 'articoli caricati'}.`;
+    statusEl.textContent = `${posts.length} ${posts.length === 1 ? 'articolo trovato' : 'articoli trovati'}.`;
   };
 
-  fetch('/blog/wp-json/wp/v2/posts?per_page=24&_embed&orderby=date&order=desc', { credentials: 'same-origin' })
+  const applyFilter = (filterId) => {
+    currentFilter = filterId;
+    filterBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.category === String(currentFilter));
+    });
+
+    if (filterId === 'all') {
+      render(allPosts);
+    } else {
+      const filteredPosts = allPosts.filter(post => post.categories.includes(Number(filterId)));
+      render(filteredPosts);
+    }
+  };
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.category));
+  });
+
+  fetch('/blog/wp-json/wp/v2/posts?per_page=100&_embed&orderby=date&order=desc', { credentials: 'same-origin' })
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error('fetch_failed'))))
-    .then(render)
+    .then(posts => {
+      allPosts = posts;
+      applyFilter('all');
+    })
     .catch(() => {
       grid.innerHTML = '<p class="empty">Impossibile caricare l’archivio in questo momento.</p>';
-      status.textContent = 'Riprova tra poco.';
+      statusEl.textContent = 'Riprova tra poco.';
     });
 })();
 </script>
 
 <style>
-  .page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 24px 56px;
-  }
-
-  .hero {
-    padding: 20px 0 18px;
-  }
-
-  .eyebrow,
-  .category-eyebrow {
-    margin: 0 0 8px;
-    color: #c6902a;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 700;
-  }
-
-  h1 {
-    margin: 0 0 14px;
-    color: var(--blue-navy);
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    line-height: 1.05;
-  }
-
-  h2,
-  h3 {
-    color: var(--blue-navy);
-  }
-
-  .lead,
-  .sub,
-  .status,
-  .category-card p {
-    color: #475569;
-    line-height: 1.7;
-  }
-
-  .category-section,
-  .archive {
-    margin-top: 22px;
-  }
-
-  .section-head {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    align-items: end;
-    margin-bottom: 20px;
-  }
-
-  .archive-head {
-    margin-top: 6px;
-  }
-
-  h2 {
-    margin: 0 0 6px;
-  }
-
-  .category-grid,
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-  }
-
-  .category-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .category-card,
-  .card {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 18px;
-    padding: 24px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .category-card {
-    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
-  }
-
-  .category-card h3,
-  .card h3 {
-    margin: 0;
-    font-size: 1.18rem;
-    line-height: 1.35;
-  }
-
-  .category-link,
-  .read-more,
-  .card h3 a {
-    color: var(--blue-navy);
-    text-decoration: none;
-    font-weight: 700;
-  }
-
-  .category-link:hover,
-  .read-more:hover,
-  .card h3 a:hover {
-    color: var(--green-security);
-  }
-
-  .skeleton {
-    min-height: 220px;
-    background: linear-gradient(90deg, #eef2f7 25%, #f8fafc 37%, #eef2f7 63%);
-    background-size: 400% 100%;
-    animation: shimmer 1.4s ease infinite;
-  }
-
-  .cats {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .cat {
-    display: inline-flex;
-    align-items: center;
-    min-height: 32px;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: #eef6ff;
-    border: 1px solid #dbeafe;
-    color: #1d4ed8;
-    text-decoration: none;
-    font-size: .82rem;
-    font-weight: 700;
-  }
-
-  .meta {
-    margin: 0;
-    color: #64748b;
-    font-size: .92rem;
-  }
-
-  .excerpt {
-    margin: 0;
+  .page { max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; }
+  .hero { padding: 20px 0 18px; }
+  .eyebrow, .category-eyebrow { margin: 0 0 8px; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+  h1 { margin: 0 0 14px; color: var(--blue-navy); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; }
+  h2, h3 { color: var(--blue-navy); }
+  .lead, .sub, .status, .category-card p { color: #475569; line-height: 1.7; }
+  .category-section, .archive { margin-top: 22px; }
+  .section-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 20px; }
+  .archive-head { margin-top: 6px; }
+  h2 { margin: 0 0 6px; }
+  .category-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .category-card, .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 24px; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column; gap: 12px; }
+  .category-card { background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); }
+  .category-card h3, .card h3 { margin: 0; font-size: 1.18rem; line-height: 1.35; }
+  .category-link, .read-more, .card h3 a { color: var(--blue-navy); text-decoration: none; font-weight: 700; }
+  .category-link:hover, .read-more:hover, .card h3 a:hover { color: var(--green-security); }
+  .filter-btn {
+    background-color: #fff;
+    border: 1px solid #cbd5e1;
     color: #334155;
-    line-height: 1.7;
-    flex: 1;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
   }
-
-  .empty {
-    grid-column: 1 / -1;
-    margin: 0;
-    padding: 28px;
-    border-radius: 16px;
-    background: #fff;
-    border: 1px dashed #cbd5e1;
-    color: #475569;
-  }
-
-  @keyframes shimmer {
-    0% { background-position: 100% 0; }
-    100% { background-position: -100% 0; }
-  }
-
-  @media (max-width: 1024px) {
-    .category-grid,
-    .grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 767px) {
-    .page { padding: 28px 16px 40px; }
-    .category-grid,
-    .grid { grid-template-columns: 1fr; }
-    .section-head { align-items: start; }
-  }
+  .filter-btn:hover { background-color: #f1f5f9; border-color: #94a3b8; }
+  .filter-btn.active { color: #fff; background-color: var(--blue-navy); border-color: var(--blue-navy); }
+  .category-link.filter-btn { width: 100%; text-align: center; background-color: var(--blue-navy); color: #fff; border: 1px solid transparent; }
+  .category-link.filter-btn:hover { background-color: var(--green-security); }
+  
+  .skeleton { min-height: 220px; background: linear-gradient(90deg, #eef2f7 25%, #f8fafc 37%, #eef2f7 63%); background-size: 400% 100%; animation: shimmer 1.4s ease infinite; }
+  .cats { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cat { display: inline-flex; align-items: center; min-height: 32px; padding: 6px 10px; border-radius: 999px; background: #eef6ff; border: 1px solid #dbeafe; color: #1d4ed8; font-size: .82rem; font-weight: 700; }
+  .meta { margin: 0; color: #64748b; font-size: .92rem; }
+  .excerpt { margin: 0; color: #334155; line-height: 1.7; flex: 1; }
+  .empty { grid-column: 1 / -1; margin: 0; padding: 28px; border-radius: 16px; background: #fff; border: 1px dashed #cbd5e1; color: #475569; }
+  @keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 767px) { .page { padding: 28px 16px 40px; } .category-grid, .grid { grid-template-columns: 1fr; } .section-head { align-items: start; } }
 </style>
