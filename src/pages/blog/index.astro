@@ -162,7 +162,7 @@ const categories = await fetchCategories();
     btn.addEventListener('click', () => applyFilter(btn.dataset.category));
   });
 
-  fetch('https://www.sfrattosicuro.it/blog/wp-json/wp/v2/posts?per_page=100&_embed&orderby=date&order=desc')
+  fetch(`https://www.sfrattosicuro.it/blog/wp-json/wp/v2/posts?per_page=100&_embed&orderby=date&order=desc&nocache=${Date.now()}`, { cache: 'no-store' })
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error('fetch_failed'))))
     .then(posts => {
       allPosts = posts;
