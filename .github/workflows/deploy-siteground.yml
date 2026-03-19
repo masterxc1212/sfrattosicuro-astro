@@ -29,10 +29,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Ensure landing exists in build output
-        run: |
-          test -f dist/landing/index.html
-          echo "landing/index.html present in dist"
+      - name: Verify required site surface in build output
+        run: node scripts/verify-site-surface.mjs
 
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
