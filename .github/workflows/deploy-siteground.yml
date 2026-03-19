@@ -29,31 +29,43 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy dist/ via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ftp.sfrattosicuro.it
-          username: ghdeploy@sfrattosicuro.it
-          password: ${{ secrets.SG_FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
-          local-dir: ./dist/
-          server-dir: /sfrattosicuro.it/public_html/
-          dangerous-clean-slate: false
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+      - name: Ensure landing exists in build output
+        run: |
+          test -f dist/landing/index.html
+          echo "landing/index.html present in dist"
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy dist/ via lftp mirror
+        env:
+          FTP_HOST: ftp.sfrattosicuro.it
+          FTP_USER: ghdeploy@sfrattosicuro.it
+          FTP_PASS: ${{ secrets.SG_FTP_PASSWORD }}
+          FTP_TARGET_DIR: /sfrattosicuro.it/public_html/
+        run: |
+          lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<EOF
+          set ssl:verify-certificate no
+          set ftp:passive-mode true
+          set net:max-retries 2
+          set net:timeout 20
+          set net:reconnect-interval-base 5
+          set xfer:clobber true
+          mkdir -p $FTP_TARGET_DIR
+          mirror -R --verbose --delete --parallel=2 --exclude-glob .git* --exclude-glob node_modules --exclude-glob .github dist/ $FTP_TARGET_DIR
+          bye
+          EOF
 
       - name: Cleanup old dist_publish directory
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ftp.sfrattosicuro.it
-          username: ghdeploy@sfrattosicuro.it
-          password: ${{ secrets.SG_FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
-          state-name: .ftp-state-cleanup
-          script: |
-            cd /sfrattosicuro.it/public_html
-            rm -rf dist_publish
+        env:
+          FTP_HOST: ftp.sfrattosicuro.it
+          FTP_USER: ghdeploy@sfrattosicuro.it
+          FTP_PASS: ${{ secrets.SG_FTP_PASSWORD }}
+        run: |
+          lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<'EOF'
+          set ssl:verify-certificate no
+          set ftp:passive-mode true
+          cd /sfrattosicuro.it/public_html
+          rm -r dist_publish || true
+          bye
+          EOF
