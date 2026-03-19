@@ -1,8 +1,11 @@
 import { promises as fs } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const DIST = path.join(ROOT, 'dist');
+const DIST = process.env.CI === 'true'
+  ? path.join(ROOT, 'dist')
+  : path.join(os.homedir(), '.astro-local-builds', 'retrograde-ring', 'dist');
 const SITE = 'https://www.sfrattosicuro.it';
 
 const EXCLUDE_PATHS = new Set([

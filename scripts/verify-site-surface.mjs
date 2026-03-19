@@ -1,8 +1,11 @@
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 
 const root = process.cwd();
-const distDir = path.join(root, 'dist');
+const distDir = process.env.CI === 'true'
+  ? path.join(root, 'dist')
+  : path.join(os.homedir(), '.astro-local-builds', 'retrograde-ring', 'dist');
 const sitemapPath = path.join(distDir, 'sitemap-pages.xml');
 const blogSitemapPath = path.join(distDir, 'blog', 'post-sitemap.xml');
 const sediPath = path.join(root, 'src', 'data', 'sedi.json');
