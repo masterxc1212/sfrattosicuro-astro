@@ -253,6 +253,256 @@ const posts: BlogPost[] = [
       <h3>Qual è il primo errore da evitare?</h3>
       <p>Aspettare troppo senza ricostruire bene il debito e senza verificare la documentazione. Quando la morosità si prolunga, spesso peggiorano sia la posizione economica del proprietario sia la gestione pratica del rilascio.</p>
     `
+  },
+  {
+    slug: 'canone-concordato',
+    title: 'Canone concordato: quando conviene al proprietario',
+    description:
+      'Cedolare secca al 10%, IMU ridotta, contratto 3+2 e verifica degli accordi territoriali: guida pratica per capire quando il canone concordato conviene davvero.',
+    excerpt:
+      'Una guida operativa per proprietari su vantaggi fiscali, limiti e controlli da fare prima di scegliere un contratto a canone concordato.',
+    lead:
+      'Il canone concordato può essere conveniente, ma solo se il minor canone viene davvero compensato da fiscalità, IMU e corretta impostazione del contratto.',
+    publishedAt: '2026-03-18',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'URL e data confermate dal sito live WordPress (meta article:published_time 2026-03-18T07:12:54+00:00 e link archivio). Contenuto ricostruito in modo conservativo dal draft locale e dal testo live leggibile.',
+    html: `
+      <p>Il canone concordato interessa molti proprietari perché promette un equilibrio diverso rispetto al contratto a canone libero: un canone più contenuto, ma in cambio alcuni vantaggi fiscali che possono migliorare il rendimento netto dell’immobile. Il punto, però, è capire quando questa convenienza è reale e quando invece resta solo teorica.</p>
+      <p>Per decidere bene servono tre verifiche: quale canone è ammesso dagli accordi territoriali del Comune, quali agevolazioni fiscali sono concretamente applicabili e quanto si riduce davvero il margine rispetto a un contratto libero. Se vuoi impostare correttamente anche la parte operativa, può esserti utile la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+
+      <h2>Che cos’è il canone concordato</h2>
+      <p>Nel canone concordato il corrispettivo non viene fissato liberamente dalle parti oltre ogni limite, ma deve rientrare nei parametri previsti dagli accordi territoriali. Questo significa che il proprietario non può ragionare solo sul valore di mercato dell’immobile: deve prima verificare la fascia applicabile, le caratteristiche dell’appartamento e l’eventuale attestazione richiesta.</p>
+      <ul>
+        <li>il canone dipende dal Comune e dalla zona;</li>
+        <li>incidono metratura, caratteristiche e correttivi locali;</li>
+        <li>gli accordi territoriali vanno controllati prima della firma;</li>
+        <li>spesso serve un’attestazione di conformità per usare tutte le agevolazioni.</li>
+      </ul>
+
+      <h2>I vantaggi fiscali che contano davvero</h2>
+      <p>Il primo vantaggio che molti guardano è la cedolare secca al 10%, più leggera rispetto al regime ordinario del canone libero. A questo possono aggiungersi riduzioni IMU e altri benefici collegati alla disciplina del concordato. Però il proprietario deve evitare un errore classico: guardare solo all’aliquota fiscale senza confrontarla con il minor canone effettivo.</p>
+      <p>La convenienza aumenta quando il canone concordato resta vicino al prezzo di mercato, quando il carico fiscale personale è alto e quando il Comune riconosce un alleggerimento IMU significativo.</p>
+
+      <h2>Quando conviene davvero al proprietario</h2>
+      <p>Conviene soprattutto nei casi in cui il differenziale con il canone di mercato non è troppo ampio. Se la riduzione del canone è modesta, il vantaggio fiscale può compensarla bene. Se invece i parametri territoriali portano il canone molto sotto il mercato, il proprietario deve fare un conto più severo, altrimenti il risparmio fiscale rischia di non bastare.</p>
+      <ul>
+        <li>conviene più spesso nelle aree dove gli accordi sono aggiornati;</li>
+        <li>può avere senso per chi vuole maggiore prevedibilità fiscale;</li>
+        <li>richiede un confronto numerico, non una scelta “di principio”;</li>
+        <li>non riduce di per sé i rischi di morosità o di mancato rilascio.</li>
+      </ul>
+
+      <h2>Il contratto 3+2 e i controlli da fare</h2>
+      <p>La formula più frequente è il contratto 3+2. Prima di firmare, conviene controllare durata, regole di rinnovo, range del canone e correttezza documentale. Un’impostazione imprecisa può mettere in discussione la piena fruizione delle agevolazioni o generare contestazioni successive.</p>
+      <p>Questa attenzione conta anche perché il tipo di contratto non elimina i problemi patologici del rapporto: se l’inquilino smette di pagare, il proprietario deve comunque muoversi su binari di tutela come quelli descritti nella guida sul <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>.</p>
+
+      <h2>Gli errori più comuni</h2>
+      <ul>
+        <li>firmare senza aver verificato l’accordo territoriale aggiornato;</li>
+        <li>confondere la convenienza fiscale con una convenienza economica automatica;</li>
+        <li>usare un canone fuori fascia;</li>
+        <li>dimenticare attestazioni o adempimenti necessari;</li>
+        <li>non coordinare bene contratto, registrazione e regime fiscale scelto.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>Il canone concordato conviene sempre più del canone libero?</h3>
+      <p>No. Conviene solo quando il minor canone viene compensato in modo credibile dal vantaggio fiscale e dal quadro locale applicabile.</p>
+      <h3>La cedolare secca al 10% basta da sola per decidere?</h3>
+      <p>No. Va letta insieme al livello del canone ammesso, alle riduzioni IMU e al rendimento netto finale.</p>
+      <h3>Serve verificare gli accordi territoriali prima di firmare?</h3>
+      <p>Sì. È uno dei controlli più importanti, perché senza accordo corretto il contratto rischia di essere impostato male fin dall’inizio.</p>
+    `
+  },
+  {
+    slug: 'registrazione-contratto-locazione-online',
+    title: 'Registrazione contratto di locazione online: guida pratica',
+    description:
+      'Come registrare online un contratto di locazione con il modello RLI, quali documenti servono, quali scadenze rispettare e quali errori evitare.',
+    excerpt:
+      'Guida pratica alla registrazione telematica del contratto di locazione: documenti, portale Agenzia delle Entrate, costi e scadenze.',
+    lead:
+      'Registrare correttamente il contratto è il primo passo per tutelare il proprietario: la procedura online è gestibile, ma richiede ordine su documenti, tempi e regime fiscale.',
+    publishedAt: '2026-03-17',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'URL e data confermate dal sito live WordPress (meta article:published_time 2026-03-17T08:57:34+00:00 e link archivio). Contenuto ricostruito in modo conservativo dal draft locale e dal testo live leggibile.',
+    html: `
+      <p>La registrazione del contratto di locazione online è uno degli adempimenti più importanti per il proprietario. Non è un passaggio secondario: da qui dipendono regolarità fiscale, opponibilità del contratto e gestione più ordinata di tutto il rapporto locativo.</p>
+      <p>La buona notizia è che la procedura telematica è affrontabile anche senza intermediario, purché si arrivi preparati con documenti, dati catastali e scelta fiscale già chiari. Se stai ancora valutando il tipo di contratto da usare, può essere utile leggere anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a>.</p>
+
+      <h2>Perché la registrazione conta davvero</h2>
+      <p>Registrare il contratto non significa solo “fare una pratica all’Agenzia delle Entrate”. Significa dare struttura regolare al rapporto, ridurre zone d’ombra e partire con una documentazione che diventa essenziale se in futuro emergono ritardi, contestazioni o vere inadempienze.</p>
+      <ul>
+        <li>serve per i contratti che superano i limiti di esenzione previsti;</li>
+        <li>consente di formalizzare correttamente dati, durata e canone;</li>
+        <li>incide sulla gestione fiscale del rapporto;</li>
+        <li>riduce problemi successivi su validità e prova del contratto.</li>
+      </ul>
+
+      <h2>Cosa preparare prima di iniziare</h2>
+      <p>Prima di accedere al servizio online conviene avere già raccolto contratto firmato, dati anagrafici delle parti, dati catastali dell’immobile, importo del canone e durata. Se si sceglie la cedolare secca, la decisione deve essere coerente fin da questa fase.</p>
+      <p>Arrivare impreparati spesso genera gli errori più banali: dati inseriti male, documenti incompleti, dubbi sul regime fiscale e scadenze superate inutilmente.</p>
+
+      <h2>Come funziona la procedura telematica</h2>
+      <p>La registrazione online si svolge tramite i servizi dell’Agenzia delle Entrate e il modello RLI. In pratica bisogna:</p>
+      <ol>
+        <li>accedere con credenziali abilitate;</li>
+        <li>inserire i dati generali del contratto;</li>
+        <li>compilare i dati delle parti e dell’immobile;</li>
+        <li>indicare il regime fiscale scelto;</li>
+        <li>chiudere la procedura con il pagamento, se dovuto, e conservare la ricevuta.</li>
+      </ol>
+      <p>La ricevuta finale va archiviata con cura, perché sarà uno dei documenti più utili per qualunque fase successiva del rapporto.</p>
+
+      <h2>Scadenze e costi da non sbagliare</h2>
+      <p>Il punto più delicato è quasi sempre il termine di registrazione. Ritardi, dimenticanze o errori nel pagamento possono generare sanzioni e complicazioni evitabili. Anche qui la logica giusta è semplice: meglio una pratica ordinata subito che un ravvedimento dopo.</p>
+      <ul>
+        <li>controlla sempre la decorrenza effettiva del contratto;</li>
+        <li>verifica se applichi cedolare secca o regime ordinario;</li>
+        <li>non lasciare in sospeso proroghe, risoluzioni o variazioni;</li>
+        <li>conserva ricevuta e copia del contratto registrato.</li>
+      </ul>
+
+      <h2>Gli errori più frequenti del proprietario</h2>
+      <ul>
+        <li>superare il termine di registrazione confidando di sistemare tutto dopo;</li>
+        <li>inserire dati catastali errati;</li>
+        <li>non coordinare bene cedolare secca e clausole del contratto;</li>
+        <li>trascurare le comunicazioni successive su proroghe o cessazioni;</li>
+        <li>non archiviare la documentazione finale.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>La registrazione online si può fare senza intermediario?</h3>
+      <p>Sì, se il proprietario ha accesso ai servizi telematici e prepara correttamente documenti e dati necessari.</p>
+      <h3>Qual è l’errore più comune?</h3>
+      <p>Arrivare tardi o con dati incompleti: è il modo più semplice per trasformare un adempimento lineare in un problema fiscale e operativo.</p>
+      <h3>Perché conviene conservare con cura la ricevuta?</h3>
+      <p>Perché diventa una prova documentale importante per la gestione futura del contratto e per eventuali contestazioni.</p>
+    `
+  },
+  {
+    slug: 'adeguamento-istat-affitto',
+    title: 'Adeguamento ISTAT dell’affitto: come funziona e quando puoi chiederlo',
+    description:
+      'Guida pratica all’adeguamento ISTAT del canone di affitto: clausola contrattuale, indice FOI, limiti della cedolare secca e comunicazione corretta al conduttore.',
+    excerpt:
+      'Quando l’adeguamento ISTAT può essere richiesto, come si calcola e quali errori evitare per non compromettere la gestione del contratto.',
+    lead:
+      'L’adeguamento ISTAT può aiutare il proprietario a difendere il valore del canone nel tempo, ma non è automatico: servono clausola corretta, calcolo coerente e comunicazione tracciabile.',
+    publishedAt: '2026-03-16',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote:
+      'URL, titolo e data confermati dal sito live WordPress tramite link archivio alla URL /blog/adeguamento-istat-affitto/ con data 2026-03-16T07:44:58+00:00. Corpo ricostruito in modo conservativo dal draft locale, perché la pagina live oggi restituisce 404.',
+    html: `
+      <p>L’adeguamento ISTAT dell’affitto è uno dei temi che i proprietari spesso scoprono tardi, cioè quando si rendono conto che il canone pattuito anni prima vale ormai meno in termini reali. Però non basta parlare genericamente di inflazione: l’aggiornamento funziona solo se il contratto lo consente e se viene gestito con metodo.</p>
+      <p>Per evitare contestazioni conviene ragionare su tre punti: presenza della clausola, corretto riferimento all’indice FOI e comunicazione formale all’inquilino. Se stai valutando il rapporto locativo in modo più ampio, possono esserti utili anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto</a>.</p>
+
+      <h2>Quando puoi chiedere l’adeguamento ISTAT</h2>
+      <p>L’aggiornamento non scatta da solo. Il primo controllo è sempre contrattuale: bisogna verificare se il testo firmato contiene una clausola che preveda l’adeguamento del canone. In assenza di quella previsione, il proprietario non può trattare l’aumento come un automatismo.</p>
+      <ul>
+        <li>serve una clausola chiara nel contratto;</li>
+        <li>occorre individuare il momento da cui decorre l’aggiornamento;</li>
+        <li>va distinto il regime ordinario dalla cedolare secca;</li>
+        <li>è prudente tenere traccia delle richieste inviate.</li>
+      </ul>
+
+      <h2>L’indice FOI e il calcolo pratico</h2>
+      <p>Il riferimento normalmente usato è l’indice FOI. In concreto il proprietario dovrebbe confrontare il periodo corretto, applicare la variazione prevista dal contratto e verificare che il conteggio sia coerente con il regime locativo scelto. Il problema non è solo fare il conto, ma farlo in modo difendibile se l’inquilino lo contesta.</p>
+      <p>Per questo ha senso conservare sempre il calcolo, il mese di riferimento e la documentazione usata: pochi minuti di precisione oggi possono evitare discussioni molto più lunghe domani.</p>
+
+      <h2>Cedolare secca e limiti da ricordare</h2>
+      <p>Uno dei passaggi più importanti riguarda la cedolare secca. Quando si applica questo regime, l’adeguamento del canone incontra limiti che il proprietario non deve ignorare. È un errore frequente pensare di poter unire tutti i vantaggi fiscali possibili senza guardare alle incompatibilità concrete.</p>
+
+      <h2>Come comunicarlo all’inquilino</h2>
+      <p>Anche quando la clausola esiste e il calcolo è corretto, l’aumento va comunicato in modo tracciabile. Messaggi informali o accordi verbali sono la strada più rapida per creare zone grigie. Molto meglio una comunicazione chiara, con riferimenti al contratto, al criterio di calcolo e alla decorrenza richiesta.</p>
+      <ul>
+        <li>indica la clausola contrattuale richiamata;</li>
+        <li>specifica l’indice e il periodo utilizzati;</li>
+        <li>riporta il nuovo importo richiesto;</li>
+        <li>conserva prova dell’invio.</li>
+      </ul>
+
+      <h2>Errori da evitare</h2>
+      <ul>
+        <li>dare per scontato che l’adeguamento sia sempre automatico;</li>
+        <li>calcolare l’aumento con indice o periodo errati;</li>
+        <li>ignorare i limiti del regime fiscale scelto;</li>
+        <li>non inviare una comunicazione chiara e tracciabile;</li>
+        <li>muoversi tardi senza ricostruire bene gli anni precedenti.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>L’adeguamento ISTAT vale sempre?</h3>
+      <p>No. Vale solo se il contratto lo prevede e se viene richiesto e gestito in modo coerente con il regime applicabile.</p>
+      <h3>Basta fare il calcolo per poter chiedere subito il nuovo canone?</h3>
+      <p>No. Conviene sempre accompagnare il conteggio con una comunicazione formale e tracciabile al conduttore.</p>
+      <h3>La cedolare secca incide sull’adeguamento?</h3>
+      <p>Sì, ed è uno dei primi punti da verificare per evitare richieste non compatibili con il regime scelto.</p>
+    `
+  },
+  {
+    slug: 'deposito-cauzionale-affitto',
+    title: 'Deposito cauzionale affitto: quando si può trattenere',
+    description:
+      'Quando il proprietario può valutare di trattenere il deposito cauzionale, quali prove servono e quali errori evitare alla chiusura della locazione.',
+    excerpt:
+      'Una guida pratica su cauzione, danni, insoluti e comunicazioni finali per il proprietario che vuole muoversi con prudenza.',
+    lead:
+      'Il deposito cauzionale tutela il proprietario, ma non può diventare una scorciatoia automatica: per trattenerlo servono motivi chiari, prove e una gestione ordinata della fine rapporto.',
+    publishedAt: '2026-03-15',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'Titolo e slug confermati dal payload locale di pubblicazione `publish-day1-deposito-cauzionale-affitto-fix2.json`; presenza in `blog_queue.json` tra i 5 articoli pubblicati del ciclo. Data ricostruita in modo conservativo dal naming “day1” del payload editoriale.',
+    html: `
+      <p>Il deposito cauzionale viene spesso visto come una protezione automatica contro qualunque problema di fine locazione. In realtà, per il proprietario, la questione è più delicata: la cauzione è una garanzia, non una somma da trattenere senza spiegazioni o senza documentazione.</p>
+      <p>Le situazioni più frequenti riguardano danni all’immobile, canoni insoluti o spese rimaste scoperte. Proprio per questo, prima di decidere qualunque trattenuta, conviene ricostruire bene lo stato dei luoghi, i conteggi e le comunicazioni finali. Se il problema nasce da morosità più ampia, può essere utile leggere anche la guida sul <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>.</p>
+
+      <h2>A cosa serve davvero il deposito</h2>
+      <p>La cauzione serve a coprire inadempimenti documentabili del conduttore. Non autorizza il proprietario a compensazioni generiche o automatiche. Questo vale soprattutto quando il rapporto si chiude in modo teso e la tentazione di “tenere tutto” sembra la strada più semplice.</p>
+      <ul>
+        <li>può rilevare per danni eccedenti il normale uso;</li>
+        <li>può rilevare per spese o canoni realmente insoluti;</li>
+        <li>richiede sempre un minimo serio di prova;</li>
+        <li>non sostituisce una gestione corretta del rilascio dell’immobile.</li>
+      </ul>
+
+      <h2>Quando la trattenuta può avere senso</h2>
+      <p>La valutazione più prudente si fa alla fine del rapporto, quando l’immobile è stato riconsegnato e il proprietario può verificare con precisione lo stato dei locali, gli eventuali danni e la situazione economica finale. È qui che verbale di riconsegna, fotografie, conteggi e preventivi diventano decisivi.</p>
+
+      <h2>Quando trattenere il deposito è rischioso</h2>
+      <p>Diventa rischioso quando il proprietario vuole usare la cauzione come sostituto automatico dell’ultimo canone, quando i danni sono solo ipotizzati o quando mancano prove serie. In questi casi la trattenuta può aprire una nuova lite, invece di chiuderne una.</p>
+      <ul>
+        <li>assenza di verbale o sopralluogo finale;</li>
+        <li>danni non quantificati;</li>
+        <li>spese ancora incerte o non ripartite;</li>
+        <li>conteggi confusi sugli insoluti;</li>
+        <li>comunicazioni finali vaghe o incomplete.</li>
+      </ul>
+
+      <h2>Checklist prudente per il proprietario</h2>
+      <ol>
+        <li>verifica l’importo della cauzione e il contratto;</li>
+        <li>accerta data e modalità della riconsegna;</li>
+        <li>redigi un verbale il più possibile dettagliato;</li>
+        <li>raccogli foto, preventivi, fatture e conteggi;</li>
+        <li>comunica in modo chiaro che cosa intendi trattenere e perché.</li>
+      </ol>
+
+      <h2>FAQ</h2>
+      <h3>Il deposito può coprire automaticamente l’ultimo mese di affitto?</h3>
+      <p>No. Va valutato con prudenza e sempre dentro un quadro documentale serio, non come scorciatoia automatica.</p>
+      <h3>Bastano piccoli segni di usura per trattenere la cauzione?</h3>
+      <p>No. Il normale deterioramento d’uso non equivale automaticamente a un danno addebitabile.</p>
+      <h3>Qual è la regola pratica più utile?</h3>
+      <p>Prima documentare bene, poi decidere. Fare il contrario è il modo più rapido per esporsi a contestazioni.</p>
+    `
   }
 ];
 
