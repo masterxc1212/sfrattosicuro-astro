@@ -1,8 +1,8 @@
 ---
 import BlogCard from './blog/BlogCard.astro';
-import { blogPosts } from '../data/blog-posts';
+import { getLatestBlogPosts } from '../data/blog-posts';
 
-const latestPosts = blogPosts.slice(0, 3);
+const latestPosts = getLatestBlogPosts(3);
 ---
 
 <section class="blog-latest" aria-labelledby="blog-latest-title">

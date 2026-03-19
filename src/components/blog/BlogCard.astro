@@ -14,6 +14,8 @@ const formatDate = (date: string) =>
     month: 'long',
     year: 'numeric'
   }).format(new Date(date));
+
+const articleHref = `/blog/${post.slug}/`;
 ---
 
 <article class:list={["card", compact && 'compact']}>
@@ -21,9 +23,9 @@ const formatDate = (date: string) =>
     <span class="cat">{post.category}</span>
     <span class="date">{formatDate(post.publishedAt)}</span>
   </div>
-  <h3><a href={`/blog/${post.slug}/`}>{post.title}</a></h3>
+  <h3><a href={articleHref}>{post.title}</a></h3>
   <p class="excerpt">{post.excerpt}</p>
-  <a class="read-more" href={`/blog/${post.slug}/`}>Leggi l’articolo</a>
+  <a class="read-more" href={articleHref}>Leggi l’articolo</a>
 </article>
 
 <style>

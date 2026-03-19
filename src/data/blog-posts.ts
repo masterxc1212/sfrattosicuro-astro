@@ -569,5 +569,6 @@ const posts: BlogPost[] = [
 ];
 
 export const blogPosts = posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+export const getLatestBlogPosts = (limit = 3) => blogPosts.slice(0, limit);
 export const blogPostsBySlug = new Map(blogPosts.map((post) => [post.slug, post]));
 export const blogCategories: BlogCategory[] = ['Sfratti', 'Locazioni'];
