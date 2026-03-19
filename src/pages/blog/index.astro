@@ -4,6 +4,12 @@ import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
 import BlogCard from '../../components/blog/BlogCard.astro';
 import { blogCategories, blogPosts } from '../../data/blog-posts';
+
+const postsByCategory = blogCategories.map((category) => ({
+  category,
+  slug: category.toLowerCase(),
+  posts: blogPosts.filter((post) => post.category === category)
+}));
 ---
 
 <SiteLayout
@@ -26,16 +32,34 @@ import { blogCategories, blogPosts } from '../../data/blog-posts';
     <section class="summary-grid" aria-label="Panoramica archivio blog">
       <article class="summary-card">
         <strong>{blogPosts.length}</strong>
-        <span>articoli statici pubblicati</span>
+        <span>articoli pubblicati</span>
       </article>
       <article class="summary-card">
         <strong>{blogCategories.length}</strong>
-        <span>categorie editoriali presidiate</span>
+        <span>categorie editoriali</span>
       </article>
       <article class="summary-card">
-        <strong>URL preservate</strong>
-        <span>nessun fetch runtime da WordPress</span>
+        <strong>Archivio statico</strong>
+        <span>articoli e permalink gestiti direttamente in Astro</span>
       </article>
+    </section>
+
+    <section class="category-nav" aria-labelledby="category-nav-title">
+      <div class="section-head compact">
+        <div>
+          <p class="eyebrow small">Categorie</p>
+          <h2 id="category-nav-title">Esplora per categoria</h2>
+        </div>
+      </div>
+
+      <div class="category-pills">
+        {postsByCategory.map(({ category, slug, posts }) => (
+          <a href={`#categoria-${slug}`} class="category-pill">
+            <span>{category}</span>
+            <small>{posts.length} articoli</small>
+          </a>
+        ))}
+      </div>
     </section>
 
     <section class="archive" aria-labelledby="archive-title">
@@ -46,8 +70,22 @@ import { blogCategories, blogPosts } from '../../data/blog-posts';
         </div>
       </div>
 
-      <div class="grid">
-        {blogPosts.map((post) => <BlogCard post={post} />)}
+      <div class="category-sections">
+        {postsByCategory.map(({ category, slug, posts }) => (
+          <section id={`categoria-${slug}`} class="category-section" aria-labelledby={`titolo-${slug}`}>
+            <div class="category-section-head">
+              <div>
+                <p class="eyebrow small">Categoria</p>
+                <h3 id={`titolo-${slug}`}>{category}</h3>
+              </div>
+              <span class="count-badge">{posts.length} articoli</span>
+            </div>
+
+            <div class="grid">
+              {posts.map((post) => <BlogCard post={post} />)}
+            </div>
+          </section>
+        ))}
       </div>
     </section>
   </main>
@@ -74,8 +112,64 @@ import { blogCategories, blogPosts } from '../../data/blog-posts';
   }
   .summary-card strong { color: var(--blue-navy); font-size: 1.4rem; }
   .summary-card span { color: #475569; line-height: 1.6; }
-  .archive { margin-top: 28px; }
+  .category-nav { margin-top: 28px; }
+  .archive { margin-top: 32px; }
   .section-head { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 20px; }
+  .section-head.compact { margin-bottom: 16px; }
+  .category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .category-pill {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 180px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1px solid #dbeafe;
+    background: #f8fbff;
+    color: var(--blue-navy);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+  }
+  .category-pill:hover {
+    border-color: #93c5fd;
+    background: #eef6ff;
+  }
+  .category-pill span { font-weight: 700; }
+  .category-pill small { color: #64748b; }
+  .category-sections { display: grid; gap: 28px; }
+  .category-section {
+    scroll-margin-top: 110px;
+    display: grid;
+    gap: 18px;
+  }
+  .category-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .category-section-head h3 {
+    margin: 0;
+    color: var(--blue-navy);
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  }
+  .count-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #eef6ff;
+    border: 1px solid #dbeafe;
+    color: #1d4ed8;
+    font-size: .9rem;
+    font-weight: 700;
+  }
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   @media (max-width: 900px) {
     .summary-grid, .grid { grid-template-columns: 1fr; }
