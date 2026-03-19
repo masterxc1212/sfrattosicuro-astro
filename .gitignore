@@ -28,4 +28,6 @@ pnpm-debug.log*
 dist-jsoncheck/
 backups/
 tmp_local_audit_output.json
+dist_deploy_blog/
+dist_tmp/
 
