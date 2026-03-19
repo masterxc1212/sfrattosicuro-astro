@@ -255,6 +255,68 @@ const posts: BlogPost[] = [
     `
   },
   {
+    slug: 'sfratto-per-finita-locazione',
+    title: 'Sfratto per finita locazione: tempi reali e passaggi operativi',
+    description:
+      'Guida pratica su sfratto per finita locazione, differenze tra prima e seconda scadenza del 4+4, passaggi operativi e rilascio dell’immobile.',
+    excerpt:
+      'Cosa deve controllare il proprietario quando il contratto scade, quando si può agire per finita locazione e quali passaggi operativi aspettarsi.',
+    lead:
+      'Quando il contratto arriva a scadenza e l’immobile non viene rilasciato, il proprietario ha bisogno di una strategia ordinata: distinguere bene scadenze, disdetta e passaggi esecutivi evita errori che fanno perdere tempo.',
+    publishedAt: '2026-03-15',
+    category: 'Sfratti',
+    readingTime: '8 min',
+    sourceNote:
+      'URL, titolo e meta description confermati in `blog_queue.json` come articolo già live nella baseline del 2026-03-15. Corpo ricostruito in modo conservativo dal titolo pubblicato, dal meta riassuntivo e dalle pagine servizio correlate.',
+    html: `
+      <p>Lo sfratto per finita locazione riguarda i casi in cui il contratto è arrivato alla sua scadenza e il conduttore non rilascia l’immobile. Per il proprietario il nodo non è solo “far scadere il contratto”, ma impostare bene la fase precedente e quella successiva, evitando passi confusi su disdetta, termini e documenti.</p>
+      <p>La distinzione tra prima e seconda scadenza del contratto 4+4 conta molto, perché incide sul modo in cui si arriva alla cessazione del rapporto. Se il problema invece è il mancato pagamento del canone, il percorso corretto è diverso ed è spiegato nella guida allo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>.</p>
+
+      <h2>Quando si parla davvero di finita locazione</h2>
+      <p>Si entra in questo scenario quando il rapporto locativo è giunto alla scadenza rilevante e il proprietario ha impostato correttamente la cessazione del contratto. Il punto pratico è che non basta desiderare la riconsegna dell’immobile: bisogna verificare se ci si trova alla prima scadenza utile, alla seconda o in un diverso assetto contrattuale.</p>
+      <ul>
+        <li>la scadenza del contratto va letta in modo preciso;</li>
+        <li>la comunicazione del locatore deve essere coerente con il tipo di contratto;</li>
+        <li>i tempi dipendono anche da notifiche, udienza e fase esecutiva;</li>
+        <li>l’obiettivo finale resta il rilascio effettivo dell’immobile, non solo il provvedimento giudiziale.</li>
+      </ul>
+
+      <h2>Prima e seconda scadenza del 4+4: perché la differenza conta</h2>
+      <p>Uno degli errori più frequenti è trattare tutte le scadenze allo stesso modo. In realtà la prima scadenza del 4+4 e la seconda hanno logiche diverse. Per questo il proprietario deve muoversi con largo anticipo, verificando se esistono i presupposti corretti e quale comunicazione sia stata effettivamente inviata.</p>
+
+      <h2>I passaggi operativi da aspettarsi</h2>
+      <p>Quando l’immobile non viene rilasciato spontaneamente, il percorso richiede ordine documentale e visione pratica. In genere contano:</p>
+      <ol>
+        <li>contratto e registrazione;</li>
+        <li>prova della scadenza e delle comunicazioni inviate;</li>
+        <li>verifica del mancato rilascio;</li>
+        <li>avvio della procedura più corretta in base al caso concreto;</li>
+        <li>eventuale fase esecutiva se il rilascio non avviene spontaneamente.</li>
+      </ol>
+      <p>È importante ricordare che i tempi reali dipendono non solo dal titolo giuridico, ma anche da tribunale, notifiche, udienze e organizzazione della fase di esecuzione.</p>
+
+      <h2>Dove si sbaglia più spesso</h2>
+      <ul>
+        <li>confondere finita locazione e morosità;</li>
+        <li>arrivare tardi alla gestione della scadenza;</li>
+        <li>non coordinare bene contratto, comunicazioni e obiettivo finale;</li>
+        <li>pensare che la sola scadenza basti a riottenere subito l’immobile;</li>
+        <li>sottovalutare la fase successiva all’udienza.</li>
+      </ul>
+
+      <h2>Percorsi interni utili</h2>
+      <p>Per una panoramica più ampia puoi vedere anche la pagina servizio dedicata allo <a href="/servizi/sfratto-per-finita-locazione/">sfratto per finita locazione</a>. Se invece il dubbio nasce già nella fase contrattuale, può aiutare leggere la guida sul <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a> o quella sul <a href="/blog/canone-concordato/">canone concordato</a>.</p>
+
+      <h2>FAQ</h2>
+      <h3>La scadenza del contratto basta da sola per riavere l’immobile?</h3>
+      <p>No. La scadenza è il presupposto del problema, ma il rilascio concreto richiede una gestione corretta dei passaggi successivi.</p>
+      <h3>Finita locazione e morosità sono la stessa cosa?</h3>
+      <p>No. Possono intrecciarsi nei fatti, ma seguono logiche e presupposti diversi. Conviene distinguere subito il caso concreto.</p>
+      <h3>Qual è il primo controllo utile per il proprietario?</h3>
+      <p>Verificare tipo di contratto, scadenza rilevante, comunicazioni già inviate e obiettivo reale: rilascio dell’immobile, tutela del credito o entrambi.</p>
+    `
+  },
+  {
     slug: 'canone-concordato',
     title: 'Canone concordato: quando conviene al proprietario',
     description:
