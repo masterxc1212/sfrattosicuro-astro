@@ -40,11 +40,25 @@ async function main() {
     badge: 'Certificato'
   }));
 
+  let previousPayload = null;
+  try {
+    previousPayload = JSON.parse(await fs.readFile(outFile, 'utf8'));
+  } catch {
+    previousPayload = null;
+  }
+
+  const sameContent =
+    previousPayload &&
+    previousPayload.success === true &&
+    previousPayload.source === 'local-mock' &&
+    previousPayload.totalProvvedimenti === provvedimenti.length &&
+    JSON.stringify(previousPayload.provvedimenti) === JSON.stringify(provvedimenti);
+
   const payload = {
     success: true,
     source: 'local-mock',
     totalProvvedimenti: provvedimenti.length,
-    lastUpdated: new Date().toISOString(),
+    lastUpdated: sameContent && previousPayload?.lastUpdated ? previousPayload.lastUpdated : new Date().toISOString(),
     provvedimenti
   };
 
