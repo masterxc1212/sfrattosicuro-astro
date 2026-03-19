@@ -9,6 +9,7 @@ interface Props {
   canonicalPath?: string;
   robots?: string;
   image?: string;
+  type?: 'website' | 'article';
 }
 
 const {
@@ -16,7 +17,8 @@ const {
   description = 'Sito ufficiale Sfratto Sicuro',
   canonicalPath,
   robots = 'index,follow',
-  image
+  image,
+  type = 'website'
 } = Astro.props;
 ---
 <!doctype html>

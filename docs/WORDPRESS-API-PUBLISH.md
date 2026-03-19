@@ -1,35 +1,21 @@
-# WordPress API Publish — Sfratto Architet
+# WordPress API Publish — storico / deprecato
 
-## Obiettivo
-Pubblicare articoli sul blog WordPress senza browser, via REST API.
+Questo file resta solo come promemoria storico del vecchio flusso WordPress.
 
-## Stato configurazione
-- REST API attiva su: `https://www.sfrattosicuro.it/blog/wp-json/`
-- Autore editoriale configurato: **Redazione Sfratto Sicuro** (`author_id=2`)
-- Flusso testato: creazione bozza via API con author forzato `2`
+## Stato attuale
 
-## Endpoint principali
-- Crea bozza/articolo: `POST /wp-json/wp/v2/posts`
-- Carica media: `POST /wp-json/wp/v2/media`
-- Aggiorna articolo: `POST /wp-json/wp/v2/posts/{id}`
-- Elimina articolo: `DELETE /wp-json/wp/v2/posts/{id}?force=true`
+- Il blog di `sfrattosicuro.it` è stato riportato dentro il build Astro come contenuto statico.
+- Il sito **non deve più dipendere** da fetch runtime verso `/blog/wp-json/...` per archivio, card homepage o URL articolo.
+- Le URL già pubblicate devono essere preservate via pagine statiche Astro sotto `/blog/<slug>/`.
 
-## Payload minimo (bozza)
-```json
-{
-  "title": "Titolo articolo",
-  "status": "draft",
-  "author": 2,
-  "content": "<p>Contenuto HTML</p>"
-}
-```
+## Nuovo riferimento operativo
 
-## Regole operative
-1. L’agente blog-intel prepara report + bozza, ma non pubblica automaticamente.
-2. Dopo approvazione umana, crea bozza via API con `author=2`.
-3. Solo dopo revisione finale passa a `status=publish`.
+Usare invece:
 
-## Checklist sicurezza
-- usare Application Password dedicata (revocabile)
-- non salvare credenziali in repository
-- ruotare password applicativa periodicamente
+- `docs/STATIC-BLOG-WORKFLOW.md`
+- `src/data/blog-posts.ts`
+- `C:\Users\danil\.openclaw\workspace\topics\sfratto_blog_published.md`
+
+## Nota
+
+Se in futuro si decidesse davvero di riattivare WordPress, il flusso andrebbe riesaminato da zero: credenziali, REST API, sitemap, deploy e rischio SEO. Fino ad allora questo documento va considerato solo archivio storico.

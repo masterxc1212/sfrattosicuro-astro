@@ -1,0 +1,121 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HeaderIsland from '../../components/HeaderIsland.astro';
+import Footer from '../../components/Footer.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import { blogPosts } from '../../data/blog-posts';
+
+export function getStaticPaths() {
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+
+const formatDate = (date: string) =>
+  new Intl.DateTimeFormat('it-IT', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric'
+  }).format(new Date(date));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.title,
+  description: post.description,
+  datePublished: post.publishedAt,
+  dateModified: post.updatedAt || post.publishedAt,
+  inLanguage: 'it-IT',
+  mainEntityOfPage: `https://www.sfrattosicuro.it/blog/${post.slug}/`,
+  articleSection: post.category,
+  author: {
+    '@type': 'Organization',
+    name: 'Sfratto Sicuro'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Sfratto Sicuro',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.sfrattosicuro.it/assets/img/logo/logo.png'
+    }
+  }
+};
+---
+
+<SiteLayout
+  title={`${post.title} | Blog Sfratto Sicuro`}
+  description={post.description}
+  canonicalPath={`/blog/${post.slug}/`}
+  type="article"
+>
+  <Fragment slot="head">
+    <JsonLd graph={jsonLd} />
+  </Fragment>
+
+  <HeaderIsland />
+
+  <main class="page">
+    <article class="article">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/blog/">Blog</a>
+        <span>/</span>
+        <span aria-current="page">{post.title}</span>
+      </nav>
+
+      <header class="hero">
+        <p class="eyebrow">{post.category}</p>
+        <h1>{post.title}</h1>
+        <p class="lead">{post.lead}</p>
+        <div class="meta">
+          <span>Pubblicato il {formatDate(post.publishedAt)}</span>
+          <span>{post.readingTime} di lettura</span>
+        </div>
+      </header>
+
+      <div class="body" set:html={post.html} />
+
+      <aside class="recovery-note">
+        <strong>Nota di ripristino:</strong> {post.sourceNote}
+      </aside>
+    </article>
+  </main>
+
+  <Footer />
+</SiteLayout>
+
+<style>
+  .page { max-width: 920px; margin: 0 auto; padding: 40px 24px 56px; }
+  .article { display: grid; gap: 24px; }
+  .breadcrumbs { display: flex; gap: 8px; flex-wrap: wrap; color: #64748b; font-size: .95rem; }
+  .breadcrumbs a { color: #1d4ed8; text-decoration: none; }
+  .hero { display: grid; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0; }
+  .eyebrow { margin: 0; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+  h1 { margin: 0; color: var(--blue-navy); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; }
+  .lead { margin: 0; color: #334155; font-size: 1.12rem; line-height: 1.8; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: .95rem; }
+  .body { color: #334155; line-height: 1.85; font-size: 1.05rem; }
+  .body :global(h2), .body :global(h3) { color: var(--blue-navy); line-height: 1.2; }
+  .body :global(h2) { margin-top: 36px; margin-bottom: 12px; font-size: 1.75rem; }
+  .body :global(h3) { margin-top: 26px; margin-bottom: 10px; font-size: 1.2rem; }
+  .body :global(p), .body :global(ul) { margin: 0 0 16px; }
+  .body :global(ul) { padding-left: 22px; }
+  .body :global(li) { margin-bottom: 8px; }
+  .body :global(a) { color: #1d4ed8; }
+  .recovery-note {
+    border: 1px solid #dbeafe;
+    background: #f8fbff;
+    border-radius: 16px;
+    padding: 16px 18px;
+    color: #334155;
+    font-size: .95rem;
+  }
+  @media (max-width: 767px) {
+    .page { padding: 28px 16px 40px; }
+  }
+</style>

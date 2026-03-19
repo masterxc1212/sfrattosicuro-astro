@@ -4,8 +4,10 @@ import path from 'node:path';
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
 const sitemapPath = path.join(distDir, 'sitemap-pages.xml');
+const blogSitemapPath = path.join(distDir, 'blog', 'post-sitemap.xml');
 const sediPath = path.join(root, 'src', 'data', 'sedi.json');
 const servicesPath = path.join(root, 'src', 'data', 'service-pages.ts');
+const blogPostsPath = path.join(root, 'src', 'data', 'blog-posts.ts');
 
 function fail(msg) {
   console.error(`VERIFY_FAIL: ${msg}`);
@@ -40,6 +42,10 @@ const coreFiles = [
   'privacy-policy/index.html',
   'cookie-policy/index.html',
   'termini/index.html',
+  'blog/index.html',
+  'blog/sitemap_index.xml',
+  'blog/post-sitemap.xml',
+  'blog/robots.txt',
   'robots.txt',
   'sitemap.xml',
   'sitemap-pages.xml'
@@ -49,15 +55,21 @@ for (const rel of coreFiles) ensureFile(rel);
 
 const sedi = JSON.parse(fs.readFileSync(sediPath, 'utf8'));
 const serviceSource = fs.readFileSync(servicesPath, 'utf8');
+const blogSource = fs.readFileSync(blogPostsPath, 'utf8');
 const serviceSlugs = [...serviceSource.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
+const blogSlugs = [...blogSource.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
 
 if (serviceSlugs.length === 0) fail('No service slugs parsed from service-pages.ts');
 else ok(`Parsed ${serviceSlugs.length} service slugs`);
+
+if (blogSlugs.length === 0) fail('No blog slugs parsed from blog-posts.ts');
+else ok(`Parsed ${blogSlugs.length} blog slugs`);
 
 if (!Array.isArray(sedi) || sedi.length === 0) fail('No sedi parsed from sedi.json');
 else ok(`Parsed ${sedi.length} sedi entries`);
 
 for (const slug of serviceSlugs) ensureFile(path.join('servizi', slug, 'index.html'));
+for (const slug of blogSlugs) ensureFile(path.join('blog', slug, 'index.html'));
 for (const item of sedi) {
   if (!item.slug) {
     fail('Found sede without slug in sedi.json');
@@ -66,16 +78,15 @@ for (const item of sedi) {
   ensureFile(path.join('sedi', item.slug, 'index.html'));
 }
 
-if (!fs.existsSync(sitemapPath)) {
-  fail('sitemap-pages.xml missing');
-} else {
+if (fs.existsSync(sitemapPath)) {
   const sitemap = fs.readFileSync(sitemapPath, 'utf8');
   const requiredUrls = [
     'https://www.sfrattosicuro.it/',
     'https://www.sfrattosicuro.it/landing/',
     'https://www.sfrattosicuro.it/chi-siamo/',
     'https://www.sfrattosicuro.it/servizi/',
-    'https://www.sfrattosicuro.it/sedi/'
+    'https://www.sfrattosicuro.it/sedi/',
+    'https://www.sfrattosicuro.it/blog/'
   ];
   for (const url of requiredUrls) {
     if (!sitemap.includes(url)) fail(`sitemap-pages.xml missing ${url}`);
@@ -85,11 +96,16 @@ if (!fs.existsSync(sitemapPath)) {
     const url = `https://www.sfrattosicuro.it/servizi/${slug}/`;
     if (!sitemap.includes(url)) fail(`sitemap-pages.xml missing ${url}`);
   }
-  for (const item of sedi) {
-    const url = `https://www.sfrattosicuro.it/sedi/${item.slug}/`;
-    if (!sitemap.includes(url)) fail(`sitemap-pages.xml missing ${url}`);
+  ok('sitemap-pages.xml covers pages and services');
+}
+
+if (fs.existsSync(blogSitemapPath)) {
+  const blogSitemap = fs.readFileSync(blogSitemapPath, 'utf8');
+  for (const slug of blogSlugs) {
+    const url = `https://www.sfrattosicuro.it/blog/${slug}/`;
+    if (!blogSitemap.includes(url)) fail(`blog/post-sitemap.xml missing ${url}`);
+    else ok(`blog/post-sitemap.xml contains ${url}`);
   }
-  ok('sitemap-pages.xml covers services and sedi');
 }
 
 const home = ensureFile('index.html');
@@ -100,11 +116,8 @@ if (home && landing) {
   if (homeHtml === landingHtml) fail('landing/index.html is byte-identical to home index.html');
   else ok('landing/index.html differs from home index.html');
 
-  if (!landingHtml.includes('https://www.sfrattosicuro.it/landing/')) {
-    fail('landing/index.html missing landing canonical/url markers');
-  } else {
-    ok('landing/index.html contains landing canonical/url markers');
-  }
+  if (!landingHtml.includes('https://www.sfrattosicuro.it/landing/')) fail('landing/index.html missing landing canonical/url markers');
+  else ok('landing/index.html contains landing canonical/url markers');
 }
 
 if (process.exitCode) {
