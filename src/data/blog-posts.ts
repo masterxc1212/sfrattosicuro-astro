@@ -16,6 +16,153 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'subentro-contratto-locazione',
+    title: 'Subentro contratto locazione: cosa deve verificare il proprietario',
+    description:
+      'Controlli, documenti, consenso del proprietario, adempimenti e errori da evitare quando cambia il conduttore nel contratto di locazione.',
+    excerpt:
+      'Una guida pratica per il proprietario che deve valutare un subentro nel contratto di locazione, tra verifiche sul nuovo soggetto, pendenze economiche e formalizzazione corretta del passaggio.',
+    lead:
+      'Il subentro non è un semplice cambio di nome: per il proprietario significa verificare chi entra, come resta strutturato il contratto e quali passaggi vanno formalizzati bene per evitare problemi dopo.',
+    publishedAt: '2026-03-20',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft_subentro-contratto-locazione.md` del 2026-03-20.',
+    html: `
+      <p>Quando si parla di subentro nel contratto di locazione, molti proprietari pensano a un semplice cambio di nome. In realtà il passaggio va gestito con più attenzione: cambia il soggetto che entra nel rapporto, cambiano i profili di affidabilità da valutare e, spesso, cambiano anche i rischi se la formalizzazione viene fatta in modo approssimativo.</p>
+
+      <p>Il punto pratico è questo: il subentro può essere una soluzione ordinata, ma solo se il proprietario verifica bene chi entra, che cosa resta del contratto originario e quali adempimenti servono per non ritrovarsi dopo con contestazioni, insoluti o documenti incoerenti. Se devi anche rimettere mano al testo contrattuale, può esserti utile la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+
+      <h2>Quando si parla davvero di subentro nel contratto di locazione</h2>
+      <p>Nel linguaggio comune si usa spesso “subentro” per situazioni molto diverse tra loro. Per il proprietario, però, non basta un’etichetta generica: bisogna capire quale cambiamento sta avvenendo davvero.</p>
+      <p>I casi più frequenti sono questi:</p>
+      <ul>
+        <li>un conduttore esce e ne entra un altro;</li>
+        <li>un nuovo soggetto si aggiunge a un contratto già in corso;</li>
+        <li>il cambio dipende da vicende personali o familiari che incidono sulla posizione del conduttore;</li>
+        <li>il proprietario riceve una richiesta di continuare il rapporto con una persona diversa da quella inizialmente firmataria.</li>
+      </ul>
+      <p>La domanda corretta non è quindi solo “si può fare?”, ma “in quali condizioni conviene accettarlo e come va gestito per non creare un problema più grande di quello che si vuole risolvere?”.</p>
+
+      <h2>I primi controlli da fare prima di dire sì</h2>
+      <p>Accettare un subentro senza verifiche è uno degli errori più sottovalutati nella gestione della locazione. Il proprietario dovrebbe trattare il nuovo ingresso quasi come una mini-istruttoria: meno complessa di una nuova locazione completa, ma comunque seria.</p>
+
+      <h3>Identità e affidabilità del nuovo soggetto</h3>
+      <p>Il primo controllo riguarda chi entra nel contratto. Prima ancora degli adempimenti formali, conviene verificare:</p>
+      <ul>
+        <li>identità anagrafica corretta;</li>
+        <li>capacità reddituale o solidità economica;</li>
+        <li>stabilità lavorativa o fonte di reddito;</li>
+        <li>eventuale presenza di garanti o supporti aggiuntivi se il profilo è debole.</li>
+      </ul>
+      <p>Molti problemi nascono perché il proprietario, per evitare attriti con l’inquilino uscente, salta proprio la parte più importante: capire se il nuovo soggetto è davvero sostenibile per il rapporto locativo.</p>
+
+      <h3>Coerenza con il contratto in essere</h3>
+      <p>Non tutti i contratti reggono allo stesso modo un cambio di soggetto. Prima di accettare, conviene rileggere con attenzione:</p>
+      <ul>
+        <li>tipo di contratto già in corso;</li>
+        <li>durata residua;</li>
+        <li>eventuali clausole che meritano aggiornamento;</li>
+        <li>regime fiscale scelto;</li>
+        <li>equilibrio originario del rapporto.</li>
+      </ul>
+      <p>Questo passaggio è importante anche per non creare incoerenze con il tipo di contratto già in uso. Se, per esempio, il rapporto è stato costruito con presupposti molto specifici, il semplice cambio del conduttore può richiedere una valutazione più attenta. Su questo è utile anche la guida al <a href="/blog/contratto-transitorio-affitto/">contratto transitorio affitto</a> se il rapporto ha una durata breve o motivazioni particolari.</p>
+
+      <h3>Morosità, conguagli e pendenze da chiudere</h3>
+      <p>Uno dei punti più delicati riguarda ciò che resta indietro. Prima di formalizzare il subentro, il proprietario dovrebbe chiarire:</p>
+      <ul>
+        <li>se ci sono canoni non pagati;</li>
+        <li>se esistono oneri accessori da conguagliare;</li>
+        <li>se il deposito cauzionale è un tema ancora aperto;</li>
+        <li>da quale data il nuovo soggetto assume obblighi e responsabilità.</li>
+      </ul>
+      <p>Se questi aspetti restano confusi, il rischio è trovarsi dopo a discutere su chi debba rispondere degli insoluti o su quale parte del rapporto faccia capo al vecchio conduttore e quale al nuovo. Per questo, quando ci sono arretrati o pagamenti irregolari, conviene tenere distinti subentro e tutela del credito. In casi simili può essere utile anche il servizio sul <a href="/servizi/recupero-canoni-non-pagati/">recupero canoni non pagati</a>.</p>
+
+      <h2>Quando il proprietario deve formalizzare bene il passaggio</h2>
+      <p>Il subentro non va gestito con accordi vaghi o con semplici messaggi scambiati in fretta. Se il proprietario decide di accettarlo, il passaggio deve essere formalizzato in modo chiaro, perché è proprio la chiarezza documentale a ridurre le contestazioni future.</p>
+      <p>In concreto conviene fissare per iscritto:</p>
+      <ul>
+        <li>chi esce dal rapporto e chi entra;</li>
+        <li>da quale data decorre il nuovo assetto;</li>
+        <li>quali obblighi restano invariati;</li>
+        <li>quali importi risultano già saldati o ancora da definire;</li>
+        <li>come viene trattato l’eventuale deposito cauzionale;</li>
+        <li>quali allegati o documenti vengono aggiornati.</li>
+      </ul>
+      <p>Questa attenzione è utile anche per i successivi adempimenti pratici. Se dopo il subentro occorre coordinare registrazione, variazione o gestione telematica, la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a> resta il riferimento più utile per orientarsi senza confondere i passaggi.</p>
+
+      <h2>Quali documenti conviene chiedere</h2>
+      <p>Prima di confermare il subentro, il proprietario dovrebbe raccogliere almeno i documenti essenziali per valutare il nuovo conduttore e per tenere ordinato il fascicolo della locazione.</p>
+      <p>Una checklist prudente può includere:</p>
+      <ul>
+        <li>documento di identità del nuovo soggetto;</li>
+        <li>codice fiscale;</li>
+        <li>documentazione reddituale o lavorativa coerente con il caso;</li>
+        <li>eventuale accordo scritto sul passaggio tra vecchio e nuovo conduttore, se esiste;</li>
+        <li>situazione aggiornata dei pagamenti del contratto in corso;</li>
+        <li>eventuali chiarimenti sul deposito cauzionale;</li>
+        <li>bozza dell’atto o scrittura con cui si formalizza il cambiamento.</li>
+      </ul>
+      <p>Non serve trasformare ogni pratica in un dossier infinito. Serve però raccogliere abbastanza elementi per capire che il passaggio non stia solo spostando il rischio da una persona all’altra, lasciando il proprietario scoperto.</p>
+
+      <h2>Gli errori più comuni che complicano il subentro</h2>
+      <p>I problemi più frequenti non nascono dal subentro in sé, ma dal modo frettoloso in cui viene gestito.</p>
+      <p>Gli errori tipici sono questi:</p>
+      <ul>
+        <li>accettare il nuovo soggetto senza verificare reddito e affidabilità;</li>
+        <li>non chiarire le pendenze economiche maturate prima del cambio;</li>
+        <li>usare formule troppo generiche o copiate senza adattarle al caso concreto;</li>
+        <li>non coordinare bene scrittura privata, contratto e adempimenti successivi;</li>
+        <li>trattare il subentro come un dettaglio amministrativo quando in realtà cambia l’equilibrio del rapporto.</li>
+      </ul>
+      <p>Quando il caso è litigioso o poco lineare, la fretta costa quasi sempre più del controllo iniziale. Se il rapporto è già conflittuale, conviene valutare con prudenza anche la pagina dedicata alle <a href="/servizi/controversie-locazione/">controversie locazione</a>.</p>
+
+      <h2>Checklist pratica per il proprietario</h2>
+      <p>Prima di accettare un subentro nel contratto di locazione, questa è la sequenza più utile da seguire:</p>
+      <ol>
+        <li>capire esattamente quale cambiamento viene richiesto;</li>
+        <li>verificare identità e affidabilità del nuovo soggetto;</li>
+        <li>rileggere contratto, durata residua e assetto economico;</li>
+        <li>fotografare con precisione eventuali insoluti o conguagli aperti;</li>
+        <li>decidere come trattare deposito cauzionale e responsabilità pregresse;</li>
+        <li>formalizzare il passaggio per iscritto in modo chiaro;</li>
+        <li>coordinare gli adempimenti successivi senza lasciare zone grigie.</li>
+      </ol>
+      <p>È una checklist semplice, ma fa una differenza enorme: impedisce che un cambio apparentemente ordinario diventi, dopo qualche mese, una controversia su pagamenti, validità degli accordi o responsabilità reciproche.</p>
+
+      <h2>Quando conviene fermarsi e fare una verifica legale</h2>
+      <p>Non tutti i subentri meritano lo stesso livello di attenzione. Se il passaggio è lineare, documentato e senza pendenze, spesso basta una gestione ordinata. Ma ci sono casi in cui il proprietario farebbe bene a fermarsi un attimo prima di accettare:</p>
+      <ul>
+        <li>quando ci sono canoni arretrati o contestazioni aperte;</li>
+        <li>quando il nuovo soggetto ha un profilo economico debole;</li>
+        <li>quando il contratto originario è già poco chiaro;</li>
+        <li>quando il rapporto nasce da eventi familiari o personali che rendono il quadro meno lineare;</li>
+        <li>quando il proprietario teme di perdere controllo su responsabilità, garanzie o scadenze.</li>
+      </ul>
+      <p>In queste situazioni il tema non è complicare la pratica, ma proteggere il rapporto. Un controllo fatto prima evita spesso una gestione molto più costosa dopo.</p>
+
+      <h2>Se ti serve un controllo prima di accettare</h2>
+      <p>Se stai valutando un subentro nel contratto di locazione e vuoi capire quali verifiche fare prima di accettarlo, puoi richiedere una consulenza a Sfratto Sicuro: l’obiettivo è aiutarti a mantenere il rapporto locativo ordinato, documentato e sostenibile per il proprietario.</p>
+
+      <h2>FAQ</h2>
+      <h3>Il subentro nel contratto di locazione è solo un cambio di nominativo?</h3>
+      <p>No. Per il proprietario significa cambiare il soggetto che entra nel rapporto, con effetti pratici su affidabilità, documenti, pagamenti e responsabilità da chiarire.</p>
+
+      <h3>Prima di accettare il subentro conviene controllare il reddito del nuovo conduttore?</h3>
+      <p>Sì. È uno dei controlli più utili, perché il cambio di persona incide direttamente sulla sostenibilità futura del rapporto locativo.</p>
+
+      <h3>Il proprietario deve chiarire anche eventuali insoluti precedenti?</h3>
+      <p>Sì. È prudente distinguere con precisione ciò che resta a carico del rapporto precedente da ciò che decorrerà dopo il nuovo ingresso, per evitare contestazioni successive.</p>
+
+      <h3>Il deposito cauzionale va considerato nel passaggio?</h3>
+      <p>Sì. È uno dei punti che conviene definire in modo espresso, altrimenti il rischio è creare ambiguità tra vecchio conduttore, nuovo soggetto e proprietario.</p>
+
+      <h3>Quando il subentro merita una verifica legale più attenta?</h3>
+      <p>Quando esistono pendenze economiche, contestazioni, documenti poco chiari o un profilo del nuovo conduttore che non offre sufficiente tranquillità al proprietario.</p>
+    `
+  },
+  {
     slug: 'contratto-transitorio-affitto',
     title: 'Contratto transitorio affitto: quando conviene davvero',
     description:
