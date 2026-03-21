@@ -1,4 +1,4 @@
----
+﻿---
 import BlogCard from './blog/BlogCard.astro';
 import { getLatestBlogPosts } from '../data/blog-posts';
 
@@ -31,9 +31,8 @@ const latestPosts = getLatestBlogPosts(3);
     border-bottom: 1px solid #e2eaf6;
     padding: 44px 0;
   }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
-  .eyebrow { margin: 0 0 6px; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: #c6902a; font-weight: 700; }
+  .eyebrow { margin: 0 0 6px; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--kicker-gold); font-weight: 700; }
   h2 { margin: 0; color: var(--blue-navy); font-size: clamp(1.45rem, 2.2vw, 1.95rem); }
   .sub { margin: 8px 0 0; color: #3d4b65; max-width: 68ch; line-height: 1.65; }
   .all-link { text-decoration: none; color: #1b376b; font-weight: 700; white-space: nowrap; }

@@ -1,4 +1,4 @@
----
+﻿---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
@@ -262,7 +262,6 @@ const graph = {
 </SiteLayout>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .narrow { max-width: 980px; }
 
   .service-hero {
@@ -272,7 +271,7 @@ const graph = {
 
   .kicker {
     margin: 0 0 10px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     text-transform: uppercase;
     letter-spacing: .05em;
     font-size: .78rem;
@@ -293,14 +292,14 @@ const graph = {
 
   .lead {
     margin: 0;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.72;
     font-size: 1.05rem;
   }
 
   .prose p {
     margin: 0 0 10px;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.75;
   }
 
@@ -325,7 +324,7 @@ const graph = {
   .service-links-grid a {
     text-decoration: none;
     font-weight: 700;
-    color: #1e3a8a;
+    color: var(--link-blue);
     border: 1px solid #dbe4f1;
     background: #f8fbff;
     border-radius: 10px;
@@ -382,7 +381,7 @@ const graph = {
     border: 1px solid #e5e7eb;
     border-radius: 10px;
     padding: 12px 14px;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.6;
   }
 
@@ -406,7 +405,7 @@ const graph = {
 
   .step-card p {
     margin: 0;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.7;
   }
 
@@ -424,13 +423,13 @@ const graph = {
 
   .case-card p {
     margin: 0 0 8px;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.7;
   }
 
   .pricing-intro {
     margin: 0 0 12px;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.7;
   }
 
@@ -468,7 +467,7 @@ const graph = {
 
   .faq-list p {
     margin: 10px 0 0;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.7;
   }
 
@@ -508,7 +507,6 @@ const graph = {
   }
 
   @media (max-width: 767px) {
-    .container { padding: 0 16px; }
     .cta-row { display: grid; grid-template-columns: 1fr; }
     .btn { width: 100%; }
   }

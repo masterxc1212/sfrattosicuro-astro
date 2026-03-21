@@ -110,7 +110,6 @@ const isNational = sedeSlug === 'nazionale';
 <SmoothScrollIsland />
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .breadcrumb {
     display: flex;
     align-items: center;
@@ -120,9 +119,9 @@ const isNational = sedeSlug === 'nazionale';
     color: #64748b;
   }
 
-  .breadcrumb a { color: #1e3a8a; text-decoration: none; }
+  .breadcrumb a { color: var(--link-blue); text-decoration: none; }
   .breadcrumb a:hover { text-decoration: underline; }
 
-  .intro p { margin: 0 0 12px; line-height: 1.65; color: #334155; }
-  .back-link { color: #1e3a8a; text-decoration: none; font-weight: 600; }
+  .intro p { margin: 0 0 12px; line-height: 1.65; color: var(--text-body); }
+  .back-link { color: var(--link-blue); text-decoration: none; font-weight: 600; }
 </style>

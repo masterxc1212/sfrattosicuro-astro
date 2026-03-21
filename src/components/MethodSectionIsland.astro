@@ -40,9 +40,8 @@ const steps = [
 </section>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   h2 { margin: 0 0 10px; color: var(--blue-navy); }
-  .intro { margin: 0 0 22px; color: #334155; max-width: 80ch; line-height: 1.65; }
+  .intro { margin: 0 0 22px; color: var(--text-body); max-width: 80ch; line-height: 1.65; }
 
   .cards-grid {
     display: grid;
@@ -51,7 +50,7 @@ const steps = [
   }
 
   .card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     background: #fff;
     padding: 22px;
@@ -66,14 +65,13 @@ const steps = [
   }
 
   h3 { margin: 0 0 10px; color: var(--blue-navy); font-size: 1.05rem; }
-  .card p { margin: 0; color: #334155; line-height: 1.6; }
+  .card p { margin: 0; color: var(--text-body); line-height: 1.6; }
 
   @media (max-width: 1024px) {
     .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
   @media (max-width: 767px) {
-    .container { padding: 0 16px; }
     .cards-grid { grid-template-columns: 1fr; }
   }
 </style>

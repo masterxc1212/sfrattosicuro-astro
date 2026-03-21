@@ -1,4 +1,4 @@
----
+﻿---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
@@ -96,7 +96,7 @@ const postsByCategory = blogCategories.map((category) => ({
 <style>
   .page { max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; }
   .hero { padding: 20px 0 18px; }
-  .eyebrow { margin: 0 0 8px; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+  .eyebrow { margin: 0 0 8px; color: var(--kicker-gold); text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
   .eyebrow.small { font-size: .82rem; }
   h1 { margin: 0 0 14px; color: var(--blue-navy); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; }
   h2 { margin: 0; color: var(--blue-navy); }

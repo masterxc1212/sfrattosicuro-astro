@@ -1,4 +1,4 @@
----
+﻿---
 interface Props { sedeSlug?: string; }
 const { sedeSlug = 'nazionale' } = Astro.props;
 ---
@@ -24,9 +24,8 @@ const { sedeSlug = 'nazionale' } = Astro.props;
 <style>
   .section { padding: 64px 0; }
   .section--compact { padding: 48px 0; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   h2 { margin: 0 0 28px; color: var(--blue-navy); }
-  p { margin: 0 0 16px; line-height: 1.6; color: #334155; }
+  p { margin: 0 0 16px; line-height: 1.6; color: var(--text-body); }
   .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; background: #fff; }
   h3 { margin: 0 0 12px; display: flex; align-items: center; gap: 12px; color: var(--blue-navy); }

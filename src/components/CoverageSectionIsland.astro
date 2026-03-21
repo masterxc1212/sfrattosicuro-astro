@@ -35,8 +35,6 @@ const topSedi = [
 </section>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
   .layout {
     display: grid;
     grid-template-columns: 1fr 0.9fr;
@@ -45,7 +43,7 @@ const topSedi = [
   }
 
   h2 { margin: 0 0 14px; color: var(--blue-navy); }
-  p { margin: 0 0 12px; color: #334155; line-height: 1.65; }
+  p { margin: 0 0 12px; color: var(--text-body); line-height: 1.65; }
 
   .btn {
     display: inline-block;
@@ -59,7 +57,7 @@ const topSedi = [
   }
 
   .list-box {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     background: #fff;
     padding: 18px;
@@ -83,7 +81,5 @@ const topSedi = [
     ul { grid-template-columns: 1fr; }
   }
 
-  @media (max-width: 767px) {
-    .container { padding: 0 16px; }
-  }
+
 </style>

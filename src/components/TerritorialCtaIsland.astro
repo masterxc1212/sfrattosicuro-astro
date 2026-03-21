@@ -1,4 +1,4 @@
----
+﻿---
 import sedi from '../data/sedi.json';
 
 interface SedeItem {
@@ -66,7 +66,7 @@ const chip = isNational
 
   .chip {
     margin: 0 0 6px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     font-size: .78rem;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -79,7 +79,7 @@ const chip = isNational
     font-size: clamp(1.1rem, 1.9vw, 1.35rem);
   }
 
-  p { margin: 6px 0 0; color: #334155; line-height: 1.6; }
+  p { margin: 6px 0 0; color: var(--text-body); line-height: 1.6; }
 
   .actions {
     display: flex;
@@ -98,7 +98,7 @@ const chip = isNational
   }
 
   .btn-primary { background: #2b8f42; color: #fff; }
-  .btn-secondary { background: #fff; color: #1e3a8a; border-color: #cbd5e1; }
+  .btn-secondary { background: #fff; color: var(--link-blue); border-color: #cbd5e1; }
 
   @media (max-width: 900px) {
     .territorial-cta { padding: 10px 16px; }

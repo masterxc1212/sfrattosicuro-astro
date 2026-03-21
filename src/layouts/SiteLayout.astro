@@ -1,4 +1,4 @@
----
+﻿---
 import SeoHead from '../components/SeoHead.astro';
 import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
 import CookieConsentBanner from '../components/CookieConsentBanner.astro';
@@ -36,10 +36,21 @@ const {
     <slot name="head" />
     <style is:inline>
       :root {
-        --blue-navy: #1b2951;
-        --green-security: #3bae5d;
-        --gray-pearl: #f7f8fc;
+        --blue-navy: var(--blue-navy);
+        --green-security: var(--green-security);
+        --gray-pearl: var(--gray-pearl);
         --anthracite: #2c3e50;
+        /* Spacing scale */
+        --space-sm: 8px;
+        --space-md: 16px;
+        --space-lg: 24px;
+        --space-xl: 48px;
+        --space-xxl: 64px;
+        /* Extended palette */
+        --text-body: var(--text-body);
+        --kicker-gold: var(--kicker-gold);
+        --border-light: var(--border-light);
+        --link-blue: var(--link-blue);
       }
 
       * {
@@ -70,6 +81,17 @@ const {
       video,
       iframe {
         max-width: 100%;
+      }
+
+      /* ── Global layout helpers ───────────────────────────── */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      @media (max-width: 767px) {
+        .container { padding: 0 16px; }
       }
     </style>
   </head>

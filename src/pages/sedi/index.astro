@@ -1,4 +1,4 @@
----
+﻿---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
@@ -351,8 +351,6 @@ const sediGraph = {
 </script>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
   .sedi-hero {
     background: linear-gradient(180deg, #f8fbff 0%, #f3f7fd 100%);
     border-bottom: 1px solid #e6edf7;
@@ -360,7 +358,7 @@ const sediGraph = {
 
   .kicker {
     margin: 0 0 8px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     text-transform: uppercase;
     letter-spacing: .05em;
     font-size: .78rem;
@@ -368,7 +366,7 @@ const sediGraph = {
   }
 
   h1 { margin: 0 0 10px; color: var(--blue-navy); }
-  .hero-sub { margin: 0; max-width: 760px; color: #334155; line-height: 1.65; }
+  .hero-sub { margin: 0; max-width: 760px; color: var(--text-body); line-height: 1.65; }
 
   .stats {
     margin-top: 14px;
@@ -409,7 +407,7 @@ const sediGraph = {
 
   .coverage-copy p {
     margin: 0;
-    color: #334155;
+    color: var(--text-body);
     line-height: 1.65;
     max-width: 68ch;
   }
@@ -434,7 +432,7 @@ const sediGraph = {
     font-weight: 600;
   }
 
-  .macro-stats strong { color: #c6902a; }
+  .macro-stats strong { color: var(--kicker-gold); }
 
   .italy-map-card {
     border: 1px solid #d8e1ef;
@@ -468,7 +466,7 @@ const sediGraph = {
     border-radius: 10px;
     border: 1px solid #cfe0f5;
     background: #f8fbff;
-    color: #1e3a8a;
+    color: var(--link-blue);
     text-decoration: none;
     font-weight: 700;
     font-size: .78rem;
@@ -593,7 +591,7 @@ const sediGraph = {
 
   .city-grid a {
     text-decoration: none;
-    color: #1e3a8a;
+    color: var(--link-blue);
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -614,10 +612,6 @@ const sediGraph = {
     .city-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .italy-map-grid { grid-template-rows: repeat(8, 44px); gap: 8px; }
     .region-node { font-size: .74rem; min-height: 44px; }
-  }
-
-  @media (max-width: 767px) {
-    .container { padding: 0 16px; }
   }
 
   @media (max-width: 640px) {

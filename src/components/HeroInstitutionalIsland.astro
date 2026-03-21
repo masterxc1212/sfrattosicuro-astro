@@ -1,4 +1,4 @@
----
+﻿---
 import sedi from '../data/sedi.json';
 
 interface HeroVars {
@@ -257,7 +257,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
 
   .kicker {
     margin: 0 0 8px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     text-transform: uppercase;
     letter-spacing: .05em;
     font-weight: 700;
@@ -272,7 +272,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
 
   .subtitle {
     margin: 0 0 16px;
-    color: #334155;
+    color: var(--text-body);
     font-size: clamp(1rem, 1.6vw, 1.18rem);
     line-height: 1.65;
   }
@@ -280,7 +280,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
   .bullets {
     margin: 0 0 18px;
     padding-left: 18px;
-    color: #334155;
+    color: var(--text-body);
     display: grid;
     gap: 8px;
   }
@@ -301,7 +301,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
   }
 
   .btn-primary { background: #2b8f42; color: #fff; }
-  .btn-secondary { background: #fff; color: #1e3a8a; border-color: #cbd5e1; }
+  .btn-secondary { background: #fff; color: var(--link-blue); border-color: #cbd5e1; }
 
   .trust-row {
     display: flex;
@@ -316,7 +316,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
     padding: 8px 10px;
     background: #fff;
     border: 1px solid #e2e8f0;
-    color: #334155;
+    color: var(--text-body);
     font-size: .92rem;
     border-radius: 999px;
   }

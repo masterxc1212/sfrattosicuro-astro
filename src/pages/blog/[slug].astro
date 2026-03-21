@@ -1,4 +1,4 @@
----
+﻿---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
@@ -95,11 +95,11 @@ const jsonLd = {
   .breadcrumbs { display: flex; gap: 8px; flex-wrap: wrap; color: #64748b; font-size: .95rem; }
   .breadcrumbs a { color: #1d4ed8; text-decoration: none; }
   .hero { display: grid; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0; }
-  .eyebrow { margin: 0; color: #c6902a; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+  .eyebrow { margin: 0; color: var(--kicker-gold); text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
   h1 { margin: 0; color: var(--blue-navy); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; }
-  .lead { margin: 0; color: #334155; font-size: 1.12rem; line-height: 1.8; }
+  .lead { margin: 0; color: var(--text-body); font-size: 1.12rem; line-height: 1.8; }
   .meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: .95rem; }
-  .body { color: #334155; line-height: 1.85; font-size: 1.05rem; max-width: 72ch; }
+  .body { color: var(--text-body); line-height: 1.85; font-size: 1.05rem; max-width: 72ch; }
   .body :global(h2), .body :global(h3) { color: var(--blue-navy); line-height: 1.2; }
   .body :global(h2) { margin-top: 36px; margin-bottom: 12px; font-size: 1.75rem; }
   .body :global(h3) { margin-top: 26px; margin-bottom: 10px; font-size: 1.2rem; }
@@ -112,7 +112,7 @@ const jsonLd = {
     background: #f8fbff;
     border-radius: 16px;
     padding: 16px 18px;
-    color: #334155;
+    color: var(--text-body);
     font-size: .95rem;
   }
   @media (max-width: 767px) {

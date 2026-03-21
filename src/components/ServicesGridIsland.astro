@@ -1,4 +1,4 @@
----
+﻿---
 const services = [
   {
     icon: '⚖️',
@@ -66,12 +66,10 @@ const services = [
     border-bottom: 1px solid #e6edf7;
   }
 
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
   .section-head { margin-bottom: 16px; }
   .kicker {
     margin: 0 0 8px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     text-transform: uppercase;
     letter-spacing: .05em;
     font-size: .78rem;
@@ -87,7 +85,7 @@ const services = [
   }
 
   .card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     background: #fff;
     padding: 22px;
@@ -95,9 +93,9 @@ const services = [
     border-top-width: 3px;
   }
 
-  .card:nth-child(1), .card:nth-child(4) { border-top-color: #3bae5d; }
-  .card:nth-child(2), .card:nth-child(5) { border-top-color: #1b2951; }
-  .card:nth-child(3), .card:nth-child(6) { border-top-color: #c6902a; }
+  .card:nth-child(1), .card:nth-child(4) { border-top-color: var(--green-security); }
+  .card:nth-child(2), .card:nth-child(5) { border-top-color: var(--blue-navy); }
+  .card:nth-child(3), .card:nth-child(6) { border-top-color: var(--kicker-gold); }
 
   .icon {
     margin: 0 0 8px;
@@ -115,14 +113,13 @@ const services = [
   h3 { margin: 0 0 10px; color: var(--blue-navy); font-size: 1.05rem; }
   h3 a { color: inherit; text-decoration: none; }
   h3 a:hover { text-decoration: underline; }
-  p { margin: 0; color: #334155; line-height: 1.65; }
+  p { margin: 0; color: var(--text-body); line-height: 1.65; }
   .card-cta { margin-top: 12px; }
-  .card-cta a { color: #1e3a8a; font-weight: 700; text-decoration: none; }
+  .card-cta a { color: var(--link-blue); font-weight: 700; text-decoration: none; }
   .card-cta a:hover { text-decoration: underline; }
 
   @media (max-width: 1024px) { .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 767px) {
-    .container { padding: 0 16px; }
     .cards-grid { grid-template-columns: 1fr; }
   }
 </style>

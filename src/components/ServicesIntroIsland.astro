@@ -24,8 +24,6 @@
 </section>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
   .intro-grid {
     display: grid;
     grid-template-columns: 1.15fr .85fr;
@@ -35,7 +33,7 @@
 
   .kicker {
     margin: 0 0 8px;
-    color: #c6902a;
+    color: var(--kicker-gold);
     text-transform: uppercase;
     letter-spacing: .05em;
     font-size: .78rem;
@@ -43,10 +41,10 @@
   }
 
   h2 { margin: 0 0 14px; color: var(--blue-navy); }
-  p { margin: 0 0 12px; color: #334155; line-height: 1.7; }
+  p { margin: 0 0 12px; color: var(--text-body); line-height: 1.7; }
 
   .intro-highlights {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     background: #fff;
     padding: 18px;
@@ -75,7 +73,5 @@
     .intro-grid { grid-template-columns: 1fr; }
   }
 
-  @media (max-width: 767px) {
-    .container { padding: 0 16px; }
-  }
+
 </style>
