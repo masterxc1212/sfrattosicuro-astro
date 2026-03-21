@@ -89,12 +89,19 @@ const homeGraph = {
       '@id': `${siteUrl}/#legalservice`,
       name: org.name,
       url: `${siteUrl}/`,
+      telephone: org.telephone,
+      email: org.email,
+      address: {
+        '@type': 'PostalAddress',
+        ...org.nationalAddress
+      },
       areaServed: [
         { '@type': 'Country', name: 'IT' },
         { '@type': 'AdministrativeArea', name: org.nationalAddress.addressRegion },
         { '@type': 'City', name: org.nationalAddress.addressLocality }
       ],
       serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
+      openingHoursSpecification: org.openingHoursSpecification,
       provider: { '@id': `${siteUrl}/#organization` },
       ...(mapUrl ? { hasMap: mapUrl } : {})
     },

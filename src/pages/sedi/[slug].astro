@@ -4,6 +4,7 @@ import HomeModel from '../../components/HomeModel.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import sedi from '../../data/sedi.json';
 import site from '../../data/site.json';
+const org = site.organization;
 import {
   getTerritorialFaq,
   getTerritorialHomeSeo,
@@ -36,30 +37,38 @@ const faqEntities = faqVisible.map((item) => ({
 
 const hasRealAddress = !!(sede.officeAddress && sede.officeAddress.streetAddress && sede.officeAddress.addressLocality);
 
+// Indirizzo: usa officeAddress della sede se disponibile, altrimenti indirizzo nazionale
+const addressNode = hasRealAddress
+  ? {
+      '@type': 'PostalAddress',
+      streetAddress: sede.officeAddress?.streetAddress,
+      addressLocality: sede.officeAddress?.addressLocality,
+      postalCode: sede.officeAddress?.postalCode,
+      addressRegion: sede.officeAddress?.addressRegion,
+      addressCountry: sede.officeAddress?.addressCountry || 'IT'
+    }
+  : {
+      '@type': 'PostalAddress',
+      ...org.nationalAddress
+    };
+
 const legalServiceNode: Record<string, unknown> = {
   '@type': 'LegalService',
   '@id': `${siteUrl}${canonicalPath}#legalservice`,
   name: `Avvocato per sfratto a ${sede.nome}`,
   url: `${siteUrl}${canonicalPath}`,
+  telephone: org.telephone,
+  email: org.email,
+  address: addressNode,
   areaServed: [
     { '@type': 'Country', name: 'IT' },
     { '@type': 'AdministrativeArea', name: sede.regione },
     { '@type': 'City', name: sede.nome }
   ],
   serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
+  openingHoursSpecification: org.openingHoursSpecification,
   provider: { '@id': `${siteUrl}/#organization` }
 };
-
-if (hasRealAddress) {
-  legalServiceNode.address = {
-    '@type': 'PostalAddress',
-    streetAddress: sede.officeAddress?.streetAddress,
-    addressLocality: sede.officeAddress?.addressLocality,
-    postalCode: sede.officeAddress?.postalCode,
-    addressRegion: sede.officeAddress?.addressRegion,
-    addressCountry: sede.officeAddress?.addressCountry || 'IT'
-  };
-}
 
 const sedeGraph = {
   '@context': 'https://schema.org',
