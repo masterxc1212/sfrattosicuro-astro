@@ -1,8 +1,8 @@
 const endpoints = [
   'https://www.sfrattosicuro.it/robots.txt',
-  'https://www.sfrattosicuro.it/sitemap.xml',
-  'https://www.sfrattosicuro.it/sitemap-pages.xml',
-  'https://www.sfrattosicuro.it/blog/sitemap_index.xml',
+  'https://www.sfrattosicuro.it/sitemap.xml',          // ← sitemap principale (unica)
+  'https://www.sfrattosicuro.it/sitemap-pages.xml',    // alias retrocompat
+  'https://www.sfrattosicuro.it/blog/post-sitemap.xml', // alias retrocompat
   'https://www.sfrattosicuro.it/blog/robots.txt'
 ];
 

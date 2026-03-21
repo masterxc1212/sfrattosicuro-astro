@@ -1,4 +1,4 @@
-export type BlogCategory = 'Sfratti' | 'Locazioni';
+﻿export type BlogCategory = 'Sfratti' | 'Locazioni';
 
 export interface BlogPost {
   slug: string;
@@ -580,7 +580,7 @@ const posts: BlogPost[] = [
     category: 'Locazioni',
     readingTime: '8 min',
     sourceNote:
-      'URL e data confermate dal sito live WordPress (meta article:published_time 2026-03-18T07:12:54+00:00 e link archivio). Contenuto ricostruito in modo conservativo dal draft locale e dal testo live leggibile.',
+      'URL e data confermate dal sito live. Contenuto ricostruito in modo conservativo dal draft locale.',
     html: `
       <p>Il canone concordato interessa molti proprietari perché promette un equilibrio diverso rispetto al contratto a canone libero: un canone più contenuto, ma in cambio alcuni vantaggi fiscali che possono migliorare il rendimento netto dell’immobile. Il punto, però, è capire quando questa convenienza è reale e quando invece resta solo teorica.</p>
       <p>Per decidere bene servono tre verifiche: quale canone è ammesso dagli accordi territoriali del Comune, quali agevolazioni fiscali sono concretamente applicabili e quanto si riduce davvero il margine rispetto a un contratto libero. Se vuoi impostare correttamente anche la parte operativa, può esserti utile la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
@@ -642,7 +642,7 @@ const posts: BlogPost[] = [
     category: 'Locazioni',
     readingTime: '8 min',
     sourceNote:
-      'URL e data confermate dal sito live WordPress (meta article:published_time 2026-03-17T08:57:34+00:00 e link archivio). Contenuto ricostruito in modo conservativo dal draft locale e dal testo live leggibile.',
+      'URL e data confermate dal sito live. Contenuto ricostruito in modo conservativo dal draft locale.',
     html: `
       <p>La registrazione del contratto di locazione online è uno degli adempimenti più importanti per il proprietario. Non è un passaggio secondario: da qui dipendono regolarità fiscale, opponibilità del contratto e gestione più ordinata di tutto il rapporto locativo.</p>
       <p>La buona notizia è che la procedura telematica è affrontabile anche senza intermediario, purché si arrivi preparati con documenti, dati catastali e scelta fiscale già chiari. Se stai ancora valutando il tipo di contratto da usare, può essere utile leggere anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a>.</p>
@@ -711,7 +711,7 @@ const posts: BlogPost[] = [
     category: 'Locazioni',
     readingTime: '7 min',
     sourceNote:
-      'URL, titolo e data confermati dal sito live WordPress tramite link archivio alla URL /blog/adeguamento-istat-affitto/ con data 2026-03-16T07:44:58+00:00. Corpo ricostruito in modo conservativo dal draft locale, perché la pagina live oggi restituisce 404.',
+      'URL, titolo e data confermati dal sito live. Corpo ricostruito in modo conservativo dal draft locale (pagina live era 404 al momento della migrazione).',
     html: `
       <p>L’adeguamento ISTAT dell’affitto è uno dei temi che i proprietari spesso scoprono tardi, cioè quando si rendono conto che il canone pattuito anni prima vale ormai meno in termini reali. Però non basta parlare genericamente di inflazione: l’aggiornamento funziona solo se il contratto lo consente e se viene gestito con metodo.</p>
       <p>Per evitare contestazioni conviene ragionare su tre punti: presenza della clausola, corretto riferimento all’indice FOI e comunicazione formale all’inquilino. Se stai valutando il rapporto locativo in modo più ampio, possono esserti utili anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto</a>.</p>

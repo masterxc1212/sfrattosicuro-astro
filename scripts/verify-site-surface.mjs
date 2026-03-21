@@ -6,8 +6,9 @@ const root = process.cwd();
 const distDir = process.env.CI === 'true'
   ? path.join(root, 'dist')
   : path.join(os.homedir(), '.astro-local-builds', 'retrograde-ring', 'dist');
-const sitemapPath = path.join(distDir, 'sitemap-pages.xml');
-const blogSitemapPath = path.join(distDir, 'blog', 'post-sitemap.xml');
+const sitemapPath = path.join(distDir, 'sitemap.xml');          // sitemap principale unificata
+const sitemapPagesPath = path.join(distDir, 'sitemap-pages.xml'); // alias retrocompat
+const blogSitemapPath = path.join(distDir, 'blog', 'post-sitemap.xml'); // alias retrocompat
 const sediPath = path.join(root, 'src', 'data', 'sedi.json');
 const servicesPath = path.join(root, 'src', 'data', 'service-pages.ts');
 const blogPostsPath = path.join(root, 'src', 'data', 'blog-posts.ts');
@@ -81,6 +82,7 @@ for (const item of sedi) {
   ensureFile(path.join('sedi', item.slug, 'index.html'));
 }
 
+// Verifica sitemap.xml principale (unica, contiene tutto)
 if (fs.existsSync(sitemapPath)) {
   const sitemap = fs.readFileSync(sitemapPath, 'utf8');
   const requiredUrls = [
@@ -92,23 +94,21 @@ if (fs.existsSync(sitemapPath)) {
     'https://www.sfrattosicuro.it/blog/'
   ];
   for (const url of requiredUrls) {
-    if (!sitemap.includes(url)) fail(`sitemap-pages.xml missing ${url}`);
-    else ok(`sitemap-pages.xml contains ${url}`);
+    if (!sitemap.includes(url)) fail(`sitemap.xml missing ${url}`);
+    else ok(`sitemap.xml contains ${url}`);
   }
   for (const slug of serviceSlugs) {
     const url = `https://www.sfrattosicuro.it/servizi/${slug}/`;
-    if (!sitemap.includes(url)) fail(`sitemap-pages.xml missing ${url}`);
+    if (!sitemap.includes(url)) fail(`sitemap.xml missing service: ${url}`);
   }
-  ok('sitemap-pages.xml covers pages and services');
-}
-
-if (fs.existsSync(blogSitemapPath)) {
-  const blogSitemap = fs.readFileSync(blogSitemapPath, 'utf8');
   for (const slug of blogSlugs) {
     const url = `https://www.sfrattosicuro.it/blog/${slug}/`;
-    if (!blogSitemap.includes(url)) fail(`blog/post-sitemap.xml missing ${url}`);
-    else ok(`blog/post-sitemap.xml contains ${url}`);
+    if (!sitemap.includes(url)) fail(`sitemap.xml missing blog post: ${url}`);
+    else ok(`sitemap.xml contains blog: /blog/${slug}/`);
   }
+  ok('sitemap.xml covers pages, services and blog posts');
+} else {
+  fail('sitemap.xml missing from dist root');
 }
 
 const home = ensureFile('index.html');
