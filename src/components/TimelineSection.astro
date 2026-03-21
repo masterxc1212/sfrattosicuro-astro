@@ -56,7 +56,20 @@ const steps = ['Deposito intimazione', 'Udienza di convalida', 'Ordinanza di ril
     .line { display: none; }
   }
   @media (max-width: 767px) {
-    .section { padding: 32px 0; }
-    .timeline { grid-template-columns: 1fr; }
+    .section { padding: 36px 0; }
+    h2 { font-size: clamp(1.3rem, 5vw, 1.8rem); margin-bottom: 16px; }
+    .timeline { display: flex; flex-direction: column; gap: 10px; counter-reset: step; }
+    .timeline-step { display: flex; align-items: center; gap: 10px; text-align: left; counter-increment: step; }
+    .timeline-step::before {
+      content: counter(step);
+      min-width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--blue-navy); color: #fff;
+      display: grid; place-items: center;
+      font-weight: 700; font-size: 0.82rem;
+      flex-shrink: 0;
+    }
+    .dot { display: none; }
+    .timeline-step p { margin: 0; font-size: 0.95rem; }
   }
 </style>

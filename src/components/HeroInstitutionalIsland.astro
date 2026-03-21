@@ -362,7 +362,18 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
   }
 
   @media (max-width: 767px) {
-    .hero-institutional { padding: 18px; }
-    .hero-media, .carousel-track, .slide { min-height: 240px; }
+    .hero-institutional { padding: 16px; margin-bottom: 12px; }
+    .hero-media { display: none; }
+    .kicker { font-size: 0.72rem; margin-bottom: 10px; }
+    h1 { margin-bottom: 14px; }
+    .subtitle { font-size: 0.95rem; margin-bottom: 18px; }
+    .bullets { list-style: none; padding-left: 0; font-size: 0.9rem; gap: 6px; margin-bottom: 20px; }
+    .bullets li { padding-left: 1.4em; position: relative; }
+    .bullets li::before { content: '✓'; position: absolute; left: 0; color: #2b8f42; font-weight: 700; }
+    .cta-row { flex-direction: column; margin-bottom: 20px; }
+    .btn { text-align: center; }
+    .trust-row { gap: 6px; }
+    .trust-row span { font-size: 0.82rem; padding: 6px 8px; }
+    .trust-row span:nth-child(n+3) { display: none; }
   }
 </style>
