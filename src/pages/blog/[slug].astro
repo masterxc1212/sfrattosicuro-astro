@@ -40,7 +40,18 @@ function extractFaqs(html: string): Array<{ q: string; a: string }> {
     if (q && a && q.length > 10 && a.length > 20) faqs.push({ q, a });
   }
 
-  // Fallback: <dt>/<dd> pattern
+  // Fallback 2: <p><strong>Q</strong><br>A</p> pattern
+  if (faqs.length === 0) {
+    const faqSection2 = html.match(/(?:<h2[^>]*>[^<]*(?:FAQ|Domande)[^<]*<\/h2>)([\s\S]*?)(?=<h2|$)/i)?.[1] || '';
+    const strongBr = [...faqSection2.matchAll(/<p[^>]*>\s*<strong[^>]*>([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)?([\s\S]*?)<\/p>/gi)];
+    for (const m of strongBr) {
+      const q = m[1].replace(/<[^>]+>/g, '').trim();
+      const a = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 400);
+      if (q && a && q.length > 10 && a.length > 20) faqs.push({ q, a });
+    }
+  }
+
+  // Fallback 3: <dt>/<dd> pattern
   if (faqs.length === 0) {
     const dtdd = [...html.matchAll(/<dt[^>]*>([\s\S]*?)<\/dt>\s*<dd[^>]*>([\s\S]*?)<\/dd>/gi)];
     for (const m of dtdd) {
