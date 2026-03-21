@@ -16,6 +16,110 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'risoluzione-contratto-locazione',
+    title: 'Risoluzione del contratto di locazione: guida per il proprietario',
+    description:
+      'Come risolvere il contratto di locazione per inadempimento o accordo: passi corretti, rischi da evitare e quando rivolgersi a un avvocato.',
+    excerpt:
+      'Una guida pratica per il proprietario su come sciogliere anticipatamente un contratto di locazione: risoluzione consensuale, per inadempimento, clausola risolutiva espressa e adempimenti post-risoluzione.',
+    lead:
+      'Sciogliere anticipatamente un contratto di locazione richiede metodo: capire di che tipo di risoluzione si tratta, seguire la procedura giusta e formalizzare tutto per iscritto. Ecco come farlo senza esporsi a contestazioni.',
+    publishedAt: '2026-03-21',
+    category: 'Locazioni',
+    readingTime: '9 min',
+    sourceNote:
+      'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft_risoluzione-contratto-locazione.md` del 2026-03-21.',
+    html: `
+      <p>Molti proprietari confondono la <strong>risoluzione del contratto di locazione</strong> con la disdetta o con la procedura di sfratto. Sono strumenti diversi, con presupposti e conseguenze diverse. Capire quale applicare — e come — è il primo passo per gestire la fine anticipata di un rapporto locativo senza commettere errori che poi costano.</p>
+
+      <p>Questo articolo è pensato per il proprietario che si trova in una delle situazioni più frequenti: l'inquilino non rispetta il contratto, o entrambe le parti vogliono chiudere in anticipo, oppure qualcosa è cambiato e il contratto non può più proseguire nelle condizioni originali.</p>
+
+      <h2>Risoluzione, sfratto, disdetta: non sono la stessa cosa</h2>
+      <p>Prima di tutto, è utile fare chiarezza sui termini.</p>
+      <ul>
+        <li><strong>La disdetta</strong> è il recesso comunicato con il preavviso contrattuale a scadenza naturale del contratto. È il percorso ordinario per non rinnovare.</li>
+        <li><strong>Lo sfratto</strong> è una procedura giudiziaria che il proprietario avvia davanti al tribunale quando l'inquilino non vuole lasciare l'immobile — per morosità o per finita locazione. Per approfondire le due procedure principali, leggi la guida sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a> e quella sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</li>
+        <li><strong>La risoluzione</strong> è invece lo scioglimento anticipato del contratto, prima della scadenza, per una causa specifica. Può avvenire per accordo tra le parti, per inadempimento grave dell'inquilino, o per clausola contrattuale.</li>
+      </ul>
+
+      <h2>Le cause principali di risoluzione</h2>
+
+      <h3>1. Risoluzione consensuale (accordo tra le parti)</h3>
+      <p>La forma più semplice e meno conflittuale. Proprietario e inquilino si accordano per chiudere il contratto prima della scadenza. Non serve andare in tribunale, ma servono alcune cose:</p>
+      <ul>
+        <li><strong>Un accordo scritto</strong>, firmato da entrambe le parti, che indichi la data di cessazione e le condizioni (riconsegna chiavi, eventuali somme dovute, stato dell'immobile).</li>
+        <li><strong>La comunicazione all'Agenzia delle Entrate</strong>, entro 30 giorni dalla data di cessazione, tramite il modello RLI. Per chi vuole un promemoria sul funzionamento del portale, è utile rileggere la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</li>
+        <li><strong>La restituzione del deposito cauzionale</strong>, se non ci sono danni o insoluti da compensare. Le regole su quando e come il proprietario può trattenere la cauzione sono spiegate nell'articolo sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale affitto</a>.</li>
+      </ul>
+      <p><strong>Attenzione:</strong> anche se l'accordo è verbale e l'inquilino consegna le chiavi, il contratto registrato resta formalmente attivo fino alla comunicazione all'Agenzia delle Entrate. Non trascurare questo passaggio.</p>
+
+      <h3>2. Risoluzione per inadempimento grave</h3>
+      <p>Quando l'inquilino non rispetta gli obblighi contrattuali in modo serio e continuativo, il proprietario può agire per ottenere la risoluzione per via giudiziale, ai sensi dell'articolo 1453 del Codice Civile.</p>
+      <p>Le cause più frequenti sono:</p>
+      <ul>
+        <li>mancato pagamento del canone (anche se in questo caso si avvia più spesso la procedura di sfratto per morosità, che è più rapida);</li>
+        <li>sublocazione non autorizzata;</li>
+        <li>uso dell'immobile difforme dalla destinazione contrattuale;</li>
+        <li>danni gravi o modifiche strutturali non autorizzate;</li>
+        <li>comportamenti che turbano la quiete condominiale in modo reiterato.</li>
+      </ul>
+      <p>In questo caso, il proprietario non può semplicemente dichiarare risolto il contratto da solo: deve rivolgersi al tribunale con un'azione di risoluzione. Il giudice accerta l'inadempimento e pronuncia la risoluzione, con obbligo di rilascio per l'inquilino.</p>
+      <p><strong>Cosa fare prima di andare in giudizio:</strong><br>In molti casi conviene diffidare formalmente l'inquilino a cessare il comportamento inadempiente, con una lettera raccomandata. La diffida non è obbligatoria per legge, ma rafforza la posizione del proprietario e a volte risolve la situazione senza necessità di ricorrere al tribunale.</p>
+
+      <h3>3. Clausola risolutiva espressa</h3>
+      <p>Se il contratto contiene una <strong>clausola risolutiva espressa</strong> (art. 1456 c.c.), il proprietario può dichiarare risolto il contratto con una semplice comunicazione scritta, senza passare dal giudice, quando si verifica l'evento previsto dalla clausola.</p>
+      <p>Esempio tipico: "In caso di mancato pagamento di due mensilità, il contratto si intende risolto di diritto."</p>
+      <p>Perché funzioni, la clausola deve: essere presente nel contratto scritto e registrato; essere sufficientemente specifica (non generica); essere azionata con una dichiarazione scritta dell'avente diritto.</p>
+      <p>Anche dopo la dichiarazione di risoluzione, se l'inquilino non lascia l'immobile, il proprietario dovrà comunque avviare una procedura giudiziaria per ottenere il rilascio effettivo — ma la risoluzione già perfezionata rafforza la sua posizione.</p>
+
+      <h2>Cosa fare dopo la risoluzione</h2>
+      <p>Qualunque sia la causa, una volta che il contratto è risolto ci sono alcuni adempimenti da non saltare:</p>
+      <ol>
+        <li><strong>Redigere un verbale di riconsegna</strong> con l'inquilino: data, stato dell'immobile, lettura contatori, restituzione delle chiavi. Firmato da entrambi, è il documento che chiude il rapporto.</li>
+        <li><strong>Comunicare la cessazione all'Agenzia delle Entrate</strong> (modello RLI), se il contratto era registrato.</li>
+        <li><strong>Verificare la posizione del deposito cauzionale</strong>: restituirlo entro tempi ragionevoli se non ci sono trattenute legittime, oppure documentare per iscritto le ragioni di eventuali trattenute parziali o totali.</li>
+        <li><strong>Aggiornare eventuali comunicazioni alle autorità competenti</strong>, se l'inquilino era straniero o se era necessaria la comunicazione di ospitalità/cessione di fabbricato.</li>
+      </ol>
+
+      <h2>Gli errori più comuni da evitare</h2>
+      <p><strong>Cambiare la serratura senza accordo o provvedimento.</strong> È vietato. Anche se l'inquilino è inadempiente, il proprietario non può entrare in possesso dell'immobile con forza propria: si chiama autotutela vietata e può portare a denunce penali.</p>
+      <p><strong>Considerare chiuso il contratto perché l'inquilino ha smesso di pagare.</strong> Il mancato pagamento è una causa di inadempimento, ma il contratto resta formalmente in essere finché non viene risolto con le procedure corrette.</p>
+      <p><strong>Non comunicare la cessazione all'Agenzia delle Entrate.</strong> Anche se la cessazione è consensuale e pacifica, l'omessa comunicazione espone a sanzioni e può creare problemi in caso di contestazioni future.</p>
+      <p><strong>Restituire il deposito cauzionale senza prima verificare lo stato dell'immobile.</strong> Una volta restituita la cauzione senza riserve, è molto più difficile far valere successivamente eventuali danni o insoluti.</p>
+
+      <h2>Quando è necessario rivolgersi a un avvocato</h2>
+      <p>La risoluzione consensuale ben documentata può essere gestita autonomamente, ma ci sono situazioni in cui affidarsi a un professionista è la scelta più prudente:</p>
+      <ul>
+        <li>l'inquilino non collabora o contesta la causa di risoluzione;</li>
+        <li>ci sono somme importanti in gioco (danni, canoni arretrati, spese);</li>
+        <li>il contratto contiene clausole non standard che richiedono interpretazione;</li>
+        <li>si valuta di agire per risoluzione per inadempimento in tribunale.</li>
+      </ul>
+      <p>In questi casi, un avvocato specializzato in diritto delle locazioni può valutare la fattispecie concreta, impostare la strategia più efficace e gestire le comunicazioni formali in modo che non si creino cavilli a favore dell'inquilino.</p>
+
+      <h2>Hai bisogno di assistenza per sciogliere un contratto di locazione?</h2>
+      <p>Sfratto Sicuro assiste i proprietari nella gestione dei rapporti locativi, dalla risoluzione consensuale alle procedure giudiziarie per inadempimento. Se la tua situazione è complicata o non sai da dove cominciare, <a href="/">contattaci per una valutazione del caso</a>: un professionista può aiutarti a scegliere il percorso corretto e a tutelarti in ogni fase.</p>
+
+      <h2>FAQ — Domande frequenti sulla risoluzione del contratto di locazione</h2>
+
+      <p><strong>È obbligatorio andare in tribunale per risolvere un contratto di locazione?</strong><br>No. Se le parti sono d'accordo, la risoluzione consensuale si formalizza con un accordo scritto e la comunicazione all'Agenzia delle Entrate. Il tribunale serve solo quando c'è un inadempimento contestato o l'inquilino non vuole lasciare l'immobile.</p>
+
+      <p><strong>In quanto tempo devo comunicare la cessazione anticipata all'Agenzia delle Entrate?</strong><br>Entro 30 giorni dalla data di effettiva cessazione del contratto, tramite il modello RLI (lo stesso usato per la registrazione).</p>
+
+      <p><strong>Cosa succede se l'inquilino non lascia l'immobile dopo la risoluzione?</strong><br>La risoluzione del contratto non vale come titolo esecutivo per il rilascio. Se l'inquilino rimane nell'immobile, il proprietario deve avviare una procedura giudiziaria — in alcuni casi uno sfratto, in altri un'azione di rivendica o di rilascio — per ottenere il titolo che consente l'esecuzione forzata.</p>
+
+      <p><strong>Posso trattenere il deposito cauzionale per i canoni non pagati?</strong><br>Sì, ma solo fino all'importo delle mensilità effettivamente non pagate e documentate. Trattenere l'intera cauzione in modo generico, senza documentazione, può essere contestato dall'inquilino. Consulta la guida sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale affitto</a> per i dettagli.</p>
+
+      <p><strong>La clausola risolutiva espressa è sempre valida nei contratti di locazione?</strong><br>In linea generale sì, purché sia inserita nel contratto scritto e registrato e si riferisca a ipotesi specifiche e gravi. Alcune clausole troppo generiche possono essere contestate. Prima di azionarla, è prudente farla verificare da un professionista.</p>
+
+      <p><strong>Posso chiedere un risarcimento danni all'inquilino dopo la risoluzione per inadempimento?</strong><br>Sì. La risoluzione per inadempimento non esclude la possibilità di agire per il risarcimento dei danni subiti (canoni non pagati, danni all'immobile, spese legali). Le due azioni possono essere svolte contestualmente o in sequenza.</p>
+
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Risoluzione del contratto di locazione: guida per il proprietario","description":"Come risolvere il contratto di locazione per inadempimento o accordo: passi corretti, rischi da evitare e quando rivolgersi a un avvocato.","url":"https://www.sfrattosicuro.it/blog/risoluzione-contratto-locazione/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"È obbligatorio andare in tribunale per risolvere un contratto di locazione?","acceptedAnswer":{"@type":"Answer","text":"No. Se le parti sono d'accordo, la risoluzione consensuale si formalizza con un accordo scritto e la comunicazione all'Agenzia delle Entrate."}},{"@type":"Question","name":"In quanto tempo devo comunicare la cessazione anticipata all'Agenzia delle Entrate?","acceptedAnswer":{"@type":"Answer","text":"Entro 30 giorni dalla data di effettiva cessazione del contratto, tramite il modello RLI."}},{"@type":"Question","name":"Cosa succede se l'inquilino non lascia l'immobile dopo la risoluzione?","acceptedAnswer":{"@type":"Answer","text":"Il proprietario deve avviare una procedura giudiziaria per ottenere il titolo che consente l'esecuzione forzata."}},{"@type":"Question","name":"Posso trattenere il deposito cauzionale per i canoni non pagati?","acceptedAnswer":{"@type":"Answer","text":"Sì, ma solo fino all'importo delle mensilità effettivamente non pagate e documentate."}},{"@type":"Question","name":"La clausola risolutiva espressa è sempre valida nei contratti di locazione?","acceptedAnswer":{"@type":"Answer","text":"In linea generale sì, purché sia inserita nel contratto scritto e registrato e si riferisca a ipotesi specifiche e gravi."}},{"@type":"Question","name":"Posso chiedere un risarcimento danni all'inquilino dopo la risoluzione per inadempimento?","acceptedAnswer":{"@type":"Answer","text":"Sì. La risoluzione per inadempimento non esclude la possibilità di agire per il risarcimento dei danni subiti."}}]}]}
+      </script>
+    `,
+  },
+  {
     slug: 'subentro-contratto-locazione',
     title: 'Subentro contratto locazione: cosa deve verificare il proprietario',
     description:

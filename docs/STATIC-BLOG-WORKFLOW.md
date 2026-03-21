@@ -46,12 +46,15 @@ Prima di aggiungere o modificare un post già live, controllare sempre anche:
 
 ## Sitemaps blog
 
-La build genera:
+La build (`postbuild`) genera:
 
-- `dist/sitemap.xml` → indice sitemap root
-- `dist/sitemap-pages.xml` → pagine Astro core
-- `dist/blog/sitemap_index.xml` → indice sitemap blog
-- `dist/blog/post-sitemap.xml` → URL articoli blog
+- `dist/sitemap.xml` → **sitemap principale**: urlset unico con tutte le URL (pagine + blog)
+- `dist/sitemap-pages.xml` → alias retrocompatibilità: solo pagine Astro core
+- `dist/blog/post-sitemap.xml` → alias retrocompatibilità: solo URL articoli blog
+- `dist/blog/sitemap_index.xml` → alias retrocompatibilità: sitemapindex che punta a `/sitemap.xml`
+
+Gli alias esistono solo per non creare 404 su URL già noti a Google Search Console.
+`robots.txt` punta sempre a `/sitemap.xml`.
 
 ## Stato del vecchio flusso WordPress
 
