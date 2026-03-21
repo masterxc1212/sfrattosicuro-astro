@@ -29,7 +29,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'sfratto-per-morosita',
     shortTitle: 'Sfratto per morosità',
-    title: 'Sfratto per morosità: assistenza legale per proprietari | Sfratto Sicuro',
+    title: 'Sfratto per morosità | Assistenza legale | Sfratto Sicuro',
     metaDescription:
       'Assistenza legale per sfratto per morosità: analisi del caso, deposito atti, udienza e rilascio immobile. Supporto operativo su tutto il territorio nazionale.',
     h1: 'Sfratto per morosità',
@@ -108,7 +108,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'sfratto-per-finita-locazione',
     shortTitle: 'Sfratto per finita locazione',
-    title: 'Sfratto per finita locazione: rilascio immobile a fine contratto | Sfratto Sicuro',
+    title: 'Sfratto per finita locazione | Rilascio immobile | Sfratto Sicuro',
     metaDescription:
       'Supporto legale per sfratto per finita locazione quando il contratto è scaduto e l’immobile non viene rilasciato. Assistenza su tutto il territorio nazionale.',
     h1: 'Sfratto per finita locazione',
@@ -187,7 +187,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'recupero-canoni-non-pagati',
     shortTitle: 'Recupero canoni non pagati',
-    title: 'Recupero canoni non pagati: assistenza legale locazioni | Sfratto Sicuro',
+    title: 'Recupero canoni non pagati | Assistenza legale | Sfratto Sicuro',
     metaDescription:
       'Assistenza legale per recupero canoni non pagati e oneri accessori in materia di locazione. Valutazione strategica anche con procedura di sfratto.',
     h1: 'Recupero canoni non pagati',
@@ -266,7 +266,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'controversie-locazione',
     shortTitle: 'Controversie locazione',
-    title: 'Controversie locazione: assistenza legale locatore-conduttore | Sfratto Sicuro',
+    title: 'Controversie di locazione | Assistenza legale | Sfratto Sicuro',
     metaDescription:
       'Assistenza legale nelle controversie in materia di locazione tra locatore e conduttore. Analisi del caso e strategia operativa per la tutela del proprietario.',
     h1: 'Controversie in materia di locazione',
@@ -345,7 +345,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'contratti-di-locazione',
     shortTitle: 'Contratti di locazione',
-    title: 'Predisposizione contratti di locazione per proprietari | Sfratto Sicuro',
+    title: 'Contratti di locazione | Redazione e revisione | Sfratto Sicuro',
     metaDescription:
       'Predisposizione contratti di locazione chiari e strutturati per prevenire contenziosi e tutelare il proprietario nella gestione dell’immobile locato.',
     h1: 'Predisposizione contratti di locazione',

@@ -28,6 +28,9 @@ if (-not $SkipBuild) {
   Write-Host "=== BUILD ===" -ForegroundColor Cyan
   npm run build
   if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne 1) { throw "Build fallita" }
+  # Postbuild potrebbe non girare su Dropbox per EBUSY - esegui sempre esplicitamente
+  Write-Host "--- Generazione sitemap ---"
+  node scripts/generate-sitemaps.mjs
 }
 
 # 2. VERIFY
