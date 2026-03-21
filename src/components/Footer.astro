@@ -1,4 +1,4 @@
----
+﻿---
 import sedi from '../data/sedi.json';
 import site from '../data/site.json';
 
@@ -95,47 +95,3 @@ const legalPhone = org?.telephone ?? '+39 02 8089 8395';
   </div>
 </footer>
 
-<style>
-  .site-footer {
-    margin-top: 2rem;
-    padding: 2.5rem 0;
-    color: #fff;
-    background: linear-gradient(180deg, var(--blue-navy) 0%, #152040 100%);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-  h3 { margin: 0 0 1rem; font-size: 1.05rem; }
-  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-  a { color: #d2d9e6; text-decoration: none; }
-  a:hover { color: var(--green-security); }
-  .brand { display: inline-flex; align-items: center; gap: 0.55rem; margin-bottom: 0.75rem; }
-  .brand img { filter: brightness(0) invert(1); }
-  .brand-text span { display: block; font-size: 1.2rem; font-weight: 700; color: #fff; }
-  .brand-text small { color: #c9a961; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
-  .muted { color: #c7d0df; }
-  .strong { color: #fff; font-weight: 700; }
-  .small { font-size: 0.85rem; }
-  .legal-links { margin-top: .65rem; }
-  .legal-links a { color: #d2d9e6; }
-  .legal-links a:hover { color: var(--green-security); }
-  .where-card {
-    border: 1px solid rgba(255,255,255,.16);
-    background: rgba(255,255,255,.04);
-    border-radius: 12px;
-    padding: 14px;
-    display: grid;
-    gap: 8px;
-  }
-  .where-title {
-    margin: 0;
-    color: #c9a961;
-    font-weight: 700;
-    font-size: .9rem;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-  }
-  .where-line { margin: 0; color: #e7edf8; }
-  .where-line strong { color: #fff; }
-  .where-note { margin: 4px 0 0; color: #c7d0df; font-size: .92rem; line-height: 1.5; }
-  @media (min-width: 900px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem; } }
-</style>

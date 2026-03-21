@@ -1,4 +1,4 @@
----
+﻿---
 import sedi from '../data/sedi.json';
 
 type FaqItem = { q: string; a: string };
@@ -46,15 +46,3 @@ const items = (faqItems && faqItems.length)
   </div>
 </section>
 
-<style>
-  .section { padding: 56px 0; }
-  .section--compact { padding: 40px 0; }
-  h2 { margin: 0 0 28px; color: var(--blue-navy); }
-  p { margin: 0 0 16px; line-height: 1.6; color: var(--text-body); }
-  .faq-list { display: grid; gap: 16px; }
-  details { border: 1px solid #dbe3ef; border-radius: 12px; padding: 16px 18px; background: #fff; }
-  summary { cursor: pointer; font-weight: 700; color: var(--blue-navy); }
-  details p { margin: 12px 0 0; }
-  @media (max-width: 1024px) { .section { padding: 44px 0; } .section--compact { padding: 32px 0; } }
-  @media (max-width: 767px) { .section { padding: 32px 0; } .section--compact { padding: 24px 0; } }
-</style>

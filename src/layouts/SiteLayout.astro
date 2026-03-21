@@ -1,4 +1,5 @@
 ﻿---
+import '../styles/global.css';
 import SeoHead from '../components/SeoHead.astro';
 import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
 import CookieConsentBanner from '../components/CookieConsentBanner.astro';
@@ -34,66 +35,6 @@ const {
       image={image}
     />
     <slot name="head" />
-    <style is:inline>
-      :root {
-        --blue-navy: var(--blue-navy);
-        --green-security: var(--green-security);
-        --gray-pearl: var(--gray-pearl);
-        --anthracite: #2c3e50;
-        /* Spacing scale */
-        --space-sm: 8px;
-        --space-md: 16px;
-        --space-lg: 24px;
-        --space-xl: 48px;
-        --space-xxl: 64px;
-        /* Extended palette */
-        --text-body: var(--text-body);
-        --kicker-gold: var(--kicker-gold);
-        --border-light: var(--border-light);
-        --link-blue: var(--link-blue);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        max-width: 100%;
-        overflow-x: clip;
-      }
-
-      body {
-        margin: 0;
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        color: var(--anthracite);
-        background: #fff;
-      }
-
-      main {
-        width: 100%;
-        margin: 0;
-        overflow-x: clip;
-      }
-
-      img,
-      svg,
-      video,
-      iframe {
-        max-width: 100%;
-      }
-
-      /* ── Global layout helpers ───────────────────────────── */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-
-      @media (max-width: 767px) {
-        .container { padding: 0 16px; }
-      }
-    </style>
   </head>
   <body>
     <slot />

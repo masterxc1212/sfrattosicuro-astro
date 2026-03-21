@@ -1,4 +1,4 @@
----
+﻿---
 import HeaderIsland from './HeaderIsland.astro';
 import HeroInstitutionalIsland from './HeroInstitutionalIsland.astro';
 import SedeIdentityIsland from './SedeIdentityIsland.astro';
@@ -109,19 +109,3 @@ const isNational = sedeSlug === 'nazionale';
 <Footer sedeSlug={sedeSlug} />
 <SmoothScrollIsland />
 
-<style>
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-top: 18px;
-    font-size: .95rem;
-    color: #64748b;
-  }
-
-  .breadcrumb a { color: var(--link-blue); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-
-  .intro p { margin: 0 0 12px; line-height: 1.65; color: var(--text-body); }
-  .back-link { color: var(--link-blue); text-decoration: none; font-weight: 600; }
-</style>

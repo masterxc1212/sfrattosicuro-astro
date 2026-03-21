@@ -24,25 +24,3 @@ const latestPosts = getLatestBlogPosts(3);
   </div>
 </section>
 
-<style>
-  .blog-latest {
-    background: linear-gradient(180deg, #f7fbff 0%, #eef4fb 100%);
-    border-top: 1px solid #e2eaf6;
-    border-bottom: 1px solid #e2eaf6;
-    padding: 44px 0;
-  }
-  .topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
-  .eyebrow { margin: 0 0 6px; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--kicker-gold); font-weight: 700; }
-  h2 { margin: 0; color: var(--blue-navy); font-size: clamp(1.45rem, 2.2vw, 1.95rem); }
-  .sub { margin: 8px 0 0; color: #3d4b65; max-width: 68ch; line-height: 1.65; }
-  .all-link { text-decoration: none; color: #1b376b; font-weight: 700; white-space: nowrap; }
-  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  @media (max-width: 980px) {
-    .topbar { flex-direction: column; align-items: flex-start; }
-    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 600px) {
-    .cards { grid-template-columns: 1fr; }
-    .cards > :nth-child(n+2) { display: none; }
-  }
-</style>
