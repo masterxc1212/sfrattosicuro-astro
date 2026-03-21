@@ -22,25 +22,34 @@ const formatDate = (date: string) =>
   }).format(new Date(date));
 
 // Extract FAQ pairs from HTML for FAQPage schema
+// Blog posts use <h3>question</h3><p>answer</p> pattern inside FAQ sections
 function extractFaqs(html: string): Array<{ q: string; a: string }> {
   const faqs: Array<{ q: string; a: string }> = [];
-  // Match <dt>question</dt><dd>answer</dd> pattern
-  const dtdd = [...html.matchAll(/<dt[^>]*>([\s\S]*?)<\/dt>\s*<dd[^>]*>([\s\S]*?)<\/dd>/gi)];
-  for (const m of dtdd) {
+
+  // Find FAQ section (h2 with FAQ keyword) and extract h3+p pairs after it
+  const faqSectionMatch = html.match(/(?:<h2[^>]*>[^<]*(?:FAQ|Domande|faq)[^<]*<\/h2>)([\s\S]*?)(?=<h2|$)/i);
+  const scope = faqSectionMatch ? faqSectionMatch[1] : html;
+
+  // Match <h3>question</h3> followed by <p>answer</p>
+  const h3p = [...scope.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*(?:<p[^>]*>)?([\s\S]*?)(?=<h3|<h2|$)/gi)];
+  for (const m of h3p) {
     const q = m[1].replace(/<[^>]+>/g, '').trim();
-    const a = m[2].replace(/<[^>]+>/g, '').trim();
-    if (q && a) faqs.push({ q, a });
+    // Get first <p> content after the h3
+    const pMatch = m[2].match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+    const a = (pMatch ? pMatch[1] : m[2]).replace(/<[^>]+>/g, '').trim().substring(0, 400);
+    if (q && a && q.length > 10 && a.length > 20) faqs.push({ q, a });
   }
-  // Fallback: match <strong>Q</strong> ... pattern in FAQ sections
+
+  // Fallback: <dt>/<dd> pattern
   if (faqs.length === 0) {
-    const faqSection = html.match(/FAQ[\s\S]*$/i)?.[0] || '';
-    const items = [...faqSection.matchAll(/<strong[^>]*>([\s\S]*?)<\/strong>([\s\S]*?)(?=<strong|$)/gi)];
-    for (const m of items.slice(0, 8)) {
+    const dtdd = [...html.matchAll(/<dt[^>]*>([\s\S]*?)<\/dt>\s*<dd[^>]*>([\s\S]*?)<\/dd>/gi)];
+    for (const m of dtdd) {
       const q = m[1].replace(/<[^>]+>/g, '').trim();
-      const a = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 300);
-      if (q && a && q.length > 10) faqs.push({ q, a });
+      const a = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 400);
+      if (q && a) faqs.push({ q, a });
     }
   }
+
   return faqs.slice(0, 8);
 }
 
