@@ -170,9 +170,15 @@ const postsByCategory = blogCategories.map((category) => ({
     font-size: .9rem;
     font-weight: 700;
   }
-  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  @media (max-width: 980px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   @media (max-width: 900px) {
-    .summary-grid, .grid { grid-template-columns: 1fr; }
+    .summary-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 767px) {
     .page { padding: 28px 16px 40px; }

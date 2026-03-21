@@ -153,8 +153,21 @@ const heroBg = '/assets/img/ufficio/hero_chi_siamo.webp';
   }
 
   @media (min-width: 980px) {
-    .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
+    .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 40px; }
     .hero-copy { max-width: 62ch; }
-    .hero-media { justify-self: end; max-width: 560px; aspect-ratio: 4 / 3; }
+    .hero-media { justify-self: end; max-width: 560px; aspect-ratio: 4 / 3; min-height: 420px; }
+  }
+
+  @media (max-width: 979px) {
+    .hero-institutional { padding: 16px; margin-bottom: 12px; }
+    .hero-media { display: none; }
+    .kicker { font-size: 0.72rem; margin-bottom: 10px; }
+    h1 { font-size: clamp(1.55rem, 5vw, 2.2rem); margin-top: 8px; }
+    .subtitle { font-size: 0.93rem; line-height: 1.5; margin-top: 12px; max-width: 44ch; }
+    .bullets { font-size: 0.9rem; gap: 6px; }
+    .cta-row { flex-direction: column; }
+    .btn { text-align: center; }
+    .trust-row span { font-size: 0.82rem; padding: 6px 8px; }
+    .trust-row span:nth-child(n+3) { display: none; }
   }
 </style>

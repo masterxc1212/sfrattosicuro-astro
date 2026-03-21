@@ -266,7 +266,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
   h1 {
     margin: 0 0 12px;
     color: var(--blue-navy);
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     line-height: 1.05;
   }
 
@@ -357,8 +357,19 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
   }
   .dot.is-active { background: #fff; }
 
+  .trust-row span::before {
+    content: '✓';
+    color: var(--green-security);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
   @media (min-width: 1024px) {
-    .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(380px, .9fr); }
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.1fr) minmax(380px, .9fr);
+      gap: 40px;
+    }
+    .hero-media { min-height: 420px; }
   }
 
   @media (max-width: 767px) {
