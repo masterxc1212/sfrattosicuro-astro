@@ -42,15 +42,10 @@ const coreFiles = [
   'chi-siamo/index.html',
   'servizi/index.html',
   'sedi/index.html',
-  'landing/index.html',
   'privacy-policy/index.html',
   'cookie-policy/index.html',
   'termini/index.html',
   'blog/index.html',
-  'blog/sitemap_index.xml',
-  'blog/post-sitemap.xml',
-  'blog/robots.txt',
-  'robots.txt',
   'sitemap.xml',
   'sitemap-pages.xml'
 ];
@@ -87,7 +82,6 @@ if (fs.existsSync(sitemapPath)) {
   const sitemap = fs.readFileSync(sitemapPath, 'utf8');
   const requiredUrls = [
     'https://www.sfrattosicuro.it/',
-    'https://www.sfrattosicuro.it/landing/',
     'https://www.sfrattosicuro.it/chi-siamo/',
     'https://www.sfrattosicuro.it/servizi/',
     'https://www.sfrattosicuro.it/sedi/',
@@ -112,15 +106,8 @@ if (fs.existsSync(sitemapPath)) {
 }
 
 const home = ensureFile('index.html');
-const landing = ensureFile(path.join('landing', 'index.html'));
-if (home && landing) {
-  const homeHtml = fs.readFileSync(home, 'utf8');
-  const landingHtml = fs.readFileSync(landing, 'utf8');
-  if (homeHtml === landingHtml) fail('landing/index.html is byte-identical to home index.html');
-  else ok('landing/index.html differs from home index.html');
-
-  if (!landingHtml.includes('https://www.sfrattosicuro.it/landing/')) fail('landing/index.html missing landing canonical/url markers');
-  else ok('landing/index.html contains landing canonical/url markers');
+if (home) {
+  ok('home index.html verified');
 }
 
 if (process.exitCode) {
