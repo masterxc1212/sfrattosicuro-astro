@@ -68,16 +68,8 @@ function buildUrlset(urls, lastmod) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items}\n</urlset>\n`;
 }
 
-function buildRootSitemapIndex(lastmod) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE}/sitemap-pages.xml</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE}/blog/sitemap_index.xml</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n</sitemapindex>\n`;
-}
-
-function buildBlogSitemapIndex(lastmod) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE}/blog/post-sitemap.xml</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n</sitemapindex>\n`;
-}
-
 function buildBlogRobots() {
-  return `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/blog/sitemap_index.xml\n`;
+  return `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`;
 }
 
 async function main() {
@@ -103,13 +95,22 @@ async function main() {
   const sortedBlog = [...blogUrls].sort((a, b) => a.localeCompare(b));
   const today = new Date().toISOString().slice(0, 10);
 
+  // Sitemap unica con tutte le URL (pagine + blog)
+  const allUrls = [...sortedPages, ...sortedBlog];
+  await fs.writeFile(path.join(DIST, 'sitemap.xml'), buildUrlset(allUrls, today), 'utf8');
+
+  // Mantieni sitemap-pages.xml e post-sitemap.xml come alias (per redirect 301 futuri e per
+  // non creare 404 sugli URL già noti a Google Search Console)
   await fs.writeFile(path.join(DIST, 'sitemap-pages.xml'), buildUrlset(sortedPages, today), 'utf8');
-  await fs.writeFile(path.join(DIST, 'sitemap.xml'), buildRootSitemapIndex(today), 'utf8');
 
   const blogDir = path.join(DIST, 'blog');
   await fs.mkdir(blogDir, { recursive: true });
   await fs.writeFile(path.join(blogDir, 'post-sitemap.xml'), buildUrlset(sortedBlog, today), 'utf8');
-  await fs.writeFile(path.join(blogDir, 'sitemap_index.xml'), buildBlogSitemapIndex(today), 'utf8');
+  // blog/sitemap_index.xml: ora punta direttamente alla sitemap radice per evitare confusione
+  await fs.writeFile(path.join(blogDir, 'sitemap_index.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE}/sitemap.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n</sitemapindex>\n`,
+    'utf8'
+  );
   await fs.writeFile(path.join(blogDir, 'robots.txt'), buildBlogRobots(), 'utf8');
 
   const staleSitemap = path.join(DIST, 'sitemap-index.xml');
@@ -120,7 +121,7 @@ async function main() {
     // ignore if missing
   }
 
-  console.log(`✅ Generated sitemap-pages.xml (${sortedPages.length} urls) + blog sitemap (${sortedBlog.length} urls)`);
+  console.log(`✅ Generated sitemap.xml (${allUrls.length} urls total: ${sortedPages.length} pages + ${sortedBlog.length} blog posts)`);
 }
 
 main().catch((err) => {
