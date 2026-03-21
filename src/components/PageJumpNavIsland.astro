@@ -93,13 +93,29 @@ if (!visibleItems.length) {
     }
 
     .jump-nav__inner {
-      padding: 10px 16px;
+      padding: 8px 0 8px 16px;
+      gap: 4px;
     }
 
+    /* Scroll orizzontale su mobile — niente a capo */
+    .jump-nav ul {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-right: 16px;
+      padding-bottom: 2px;
+    }
+
+    .jump-nav ul::-webkit-scrollbar { display: none; }
+
+    .jump-nav li { flex-shrink: 0; }
+
     .jump-nav a {
-      min-height: 44px;
-      font-size: .92rem;
-      padding: 11px 14px;
+      min-height: 36px;
+      font-size: .85rem;
+      padding: 8px 12px;
+      white-space: nowrap;
     }
   }
 </style>
