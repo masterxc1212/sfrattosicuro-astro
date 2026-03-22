@@ -16,6 +16,103 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'cedolare-secca-affitto',
+    title: "Cedolare secca sull'affitto: aliquote 2026, calcolo e quando conviene davvero al proprietario",
+    description:
+      "Cedolare secca 2026: aliquota 21% o 10%, quanto paga il proprietario, quando conviene rispetto all'IRPEF e cosa si perde optando per questo regime.",
+    excerpt:
+      "La cedolare secca tassa il canone di affitto con un'aliquota fissa — 21% o 10% — al posto dell'IRPEF. Per molti proprietari è un risparmio concreto, ma non sempre.",
+    lead:
+      "La cedolare secca tassa il canone di affitto con un'aliquota fissa — 21% o 10% — al posto dell'IRPEF. Prima di optare per questo regime, è utile capire esattamente quanto si paga, cosa si guadagna e cosa si rinuncia.",
+    publishedAt: '2026-03-22',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft_cedolare-secca-affitto.md` del 2026-03-22.',
+    html: `
+      <p>La <strong>cedolare secca sull'affitto</strong> è un'imposta sostitutiva che il proprietario può scegliere in alternativa all'IRPEF ordinaria per tassare i redditi da locazione. Funziona con un'aliquota fissa: <strong>21% per i contratti a canone libero</strong> e <strong>10% per i contratti a canone concordato</strong>. Sostituisce non solo l'IRPEF (e le relative addizionali regionali e comunali), ma anche l'imposta di registro e di bollo sul contratto.</p>
+
+      <p>Non è obbligatoria: è un'opzione. E come ogni scelta fiscale, conviene in alcuni casi e no in altri. Questo articolo spiega in modo concreto come funziona, quanto si paga e quando sceglierla ha senso.</p>
+
+      <h2>Come funziona la cedolare secca</h2>
+      <p>Con la cedolare secca, il proprietario paga un'imposta calcolata direttamente sul <strong>canone annuo lordo</strong>, senza abbattimenti o deduzioni. In cambio, è esonerato dal versare:</p>
+      <ul>
+        <li>IRPEF sul reddito da locazione (incluse addizionali regionali e comunali);</li>
+        <li>imposta di registro annuale sul contratto;</li>
+        <li>imposta di bollo sul contratto.</li>
+      </ul>
+      <p>L'opzione si esercita in sede di registrazione del contratto (o di rinnovo) tramite il modello RLI, disponibile sul portale dell'Agenzia delle Entrate. Per chi non ha ancora registrato il contratto online, la procedura è descritta nella guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+
+      <h2>Le aliquote 2026</h2>
+
+      <h3>21% — contratti a canone libero</h3>
+      <p>È l'aliquota standard, applicata ai contratti abitativi ordinari senza vincoli di canone, tipicamente i contratti <strong>4+4</strong>. Se il canone annuo è di 9.600 euro, la cedolare al 21% vale 2.016 euro di imposta sostitutiva.</p>
+
+      <h3>10% — contratti a canone concordato</h3>
+      <p>L'aliquota ridotta si applica ai contratti stipulati secondo gli accordi territoriali nei Comuni ad alta tensione abitativa: contratti <strong>3+2 a canone concordato</strong>, transitori agevolati, contratti per studenti universitari. Per i dettagli su quando conviene scegliere un contratto a canone concordato, leggi l'articolo dedicato: <a href="/blog/canone-concordato/">canone concordato: quando conviene davvero al proprietario</a>.</p>
+
+      <h3>26% — affitti brevi (secondo immobile e oltre)</h3>
+      <p>Per le locazioni brevi (durata non superiore a 30 giorni), l'aliquota è 21% sul primo immobile e 26% dal secondo in poi. Questo articolo non si occupa degli affitti brevi in senso stretto, ma è utile saperlo se si gestiscono più unità.</p>
+
+      <h2>Quanto paga concretamente il proprietario: esempi</h2>
+      <table>
+        <thead><tr><th>Canone annuo</th><th>Cedolare 21%</th><th>Cedolare 10%</th></tr></thead>
+        <tbody>
+          <tr><td>6.000 €</td><td>1.260 €</td><td>600 €</td></tr>
+          <tr><td>9.600 €</td><td>2.016 €</td><td>960 €</td></tr>
+          <tr><td>12.000 €</td><td>2.520 €</td><td>1.200 €</td></tr>
+          <tr><td>15.600 €</td><td>3.276 €</td><td>1.560 €</td></tr>
+        </tbody>
+      </table>
+      <p>Il pagamento segue le stesse scadenze dell'IRPEF: saldo e primo acconto entro fine giugno, secondo acconto a novembre.</p>
+
+      <h2>Quando conviene la cedolare secca</h2>
+      <p>La cedolare secca conviene quando l'aliquota marginale IRPEF del proprietario supera quella della cedolare. In pratica:</p>
+      <ul>
+        <li>Se il reddito complessivo supera i <strong>28.000 euro</strong> annui, lo scaglione IRPEF è al 35%. La cedolare al 21% è quasi sempre più conveniente.</li>
+        <li>Se il reddito è sotto 15.000 euro, lo scaglione IRPEF è al 23%. In questo caso la cedolare al 21% porta un risparmio marginale, ma bisogna considerare che con IRPEF si beneficia di eventuali deduzioni e detrazioni.</li>
+        <li>Per i <strong>contratti a canone concordato</strong>, la cedolare al 10% è quasi sempre vantaggiosa indipendentemente dal livello di reddito.</li>
+      </ul>
+      <p>Esempio pratico: proprietario con reddito da lavoro di 35.000 euro e affitto annuo di 9.600 euro. Con IRPEF ordinaria, i 9.600 euro di canone vengono tassati al 35% (scaglione applicabile), per un'imposta di circa 3.360 euro. Con cedolare secca al 21%, si pagano 2.016 euro. Risparmio: circa 1.344 euro.</p>
+
+      <h2>Cosa si rinuncia scegliendo la cedolare secca</h2>
+
+      <h3>Niente aggiornamento ISTAT del canone</h3>
+      <p>Chi opta per la cedolare secca deve rinunciare ad aggiornare il canone per tutta la durata del contratto. Non si può applicare la variazione ISTAT finché si è in regime di cedolare. Per chi vuole capire come funziona l'adeguamento e quanto vale in termini pratici, la guida sull'<a href="/blog/adeguamento-istat-affitto/">adeguamento ISTAT dell'affitto</a> chiarisce i dettagli.</p>
+
+      <h3>Niente deduzioni o detrazioni sull'immobile</h3>
+      <p>Con la cedolare secca non è possibile dedurre spese legate all'immobile né usufruire di detrazioni sul reddito complessivo correlate all'affitto. Se le spese di manutenzione sono significative, può valere la pena confrontare i due regimi con il proprio consulente fiscale.</p>
+
+      <h3>Impatto sull'ISEE</h3>
+      <p>Il reddito da locazione con cedolare secca entra per intero nel calcolo dell'ISEE, mentre con il regime IRPEF ordinario la base imponibile è ridotta al 95% del canone (con ulteriore abbattimento per canone concordato). Per chi ha figli o beneficia di prestazioni legate all'ISEE, questo può fare la differenza.</p>
+
+      <h2>Come si attiva (e come si revoca)</h2>
+      <ol>
+        <li>In sede di <strong>prima registrazione del contratto</strong>, barrando la relativa casella nel modello RLI.</li>
+        <li>In sede di <strong>rinnovo annuale</strong>, entro 30 giorni dalla scadenza di ogni annualità.</li>
+        <li>Per contratti già registrati senza cedolare, presentando il modello RLI entro il termine di pagamento dell'imposta di registro dell'annualità per cui si esercita l'opzione.</li>
+      </ol>
+      <p>La revoca è possibile, ma attenzione: una volta revocata per un'annualità, si torna al regime ordinario con obbligo di pagare l'imposta di registro e di bollo per quell'anno.</p>
+
+      <h2>FAQ — Domande frequenti sulla cedolare secca</h2>
+
+      <h3>La cedolare secca si può applicare a qualsiasi contratto di locazione?</h3>
+      <p>No. Si applica ai contratti di locazione di immobili ad uso abitativo (categoria catastale da A/1 ad A/11, escluse A/10). Non si applica ai contratti commerciali o a uso diverso dall'abitativo.</p>
+
+      <h3>Con la cedolare secca devo comunque registrare il contratto?</h3>
+      <p>Sì. La registrazione è obbligatoria indipendentemente dal regime fiscale scelto. La cedolare secca esonera dal pagamento dell'imposta di registro, ma non dall'obbligo di registrare il contratto.</p>
+
+      <h3>Posso passare da cedolare secca a IRPEF ordinaria a metà del contratto?</h3>
+      <p>Sì, è possibile revocare l'opzione alla scadenza di ogni annualità. Non è invece possibile farlo a metà anno.</p>
+
+      <h3>Se l'inquilino non paga, posso comunque restare in cedolare secca?</h3>
+      <p>Sì. I canoni non riscossi non concorrono al reddito se risultano da sfratto intimato o da ingiunzione di pagamento.</p>
+
+      <h3>La cedolare secca conviene sempre con il canone concordato?</h3>
+      <p>Quasi sempre. Con l'aliquota al 10% e il canone già ridotto rispetto al libero mercato, la cedolare è generalmente vantaggiosa. Fanno eccezione situazioni particolari legate all'ISEE o alla presenza di deduzioni fiscali rilevanti.</p>
+    `,
+  },
+  {
     slug: 'risoluzione-contratto-locazione',
     title: 'Risoluzione del contratto di locazione: guida per il proprietario',
     description:
