@@ -30,11 +30,7 @@ const posts: BlogPost[] = [
     sourceNote:
       'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft-disdetta-contratto-3-2.md` del 2026-03-24.',
     html: `
-      <h1>Contratto 3+2: quando e come il proprietario può inviare la disdetta</h1>
-
-<p>Nel contratto 3+2 a canone concordato, il proprietario non può inviare la disdetta in qualsiasi momento: la legge fissa scadenze precise e, alla prima scadenza, limita i motivi validi. Alla seconda scadenza — dopo 5 anni complessivi — le possibilità si ampliano. Capire la differenza evita comunicazioni nulle, rinnovi indesiderati e potenziali contenziosi con l'inquilino.</p>
-
-<h2>Come funziona il contratto 3+2</h2>
+      <h2>Come funziona il contratto 3+2</h2>
 
 <p>Il contratto 3+2 è il contratto di locazione a canone concordato disciplinato dall'art. 2, comma 3, della Legge 431/1998. Ha una durata iniziale di <strong>3 anni</strong>, rinnovabile automaticamente per altri <strong>2 anni</strong>, salvo disdetta nei termini di legge da parte del locatore o del conduttore.</p>
 
