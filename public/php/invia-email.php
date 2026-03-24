@@ -475,6 +475,32 @@ $backup_data = sprintf(
 
 
 
+/* === SALVATAGGIO GCLID SU AIRTABLE (async, non bloccante) === */
+if (!empty($gclid)) {
+    $airtable_token = 'patd2FfSnHnxYj9yw.97a83cc2d24f6f5a8ed1c1e78c2c4e5f3a4d9e7b1c8e2f6a5d3b9c7e4f1a2d8';
+    $airtable_base  = 'appXqSXlxeLUcR25p';
+    $airtable_table = 'Anagrafica';
+
+    // Cerca il record appena creato per email o telefono (da Make/webhook gestisce l'upsert completo)
+    // Qui salviamo in un file di staging che verrà processato dal cron/webhook
+    $gclid_staging = __DIR__ . '/../logs/gclid_staging.jsonl';
+    $staging_row = json_encode([
+        'timestamp'    => date('c'),
+        'nome'         => $nome_completo,
+        'telefono'     => $telefono,
+        'email'        => $email_mittente ?: null,
+        'gclid'        => $gclid,
+        'utm_campaign' => $utm_campaign ?: null,
+        'utm_term'     => $utm_term ?: null,
+        'utm_source'   => $utm_source ?: null,
+        'utm_medium'   => $utm_medium ?: null,
+        'form_source'  => $form_source,
+    ]) . "\n";
+    @file_put_contents($gclid_staging, $staging_row, FILE_APPEND | LOCK_EX);
+}
+
+
+
 /* === REDIRECT SICURI (root-relative) === */
 
 
