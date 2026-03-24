@@ -16,6 +16,257 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'disdetta-contratto-3-2',
+    title: 'Contratto 3+2: quando e come il proprietario può inviare la disdetta',
+    description:
+      'Il contratto 3+2 ha regole di disdetta diverse dal 4+4. Scopri quando il proprietario può inviarla, i preavvisi richiesti e gli errori da evitare.',
+    excerpt:
+      'Nel contratto 3+2 a canone concordato, la disdetta segue regole precise che cambiano alla prima e alla seconda scadenza. Ecco quando e come inviarla correttamente.',
+    lead:
+      'Nel contratto 3+2 a canone concordato, il proprietario non può inviare la disdetta in qualsiasi momento: la legge fissa scadenze precise e, alla prima scadenza, limita i motivi validi. Alla seconda scadenza — dopo 5 anni complessivi — le possibilità si ampliano.',
+    publishedAt: '2026-03-24',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft-disdetta-contratto-3-2.md` del 2026-03-24.',
+    html: `
+      <h1>Contratto 3+2: quando e come il proprietario può inviare la disdetta</h1>
+
+<p>Nel contratto 3+2 a canone concordato, il proprietario non può inviare la disdetta in qualsiasi momento: la legge fissa scadenze precise e, alla prima scadenza, limita i motivi validi. Alla seconda scadenza — dopo 5 anni complessivi — le possibilità si ampliano. Capire la differenza evita comunicazioni nulle, rinnovi indesiderati e potenziali contenziosi con l'inquilino.</p>
+
+<h2>Come funziona il contratto 3+2</h2>
+
+<p>Il contratto 3+2 è il contratto di locazione a canone concordato disciplinato dall'art. 2, comma 3, della Legge 431/1998. Ha una durata iniziale di <strong>3 anni</strong>, rinnovabile automaticamente per altri <strong>2 anni</strong>, salvo disdetta nei termini di legge da parte del locatore o del conduttore.</p>
+
+<p>Il canone non è libero: viene determinato in base agli accordi territoriali stipulati tra le organizzazioni di proprietari e conduttori nel Comune di riferimento. In cambio, il proprietario accede a vantaggi fiscali rilevanti, tra cui una riduzione IRPEF del 30% o la cedolare secca al 10% (anziché al 21%). Per un approfondimento sui vantaggi economici, vedi l'articolo sul <a href="/blog/canone-concordato/">canone concordato</a>.</p>
+
+<p>La struttura 3+2 è diversa dal classico 4+4: i diritti del locatore alla scadenza sono regolati in modo specifico e non vanno confusi tra loro.</p>
+
+<h2>Disdetta alla prima scadenza: dopo 3 anni</h2>
+
+<p>Alla prima scadenza (dopo 3 anni dalla stipula), il contratto si rinnova automaticamente per altri 2 anni, <strong>a meno che il locatore non si opponga per uno dei motivi tassativamente previsti dalla legge</strong>.</p>
+
+<p>I motivi validi per la disdetta alla prima scadenza del 3+2 sono gli stessi previsti per il 4+4 dall'art. 3 della L. 431/1998:</p>
+
+<ul>
+  <li><strong>Uso abitativo proprio o dei familiari stretti</strong>: il proprietario intende adibire l'immobile a propria abitazione o di coniuge, figli o genitori.</li>
+  <li><strong>Vendita dell'immobile a terzi</strong>: purché il locatore non disponga di altri immobili ad uso abitativo (salvo quello adibito a propria residenza).</li>
+  <li><strong>Ristrutturazione integrale o demolizione</strong>: lavori che richiedono il rilascio dell'immobile libero.</li>
+  <li><strong>Inadempimento grave del conduttore</strong>: nei casi previsti dalla legge, tra cui la morosità.</li>
+</ul>
+
+<p>Se il proprietario non rientra in nessuno di questi casi, non può bloccare il rinnovo alla prima scadenza: il contratto prosegue automaticamente per i successivi 2 anni.</p>
+
+<h3>Quanto preavviso occorre alla prima scadenza?</h3>
+
+<p>La comunicazione deve essere inviata al conduttore con almeno <strong>6 mesi di anticipo</strong> rispetto alla scadenza dei 3 anni, tramite raccomandata A/R o altro mezzo idoneo a provare la ricezione. Se la comunicazione è tardiva, il rinnovo scatta automaticamente.</p>
+
+<h2>Disdetta alla seconda scadenza: dopo 5 anni</h2>
+
+<p>Alla seconda scadenza — ossia dopo 5 anni complessivi dall'inizio del contratto — la posizione del proprietario cambia in modo significativo. Il locatore può inviare la disdetta <strong>senza dover indicare una motivazione specifica</strong>, comunicando semplicemente la volontà di non rinnovare.</p>
+
+<p>Anche in questo caso, il preavviso minimo è di <strong>6 mesi</strong> prima della scadenza. Se la comunicazione non viene inviata nei termini, il contratto si rinnova automaticamente per un altro biennio.</p>
+
+<h3>E dopo la seconda scadenza, cosa succede?</h3>
+
+<p>Se il contratto si rinnova oltre i 5 anni iniziali, continua a rinnovarsi automaticamente per periodi di 2 anni. Il proprietario può opporre la disdetta a ogni scadenza biennale, sempre con 6 mesi di preavviso e — dalla seconda scadenza in poi — senza vincolo di motivazione.</p>
+
+<h2>Come si invia la disdetta: forma e contenuto</h2>
+
+<p>La disdetta del contratto 3+2 non ha una forma libera. Per essere valida deve rispettare questi requisiti:</p>
+
+<ol>
+  <li><strong>Forma scritta</strong>: raccomandata con avviso di ricevimento (A/R) è la modalità più sicura per dimostrare la data di invio e la ricezione.</li>
+  <li><strong>Contenuto</strong>: indicare il contratto cui si riferisce (data di stipula, immobile), la scadenza per la quale si oppone il rinnovo, e — se si tratta della prima scadenza — il motivo specifico di cui alla L. 431/1998.</li>
+  <li><strong>Rispetto dei termini</strong>: 6 mesi prima della scadenza rilevante. Un giorno di ritardo invalida la comunicazione.</li>
+</ol>
+
+<p>Una disdetta inviata fuori termine o priva del motivo obbligatorio (prima scadenza) è nulla: il contratto si rinnova come se non fosse mai stata inviata.</p>
+
+<h2>Cosa rischia il proprietario che sbaglia la disdetta</h2>
+
+<ul>
+  <li>Il contratto si rinnova automaticamente e il conduttore ha diritto a restare nell'immobile per il periodo successivo.</li>
+  <li>Se il proprietario ha invocato un motivo falso alla prima scadenza, il conduttore può agire per il risarcimento del danno.</li>
+  <li>Una disdetta mal formulata può obbligare il proprietario a ricorrere allo sfratto per finita locazione in sede giudiziaria. Per i tempi e i passaggi, vedi la guida sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</li>
+</ul>
+
+<h2>Differenze rispetto al contratto 4+4</h2>
+
+<table>
+  <thead>
+    <tr><th>Aspetto</th><th>Contratto 3+2</th><th>Contratto 4+4</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Durata minima iniziale</td><td>3 anni</td><td>4 anni</td></tr>
+    <tr><td>Prima scadenza con rinnovo automatico</td><td>3 anni</td><td>4 anni</td></tr>
+    <tr><td>Rinnovo successivo</td><td>2 anni</td><td>4 anni</td></tr>
+    <tr><td>Preavviso disdetta</td><td>6 mesi</td><td>6 mesi</td></tr>
+    <tr><td>Canone</td><td>Concordato</td><td>Libero</td></tr>
+    <tr><td>Cedolare secca</td><td>10%</td><td>21%</td></tr>
+  </tbody>
+</table>
+
+<p>Per una panoramica sulla disdetta nel contratto 4+4, vedi l'articolo dedicato alla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto di locazione da parte del locatore</a>.</p>
+
+<h2>Checklist prima di inviare la disdetta</h2>
+
+<ul>
+  <li>☐ Verifica la data di stipula e calcola la scadenza esatta (3 o 5 anni)</li>
+  <li>☐ Controlla se sei alla prima o alla seconda scadenza</li>
+  <li>☐ Se è la prima scadenza: hai un motivo valido ai sensi dell'art. 3 L. 431/1998?</li>
+  <li>☐ Calcola il termine: raccomandata recapitata almeno 6 mesi prima della scadenza</li>
+  <li>☐ Redigi la comunicazione per iscritto con tutti i dati del contratto e il motivo (se necessario)</li>
+  <li>☐ Invia con raccomandata A/R e conserva la ricevuta</li>
+</ul>
+
+<p>Sfratto Sicuro assiste i proprietari in tutte le fasi della gestione del contratto, dalla disdetta fino al recupero del possesso dell'immobile. Se hai bisogno di un supporto specifico, <a href="/#contatti">contattaci per una prima valutazione</a>.</p>
+
+<h2>FAQ — Domande frequenti sul contratto 3+2 e la disdetta del proprietario</h2>
+
+<h3>Posso dare disdetta al contratto 3+2 prima dei 3 anni?</h3>
+<p>No. Il contratto ha una durata minima garantita di 3 anni: durante questo periodo il proprietario non può recedere unilateralmente.</p>
+
+<h3>Cosa succede se dimentico di inviare la disdetta entro i 6 mesi?</h3>
+<p>Il contratto si rinnova automaticamente per il periodo successivo (2 anni). Occorrerà attendere la scadenza successiva.</p>
+
+<h3>Alla prima scadenza dei 3 anni, posso dare disdetta senza motivo?</h3>
+<p>No. Alla prima scadenza il proprietario può opporsi al rinnovo solo per uno dei motivi tassativi previsti dalla legge.</p>
+
+<h3>Alla seconda scadenza (5 anni), devo comunque dare un motivo?</h3>
+<p>No. Dalla seconda scadenza in poi, il proprietario può inviare la disdetta senza dover indicare alcun motivo specifico, purché rispetti il preavviso di 6 mesi.</p>
+
+<h3>La disdetta via email o WhatsApp è valida?</h3>
+<p>No. La disdetta deve essere in forma scritta con prova della ricezione. La raccomandata A/R è lo strumento standard.</p>
+
+<h3>Se il conduttore non lascia l'immobile dopo la disdetta, cosa faccio?</h3>
+<p>Devi avviare la procedura di sfratto per finita locazione davanti al Tribunale. Per i dettagli, vedi la guida sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+    `,
+  },
+  {
+    slug: 'disdetta-contratto-locatore',
+    title: 'Disdetta del contratto di locazione da parte del locatore: tempi e requisiti',
+    description:
+      'Disdetta del contratto di locazione da parte del locatore: preavvisi obbligatori, casi ammessi e come muoversi per non perdere il diritto al recesso.',
+    excerpt:
+      'Il proprietario non può sempre dare disdetta quando vuole. La legge distingue tra prima e seconda scadenza, fissa i preavvisi minimi e limita le motivazioni ammesse.',
+    lead:
+      'Il proprietario non può sempre dare disdetta quando vuole. La legge distingue tra prima e seconda scadenza del contratto, fissa i preavvisi minimi e limita le motivazioni alla prima scadenza. Ecco cosa sapere prima di inviare la comunicazione.',
+    publishedAt: '2026-03-23',
+    category: 'Locazioni',
+    readingTime: '9 min',
+    sourceNote:
+      'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft_disdetta-contratto-locazione-locatore.md` del 2026-03-23.',
+    html: `
+      <p>La <strong>disdetta del contratto di locazione da parte del locatore</strong> è una delle questioni più frequenti nella gestione degli affitti. Molti proprietari danno per scontato di poter disdire il contratto alla scadenza con un semplice preavviso, ma la realtà è più articolata: dipende dal tipo di contratto, dalla scadenza a cui ci si trova e dalle motivazioni addotte.</p>
+
+      <p>Questo articolo spiega quando il proprietario può inviare la disdetta, con quanti mesi di anticipo, quali requisiti deve rispettare e cosa rischia se sbaglia — con un focus pratico per chi gestisce un appartamento in affitto e vuole muoversi correttamente.</p>
+
+      <h2>Quando il locatore può dare disdetta: la regola generale</h2>
+      <p>La disciplina principale si trova nella <strong>Legge 9 dicembre 1998, n. 431</strong> (legge sulle locazioni abitative). Il principio di fondo è che il proprietario non ha libertà assoluta di recedere: la legge bilancia le esigenze del locatore con la tutela dell'inquilino.</p>
+
+      <p>La posizione del locatore cambia in modo significativo a seconda che si tratti della <strong>prima scadenza</strong> o della <strong>seconda scadenza</strong> (e delle successive).</p>
+
+      <h2>Contratto 4+4: disdetta alla prima scadenza</h2>
+      <p>Il contratto a canone libero (il classico <strong>4+4</strong> previsto dalla L. 431/1998) ha una prima durata di 4 anni, rinnovabile automaticamente per altri 4.</p>
+
+      <p><strong>Alla prima scadenza</strong>, il locatore può opporre il diniego di rinnovo solo per uno dei motivi tassativi previsti dall'art. 3 della legge:</p>
+      <ul>
+        <li><strong>Uso abitativo proprio o dei familiari stretti</strong>: il proprietario intende occupare l'immobile come abitazione propria, del coniuge, dei figli o dei genitori. Non basta dichiararlo: occorre che la necessità sia reale e concreta.</li>
+        <li><strong>Vendita dell'immobile</strong>: il proprietario intende vendere il bene a terzi e non dispone di altri immobili ad uso abitativo (salvo quello adibito a propria abitazione principale).</li>
+        <li><strong>Ristrutturazione o demolizione</strong>: necessità di effettuare lavori di integrale ristrutturazione o demolizione e ricostruzione che richiedono che l'immobile sia libero.</li>
+        <li><strong>Morosità o inadempimento del conduttore</strong>: nei casi in cui il conduttore abbia già subito condanna per uno dei motivi previsti dalla legge.</li>
+        <li><strong>Immobile utilizzato per esercizio di attività propria</strong>: in alcuni casi specifici previsti dalla legge.</li>
+      </ul>
+
+      <p><strong>Attenzione</strong>: il diniego di rinnovo alla prima scadenza del 4+4 deve essere motivato con uno di questi motivi. Se il proprietario invia una disdetta generica o non motivata, la comunicazione non ha effetto legale.</p>
+
+      <p><strong>Alla seconda scadenza</strong> (dopo i primi 4+4, quindi all'ottavo anno), il locatore può dare disdetta senza dover fornire motivazioni particolari. È sufficiente rispettare il preavviso.</p>
+
+      <h2>Contratto 3+2 a canone concordato: le stesse regole di base</h2>
+      <p>Il contratto a <strong>canone concordato</strong> (3+2) segue una logica analoga. Alla prima scadenza dei 3 anni, il locatore può negare il rinnovo solo per i motivi tassativi dell'art. 3. Dal secondo rinnovo in poi (ogni 2 anni), può non rinnovare con il semplice preavviso, senza obbligo di motivazione specifica.</p>
+
+      <h2>Il preavviso obbligatorio: quanto tempo prima inviare la disdetta</h2>
+      <p>Il preavviso minimo che il locatore deve rispettare è di <strong>almeno 6 mesi prima della scadenza del contratto</strong>. Se la comunicazione arriva con meno di 6 mesi di anticipo, il contratto si rinnova automaticamente alle stesse condizioni.</p>
+
+      <p>Per gli immobili di grandi dimensioni (cosiddetti immobili "di lusso" o appartenenti alle categorie catastali A/1, A/8, A/9), il preavviso minimo è di <strong>12 mesi</strong>.</p>
+
+      <p>Questi termini sono inderogabili a svantaggio del locatore: il contratto può prevedere preavvisi più lunghi, ma mai più brevi di quelli di legge.</p>
+
+      <h3>Come si calcola il preavviso?</h3>
+      <p>Il punto di riferimento è la <strong>data di scadenza del contratto</strong>, non quella di ricevimento della lettera. La disdetta deve essere ricevuta (non solo spedita) almeno 6 mesi prima della scadenza.</p>
+
+      <p><strong>Esempio pratico</strong>: contratto 4+4 con scadenza il 31 ottobre 2026. Per disdire alla prima scadenza con motivazione valida, la raccomandata deve essere ricevuta dall'inquilino entro il 30 aprile 2026 al più tardi.</p>
+
+      <h2>La forma della disdetta: come comunicarla correttamente</h2>
+      <p>La disdetta del locatore deve essere inviata in forma scritta. Le modalità più comuni e sicure sono:</p>
+      <ol>
+        <li><strong>Raccomandata con ricevuta di ritorno (A/R)</strong>: classica e ancora la più usata; la ricevuta di ritorno è la prova dell'avvenuta ricezione.</li>
+        <li><strong>PEC (posta elettronica certificata)</strong>: valida a tutti gli effetti se l'inquilino ha una PEC. Se non ce l'ha, non è sufficiente.</li>
+        <li><strong>Consegna a mano con firma del conduttore</strong>: possibile, ma va documentata con firma del ricevente e data.</li>
+      </ol>
+
+      <p><strong>Non è sufficiente</strong> inviare un messaggio WhatsApp, una mail ordinaria o una comunicazione verbale. In caso di contestazione, il locatore deve poter dimostrare che la comunicazione è avvenuta nei termini e nelle forme previste.</p>
+
+      <h2>Cosa succede se il locatore dichiara il falso alla prima scadenza</h2>
+      <p>La legge tutela l'inquilino contro eventuali pretesti. Se il locatore ottiene il rilascio dell'immobile adducendo una delle motivazioni dell'art. 3 (ad esempio, uso abitativo proprio) e poi non la concretizza entro i 12 mesi successivi al rilascio, il conduttore ha diritto a:</p>
+      <ul>
+        <li><strong>Rientrare nell'immobile</strong> alle stesse condizioni contrattuali, oppure</li>
+        <li><strong>Ricevere un risarcimento</strong> pari a 36 mensilità del canone, oltre agli eventuali danni documentati.</li>
+      </ul>
+      <p>Si tratta di una conseguenza molto rilevante per il proprietario: è essenziale che la motivazione indicata sia reale e venga poi effettivamente attuata.</p>
+
+      <h2>Disdetta e sfratto: non sono la stessa cosa</h2>
+      <p>Un errore frequente è confondere la disdetta con la procedura di sfratto. Sono strumenti diversi:</p>
+      <ul>
+        <li><strong>La disdetta</strong> è la comunicazione preventiva con cui il locatore manifesta la volontà di non rinnovare il contratto alla scadenza. Se inviata nei termini, il contratto si chiude alla scadenza.</li>
+        <li><strong>Lo sfratto per finita locazione</strong> è la procedura giudiziaria che il proprietario avvia quando il contratto è già scaduto ma l'inquilino non rilascia l'immobile. In questo caso, la disdetta è un presupposto, ma non è sufficiente: serve un decreto del tribunale.</li>
+      </ul>
+      <p>Se vuoi approfondire la procedura giudiziaria dopo la scadenza, leggi la guida completa sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
+      <h2>Contratti transitori: cosa cambia</h2>
+      <p>Nel <strong>contratto transitorio</strong>, la disdetta non è tecnicamente necessaria: il contratto ha una durata predefinita (da 1 a 18 mesi) e scade automaticamente alla data indicata. Il locatore non deve inviare alcuna comunicazione di recesso.</p>
+
+      <p>Tuttavia, se vuole anticipare la fine del rapporto prima della scadenza naturale, deve accordarsi con l'inquilino o verificare se esistono clausole contrattuali che lo consentono.</p>
+
+      <h2>Checklist pre-disdetta per il proprietario</h2>
+      <ul>
+        <li>Tipo di contratto (4+4, 3+2, transitorio) e scadenza esatta</li>
+        <li>A quale scadenza ci si trova (prima o seconda)</li>
+        <li>Se si è alla prima scadenza: la motivazione è tra quelle ammesse dalla legge?</li>
+        <li>La motivazione è reale e documentabile? Si è pronti a darle seguito entro 12 mesi?</li>
+        <li>Il preavviso è di almeno 6 mesi (o 12 per immobili di lusso)?</li>
+        <li>La forma è scritta e tracciabile (raccomandata A/R o PEC)?</li>
+        <li>Si conserva la copia della comunicazione con prova della ricezione?</li>
+      </ul>
+
+      <h2>Quando affidarsi a un professionista</h2>
+      <p>La disdetta del contratto di locazione può sembrare un atto semplice, ma un errore di forma o di tempistica — preavviso tardivo, motivazione non prevista dalla legge, forma non corretta — può vanificare l'intera procedura e portare al rinnovo automatico del contratto.</p>
+
+      <p>In Sfratto Sicuro assistiamo i proprietari nelle procedure di locazione e sfratto, dalla valutazione iniziale alla gestione operativa. Se hai dubbi su come procedere, <a href="/contatti/">contattaci per una consulenza</a>.</p>
+
+      <h2>FAQ — Domande frequenti sulla disdetta del locatore</h2>
+
+      <h3>Il proprietario può dare disdetta alla prima scadenza del contratto 4+4?</h3>
+      <p>Sì, ma solo per i motivi tassativi previsti dall'art. 3 della L. 431/1998: uso abitativo proprio o dei familiari stretti, vendita dell'immobile, lavori di ristrutturazione integrali o altri casi specifici. Non è possibile disdire liberamente alla prima scadenza senza una motivazione valida.</p>
+
+      <h3>Qual è il preavviso minimo per la disdetta del locatore?</h3>
+      <p>Il preavviso minimo è di 6 mesi prima della scadenza del contratto. Per immobili di lusso (categorie catastali A/1, A/8, A/9) il preavviso sale a 12 mesi. Se la comunicazione arriva tardi, il contratto si rinnova automaticamente.</p>
+
+      <h3>La disdetta deve essere inviata con raccomandata?</h3>
+      <p>Sì, la disdetta deve essere in forma scritta e tracciabile. La raccomandata con ricevuta di ritorno è lo strumento più usato. La PEC è valida se l'inquilino dispone di una casella PEC. L'email ordinaria o il messaggio WhatsApp non hanno valore legale.</p>
+
+      <h3>Cosa succede se il proprietario dichiara di voler usare l'immobile per sé e poi non lo fa?</h3>
+      <p>Il conduttore ha diritto a rientrare nell'immobile alle stesse condizioni, oppure a ricevere un risarcimento pari a 36 mensilità del canone, oltre agli eventuali danni documentati. È quindi fondamentale che la motivazione sia reale e che il proprietario la concretizzi entro 12 mesi dal rilascio.</p>
+
+      <h3>Alla seconda scadenza del 4+4, il proprietario deve motivare la disdetta?</h3>
+      <p>No. Alla seconda scadenza (e alle eventuali successive), il locatore può dare disdetta senza dover indicare motivazioni particolari, purché rispetti il preavviso minimo di 6 mesi (o 12 per immobili di lusso).</p>
+
+      <h3>Se il proprietario dimentica di inviare la disdetta in tempo, cosa succede?</h3>
+      <p>Il contratto si rinnova automaticamente alle stesse condizioni per un altro periodo. Il locatore dovrà attendere la scadenza successiva per poter inviare una nuova disdetta nei termini.</p>
+    `,
+  },
+  {
     slug: 'cedolare-secca-affitto',
     title: "Cedolare secca sull'affitto: aliquote 2026, calcolo e quando conviene davvero al proprietario",
     description:

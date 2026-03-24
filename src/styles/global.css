@@ -1343,7 +1343,32 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   #risultati-concreti :global(.doc .d) { margin:4px 0 0; color:#fff; font-size:.85rem; opacity:.95; }
 
   @media (max-width: 1024px){ .section{padding:44px 0;} }
-  @media (max-width: 767px){ .section{padding:32px 0;} .metrics{gap:12px;} .metric-card{padding:16px;} #risultati-concreti :global(.gallery){grid-template-columns:repeat(2,1fr)} }
+  @media (max-width: 767px){
+    .section{padding:32px 0;}
+    .metrics{gap:12px;}
+    .metric-card{padding:16px;}
+    #risultati-concreti :global(.gallery){
+      display:flex !important;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      gap:12px;
+      padding-bottom:8px;
+      scrollbar-width:none;
+    }
+    #risultati-concreti :global(.gallery)::-webkit-scrollbar{display:none;}
+    #risultati-concreti :global(.doc){
+      flex:0 0 80vw !important;
+      max-width:320px;
+      scroll-snap-align:start;
+      aspect-ratio:3/4;
+    }
+    #risultati-concreti :global(.doc img){
+      object-fit:cover;
+      width:100%;
+      height:100%;
+    }
+  }
 
 /* === FAQ === */
 /* --- FaqIsland.astro --- */
