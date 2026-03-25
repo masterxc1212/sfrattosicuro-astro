@@ -185,7 +185,7 @@
   .grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
   h3 { margin: 0 0 1rem; font-size: 1.05rem; }
   ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-  a { color: #d2d9e6; text-decoration: none; }
+  a { color: #ffffff; text-decoration: none; }
   a:hover { color: var(--green-security); }
   .brand { display: inline-flex; align-items: center; gap: 0.55rem; margin-bottom: 0.75rem; }
   .brand img { filter: brightness(0) invert(1); }
@@ -195,7 +195,7 @@
   .strong { color: #fff; font-weight: 700; }
   .small { font-size: 0.85rem; }
   .legal-links { margin-top: .65rem; }
-  .legal-links a { color: #d2d9e6; }
+  .legal-links a { color: #ffffff; }
   .legal-links a:hover { color: var(--green-security); }
   .where-card {
     border: 1px solid rgba(255,255,255,.16);
@@ -1353,15 +1353,18 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
       scroll-snap-type:x mandatory;
       -webkit-overflow-scrolling:touch;
       gap:12px;
-      padding-bottom:8px;
+      padding: 0 16px 12px;
       scrollbar-width:none;
+      /* Mostra bordo card successiva per hint scroll */
+      margin: 0 -16px;
     }
     #risultati-concreti :global(.gallery)::-webkit-scrollbar{display:none;}
     #risultati-concreti :global(.doc){
-      flex:0 0 80vw !important;
-      max-width:320px;
-      scroll-snap-align:start;
-      aspect-ratio:3/4;
+      flex: 0 0 72vw !important;
+      max-width: 260px;
+      min-width: 200px;
+      scroll-snap-align: start;
+      aspect-ratio: 3/4;
     }
     #risultati-concreti :global(.doc img){
       object-fit:cover;
