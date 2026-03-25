@@ -1,6 +1,6 @@
-/* v2 - 2026-03-25 */
+/* v3 - 2026-03-25 */
 /* ============================================
-   global.css — sfrattosicuro.it
+   global.css ï¿½ sfrattosicuro.it
    Single source of truth for all styles.
    Generated 2026-03-21
    ============================================ */
@@ -442,7 +442,7 @@
       gap: 4px;
     }
 
-    /* Scroll orizzontale su mobile — niente a capo */
+    /* Scroll orizzontale su mobile ï¿½ niente a capo */
     .jump-nav ul {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -1335,20 +1335,20 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   .m-title { margin:0 0 8px; color: var(--blue-navy); font-weight:700; }
   .m-text { margin:0; color:#475569; }
 
-  #risultati-concreti :global(.gallery) { display:grid; grid-template-columns: repeat(4,1fr); gap:24px; }
-  #risultati-concreti :global(.doc) { position:relative; overflow:hidden; border-radius:12px; aspect-ratio: 3 / 4; background:#e5e7eb; }
-  #risultati-concreti :global(.doc img) { width:100%; height:100%; object-fit:cover; display:block; }
-  #risultati-concreti :global(.overlay) { position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,.6), transparent); }
-  #risultati-concreti :global(.text) { position:absolute; left:16px; bottom:16px; color:#fff; }
-  #risultati-concreti :global(.doc .t) { margin:0; font-weight:700; color:#fff; }
-  #risultati-concreti :global(.doc .d) { margin:4px 0 0; color:#fff; font-size:.85rem; opacity:.95; }
+  #risultati-concreti .gallery { display:grid; grid-template-columns: repeat(4,1fr); gap:24px; }
+  #risultati-concreti .doc { position:relative; overflow:hidden; border-radius:12px; aspect-ratio: 3 / 4; background:#e5e7eb; }
+  #risultati-concreti .doc img { width:100%; height:100%; object-fit:cover; display:block; }
+  #risultati-concreti .overlay { position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,.6), transparent); }
+  #risultati-concreti .text { position:absolute; left:16px; bottom:16px; color:#fff; }
+  #risultati-concreti .doc .t { margin:0; font-weight:700; color:#fff; }
+  #risultati-concreti .doc .d { margin:4px 0 0; color:#fff; font-size:.85rem; opacity:.95; }
 
   @media (max-width: 1024px){ .section{padding:44px 0;} }
   @media (max-width: 767px){
     .section{padding:32px 0;}
     .metrics{gap:12px;}
     .metric-card{padding:16px;}
-    #risultati-concreti :global(.gallery){
+    #risultati-concreti .gallery{
       display:flex !important;
       overflow-x:auto;
       scroll-snap-type:x mandatory;
@@ -1356,18 +1356,17 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
       gap:12px;
       padding: 0 16px 12px;
       scrollbar-width:none;
-      /* Mostra bordo card successiva per hint scroll */
       margin: 0 -16px;
     }
-    #risultati-concreti :global(.gallery)::-webkit-scrollbar{display:none;}
-    #risultati-concreti :global(.doc){
+    #risultati-concreti .gallery::-webkit-scrollbar{display:none;}
+    #risultati-concreti .doc{
       flex: 0 0 72vw !important;
       max-width: 260px;
       min-width: 200px;
       scroll-snap-align: start;
       aspect-ratio: 3/4;
     }
-    #risultati-concreti :global(.doc img){
+    #risultati-concreti .doc img{
       object-fit:cover;
       width:100%;
       height:100%;
