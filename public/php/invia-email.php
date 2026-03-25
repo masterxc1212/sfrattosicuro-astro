@@ -168,12 +168,12 @@ $contenuto_text .= "==========================================\n";
 $contenuto_text .= "Data/Ora: " . date('d/m/Y H:i:s') . "\n";
 
 $contenuto_text .= "Form Source: $form_source\n";
-
+if (!empty($utm_term)) $contenuto_text .= "Keyword: $utm_term\n";
 $contenuto_text .= "IP Cliente: " . ($_SERVER['REMOTE_ADDR'] ?? 'N/A') . "\n";
 
-if (!empty($gclid)) {
+if (!empty($gclid) || !empty($utm_campaign) || !empty($utm_source) || !empty($utm_content)) {
     $contenuto_text .= "\n--- TRACCIAMENTO ADS ---\n";
-    $contenuto_text .= "GCLID: $gclid\n";
+    if (!empty($gclid))        $contenuto_text .= "GCLID: $gclid\n";
     if (!empty($utm_campaign)) $contenuto_text .= "Campagna: $utm_campaign\n";
     if (!empty($utm_term))     $contenuto_text .= "Keyword (utm_term): $utm_term\n";
     if (!empty($utm_source))   $contenuto_text .= "Sorgente: $utm_source / $utm_medium\n";
