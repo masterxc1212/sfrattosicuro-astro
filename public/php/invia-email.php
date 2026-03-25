@@ -83,7 +83,8 @@ $gclid         = sanitize($_POST["gclid"] ?? '');
 $utm_source    = sanitize($_POST["utm_source"] ?? '');
 $utm_medium    = sanitize($_POST["utm_medium"] ?? '');
 $utm_campaign  = sanitize($_POST["utm_campaign"] ?? '');
-$utm_term      = sanitize($_POST["utm_term"] ?? '');
+$keyword       = sanitize($_POST["keyword"] ?? '');
+$utm_term      = sanitize($_POST["utm_term"] ?? $keyword);
 $utm_content   = sanitize($_POST["utm_content"] ?? '');
 
 

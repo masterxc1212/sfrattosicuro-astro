@@ -33,6 +33,16 @@
           form.appendChild(input);
         }
         input.value = value;
+        if (name === 'utm_term') {
+          let keywordInput = form.querySelector('input[name="keyword"]');
+          if (!keywordInput) {
+            keywordInput = document.createElement('input');
+            keywordInput.type = 'hidden';
+            keywordInput.name = 'keyword';
+            form.appendChild(keywordInput);
+          }
+          keywordInput.value = value;
+        }
       });
     }
 
