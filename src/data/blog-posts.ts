@@ -16,6 +16,155 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'verbale-riconsegna-immobile',
+    title: 'Verbale di riconsegna immobile: guida pratica',
+    description: "Cos'è il verbale di riconsegna dell'immobile, come si compila, cosa verificare prima di firmare e come tutela il proprietario da contestazioni successive.",
+    excerpt: "Il verbale di riconsegna è il documento che sigilla la fine della locazione: redatto nel momento in cui l'inquilino restituisce le chiavi, fotografa lo stato dell'immobile e tutela il proprietario da qualsiasi contestazione futura.",
+    lead: "Il verbale di riconsegna è il documento che sigilla la fine della locazione: redatto nel momento in cui l'inquilino restituisce le chiavi, fotografa lo stato dell'immobile e tutela il proprietario da qualsiasi contestazione futura.",
+    publishedAt: '2026-03-25',
+    category: 'Locazioni',
+    readingTime: '6 min',
+    sourceNote: 'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft-verbale-riconsegna-immobile.md` (batch2, keyword: verbale di riconsegna immobile, vol 1600, KD 0).',
+    html: `
+<p>
+  Quando un inquilino lascia l'appartamento, la firma sul contratto di fine locazione non è sufficiente. Senza un documento scritto che descriva lo stato dei locali al momento della consegna delle chiavi, il proprietario si espone a un rischio concreto: non riuscire a dimostrare, in un secondo momento, che i danni erano stati causati dall'inquilino e non erano preesistenti.
+</p>
+<p>
+  Il verbale di riconsegna immobile è lo strumento che chiude questo cerchio. Non è obbligatorio per legge, ma è prassi consolidata, raccomandato da giuristi e, soprattutto, essenziale nella pratica quotidiana di chi gestisce immobili in affitto.
+</p>
+
+<h2>Cos'è il verbale di riconsegna e a cosa serve</h2>
+<p>
+  Il verbale di riconsegna (detto anche <em>verbale di rilascio</em> o <em>verbale di consegna chiavi</em>) è un documento redatto al termine del contratto di locazione, nel momento in cui l'inquilino restituisce l'immobile e le chiavi al proprietario.
+</p>
+<p>
+  Serve a registrare in modo formale:
+</p>
+<ul>
+  <li>la data e l'ora esatte della riconsegna</li>
+  <li>lo stato di ogni stanza e degli impianti</li>
+  <li>la presenza o assenza di danni rispetto allo stato iniziale (documentato nel verbale di consegna firmato all'inizio della locazione)</li>
+  <li>la lettura dei contatori (gas, luce, acqua)</li>
+  <li>il numero e il tipo di chiavi restituite</li>
+  <li>eventuali accordi su riparazioni o trattenute sul deposito cauzionale</li>
+</ul>
+<p>
+  In caso di controversia — se l'inquilino contesta la trattenuta del deposito o se emergono danni dopo il rilascio — il verbale firmato da entrambe le parti è il documento che fa la differenza in sede giudiziale o stragiudiziale.
+</p>
+
+<h2>Verbale di consegna iniziale vs verbale di riconsegna finale</h2>
+<p>
+  Il verbale di riconsegna ha senso e forza probatoria piena solo se esiste anche un verbale di consegna iniziale — redatto quando l'inquilino è entrato nell'appartamento. I due documenti, confrontati tra loro, mostrano con precisione l'evoluzione dello stato dell'immobile durante la locazione.
+</p>
+<p>
+  Se il verbale iniziale non esiste o è molto generico, il proprietario si trova in una posizione più debole: dovrà dimostrare che i danni non erano preesistenti, spesso attraverso fotografie, testimoni o perizie tecniche. Per questo motivo è buona norma redigere entrambi i verbali con la stessa precisione.
+</p>
+
+<h2>Cosa deve contenere il verbale di riconsegna immobile</h2>
+<p>
+  Non esiste un modello legalmente vincolante, ma un verbale efficace deve includere almeno questi elementi:
+</p>
+
+<h3>Dati identificativi</h3>
+<ul>
+  <li>Generalità complete del proprietario (o del suo rappresentante)</li>
+  <li>Generalità complete dell'inquilino (o degli inquilini)</li>
+  <li>Indirizzo preciso dell'immobile (via, numero civico, piano, interno)</li>
+  <li>Estremi del contratto di locazione (data di stipula, numero di registrazione)</li>
+  <li>Data e ora della riconsegna</li>
+</ul>
+
+<h3>Stato dell'immobile stanza per stanza</h3>
+<p>
+  Ogni ambiente va descritto in modo dettagliato:
+</p>
+<ul>
+  <li>pavimenti, pareti, soffitti (condizione, eventuali segni di usura o danni)</li>
+  <li>infissi e serramenti (funzionamento, stato del vetro, guarnizioni)</li>
+  <li>porte interne (cerniere, maniglie, serrature)</li>
+  <li>cucina: piano cottura, cappa, elettrodomestici se inclusi in contratto</li>
+  <li>bagni: rubinetteria, sanitari, box doccia o vasca</li>
+  <li>impianti: elettrico, idraulico, riscaldamento/raffrescamento</li>
+  <li>cantina, garage o box se inclusi nella locazione</li>
+</ul>
+
+<h3>Lettura dei contatori</h3>
+<p>
+  Annotare i valori dei contatori di luce, gas e acqua al momento della riconsegna è fondamentale per due motivi: consente di chiudere eventuali contratti utenze intestati all'inquilino e impedisce che al proprietario vengano addebitati consumi successivi al rilascio.
+</p>
+
+<h3>Chiavi restituite</h3>
+<ul>
+  <li>Numero di copie di ogni tipo di chiave (appartamento, portone, garage, cassetta postale)</li>
+  <li>Conferma della restituzione o indicazione di eventuali chiavi mancanti</li>
+</ul>
+
+<h3>Accordi su deposito cauzionale e danni</h3>
+<p>
+  Se le parti si accordano in sede di riconsegna su eventuali trattenute dal deposito (per danni, lavori di ripristino, canoni arretrati), è opportuno documentarle nel verbale stesso, con importi e descrizioni dettagliate. Questo evita contestazioni successive.
+</p>
+
+<h2>Come redigere il verbale: forma e firma</h2>
+<p>
+  Il verbale va redatto in forma scritta, in almeno due originali — uno per ciascuna parte — e firmato da entrambi in ogni pagina. La firma congiunta è il requisito che gli conferisce valore probatorio: un verbale firmato solo dal proprietario non è opponibile all'inquilino.
+</p>
+<p>
+  È consigliabile accompagnare il verbale con documentazione fotografica o video, datata e geolocalizzata se possibile. Le foto, abbinate al verbale firmato, costituiscono un insieme di prove difficilmente contestabile.
+</p>
+<p>
+  Non è necessaria la presenza di un notaio né la registrazione del documento. La forma scrittura privata semplice è sufficiente.
+</p>
+
+<h2>Cosa succede se l'inquilino rifiuta di firmare</h2>
+<p>
+  Accade. In questi casi il proprietario può:
+</p>
+<ul>
+  <li>Redigere ugualmente il verbale in forma unilaterale, indicando che l'inquilino ha rifiutato di firmare</li>
+  <li>Inviare il verbale all'inquilino via raccomandata A/R o PEC entro poche ore dalla riconsegna, chiedendo conferma o contestazioni scritte entro un termine (es. 5 giorni)</li>
+  <li>Documentare fotograficamente lo stato dell'immobile immediatamente dopo il rilascio, in presenza di un testimone</li>
+</ul>
+<p>
+  Il rifiuto di firmare non priva il documento di utilità, ma è importante avere prove dell'invio e della ricezione.
+</p>
+
+<h2>Verbale di riconsegna e deposito cauzionale: il nesso pratico</h2>
+<p>
+  Il <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> viene restituito al termine della locazione, detratte le somme per danni che vanno oltre la normale usura. Il verbale di riconsegna è il documento su cui si fonda qualsiasi trattenuta.
+</p>
+<p>
+  Senza verbale — o con un verbale generico — il proprietario che vuole trattenere una parte del deposito dovrà produrre altre prove (perizie, preventivi di spesa, fotografie). Con un verbale dettagliato e firmato, invece, la sua posizione è molto più solida già prima che la questione arrivi a un avvocato o a un giudice.
+</p>
+
+<h2>FAQ</h2>
+
+<h3>Il verbale di riconsegna è obbligatorio per legge?</h3>
+<p>
+  No, la legge non ne impone la redazione. Tuttavia è uno strumento di tutela fondamentale per entrambe le parti. In sua assenza, eventuali controversie su danni o deposito cauzionale si risolvono solo attraverso testimonianze o altre prove, con esiti meno certi.
+</p>
+
+<h3>Entro quanto tempo il proprietario deve restituire il deposito cauzionale?</h3>
+<p>
+  La legge non fissa un termine preciso. La prassi consolidata e diverse sentenze di merito indicano un termine ragionevole di 30–60 giorni dalla riconsegna, sufficiente al proprietario per verificare lo stato dell'immobile e ottenere eventuali preventivi per riparazioni. Trattenute prolungate senza giustificazione possono dar luogo a richiesta di interessi o, nei casi più gravi, a contestazioni per appropriazione indebita.
+</p>
+
+<h3>Cosa si intende per "normale usura" dell'immobile?</h3>
+<p>
+  Per normale usura si intende il deterioramento fisiologico causato dall'uso ordinario e dal trascorrere del tempo: ingiallimento delle pareti, lieve consumo dei pavimenti, piccoli segni su porte e infissi. Il proprietario non può trattenere il deposito per questi fenomeni. Può invece imputare all'inquilino i danni che vanno oltre: buchi nei muri, rotture di sanitari, bruciature sul pavimento, muffa causata da mancata ventilazione.
+</p>
+
+<h3>Posso usare un fac-simile scaricato da internet?</h3>
+<p>
+  Sì, i modelli standard sono un buon punto di partenza. L'importante è personalizzarli con tutti i dettagli specifici dell'immobile e della situazione: un verbale generico può essere poco utile in sede di contestazione. Inserire descrizioni precise, misure, riferimenti fotografici e letture di contatori aumenta significativamente la sua efficacia probatoria.
+</p>
+
+<h3>Il verbale va registrato all'Agenzia delle Entrate?</h3>
+<p>
+  No. Il verbale di riconsegna è un atto privato che non richiede registrazione fiscale. Non genera imposte di registro.
+</p>
+    `
+  },
+  {
     slug: 'disdetta-contratto-3-2',
     title: 'Contratto 3+2: quando e come il proprietario può inviare la disdetta',
     description:
