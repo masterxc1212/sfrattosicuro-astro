@@ -18,9 +18,33 @@
       if (v) sessionStorage.setItem(p, v);
     });
 
-    const heroForm = document.getElementById('hero-form');
+    function attachTrackingFields(form) {
+      if (!form) return;
+      const urlParams = new URLSearchParams(window.location.search);
+      ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(name => {
+        const value = urlParams.get(name) || sessionStorage.getItem(name) || '';
+        if (!value) return;
+        sessionStorage.setItem(name, value);
+        let input = form.querySelector(`input[name="${name}"]`);
+        if (!input) {
+          input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = name;
+          form.appendChild(input);
+        }
+        input.value = value;
+      });
+    }
 
-    
+    // Applica il tracking a TUTTI i form che postano a invia-email.php,
+    // non solo al form hero.
+    const trackedForms = document.querySelectorAll('form[action="/php/invia-email.php"]');
+    trackedForms.forEach(form => {
+      attachTrackingFields(form);
+      form.addEventListener('submit', function() { attachTrackingFields(form); });
+    });
+
+    const heroForm = document.getElementById('hero-form');
 
     if (!heroForm) return;
 
