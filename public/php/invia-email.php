@@ -330,6 +330,19 @@ $contenuto_html .= "
 
 }
 
+if (!empty($utm_term)) {
+
+$contenuto_html .= "
+
+      <div class='field info'>
+
+        <span class='label'>🔎 Keyword</span>
+
+        <span class='value'><strong>$utm_term</strong></span>
+
+      </div>";
+
+}
 
 
 $data_ora   = date('d/m/Y H:i:s');
