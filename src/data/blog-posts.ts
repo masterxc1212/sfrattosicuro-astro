@@ -16,6 +16,125 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'proroga-contratto-locazione',
+    title: 'Proroga contratto di locazione: guida pratica',
+    description: "Cos'è la proroga del contratto di locazione, quando scatta automaticamente e come il proprietario può evitarla o gestirla correttamente.",
+    excerpt: "La proroga del contratto di locazione si attiva automaticamente alla scadenza se nessuna delle parti comunica la propria volontà di non rinnovare. Per il proprietario, sapere quando e come intervenire è l'unico modo per evitare di ritrovarsi vincolato per un altro ciclo contrattuale senza averlo scelto.",
+    lead: "La proroga del contratto di locazione si attiva automaticamente alla scadenza se nessuna delle parti comunica la propria volontà di non rinnovare. Per il proprietario, sapere quando e come intervenire — con una disdetta valida e tempestiva — è l'unico modo per evitare di ritrovarsi vincolato per un altro ciclo contrattuale senza averlo scelto.",
+    publishedAt: '2026-03-26',
+    category: 'Locazioni',
+    readingTime: '6 min',
+    sourceNote: 'Approvato manualmente il 2026-03-26. Keyword: proroga contratto di locazione, vol 1300, KD 2.',
+    html: `
+<h2>Cos'è la proroga del contratto di locazione</h2>
+
+<p>La <strong>proroga del contratto di locazione</strong> è il rinnovo automatico del rapporto di affitto alla scadenza del termine contrattuale. Non si tratta di un nuovo contratto: il rapporto esistente continua alle stesse condizioni, senza che le parti debbano firmare nulla di nuovo.</p>
+
+<p>Questo meccanismo è disciplinato dalla <strong>Legge 431/1998</strong>, che regola le locazioni abitative a uso residenziale. La legge prevede strutture contrattuali a cicli (4+4, 3+2) pensate per garantire stabilità all'inquilino, ma che vincolano anche il proprietario se non agisce nei tempi giusti.</p>
+
+<p>La proroga non va confusa con la <em>tacita rinnovazione</em> (ne parliamo più avanti): si tratta di un istituto distinto, con regole e conseguenze diverse.</p>
+
+<h2>Quando scatta la proroga automatica</h2>
+
+<p>La proroga scatta automaticamente alla scadenza di ogni ciclo contrattuale, salvo che il locatore o il conduttore abbiano comunicato la propria intenzione di non rinnovare entro i termini previsti dalla legge o dal contratto. Il silenzio, in questo caso, equivale al consenso al rinnovo.</p>
+
+<h3>Contratto 4+4: proroga alla prima e seconda scadenza</h3>
+
+<p>Il contratto a canone libero ha una durata minima di <strong>4 anni + 4 anni</strong>. Alla prima scadenza (dopo i primi 4 anni), il contratto si proroga automaticamente per altri 4 anni, salvo disdetta. Alla seconda scadenza (dopo gli 8 anni complessivi), il proprietario può scegliere liberamente se rinnovare o meno, senza dover indicare una motivazione specifica.</p>
+
+<p>Durante il primo quadriennio, il locatore può inviare <a href="/blog/disdetta-contratto-locatore/">disdetta al conduttore</a> solo in presenza di cause tassativamente previste dalla legge (necessità di uso diretto dell'immobile, vendita, lavori straordinari, ecc.). Il mancato rispetto di questa regola rende la disdetta inefficace e la proroga inevitabile.</p>
+
+<h3>Contratto 3+2: proroga biennale</h3>
+
+<p>Il contratto a canone concordato ha struttura <strong>3+2</strong>: tre anni iniziali seguiti da un rinnovo automatico di altri due anni. Alla prima scadenza (dopo 3 anni), il locatore può recedere solo per le cause previste dalla legge, comunicate con disdetta inviata almeno <strong>6 mesi prima</strong> della scadenza.</p>
+
+<p>Alla seconda scadenza (dopo 5 anni complessivi), entrambe le parti possono liberamente decidere se rinnovare o meno. Se il proprietario vuole rientrare nel possesso dell'immobile, deve comunicarlo per tempo — altrimenti il contratto si proroga per un altro biennio. Per approfondire le regole specifiche di questo schema, leggi la nostra guida sulla <a href="/blog/disdetta-contratto-3-2/">disdetta del contratto 3+2</a>.</p>
+
+<h2>Come si blocca la proroga: la disdetta in tempo</h2>
+
+<p>L'unico strumento che il proprietario ha per impedire la proroga automatica è la <strong>disdetta</strong>, comunicata entro i termini di preavviso stabiliti dalla legge o dal contratto.</p>
+
+<p>Le regole generali da rispettare sono:</p>
+
+<ul>
+  <li><strong>Preavviso minimo:</strong> almeno 6 mesi prima della scadenza per i contratti ordinari (4+4); alcuni contratti prevedono termini diversi — controllare sempre le clausole specifiche.</li>
+  <li><strong>Forma scritta:</strong> la disdetta deve essere comunicata per iscritto. La forma raccomandata è la <strong>lettera raccomandata A/R</strong> o la <strong>PEC</strong>, per avere prova dell'invio e della ricezione.</li>
+  <li><strong>Motivazione:</strong> alla prima scadenza, la disdetta del locatore deve essere motivata con una delle cause previste dalla legge. Alla seconda scadenza, non è richiesta alcuna motivazione.</li>
+</ul>
+
+<p>Una disdetta inviata fuori termine, senza la forma corretta o priva di motivazione valida (dove richiesta) è giuridicamente inefficace: il contratto si proroga come se la disdetta non fosse mai stata inviata.</p>
+
+<p>Per un approfondimento completo sulle modalità e i requisiti, consulta la guida alla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto di locazione da parte del locatore</a>.</p>
+
+<h2>Proroga e tacita rinnovazione: differenze pratiche</h2>
+
+<p>Molti proprietari confondono la <strong>proroga</strong> con la <strong>tacita rinnovazione</strong>. Sono due meccanismi diversi con conseguenze diverse.</p>
+
+<p>La <strong>proroga</strong> è il rinnovo previsto dalla struttura legale del contratto (4+4 o 3+2): avviene per legge alla scadenza di ogni ciclo, indipendentemente dal comportamento delle parti, salvo disdetta tempestiva.</p>
+
+<p>La <strong>tacita rinnovazione</strong>, invece, si verifica quando il contratto è già scaduto e l'inquilino continua a occupare l'immobile con la tolleranza del proprietario. In questo caso, si forma un nuovo rapporto contrattuale — spesso a condizioni diverse e meno definite — che può creare complicazioni legali. L'articolo 1597 del Codice Civile regola questa fattispecie per i contratti non soggetti alla Legge 431/1998 (es. locazioni commerciali).</p>
+
+<p>Per il proprietario, la distinzione è importante: nella proroga si è ancora nell'ambito del contratto originale; nella tacita rinnovazione si è già fuori da quel perimetro, con conseguenze diverse sulla durata e sui diritti.</p>
+
+<h2>Il proprietario può rifiutare la proroga?</h2>
+
+<p>Dipende dalla scadenza contrattuale e dalle circostanze.</p>
+
+<p><strong>Alla prima scadenza</strong> (fine del primo ciclo 4 o 3 anni), il locatore può opporsi alla proroga solo per le motivazioni previste dalla legge, elencate all'articolo 3 della Legge 431/1998:</p>
+
+<ul>
+  <li>necessità di destinare l'immobile ad uso personale o di un familiare</li>
+  <li>intenzione di vendere l'immobile libero da persone</li>
+  <li>necessità di effettuare lavori di ristrutturazione che richiedono il rilascio</li>
+  <li>morosità dell'inquilino o gravi inadempimenti contrattuali</li>
+  <li>altre cause specifiche previste dalla norma</li>
+</ul>
+
+<p><strong>Alla seconda scadenza</strong> (fine del secondo ciclo), il proprietario è libero di non rinnovare senza dover fornire alcuna giustificazione: è sufficiente inviare la disdetta nei termini corretti.</p>
+
+<p>Se il contratto è scaduto e l'inquilino non lascia l'immobile, il proprietario può avviare una procedura di <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>, che è lo strumento legale specifico per questo caso.</p>
+
+<h2>Cosa succede se il proprietario non si oppone in tempo</h2>
+
+<p>Se il proprietario non invia la disdetta nei termini previsti, il contratto si proroga automaticamente per un altro ciclo completo. Non è possibile "rimediare" dopo la scadenza del termine di preavviso: il rinnovo è già avvenuto per legge.</p>
+
+<p>Le conseguenze pratiche sono:</p>
+
+<ul>
+  <li>Il contratto rimane in vigore per un altro ciclo (altri 4 anni per il 4+4, altri 2 anni per il 3+2)</li>
+  <li>Il proprietario non può richiedere il rilascio dell'immobile se non alle condizioni previste per la prima scadenza</li>
+  <li>Eventuali trattative informali con l'inquilino non hanno valore legale se non formalizzate</li>
+</ul>
+
+<p>L'unica possibilità rimasta al proprietario è accordarsi con l'inquilino per una <strong>risoluzione consensuale</strong> del contratto, oppure attendere la scadenza del nuovo ciclo e agire in tempo con la disdetta successiva.</p>
+
+<p>Nei casi in cui esista già una morosità o un inadempimento contrattuale, rimane percorribile la strada dello sfratto per morosità, indipendentemente dalla proroga.</p>
+
+<div style="background:#f5f5f5; border-left:4px solid #c0392b; padding:20px; margin:32px 0;">
+  <strong>Hai bisogno di recuperare il tuo immobile?</strong>
+  <p style="margin:8px 0 0;">Se il contratto si è prorogato senza che tu lo volessi, o se l'inquilino non lascia l'appartamento alla scadenza, Sfratto Sicuro ti aiuta a capire quale strada percorrere. Verifica la tua situazione con una consulenza: i nostri specialisti analizzano il contratto, i termini e le opzioni disponibili per aiutarti a recuperare l'immobile nel minor tempo possibile.</p>
+  <p style="margin:12px 0 0;"><a href="/contatti/" style="color:#c0392b; font-weight:bold;">→ Richiedi una consulenza gratuita</a></p>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>La proroga del contratto di locazione è automatica o va richiesta?</h3>
+<p>È automatica. Alla scadenza di ogni ciclo contrattuale, il contratto si rinnova di diritto senza che nessuna delle parti debba fare nulla. Per evitare la proroga, è il proprietario (o l'inquilino) che deve attivarsi inviando la disdetta nei termini previsti. Il silenzio equivale sempre al rinnovo.</p>
+
+<h3>Posso bloccare la proroga se mi sono dimenticato di inviare la disdetta in tempo?</h3>
+<p>No. Se il termine di preavviso è già scaduto, la proroga si è già verificata per legge e non è revocabile unilateralmente. L'unica strada è un accordo consensuale con l'inquilino, oppure attendere la scadenza del nuovo ciclo e agire in anticipo la prossima volta. Questo è uno degli errori più costosi per i proprietari: verificare le scadenze con anticipo è fondamentale.</p>
+
+<h3>Qual è la differenza tra proroga e rinnovo del contratto di locazione?</h3>
+<p>La proroga è il prolungamento automatico previsto dalla struttura legale del contratto (es. secondo quadriennio nel 4+4): avviene per legge, senza alcun atto formale. Il rinnovo, invece, implica un nuovo accordo tra le parti — spesso con nuove condizioni economiche o clausole aggiornate — e richiede la firma di un nuovo contratto o di un atto integrativo da registrare all'Agenzia delle Entrate.</p>
+
+<h3>Se il contratto si proroga, devo aggiornare la registrazione all'Agenzia delle Entrate?</h3>
+<p>La proroga automatica prevista dalla legge (es. secondo quadriennio) non richiede una nuova registrazione: il contratto originale già registrato copre anche il periodo prorogato. Diverso è il caso in cui le parti modifichino le condizioni contrattuali (canone, durata, ecc.): in quel caso è necessario comunicare la variazione all'Agenzia delle Entrate entro 30 giorni, utilizzando il modello RLI.</p>
+
+<h3>Il proprietario può non rinnovare il contratto alla seconda scadenza senza motivazione?</h3>
+<p>Sì. Alla seconda scadenza — dopo 8 anni per il contratto 4+4 o dopo 5 anni per il 3+2 — il locatore può liberamente decidere di non rinnovare il contratto senza dover indicare alcuna motivazione. È sufficiente inviare la disdetta nei termini previsti (almeno 6 mesi prima della scadenza). Se l'inquilino non lascia l'immobile alla scadenza, il proprietario può avviare la procedura di <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+    `
+  },
+  {
     slug: 'verbale-riconsegna-immobile',
     title: 'Verbale di riconsegna immobile: guida pratica',
     description: "Cos'è il verbale di riconsegna dell'immobile, come si compila, cosa verificare prima di firmare e come tutela il proprietario da contestazioni successive.",
