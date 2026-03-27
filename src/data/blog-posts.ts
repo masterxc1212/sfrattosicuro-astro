@@ -16,6 +16,105 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'fideiussione-affitto',
+    title: "Fideiussione per l'affitto: guida pratica per il proprietario",
+    description: "Cos'è la fideiussione per l'affitto, quando richiederla all'inquilino e come tutela il proprietario in caso di morosità o danni.",
+    excerpt: "La fideiussione per l'affitto è una garanzia aggiuntiva che un terzo fornisce al proprietario, impegnandosi a pagare al suo posto in caso di morosità o danni. Richiederla prima della firma può fare la differenza tra recuperare rapidamente le somme dovute e avviare un lungo contenzioso.",
+    lead: "La fideiussione per l'affitto è una garanzia aggiuntiva che un terzo (banca, assicurazione o privato) fornisce al proprietario, impegnandosi a pagare al suo posto in caso di morosità o danni. Richiederla all'inquilino prima della firma del contratto può fare la differenza tra recuperare rapidamente le somme dovute e avviare un lungo contenzioso legale.",
+    publishedAt: '2026-03-27',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: 'Approvato manualmente il 2026-03-27. Keyword: fideiussione affitto, vol 1900, KD 0. Batch 2 #3.',
+    html: `
+<h2>Cos'è la fideiussione per l'affitto</h2>
+<p>La fideiussione è un contratto con cui un soggetto terzo — chiamato <strong>fideiussore</strong> — si obbliga personalmente verso il locatore a garantire l'adempimento delle obbligazioni dell'inquilino. In pratica, se l'inquilino smette di pagare l'affitto o lascia l'immobile in cattive condizioni, il proprietario può rivolgersi direttamente al fideiussore per ottenere quanto dovuto.</p>
+<p>La disciplina è contenuta negli articoli 1936–1957 del Codice Civile. La fideiussione deve essere stipulata <strong>per iscritto</strong> e può essere:</p>
+<ul>
+  <li><strong>A prima richiesta</strong> (o "senza eccezioni"): il fideiussore paga immediatamente all'escussione, senza poter sollevare eccezioni legate al rapporto principale tra locatore e conduttore. È la forma più tutelante per il proprietario.</li>
+  <li><strong>Ordinaria</strong>: il fideiussore può opporre le stesse eccezioni che avrebbe il debitore principale, allungando i tempi di recupero.</li>
+</ul>
+<p>La fideiussione si distingue dal <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>, che è una somma di denaro versata direttamente dall'inquilino e vincolata per legge a un massimo di tre mensilità. La fideiussione, invece, non ha un tetto legale espresso e non immobilizza liquidità nelle mani del locatario.</p>
+
+<h2>Fideiussione bancaria o assicurativa: differenze pratiche</h2>
+<p>Nella pratica locatizia si incontrano principalmente due tipologie di fideiussione istituzionale:</p>
+
+<h3>Fideiussione bancaria</h3>
+<p>È rilasciata da una banca a favore del locatore. Il costo per l'inquilino varia generalmente dallo <strong>0,5% al 2% annuo</strong> dell'importo garantito, a seconda del profilo creditizio e dell'istituto. Offre la massima solidità patrimoniale, ma può essere più difficile da ottenere per inquilini con redditi irregolari o storia creditizia non impeccabile.</p>
+
+<h3>Fideiussione assicurativa</h3>
+<p>È emessa da una compagnia assicurativa (polizza fideiussoria). I costi tendono ad essere lievemente inferiori rispetto a quella bancaria, ma variano in base alla durata del contratto e ai massimali coperti. Alcune compagnie prevedono coperture specifiche per il mercato delle locazioni, includendo anche spese legali e procedurali.</p>
+
+<h3>Fideiussione privata</h3>
+<p>Un parente o conoscente si rende garante personalmente. È la soluzione più comune nelle locazioni tra privati, soprattutto per studenti o lavoratori precari. Il rischio per il proprietario è che il garante privato non abbia la solidità patrimoniale di un istituto. Prima di accettarla, è prudente verificare la situazione reddituale e patrimoniale del garante (buste paga, visura catastale, estratto conto).</p>
+
+<h2>Quando e come richiederla all'inquilino</h2>
+<p>Non esiste un obbligo di legge di richiedere la fideiussione: è una <strong>scelta contrattuale libera</strong> del locatore. Tuttavia, è consigliabile richiederla in presenza di segnali di rischio:</p>
+<ul>
+  <li>Inquilino con reddito basso rispetto al canone (regola empirica: il canone non dovrebbe superare il 30% del reddito netto mensile).</li>
+  <li>Lavoratori autonomi, precari o con contratto a termine breve.</li>
+  <li>Studenti fuori sede senza reddito proprio.</li>
+  <li>Inquilini stranieri senza riferimenti locali verificabili.</li>
+  <li>Precedenti morosità segnalate da altri locatori (se disponibili).</li>
+</ul>
+<p>Dal punto di vista pratico, la fideiussione va <strong>negoziata prima della firma del contratto</strong> e allegata come documento al contratto stesso. È opportuno indicare nel contratto di locazione:</p>
+<ol>
+  <li>Il nome e i dati del fideiussore.</li>
+  <li>L'importo massimo garantito (es. 12 mensilità di canone).</li>
+  <li>La durata della garanzia (preferibilmente fino alla riconsegna dell'immobile e all'estinzione di ogni obbligazione).</li>
+  <li>Se si tratta di fideiussione a prima richiesta o ordinaria.</li>
+</ol>
+
+<h2>Fideiussione e deposito cauzionale: si possono usare insieme?</h2>
+<p>Sì, la legge non vieta di richiedere sia il <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> sia la fideiussione. Sono strumenti complementari che coprono rischi diversi:</p>
+<ul>
+  <li>Il <strong>deposito cauzionale</strong> è immediatamente disponibile al locatore per danni o canoni insoluti minori, senza necessità di escutere alcuna garanzia.</li>
+  <li>La <strong>fideiussione</strong> copre importi maggiori e situazioni più gravi, come morosità prolungata o danni ingenti all'immobile.</li>
+</ul>
+<p>Attenzione: il deposito cauzionale è limitato per legge a <strong>tre mensilità di canone</strong>. La fideiussione, invece, può coprire importi superiori (es. 6 o 12 mensilità), offrendo una protezione più ampia. Combinare i due strumenti è una strategia legittima e spesso consigliata per immobili di valore elevato o in locazioni a lungo termine.</p>
+
+<h2>Come escutere la fideiussione in caso di morosità</h2>
+<p>Quando l'inquilino smette di pagare, il proprietario ha due strade: agire direttamente contro il conduttore moroso oppure escutere il fideiussore. In presenza di una <strong>fideiussione a prima richiesta</strong>, il percorso più rapido è il secondo.</p>
+<p>I passaggi pratici sono i seguenti:</p>
+<ol>
+  <li><strong>Diffida scritta all'inquilino</strong>: prima di agire sul fideiussore, conviene inviare una raccomandata A/R (o PEC) all'inquilino con la richiesta di pagamento e i canoni arretrati dettagliati.</li>
+  <li><strong>Richiesta di escussione al fideiussore</strong>: si invia una comunicazione scritta al garante, allegando la prova della morosità. Con la fideiussione a prima richiesta, il fideiussore non può opporsi e deve pagare entro i termini previsti.</li>
+  <li><strong>Azione legale in parallelo</strong>: l'escussione della fideiussione non preclude la possibilità di procedere contemporaneamente con lo sfratto per morosità. Puoi approfondire le procedure nella nostra <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità nel 2026</a>.</li>
+</ol>
+
+<h2>Limiti e rischi per il proprietario</h2>
+<ul>
+  <li><strong>Scadenza della garanzia</strong>: alcune fideiussioni hanno una durata fissa. Verificare sempre che la scadenza sia allineata o successiva alla fine del contratto di locazione.</li>
+  <li><strong>Massimale insufficiente</strong>: prevedere un massimale adeguato (almeno 6–12 mensilità).</li>
+  <li><strong>Insolvenza del garante privato</strong>: verificare concretamente la capacità patrimoniale del garante prima di accettare una fideiussione privata.</li>
+  <li><strong>Decadenza per mancata azione tempestiva</strong>: l'art. 1957 c.c. prevede che il creditore perda la fideiussione se non agisce contro il debitore principale entro sei mesi dalla scadenza dell'obbligazione.</li>
+  <li><strong>Fideiussione ordinaria anziché a prima richiesta</strong>: può rendere l'escussione lunga e costosa quanto un'azione legale diretta.</li>
+</ul>
+
+<div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
+  <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Hai un inquilino moroso e vuoi sapere come muoverti?</p>
+  <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari in tutte le fasi: dalla diffida stragiudiziale alla procedura di sfratto per morosità. Contattaci per una consulenza gratuita.</p>
+  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+</div>
+
+<h2>FAQ sulla fideiussione per l'affitto</h2>
+
+<h3>La fideiussione è obbligatoria per legge nei contratti di affitto?</h3>
+<p>No, la fideiussione non è mai obbligatoria: è una clausola facoltativa che il locatore può richiedere come condizione per stipulare il contratto. L'inquilino non è tenuto ad accettarla, ma il proprietario è libero di non affittare in assenza della garanzia richiesta.</p>
+
+<h3>Quanto può ammontare la fideiussione per l'affitto?</h3>
+<p>A differenza del deposito cauzionale, la fideiussione non ha un limite massimo stabilito dalla legge. Le parti possono concordare liberamente l'importo garantito. Nella prassi si richiedono coperture pari a 6 o 12 mensilità di canone, in modo da coprire sia i canoni insoluti sia eventuali danni all'immobile.</p>
+
+<h3>Cosa succede alla fideiussione se il contratto di affitto viene rinnovato?</h3>
+<p>Dipende da come è redatta la fideiussione. Se il documento prevede una durata limitata e il contratto si rinnova tacitamente, la garanzia potrebbe scadere prima della fine del rapporto locativo. È importante prevedere esplicitamente che la garanzia si estenda a ogni rinnovo o proroga del contratto.</p>
+
+<h3>Il fideiussore può rivalersi sull'inquilino dopo aver pagato il proprietario?</h3>
+<p>Sì. Una volta che il fideiussore ha soddisfatto il credito del locatore, acquista per legge il diritto di rivalsa sull'inquilino (art. 1950 c.c.). Può quindi agire in giudizio contro il conduttore per recuperare quanto pagato, con gli interessi.</p>
+
+<h3>Fideiussione e deposito cauzionale: quale conviene richiedere?</h3>
+<p>I due strumenti non si escludono e spesso si integrano. Il deposito cauzionale (massimo tre mensilità) è immediatamente liquido e copre rapidamente danni minori o pochi mesi di morosità. La fideiussione permette di ottenere garanzie più ampie senza immobilizzare liquidità dell'inquilino. Per immobili di valore elevato o inquilini con profilo di rischio più alto, la soluzione ideale è richiederli entrambi.</p>
+    `
+  },
+  {
     slug: 'proroga-contratto-locazione',
     title: 'Proroga contratto di locazione: guida pratica',
     description: "Cos'è la proroga del contratto di locazione, quando scatta automaticamente e come il proprietario può evitarla o gestirla correttamente.",
