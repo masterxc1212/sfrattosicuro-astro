@@ -1,0 +1,132 @@
+---
+/**
+ * SedeBlogLinksIsland.astro
+ * Sezione "Approfondimenti utili" per le pagine sedi territoriali.
+ * Mostra 3 link a post del blog scelti per categoria (Sfratti o Locazioni).
+ * Scopo SEO: aggiungere contenuto testuale unico e internal linking per
+ * differenziare le pagine sedi da thin content.
+ *
+ * Usata solo nelle pagine sede — NON nella home nazionale.
+ */
+import { blogPosts, type BlogCategory } from '../data/blog-posts';
+import sedi from '../data/sedi.json';
+
+interface SedeItem {
+  slug: string;
+  nome: string;
+  blogFocus?: 'sfratti' | 'locazioni' | 'misto';
+}
+
+interface Props {
+  sedeSlug: string;
+}
+
+const { sedeSlug } = Astro.props;
+
+const sede = (sedi as SedeItem[]).find(s => s.slug === sedeSlug);
+const nomeCitta = sede?.nome ?? sedeSlug;
+
+// Determina la categoria prevalente per la sede
+// Default: sfratti (focus principale del sito)
+const focus = sede?.blogFocus ?? 'sfratti';
+
+let selectedPosts;
+if (focus === 'misto') {
+  // 2 sfratti + 1 locazioni
+  const sfratti = blogPosts.filter(p => p.category === 'Sfratti').slice(0, 2);
+  const locazioni = blogPosts.filter(p => p.category === 'Locazioni').slice(0, 1);
+  selectedPosts = [...sfratti, ...locazioni];
+} else {
+  const cat: BlogCategory = focus === 'locazioni' ? 'Locazioni' : 'Sfratti';
+  selectedPosts = blogPosts.filter(p => p.category === cat).slice(0, 3);
+}
+---
+
+{selectedPosts.length > 0 && (
+  <section class="sede-blog-links" aria-labelledby="sede-blog-links-title">
+    <div class="container">
+      <h2 id="sede-blog-links-title">Guide pratiche per i proprietari a {nomeCitta}</h2>
+      <p class="intro-text">
+        Risorse operative su sfratti, locazioni e diritti del proprietario — scritte per chi deve agire, non solo informarsi.
+      </p>
+      <ul class="links-list" role="list">
+        {selectedPosts.map(post => (
+          <li>
+            <a href={`/blog/${post.slug}/`} class="link-item">
+              <span class="link-title">{post.title}</span>
+              <span class="link-desc">{post.description}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a href="/blog/" class="all-link" aria-label="Vedi tutti gli articoli del blog">
+        Tutti gli approfondimenti →
+      </a>
+    </div>
+  </section>
+)}
+
+<style>
+  .sede-blog-links {
+    padding: 48px 0;
+    background: #f7f9fc;
+    border-top: 1px solid #e5eaf2;
+    border-bottom: 1px solid #e5eaf2;
+  }
+  .sede-blog-links h2 {
+    font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+    font-weight: 700;
+    color: var(--blue-navy);
+    margin: 0 0 10px;
+  }
+  .intro-text {
+    color: #475569;
+    font-size: 0.95rem;
+    margin: 0 0 24px;
+    max-width: 600px;
+  }
+  .links-list {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .link-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .link-item:hover {
+    border-color: var(--blue-navy);
+    box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  }
+  .link-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--blue-navy);
+    line-height: 1.4;
+  }
+  .link-desc {
+    font-size: 0.82rem;
+    color: #64748b;
+    line-height: 1.5;
+  }
+  .all-link {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--blue-navy);
+    text-decoration: none;
+  }
+  .all-link:hover { text-decoration: underline; }
+  @media (min-width: 640px) {
+    .links-list { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>

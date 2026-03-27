@@ -14,6 +14,7 @@ import StudioSection from './StudioSection.astro';
 import ProvvedimentiIsland from './ProvvedimentiIsland.astro';
 import ReviewsIsland from './ReviewsIsland.astro';
 import LatestBlogPostsIsland from './LatestBlogPostsIsland.astro';
+import SedeBlogLinksIsland from './SedeBlogLinksIsland.astro';
 import VideoReviewsIsland from './VideoReviewsIsland.astro';
 import FaqSection from './FaqSection.astro';
 import ContactFormIsland from './ContactFormIsland.astro';
@@ -100,6 +101,7 @@ const isNational = sedeSlug === 'nazionale';
   <ReviewsIsland />
 
   {showBlogLatest && <LatestBlogPostsIsland />}
+  {!isNational && <SedeBlogLinksIsland sedeSlug={sedeSlug} />}
   {showVideoReviews && <VideoReviewsIsland />}
 
   <FaqSection sedeSlug={sedeSlug} faqItems={faqItems} />
