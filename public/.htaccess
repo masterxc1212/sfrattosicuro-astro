@@ -1,3 +1,17 @@
+# Redirect 301 — vecchie URL dell'ex sito (ora 404 in GSC)
+RewriteEngine On
+
+# privacy-policy senza slash finale (senza www)
+RewriteRule ^privacy-policy$ /privacy-policy/ [R=301,L]
+
+# Vecchie landing .html
+RewriteRule ^sfratto-per-morosita\.html$ /landing/ [R=301,L]
+RewriteRule ^sfratto-finita-locazione\.html$ /blog/sfratto-per-finita-locazione/ [R=301,L]
+
+# Vecchie pagine sedi con underscore
+RewriteRule ^avvocato_sfratto_milano\.html$ /sedi/milano/ [R=301,L]
+RewriteRule ^avvocato_sfratto_roma\.html$ /sedi/roma/ [R=301,L]
+
 # Cache control — sfrattosicuro.it
 # HTML: sempre rivalidato (no-cache), assets hashati: 1 anno
 
