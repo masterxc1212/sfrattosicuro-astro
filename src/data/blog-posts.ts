@@ -16,6 +16,115 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'caparra-affitto-restituzione',
+    title: 'Caparra affitto: quando e come restituirla',
+    description: 'Caparra affitto: quando il proprietario deve restituirla, quanto tempo ha e quando può trattenerla legalmente. Casi pratici e guida operativa.',
+    excerpt: 'La restituzione della caparra affitto è uno dei momenti più delicati alla fine di una locazione. Molti proprietari sanno di dover restituire il deposito, ma non sanno esattamente entro quando, in quali casi possono tenerlo tutto o in parte, e come documentare correttamente le trattenute per evitare contestazioni.',
+    lead: 'La restituzione della caparra affitto è uno dei momenti più delicati alla fine di una locazione. Molti proprietari sanno di dover restituire il deposito, ma non sanno esattamente entro quando, in quali casi possono tenerlo tutto o in parte, e come documentare correttamente le trattenute per evitare contestazioni.',
+    publishedAt: '2026-03-28',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: 'Approvato 2026-03-28. Keyword: caparra affitto restituzione, vol 590, KD 5. Batch 2 #4.',
+    html: `
+<p>La restituzione della caparra affitto è uno dei momenti più delicati alla fine di una locazione. Molti proprietari sanno di dover restituire il deposito, ma non sanno esattamente entro quando, in quali casi possono tenerlo tutto o in parte, e come documentare correttamente le trattenute per evitare contestazioni.</p>
+
+<p>Questa guida risponde in modo pratico a queste domande, distinguendo le situazioni in cui la restituzione è obbligatoria da quelle in cui il proprietario ha legittimamente diritto a trattenere una parte o l'intero importo.</p>
+
+<h2>Caparra e deposito cauzionale: una distinzione che conta</h2>
+<p>Nel linguaggio comune, "caparra affitto" e "deposito cauzionale" vengono spesso usati come sinonimi. In realtà sono istituti giuridici diversi:</p>
+<ul>
+  <li>Il <strong>deposito cauzionale</strong> (art. 11, Legge 392/1978) è la somma versata dall'inquilino a garanzia delle obbligazioni contrattuali: pagamento dei canoni, delle spese accessorie e risarcimento degli eventuali danni all'immobile. È lo strumento più usato nelle locazioni abitative.</li>
+  <li>La <strong>caparra confirmatoria</strong> (art. 1385 c.c.) è una somma versata al momento della conclusione del contratto: se è chi l'ha versata a non adempiere, la perde; se è chi l'ha ricevuta a non adempiere, deve restituire il doppio.</li>
+</ul>
+<p>Nella pratica delle locazioni abitative, quasi sempre si parla di <strong>deposito cauzionale</strong>, anche quando viene chiamato "caparra". Questo articolo tratta entrambi, con focus sul deposito cauzionale che è la fattispecie più comune.</p>
+<p>Per una guida completa su quando il proprietario può trattenere il deposito e in quali misure, leggi l'articolo dedicato al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale affitto</a>.</p>
+
+<h2>Quando il proprietario deve restituire la caparra</h2>
+<p>La regola generale è semplice: il proprietario deve restituire il deposito cauzionale quando l'inquilino ha rispettato tutti gli obblighi contrattuali. In pratica, significa che alla fine del rapporto:</p>
+<ul>
+  <li>tutti i canoni e le spese accessorie sono stati pagati;</li>
+  <li>l'immobile viene restituito in condizioni normali, tenuto conto della normale usura;</li>
+  <li>non ci sono danni che eccedono il deterioramento fisiologico dovuto all'uso ordinario.</li>
+</ul>
+<p>Se queste condizioni sono soddisfatte, la restituzione non è una scelta discrezionale del proprietario: è un obbligo.</p>
+
+<h2>Entro quanto tempo va restituita</h2>
+<p>La legge italiana non fissa un termine preciso per la restituzione del deposito cauzionale. Tuttavia, la giurisprudenza di merito ha consolidato il principio che il proprietario deve restituire la somma <strong>entro un termine ragionevole</strong> dalla riconsegna dell'immobile, generalmente indicato in <strong>30-60 giorni</strong>.</p>
+<p>Questo periodo è considerato sufficiente per:</p>
+<ul>
+  <li>verificare lo stato dell'immobile dopo il rilascio;</li>
+  <li>ottenere eventuali preventivi per lavori di ripristino;</li>
+  <li>fare un conteggio preciso di eventuali spese accessorie non saldate.</li>
+</ul>
+<p>Trattenere il deposito per periodi molto più lunghi senza una giustificazione documentata espone il proprietario al rischio di azioni legali da parte del conduttore, con richiesta di restituzione delle somme più interessi legali.</p>
+
+<h2>Gli interessi sul deposito cauzionale</h2>
+<p>Un aspetto che molti proprietari ignorano: il deposito cauzionale produce interessi legali, che devono essere corrisposti all'inquilino al momento della restituzione. L'art. 11 della Legge 392/1978 stabilisce che il deposito deve essere rivalutato annualmente in base agli indici ISTAT e produrre interessi al tasso legale.</p>
+<p>In pratica, se l'inquilino ha versato 1.500 euro di deposito e il contratto è durato 4 anni, al momento della restituzione spettano anche gli interessi maturati negli anni.</p>
+
+<h2>Quando il proprietario può trattenere la caparra: i casi legittimi</h2>
+<p>Il proprietario ha diritto a trattenere il deposito — in tutto o in parte — in presenza di inadempimenti documentabili del conduttore. I casi più frequenti sono:</p>
+
+<h3>1. Canoni non pagati</h3>
+<p>Se alla fine del rapporto risultano mensilità non versate, il proprietario può trattenere l'importo corrispondente. Basta un conteggio preciso delle rate insolute con le relative date.</p>
+
+<h3>2. Danni all'immobile eccedenti la normale usura</h3>
+<p>Non tutto ciò che sembra un danno lo è ai fini legali. La normale usura — ingiallimento delle pareti, piccoli segni su pavimenti e porte, deterioramento degli infissi dopo anni — non è addebitabile all'inquilino. Invece sono addebitabili: buchi nei muri non autorizzati, rotture di sanitari, bruciature su pavimenti, muffa per mancata ventilazione, danni agli impianti per utilizzo scorretto, vetri rotti o infissi danneggiati.</p>
+<p>Per dimostrare che i danni non erano preesistenti, è fondamentale disporre di un <strong>verbale di consegna iniziale</strong> dettagliato. Per approfondire, leggi la guida sul <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna immobile</a>.</p>
+
+<h3>3. Spese accessorie non saldo</h3>
+<p>Se rimangono conguagli condominiali, bollette intestate al conduttore o spese non pagate, il proprietario può compensarle con il deposito — purché siano documentate.</p>
+
+<h3>4. Pulizia straordinaria</h3>
+<p>Se l'immobile viene riconsegnato in condizioni igieniche molto deteriorate, il costo degli interventi straordinari di pulizia può essere addebitato al conduttore.</p>
+
+<h2>Come comunicare una trattenuta</h2>
+<p>Se il proprietario ha motivi legittimi per trattenere tutto o parte del deposito, deve comunicarlo al conduttore in modo chiaro e documentato. Serve una comunicazione che spieghi l'importo trattenuto, le ragioni specifiche (canoni insoluti, danni, spese), i documenti a supporto e l'eventuale parte restituita. La forma raccomandata è la <strong>raccomandata A/R o la PEC</strong> con allegati i documenti giustificativi.</p>
+
+<h2>Caparra confirmatoria: restituzione del doppio</h2>
+<p>Se nel contratto è stata prevista una vera caparra confirmatoria (e non un semplice deposito cauzionale): se è il <strong>conduttore</strong> a non adempiere, il proprietario può trattenerla; se è il <strong>proprietario</strong> a non adempiere, deve restituire il <strong>doppio</strong>. Nelle locazioni regolari a lungo termine, la forma più usata resta il deposito cauzionale.</p>
+
+<h2>Cosa succede se il proprietario non restituisce il deposito</h2>
+<p>Se il proprietario trattiene il deposito senza un motivo documentato o lo restituisce con ritardo eccessivo, il conduttore può agire per ottenere la restituzione della somma trattenuta, gli interessi legali maturati e il risarcimento degli eventuali danni causati dal ritardo. Lo strumento tipico è il ricorso al giudice di pace (fino a 5.000 euro) o al tribunale civile.</p>
+<p>Per il proprietario che ha invece un inquilino moroso da gestire, il percorso è diverso e passa dalla procedura di sfratto: la guida completa è nello <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità nel 2026</a>.</p>
+
+<h2>Checklist per il proprietario a fine locazione</h2>
+<ol>
+  <li>Redigi un verbale di riconsegna dettagliato e firmato da entrambe le parti.</li>
+  <li>Scatta fotografie o video documentando lo stato di ogni ambiente.</li>
+  <li>Verifica i canoni pagati e calcola eventuali arretrati.</li>
+  <li>Controlla le spese accessorie e i conguagli condominiali.</li>
+  <li>Ottieni preventivi o fatture per eventuali danni.</li>
+  <li>Comunica la decisione per iscritto con tutti i documenti a supporto.</li>
+  <li>Restituisci la parte non trattenuta entro 30-60 giorni dalla riconsegna.</li>
+  <li>Includi gli interessi maturati nella somma restituita.</li>
+</ol>
+
+<div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
+  <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Hai dubbi sulla gestione del deposito o del rilascio dell'immobile?</p>
+  <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari in tutte le fasi della locazione: dalla fine del rapporto alla gestione delle contestazioni. Contattaci per una valutazione gratuita del tuo caso.</p>
+  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+</div>
+
+<h2>FAQ — Domande frequenti sulla restituzione della caparra affitto</h2>
+
+<h3>Entro quanto tempo il proprietario deve restituire il deposito cauzionale?</h3>
+<p>La legge non fissa un termine preciso, ma la giurisprudenza riconosce come congruo un periodo di 30-60 giorni dalla riconsegna dell'immobile. Trattenute prolungate senza giustificazione espongono al rischio di azioni legali del conduttore.</p>
+
+<h3>Il proprietario può usare il deposito per coprire l'ultimo mese di affitto?</h3>
+<p>No. Il deposito cauzionale non è equivalente all'ultimo canone. Se l'inquilino non paga l'ultima mensilità, il proprietario può trattenere quella somma dal deposito, ma dopo aver documentato l'insoluto — non come automatismo contrattuale.</p>
+
+<h3>Cosa succede se l'appartamento presenta danni ma non c'era un verbale di consegna iniziale?</h3>
+<p>In assenza di verbale iniziale, dimostrare che i danni sono stati causati dall'inquilino diventa più difficile. Il proprietario può presentare fotografie datate, dichiarazioni di testimoni o perizie tecniche, ma la posizione è più debole rispetto a chi ha un verbale firmato.</p>
+
+<h3>Il deposito cauzionale produce interessi?</h3>
+<p>Sì. L'art. 11 della Legge 392/1978 prevede che il deposito cauzionale debba essere rivalutato annualmente e produrre interessi al tasso legale. Al momento della restituzione, il proprietario deve corrispondere anche questi interessi maturati durante la locazione.</p>
+
+<h3>Caparra e deposito cauzionale sono la stessa cosa nei contratti di affitto?</h3>
+<p>Nel linguaggio comune sì, ma tecnicamente no. Il deposito cauzionale (art. 11 L. 392/1978) è la forma più usata nelle locazioni abitative. La caparra confirmatoria (art. 1385 c.c.) è un istituto diverso, usato più spesso nella fase precontrattuale. Nelle locazioni regolari, quasi sempre ci si trova di fronte a un deposito cauzionale.</p>
+    `
+  },
+  {
     slug: 'fideiussione-affitto',
     title: "Fideiussione per l'affitto: guida pratica per il proprietario",
     description: "Cos'è la fideiussione per l'affitto, quando richiederla all'inquilino e come tutela il proprietario in caso di morosità o danni.",
