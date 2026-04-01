@@ -16,7 +16,7 @@ ini_set('display_errors', 0);
 
 ini_set('log_errors', 1);
 
-ini_set('error_log', __DIR__ . '/../logs/error_log.txt');
+ini_set('error_log', __DIR__ . '/../../logs/error_log.txt');
 
 
 
@@ -455,7 +455,7 @@ $mail_sent = @mail($destinatario, $oggetto, $body, implode("\r\n", $headers));
 
 /* === SALVATAGGIO BACKUP === */
 
-$backup_file = __DIR__ . '/../logs/leads_backup.txt';
+$backup_file = __DIR__ . '/../../logs/leads_backup.txt';
 
 $backup_data = sprintf(
 
@@ -497,7 +497,7 @@ if (!empty($gclid)) {
 
     // Cerca il record appena creato per email o telefono (da Make/webhook gestisce l'upsert completo)
     // Qui salviamo in un file di staging che verrà processato dal cron/webhook
-    $gclid_staging = __DIR__ . '/../logs/gclid_staging.jsonl';
+    $gclid_staging = __DIR__ . '/../../logs/gclid_staging.jsonl';
     $staging_row = json_encode([
         'timestamp'    => date('c'),
         'nome'         => $nome_completo,
