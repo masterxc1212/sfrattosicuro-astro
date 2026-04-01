@@ -1179,7 +1179,13 @@ img{max-width:100%;height:auto;display:block}
 
 
               <input type="hidden" name="form_source" value="hero_form">
-
+              <input type="hidden" name="gclid" value="">
+              <input type="hidden" name="utm_source" value="">
+              <input type="hidden" name="utm_medium" value="">
+              <input type="hidden" name="utm_campaign" value="">
+              <input type="hidden" name="utm_term" value="">
+              <input type="hidden" name="keyword" value="">
+              <input type="hidden" name="utm_content" value="">
               <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html">
 
 
@@ -4126,10 +4132,8 @@ img{max-width:100%;height:auto;display:block}
     const utmTerm=getParam('utm_term');
     const utmContent=getParam('utm_content');
     const keyword=getParam('keyword');
-    // Popola i campi hidden di TUTTI i form (hero + bottom)
-    ['hero-form','heroForm'].forEach(function(id){
-      var f=document.getElementById(id);
-      if(!f)return;
+    // Popola i campi hidden di tutti i form che postano a /php/invia-email.php
+    document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
       var set=function(n,v){var i=f.querySelector('[name="'+n+'"]');if(i)i.value=v;};
       set('gclid',gclid);
       set('utm_source',utmSource);
