@@ -25,158 +25,195 @@ const posts: BlogPost[] = [
     category: "Locazioni",
     readingTime: "9 min",
     sourceNote: "Approvato 2026-04-02. Keyword: mancata comunicazione proroga contratto locazione, vol 390, KD 0. Batch 2 #7.",
-    html: `*Se la proroga del contratto di locazione non viene comunicata all'Agenzia delle Entrate entro 30 giorni dalla scadenza, il proprietario deve regolarizzare subito la posizione. Nel regime ordinario il rischio principale è legato all'omesso adempimento fiscale e alle relative sanzioni; con la cedolare secca, invece, la mancata comunicazione non fa decadere automaticamente dall'opzione se il comportamento fiscale è rimasto coerente, ma resta comunque un errore da sistemare.*
+    html: `<p><em>Se la proroga del contratto di locazione non viene comunicata all'Agenzia delle Entrate entro 30 giorni dalla scadenza, il proprietario deve regolarizzare subito la posizione. Nel regime ordinario il rischio principale è legato all'omesso adempimento fiscale e alle relative sanzioni; con la cedolare secca, invece, la mancata comunicazione non fa decadere automaticamente dall'opzione se il comportamento fiscale è rimasto coerente, ma resta comunque un errore da sistemare.</em></p>
 
-Quando si parla di proroga del contratto di locazione, molti proprietari pensano soprattutto alla scadenza civilistica del rapporto: rinnovo automatico, disdetta, seconda scadenza, rilascio dell'immobile. C'è però un passaggio distinto e spesso sottovalutato: la **comunicazione della proroga all'Agenzia delle Entrate**.
+<p>Quando si parla di proroga del contratto di locazione, molti proprietari pensano soprattutto alla scadenza civilistica del rapporto: rinnovo automatico, disdetta, seconda scadenza, rilascio dell'immobile. C'è però un passaggio distinto e spesso sottovalutato: la <strong>comunicazione della proroga all'Agenzia delle Entrate</strong>.</p>
 
-Ed è proprio qui che nasce il problema pratico. Il contratto si proroga, l'inquilino resta nell'immobile, i canoni continuano a essere pagati, ma l'adempimento fiscale viene dimenticato. Quando il proprietario se ne accorge, di solito ha tre domande: entro quando andava fatto, che cosa rischia davvero e come si regolarizza senza peggiorare la situazione.
+<p>Ed è proprio qui che nasce il problema pratico. Il contratto si proroga, l'inquilino resta nell'immobile, i canoni continuano a essere pagati, ma l'adempimento fiscale viene dimenticato. Quando il proprietario se ne accorge, di solito ha tre domande: entro quando andava fatto, che cosa rischia davvero e come si regolarizza senza peggiorare la situazione.</p>
 
-Questa guida risponde in modo operativo a queste domande, con un focus chiaro sul proprietario e distinguendo bene i casi in cui il contratto è in **regime ordinario** da quelli in **cedolare secca**. Se ti serve invece la panoramica generale su quando la proroga scatta e come si blocca, leggi anche la guida sulla <a href="/blog/proroga-contratto-locazione/">proroga del contratto di locazione</a>.
+<p>Questa guida risponde in modo operativo a queste domande, con un focus chiaro sul proprietario e distinguendo bene i casi in cui il contratto è in <strong>regime ordinario</strong> da quelli in <strong>cedolare secca</strong>. Se ti serve invece la panoramica generale su quando la proroga scatta e come si blocca, leggi anche la guida sulla <a href="/blog/proroga-contratto-locazione/">proroga del contratto di locazione</a>.</p>
 
-## Quando la proroga del contratto va comunicata all'Agenzia delle Entrate
+<h2>Quando la proroga del contratto va comunicata all'Agenzia delle Entrate</h2>
 
-La regola pratica è semplice: la proroga del contratto va comunicata **entro 30 giorni** dalla scadenza del contratto originario o di una precedente proroga. L'adempimento si gestisce tramite **modello RLI**, utilizzando i servizi telematici dell'Agenzia delle Entrate oppure, nei casi previsti, con la procedura collegata al pagamento tramite F24 Elide.
+<p>La regola pratica è semplice: la proroga del contratto va comunicata <strong>entro 30 giorni</strong> dalla scadenza del contratto originario o di una precedente proroga. L'adempimento si gestisce tramite <strong>modello RLI</strong>, utilizzando i servizi telematici dell'Agenzia delle Entrate oppure, nei casi previsti, con la procedura collegata al pagamento tramite F24 Elide.</p>
 
-Per il proprietario questo punto è importante per due motivi:
+<p>Per il proprietario questo punto è importante per due motivi:</p>
 
-- la proroga non è solo un fatto “tra le parti”, ma anche un adempimento fiscale;
-- se non viene comunicata, il rapporto continua nella pratica, ma la posizione amministrativa resta irregolare.
+<ul>
 
-Il problema nasce spesso da una falsa percezione: siccome il rinnovo è automatico in molti contratti abitativi, si pensa che anche l'adempimento verso l'Agenzia sia automatico. Non è così. Il rinnovo civilistico può avvenire per legge, ma la sua comunicazione fiscale richiede comunque attenzione.
+<li>la proroga non è solo un fatto “tra le parti”, ma anche un adempimento fiscale;</li>
 
-Per chi gestisce direttamente gli adempimenti, può essere utile rileggere anche la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>, perché la logica documentale è la stessa: dati corretti, scadenze chiare e ricevute da conservare.
+<li>se non viene comunicata, il rapporto continua nella pratica, ma la posizione amministrativa resta irregolare.</li>
 
-## Cosa succede se manca la comunicazione della proroga
+</ul>
 
-La mancata comunicazione della proroga del contratto di locazione non produce sempre lo stesso effetto. Molto dipende dal regime fiscale scelto.
+<p>Il problema nasce spesso da una falsa percezione: siccome il rinnovo è automatico in molti contratti abitativi, si pensa che anche l'adempimento verso l'Agenzia sia automatico. Non è così. Il rinnovo civilistico può avvenire per legge, ma la sua comunicazione fiscale richiede comunque attenzione.</p>
 
-### Se il contratto è in regime ordinario
+<p>Per chi gestisce direttamente gli adempimenti, può essere utile rileggere anche la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>, perché la logica documentale è la stessa: dati corretti, scadenze chiare e ricevute da conservare.</p>
 
-Nel regime ordinario, l'omessa comunicazione della proroga comporta un **adempimento fiscale incompleto**. In concreto, il proprietario può trovarsi esposto a:
+<h2>Cosa succede se manca la comunicazione della proroga</h2>
 
-- omesso o tardivo versamento dell'imposta dovuta sulla proroga;
-- necessità di regolarizzare la posizione con ravvedimento, se ancora possibile;
-- sanzioni e interessi collegati al ritardo.
+<p>La mancata comunicazione della proroga del contratto di locazione non produce sempre lo stesso effetto. Molto dipende dal regime fiscale scelto.</p>
 
-Il punto pratico non è tanto memorizzare la sanzione teorica, quanto capire che il ritardo non si sistema da solo. Se il proprietario aspetta troppo, l'errore si trascina e può emergere in uno dei momenti peggiori: controllo fiscale, cessazione del contratto, nuova registrazione o vendita dell'immobile con documentazione da ricostruire.
+<h3>Se il contratto è in regime ordinario</h3>
 
-### Se il contratto è in cedolare secca
+<p>Nel regime ordinario, l'omessa comunicazione della proroga comporta un <strong>adempimento fiscale incompleto</strong>. In concreto, il proprietario può trovarsi esposto a:</p>
 
-Qui la situazione è più delicata ma, paradossalmente, meno punitiva sul piano sostanziale. La mancata comunicazione della proroga del regime di **cedolare secca** non comporta automaticamente la perdita dell'opzione, a condizione che il proprietario abbia mantenuto un comportamento coerente con quel regime: per esempio, versando l'imposta sostitutiva e dichiarando correttamente il reddito.
+<ul>
 
-Questo però non significa che l'adempimento possa essere ignorato. Significa solo che l'errore non fa cadere automaticamente il contratto nel regime ordinario se il comportamento fiscale complessivo è stato coerente. In pratica:
+<li>omesso o tardivo versamento dell'imposta dovuta sulla proroga;</li>
 
-- la proroga va comunque comunicata;
-- la posizione va comunque riallineata;
-- la coerenza fiscale protegge dall'effetto più pesante, ma non trasforma l'omissione in una buona prassi.
+<li>necessità di regolarizzare la posizione con ravvedimento, se ancora possibile;</li>
 
-Per chi usa questo regime, è utile rileggere anche la guida sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>, soprattutto per non confondere proroga del contratto, conferma del regime e altri adempimenti successivi.
+<li>sanzioni e interessi collegati al ritardo.</li>
 
-## Quali rischi corre davvero il proprietario
+</ul>
 
-La keyword parla di “rischi e sanzioni”, ma la parte più utile per un proprietario è distinguere tra il rischio **tecnico** e quello **operativo**.
+<p>Il punto pratico non è tanto memorizzare la sanzione teorica, quanto capire che il ritardo non si sistema da solo. Se il proprietario aspetta troppo, l'errore si trascina e può emergere in uno dei momenti peggiori: controllo fiscale, cessazione del contratto, nuova registrazione o vendita dell'immobile con documentazione da ricostruire.</p>
 
-### Rischio tecnico-fiscale
+<h3>Se il contratto è in cedolare secca</h3>
 
-Il primo rischio è evidente: il contratto prorogato non è stato gestito correttamente sul piano fiscale. Nel regime ordinario questo può tradursi in imposta non versata o versata in ritardo; nella cedolare secca, in una posizione amministrativa non aggiornata che richiede regolarizzazione.
+<p>Qui la situazione è più delicata ma, paradossalmente, meno punitiva sul piano sostanziale. La mancata comunicazione della proroga del regime di <strong>cedolare secca</strong> non comporta automaticamente la perdita dell'opzione, a condizione che il proprietario abbia mantenuto un comportamento coerente con quel regime: per esempio, versando l'imposta sostitutiva e dichiarando correttamente il reddito.</p>
 
-### Rischio documentale
+<p>Questo però non significa che l'adempimento possa essere ignorato. Significa solo che l'errore non fa cadere automaticamente il contratto nel regime ordinario se il comportamento fiscale complessivo è stato coerente. In pratica:</p>
 
-Quando i documenti non sono allineati, tutto si complica. Basta dover ricostruire la storia del contratto per accorgersi del problema: scadenza originaria, annualità successive, proroga effettiva, regime fiscale applicato, ricevute mancanti. Un errore inizialmente piccolo diventa un fascicolo disordinato.
+<ul>
 
-### Rischio gestionale
+<li>la proroga va comunque comunicata;</li>
 
-Molti proprietari si accorgono della proroga non comunicata solo quando devono fare altro: risolvere il contratto, cambiare conduttore, verificare la posizione con il commercialista o preparare documenti in vista di una compravendita. In quel momento il tempo è poco e l'errore pesa di più.
+<li>la posizione va comunque riallineata;</li>
 
-## Come regolarizzare la mancata comunicazione della proroga
+<li>la coerenza fiscale protegge dall'effetto più pesante, ma non trasforma l'omissione in una buona prassi.</li>
 
-La buona notizia è che, nella maggior parte dei casi, l'errore si può sistemare. La cattiva notizia è che conviene farlo **subito**, non quando diventa urgente.
+</ul>
 
-### 1. Ricostruisci la data esatta di scadenza
+<p>Per chi usa questo regime, è utile rileggere anche la guida sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>, soprattutto per non confondere proroga del contratto, conferma del regime e altri adempimenti successivi.</p>
 
-Prima di tutto bisogna capire **quando** la proroga è scattata. Senza questa data non puoi sapere quanto ritardo c'è né quale adempimento manca davvero.
+<h2>Quali rischi corre davvero il proprietario</h2>
 
-Controlla:
+<p>La keyword parla di “rischi e sanzioni”, ma la parte più utile per un proprietario è distinguere tra il rischio <strong>tecnico</strong> e quello <strong>operativo</strong>.</p>
 
-- data di decorrenza del contratto;
-- durata iniziale;
-- eventuali proroghe già comunicate in passato;
-- regime fiscale applicato al momento della scadenza.
+<h3>Rischio tecnico-fiscale</h3>
 
-### 2. Verifica se l'imposta era dovuta
+<p>Il primo rischio è evidente: il contratto prorogato non è stato gestito correttamente sul piano fiscale. Nel regime ordinario questo può tradursi in imposta non versata o versata in ritardo; nella cedolare secca, in una posizione amministrativa non aggiornata che richiede regolarizzazione.</p>
 
-Se il contratto è in regime ordinario, devi verificare se sulla proroga era dovuta imposta di registro e se sia stata pagata. Se non lo è stata, il percorso corretto è regolarizzare sia il pagamento sia la comunicazione.
+<h3>Rischio documentale</h3>
 
-Se il contratto è in cedolare secca, non c'è imposta di registro sulla proroga, ma resta da riallineare la comunicazione tramite RLI.
+<p>Quando i documenti non sono allineati, tutto si complica. Basta dover ricostruire la storia del contratto per accorgersi del problema: scadenza originaria, annualità successive, proroga effettiva, regime fiscale applicato, ricevute mancanti. Un errore inizialmente piccolo diventa un fascicolo disordinato.</p>
 
-### 3. Presenta l'adempimento mancante
+<h3>Rischio gestionale</h3>
 
-Una volta ricostruito il quadro, bisogna procedere con la comunicazione della proroga. In linea pratica, il proprietario deve evitare il fai-da-te frettoloso se non ha chiaro il fascicolo: un secondo errore burocratico peggiora solo la situazione.
+<p>Molti proprietari si accorgono della proroga non comunicata solo quando devono fare altro: risolvere il contratto, cambiare conduttore, verificare la posizione con il commercialista o preparare documenti in vista di una compravendita. In quel momento il tempo è poco e l'errore pesa di più.</p>
 
-Se hai dubbi, è spesso più efficiente farti assistere da un professionista o da chi già segue i tuoi adempimenti fiscali, soprattutto quando:
+<h2>Come regolarizzare la mancata comunicazione della proroga</h2>
 
-- il ritardo è significativo;
-- non è chiaro quale regime fosse attivo alla scadenza;
-- mancano ricevute o pagamenti;
-- ci sono più annualità o proroghe da ricostruire.
+<p>La buona notizia è che, nella maggior parte dei casi, l'errore si può sistemare. La cattiva notizia è che conviene farlo <strong>subito</strong>, non quando diventa urgente.</p>
 
-## Gli errori più comuni da evitare
+<h3>1. Ricostruisci la data esatta di scadenza</h3>
 
-### Confondere la proroga contrattuale con l'adempimento fiscale
+<p>Prima di tutto bisogna capire <strong>quando</strong> la proroga è scattata. Senza questa data non puoi sapere quanto ritardo c'è né quale adempimento manca davvero.</p>
 
-È l'errore classico. Il contratto continua e quindi si pensa che sia tutto a posto. In realtà il rapporto civilistico e l'adempimento verso l'Agenzia vanno tenuti distinti.
+<p>Controlla:</p>
 
-### Pensare che con la cedolare secca non serva fare nulla
+<ul>
 
-La cedolare secca evita alcuni costi e rende il quadro meno punitivo in caso di omissione, ma non elimina l'obbligo di riallineare la posizione.
+<li>data di decorrenza del contratto;</li>
 
-### Rimandare perché “tanto l'inquilino è lo stesso”
+<li>durata iniziale;</li>
 
-Il fatto che il conduttore non cambi nulla nella vita quotidiana del contratto non riduce il problema fiscale. Anzi, spesso lo rende invisibile fino a quando non diventa scomodo.
+<li>eventuali proroghe già comunicate in passato;</li>
 
-### Non conservare ricevute e conferme
+<li>regime fiscale applicato al momento della scadenza.</li>
 
-Ogni adempimento telematico va archiviato. Ricevute RLI, conferme di addebito, quietanze: sono questi i documenti che ti evitano ricostruzioni faticose mesi o anni dopo.
+</ul>
 
-## Checklist pratica per il proprietario
+<h3>2. Verifica se l'imposta era dovuta</h3>
 
-Prima di chiudere, ecco la sequenza più utile da seguire se sospetti di non aver comunicato la proroga:
+<p>Se il contratto è in regime ordinario, devi verificare se sulla proroga era dovuta imposta di registro e se sia stata pagata. Se non lo è stata, il percorso corretto è regolarizzare sia il pagamento sia la comunicazione.</p>
 
-1. verifica la data di scadenza del contratto o della proroga precedente;
-2. controlla se sono trascorsi più di 30 giorni;
-3. identifica il regime fiscale: ordinario o cedolare secca;
-4. verifica se è stata versata l'eventuale imposta dovuta;
-5. recupera ricevute, RLI e documenti già inviati;
-6. regolarizza subito la comunicazione mancante;
-7. conserva tutta la documentazione aggiornata in un fascicolo unico.
+<p>Se il contratto è in cedolare secca, non c'è imposta di registro sulla proroga, ma resta da riallineare la comunicazione tramite RLI.</p>
 
-Questa checklist sembra banale, ma è il modo più rapido per evitare che una dimenticanza amministrativa diventi un problema più grande del necessario.
+<h3>3. Presenta l'adempimento mancante</h3>
 
-## Se vuoi evitare errori sulla gestione del contratto
+<p>Una volta ricostruito il quadro, bisogna procedere con la comunicazione della proroga. In linea pratica, il proprietario deve evitare il fai-da-te frettoloso se non ha chiaro il fascicolo: un secondo errore burocratico peggiora solo la situazione.</p>
 
-La parte più insidiosa delle locazioni, per molti proprietari, non è il singolo adempimento ma l'accumulo di piccoli errori: una proroga non comunicata, una cessazione non registrata, una variazione gestita in ritardo. Se vuoi tenere sotto controllo il rapporto locativo prima che nascano contestazioni o irregolarità, Sfratto Sicuro può aiutarti a verificare la documentazione e a capire come muoverti in modo ordinato.
+<p>Se hai dubbi, è spesso più efficiente farti assistere da un professionista o da chi già segue i tuoi adempimenti fiscali, soprattutto quando:</p>
 
-## FAQ
+<ul>
 
-### Entro quando va comunicata la proroga del contratto di locazione?
+<li>il ritardo è significativo;</li>
 
-Entro 30 giorni dalla scadenza del contratto originario o di una precedente proroga. Il riferimento operativo è il modello RLI, da presentare con le modalità previste dall'Agenzia delle Entrate.
+<li>non è chiaro quale regime fosse attivo alla scadenza;</li>
 
-### Se dimentico di comunicare la proroga, il contratto diventa nullo?
+<li>mancano ricevute o pagamenti;</li>
 
-No. La mancata comunicazione della proroga non rende nullo il contratto già in essere tra le parti. Il problema riguarda l'adempimento fiscale-amministrativo, che va però regolarizzato senza aspettare troppo.
+<li>ci sono più annualità o proroghe da ricostruire.</li>
 
-### Cosa rischio nel regime ordinario?
+</ul>
 
-Nel regime ordinario il proprietario può esporsi a tardivo o omesso versamento dell'imposta dovuta sulla proroga, oltre alla necessità di regolarizzare la posizione con sanzioni e interessi collegati al ritardo.
+<h2>Gli errori più comuni da evitare</h2>
 
-### Con la cedolare secca perdo automaticamente il regime se non comunico la proroga?
+<h3>Confondere la proroga contrattuale con l'adempimento fiscale</h3>
 
-No, non automaticamente. Se il proprietario ha mantenuto un comportamento fiscale coerente con la cedolare secca, la mancata comunicazione della proroga non ne comporta da sola la revoca. Resta comunque necessario riallineare l'adempimento.
+<p>È l'errore classico. Il contratto continua e quindi si pensa che sia tutto a posto. In realtà il rapporto civilistico e l'adempimento verso l'Agenzia vanno tenuti distinti.</p>
 
-### Posso sistemare da solo la proroga non comunicata?
+<h3>Pensare che con la cedolare secca non serva fare nulla</h3>
 
-Sì, nei casi semplici. Ma se il fascicolo è confuso, mancano ricevute, ci sono più annualità da ricostruire o non è chiaro il regime fiscale applicato, conviene farsi assistere per evitare un secondo errore.`,
+<p>La cedolare secca evita alcuni costi e rende il quadro meno punitivo in caso di omissione, ma non elimina l'obbligo di riallineare la posizione.</p>
+
+<h3>Rimandare perché “tanto l'inquilino è lo stesso”</h3>
+
+<p>Il fatto che il conduttore non cambi nulla nella vita quotidiana del contratto non riduce il problema fiscale. Anzi, spesso lo rende invisibile fino a quando non diventa scomodo.</p>
+
+<h3>Non conservare ricevute e conferme</h3>
+
+<p>Ogni adempimento telematico va archiviato. Ricevute RLI, conferme di addebito, quietanze: sono questi i documenti che ti evitano ricostruzioni faticose mesi o anni dopo.</p>
+
+<h2>Checklist pratica per il proprietario</h2>
+
+<p>Prima di chiudere, ecco la sequenza più utile da seguire se sospetti di non aver comunicato la proroga:</p>
+
+<li>verifica la data di scadenza del contratto o della proroga precedente;</li>
+
+<li>controlla se sono trascorsi più di 30 giorni;</li>
+
+<li>identifica il regime fiscale: ordinario o cedolare secca;</li>
+
+<li>verifica se è stata versata l'eventuale imposta dovuta;</li>
+
+<li>recupera ricevute, RLI e documenti già inviati;</li>
+
+<li>regolarizza subito la comunicazione mancante;</li>
+
+<li>conserva tutta la documentazione aggiornata in un fascicolo unico.</li>
+
+<p>Questa checklist sembra banale, ma è il modo più rapido per evitare che una dimenticanza amministrativa diventi un problema più grande del necessario.</p>
+
+<h2>Se vuoi evitare errori sulla gestione del contratto</h2>
+
+<p>La parte più insidiosa delle locazioni, per molti proprietari, non è il singolo adempimento ma l'accumulo di piccoli errori: una proroga non comunicata, una cessazione non registrata, una variazione gestita in ritardo. Se vuoi tenere sotto controllo il rapporto locativo prima che nascano contestazioni o irregolarità, Sfratto Sicuro può aiutarti a verificare la documentazione e a capire come muoverti in modo ordinato.</p>
+
+<h2>FAQ</h2>
+
+<h3>Entro quando va comunicata la proroga del contratto di locazione?</h3>
+
+<p>Entro 30 giorni dalla scadenza del contratto originario o di una precedente proroga. Il riferimento operativo è il modello RLI, da presentare con le modalità previste dall'Agenzia delle Entrate.</p>
+
+<h3>Se dimentico di comunicare la proroga, il contratto diventa nullo?</h3>
+
+<p>No. La mancata comunicazione della proroga non rende nullo il contratto già in essere tra le parti. Il problema riguarda l'adempimento fiscale-amministrativo, che va però regolarizzato senza aspettare troppo.</p>
+
+<h3>Cosa rischio nel regime ordinario?</h3>
+
+<p>Nel regime ordinario il proprietario può esporsi a tardivo o omesso versamento dell'imposta dovuta sulla proroga, oltre alla necessità di regolarizzare la posizione con sanzioni e interessi collegati al ritardo.</p>
+
+<h3>Con la cedolare secca perdo automaticamente il regime se non comunico la proroga?</h3>
+
+<p>No, non automaticamente. Se il proprietario ha mantenuto un comportamento fiscale coerente con la cedolare secca, la mancata comunicazione della proroga non ne comporta da sola la revoca. Resta comunque necessario riallineare l'adempimento.</p>
+
+<h3>Posso sistemare da solo la proroga non comunicata?</h3>
+
+<p>Sì, nei casi semplici. Ma se il fascicolo è confuso, mancano ricevute, ci sono più annualità da ricostruire o non è chiaro il regime fiscale applicato, conviene farsi assistere per evitare un secondo errore.</p>`,
   },
 
 
