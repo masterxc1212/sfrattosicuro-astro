@@ -25,6 +25,8 @@ const canonicalUrl = new URL(canonicalPath || pathname, `${siteUrl}/`).toString(
 const ogImage = image.startsWith('http') ? image : new URL(image, `${siteUrl}/`).toString();
 ---
 
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta name="robots" content={robots} />
