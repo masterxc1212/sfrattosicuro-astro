@@ -75,7 +75,8 @@ Write-Host "=== PAGINE PRINCIPALI ===" -ForegroundColor Cyan
 $mainPages = @("index.html","chi-siamo/index.html","servizi/index.html","sedi/index.html",
                "blog/index.html","sitemap.xml","sitemap-pages.xml",
                "blog/post-sitemap.xml","blog/sitemap_index.xml",
-               "privacy-policy/index.html","cookie-policy/index.html","termini/index.html")
+               "privacy-policy/index.html","cookie-policy/index.html","termini/index.html",
+               "favicon.ico","favicon.svg","robots.txt")
 foreach ($p in $mainPages) {
   $local = "$distDir\$($p -replace '/','\\')"
   if (Test-Path $local) {
