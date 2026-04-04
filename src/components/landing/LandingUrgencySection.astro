@@ -1,0 +1,74 @@
+---
+/**
+ * LandingUrgencySection — Banda urgenza con CTA.
+ * Rimarca il costo dell'inazione e spinge all'azione immediata.
+ */
+import type { LandingUrgency } from '../../data/landing-model';
+
+interface Props {
+  urgency: LandingUrgency;
+}
+
+const { urgency } = Astro.props;
+---
+
+<section class="lurgency" aria-labelledby="lurgency-title">
+  <div class="container lurgency__inner">
+    <div class="lurgency__text">
+      <h2 id="lurgency-title" class="lurgency__title">{urgency.title}</h2>
+      <p class="lurgency__body">{urgency.body}</p>
+    </div>
+    <a href={urgency.ctaHref} class="btn lurgency__btn">
+      {urgency.ctaLabel}
+    </a>
+  </div>
+</section>
+
+<style>
+  .lurgency {
+    background: linear-gradient(135deg, #c6902a 0%, #b07918 100%);
+    padding: 2.5rem 0;
+  }
+  .lurgency__inner {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .lurgency__title {
+    margin: 0 0 .5rem;
+    font-size: 1.45rem;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .lurgency__body {
+    margin: 0;
+    color: rgba(255,255,255,.9);
+    font-size: .95rem;
+    line-height: 1.6;
+    max-width: 65ch;
+  }
+  .lurgency__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .95rem 1.75rem;
+    background: #fff;
+    color: #b07918;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 14px;
+    white-space: nowrap;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    transition: box-shadow .15s, transform .1s;
+  }
+  .lurgency__btn:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    transform: translateY(-1px);
+  }
+  @media (min-width: 800px) {
+    .lurgency__inner {
+      grid-template-columns: 1fr auto;
+    }
+  }
+</style>

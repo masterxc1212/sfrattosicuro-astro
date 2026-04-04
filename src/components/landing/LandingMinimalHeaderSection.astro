@@ -1,0 +1,137 @@
+---
+/**
+ * LandingMinimalHeaderSection — Header leggero senza nav completo.
+ * Per landing a conversione: solo logo + numero di telefono.
+ * Alternativa a HeaderIsland per le landing senza menu di navigazione.
+ */
+
+interface Props {
+  /** Se true, il logo punta a "/" altrimenti non è un link */
+  logoLinked?: boolean;
+  phone?: string;
+  phonePretty?: string;
+}
+
+const {
+  logoLinked = true,
+  phone = 'tel:+390280898395',
+  phonePretty = '+39 02 8089 8395'
+} = Astro.props;
+---
+
+<header class="lmin-header" role="banner">
+  <div class="container lmin-header__inner">
+
+    {logoLinked ? (
+      <a href="/" class="lmin-header__logo-link" aria-label="Sfratto Sicuro — torna alla home">
+        <img
+          src="https://www.sfrattosicuro.it/assets/img/logo/logo-100.webp"
+          alt="Sfratto Sicuro"
+          width="44"
+          height="44"
+          loading="eager"
+        />
+        <span class="lmin-header__brand">
+          Sfratto Sicuro
+          <small>Avvocati Specializzati</small>
+        </span>
+      </a>
+    ) : (
+      <div class="lmin-header__logo-link">
+        <img
+          src="https://www.sfrattosicuro.it/assets/img/logo/logo-100.webp"
+          alt="Sfratto Sicuro"
+          width="44"
+          height="44"
+          loading="eager"
+        />
+        <span class="lmin-header__brand">
+          Sfratto Sicuro
+          <small>Avvocati Specializzati</small>
+        </span>
+      </div>
+    )}
+
+    <a href={phone} class="lmin-header__cta" aria-label="Chiama Sfratto Sicuro">
+      <span class="lmin-header__cta-icon" aria-hidden="true">📞</span>
+      <span class="lmin-header__cta-text">
+        <span class="lmin-header__cta-label">Consulenza gratuita</span>
+        <strong>{phonePretty}</strong>
+      </span>
+    </a>
+
+  </div>
+</header>
+
+<style>
+  .lmin-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    border-bottom: 2px solid var(--green-security, #3bae5d);
+    box-shadow: 0 2px 8px rgba(27,41,81,.1);
+  }
+  .lmin-header__inner {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .lmin-header__logo-link {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .lmin-header__logo-link img {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  .lmin-header__brand {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: .95rem;
+    color: var(--blue-navy, #1b2951);
+    line-height: 1.2;
+  }
+  .lmin-header__brand small {
+    font-size: .72rem;
+    font-weight: 500;
+    color: #64748b;
+  }
+  .lmin-header__cta {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    background: var(--green-security, #3bae5d);
+    color: #fff;
+    text-decoration: none;
+    padding: .55rem 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: background .15s;
+  }
+  .lmin-header__cta:hover { background: #2f9a4e; }
+  .lmin-header__cta-icon { font-size: 1rem; }
+  .lmin-header__cta-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+  .lmin-header__cta-label {
+    font-size: .7rem;
+    font-weight: 600;
+    opacity: .85;
+    display: none;
+  }
+  .lmin-header__cta-text strong { font-size: .9rem; }
+  @media (min-width: 540px) {
+    .lmin-header__cta-label { display: block; }
+  }
+</style>

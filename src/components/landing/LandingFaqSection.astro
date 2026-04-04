@@ -1,0 +1,117 @@
+---
+/**
+ * LandingFaqSection — Accordion FAQ con <details>/<summary> nativo.
+ * Nessun JS richiesto. Supporta varianti territoriali tramite title override.
+ */
+import type { LandingFaqItem } from '../../data/landing-model';
+
+interface Props {
+  faq: LandingFaqItem[];
+  title?: string;
+  subtitle?: string;
+  territory?: { city?: string };
+}
+
+const {
+  faq,
+  title,
+  subtitle,
+  territory
+} = Astro.props;
+
+const headTitle = title ?? (territory?.city
+  ? `Domande frequenti sullo sfratto a ${territory.city}`
+  : 'Domande frequenti sullo sfratto per morosità');
+
+const headSub = subtitle ?? 'Le risposte alle domande più comuni dei proprietari che si rivolgono a noi.';
+---
+
+<section class="lfaq section section--compact" id="faq-sfratto" aria-labelledby="lfaq-title">
+  <div class="container">
+    <header class="lfaq__head">
+      <p class="lfaq__kicker">FAQ</p>
+      <h2 id="lfaq-title">{headTitle}</h2>
+      <p class="lfaq__sub">{headSub}</p>
+    </header>
+
+    <div class="lfaq__list" role="list">
+      {faq.map((item) => (
+        <details class="lfaq__item" role="listitem">
+          <summary class="lfaq__question">{item.q}</summary>
+          <p class="lfaq__answer">{item.a}</p>
+        </details>
+      ))}
+    </div>
+
+    <div class="lfaq__bottom-cta">
+      <p>Hai una domanda specifica? <a href="#contatti-landing">Scrivici gratuitamente →</a></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lfaq { background: var(--gray-pearl, #f7f8fc); }
+  .lfaq__head { max-width: 680px; margin-bottom: 2rem; }
+  .lfaq__kicker {
+    margin: 0 0 .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lfaq__head h2 { margin: 0 0 .5rem; }
+  .lfaq__sub { margin: 0; color: #475569; }
+  .lfaq__list { display: grid; gap: .75rem; }
+  .lfaq__item {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 2px 8px rgba(15,23,42,.04);
+    transition: box-shadow .15s;
+  }
+  .lfaq__item[open] { box-shadow: 0 4px 16px rgba(15,23,42,.08); }
+  .lfaq__question {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .95rem;
+    color: var(--blue-navy, #1b2951);
+    line-height: 1.4;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .lfaq__question::-webkit-details-marker { display: none; }
+  .lfaq__question::after {
+    content: '+';
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #94a3b8;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform .2s;
+  }
+  .lfaq__item[open] .lfaq__question::after {
+    transform: rotate(45deg);
+  }
+  .lfaq__answer {
+    margin: .75rem 0 0;
+    color: #475569;
+    font-size: .9rem;
+    line-height: 1.65;
+  }
+  .lfaq__bottom-cta {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: #64748b;
+  }
+  .lfaq__bottom-cta a {
+    color: var(--blue-navy, #1b2951);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

@@ -1,0 +1,77 @@
+---
+/**
+ * LandingTrustBarSection — Barra con 4 metriche chiave.
+ * Posizionata sotto l'hero per rinforzare i punti di forza.
+ */
+import type { LandingTrustSignal } from '../../data/landing-model';
+
+interface Props {
+  signals: LandingTrustSignal[];
+}
+
+const { signals } = Astro.props;
+---
+
+<section class="ltrust" aria-label="Punti di forza">
+  <div class="container ltrust__grid">
+    {signals.map((s) => (
+      <div class="ltrust__item">
+        <strong class="ltrust__value">{s.value}</strong>
+        <span class="ltrust__label">{s.label}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .ltrust {
+    background: #fff;
+    border-bottom: 3px solid var(--green-security, #3bae5d);
+    box-shadow: 0 2px 12px rgba(27,41,81,.07);
+  }
+  .ltrust__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .ltrust__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .ltrust__item:nth-child(2n) { border-right: none; }
+  .ltrust__item:nth-last-child(-n+2) { border-bottom: none; }
+  .ltrust__value {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--blue-navy, #1b2951);
+    line-height: 1;
+    margin-bottom: .35rem;
+  }
+  .ltrust__label {
+    font-size: .8rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+  @media (min-width: 640px) {
+    .ltrust__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .ltrust__item {
+      border-bottom: none;
+    }
+    .ltrust__item:nth-child(2n) {
+      border-right: 1px solid #e5e7eb;
+    }
+    .ltrust__item:last-child {
+      border-right: none;
+    }
+    .ltrust__value { font-size: 1.75rem; }
+  }
+</style>

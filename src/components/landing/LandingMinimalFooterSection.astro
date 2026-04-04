@@ -1,0 +1,102 @@
+---
+/**
+ * LandingMinimalFooterSection — Footer leggero per landing.
+ * Solo dati legali essenziali, link privacy/termini, recapiti.
+ */
+
+const year = new Date().getFullYear();
+---
+
+<footer class="lmin-footer" role="contentinfo">
+  <div class="container lmin-footer__inner">
+
+    <div class="lmin-footer__logo-row">
+      <img
+        src="https://www.sfrattosicuro.it/assets/img/logo/logo-100.webp"
+        alt="Sfratto Sicuro"
+        width="36"
+        height="36"
+        loading="lazy"
+      />
+      <span class="lmin-footer__brand">Sfratto Sicuro</span>
+    </div>
+
+    <p class="lmin-footer__legal">
+      © {year} Sfratto Sicuro · D1 S.R.L.S. · P. IVA IT06177400659 ·
+      Via Francesco Paolo Volpe 2, 84122 Salerno (SA) ·
+      <a href="mailto:consulenza@sfrattosicuro.it">consulenza@sfrattosicuro.it</a>
+    </p>
+
+    <nav class="lmin-footer__links" aria-label="Link legali">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <span aria-hidden="true">·</span>
+      <a href="/termini/">Termini</a>
+      <span aria-hidden="true">·</span>
+      <a href="/cookie-policy/">Cookie Policy</a>
+      <span aria-hidden="true">·</span>
+      <a href="/">Sito principale</a>
+    </nav>
+
+    <p class="lmin-footer__disclaimer">
+      Servizio riservato a proprietari e locatori. I contenuti di questa pagina hanno
+      scopo informativo e non costituiscono consulenza legale. Per un parere sul tuo caso specifico
+      contattaci per una consulenza gratuita.
+    </p>
+
+  </div>
+</footer>
+
+<style>
+  .lmin-footer {
+    background: var(--blue-navy, #1b2951);
+    color: rgba(255,255,255,.7);
+    padding: 2rem 0;
+  }
+  .lmin-footer__inner {
+    display: grid;
+    gap: .9rem;
+  }
+  .lmin-footer__logo-row {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+  .lmin-footer__logo-row img {
+    border-radius: 8px;
+  }
+  .lmin-footer__brand {
+    font-weight: 800;
+    font-size: .95rem;
+    color: #fff;
+  }
+  .lmin-footer__legal {
+    margin: 0;
+    font-size: .78rem;
+    line-height: 1.6;
+  }
+  .lmin-footer__legal a {
+    color: rgba(255,255,255,.7);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .lmin-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem .6rem;
+    align-items: center;
+    font-size: .8rem;
+  }
+  .lmin-footer__links a {
+    color: rgba(255,255,255,.7);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .lmin-footer__links a:hover { color: #fff; }
+  .lmin-footer__disclaimer {
+    margin: 0;
+    font-size: .75rem;
+    color: rgba(255,255,255,.45);
+    line-height: 1.6;
+    max-width: 80ch;
+  }
+</style>

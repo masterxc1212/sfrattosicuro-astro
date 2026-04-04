@@ -1,0 +1,117 @@
+---
+/**
+ * LandingHowItWorksSection — Passi del processo con eyebrow, titolo e testo.
+ * Versione modulare e riusabile per varianti nazionali e territoriali.
+ */
+import type { LandingStep } from '../../data/landing-model';
+
+interface Props {
+  steps: LandingStep[];
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  steps,
+  title = 'Come funziona il Protocollo Sfratto Sicuro',
+  subtitle = 'Dalla consulenza alla convalida: un percorso chiaro, con un referente dedicato per tutta la durata della pratica.'
+} = Astro.props;
+---
+
+<section class="lhow section" id="procedura-sfratto" aria-labelledby="lhow-title">
+  <div class="container">
+    <header class="lhow__head">
+      <p class="lhow__kicker">Il Metodo</p>
+      <h2 id="lhow-title">{title}</h2>
+      <p class="lhow__sub">{subtitle}</p>
+    </header>
+
+    <ol class="lhow__steps" aria-label="Fasi del processo">
+      {steps.map((step, i) => (
+        <li class="lhow__step">
+          <div class="lhow__step-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+          <div class="lhow__step-body">
+            <p class="lhow__step-eyebrow">{step.eyebrow}</p>
+            <h3 class="lhow__step-title">{step.title}</h3>
+            <p class="lhow__step-text">{step.body}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <div class="lhow__cta-row">
+      <a href="#contatti-landing" class="btn btn-primary">Richiedi consulenza gratuita</a>
+      <p class="lhow__cta-note">Gratuita · senza impegno · risposta in 24 ore</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lhow { background: #fff; }
+  .lhow__head { max-width: 700px; margin-bottom: 2.5rem; }
+  .lhow__kicker {
+    margin: 0 0 .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lhow__head h2 { margin: 0 0 .6rem; }
+  .lhow__sub { color: #475569; margin: 0; }
+  .lhow__steps {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem;
+    display: grid;
+    gap: 1.25rem;
+  }
+  .lhow__step {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 1rem;
+    align-items: start;
+    background: var(--gray-pearl, #f7f8fc);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+  .lhow__step-num {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--blue-navy, #1b2951);
+    opacity: .25;
+    line-height: 1;
+    padding-top: .1rem;
+  }
+  .lhow__step-eyebrow {
+    margin: 0 0 .3rem;
+    font-size: .75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--green-security, #3bae5d);
+  }
+  .lhow__step-title {
+    margin: 0 0 .5rem;
+    font-size: 1.05rem;
+    color: var(--blue-navy, #1b2951);
+  }
+  .lhow__step-text { margin: 0; color: #475569; line-height: 1.6; }
+  .lhow__cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .6rem;
+  }
+  .lhow__cta-note { margin: 0; font-size: .85rem; color: #64748b; }
+  @media (min-width: 768px) {
+    .lhow__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .lhow__cta-row {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+</style>

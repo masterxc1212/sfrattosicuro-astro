@@ -1,0 +1,177 @@
+{
+  "nazionale": {
+    "slug": "nazionale",
+    "title": "Avvocato Sfratto per Morosità | 1.300€ Fisso, Paghi alla Convalida",
+    "description": "Sfratto per morosità con avvocato specializzato. Costo fisso 1.300€ tutto incluso, nessun anticipo, pagamento solo alla convalida. Convalida mediamente in 60 giorni. Consulenza gratuita e senza impegno.",
+    "canonicalPath": "/landing-v2/",
+    "noindex": true,
+    "hero": {
+      "kicker": "Avvocato specializzato in sfratto per morosità",
+      "headline": "Recupera il tuo immobile in circa 60 giorni.",
+      "subheadline": "Costo fisso 1.300€ tutto incluso fino alla convalida. Nessun anticipo: paghi solo quando il giudice convalida lo sfratto. Operiamo in tutta Italia.",
+      "audienceLabel": "Servizio riservato a proprietari e locatori · non assistiamo inquilini",
+      "ctaLabel": "Richiedi consulenza gratuita",
+      "note": "Ti richiamiamo in giornata (Lun–Ven 9–18)",
+      "bullets": [
+        "1.300€ fisso tutto incluso fino alla convalida",
+        "Nessun anticipo: pagamento solo alla convalida",
+        "Protocollo orientato alla convalida in circa 60 giorni",
+        "Un referente dedicato per tutta la pratica",
+        "Operativi in tutta Italia: ogni tribunale"
+      ],
+      "stats": [
+        { "value": "1.300€", "label": "prezzo fisso fino alla convalida" },
+        { "value": "~60 gg", "label": "convalida media" },
+        { "value": "0€", "label": "nessun anticipo richiesto" }
+      ]
+    },
+    "trustSignals": [
+      { "value": "1.300€", "label": "Costo fisso tutto incluso" },
+      { "value": "~60 gg", "label": "Convalida media" },
+      { "value": "0€", "label": "Nessun anticipo" },
+      { "value": "Tutta Italia", "label": "Copertura nazionale" }
+    ],
+    "qualifierQuestion": "Sei il proprietario / locatore dell'immobile?",
+    "qualifierOptions": [
+      "Sì, sono il proprietario",
+      "Sì, agisco per conto del proprietario",
+      "No (non possiamo aiutarti)"
+    ],
+    "proof": {
+      "ratingLabel": "5.0 stelle · Recensioni Google verificate",
+      "reviewCountLabel": "Proprietari soddisfatti e pratiche chiuse",
+      "documentsTitle": "Provvedimenti reali documentati",
+      "documentsBody": "La struttura è progettata per riusare gli stessi blocchi su landing nazionali, territoriali e keyword-specific, variando solo i contenuti nel JSON."
+    },
+    "problems": [
+      {
+        "title": "Morosità crescente",
+        "body": "I canoni non pagati si accumulano mese dopo mese mentre continui a sostenere tutte le spese dell'immobile: mutuo, IMU, spese condominiali."
+      },
+      {
+        "title": "Immobile bloccato",
+        "body": "La casa resta occupata. Non puoi rilocarla, non puoi venderla, non puoi tornare ad abitarla. Ogni mese perso è denaro e opportunità."
+      },
+      {
+        "title": "Costi imprevedibili",
+        "body": "Molti proprietari temono parcelle a sorpresa, anticipi elevati e iter poco chiari. La proposta qui è semplice: 1.300€ fisso, paghi solo al risultato."
+      },
+      {
+        "title": "Stress e incertezza",
+        "body": "La situazione pesa psicologicamente. Sapere che c'è un percorso chiaro, con tempi certi e un referente dedicato, cambia tutto."
+      }
+    ],
+    "calculator": {
+      "title": "Il vero costo non è l'avvocato: è l'attesa",
+      "intro": "Questa sezione è predisposta per diventare un blocco variabile per keyword diverse, città diverse e canoni medi differenti.",
+      "monthlyLossLabel": "Perdita mensile stimata",
+      "compareTitle": "Con il protocollo Sfratto Sicuro",
+      "compareBody": "Invece di continuare a perdere denaro ogni mese, il proprietario attiva una procedura con prezzo fisso e pagamento differito alla convalida."
+    },
+    "steps": [
+      {
+        "eyebrow": "Fase 1 · Giorno 0",
+        "title": "Consulenza gratuita e analisi del caso",
+        "body": "Ricontatto rapido entro 24 ore, verifica del contratto e della morosità, definizione della strategia processuale più adatta alla tua situazione."
+      },
+      {
+        "eyebrow": "Fase 2 · Giorni 1–7",
+        "title": "Mandato, atti e notifica",
+        "body": "Firmi il mandato, prepariamo l'intimazione di sfratto e la notifichiamo all'inquilino. Gestiamo marche, contributi e tutti gli adempimenti."
+      },
+      {
+        "eyebrow": "Fase 3 · Giorni 8–30",
+        "title": "Deposito in tribunale e iscrizione a ruolo",
+        "body": "Depositiamo il ricorso, iscriviamo la causa a ruolo e coordiniamo la pratica presso il tribunale competente tramite la nostra rete di domiciliatari."
+      },
+      {
+        "eyebrow": "Fase 4 · Giorni 31–60",
+        "title": "Udienza di convalida",
+        "body": "Ti rappresentiamo in udienza. Mediamente otteniamo la convalida in circa 60 giorni dalla notifica. Paghi solo dopo il provvedimento del giudice."
+      }
+    ],
+    "offer": {
+      "title": "Offerta chiara, prezzo fisso, niente anticipi",
+      "price": "€1.300 fisso",
+      "intro": "La struttura separa il servizio principale dai blocchi opzionali post-convalida, così possiamo adattare l'offerta a landing per città o keyword senza rifare il template.",
+      "included": [
+        {
+          "title": "Analisi completa del caso",
+          "body": "Valutazione preliminare e definizione strategica della pratica."
+        },
+        {
+          "title": "Atti legali e notifiche",
+          "body": "Predisposizione dell'intimazione, marche, contributi e spese fino alla convalida.",
+          "note": "Incluso nel prezzo fisso"
+        },
+        {
+          "title": "Rappresentanza in udienza",
+          "body": "Assistenza dell'avvocato fino al provvedimento di convalida.",
+          "note": "Pagamento solo dopo il risultato"
+        }
+      ],
+      "bonuses": [
+        {
+          "title": "Gestione esecutiva",
+          "body": "Blocco adattabile per la fase post-convalida fino al rilascio effettivo dell'immobile."
+        },
+        {
+          "title": "Recupero canoni arretrati",
+          "body": "Modulo attivabile sulle landing dove il focus keyword è recupero crediti / morosità."
+        }
+      ],
+      "paymentNote": "Paghi solo dopo la convalida del giudice.",
+      "guarantees": [
+        "Zero anticipo richiesto",
+        "Prezzo fisso fino alla convalida",
+        "Copertura nazionale",
+        "Solo proprietari e locatori"
+      ]
+    },
+    "urgency": {
+      "title": "Non aspettare il mese prossimo",
+      "body": "Ogni giorno di attesa aumenta le perdite. La nuova architettura prevede un blocco urgency variabile per campagne più aggressive o più istituzionali.",
+      "ctaLabel": "Attiva la consulenza gratuita",
+      "ctaHref": "#contatti"
+    },
+    "formCta": {
+      "title": "Parla con un avvocato specializzato",
+      "description": "Compila il form: analizziamo il caso e ti diciamo subito se e come procedere.",
+      "ctaLabel": "Invia richiesta"
+    },
+    "faq": [
+      {
+        "q": "Quanto costa avviare uno sfratto per morosità?",
+        "a": "Il nostro onorario è fisso: 1.300€ tutto incluso fino alla convalida. Non paghi nulla in anticipo: il compenso è dovuto solo al momento della convalida dello sfratto da parte del giudice."
+      },
+      {
+        "q": "Quanto tempo ci vuole per la convalida di sfratto?",
+        "a": "Con il nostro Protocollo otteniamo mediamente la convalida in circa 60 giorni. I tempi effettivi dipendono dal calendario del tribunale competente e dall'eventuale opposizione dell'inquilino."
+      },
+      {
+        "q": "Quando pago il compenso?",
+        "a": "Il compenso viene corrisposto solo dopo il provvedimento di convalida del giudice. Zero anticipo richiesto all'avvio della pratica."
+      },
+      {
+        "q": "Operate anche nella mia città?",
+        "a": "Sì, operiamo su tutto il territorio nazionale tramite una rete di domiciliatari qualificati. Gestiamo procedure presso ogni tribunale d'Italia."
+      },
+      {
+        "q": "Cosa succede se l'inquilino si oppone allo sfratto?",
+        "a": "In caso di opposizione la procedura si trasforma in un giudizio ordinario. Ti assistiamo anche in questa fase; i costi e i tempi aggiuntivi vengono comunicati in anticipo e in modo trasparente."
+      },
+      {
+        "q": "Posso affidarvi anche il recupero dei canoni non pagati?",
+        "a": "Sì. Oltre alla procedura di sfratto possiamo procedere in parallelo con il recupero dei canoni arretrati tramite decreto ingiuntivo. Ne parliamo durante la consulenza gratuita."
+      },
+      {
+        "q": "Il servizio è riservato ai proprietari?",
+        "a": "Sì. Assistiamo esclusivamente proprietari e locatori che vogliono riottenere l'immobile. Non forniamo assistenza agli inquilini."
+      },
+      {
+        "q": "La consulenza iniziale è gratuita?",
+        "a": "Sì, completamente gratuita e senza impegno. Analizziamo il tuo contratto e la situazione di morosità, ti diciamo se e come procedere. Solo se scegli di affidarti a noi sottoscriviamo il mandato."
+      }
+    ]
+  }
+}

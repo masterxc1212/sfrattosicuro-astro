@@ -1,0 +1,305 @@
+---
+/**
+ * LandingHeroIsland — Sezione hero con form inline di qualificazione.
+ * Dark-blue gradient, due colonne su desktop (copy | form card).
+ * Riutilizzabile per varianti nazionali e territoriali.
+ */
+import type { LandingConfig } from '../../data/landing-model';
+
+interface Props {
+  config: Pick<LandingConfig, 'hero' | 'qualifierQuestion' | 'qualifierOptions' | 'territory'>;
+}
+
+const { config } = Astro.props;
+const { hero, qualifierQuestion, qualifierOptions, territory } = config;
+---
+
+<section class="lhero" aria-labelledby="lhero-title">
+  <div class="container lhero__grid">
+
+    <!-- Copy -->
+    <div class="lhero__copy">
+      <p class="lhero__kicker">{hero.kicker}</p>
+      <h1 id="lhero-title" class="lhero__h1">{hero.headline}</h1>
+      <p class="lhero__sub">{hero.subheadline}</p>
+
+      <div class="lhero__pill" role="note">{hero.audienceLabel}</div>
+
+      <ul class="lhero__bullets" aria-label="Vantaggi principali">
+        {hero.bullets.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <div class="lhero__stats" role="list" aria-label="Indicatori chiave">
+        {hero.stats.map((stat) => (
+          <article class="lhero__stat" role="listitem">
+            <strong>{stat.value}</strong>
+            <span>{stat.label}</span>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <!-- Form card -->
+    <aside class="lhero__form-card" id="form-hero">
+      <p class="lhero__form-eyebrow">Consulenza gratuita</p>
+      <h2 class="lhero__form-title">{hero.ctaLabel}</h2>
+      <p class="lhero__form-note">{hero.note}</p>
+
+      <form
+        action="/php/invia-email.php"
+        method="POST"
+        class="lhero__form"
+        data-landing-form
+        aria-label="Form di richiesta consulenza"
+      >
+        {territory?.city && (
+          <input type="hidden" name="landing_variante" value={territory.city} />
+        )}
+
+        <label>
+          Nome e cognome *
+          <input type="text" name="nome" required placeholder="Il tuo nome completo" />
+        </label>
+
+        <label>
+          Telefono *
+          <input type="tel" name="telefono" required placeholder="+39 ..." />
+        </label>
+
+        <label>
+          Email *
+          <input type="email" name="email" required placeholder="La tua email" />
+        </label>
+
+        <label>
+          Città dell'immobile *
+          <input
+            type="text"
+            name="citta"
+            required
+            placeholder={territory?.city ? `Indirizzo a ${territory.city}` : 'In che città si trova l\'immobile'}
+          />
+        </label>
+
+        <!-- Qualificazione: filtra solo proprietari/locatori -->
+        <label>
+          {qualifierQuestion} *
+          <select name="qualifica" required>
+            <option value="">Seleziona</option>
+            {qualifierOptions.map((opt) => (
+              <option value={opt}>{opt}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Da quanto non paga? *
+          <select name="morosita" required>
+            <option value="">Seleziona periodo</option>
+            <option value="1-2 mesi">1–2 mesi</option>
+            <option value="3-6 mesi">3–6 mesi</option>
+            <option value="6-12 mesi">6–12 mesi</option>
+            <option value="oltre 12 mesi">Oltre 12 mesi</option>
+          </select>
+        </label>
+
+        <label>
+          Note (opzionale)
+          <textarea name="note" rows="3" placeholder="Descrivi brevemente la situazione..."></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary lhero__submit">
+          {hero.ctaLabel}
+        </button>
+        <p class="lhero__form-tiny">✓ Gratuita · ✓ Senza impegno · ✓ Risposta entro 24h</p>
+      </form>
+    </aside>
+
+  </div>
+</section>
+
+<script>
+(() => {
+  document.querySelectorAll<HTMLFormElement>('[data-landing-form]').forEach((form) => {
+    form.addEventListener('submit', () => {
+      const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Invio in corso…';
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi consulenza gratuita'; }, 4000);
+      }
+    });
+    form.querySelectorAll<HTMLElement>('input[required],select[required]').forEach((field) => {
+      field.addEventListener('blur', () => {
+        if (!(field as HTMLInputElement).checkValidity()) field.classList.add('field-error');
+        else field.classList.remove('field-error');
+      });
+    });
+  });
+})();
+</script>
+
+<style>
+  .lhero {
+    margin-top: var(--header-h, 84px);
+    padding: 3rem 0 2.5rem;
+    background: linear-gradient(135deg, #1b2951 0%, #213564 55%, #243d78 100%);
+    color: #fff;
+  }
+  .lhero__grid {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+  }
+  .lhero__kicker {
+    margin: 0 0 .75rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .78rem;
+    font-weight: 800;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lhero__h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    color: #fff;
+  }
+  .lhero__sub {
+    color: #dde7ff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 60ch;
+    margin: 0 0 1.2rem;
+  }
+  .lhero__pill {
+    display: inline-flex;
+    padding: .55rem .9rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.13);
+    border: 1px solid rgba(255,255,255,.18);
+    font-weight: 700;
+    font-size: .82rem;
+    margin-bottom: 1.2rem;
+    color: #e8efff;
+  }
+  .lhero__bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: grid;
+    gap: .7rem;
+  }
+  .lhero__bullets li {
+    display: flex;
+    gap: .7rem;
+    align-items: flex-start;
+    font-size: .95rem;
+    color: #eef4ff;
+  }
+  .lhero__bullets li::before {
+    content: '✓';
+    color: #69d58b;
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+  .lhero__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: .75rem;
+  }
+  .lhero__stat {
+    padding: .9rem 1rem;
+    background: rgba(255,255,255,.11);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 16px;
+  }
+  .lhero__stat strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  .lhero__stat span {
+    font-size: .8rem;
+    color: #c8d8f5;
+  }
+
+  /* Form card */
+  .lhero__form-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 28px 56px rgba(0,0,0,.25);
+    padding: 1.75rem;
+    color: #1f2937;
+  }
+  .lhero__form-eyebrow {
+    margin: 0 0 .4rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #1b2951;
+  }
+  .lhero__form-title {
+    margin: 0 0 .4rem;
+    font-size: 1.15rem;
+    color: #1b2951;
+  }
+  .lhero__form-note {
+    margin: 0 0 1rem;
+    font-size: .85rem;
+    color: #64748b;
+  }
+  .lhero__form {
+    display: grid;
+    gap: .8rem;
+  }
+  .lhero__form label {
+    display: grid;
+    gap: .3rem;
+    font-size: .88rem;
+    font-weight: 700;
+    color: #374151;
+  }
+  .lhero__form input,
+  .lhero__form select,
+  .lhero__form textarea {
+    width: 100%;
+    padding: .75rem .9rem;
+    border-radius: 12px;
+    border: 1.5px solid #cbd5e1;
+    font: inherit;
+    font-size: .9rem;
+    background: #f8fafc;
+    transition: border-color .15s;
+  }
+  .lhero__form input:focus,
+  .lhero__form select:focus,
+  .lhero__form textarea:focus {
+    outline: none;
+    border-color: #1b2951;
+    background: #fff;
+  }
+  .lhero__form .field-error {
+    border-color: #ef4444;
+  }
+  .lhero__submit {
+    width: 100%;
+    margin-top: .25rem;
+    padding: .9rem 1rem;
+    font-size: 1rem;
+  }
+  .lhero__form-tiny {
+    margin: .35rem 0 0;
+    font-size: .8rem;
+    color: #64748b;
+    text-align: center;
+  }
+
+  @media (min-width: 960px) {
+    .lhero__grid {
+      grid-template-columns: minmax(0, 1.25fr) minmax(360px, .75fr);
+    }
+  }
+</style>

@@ -1,4 +1,9 @@
 ---
+/**
+ * /nuova-landing/ — Preview landing con header/footer del sito.
+ * Usa LandingModel.astro che assembla i componenti modulari.
+ * Per la versione con header minimal, vedi /landing-v2/.
+ */
 import SiteLayout from '../layouts/SiteLayout.astro';
 import JsonLd from '../components/JsonLd.astro';
 import LandingModel from '../components/LandingModel.astro';
@@ -27,6 +32,15 @@ const graph = {
       email: landingOrg.email,
       areaServed: { '@type': 'Country', name: 'IT' },
       serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione']
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${siteUrl}${config.canonicalPath}#faq`,
+      mainEntity: config.faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a }
+      }))
     }
   ]
 };

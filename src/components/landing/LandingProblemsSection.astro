@@ -1,0 +1,72 @@
+---
+/**
+ * LandingProblemsSection — Griglia di pain point del proprietario.
+ * Inquadra il problema prima di presentare la soluzione.
+ */
+import type { LandingProblem } from '../../data/landing-model';
+
+interface Props {
+  problems: LandingProblem[];
+  /** Override opzionale del titolo sezione */
+  title?: string;
+}
+
+const {
+  problems,
+  title = 'Se hai un inquilino moroso, ogni mese conta'
+} = Astro.props;
+---
+
+<section class="lproblems section" aria-labelledby="lproblems-title">
+  <div class="container">
+    <header class="lproblems__head">
+      <p class="lproblems__kicker">Situazione critica</p>
+      <h2 id="lproblems-title">{title}</h2>
+      <p class="lproblems__intro">
+        L'inquilino non paga e la situazione si aggrava. Ecco cosa sta succedendo — e perché agire subito fa la differenza.
+      </p>
+    </header>
+
+    <div class="lproblems__grid">
+      {problems.map((p) => (
+        <article class="lproblems__card">
+          <h3>{p.title}</h3>
+          <p>{p.body}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .lproblems { background: var(--gray-pearl, #f7f8fc); }
+  .lproblems__head { max-width: 680px; margin-bottom: 2rem; }
+  .lproblems__kicker {
+    margin: 0 0 .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lproblems__head h2 { margin: 0 0 .75rem; }
+  .lproblems__intro { color: #475569; margin: 0; }
+  .lproblems__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .lproblems__card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(15,23,42,.05);
+  }
+  .lproblems__card h3 {
+    margin: 0 0 .6rem;
+    font-size: 1.05rem;
+    color: var(--blue-navy, #1b2951);
+  }
+  .lproblems__card p { margin: 0; color: #475569; line-height: 1.6; }
+</style>

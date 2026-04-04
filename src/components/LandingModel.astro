@@ -1,7 +1,24 @@
 ---
+/**
+ * LandingModel — Wrapper che assembla i componenti landing modulari.
+ * Usato da nuova-landing.astro e come riferimento per altre pagine.
+ * Per la versione full, usa src/pages/landing-v2/index.astro.
+ */
 import HeaderIsland from './HeaderIsland.astro';
 import Footer from './Footer.astro';
 import ReviewsIsland from './ReviewsIsland.astro';
+import ProvvedimentiIsland from './ProvvedimentiIsland.astro';
+import SmoothScrollIsland from './SmoothScrollIsland.astro';
+
+import LandingHeroIsland from './landing/LandingHeroIsland.astro';
+import LandingTrustBarSection from './landing/LandingTrustBarSection.astro';
+import LandingProblemsSection from './landing/LandingProblemsSection.astro';
+import LandingHowItWorksSection from './landing/LandingHowItWorksSection.astro';
+import LandingPricingSection from './landing/LandingPricingSection.astro';
+import LandingUrgencySection from './landing/LandingUrgencySection.astro';
+import LandingFaqSection from './landing/LandingFaqSection.astro';
+import LandingContactFormIsland from './landing/LandingContactFormIsland.astro';
+
 import type { LandingConfig } from '../data/landing-model';
 
 interface Props {
@@ -13,407 +30,47 @@ const { config } = Astro.props;
 
 <HeaderIsland />
 
-<main id="main-content" class="landing-preview-main">
-  <section class="landing-hero section">
-    <div class="container landing-hero__grid">
-      <div class="landing-hero__copy">
-        <p class="landing-kicker">{config.hero.kicker}</p>
-        <h1>{config.hero.headline}</h1>
-        <p class="landing-hero__subtitle">{config.hero.subheadline}</p>
-        <div class="landing-audience-pill">{config.hero.audienceLabel}</div>
-        <ul class="landing-bullets" aria-label="Vantaggi principali">
-          {config.hero.bullets.map((item) => <li>{item}</li>)}
-        </ul>
-        <div class="landing-stats">
-          {config.hero.stats.map((stat) => (
-            <article class="landing-stat-card">
-              <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
-            </article>
-          ))}
-        </div>
-      </div>
+<main id="main-content">
 
-      <aside class="landing-form-card" id="contatti">
-        <p class="landing-form-card__eyebrow">Consulenza gratuita</p>
-        <h2>{config.hero.ctaLabel}</h2>
-        <p class="landing-form-card__note">{config.hero.note}</p>
+  <!-- 1. Hero con form inline di qualificazione -->
+  <LandingHeroIsland config={config} />
 
-        <form action="/php/invia-email.php" method="POST" class="landing-form">
-          <label>
-            Nome e cognome *
-            <input type="text" name="nome" required placeholder="Come ti chiami" />
-          </label>
-          <label>
-            Telefono *
-            <input type="tel" name="telefono" required placeholder="Numero di telefono" />
-          </label>
-          <label>
-            Email *
-            <input type="email" name="email" required placeholder="La tua email" />
-          </label>
-          <label>
-            Città immobile *
-            <input type="text" name="citta" required placeholder="Dove si trova l'immobile" />
-          </label>
-          <label>
-            {config.qualifierQuestion}
-            <select name="qualifica" required>
-              <option value="">Seleziona</option>
-              {config.qualifierOptions.map((option) => <option value={option}>{option}</option>)}
-            </select>
-          </label>
-          <label>
-            Da quanto non paga? *
-            <select name="morosita" required>
-              <option value="">Seleziona</option>
-              <option value="1-2 mesi">1-2 mesi</option>
-              <option value="3-6 mesi">3-6 mesi</option>
-              <option value="oltre 6 mesi">Oltre 6 mesi</option>
-            </select>
-          </label>
-          <label>
-            Note
-            <textarea name="note" rows="4" placeholder="Descrivi brevemente la situazione"></textarea>
-          </label>
-          <button type="submit" class="btn-primary landing-form__submit">Invia richiesta</button>
-          <p class="landing-form__tiny">Preview form riutilizzabile per landing nazionali, territoriali e keyword-specific.</p>
-        </form>
-      </aside>
-    </div>
-  </section>
+  <!-- 2. Trust bar: 4 metriche chiave -->
+  <LandingTrustBarSection signals={config.trustSignals} />
 
-  <section class="section landing-proof">
-    <div class="container landing-proof__grid">
-      <article class="landing-proof-card">
-        <p class="landing-proof-card__kicker">Trust</p>
-        <h2>{config.proof.ratingLabel}</h2>
-        <p>{config.proof.reviewCountLabel}</p>
-      </article>
-      <article class="landing-proof-card">
-        <p class="landing-proof-card__kicker">Metodo</p>
-        <h2>{config.proof.documentsTitle}</h2>
-        <p>{config.proof.documentsBody}</p>
-      </article>
-    </div>
-  </section>
+  <!-- 3. Problemi del proprietario -->
+  <LandingProblemsSection problems={config.problems} />
 
-  <section class="section">
-    <div class="container">
-      <div class="landing-section-head">
-        <p class="landing-kicker">Situazione critica</p>
-        <h2>Blocchi modulari per raccontare il problema del proprietario</h2>
-        <p>Ogni card qui sotto può essere riordinata, sostituita o estesa a seconda della keyword o della località target.</p>
-      </div>
-      <div class="landing-problems-grid">
-        {config.problems.map((problem) => (
-          <article class="landing-problem-card">
-            <h3>{problem.title}</h3>
-            <p>{problem.body}</p>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
+  <!-- 4. Come funziona -->
+  <LandingHowItWorksSection steps={config.steps} />
 
-  <section class="section landing-calc">
-    <div class="container landing-calc__grid">
-      <div>
-        <p class="landing-kicker">Leva economica</p>
-        <h2>{config.calculator.title}</h2>
-        <p>{config.calculator.intro}</p>
-      </div>
-      <div class="landing-calc-card">
-        <div class="landing-calc-card__row">
-          <span>{config.calculator.monthlyLossLabel}</span>
-          <strong>€ 1.680 / mese</strong>
-        </div>
-        <div class="landing-calc-card__row">
-          <span>Perdita attuale simulata</span>
-          <strong>€ 5.040</strong>
-        </div>
-        <div class="landing-calc-card__highlight">
-          <h3>{config.calculator.compareTitle}</h3>
-          <p>{config.calculator.compareBody}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- 5. Pricing trasparente -->
+  <LandingPricingSection offer={config.offer} />
 
-  <section class="section">
-    <div class="container">
-      <div class="landing-section-head">
-        <p class="landing-kicker">Protocollo</p>
-        <h2>Sequenza riusabile per landing servizio / keyword / città</h2>
-      </div>
-      <div class="landing-steps-grid">
-        {config.steps.map((step) => (
-          <article class="landing-step-card">
-            <p class="landing-step-card__eyebrow">{step.eyebrow}</p>
-            <h3>{step.title}</h3>
-            <p>{step.body}</p>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
+  <!-- 6. Urgency CTA -->
+  <LandingUrgencySection urgency={config.urgency} />
 
-  <section class="section landing-offer">
-    <div class="container landing-offer__grid">
-      <div>
-        <p class="landing-kicker">Offerta</p>
-        <h2>{config.offer.title}</h2>
-        <p class="landing-offer__price">{config.offer.price}</p>
-        <p>{config.offer.intro}</p>
-      </div>
-      <div class="landing-offer-panels">
-        <article class="landing-offer-panel">
-          <h3>Servizio principale</h3>
-          <div class="landing-offer-list">
-            {config.offer.included.map((item) => (
-              <div>
-                <strong>{item.title}</strong>
-                <p>{item.body}</p>
-                {item.note && <small>{item.note}</small>}
-              </div>
-            ))}
-          </div>
-        </article>
-        <article class="landing-offer-panel landing-offer-panel--muted">
-          <h3>Blocchi opzionali post-convalida</h3>
-          <div class="landing-offer-list">
-            {config.offer.bonuses.map((item) => (
-              <div>
-                <strong>{item.title}</strong>
-                <p>{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
+  <!-- 7. Prove sociali -->
   <ReviewsIsland />
 
-  <section class="section landing-faq">
-    <div class="container">
-      <div class="landing-section-head">
-        <p class="landing-kicker">FAQ</p>
-        <h2>Domande frequenti variabili per località e intento di ricerca</h2>
-      </div>
-      <div class="landing-faq-list">
-        {config.faq.map((item) => (
-          <details class="landing-faq-item">
-            <summary>{item.q}</summary>
-            <p>{item.a}</p>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
+  <!-- 8. Provvedimenti documentati -->
+  <ProvvedimentiIsland />
+
+  <!-- 9. FAQ -->
+  <LandingFaqSection
+    faq={config.faq}
+    territory={config.territory}
+  />
+
+  <!-- 10. Form di contatto qualificato -->
+  <LandingContactFormIsland
+    formCta={config.formCta}
+    qualifierQuestion={config.qualifierQuestion}
+    qualifierOptions={config.qualifierOptions}
+    territory={config.territory}
+  />
+
 </main>
 
 <Footer />
-
-<style>
-  .landing-preview-main {
-    background: linear-gradient(180deg, #f7f8fc 0%, #ffffff 14%, #f8fbff 100%);
-  }
-  .landing-hero {
-    margin-top: var(--header-h);
-    padding: 2.5rem 0 2rem;
-    background: linear-gradient(135deg, #1b2951 0%, #213564 50%, #243d78 100%);
-    color: #fff;
-  }
-  .landing-hero__grid,
-  .landing-proof__grid,
-  .landing-calc__grid,
-  .landing-offer__grid {
-    display: grid;
-    gap: 1.5rem;
-  }
-  .landing-hero__subtitle {
-    color: #dde7ff;
-    font-size: 1.08rem;
-    line-height: 1.7;
-    max-width: 62ch;
-  }
-  .landing-kicker {
-    margin: 0 0 .75rem;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    font-size: .8rem;
-    font-weight: 800;
-    color: #c9a961;
-  }
-  .landing-audience-pill {
-    display: inline-flex;
-    padding: .65rem .95rem;
-    border-radius: 999px;
-    background: rgba(255,255,255,.14);
-    border: 1px solid rgba(255,255,255,.18);
-    font-weight: 700;
-    margin: .5rem 0 1.2rem;
-  }
-  .landing-bullets {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: .8rem;
-  }
-  .landing-bullets li {
-    display: flex;
-    gap: .75rem;
-    align-items: flex-start;
-    color: #eef4ff;
-  }
-  .landing-bullets li::before {
-    content: '✓';
-    color: #69d58b;
-    font-weight: 800;
-  }
-  .landing-stats,
-  .landing-problems-grid,
-  .landing-steps-grid {
-    display: grid;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  .landing-stat-card,
-  .landing-problem-card,
-  .landing-step-card,
-  .landing-proof-card,
-  .landing-calc-card,
-  .landing-offer-panel,
-  .landing-form-card,
-  .landing-faq-item {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.07);
-  }
-  .landing-stat-card {
-    padding: 1rem 1.1rem;
-    background: rgba(255,255,255,.12);
-    border-color: rgba(255,255,255,.14);
-    color: #fff;
-    box-shadow: none;
-  }
-  .landing-stat-card strong {
-    display: block;
-    font-size: 1.35rem;
-  }
-  .landing-stat-card span { color: #dfe7fb; }
-  .landing-form-card {
-    padding: 1.5rem;
-    color: #1f2937;
-  }
-  .landing-form-card__eyebrow {
-    margin: 0 0 .45rem;
-    color: #1b2951;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    font-size: .8rem;
-  }
-  .landing-form-card__note,
-  .landing-form__tiny { color: #64748b; }
-  .landing-form {
-    display: grid;
-    gap: .85rem;
-  }
-  .landing-form label {
-    display: grid;
-    gap: .35rem;
-    font-weight: 700;
-    color: #1f2937;
-    font-size: .95rem;
-  }
-  .landing-form input,
-  .landing-form select,
-  .landing-form textarea {
-    width: 100%;
-    padding: .9rem 1rem;
-    border-radius: 14px;
-    border: 1px solid #cbd5e1;
-    font: inherit;
-    background: #fff;
-  }
-  .landing-form__submit { width: 100%; margin-top: .4rem; }
-  .landing-proof-card,
-  .landing-problem-card,
-  .landing-step-card,
-  .landing-offer-panel,
-  .landing-calc-card {
-    padding: 1.4rem;
-  }
-  .landing-proof-card__kicker,
-  .landing-step-card__eyebrow {
-    margin: 0 0 .5rem;
-    font-size: .78rem;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    color: #c6902a;
-    font-weight: 800;
-  }
-  .landing-section-head {
-    max-width: 780px;
-    margin-bottom: 1.25rem;
-  }
-  .landing-calc {
-    background: linear-gradient(180deg, #fff8ea 0%, #fff 100%);
-  }
-  .landing-calc-card__row {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: .8rem 0;
-    border-bottom: 1px solid #e2e8f0;
-  }
-  .landing-calc-card__highlight {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 18px;
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
-  }
-  .landing-offer__price {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #1b2951;
-    margin: .3rem 0 .7rem;
-  }
-  .landing-offer-panels {
-    display: grid;
-    gap: 1rem;
-  }
-  .landing-offer-panel--muted {
-    background: #f8fafc;
-  }
-  .landing-offer-list {
-    display: grid;
-    gap: 1rem;
-  }
-  .landing-offer-list p,
-  .landing-offer-list small,
-  .landing-faq-item p { margin: .3rem 0 0; color: #475569; }
-  .landing-faq-list { display: grid; gap: .85rem; }
-  .landing-faq-item { padding: 1rem 1.2rem; }
-  .landing-faq-item summary {
-    cursor: pointer;
-    font-weight: 800;
-    color: #1b2951;
-  }
-  @media (min-width: 900px) {
-    .landing-hero__grid { grid-template-columns: minmax(0, 1.2fr) minmax(360px, .8fr); align-items: start; }
-    .landing-proof__grid,
-    .landing-calc__grid,
-    .landing-offer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .landing-stats,
-    .landing-problems-grid,
-    .landing-steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .landing-steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-</style>
+<SmoothScrollIsland />

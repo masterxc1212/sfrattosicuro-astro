@@ -1,0 +1,206 @@
+---
+/**
+ * LandingPricingSection — Blocco prezzo con garanzie e payment note.
+ * Evidenzia 1.300€ fisso, nessun anticipo, pagamento alla convalida.
+ */
+import type { LandingConfig } from '../../data/landing-model';
+
+interface Props {
+  offer: LandingConfig['offer'];
+}
+
+const { offer } = Astro.props;
+---
+
+<section class="lpricing section" id="costo-sfratto" aria-labelledby="lpricing-title">
+  <div class="container">
+    <header class="lpricing__head">
+      <p class="lpricing__kicker">Trasparenza</p>
+      <h2 id="lpricing-title">{offer.title}</h2>
+    </header>
+
+    <div class="lpricing__grid">
+
+      <!-- Sinistra: price + garanzie -->
+      <div class="lpricing__left">
+        <div class="lpricing__price-block">
+          <span class="lpricing__price">{offer.price}</span>
+          <span class="lpricing__price-note">{offer.intro}</span>
+        </div>
+
+        <div class="lpricing__payment-note" role="note">
+          <span class="lpricing__payment-icon" aria-hidden="true">🔒</span>
+          <p>{offer.paymentNote}</p>
+        </div>
+
+        <ul class="lpricing__guarantees" aria-label="Garanzie incluse">
+          {offer.guarantees.map((g) => (
+            <li class={g.startsWith('✗') ? 'lpricing__guarantee--excl' : ''}>{g}</li>
+          ))}
+        </ul>
+
+        <a href="#contatti-landing" class="btn btn-primary lpricing__cta">
+          Richiedi consulenza gratuita
+        </a>
+      </div>
+
+      <!-- Destra: incluso + opzionali -->
+      <div class="lpricing__right">
+        <article class="lpricing__panel">
+          <h3 class="lpricing__panel-title">Cosa include il servizio</h3>
+          <div class="lpricing__items">
+            {offer.included.map((item) => (
+              <div class="lpricing__item">
+                <div class="lpricing__item-header">
+                  <strong>{item.title}</strong>
+                  {item.note && <span class="lpricing__item-badge">{item.note}</span>}
+                </div>
+                <p>{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </article>
+
+        {offer.bonuses.length > 0 && (
+          <article class="lpricing__panel lpricing__panel--optional">
+            <h3 class="lpricing__panel-title">Servizi aggiuntivi (su richiesta)</h3>
+            <div class="lpricing__items">
+              {offer.bonuses.map((item) => (
+                <div class="lpricing__item">
+                  <strong>{item.title}</strong>
+                  <p>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        )}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .lpricing {
+    background: linear-gradient(180deg, #f0f7ff 0%, #fff 60%);
+  }
+  .lpricing__head { max-width: 680px; margin-bottom: 2rem; }
+  .lpricing__kicker {
+    margin: 0 0 .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lpricing__head h2 { margin: 0; }
+  .lpricing__grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  /* Left panel */
+  .lpricing__price-block {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    margin-bottom: 1.25rem;
+  }
+  .lpricing__price {
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    font-weight: 900;
+    color: var(--blue-navy, #1b2951);
+    line-height: 1;
+  }
+  .lpricing__price-note {
+    font-size: .95rem;
+    color: #475569;
+  }
+  .lpricing__payment-note {
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    background: #f0fdf4;
+    border: 1.5px solid #bbf7d0;
+    border-radius: 16px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+  .lpricing__payment-icon { font-size: 1.2rem; flex-shrink: 0; }
+  .lpricing__payment-note p {
+    margin: 0;
+    font-weight: 700;
+    color: #166534;
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+  .lpricing__guarantees {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.75rem;
+    display: grid;
+    gap: .5rem;
+  }
+  .lpricing__guarantees li {
+    font-size: .9rem;
+    color: #374151;
+    line-height: 1.5;
+  }
+  .lpricing__guarantee--excl { color: #94a3b8; }
+  .lpricing__cta { display: block; text-align: center; }
+
+  /* Right panels */
+  .lpricing__panel {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(15,23,42,.05);
+    margin-bottom: 1rem;
+  }
+  .lpricing__panel--optional {
+    background: #f8fafc;
+  }
+  .lpricing__panel:last-child { margin-bottom: 0; }
+  .lpricing__panel-title {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: var(--blue-navy, #1b2951);
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: .75rem;
+  }
+  .lpricing__items { display: grid; gap: 1rem; }
+  .lpricing__item-header {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-bottom: .3rem;
+  }
+  .lpricing__item-header strong {
+    font-size: .95rem;
+    color: var(--blue-navy, #1b2951);
+  }
+  .lpricing__item-badge {
+    font-size: .72rem;
+    font-weight: 700;
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 999px;
+    padding: .15rem .55rem;
+    white-space: nowrap;
+  }
+  .lpricing__item p {
+    margin: 0;
+    font-size: .88rem;
+    color: #475569;
+    line-height: 1.55;
+  }
+
+  @media (min-width: 900px) {
+    .lpricing__grid {
+      grid-template-columns: minmax(260px, .9fr) minmax(0, 1.1fr);
+      align-items: start;
+    }
+  }
+</style>

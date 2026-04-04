@@ -1,0 +1,175 @@
+---
+/**
+ * /landing-v2/ — Preview della landing Astro modulare
+ *
+ * NON interferisc con /landing/ (public/landing/index.html rimane live).
+ * Quando approvata: rinomina questa pagina in landing/index.astro e
+ * rimuovi public/landing/index.html.
+ *
+ * Config: src/data/landing-model.ts
+ * Per variante territoriale: getLandingConfig('roma') ecc.
+ */
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import SmoothScrollIsland from '../../components/SmoothScrollIsland.astro';
+import ReviewsIsland from '../../components/ReviewsIsland.astro';
+import ProvvedimentiIsland from '../../components/ProvvedimentiIsland.astro';
+
+// Componenti landing modulari
+import LandingMinimalHeaderSection from '../../components/landing/LandingMinimalHeaderSection.astro';
+import LandingHeroIsland from '../../components/landing/LandingHeroIsland.astro';
+import LandingTrustBarSection from '../../components/landing/LandingTrustBarSection.astro';
+import LandingProblemsSection from '../../components/landing/LandingProblemsSection.astro';
+import LandingHowItWorksSection from '../../components/landing/LandingHowItWorksSection.astro';
+import LandingPricingSection from '../../components/landing/LandingPricingSection.astro';
+import LandingUrgencySection from '../../components/landing/LandingUrgencySection.astro';
+import LandingFaqSection from '../../components/landing/LandingFaqSection.astro';
+import LandingContactFormIsland from '../../components/landing/LandingContactFormIsland.astro';
+import LandingMinimalFooterSection from '../../components/landing/LandingMinimalFooterSection.astro';
+
+import { getLandingConfig, landingOrg } from '../../data/landing-model';
+import site from '../../data/site.json';
+
+// ---- Configura qui la variante da visualizzare ----
+// 'nazionale' | 'roma' | 'milano' | 'napoli' | 'torino' | 'bologna' | 'firenze'
+const VARIANTE = 'nazionale';
+
+const config = getLandingConfig(VARIANTE);
+const siteUrl = site.siteUrl.replace(/\/$/, '');
+
+// ---- JSON-LD ----
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}${config.canonicalPath}#webpage`,
+      url: `${siteUrl}${config.canonicalPath}`,
+      name: config.title,
+      description: config.description,
+      inLanguage: 'it-IT'
+    },
+    {
+      '@type': 'LegalService',
+      '@id': `${siteUrl}${config.canonicalPath}#service`,
+      name: 'Sfratto Sicuro',
+      legalName: 'D1 S.R.L.S.',
+      url: `${siteUrl}${config.canonicalPath}`,
+      telephone: landingOrg.telephone,
+      email: landingOrg.email,
+      vatID: landingOrg.vatID,
+      areaServed: config.territory?.city
+        ? { '@type': 'City', name: config.territory.city }
+        : { '@type': 'Country', name: 'IT' },
+      serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
+      priceRange: '€€',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Sfratto per Morosità',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Sfratto per Morosità',
+              description: 'Procedura completa fino alla convalida con Protocollo Sfratto Sicuro.'
+            },
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: '1300.00',
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: true
+            }
+          }
+        ]
+      }
+    },
+    // FAQPage schema — alimentato dal config
+    {
+      '@type': 'FAQPage',
+      '@id': `${siteUrl}${config.canonicalPath}#faq`,
+      mainEntity: config.faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a }
+      }))
+    }
+  ]
+};
+---
+
+<SiteLayout
+  title={config.title}
+  description={config.description}
+  canonicalPath={config.canonicalPath}
+  robots={config.noindex ? 'noindex,nofollow' : 'index,follow'}
+>
+  <Fragment slot="head">
+    <JsonLd graph={graph} />
+  </Fragment>
+
+  <!--
+    Layout landing: header minimal (niente nav), poi sezioni modulari,
+    footer minimal. Non usa HomeModel né HeaderIsland.
+  -->
+
+  <LandingMinimalHeaderSection />
+
+  <main id="main-content">
+
+    <!-- 1. Hero con form inline di qualificazione -->
+    <LandingHeroIsland config={config} />
+
+    <!-- 2. Trust bar: 4 metriche chiave -->
+    <LandingTrustBarSection signals={config.trustSignals} />
+
+    <!-- 3. Problemi del proprietario -->
+    <LandingProblemsSection problems={config.problems} />
+
+    <!-- 4. Come funziona il Protocollo -->
+    <LandingHowItWorksSection steps={config.steps} />
+
+    <!-- 5. Pricing trasparente -->
+    <LandingPricingSection offer={config.offer} />
+
+    <!-- 6. Urgency CTA -->
+    <LandingUrgencySection urgency={config.urgency} />
+
+    <!-- 7. Prove sociali: recensioni reali -->
+    <ReviewsIsland />
+
+    <!-- 8. Provvedimenti documentati -->
+    <ProvvedimentiIsland />
+
+    <!-- 9. FAQ -->
+    <LandingFaqSection
+      faq={config.faq}
+      territory={config.territory}
+    />
+
+    <!-- 10. Form contatto qualificato (fondo pagina) -->
+    <LandingContactFormIsland
+      formCta={config.formCta}
+      qualifierQuestion={config.qualifierQuestion}
+      qualifierOptions={config.qualifierOptions}
+      territory={config.territory}
+    />
+
+  </main>
+
+  <LandingMinimalFooterSection />
+  <SmoothScrollIsland />
+
+</SiteLayout>
+
+<style>
+  /*
+   * Override layout specifico per landing:
+   * rimuove il margin-top del main che assumerebbe un header sticky da 84px,
+   * perché LandingMinimalHeaderSection ha altezza 72px.
+   */
+  #main-content {
+    /* header minimal = 72px — sovrascrive --header-h se settato */
+    --header-h: 72px;
+  }
+</style>
