@@ -16,6 +16,83 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "inquilino-sparisce-non-paga-affitto",
+    title: "L'inquilino sparisce e non paga: cosa può fare il proprietario",
+    description: "L'inquilino lascia l'appartamento senza pagare l'affitto? Scopri cosa può fare il proprietario per recuperare i canoni e gestire il rilascio, evitando errori.",
+    excerpt: "Quando l'inquilino abbandona l'immobile senza preavviso e senza pagare i canoni, il proprietario si trova in una situazione complessa. Questa guida spiega i passaggi operativi per verificare l'abbandono, recuperare le somme dovute e rientrare in possesso dell'immobile, senza commettere errori.",
+    lead: "Quando un inquilino sparisce, smette di pagare e lascia l'appartamento, il proprietario non può agire d'impulso. Serve una strategia chiara per accertare l'abbandono, recuperare i crediti e rientrare legalmente in possesso dell'immobile.",
+    publishedAt: "2026-04-04",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote: "Approvato 2026-04-04. Keyword: inquilino non paga affitto e lascia appartamento, vol 210, KD 2. Batch 2 #9.",
+    html: `
+<p>Quando un inquilino smette di pagare l'affitto e sparisce, lasciando l'appartamento, il proprietario si trova di fronte a una situazione complessa e delicata. Non si tratta di un semplice sfratto per morosità, né di una finita locazione ordinaria. L'assenza dell'inquilino, sebbene sembri un vantaggio, in realtà introduce nuove incertezze legali e operative.</p>
+
+<p>Il proprietario non può entrare nell'immobile, cambiare le serrature o appropriarsi dei beni eventualmente lasciati, poiché ciò costituirebbe un reato (esercizio arbitrario delle proprie ragioni). È fondamentale agire con cautela e seguire una procedura specifica per accertare l'abbandono, recuperare i canoni arretrati e rientrare legalmente in possesso dell'immobile. Questa guida illustra i passaggi pratici per gestire correttamente questa situazione.</p>
+
+<h2>Accertare l'abbandono dell'immobile e raccogliere le prove</h2>
+<p>Il primo passo è verificare in modo inequivocabile che l'inquilino abbia effettivamente abbandonato l'immobile. Non basta che non risponda al telefono o che non versi i canoni. È necessario raccogliere prove che dimostrino l'irreperibilità e l'assenza duratura. Elementi utili possono essere:</p>
+<ul>
+  <li>Tentativi documentati di contatto (raccomandate A/R non ritirate, PEC, testimonianze).</li>
+  <li>Lettura dei contatori (luce, gas, acqua) che indichi assenza di consumi.</li>
+  <li>Verifiche con il custode del condominio o con i vicini.</li>
+  <li>Segnalazioni di assenza prolungata (es. buca delle lettere piena, saracinesche abbassate).</li>
+</ul>
+<p><strong>Importante:</strong> anche in presenza di forti indizi, il proprietario non deve forzare l'ingresso nell'immobile. Questo è un passaggio fondamentale per evitare accuse di violazione di domicilio o furto, qualora l'inquilino si palesasse in un secondo momento.</p>
+
+<h2>Recupero dei canoni non pagati: il Decreto Ingiuntivo</h2>
+<p>L'abbandono dell'immobile non cancella il debito accumulato dall'inquilino. Per recuperare i canoni e le spese accessorie non pagate, il proprietario deve agire con un'azione di recupero crediti. Lo strumento più rapido è il <strong>Decreto Ingiuntivo</strong>.</p>
+<ul>
+  <li><strong>Documentazione necessaria:</strong> contratto di locazione registrato, prove del mancato pagamento (estratto conto, solleciti inviati, ecc.), calcolo dettagliato delle somme dovute.</li>
+  <li><strong>Procedura:</strong> tramite un avvocato, si presenta al giudice una richiesta di emissione di decreto ingiuntivo, allegando la documentazione. Se la richiesta è fondata, il giudice emette il decreto, che intima all'inquilino di pagare entro un certo termine (di solito 40 giorni).</li>
+  <li><strong>Opposizione:</strong> l'inquilino può fare opposizione al decreto ingiuntivo. Se non lo fa, o se l'opposizione viene rigettata, il decreto diventa definitivo e il proprietario può avviare l'esecuzione forzata sui beni del debitore.</li>
+</ul>
+<p>A differenza dello sfratto per morosità, che ha come obiettivo primario il rilascio dell'immobile, il decreto ingiuntivo è specificamente finalizzato al recupero economico delle somme. Entrambe le azioni possono essere gestite contemporaneamente, a seconda della strategia. Per maggiori dettagli sul recupero, si veda la guida sul <a href="/servizi/recupero-canoni-non-pagati/">recupero canoni non pagati</a>.</p>
+
+<h2>Rientro in possesso dell'immobile: ricorso ex art. 447 bis c.p.c. o azione di rivendica</h2>
+<p>Anche se l'inquilino ha abbandonato l'immobile, il proprietario non può rientrarne in possesso autonomamente. È necessario un provvedimento del giudice che accerti la cessazione del contratto e autorizzi il rilascio.</p>
+<ul>
+  <li><strong>Ricorso ex art. 447 bis c.p.c.:</strong> È la procedura più agile quando il contratto è cessato e l'inquilino ha abbandonato l'immobile. Il proprietario può chiedere al giudice di accertare la cessazione del rapporto e condannare l'inquilino al rilascio. In questo modo si ottiene un titolo esecutivo per rientrare nell'immobile.</li>
+  <li><strong>Azione di rivendica (o azione di restituzione):</strong> In situazioni più complesse, o quando non si è certi dell'effettivo abbandono o della validità della risoluzione del contratto, si può ricorrere all'azione di rivendica o di restituzione. Questa azione mira a far accertare la proprietà dell'immobile e il diritto del proprietario di rientrarne in possesso.</li>
+</ul>
+<p>La scelta dello strumento dipende dalle specificità del caso e dalla robustezza delle prove sull'abbandono. Un legale specializzato in diritto delle locazioni saprà indicare la via più efficace.</p>
+
+<h2>Errori da evitare per il proprietario</h2>
+<p>In una situazione così ambigua, è facile commettere errori che possono costare tempo e denaro:</p>
+<ul>
+  <li><strong>Forzare l'ingresso nell'immobile:</strong> violazione di domicilio è un reato.</li>
+  <li><strong>Cambiare le serrature:</strong> altro reato, anche se l'inquilino è sparito.</li>
+  <li><strong>Disporre dei beni lasciati dall'inquilino:</strong> se l'inquilino tornasse, potrebbe accusare il proprietario di furto o appropriazione indebita. È opportuno documentare con fotografie l'inventario dei beni e, se possibile, depositarli in un luogo sicuro.</li>
+  <li><strong>Aspettare troppo ad agire:</strong> ogni giorno di attesa aumenta i canoni insoluti e ritarda il rientro in possesso dell'immobile.</li>
+  <li><strong>Non formalizzare la procedura:</strong> accordi verbali o mosse affrettate possono compromettere il valore probatorio delle azioni intraprese.</li>
+</ul>
+<p>La chiave è procedere sempre con prove documentali e attraverso i canali legali, anche quando la tentazione di risolvere da soli è forte. Per una gestione strutturata, può essere utile affidarsi a servizi specifici per la <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+
+<div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
+  <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Il tuo inquilino è sparito e non sai come rientrare in possesso del tuo immobile?</p>
+  <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro ti assiste nell'accertamento dell'abbandono, nelle procedure per il recupero dei canoni e nel rientro legale in possesso dell'immobile. Contattaci per una valutazione gratuita del tuo caso specifico.</p>
+  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+</div>
+
+<h2>FAQ - Domande frequenti sull'inquilino che sparisce e non paga</h2>
+
+<h3>Posso entrare nell'appartamento se l'inquilino è sparito?</h3>
+<p>No, assolutamente. Entrare nell'immobile senza un provvedimento giudiziale, anche se l'inquilino è irreperibile, può configurare il reato di violazione di domicilio. È necessario ottenere un'autorizzazione dal giudice per rientrare legalmente in possesso.</p>
+
+<h3>Cosa succede ai beni lasciati dall'inquilino?</h3>
+<p>Il proprietario non può disporre dei beni lasciati nell'immobile. È consigliabile redigere un inventario fotografico dei beni e, se possibile, chiedere al giudice l'autorizzazione a depositarli presso terzi. Altrimenti, si rischia un'accusa di appropriazione indebita.</p>
+
+<h3>Come posso recuperare i canoni di affitto non pagati?</h3>
+<p>Il metodo più comune è avviare una procedura di Decreto Ingiuntivo tramite un legale. Questo permette di ottenere un titolo esecutivo per il recupero delle somme dovute. Questa azione è distinta dal rientro in possesso dell'immobile.</p>
+
+<h3>Quanto tempo ci vuole per rientrare nell'immobile in questi casi?</h3>
+<p>I tempi possono variare a seconda del tribunale e della complessità del caso. Non si tratta di uno sfratto ordinario, quindi le tempistiche possono essere diverse. L'obiettivo è ottenere un provvedimento giudiziale (ad esempio, con ricorso ex art. 447 bis c.p.c.) che autorizzi il rilascio.</p>
+
+<h3>Posso risolvere il problema cambiando semplicemente la serratura?</h3>
+<p>No, è un errore grave. Cambiare la serratura equivale a uno "spoglio" del possesso e può far incorrere il proprietario in un reato di esercizio arbitrario delle proprie ragioni, con conseguenze penali e civili. Anche in caso di abbandono, è obbligatorio seguire la procedura legale.</p>
+`,
+  },
+  {
     slug: "affitto-a-nero-rischi-proprietario",
     title: "Affitto in nero: rischi per il proprietario e come regolarizzarsi",
     description: "Affitto in nero: sanzioni fiscali e penali per il proprietario, rischio denuncia dell'inquilino e come regolarizzare un contratto non registrato senza errori.",
