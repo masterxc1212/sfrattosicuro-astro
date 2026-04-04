@@ -32,7 +32,7 @@ const { formCta, qualifierQuestion, qualifierOptions, territory } = Astro.props;
 
       <!-- Form -->
       <article class="lcontact__form-card">
-        <h3>Scrivici ora</h3>
+        <h3>Richiedi la tua analisi gratuita</h3>
 
         <form
           action="/php/invia-email.php"
@@ -149,7 +149,7 @@ const { formCta, qualifierQuestion, qualifierOptions, territory } = Astro.props;
       if (btn) {
         btn.disabled = true;
         btn.textContent = 'Invio in corso…';
-        setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi consulenza gratuita'; }, 4000);
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi la tua analisi gratuita'; }, 4000);
       }
     });
     form.querySelectorAll<HTMLElement>('input[required],select[required]').forEach((field) => {

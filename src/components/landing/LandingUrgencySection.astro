@@ -15,6 +15,7 @@ const { urgency } = Astro.props;
 <section class="lurgency" aria-labelledby="lurgency-title">
   <div class="container lurgency__inner">
     <div class="lurgency__text">
+      {urgency.badge && <div class="lurgency__badge">{urgency.badge}</div>}
       <h2 id="lurgency-title" class="lurgency__title">{urgency.title}</h2>
       <p class="lurgency__body">{urgency.body}</p>
     </div>
@@ -33,6 +34,19 @@ const { urgency } = Astro.props;
     display: grid;
     gap: 1.5rem;
     align-items: center;
+  }
+  .lurgency__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .45rem .75rem;
+    margin-bottom: .75rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.16);
+    color: #fff8db;
+    font-weight: 800;
+    font-size: .78rem;
+    letter-spacing: .03em;
   }
   .lurgency__title {
     margin: 0 0 .5rem;

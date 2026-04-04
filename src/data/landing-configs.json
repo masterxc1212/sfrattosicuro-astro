@@ -130,14 +130,15 @@
     },
     "urgency": {
       "title": "Non aspettare il mese prossimo",
-      "body": "Ogni giorno di attesa aumenta le perdite. La nuova architettura prevede un blocco urgency variabile per campagne più aggressive o più istituzionali.",
-      "ctaLabel": "Attiva la consulenza gratuita",
-      "ctaHref": "#contatti"
+      "body": "Ogni giorno di attesa aumenta le perdite. Questa fascia può ospitare leve di scarsità reali e aggiornabili per mese, città o campagna keyword.",
+      "ctaLabel": "Blocca le perdite e parlaci ora",
+      "ctaHref": "#contatti-landing",
+      "badge": "🟡 Posti limitati questo mese"
     },
     "formCta": {
       "title": "Parla con un avvocato specializzato",
       "description": "Compila il form: analizziamo il caso e ti diciamo subito se e come procedere.",
-      "ctaLabel": "Invia richiesta"
+      "ctaLabel": "Richiedi la tua analisi gratuita"
     },
     "faq": [
       {

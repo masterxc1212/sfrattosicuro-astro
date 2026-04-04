@@ -38,6 +38,7 @@ export interface LandingUrgency {
   body: string;
   ctaLabel: string;
   ctaHref: string;
+  badge?: string;
 }
 
 export interface LandingTerritory {

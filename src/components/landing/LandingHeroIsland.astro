@@ -44,6 +44,7 @@ const { hero, qualifierQuestion, qualifierOptions, territory } = config;
       <p class="lhero__form-eyebrow">Consulenza gratuita</p>
       <h2 class="lhero__form-title">{hero.ctaLabel}</h2>
       <p class="lhero__form-note">{hero.note}</p>
+      <p class="lhero__form-audience">Riservato a proprietari e locatori</p>
 
       <form
         action="/php/invia-email.php"
@@ -109,7 +110,7 @@ const { hero, qualifierQuestion, qualifierOptions, territory } = config;
         </label>
 
         <button type="submit" class="btn-primary lhero__submit">
-          {hero.ctaLabel}
+          Ricevi una valutazione entro 24 ore
         </button>
         <p class="lhero__form-tiny">✓ Gratuita · ✓ Senza impegno · ✓ Risposta entro 24h</p>
       </form>
@@ -126,7 +127,7 @@ const { hero, qualifierQuestion, qualifierOptions, territory } = config;
       if (btn) {
         btn.disabled = true;
         btn.textContent = 'Invio in corso…';
-        setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi consulenza gratuita'; }, 4000);
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Ricevi una valutazione entro 24 ore'; }, 4000);
       }
     });
     form.querySelectorAll<HTMLElement>('input[required],select[required]').forEach((field) => {
@@ -247,9 +248,17 @@ const { hero, qualifierQuestion, qualifierOptions, territory } = config;
     color: #1b2951;
   }
   .lhero__form-note {
-    margin: 0 0 1rem;
+    margin: 0 0 .5rem;
     font-size: .85rem;
     color: #64748b;
+  }
+  .lhero__form-audience {
+    margin: 0 0 1rem;
+    font-size: .8rem;
+    font-weight: 800;
+    color: #1b2951;
+    text-transform: uppercase;
+    letter-spacing: .05em;
   }
   .lhero__form {
     display: grid;
