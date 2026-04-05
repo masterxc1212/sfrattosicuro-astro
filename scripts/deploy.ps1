@@ -44,22 +44,27 @@ if (-not $SkipVerify) {
 
 # 3. ASSETS CSS/JS
 Write-Host "=== ASSETS CSS/JS ===" -ForegroundColor Cyan
-$newAssets = Get-ChildItem "$distDir\_astro" | ForEach-Object {
-  Upload $_.FullName "$ftpBase/_astro/$($_.Name)"
-  $_.Name
-}
-Write-Host "  $($newAssets.Count) file caricati"
-
-# 4. CLEANUP CSS VECCHI SUL SERVER
-Write-Host "=== CLEANUP CSS VECCHI ===" -ForegroundColor Cyan
-$currentCss = (Get-ChildItem "$distDir\_astro" -Filter "*.css").Name
-$serverList = curl.exe -s "$ftpBase/_astro/" -u $ftpUser --list-only 2>&1
-$serverCss = $serverList | Select-String "\.css" | ForEach-Object { $_.ToString().Trim() }
-foreach ($f in $serverCss) {
-  if ($currentCss -notcontains $f) {
-    curl.exe -s -Q "DELE /_astro/$f" "ftp://ftp.sfrattosicuro.it/" -u $ftpUser 2>&1 | Out-Null
-    Write-Host "  Deleted: $f"
+$astroDir = "$distDir\_astro"
+if (Test-Path $astroDir) {
+  $newAssets = Get-ChildItem $astroDir | ForEach-Object {
+    Upload $_.FullName "$ftpBase/_astro/$($_.Name)"
+    $_.Name
   }
+  Write-Host "  $($newAssets.Count) file caricati"
+
+  # 4. CLEANUP CSS VECCHI SUL SERVER
+  Write-Host "=== CLEANUP CSS VECCHI ===" -ForegroundColor Cyan
+  $currentCss = (Get-ChildItem $astroDir -Filter "*.css").Name
+  $serverList = curl.exe -s "$ftpBase/_astro/" -u $ftpUser --list-only 2>&1
+  $serverCss = $serverList | Select-String "\.css" | ForEach-Object { $_.ToString().Trim() }
+  foreach ($f in $serverCss) {
+    if ($currentCss -notcontains $f) {
+      curl.exe -s -Q "DELE /_astro/$f" "ftp://ftp.sfrattosicuro.it/" -u $ftpUser 2>&1 | Out-Null
+      Write-Host "  Deleted: $f"
+    }
+  }
+} else {
+  Write-Host "  Nessuna cartella _astro presente nel dist: skip upload assets e cleanup CSS"
 }
 
 # 5. HTACCESS

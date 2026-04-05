@@ -16,6 +16,172 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "proroga-contratto-locazione-agenzia-entrate",
+    title: "Proroga del contratto di locazione all'Agenzia delle Entrate: scadenze e procedura",
+    description: "Proroga contratto locazione Agenzia Entrate: entro quando comunicarla, come compilare il modello RLI, imposta di registro, cedolare secca e sanzioni.",
+    excerpt: "Molti proprietari sanno che la proroga del contratto scatta automaticamente, ma sul piano fiscale resta un obbligo preciso: comunicare la proroga all'Agenzia delle Entrate entro 30 giorni, evitando sanzioni e regolarizzazioni costose.",
+    lead: "Molti proprietari sanno che, alla scadenza del contratto di locazione, la proroga scatta automaticamente se nessuna delle parti ha dato disdetta nei termini previsti. È corretto sul piano civilistico: il contratto si rinnova senza bisogno di firmare nulla di nuovo. Ma qui si ferma l'automatismo. Dal punto di vista fiscale, il proprietario ha un obbligo preciso: **comunicare la proroga all'Agenzia delle Entrate entro 30 giorni dalla data di decorrenza**. Chi trascura questo passaggio rischia sanzioni, interessi e possibili contestazioni.\n\nQuesta guida spiega come, quando e perché comunicare la [proroga del contratto di locazione](/blog/proroga-contratto-locazione) all'Agenzia delle Entrate, con tutti i passaggi operativi per farlo correttamente.\n\n---\n\n## Quando va comunicata la proroga: la scadenza dei 30 giorni\n\nLa norma di riferimento è l'articolo 17 del DPR 131/1986 (Testo Unico dell'Imposta di Registro), che impone la comunicazione delle proroghe dei contratti di locazione entro **30 giorni dalla data di decorrenza della proroga stessa**.\n\nIn pratica: se il tuo contratto 4+4 scade il 31 marzo 2026 e si rinnova automaticamente per un altro quadriennio dal 1° aprile 2026, la comunicazione all'Agenzia delle Entrate deve avvenire **entro il 1° maggio 2026**.\n\nQuesto vale sia per le proroghe automatiche (rinnovo tacito alla scadenza) sia per le proroghe concordate tra le parti con atto scritto. In entrambi i casi, l'adempimento fiscale è obbligatorio e non si sostituisce con la semplice inerzia.\n\n**Attenzione alla data di partenza**: il termine dei 30 giorni decorre dalla data in cui la proroga ha effetto, non dalla data in cui ci si accorge del rinnovo. Questo è uno degli errori più frequenti, che porta molti proprietari a comunicare in ritardo.\n\n---\n\n## Come si comunica la proroga: la procedura online con il modello RLI\n\nLo strumento ufficiale per comunicare la proroga di un contratto di locazione all'Agenzia delle Entrate è il **modello RLI** (Richiesta di Registrazione e adempimenti successivi per contratti di Locazione e affitto di Immobili).\n\nLo stesso modello viene usato anche per la [registrazione del contratto di locazione online](/blog/registrazione-contratto-locazione-online), per le cessioni e per le risoluzioni anticipate. Nel caso della proroga, si compila la sezione dedicata agli \"adempimenti successivi\".\n\nLa trasmissione può avvenire in tre modi:\n- **Online tramite i servizi telematici dell'Agenzia delle Entrate** (portale web, con credenziali SPID, CIE o Fisconline);\n- **Tramite un intermediario abilitato** (commercialista, CAF, consulente del lavoro);\n- **Agli sportelli fisici** dell'Agenzia delle Entrate (solo in alcuni casi, non è la modalità preferenziale).\n\nLa via più rapida e tracciabile è quella telematica.\n\n### Passaggi pratici per la compilazione\n\nSe sei in **regime ordinario** (non hai optato per la cedolare secca), la comunicazione della proroga comporta anche il **pagamento dell'imposta di registro**:\n\n1. Accedi al portale dell'Agenzia delle Entrate con SPID o CIE;\n2. Vai alla sezione **\"Contratti di locazione\"** e seleziona il contratto già registrato;\n3. Scegli l'opzione **\"Proroga\"** tra gli adempimenti successivi;\n4. Compila il modello RLI con i dati aggiornati: durata della proroga, canone annuo, eventuali variazioni;\n5. Calcola e versa l'**imposta di registro**: il 2% del canone annuo (per locazioni ad uso abitativo), con un minimo di 67 euro, usando il codice tributo **1504** tramite modello F24 Elide;\n6. Allega la ricevuta del pagamento e trasmetti il modello.\n\nIl sistema rilascia una ricevuta di avvenuta trasmissione che è bene conservare. In caso di controlli, è la prova che l'adempimento è stato effettuato nei termini.\n\n### Il caso della cedolare secca\n\nSe hai optato per la [cedolare secca](/blog/cedolare-secca-affitto), la situazione è più semplice sotto il profilo economico ma non elimina l'obbligo di comunicazione.\n\nCon la cedolare secca **non è dovuta l'imposta di registro** sulla proroga: questo è uno dei vantaggi principali del regime sostitutivo. Tuttavia, la comunicazione della proroga all'Agenzia delle Entrate resta **obbligatoria** entro gli stessi 30 giorni.\n\nLa procedura è analoga:\n1. Accedi al portale telematico;\n2. Seleziona il contratto già registrato con opzione cedolare secca;\n3. Comunica la proroga tramite il modello RLI (sezione adempimenti successivi);\n4. Non è richiesto alcun pagamento di imposta di registro.\n\nAttenzione: se durante la proroga intendi **revocare l'opzione per la cedolare secca** e tornare al regime ordinario, devi comunicarlo esplicitamente nella stessa dichiarazione e versare l'imposta di registro dovuta.\n\n---\n\n## Cosa succede se si dimentica di comunicare la proroga?\n\nDimenticare o ritardare la comunicazione della proroga all'Agenzia delle Entrate ha conseguenze concrete, sia dal punto di vista sanzionatorio sia sul piano fiscale.\n\n### Sanzioni per tardiva comunicazione e ravvedimento operoso\n\nLa sanzione ordinaria per la tardiva o omessa comunicazione della proroga varia in base al regime fiscale applicato:\n\n- **Regime ordinario**: la sanzione base è pari al **120%-240% dell'imposta di registro** non versata o versata in ritardo. Si aggiungono gli interessi legali.\n- **Cedolare secca**: la sanzione è pari al **50% della sanzione minima prevista** per omessa registrazione (poiché l'imposta di registro non è dovuta, la sanzione è comunque applicabile per l'omessa comunicazione).\n\nTuttavia, il proprietario può regolarizzare la posizione in autonomia tramite il **ravvedimento operoso** (art. 13 D.Lgs. 472/1997), che consente di ridurre significativamente le sanzioni se ci si ravvede spontaneamente prima che l'Agenzia delle Entrate avvii un accertamento.\n\nLe riduzioni dipendono dal tempo trascorso dalla scadenza:\n\n| Ritardo | Riduzione sanzione |\n|---|---|\n| Entro 14 giorni | 1/10 del minimo (sanzione ridotta all'1,5%) |\n| Da 15 a 30 giorni | 1/9 del minimo |\n| Da 31 a 90 giorni | 1/8 del minimo |\n| Da 91 giorni a 1 anno | 1/7 del minimo |\n| Oltre 1 anno | 1/6 del minimo |\n\nIn pratica: più si aspetta, più la sanzione ridotta cresce. Conviene regolarizzare il prima possibile.\n\n### Rischi e implicazioni fiscali\n\nOltre alle sanzioni dirette, la mancata comunicazione della proroga può avere implicazioni più ampie:\n\n- **Contestazioni sulla locazione**: in caso di contenziosi con l'inquilino (ad esempio per morosità o per avviare una [procedura di sfratto](/blog/sfratto-per-morosita)), una posizione fiscale non in regola può complicare la gestione del rapporto e la documentazione da presentare al tribunale;\n- **Perdita di agevolazioni**: in alcuni casi, irregolarità nella registrazione o negli adempimenti successivi possono incidere sull'accesso a detrazioni e benefici fiscali;\n- **Controlli incrociati**: l'Agenzia delle Entrate incrocia i dati delle dichiarazioni dei redditi con quelli dei contratti registrati. Un contratto in proroga non comunicata può emergere come anomalia.\n\n---\n\n## Errori comuni da evitare\n\nQuesti sono i passi falsi più frequenti tra i proprietari che gestiscono in autonomia gli adempimenti legati alla locazione:\n\n1. **Confondere proroga automatica con adempimento automatico**: il rinnovo tacito non sostituisce la comunicazione all'AdE. Sono due piani distinti.\n\n2. **Calcolare male i 30 giorni**: il termine parte dalla data di decorrenza della proroga, non dalla data in cui si ricorda di farla. Segnare in calendario la scadenza con qualche giorno di anticipo è una buona prassi.\n\n3. **Non verificare se il contratto è in cedolare secca o in regime ordinario**: i due regimi hanno procedure parzialmente diverse (imposta di registro sì/no). Controllare prima di procedere evita errori nel pagamento.\n\n4. **Trascurare la conferma dell'opzione cedolare secca**: se hai scelto la cedolare secca, alla proroga non devi fare nulla di speciale per mantenerla, ma devi comunque comunicare la proroga. Se invece vuoi uscire dal regime, devi dichiararlo esplicitamente entro i termini.\n\n5. **Non conservare le ricevute**: la ricevuta di trasmissione del modello RLI è la prova dell'adempimento. Conservarla (in formato digitale o cartaceo) è indispensabile in caso di controlli.\n\n6. **Credere che il commercialista si occupi di tutto automaticamente**: se hai delegato la gestione del contratto, verifica che l'incarico includa anche la comunicazione delle proroghe. Non è sempre scontato.\n\n---\n\n## Checklist operativa per il proprietario\n\nPrima della scadenza del contratto, usa questa checklist per non dimenticare nulla:\n\n- [ ] Verifico la data di scadenza del contratto e la data di decorrenza della proroga\n- [ ] Segno in calendario la scadenza dei 30 giorni per la comunicazione\n- [ ] Controllo se il contratto è in regime ordinario o in cedolare secca\n- [ ] Accedo al portale telematico dell'Agenzia delle Entrate (SPID o CIE)\n- [ ] Compilo il modello RLI nella sezione \"adempimenti successivi – proroga\"\n- [ ] Se in regime ordinario: calcolo e verso l'imposta di registro (codice tributo 1504, F24 Elide)\n- [ ] Se in cedolare secca: confermo o revoco l'opzione\n- [ ] Trasmetto il modello e scarico la ricevuta\n- [ ] Conservo la ricevuta insieme agli altri documenti del contratto\n\n---\n\n## Hai bisogno di supporto per la gestione fiscale del tuo contratto?\n\nGestire gli adempimenti fiscali legati alla locazione in modo corretto richiede attenzione alle scadenze e conoscenza delle procedure. Se hai dubbi sulla proroga del tuo contratto, sul regime fiscale applicabile o su come regolarizzare una comunicazione tardiva, **il team di Sfratto Sicuro è a disposizione**.\n\n[Contatta Sfratto Sicuro](/contatti) per una consulenza pratica e senza impegno.\n\n---\n\n## Domande frequenti\n\n**La comunicazione della proroga è obbligatoria anche con la cedolare secca?**\nSì. Anche in regime di cedolare secca, la proroga del contratto di locazione va comunicata all'Agenzia delle Entrate entro 30 giorni dalla data di decorrenza. La differenza rispetto al regime ordinario è che con la cedolare secca non è dovuta l'imposta di registro sulla proroga: la comunicazione rimane obbligatoria, ma è gratuita.\n\n**Cosa succede se pago l'imposta di registro ma non invio il modello RLI?**\nIl pagamento dell'imposta senza la trasmissione del modello RLI non è sufficiente. L'adempimento è considerato incompleto: l'Agenzia delle Entrate non ha traccia della proroga nel sistema. In questo caso si è comunque in una situazione di irregolarità, seppure parziale. È necessario inviare il modello RLI anche dopo il pagamento.\n\n**Posso delegare la comunicazione al mio commercialista o a un intermediario?**\nSì. La comunicazione della proroga può essere effettuata da un intermediario abilitato (commercialista, consulente fiscale, CAF) tramite i servizi telematici dell'Agenzia delle Entrate. In questo caso, assicurati di fornire all'intermediario tutti i dati necessari (numero di registrazione del contratto, data di scadenza, canone annuo) e di concordare esplicitamente che l'incarico comprende anche la gestione delle proroghe.\n\n**Quanto costa comunicare la proroga?**\nDipende dal regime fiscale. In **regime ordinario**, la comunicazione comporta il versamento dell'imposta di registro pari al 2% del canone annuo (minimo 67 euro), oltre ai costi del servizio se ci si avvale di un intermediario. In **cedolare secca**, la comunicazione è gratuita: nessuna imposta di registro da versare, solo la trasmissione telematica del modello RLI.\n\n**Cosa si intende per \"ravvedimento operoso\" in questo contesto?**\nIl ravvedimento operoso è uno strumento previsto dalla legge che consente al contribuente di regolarizzare spontaneamente una violazione fiscale (come la tardiva comunicazione della proroga) pagando una sanzione ridotta rispetto a quella ordinaria. La riduzione dipende da quanto tempo è trascorso dalla scadenza: si va da 1/10 del minimo (entro 14 giorni) a 1/6 del minimo (oltre un anno). Per usufruire del ravvedimento, la regolarizzazione deve avvenire prima che l'Agenzia delle Entrate avvii un accertamento formale.",
+    publishedAt: "2026-04-05",
+    category: "Locazioni",
+    readingTime: "8 min",
+    sourceNote: "Approvato 2026-04-05. Keyword: proroga contratto locazione agenzia entrate, vol 210, KD 0. Batch 2 #10.",
+    html: `
+Molti proprietari sanno che, alla scadenza del contratto di locazione, la proroga scatta automaticamente se nessuna delle parti ha dato disdetta nei termini previsti. È corretto sul piano civilistico: il contratto si rinnova senza bisogno di firmare nulla di nuovo. Ma qui si ferma l'automatismo. Dal punto di vista fiscale, il proprietario ha un obbligo preciso: **comunicare la proroga all'Agenzia delle Entrate entro 30 giorni dalla data di decorrenza**. Chi trascura questo passaggio rischia sanzioni, interessi e possibili contestazioni.
+
+Questa guida spiega come, quando e perché comunicare la [proroga del contratto di locazione](/blog/proroga-contratto-locazione) all'Agenzia delle Entrate, con tutti i passaggi operativi per farlo correttamente.
+
+---
+
+## Quando va comunicata la proroga: la scadenza dei 30 giorni
+
+La norma di riferimento è l'articolo 17 del DPR 131/1986 (Testo Unico dell'Imposta di Registro), che impone la comunicazione delle proroghe dei contratti di locazione entro **30 giorni dalla data di decorrenza della proroga stessa**.
+
+In pratica: se il tuo contratto 4+4 scade il 31 marzo 2026 e si rinnova automaticamente per un altro quadriennio dal 1° aprile 2026, la comunicazione all'Agenzia delle Entrate deve avvenire **entro il 1° maggio 2026**.
+
+Questo vale sia per le proroghe automatiche (rinnovo tacito alla scadenza) sia per le proroghe concordate tra le parti con atto scritto. In entrambi i casi, l'adempimento fiscale è obbligatorio e non si sostituisce con la semplice inerzia.
+
+**Attenzione alla data di partenza**: il termine dei 30 giorni decorre dalla data in cui la proroga ha effetto, non dalla data in cui ci si accorge del rinnovo. Questo è uno degli errori più frequenti, che porta molti proprietari a comunicare in ritardo.
+
+---
+
+## Come si comunica la proroga: la procedura online con il modello RLI
+
+Lo strumento ufficiale per comunicare la proroga di un contratto di locazione all'Agenzia delle Entrate è il **modello RLI** (Richiesta di Registrazione e adempimenti successivi per contratti di Locazione e affitto di Immobili).
+
+Lo stesso modello viene usato anche per la [registrazione del contratto di locazione online](/blog/registrazione-contratto-locazione-online), per le cessioni e per le risoluzioni anticipate. Nel caso della proroga, si compila la sezione dedicata agli "adempimenti successivi".
+
+La trasmissione può avvenire in tre modi:
+- **Online tramite i servizi telematici dell'Agenzia delle Entrate** (portale web, con credenziali SPID, CIE o Fisconline);
+- **Tramite un intermediario abilitato** (commercialista, CAF, consulente del lavoro);
+- **Agli sportelli fisici** dell'Agenzia delle Entrate (solo in alcuni casi, non è la modalità preferenziale).
+
+La via più rapida e tracciabile è quella telematica.
+
+### Passaggi pratici per la compilazione
+
+Se sei in **regime ordinario** (non hai optato per la cedolare secca), la comunicazione della proroga comporta anche il **pagamento dell'imposta di registro**:
+
+1. Accedi al portale dell'Agenzia delle Entrate con SPID o CIE;
+2. Vai alla sezione **"Contratti di locazione"** e seleziona il contratto già registrato;
+3. Scegli l'opzione **"Proroga"** tra gli adempimenti successivi;
+4. Compila il modello RLI con i dati aggiornati: durata della proroga, canone annuo, eventuali variazioni;
+5. Calcola e versa l'**imposta di registro**: il 2% del canone annuo (per locazioni ad uso abitativo), con un minimo di 67 euro, usando il codice tributo **1504** tramite modello F24 Elide;
+6. Allega la ricevuta del pagamento e trasmetti il modello.
+
+Il sistema rilascia una ricevuta di avvenuta trasmissione che è bene conservare. In caso di controlli, è la prova che l'adempimento è stato effettuato nei termini.
+
+### Il caso della cedolare secca
+
+Se hai optato per la [cedolare secca](/blog/cedolare-secca-affitto), la situazione è più semplice sotto il profilo economico ma non elimina l'obbligo di comunicazione.
+
+Con la cedolare secca **non è dovuta l'imposta di registro** sulla proroga: questo è uno dei vantaggi principali del regime sostitutivo. Tuttavia, la comunicazione della proroga all'Agenzia delle Entrate resta **obbligatoria** entro gli stessi 30 giorni.
+
+La procedura è analoga:
+1. Accedi al portale telematico;
+2. Seleziona il contratto già registrato con opzione cedolare secca;
+3. Comunica la proroga tramite il modello RLI (sezione adempimenti successivi);
+4. Non è richiesto alcun pagamento di imposta di registro.
+
+Attenzione: se durante la proroga intendi **revocare l'opzione per la cedolare secca** e tornare al regime ordinario, devi comunicarlo esplicitamente nella stessa dichiarazione e versare l'imposta di registro dovuta.
+
+---
+
+## Cosa succede se si dimentica di comunicare la proroga?
+
+Dimenticare o ritardare la comunicazione della proroga all'Agenzia delle Entrate ha conseguenze concrete, sia dal punto di vista sanzionatorio sia sul piano fiscale.
+
+### Sanzioni per tardiva comunicazione e ravvedimento operoso
+
+La sanzione ordinaria per la tardiva o omessa comunicazione della proroga varia in base al regime fiscale applicato:
+
+- **Regime ordinario**: la sanzione base è pari al **120%-240% dell'imposta di registro** non versata o versata in ritardo. Si aggiungono gli interessi legali.
+- **Cedolare secca**: la sanzione è pari al **50% della sanzione minima prevista** per omessa registrazione (poiché l'imposta di registro non è dovuta, la sanzione è comunque applicabile per l'omessa comunicazione).
+
+Tuttavia, il proprietario può regolarizzare la posizione in autonomia tramite il **ravvedimento operoso** (art. 13 D.Lgs. 472/1997), che consente di ridurre significativamente le sanzioni se ci si ravvede spontaneamente prima che l'Agenzia delle Entrate avvii un accertamento.
+
+Le riduzioni dipendono dal tempo trascorso dalla scadenza:
+
+| Ritardo | Riduzione sanzione |
+|---|---|
+| Entro 14 giorni | 1/10 del minimo (sanzione ridotta all'1,5%) |
+| Da 15 a 30 giorni | 1/9 del minimo |
+| Da 31 a 90 giorni | 1/8 del minimo |
+| Da 91 giorni a 1 anno | 1/7 del minimo |
+| Oltre 1 anno | 1/6 del minimo |
+
+In pratica: più si aspetta, più la sanzione ridotta cresce. Conviene regolarizzare il prima possibile.
+
+### Rischi e implicazioni fiscali
+
+Oltre alle sanzioni dirette, la mancata comunicazione della proroga può avere implicazioni più ampie:
+
+- **Contestazioni sulla locazione**: in caso di contenziosi con l'inquilino (ad esempio per morosità o per avviare una [procedura di sfratto](/blog/sfratto-per-morosita)), una posizione fiscale non in regola può complicare la gestione del rapporto e la documentazione da presentare al tribunale;
+- **Perdita di agevolazioni**: in alcuni casi, irregolarità nella registrazione o negli adempimenti successivi possono incidere sull'accesso a detrazioni e benefici fiscali;
+- **Controlli incrociati**: l'Agenzia delle Entrate incrocia i dati delle dichiarazioni dei redditi con quelli dei contratti registrati. Un contratto in proroga non comunicata può emergere come anomalia.
+
+---
+
+## Errori comuni da evitare
+
+Questi sono i passi falsi più frequenti tra i proprietari che gestiscono in autonomia gli adempimenti legati alla locazione:
+
+1. **Confondere proroga automatica con adempimento automatico**: il rinnovo tacito non sostituisce la comunicazione all'AdE. Sono due piani distinti.
+
+2. **Calcolare male i 30 giorni**: il termine parte dalla data di decorrenza della proroga, non dalla data in cui si ricorda di farla. Segnare in calendario la scadenza con qualche giorno di anticipo è una buona prassi.
+
+3. **Non verificare se il contratto è in cedolare secca o in regime ordinario**: i due regimi hanno procedure parzialmente diverse (imposta di registro sì/no). Controllare prima di procedere evita errori nel pagamento.
+
+4. **Trascurare la conferma dell'opzione cedolare secca**: se hai scelto la cedolare secca, alla proroga non devi fare nulla di speciale per mantenerla, ma devi comunque comunicare la proroga. Se invece vuoi uscire dal regime, devi dichiararlo esplicitamente entro i termini.
+
+5. **Non conservare le ricevute**: la ricevuta di trasmissione del modello RLI è la prova dell'adempimento. Conservarla (in formato digitale o cartaceo) è indispensabile in caso di controlli.
+
+6. **Credere che il commercialista si occupi di tutto automaticamente**: se hai delegato la gestione del contratto, verifica che l'incarico includa anche la comunicazione delle proroghe. Non è sempre scontato.
+
+---
+
+## Checklist operativa per il proprietario
+
+Prima della scadenza del contratto, usa questa checklist per non dimenticare nulla:
+
+- [ ] Verifico la data di scadenza del contratto e la data di decorrenza della proroga
+- [ ] Segno in calendario la scadenza dei 30 giorni per la comunicazione
+- [ ] Controllo se il contratto è in regime ordinario o in cedolare secca
+- [ ] Accedo al portale telematico dell'Agenzia delle Entrate (SPID o CIE)
+- [ ] Compilo il modello RLI nella sezione "adempimenti successivi – proroga"
+- [ ] Se in regime ordinario: calcolo e verso l'imposta di registro (codice tributo 1504, F24 Elide)
+- [ ] Se in cedolare secca: confermo o revoco l'opzione
+- [ ] Trasmetto il modello e scarico la ricevuta
+- [ ] Conservo la ricevuta insieme agli altri documenti del contratto
+
+---
+
+## Hai bisogno di supporto per la gestione fiscale del tuo contratto?
+
+Gestire gli adempimenti fiscali legati alla locazione in modo corretto richiede attenzione alle scadenze e conoscenza delle procedure. Se hai dubbi sulla proroga del tuo contratto, sul regime fiscale applicabile o su come regolarizzare una comunicazione tardiva, **il team di Sfratto Sicuro è a disposizione**.
+
+[Contatta Sfratto Sicuro](/contatti) per una consulenza pratica e senza impegno.
+
+---
+
+## Domande frequenti
+
+**La comunicazione della proroga è obbligatoria anche con la cedolare secca?**
+Sì. Anche in regime di cedolare secca, la proroga del contratto di locazione va comunicata all'Agenzia delle Entrate entro 30 giorni dalla data di decorrenza. La differenza rispetto al regime ordinario è che con la cedolare secca non è dovuta l'imposta di registro sulla proroga: la comunicazione rimane obbligatoria, ma è gratuita.
+
+**Cosa succede se pago l'imposta di registro ma non invio il modello RLI?**
+Il pagamento dell'imposta senza la trasmissione del modello RLI non è sufficiente. L'adempimento è considerato incompleto: l'Agenzia delle Entrate non ha traccia della proroga nel sistema. In questo caso si è comunque in una situazione di irregolarità, seppure parziale. È necessario inviare il modello RLI anche dopo il pagamento.
+
+**Posso delegare la comunicazione al mio commercialista o a un intermediario?**
+Sì. La comunicazione della proroga può essere effettuata da un intermediario abilitato (commercialista, consulente fiscale, CAF) tramite i servizi telematici dell'Agenzia delle Entrate. In questo caso, assicurati di fornire all'intermediario tutti i dati necessari (numero di registrazione del contratto, data di scadenza, canone annuo) e di concordare esplicitamente che l'incarico comprende anche la gestione delle proroghe.
+
+**Quanto costa comunicare la proroga?**
+Dipende dal regime fiscale. In **regime ordinario**, la comunicazione comporta il versamento dell'imposta di registro pari al 2% del canone annuo (minimo 67 euro), oltre ai costi del servizio se ci si avvale di un intermediario. In **cedolare secca**, la comunicazione è gratuita: nessuna imposta di registro da versare, solo la trasmissione telematica del modello RLI.
+
+**Cosa si intende per "ravvedimento operoso" in questo contesto?**
+Il ravvedimento operoso è uno strumento previsto dalla legge che consente al contribuente di regolarizzare spontaneamente una violazione fiscale (come la tardiva comunicazione della proroga) pagando una sanzione ridotta rispetto a quella ordinaria. La riduzione dipende da quanto tempo è trascorso dalla scadenza: si va da 1/10 del minimo (entro 14 giorni) a 1/6 del minimo (oltre un anno). Per usufruire del ravvedimento, la regolarizzazione deve avvenire prima che l'Agenzia delle Entrate avvii un accertamento formale.
+    `
+  },
+  {
     slug: "inquilino-sparisce-non-paga-affitto",
     title: "L'inquilino sparisce e non paga: cosa può fare il proprietario",
     description: "L'inquilino lascia l'appartamento senza pagare l'affitto? Scopri cosa può fare il proprietario per recuperare i canoni e gestire il rilascio, evitando errori.",
