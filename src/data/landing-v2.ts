@@ -288,8 +288,91 @@ function buildServices(territory: LandingTerritoryConfig) {
     ...landingOriginal.services,
     subtitle:
       territory.slug === 'nazionale'
-        ? landingOriginal.services.subtitle
-        : `${landingOriginal.services.subtitle} Servizio attivo anche ${territory.dynamicReplacement?.area || ''}.`,
+        ? 'Compenso complessivo di 1.300€ fino al rilascio dell’immobile, senza acconti. Il pagamento viene richiesto solo dopo la convalida dello sfratto.'
+        : `Compenso complessivo di 1.300€ fino al rilascio dell’immobile, senza acconti. Servizio attivo anche ${territory.dynamicReplacement?.area || ''}.`,
+    mainService: {
+      ...landingOriginal.services.mainService,
+      title: 'SERVIZIO LEGALE FINO AL RILASCIO DELL’IMMOBILE',
+      items: [
+        {
+          icon: 'fa-file-contract',
+          title: 'Analisi del caso',
+          body: 'Valutazione iniziale della pratica di sfratto per morosità e definizione della strategia più adatta.',
+          note: '✓ Attività compresa nel compenso complessivo',
+          isGold: false,
+        },
+        {
+          icon: 'fa-pen-nib',
+          title: 'Predisposizione degli atti',
+          body: 'Intimazione di sfratto e citazione per convalida predisposte dall’avvocato incaricato.',
+          note: '✓ Atti e contributi compresi',
+          isGold: false,
+        },
+        {
+          icon: 'fa-bell',
+          title: 'Notifiche e deposito',
+          body: 'Gestione delle notifiche e del deposito della procedura presso il Tribunale competente.',
+          note: '✓ Procedura seguita fino all’udienza',
+          isGold: false,
+        },
+        {
+          icon: 'fa-balance-scale',
+          title: 'Udienza di convalida',
+          body: 'Assistenza in udienza per ottenere il provvedimento di convalida dello sfratto.',
+          note: '✓ Il pagamento viene richiesto solo dopo questa fase',
+          isGold: false,
+        },
+        {
+          icon: 'fa-gavel',
+          title: 'Prosecuzione fino al rilascio',
+          body: '<strong>La pratica prosegue, se necessario, fino al rilascio dell’immobile.</strong>',
+          note: '★ Il compenso complessivo resta quello concordato: 1.300€ fino al rilascio',
+          isGold: true,
+        },
+      ],
+    },
+    bonuses: {
+      ...landingOriginal.services.bonuses,
+      title: 'COSA SUCCEDE DOPO LA CONVALIDA',
+      howItWorksTitle: 'Dopo la convalida',
+      howItWorksBody: 'La convalida non coincide sempre con il rilascio immediato dell’immobile. Se necessario, la procedura prosegue con la fase esecutiva.',
+      howItWorksItems: [
+        'la convalida è il provvedimento del Giudice che conferma lo sfratto;',
+        'se l’immobile non viene rilasciato spontaneamente, si passa alla fase esecutiva;',
+        'nella nostra formula v3 il riferimento economico resta il compenso complessivo fino al rilascio dell’immobile.',
+      ],
+      items: [
+        {
+          badge: 'FASE 1',
+          title: 'Convalida dello sfratto',
+          body: 'È il primo risultato decisivo della procedura, e il momento in cui viene richiesto il pagamento concordato.',
+          note: '✓ Nessun acconto prima della convalida',
+        },
+        {
+          badge: 'FASE 2',
+          title: 'Eventuale fase esecutiva',
+          body: 'Se l’immobile non viene rilasciato spontaneamente, si prosegue per ottenere il rilascio effettivo.',
+          note: '✓ Distinzione chiara tra convalida e rilascio',
+        },
+        {
+          badge: 'FOCUS',
+          title: 'Obiettivo finale',
+          body: 'Riottenere materialmente il possesso dell’immobile, non solo il provvedimento di convalida.',
+          note: '★ Copy e struttura allineati a questo concetto',
+          isGold: true,
+        },
+      ],
+    },
+    pricingBox: {
+      ...landingOriginal.services.pricingBox,
+      title: 'Formula economica chiara',
+      items: [
+        { value: '€1.300', label: 'Compenso complessivo fino al rilascio' },
+        { value: '0€', label: 'Acconto iniziale' },
+        { value: 'Post-convalida', label: 'Momento del pagamento' },
+      ],
+      ctaLabel: 'RICHIEDI UNA VALUTAZIONE RAPIDA',
+    },
   };
 }
 
