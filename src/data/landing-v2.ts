@@ -140,13 +140,13 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       title: `Avvocato specializzato in\nSfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ti aiutiamo a capire rapidamente se puoi attivare la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e passaggi spiegati in modo semplice ma corretto.`
-          : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo a capire rapidamente se puoi attivare la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e passaggi spiegati in modo semplice ma corretto.`,
+          ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`
+          : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
       prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
       bullets: [
-        '<strong>Solo proprietari/locatori</strong> – pagina pensata per chi deve agire, non per richieste informative generiche',
-        '<strong>Compenso complessivo di 1.300€ fino al rilascio dell\'immobile</strong> – nessun acconto richiesto',
-        '<strong>Pagamento richiesto solo dopo la convalida</strong> – la procedura prosegue poi fino al rilascio dell\'immobile',
+        '<strong>Compenso complessivo di 1.300€ fino al rilascio dell\'immobile</strong>',
+        '<strong>Nessun acconto</strong> – il pagamento viene richiesto solo dopo la convalida dello sfratto',
+        '<strong>Convalida mediamente in circa 60 giorni</strong> – dato operativo che può variare in base al Tribunale competente e all\'eventuale opposizione',
       ],
       formTitle: 'Verifica subito se puoi partire',
       formSubtitle: 'Lascia i tuoi dati essenziali e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
@@ -227,7 +227,7 @@ function buildProblems(version: LandingVersion, territory: LandingTerritoryConfi
       badge: 'SEI NELLA SITUAZIONE GIUSTA?',
       title: 'Questa pagina è per proprietari con un problema concreto di morosità',
       subtitle: territory.slug === 'nazionale'
-        ? 'Se l’inquilino non paga, vuoi capire costi, tempi e se puoi partire subito. Se stai solo cercando informazioni generiche o non sei il proprietario/locatore, questa non è la pagina giusta.'
+        ? 'Se l’inquilino non paga e vuoi capire costi, tempi e passaggi della procedura, qui trovi una spiegazione operativa. La pagina è pensata per proprietari o locatori che devono valutare una procedura concreta di sfratto per morosità.'
         : `Se l’inquilino non paga ${territory.dynamicReplacement?.area || ''}, qui trovi solo le risposte operative che servono a un proprietario per partire davvero.`,
       items: landingOriginal.problems.items.slice(0, 4),
     };
@@ -255,10 +255,11 @@ function buildCalculator(territory: LandingTerritoryConfig) {
 function buildLegalCost(territory: LandingTerritoryConfig) {
   return {
     ...landingOriginal.legalCost,
+    title: 'Le spese legali possono essere poste a carico dell’inquilino moroso',
     body:
       territory.slug === 'nazionale'
-        ? landingOriginal.legalCost.body
-        : `${landingOriginal.legalCost.body} Gestiamo la pratica anche presso ${territory.tribunalsLabel}.`,
+        ? 'Nella pronuncia di convalida, il Giudice può condannare l’inquilino moroso anche al rimborso delle spese legali. È un elemento importante, ma va sempre valutato nel contesto concreto della procedura e dell’eventuale fase di recupero.'
+        : `Nella pronuncia di convalida, il Giudice può condannare l’inquilino moroso anche al rimborso delle spese legali. Gestiamo la pratica anche presso ${territory.tribunalsLabel}.`,
   };
 }
 
@@ -267,8 +268,8 @@ function buildProcedure(territory: LandingTerritoryConfig) {
     ...landingOriginal.procedure,
     subtitle:
       territory.slug === 'nazionale'
-        ? landingOriginal.procedure.subtitle
-        : `${landingOriginal.procedure.subtitle} Operiamo anche presso ${territory.tribunalsLabel}.`,
+        ? 'Un percorso operativo collaudato per arrivare alla convalida dello sfratto e, se necessario, proseguire fino al rilascio dell’immobile. I tempi possono variare in base al Tribunale e alla presenza di opposizione.'
+        : `Un percorso operativo collaudato per arrivare alla convalida dello sfratto e, se necessario, proseguire fino al rilascio dell’immobile. Operiamo anche presso ${territory.tribunalsLabel}.`,
     steps: landingOriginal.procedure.steps.map((step, index) => {
       if (territory.slug === 'nazionale') return step;
       if (index === 2) {
@@ -295,10 +296,13 @@ function buildServices(territory: LandingTerritoryConfig) {
 function buildCostTransparency(territory: LandingTerritoryConfig) {
   return {
     ...landingOriginal.costTransparency,
+    title: 'Compenso chiaro e struttura del pagamento',
     subtitle:
       territory.slug === 'nazionale'
-        ? landingOriginal.costTransparency.subtitle
+        ? 'Ti spieghiamo in modo semplice ma corretto cosa comprende il compenso, quando viene richiesto e come si distingue il momento della convalida dal risultato finale del rilascio dell’immobile.'
         : `${landingOriginal.costTransparency.subtitle} Formula valida anche per pratiche ${territory.dynamicReplacement?.area || ''}.`,
+    priceTitle: 'Compenso complessivo: 1.300€ fino al rilascio dell’immobile',
+    priceBody: 'Il compenso complessivo concordato è di <strong>1.300€ fino al rilascio dell’immobile</strong>. <strong>Non chiediamo acconti</strong>: il pagamento viene richiesto solo dopo la convalida dello sfratto. Da quel momento, la procedura prosegue — se necessario — fino al rilascio dell’immobile.',
   };
 }
 
@@ -368,12 +372,12 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-gavel',
         q: 'Cosa succede dopo la convalida dello sfratto?',
-        a: 'Dopo la convalida si passa, se necessario, alla fase esecutiva per ottenere il rilascio dell’immobile. Per questo distinguiamo il momento della convalida dal risultato finale di riottenere materialmente il possesso dell’immobile.',
+        a: 'Dopo la convalida, se l’immobile non viene rilasciato spontaneamente, si passa alla fase esecutiva per ottenere il rilascio. Per questo distinguiamo il momento della convalida dal risultato finale di riottenere materialmente il possesso dell’immobile.',
       },
       {
         icon: 'fa-home',
         q: 'Questa pagina vale anche per lo sfratto per finita locazione?',
-        a: 'Questa landing è dedicata ai casi di sfratto per morosità. Ci occupiamo anche di sfratto per finita locazione, ma quel servizio va presentato con pagina e annuncio dedicati per evitare confusione tra procedure diverse.',
+        a: 'Questa landing è dedicata ai casi di sfratto per morosità. Ci occupiamo anche di sfratto per finita locazione, ma quel servizio richiede pagina e annuncio dedicati, perché presupposti e messaggi della procedura sono diversi.',
       }
     ] : items,
   };
@@ -385,7 +389,7 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
     title: version === 'v3' ? 'Parliamo solo di casi concreti di morosità' : landingOriginal.contactForm.title,
     subtitle:
       version === 'v3'
-        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo semplice costi, tempi e passaggi della procedura.`
+        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo chiaro costi, tempi e passaggi della procedura.`
         : territory.slug === 'nazionale'
           ? landingOriginal.contactForm.subtitle
           : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Convalida in 60 giorni, €1.300 tutto incluso.`,
