@@ -16,9 +16,9 @@ const { hero = landingOriginal.hero } = Astro.props;
 >
   <div class="container mx-auto px-4 relative z-10">
     <div class="max-w-6xl mx-auto">
-      <div class="hero-grid">
+      <div class="hero-grid landing-v3-hero-grid">
 
-        <div class="hero-content">
+        <div class="hero-content landing-v3-hero-content">
 
           <div class="hero-seal-mobile lg:hidden">
             <picture>
@@ -37,17 +37,17 @@ const { hero = landingOriginal.hero } = Astro.props;
             </picture>
           </div>
 
-          <h1 class="hero-title" set:html={hero.title.replace(/\n/g, '<br>')}></h1>
+          <h1 class="hero-title landing-v3-hero-title" set:html={hero.title.replace(/\n/g, '<br>')}></h1>
 
-          <h2 class="hero-subtitle" set:html={hero.subtitle}></h2>
+          <h2 class="hero-subtitle landing-v3-hero-subtitle" set:html={hero.subtitle}></h2>
 
           {hero.prequalificationNote && (
-            <div class="inline-block bg-white/10 border border-white/20 rounded-lg px-4 py-3 mb-4 text-sm font-semibold backdrop-blur-sm">
+            <div class="inline-block landing-v3-prequal bg-white/10 border border-white/20 rounded-lg px-4 py-3 mb-4 text-sm font-semibold backdrop-blur-sm">
               <span set:html={hero.prequalificationNote}></span>
             </div>
           )}
 
-          <ul class="hero-benefits" style="min-height:200px">
+          <ul class="hero-benefits landing-v3-hero-benefits" style="min-height:200px">
             {hero.bullets.map((bullet) => (
               <li class="hero-benefit-item">
                 <span class="checkmark" aria-hidden="true">✓</span>
@@ -58,9 +58,9 @@ const { hero = landingOriginal.hero } = Astro.props;
 
         </div>
 
-        <div class="hero-form-container">
-          <div class="hero-form-card">
-            <div class="text-center">
+        <div class="hero-form-container landing-v3-hero-form-wrap">
+          <div class="hero-form-card landing-v3-hero-form-card">
+            <div class="text-center landing-v3-form-head">
               <h3 class="form-title">{hero.formTitle}</h3>
               <p class="form-subtitle" set:html={hero.formSubtitle}></p>
             </div>

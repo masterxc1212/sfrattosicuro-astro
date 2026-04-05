@@ -9,17 +9,17 @@ interface Props {
 
 const { quickFacts } = Astro.props;
 ---
-<section class="py-8 bg-white border-b border-gray-200" aria-labelledby="landing-quick-facts-title">
+<section class="py-8 bg-white border-b border-gray-200 landing-v3-quickfacts" aria-labelledby="landing-quick-facts-title">
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-6">
+      <div class="text-center mb-6 landing-v3-section-head">
         <div class="text-sm font-bold uppercase tracking-wide text-green-security mb-2">{quickFacts.eyebrow}</div>
         <h2 id="landing-quick-facts-title" class="text-2xl md:text-3xl font-bold text-blue-navy">{quickFacts.title}</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         {quickFacts.items.map((item) => (
-          <article class="bg-gray-pearl rounded-2xl border border-gray-200 p-5 md:p-6 text-center card-shadow">
+          <article class="bg-gray-pearl rounded-2xl border border-gray-200 p-5 md:p-6 text-center card-shadow landing-v3-fact-card">
             <div class="text-sm font-bold uppercase tracking-wide text-green-security mb-2">{item.label}</div>
             <div class="text-xl md:text-2xl font-bold text-blue-navy mb-3 leading-tight">{item.value}</div>
             {item.note && <p class="text-sm text-dark-gray leading-relaxed max-w-xs mx-auto">{item.note}</p>}

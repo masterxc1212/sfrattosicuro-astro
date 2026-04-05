@@ -108,9 +108,9 @@ const config = buildLandingPageConfig({
       })();
     </script>
   </head>
-  <body>
+  <body class="landing-v3-body">
     <LandingOriginalHeaderSection />
-    <main id="main-content" style="min-height:100vh; margin-top: var(--header-h, 90px);">
+    <main id="main-content" class="landing-v3-main" style="min-height:100vh; margin-top: var(--header-h, 90px);">
       <LandingOriginalHeroSection hero={config.hero} />
       <LandingQuickFactsSection quickFacts={config.quickFacts} />
       <LandingOriginalTrustBarSection trustBar={config.trustBar} />
