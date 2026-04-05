@@ -12,22 +12,23 @@ import site from '../data/site.json';
 
 const config = getLandingConfig('nazionale');
 const siteUrl = site.siteUrl.replace(/\/$/, '');
+const previewCanonicalPath = '/nuova-landing/';
 
 const graph = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': `${siteUrl}${config.canonicalPath}#webpage`,
-      url: `${siteUrl}${config.canonicalPath}`,
-      name: config.title,
+      '@id': `${siteUrl}${previewCanonicalPath}#webpage`,
+      url: `${siteUrl}${previewCanonicalPath}`,
+      name: `${config.title} [preview]`,
       description: config.description
     },
     {
       '@type': 'LegalService',
-      '@id': `${siteUrl}${config.canonicalPath}#service`,
+      '@id': `${siteUrl}${previewCanonicalPath}#service`,
       name: 'Sfratto Sicuro',
-      url: `${siteUrl}${config.canonicalPath}`,
+      url: `${siteUrl}${previewCanonicalPath}`,
       telephone: landingOrg.telephone,
       email: landingOrg.email,
       areaServed: { '@type': 'Country', name: 'IT' },
@@ -35,7 +36,7 @@ const graph = {
     },
     {
       '@type': 'FAQPage',
-      '@id': `${siteUrl}${config.canonicalPath}#faq`,
+      '@id': `${siteUrl}${previewCanonicalPath}#faq`,
       mainEntity: config.faq.map((item) => ({
         '@type': 'Question',
         name: item.q,
@@ -49,8 +50,8 @@ const graph = {
 <SiteLayout
   title={config.title}
   description={config.description}
-  canonicalPath={config.canonicalPath}
-  robots={config.noindex ? 'noindex,nofollow' : 'index,follow'}
+  canonicalPath={previewCanonicalPath}
+  robots="noindex,nofollow"
 >
   <Fragment slot="head">
     <JsonLd graph={graph} />

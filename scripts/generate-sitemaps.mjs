@@ -15,10 +15,13 @@ const EXCLUDE_PATHS = new Set([
   '/privacy.html',
   '/termini-condizioni.html',
   '/errore.html',
-  '/grazie.html'
+  '/grazie.html',
+  '/landing/',
+  '/landing-v2/',
+  '/nuova-landing/'
 ]);
 
-const EXTRA_URLS = ['/landing/', '/blog/'];
+const EXTRA_URLS = ['/blog/'];
 
 const xmlEscape = (value) =>
   value

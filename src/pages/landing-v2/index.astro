@@ -36,6 +36,7 @@ const VARIANTE = 'nazionale';
 
 const config = getLandingConfig(VARIANTE);
 const siteUrl = site.siteUrl.replace(/\/$/, '');
+const previewCanonicalPath = '/landing-v2/';
 
 // ---- JSON-LD ----
 const graph = {
@@ -43,18 +44,18 @@ const graph = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': `${siteUrl}${config.canonicalPath}#webpage`,
-      url: `${siteUrl}${config.canonicalPath}`,
-      name: config.title,
+      '@id': `${siteUrl}${previewCanonicalPath}#webpage`,
+      url: `${siteUrl}${previewCanonicalPath}`,
+      name: `${config.title} [preview]`,
       description: config.description,
       inLanguage: 'it-IT'
     },
     {
       '@type': 'LegalService',
-      '@id': `${siteUrl}${config.canonicalPath}#service`,
+      '@id': `${siteUrl}${previewCanonicalPath}#service`,
       name: 'Sfratto Sicuro',
       legalName: 'D1 S.R.L.S.',
-      url: `${siteUrl}${config.canonicalPath}`,
+      url: `${siteUrl}${previewCanonicalPath}`,
       telephone: landingOrg.telephone,
       email: landingOrg.email,
       vatID: landingOrg.vatID,
@@ -87,7 +88,7 @@ const graph = {
     // FAQPage schema — alimentato dal config
     {
       '@type': 'FAQPage',
-      '@id': `${siteUrl}${config.canonicalPath}#faq`,
+      '@id': `${siteUrl}${previewCanonicalPath}#faq`,
       mainEntity: config.faq.map((item) => ({
         '@type': 'Question',
         name: item.q,
@@ -101,8 +102,8 @@ const graph = {
 <SiteLayout
   title={config.title}
   description={config.description}
-  canonicalPath={config.canonicalPath}
-  robots={config.noindex ? 'noindex,nofollow' : 'index,follow'}
+  canonicalPath={previewCanonicalPath}
+  robots="noindex,nofollow"
 >
   <Fragment slot="head">
     <JsonLd graph={graph} />
