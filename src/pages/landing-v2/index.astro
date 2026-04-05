@@ -9,6 +9,8 @@
  */
 import '../../styles/landing.css';
 import { buildLandingPageConfig } from '../../data/landing-v2';
+import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
+import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
 
 // Section components — 1:1 clones of original landing sections
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
@@ -96,13 +98,17 @@ const config = buildLandingPageConfig({
     <!-- GTM noscript -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFR8V7BD" height="0" width="0" style="display:none;visibility:hidden" loading="lazy"></iframe></noscript>
 
-    <!-- Tracking script (lazy — same as original) -->
+    <!-- Tracking script aligned with cookie consent used by home/sedi -->
     <script>
       (function(){
+        const CONSENT_KEY = 'ss_cookie_consent_v1';
+        const AW_ID = 'AW-10983419342';
+
         function getParam(name){
           const params = new URLSearchParams(window.location.search);
           return params.get(name) || '';
         }
+
         function captureTrackingParams(){
           const gclid = getParam('gclid');
           const utmSource = getParam('utm_source');
@@ -125,39 +131,57 @@ const config = buildLandingPageConfig({
             set('keyword', keyword);
           });
         }
-        captureTrackingParams();
 
-        if(window.trackingLoaded) return;
-        window.trackingLoaded = true;
-
-        var load = function(){
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', 'AW-10983419342', { send_page_view: false, transport_type: 'beacon' });
-          gtag('config', 'G-509YE5HCYB', { send_page_view: true, transport_type: 'beacon' });
-
-          if('requestIdleCallback' in window){
-            requestIdleCallback(function(){
-              var s = document.createElement('script');
-              s.async = true;
-              s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10983419342';
-              document.head.appendChild(s);
-            }, { timeout: 3000 });
+        function readConsent(){
+          try {
+            const raw = localStorage.getItem(CONSENT_KEY);
+            return raw ? JSON.parse(raw) : null;
+          } catch {
+            return null;
           }
-        };
+        }
 
-        var triggered = false;
-        var trigger = function(){
-          if(triggered) return;
-          triggered = true;
-          load();
-        };
-        ['scroll','click','touchstart','keydown'].forEach(function(e){
-          window.addEventListener(e, trigger, { once: true, passive: true });
+        function initAdsIfNeeded(consent){
+          if (!consent?.marketing) return;
+          if (window.__landingAdsLoaded) {
+            if (typeof window.gtag === 'function') {
+              window.gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted'
+              });
+            }
+            return;
+          }
+
+          window.__landingAdsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          window.gtag = window.gtag || gtag;
+          window.gtag('consent', 'default', {
+            ad_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          });
+          window.gtag('js', new Date());
+          window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+
+          if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;
+            s.setAttribute('data-landing-aw', AW_ID);
+            document.head.appendChild(s);
+          }
+        }
+
+        captureTrackingParams();
+        const consent = readConsent();
+        if (consent?.marketing) initAdsIfNeeded(consent);
+        window.addEventListener('ss:cookie-consent-updated', function(event){
+          const detail = event?.detail || {};
+          if (detail.marketing) initAdsIfNeeded(detail);
         });
-        setTimeout(trigger, 15000);
       })();
     </script>
 
@@ -235,6 +259,8 @@ const config = buildLandingPageConfig({
 
     <!-- 19. Footer -->
     <LandingOriginalFooterSection />
+    <CookieConsentBanner />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
 
     <!-- External script deps (same as original + form handling/tracking) -->
     <script src="/assets/js/calculator.js" defer></script>
