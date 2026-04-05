@@ -1,0 +1,139 @@
+---
+import '../../styles/landing.css';
+import { buildLandingPageConfig } from '../../data/landing-v2';
+import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
+import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
+
+import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
+import LandingOriginalTrustBarSection from '../../components/landing/LandingOriginalTrustBarSection.astro';
+import LandingOriginalHeroSection from '../../components/landing/LandingOriginalHeroSection.astro';
+import LandingQuickFactsSection from '../../components/landing/LandingQuickFactsSection.astro';
+import LandingOriginalProblemsSection from '../../components/landing/LandingOriginalProblemsSection.astro';
+import LandingOriginalCalculatorSection from '../../components/landing/LandingOriginalCalculatorSection.astro';
+import LandingOriginalReviewsSection from '../../components/landing/LandingOriginalReviewsSection.astro';
+import LandingOriginalProvvedimentiSection from '../../components/landing/LandingOriginalProvvedimentiSection.astro';
+import LandingOriginalLegalCostSection from '../../components/landing/LandingOriginalLegalCostSection.astro';
+import LandingOriginalProcedureSection from '../../components/landing/LandingOriginalProcedureSection.astro';
+import LandingOriginalPricingSection from '../../components/landing/LandingOriginalPricingSection.astro';
+import LandingOriginalCostTransparencySection from '../../components/landing/LandingOriginalCostTransparencySection.astro';
+import LandingOriginalWhoWeAreSection from '../../components/landing/LandingOriginalWhoWeAreSection.astro';
+import LandingOriginalWhyChooseSection from '../../components/landing/LandingOriginalWhyChooseSection.astro';
+import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
+import LandingOriginalMiniWidgetSection from '../../components/landing/LandingOriginalMiniWidgetSection.astro';
+import LandingOriginalContactFormSection from '../../components/landing/LandingOriginalContactFormSection.astro';
+import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
+
+const config = buildLandingPageConfig({
+  version: 'v3',
+  territory: 'nazionale',
+  keyword: 'sfratto-per-morosita',
+});
+---
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Sfratto">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1B2951">
+    <title>{config.seo.title} | V3</title>
+    <meta name="description" content={config.seo.description}>
+    <meta name="keywords" content={config.seo.keywords}>
+    <meta name="robots" content={config.seo.robots}>
+    <meta name="author" content="SfrattoSicuro.it">
+    <link rel="canonical" href="https://www.sfrattosicuro.it/landing-v3/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={`${config.seo.ogTitle} | V3`}>
+    <meta property="og:description" content={config.seo.ogDescription}>
+    <meta property="og:url" content="https://www.sfrattosicuro.it/landing-v3/">
+    <meta property="og:site_name" content="SfrattoSicuro.it">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={`${config.seo.twitterTitle} | V3`}>
+    <meta name="twitter:description" content={config.seo.twitterDescription}>
+    <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.faq)} />
+    <script>
+      (function(){
+        const CONSENT_KEY = 'ss_cookie_consent_v1';
+        const AW_ID = 'AW-10983419342';
+        function getParam(name){ const params = new URLSearchParams(window.location.search); return params.get(name) || ''; }
+        function captureTrackingParams(){
+          const gclid = getParam('gclid');
+          const utmSource = getParam('utm_source');
+          const utmMedium = getParam('utm_medium');
+          const utmCampaign = getParam('utm_campaign');
+          const utmTerm = getParam('utm_term');
+          const utmContent = getParam('utm_content');
+          const keyword = getParam('keyword');
+          document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
+            var set = function(n, v){ var i = f.querySelector('[name="'+n+'"]'); if(i) i.value = v; };
+            set('gclid', gclid); set('utm_source', utmSource); set('utm_medium', utmMedium); set('utm_campaign', utmCampaign); set('utm_term', utmTerm); set('utm_content', utmContent); set('keyword', keyword);
+          });
+        }
+        function readConsent(){ try { const raw = localStorage.getItem(CONSENT_KEY); return raw ? JSON.parse(raw) : null; } catch { return null; } }
+        function initAdsIfNeeded(consent){
+          if (!consent?.marketing) return;
+          if (window.__landingAdsLoaded) return;
+          window.__landingAdsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          window.gtag = window.gtag || gtag;
+          window.gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+          window.gtag('js', new Date());
+          window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+          if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
+            var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID; s.setAttribute('data-landing-aw', AW_ID); document.head.appendChild(s);
+          }
+        }
+        captureTrackingParams();
+        const consent = readConsent();
+        if (consent?.marketing) initAdsIfNeeded(consent);
+        window.addEventListener('ss:cookie-consent-updated', function(event){ const detail = event?.detail || {}; if (detail.marketing) initAdsIfNeeded(detail); });
+      })();
+    </script>
+  </head>
+  <body>
+    <LandingOriginalHeaderSection />
+    <main id="main-content" style="min-height:100vh; margin-top: var(--header-h, 90px);">
+      <LandingOriginalHeroSection hero={config.hero} />
+      <LandingQuickFactsSection quickFacts={config.quickFacts} />
+      <LandingOriginalTrustBarSection trustBar={config.trustBar} />
+      <LandingOriginalProblemsSection problemsSection={config.problems} />
+      <LandingOriginalCalculatorSection calculator={config.calculator} />
+      <LandingOriginalReviewsSection />
+      <LandingOriginalProvvedimentiSection />
+      <LandingOriginalLegalCostSection legalCost={config.legalCost} />
+      <LandingOriginalProcedureSection procedure={config.procedure} />
+      <LandingOriginalPricingSection services={config.services} />
+      <LandingOriginalCostTransparencySection costTransparency={config.costTransparency} />
+      <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
+      <LandingOriginalFaqSection faqSection={config.faq} />
+      <LandingOriginalMiniWidgetSection />
+      <LandingOriginalContactFormSection contactForm={config.contactForm} />
+      <LandingOriginalWhoWeAreSection whoWeAre={config.whoWeAre} />
+    </main>
+    <LandingOriginalFooterSection />
+    <CookieConsentBanner />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
+    <script src="/assets/js/calculator.js" defer></script>
+    <script src="/assets/js/reviews.js" defer></script>
+    <script src="/assets/js/form-validation.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
