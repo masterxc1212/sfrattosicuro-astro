@@ -42,13 +42,13 @@ const defaultProblems = [
   },
 ];
 
-const colorMap: Record<string, string> = {
-  red: 'bg-red-100 text-red-600 border-red-200',
-  orange: 'bg-orange-100 text-orange-600 border-orange-200',
-  yellow: 'bg-yellow-100 text-yellow-600 border-yellow-200',
-  purple: 'bg-purple-100 text-purple-600 border-purple-200',
-  blue: 'bg-blue-100 text-blue-600 border-blue-200',
-  gray: 'bg-gray-100 text-gray-600 border-gray-200',
+const colorMap: Record<string, { bg: string; text: string; border: string }> = {
+  red: { bg: '#fee2e2', text: '#dc2626', border: '#fecaca' },
+  orange: { bg: '#ffedd5', text: '#ea580c', border: '#fed7aa' },
+  yellow: { bg: '#fef3c7', text: '#d97706', border: '#fde68a' },
+  purple: { bg: '#f3e8ff', text: '#9333ea', border: '#e9d5ff' },
+  blue: { bg: '#dbeafe', text: '#2563eb', border: '#bfdbfe' },
+  gray: { bg: '#f3f4f6', text: '#4b5563', border: '#e5e7eb' },
 };
 
 interface Props {
@@ -79,10 +79,10 @@ const problems = problemsSection.items?.length ? problemsSection.items : default
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {problems.map((p) => (
-          <article class="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 p-6 rounded-lg">
+          <article class="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 p-6 rounded-lg" style={`border-color:${colorMap[p.color].border};`}>
             <div class="flex items-start space-x-4">
-              <div class={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center ${colorMap[p.color].split(' ')[0]}`}>
-                <svg class={`w-6 h-6 ${colorMap[p.color].split(' ')[1]}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center" style={`background:${colorMap[p.color].bg};`}>
+                <svg class="w-6 h-6" style={`color:${colorMap[p.color].text};`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={p.icon}></path>
                 </svg>
               </div>

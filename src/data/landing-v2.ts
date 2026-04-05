@@ -176,8 +176,8 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
 function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryConfig): LandingQuickFactsConfig {
   if (version === 'v3') {
     return {
-      eyebrow: 'Le 3 risposte che chi arriva da Google vuole subito',
-      title: 'Costo, tempi e procedura subito chiari',
+      eyebrow: 'Informazioni essenziali prima di partire',
+      title: 'Costo, tempi e procedura spiegati subito',
       items: [
         {
           label: 'Costo',
@@ -513,8 +513,8 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = version === 'v3'
     ? (territory.slug === 'nazionale'
-        ? `Landing dedicata ai proprietari con inquilino moroso: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo. Versione v3 orientata a Quality Score e conversioni.`
-        : `Landing dedicata ai proprietari con inquilino moroso${territorySuffix}: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo.`)
+        ? `Assistenza dedicata a proprietari e locatori con inquilino moroso: costo chiaro, tempi medi della convalida, procedura spiegata in modo semplice e supporto fino al rilascio dell'immobile.`
+        : `Assistenza dedicata a proprietari e locatori con inquilino moroso${territorySuffix}: costo chiaro, tempi medi della convalida, procedura spiegata in modo semplice e supporto fino al rilascio dell'immobile.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
@@ -540,12 +540,12 @@ function buildJsonLd(seo: LandingSeoConfig, territory: LandingTerritoryConfig, f
   const legalService = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: territory.slug === 'nazionale' ? 'Sfratto Sicuro - Protocollo Riprendi Casa' : `Sfratto Sicuro ${territory.label} - Protocollo Riprendi Casa`,
+    name: territory.slug === 'nazionale' ? 'Sfratto Sicuro - Sfratto per Morosità' : `Sfratto Sicuro ${territory.label} - Sfratto per Morosità`,
     legalName: 'D1 S.R.L.S.',
     description: seo.description,
     url: seo.canonicalUrl,
     image: 'https://www.sfrattosicuro.it/assets/img/hero.webp',
-    priceRange: '€€€',
+    priceRange: '€1.300',
     founder: { '@type': 'Person', name: 'Avv. Danilo Ansalone' },
     telephone: '+39 02 80898395',
     email: 'consulenza@sfrattosicuro.it',
@@ -579,6 +579,7 @@ function buildJsonLd(seo: LandingSeoConfig, territory: LandingTerritoryConfig, f
     '@type': 'WebSite',
     name: 'Sfratto Sicuro',
     url: seo.canonicalUrl,
+    inLanguage: 'it-IT',
   };
 
   const faq = {
