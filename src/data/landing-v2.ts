@@ -142,16 +142,19 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
         territory.slug === 'nazionale'
           ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ottieni una valutazione rapida del caso, costo chiaro e procedura attivabile senza perdite di tempo.`
           : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Valutazione rapida del caso, costo chiaro e procedura attivabile senza perdite di tempo.`,
+      prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
       bullets: [
         '<strong>Solo proprietari/locatori</strong> – niente assistenza inquilini o traffico informativo',
         '<strong>€1.300 fino alla convalida</strong> – costo chiaro e senza sorprese',
         '<strong>Convalida mediamente in 60 giorni</strong> – procedura strutturata e avvocato dedicato',
       ],
       formTitle: 'Verifica subito se puoi partire',
-      formSubtitle: 'Lascia i tuoi dati e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
+      formSubtitle: 'Lascia i tuoi dati essenziali e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
       formSubmitLabel: 'Ti richiamiamo entro 2 ore',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
+      formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
+      formSource: 'hero_form_v3',
     };
   }
 
@@ -384,18 +387,23 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
 function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, keyword: LandingKeywordConfig): LandingSeoConfig {
   const territorySuffix = territory.keywordSuffix ? ` ${territory.keywordSuffix}` : '';
   const title = `${keyword.titleStem}${territorySuffix} | Costo Fisso 1.300€ fino alla Convalida`;
-  const description = territory.slug === 'nazionale'
-    ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida. Nessun anticipo. Consulenza senza impegno.`
-    : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida.`;
+  const description = version === 'v3'
+    ? (territory.slug === 'nazionale'
+        ? `Landing dedicata ai proprietari con inquilino moroso: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo. Versione v3 orientata a Quality Score e conversioni.`
+        : `Landing dedicata ai proprietari con inquilino moroso${territorySuffix}: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo.`)
+    : territory.slug === 'nazionale'
+      ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida. Nessun anticipo. Consulenza senza impegno.`
+      : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida.`;
+  const landingPath = version === 'v3' ? '/landing-v3/' : '/landing-v2/';
 
   return {
     title,
     description,
     keywords: [...keyword.metaKeywordList, territory.label !== 'nazionale' ? `sfratto ${territory.label.toLowerCase()}` : ''].filter(Boolean).join(', '),
-    canonicalUrl: 'https://www.sfrattosicuro.it/landing-v2/',
+    canonicalUrl: `https://www.sfrattosicuro.it${landingPath}`,
     ogTitle: title,
     ogDescription: description,
-    ogUrl: 'https://www.sfrattosicuro.it/landing-v2/',
+    ogUrl: `https://www.sfrattosicuro.it${landingPath}`,
     twitterTitle: title,
     twitterDescription: description,
     robots: 'noindex,nofollow',

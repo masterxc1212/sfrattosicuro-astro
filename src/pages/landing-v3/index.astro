@@ -20,7 +20,7 @@ import LandingOriginalWhoWeAreSection from '../../components/landing/LandingOrig
 import LandingOriginalWhyChooseSection from '../../components/landing/LandingOriginalWhyChooseSection.astro';
 import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
 import LandingOriginalMiniWidgetSection from '../../components/landing/LandingOriginalMiniWidgetSection.astro';
-import LandingOriginalContactFormSection from '../../components/landing/LandingOriginalContactFormSection.astro';
+import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 
 const config = buildLandingPageConfig({
@@ -40,21 +40,21 @@ const config = buildLandingPageConfig({
     <meta name="apple-mobile-web-app-title" content="Sfratto">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#1B2951">
-    <title>{config.seo.title} | V3</title>
+    <title>{config.seo.title}</title>
     <meta name="description" content={config.seo.description}>
     <meta name="keywords" content={config.seo.keywords}>
     <meta name="robots" content={config.seo.robots}>
     <meta name="author" content="SfrattoSicuro.it">
-    <link rel="canonical" href="https://www.sfrattosicuro.it/landing-v3/">
+    <link rel="canonical" href={config.seo.canonicalUrl}>
     <meta property="og:type" content="website">
-    <meta property="og:title" content={`${config.seo.ogTitle} | V3`}>
+    <meta property="og:title" content={config.seo.ogTitle}>
     <meta property="og:description" content={config.seo.ogDescription}>
-    <meta property="og:url" content="https://www.sfrattosicuro.it/landing-v3/">
+    <meta property="og:url" content={config.seo.ogUrl}>
     <meta property="og:site_name" content="SfrattoSicuro.it">
     <meta property="og:locale" content="it_IT">
     <meta property="og:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content={`${config.seo.twitterTitle} | V3`}>
+    <meta name="twitter:title" content={config.seo.twitterTitle}>
     <meta name="twitter:description" content={config.seo.twitterDescription}>
     <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
@@ -125,7 +125,7 @@ const config = buildLandingPageConfig({
       <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
       <LandingOriginalFaqSection faqSection={config.faq} />
       <LandingOriginalMiniWidgetSection />
-      <LandingOriginalContactFormSection contactForm={config.contactForm} />
+      <LandingV3ContactSection contactForm={config.contactForm} />
       <LandingOriginalWhoWeAreSection whoWeAre={config.whoWeAre} />
     </main>
     <LandingOriginalFooterSection />

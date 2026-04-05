@@ -1,0 +1,103 @@
+---
+import { landingOriginal } from '../../data/landing-original';
+
+interface Props {
+  contactForm?: typeof landingOriginal.contactForm;
+}
+
+const { contactForm = landingOriginal.contactForm } = Astro.props;
+---
+<section id={contactForm.sectionId} class="py-16 bg-gray-pearl" aria-labelledby="contatti-heading-v3">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 id="contatti-heading-v3" class="text-3xl md:text-4xl font-bold text-blue-navy mb-4">{contactForm.title}</h2>
+        <p class="text-lg md:text-xl text-dark-gray max-w-3xl mx-auto">{contactForm.subtitle}</p>
+      </div>
+
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
+        <div class="bg-white p-6 md:p-8 rounded-lg card-shadow">
+          <h3 class="text-xl md:text-2xl font-bold text-blue-navy mb-6">{contactForm.formTitle}</h3>
+
+          <div class="bg-blue-50 border border-blue-navy/10 rounded-lg p-4 mb-6 text-sm text-dark-gray">
+            <strong class="text-blue-navy">Checklist minima:</strong>
+            <ul class="mt-3 space-y-2 list-disc pl-5">
+              <li>sei il proprietario o il locatore dell'immobile;</li>
+              <li>l'inquilino ha già accumulato morosità;</li>
+              <li>puoi indicarci città immobile e mesi non pagati.</li>
+            </ul>
+          </div>
+
+          <form action="/php/invia-email.php" method="POST" class="space-y-5" aria-label="Form richiesta rapida proprietario">
+            <div>
+              <label for="nome-v3" class="block text-dark-gray font-semibold mb-2">Nome e cognome *</label>
+              <input type="text" name="nome" id="nome-v3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800" placeholder="Nome e cognome del proprietario" required aria-required="true">
+            </div>
+
+            <div>
+              <label for="telefono-v3" class="block text-dark-gray font-semibold mb-2">Telefono *</label>
+              <input type="tel" name="telefono" id="telefono-v3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800" placeholder="Numero di telefono diretto" required aria-required="true">
+            </div>
+
+            <div>
+              <label for="citta-v3" class="block text-dark-gray font-semibold mb-2">Città immobile *</label>
+              <input type="text" name="città" id="citta-v3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800" placeholder="In che città si trova l'immobile?" required aria-required="true">
+            </div>
+
+            <div>
+              <label for="morosita-v3" class="block text-dark-gray font-semibold mb-2">Da quanto non paga? *</label>
+              <select name="morosità" id="morosita-v3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800" required aria-required="true">
+                {contactForm.fields.morosita.options.map((option) => (
+                  <option value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            </div>
+
+            <input type="hidden" name="form_source" value="bottom_form_v3">
+            <input type="hidden" name="gclid" value="">
+            <input type="hidden" name="utm_source" value="">
+            <input type="hidden" name="utm_medium" value="">
+            <input type="hidden" name="utm_campaign" value="">
+            <input type="hidden" name="utm_term" value="">
+            <input type="hidden" name="keyword" value="">
+            <input type="hidden" name="utm_content" value="">
+            <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html">
+
+            <div class="text-center text-xs text-dark-gray mb-2">
+              <p>{contactForm.privacyNote}</p>
+            </div>
+
+            <button type="submit" class="w-full btn-primary py-4 rounded-lg font-bold text-white text-lg btn-mobile-fix" aria-label="Richiedi richiamo rapido proprietario">
+              Ti richiamiamo entro 2 ore
+            </button>
+
+            <p class="text-xs text-dark-gray mt-3 text-center">✓ Solo proprietari / locatori • ✓ Richiamo rapido • ✓ Nessun impegno</p>
+          </form>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-blue-navy text-white p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">Contatti diretti</h3>
+            <div class="space-y-4 text-sm">
+              <div>
+                <div class="font-semibold text-gold-refined">Telefono</div>
+                <a href="tel:+390280898395" class="text-white font-bold">{contactForm.contacts.phoneValue}</a>
+                <p class="text-gray-300 mt-1">{contactForm.contacts.phoneHours}</p>
+              </div>
+              <div>
+                <div class="font-semibold text-gold-refined">WhatsApp</div>
+                <a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer" class="text-white font-bold">{contactForm.contacts.whatsappValue}</a>
+                <p class="text-gray-300 mt-1">{contactForm.contacts.whatsappNote}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-yellow-50 border border-gold-refined p-6 rounded-lg">
+            <h4 class="font-bold text-blue-navy mb-3">{contactForm.urgencyBox.title}</h4>
+            <p class="text-dark-gray text-base"><span set:html={contactForm.urgencyBox.body}></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

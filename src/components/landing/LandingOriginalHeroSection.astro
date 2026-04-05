@@ -41,6 +41,12 @@ const { hero = landingOriginal.hero } = Astro.props;
 
           <h2 class="hero-subtitle" set:html={hero.subtitle}></h2>
 
+          {hero.prequalificationNote && (
+            <div class="inline-block bg-white/10 border border-white/20 rounded-lg px-4 py-3 mb-4 text-sm font-semibold backdrop-blur-sm">
+              <span set:html={hero.prequalificationNote}></span>
+            </div>
+          )}
+
           <ul class="hero-benefits" style="min-height:200px">
             {hero.bullets.map((bullet) => (
               <li class="hero-benefit-item">
@@ -93,6 +99,17 @@ const { hero = landingOriginal.hero } = Astro.props;
                   autocomplete="tel"
                 >
               </div>
+
+              {hero.formMorositaOptions && (
+                <div class="form-group">
+                  <label for="morosita-hero" class="form-label">Da quanto l'inquilino non paga? *</label>
+                  <select name="morosità" id="morosita-hero" class="form-select" required aria-required="true">
+                    {hero.formMorositaOptions.map((option) => (
+                      <option value={option.value}>{option.label}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
