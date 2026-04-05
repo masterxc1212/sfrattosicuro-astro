@@ -1,7 +1,9 @@
 ---
 // LandingOriginalWhyChooseSection.astro — 1:1 clone of original perche sceglierci section
 // Source: public/landing/index.html
-const pillars = [
+import { landingOriginal } from '../../data/landing-original';
+
+const defaultPillars = [
   {
     icon: 'fa-network-wired',
     title: 'Rete Nazionale',
@@ -23,17 +25,24 @@ const pillars = [
     body: 'Un avvocato ti segue passo passo fino alla convalida.',
   },
 ];
+
+interface Props {
+  whyChooseUs?: typeof landingOriginal.whyChooseUs;
+}
+
+const { whyChooseUs = landingOriginal.whyChooseUs } = Astro.props;
+const pillars = whyChooseUs.pillars?.length ? whyChooseUs.pillars : defaultPillars;
 ---
-<section id="perche-sceglierci" class="py-16 bg-gray-pearl" aria-labelledby="perche-sceglierci-title">
+<section id={whyChooseUs.sectionId} class="py-16 bg-gray-pearl" aria-labelledby="perche-sceglierci-title">
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
 
       <div class="text-center mb-16">
         <h2 id="perche-sceglierci-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
-          Perché Scegliere il Nostro Servizio
+          {whyChooseUs.title}
         </h2>
         <p class="text-lg md:text-xl text-dark-gray">
-          Non siamo uno studio legale generico. Ci occupiamo esclusivamente delle procedure di sfratto per morosità con un metodo collaudato e risultati documentati.
+          {whyChooseUs.subtitle}
         </p>
       </div>
 
@@ -53,11 +62,10 @@ const pillars = [
         <div class="bg-blue-navy text-white p-6 md:p-8 rounded-lg inline-block max-w-4xl">
           <h3 class="text-2xl md:text-3xl font-bold mb-4">
             <span class="text-gold-refined mr-3" aria-hidden="true">✅</span>
-            La Differenza È Nella Specializzazione
+            {whyChooseUs.bottomTitle}
           </h3>
           <p class="text-lg md:text-XL mb-8">
-            Mentre altri avvocati trattano sfratti occasionalmente, noi lavoriamo SOLO sullo sfratto per morosità.
-            Il risultato? Tempi dimezzati, costi certi, risultati documentati.
+            {whyChooseUs.bottomBody}
           </p>
           <a
             href="#contatti"
@@ -65,9 +73,9 @@ const pillars = [
             aria-label="Richiedi una consulenza gratuita per beneficiare della nostra specializzazione"
           >
             <span class="mr-2" aria-hidden="true">✉️</span>
-            RICHIEDI UNA CONSULENZA GRATUITA
+            {whyChooseUs.ctaLabel}
           </a>
-          <p class="text-xs text-gray-300 mt-4">✓ Gratuita, sicura e senza impegno</p>
+          <p class="text-xs text-gray-300 mt-4">✓ {whyChooseUs.ctaCaption}</p>
         </div>
       </div>
 

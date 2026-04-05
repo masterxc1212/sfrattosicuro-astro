@@ -205,22 +205,22 @@ const config = buildLandingPageConfig({
       <LandingOriginalUrgencySection />
 
       <!-- 10. Rimborso Spese -->
-      <LandingOriginalLegalCostSection />
+      <LandingOriginalLegalCostSection legalCost={config.legalCost} />
 
       <!-- 11. Procedure -->
-      <LandingOriginalProcedureSection />
+      <LandingOriginalProcedureSection procedure={config.procedure} />
 
       <!-- 12. Services / Pricing -->
-      <LandingOriginalPricingSection />
+      <LandingOriginalPricingSection services={config.services} />
 
       <!-- 13. Cost Transparency -->
-      <LandingOriginalCostTransparencySection />
+      <LandingOriginalCostTransparencySection costTransparency={config.costTransparency} />
 
       <!-- 14. Chi Siamo -->
-      <LandingOriginalWhoWeAreSection />
+      <LandingOriginalWhoWeAreSection whoWeAre={config.whoWeAre} />
 
       <!-- 15. Perché Sceglierci -->
-      <LandingOriginalWhyChooseSection />
+      <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
 
       <!-- 16. FAQ -->
       <LandingOriginalFaqSection faqSection={config.faq} />

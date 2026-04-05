@@ -51,6 +51,12 @@ export type LandingPageConfig = {
   trustBar: typeof landingOriginal.trustBar;
   problems: typeof landingOriginal.problems;
   calculator: typeof landingOriginal.calculator;
+  legalCost: typeof landingOriginal.legalCost;
+  procedure: typeof landingOriginal.procedure;
+  services: typeof landingOriginal.services;
+  costTransparency: typeof landingOriginal.costTransparency;
+  whoWeAre: typeof landingOriginal.whoWeAre;
+  whyChooseUs: typeof landingOriginal.whyChooseUs;
   faq: typeof landingOriginal.faq & { items: LandingFaqItem[] };
   contactForm: typeof landingOriginal.contactForm;
   jsonLd: {
@@ -162,6 +168,75 @@ function buildCalculator(territory: LandingTerritoryConfig) {
       territory.slug === 'nazionale'
         ? landingOriginal.calculator.intro
         : `${landingOriginal.calculator.intro} Anche ${territory.dynamicReplacement?.area || 'nel tuo territorio'} il costo vero è il tempo perso.`,
+  };
+}
+
+function buildLegalCost(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.legalCost,
+    body:
+      territory.slug === 'nazionale'
+        ? landingOriginal.legalCost.body
+        : `${landingOriginal.legalCost.body} Gestiamo la pratica anche presso ${territory.tribunalsLabel}.`,
+  };
+}
+
+function buildProcedure(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.procedure,
+    subtitle:
+      territory.slug === 'nazionale'
+        ? landingOriginal.procedure.subtitle
+        : `${landingOriginal.procedure.subtitle} Operiamo anche presso ${territory.tribunalsLabel}.`,
+    steps: landingOriginal.procedure.steps.map((step, index) => {
+      if (territory.slug === 'nazionale') return step;
+      if (index === 2) {
+        return {
+          ...step,
+          body: step.body.replace('Tribunale competente', territory.tribunalsLabel),
+        };
+      }
+      return step;
+    }),
+  };
+}
+
+function buildServices(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.services,
+    subtitle:
+      territory.slug === 'nazionale'
+        ? landingOriginal.services.subtitle
+        : `${landingOriginal.services.subtitle} Servizio attivo anche ${territory.dynamicReplacement?.area || ''}.`,
+  };
+}
+
+function buildCostTransparency(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.costTransparency,
+    subtitle:
+      territory.slug === 'nazionale'
+        ? landingOriginal.costTransparency.subtitle
+        : `${landingOriginal.costTransparency.subtitle} Formula valida anche per pratiche ${territory.dynamicReplacement?.area || ''}.`,
+  };
+}
+
+function buildWhoWeAre(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.whoWeAre,
+    paragraphs: territory.slug === 'nazionale'
+      ? landingOriginal.whoWeAre.paragraphs
+      : landingOriginal.whoWeAre.paragraphs.map((p, index) => index === 2 ? `${p} Interveniamo anche ${territory.dynamicReplacement?.area || ''}.` : p),
+  };
+}
+
+function buildWhyChooseUs(territory: LandingTerritoryConfig) {
+  return {
+    ...landingOriginal.whyChooseUs,
+    subtitle:
+      territory.slug === 'nazionale'
+        ? landingOriginal.whyChooseUs.subtitle
+        : `${landingOriginal.whyChooseUs.subtitle} Con operatività anche ${territory.dynamicReplacement?.area || ''}.`,
   };
 }
 
@@ -310,6 +385,12 @@ export function buildLandingPageConfig(options?: {
   const trustBar = buildTrustBar(territory);
   const problems = buildProblems(territory);
   const calculator = buildCalculator(territory);
+  const legalCost = buildLegalCost(territory);
+  const procedure = buildProcedure(territory);
+  const services = buildServices(territory);
+  const costTransparency = buildCostTransparency(territory);
+  const whoWeAre = buildWhoWeAre(territory);
+  const whyChooseUs = buildWhyChooseUs(territory);
   const faq = buildFaq(territory, keyword);
   const contactForm = buildContactForm(territory);
   const seo = buildSeo(version, territory, keyword);
@@ -324,6 +405,12 @@ export function buildLandingPageConfig(options?: {
     trustBar,
     problems,
     calculator,
+    legalCost,
+    procedure,
+    services,
+    costTransparency,
+    whoWeAre,
+    whyChooseUs,
     faq,
     contactForm,
     jsonLd,

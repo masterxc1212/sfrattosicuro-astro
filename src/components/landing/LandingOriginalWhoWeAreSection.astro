@@ -1,12 +1,14 @@
 ---
 // LandingOriginalWhoWeAreSection.astro — 1:1 clone of original chi siamo section
 // Source: public/landing/index.html
-const paragraphs = [
+import { landingOriginal } from '../../data/landing-original';
+
+const defaultParagraphs = [
   'Siamo <strong>avvocati specializzati esclusivamente in sfratti per morosità</strong>, con centrali operative a <strong>Milano e Salerno</strong>, dove vengono predisposti tutti gli atti.',
   'Ci avvaliamo di una <strong>fitta rete di domiciliatari che operano in ogni Tribunale d\'Italia</strong>, occupandosi degli adempimenti presso le Cancellerie e gli Ufficiali Giudiziari.',
   'Questa organizzazione ci permette di <strong>ottimizzare i tempi</strong> e garantire <strong>una copertura completa su tutto il territorio nazionale</strong>, mantenendo la massima specializzazione nel settore dello sfratto per morosità.',
 ];
-const pillars = [
+const defaultPillars = [
   {
     icon: 'fa-building',
     title: 'Centrali Operative',
@@ -26,13 +28,21 @@ const pillars = [
     line2: 'Dal 2018',
   },
 ];
+
+interface Props {
+  whoWeAre?: typeof landingOriginal.whoWeAre;
+}
+
+const { whoWeAre = landingOriginal.whoWeAre } = Astro.props;
+const paragraphs = whoWeAre.paragraphs?.length ? whoWeAre.paragraphs : defaultParagraphs;
+const pillars = whoWeAre.pillars?.length ? whoWeAre.pillars : defaultPillars;
 ---
-<section id="chi-siamo" class="py-16 bg-white" aria-labelledby="chi-siamo-title">
+<section id={whoWeAre.sectionId} class="py-16 bg-white" aria-labelledby="chi-siamo-title">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto text-center">
 
       <h2 id="chi-siamo-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-8">
-        Chi Siamo
+        {whoWeAre.title}
       </h2>
 
       <div class="bg-gray-pearl p-6 md:p-8 rounded-lg card-shadow mb-8">

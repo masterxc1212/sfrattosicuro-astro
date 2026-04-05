@@ -1,7 +1,9 @@
 ---
 // LandingOriginalProcedureSection.astro — 1:1 clone of original 4-phase procedure
 // Source: public/landing/index.html
-const steps = [
+import { landingOriginal } from '../../data/landing-original';
+
+const defaultSteps = [
   {
     num: '1',
     title: 'FASE 1 (Giorno 0): Analisi e Attivazione della Pratica di Sfratto',
@@ -32,18 +34,24 @@ const steps = [
     isGold: true,
   },
 ];
+
+interface Props {
+  procedure?: typeof landingOriginal.procedure;
+}
+
+const { procedure = landingOriginal.procedure } = Astro.props;
+const steps = procedure.steps?.length ? procedure.steps : defaultSteps;
 ---
-<section id="come-funziona" class="py-16 bg-gray-pearl" aria-labelledby="procedura-protocollo">
+<section id={procedure.sectionId} class="py-16 bg-gray-pearl" aria-labelledby="procedura-protocollo">
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
 
       <div class="text-center mb-16">
         <h2 id="procedura-protocollo" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
-          La Procedura di Sfratto per Morosità: Le Fasi del Nostro Protocollo
+          {procedure.title}
         </h2>
         <p class="text-lg md:text-xl text-dark-gray">
-          Un processo collaudato che ha già permesso di liberare oltre 1.500 immobili.
-          La nostra procedura per lo sfratto per morosità è ottimizzata per ottenere, mediamente, la convalida in circa 60 giorni.
+          {procedure.subtitle}
         </p>
       </div>
 
@@ -77,11 +85,10 @@ const steps = [
         <div class="bg-blue-navy text-white p-6 md:p-8 rounded-lg inline-block max-w-3xl">
           <h3 class="text-xl md:text-2xl font-bold mb-4">
             <span class="text-gold-refined mr-3" aria-hidden="true">✅</span>
-            Un Metodo Che Funziona Davvero
+            {procedure.bottomTitle}
           </h3>
           <p class="text-lg mb-6">
-            Con il nostro protocollo ottimizzato per lo sfratto per morosità, trasformiamo mesi di incertezza
-            in una procedura tracciabile e prevedibile. Procedura applicata in oltre 1.500 casi documentati.
+            {procedure.bottomBody}
           </p>
           <a
             href="#contatti"
@@ -89,7 +96,7 @@ const steps = [
             aria-label="Attiva il protocollo sfratto sicuro"
           >
             <span class="mr-2" aria-hidden="true">✉️</span>
-            ATTIVA IL PROTOCOLLO
+            {procedure.bottomCtaLabel}
           </a>
         </div>
       </div>
