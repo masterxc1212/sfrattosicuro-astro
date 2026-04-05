@@ -186,13 +186,13 @@ function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryCon
         },
         {
           label: 'Tempi',
-          value: 'Convalida mediamente in 60 giorni',
+          value: 'Convalida mediamente in circa 60 giorni',
           note: territory.slug === 'nazionale' ? 'Dato medio operativo, non promessa assoluta: i tempi dipendono anche dal Tribunale competente' : `Dato medio operativo, con assistenza anche presso ${territory.tribunalsLabel}`,
         },
         {
           label: 'Procedura',
-          value: 'Analisi → intimazione → deposito → udienza',
-          note: 'Percorso guidato con avvocato dedicato e aggiornamenti continui',
+          value: 'Analisi del caso → intimazione → deposito → udienza di convalida',
+          note: 'Percorso guidato con avvocato dedicato e prosecuzione, se necessaria, fino al rilascio dell’immobile',
         },
       ],
     };
@@ -427,14 +427,16 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const landingPath = version === 'v3' ? '/landing-v3/' : '/landing-v2/';
 
   return {
-    title,
+    title: version === 'v3'
+      ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`
+      : title,
     description,
     keywords: [...keyword.metaKeywordList, territory.label !== 'nazionale' ? `sfratto ${territory.label.toLowerCase()}` : ''].filter(Boolean).join(', '),
     canonicalUrl: `https://www.sfrattosicuro.it${landingPath}`,
-    ogTitle: title,
+    ogTitle: version === 'v3' ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile` : title,
     ogDescription: description,
     ogUrl: `https://www.sfrattosicuro.it${landingPath}`,
-    twitterTitle: title,
+    twitterTitle: version === 'v3' ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile` : title,
     twitterDescription: description,
     robots: 'noindex,nofollow',
   };
