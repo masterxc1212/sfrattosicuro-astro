@@ -140,13 +140,13 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       title: `Avvocato specializzato in\nSfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ottieni una valutazione rapida del caso, costo chiaro e procedura attivabile senza perdite di tempo.`
-          : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Valutazione rapida del caso, costo chiaro e procedura attivabile senza perdite di tempo.`,
+          ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ti aiutiamo a capire rapidamente se puoi attivare la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e passaggi spiegati in modo semplice ma corretto.`
+          : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo a capire rapidamente se puoi attivare la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e passaggi spiegati in modo semplice ma corretto.`,
       prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
       bullets: [
-        '<strong>Solo proprietari/locatori</strong> – niente assistenza inquilini o traffico informativo',
-        '<strong>€1.300 fino alla convalida</strong> – costo chiaro e senza sorprese',
-        '<strong>Convalida mediamente in 60 giorni</strong> – procedura strutturata e avvocato dedicato',
+        '<strong>Solo proprietari/locatori</strong> – pagina pensata per chi deve agire, non per richieste informative generiche',
+        '<strong>Compenso complessivo di 1.300€ fino al rilascio dell\'immobile</strong> – nessun acconto richiesto',
+        '<strong>Pagamento richiesto solo dopo la convalida</strong> – la procedura prosegue poi fino al rilascio dell\'immobile',
       ],
       formTitle: 'Verifica subito se puoi partire',
       formSubtitle: 'Lascia i tuoi dati essenziali e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
@@ -181,13 +181,13 @@ function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryCon
       items: [
         {
           label: 'Costo',
-          value: '€1.300 fino alla convalida',
-          note: 'Formula chiara, senza sorprese fino al provvedimento del Giudice',
+          value: '€1.300 fino al rilascio dell’immobile',
+          note: 'Nessun acconto: il compenso viene richiesto solo dopo la convalida',
         },
         {
           label: 'Tempi',
           value: 'Convalida mediamente in 60 giorni',
-          note: territory.slug === 'nazionale' ? 'Procedura ottimizzata su tutto il territorio nazionale' : `Operatività anche presso ${territory.tribunalsLabel}`,
+          note: territory.slug === 'nazionale' ? 'Dato medio operativo, non promessa assoluta: i tempi dipendono anche dal Tribunale competente' : `Dato medio operativo, con assistenza anche presso ${territory.tribunalsLabel}`,
         },
         {
           label: 'Procedura',
@@ -227,7 +227,7 @@ function buildProblems(version: LandingVersion, territory: LandingTerritoryConfi
       badge: 'SEI NELLA SITUAZIONE GIUSTA?',
       title: 'Questa pagina è per proprietari con un problema concreto di morosità',
       subtitle: territory.slug === 'nazionale'
-        ? 'Se l’inquilino non paga, vuoi capire costi, tempi e se puoi partire subito. Se stai solo cercando informazioni generiche, questa non è la pagina giusta.'
+        ? 'Se l’inquilino non paga, vuoi capire costi, tempi e se puoi partire subito. Se stai solo cercando informazioni generiche o non sei il proprietario/locatore, questa non è la pagina giusta.'
         : `Se l’inquilino non paga ${territory.dynamicReplacement?.area || ''}, qui trovi solo le risposte operative che servono a un proprietario per partire davvero.`,
       items: landingOriginal.problems.items.slice(0, 4),
     };
@@ -349,17 +349,43 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
         ? (version === 'v3' ? 'Solo le risposte essenziali che aiutano un proprietario a decidere se attivare subito la procedura.' : landingOriginal.faq.subtitle)
         : `Le risposte alle domande più frequenti dei proprietari che cercano ${keyword.primary}${suffix}.`,
     subtitle2: version === 'v3' ? 'Abbiamo ridotto la sezione alle obiezioni che incidono davvero sulla conversione da Google Ads: tempi, costi, requisiti, udienza e recupero immobile.' : landingOriginal.faq.subtitle2,
-    items: version === 'v3' ? items.slice(0, 5) : items,
+    items: version === 'v3' ? [
+      {
+        icon: 'fa-clock',
+        q: 'In quanto tempo si può ottenere la convalida dello sfratto per morosità?',
+        a: 'Non esiste un termine identico per tutti i Tribunali, ma nella nostra operatività il provvedimento di convalida arriva mediamente in circa 60 giorni. I tempi effettivi dipendono anche dal carico del Tribunale competente e dalla presenza o meno di opposizione.',
+      },
+      {
+        icon: 'fa-euro-sign',
+        q: 'I 1.300€ coprono la pratica fino al rilascio dell’immobile o solo fino alla convalida?',
+        a: 'Il compenso complessivo di 1.300€ copre l’assistenza fino al rilascio dell’immobile. Non chiediamo acconti: il pagamento viene richiesto solo dopo la convalida dello sfratto.',
+      },
+      {
+        icon: 'fa-file-contract',
+        q: 'Di cosa avete bisogno per capire se il caso è attivabile?',
+        a: 'Per una prima valutazione ci servono almeno città dell’immobile, mesi di morosità, un contatto diretto del proprietario e, quando disponibili, contratto di locazione e prova dei mancati pagamenti.',
+      },
+      {
+        icon: 'fa-gavel',
+        q: 'Cosa succede dopo la convalida dello sfratto?',
+        a: 'Dopo la convalida si passa, se necessario, alla fase esecutiva per ottenere il rilascio dell’immobile. Per questo distinguiamo il momento della convalida dal risultato finale di riottenere materialmente il possesso dell’immobile.',
+      },
+      {
+        icon: 'fa-home',
+        q: 'Questa pagina vale anche per lo sfratto per finita locazione?',
+        a: 'Questa landing è dedicata ai casi di sfratto per morosità. Ci occupiamo anche di sfratto per finita locazione, ma quel servizio va presentato con pagina e annuncio dedicati per evitare confusione tra procedure diverse.',
+      }
+    ] : items,
   };
 }
 
 function buildContactForm(version: LandingVersion, territory: LandingTerritoryConfig) {
   return {
     ...landingOriginal.contactForm,
-    title: version === 'v3' ? 'Parliamo solo di casi già concreti' : landingOriginal.contactForm.title,
+    title: version === 'v3' ? 'Parliamo solo di casi concreti di morosità' : landingOriginal.contactForm.title,
     subtitle:
       version === 'v3'
-        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ti richiamiamo con una valutazione pratica del caso.`
+        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo semplice costi, tempi e passaggi della procedura.`
         : territory.slug === 'nazionale'
           ? landingOriginal.contactForm.subtitle
           : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Convalida in 60 giorni, €1.300 tutto incluso.`,
@@ -368,7 +394,7 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
     urgencyBox: version === 'v3'
       ? {
           title: 'Prima di inviare la richiesta',
-          body: 'Preparati ad indicare <strong>città dell’immobile</strong>, <strong>mesi di morosità</strong> e un <strong>contatto diretto</strong>. Così possiamo darti subito una risposta concreta.'
+          body: 'Preparati ad indicare <strong>città dell’immobile</strong>, <strong>mesi di morosità</strong> e un <strong>contatto diretto</strong>. Se hai già contratto di locazione o prova dei mancati pagamenti, la valutazione sarà ancora più precisa.'
         }
       : landingOriginal.contactForm.urgencyBox,
     fields: {

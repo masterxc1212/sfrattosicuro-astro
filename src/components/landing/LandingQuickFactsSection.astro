@@ -19,10 +19,10 @@ const { quickFacts } = Astro.props;
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         {quickFacts.items.map((item) => (
-          <article class="bg-gray-pearl rounded-xl border border-gray-200 p-6 text-center card-shadow">
+          <article class="bg-gray-pearl rounded-2xl border border-gray-200 p-5 md:p-6 text-center card-shadow">
             <div class="text-sm font-bold uppercase tracking-wide text-green-security mb-2">{item.label}</div>
-            <div class="text-xl md:text-2xl font-bold text-blue-navy mb-3">{item.value}</div>
-            {item.note && <p class="text-sm text-dark-gray leading-relaxed">{item.note}</p>}
+            <div class="text-xl md:text-2xl font-bold text-blue-navy mb-3 leading-tight">{item.value}</div>
+            {item.note && <p class="text-sm text-dark-gray leading-relaxed max-w-xs mx-auto">{item.note}</p>}
           </article>
         ))}
       </div>

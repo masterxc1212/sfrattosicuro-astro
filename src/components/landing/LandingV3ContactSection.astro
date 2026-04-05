@@ -19,9 +19,9 @@ const { contactForm = landingOriginal.contactForm } = Astro.props;
         <div class="bg-white p-6 md:p-8 rounded-lg card-shadow">
           <h3 class="text-xl md:text-2xl font-bold text-blue-navy mb-6">{contactForm.formTitle}</h3>
 
-          <div class="bg-blue-50 border border-blue-navy/10 rounded-lg p-4 mb-6 text-sm text-dark-gray">
+          <div class="bg-blue-50 border border-blue-navy/10 rounded-xl p-4 md:p-5 mb-6 text-sm text-dark-gray">
             <strong class="text-blue-navy">Checklist minima:</strong>
-            <ul class="mt-3 space-y-2 list-disc pl-5">
+            <ul class="mt-3 space-y-2 list-disc pl-5 leading-relaxed">
               <li>sei il proprietario o il locatore dell'immobile;</li>
               <li>l'inquilino ha già accumulato morosità;</li>
               <li>puoi indicarci città immobile e mesi non pagati.</li>
@@ -63,7 +63,7 @@ const { contactForm = landingOriginal.contactForm } = Astro.props;
             <input type="hidden" name="utm_content" value="">
             <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html">
 
-            <div class="text-center text-xs text-dark-gray mb-2">
+            <div class="text-center text-xs text-dark-gray mb-2 leading-relaxed">
               <p>{contactForm.privacyNote}</p>
             </div>
 
@@ -92,9 +92,9 @@ const { contactForm = landingOriginal.contactForm } = Astro.props;
             </div>
           </div>
 
-          <div class="bg-yellow-50 border border-gold-refined p-6 rounded-lg">
+          <div class="bg-yellow-50 border border-gold-refined p-6 rounded-xl">
             <h4 class="font-bold text-blue-navy mb-3">{contactForm.urgencyBox.title}</h4>
-            <p class="text-dark-gray text-base"><span set:html={contactForm.urgencyBox.body}></span></p>
+            <p class="text-dark-gray text-base leading-relaxed"><span set:html={contactForm.urgencyBox.body}></span></p>
           </div>
         </div>
       </div>
