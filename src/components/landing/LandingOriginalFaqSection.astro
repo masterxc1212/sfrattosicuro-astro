@@ -108,11 +108,11 @@ interface Props {
 const { faqSection = landingOriginal.faq } = Astro.props;
 const faqItems = faqSection.items?.length ? faqSection.items : defaultFaqItems;
 ---
-<section id={faqSection.sectionId} class="py-16 bg-white" aria-labelledby="faq-section-title">
+<section id={faqSection.sectionId} class="py-14 md:py-16 bg-white landing-v3-faq" aria-labelledby="faq-section-title">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
 
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 landing-v3-section-head">
         <h2 id="faq-section-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
           {faqSection.title}
         </h2>
@@ -124,10 +124,10 @@ const faqItems = faqSection.items?.length ? faqSection.items : defaultFaqItems;
         </p>
       </div>
 
-      <div class="space-y-6">
+      <div class="space-y-4">
 
         {faqItems.map((item) => (
-          <details class="bg-gray-pearl rounded-lg p-6 card-shadow">
+          <details class="bg-gray-pearl rounded-2xl p-5 md:p-6 card-shadow landing-v3-faq-item">
             <summary class="text-lg md:text-xl font-bold text-blue-navy cursor-pointer flex items-center">
               <i class={`fas ${item.icon} text-green-security mr-3`} aria-hidden="true"></i>
               {item.q}
@@ -138,7 +138,7 @@ const faqItems = faqSection.items?.length ? faqSection.items : defaultFaqItems;
 
       </div>
 
-      <div class="mt-12 text-center bg-blue-navy text-white p-6 md:p-8 rounded-lg">
+      <div class="mt-10 text-center bg-blue-navy text-white p-6 md:p-8 rounded-2xl landing-v3-cta-panel">
         <h3 class="text-xl md:text-2xl font-bold mb-4">
           <i class="fas fa-question-circle text-gold-refined mr-3" aria-hidden="true"></i>
           {faqSection.bottomTitle}
