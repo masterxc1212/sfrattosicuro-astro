@@ -1,0 +1,80 @@
+---
+// LandingOriginalFooterSection.astro — 1:1 clone of original footer
+// Source: public/landing/index.html
+---
+<footer
+  class="bg-blue-navy text-white pt-16 pb-12 border-t border-white/10"
+  role="contentinfo"
+  style="background: linear-gradient(180deg, var(--blue-navy) 0%, #152040 100%);"
+>
+  <div class="container mx-auto px-4">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+
+        <!-- Brand -->
+        <div class="footer-col">
+          <a href="/" class="inline-block mb-4 group">
+            <div class="flex items-center gap-2">
+              <img src="/assets/img/logo/logo-100.webp" alt="Sfratto Sicuro" width="50" height="50" class="brightness-0 invert">
+              <div class="leading-tight">
+                <span class="block text-xl font-bold tracking-tight">Sfratto Sicuro</span>
+                <span class="text-xs text-gold-refined font-semibold uppercase tracking-wider">Avvocati Specializzati</span>
+              </div>
+            </div>
+          </a>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Il primo servizio legale in Italia specializzato esclusivamente nel recupero immobili per morosità.
+          </p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="text-lg font-bold text-white mb-5">Servizi</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="block text-gray-300 hover:text-green-security transition-colors">Sfratto Abitativo</a></li>
+            <li><a href="#" class="block text-gray-300 hover:text-green-security transition-colors">Sfratto Commerciale</a></li>
+            <li><a href="#" class="block text-gray-300 hover:text-green-security transition-colors">Recupero Canoni</a></li>
+            <li><a href="#" class="block text-gray-300 hover:text-green-security transition-colors">Esecuzione Forzata</a></li>
+            <li><a href="#faq" class="block text-gold-refined hover:text-white transition-colors font-bold mt-4">Domande Frequenti</a></li>
+          </ul>
+        </div>
+
+        <!-- Where -->
+        <div class="footer-col">
+          <h4 class="text-lg font-bold text-white mb-5">Dove Operiamo</h4>
+          <div>
+            <div class="mb-4">
+              <span class="block text-xs text-gold-refined font-bold uppercase mb-1">Sede Centrale</span>
+              <p class="text-white text-sm">Salerno, Via F. P. Volpe 2</p>
+            </div>
+            <div class="mb-4">
+              <span class="block text-xs text-green-security font-bold uppercase mb-2">Domiciliatari in tutta Italia</span>
+              <p class="text-gray-300 text-xs">Grazie alla nostra rete, operiamo fisicamente presso <strong>tutti i Tribunali</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <h4 class="text-lg font-bold text-white mb-5">Dati Societari</h4>
+
+          <div class="text-sm text-gray-400 mb-6">
+            <p class="mb-1 text-white font-semibold">&copy; 2024 Sfratto Sicuro</p>
+            <p class="mb-1">D1 S.R.L.S.</p>
+            <p class="text-xs opacity-70 mb-1">P. IVA 06177400659</p>
+            <p class="text-xs opacity-70">Capitale Sociale Interamente Versato</p>
+          </div>
+
+          <div class="flex flex-col gap-2 text-sm text-gray-300">
+            <a href="/privacy-policy" class="hover:text-white hover:underline decoration-green-security decoration-2 underline-offset-4 transition">Privacy Policy</a>
+            <a href="/cookie-policy" class="hover:text-white hover:underline decoration-green-security decoration-2 underline-offset-4 transition">Cookie Policy</a>
+            <a href="/termini" class="hover:text-white hover:underline decoration-green-security decoration-2 underline-offset-4 transition">Termini e Condizioni</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</footer>

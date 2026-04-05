@@ -1,176 +1,246 @@
 ---
 /**
- * /landing-v2/ — Preview della landing Astro modulare
+ * /landing-v2/ — 1:1 faithful clone of public/landing/index.html
+ * Built from modular Astro components.
+ * Every section, every copy block, every CTA matches the original exactly.
  *
- * NON interferisc con /landing/ (public/landing/index.html rimane live).
- * Quando approvata: rinomina questa pagina in landing/index.astro e
- * rimuovi public/landing/index.html.
- *
- * Config: src/data/landing-model.ts
- * Per variante territoriale: getLandingConfig('roma') ecc.
+ * This version uses a dedicated CSS file (landing.css) for styling
+ * and is self-contained without relying on SiteLayout.astro.
  */
-import SiteLayout from '../../layouts/SiteLayout.astro';
-import JsonLd from '../../components/JsonLd.astro';
-import SmoothScrollIsland from '../../components/SmoothScrollIsland.astro';
-import ReviewsIsland from '../../components/ReviewsIsland.astro';
-import ProvvedimentiIsland from '../../components/ProvvedimentiIsland.astro';
+import '../../styles/landing.css';
+import { buildLandingPageConfig } from '../../data/landing-v2';
 
-// Componenti landing modulari
-import LandingMinimalHeaderSection from '../../components/landing/LandingMinimalHeaderSection.astro';
-import LandingHeroIsland from '../../components/landing/LandingHeroIsland.astro';
-import LandingTrustBarSection from '../../components/landing/LandingTrustBarSection.astro';
-import LandingProblemsSection from '../../components/landing/LandingProblemsSection.astro';
-import LandingHowItWorksSection from '../../components/landing/LandingHowItWorksSection.astro';
-import LandingPricingSection from '../../components/landing/LandingPricingSection.astro';
-import LandingUrgencySection from '../../components/landing/LandingUrgencySection.astro';
-import LandingFaqSection from '../../components/landing/LandingFaqSection.astro';
-import LandingContactFormIsland from '../../components/landing/LandingContactFormIsland.astro';
-import LandingMinimalFooterSection from '../../components/landing/LandingMinimalFooterSection.astro';
+// Section components — 1:1 clones of original landing sections
+import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
+import LandingOriginalTrustBarSection from '../../components/landing/LandingOriginalTrustBarSection.astro';
+import LandingOriginalHeroSection from '../../components/landing/LandingOriginalHeroSection.astro';
+import LandingOriginalProblemsSection from '../../components/landing/LandingOriginalProblemsSection.astro';
+import LandingOriginalCalculatorSection from '../../components/landing/LandingOriginalCalculatorSection.astro';
+import LandingOriginalReviewsSection from '../../components/landing/LandingOriginalReviewsSection.astro';
+import LandingOriginalVideoReviewsSection from '../../components/landing/LandingOriginalVideoReviewsSection.astro';
+import LandingOriginalProvvedimentiSection from '../../components/landing/LandingOriginalProvvedimentiSection.astro';
+import LandingOriginalUrgencySection from '../../components/landing/LandingOriginalUrgencySection.astro';
+import LandingOriginalLegalCostSection from '../../components/landing/LandingOriginalLegalCostSection.astro';
+import LandingOriginalProcedureSection from '../../components/landing/LandingOriginalProcedureSection.astro';
+import LandingOriginalPricingSection from '../../components/landing/LandingOriginalPricingSection.astro';
+import LandingOriginalCostTransparencySection from '../../components/landing/LandingOriginalCostTransparencySection.astro';
+import LandingOriginalWhoWeAreSection from '../../components/landing/LandingOriginalWhoWeAreSection.astro';
+import LandingOriginalWhyChooseSection from '../../components/landing/LandingOriginalWhyChooseSection.astro';
+import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
+import LandingOriginalMiniWidgetSection from '../../components/landing/LandingOriginalMiniWidgetSection.astro';
+import LandingOriginalContactFormSection from '../../components/landing/LandingOriginalContactFormSection.astro';
+import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 
-import { getLandingConfig, landingOrg } from '../../data/landing-model';
-import site from '../../data/site.json';
-
-// ---- Configura qui la variante da visualizzare ----
-// 'nazionale' | 'roma' | 'milano' | 'napoli' | 'torino' | 'bologna' | 'firenze'
-const VARIANTE = 'nazionale';
-
-const config = getLandingConfig(VARIANTE);
-const siteUrl = site.siteUrl.replace(/\/$/, '');
-const previewCanonicalPath = '/landing-v2/';
-
-// ---- JSON-LD ----
-const graph = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': `${siteUrl}${previewCanonicalPath}#webpage`,
-      url: `${siteUrl}${previewCanonicalPath}`,
-      name: `${config.title} [preview]`,
-      description: config.description,
-      inLanguage: 'it-IT'
-    },
-    {
-      '@type': 'LegalService',
-      '@id': `${siteUrl}${previewCanonicalPath}#service`,
-      name: 'Sfratto Sicuro',
-      legalName: 'D1 S.R.L.S.',
-      url: `${siteUrl}${previewCanonicalPath}`,
-      telephone: landingOrg.telephone,
-      email: landingOrg.email,
-      vatID: landingOrg.vatID,
-      areaServed: config.territory?.city
-        ? { '@type': 'City', name: config.territory.city }
-        : { '@type': 'Country', name: 'IT' },
-      serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
-      priceRange: '€€',
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'Sfratto per Morosità',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'Sfratto per Morosità',
-              description: 'Procedura completa fino alla convalida con Protocollo Sfratto Sicuro.'
-            },
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: '1300.00',
-              priceCurrency: 'EUR',
-              valueAddedTaxIncluded: true
-            }
-          }
-        ]
-      }
-    },
-    // FAQPage schema — alimentato dal config
-    {
-      '@type': 'FAQPage',
-      '@id': `${siteUrl}${previewCanonicalPath}#faq`,
-      mainEntity: config.faq.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: { '@type': 'Answer', text: item.a }
-      }))
-    }
-  ]
-};
+const config = buildLandingPageConfig({
+  version: 'v2',
+  territory: 'nazionale',
+  keyword: 'sfratto-per-morosita',
+});
 ---
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<SiteLayout
-  title={config.title}
-  description={config.description}
-  canonicalPath={previewCanonicalPath}
-  robots="noindex,nofollow"
->
-  <Fragment slot="head">
-    <JsonLd graph={graph} />
-  </Fragment>
+    <!-- Favicons & Manifest -->
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Sfratto">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1B2951">
 
-  <!--
-    Layout landing: header minimal (niente nav), poi sezioni modulari,
-    footer minimal. Non usa HomeModel né HeaderIsland.
-  -->
+    <!-- Title & Meta -->
+    <title>{config.seo.title}</title>
+    <meta name="description" content={config.seo.description}>
+    <meta name="keywords" content={config.seo.keywords}>
+    <meta name="robots" content={config.seo.robots}>
+    <meta name="author" content="SfrattoSicuro.it">
+    <link rel="canonical" href={config.seo.canonicalUrl}>
 
-  <LandingMinimalHeaderSection />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={config.seo.ogTitle}>
+    <meta property="og:description" content={config.seo.ogDescription}>
+    <meta property="og:url" content={config.seo.ogUrl}>
+    <meta property="og:site_name" content="SfrattoSicuro.it">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
 
-  <main id="main-content">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={config.seo.twitterTitle}>
+    <meta name="twitter:description" content={config.seo.twitterDescription}>
+    <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
 
-    <!-- 1. Hero con form inline di qualificazione -->
-    <LandingHeroIsland config={config} />
+    <!-- Preconnect & DNS-prefetch -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//i.ytimg.com">
+    <link rel="dns-prefetch" href="//www.youtube-nocookie.com">
 
-    <!-- 2. Trust bar: 4 metriche chiave -->
-    <LandingTrustBarSection signals={config.trustSignals} />
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- 3. Problemi del proprietario -->
-    <LandingProblemsSection problems={config.problems} />
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.faq)} />
 
-    <!-- 4. Come funziona il Protocollo -->
-    <LandingHowItWorksSection steps={config.steps} />
+    <!-- GTM noscript -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFR8V7BD" height="0" width="0" style="display:none;visibility:hidden" loading="lazy"></iframe></noscript>
 
-    <!-- 5. Pricing trasparente -->
-    <LandingPricingSection offer={config.offer} />
+    <!-- Tracking script (lazy — same as original) -->
+    <script>
+      (function(){
+        function getParam(name){
+          const params = new URLSearchParams(window.location.search);
+          return params.get(name) || '';
+        }
+        function captureTrackingParams(){
+          const gclid = getParam('gclid');
+          const utmSource = getParam('utm_source');
+          const utmMedium = getParam('utm_medium');
+          const utmCampaign = getParam('utm_campaign');
+          const utmTerm = getParam('utm_term');
+          const utmContent = getParam('utm_content');
+          const keyword = getParam('keyword');
+          document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
+            var set = function(n, v){
+              var i = f.querySelector('[name="'+n+'"]');
+              if(i) i.value = v;
+            };
+            set('gclid', gclid);
+            set('utm_source', utmSource);
+            set('utm_medium', utmMedium);
+            set('utm_campaign', utmCampaign);
+            set('utm_term', utmTerm);
+            set('utm_content', utmContent);
+            set('keyword', keyword);
+          });
+        }
+        captureTrackingParams();
 
-    <!-- 6. Urgency CTA -->
-    <LandingUrgencySection urgency={config.urgency} />
+        if(window.trackingLoaded) return;
+        window.trackingLoaded = true;
 
-    <!-- 7. Prove sociali: recensioni reali -->
-    <ReviewsIsland />
+        var load = function(){
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'AW-10983419342', { send_page_view: false, transport_type: 'beacon' });
+          gtag('config', 'G-509YE5HCYB', { send_page_view: true, transport_type: 'beacon' });
 
-    <!-- 8. Provvedimenti documentati -->
-    <ProvvedimentiIsland />
+          if('requestIdleCallback' in window){
+            requestIdleCallback(function(){
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10983419342';
+              document.head.appendChild(s);
+            }, { timeout: 3000 });
+          }
+        };
 
-    <!-- 9. FAQ -->
-    <LandingFaqSection
-      faq={config.faq}
-      territory={config.territory}
-    />
+        var triggered = false;
+        var trigger = function(){
+          if(triggered) return;
+          triggered = true;
+          load();
+        };
+        ['scroll','click','touchstart','keydown'].forEach(function(e){
+          window.addEventListener(e, trigger, { once: true, passive: true });
+        });
+        setTimeout(trigger, 15000);
+      })();
+    </script>
 
-    <!-- 10. Form contatto qualificato (fondo pagina) -->
-    <LandingContactFormIsland
-      formCta={config.formCta}
-      qualifierQuestion={config.qualifierQuestion}
-      qualifierOptions={config.qualifierOptions}
-      territory={config.territory}
-    />
+    <!-- Lazy load images -->
+    <script>
+      (function(){
+        var setLazy = function(){
+          document.querySelectorAll('img:not([fetchpriority="high"]):not([loading])').forEach(function(i){ i.loading = 'lazy'; });
+        };
+        if(document.readyState === 'loading'){
+          document.addEventListener('DOMContentLoaded', setLazy, { once: true });
+        } else {
+          setLazy();
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <LandingOriginalHeaderSection />
 
-  </main>
+    <main id="main-content" style="min-height:100vh; margin-top: var(--header-h, 90px);">
 
-  <LandingMinimalFooterSection />
-  <SmoothScrollIsland />
+      <!-- 3. Hero with form -->
+      <LandingOriginalHeroSection hero={config.hero} />
 
-</SiteLayout>
+      <!-- 2. Trust bar -->
+      <LandingOriginalTrustBarSection trustBar={config.trustBar} />
 
-<style>
-  /*
-   * Override layout specifico per landing:
-   * rimuove il margin-top del main che assumerebbe un header sticky da 84px,
-   * perché LandingMinimalHeaderSection ha altezza 72px.
-   */
-  #main-content {
-    /* header minimal = 72px — sovrascrive --header-h se settato */
-    --header-h: 72px;
-  }
-</style>
+      <!-- 4. Problem situations -->
+      <LandingOriginalProblemsSection problemsSection={config.problems} />
+
+      <!-- 5. Cost calculator -->
+      <LandingOriginalCalculatorSection calculator={config.calculator} />
+
+      <!-- 6. Google Reviews -->
+      <LandingOriginalReviewsSection />
+
+      <!-- 7. Video Reviews -->
+      <LandingOriginalVideoReviewsSection />
+
+      <!-- 8. Provvedimenti -->
+      <LandingOriginalProvvedimentiSection />
+
+      <!-- 9. Posti Limitati -->
+      <LandingOriginalUrgencySection />
+
+      <!-- 10. Rimborso Spese -->
+      <LandingOriginalLegalCostSection />
+
+      <!-- 11. Procedure -->
+      <LandingOriginalProcedureSection />
+
+      <!-- 12. Services / Pricing -->
+      <LandingOriginalPricingSection />
+
+      <!-- 13. Cost Transparency -->
+      <LandingOriginalCostTransparencySection />
+
+      <!-- 14. Chi Siamo -->
+      <LandingOriginalWhoWeAreSection />
+
+      <!-- 15. Perché Sceglierci -->
+      <LandingOriginalWhyChooseSection />
+
+      <!-- 16. FAQ -->
+      <LandingOriginalFaqSection faqSection={config.faq} />
+
+      <!-- 17. Mini Widget Rating -->
+      <LandingOriginalMiniWidgetSection />
+
+      <!-- 18. Contact Form -->
+      <LandingOriginalContactFormSection contactForm={config.contactForm} />
+
+    </main>
+
+    <!-- 19. Footer -->
+    <LandingOriginalFooterSection />
+
+    <!-- External script deps (same as original + form handling/tracking) -->
+    <script src="/assets/js/calculator.js" defer></script>
+    <script src="/assets/js/reviews.js" defer></script>
+    <script src="/assets/js/videos.js" defer></script>
+    <script src="/assets/js/form-validation.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

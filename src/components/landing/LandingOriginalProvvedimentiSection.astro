@@ -1,0 +1,66 @@
+---
+// LandingOriginalProvvedimentiSection.astro — 1:1 clone of original provvedimenti section
+// Source: public/landing/index.html
+const images = [
+  { src: '/assets/img/provvedimenti/01.webp', alt: 'Provvedimento di Convalida di Sfratto - Tribunale Italiano' },
+  { src: '/assets/img/provvedimenti/02.webp', alt: 'Provvedimento di Convalida di Sfratto - Tribunale Italiano' },
+  { src: '/assets/img/provvedimenti/03.webp', alt: 'Provvedimento di Convalida di Sfratto - Tribunale Italiano' },
+  { src: '/assets/img/provvedimenti/04.webp', alt: 'Provvedimento di Convalida di Sfratto - Tribunale Italiano' },
+];
+---
+<section class="py-12 md:py-16" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);">
+  <div class="container mx-auto px-4">
+
+    <div class="text-center mb-10">
+      <div class="inline-block mb-4">
+        <span
+          class="bg-green-50 px-4 py-2 rounded-full text-sm font-bold border-2"
+          style="background: rgba(59, 174, 93, 0.1); border-color: var(--green-security); color: var(--green-security);"
+        >
+          <i class="fas fa-gavel"></i> DOCUMENTAZIONE UFFICIALE
+        </span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--blue-navy);">
+        I Nostri Risultati Concreti
+      </h2>
+      <p class="text-base md:text-lg max-w-3xl mx-auto" style="color: var(--anthracite); line-height: 1.6;">
+        Ogni giorno otteniamo provvedimenti di convalida per i nostri clienti.<br class="hidden sm:block">
+      </p>
+    </div>
+
+    <div class="provvedimenti-gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
+
+      {images.map((img, i) => (
+        <div class="provvedimento-card group">
+          <div
+            class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl"
+            style="border: 3px solid var(--green-security); background: white;"
+          >
+            <img
+              src={img.src}
+              alt={img.alt}
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+              width="600"
+              height="800"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-4 text-white">
+                <p class="font-bold text-sm">Convalida Ottenuta</p>
+                <p class="text-xs mt-1 opacity-90">Procedura {i === 0 ? 'conclusa con ordinanza di convalida' : 'completata con successo'}</p>
+              </div>
+            </div>
+            <div
+              class="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold shadow-md"
+              style="background: var(--green-security); color: white;"
+            >
+              <i class="fas fa-check"></i> Certificato
+            </div>
+          </div>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>

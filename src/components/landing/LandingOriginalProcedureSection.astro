@@ -1,0 +1,99 @@
+---
+// LandingOriginalProcedureSection.astro — 1:1 clone of original 4-phase procedure
+// Source: public/landing/index.html
+const steps = [
+  {
+    num: '1',
+    title: 'FASE 1 (Giorno 0): Analisi e Attivazione della Pratica di Sfratto',
+    body: 'Ti ricontattiamo entro <strong>24 ore</strong>, analizziamo il tuo caso di sfratto per morosità e attiviamo immediatamente la pratica. Nessun tempo perso.',
+    badge: 'Partenza immediata con avvocato dedicato',
+    badgeEmoji: '🚀',
+  },
+  {
+    num: '2',
+    title: 'FASE 2 (Giorni 1-7): Redazione e Notifica dell\'Intimazione di Sfratto',
+    body: 'Prepariamo l\'atto di intimazione per sfratto per morosità e lo notifichiamo in proprio. Procedura velocizzata.',
+    badge: 'Atto redatto e notificato con tempestività',
+    badgeEmoji: '📄',
+  },
+  {
+    num: '3',
+    title: 'FASE 3 (Giorni 8-30): Iscrizione a Ruolo e Deposito in Tribunale',
+    body: 'Depositiamo l\'intimazione presso il Tribunale competente. Il nostro avvocato, specializzato nello sfratto per morosità, assicura l\'ottenimento di date d\'udienza rapide grazie all\'esperienza maturata sul campo.',
+    badge: 'Tribunale: attivazione immediata con iter dedicato',
+    badgeEmoji: '⚖️',
+  },
+  {
+    num: '✓',
+    title: 'FASE 4 (Giorni 31-60): Udienza e Convalida Giudiziale dello Sfratto',
+    body: 'In udienza, il nostro avvocato ottiene l\'ordinanza di convalida dello sfratto per morosità. <strong>Solo a questo punto, con il provvedimento del Giudice, verserai il compenso pattuito di 1.300€</strong>. Questa è la nostra garanzia: prima il risultato, poi il pagamento.',
+    badge: 'Convalida ottenuta – Il pagamento avviene solo dopo il provvedimento del Giudice',
+    badgeEmoji: '🔨',
+    isGold: true,
+  },
+];
+---
+<section id="come-funziona" class="py-16 bg-gray-pearl" aria-labelledby="procedura-protocollo">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 id="procedura-protocollo" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
+          La Procedura di Sfratto per Morosità: Le Fasi del Nostro Protocollo
+        </h2>
+        <p class="text-lg md:text-xl text-dark-gray">
+          Un processo collaudato che ha già permesso di liberare oltre 1.500 immobili.
+          La nostra procedura per lo sfratto per morosità è ottimizzata per ottenere, mediamente, la convalida in circa 60 giorni.
+        </p>
+      </div>
+
+      <div class="space-y-6 md:space-y-8 mb-12">
+
+        {steps.map((step, i) => (
+          <article class="timeline-step p-6 rounded-lg timeline-line">
+            <div class="flex items-start space-x-4">
+              <div
+                class="step-circle w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0"
+                style={step.isGold ? 'background: linear-gradient(135deg, #C9A961 0%, #d4af37 100%);' : ''}
+                aria-label={`Fase ${step.num}`}
+              >
+                {step.num}
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg md:text-xl font-bold text-blue-navy mb-3">{step.title}</h3>
+                <p class="text-dark-gray text-base mb-3" set:html={step.body}></p>
+                <div class="text-sm font-semibold" style={step.isGold ? 'color: var(--gold-refined);' : 'color: var(--green-security);'}>
+                  <span class="mr-1" aria-hidden="true">{step.badgeEmoji}</span>
+                  {step.badge}
+                </div>
+              </div>
+            </div>
+          </article>
+        ))}
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <div class="bg-blue-navy text-white p-6 md:p-8 rounded-lg inline-block max-w-3xl">
+          <h3 class="text-xl md:text-2xl font-bold mb-4">
+            <span class="text-gold-refined mr-3" aria-hidden="true">✅</span>
+            Un Metodo Che Funziona Davvero
+          </h3>
+          <p class="text-lg mb-6">
+            Con il nostro protocollo ottimizzato per lo sfratto per morosità, trasformiamo mesi di incertezza
+            in una procedura tracciabile e prevedibile. Procedura applicata in oltre 1.500 casi documentati.
+          </p>
+          <a
+            href="#contatti"
+            class="btn-primary px-6 md:px-8 py-4 rounded-lg font-bold text-lg btn-mobile-fix"
+            aria-label="Attiva il protocollo sfratto sicuro"
+          >
+            <span class="mr-2" aria-hidden="true">✉️</span>
+            ATTIVA IL PROTOCOLLO
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

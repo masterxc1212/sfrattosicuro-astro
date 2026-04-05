@@ -1,0 +1,203 @@
+---
+// LandingOriginalCalculatorSection.astro — 1:1 clone of original calculator
+// Source: public/landing/index.html
+import { landingOriginal } from '../../data/landing-original';
+
+interface Props {
+  calculator?: typeof landingOriginal.calculator;
+}
+
+const { calculator = landingOriginal.calculator } = Astro.props;
+---
+<section id={calculator.sectionId} class="py-16 bg-white" aria-labelledby="calcolatore-perdite-title">
+
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+
+      <div class="text-center mb-8">
+        <h2 id="calcolatore-perdite-title" class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-navy mb-3">
+          {calculator.title}
+        </h2>
+        <p class="text-base sm:text-lg text-anthracite max-w-3xl mx-auto">
+          {calculator.intro}
+        </p>
+      </div>
+
+      <div class="bg-gray-pearl p-6 sm:p-8 rounded-2xl shadow-lg">
+        <h3 class="text-lg sm:text-xl font-bold text-blue-navy mb-6">Calcola le Tue Perdite Reali</h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+
+          <div>
+            <label for="canone" class="block text-sm font-semibold text-anthracite mb-2">
+              Canone Mensile (€)
+            </label>
+            <input
+              type="number"
+              id="canone"
+              value="900"
+              min="0"
+              step="50"
+              class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800"
+              aria-label="Inserisci canone mensile"
+            >
+          </div>
+
+          <div>
+            <label for="oneri" class="block text-sm font-semibold text-anthracite mb-2">
+              Oneri Condominiali (€/mese)
+            </label>
+            <input
+              type="number"
+              id="oneri"
+              value="150"
+              min="0"
+              step="10"
+              class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800"
+              aria-label="Inserisci oneri condominiali"
+            >
+          </div>
+
+          <div>
+            <label for="tasse" class="block text-sm font-semibold text-anthracite mb-2">
+              Tasse Locali (€/mese)
+            </label>
+            <input
+              type="number"
+              id="tasse"
+              value="180"
+              min="0"
+              step="10"
+              class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800"
+              aria-label="Inserisci tasse locali"
+            >
+          </div>
+
+          <div>
+            <label for="usura" class="block text-sm font-semibold text-anthracite mb-2">
+              Deprezzamento (€/mese)
+            </label>
+            <input
+              type="number"
+              id="usura"
+              value="200"
+              min="0"
+              step="10"
+              class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800"
+              aria-label="Inserisci deprezzamento mensile"
+            >
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="mesi" class="block text-sm font-semibold text-anthracite mb-2">
+              Da Quanti Mesi l'Inquilino Non Paga?
+            </label>
+            <input
+              type="number"
+              id="mesi"
+              value="3"
+              min="1"
+              max="60"
+              step="1"
+              placeholder="Inserisci numero mesi"
+              class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-security text-gray-800"
+              aria-label="Inserisci numero mesi di morosità"
+            >
+          </div>
+
+        </div>
+
+        <div class="bg-red-100 rounded-xl p-6 sm:p-8 shadow-xl border-4 border-red-600">
+
+          <h4 class="text-xl sm:text-2xl font-bold text-red-800 mb-6">
+            <span aria-hidden="true">📊</span> Le Tue Perdite Attuali
+          </h4>
+
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md border-2 border-red-300">
+              <div class="text-xs sm:text-sm text-gray-900 font-bold mb-1">Canoni Non Percepiti</div>
+              <div class="text-xl sm:text-2xl font-bold text-red-700">€ <span id="perdita-canoni">2.700</span></div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border-2 border-red-300">
+              <div class="text-xs sm:text-sm text-gray-900 font-bold mb-1">Oneri Pagati</div>
+              <div class="text-xl sm:text-2xl font-bold text-red-700">€ <span id="perdita-oneri">450</span></div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border-2 border-red-300">
+              <div class="text-xs sm:text-sm text-gray-900 font-bold mb-1">Tasse Pagate</div>
+              <div class="text-xl sm:text-2xl font-bold text-red-700">€ <span id="perdita-tasse">540</span></div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border-2 border-red-300">
+              <div class="text-xs sm:text-sm text-gray-900 font-bold mb-1">Deprezzamento</div>
+              <div class="text-xl sm:text-2xl font-bold text-red-700">€ <span id="perdita-usura">600</span></div>
+            </div>
+          </div>
+
+          <div class="bg-red-200 p-6 sm:p-8 rounded-xl shadow-2xl border-4 border-red-700 text-center">
+            <div class="text-sm sm:text-base uppercase tracking-wide mb-3 font-bold text-red-900">
+              <span aria-hidden="true">⚠️</span> PERDITA TOTALE ATTUALE
+            </div>
+            <div class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-red-900">
+              € <span id="perdita-totale">5.040</span>
+            </div>
+            <div class="text-lg sm:text-xl md:text-2xl font-bold text-red-900 bg-red-300 px-4 py-3 rounded-lg inline-block">
+              <span id="perdita-mensile">1.680</span>€ al mese di perdite continue
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-6 sm:mt-8 bg-green-50 border-4 border-green-security rounded-xl p-4 sm:p-6 md:p-8">
+
+          <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-green-security mb-3 sm:mb-4 text-center">
+            <span aria-hidden="true">✅</span> Con Sfratto Sicuro: Convalida in 60 Giorni
+          </h4>
+          <p class="text-center text-sm sm:text-base md:text-lg text-gray-900 mb-4 sm:mb-6 leading-relaxed font-semibold px-2">
+            Invece di continuare a perdere <span class="font-bold text-red-700 text-base sm:text-xl md:text-2xl whitespace-nowrap"><span id="perdita-mensile-2">1.680</span>€</span> ogni mese, risolvi pagando solo <span class="font-bold text-green-security text-base sm:text-xl md:text-2xl whitespace-nowrap">€1.300</span> alla convalida.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+
+            <div class="bg-white p-4 sm:p-5 md:p-6 rounded-lg border-3 border-red-500 shadow-md">
+              <h5 class="font-bold text-red-700 mb-3 text-sm sm:text-base md:text-lg">
+                <span aria-hidden="true">❌</span> Situazione Attuale
+              </h5>
+              <ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm md:text-base text-gray-900 font-medium">
+                <li>Perdite continue ogni mese</li>
+                <li>Tempi incerti (12-24 mesi)</li>
+                <li>Stress costante</li>
+                <li>Casa che si deteriora</li>
+                <li>Costi imprevedibili</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-4 sm:p-5 md:p-6 rounded-lg border-3 border-green-security shadow-md">
+              <h5 class="font-bold text-green-security mb-3 text-sm sm:text-base md:text-lg">
+                <span aria-hidden="true">✅</span> Con il Protocollo
+              </h5>
+              <ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm md:text-base text-gray-900 font-medium">
+                <li>Convalida in 60 giorni</li>
+                <li>€1.300 tutto incluso</li>
+                <li>Pagamento a risultato</li>
+                <li>Procedura ottimizzata</li>
+                <li>Specializzazione nello sfratto per morosità</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="cta-rapida" class="cta-box text-center px-3 mt-4">
+          <a href="#contatti" class="btn-primary cta-btn inline-flex items-center justify-center gap-2 mx-auto">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span class="leading-tight text-center">RICHIEDI UNA CONSULENZA</span>
+          </a>
+          <p class="cta-caption mt-3"><span aria-hidden="true">✓</span> Gratuita, sicura e senza impegno</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,162 @@
+---
+// LandingOriginalFaqSection.astro — 1:1 clone of original FAQ section
+// Source: public/landing/index.html
+import { landingOriginal } from '../../data/landing-original';
+
+const defaultFaqItems = [
+  {
+    icon: 'fa-clock',
+    q: 'Quali sono i tempi reali per uno sfratto per morosità?',
+    a: 'I tempi di uno sfratto per morosità possono superare l\'anno con procedure non ottimizzate. Con il nostro Protocollo otteniamo la <strong>convalida dello sfratto mediamente in 60 giorni</strong>.',
+  },
+  {
+    icon: 'fa-calendar',
+    q: 'Quanti mesi di affitto non pagati servono per avviare lo sfratto?',
+    a: 'Per legge si può avviare la procedura già dopo <strong>20 giorni</strong> di ritardo nel pagamento di una sola mensilità.',
+  },
+  {
+    icon: 'fa-euro-sign',
+    q: 'Quanto costa un avvocato per lo sfratto?',
+    a: 'Offriamo una formula a prezzo fisso di <strong>1.300€ tutto incluso</strong> fino alla convalida. Copre spese legali, notifiche, contributi e rappresentanza senza costi aggiuntivi.',
+  },
+  {
+    icon: 'fa-money-bill',
+    q: 'Cosa succede se l\'inquilino paga dopo la notifica?',
+    a: 'Se l\'inquilino paga prima della convalida, la procedura si interrompe.',
+  },
+  {
+    icon: 'fa-child',
+    q: 'È possibile sfrattare un inquilino con figli minorenni?',
+    a: 'Sì, lo sfratto per morosità è possibile anche in presenza di minori. Seguiamo la procedura con particolare attenzione agli aspetti sensibili.',
+  },
+  {
+    icon: 'fa-store',
+    q: 'Come funziona lo sfratto per un locale commerciale?',
+    a: 'Le regole sono simili allo sfratto abitativo, ma spesso i tempi sono più rapidi. Gestiamo anche contratti commerciali con la stessa efficacia.',
+  },
+  {
+    icon: 'fa-gavel',
+    q: 'Alla fine della procedura, chi paga l\'avvocato per lo sfratto?',
+    a: 'Il Giudice condanna l\'inquilino moroso a rimborsare al proprietario <strong>tutte le spese legali</strong>, incluso il nostro compenso di 1.300€.',
+  },
+  {
+    icon: 'fa-receipt',
+    q: 'Cosa comprende la vostra parcella Sfratto Sicuro?',
+    a: 'I nostri 1.300€ includono: consulenza, atti legali, contributi unificati, marche, notifiche, e rappresentanza in Tribunale. <strong>Nessun costo aggiuntivo fino alla convalida.</strong>',
+  },
+  {
+    icon: 'fa-balance-scale',
+    q: 'Cosa succede se l\'inquilino non lascia l\'immobile dopo la convalida?',
+    a: 'Si passa all\'esecuzione forzata tramite Ufficiale Giudiziario, con accessi programmati e, se necessario, forza pubblica. I nostri compensi per questa fase sono già inclusi nei 1.300€.',
+  },
+  {
+    icon: 'fa-hourglass-half',
+    q: 'Posso avviare lo sfratto se l\'inquilino paga in ritardo o solo una parte dell\'affitto?',
+    a: 'Sì. La morosità esiste anche con pagamenti in <strong>ritardo</strong>, a <strong>singhiozzo</strong> o solo <strong>parziali</strong>. Basta un inadempimento oltre 20 giorni per procedere.',
+  },
+  {
+    icon: 'fa-user-shield',
+    q: 'Devo essere presente all\'udienza di sfratto?',
+    a: 'No. Seguiamo noi l\'intera udienza: il proprietario <strong>non deve andare in Tribunale</strong>.',
+  },
+  {
+    icon: 'fa-coins',
+    q: 'Oltre allo sfratto, posso recuperare i canoni arretrati?',
+    a: 'Sì. Chiediamo al Giudice la condanna dell\'inquilino al pagamento di <strong>tutti gli affitti non versati</strong>, degli oneri condominiali e delle spese legali.',
+  },
+  {
+    icon: 'fa-exclamation-circle',
+    q: 'Cosa succede se l\'inquilino si oppone allo sfratto?',
+    a: 'L\'opposizione rende il procedimento ordinario, ma predisponiamo una strategia dedicata per ottenere comunque il rilascio nel minor tempo possibile.',
+  },
+  {
+    icon: 'fa-hand-holding-heart',
+    q: 'Cos\'è il "termine di grazia" e quando può essere concesso?',
+    a: 'È un periodo (30–90 giorni) che il Giudice può concedere all\'inquilino per sanare la morosità. Se paga tutto, lo sfratto non viene convalidato. Non è automatico.',
+  },
+  {
+    icon: 'fa-file-signature',
+    q: 'Posso sfrattare un inquilino se il contratto non è perfettamente regolare?',
+    a: 'Puoi procedere solo con contratto <strong>regolarmente registrato</strong>. Irregolarità minori non impediscono lo sfratto, ma un contratto non registrato va prima sanato.',
+  },
+  {
+    icon: 'fa-ban',
+    q: 'Posso staccare le utenze o cambiare la serratura per farlo andare via?',
+    a: 'No. Sono azioni <strong>illegali</strong> che possono comportare responsabilità penali. Lo sgombero può essere eseguito solo dall\'Ufficiale Giudiziario.',
+  },
+  {
+    icon: 'fa-piggy-bank',
+    q: 'Posso trattenere la cauzione per coprire i canoni non pagati?',
+    a: 'Solo alla <strong>fine della locazione</strong> e solo per compensare canoni non saldati o danni. Non sostituisce il pagamento del canone mensile.',
+  },
+  {
+    icon: 'fa-box-open',
+    q: 'Cosa succede ai beni dell\'inquilino se non è presente durante lo sgombero?',
+    a: 'L\'Ufficiale Giudiziario decide se rimuovere, custodire o dichiarare abbandonati i beni. Il proprietario non può toccarli autonomamente.',
+  },
+  {
+    icon: 'fa-user-times',
+    q: 'È possibile sfrattare un inquilino nullatenente?',
+    a: 'Sì. Lo sfratto riguarda il <strong>rilascio dell\'immobile</strong>, non la capacità economica del conduttore. Il recupero dei canoni sarà più complesso, ma l\'immobile viene liberato.',
+  },
+];
+
+interface Props {
+  faqSection?: typeof landingOriginal.faq;
+}
+
+const { faqSection = landingOriginal.faq } = Astro.props;
+const faqItems = faqSection.items?.length ? faqSection.items : defaultFaqItems;
+---
+<section id={faqSection.sectionId} class="py-16 bg-white" aria-labelledby="faq-section-title">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 id="faq-section-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
+          {faqSection.title}
+        </h2>
+        <p class="text-lg md:text-xl text-dark-gray mb-4">
+          {faqSection.subtitle}
+        </p>
+        <p class="text-base text-dark-gray">
+          {faqSection.subtitle2}
+        </p>
+      </div>
+
+      <div class="space-y-6">
+
+        {faqItems.map((item) => (
+          <details class="bg-gray-pearl rounded-lg p-6 card-shadow">
+            <summary class="text-lg md:text-xl font-bold text-blue-navy cursor-pointer flex items-center">
+              <i class={`fas ${item.icon} text-green-security mr-3`} aria-hidden="true"></i>
+              {item.q}
+            </summary>
+            <div class="text-dark-gray text-base mt-4 pl-7" set:html={item.a}></div>
+          </details>
+        ))}
+
+      </div>
+
+      <div class="mt-12 text-center bg-blue-navy text-white p-6 md:p-8 rounded-lg">
+        <h3 class="text-xl md:text-2xl font-bold mb-4">
+          <i class="fas fa-question-circle text-gold-refined mr-3" aria-hidden="true"></i>
+          {faqSection.bottomTitle}
+        </h3>
+        <p class="text-lg mb-6">
+          {faqSection.bottomBody}
+        </p>
+        <a
+          href="#contatti"
+          class="btn-primary px-6 md:px-8 py-4 rounded-lg font-bold text-lg btn-mobile-fix"
+          aria-label="Richiedi una consulenza gratuita per altre domande"
+        >
+          <span class="mr-2" aria-hidden="true">✉️</span>
+          {faqSection.ctaLabel}
+        </a>
+        <p class="text-xs text-gray-300 mt-4">✓ {faqSection.ctaCaption}</p>
+      </div>
+
+    </div>
+  </div>
+</section>

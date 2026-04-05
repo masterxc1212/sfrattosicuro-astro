@@ -1,0 +1,59 @@
+---
+// LandingOriginalWhoWeAreSection.astro — 1:1 clone of original chi siamo section
+// Source: public/landing/index.html
+const paragraphs = [
+  'Siamo <strong>avvocati specializzati esclusivamente in sfratti per morosità</strong>, con centrali operative a <strong>Milano e Salerno</strong>, dove vengono predisposti tutti gli atti.',
+  'Ci avvaliamo di una <strong>fitta rete di domiciliatari che operano in ogni Tribunale d\'Italia</strong>, occupandosi degli adempimenti presso le Cancellerie e gli Ufficiali Giudiziari.',
+  'Questa organizzazione ci permette di <strong>ottimizzare i tempi</strong> e garantire <strong>una copertura completa su tutto il territorio nazionale</strong>, mantenendo la massima specializzazione nel settore dello sfratto per morosità.',
+];
+const pillars = [
+  {
+    icon: 'fa-building',
+    title: 'Centrali Operative',
+    line1: 'Milano, Salerno',
+    line2: 'Avvocato per sfratto dedicato',
+  },
+  {
+    icon: 'fa-network-wired',
+    title: 'Rete Nazionale',
+    line1: 'Avvocati in ogni Tribunale',
+    line2: 'Copertura Italia completa',
+  },
+  {
+    icon: 'fa-gavel',
+    title: 'Solo Sfratti',
+    line1: 'Specializzazione esclusiva',
+    line2: 'Dal 2018',
+  },
+];
+---
+<section id="chi-siamo" class="py-16 bg-white" aria-labelledby="chi-siamo-title">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center">
+
+      <h2 id="chi-siamo-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-8">
+        Chi Siamo
+      </h2>
+
+      <div class="bg-gray-pearl p-6 md:p-8 rounded-lg card-shadow mb-8">
+        <div class="text-lg md:text-xl text-dark-gray leading-relaxed space-y-4">
+          {paragraphs.map(p => <p set:html={p}></p>)}
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {pillars.map(p => (
+          <div class="text-center">
+            <div class="text-green-security text-4xl mb-4" aria-hidden="true">
+              <i class={`fas ${p.icon}`}></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-navy mb-2">{p.title}</h3>
+            <p class="text-dark-gray">{p.line1}</p>
+            <p class="text-sm text-green-security">{p.line2}</p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>

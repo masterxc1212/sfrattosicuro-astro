@@ -1,0 +1,174 @@
+---
+// LandingOriginalPricingSection.astro — 1:1 clone of original services/pricing section
+// Source: public/landing/index.html
+const mainItems = [
+  {
+    icon: 'fa-file-contract',
+    title: 'Analisi Caso Completa',
+    body: 'Valutazione della pratica di sfratto per morosità con definizione della strategia ottimale',
+    note: '✓ Tutte le spese incluse nel prezzo fisso',
+    isGold: false,
+  },
+  {
+    icon: 'fa-pen-nib',
+    title: 'Predisposizione Atti Legali',
+    body: 'Intimazione di sfratto e citazione per convalida predisposte dall\'avvocato per sfratto',
+    note: '✓ Contributi unificati e marche da bollo incluse',
+    isGold: false,
+  },
+  {
+    icon: 'fa-bell',
+    title: 'Notifiche in Proprio',
+    body: 'Tutte le notifiche in proprio per velocizzare i tempi',
+    note: '✓ Spese notifica incluse fino a convalida',
+    isGold: false,
+  },
+  {
+    icon: 'fa-balance-scale',
+    title: 'Rappresentanza in Tribunale',
+    body: 'Patrocinio in udienza per ottenere la convalida di sfratto',
+    note: '✓ Compenso domiciliatario incluso',
+    isGold: false,
+  },
+  {
+    icon: 'fa-gavel',
+    title: 'Convalida di Sfratto',
+    body: '<strong>OBIETTIVO RAGGIUNTO: Ordinanza di convalida dello sfratto per morosità ottenuta</strong>',
+    note: '★ PAGAMENTO: Solo dopo l\'emissione della convalida del Giudice',
+    isGold: true,
+  },
+];
+
+const bonusItems = [
+  {
+    badge: 'BONUS 1',
+    title: 'Gestione Esecuzione Forzata',
+    body: 'Se scegli noi: gestione completa fino al rilascio fisico',
+    note: '✓ Inclusa nel servizio se prosegui con noi',
+  },
+  {
+    badge: 'BONUS 2',
+    title: 'Recupero Crediti da Morosità',
+    body: 'Se scegli noi: azione per il recupero delle somme dovute',
+    note: '✓ Incluso nel servizio se prosegui con noi',
+  },
+  {
+    badge: 'BONUS 3',
+    title: 'Mini-Guida Rilocazione Sicura',
+    body: 'Guida completa per scegliere il nuovo inquilino senza rischi',
+    note: '★ Sempre inclusa per tutti i clienti',
+    isGold: true,
+  },
+];
+---
+
+<section id="servizi-offerti" class="py-16 bg-white" aria-labelledby="servizi-offerti-title">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 id="servizi-offerti-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
+          Cosa Ottieni con il Nostro Servizio
+        </h2>
+        <p class="text-lg md:text-xl text-dark-gray">
+          €1.300 prezzo fisso tutto incluso fino alla convalida + bonus opzionali post-convalida
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+
+        <!-- Main Service -->
+        <div>
+          <h3 class="text-2xl font-bold text-blue-navy mb-8 text-center">
+            <i class="fas fa-gavel text-green-security mr-3" aria-hidden="true"></i>
+            SERVIZIO PRINCIPALE - €1.300 FISSO
+          </h3>
+
+          <div class="space-y-4">
+            {mainItems.map((item) => (
+              <article class="value-stack-item p-4 rounded-lg">
+                <div class="flex items-start space-x-4">
+                  <i class={`fas ${item.icon} text-xl mt-1 ${item.isGold ? 'text-gold-refined' : 'text-green-security'}`} aria-hidden="true"></i>
+                  <div>
+                    <h4 class="font-bold text-blue-navy">{item.title}</h4>
+                    <p class="text-dark-gray text-base" set:html={item.body}></p>
+                    <div class="text-xs" style={item.isGold ? 'color: var(--gold-refined);' : 'color: var(--green-security);'}>{item.note}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <!-- Bonuses -->
+        <div>
+          <h3 class="text-2xl font-bold text-blue-navy mb-8 text-center">
+            <i class="fas fa-gift text-gold-refined mr-3" aria-hidden="true"></i>
+            BONUS POST-CONVALIDA
+          </h3>
+
+          <div class="bg-yellow-50 border-2 border-gold-refined p-6 rounded-lg mb-6">
+            <h4 class="font-bold text-blue-navy mb-3">
+              <i class="fas fa-info-circle text-gold-refined mr-2" aria-hidden="true"></i>
+              Come Funzionano i Bonus
+            </h4>
+            <p class="text-dark-gray text-base mb-3">Dopo la convalida, per le fasi successive hai piena libertà di scelta:</p>
+            <ul class="text-dark-gray text-base space-y-1 list-disc pl-5">
+              <li>Proseguire con i nostri servizi per completare l'iter (già inclusi nel compenso di €1.300 versato)</li>
+             <li>Affidarti ad altri professionisti se preferisci</li>
+              <li>I bonus rimangono attivi fino alla liberazione dell'immobile</li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            {bonusItems.map((item) => (
+              <article class="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-security p-4 rounded-r-lg">
+                <div class="flex items-start space-x-4">
+                  <span class="bonus-badge px-2 py-1 rounded text-xs font-bold">{item.badge}</span>
+                  <div>
+                    <h4 class="font-bold text-blue-navy">{item.title}</h4>
+                    <p class="text-dark-gray text-base">{item.body}</p>
+                    <div class="text-xs" style={item.isGold ? 'color: var(--gold-refined);' : 'color: var(--green-security);'}>{item.note}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <aside class="bg-green-50 border-2 border-green-security p-8 rounded-lg max-w-4xl mx-auto">
+          <h3 class="text-xl md:text-2xl font-bold text-blue-navy mb-4">
+            <i class="fas fa-calculator text-green-security mr-3" aria-hidden="true"></i>
+            Valore Totale vs Prezzo Richiesto
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6 text-center mb-6">
+            <div>
+              <div class="text-2xl font-bold text-blue-navy mb-2">€3.200</div>
+              <div class="text-sm text-dark-gray">Valore servizi professionali</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-security mb-2">€1.300</div>
+              <div class="text-sm text-dark-gray">Prezzo fisso tutto incluso</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-gold-refined mb-2">€1.900</div>
+              <div class="text-sm text-dark-gray">Il tuo risparmio</div>
+            </div>
+          </div>
+          <a
+            href="#contatti"
+            class="btn-primary px-8 py-4 rounded-lg font-bold text-lg btn-mobile-fix"
+            aria-label="Richiedi il servizio completo a €1300 tutto incluso"
+          >
+            <span class="mr-2" aria-hidden="true">✉️</span>
+            RICHIEDI TUTTO INCLUSO
+          </a>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>

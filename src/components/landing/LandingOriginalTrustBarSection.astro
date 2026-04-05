@@ -1,0 +1,20 @@
+---
+// LandingOriginalTrustBarSection.astro — 1:1 clone of original trust bar
+// Source: public/landing/index.html
+import { landingOriginal } from '../../data/landing-original';
+
+interface Props {
+  trustBar?: typeof landingOriginal.trustBar;
+}
+
+const { trustBar = landingOriginal.trustBar } = Astro.props;
+---
+<div class="bg-blue-navy text-white py-3 border-t-2 border-gold-refined">
+  <div class="container mx-auto px-4">
+    <p class="text-center text-sm sm:text-base">
+      <span aria-hidden="true">🇮🇹</span> <strong>{trustBar.text}</strong>
+      <span class="mx-2" aria-hidden="true">{trustBar.separator}</span>
+      <strong>{trustBar.text2}</strong>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+---
+// LandingOriginalWhyChooseSection.astro — 1:1 clone of original perche sceglierci section
+// Source: public/landing/index.html
+const pillars = [
+  {
+    icon: 'fa-network-wired',
+    title: 'Rete Nazionale',
+    body: 'Avvocati domiciliatari in ogni Tribunale d\'Italia per velocizzare ogni fase.',
+  },
+  {
+    icon: 'fa-laptop',
+    title: 'Sistema Digitale',
+    body: 'Gestione completamente online con aggiornamenti automatici.',
+  },
+  {
+    icon: 'fa-chart-line',
+    title: 'Metodo Collaudato',
+    body: 'Oltre 1.500 sfratti per morosità completati con successo. Ogni fase è stata ottimizzata.',
+  },
+  {
+    icon: 'fa-headset',
+    title: 'Supporto Dedicato',
+    body: 'Un avvocato ti segue passo passo fino alla convalida.',
+  },
+];
+---
+<section id="perche-sceglierci" class="py-16 bg-gray-pearl" aria-labelledby="perche-sceglierci-title">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 id="perche-sceglierci-title" class="text-3xl md:text-4xl font-bold text-blue-navy mb-6">
+          Perché Scegliere il Nostro Servizio
+        </h2>
+        <p class="text-lg md:text-xl text-dark-gray">
+          Non siamo uno studio legale generico. Ci occupiamo esclusivamente delle procedure di sfratto per morosità con un metodo collaudato e risultati documentati.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        {pillars.map(p => (
+          <article class="text-center bg-white p-6 rounded-lg card-shadow">
+            <div class="text-green-security text-4xl mb-4" aria-hidden="true">
+              <i class={`fas ${p.icon}`}></i>
+            </div>
+            <h3 class="text-lg md:text-xl font-bold text-blue-navy mb-3">{p.title}</h3>
+            <p class="text-dark-gray text-base">{p.body}</p>
+          </article>
+        ))}
+      </div>
+
+      <div class="text-center">
+        <div class="bg-blue-navy text-white p-6 md:p-8 rounded-lg inline-block max-w-4xl">
+          <h3 class="text-2xl md:text-3xl font-bold mb-4">
+            <span class="text-gold-refined mr-3" aria-hidden="true">✅</span>
+            La Differenza È Nella Specializzazione
+          </h3>
+          <p class="text-lg md:text-XL mb-8">
+            Mentre altri avvocati trattano sfratti occasionalmente, noi lavoriamo SOLO sullo sfratto per morosità.
+            Il risultato? Tempi dimezzati, costi certi, risultati documentati.
+          </p>
+          <a
+            href="#contatti"
+            class="btn-primary px-6 md:px-8 py-4 rounded-lg font-bold text-base md:text-lg btn-mobile-fix"
+            aria-label="Richiedi una consulenza gratuita per beneficiare della nostra specializzazione"
+          >
+            <span class="mr-2" aria-hidden="true">✉️</span>
+            RICHIEDI UNA CONSULENZA GRATUITA
+          </a>
+          <p class="text-xs text-gray-300 mt-4">✓ Gratuita, sicura e senza impegno</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
