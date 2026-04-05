@@ -149,7 +149,7 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
         '<strong>Convalida mediamente in circa 60 giorni</strong> – dato operativo che può variare in base al Tribunale competente e all\'eventuale opposizione',
       ],
       formTitle: 'Verifica subito se puoi partire',
-      formSubtitle: 'Lascia i tuoi dati essenziali e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
+      formSubtitle: 'Lascia i tuoi dati essenziali: ricevi una <strong>prima consulenza gratuita</strong> e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
       formSubmitLabel: 'Ti richiamiamo entro 2 ore',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
@@ -202,8 +202,8 @@ function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryCon
     eyebrow: 'Punti chiave del servizio',
     title: 'Perché i proprietari ci contattano subito',
     items: [
-      { label: 'Costo', value: '€1.300 tutto incluso', note: 'Pagamento solo alla convalida' },
-      { label: 'Tempi', value: '60 giorni medi', note: 'Per ottenere il provvedimento' },
+      { label: 'Costo', value: '€1.300 fino al rilascio dell’immobile', note: 'Nessun acconto, pagamento dopo la convalida' },
+      { label: 'Tempi', value: '60 giorni medi per la convalida', note: 'Dato operativo variabile in base al Tribunale' },
       { label: 'Copertura', value: 'Tutta Italia', note: 'Rete di domiciliatari su scala nazionale' },
     ],
   };
@@ -264,22 +264,33 @@ function buildLegalCost(territory: LandingTerritoryConfig) {
 }
 
 function buildProcedure(territory: LandingTerritoryConfig) {
+  const baseSteps = landingOriginal.procedure.steps.map((step, index) => {
+    if (index === 3) {
+      return {
+        ...step,
+        title: 'FASE 4 (Giorni 31-60): Udienza e convalida dello sfratto',
+        body: 'In udienza, il nostro avvocato richiede il provvedimento di convalida dello sfratto per morosità. <strong>Solo dopo la convalida viene richiesto il pagamento del compenso concordato</strong>. Se necessario, la procedura prosegue successivamente fino al rilascio dell’immobile.',
+        badge: 'Convalida ottenuta - da qui, se serve, si prosegue fino al rilascio',
+      };
+    }
+
+    if (territory.slug !== 'nazionale' && index === 2) {
+      return {
+        ...step,
+        body: step.body.replace('Tribunale competente', territory.tribunalsLabel),
+      };
+    }
+
+    return step;
+  });
+
   return {
     ...landingOriginal.procedure,
     subtitle:
       territory.slug === 'nazionale'
         ? 'Un percorso operativo collaudato per arrivare alla convalida dello sfratto e, se necessario, proseguire fino al rilascio dell’immobile. I tempi possono variare in base al Tribunale e alla presenza di opposizione.'
         : `Un percorso operativo collaudato per arrivare alla convalida dello sfratto e, se necessario, proseguire fino al rilascio dell’immobile. Operiamo anche presso ${territory.tribunalsLabel}.`,
-    steps: landingOriginal.procedure.steps.map((step, index) => {
-      if (territory.slug === 'nazionale') return step;
-      if (index === 2) {
-        return {
-          ...step,
-          body: step.body.replace('Tribunale competente', territory.tribunalsLabel),
-        };
-      }
-      return step;
-    }),
+    steps: baseSteps,
   };
 }
 
@@ -472,12 +483,12 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
     title: version === 'v3' ? 'Parliamo solo di casi concreti di morosità' : landingOriginal.contactForm.title,
     subtitle:
       version === 'v3'
-        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo chiaro costi, tempi e passaggi della procedura.`
+        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ricevi una prima consulenza gratuita e ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo chiaro costi, tempi e passaggi della procedura.`
         : territory.slug === 'nazionale'
           ? landingOriginal.contactForm.subtitle
-          : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Convalida in 60 giorni, €1.300 tutto incluso.`,
+          : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Ti spieghiamo costi, tempi medi e percorso fino al rilascio dell'immobile.`,
     formTitle: version === 'v3' ? 'Richiesta rapida proprietario' : landingOriginal.contactForm.formTitle,
-    formNote: version === 'v3' ? 'Richiamo rapido su casi già attivabili\nSolo proprietari / locatori' : landingOriginal.contactForm.formNote,
+    formNote: version === 'v3' ? 'Prima consulenza gratuita su casi già attivabili\nSolo proprietari / locatori' : landingOriginal.contactForm.formNote,
     urgencyBox: version === 'v3'
       ? {
           title: 'Prima di inviare la richiesta',
@@ -499,14 +510,14 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
 
 function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, keyword: LandingKeywordConfig): LandingSeoConfig {
   const territorySuffix = territory.keywordSuffix ? ` ${territory.keywordSuffix}` : '';
-  const title = `${keyword.titleStem}${territorySuffix} | Costo Fisso 1.300€ fino alla Convalida`;
+  const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = version === 'v3'
     ? (territory.slug === 'nazionale'
         ? `Landing dedicata ai proprietari con inquilino moroso: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo. Versione v3 orientata a Quality Score e conversioni.`
         : `Landing dedicata ai proprietari con inquilino moroso${territorySuffix}: costo chiaro, tempi medi, procedura spiegata e richiesta rapida di richiamo.`)
     : territory.slug === 'nazionale'
-      ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida. Nessun anticipo. Consulenza senza impegno.`
-      : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida.`;
+      ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
+      : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
   const landingPath = version === 'v3' ? '/landing-v3/' : '/landing-v2/';
 
   return {
