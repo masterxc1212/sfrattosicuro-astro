@@ -31,10 +31,10 @@ const carouselId = 'provvedimenti-carousel';
       <div class="flex items-center justify-between gap-3 mb-4">
         <div class="text-sm text-dark-gray font-semibold">Scorri i provvedimenti</div>
         <div class="flex gap-2">
-          <button type="button" class="btn-secondary" aria-label="Provvedimento precedente" onclick={`document.getElementById('${carouselId}').scrollBy({left:-340,behavior:'smooth'})`}>
+          <button type="button" class="btn-secondary" aria-label="Provvedimento precedente" onclick={`document.getElementById('${carouselId}').scrollBy({left:-280,behavior:'smooth'})`}>
             <i class="fas fa-chevron-left"></i>
           </button>
-          <button type="button" class="btn-secondary" aria-label="Provvedimento successivo" onclick={`document.getElementById('${carouselId}').scrollBy({left:340,behavior:'smooth'})`}>
+          <button type="button" class="btn-secondary" aria-label="Provvedimento successivo" onclick={`document.getElementById('${carouselId}').scrollBy({left:280,behavior:'smooth'})`}>
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -46,7 +46,7 @@ const carouselId = 'provvedimenti-carousel';
         style="scroll-snap-type:x mandatory; -webkit-overflow-scrolling: touch;"
       >
         {images.map((img, i) => (
-          <div class="provvedimento-card group flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[31%]" style="scroll-snap-align:start;">
+          <div class="provvedimento-card group flex-shrink-0 w-[85%] sm:w-[45%] lg:w-[25%]" style="scroll-snap-align:start;">
             <div
               class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl"
               style="border: 3px solid var(--green-security); background: white;"
@@ -54,10 +54,10 @@ const carouselId = 'provvedimenti-carousel';
               <img
                 src={img.src}
                 alt={img.alt}
-                class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
-                width="600"
-                height="800"
+                width="300"
+                height="400"
               >
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div class="p-4 text-white">

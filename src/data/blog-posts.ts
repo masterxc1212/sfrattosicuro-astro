@@ -1,4 +1,4 @@
-﻿export type BlogCategory = 'Sfratti' | 'Locazioni';
+export type BlogCategory = 'Sfratti' | 'Locazioni';
 
 export interface BlogPost {
   slug: string;
@@ -15,6 +15,171 @@ export interface BlogPost {
 }
 
 const posts: BlogPost[] = [
+
+  {
+    slug: "contratto-transitorio-affitto-convenienza",
+    title: "Contratto Transitorio di Affitto: Guida Completa per il Proprietario",
+    description: "Cos\'è il contratto transitorio di affitto e quando conviene usarlo? Guida pratica per proprietari: durata, vantaggi, errori da evitare e situazioni ideali.",
+    excerpt: "Il contratto transitorio di affitto è uno strumento legale spesso sottovalutato, ma può essere la scelta giusta quando hai esigenze temporanee o inquilini che restano per un periodo limitato. Prima di firmarlo, però, è fondamentale capire come funziona davvero — e quali errori possono costarti caro.",
+    lead: "Il contratto transitorio di affitto è uno strumento legale spesso sottovalutato, ma può essere la scelta giusta quando hai esigenze temporanee o inquilini che restano per un periodo limitato. Prima di firmarlo, però, è fondamentale capire come funziona davvero — e quali errori possono costarti caro.",
+    publishedAt: "2026-04-07",
+    category: "Locazioni",
+    readingTime: "5 min",
+    sourceNote: "Approvato 2026-04-07. Keyword: contratto transitorio affitto, vol 0, KD 0. Batch 3 #2.",
+    html: `<h2>Cos'è il contratto transitorio di affitto</h2>
+<p>Il contratto di locazione transitoria è disciplinato dall'art. 5, comma 1, della Legge 431/1998 e dal D.M. 30 dicembre 2002. Si tratta di un contratto a uso abitativo con durata compresa tra <strong>1 e 18 mesi</strong>, pensato per rispondere a esigenze temporanee — del proprietario o dell'inquilino — che devono essere esplicitamente indicate nel contratto.</p>
+<p>A differenza del classico contratto 4+4, il transitorio non si rinnova automaticamente: alla scadenza, il rapporto cessa senza necessità di disdetta, a patto che la motivazione transitoria indicata fosse reale e documentabile.</p>
+<h2>Quando si può usare: le esigenze transitorie</h2>
+<p>La legge richiede che nel contratto sia indicata una <strong>specifica esigenza transitoria</strong>, sia del locatore che del conduttore. Esempi tipici:</p>
+<ul>
+  <li>Il proprietario deve effettuare lavori straordinari sull'immobile entro un termine definito</li>
+  <li>Il proprietario prevede di destinare l'immobile a uso proprio o di un familiare entro i 18 mesi</li>
+  <li>L'inquilino è un lavoratore trasferito temporaneamente in un'altra città</li>
+  <li>L'inquilino è uno studente fuori sede (in questo caso si usa il contratto per studenti, variante dedicata)</li>
+  <li>Esigenze di servizio, formazione o cure mediche lontano dalla residenza abituale</li>
+</ul>
+<p><strong>Attenzione:</strong> se l'esigenza transitoria non è reale o non viene indicata correttamente, il contratto rischia di essere riqualificato dal giudice come ordinario 4+4, con tutte le conseguenze del caso.</p>
+<h2>Durata e rinnovo</h2>
+<p>La durata minima è di <strong>1 mese</strong>, quella massima di <strong>18 mesi</strong>. È possibile prorogare il contratto, purché la durata complessiva non superi i 18 mesi e la motivazione transitoria permanga.</p>
+<p>Se il contratto scade e l'inquilino continua a occupare l'immobile senza opposizione del proprietario, si rischia la conversione automatica in contratto ordinario. Meglio gestire la scadenza con anticipo.</p>
+<h2>Vantaggi per il proprietario</h2>
+<ul>
+  <li><strong>Flessibilità reale:</strong> recuperi l'immobile alla scadenza senza dover avviare procedure di sfratto o attendere anni.</li>
+  <li><strong>Nessun rinnovo automatico:</strong> a differenza del 4+4, il transitorio si chiude alla data concordata.</li>
+  <li><strong>Utile per immobili in attesa di vendita o ristrutturazione:</strong> puoi affittare nel frattempo senza perdere il controllo dei tempi.</li>
+  <li><strong>Canone libero (entro limiti locali):</strong> nelle aree non soggette a accordi territoriali vincolanti, il canone può essere concordato liberamente tra le parti.</li>
+  <li><strong>Regime fiscale agevolato:</strong> se il canone è concordato secondo accordi locali, puoi accedere alla cedolare secca al 10% invece del 21%.</li>
+</ul>
+<h2>Svantaggi e rischi da considerare</h2>
+<ul>
+  <li><strong>Obbligo di motivazione reale:</strong> se non hai una reale esigenza transitoria e il contratto viene impugnato, puoi trovarti con un 4+4 in mano senza volerlo.</li>
+  <li><strong>Canone potenzialmente più basso:</strong> in molti comuni gli accordi territoriali impongono fasce di canone inferiori a quelle di mercato libero.</li>
+  <li><strong>Inquilino meno tutelato = più litigioso:</strong> alcuni inquilini, sapendo che la durata è limitata, possono essere meno collaborativi o contestare la legittimità del contratto.</li>
+  <li><strong>Non adatto a locazioni stabili:</strong> se cerchi un inquilino a lungo termine, il transitorio non è lo strumento giusto — e forzarlo può creare problemi legali.</li>
+</ul>
+<h2>Errori comuni da evitare</h2>
+<ol>
+  <li><strong>Indicare motivazioni vaghe o false.</strong> Scrivere genericamente "esigenze del locatore" senza specificarle è insufficiente. Specifica la ragione concreta e, se possibile, documentala.</li>
+  <li><strong>Non registrare il contratto.</strong> Anche i contratti transitori devono essere registrati all'Agenzia delle Entrate entro 30 giorni dalla firma. Un contratto non registrato è nullo e ti espone a sanzioni.</li>
+  <li><strong>Superare i 18 mesi con proroghe successive.</strong> Prorogare ripetutamente senza che sussista ancora l'esigenza transitoria può portare alla riqualificazione del contratto.</li>
+  <li><strong>Non verificare gli accordi territoriali locali.</strong> In molte città esistono accordi sindacali che definiscono i canoni minimi e massimi per i contratti transitori concordati. Ignorarli può rendere il contratto irregolare.</li>
+  <li><strong>Affidarsi a modelli standard non aggiornati.</strong> Usa sempre modelli conformi agli accordi territoriali vigenti nel tuo comune, meglio se redatti o verificati da un professionista.</li>
+</ol>
+<h2>Quando il contratto transitorio è la scelta giusta</h2>
+<p>Il transitorio è ideale in questi scenari concreti:</p>
+<ul>
+  <li>Hai acquistato un immobile da ristrutturare tra 12-18 mesi e nel frattempo vuoi coprire i costi con un affitto.</li>
+  <li>Stai aspettando che un figlio si sposi o si trasferisca nell'appartamento entro l'anno.</li>
+  <li>Hai messo l'immobile in vendita ma preferisci non lasciarlo vuoto nell'attesa.</li>
+  <li>Ospiti lavoratori in trasferta o professionisti con contratti a termine che cercano soluzioni abitative temporanee.</li>
+  <li>Vuoi affittare una seconda casa per un periodo limitato prima di usarla personalmente in estate.</li>
+</ul>
+<h2>Transitorio vs. contratto per studenti: qual è la differenza?</h2>
+<p>Il contratto per studenti universitari è una variante specifica del transitorio, riservata a studenti iscritti a università fuori dalla propria residenza. Ha una durata da 6 a 36 mesi, canoni concordati e agevolazioni fiscali. Se il tuo immobile è vicino a un ateneo, potrebbe essere la soluzione più adatta — e più stabile di un semplice transitorio.</p>
+<h2>Conclusione</h2>
+<p>Il contratto transitorio di affitto è uno strumento potente se usato correttamente, ma non è una scorciatoia per aggirare le tutele degli inquilini. Usarlo senza una reale motivazione transitoria — o senza rispettare i formalismi richiesti — può trasformare un'operazione semplice in un contenzioso lungo e costoso.</p>
+<p>Se hai dubbi sulla situazione specifica del tuo immobile o vuoi capire quale tipo di contratto fa al caso tuo, <a href="/contatti/">contattaci per una consulenza</a>: analizziamo insieme la tua situazione e ti aiutiamo a tutelarti fin dall'inizio.</p>
+
+<h2>FAQ</h2>
+
+<h3>Cos'è il contratto transitorio di affitto?</h3>
+<p>Il contratto transitorio di affitto è un contratto di locazione abitativa con durata da 1 a 18 mesi, disciplinato dalla Legge 431/1998. Si distingue dal contratto ordinario 4+4 perché non si rinnova automaticamente: cessa alla scadenza se esiste una reale esigenza transitoria indicata nel contratto.</p>
+
+<h3>Quando si può usare il contratto transitorio?</h3>
+<p>Solo quando esiste una specifica esigenza temporanea, del proprietario o dell'inquilino: lavori sull'immobile, destinazione futura a uso personale o familiare, lavoratore trasferito temporaneamente, studente fuori sede. L'esigenza deve essere concreta e documentabile.</p>
+
+<h3>Il contratto transitorio si rinnova automaticamente?</h3>
+<p>No. A differenza del contratto 4+4, il transitorio cessa alla scadenza senza necessità di disdetta. Tuttavia, se l'inquilino continua ad occupare l'immobile senza opposizione del proprietario, si rischia la conversione automatica in contratto ordinario.</p>
+
+<h3>Che regime fiscale si applica al contratto transitorio?</h3>
+<p>Se il canone segue gli accordi territoriali locali, si può optare per la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> al 10% invece del 21% applicato ai contratti liberi. In caso contrario, si applica il regime IRPEF ordinario con imposta di registro del 2% sul canone annuo.</p>
+
+<h3>Qual è la differenza tra contratto transitorio e contratto per studenti?</h3>
+<p>Il contratto per studenti universitari è una variante del transitorio riservata agli studenti fuori sede. Ha una durata maggiore (6-36 mesi), canoni concordati e agevolazioni fiscali analoghe. È preferibile se l'immobile è in una città universitaria.</p>`,
+  },
+  {
+    slug: 'occupazione-abusiva-immobile',
+    title: "Occupazione abusiva di immobile: come può agire il proprietario per riottenere il possesso",
+    description: "Occupazione abusiva di immobile: guida pratica per il proprietario che vuole riottenere il possesso. Differenze rispetto a morosità e finita locazione, errori da evitare e quando agire.",
+    excerpt: "Quando un immobile resta occupato senza un titolo valido, il proprietario rischia di perdere tempo prezioso se inquadra male il problema. Capire bene la differenza tra occupazione abusiva, occupazione senza titolo e detenzione senza titolo è il primo passo per scegliere l’azione corretta e riottenere il possesso dell’immobile.",
+    lead: "Quando un immobile resta occupato senza un titolo valido, il proprietario rischia di perdere tempo prezioso se inquadra male il problema. Non sempre ci si trova davanti a una classica morosità, e non sempre la soluzione passa per lo stesso percorso. Capire bene la differenza tra occupazione abusiva, occupazione senza titolo e detenzione senza titolo è il primo passo per scegliere l’azione corretta e riottenere il possesso dell’immobile.",
+    publishedAt: "2026-04-06",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote: "Approvato 2026-04-06. Keyword: occupazione abusiva immobile. Batch 2 #11.",
+    html: `
+<p>Quando un immobile resta occupato senza un titolo valido, il proprietario rischia di perdere tempo prezioso se inquadra male il problema. Non sempre ci si trova davanti a una classica morosità, e non sempre la soluzione passa per lo stesso percorso. Capire bene la differenza tra occupazione abusiva, occupazione senza titolo e detenzione senza titolo è il primo passo per scegliere l’azione corretta e riottenere il possesso dell’immobile.</p>
+
+<h2>Quando si parla davvero di occupazione abusiva o senza titolo</h2>
+<p>Nel linguaggio comune si parla spesso di “occupazione abusiva” ogni volta che qualcuno resta in un immobile contro la volontà del proprietario. Dal punto di vista pratico, però, bisogna distinguere bene le situazioni.</p>
+<p>Può accadere, per esempio, che una persona continui a detenere un immobile dopo la cessazione del titolo che le consentiva di restarvi. In altri casi il proprietario si trova davanti a una presenza nell’immobile che ritiene del tutto priva di base legittima. In entrambe le ipotesi il punto centrale è questo: il proprietario non ha più interesse né volontà a consentire quella permanenza, ma l’immobile non viene rilasciato spontaneamente.</p>
+<p>È proprio qui che nasce il problema concreto: capire se ci si trova davanti a una morosità, a una finita locazione oppure a una situazione di occupazione o detenzione senza titolo che richiede una valutazione diversa.</p>
+
+<h2>Differenza tra occupazione abusiva, detenzione senza titolo e morosità</h2>
+<p>Per un proprietario è fondamentale non usare queste espressioni come se fossero sinonimi perfetti.</p>
+<p>La <strong>morosità</strong> riguarda il mancato pagamento dei canoni in presenza di un rapporto locatizio in essere. Puoi approfondire i passaggi e le tempistiche nella nostra guida sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026">sfratto per morosità</a>. La <strong>finita locazione</strong> riguarda invece la cessazione del rapporto e il mancato rilascio dell’immobile alla scadenza o alla fine del titolo, come spiegato nell'articolo dedicato allo <a href="/blog/sfratto-per-finita-locazione">sfratto per finita locazione</a>.</p>
+<p>L’<strong>occupazione senza titolo</strong> o la <strong>detenzione senza titolo</strong> possono presentare elementi diversi. In alcuni casi esisteva un titolo originario che non è più valido; in altri il quadro è più complesso e richiede una ricostruzione accurata dei fatti e dei documenti.</p>
+<p>Per questo motivo il proprietario sbaglia quando tratta automaticamente ogni problema come “semplice sfratto”. Se il caso è inquadrato male all’inizio, si rischia di perdere tempo e di scegliere una strada non adatta.</p>
+
+<h2>I casi più frequenti per il proprietario</h2>
+<p>Nella pratica, le situazioni più comuni nascono quando:</p>
+<ul>
+  <li>l’immobile non viene rilasciato dopo la cessazione del rapporto;</li>
+  <li>il proprietario ritiene concluso il titolo ma l’occupante resta nell’immobile;</li>
+  <li>esiste una contestazione sul diritto a rimanere nell’immobile;</li>
+  <li>la situazione di fatto non rientra in modo lineare nella classica morosità.</li>
+</ul>
+<p>Per il proprietario il punto non è trovare una formula generica, ma capire quale strumento sia davvero adatto per arrivare al rilascio dell’immobile.</p>
+
+<h2>Cosa fare prima di agire</h2>
+<p>Prima di qualsiasi iniziativa, conviene ricostruire con precisione la situazione.</p>
+<p>In particolare è utile verificare:</p>
+<ul>
+  <li>quale titolo esisteva in origine;</li>
+  <li>quando e come sarebbe cessato;</li>
+  <li>quali comunicazioni sono già state inviate;</li>
+  <li>quali documenti possono provare la posizione del proprietario.</li>
+</ul>
+<p>Agire senza questa base documentale è rischioso. Per questo, anche le comunicazioni preliminari come una <a href="/blog/lettera-diffida-inquilino-moroso">lettera di messa in mora</a> vanno impostate con attenzione. In molti casi il problema non è “fare qualcosa subito a ogni costo”, ma fare la cosa giusta nel modo corretto.</p>
+
+<h2>Quali rimedi legali possono essere valutati</h2>
+<p>Quando il proprietario vuole riottenere il possesso dell’immobile, la scelta dell’azione dipende dal caso concreto. È proprio per questo che la fase iniziale di analisi conta tanto.</p>
+<p>A seconda della situazione, si può rendere necessario impostare un percorso orientato al <strong>rilascio dell’immobile</strong>, distinguendo bene il caso da una morosità classica o da una semplice finita locazione.</p>
+<p>Il punto chiave è che non esiste una risposta valida per ogni scenario. La strategia corretta dipende dal titolo originario, dalla situazione attuale e dai documenti disponibili.</p>
+
+<h2>Gli errori più comuni da evitare</h2>
+<p>Quando il proprietario è esasperato, il rischio di fare un passo sbagliato aumenta. Gli errori più comuni sono:</p>
+<ul>
+  <li>cambiare serrature;</li>
+  <li>interrompere utenze per costringere al rilascio;</li>
+  <li>usare modelli o diffide generiche trovate online;</li>
+  <li>aspettare troppo, sperando che la situazione si risolva da sola.</li>
+</ul>
+<p>Queste scorciatoie spesso peggiorano il problema invece di risolverlo.</p>
+
+<h2>Quando conviene chiedere assistenza legale</h2>
+<p>Conviene farsi assistere quando non è chiaro se ci si trovi davanti a morosità, finita locazione o occupazione senza titolo, oppure quando l’immobile non viene restituito nonostante la cessazione del titolo.</p>
+<p>Per il proprietario, una valutazione iniziale ben fatta serve proprio a questo: evitare mosse inutili, capire la procedura corretta e impostare fin dall’inizio il percorso più adatto per riottenere il possesso dell’immobile. Talvolta, la controparte potrebbe tentare una <a href="/blog/opposizione-sfratto">opposizione allo sfratto</a> basata su contestazioni al quadro giuridico, rendendo essenziale una strategia legale solida.</p>
+
+<h2>FAQ</h2>
+<h3>Occupazione abusiva e occupazione senza titolo sono la stessa cosa?</h3>
+<p>Nel linguaggio comune vengono spesso usate come sinonimi, ma nella pratica è importante analizzare il caso concreto. La presenza o meno di un titolo originario può cambiare il modo in cui la situazione deve essere valutata.</p>
+<h3>Il proprietario può riprendersi da solo l’immobile?</h3>
+<p>No, improvvisare soluzioni fai-da-te espone a rischi ulteriori. Quando l’immobile non viene rilasciato, conviene impostare la strategia corretta con assistenza legale.</p>
+<h3>Quali documenti servono per valutare il caso?</h3>
+<p>Di solito è utile avere tutti i documenti sul titolo originario, le comunicazioni inviate, l’eventuale cronologia del rapporto e ogni elemento che dimostri perché il proprietario ritiene cessato il diritto di permanenza nell’immobile.</p>
+
+<h2>Conclusione</h2>
+<p>Quando un proprietario si trova davanti a un immobile non rilasciato, la tentazione di definire tutto come “occupazione abusiva” è forte. Ma proprio in questi casi conta distinguere bene tra morosità, finita locazione e detenzione o occupazione senza titolo.</p>
+<p>Una valutazione iniziale corretta aiuta a evitare errori, impostare la strada giusta e ridurre i tempi persi. Se hai un caso concreto e vuoi capire quale azione valutare per riottenere il possesso dell’immobile, <strong>non perdere altro tempo</strong>.</p>
+
+<div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
+  <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">L'inquilino occupa l'immobile senza titolo e non sai come rientrarne in possesso?</p>
+  <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro ti offre la consulenza necessaria per analizzare la tua situazione specifica, scegliere l'azione legale più efficace e riottenere rapidamente il possesso del tuo immobile. Non rischiare errori che possono costarti tempo e denaro.</p>
+  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi una valutazione gratuita del tuo caso</a>
+</div>
+`
+  },
   {
     slug: "proroga-contratto-locazione-agenzia-entrate",
     title: "Proroga del contratto di locazione all'Agenzia delle Entrate: scadenze e procedura",
@@ -179,6 +344,22 @@ Dipende dal regime fiscale. In **regime ordinario**, la comunicazione comporta i
 
 **Cosa si intende per "ravvedimento operoso" in questo contesto?**
 Il ravvedimento operoso è uno strumento previsto dalla legge che consente al contribuente di regolarizzare spontaneamente una violazione fiscale (come la tardiva comunicazione della proroga) pagando una sanzione ridotta rispetto a quella ordinaria. La riduzione dipende da quanto tempo è trascorso dalla scadenza: si va da 1/10 del minimo (entro 14 giorni) a 1/6 del minimo (oltre un anno). Per usufruire del ravvedimento, la regolarizzazione deve avvenire prima che l'Agenzia delle Entrate avvii un accertamento formale.
+<h2>FAQ</h2>
+
+<h3>Entro quando va comunicata la proroga del contratto di locazione?</h3>
+<p>La comunicazione deve essere effettuata entro <strong>30 giorni dalla data di decorrenza della proroga</strong>, non dalla data in cui ci si accorge del rinnovo. Vale per proroghe automatiche e concordate.</p>
+
+<h3>La comunicazione della proroga è obbligatoria anche con la cedolare secca?</h3>
+<p>Sì. Anche in regime di <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> la comunicazione è obbligatoria entro 30 giorni, ma non è dovuta l'imposta di registro: la comunicazione è gratuita.</p>
+
+<h3>Come si comunica la proroga all'Agenzia delle Entrate?</h3>
+<p>Tramite il <strong>modello RLI</strong>, nella sezione "adempimenti successivi – proroga". Si può inviare online con SPID o CIE dal portale dell'Agenzia delle Entrate, oppure tramite un intermediario abilitato.</p>
+
+<h3>Cosa succede se non si comunica la proroga nei termini?</h3>
+<p>Si applica una sanzione dal 120% al 240% dell'imposta dovuta (regime ordinario). È possibile regolarizzare con il <strong>ravvedimento operoso</strong>, che riduce la sanzione in base al ritardo accumulato.</p>
+
+<h3>Quanto costa comunicare la proroga in regime ordinario?</h3>
+<p>L'imposta di registro è pari al <strong>2% del canone annuo</strong> (minimo 67 €), da versare con codice tributo 1504 tramite modello F24 Elide. In cedolare secca la comunicazione è gratuita.</p>
     `
   },
   {
@@ -2401,7 +2582,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <p>Sì. La lettera di diffida e messa in mora può essere usata per qualsiasi inadempimento contrattuale rilevante, inclusi i danni all'immobile o il mancato rispetto di clausole contrattuali. In questi casi va adattata al tipo di inadempimento contestato.</p>
     `
   }
-];
+]
 
 export const blogPosts = posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 export const getLatestBlogPosts = (limit = 3) => blogPosts.slice(0, limit);

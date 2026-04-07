@@ -69,6 +69,7 @@ const { hero = landingOriginal.hero } = Astro.props;
               action="/php/invia-email.php"
               method="POST"
               id="hero-form"
+              class="grid grid-cols-2 gap-4"
             >
               <div class="form-group">
                 <label for="nome-hero" class="form-label">Nominativo *</label>
@@ -85,7 +86,7 @@ const { hero = landingOriginal.hero } = Astro.props;
                 >
               </div>
 
-              <div class="form-group">
+              <div class="form-group col-span-2">
                 <label for="telefono-hero" class="form-label">Telefono *</label>
                 <input
                   type="tel"
@@ -101,7 +102,7 @@ const { hero = landingOriginal.hero } = Astro.props;
               </div>
 
               {hero.formMorositaOptions && (
-                <div class="form-group">
+                <div class="form-group col-span-2">
                   <label for="morosita-hero" class="form-label">Da quanto l'inquilino non paga? *</label>
                   <select name="morosità" id="morosita-hero" class="form-select" required aria-required="true">
                     {hero.formMorositaOptions.map((option) => (
@@ -110,6 +111,29 @@ const { hero = landingOriginal.hero } = Astro.props;
                   </select>
                 </div>
               )}
+
+              <div class="form-group col-span-2">
+                <label for="email-hero" class="form-label">Email (facoltativo)</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email-hero"
+                  class="form-input"
+                  placeholder="La tua email"
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="form-group col-span-2">
+                <label for="note-hero" class="form-label">Note (facoltativo)</label>
+                <textarea
+                  name="note"
+                  id="note-hero"
+                  class="form-input"
+                  placeholder="Descrivi brevemente la situazione"
+                  rows="3"
+                ></textarea>
+              </div>
 
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
@@ -121,7 +145,7 @@ const { hero = landingOriginal.hero } = Astro.props;
               <input type="hidden" name="utm_content" value="">
               <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html">
 
-              <button type="submit" class="form-submit" aria-label="Richiedi una consulenza gratuita">
+              <button type="submit" class="form-submit col-span-2" aria-label="Richiedi una consulenza gratuita">
                 <i class="fas fa-phone" aria-hidden="true"></i>
                 <span>{hero.formSubmitLabel}</span>
               </button>

@@ -7,6 +7,9 @@ param(
   [switch]$SkipVerify
 )
 
+# Set working directory to project root (parent of 'scripts' dir)
+Set-Location -Path $PSScriptRoot\..
+
 $ErrorActionPreference = "Stop"
 
 $distDir = "C:\Users\danil\.astro-local-builds\retrograde-ring\dist"
@@ -78,7 +81,7 @@ if (Test-Path $htaccessDist) {
 # 6. PAGINE PRINCIPALI
 Write-Host "=== PAGINE PRINCIPALI ===" -ForegroundColor Cyan
 $mainPages = @("index.html","chi-siamo/index.html","servizi/index.html","sedi/index.html",
-               "blog/index.html","sitemap.xml","sitemap-pages.xml",
+               "blog/index.html","landing-v2/index.html","sitemap.xml","sitemap-pages.xml",
                "blog/post-sitemap.xml","blog/sitemap_index.xml",
                "privacy-policy/index.html","cookie-policy/index.html","termini/index.html",
                "favicon.ico","favicon.svg","robots.txt")
