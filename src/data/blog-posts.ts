@@ -27,8 +27,9 @@ const posts: BlogPost[] = [
     readingTime: "5 min",
     sourceNote: "Approvato 2026-04-10. Keyword: contratto transitorio contestato, vol 0, KD 0. Batch 3 #3.",
     html: `<h2>Quando un contratto transitorio rischia davvero di essere contestato</h2>
-<p>Il contratto transitorio è uno strumento utile quando esiste un'esigenza abitativa temporanea reale, del proprietario o dell'inquilino. Proprio perché rappresenta un'eccezione rispetto al classico contratto abitativo, viene spesso contestato quando è usato in modo superficiale o solo per evitare i vincoli del 4+4.</p>
+<p>Il contratto transitorio è uno strumento utile quando esiste un'esigenza abitativa temporanea reale, del proprietario o dell'inquilino. Proprio perché rappresenta un'eccezione rispetto al classico contratto abitativo, viene spesso contestato quando è usato in modo superficiale o solo per evitare i vincoli del 4+4. Se vuoi capire prima come funziona questo strumento, leggi la nostra guida sul <a href="/blog/contratto-transitorio-affitto/">contratto transitorio di affitto</a>.</p>
 <p>Per il proprietario il rischio più concreto non è solo una discussione formale sul contratto, ma la possibile riqualificazione del rapporto in una locazione ordinaria, con effetti su durata, rilascio dell'immobile e profilo fiscale.</p>
+
 <h2>Il punto decisivo: la motivazione della transitorietà</h2>
 <p>Un contratto transitorio regge solo se la motivazione della transitorietà è concreta, specifica e coerente con i fatti. Dire genericamente che l'immobile serve in futuro o che l'inquilino resterà per poco tempo non basta.</p>
 <p>Le contestazioni nascono soprattutto quando la motivazione indicata nel contratto:</p>
@@ -39,17 +40,20 @@ const posts: BlogPost[] = [
   <li>viene usata come formula standard senza una vera esigenza temporanea.</li>
 </ul>
 <p>Se manca questo presupposto, il contratto può essere considerato non valido come transitorio.</p>
+
 <h2>Gli errori più comuni che espongono il proprietario a contestazioni</h2>
 <ul>
   <li><strong>Motivazione insufficiente:</strong> il testo contrattuale non spiega in modo preciso perché la locazione debba essere temporanea.</li>
   <li><strong>Documentazione assente:</strong> non vengono conservati documenti o elementi utili a dimostrare la reale transitorietà.</li>
   <li><strong>Durata incoerente:</strong> la durata scelta non è in linea con l'esigenza dichiarata oppure supera i limiti previsti.</li>
   <li><strong>Uso improprio del modello:</strong> si copia un fac-simile senza adattarlo al caso concreto.</li>
-  <li><strong>Mancata registrazione:</strong> il contratto non viene registrato correttamente e nei tempi dovuti.</li>
+  <li><strong>Mancata registrazione:</strong> il contratto non viene registrato correttamente e nei termini dovuti. Consulta la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a> per non perdere le scadenze.</li>
 </ul>
+
 <h2>Cosa può succedere se il contratto viene contestato</h2>
 <p>Quando il contratto transitorio viene messo in discussione, il problema principale per il proprietario è che il rapporto possa essere trattato come una locazione abitativa ordinaria. Questo può incidere su durata, rinnovo, tempi di rilascio e strategia legale da adottare in caso di inadempimento dell'inquilino.</p>
-<p>In pratica, un contratto pensato per essere breve e flessibile può trasformarsi in un vincolo molto più lungo del previsto, con conseguenze economiche e operative rilevanti.</p>
+<p>In pratica, un contratto pensato per essere breve e flessibile può trasformarsi in un vincolo molto più lungo del previsto, con conseguenze economiche e operative rilevanti. In caso di mancato rilascio alla scadenza, potrebbe rendersi necessario avviare uno <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
 <h2>Come tutelarsi prima di firmare</h2>
 <p>Per ridurre il rischio di contestazioni conviene muoversi con metodo:</p>
 <ol>
@@ -59,19 +63,28 @@ const posts: BlogPost[] = [
   <li>usare un modello aggiornato e coerente con il caso concreto;</li>
   <li>registrare il contratto nei termini previsti.</li>
 </ol>
-<p>Se hai dubbi sulla formula corretta da usare, può essere più prudente valutare una soluzione contrattuale diversa invece di forzare un transitorio fragile.</p>
+<p>Se hai dubbi sulla formula corretta da usare, può essere più prudente valutare una soluzione contrattuale diversa invece di forzare un transitorio fragile. Approfondisci anche quando conviene usare il <a href="/blog/contratto-transitorio-affitto-convenienza/">contratto transitorio rispetto ad altre forme</a>.</p>
+
 <h2>Quando conviene chiedere assistenza</h2>
 <p>È utile chiedere supporto prima della firma quando la motivazione della transitorietà non è lineare, quando il proprietario vuole riottenere l'immobile entro una certa data o quando si teme che l'inquilino possa contestare il contratto in seguito.</p>
 <p>Una verifica preventiva costa meno di un errore che poi diventa contenzioso. Se vuoi valutare il caso concreto prima di firmare, <a href="/contatti/">contattaci</a> per capire quale schema tutela meglio il tuo immobile.</p>
-<h2>FAQ</h2>
+
+<h2>Domande frequenti</h2>
+
 <h3>Quando un contratto transitorio può essere considerato non valido?</h3>
-<p>Il rischio principale nasce quando manca una motivazione temporanea reale, specifica e coerente con i fatti. In questi casi il contratto può essere contestato e trattato come una locazione ordinaria.</p>
+<p>Il rischio principale nasce quando manca una motivazione temporanea reale, specifica e coerente con i fatti. In questi casi il contratto può essere contestato e il rapporto trattato come una locazione ordinaria, con tutti i vincoli che ne derivano.</p>
+
 <h3>Un contratto transitorio contestato può diventare un 4+4?</h3>
-<p>Sì, è uno dei rischi più rilevanti per il proprietario. Se la transitorietà non è dimostrabile o il contratto è impostato male, il rapporto può essere riqualificato come contratto abitativo ordinario.</p>
+<p>Sì, è uno dei rischi più rilevanti per il proprietario. Se la transitorietà non è dimostrabile o il contratto è impostato male, il rapporto può essere riqualificato come contratto abitativo ordinario a durata piena.</p>
+
 <h3>Basta usare un fac-simile standard per essere al sicuro?</h3>
-<p>No. Un modello standard aiuta, ma non basta se non viene adattato alla situazione concreta. Il punto decisivo resta sempre la motivazione reale della transitorietà.</p>
+<p>No. Un modello standard aiuta come punto di partenza, ma non basta se non viene adattato alla situazione concreta. Il punto decisivo resta sempre la motivazione reale e specifica della transitorietà.</p>
+
 <h3>La registrazione è obbligatoria anche per un contratto transitorio?</h3>
-<p>Sì. Anche il contratto transitorio deve essere registrato correttamente nei termini previsti, altrimenti si aggiungono ulteriori criticità sul piano legale e fiscale.</p>`
+<p>Sì. Anche il contratto transitorio deve essere registrato correttamente nei termini previsti. La mancata registrazione espone a sanzioni e può aggiungere ulteriori criticità sul piano legale.</p>
+
+<h3>Cosa succede se l'inquilino non lascia l'immobile alla scadenza?</h3>
+<p>Se l'inquilino non rilascia l'immobile alla scadenza del contratto transitorio, il proprietario può avviare una procedura di sfratto per finita locazione. È importante non tentare soluzioni autonome come il cambio delle serrature, che espongono a responsabilità civili e penali.</p>`
   },
 
   {
