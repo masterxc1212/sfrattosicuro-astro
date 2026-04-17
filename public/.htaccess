@@ -4,6 +4,16 @@ RewriteEngine On
 # privacy-policy senza slash finale (senza www)
 RewriteRule ^privacy-policy$ /privacy-policy/ [R=301,L]
 
+# Vecchie landing rimosse
+RewriteRule ^sfratto-per-morosita/?$ /servizi/sfratto-per-morosita/ [R=301,L]
+RewriteRule ^locazioni/?$ /servizi/contratti-di-locazione/ [R=301,L]
+
+# Vecchi endpoint sitemap legacy -> sitemap canonica unica
+RewriteRule ^sitemap-pages\.xml$ /sitemap.xml [R=301,L]
+RewriteRule ^sitemap-index\.xml$ /sitemap.xml [R=301,L]
+RewriteRule ^blog/post-sitemap\.xml$ /sitemap.xml [R=301,L]
+RewriteRule ^blog/sitemap_index\.xml$ /sitemap.xml [R=301,L]
+
 # Vecchie landing .html
 RewriteRule ^sfratto-per-morosita\.html$ /landing/ [R=301,L]
 RewriteRule ^sfratto-finita-locazione\.html$ /blog/sfratto-per-finita-locazione/ [R=301,L]

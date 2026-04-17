@@ -46,7 +46,7 @@ const carouselId = 'provvedimenti-carousel';
         style="scroll-snap-type:x mandatory; -webkit-overflow-scrolling: touch;"
       >
         {images.map((img, i) => (
-          <div class="provvedimento-card group flex-shrink-0 w-[85%] sm:w-[45%] lg:w-[25%]" style="scroll-snap-align:start;">
+          <div class="provvedimento-card group flex-shrink-0" style="scroll-snap-align:start; width:52%; flex-shrink:0;">
             <div
               class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl"
               style="border: 3px solid var(--green-security); background: white;"

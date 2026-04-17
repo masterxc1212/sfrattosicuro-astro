@@ -6,9 +6,7 @@ const root = process.cwd();
 const distDir = process.env.CI === 'true'
   ? path.join(root, 'dist')
   : path.join(os.homedir(), '.astro-local-builds', 'retrograde-ring', 'dist');
-const sitemapPath = path.join(distDir, 'sitemap.xml');          // sitemap principale unificata
-const sitemapPagesPath = path.join(distDir, 'sitemap-pages.xml'); // alias retrocompat
-const blogSitemapPath = path.join(distDir, 'blog', 'post-sitemap.xml'); // alias retrocompat
+const sitemapPath = path.join(distDir, 'sitemap.xml');
 const sediPath = path.join(root, 'src', 'data', 'sedi.json');
 const servicesPath = path.join(root, 'src', 'data', 'service-pages.ts');
 const blogPostsPath = path.join(root, 'src', 'data', 'blog-posts.ts');
@@ -46,8 +44,7 @@ const coreFiles = [
   'cookie-policy/index.html',
   'termini/index.html',
   'blog/index.html',
-  'sitemap.xml',
-  'sitemap-pages.xml'
+  'sitemap.xml'
 ];
 
 for (const rel of coreFiles) ensureFile(rel);

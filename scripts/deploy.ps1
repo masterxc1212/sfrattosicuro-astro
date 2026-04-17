@@ -36,7 +36,12 @@ if (-not $SkipBuild) {
   node scripts/generate-sitemaps.mjs
 }
 
-# 2. VERIFY
+# 2. SITEMAP + VERIFY
+Write-Host "=== SITEMAP ===" -ForegroundColor Cyan
+$generateOut = node scripts/generate-sitemaps.mjs 2>&1 | Out-String
+Write-Host $generateOut
+if ($LASTEXITCODE -ne 0) { throw "Generazione sitemap fallita" }
+
 if (-not $SkipVerify) {
   Write-Host "=== VERIFY ===" -ForegroundColor Cyan
   $verifyOut = node scripts/verify-site-surface.mjs 2>&1 | Out-String
@@ -78,11 +83,24 @@ if (Test-Path $htaccessDist) {
   Write-Host "  .htaccess caricato"
 }
 
-# 6. PAGINE PRINCIPALI
+# 6. CLEANUP FILE LEGACY SUL SERVER
+Write-Host "=== CLEANUP LEGACY ===" -ForegroundColor Cyan
+$legacyFiles = @(
+  "/sitemap-pages.xml",
+  "/sitemap-index.xml",
+  "/blog/post-sitemap.xml",
+  "/blog/sitemap_index.xml"
+)
+foreach ($legacy in $legacyFiles) {
+  $remoteLegacy = "$ftpBase$legacy"
+  curl.exe -s -Q "DELE $remoteLegacy" "ftp://ftp.sfrattosicuro.it/" -u $ftpUser 2>&1 | Out-Null
+  Write-Host "  cleanup attempted: $remoteLegacy"
+}
+
+# 7. PAGINE PRINCIPALI
 Write-Host "=== PAGINE PRINCIPALI ===" -ForegroundColor Cyan
 $mainPages = @("index.html","chi-siamo/index.html","servizi/index.html","sedi/index.html",
-               "blog/index.html","landing-v2/index.html","sitemap.xml","sitemap-pages.xml",
-               "blog/post-sitemap.xml","blog/sitemap_index.xml",
+               "blog/index.html","landing-v2/index.html","sitemap.xml",
                "privacy-policy/index.html","cookie-policy/index.html","termini/index.html",
                "favicon.ico","favicon.svg","robots.txt")
 foreach ($p in $mainPages) {
@@ -93,7 +111,7 @@ foreach ($p in $mainPages) {
   }
 }
 
-# 7. BLOG
+# 8. BLOG
 Write-Host "=== BLOG ===" -ForegroundColor Cyan
 $blogCount = 0
 Get-ChildItem "$distDir\blog" -Directory | ForEach-Object {
@@ -102,14 +120,14 @@ Get-ChildItem "$distDir\blog" -Directory | ForEach-Object {
 }
 Write-Host "  $blogCount articoli"
 
-# 8. SERVIZI
+# 9. SERVIZI
 Write-Host "=== SERVIZI ===" -ForegroundColor Cyan
 Get-ChildItem "$distDir\servizi" -Directory | ForEach-Object {
   $f = "$($_.FullName)\index.html"
   if (Test-Path $f) { Upload $f "$ftpBase/servizi/$($_.Name)/index.html"; Write-Host "  $($_.Name)" }
 }
 
-# 9. SEDI
+# 10. SEDI
 Write-Host "=== SEDI ===" -ForegroundColor Cyan
 $sediCount = 0
 Get-ChildItem "$distDir\sedi" -Directory | ForEach-Object {

@@ -4131,7 +4131,7 @@ img{max-width:100%;height:auto;display:block}
     const utmCampaign=getParam('utm_campaign');
     const utmTerm=getParam('utm_term');
     const utmContent=getParam('utm_content');
-    const keyword=getParam('keyword');
+    const keyword=getParam('keyword')||utmTerm;
     // Popola i campi hidden di tutti i form che postano a /php/invia-email.php
     document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
       var set=function(n,v){var i=f.querySelector('[name="'+n+'"]');if(i)i.value=v;};

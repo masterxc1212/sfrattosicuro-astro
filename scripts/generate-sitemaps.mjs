@@ -102,26 +102,24 @@ async function main() {
   const allUrls = [...sortedPages, ...sortedBlog];
   await fs.writeFile(path.join(DIST, 'sitemap.xml'), buildUrlset(allUrls, today), 'utf8');
 
-  // Mantieni sitemap-pages.xml e post-sitemap.xml come alias (per redirect 301 futuri e per
-  // non creare 404 sugli URL già noti a Google Search Console)
-  await fs.writeFile(path.join(DIST, 'sitemap-pages.xml'), buildUrlset(sortedPages, today), 'utf8');
-
   const blogDir = path.join(DIST, 'blog');
   await fs.mkdir(blogDir, { recursive: true });
-  await fs.writeFile(path.join(blogDir, 'post-sitemap.xml'), buildUrlset(sortedBlog, today), 'utf8');
-  // blog/sitemap_index.xml: ora punta direttamente alla sitemap radice per evitare confusione
-  await fs.writeFile(path.join(blogDir, 'sitemap_index.xml'),
-    `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE}/sitemap.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n</sitemapindex>\n`,
-    'utf8'
-  );
   await fs.writeFile(path.join(blogDir, 'robots.txt'), buildBlogRobots(), 'utf8');
 
-  const staleSitemap = path.join(DIST, 'sitemap-index.xml');
-  try {
-    await fs.access(staleSitemap);
-    await fs.unlink(staleSitemap);
-  } catch {
-    // ignore if missing
+  const staleFiles = [
+    path.join(DIST, 'sitemap-pages.xml'),
+    path.join(blogDir, 'post-sitemap.xml'),
+    path.join(blogDir, 'sitemap_index.xml'),
+    path.join(DIST, 'sitemap-index.xml')
+  ];
+
+  for (const staleFile of staleFiles) {
+    try {
+      await fs.access(staleFile);
+      await fs.unlink(staleFile);
+    } catch {
+      // ignore if missing
+    }
   }
 
   console.log(`✅ Generated sitemap.xml (${allUrls.length} urls total: ${sortedPages.length} pages + ${sortedBlog.length} blog posts)`);

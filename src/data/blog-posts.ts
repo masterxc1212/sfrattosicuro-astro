@@ -17,6 +17,163 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "sfratto-termine-di-grazia",
+    title: "Termine di grazia nello sfratto",
+    description: "Scopri cos'è il termine di grazia nello sfratto per morosità, come funziona la procedura e quali sono i diritti del proprietario. Guida completa.",
+    excerpt: "Quando un inquilino non paga il canone di locazione o le spese condominiali come pattuito nel contratto, il proprietario può avviare la procedura di sfratto per morosità. Tuttavia, prima che la procedura possa concludersi con l'effettivo rilascio dell'immobile, la legge prevede un momento specifico in cui all'inquilino viene concessa una possibilità di rimettersi in regola: il cosiddetto \"termine di grazia\".",
+    lead: "Il termine di grazia è un elemento cruciale nelle procedure di sfratto per morosità, rappresentando un'opportunità per l'inquilino di sanare la propria posizione debitoria e, di conseguenza, evitare l'esecuzione dello sfratto. Comprendere a fondo il suo funzionamento è essenziale sia per i proprietari che per gli inquilini, al fine di navigare correttamente una situazione spesso complessa e delicata.",
+    publishedAt: "2026-04-13",
+    updatedAt: "2026-04-13",
+    category: "Sfratti",
+    readingTime: "5 min",
+    sourceNote: "Approvato 2026-04-12. Keyword: sfratto termine di grazia, vol 480, KD 0.01. Batch 2 #2.",
+    html: `  <p>Il termine di grazia è un elemento cruciale nelle procedure di sfratto per morosità, rappresentando un'opportunità per l'inquilino di sanare la propria posizione debitoria e, di conseguenza, evitare l'esecuzione dello sfratto. Comprendere a fondo il suo funzionamento è essenziale sia per i proprietari che per gli inquilini, al fine di navigare correttamente una situazione spesso complessa e delicata.</p>
+
+  <p>Quando un inquilino non paga il canone di locazione o le spese condominiali come pattuito nel contratto, il proprietario può avviare la procedura di sfratto per morosità. Tuttavia, prima che la procedura possa concludersi con l'effettivo rilascio dell'immobile, la legge prevede un momento specifico in cui all'inquilino viene concessa una possibilità di rimettersi in regola: il cosiddetto "termine di grazia".</p>
+
+  <h2>Cos'è il termine di grazia?</h2>
+  <p>Il termine di grazia è il termine che il giudice può concedere al conduttore moroso, nelle locazioni abitative, per sanare integralmente la morosità pagando canoni scaduti, oneri accessori, interessi e spese liquidate. In via ordinaria il termine non supera i 90 giorni e viene concesso su richiesta del conduttore nel procedimento di sfratto per morosità.</p>
+  <p>La sua finalità è duplice: da un lato, tutelare l'inquilino da una perdita immediata dell'abitazione, offrendogli un'ultima chance; dall'altro, permettere al proprietario di recuperare le somme dovute senza dover proseguire necessariamente con l'esecuzione forzata, che può essere lunga e costosa.</p>
+
+  <h3>Quando e come viene concesso</h3>
+  <p>La concessione del termine di grazia non è automatica. È il conduttore, personalmente o tramite il proprio difensore, a doverlo chiedere in udienza. Il giudice valuta i presupposti e può concederlo nei limiti previsti dall'art. 55 della Legge 392/1978. In concreto, la sanatoria non è illimitata: il beneficio può essere accordato fino a tre volte nell'arco di un quadriennio.</p>
+
+  <h2>Calcolo e decorrenza del termine</h2>
+  <p>Una volta concesso dal giudice, il termine di grazia inizia a decorrere dalla data dell'udienza stessa. Entro questi 90 giorni, l'inquilino deve provvedere al pagamento integrale di quanto dovuto. Questo include non solo i canoni arretrati e le spese accessorie già maturate al momento dell'udienza, ma anche quelli che maturano durante il periodo del termine di grazia, oltre agli interessi legali e alle spese legali sostenute dal proprietario fino a quel momento.</p>
+
+  <h3>Cosa succede se il pagamento non avviene</h3>
+  <p>Se l'inquilino non effettua il pagamento entro il termine di grazia, o lo effettua solo parzialmente, il proprietario ha il diritto di chiedere al giudice di convalidare lo sfratto. In questo caso, il giudice emetterà un'ordinanza di convalida di sfratto, che rappresenta un titolo esecutivo per procedere con il rilascio forzato dell'immobile. A quel punto, l'inquilino non avrà più possibilità di sanare la morosità per evitare lo sfratto.</p>
+
+  <h2>Implicazioni per il proprietario</h2>
+  <p>Per il proprietario, la concessione del termine di grazia può sembrare un rallentamento della procedura. Tuttavia, può anche rappresentare un'opportunità per recuperare le somme dovute senza ulteriori costi e lungaggini. È fondamentale che il proprietario, assistito dal suo legale, monitori attentamente il rispetto del termine e, in caso di inadempimento, agisca prontamente per chiedere la convalida dello sfratto.</p>
+
+  <p>È importante tenere a mente che, anche se il conduttore sana la morosità entro il termine concesso, il locatore conserva la possibilità di programmare correttamente la cessazione del rapporto alla scadenza naturale del contratto, seguendo le regole proprie della disdetta e, se necessario, dello <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
+  <h2>Come gestire la situazione: consigli pratici</h2>
+  <ul>
+    <li><strong>Comunicazione:</strong> Se possibile, mantenere un canale di comunicazione aperto con il conduttore può aiutare a chiarire subito importi dovuti, tempi e margini reali di soluzione.</li>
+    <li><strong>Assistenza legale:</strong> È prudente affidarsi a un professionista che conosca bene la procedura di <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>, così da arrivare in udienza con conteggi aggiornati e richieste corrette.</li>
+    <li><strong>Documentazione:</strong> Conservare contratto, registrazione, estratto dei canoni insoluti e comunicazioni inviate è essenziale per dimostrare la morosità e quantificare correttamente il credito.</li>
+    <li><strong>Strategia economica:</strong> Se oltre al rilascio vuoi recuperare anche gli arretrati, conviene valutare in parallelo il <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>.</li>
+  </ul>
+
+  <p>Affidarsi a professionisti esperti come Sfratto Sicuro significa avere al proprio fianco un team in grado di gestire ogni fase della procedura, fornendo consulenza e assistenza qualificate per tutelare al meglio i tuoi interessi. Dalla prima udienza alla gestione del termine di grazia, fino all'eventuale fase esecutiva, siamo qui per guidarti con chiarezza e professionalità.</p>
+
+  <p>Se ti trovi a dover affrontare una situazione di morosità o hai domande sul termine di grazia, non esitare a <a href="/contatti">contattarci</a> per una consulenza personalizzata. La nostra esperienza è a tua disposizione per trovare la soluzione più efficace e rapida.</p>
+
+  <h2>FAQ sul termine di grazia nello sfratto</h2>
+  <ul>
+    <li><strong>Cos'è il termine di grazia nello sfratto per morosità?</strong><br>È un periodo, generalmente di 90 giorni, concesso dal giudice all'inquilino moroso per sanare il debito accumulato e prevenire l'esecuzione dello sfratto.</li>
+    <li><strong>Quanto dura il termine di grazia?</strong><br>Di regola il termine non supera i 90 giorni. In presenza dei presupposti previsti dalla legge, il giudice può accordare un termine più ampio fino a 120 giorni.</li>
+    <li><strong>Cosa devo pagare entro il termine di grazia?</strong><br>Devi saldare tutti i canoni di locazione e le spese accessorie scadute fino alla data del pagamento, inclusi quelli maturati durante il termine di grazia, oltre agli interessi legali e alle spese processuali del proprietario.</li>
+    <li><strong>Si può chiedere il termine di grazia più volte?</strong><br>La legge pone un limite: il beneficio può essere concesso fino a tre volte nell'arco di un quadriennio, ricorrendone i presupposti.</li>
+    <li><strong>Cosa succede se non pago entro il termine di grazia?</strong><br>Se il pagamento non avviene entro il termine stabilito, il giudice convalida lo sfratto e il proprietario potrà procedere con l'esecuzione forzata per il rilascio dell'immobile.</li>
+  </ul>`,
+  },
+
+  {
+    slug: "sfratto-morosita-riforma-cartabia",
+    title: "Sfratto per morosità e riforma Cartabia",
+    description: "Riforma Cartabia e sfratto per morosità: formula esecutiva, avviso patrocinio, attestazione morosità, mediazione e termine di grazia. Guida per il locatore.",
+    excerpt: "La riforma Cartabia (D.Lgs. 149/2022) ha modificato alcune regole concrete della procedura di sfratto per morosità. Per il locatore le novità principali sono tre: la formula esecutiva non serve più, l'intimazione deve contenere un nuovo avviso obbligatorio (pena nullità), e la mediazione entra in gioco solo se l'inquilino si oppone.",
+    lead: "La riforma Cartabia (D.Lgs. 149/2022) ha modificato alcune regole concrete della procedura di sfratto per morosità. Per il locatore le novità principali sono tre: la formula esecutiva non serve più, l'intimazione deve contenere un nuovo avviso obbligatorio (pena nullità), e la mediazione entra in gioco solo se l'inquilino si oppone. Conoscere questi dettagli evita vizi formali costosi e sorprese in udienza.",
+    publishedAt: "2026-04-12",
+    updatedAt: "2026-04-12",
+    category: "Sfratti",
+    readingTime: "9 min",
+    sourceNote: "Approvato 2026-04-12, aggiornato stesso giorno con correzioni giuridiche. Keyword: sfratto per morosità riforma cartabia modello, vol 590. Batch 3 #1.",
+    html: `<h2>La procedura di base: cosa non è cambiato</h2>
+<p>Lo sfratto per morosità è disciplinato dagli artt. 657–669 c.p.c. e funziona attraverso la <strong>procedura di convalida</strong>. Il locatore deposita il ricorso in tribunale, il giudice fissa l'udienza e cita l'inquilino. Se l'inquilino non compare o non si oppone, il giudice pronuncia l'ordinanza di convalida ai sensi dell'<strong>art. 663 c.p.c.</strong>.</p>
+<p>Questa struttura non è cambiata con la riforma. Quello che è cambiato sono alcune regole procedurali che, se ignorate, possono bloccare o ritardare la procedura. Per una guida operativa completa su tempi, costi e passaggi, consulta la guida allo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità nel 2026</a>.</p>
+
+<h2>Novità 1 — La formula esecutiva non esiste più</h2>
+<p>Prima della riforma, dopo che il giudice pronunciava la convalida, il locatore doveva tornare in cancelleria per richiedere l'apposizione della <strong>formula esecutiva</strong> sul provvedimento. Solo dopo quel passaggio — che richiedeva giorni o settimane — era possibile avviare l'esecuzione forzata.</p>
+<p>Con il D.Lgs. 149/2022, in vigore dal <strong>28 febbraio 2023</strong>, l'ordinanza di convalida è <strong>immediatamente esecutiva</strong> senza necessità di formula. Il locatore può procedere all'esecuzione forzata direttamente con il provvedimento del giudice, riducendo i tempi nella fase post-udienza.</p>
+
+<h2>Novità 2 — Avviso sul patrocinio a spese dello Stato: obbligo nell'atto di intimazione</h2>
+<p>Il correttivo Cartabia (D.Lgs. 164/2024, in vigore dal <strong>26 novembre 2024</strong>) ha introdotto un obbligo che molti ignorano: l'atto di intimazione di sfratto deve contenere espressamente l'<strong>avviso all'inquilino della possibilità di richiedere il patrocinio a spese dello Stato</strong>.</p>
+<p>La conseguenza dell'omissione è severa: l'atto è <strong>nullo</strong> e deve essere rifatto. Qualunque modello o fac simile precedente al novembre 2024 quasi certamente non contiene questo avviso e non è utilizzabile così com'è. Prima di depositare l'intimazione, è essenziale verificare che questa dicitura sia presente nel testo.</p>
+
+<h2>Novità 3 — Attestazione della morosità in udienza (art. 663 c.p.c.)</h2>
+<p>L'<strong>art. 663 c.p.c.</strong> subordina la convalida dello sfratto per morosità all'attestazione in giudizio del locatore o del suo procuratore che la morosità persiste. La riforma ha reso questo elemento ancora più centrale nella prassi processuale.</p>
+<p>In concreto: il locatore o il suo procuratore deve <strong>attestare espressamente in udienza che la morosità persiste</strong> alla data in cui si chiede la convalida. Se nel frattempo l'inquilino ha pagato tutto — anche in ritardo, ma prima dell'udienza — la convalida non può essere pronunciata.</p>
+<p>Per il locatore questo significa che <strong>non basta portare i documenti della morosità al momento del deposito del ricorso</strong>. Occorre verificare la situazione aggiornata fino al giorno dell'udienza, includere eventuali pagamenti parziali nel conteggio e attestare con precisione quanto ancora risulta dovuto. Un conteggio non aggiornato o impreciso può bloccare la procedura o fornire all'inquilino argomenti per contestare.</p>
+
+<h2>Novità 4 — Mediazione: quando scatta davvero</h2>
+<p>Uno dei punti più fraintesi della riforma. La risposta precisa è:</p>
+<ul>
+  <li><strong>Nella fase sommaria</strong> — dalla presentazione del ricorso fino all'udienza di convalida — la mediazione <strong>non è obbligatoria</strong> come condizione di procedibilità. La procedura di convalida è un procedimento speciale che ne è esente in questa fase.</li>
+  <li><strong>Se l'inquilino si oppone</strong>, il procedimento si trasforma in un giudizio a cognizione piena. Da quel momento la mediazione diventa una <strong>condizione di procedibilità obbligatoria</strong>. Se non viene esperita dopo il mutamento del rito, la domanda diventa improcedibile.</li>
+</ul>
+<p>Tuttavia, l'eventuale <strong>ordinanza provvisoria di rilascio</strong> già emessa ai sensi dell'<strong>art. 665 c.p.c.</strong> — che il giudice può pronunciare su istanza del locatore quando l'opposizione non è fondata su prova scritta — conserva i suoi effetti anche in caso di dichiarazione di improcedibilità. Il locatore può quindi avere in mano un titolo esecutivo provvisorio per il rilascio dell'immobile anche se il procedimento si inceppa.</p>
+<p>Se l'inquilino si oppone, il locatore deve essere pronto ad attivare la mediazione e a gestire un procedimento più lungo. Avere i documenti in ordine fin dall'inizio — contratto registrato, conteggi precisi, <a href="/blog/lettera-diffida-inquilino-moroso/">diffide già inviate</a> — fa la differenza sia in udienza sia nell'eventuale fase di mediazione.</p>
+
+<h2>Novità 5 — Estensione all'affitto d'azienda con immobili</h2>
+<p>Prima della riforma, la procedura speciale di convalida di sfratto per morosità era applicabile alle locazioni abitative e commerciali. Il correttivo D.Lgs. 164/2024 ha esteso l'ambito di applicazione anche ai contratti di <strong>affitto d'azienda che comprendono uno o più immobili</strong>.</p>
+<p>Per i locatori che affittano immobili inseriti in rami aziendali è una novità significativa: apre la strada a una procedura più rapida rispetto al giudizio ordinario, che era l'unica via percorribile in precedenza.</p>
+
+<h2>Il termine di grazia: cosa cambia (e cosa no) per il locatore</h2>
+<p>Il <strong>termine di grazia</strong> — uno degli strumenti che più rallenta il recupero del possesso — è disciplinato dall'<strong>art. 55 della Legge 392/1978</strong> (Legge sull'equo canone), non dal codice di procedura civile. Si applica esclusivamente ai contratti di locazione <strong>ad uso abitativo</strong>. La riforma Cartabia non ha modificato questo istituto.</p>
+<p>Ecco come funziona nella pratica:</p>
+<ul>
+  <li>In udienza, l'inquilino moroso può chiedere al giudice un termine per pagare i canoni scaduti, gli oneri accessori, gli interessi legali e le spese liquidate.</li>
+  <li>Il giudice può concedere un termine <strong>non superiore a 90 giorni</strong>. Il termine può arrivare a <strong>120 giorni</strong> se le difficoltà economiche dell'inquilino sono insorte dopo la stipula del contratto e derivano da malattia, disoccupazione o altre gravi condizioni documentate.</li>
+  <li>Se l'inquilino paga integralmente entro il termine concesso, la morosità si considera sanata e il contratto prosegue. Se non paga, il giudice convalida lo sfratto.</li>
+  <li>La possibilità di richiedere il termine di grazia è limitata: può essere concessa <strong>al massimo tre volte nell'arco di un quadriennio</strong>.</li>
+</ul>
+<p>Per il locatore il termine di grazia rimane uno dei principali fattori di incertezza sui tempi. Conoscere il limite delle tre concessioni nel quadriennio è utile quando si valuta la strategia, soprattutto in caso di inquilino con precedenti di morosità reiterata. <strong>Attenzione:</strong> per le locazioni commerciali il termine di grazia non è previsto.</p>
+
+<h2>La lista dei documenti aggiornata post-Cartabia</h2>
+<p>Un'intimazione di sfratto per morosità aggiornata deve contenere:</p>
+<ul>
+  <li>Dati completi e corretti delle parti e dell'immobile</li>
+  <li>Indicazione del contratto di locazione e della sua registrazione</li>
+  <li>Conteggio preciso dei canoni insoluti, degli oneri accessori e degli interessi</li>
+  <li>Domanda di rilascio dell'immobile</li>
+  <li>Eventuale domanda di ingiunzione per i canoni scaduti</li>
+  <li><strong>Avviso al conduttore della possibilità di richiedere il patrocinio a spese dello Stato</strong> (obbligatorio dal 26/11/2024 — pena nullità)</li>
+  <li>Dati corretti per le notifiche e i recapiti delle parti</li>
+</ul>
+<p>Se il contratto non è stato registrato correttamente, la situazione si complica prima ancora di arrivare in udienza. In quel caso conviene valutare le implicazioni leggendo la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+
+<h2>Gli errori più frequenti del locatore</h2>
+<ul>
+  <li><strong>Usare un fac simile non aggiornato al novembre 2024</strong>: l'avviso sul patrocinio mancante rende l'atto nullo.</li>
+  <li><strong>Non aggiornare il conteggio alla data dell'udienza</strong>: serve attestare che la morosità persiste in quel momento, non alla data del ricorso.</li>
+  <li><strong>Confondere morosità e finita locazione</strong>: sono procedure diverse. Se il contratto è scaduto e l'inquilino non lascia l'immobile, il percorso corretto è lo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</li>
+  <li><strong>Non attivare la mediazione dopo il mutamento del rito</strong>: se l'inquilino si oppone e il rito muta, la mediazione diventa obbligatoria. Ignorarla rende la domanda improcedibile.</li>
+  <li><strong>Aspettare troppo prima di agire</strong>: ogni mese perso accumula insoluti. Una <a href="/blog/lettera-diffida-inquilino-moroso/">diffida formale</a> inviata tempestivamente costruisce il fascicolo e può accelerare una soluzione.</li>
+</ul>
+
+<h2>Coordinare rilascio e recupero dei canoni</h2>
+<p>Il locatore non deve scegliere tra ottenere il rilascio dell'immobile e recuperare le somme dovute. In molti casi le due domande possono essere coordinate fin dall'inizio del procedimento. Procedere in modo frammentato — prima lo sfratto, poi il recupero crediti — è quasi sempre meno efficiente in termini di tempi e costi. Per valutare come impostare correttamente entrambe le domande, consulta la pagina dedicata al <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>.</p>
+
+<h2>Conclusione</h2>
+<p>La riforma Cartabia non ha stravolto la procedura di sfratto per morosità, ma ha introdotto modifiche concrete che il locatore deve conoscere. La formula esecutiva non serve più. L'avviso sul patrocinio è obbligatorio pena nullità dell'atto. L'attestazione della morosità in udienza deve essere aggiornata e precisa. La mediazione non è un ostacolo nella fase sommaria, ma lo diventa se l'inquilino si oppone. Il termine di grazia — disciplinato dall'art. 55 L. 392/1978, non dal c.p.c. — resta invariato e si applica solo alle locazioni abitative.</p>
+<p>Se vuoi verificare come impostare correttamente il tuo caso, <a href="/contatti/">contattaci</a>: analizziamo contratto, insoluti e situazione specifica per scegliere il percorso più efficace.</p>
+
+<h2>Domande frequenti</h2>
+
+<h3>Con la riforma Cartabia serve ancora la formula esecutiva dopo la convalida?</h3>
+<p>No. Dal 28 febbraio 2023 l'ordinanza di convalida è immediatamente esecutiva. Non è più necessario tornare in cancelleria per l'apposizione della formula esecutiva: si può procedere direttamente all'esecuzione forzata con il provvedimento del giudice.</p>
+
+<h3>Cosa succede se nell'intimazione manca l'avviso sul patrocinio a spese dello Stato?</h3>
+<p>L'atto è nullo. Il correttivo D.Lgs. 164/2024 (in vigore dal 26 novembre 2024) ha reso questo avviso obbligatorio. Se manca, l'intimazione va rifatta. È essenziale usare modelli aggiornati o farsi assistere da un professionista.</p>
+
+<h3>Il termine di grazia è stato modificato dalla riforma Cartabia?</h3>
+<p>No. Il termine di grazia è disciplinato dall'art. 55 della Legge 392/1978 — non dal c.p.c. — e la riforma non lo ha toccato. Il giudice può concederlo fino a 90 giorni (120 in casi particolari), per un massimo di tre volte nel quadriennio. Si applica solo alle locazioni abitative.</p>
+
+<h3>La mediazione blocca subito la procedura di sfratto?</h3>
+<p>No. La mediazione non è obbligatoria nella fase sommaria della convalida. Diventa condizione di procedibilità solo se l'inquilino si oppone e il procedimento si trasforma in giudizio ordinario. L'eventuale ordinanza provvisoria di rilascio già emessa ai sensi dell'art. 665 c.p.c. mantiene i suoi effetti.</p>
+
+<h3>Posso chiedere sia il rilascio dell'immobile che i canoni arretrati nello stesso procedimento?</h3>
+<p>Sì. Le due domande possono essere coordinate fin dall'inizio. Procedere in modo separato è quasi sempre meno efficiente, sia in termini di tempi che di costi.</p>
+
+<h3>Il termine di grazia si applica anche alle locazioni commerciali?</h3>
+<p>No. Il termine di grazia ex art. 55 L. 392/1978 si applica esclusivamente ai contratti di locazione ad uso abitativo. Per le locazioni commerciali non è previsto questo istituto.</p>`,
+  },
+
+  {
     slug: "contratto-transitorio-rischi-validita",
     title: "Contratto transitorio contestato: rischi e validità",
     description: "Contratto transitorio contestato: quando rischia di essere nullo o convertito in 4+4, errori da evitare e tutele utili per il proprietario.",
@@ -89,7 +246,7 @@ const posts: BlogPost[] = [
 
   {
     slug: "contratto-transitorio-affitto-convenienza",
-    title: "Contratto Transitorio di Affitto: Guida Completa per il Proprietario",
+    title: "Contratto transitorio di affitto: guida per il proprietario",
     description: "Cos\'è il contratto transitorio di affitto e quando conviene usarlo? Guida pratica per proprietari: durata, vantaggi, errori da evitare e situazioni ideali.",
     excerpt: "Il contratto transitorio di affitto è uno strumento legale spesso sottovalutato, ma può essere la scelta giusta quando hai esigenze temporanee o inquilini che restano per un periodo limitato. Prima di firmarlo, però, è fondamentale capire come funziona davvero — e quali errori possono costarti caro.",
     lead: "Il contratto transitorio di affitto è uno strumento legale spesso sottovalutato, ma può essere la scelta giusta quando hai esigenze temporanee o inquilini che restano per un periodo limitato. Prima di firmarlo, però, è fondamentale capire come funziona davvero — e quali errori possono costarti caro.",
@@ -170,7 +327,7 @@ const posts: BlogPost[] = [
   },
   {
     slug: 'occupazione-abusiva-immobile',
-    title: "Occupazione abusiva di immobile: come può agire il proprietario per riottenere il possesso",
+    title: "Occupazione abusiva di immobile: guida per il proprietario",
     description: "Occupazione abusiva di immobile: guida pratica per il proprietario che vuole riottenere il possesso. Differenze rispetto a morosità e finita locazione, errori da evitare e quando agire.",
     excerpt: "Quando un immobile resta occupato senza un titolo valido, il proprietario rischia di perdere tempo prezioso se inquadra male il problema. Capire bene la differenza tra occupazione abusiva, occupazione senza titolo e detenzione senza titolo è il primo passo per scegliere l’azione corretta e riottenere il possesso dell’immobile.",
     lead: "Quando un immobile resta occupato senza un titolo valido, il proprietario rischia di perdere tempo prezioso se inquadra male il problema. Non sempre ci si trova davanti a una classica morosità, e non sempre la soluzione passa per lo stesso percorso. Capire bene la differenza tra occupazione abusiva, occupazione senza titolo e detenzione senza titolo è il primo passo per scegliere l’azione corretta e riottenere il possesso dell’immobile.",
@@ -190,7 +347,7 @@ const posts: BlogPost[] = [
 <p>Per un proprietario è fondamentale non usare queste espressioni come se fossero sinonimi perfetti.</p>
 <p>La <strong>morosità</strong> riguarda il mancato pagamento dei canoni in presenza di un rapporto locatizio in essere. Puoi approfondire i passaggi e le tempistiche nella nostra guida sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026">sfratto per morosità</a>. La <strong>finita locazione</strong> riguarda invece la cessazione del rapporto e il mancato rilascio dell’immobile alla scadenza o alla fine del titolo, come spiegato nell'articolo dedicato allo <a href="/blog/sfratto-per-finita-locazione">sfratto per finita locazione</a>.</p>
 <p>L’<strong>occupazione senza titolo</strong> o la <strong>detenzione senza titolo</strong> possono presentare elementi diversi. In alcuni casi esisteva un titolo originario che non è più valido; in altri il quadro è più complesso e richiede una ricostruzione accurata dei fatti e dei documenti.</p>
-<p>Per questo motivo il proprietario sbaglia quando tratta automaticamente ogni problema come “semplice sfratto”. Se il caso è inquadrato male all’inizio, si rischia di perdere tempo e di scegliere una strada non adatta.</p>
+<p>Per questo motivo il proprietario sbaglia quando tratta automaticamente ogni problema come “semplice sfratto”. Se il caso è inquadrato male all’inizio, si rischia di perdere tempo e di scegliere una strada non adatta. Quando il rapporto locativo è già degenerato o ci sono contestazioni sul titolo, può essere utile inquadrare subito anche il tema delle <a href="/servizi/controversie-locazione/">controversie di locazione</a> e della <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
 
 <h2>I casi più frequenti per il proprietario</h2>
 <p>Nella pratica, le situazioni più comuni nascono quando:</p>
@@ -969,7 +1126,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 
 <h3>2. Danni all'immobile eccedenti la normale usura</h3>
 <p>Non tutto ciò che sembra un danno lo è ai fini legali. La normale usura — ingiallimento delle pareti, piccoli segni su pavimenti e porte, deterioramento degli infissi dopo anni — non è addebitabile all'inquilino. Invece sono addebitabili: buchi nei muri non autorizzati, rotture di sanitari, bruciature su pavimenti, muffa per mancata ventilazione, danni agli impianti per utilizzo scorretto, vetri rotti o infissi danneggiati.</p>
-<p>Per dimostrare che i danni non erano preesistenti, è fondamentale disporre di un <strong>verbale di consegna iniziale</strong> dettagliato. Per approfondire, leggi la guida sul <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna immobile</a>.</p>
+<p>Per dimostrare che i danni non erano preesistenti, è fondamentale disporre di un <strong>verbale di consegna iniziale</strong> dettagliato. Per approfondire, leggi la guida sul <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna immobile</a>. Se il rilascio dell'immobile si accompagna anche a insoluti o contestazioni economiche più ampie, può essere utile valutare il supporto sul <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>.</p>
 
 <h3>3. Spese accessorie non saldo</h3>
 <p>Se rimangono conguagli condominiali, bollette intestate al conduttore o spese non pagate, il proprietario può compensarle con il deposito — purché siano documentate.</p>
@@ -1041,7 +1198,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
   <li><strong>A prima richiesta</strong> (o "senza eccezioni"): il fideiussore paga immediatamente all'escussione, senza poter sollevare eccezioni legate al rapporto principale tra locatore e conduttore. È la forma più tutelante per il proprietario.</li>
   <li><strong>Ordinaria</strong>: il fideiussore può opporre le stesse eccezioni che avrebbe il debitore principale, allungando i tempi di recupero.</li>
 </ul>
-<p>La fideiussione si distingue dal <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>, che è una somma di denaro versata direttamente dall'inquilino e vincolata per legge a un massimo di tre mensilità. La fideiussione, invece, non ha un tetto legale espresso e non immobilizza liquidità nelle mani del locatario.</p>
+<p>La fideiussione si distingue dal <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>, che è una somma di denaro versata direttamente dall'inquilino e vincolata per legge a un massimo di tre mensilità. La fideiussione, invece, non ha un tetto legale espresso e non immobilizza liquidità nelle mani del locatario. Quando vuoi impostare bene queste garanzie già in fase contrattuale, conviene partire da un supporto sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
 
 <h2>Fideiussione bancaria o assicurativa: differenze pratiche</h2>
 <p>Nella pratica locatizia si incontrano principalmente due tipologie di fideiussione istituzionale:</p>
@@ -1213,9 +1370,9 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
   <li>Eventuali trattative informali con l'inquilino non hanno valore legale se non formalizzate</li>
 </ul>
 
-<p>L'unica possibilità rimasta al proprietario è accordarsi con l'inquilino per una <strong>risoluzione consensuale</strong> del contratto, oppure attendere la scadenza del nuovo ciclo e agire in tempo con la disdetta successiva.</p>
+<p>L'unica possibilità rimasta al proprietario è accordarsi con l'inquilino per una <strong>risoluzione consensuale</strong> del contratto, oppure attendere la scadenza del nuovo ciclo e agire in tempo con la disdetta successiva. Se la situazione è già conflittuale o richiede di rivedere la tenuta del rapporto, può essere utile inquadrare anche il tema delle <a href="/servizi/controversie-locazione/">controversie di locazione</a>.</p>
 
-<p>Nei casi in cui esista già una morosità o un inadempimento contrattuale, rimane percorribile la strada dello sfratto per morosità, indipendentemente dalla proroga.</p>
+<p>Nei casi in cui esista già una morosità o un inadempimento contrattuale, rimane percorribile la strada dello sfratto per morosità, indipendentemente dalla proroga. In questi casi il riferimento operativo è la pagina sul <a href="/servizi/sfratto-per-morosita/">servizio di sfratto per morosità</a>.</p>
 
 <div style="background:#f5f5f5; border-left:4px solid #c0392b; padding:20px; margin:32px 0;">
   <strong>Hai bisogno di recuperare il tuo immobile?</strong>
@@ -1253,7 +1410,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
     sourceNote: 'Articolo pubblicato dal workflow statico Astro dopo approvazione umana del draft locale `draft-verbale-riconsegna-immobile.md` (batch2, keyword: verbale di riconsegna immobile, vol 1600, KD 0).',
     html: `
 <p>
-  Quando un inquilino lascia l'appartamento, la firma sul contratto di fine locazione non è sufficiente. Senza un documento scritto che descriva lo stato dei locali al momento della consegna delle chiavi, il proprietario si espone a un rischio concreto: non riuscire a dimostrare, in un secondo momento, che i danni erano stati causati dall'inquilino e non erano preesistenti.
+  Quando un inquilino lascia l'appartamento, la firma sul contratto di fine locazione non è sufficiente. Senza un documento scritto che descriva lo stato dei locali al momento della consegna delle chiavi, il proprietario si espone a un rischio concreto: non riuscire a dimostrare, in un secondo momento, che i danni erano stati causati dall'inquilino e non erano preesistenti. Se la chiusura del rapporto è già delicata, può essere utile affiancare anche una valutazione di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.
 </p>
 <p>
   Il verbale di riconsegna immobile è lo strumento che chiude questo cerchio. Non è obbligatorio per legge, ma è prassi consolidata, raccomandato da giuristi e, soprattutto, essenziale nella pratica quotidiana di chi gestisce immobili in affitto.
@@ -1356,7 +1513,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 
 <h2>Verbale di riconsegna e deposito cauzionale: il nesso pratico</h2>
 <p>
-  Il <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> viene restituito al termine della locazione, detratte le somme per danni che vanno oltre la normale usura. Il verbale di riconsegna è il documento su cui si fonda qualsiasi trattenuta.
+  Il <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> viene restituito al termine della locazione, detratte le somme per danni che vanno oltre la normale usura. Il verbale di riconsegna è il documento su cui si fonda qualsiasi trattenuta. Se oltre al rilascio serve gestire anche danni, insoluti o contestazioni, può essere utile affiancare una valutazione sulla <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.
 </p>
 <p>
   Senza verbale — o con un verbale generico — il proprietario che vuole trattenere una parte del deposito dovrà produrre altre prove (perizie, preventivi di spesa, fotografie). Con un verbale dettagliato e firmato, invece, la sua posizione è molto più solida già prima che la questione arrivi a un avvocato o a un giudice.
@@ -1516,7 +1673,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
   },
   {
     slug: 'disdetta-contratto-locatore',
-    title: 'Disdetta del contratto di locazione da parte del locatore: tempi e requisiti',
+    title: 'Disdetta del contratto di locazione del locatore: tempi e requisiti',
     description:
       'Disdetta del contratto di locazione da parte del locatore: preavvisi obbligatori, casi ammessi e come muoversi per non perdere il diritto al recesso.',
     excerpt:
@@ -1531,7 +1688,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
     html: `
       <p>La <strong>disdetta del contratto di locazione da parte del locatore</strong> è una delle questioni più frequenti nella gestione degli affitti. Molti proprietari danno per scontato di poter disdire il contratto alla scadenza con un semplice preavviso, ma la realtà è più articolata: dipende dal tipo di contratto, dalla scadenza a cui ci si trova e dalle motivazioni addotte.</p>
 
-      <p>Questo articolo spiega quando il proprietario può inviare la disdetta, con quanti mesi di anticipo, quali requisiti deve rispettare e cosa rischia se sbaglia — con un focus pratico per chi gestisce un appartamento in affitto e vuole muoversi correttamente.</p>
+      <p>Questo articolo spiega quando il proprietario può inviare la disdetta, con quanti mesi di anticipo, quali requisiti deve rispettare e cosa rischia se sbaglia — con un focus pratico per chi gestisce un appartamento in affitto e vuole muoversi correttamente. Se vuoi inquadrare il tema anche dal lato operativo, può essere utile partire dalla pagina dedicata ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
 
       <h2>Quando il locatore può dare disdetta: la regola generale</h2>
       <p>La disciplina principale si trova nella <strong>Legge 9 dicembre 1998, n. 431</strong> (legge sulle locazioni abitative). Il principio di fondo è che il proprietario non ha libertà assoluta di recedere: la legge bilancia le esigenze del locatore con la tutela dell'inquilino.</p>
@@ -1639,7 +1796,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
   },
   {
     slug: 'cedolare-secca-affitto',
-    title: "Cedolare secca sull'affitto: aliquote 2026, calcolo e quando conviene davvero al proprietario",
+    title: "Cedolare secca sull'affitto: aliquote 2026 e quando conviene",
     description:
       "Cedolare secca 2026: aliquota 21% o 10%, quanto paga il proprietario, quando conviene rispetto all'IRPEF e cosa si perde optando per questo regime.",
     excerpt:
@@ -1663,7 +1820,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
         <li>imposta di registro annuale sul contratto;</li>
         <li>imposta di bollo sul contratto.</li>
       </ul>
-      <p>L'opzione si esercita in sede di registrazione del contratto (o di rinnovo) tramite il modello RLI, disponibile sul portale dell'Agenzia delle Entrate. Per chi non ha ancora registrato il contratto online, la procedura è descritta nella guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+      <p>L'opzione si esercita in sede di registrazione del contratto (o di rinnovo) tramite il modello RLI, disponibile sul portale dell'Agenzia delle Entrate. Per chi non ha ancora registrato il contratto online, la procedura è descritta nella guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>. Se invece devi verificare prima come impostare correttamente il rapporto, il riferimento più utile resta la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
 
       <h2>Le aliquote 2026</h2>
 
@@ -1767,7 +1924,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       <p>La forma più semplice e meno conflittuale. Proprietario e inquilino si accordano per chiudere il contratto prima della scadenza. Non serve andare in tribunale, ma servono alcune cose:</p>
       <ul>
         <li><strong>Un accordo scritto</strong>, firmato da entrambe le parti, che indichi la data di cessazione e le condizioni (riconsegna chiavi, eventuali somme dovute, stato dell'immobile).</li>
-        <li><strong>La comunicazione all'Agenzia delle Entrate</strong>, entro 30 giorni dalla data di cessazione, tramite il modello RLI. Per chi vuole un promemoria sul funzionamento del portale, è utile rileggere la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</li>
+        <li><strong>La comunicazione all'Agenzia delle Entrate</strong>, entro 30 giorni dalla data di cessazione, tramite il modello RLI. Per chi vuole un promemoria sul funzionamento del portale, è utile rileggere la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>. Se invece il nodo è capire come strutturare bene il rapporto o la sua chiusura, torna utile anche la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</li>
         <li><strong>La restituzione del deposito cauzionale</strong>, se non ci sono danni o insoluti da compensare. Le regole su quando e come il proprietario può trattenere la cauzione sono spiegate nell'articolo sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale affitto</a>.</li>
       </ul>
       <p><strong>Attenzione:</strong> anche se l'accordo è verbale e l'inquilino consegna le chiavi, il contratto registrato resta formalmente attivo fino alla comunicazione all'Agenzia delle Entrate. Non trascurare questo passaggio.</p>
@@ -2302,7 +2459,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       'URL e data confermate dal sito live. Contenuto ricostruito in modo conservativo dal draft locale.',
     html: `
       <p>Il canone concordato interessa molti proprietari perché promette un equilibrio diverso rispetto al contratto a canone libero: un canone più contenuto, ma in cambio alcuni vantaggi fiscali che possono migliorare il rendimento netto dell'immobile. Il punto, però, è capire quando questa convenienza è reale e quando invece resta solo teorica.</p>
-      <p>Per decidere bene servono tre verifiche: quale canone è ammesso dagli accordi territoriali del Comune, quali agevolazioni fiscali sono concretamente applicabili e quanto si riduce davvero il margine rispetto a un contratto libero. Se vuoi impostare correttamente anche la parte operativa, può esserti utile la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+      <p>Per decidere bene servono tre verifiche: quale canone è ammesso dagli accordi territoriali del Comune, quali agevolazioni fiscali sono concretamente applicabili e quanto si riduce davvero il margine rispetto a un contratto libero. Se vuoi impostare correttamente anche la parte operativa, può esserti utile la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>. Quando invece serve definire bene struttura, clausole e tenuta del rapporto, il riferimento naturale è la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
 
       <h2>Che cos'è il canone concordato</h2>
       <p>Nel canone concordato il corrispettivo non viene fissato liberamente dalle parti oltre ogni limite, ma deve rientrare nei parametri previsti dagli accordi territoriali. Questo significa che il proprietario non può ragionare solo sul valore di mercato dell'immobile: deve prima verificare la fascia applicabile, le caratteristiche dell'appartamento e l'eventuale attestazione richiesta.</p>
@@ -2367,7 +2524,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       <p>La buona notizia è che la procedura telematica è affrontabile anche senza intermediario, purché si arrivi preparati con documenti, dati catastali e scelta fiscale già chiari. Se stai ancora valutando il tipo di contratto da usare, può essere utile leggere anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a>.</p>
 
       <h2>Perché la registrazione conta davvero</h2>
-      <p>Registrare il contratto non significa solo "fare una pratica all'Agenzia delle Entrate". Significa dare struttura regolare al rapporto, ridurre zone d'ombra e partire con una documentazione che diventa essenziale se in futuro emergono ritardi, contestazioni o vere inadempienze.</p>
+      <p>Registrare il contratto non significa solo "fare una pratica all'Agenzia delle Entrate". Significa dare struttura regolare al rapporto, ridurre zone d'ombra e partire con una documentazione che diventa essenziale se in futuro emergono ritardi, contestazioni o vere inadempienze. Se vuoi impostare bene il rapporto già a monte, può essere utile affiancare anche la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
       <ul>
         <li>serve per i contratti che superano i limiti di esenzione previsti;</li>
         <li>consente di formalizzare correttamente dati, durata e canone;</li>
@@ -2433,7 +2590,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       'URL, titolo e data confermati dal sito live. Corpo ricostruito in modo conservativo dal draft locale (pagina live era 404 al momento della migrazione).',
     html: `
       <p>L'adeguamento ISTAT dell'affitto è uno dei temi che i proprietari spesso scoprono tardi, cioè quando si rendono conto che il canone pattuito anni prima vale ormai meno in termini reali. Però non basta parlare genericamente di inflazione: l'aggiornamento funziona solo se il contratto lo consente e se viene gestito con metodo.</p>
-      <p>Per evitare contestazioni conviene ragionare su tre punti: presenza della clausola, corretto riferimento all'indice FOI e comunicazione formale all'inquilino. Se stai valutando il rapporto locativo in modo più ampio, possono esserti utili anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto</a>.</p>
+      <p>Per evitare contestazioni conviene ragionare su tre punti: presenza della clausola, corretto riferimento all'indice FOI e comunicazione formale all'inquilino. Se stai valutando il rapporto locativo in modo più ampio, possono esserti utili anche i contenuti su <a href="/blog/canone-concordato/">canone concordato</a> e <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto</a>. Se il dubbio riguarda invece l'impostazione corretta delle clausole, conviene partire da un supporto sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
 
       <h2>Quando puoi chiedere l'adeguamento ISTAT</h2>
       <p>L'aggiornamento non scatta da solo. Il primo controllo è sempre contrattuale: bisogna verificare se il testo firmato contiene una clausola che preveda l'adeguamento del canone. In assenza di quella previsione, il proprietario non può trattare l'aumento come un automatismo.</p>
@@ -2494,7 +2651,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       'Titolo e slug confermati dal payload locale di pubblicazione `publish-day1-deposito-cauzionale-affitto-fix2.json`; presenza in `blog_queue.json` tra i 5 articoli pubblicati del ciclo. Data ricostruita in modo conservativo dal naming "day1" del payload editoriale.',
     html: `
       <p>Il deposito cauzionale viene spesso visto come una protezione automatica contro qualunque problema di fine locazione. In realtà, per il proprietario, la questione è più delicata: la cauzione è una garanzia, non una somma da trattenere senza spiegazioni o senza documentazione.</p>
-      <p>Le situazioni più frequenti riguardano danni all'immobile, canoni insoluti o spese rimaste scoperte. Proprio per questo, prima di decidere qualunque trattenuta, conviene ricostruire bene lo stato dei luoghi, i conteggi e le comunicazioni finali. Se il problema nasce da morosità più ampia, può essere utile leggere anche la guida sul <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>.</p>
+      <p>Le situazioni più frequenti riguardano danni all'immobile, canoni insoluti o spese rimaste scoperte. Proprio per questo, prima di decidere qualunque trattenuta, conviene ricostruire bene lo stato dei luoghi, i conteggi e le comunicazioni finali. Se il problema nasce da morosità più ampia, può essere utile leggere anche la guida sul <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>. Quando l'obiettivo è recuperare anche le somme dovute, ha senso valutare il servizio di <a href="/servizi/recupero-canoni-non-pagati/">recupero canoni non pagati</a>.</p>
 
       <h2>A cosa serve davvero il deposito</h2>
       <p>La cauzione serve a coprire inadempimenti documentabili del conduttore. Non autorizza il proprietario a compensazioni generiche o automatiche. Questo vale soprattutto quando il rapporto si chiude in modo teso e la tentazione di "tenere tutto" sembra la strada più semplice.</p>
