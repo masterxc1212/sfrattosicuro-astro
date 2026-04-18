@@ -53,17 +53,3 @@ jobs:
           mirror -R --verbose --delete --parallel=2 --exclude-glob .git* --exclude-glob node_modules --exclude-glob .github dist/ $FTP_TARGET_DIR
           bye
           EOF
-
-      - name: Cleanup old dist_publish directory
-        env:
-          FTP_HOST: ftp.sfrattosicuro.it
-          FTP_USER: ghdeploy@sfrattosicuro.it
-          FTP_PASS: ${{ secrets.SG_FTP_PASSWORD }}
-        run: |
-          lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<'EOF'
-          set ssl:verify-certificate no
-          set ftp:passive-mode true
-          cd /sfrattosicuro.it/public_html
-          rm -r dist_publish || true
-          bye
-          EOF
