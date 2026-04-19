@@ -1,0 +1,295 @@
+---
+/**
+ * LandingContactFormIsland — Form di contatto qualificato a fondo pagina.
+ * Include campo di qualificazione (solo proprietari/locatori).
+ * Affiancato da scheda contatti diretti.
+ */
+import type { LandingConfig } from '../../data/landing-model';
+
+interface Props {
+  formCta: LandingConfig['formCta'];
+  qualifierQuestion: LandingConfig['qualifierQuestion'];
+  qualifierOptions: LandingConfig['qualifierOptions'];
+  territory?: LandingConfig['territory'];
+  formSource?: string;
+}
+
+const {
+  formCta,
+  qualifierQuestion,
+  qualifierOptions,
+  territory,
+  formSource = 'LandingContactFormIsland'
+} = Astro.props;
+---
+
+<section
+  class="lcontact section"
+  id="contatti-landing"
+  aria-labelledby="lcontact-heading"
+>
+  <div class="container">
+    <header class="lcontact__head">
+      <p class="lcontact__kicker">Contattaci</p>
+      <h2 id="lcontact-heading">{formCta.title}</h2>
+      <p class="lcontact__desc">{formCta.description}</p>
+    </header>
+
+    <div class="lcontact__grid">
+
+      <!-- Form -->
+      <article class="lcontact__form-card">
+        <h3>Richiedi la tua analisi gratuita</h3>
+
+        <form
+          action="/php/invia-email.php"
+          method="POST"
+          class="lcontact__form"
+          data-landing-contact-form
+          aria-label="Form di consulenza per proprietari"
+        >
+          {territory?.city && (
+            <input type="hidden" name="landing_variante" value={territory.city} />
+          )}
+
+          <div class="lcontact__fields-2">
+            <label>Nome *<input type="text" name="nome" required placeholder="Nome" /></label>
+            <label>Cognome *<input type="text" name="cognome" required placeholder="Cognome" /></label>
+          </div>
+          <div class="lcontact__fields-2">
+            <label>Telefono *<input type="tel" name="telefono" required placeholder="+39 ..." /></label>
+            <label>Email *<input type="email" name="email" required placeholder="email@..." /></label>
+          </div>
+
+          <label>
+            Città dell'immobile *
+            <input
+              type="text"
+              name="citta"
+              required
+              placeholder={territory?.city ? `Es. ${territory.city}, zona...` : 'In che città si trova l\'immobile'}
+            />
+          </label>
+
+          <!-- Qualificazione: filtra solo proprietari/locatori -->
+          <label>
+            {qualifierQuestion} *
+            <select name="qualifica" required>
+              <option value="">Seleziona</option>
+              {qualifierOptions.map((opt) => (
+                <option value={opt}>{opt}</option>
+              ))}
+            </select>
+          </label>
+
+          <label>
+            Da quanto non paga? *
+            <select name="morosita" required>
+              <option value="">Seleziona periodo</option>
+              <option value="1-2 mesi">1–2 mesi</option>
+              <option value="3-6 mesi">3–6 mesi</option>
+              <option value="6-12 mesi">6–12 mesi</option>
+              <option value="oltre 12 mesi">Oltre 12 mesi</option>
+            </select>
+          </label>
+
+          <label class="lcontact__full">
+            Note
+            <textarea name="note" rows="4" placeholder="Descrivi brevemente la situazione (opzionale)..."></textarea>
+          </label>
+
+          <!-- Hidden inputs per attribuzione Google Ads (popolati da GclidCaptureIsland) -->
+          <input type="hidden" name="form_source" value={formSource} />
+          <input type="hidden" name="gclid" value="" />
+          <input type="hidden" name="utm_source" value="" />
+          <input type="hidden" name="utm_medium" value="" />
+          <input type="hidden" name="utm_campaign" value="" />
+          <input type="hidden" name="utm_term" value="" />
+          <input type="hidden" name="utm_content" value="" />
+          <input type="hidden" name="keyword" value="" />
+          <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html" />
+
+          <p class="lcontact__privacy">I tuoi dati sono protetti e non verranno condivisi con terzi.</p>
+          <button type="submit" class="btn-primary lcontact__submit">
+            {formCta.ctaLabel}
+          </button>
+          <p class="lcontact__tiny">✓ Gratuita · ✓ Senza impegno · ✓ Risposta entro 24h</p>
+        </form>
+      </article>
+
+      <!-- Contatti diretti -->
+      <aside class="lcontact__info-card">
+        <h3>Contatti diretti</h3>
+        <div class="lcontact__badges">
+          <span class="lcontact__badge">Prima analisi gratuita</span>
+          <span class="lcontact__badge">Risposta entro 24h</span>
+        </div>
+
+        <div class="lcontact__contact-item">
+          <h4>Centralino Unico Nazionale</h4>
+          <p><a href="tel:+390280898395">+39 02 8089 8395</a></p>
+          <small>Lun–Ven 9:00–18:00 · Supporto per tutte le sedi territoriali</small>
+        </div>
+
+        <hr class="lcontact__divider" />
+
+        <div class="lcontact__contact-item">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer">+39 329 117 5957</a></p>
+          <small>Risposte rapide via messaggio</small>
+        </div>
+
+        <hr class="lcontact__divider" />
+
+        <div class="lcontact__contact-item">
+          <h4>Email</h4>
+          <p><a href="mailto:consulenza@sfrattosicuro.it">consulenza@sfrattosicuro.it</a></p>
+          <small>Risposta entro 24 ore lavorative</small>
+        </div>
+
+        <div class="lcontact__note-box">
+          <p>
+            <strong>Solo per proprietari e locatori.</strong><br />
+            Non forniamo assistenza agli inquilini.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  document.querySelectorAll<HTMLFormElement>('[data-landing-contact-form]').forEach((form) => {
+    form.addEventListener('submit', () => {
+      const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Invio in corso…';
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi la tua analisi gratuita'; }, 4000);
+      }
+    });
+    form.querySelectorAll<HTMLElement>('input[required],select[required]').forEach((field) => {
+      field.addEventListener('blur', () => {
+        if (!(field as HTMLInputElement).checkValidity()) field.classList.add('field-error');
+        else field.classList.remove('field-error');
+      });
+    });
+  });
+})();
+</script>
+
+<style>
+  .lcontact { background: #fff; }
+  .lcontact__head { max-width: 680px; margin-bottom: 2rem; }
+  .lcontact__kicker {
+    margin: 0 0 .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--kicker-gold, #c6902a);
+  }
+  .lcontact__head h2 { margin: 0 0 .5rem; }
+  .lcontact__desc { margin: 0; color: #475569; }
+  .lcontact__grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .lcontact__form-card {
+    background: var(--gray-pearl, #f7f8fc);
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 1.75rem;
+  }
+  .lcontact__form-card h3 {
+    margin: 0 0 1.25rem;
+    color: var(--blue-navy, #1b2951);
+  }
+  .lcontact__form {
+    display: grid;
+    gap: .85rem;
+  }
+  .lcontact__fields-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+  }
+  .lcontact__form label {
+    display: grid;
+    gap: .3rem;
+    font-size: .88rem;
+    font-weight: 700;
+    color: #374151;
+  }
+  .lcontact__full { grid-column: 1 / -1; }
+  .lcontact__form input,
+  .lcontact__form select,
+  .lcontact__form textarea {
+    width: 100%;
+    padding: .8rem .95rem;
+    border-radius: 12px;
+    border: 1.5px solid #cbd5e1;
+    font: inherit;
+    font-size: .9rem;
+    background: #fff;
+    transition: border-color .15s;
+  }
+  .lcontact__form input:focus,
+  .lcontact__form select:focus,
+  .lcontact__form textarea:focus {
+    outline: none;
+    border-color: var(--blue-navy, #1b2951);
+  }
+  .lcontact__form .field-error { border-color: #ef4444; }
+  .lcontact__privacy { margin: 0; font-size: .8rem; color: #94a3b8; }
+  .lcontact__submit { width: 100%; margin-top: .25rem; }
+  .lcontact__tiny { margin: .4rem 0 0; font-size: .8rem; color: #64748b; text-align: center; }
+  .lcontact__info-card {
+    background: var(--blue-navy, #1b2951);
+    color: #fff;
+    border-radius: 24px;
+    padding: 1.75rem;
+  }
+  .lcontact__info-card h3 { margin: 0 0 1rem; color: #fff; }
+  .lcontact__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.25rem;
+  }
+  .lcontact__badge {
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 999px;
+    padding: .3rem .75rem;
+    font-size: .78rem;
+    font-weight: 700;
+    color: #e8efff;
+  }
+  .lcontact__contact-item { margin-bottom: .75rem; }
+  .lcontact__contact-item h4 { margin: 0 0 .25rem; font-size: .85rem; color: #c8d8f5; text-transform: uppercase; letter-spacing: .06em; font-weight: 800; }
+  .lcontact__contact-item p { margin: 0 0 .2rem; font-size: 1.05rem; font-weight: 700; }
+  .lcontact__contact-item a { color: #7dd3fc; text-decoration: none; }
+  .lcontact__contact-item a:hover { text-decoration: underline; }
+  .lcontact__contact-item small { font-size: .8rem; color: rgba(255,255,255,.55); }
+  .lcontact__divider { border: none; border-top: 1px solid rgba(255,255,255,.12); margin: .75rem 0; }
+  .lcontact__note-box {
+    margin-top: 1.25rem;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 14px;
+    padding: .9rem 1rem;
+  }
+  .lcontact__note-box p { margin: 0; font-size: .85rem; color: #dde7ff; line-height: 1.6; }
+  @media (min-width: 900px) {
+    .lcontact__grid {
+      grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr);
+      align-items: start;
+    }
+  }
+  @media (max-width: 480px) {
+    .lcontact__fields-2 { grid-template-columns: 1fr; }
+  }
+</style>

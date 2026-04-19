@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import SeoHead from '../components/SeoHead.astro';
+import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
+import GclidCaptureIsland from '../components/GclidCaptureIsland.astro';
+import CookieConsentBanner from '../components/CookieConsentBanner.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  robots?: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title = 'Sfratto Sicuro',
+  description = 'Sito ufficiale Sfratto Sicuro',
+  canonicalPath,
+  robots = 'index,follow',
+  image,
+  type = 'website'
+} = Astro.props;
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SeoHead
+      title={title}
+      description={description}
+      canonicalPath={canonicalPath}
+      robots={robots}
+      image={image}
+    />
+    <!-- Cattura GCLID/UTM in head, ASAP, prima del rendering dei form -->
+    <GclidCaptureIsland />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+    <CookieConsentBanner />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
+  </body>
+</html>

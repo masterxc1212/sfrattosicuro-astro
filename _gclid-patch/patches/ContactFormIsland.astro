@@ -1,0 +1,115 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  formSource?: string;
+}
+
+const {
+  title = 'Richiedi una consulenza gratuita',
+  description = 'In meno di 24 ore possiamo analizzare il tuo caso e indicarti la strategia legale più adatta.',
+  formSource = 'ContactFormIsland'
+} = Astro.props;
+---
+
+<section id="contatti" class="section" aria-labelledby="contatti-heading">
+  <div class="container">
+    <header class="head">
+      <h2 id="contatti-heading">{title}</h2>
+      <p>{description}</p>
+    </header>
+
+    <div class="contacts-grid">
+      <article class="form-card">
+        <h3>Scrivici ora</h3>
+
+        <form action="/php/invia-email.php" method="POST" class="form" data-contact-form aria-label="Form di richiesta consulenza">
+          <div class="fields-grid">
+            <label>Nome *<input type="text" name="nome" required placeholder="Il tuo nome" /></label>
+            <label>Cognome *<input type="text" name="cognome" required placeholder="Il tuo cognome" /></label>
+            <label>Telefono *<input type="tel" name="telefono" required placeholder="Il tuo numero di telefono" /></label>
+            <label>Email *<input type="email" name="email" required placeholder="La tua email" /></label>
+            <label>Città immobile *<input type="text" name="città" required placeholder="In che città si trova l'immobile" /></label>
+            <label>Da quanto non paga *
+              <select name="morosità" required>
+                <option value="">Seleziona periodo</option>
+                <option value="1-2 mesi">1-2 mesi</option>
+                <option value="3-6 mesi">3-6 mesi</option>
+                <option value="6-12 mesi">6-12 mesi</option>
+                <option value="Oltre 12 mesi">Oltre 12 mesi</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="full">Note<textarea name="note" rows="4" placeholder="Raccontaci brevemente la situazione..."></textarea></label>
+
+          <!-- Hidden inputs per attribuzione Google Ads (popolati da GclidCaptureIsland) -->
+          <input type="hidden" name="form_source" value={formSource} />
+          <input type="hidden" name="gclid" value="" />
+          <input type="hidden" name="utm_source" value="" />
+          <input type="hidden" name="utm_medium" value="" />
+          <input type="hidden" name="utm_campaign" value="" />
+          <input type="hidden" name="utm_term" value="" />
+          <input type="hidden" name="utm_content" value="" />
+          <input type="hidden" name="keyword" value="" />
+          <input type="hidden" name="redirect_url" value="https://www.sfrattosicuro.it/grazie.html" />
+
+          <p class="privacy">I tuoi dati sono protetti e non verranno condivisi.</p>
+          <button type="submit" class="btn-primary">Richiedi una consulenza gratuita</button>
+          <p class="tiny">✓ Gratuita, sicura e senza impegno</p>
+        </form>
+      </article>
+
+      <aside class="info-card">
+        <h3>Contatti diretti</h3>
+        <div class="badge-row">
+          <span class="badge">Risposta in 24h</span>
+          <span class="badge">Prima analisi gratuita</span>
+        </div>
+
+        <div class="contact-item">
+          <h4>Centralino Unico Nazionale</h4>
+          <p><a href="tel:+390280898395">+39 02 80898395</a></p>
+          <small>Prefisso Milano · supporto per tutte le sedi territoriali</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-item">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer">+39 329 117 5957</a></p>
+          <small>Risposte rapide</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-item">
+          <h4>Email</h4>
+          <p><a href="mailto:consulenza@sfrattosicuro.it">consulenza@sfrattosicuro.it</a></p>
+          <small>Ti ricontatteremo entro 24 ore</small>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+  form.addEventListener('submit', () => {
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Invio in corso...';
+      setTimeout(() => { btn.disabled = false; btn.textContent = 'Richiedi una consulenza gratuita'; }, 3500);
+    }
+  });
+  form.querySelectorAll('input[required],select[required],textarea[required]').forEach((field) => {
+    field.addEventListener('blur', () => {
+      if (!field.checkValidity()) field.classList.add('field-error');
+      else field.classList.remove('field-error');
+    });
+  });
+})();
+</script>

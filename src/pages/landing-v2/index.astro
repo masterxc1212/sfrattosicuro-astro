@@ -1,6 +1,6 @@
 ---
 /**
- * /landing-v2/ — 1:1 faithful clone of public/landing/index.html
+ * /landing-v2/ Ã¢â‚¬â€ 1:1 faithful clone of public/landing/index.html
  * Built from modular Astro components.
  * Every section, every copy block, every CTA matches the original exactly.
  *
@@ -9,10 +9,11 @@
  */
 import '../../styles/landing.css';
 import { buildLandingPageConfig } from '../../data/landing-v2';
+import { versionedSrc } from '../../lib/asset-version';
 import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
 
-// Section components — 1:1 clones of original landing sections
+// Section components Ã¢â‚¬â€ 1:1 clones of original landing sections
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
 import LandingOriginalTrustBarSection from '../../components/landing/LandingOriginalTrustBarSection.astro';
 import LandingOriginalHeroSection from '../../components/landing/LandingOriginalHeroSection.astro';
@@ -243,7 +244,7 @@ const config = buildLandingPageConfig({
       <!-- 14. Chi Siamo -->
       <LandingOriginalWhoWeAreSection whoWeAre={config.whoWeAre} />
 
-      <!-- 15. Perché Sceglierci -->
+      <!-- 15. PerchÃƒÂ© Sceglierci -->
       <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
 
       <!-- 16. FAQ -->
@@ -263,10 +264,10 @@ const config = buildLandingPageConfig({
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
 
     <!-- External script deps (same as original + form handling/tracking) -->
-    <script src="/assets/js/calculator.js" defer></script>
-    <script src="/assets/js/reviews.js" defer></script>
-    <script src="/assets/js/videos.js" defer></script>
-    <script src="/assets/js/form-validation.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
+    <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
+    <script src={versionedSrc('/assets/js/videos.js')} defer></script>
+    <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
+    <script src={versionedSrc('/assets/js/main.js')} defer></script>
   </body>
 </html>
