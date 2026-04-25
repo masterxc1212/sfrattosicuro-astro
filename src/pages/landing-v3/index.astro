@@ -83,9 +83,10 @@ const config = buildLandingPageConfig({
           const utmTerm = getParam('utm_term');
           const utmContent = getParam('utm_content');
           const keyword = getParam('keyword');
+          const matchtype = getParam('matchtype');
           document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
             var set = function(n, v){ var i = f.querySelector('[name="'+n+'"]'); if(i) i.value = v; };
-            set('gclid', gclid); set('utm_source', utmSource); set('utm_medium', utmMedium); set('utm_campaign', utmCampaign); set('utm_term', utmTerm); set('utm_content', utmContent); set('keyword', keyword);
+            set('gclid', gclid); set('utm_source', utmSource); set('utm_medium', utmMedium); set('utm_campaign', utmCampaign); set('utm_term', utmTerm); set('utm_content', utmContent); set('keyword', keyword); set('matchtype', matchtype);
           });
         }
         function readConsent(){ try { const raw = localStorage.getItem(CONSENT_KEY); return raw ? JSON.parse(raw) : null; } catch { return null; } }

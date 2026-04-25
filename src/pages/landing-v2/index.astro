@@ -118,6 +118,7 @@ const config = buildLandingPageConfig({
           const utmTerm = getParam('utm_term');
           const utmContent = getParam('utm_content');
           const keyword = getParam('keyword');
+          const matchtype = getParam('matchtype');
           document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
             var set = function(n, v){
               var i = f.querySelector('[name="'+n+'"]');
@@ -129,7 +130,7 @@ const config = buildLandingPageConfig({
             set('utm_campaign', utmCampaign);
             set('utm_term', utmTerm);
             set('utm_content', utmContent);
-            set('keyword', keyword);
+            set('keyword', keyword); set('matchtype', matchtype);
           });
         }
 

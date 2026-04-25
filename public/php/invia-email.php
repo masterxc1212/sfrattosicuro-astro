@@ -86,6 +86,9 @@ $utm_campaign  = sanitize($_POST["utm_campaign"] ?? '');
 $keyword       = sanitize($_POST["keyword"] ?? '');
 $utm_term      = sanitize($_POST["utm_term"] ?? $keyword);
 $utm_content   = sanitize($_POST["utm_content"] ?? '');
+$matchtype_raw = sanitize($_POST["matchtype"] ?? '');
+$matchtype_labels = ['e' => 'Esatta', 'p' => 'A frase', 'b' => 'Generica'];
+$matchtype     = isset($matchtype_labels[$matchtype_raw]) ? $matchtype_labels[$matchtype_raw] : '';
 
 
 
@@ -171,6 +174,7 @@ $contenuto_text .= "Data/Ora: " . date('d/m/Y H:i:s') . "\n";
 
 $contenuto_text .= "Form Source: $form_source\n";
 if (!empty($utm_term)) $contenuto_text .= "Keyword: $utm_term\n";
+if (!empty($matchtype)) $contenuto_text .= "Corrispondenza: $matchtype\n";
 $contenuto_text .= "IP Cliente: " . ($_SERVER['REMOTE_ADDR'] ?? 'N/A') . "\n";
 
 if (!empty($gclid) || !empty($utm_campaign) || !empty($utm_source) || !empty($utm_content)) {
@@ -346,6 +350,20 @@ $contenuto_html .= "
 
 }
 
+if (!empty($matchtype)) {
+
+$contenuto_html .= "
+
+      <div class='field info'>
+
+        <span class='label'>🎯 Corrispondenza</span>
+
+        <span class='value'><strong>$matchtype</strong></span>
+
+      </div>";
+
+}
+
 
 $data_ora   = date('d/m/Y H:i:s');
 
@@ -461,7 +479,7 @@ $backup_file = __DIR__ . '/../../logs/leads_backup.txt';
 
 $backup_data = sprintf(
 
-    "%s | %s | %s | %s | %s | %s | %s | %s | gclid:%s | camp:%s | kw:%s\n",
+    "%s | %s | %s | %s | %s | %s | %s | %s | gclid:%s | camp:%s | kw:%s | match:%s\n",
 
     date('Y-m-d H:i:s'),
 
@@ -483,7 +501,9 @@ $backup_data = sprintf(
 
     $utm_campaign ?: '-',
 
-    $utm_term ?: '-'
+    $utm_term ?: '-',
+
+    $matchtype ?: '-'
 
 );
 
