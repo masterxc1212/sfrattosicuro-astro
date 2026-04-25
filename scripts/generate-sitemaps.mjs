@@ -18,10 +18,31 @@ const EXCLUDE_PATHS = new Set([
   '/grazie.html',
   '/landing/',
   '/landing-v2/',
+  '/landing-v3/',
   '/nuova-landing/'
 ]);
 
 const EXTRA_URLS = ['/blog/'];
+
+// Priority/changefreq hints per tipo di pagina
+const PAGE_META = {
+  '/': { priority: '1.0', changefreq: 'weekly' },
+  '/chi-siamo/': { priority: '0.7', changefreq: 'monthly' },
+  '/contatti/': { priority: '0.7', changefreq: 'monthly' },
+  '/blog/': { priority: '0.8', changefreq: 'weekly' },
+  _servizi: { priority: '0.9', changefreq: 'monthly' },
+  _sedi: { priority: '0.8', changefreq: 'monthly' },
+  _blog: { priority: '0.7', changefreq: 'monthly' },
+  _default: { priority: '0.6', changefreq: 'monthly' }
+};
+
+function getPageMeta(urlPath) {
+  if (PAGE_META[urlPath]) return PAGE_META[urlPath];
+  if (urlPath.startsWith('/servizi/')) return PAGE_META._servizi;
+  if (urlPath.startsWith('/sedi/')) return PAGE_META._sedi;
+  if (urlPath.startsWith('/blog/') && urlPath !== '/blog/') return PAGE_META._blog;
+  return PAGE_META._default;
+}
 
 const xmlEscape = (value) =>
   value
@@ -34,13 +55,11 @@ const xmlEscape = (value) =>
 async function walk(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   const files = [];
-
   for (const entry of entries) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) files.push(...(await walk(full)));
     else files.push(full);
   }
-
   return files;
 }
 
@@ -63,16 +82,46 @@ function normalizePath(urlPath) {
   return p;
 }
 
-function buildUrlset(urls, lastmod) {
-  const items = urls
-    .map((u) => `  <url>\n    <loc>${xmlEscape(`${SITE}${u}`)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`)
+function buildUrlset(entries) {
+  const items = entries
+    .map(({ url, lastmod, priority, changefreq }) =>
+      `  <url>\n    <loc>${xmlEscape(`${SITE}${url}`)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`
+    )
     .join('\n');
-
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items}\n</urlset>\n`;
 }
 
 function buildBlogRobots() {
   return `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`;
+}
+
+// Carica lastmod reali dai blog-posts tramite lettura del sorgente TypeScript
+async function loadBlogPostDates() {
+  const candidates = [
+    path.join(ROOT, 'src', 'data', 'blog-posts.ts'),
+    path.join(ROOT, 'src', 'data', 'blog-posts.js')
+  ];
+  const dates = new Map();
+  for (const filePath of candidates) {
+    try {
+      const content = await fs.readFile(filePath, 'utf8');
+      const slugMatches = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)];
+      const publishedMatches = [...content.matchAll(/publishedAt:\s*["']([^"']+)["']/g)];
+      const updatedMatches = [...content.matchAll(/updatedAt:\s*["']([^"']+)["']/g)];
+      for (let i = 0; i < slugMatches.length; i++) {
+        const slug = slugMatches[i][1];
+        const published = publishedMatches[i]?.[1];
+        const updated = updatedMatches[i]?.[1];
+        if (slug && published) {
+          dates.set(`/blog/${slug}/`, updated || published);
+        }
+      }
+      break;
+    } catch {
+      // try next candidate
+    }
+  }
+  return dates;
 }
 
 async function main() {
@@ -83,12 +132,10 @@ async function main() {
   for (const f of htmlFiles) {
     const p = normalizePath(toUrlPath(f));
     if (!p || EXCLUDE_PATHS.has(p)) continue;
-
     if (p.startsWith('/blog/') && p !== '/blog/') {
       blogUrls.add(p);
       continue;
     }
-
     pageUrls.add(p);
   }
 
@@ -98,9 +145,22 @@ async function main() {
   const sortedBlog = [...blogUrls].sort((a, b) => a.localeCompare(b));
   const today = new Date().toISOString().slice(0, 10);
 
-  // Sitemap unica con tutte le URL (pagine + blog)
-  const allUrls = [...sortedPages, ...sortedBlog];
-  await fs.writeFile(path.join(DIST, 'sitemap.xml'), buildUrlset(allUrls, today), 'utf8');
+  const blogDates = await loadBlogPostDates();
+
+  const pageEntries = sortedPages.map((url) => ({
+    url,
+    lastmod: today,
+    ...getPageMeta(url)
+  }));
+
+  const blogEntries = sortedBlog.map((url) => ({
+    url,
+    lastmod: blogDates.get(url) || today,
+    ...getPageMeta(url)
+  }));
+
+  const allEntries = [...pageEntries, ...blogEntries];
+  await fs.writeFile(path.join(DIST, 'sitemap.xml'), buildUrlset(allEntries), 'utf8');
 
   const blogDir = path.join(DIST, 'blog');
   await fs.mkdir(blogDir, { recursive: true });
@@ -112,17 +172,12 @@ async function main() {
     path.join(blogDir, 'sitemap_index.xml'),
     path.join(DIST, 'sitemap-index.xml')
   ];
-
   for (const staleFile of staleFiles) {
-    try {
-      await fs.access(staleFile);
-      await fs.unlink(staleFile);
-    } catch {
-      // ignore if missing
-    }
+    try { await fs.access(staleFile); await fs.unlink(staleFile); } catch { /* ignore */ }
   }
 
-  console.log(`✅ Generated sitemap.xml (${allUrls.length} urls total: ${sortedPages.length} pages + ${sortedBlog.length} blog posts)`);
+  const blogWithRealDate = blogEntries.filter((e) => blogDates.has(e.url)).length;
+  console.log(`✅ Generated sitemap.xml (${allEntries.length} urls: ${sortedPages.length} pages + ${sortedBlog.length} blog posts, ${blogWithRealDate} with real lastmod)`);
 }
 
 main().catch((err) => {

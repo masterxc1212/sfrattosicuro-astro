@@ -176,7 +176,18 @@ const config = buildLandingPageConfig({
           }
         }
 
-        captureTrackingParams();
+        // Applica al DOM quando è pronto (la call diretta è in <head>, form non ancora nel DOM)
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', captureTrackingParams, { once: true });
+        } else {
+          captureTrackingParams();
+        }
+        // Belt-and-suspenders: ri-applica al submit (copre form dinamici)
+        document.addEventListener('submit', function(ev) {
+          if (ev.target && ev.target.matches && ev.target.matches('form[action="/php/invia-email.php"]')) {
+            captureTrackingParams();
+          }
+        }, true);
         const consent = readConsent();
         if (consent?.marketing) initAdsIfNeeded(consent);
         window.addEventListener('ss:cookie-consent-updated', function(event){
@@ -199,6 +210,7 @@ const config = buildLandingPageConfig({
         }
       })();
     </script>
+    <script src="/js/gclid-capture.js" defer></script>
   </head>
   <body>
     <LandingOriginalHeaderSection />

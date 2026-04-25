@@ -23,6 +23,9 @@ const siteUrl = (site.siteUrl || site.url).replace(/\/$/, '');
 const pathname = Astro.url.pathname || '/';
 const canonicalUrl = new URL(canonicalPath || pathname, `${siteUrl}/`).toString();
 const ogImage = image.startsWith('http') ? image : new URL(image, `${siteUrl}/`).toString();
+
+// Twitter handle dall'account X nei social (opzionale)
+const twitterHandle = (site.social as Record<string, string>)?.twitter || null;
 ---
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
@@ -46,3 +49,5 @@ const ogImage = image.startsWith('http') ? image : new URL(image, `${siteUrl}/`)
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
+{twitterHandle && <meta name="twitter:site" content={twitterHandle} />}
+{twitterHandle && <meta name="twitter:creator" content={twitterHandle} />}

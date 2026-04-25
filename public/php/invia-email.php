@@ -151,17 +151,19 @@ $contenuto_text .= "==========================================\n\n";
 
 $contenuto_text .= "Nome: $nome\n";
 
-$contenuto_text .= "Cognome: " . (!empty($cognome) ? $cognome : 'N/A') . "\n";
+$contenuto_text .= "Cognome: $cognome\n";
 
 $contenuto_text .= "Telefono: $telefono\n";
 
-$contenuto_text .= "Email: " . (!empty($email_mittente) ? $email_mittente : 'N/A') . "\n\n";
+$contenuto_text .= "Email: $email_mittente\n\n";
 
-$contenuto_text .= "Città Immobile: " . (!empty($citta) ? $citta : 'N/A') . "\n";
+$contenuto_text .= "Città Immobile: $citta\n";
 
-$contenuto_text .= "Periodo Morosità: " . (!empty($morosita) ? $morosita : 'N/A') . "\n\n";
+$contenuto_text .= "Periodo Morosità: $morosita\n\n";
 
-$contenuto_text .= "Note Aggiuntive: " . (!empty($note) ? $note : 'Nessuna nota') . "\n\n";
+$contenuto_text .= "Note Aggiuntive: $note\n";
+
+$contenuto_text .= "GCLID: $gclid\n\n";
 
 $contenuto_text .= "==========================================\n";
 
