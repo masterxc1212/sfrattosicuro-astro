@@ -69,7 +69,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Lepanto 4, 00192 Roma — Settore Civile e Lavoro",
+      "sezione": "VI Sezione Civile — Locazioni",
+      "depositoPCT": true,
+      "udienze": "Prima udienza generalmente a 30–60 giorni dalla notifica. Stima conservativa per convalida non contestata: 3–5 mesi (carico elevato).",
+      "note": "Deposito ricorso obbligatoriamente telematico via PCT. La VI Sezione è dedicata esclusivamente a convalide di sfratto per morosità e finita locazione."
+    }
   },
   {
     "nome": "Milano",
@@ -141,7 +148,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via San Barnaba 35, 20122 Milano — Cancelleria XIII Sezione Civile, piano 1",
+      "sezione": "XIII Sezione Civile — Locazioni, occupazione senza titolo, condominio",
+      "depositoPCT": true,
+      "udienze": "Prima udienza generalmente entro 30–45 giorni dalla notifica. Tra i tribunali più veloci del Nord per questo procedimento.",
+      "note": "Prenotazione udienza obbligatoria on-line tramite portale del Tribunale di Milano. PCT help desk Ordine Avvocati: 02.54121683."
+    }
   },
   {
     "nome": "Napoli",
@@ -213,7 +227,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Giovanni Falcone e Paolo Borsellino 1, 80143 Napoli — Cittadella Giudiziaria",
+      "sezione": "IX Sezione Civile — Locazioni e controversie agrarie",
+      "depositoPCT": true,
+      "udienze": "Tempi variabili: il carico storico del Tribunale di Napoli può portare la prima udienza a 4–8 mesi dalla notifica.",
+      "note": "Email dedicata locazioni: locazioni.tribunale.napoli@giustizia.it. Si consiglia di verificare i tempi aggiornati con lo studio."
+    }
   },
   {
     "nome": "Torino",
@@ -285,7 +306,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Corso Vittorio Emanuele II 130, 10138 Torino — VIII Sezione Civile, scala B, terzo piano",
+      "sezione": "VIII Sezione Civile — Cancelleria delle Locazioni",
+      "depositoPCT": true,
+      "udienze": "Prima udienza generalmente entro 30–45 giorni dalla notifica. Convalida non contestata: 2–4 mesi totali.",
+      "note": "Prenotazione udienza on-line obbligatoria. Email: sez8.civile.tribunale.torino@giustizia.it. Sportello: lun–ven 8:30–12:30."
+    }
   },
   {
     "nome": "Salerno",
@@ -357,7 +385,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Cittadella Giudiziaria, Via Dalmazia 1, 84123 Salerno — Aula 106, piano 1, Palazzo C",
+      "sezione": "I Sezione Civile — Locazioni, comodato, condominio",
+      "depositoPCT": true,
+      "udienze": "Udienze di convalida il lunedì, Aula 106. Prima udienza: 30–60 giorni dalla notifica. Convalida non contestata: 3–5 mesi.",
+      "note": "Tel centralino: 089.5645111. Il lunedì è il giorno fisso per le udienze di sfratto presso l'Aula 106, Palazzo C."
+    }
   },
   {
     "nome": "Agrigento",
@@ -428,6 +463,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazzale Giglia 1, 92100 Agrigento — Cancelleria Civile",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Agrigento la cancelleria civile (ufficio iscrizione a ruolo, stanza 446) riceve dal lunedì al sabato 8:30-13:30: l'apertura del sabato è una particolarità che semplifica i depositi urgenti rispetto alla maggior parte dei tribunali italiani. La data di convalida sfratto segue il ruolo del giudice designato; prima udienza orientativamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.agrigento@giustiziacert.it. Tel: 0922/527301. Apertura sportello civile: lun-sab 8:30-13:30 (sabato compreso). Iscrizione a ruolo presso stanza 446."
     }
   },
   {
@@ -499,6 +541,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Guasco 4, 15121 Alessandria — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Alessandria gestisce le convalide di sfratto tramite la cancelleria civile, aperta lun-ven 09:00-13:00. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Il sito istituzionale pubblica una pagina dedicata al procedimento per convalida di sfratto. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: civile.tribunale.alessandria@giustiziacert.it. Tel: 0131/284333. Apertura al pubblico lun-ven 09:00-13:00."
     }
   },
   {
@@ -571,7 +620,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via delle Terme 5, 60121 Ancona — Palazzo di Giustizia, Sezione Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Ancona le udienze di convalida di sfratto sono calendarizzate con cadenza regolare; i ruoli vengono pubblicati settimanalmente in PDF sul sito istituzionale (tribunale-ancona.giustizia.it). Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Portale di prenotazione cancelleria attivo su tribunaleanconanew.sitiwebgiustizia.it. Tel. cancelleria civile: 071/5062266."
+    }
   },
   {
     "nome": "Aosta",
@@ -642,6 +698,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Festaz 25, 11100 Aosta — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Aosta non è pubblicato un giorno fisso di udienze di convalida sfratto: la data viene assegnata in base al ruolo del giudice designato. La cancelleria contenzioso civile (3° piano, stanze 304-306, referente Funz. Giud. Orietta Travagliato) riceve dal lunedì al venerdì 9:30-13:30. Prima udienza tipicamente entro 60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.aosta@giustiziacert.it. Tel: 0165/306223. Sportello civile aperto lun-ven 9:30-13:30."
     }
   },
   {
@@ -713,6 +776,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Leone Leoni 2, 52100 Arezzo — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Arezzo fissa la prima udienza di convalida sfratto generalmente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email iscrizione: iscrizione.civile.tribunale.arezzo@giustizia.it — Email trattazione: trattazione.civile.tribunale.arezzo@giustizia.it. PEC: volgiurisdizione.tribunale.arezzo@giustiziacert.it. Tel: 0575/17381."
     }
   },
   {
@@ -784,6 +854,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Viola 1, 63100 Ascoli Piceno — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Ascoli Piceno il deposito degli atti relativi al contenzioso civile — incluse le convalide di sfratto — passa per una PEC dedicata distinta dall'indirizzo di presidenza, scelta organizzativa che separa i flussi amministrativi da quelli giurisdizionali. La data di convalida segue il calendario del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria contenzioso civile: contenziosocivile.tribunale.ascolipiceno@giustiziacert.it. Indirizzare gli atti relativi a sfratti esclusivamente alla PEC contenzioso, non alla PEC di presidenza."
     }
   },
   {
@@ -855,6 +932,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza I° Maggio 12, 14100 Asti — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Asti il calendario delle udienze civili è pubblicato annualmente ai sensi dell'art. 69 bis disp. att. c.p.c. e consultabile sul sito dell'Ordine degli Avvocati di Asti: prima della notifica della citazione conviene verificare la data assegnata al giudice della convalida. Prima udienza orientativamente 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email tribunale: tribunale.asti@giustizia.it. Tel: 0141/388111. Calendario udienze ex art. 69 bis disp. att. c.p.c. consultabile su ordineavvocatiasti.it (sezione Calendario delle udienze)."
     }
   },
   {
@@ -926,6 +1010,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza D'Armi, 83100 Avellino — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Avellino pubblica periodicamente sul sito istituzionale (sezione \"Fasce orarie udienze\") il calendario aggiornato delle udienze civili, incluso il ruolo locazioni. Prima della notifica della citazione conviene verificare la fascia oraria assegnata al giudice della convalida. Prima udienza entro 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email tribunale: tribunale.avellino@giustizia.it. Calendari fasce orarie: tribunale.avellino.giustizia.it (sezione fasce orarie udienze)."
     }
   },
   {
@@ -997,6 +1088,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Corradini 4, 67051 Avezzano (AQ) — Cancelleria Civile",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Avezzano l'accesso ai servizi di cancelleria civile è subordinato a prenotazione obbligatoria tramite il portale dedicato Reservio (servizio-prenotazioni-tribunale-az.reservio.com): senza appuntamento confermato non è possibile depositare atti né consultare fascicoli. La data di convalida segue il ruolo del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC dirigenza: dirigente.tribunale.avezzano@giustiziacert.it. Tel: 0863/20384. Prenotazione obbligatoria sportello: servizio-prenotazioni-tribunale-az.reservio.com (portale Reservio dedicato)."
     }
   },
   {
@@ -1068,6 +1166,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Cesare Battisti 20, 98051 Barcellona Pozzo di Gotto (ME) — Cancelleria Civile",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Barcellona Pozzo di Gotto la cancelleria civile ha sede in Via Giudice Giovanni Falcone 2: la PEC è dedicata e distinta dalla mail ordinaria della cancelleria, scelta organizzativa che separa i flussi giurisdizionali da quelli informativi. La data di convalida segue il ruolo del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: cancelleriacivile.tribunale.barcellonapozzodigotto@giustiziacert.it. Sede: Via Giudice Giovanni Falcone 2, Barcellona Pozzo di Gotto (ME). PEC dedicata distinta dalla mail ordinaria."
     }
   },
   {
@@ -1140,7 +1245,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Enrico De Nicola 1, Bari — IV Sezione Civile, quinto piano",
+      "sezione": "IV Sezione Civile — Sfratti e locazioni",
+      "depositoPCT": true,
+      "udienze": "La IV Sezione del Tribunale di Bari fissa la prima udienza di sfratto generalmente entro 50–70 giorni dalla notifica. La convalida non contestata si conclude mediamente in 3–5 mesi, tenuto conto dei volumi del tribunale pugliese.",
+      "note": "Email cancelleria: sez4.civile.tribunale.bari@giustizia.it. Tel: 080.5298445. Sportello: lun–ven 9:15–13:15."
+    }
   },
   {
     "nome": "Belluno",
@@ -1211,6 +1323,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza del Martiri 9, 32100 Belluno — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Belluno la cancelleria contenzioso civile è aperta al pubblico in fascia ridotta dal lunedì al venerdì 9:00-11:00, con presidio sabato 8:30-12:30 per soli atti urgenti e in scadenza: la finestra ristretta richiede di pianificare i depositi di sfratto con anticipo. La data di convalida segue il ruolo del giudice. Prima udienza 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC tribunale: tribunale.belluno@giustiziacert.it. Tel: 0437/947402. Apertura sportello civile lun-ven 9:00-11:00 (solo 2 ore al giorno); sabato 8:30-12:30 esclusivamente per atti urgenti e in scadenza."
     }
   },
   {
@@ -1282,6 +1401,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via S. Pasquale 50, 82100 Benevento — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Benevento i procedimenti di convalida sfratto sono incardinati presso la Prima Sezione Civile (Presidente Dott.ssa Maria Ilaria Romano), specializzazione che facilita la trattazione del fascicolo locazioni. La data di udienza segue il calendario del giudice designato. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.benevento@giustiziacert.it. Convalide sfratto trattate dalla Prima Sezione Civile (Presidente Dott.ssa Maria Ilaria Romano). Riferimento: tribunale.benevento.it/prima-sezione-civile."
     }
   },
   {
@@ -1354,7 +1480,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Borfuro 3, 24122 Bergamo — Cancelleria III Sezione Civile",
+      "sezione": "III Sezione Civile — Convalide di sfratto e finita locazione",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Bergamo ha istituito un sistema di prenotazione online obbligatoria per le udienze di convalida di sfratto e finita locazione (bergamo.prenotazioniudienzesfratti.it). Le udienze si tengono il martedì a partire dalle ore 9:00. La prenotazione va effettuata prima di notificare la citazione.",
+      "note": "Prenotazione udienza obbligatoria via portale dedicato (bergamo.prenotazioniudienzesfratti.it) prima della notifica. Deposito atti via PCT obbligatorio. Per assistenza: Ordine Avvocati di Bergamo."
+    }
   },
   {
     "nome": "Biella",
@@ -1425,6 +1558,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Ivrea 27, 13900 Biella — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Biella la cancelleria contenzioso civile è aperta al pubblico dal lunedì al venerdì 9:00-11:30, con apertura del sabato fino alle 12:00 esclusivamente per atti urgenti e in scadenza nello stesso giorno: la fascia oraria è più stretta della media nazionale. La data di convalida segue il ruolo del giudice. Prima udienza 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.biella@giustiziacert.it. Apertura sportello civile lun-ven 9:00-11:30 (2,5 ore al giorno); sabato fino alle 12:00 solo atti urgenti e in scadenza."
     }
   },
   {
@@ -1497,7 +1637,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Luigi Carlo Farini 1, Palazzo Legnani-Pizzardi, Bologna",
+      "sezione": "II Sezione Civile — Locazioni",
+      "depositoPCT": true,
+      "udienze": "Udienze di convalida il lunedì ore 9:00. Prima udienza: 30–45 giorni. Convalida non contestata: 2–3 mesi. Bologna è tra i tribunali più efficienti d'Italia.",
+      "note": "Prenotazione udienza on-line tramite portale dedicato (Fallco Web). Email: secondacivile.tribunale.bologna@giustizia.it."
+    }
   },
   {
     "nome": "Bolzano",
@@ -1569,7 +1716,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Dante 21, 39100 Bolzano — Landgericht/Tribunale, Cancelleria Civile",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La I Sezione Civile del Tribunale di Bolzano (stanza 305, 3° piano) è competente per le convalide di sfratto. Prima udienza generalmente entro 45–60 giorni dalla notifica. La procedura è bilingue italiano/tedesco: la citazione e gli atti vanno predisposti in entrambe le lingue.",
+      "note": "Email: sez1.civile.tribunale.bolzano@giustizia.it — PEC: sez1.civile.tribunale.bolzano@giustiziacert.it. Tel: 0471/226259. Apertura al pubblico lun-sab 8:30-12:30. Procedura bilingue obbligatoria: atti in italiano e tedesco."
+    }
   },
   {
     "nome": "Brescia",
@@ -1641,7 +1795,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Lattanzio Gambara 40, 25121 Brescia — I Sezione Civile, piano 4, stanza 4.59",
+      "sezione": "I Sezione Civile — Locazioni e sfratti",
+      "depositoPCT": true,
+      "udienze": "Udienze di convalida il giovedì. Prima udienza: 30–45 giorni dalla notifica. Convalida non contestata: 2–4 mesi.",
+      "note": "Email: sez1.civile.tribunale.brescia@giustiziacert.it. Presenza di accordo specifico tra Prefettura, Tribunale e Ordine degli Avvocati sulle procedure di sfratto."
+    }
   },
   {
     "nome": "Brindisi",
@@ -1712,6 +1873,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Nicola Sardi 8, 72100 Brindisi — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Contenzioso Civile del Tribunale di Brindisi (4° piano) gestisce le convalide di sfratto. Dal maggio 2024 è attivo un sistema di prenotazione telematica degli accessi in cancelleria. Prima udienza in genere entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.brindisi@giustiziacert.it. Tel: 0831/534277. Prenotazione accesso cancelleria disponibile online (sistema attivo dal 27/05/2024). Apertura al pubblico lun-ven 09:30-13:30."
     }
   },
   {
@@ -1783,6 +1951,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Stelvio 1, 21052 Busto Arsizio (VA) — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Busto Arsizio gestisce le convalide di sfratto con accesso alla cancelleria civile esclusivamente su appuntamento (lun-gio 10:00-12:00). Sportello telefonico lun-gio 12:00-13:00. Prima udienza indicativamente entro 45–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.bustoarsizio@giustizia.it — PEC: prot.tribunale.bustoarsizio@giustiziacert.it. Tel: 0331/650305 (sportello 12:00-13:00). Prenotazione appuntamenti tramite portale del tribunale."
     }
   },
   {
@@ -1855,7 +2030,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza della Repubblica 18, 09100 Cagliari",
+      "sezione": "II Sezione Civile — Sfratto per morosità (abitativi e non), intimazione licenza/sfratto per finita locazione",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Cagliari calendarizza la prima udienza di convalida di sfratto in genere entro 45–65 giorni dalla notifica. Stima per convalida non contestata: 2–4 mesi, variabile in base al carico del ruolo.",
+      "note": "La II Sezione è esplicitamente competente per sfratti abitativi e non abitativi. Tel: 070.60221."
+    }
   },
   {
     "nome": "Caltagirone",
@@ -1926,6 +2108,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Marconi 1, 95041 Caltagirone (CT) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Caltagirone la cancelleria contenzioso civile è in Viale Mario Milazzo 218, secondo piano stanze 137-138-139 (responsabile Dott.ssa Filippina Montalto): la dislocazione su tre stanze contigue indica una specializzazione interna del personale per i procedimenti civili. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.caltagirone@giustiziacert.it. Tel: 0933/369247. Sede: Viale Mario Milazzo 218, secondo piano stanze 137-138-139. Responsabile: Dott.ssa Filippina Montalto."
     }
   },
   {
@@ -1997,6 +2186,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via A. Manzoni 1, 93100 Caltanissetta — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Caltanissetta la cancelleria civile è ubicata al quinto piano della sede di Via Libertà 5: per il deposito atti relativi a sfratti è obbligatorio l'utilizzo del PCT, mentre la PEC generale del tribunale è riservata agli affari amministrativi. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio (per atti giurisdizionali; PEC generale solo per amministrativi). Tel: 0934/71111. Sede cancelleria civile: Via Libertà 5, quinto piano. Riferimento: urp.caltanissetta.giustizia.it."
     }
   },
   {
@@ -2068,6 +2264,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Garibaldi 58, 86100 Campobasso — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Campobasso gestisce le convalide di sfratto con accesso alle cancellerie previo appuntamento (ore 9:00–13:00). Prima udienza indicativamente entro 50–65 giorni dalla notifica. Il tribunale preferisce comunicazioni via PEC. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.campobasso@giustizia.it. Tel: 0874/400237. Accesso cancelleria su appuntamento. Calendari udienze pubblicati su ordineavvocaticampobasso.it."
     }
   },
   {
@@ -2139,6 +2342,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Condotto Levante 1, 03043 Cassino (FR) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Cassino i procedimenti di convalida sfratto sono trattati dalla Dott.ssa Vincenza Ovallesco; le cancellerie civili dei giudici Pignata, Grillo e Notari sono ubicate al primo piano della sede di Via Tasso. La data di udienza segue il ruolo del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.cassino@giustiziacert.it. Sede principale: Via Tasso, primo piano (cancellerie civili Pignata, Grillo, Notari). Convalide sfratto: Dott.ssa Vincenza Ovallesco."
     }
   },
   {
@@ -2210,6 +2420,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Romagna 1, 87012 Castrovillari (CS) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Castrovillari la cancelleria contenzioso civile è aperta al pubblico dal lunedì al venerdì 9:30-12:30, con orario esteso il martedì e giovedì pomeriggio 14:30-17:30: questa fascia pomeridiana doppia è una particolarità rara nei tribunali italiani. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.castrovillari@giustiziacert.it. Tel: 0981/486711. Apertura sportello civile lun-ven 9:30-12:30; martedì e giovedì anche pomeriggio 14:30-17:30."
     }
   },
   {
@@ -2282,7 +2499,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Giovanni Verga, 95125 Catania — sede principale",
+      "sezione": "IV Sezione Civile — Convalida di sfratto, possesso, diritti reali",
+      "depositoPCT": true,
+      "udienze": "Tempi variabili: il carico del tribunale può portare la convalida non contestata a 6–12 mesi.",
+      "note": "La IV Sezione è competente per i procedimenti ex artt. 657, 658 e 659 c.p.c. (finita locazione, morosità, cessazione rapporto d'opera). Deposito PCT obbligatorio."
+    }
   },
   {
     "nome": "Catanzaro",
@@ -2353,6 +2577,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Jannoni 2, 88100 Catanzaro — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "L'Area Civile Ordinaria del Tribunale di Catanzaro (3° piano) gestisce le convalide di sfratto. Prima udienza indicativamente entro 50–65 giorni dalla notifica. Cancelleria aperta al pubblico lun-ven 08:30-12:30. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: civile.tribunale.catanzaro@giustiziacert.it. Tel: 0961/885715. Apertura al pubblico lun-ven 08:30-12:30."
     }
   },
   {
@@ -2424,6 +2655,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via G. Mazzini 1, 66100 Chieti — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Chieti la cancelleria civile riceve dal lunedì al venerdì 9:00-13:00, con apertura pomeridiana il martedì e il giovedì 15:00-17:00 — fascia utile per il deposito di atti di sfratto urgenti. La data di convalida viene assegnata dal ruolo del giudice. Prima udienza tipica: 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: cancelleriacivile.tribunale.chieti@giustizia.it. Tel: 0871/3531. Apertura pomeridiana cancelleria: martedì e giovedì 15:00-17:00."
     }
   },
   {
@@ -2495,6 +2733,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Baccelli, 00053 Civitavecchia (RM) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Civitavecchia la pubblicazione dei calendari udienze sul sito istituzionale è attualmente sospesa: per conoscere data e aula della convalida occorre interpellare direttamente la cancelleria contenzioso civile o consultare il portale dell'Ordine Avvocati di Civitavecchia. Prima udienza orientativamente entro 60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria contenzioso civile: contenziosocivile.tribunale.civitavecchia@giustiziacert.it. Tel: 0766/3601. Calendari udienze non pubblicati online: contattare cancelleria o Ordine Avvocati."
     }
   },
   {
@@ -2566,6 +2811,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Raimondi 1, 22100 Como — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Como dispone di I e II Sezione Civile distinte per la gestione del contenzioso civile, incluse le convalide di sfratto. Prima udienza in genere entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email generale: tribunale.como@giustizia.it — PEC: civile.tribunale.como@giustiziacert.it. Tel: 031/231111. Apertura al pubblico lun-ven 8:30-12:30."
     }
   },
   {
@@ -2637,6 +2889,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale degli Stadi 10, 87036 Rende (CS) — Cittadella Giudiziaria, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La I Sezione Civile del Tribunale di Cosenza tiene le udienze di convalida sfratto il lunedì e il martedì. Prima udienza generalmente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.cosenza@giustizia.it. Tel: 0984/48711. Area Civile aperta lun e mer 8:30-12:30 e 15:30-16:30; mar, gio, ven 8:30-13:30."
     }
   },
   {
@@ -2708,6 +2967,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Vittorio Emanuele II 2, 26100 Cremona — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Contenzioso Civile Ordinario del Tribunale di Cremona è la sezione competente per le convalide di sfratto. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email generale: tribunale.cremona@giustizia.it — PEC: civile.tribunale.cremona@giustiziacert.it. Contatti e orari cancelleria su www.giustizia.it."
     }
   },
   {
@@ -2779,6 +3045,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via XXV Aprile 1, 88900 Crotone — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Crotone la cancelleria contenzioso civile è ubicata al quinto piano (responsabile Dott.ssa Annarita Aulicino): per il deposito di atti relativi a sfratti occorre rivolgersi a questo ufficio. La PEC di protocollo è riservata agli affari amministrativi e non sostituisce il PCT. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo (solo amministrativi): prot.tribunale.crotone@giustiziacert.it. Tel: 0962/920111. Cancelleria contenzioso civile al 5° piano, responsabile Dott.ssa Annarita Aulicino. Per atti giurisdizionali utilizzare PCT."
     }
   },
   {
@@ -2850,6 +3123,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via IV Novembre 4, 12100 Cuneo — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Cuneo ha attivato un portale dedicato per la prenotazione delle udienze di convalida sfratto (tribunalecuneo.it). Prima udienza generalmente entro 45–60 giorni dalla notifica. Dal marzo 2026 le istanze via email devono indicare nell'oggetto 'Nuova istanza' o 'Sollecito'. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.cuneo@giustiziacert.it. Email: contenzioso.tribunale.cuneo@giustizia.it. Tel: 0171/075501. Prenotazione udienze sfratto: tribunalecuneo.it."
     }
   },
   {
@@ -2921,6 +3201,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Sant'Agata 1, 94100 Enna — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Enna la cancelleria volontaria giurisdizione e contenzioso civile è aperta al pubblico dal lunedì al venerdì 9:00-12:00, con presidio dedicato del sabato per atti urgenti e non rinviabili: la finestra ridotta richiede di organizzare per tempo i depositi di sfratto. La data di convalida segue il calendario del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC volontaria giurisdizione: volgiurisdizione.tribunale.enna@giustiziacert.it. Apertura sportello civile lun-ven 9:00-12:00; sabato presidio per atti urgenti e non rinviabili."
     }
   },
   {
@@ -2992,6 +3279,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Madonna della Misericordia 8, 63900 Fermo — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Fermo la cancelleria contenzioso civile è aperta dal lunedì al sabato 9:00-13:00, ma dalle 12:00 alle 13:00 e il sabato si ricevono esclusivamente atti urgenti in scadenza nello stesso giorno: la programmazione del deposito sfratti va calibrata sulla fascia 9:00-12:00. La data di convalida segue il ruolo del giudice. Prima udienza 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.fermo@giustiziacert.it. Tel: 0734/2821. Apertura sportello: lun-sab 9:00-13:00 (fascia 12:00-13:00 e sabato solo atti urgenti in scadenza)."
     }
   },
   {
@@ -3064,7 +3358,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Corso Ercole I d'Este 37, 44121 Ferrara — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Ferrara le udienze di convalida di sfratto si tengono di mercoledì. Prima udienza generalmente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email Cancelleria Contenzioso Civile: contenz.civile.tribunale.ferrara@giustizia.it. Orari e recapiti aggiornati su tribunale-ferrara.giustizia.it."
+    }
   },
   {
     "nome": "Firenze",
@@ -3136,7 +3437,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Viale Guidoni 61 — Palazzo di Giustizia, Firenze",
+      "sezione": "II Sezione Civile — Locazioni e sfratto",
+      "depositoPCT": true,
+      "udienze": "Stima indicativa: prima udienza 45–60 giorni dalla notifica. Convalida non contestata: 3–5 mesi.",
+      "note": "Il Tribunale di Firenze applica il Protocollo Locazioni (Osservatorio Giustizia Civile) che regola prassi specifiche per le convalide di sfratto."
+    }
   },
   {
     "nome": "Foggia",
@@ -3207,6 +3515,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Galliani 1, 71121 Foggia — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "L'Ufficio Convalide di Sfratto del Tribunale di Foggia (Settore B, 1° piano) gestisce le udienze di convalida. Prima udienza indicativamente entro 50–65 giorni dalla notifica. I turni di udienza civile sono pubblicati su ordineavvocatifoggia.it. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.foggia@giustizia.it. Apertura al pubblico lun-ven 9:00-12:30. Turni udienze civili su ordineavvocatifoggia.it/turni-udienze-tribunale-civile/."
     }
   },
   {
@@ -3278,6 +3593,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Giulio Paolucci 12, 47121 Forlì — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Forlì le prime udienze civili — incluse le convalide di sfratto — si tengono di regola il martedì. Non è previsto un sistema di prenotazione online: la data va indicata in citazione tenendo conto del calendario martedì del giudice assegnato. Prima udienza tipicamente 45-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email URP uffici giudiziari: urpufficigiudiziari.tribunale.procura.forli@giustizia.it. Giorno udienze convalida: martedì."
     }
   },
   {
@@ -3349,6 +3671,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Giuseppe Mazzini 1, 03100 Frosinone — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La cancelleria civile del Tribunale di Frosinone gestisce convalide sfratto, finita locazione e procedimenti cautelari. Prima udienza in genere entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.frosinone@giustizia.it. Cancelleria aperta lun-ven 9:00-13:00 (sabato solo atti urgenti 9:00-13:00). Orari e indirizzi su ordineavvocatifrosinone.it."
     }
   },
   {
@@ -3420,6 +3749,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Venezia 1, 93012 Gela (CL) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Gela la cancelleria contenzioso civile è ubicata al secondo piano della torre civile, con presidio del sabato 8:45-12:45 per atti urgenti e in scadenza: il sabato sportello è una particolarità organizzativa che agevola le scadenze locatizie. La data di convalida segue il ruolo del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.gela@giustiziacert.it. Tel: 0933/812435. Sede cancelleria al 2° piano della torre civile; sportello del sabato 8:45-12:45 per atti urgenti e in scadenza."
     }
   },
   {
@@ -3491,6 +3827,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Palazzo di Giustizia, Piazza Portoria 1, 16121 Genova",
+      "sezione": "III Sezione Civile — Locazioni, comodato, deposito",
+      "depositoPCT": true,
+      "udienze": "Udienze convalide il venerdì ore 9:00. Prima udienza: 30–45 giorni dalla notifica. Convalida non contestata: 2–4 mesi.",
+      "note": "Prassi Genova: contattare la cancelleria (tel. 335.7764277) prima della notifica per comunicare le parti e ottenere la data udienza. Email: sez3.civile.tribunale.genova@giustizia.it."
     }
   },
   {
@@ -3562,6 +3905,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Italia 2, 34170 Gorizia — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Gorizia la cancelleria contenzioso ordinario, lavoro e famiglia riceve in fascia ridotta dal lunedì al venerdì 8:30-11:30 (piano terra, stanze 20-22), con apertura del sabato per soli atti urgenti. La data di convalida segue il ruolo del giudice designato. Prima udienza entro 50-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: civile.tribunale.gorizia@giustizia.it. Tel: 0481/593857. Sportello civile aperto solo 8:30-11:30; sabato esclusivamente atti urgenti."
     }
   },
   {
@@ -3633,6 +3983,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Oberdan 8, 58100 Grosseto — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Grosseto la materia locazioni è seguita direttamente dai funzionari assegnatari della cancelleria contenzioso civile e agrario (Carla Rabai 0564/419227, Luca De Vincentiis 0564/419228), che gestiscono il calendario delle convalide. Prima udienza tipicamente entro 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.grosseto@giustiziacert.it. Tel cancelleria: 0564/419227 (Rabai) — 0564/419228 (De Vincentiis)."
     }
   },
   {
@@ -3704,6 +4061,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Dante 5, 18100 Imperia — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Imperia non esiste uno sportello locazioni separato: la materia confluisce nella cancelleria civile contenzioso al 1° piano, che gestisce indistintamente convalide di sfratto, finita locazione e contenzioso ordinario. La data di udienza viene assegnata dal ruolo del giudice designato. Prima udienza orientativamente entro 60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria contenzioso civile: cancelleriacontenziosocivile.tribunale.imperia@giustizia.it. Tel: 0183/277241. La corrispondenza locazioni va indirizzata al contenzioso civile, non a uno sportello dedicato."
     }
   },
   {
@@ -3775,6 +4139,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Mario Ventre 1, 86170 Isernia — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Isernia le udienze civili — incluse le convalide di sfratto — non si svolgono nella sede del tribunale ma presso il Palazzo della Provincia di Isernia in Via Berta, primo piano corridoio B: questa dislocazione logistica è un'unicità che richiede di indicare correttamente il luogo dell'udienza nella citazione. Prima udienza orientativamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.isernia@giustiziacert.it. Tel: 0865/4711291. Sede udienze civili: Palazzo della Provincia, Via Berta, primo piano corridoio B (NON nella sede del Tribunale)."
     }
   },
   {
@@ -3846,6 +4217,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Cascinette 12, 10015 Ivrea (TO) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Ivrea le udienze di convalida di sfratto sono fissate ogni lunedì e il secondo mercoledì di ciascun mese, secondo calendario locale concordato con l'Ordine degli Avvocati: la prenotazione degli appuntamenti per il deposito atti avviene via portale Fallcoweb (fallcoweb.it/prenotazioni/ivrea). Prima udienza generalmente entro 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email tribunale: tribunale.ivrea@giustizia.it. Calendario convalide sfratto: tutti i lunedì + secondo mercoledì del mese. Prenotazione appuntamenti via Fallcoweb: fallcoweb.it/prenotazioni/ivrea."
     }
   },
   {
@@ -3917,6 +4295,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Camponeschi 2, 67100 L'Aquila — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di L'Aquila pubblica i ruoli di udienza civile sul proprio sito istituzionale. Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC protocollo: prot.tribunale.laquila@giustiziacert.it. Ruoli di udienza consultabili su tribunale-laquila.giustizia.it."
     }
   },
   {
@@ -3988,6 +4373,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Amendola 1, 19122 La Spezia — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale della Spezia l'iscrizione a ruolo della convalida è gestita dall'Ufficio Iscrizioni a Ruolo Generale (Contenzioso Civile, Decreti Ingiuntivi), che è distinto dall'Ufficio Istruttoria Contenzioso Ordinario: il fascicolo passa per due cancellerie diverse prima dell'udienza. Prima udienza tipica entro 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Centralino: 0187/595111. Iscrizione a ruolo distinta dall'istruttoria: prima passaggio in Ufficio Iscrizioni Ruolo Generale, poi in Contenzioso Ordinario."
     }
   },
   {
@@ -4059,6 +4451,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via P. Rossi 1, 85042 Lagonegro (PZ) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lagonegro la cancelleria civile è diretta dalla Dott.ssa Consolata Landi e riceve al pubblico dal lunedì al venerdì 9:00-13:00 nella sede di Via Napoli a Lagonegro: la fascia oraria estesa fino alle 13:00 è più ampia della media dei piccoli tribunali. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.lagonegro@giustiziacert.it. Tel: 0973/2333250. Sede: Via Napoli, Lagonegro. Cancelleria civile diretta da Dott.ssa Consolata Landi, apertura lun-ven 9:00-13:00."
     }
   },
   {
@@ -4130,6 +4529,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via del Progresso 1, 88046 Lamezia Terme (CZ) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lamezia Terme la cancelleria procedimenti contenziosi e agraria è diretta dalla Dott.ssa Ornella Torchia: per le convalide di sfratto è preferibile contattare il numero diretto della cancelleria contenzioso, evitando la PEC di presidenza riservata agli affari amministrativi. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC presidenza (solo amministrativi): presidente.tribunale.lameziaterme@giustiziacert.it. Tel cancelleria contenzioso: 0968/498235. Cancelleria contenziosi e agraria diretta da Dott.ssa Ornella Torchia."
     }
   },
   {
@@ -4201,6 +4607,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Mancini 1, 66034 Lanciano (CH) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lanciano la cancelleria contenzioso civile è ubicata al secondo piano stanza 26 (responsabile Dott.ssa Annalisa Di Cocco), con apertura al pubblico dal lunedì al venerdì 9:30-12:30: i depositi di sfratto vanno indirizzati a questo ufficio. La data di convalida segue il ruolo del giudice. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: civile.tribunale.lanciano@giustiziacert.it. Tel: 0872/713963. Cancelleria contenzioso civile: 2° piano stanza 26, responsabile Dott.ssa Annalisa Di Cocco, lun-ven 9:30-12:30."
     }
   },
   {
@@ -4272,6 +4685,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Marconi 1, 08045 Lanusei (NU) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Lanusei è un tribunale di piccole dimensioni nell'Ogliastra (Sardegna) e per i procedimenti di convalida sfratto occorre contattare direttamente il centralino dell'ufficio: la mancanza di una PEC dedicata pubblicamente accessibile per la cancelleria civile rende preferibile il contatto telefonico preliminare alla notifica. Prima udienza orientativamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Tel cancelleria: 0782/473435. Tribunale di piccole dimensioni: per convalide sfratto contattare il centralino prima della notifica per concordare modalità operative. Riferimento: tribunalelanusei.it."
     }
   },
   {
@@ -4343,6 +4763,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Vittorio Emanuele 10, 86035 Larino (CB) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Larino la cancelleria civile è ubicata al secondo piano della sede di Piazza del Popolo 1, nel centro storico della città: per le richieste di natura giurisdizionale (incluse le convalide di sfratto) occorre rivolgersi a questo ufficio. La PEC di protocollo è destinata agli affari amministrativi. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo (solo amministrativi): prot.tribunale.larino@giustiziacert.it. Tel: 0874/821218. Sede cancelleria civile: Piazza del Popolo 1, secondo piano. Per atti giurisdizionali utilizzare PCT."
     }
   },
   {
@@ -4414,6 +4841,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Buozzi 1, 04100 Latina — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Latina ha attivato un sistema di prenotazione online per gli accessi in cancelleria (prenotazioni-cancellerie-latina.it). Prima udienza in genere entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.latina@giustizia.it. Prenotazione accesso cancelleria: prenotazioni-cancellerie-latina.it. Apertura lun-gio 9:00-13:00 (venerdì solo CTU). Protocollo gestione udienze civili pubblicato da OA Latina."
     }
   },
   {
@@ -4486,7 +4920,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Brindisi 106, 73100 Lecce — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Lecce gestisce le convalide di sfratto con accesso in cancelleria su appuntamento (lun-ven 9:00-11:30, poi libero 11:30-13:00). Prima udienza generalmente entro 50–65 giorni dalla notifica. Tribunale attivo con buon volume di pratiche locatizie. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email archivio civile: archiviocivile.tribunale.lecce@giustizia.it. Prenotazione appuntamenti III sezione tramite fallcoweb.it/prenotazioni/lecce/. Per assistenza PCT: OA di Lecce."
+    }
   },
   {
     "nome": "Lecco",
@@ -4557,6 +4998,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Eremo 12, 23900 Lecco — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lecco il calendario locale fissa le udienze di convalida di sfratto il venerdì, con prime udienze locazioni il giovedì e successive il venerdì. La prenotazione è obbligatoria via portale Fallco (fallcoweb.it/prenotazioni/Lecco/ufficiosfratti) prima della notifica della citazione. Prima udienza entro 45-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Prenotazione obbligatoria via Fallco: fallcoweb.it/prenotazioni/Lecco/ufficiosfratti. Giorni udienze: venerdì (sfratti) — giovedì (prime udienze locazioni) — venerdì (successive). Riferimento I Sezione Civile."
     }
   },
   {
@@ -4628,6 +5076,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Mentana 42, 57127 Livorno — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Livorno pubblica il calendario udienze annuale. Accesso cancelleria per appuntamento (9:00-13:00, con prenotazione via sito) e accesso libero 11:45-13:00. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Accesso cancelleria previo appuntamento via sito del tribunale, accesso libero 11:45-13:00. Comunicazioni aggiornate su ordineavvocatilivorno.it."
     }
   },
   {
@@ -4699,6 +5154,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Garibaldi 1, 89044 Locri (RC) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Locri la cancelleria contenzioso civile è aperta al pubblico con orario esteso il martedì e giovedì pomeriggio 15:00-16:00 (responsabile Dott.ssa Carmela Pirrottina): questa fascia pomeridiana facilita la gestione dei depositi urgenti in materia locatizia. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.locri@giustiziacert.it. Tel: 0964/398437. Responsabile Dott.ssa Carmela Pirrottina. Apertura pomeridiana cancelleria: martedì e giovedì 15:00-16:00."
     }
   },
   {
@@ -4770,6 +5232,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Ospitale 1, 26900 Lodi — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lodi le convalide di sfratto sono trattate dalla Cancelleria Esecuzioni Mobiliari e Convalida Sfratti — sportello unico (responsabile Marasco Giovanni, sede Viale Milano 2). Questa specializzazione organizzativa rende più rapida la gestione del fascicolo rispetto ai tribunali con cancelleria civile generalista. Prima udienza tipica: 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC sportello unico esecuzioni mobiliari + sfratti: esecuzioni.mobiliari.tribunale.lodi@giustiziacert.it. Tel: 0371/499226. Responsabile cancelleria: Marasco Giovanni — sede Viale Milano 2."
     }
   },
   {
@@ -4841,6 +5310,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via della Conce 3, 55100 Lucca — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Lucca le udienze di convalida di sfratto si tengono il giovedì, con prenotazione obbligatoria tramite agenda online (sezione 'Per il professionista' del sito del tribunale). Il Protocollo Ordine-Tribunale disciplina le modalità di prenotazione. Cancelleria aperta 09:00-11:30 senza appuntamento e 11:30-13:00 con appuntamento.",
+      "note": "Prenotazione udienza sfratto obbligatoria tramite agenda online (tribunale-lucca.giustizia.it — sezione professionisti). Deposito telematico PCT obbligatorio. Email: tribunale.lucca@giustizia.it — PEC: prot.tribunale.lucca@giustiziacert.it."
     }
   },
   {
@@ -4912,6 +5388,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Garibaldi 124, 62100 Macerata — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Macerata le udienze di convalida di sfratto si tengono ogni mercoledì, presiedute dal giudice designato. Prima udienza generalmente entro 45–55 giorni dalla notifica. Convalida non contestata: circa 2 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.macerata@giustizia.it. Calendario udienze civili pubblicato su tribunale.macerata.giustizia.it — sezione apposita per le convalide di sfratto."
     }
   },
   {
@@ -4983,6 +5466,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Poma 14, 46100 Mantova — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Mantova è in vigore una prenotazione online obbligatoria per le udienze di convalida di sfratto: la fascia oraria 10:30-12:30 accetta massimo 20 fascicoli per udienza, con slot esauribili. Il banner \"Prenotazione Udienze Online\" è in homepage del tribunale. Senza prenotazione confermata l'udienza non viene tenuta.",
+      "note": "Deposito PCT obbligatorio. Prenotazione online obbligatoria (max 20 fascicoli per udienza, fascia 10:30-12:30): tribunale.mantova.it/PrenCancInformazioni.aspx. Email tribunale: tribunale.mantova@giustizia.it."
     }
   },
   {
@@ -5054,6 +5544,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Amendola 1, 91025 Marsala (TP) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Marsala la cancelleria contenzioso civile è in Via del Fante 50/A, primo piano stanza 133, con apertura del sabato esclusivamente per atti urgenti in scadenza: la dislocazione fisica e la finestra del sabato ristretta richiedono pianificazione dei depositi di sfratto. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.marsala@giustiziacert.it. Tel: 0923/765303. Sede: Via del Fante 50/A, primo piano stanza 133. Sabato solo atti urgenti in scadenza."
     }
   },
   {
@@ -5125,6 +5622,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Dante Alighieri 1, 54100 Massa — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Massa l'iscrizione a ruolo delle convalide è gestita da numeri telefonici dedicati distinti da quelli per le informazioni sui fascicoli pendenti: 0585/818808-105-106 per il ruolo, 0585/818131-132 per consultazione fascicoli. La data di udienza segue il calendario del giudice. Prima udienza tipica: 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.massa@giustiziacert.it. Tel iscrizione a ruolo: 0585/818808 — 0585/818105 — 0585/818106. Tel informazioni fascicoli: 0585/818131 — 0585/818132."
     }
   },
   {
@@ -5196,6 +5700,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Annunziatella 15, 75100 Matera — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Matera pubblica il calendario delle udienze civili sul sito dell'Ordine degli Avvocati (ordineavvocatimatera.it/calendario-udienze/). Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.matera@giustizia.it — PEC: prot.tribunale.matera@giustiziacert.it. Calendario udienze su ordineavvocatimatera.it."
     }
   },
   {
@@ -5267,6 +5778,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Palazzo Piacentini, Piazza Pugliatti, Messina",
+      "sezione": "I Sezione Civile — Contratti, locazioni, successioni",
+      "depositoPCT": true,
+      "udienze": "Stima conservativa per tribunali del distretto siciliano: 5–10 mesi per convalida non contestata.",
+      "note": "Tel centralino: 090.7766111. Per confermare la sezione competente aggiornata si consiglia di verificare con l'Ordine degli Avvocati di Messina."
     }
   },
   {
@@ -5339,7 +5857,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Corso Canalgrande 77, 41121 Modena",
+      "sezione": "Sezione Civile — Locazioni e convalide di sfratto",
+      "depositoPCT": true,
+      "udienze": "Udienze di convalida ogni lunedì e un venerdì al mese. Prima udienza: 30–40 giorni dalla notifica. Convalida non contestata: 2–3 mesi.",
+      "note": "Il Tribunale di Modena ha un Protocollo convalide di licenza e sfratto pubblicato sul sito ufficiale (tribunale-modena.giustizia.it). Deposito PCT obbligatorio."
+    }
   },
   {
     "nome": "Monza",
@@ -5411,7 +5936,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Viale Giacomo Matteotti 5, 20900 Monza — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Seconda Sezione Civile del Tribunale di Monza gestisce le convalide di sfratto con cancelleria dedicata (email: sfrattisecondaeterza.tribunale.monza@giustizia.it). Prenotazione online obbligatoria per gli avvocati tramite portale (monza-avvocati-gestionale.astalegale.net). Cancelleria aperta lun/mar/gio/ven su prenotazione, chiusa il mercoledì. Prima udienza: 45–60 giorni.",
+      "note": "Deposito telematico PCT obbligatorio. Email cancelleria sfratti: sfrattisecondaeterza.tribunale.monza@giustizia.it. Tel: 039/9013663. Prenotazione avvocati: monza-avvocati-gestionale.astalegale.net. Cittadini: email alla cancelleria sfratti."
+    }
   },
   {
     "nome": "Napoli Nord",
@@ -5482,6 +6014,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Roma 1, 81031 Aversa (CE) — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Napoli Nord è un tribunale autonomo con sede ad Aversa (CE), istituito come articolazione del distretto napoletano: l'accesso alla cancelleria civile è consentito esclusivamente previo appuntamento tramite portale di prenotazione, con calendario fissato secondo ordine cronologico di richiesta. Prima udienza orientativamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.napolinord@giustiziacert.it. Sede: Aversa (CE). Accesso cancelleria civile solo previo appuntamento via portale (ordine cronologico). Riferimento protocollo: coanapolinord.it."
     }
   },
   {
@@ -5553,6 +6092,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Galdo 1, 84014 Nocera Inferiore (SA) — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Nocera Inferiore la cancelleria contenzioso civile è in Via Falcone 12/14 (Nuova Palazzina), primo piano stanze 201-204, sotto il coordinamento della Dott.ssa Magrina Di Mauro: la nuova palazzina è distinta dal palazzo storico del tribunale e va indicata correttamente per il deposito atti. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.nocerainferiore@giustiziacert.it. Tel: 081/3239219. Sede: Via Falcone 12/14 (Nuova Palazzina), primo piano stanze 201-204. Coordinatrice: Dott.ssa Magrina Di Mauro."
     }
   },
   {
@@ -5624,6 +6170,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Annunziata 1, 80035 Nola (NA) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Nola le cancellerie sono distinte tra Prima e Seconda Sezione Civile, ciascuna con PEC dedicata: prima del deposito conviene verificare a quale sezione è assegnato il fascicolo locatizio. Sede in Palazzo Orsini, Piazza G. Bruno. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC Prima Sezione Civile: sez1.civile.tribunale.nola@giustiziacert.it. PEC Seconda Sezione: sez2.civile.tribunale.nola@giustiziacert.it. Tel: 081/5117111. Sede: Palazzo Orsini, Piazza G. Bruno. Verificare la sezione di assegnazione."
     }
   },
   {
@@ -5695,6 +6248,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Cavallotti 1, 28100 Novara — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Novara ha predisposto un modulo dedicato per i procedimenti di sfratto (\"SFRATTI\"), da depositare nella cassetta apposita presso la cancelleria. Prima udienza generalmente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: cancelleria.civile.tribunale.novara@giustizia.it — Email generale: tribunale.novara@giustizia.it. Tel: 0321/1802005. Modulo sfratti disponibile sul sito del Tribunale. Apertura al pubblico lun-sab 8:30-12:30."
     }
   },
   {
@@ -5766,6 +6326,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Manzoni 1, 08100 Nuoro — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Nuoro l'accesso ai procedimenti di sfratto avviene tramite la cancelleria civile centrale, con sede in Via Leonardo da Vinci 17: per le pratiche locatizie occorre rivolgersi a questo ufficio. La data di convalida segue il ruolo del giudice designato. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC dirigenza: dirigente.tribunale.nuoro@giustiziacert.it. Tel: 0784/258070. Sede: Via Leonardo da Vinci 17, Nuoro. Convalide sfratto presso cancelleria civile centrale."
     }
   },
   {
@@ -5837,6 +6404,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Vittorio Veneto 2, 09170 Oristano — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Oristano la cancelleria volontaria giurisdizione e contenzioso civile è aperta al pubblico dal lunedì al venerdì 9:00-12:00, fascia oraria più ridotta rispetto alla media nazionale: i depositi di sfratto vanno organizzati nella mattinata. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.oristano@giustiziacert.it. Apertura sportello civile lun-ven 9:00-12:00 (3 ore al giorno, finestra più stretta della media)."
     }
   },
   {
@@ -5909,7 +6483,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Nicolò Tommaseo 55, 35131 Padova",
+      "sezione": "I Sezione Civile — Locazioni urbane, occupazione senza titolo, condominio",
+      "depositoPCT": true,
+      "udienze": "Udienze sfratto i primi quattro martedì del mese. Prima udienza generalmente entro 30 giorni. Convalida non contestata: 2–3 mesi.",
+      "note": "Email: civile.sezione1.tribunale.padova@giustizia.it. Sportello: lun–ven 9:00–12:00."
+    }
   },
   {
     "nome": "Palermo",
@@ -5981,7 +6562,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Vittorio Emanuele Orlando 1, Palermo",
+      "sezione": "II Sezione Civile — Convalide di sfratto per morosità e finita locazione",
+      "depositoPCT": true,
+      "udienze": "Tempi variabili per il carico del tribunale: stima conservativa 5–10 mesi per convalida non contestata.",
+      "note": "La II Sezione è competente per i procedimenti ex artt. 657 e 658 c.p.c. (intimazione licenza/sfratto per finita locazione e morosità). Deposito PCT obbligatorio."
+    }
   },
   {
     "nome": "Palmi",
@@ -6052,6 +6640,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Roma 1, 89015 Palmi (RC) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Palmi le cancellerie civili hanno sede in Via Roma 28, con apertura al pubblico dal lunedì al venerdì 8:30-12:30; il sabato e il 6 dicembre (festa patronale di San Nicola) l'accesso è limitato ai soli atti urgenti: la chiusura specifica del 6 dicembre è una particolarità locale da considerare. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.palmi@giustiziacert.it. Sede: Via Roma 28, Palmi. Apertura sportello: lun-ven 8:30-12:30; sabato e 6 dicembre (festa patronale) solo atti urgenti."
     }
   },
   {
@@ -6123,6 +6718,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Indipendenza 1, 87027 Paola (CS) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Paola la sede è in Via G. Falcone e P. Borsellino 9: il tribunale ha dismesso le utenze fax sostituendole con caselle PEC dedicate per ogni cancelleria, scelta digitale che richiede l'utilizzo dell'indirizzo PEC corretto per il contenzioso civile. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.paola@giustiziacert.it. Sede: Via G. Falcone e P. Borsellino 9, Paola (CS). Fax dismessi: utilizzare esclusivamente PCT o PEC dedicata cancelleria."
     }
   },
   {
@@ -6195,7 +6797,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Repubblica 31, 43121 Parma — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Parma pubblica ogni anno il Calendario delle Udienze di Convalida di Licenza e Sfratto (disponibile su ordineavvocatiparma.it e sul sito del Tribunale). Le udienze sfratto si tengono il lunedì. Accesso cancelleria su appuntamento lun, mer, ven 9:00-12:00.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.parma@giustizia.it. Calendario annuale sfratti su ordineavvocatiparma.it. Prenotazione cancelleria: lun, mer, ven 9:00-12:00."
+    }
   },
   {
     "nome": "Patti",
@@ -6266,6 +6875,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Roma 10, 98066 Patti (ME) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Patti la cancelleria registro generale contenzioso civile ha sede in Via Molino Croce ed è aperta al pubblico dal lunedì al sabato 9:30-12:30, con sabato riservato esclusivamente ad atti urgenti e in scadenza: l'apertura del sabato (anche se limitata) è utile per i depositi di sfratto a cavallo del weekend. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.patti@giustiziacert.it. Tel: 0941/052288. Sede: Via Molino Croce, Patti (ME). Apertura sportello: lun-sab 9:30-12:30 (sabato solo atti urgenti e in scadenza)."
     }
   },
   {
@@ -6337,6 +6953,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Mazzini 69, 27100 Pavia — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Pavia ha una Cancelleria Decreti Ingiuntivi e Sfratti dedicata, con prenotazione delle udienze di convalida tramite applicativo sulla home page del sito del tribunale. Cancelleria aperta lun-ven e sab 08:30-12:00 (sabato solo atti scadenti). Prima udienza: 45–60 giorni. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.pavia@giustiziacert.it. Tel: 0382/398283. Prenotazione udienze sfratto tramite applicativo su www.tribunale.pavia.giustizia.it."
     }
   },
   {
@@ -6409,7 +7032,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Palazzo Ex Enel, Via XIV Settembre 86, 06121 Perugia",
+      "sezione": "Sezione Civile — Locazioni e convalide di sfratto",
+      "depositoPCT": true,
+      "udienze": "Stima indicativa per tribunali del Centro Italia di medie dimensioni: prima udienza 45–60 giorni. Convalida non contestata: 3–5 mesi.",
+      "note": "Tel: 075.54051. Per la sezione specifica si consiglia di verificare con l'Ordine degli Avvocati di Perugia (la distribuzione tabellare non è pubblicata in dettaglio online)."
+    }
   },
   {
     "nome": "Pesaro",
@@ -6480,6 +7110,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazzale Matteotti 1, 61121 Pesaro — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Pesaro gestisce le cancellerie civili con accesso su prenotazione online (Astalegale.net) nelle ore 09:30-11:30, con accesso libero 11:30-13:00. Richieste telefoniche solo 12:00-13:00 per info generali. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: prot.tribunale.pesaro@giustiziacert.it. Email: tribunale.pesaro@giustizia.it. Tel: 0721/6971. Prenotazione accesso cancelleria: Astalegale.net. Telefono informazioni: 12:00-13:00."
     }
   },
   {
@@ -6552,7 +7189,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Conte di Ruvo 2, 65127 Pescara — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Pescara ha introdotto dal 1° gennaio 2021 un sistema di prenotazione online obbligatoria delle udienze di convalida sfratto (tribunalepescara.sitiwebgiustizia.it/PrenUdienzaSfratti.aspx). Sono disponibili 12 slot a partire dalle ore 9:00. La conferma di prenotazione va allegata al fascicolo. Prima udienza: 45–60 giorni dalla notifica.",
+      "note": "Prenotazione udienza sfratto obbligatoria prima della notifica: tribunalepescara.sitiwebgiustizia.it/PrenUdienzaSfratti.aspx. Deposito atti via PCT obbligatorio. Email: tribunale.pescara@giustizia.it."
+    }
   },
   {
     "nome": "Piacenza",
@@ -6624,7 +7268,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Sant'Eufemia 13, 29121 Piacenza — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Piacenza gestisce la cancelleria civile con accesso su prenotazione tramite il portale fallcoweb.it/prenotazioni/piacenza/contenzioso (9:30-12:45), con accesso libero lun-ven 9:00-13:00. Prima udienza in genere entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: civile.tribunale.piacenza@giustiziacert.it. Tel: 0523/1836245. Prenotazione cancelleria: fallcoweb.it/prenotazioni/piacenza/contenzioso."
+    }
   },
   {
     "nome": "Pisa",
@@ -6696,7 +7347,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Mazzini 12, 56127 Pisa — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Pisa le udienze di convalida sfratto si tengono il lunedì: se la data indicata in citazione non cade di lunedì, l'udienza viene automaticamente spostata al lunedì successivo. Il rilascio delle formule esecutive per le convalide avviene il lunedì e giovedì ore 9:00-12:00 (Front Office).",
+      "note": "Deposito telematico PCT obbligatorio. In udienza occorre: atto di citazione notificato originale, contratto di locazione registrato, CU e marca da €27,00. Rilascio formule esecutive: lun e gio 9:00-12:00."
+    }
   },
   {
     "nome": "Pistoia",
@@ -6767,6 +7425,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Verdi 15, 51100 Pistoia — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Pistoia le convalide di sfratto rientrano nella Cancelleria Civile - Procedimenti Speciali (direttrice Dott.ssa Catia Busillo), distinta dalle cancellerie Ruoli e Famiglia: questa specializzazione facilita la trattazione rapida del fascicolo. Prima udienza tipicamente 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: cancelleria.civile.tribunale.pistoia@giustizia.it. Tel: 0573/35711. Procedimenti speciali (incluse convalide): direttrice Dott.ssa Catia Busillo."
     }
   },
   {
@@ -6838,6 +7503,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Marsala 14, 33170 Pordenone — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Pordenone è attiva la prenotazione online delle udienze di convalida sfratto con 15 slot disponibili a partire dalle 9:30, ciascuno per un solo procedimento, fino a esaurimento. La piattaforma è prenotazionicancelleria.sitiwebgiustizia.it/login.aspx?ug=1672. La ricevuta va inserita nel fascicolo prima della notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: cancelleria.civile.tribunale.pordenone@giustizia.it. Tel: 0434/501328. Prenotazione obbligatoria (15 slot dalle 9:30, 1 procedimento per slot): prenotazionicancelleria.sitiwebgiustizia.it/login.aspx?ug=1672."
     }
   },
   {
@@ -6909,6 +7581,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Pretoria 53, 85100 Potenza — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Potenza gestisce le convalide sfratto tramite la Sezione Contenzioso Civile. Prima udienza indicativamente entro 50–65 giorni dalla notifica. Giorni e orari di apertura al pubblico pubblicati dall'Ordine degli Avvocati di Potenza (ordineavvocatipotenza.it). Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC Contenzioso Civile: contenziosocivile.tribunale.potenza@giustiziacert.it. Orari aggiornati su ordineavvocatipotenza.it."
     }
   },
   {
@@ -6980,6 +7659,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza delle Carceri 2, 59100 Prato — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Prato gestisce le cancellerie civili con accesso su appuntamento. Apertura al pubblico lun-ven 09:30-12:30 (mer 09:30-11:00), sabato 09:30-12:30. In ogni comunicazione occorre indicare n. RG, nome del giudice e data della prossima udienza. Prima udienza: 45–60 giorni. Convalida non contestata: 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email contenzioso civile: cancelleria.contcivile.tribunale.prato@giustizia.it — PEC: civile.tribunale.prato@giustiziacert.it. Tel: 0574/5791. Accesso solo su appuntamento."
     }
   },
   {
@@ -7051,6 +7737,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Archimede 1, 97100 Ragusa — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Ragusa gestisce le convalide di sfratto tramite la Cancelleria Contenzioso Civile, aperta lun-ven 09:00-13:00 (sabato solo atti urgenti). Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.ragusa@giustiziacert.it. Tel: 0932/678223 — 0932/678355 — 0932/678227 (ruolo generale). Apertura lun-ven 09:00-13:00."
     }
   },
   {
@@ -7123,7 +7816,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Caduti per la Libertà 2, 48121 Ravenna — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Ravenna fissa la prima udienza di convalida sfratto generalmente entro 45–60 giorni dalla notifica. Apertura cancelleria civile: lun e ven 8:30-10:30; mar, mer, gio 8:30-11:30. Tel disponibile lun-ven 10:30-11:30. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email cancelleria civile: civile.tribunale.ravenna@giustizia.it. Tel: 0544/511799 (lun-ven 10:30-11:30). Apertura al pubblico: lun e ven 8:30-10:30; mar, mer, gio 8:30-11:30."
+    }
   },
   {
     "nome": "Reggio Calabria",
@@ -7194,6 +7894,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Arsenale 2, 89125 Reggio Calabria — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Reggio Calabria pubblica un Calendario Udienze online con sezione specifica per la I Sezione Civile (tribunale-reggiocalabria.giustizia.it/it/udienze_sez_civile_1.page). Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: tribunale.reggiocalabria@giustizia.it. Apertura al pubblico: lun, mer, ven 9:00-12:00; mar e gio 9:00-11:30 e 14:45-15:15. Calendario udienze civili su tribunale-reggiocalabria.giustizia.it."
     }
   },
   {
@@ -7266,7 +7973,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Viale Martiri di Cervarolo 3, 42121 Reggio Emilia — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Reggio Emilia le udienze di convalida sfratto si tengono il giovedì mattina. Gli avvocati del Foro di Reggio Emilia prenotano tramite PRENOTALEX (sistema esclusivo dell'Ordine locale); gli avvocati fuori Foro concordano appuntamento direttamente con la cancelleria. La cancelleria è aperta al pubblico martedì e giovedì 10:00-12:00.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.reggioemilia@giustiziacert.it. Tel: 0522/510600. Prenotazione avvocati del Foro RE: PRENOTALEX (portale Ordine Avvocati RE). Apertura cancelleria: mar e gio 10:00-12:00."
+    }
   },
   {
     "nome": "Rieti",
@@ -7337,6 +8051,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Garibaldi 1, 02100 Rieti — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Rieti la trattazione delle convalide è incardinata presso l'Ufficio Esecuzioni, dove tre referenti operativi seguono i fascicoli: Roberto Proietti (0746/208352), Mariella Scappa (0746/208266), Nicola Ottaviani (0746/208313). La data di udienza viene assegnata dal ruolo del giudice. Prima udienza orientativamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Centralino tribunale: 0746/2081. Referenti Ufficio Esecuzioni (convalide): Roberto Proietti 0746/208352 — Mariella Scappa 0746/208266 — Nicola Ottaviani 0746/208313."
     }
   },
   {
@@ -7409,7 +8130,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Ippoliti 1, 47921 Rimini — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Civile del Tribunale di Rimini (1° piano, sala 1012 Bis — Viale C.A. dalla Chiesa 11) gestisce le convalide di sfratto. Orario apertura al pubblico lun-ven 10:00-13:00. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: civile.tribunale.rimini@giustizia.it — PEC: civile.tribunale.rimini@giustiziacert.it. Tel: 0541/763640. Apertura al pubblico lun-ven 10:00-13:00."
+    }
   },
   {
     "nome": "Rovigo",
@@ -7480,6 +8208,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Verdi 1, 45100 Rovigo — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Rovigo la materia locatizia confluisce nella Cancelleria Contenzioso Civile e Volontaria Giurisdizione unificata: non esiste un indirizzo email separato per le locazioni. La data di udienza segue il ruolo del giudice designato. Prima udienza tipica: 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email tribunale (cancelleria unica): tribunale.rovigo@giustizia.it. Tel: 0425/428111. Cancelleria locazioni accorpata al contenzioso civile e volontaria giurisdizione: nessun indirizzo dedicato."
     }
   },
   {
@@ -7551,6 +8286,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Lavinio 1, 81055 Santa Maria Capua Vetere (CE) — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Santa Maria Capua Vetere l'accesso ai servizi di cancelleria è consentito esclusivamente tramite Front Office con prenotazione preventiva sul portale dedicato del tribunale: senza appuntamento confermato non è possibile depositare atti né consultare fascicoli. La sede è in Via Santagata. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Sede: Via Santagata, Santa Maria Capua Vetere (CE). Accesso cancelleria solo previa prenotazione su portale dedicato del Tribunale (Front Office). Riferimento: tribunalesantamariacapuavetere.it."
     }
   },
   {
@@ -7622,6 +8364,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Castello 8, 07100 Sassari — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Sassari gestisce le convalide di sfratto tramite la Cancelleria Contenzioso Civile (stanza 13). Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: civilecontenzioso.tribunale.sassari@giustizia.it — PEC: contenziosocivile.tribunale.sassari@giustiziacert.it. Tel: 079/204501 — 079/204747 — 079/204718."
     }
   },
   {
@@ -7693,6 +8442,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Corso Mazzini 18, 17100 Savona — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Savona lo sportello del contenzioso civile è al 4° piano, sportello 2, con accesso fisico esclusivamente su prenotazione tramite l'applicativo dei servizi online. La fascia di reperibilità telefonica è ristretta al lunedì-venerdì 9:00-11:00. La data di udienza segue il ruolo del giudice. Prima udienza tipica: 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email contenzioso civile: contenziosocivile.tribunale.savona@giustizia.it. Tel: 019/8316584 (lun-ven 9:00-11:00). Accesso sportello solo su prenotazione (4° piano, sportello 2)."
     }
   },
   {
@@ -7764,6 +8520,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via G. Licata 1, 92019 Sciacca (AG) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Sciacca la cancelleria contenzioso civile gestisce in un unico ufficio l'iscrizione di convalide di sfratto, decreti ingiuntivi, procedimenti in materia agraria e societaria, con apertura al pubblico 9:00-12:30: l'accorpamento delle materie richiede di indicare correttamente il rito nella richiesta di iscrizione. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.sciacca@giustiziacert.it. Apertura sportello: lun-ven 9:00-12:30. Cancelleria contenziosa unica per sfratti, decreti ingiuntivi, materia agraria e societaria."
     }
   },
   {
@@ -7836,7 +8599,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Biagio di Montluc 2, 53100 Siena — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Siena pubblica un calendario semestrale delle udienze sfratto sul sito istituzionale (tribunale-siena.giustizia.it/it/calend_sfratti.page) e presso l'Ordine Avvocati di Siena. La sezione Locazioni e Sfratti è gestita da magistrato designato. Prima udienza: 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: focivile.tribunale.siena@giustizia.it — PEC: civile.tribunale.siena@giustiziacert.it. Tel: 0577/051106. Calendario semestrale sfratti su tribunale-siena.giustizia.it. Accesso front office su prenotazione 11:30-12:30."
+    }
   },
   {
     "nome": "Siracusa",
@@ -7907,6 +8677,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Santa Panagia 116, 96100 Siracusa — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Prima Sezione Civile del Tribunale di Siracusa (3° piano, stanze 1-20) gestisce le convalide di sfratto. Cancelleria aperta lun-ven 08:30-11:30. Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.siracusa@giustiziacert.it. Email: tribunale.siracusa@giustizia.it. Tel: 0931/752411. Cancelleria I Sez. Civile: lun-ven 08:30-11:30."
     }
   },
   {
@@ -7978,6 +8755,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Davide Lazzaroni 1, 23100 Sondrio — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Sondrio la cancelleria civile riceve allo sportello fisico nella stanza 212 al 2° piano. Per le richieste via email è obbligatorio l'oggetto formattato \"RICHIESTA INFORMAZIONI – COGNOME E NOME\" con telefono in firma, altrimenti la mail non viene processata. La data di udienza segue il ruolo del giudice. Prima udienza orientativamente 55-65 giorni.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: cancelleriacivile.tribunale.sondrio@giustizia.it (oggetto obbligatorio: \"RICHIESTA INFORMAZIONI – COGNOME E NOME\"). Tel: 0342/529111. Sportello civile: stanza 212, 2° piano."
     }
   },
   {
@@ -8049,6 +8833,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Cerquiglia 1, 06049 Spoleto (PG) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Spoleto la cancelleria civile è aperta in due fasce distinte: 9:00-11:30 per consultazioni e copie, 11:30-13:00 riservata ai soli atti urgenti. Il sabato è aperta solo 9:00-13:00 per atti urgenti. Questa segmentazione oraria condiziona il deposito di urgenze in materia locatizia. Prima udienza tipica: 50-60 giorni.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria civile: civile.tribunale.spoleto@giustizia.it. Tel: 0743/219419. Apertura sportello: 9:00-11:30 (consultazioni) — 11:30-13:00 (solo atti urgenti) — sabato 9:00-13:00 atti urgenti."
     }
   },
   {
@@ -8120,6 +8911,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Circonvallazione Occidentale 1, 67039 Sulmona (AQ) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Sulmona la cancelleria contenzioso civile è ubicata al primo piano stanza 38 (responsabile Anna Tortis), con sede in Piazza Capograssi 1: i depositi di sfratto vanno indirizzati a questo ufficio specifico, distinto dalle altre cancellerie del tribunale. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.sulmona@giustiziacert.it. Tel: 0864/2453316. Sede: Piazza Capograssi 1. Cancelleria contenzioso civile: 1° piano stanza 38, responsabile Anna Tortis."
     }
   },
   {
@@ -8191,6 +8989,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Maria Immacolata 5, 74121 Taranto — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "II Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Taranto gestisce le convalide di sfratto tramite la cancelleria civile, aperta lun-ven 08:45-12:45. Prima udienza generalmente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.taranto@giustiziacert.it. Tel: 099/7343707 — 099/7343709 — 099/7343755. Ruolo Generale: 099/7343761. Apertura al pubblico lun-ven 08:45-12:45."
     }
   },
   {
@@ -8262,6 +9067,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Enrico Toti 1, 07029 Tempio Pausania (SS) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Tempio Pausania (autonomo, competente sulla Gallura) la cancelleria civile-lavoro è aperta dal lunedì al venerdì 9:00-12:00 e il martedì pomeriggio 14:45-15:45; le richieste copie atti vanno indirizzate esclusivamente via email a annamaria.fontana@giustizia.it (referente nominativo): l'apertura pomeridiana del martedì e il canale email diretto sono particolarità organizzative. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC protocollo: prot.tribunale.tempiopausania@giustiziacert.it. Tel: 079/678900. Apertura sportello: lun-ven 9:00-12:00 + martedì 14:45-15:45. Richieste copie esclusivamente a annamaria.fontana@giustizia.it (referente nominativo)."
     }
   },
   {
@@ -8333,6 +9145,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Nazario Sauro 35, 64100 Teramo — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Civile del Tribunale di Teramo è accessibile senza prenotazione lun-ven 09:30-12:30, con sportello telefonico 08:30-09:30. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: civile.tribunale.teramo@giustiziacert.it. Tel: 0861/326549 — 0861/326544. Sportello telefonico lun-ven 08:30-09:30; accesso pubblico senza prenotazione 09:30-12:30."
     }
   },
   {
@@ -8404,6 +9223,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Mazzini 1, 90018 Termini Imerese (PA) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Termini Imerese la sede è in Piazza F. Ugo Di Blasi 1, con presidio del sabato 8:45-12:45 dedicato esclusivamente ad atti urgenti e in scadenza: lo sportello del sabato facilita il deposito di sfratti urgenti. La PEC generale è riservata agli affari amministrativi e non sostituisce il PCT per gli atti giurisdizionali. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email tribunale (solo amministrativi): tribunale.terminiimerese@giustizia.it. Tel: 091/8152246. Sede: Piazza F. Ugo Di Blasi 1. Sportello del sabato 8:45-12:45 per atti urgenti e in scadenza."
     }
   },
   {
@@ -8475,6 +9301,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale della Stazione 4, 05100 Terni — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Terni gestisce le convalide di sfratto tramite la Cancelleria Contenzioso Civile, con prenotazione appuntamenti disponibile tramite portale Zucchetti Fallco. Cancelleria aperta lun-ven 09:00-13:00. Prima udienza indicativamente entro 50–65 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: contenzioso.tribunale.terni@giustizia.it — PEC: civile.tribunale.terni@giustiziacert.it. Tel centralino: 0744/398111. Prenotazione appuntamenti cancelleria: portale Zucchetti Fallco."
     }
   },
   {
@@ -8546,6 +9379,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via della Rocca 1, 00019 Tivoli (RM) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Tivoli la prenotazione degli appuntamenti per il contenzioso civile avviene tramite portale Fallco (fallcoweb.it/prenotazioni/tivoli/contenziosoocivile). La risposta telefonica è garantita solo nella fascia 9:00-11:00. La data di convalida segue il ruolo del giudice designato. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.tivoli@giustiziacert.it. Tel: 0774/4511 (risposta garantita 9:00-11:00). Prenotazione appuntamenti: fallcoweb.it/prenotazioni/tivoli/contenziosoocivile."
     }
   },
   {
@@ -8617,6 +9457,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Crisanzio 20, 76125 Trani (BT) — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Trani le esecuzioni civili (e le pratiche connesse al rilascio dell'immobile post-convalida) hanno PEC dedicata distinta dalla PEC generale del tribunale: questo richiede un doppio canale di comunicazione tra fase di convalida e fase esecutiva. Sede storica al Palazzo Candido, Piazza Cesare Battisti. Prima udienza tipica: 55-65 giorni.",
+      "note": "Deposito PCT obbligatorio. PEC esecuzioni civili (rilascio): esecuzionicivili.tribunale.trani@giustizia.it. Tel: 0883/505311. Sede: Palazzo Candido, Piazza Cesare Battisti. Doppio canale PEC: convalida (cancelleria civile) — esecuzione (esecuzioni civili)."
     }
   },
   {
@@ -8688,6 +9535,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Vittorio Emanuele II, 91100 Trapani — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Trapani gestisce le convalide di sfratto con accesso alla cancelleria civile su appuntamento (09:30-12:30). Il tribunale pubblica un calendario delle udienze civili sul sito istituzionale. Prima udienza indicativamente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2–3 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.trapani@giustiziacert.it. Email: cancelleria.contcivile.tribunale.trapani@giustizia.it. Tel: 0923/802353 — 0923/802354. Accesso su appuntamento 09:30-12:30."
     }
   },
   {
@@ -8760,7 +9614,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Rosmini 10, 38122 Trento — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Civile del Tribunale di Trento (stanze 116-117, Largo Pigarelli 1) gestisce le convalide di sfratto. Apertura lun-ven 08:30-11:30 per attività di cancelleria, 11:30-12:30 solo deposito. Prima udienza generalmente entro 45–60 giorni dalla notifica. Convalida non contestata: circa 2 mesi.",
+      "note": "Deposito telematico PCT obbligatorio. Email: cancelleria.civile.tribunale.trento@giustizia.it — PEC: civile.tribunale.trento@giustiziacert.it. Tel: 0461/200318 — 0461/200218. Apertura: lun-ven 08:30-11:30 (12:30 solo depositi)."
+    }
   },
   {
     "nome": "Treviso",
@@ -8831,6 +9692,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Carlo Alberto dalla Chiesa 3, 31100 Treviso — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Treviso le udienze di convalida sfratto si tengono il giovedì dalle ore 10:00, con slot ogni 15 minuti. La prenotazione è obbligatoria tramite il portale del tribunale (area riservata). La ricevuta di prenotazione va allegata all'atto di notifica e depositata in cancelleria. Prima udienza: 45–60 giorni dalla notifica.",
+      "note": "Prenotazione udienza sfratto obbligatoria (giovedì ore 10:00, slot 15 min): tribunale.treviso.giustizia.it — area riservata. Ricevuta da allegare all'atto di notifica. Deposito PCT obbligatorio. Tel: 0422/059141."
     }
   },
   {
@@ -8903,7 +9771,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Via Foro Ulpiano 1, 34100 Trieste",
+      "sezione": "Sezione Civile — Locazioni e convalide di sfratto",
+      "depositoPCT": true,
+      "udienze": "Udienze di convalida il lunedì, mercoledì e venerdì ore 9:00. Convalida non contestata: 2–3 mesi.",
+      "note": "Tribunale di dimensioni medie con unica sezione civile. Tel: 040.7792111."
+    }
   },
   {
     "nome": "Udine",
@@ -8975,7 +9850,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Piazzale del Cimento 8, 33100 Udine — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Il Tribunale di Udine tiene le udienze di convalida sfratto il lunedì e il martedì dalle ore 09:00 alle 12:00, con slot da 15 minuti. Prenotazione obbligatoria tramite portale dedicato sfratti.udienzetribunaleudine.it, accessibile con PEC dell'avvocato. La cancelleria è aperta lun-sab 08:30-11:30.",
+      "note": "Prenotazione obbligatoria: sfratti.udienzetribunaleudine.it (accesso con PEC avvocato). Udienze sfratto: lun e mar 09:00-12:00, slot 15 min. Deposito PCT obbligatorio. Email: cancelleria.civile.tribunale.udine@giustizia.it — PEC: contenziosocivile.tribunale.udine@giustiziacert.it. Tel: 0432/814666."
+    }
   },
   {
     "nome": "Urbino",
@@ -9046,6 +9928,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Raffaello Sanzio 1, 61029 Urbino (PU) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Urbino la cancelleria civile è unificata con quella del lavoro: stesso indirizzo email per entrambi i ruoli, stesso personale. L'apertura al pubblico è ridotta a due ore, dal lunedì al venerdì 10:00-12:00. La data di udienza segue il ruolo del giudice. Prima udienza tipicamente 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria unica civile + lavoro: civilelavoro.tribunale.urbino@giustizia.it. Tel: 0722/3769133. Apertura sportello: lun-ven 10:00-12:00 (sole 2 ore al giorno)."
     }
   },
   {
@@ -9117,6 +10006,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Piazza Vittorio Emanuele II 1, 84078 Vallo della Lucania (SA) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Vallo della Lucania la cancelleria civile è in Via A. De Hippolytis 4, primo piano stanze 2-14 (responsabile Dott.ssa Rosa Salzano), con presidio del sabato 9:00-12:00 dedicato ad atti urgenti: l'apertura del sabato è utile per i depositi di sfratto in scadenza nel weekend. La data di convalida segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC cancelleria civile: civile.tribunale.vallodellalucania@giustiziacert.it. Sede: Via A. De Hippolytis 4, primo piano stanze 2-14. Responsabile: Dott.ssa Rosa Salzano. Sabato 9:00-12:00 atti urgenti."
     }
   },
   {
@@ -9188,6 +10084,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Mameli 5, 21100 Varese — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Varese le udienze di convalida di sfratto si tengono il giovedì ore 09:30, con prenotazione online obbligatoria tramite il portale del tribunale (Protocollo Tribunale-Ordine Avvocati Varese). Sportello telefonico lun-ven 12:00-13:00. Prima udienza: 45–60 giorni dalla notifica.",
+      "note": "Prenotazione online obbligatoria (giovedì ore 9:30): portale area riservata tribunale di Varese. Deposito PCT obbligatorio. Email: cancelleria.civile.tribunale.varese@giustizia.it — PEC: civile.tribunale.varese@giustiziacert.it. Tel: 0332/298460. Sportello telefonico: 12:00-13:00."
     }
   },
   {
@@ -9259,6 +10162,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Roma 1, 66054 Vasto (CH) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Vasto la cancelleria contenzioso civile è al secondo piano (responsabile Dott.ssa Maria Lazetera): l'ufficio sentenze e decreti ingiuntivi è competente anche per le pratiche di convalida sfratto, accorpamento organizzativo che riduce i passaggi interni del fascicolo. La data di udienza segue il ruolo del giudice. Prima udienza 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.vasto@giustiziacert.it. Tel: 0873/304703. Cancelleria contenzioso civile: 2° piano, responsabile Dott.ssa Maria Lazetera. Convalide sfratto trattate insieme a sentenze e decreti ingiuntivi."
     }
   },
   {
@@ -9330,6 +10240,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via S. Maria del Trivio 12, 00049 Velletri (RM) — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Velletri le convalide di sfratto sono trattate dalla Seconda Sezione Civile con l'ausilio di due GOT (giudici onorari) cui è assegnato il compito deflattivo specifico per la materia locatizia: questa specializzazione organizzativa accelera la trattazione dei fascicoli. La cancelleria è aperta lun-ven 9:30-13:00. Prima udienza tipicamente 50-60 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. Tel: 06/961500239. Convalide sfratto presso Seconda Sezione Civile, con 2 GOT dedicati alla deflazione del ruolo locazioni. Apertura sportello: lun-ven 9:30-13:00."
     }
   },
   {
@@ -9402,7 +10319,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Sestiere Santa Croce 430 (Piazzale Roma), Venezia — Cittadella della Giustizia",
+      "sezione": "I Sezione Civile — Locazioni urbane, comodato, possesso, successioni",
+      "depositoPCT": true,
+      "udienze": "Prima udienza generalmente entro 30–45 giorni dalla notifica. Convalida non contestata: 2–4 mesi.",
+      "note": "Venezia dispone di portale on-line dedicato per la prenotazione delle udienze di convalida sfratto. Sportello: lun–ven 9:00–12:30."
+    }
   },
   {
     "nome": "Verbania",
@@ -9473,6 +10397,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Rosselli 1, 28922 Verbania — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Verbania le udienze straordinarie di convalida di sfratto e finita locazione sono fissate solo 4 volte l'anno — l'ultimo mercoledì di febbraio, marzo, aprile e maggio — con chiamata a 15 minuti l'una dall'altra: il calendario ristretto richiede di programmare la notifica della citazione con largo anticipo per intercettare la data utile. Prenotazione obbligatoria via portale del tribunale.",
+      "note": "Deposito PCT obbligatorio. Calendario convalide sfratto: solo 4 udienze/anno (ultimo mercoledì di febbraio, marzo, aprile, maggio), chiamate ogni 15 minuti. Prenotazione obbligatoria: tribunale.verbania.giustizia.it/PrenCancelleria.aspx."
     }
   },
   {
@@ -9544,6 +10475,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Rimembranza 1, 13100 Vercelli — Palazzo di Giustizia",
+      "sezione": "Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Vercelli le locazioni e gli sfratti sono trattati dalla Cancelleria Lavoro, Previdenza, Locazioni e Sfratti al piano terra — distinta dalla Cancelleria Civile contenziosa: è una scelta organizzativa che accorpa sfratti e ruolo lavoro nello stesso ufficio. La data di udienza va prenotata preventivamente con la cancelleria. Prima udienza tipica: 50-65 giorni.",
+      "note": "Deposito PCT obbligatorio. Email cancelleria lavoro/locazioni/sfratti: cancelleria.lavoro.tribunale.vercelli@giustizia.it. Tel: 0161/282244. Materia sfratti gestita dallo stesso ufficio del ruolo lavoro, non dalla cancelleria civile contenziosa."
     }
   },
   {
@@ -9616,7 +10554,14 @@
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
     },
-    "blogFocus": "misto"
+    "blogFocus": "misto",
+    "tribunaleInfo": {
+      "indirizzo": "Corte Giorgio Zanconati 1, 37122 Verona — Cancelleria III Sezione Civile, ingresso 6, piano terra",
+      "sezione": "III Sezione Civile — Convalida sfratto e decreti ingiuntivi",
+      "depositoPCT": true,
+      "udienze": "Stima indicativa: prima udienza 30–45 giorni dalla notifica. Convalida non contestata: 2–4 mesi.",
+      "note": "Iscrizione a ruolo obbligatoriamente telematica via PCT. Tel: 045.8084011."
+    }
   },
   {
     "nome": "Vicenza",
@@ -9687,6 +10632,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Viale Mazzini 187, 36100 Vicenza — Palazzo di Giustizia, Cancelleria Civile",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "La Cancelleria Contenzioso Civile del Tribunale di Vicenza gestisce le convalide di sfratto con accesso al pubblico lun-ven 08:45-11:45 (fino 12:45 solo atti scadenti). Personale disponibile telefonicamente 12:00-13:00. Prenotazione udienze sfratto disponibile online tramite portale del tribunale. Prima udienza: 45–60 giorni.",
+      "note": "Deposito telematico PCT obbligatorio. Email: cancelleriacontenziosocivile.tribunale.vicenza@giustizia.it. Tel: 0444/398422 — 0444/398486 (telefonico 12:00-13:00). Prenotazione udienze sfratto: portale del tribunale. Apertura lun-ven 08:45-11:45."
     }
   },
   {
@@ -9758,6 +10710,13 @@
       "mentionCostsInHomepage": false,
       "primaryPromise": "puntiamo a ottenere la convalida di sfratto in circa 60 giorni",
       "avoidAbsoluteGuarantees": true
+    },
+    "tribunaleInfo": {
+      "indirizzo": "Via Egidio Galbani 2, 01100 Viterbo — Palazzo di Giustizia",
+      "sezione": "I Sezione Civile — Locazioni e Condominio",
+      "depositoPCT": true,
+      "udienze": "Al Tribunale di Viterbo l'accesso allo sportello civile è esclusivamente su appuntamento, dal lunedì al venerdì 9:00-12:00. I cancellieri di riferimento per la convalida di sfratto sono Giuliano Giuliani e David Zampetti. La data di udienza segue il ruolo del giudice designato. Prima udienza tipicamente 55-65 giorni dalla notifica.",
+      "note": "Deposito PCT obbligatorio. PEC contenzioso civile: contenziosocivile.tribunale.viterbo@giustiziacert.it. Tel: 0761/351813. Accesso sportello solo su appuntamento (lun-ven 9:00-12:00). Cancellieri di riferimento: Giuliano Giuliani — David Zampetti."
     }
   }
 ]

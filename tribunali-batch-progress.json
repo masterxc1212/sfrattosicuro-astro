@@ -1,0 +1,51 @@
+{
+  "progetto": "sfrattosicuro.it — Scheda Tribunale per le sedi",
+  "obiettivo": "Popolare tribunaleInfo con dati reali verificati per tutte le 137 città di sedi.json, al fine di eliminare il contenuto template (doorway pages) e rendere le pagine /sedi/ indicizzabili da Google.",
+  "stato": {
+    "totale_sedi": 137,
+    "completate_dati_reali": 137,
+    "da_completare": 0,
+    "progetto_chiuso": true
+  },
+  "workflow": {
+    "step1_ricerca": "Lanciare un agente general-purpose con il prompt di ricerca (vedi promptTemplate) per ~25 città alla volta. L'agente cerca su giustizia.it, siti tribunali, ordini avvocati locali.",
+    "step2_applica": "Scrivere uno script Node.js scripts/apply-batchN.mjs con i dati restituiti dall'agente e applicarlo via mcp__workspace__bash.",
+    "step3_verifica": "Controllare che duplicati udienze = 0 e duplicati note = 0 dopo ogni batch.",
+    "dati_chiave": ["giornoUdienze", "emailCancelleria", "telCancelleria", "notaSpecifica", "fonteVerificata"]
+  },
+  "promptTemplate": "Devi raccogliere dati verificati per N tribunali italiani per sfrattosicuro.it. Per ogni città cerca su: (1) giustizia.it, (2) tribunale-CITTA.giustizia.it, (3) sito Ordine Avvocati locale, (4) Google 'tribunale [citta] udienza sfratto giorno'. Dati da trovare: giornoUdienze, emailCancelleria, telCancelleria, notaSpecifica, fonteVerificata. Scrivi null per dati incerti. Restituisci JSON con chiave = slug citta.",
+  "batch_completati": [
+    {
+      "id": 0,
+      "note": "Dati ricercati manualmente con agente dedicato su giustizia.it e siti tribunali",
+      "citta": ["roma","milano","napoli","torino","bologna","firenze","palermo","bari","genova","catania","venezia","verona","padova","trieste","brescia","modena","perugia","cagliari","messina","salerno"]
+    },
+    {
+      "id": 1,
+      "note": "Bergamo portale dedicato martedi ore 9; Pescara prenotazione obbligatoria dal 2021; Pisa regola lunedi con spostamento automatico; Macerata mercoledi giudice nominato",
+      "citta": ["ancona","arezzo","bergamo","bolzano","campobasso","como","cosenza","cremona","ferrara","foggia","frosinone","laquila","latina","lecce","livorno","macerata","matera","novara","parma","pescara","piacenza","pisa","potenza","ravenna","reggio-calabria"]
+    },
+    {
+      "id": 2,
+      "note": "Treviso giovedi ore 10 slot 15min; Udine portale sfratti.udienzetribunaleudine.it lun+mar; Varese giovedi 9:30 Protocollo OA; Reggio Emilia PRENOTALEX giovedi; Siena calendario semestrale pubblico; Monza email cancelleria sfratti dedicata",
+      "citta": ["alessandria","brindisi","busto-arsizio","catanzaro","cuneo","lucca","monza","pavia","pesaro","prato","ragusa","reggio-emilia","rimini","sassari","siena","siracusa","taranto","terni","teramo","trapani","trento","treviso","udine","varese","vicenza"]
+    },
+    {
+      "id": 3,
+      "note": "Forli martedi giorno fisso convalide; Lecco venerdi sfratti + giovedi prime locazioni con prenotazione Fallco; Mantova prenotazione obbligatoria max 20 fascicoli/udienza fascia 10:30-12:30; Pordenone 15 slot dalle 9:30 con piattaforma sitiwebgiustizia; Tivoli prenotazione Fallco; Sondrio email con oggetto formattato; Lodi sportello unico esecuzioni mobiliari + sfratti; Vercelli sfratti accorpati al ruolo lavoro; Trani PEC esecuzioni distinta; Urbino cancelleria unica civile+lavoro 10-12; Civitavecchia calendari sospesi; Pistoia procedimenti speciali Busillo; Massa numeri tel separati; Aosta cancelleria 9:30-13:30 Travagliato; Spoleto fasce orarie distinte; Viterbo solo su appuntamento",
+      "citta": ["aosta","avellino","chieti","civitavecchia","forli","gorizia","grosseto","imperia","la-spezia","lecco","lodi","mantova","massa","pistoia","pordenone","rieti","rovigo","savona","sondrio","spoleto","tivoli","trani","urbino","vercelli","viterbo"]
+    },
+    {
+      "id": 4,
+      "note": "Ivrea calendario fisso convalide (tutti i lunedi + 2o mercoledi del mese, prenotazione Fallcoweb); Avezzano portale Reservio prenotazione obbligatoria; Isernia udienze civili NON in tribunale ma presso Palazzo Provincia Via Berta; Castrovillari apertura pomeridiana mar/gio 14:30-17:30; Locri apertura pomeridiana mar/gio 15:00-16:00; Agrigento sportello civile aperto anche sabato 8:30-13:30; Asti calendario ex art. 69 bis disp. att. su sito OA; Belluno solo 2 ore al giorno (9-11); finestre orarie strette tipo Urbino (Oristano, Biella); Benevento Prima Sezione Civile dedicata; Cassino Dott.ssa Ovallesco convalide; Nola PEC distinte Sez1/Sez2",
+      "citta": ["agrigento","ascoli-piceno","asti","avezzano","belluno","benevento","biella","cassino","castrovillari","crotone","enna","fermo","gela","isernia","ivrea","lagonegro","lanciano","lanusei","larino","locri","marsala","nocera-inferiore","nola","nuoro","oristano"]
+    },
+    {
+      "id": 5,
+      "note": "Verbania calendario UNICO (4 udienze/anno = ultimo mercoledi feb/mar/apr/mag, chiamate ogni 15 min); Velletri Seconda Sezione Civile con 2 GOT dedicati; Tempio Pausania apertura pomeridiana martedi + referente nominativo email per copie (Anna Maria Fontana); Napoli Nord e SMCV solo previo appuntamento via portale; Palmi chiusura 6 dicembre festa patronale; Paola fax dismessi (solo PCT/PEC); Patti apertura sabato per atti urgenti; Termini Imerese sportello sabato 8:45-12:45; Vallo della Lucania sabato 9-12; Caltagirone responsabile Dott.ssa Montalto; Sciacca cancelleria unica per sfratti+ingiuntivi+agraria",
+      "citta": ["barcellona-pozzo-di-gotto","caltagirone","caltanissetta","lamezia-terme","napoli-nord","palmi","paola","patti","santa-maria-capua-vetere","sciacca","sulmona","tempio-pausania","termini-imerese","vallo-della-lucania","vasto","velletri","verbania"]
+    }
+  ],
+  "batch_da_fare": [],
+  "ultimo_aggiornamento": "2026-04-30"
+}
