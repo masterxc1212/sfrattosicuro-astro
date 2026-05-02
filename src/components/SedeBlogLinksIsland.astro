@@ -6,7 +6,7 @@
  * Scopo SEO: aggiungere contenuto testuale unico e internal linking per
  * differenziare le pagine sedi da thin content.
  *
- * Usata solo nelle pagine sede â€” NON nella home nazionale.
+ * Usata solo nelle pagine sede - NON nella home nazionale.
  */
 import { blogPosts, type BlogCategory } from '../data/blog-posts';
 import sedi from '../data/sedi.json';
@@ -48,7 +48,7 @@ if (focus === 'misto') {
       <p class="editorial-eyebrow">Approfondimenti utili</p>
       <h2 id="sede-blog-links-title">Guide pratiche per i proprietari a {nomeCitta}</h2>
       <p class="intro-text">
-        Risorse operative su sfratti, locazioni e diritti del proprietario â€” scritte per chi deve agire, non solo informarsi.
+        Risorse operative su sfratti, locazioni e diritti del proprietario - scritte per chi deve agire, non solo informarsi.
       </p>
       <ul class="links-list" role="list">
         {selectedPosts.map(post => (
@@ -61,7 +61,7 @@ if (focus === 'misto') {
         ))}
       </ul>
       <a href="/blog/" class="all-link" aria-label="Vedi tutti gli articoli del blog">
-        Tutti gli approfondimenti â†’
+        Tutti gli approfondimenti &rarr;
       </a>
     </div>
   </section>

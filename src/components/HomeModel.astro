@@ -84,7 +84,7 @@ const isNational = sedeSlug === 'nazionale';
   {introText && (
     <section class="section section--compact intro container">
       <p>{introText}</p>
-      {!isNational && <a class="back-link" href="/sedi/">← Torna all'elenco sedi</a>}
+      {!isNational && <a class="back-link" href="/sedi/">&larr; Torna all'elenco sedi</a>}
     </section>
   )}
 
@@ -106,7 +106,9 @@ const isNational = sedeSlug === 'nazionale';
   <ProvvedimentiIsland />
   <ReviewsIsland />
 
-  {showBlogLatest && <LatestBlogPostsIsland />}
+  {/* Una sola sezione blog per pagina: nazionale = LatestBlogPosts (generico),
+      sede = SedeBlogLinks (specifico per la citta). Mai entrambe. */}
+  {isNational && showBlogLatest && <LatestBlogPostsIsland />}
   {!isNational && <SedeBlogLinksIsland sedeSlug={sedeSlug} />}
   {showVideoReviews && <VideoReviewsIsland />}
 
@@ -116,4 +118,3 @@ const isNational = sedeSlug === 'nazionale';
 
 <Footer sedeSlug={sedeSlug} />
 <SmoothScrollIsland />
-

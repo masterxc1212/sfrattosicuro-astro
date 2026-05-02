@@ -1,5 +1,18 @@
 export type LocalFaqItem = { q: string; a: string };
 
+export type TribunaleInfo = {
+  /** Indirizzo della sezione civile competente per le convalide di sfratto */
+  indirizzo: string;
+  /** Nome della sezione (es. "XIII Sezione Civile - Locazioni") */
+  sezione: string;
+  /** Deposito telematico PCT obbligatorio */
+  depositoPCT: boolean;
+  /** Tempi indicativi per la prima udienza / convalida */
+  udienze?: string;
+  /** Note operative locali */
+  note?: string;
+};
+
 export type SedeItem = {
   nome: string;
   slug: string;
@@ -37,6 +50,8 @@ export type SedeItem = {
     addressRegion?: string;
     addressCountry?: string;
   } | null;
+  /** Dati verificati del tribunale */
+  tribunaleInfo?: TribunaleInfo;
 };
 
 export function getNationalHomeSeo() {

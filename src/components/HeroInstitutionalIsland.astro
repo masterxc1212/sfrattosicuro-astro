@@ -170,7 +170,7 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
     ) : (
       <picture class="hero-media">
         <source srcset={mediaImage} type="image/webp" />
-        <img src={mediaImage} alt={mediaAlt} loading="eager" fetchpriority="high" decoding="async" />
+        <img src={mediaImage} alt={mediaAlt} loading="eager" fetchpriority="high" decoding="async" width="2064" height="2048" />
       </picture>
     )}
   </div>
@@ -236,4 +236,3 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
     })();
   </script>
 )}
-

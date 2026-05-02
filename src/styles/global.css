@@ -1,6 +1,6 @@
-/* v6 - 2026-05-02 â€” Editorial Magazine restyle (no copy changes, no imagery) */
+/* v6 - 2026-05-02 �?? Editorial Magazine restyle (no copy changes, no imagery) */
 /* ============================================
-   global.css â€” sfrattosicuro.it
+   global.css �?? sfrattosicuro.it
    Single source of truth for all styles.
    Layer 1: Design tokens (legal premium / editorial)
    Layer 2: Global resets + element defaults
@@ -10,7 +10,7 @@
    Layer 5: Editorial primitives (drop-cap, pull-quote, asterism, dark sections, reading-progress, TOC)
    ============================================ */
 
-/* === LAYER 1 Â· DESIGN TOKENS ============================== */
+/* === LAYER 1 · DESIGN TOKENS ============================== */
 :root {
         /* ---- Brand palette (legacy var names retained) ---- */
         --blue-navy: #1b2951;            /* Antracite blu istituzionale, titoli, footer */
@@ -31,11 +31,11 @@
         --surface-deep: #131c3a;         /* Footer / sezioni scure */
         --surface-night: #0e1530;        /* Section editorial scura full-bleed */
         --surface-night-tint: #1a2342;   /* Card su section night */
-        --gold-warm: #c89c5a;            /* Bronzo piÃ¹ caldo per dark sections */
+        --gold-warm: #c89c5a;            /* Bronzo più caldo per dark sections */
         --gold-soft: rgba(176, 133, 55, 0.18); /* Hairline decorativa */
 
         /* ---- Borders ---- */
-        --border-light: #ececea;         /* Hairline standard (era #e5e7eb) */
+        --border-light: #ececea;         /* Hairline standard (era var(--border-light)) */
         --border-medium: #d8d6d1;        /* Hairline emphasized */
         --border-strong: #1b2951;        /* Bordo brand */
         --border-on-dark: rgba(255,255,255,0.12);
@@ -46,7 +46,7 @@
         --text-muted: #6b7280;
         --text-dim: #94a3b8;
         --text-on-dark: #f5f4f0;
-        --link-blue: #1b376b;            /* PiÃ¹ sobrio (era #1e3a8a) */
+        --link-blue: #1b376b;            /* Più sobrio (era #1e3a8a) */
         --link-blue-hover: #0e1f47;
 
         /* ---- Spacing scale (4 / 8 base) ---- */
@@ -63,9 +63,11 @@
         --space-xxl: 64px; /* legacy alias */
 
         /* ---- Section rhythm (responsive via clamp) ---- */
-        --section-py: clamp(48px, 7vw, 96px);
-        --section-py-compact: clamp(36px, 5vw, 64px);
-        --section-py-tight: clamp(24px, 3.5vw, 40px);
+        /* Ridotti rispetto alla v6 per uniformare gli spazi tra sezioni:
+           prima 48-96 / 36-64 / 24-40 ? ora 36-72 / 28-52 / 20-32 */
+        --section-py: clamp(36px, 5.4vw, 72px);
+        --section-py-compact: clamp(28px, 4vw, 52px);
+        --section-py-tight: clamp(20px, 2.6vw, 32px);
 
         /* ---- Container ---- */
         --container-max: 1200px;
@@ -94,9 +96,9 @@
                       'Baskerville', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
         --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
 
-        /* Type scale (responsive â€” clamp da mobile a desktop) */
+        /* Type scale (responsive �?? clamp da mobile a desktop) */
         --text-display-xxl: clamp(2.6rem, 8vw, 6rem);   /* Pull-quote / hero editorial massimo */
-        --text-display-xl:  clamp(2.4rem, 6.4vw, 4.6rem);/* Hero cittÃ  / sedi monolithic */
+        --text-display-xl:  clamp(2.4rem, 6.4vw, 4.6rem);/* Hero città / sedi monolithic */
         --text-display: clamp(2.2rem, 5.2vw, 3.8rem);   /* H1 hero */
         --text-h1:      clamp(1.95rem, 3.8vw, 2.7rem);  /* H1 standard */
         --text-h2:      clamp(1.55rem, 2.8vw, 2.15rem); /* H2 sezione */
@@ -133,7 +135,7 @@
         --header-h-mobile: 70px;
 }
 
-/* === LAYER 2 Â· GLOBAL RESET / ELEMENT DEFAULTS ============ */
+/* === LAYER 2 · GLOBAL RESET / ELEMENT DEFAULTS ============ */
 * {
         box-sizing: border-box;
 }
@@ -186,7 +188,7 @@ img {
         display: block;
 }
 
-/* Global headings â€” serif premium per autorevolezza legale */
+/* Global headings �?? serif premium per autorevolezza legale */
 h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-serif);
         color: var(--blue-navy);
@@ -229,7 +231,83 @@ a:hover { color: var(--link-blue-hover); }
         .container { padding: 0 16px; }
 }
 
-/* === LAYER 2.5 Â· GLOBAL UTILITY PATTERNS ================== */
+/* === LAYER 2.5 � GLOBAL UTILITY PATTERNS ================== */
+
+/* Anti-center bias (design-taste-frontend rule): titoli sezione sempre
+   allineati a sinistra per coerenza editorial. Le eccezioni esplicite
+   (timeline step, btn full-width, asterism, hr) restano centrate. */
+.section h2:not(.text-center),
+.section h3:not(.text-center),
+.section .head h2,
+.section-head h2,
+.section-head h3 {
+  text-align: left;
+}
+
+/* Container content max-width per leggibilita testi sezione */
+.section .head,
+.section-head {
+  max-width: var(--container-narrow);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Icon containers FIX DEFINITIVO - SVG senza dimensioni si stretchano dentro
+   layout flex/grid. Forziamo dimensione fissa quadrata su tutte le .icon e
+   imponiamo width/height 100% sulle SVG figlie con !important per battere
+   le legacy rules. */
+.icon,
+.card .icon,
+.box .icon,
+.step-card .icon,
+.feature .icon,
+.point .icon,
+h3 > .icon,
+h3 .icon,
+.metric-card .icon {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  vertical-align: middle !important;
+  overflow: hidden !important;
+}
+.icon > svg,
+.card .icon > svg,
+.box .icon > svg,
+.step-card .icon > svg,
+.feature .icon > svg,
+.point .icon > svg,
+h3 > .icon > svg,
+h3 .icon > svg,
+.metric-card .icon > svg {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: block !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* Icon FAIL-SAFE universale: ogni SVG con viewBox standard 24x24 dentro
+   <main> e' limitata in dimensione per evitare stretching anche se nessuna
+   regola .icon la copre. Esclude logo brand e header (che hanno bisogno di
+   dimensioni custom). */
+main svg[viewBox="0 0 24 24"]:not(.brand-logo):not(.allow-stretch) {
+  max-width: 56px !important;
+  max-height: 56px !important;
+  width: auto;
+  height: auto;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  object-fit: contain;
+}
+
 
 /* Eyebrow / kicker -- pattern unico (era duplicato in 8+ componenti) */
 .kicker,
@@ -261,7 +339,7 @@ a:hover { color: var(--link-blue-hover); }
                     border-color var(--dur-base) var(--ease-out-cubic);
 }
 
-/* Buttons â€” global polish (componenti specifici possono override) */
+/* Buttons �?? global polish (componenti specifici possono override) */
 .btn,
 .btn-primary,
 .btn-secondary {
@@ -290,7 +368,7 @@ a:hover { color: var(--link-blue-hover); }
 .btn-primary:active,
 .btn-secondary:active { transform: translateY(1px); }
 
-/* CTA primaria â€” blu navy istituzionale (legal premium) */
+/* CTA primaria �?? blu navy istituzionale (legal premium) */
 .btn-primary {
         background: var(--blue-navy);
         color: #fff;
@@ -305,7 +383,7 @@ a:hover { color: var(--link-blue-hover); }
         box-shadow: var(--shadow-elevated);
 }
 
-/* CTA secondaria â€” outline */
+/* CTA secondaria �?? outline */
 .btn-secondary {
         background: #fff;
         color: var(--blue-navy);
@@ -360,10 +438,11 @@ section[id],
         }
 }
 
-/* Skip link accessibilitÃ  â€” visibile solo al focus */
+/* Skip link accessibilità �?? visibile solo al focus */
 .ss-skip-link {
         position: absolute;
-        top: -100px;
+        top: 12px;
+        transform: translateY(-200%);
         left: 12px;
         z-index: 9999;
         background: var(--blue-navy);
@@ -373,11 +452,11 @@ section[id],
         font-weight: 600;
         text-decoration: none;
         font-size: 0.92rem;
-        transition: top var(--dur-base) var(--ease-out-cubic);
+        transition: transform var(--dur-base) var(--ease-out-cubic);
 }
 .ss-skip-link:focus,
 .ss-skip-link:focus-visible {
-        top: 12px;
+        transform: translateY(0);
         outline: 2px solid var(--gold-refined);
         outline-offset: 2px;
 }
@@ -651,7 +730,7 @@ section[id],
 
   .hero-copy { max-width: 62ch; }
 
-  /* .kicker globale giÃ  definito in Layer 2.5 â€” qui font-size */
+  /* .kicker globale già definito in Layer 2.5 �?? qui font-size */
   .hero-institutional .kicker { font-size: var(--text-eyebrow); margin-bottom: 18px; }
 
   h1 {
@@ -688,7 +767,7 @@ section[id],
   }
 
   .bullets li::before {
-    /* check minimal â€” unicode safe */
+    /* check minimal �?? unicode safe */
     content: '';
     position: absolute;
     left: 0;
@@ -888,7 +967,7 @@ section[id],
       gap: 4px;
     }
 
-    /* Scroll orizzontale su mobile ï¿½ niente a capo */
+    /* Scroll orizzontale su mobile � niente a capo */
     .jump-nav ul {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -916,7 +995,7 @@ section[id],
   h2 { margin: 0 0 22px; color: var(--blue-navy); }
   p { margin: 0 0 14px; line-height: 1.6; color: var(--text-body); }
   .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 8px; }
-  .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid #e5e7eb; }
+  .card { background: #fff; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
   .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
   .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   h3 { margin: 0 0 10px; color: var(--blue-navy); }
@@ -970,7 +1049,7 @@ section[id],
   h2 { margin: 0 0 28px; color: var(--blue-navy); }
   p { margin: 0 0 16px; line-height: 1.6; color: var(--text-body); }
   .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; background: #fff; }
+  .card { border: 1px solid var(--border-light); border-radius: 12px; padding: 24px; background: #fff; }
   h3 { margin: 0 0 12px; display: flex; align-items: center; gap: 12px; color: var(--blue-navy); }
   .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; }
   .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -989,7 +1068,7 @@ section[id],
   h2 { margin: 0 0 28px; color: var(--blue-navy); }
   p { margin: 0 0 16px; line-height: 1.6; color: var(--text-body); }
   .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  .step-card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,.04); border: 1px solid var(--border-light); }
+  .step-card { background: #fff; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
   .step-number { margin: 0 0 10px; font-size: 32px; font-weight: 700; color: var(--blue-navy); line-height: 1; }
   .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
   .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -1011,7 +1090,7 @@ section[id],
   h2 { margin: 0 0 28px; color: var(--blue-navy); }
   p { margin: 0 0 16px; line-height: 1.6; color: var(--text-body); }
   .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  .box { background: #f9fafb; border-radius: 12px; padding: 24px; border: 1px solid #e5e7eb; }
+  .box { background: #f9fafb; border-radius: 12px; padding: 24px; border: 1px solid var(--border-light); }
   .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
   .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   h3 { margin: 0 0 10px; color: var(--blue-navy); }
@@ -1092,7 +1171,7 @@ section[id],
     gap: 8px;
     padding-top: 18px;
     font-size: .95rem;
-    color: #64748b;
+    color: var(--text-muted);
   }
 
   .breadcrumb a { color: var(--link-blue); text-decoration: none; }
@@ -1163,13 +1242,13 @@ section[id],
 h2 { margin: 0 0 22px; color: var(--blue-navy); }
 
   .video-grid { display: grid; gap: 24px; grid-template-columns: repeat(2, 1fr); }
-  .video-skeleton { border-radius: 14px; background: #edf2f7; aspect-ratio: 16/9; }
-  .video-card { border-radius: 14px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+  .video-skeleton { border-radius: var(--radius-lg); background: #edf2f7; aspect-ratio: 16/9; }
+  .video-card { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-elevated); }
   .video-player { position: relative; border: none; width: 100%; cursor: pointer; background: #000; padding: 0; display: block; }
   .video-player img,
   .video-iframe { width: 100%; height: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
-  .video-player span { position: absolute; inset: auto auto 10px 10px; background: rgba(0,0,0,.62); color:#fff; border-radius: 99px; padding: .2rem .5rem; }
-  .muted { margin-top: 16px; color:#64748b; }
+  .video-player span { position: absolute; inset: auto auto 10px 10px; background: rgba(0,0,0,.62); color:#fff; border-radius: var(--radius-pill); padding: .2rem .5rem; }
+  .muted { margin-top: 16px; color:var(--text-muted); }
 
   @media (max-width: 767px){ .video-grid{grid-template-columns:1fr;} }
 
@@ -1285,7 +1364,7 @@ h2 { margin: 0 0 22px; color: var(--blue-navy); }
   }
 
   .card::before {
-    /* hairline editorial top â€” sostituisce il gradient SaaS */
+    /* hairline editorial top �?? sostituisce il gradient SaaS */
     content: '';
     position: absolute;
     top: 0;
@@ -1498,7 +1577,7 @@ h2 { margin: 0 0 10px; color: var(--blue-navy); }
 .section { padding: var(--section-py) 0; }
   h2 { margin: 0 0 22px; color: var(--blue-navy); }
   p { margin: 0 0 14px; line-height: 1.6; color: var(--text-body); }
-  .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
+  .card { background: #fff; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
   .card p:last-child { margin-bottom: 0; }
   @media (max-width: 1024px) { .section { padding: 44px 0; } }
   @media (max-width: 767px) { .section { padding: 32px 0; } }
@@ -1562,7 +1641,7 @@ h2 { margin: 0 0 10px; color: var(--blue-navy); }
   .subtitle { max-width: 80ch; }
 
   .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
+  .card { background: #fff; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-light); }
   .icon { width: 32px; height: 32px; display: inline-grid; place-items: center; margin-bottom: 12px; }
   .icon svg { width: 100%; height: 100%; stroke: var(--blue-navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   h3 { margin: 0 0 10px; color: var(--blue-navy); }
@@ -1600,16 +1679,16 @@ h2 { margin: 0 0 14px; color: var(--blue-navy); }
 /* === CHI SIAMO === */
 /* --- ChiSiamoHeroIsland.astro --- */
 /*
- * Nota: la classe .hero-institutional Ã¨ condivisa con HeroInstitutionalIsland.
- * Qui aggiungiamo solo le rifiniture h1 (font-size piÃ¹ contenuto, dato che
+ * Nota: la classe .hero-institutional è condivisa con HeroInstitutionalIsland.
+ * Qui aggiungiamo solo le rifiniture h1 (font-size più contenuto, dato che
  * la chi-siamo non ha "wow factor" di home). Per il resto eredita dallo
- * styling principale giÃ  aggiornato sopra.
+ * styling principale già aggiornato sopra.
  */
 
   .hero-institutional .hero-copy { max-width: 64ch; }
 
   .hero-institutional h1 {
-    /* override delicato: la pagina chi-siamo ha tagline piÃ¹ semplice */
+    /* override delicato: la pagina chi-siamo ha tagline più semplice */
     font-size: clamp(1.85rem, 3.4vw, 2.7rem);
   }
 
@@ -1646,7 +1725,7 @@ h2 { margin: 0 0 14px; color: var(--blue-navy); }
     overflow: hidden;
     border: 1px solid var(--border-light);
     background: #fff;
-    box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+    box-shadow: var(--shadow-elevated);
     aspect-ratio: 4 / 5;
   }
 
@@ -1692,7 +1771,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     width: min(100%, 520px);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.12);
+    box-shadow: var(--shadow-deep);
     aspect-ratio: 4 / 3;
   }
 
@@ -1720,9 +1799,10 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
 .section { padding: var(--section-py) 0; background: var(--surface-soft); }
   h2 { margin: 0 0 22px; color: var(--blue-navy); }
   p { margin: 0 0 14px; line-height: 1.6; color: var(--text-body); }
-  .head { text-align: center; }
+  /* Anti-center bias (design-taste-frontend): titoli sezione sempre allineati a sinistra */
+  .head { text-align: left; max-width: 60ch; margin: 0 0 clamp(24px, 3vw, 36px); }
 
-  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 36px; max-width: 920px; margin-left: auto; margin-right: auto; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 36px; max-width: 920px; margin-left: 0; margin-right: 0; }
   .metric-card {
     background: #fff;
     border-radius: var(--radius-md);
@@ -1735,7 +1815,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   .m-text { margin: 0; color: var(--text-body); line-height: 1.6; font-size: 0.96rem; }
 
   #risultati-concreti .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-  #risultati-concreti .doc { position: relative; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 3 / 4; background: #e5e7eb; box-shadow: var(--shadow-soft); transition: transform var(--dur-base) var(--ease-out-cubic), box-shadow var(--dur-base) var(--ease-out-cubic); }
+  #risultati-concreti .doc { position: relative; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 3 / 4; background: var(--border-light); box-shadow: var(--shadow-soft); transition: transform var(--dur-base) var(--ease-out-cubic), box-shadow var(--dur-base) var(--ease-out-cubic); }
   #risultati-concreti .doc:hover { transform: translateY(-3px); box-shadow: var(--shadow-elevated); }
   #risultati-concreti .doc img { width: 100%; height: 100%; object-fit: cover; display: block; }
   #risultati-concreti .overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.05) 50%, transparent 100%); }
@@ -1784,7 +1864,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   .faq-a { display: none; padding: 0 0 22px; border-top: 0; color: var(--text-body); line-height: var(--lh-relaxed); }
   .faq-a.open { display: block; }
 
-/* --- FaqSection.astro â€” accordion editorial pulito (no box, hairline) --- */
+/* --- FaqSection.astro �?? accordion editorial pulito (no box, hairline) --- */
 .section { padding: var(--section-py) 0; }
   .section--compact { padding: var(--section-py-compact) 0; }
   h2 { margin: 0 0 32px; color: var(--blue-navy); }
@@ -1836,7 +1916,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     line-height: 1;
     transition: transform var(--dur-base) var(--ease-out-cubic);
   }
-  details[open] summary::after { content: 'â€“'; }
+  details[open] summary::after { content: '\2013'; }
   summary:hover { color: var(--link-blue); }
   details p { margin: 16px 0 0; color: var(--text-body); line-height: var(--lh-loose); max-width: 70ch; }
   @media (max-width: 1024px) { .section { padding: var(--section-py-compact) 0; } .section--compact { padding: var(--section-py-tight) 0; } }
@@ -2384,8 +2464,8 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
 .article-body {
         font-family: var(--font-sans);
         color: var(--text-body);
-        font-size: 1.08rem;
-        line-height: 1.78;
+        font-size: 1.12rem;
+        line-height: 1.72;
         max-width: 64ch;
 }
 
@@ -2403,31 +2483,37 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
 }
 
 .article-body h2 {
-        margin: clamp(48px, 7vw, 72px) 0 16px;
+        margin: clamp(56px, 8vw, 96px) 0 20px;
         font-family: var(--font-serif);
-        font-size: clamp(1.7rem, 3vw, 2.2rem);
-        line-height: 1.1;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        line-height: 1.05;
         color: var(--blue-navy);
-        letter-spacing: -0.018em;
+        letter-spacing: -0.022em;
         font-weight: 600;
-        max-width: 24ch;
+        max-width: 22ch;
         scroll-margin-top: calc(var(--header-h) + 20px);
 }
 .article-body h2::before {
         content: '';
         display: block;
-        width: 48px;
+        width: 56px;
         height: 1px;
         background: var(--gold-refined);
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+}
+.article-body h2:first-child,
+.article-body > div:first-of-type > h2:first-child {
+        margin-top: 0;
 }
 .article-body h3 {
-        margin: clamp(32px, 4vw, 48px) 0 12px;
+        margin: clamp(36px, 5vw, 56px) 0 14px;
         font-family: var(--font-serif);
-        font-size: clamp(1.25rem, 1.9vw, 1.45rem);
+        font-size: clamp(1.4rem, 2.2vw, 1.7rem);
         font-weight: 600;
         color: var(--blue-navy);
-        line-height: 1.25;
+        line-height: 1.2;
+        letter-spacing: -0.012em;
+        max-width: 30ch;
 }
 .article-body p { margin: 0 0 22px; max-width: 60ch; }
 .article-body p.lead-para {
@@ -2496,7 +2582,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
         padding: 0 0.05em;
 }
 
-/* BLOCKQUOTE â†’ pull-quote oversized senza side-stripe */
+/* BLOCKQUOTE �?? pull-quote oversized senza side-stripe */
 .article-body blockquote {
         margin: clamp(40px, 6vw, 72px) 0;
         padding: clamp(28px, 4vw, 48px) 0;
@@ -2554,7 +2640,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
         max-width: none;
 }
 .article-body hr::after {
-        content: 'â—† â—† â—†';
+        content: '\25C6\A0\25C6\A0\25C6';
         font-family: var(--font-serif);
         font-size: 1rem;
         letter-spacing: 0.6em;
@@ -2665,7 +2751,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     letter-spacing: 0.06em;
     font-family: var(--font-sans);
   }
-  .date { color: #64748b; font-size: .92rem; }
+  .date { color: var(--text-muted); font-size: .92rem; }
   h3 { margin: 0; font-size: 1.18rem; line-height: 1.35; }
   h3 a, .read-more {
     color: var(--blue-navy);
@@ -2810,7 +2896,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
 /* === PAGE - SEDI INDEX (editorial monolithic) === */
 /* --- index.astro --- */
 
-/* HERO â€” editorial con numeri oversize */
+/* HERO �?? editorial con numeri oversize */
 .sedi-hero {
     background: var(--surface-soft);
     position: relative;
@@ -2878,7 +2964,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     padding-top: 12px;
   }
   /* Trasformiamo il primo numero presente nel testo della stat in display oversize via parsing CSS:
-     dato che il copy "{N} sedi operative" Ã¨ invariato, lavoriamo lato JS lieve aggiungendo
+     dato che il copy "{N} sedi operative" è invariato, lavoriamo lato JS lieve aggiungendo
      elementi figlio in render. In assenza di parsing, applichiamo stile testo: */
   .sedi-hero .stats span .stat-num {
     font-family: var(--font-serif);
@@ -2899,7 +2985,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     line-height: 1.3;
   }
 
-  /* TOP CITIES â€” monoliti tipografici */
+  /* TOP CITIES �?? monoliti tipografici */
   .top-cities {
     padding: clamp(48px, 7vw, 96px) 0;
     background: var(--surface-canvas);
@@ -3096,7 +3182,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     margin-bottom: 4px;
   }
 
-  /* TOOLBAR sticky â€” search prominente */
+  /* TOOLBAR sticky �?? search prominente */
   .sticky-tools {
     position: sticky;
     top: var(--header-h);
@@ -3192,7 +3278,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     border-color: var(--blue-navy);
   }
 
-  /* REGION-INDEX â€” alphabet jump */
+  /* REGION-INDEX �?? alphabet jump */
   .region-index {
     display: flex;
     flex-wrap: wrap;
@@ -3246,7 +3332,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     font-style: italic;
   }
 
-  /* REGION LIST â€” sezioni inline tipografiche, no accordion */
+  /* REGION LIST �?? sezioni inline tipografiche, no accordion */
   .region-list { display: grid; gap: clamp(40px, 6vw, 72px); }
   .region {
     border: 0;
@@ -3343,7 +3429,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     letter-spacing: 0.04em;
   }
   .city-grid a::after {
-    content: 'â†’';
+    content: '\2192';
     font-family: var(--font-sans);
     font-size: 1rem;
     color: var(--gold-refined);
@@ -3370,35 +3456,35 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   .legal-hero { background: var(--surface-soft); border-bottom: 1px solid var(--border-light); padding: clamp(36px, 5vw, 56px) 0 clamp(28px, 4vw, 40px); }
   .kicker { margin: 0 0 8px; color: var(--kicker-gold); text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
   h1 { margin: 0 0 8px; color: var(--blue-navy); }
-  .legal-hero p { margin: 0; color: #475569; }
+  .legal-hero p { margin: 0; color: var(--text-body); }
   .legal-body { display: grid; gap: 14px; padding-top: 20px; padding-bottom: 20px; }
   .card { background: #fff; border: 1px solid #e5eaf3; border-radius: 12px; padding: 18px; box-shadow: var(--shadow-soft); }
   h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.1rem; }
   p, li { color: var(--text-body); line-height: 1.65; }
   a { color: var(--link-blue); }
   ul { margin: 0; padding-left: 20px; }
-  .last-update { font-size: .9rem; color: #64748b; margin-top: 8px; }
+  .last-update { font-size: .9rem; color: var(--text-muted); margin-top: 8px; }
 
 /* --- cookie-policy.astro --- */
 .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
   .legal-hero { background: var(--surface-soft); border-bottom: 1px solid var(--border-light); padding: clamp(36px, 5vw, 56px) 0 clamp(28px, 4vw, 40px); }
   .kicker { margin: 0 0 8px; color: var(--kicker-gold); text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
   h1 { margin: 0 0 8px; color: var(--blue-navy); }
-  .legal-hero p { margin: 0; color: #475569; }
+  .legal-hero p { margin: 0; color: var(--text-body); }
   .legal-body { display: grid; gap: 14px; padding-top: 20px; padding-bottom: 20px; }
   .card { background: #fff; border: 1px solid #e5eaf3; border-radius: 12px; padding: 18px; box-shadow: var(--shadow-soft); }
   h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.1rem; }
   p, li { color: var(--text-body); line-height: 1.65; }
   a { color: var(--link-blue); }
   ul { margin: 0; padding-left: 20px; }
-  .last-update { font-size: .9rem; color: #64748b; margin-top: 8px; }
+  .last-update { font-size: .9rem; color: var(--text-muted); margin-top: 8px; }
 
 /* --- termini.astro --- */
 .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
   .legal-hero { background: var(--surface-soft); border-bottom: 1px solid var(--border-light); padding: clamp(36px, 5vw, 56px) 0 clamp(28px, 4vw, 40px); }
   .kicker { margin: 0 0 8px; color: var(--kicker-gold); text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; font-weight: 700; }
   h1 { margin: 0 0 8px; color: var(--blue-navy); }
-  .legal-hero p { margin: 0; color: #475569; }
+  .legal-hero p { margin: 0; color: var(--text-body); }
   .legal-body { display: grid; gap: 18px; padding-top: 32px; padding-bottom: 48px; }
   .card { background: #fff; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 24px 28px; box-shadow: var(--shadow-soft); }
   h2 { margin-top: 0; color: var(--blue-navy); font-size: 1.15rem; font-family: var(--font-serif); font-weight: 600; }
@@ -3406,7 +3492,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   a { color: var(--link-blue); }
   .last-update { font-size: 0.86rem; color: var(--text-muted); margin-top: 12px; }
 
-/* === LAYER 4 Â· STICKY MOBILE CTA ========================== */
+/* === LAYER 4 · STICKY MOBILE CTA ========================== */
 .sticky-mobile-cta {
   position: fixed;
   left: 12px;
@@ -3560,7 +3646,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   line-height: 1.5;
 }
 
-/* === Sede blog links (approfondimenti utili â€” sede detail) === */
+/* === Sede blog links (approfondimenti utili �?? sede detail) === */
 .sede-blog-links {
   padding: clamp(48px, 6vw, 80px) 0;
   background: var(--surface-warm);
@@ -3625,7 +3711,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   background: rgba(255, 255, 255, 0.55);
 }
 .sede-blog-links .link-item::after {
-  content: 'â†’';
+  content: '\2192';
   position: absolute;
   bottom: clamp(20px, 2.5vw, 28px);
   right: clamp(16px, 2vw, 24px);
@@ -3665,12 +3751,12 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
 }
 .sede-blog-links .all-link:hover { gap: 10px; }
 
-/* === LAYER 5 Â· EDITORIAL PRIMITIVES ======================= */
+/* === LAYER 5 · EDITORIAL PRIMITIVES ======================= */
 /* Direzione: Editorial Magazine, no imagery. Tipografia + colore + ritmo
    sono gli unici strumenti, quindi vanno spinti con disciplina. */
 
 /* ---- Section variants editoriali ------------------------- */
-/* Pause cromatica calda â€” usata per spezzare la monotonia avorio */
+/* Pause cromatica calda �?? usata per spezzare la monotonia avorio */
 .section--accent-warm {
   background: var(--surface-warm);
   position: relative;
@@ -3690,7 +3776,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   background: linear-gradient(90deg, transparent 0%, var(--gold-soft) 50%, transparent 100%);
 }
 
-/* Sezione full-bleed scura editorial â€” il punto di "respiro forte" della pagina */
+/* Sezione full-bleed scura editorial �?? il punto di "respiro forte" della pagina */
 .section--night {
   background: var(--surface-night);
   color: var(--text-on-dark);
@@ -3777,7 +3863,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   flex-shrink: 0;
 }
 
-/* Drop cap serif â€” primo paragrafo di un long-form */
+/* Drop cap serif �?? primo paragrafo di un long-form */
 .has-drop-cap > p:first-of-type::first-letter,
 p.drop-cap::first-letter {
   float: left;
@@ -3790,7 +3876,7 @@ p.drop-cap::first-letter {
   letter-spacing: -0.02em;
 }
 
-/* Pull-quote oversized â€” sostituisce il side-stripe blockquote
+/* Pull-quote oversized �?? sostituisce il side-stripe blockquote
    Pattern: virgolette decorative serif + testo display + author/source riga */
 .pull-quote {
   margin: clamp(40px, 6vw, 72px) 0;
@@ -3801,7 +3887,7 @@ p.drop-cap::first-letter {
   border-bottom: 1px solid var(--border-light);
 }
 .pull-quote::before {
-  content: '\201C';                         /* Â«  glifo curvy serif */
+  content: '\201C';                         /* «  glifo curvy serif */
   position: absolute;
   top: -0.18em;
   left: -0.05em;
@@ -3837,16 +3923,17 @@ p.drop-cap::first-letter {
   letter-spacing: 0.08em;
 }
 
-/* Asterismo decorativo â€” separatore di sezione tipografico
+/* Asterismo decorativo �?? separatore di sezione tipografico
    Funziona su <span>, <div>, <hr>: il reset di border/height neutralizza
    il default del browser per <hr>. */
 .asterism {
   display: block;
-  margin: clamp(36px, 5vw, 56px) auto;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 48px) 0;
   text-align: center;
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  letter-spacing: 0.6em;
+  font-size: 1.1rem;
+  letter-spacing: 0.5em;
   color: var(--gold-refined);
   user-select: none;
   line-height: 1;
@@ -3854,8 +3941,15 @@ p.drop-cap::first-letter {
   height: auto;
   background: transparent;
 }
-.asterism::before { content: 'â—† â—† â—†'; }
+.asterism::before { content: '\25C6\A0\A0\25C6\A0\A0\25C6'; }
 hr.asterism { color: var(--gold-refined); }
+/* Quando un asterismo separa due sezioni, comprimiamo il padding adiacente
+   per evitare il "doppio gap" (asterismo + section padding) e uniformare il
+   ritmo verticale tra le sezioni della pagina. */
+.section + .asterism,
+section + .asterism { margin-top: calc(-1 * var(--section-py-tight)); }
+.asterism + .section,
+.asterism + section { padding-top: var(--section-py-tight); }
 
 /* Editorial divider (linea con label centrale tipo "II / V") */
 .editorial-divider {
@@ -3898,7 +3992,7 @@ hr.asterism { color: var(--gold-refined); }
 .tabular,
 .tabular-nums { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum'; }
 
-/* CTA block inline editoriale â€” usata nel mezzo del long-form */
+/* CTA block inline editoriale �?? usata nel mezzo del long-form */
 .editorial-inline-cta {
   margin: clamp(40px, 5vw, 64px) auto;
   padding: clamp(28px, 4vw, 40px) clamp(24px, 4vw, 44px);
@@ -4027,8 +4121,7 @@ hr.asterism { color: var(--gold-refined); }
   [data-anim="fade-up"] { opacity: 1; transform: none; transition: none; }
 }
 
-/* ---- Number all-caps decimal-leading-zero counter -------- */
-/* Per liste numerate editoriali (procedura, vantaggi) con 01 / 02 / 03 in serif gold */
+/* ---- Editorial counter (numbered list 01/02/03) --------- */
 .editorial-counter {
   list-style: none;
   margin: 0;
@@ -4162,4 +4255,3 @@ hr.asterism { color: var(--gold-refined); }
   transition: transform var(--dur-base) var(--ease-out-cubic);
 }
 .editorial-related__item:hover .arrow { transform: translateX(4px); }
-
