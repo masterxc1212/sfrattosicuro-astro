@@ -1,0 +1,67 @@
+---
+import sedi from '../data/sedi.json';
+import type { SedeItem } from '../lib/home-model';
+
+interface Props { sedeSlug?: string; }
+
+const { sedeSlug = 'nazionale' } = Astro.props;
+const normalized = sedeSlug.trim().toLowerCase();
+const sede = (sedi as SedeItem[]).find((item) => item.slug === normalized);
+
+// Non mostrare nulla se non ci sono dati tribunale o se è la pagina nazionale
+if (!sede?.tribunaleInfo) return;
+
+const { tribunaleInfo } = sede;
+const nome = sede.nome;
+const tribunale = sede.tribunale ?? `Tribunale di ${nome}`;
+---
+
+<section class="section section--night tribunale-info" id="tribunale-info" aria-labelledby="tribunale-info-title">
+  <div class="container">
+
+    <header class="tribunale-info__head">
+      <p class="editorial-eyebrow">Tribunale di riferimento</p>
+      <h2 id="tribunale-info-title">{tribunale}</h2>
+      <p class="tribunale-info__subtitle">Dati operativi per le procedure di sfratto</p>
+    </header>
+
+    <div class="tribunale-info__grid">
+
+      <div class="tribunale-info__card">
+        <span class="tribunale-info__label">Sezione competente</span>
+        <strong class="tribunale-info__value">{tribunaleInfo.sezione}</strong>
+      </div>
+
+      <div class="tribunale-info__card">
+        <span class="tribunale-info__label">Sede</span>
+        <strong class="tribunale-info__value">{tribunaleInfo.indirizzo}</strong>
+      </div>
+
+      <div class="tribunale-info__card">
+        <span class="tribunale-info__label">Deposito atti</span>
+        <strong class="tribunale-info__value">
+          {tribunaleInfo.depositoPCT
+            ? 'Telematico (PCT) — obbligatorio'
+            : 'Cartaceo in cancelleria'}
+        </strong>
+      </div>
+
+      {tribunaleInfo.udienze && (
+        <div class="tribunale-info__card tribunale-info__card--wide">
+          <span class="tribunale-info__label">Tempi indicativi udienza di convalida</span>
+          <strong class="tribunale-info__value tribunale-info__value--lg">{tribunaleInfo.udienze}</strong>
+          <p class="tribunale-info__disclaimer">I tempi dipendono dal calendario del tribunale e dall'eventuale opposizione dell'inquilino. I dati sono indicativi e basati sulla prassi locale.</p>
+        </div>
+      )}
+
+      {tribunaleInfo.note && (
+        <div class="tribunale-info__card tribunale-info__card--wide tribunale-info__card--note">
+          <span class="tribunale-info__label">Note operative</span>
+          <p class="tribunale-info__value">{tribunaleInfo.note}</p>
+        </div>
+      )}
+
+    </div>
+
+  </div>
+</section>

@@ -1,4 +1,4 @@
-﻿---
+---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
@@ -11,6 +11,7 @@ type SedeItem = {
   nome: string;
   slug: string;
   regione: string;
+  tribunale?: string;
 };
 
 const list = (sedi as SedeItem[])
@@ -28,6 +29,11 @@ const totalSedi = list.length;
 const totalRegioni = regionNames.length;
 
 const topCities = ['Milano', 'Roma', 'Napoli', 'Torino', 'Bologna', 'Firenze'];
+
+// Risolvi i dati completi (slug, regione, tribunale) per le top cities monolitiche
+const topCityCards = topCities
+  .map((name) => list.find((c) => c.nome === name))
+  .filter((c): c is SedeItem => Boolean(c));
 
 const macroAreaByRegione: Record<string, 'Nord' | 'Centro' | 'Sud' | 'Isole'> = {
   "Valle d'Aosta": 'Nord',
@@ -62,29 +68,6 @@ const macroAreaStats = list.reduce(
 );
 
 const regionToId = (region: string) => `regione-${region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-
-const regionMapLayout: Array<{ name: string; short: string; col: number; row: number }> = [
-  { name: "Valle d'Aosta", short: 'VDA', col: 1, row: 1 },
-  { name: 'Piemonte', short: 'PIE', col: 2, row: 1 },
-  { name: 'Lombardia', short: 'LOM', col: 3, row: 1 },
-  { name: 'Trentino Alto Adige', short: 'TAA', col: 4, row: 1 },
-  { name: 'Veneto', short: 'VEN', col: 5, row: 1 },
-  { name: 'Friuli Venezia Giulia', short: 'FVG', col: 6, row: 1 },
-  { name: 'Liguria', short: 'LIG', col: 2, row: 2 },
-  { name: 'Emilia Romagna', short: 'EMR', col: 4, row: 2 },
-  { name: 'Toscana', short: 'TOS', col: 3, row: 3 },
-  { name: 'Umbria', short: 'UMB', col: 4, row: 3 },
-  { name: 'Marche', short: 'MAR', col: 5, row: 3 },
-  { name: 'Lazio', short: 'LAZ', col: 3, row: 4 },
-  { name: 'Abruzzo', short: 'ABR', col: 5, row: 4 },
-  { name: 'Molise', short: 'MOL', col: 5, row: 5 },
-  { name: 'Campania', short: 'CAM', col: 4, row: 5 },
-  { name: 'Puglia', short: 'PUG', col: 6, row: 6 },
-  { name: 'Basilicata', short: 'BAS', col: 5, row: 6 },
-  { name: 'Calabria', short: 'CAL', col: 5, row: 7 },
-  { name: 'Sardegna', short: 'SAR', col: 1, row: 6 },
-  { name: 'Sicilia', short: 'SIC', col: 3, row: 8 }
-].filter((item) => regionNames.includes(item.name));
 
 const siteUrl = site.siteUrl.replace(/\/$/, '');
 
@@ -170,56 +153,57 @@ const sediGraph = {
   />
 
   <main id="main-content">
-    <section class="section section--compact sedi-hero">
+    <section class="sedi-hero">
       <div class="container">
-        <p class="kicker">Rete territoriale</p>
-        <h1>Sedi territoriali</h1>
-        <p class="hero-sub">Trova rapidamente la sede di riferimento per città o regione e accedi alla pagina locale dedicata.</p>
+        <div class="hero-copy">
+          <p class="editorial-eyebrow">Rete territoriale</p>
+          <h1>Sedi territoriali</h1>
+          <p class="hero-sub">Trova rapidamente la sede di riferimento per città o regione e accedi alla pagina locale dedicata.</p>
+        </div>
 
         <div class="stats" aria-label="Statistiche sedi">
-          <span>{totalSedi} sedi operative</span>
-          <span>{totalRegioni} regioni coperte</span>
+          <span><strong class="stat-num">{totalSedi}</strong><span class="stat-label">sedi operative</span></span>
+          <span><strong class="stat-num">{totalRegioni}</strong><span class="stat-label">regioni coperte</span></span>
         </div>
       </div>
     </section>
 
-    <section class="section section--compact coverage-visual" aria-label="Copertura nazionale">
+    <section class="top-cities" aria-label="Sedi delle città principali">
+      <div class="container">
+        <div class="top-cities__grid">
+          {topCityCards.map((city) => (
+            <a class="top-city" href={`/sedi/${city.slug}/`} data-anim="fade-up">
+              <p class="region-tag">{city.regione}</p>
+              <p class="city-name">{city.nome}</p>
+              <p class="court">{city.tribunale ?? `Tribunale di ${city.nome}`}</p>
+              <span class="arrow">Avvocato per sfratto a {city.nome} →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage-visual" aria-label="Copertura nazionale">
       <div class="container coverage-grid">
         <div class="coverage-copy">
+          <p class="editorial-eyebrow">Copertura</p>
           <h2>Copertura nazionale a colpo d'occhio</h2>
           <p>
             La rete è distribuita su tutto il territorio italiano, con presidi operativi nelle principali aree
             geografiche. Seleziona una regione dalla mappa per saltare direttamente alla sezione dedicata.
           </p>
-
-          <div class="macro-stats" aria-label="Sedi per macro area">
-            <span><strong>{macroAreaStats.Nord}</strong> Nord</span>
-            <span><strong>{macroAreaStats.Centro}</strong> Centro</span>
-            <span><strong>{macroAreaStats.Sud}</strong> Sud</span>
-            <span><strong>{macroAreaStats.Isole}</strong> Isole</span>
-          </div>
         </div>
 
-        <div class="italy-map-card" role="img" aria-label="Mappa schematica dell'Italia con regioni cliccabili">
-          <p class="map-caption">Mappa operativa (schematica)</p>
-          <div class="italy-map-grid">
-            {regionMapLayout.map((region) => (
-              <a
-                href={`#${regionToId(region.name)}`}
-                class="region-node"
-                style={`grid-column:${region.col};grid-row:${region.row};`}
-                aria-label={`Vai alla sezione ${region.name}`}
-                title={region.name}
-              >
-                <span>{region.short}</span>
-              </a>
-            ))}
-          </div>
+        <div class="macro-stats" aria-label="Sedi per macro area">
+          <span><strong>{macroAreaStats.Nord}</strong> Nord</span>
+          <span><strong>{macroAreaStats.Centro}</strong> Centro</span>
+          <span><strong>{macroAreaStats.Sud}</strong> Sud</span>
+          <span><strong>{macroAreaStats.Isole}</strong> Isole</span>
         </div>
       </div>
     </section>
 
-    <section class="section section--compact sticky-tools" aria-label="Ricerca e filtri">
+    <section class="sticky-tools" aria-label="Ricerca e filtri">
       <div class="container tools-grid">
         <label class="field">
           <span>Cerca città</span>
@@ -250,11 +234,11 @@ const sediGraph = {
     </section>
 
     <section class="section section--compact">
-      <div class="container region-index" id="regionIndex" aria-label="Indice regioni">
+      <nav class="container region-index" id="regionIndex" aria-label="Indice regioni">
         {regionNames.map((region) => (
           <a href={`#${regionToId(region)}`}>{region}</a>
         ))}
-      </div>
+      </nav>
     </section>
 
     <section class="section section--compact">
@@ -264,13 +248,16 @@ const sediGraph = {
 
         <div class="region-list" id="regionList">
           {regionNames.map((region, index) => {
-            const isOpen = index < 2;
+            const indexLabel = String(index + 1).padStart(2, '0') + ' / ' + String(regionNames.length).padStart(2, '0');
             return (
-              <details class="region" open={isOpen} data-region={region} id={regionToId(region)}>
-                <summary>
-                  <h2>{region}</h2>
-                  <span>{grouped[region].length} sedi</span>
-                </summary>
+              <section class="region" data-region={region} id={regionToId(region)}>
+                <header class="region-head">
+                  <span class="region-num">{indexLabel}</span>
+                  <h2>
+                    {region}
+                    <span class="count">{grouped[region].length} sedi</span>
+                  </h2>
+                </header>
                 <ul class="city-grid">
                   {grouped[region].map((item) => (
                     <li data-city={item.nome.toLowerCase()}>
@@ -278,7 +265,7 @@ const sediGraph = {
                     </li>
                   ))}
                 </ul>
-              </details>
+              </section>
             );
           })}
         </div>
@@ -322,7 +309,6 @@ const sediGraph = {
 
       const showRegion = matchesRegion && visibleCities > 0;
       regionEl.style.display = showRegion ? '' : 'none';
-      if (showRegion && query) regionEl.setAttribute('open', 'open');
       totalVisibleCities += showRegion ? visibleCities : 0;
     });
 

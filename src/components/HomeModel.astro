@@ -1,4 +1,4 @@
-﻿---
+---
 import HeaderIsland from './HeaderIsland.astro';
 import HeroInstitutionalIsland from './HeroInstitutionalIsland.astro';
 import SedeIdentityIsland from './SedeIdentityIsland.astro';
@@ -16,6 +16,7 @@ import ReviewsIsland from './ReviewsIsland.astro';
 import LatestBlogPostsIsland from './LatestBlogPostsIsland.astro';
 import SedeBlogLinksIsland from './SedeBlogLinksIsland.astro';
 import VideoReviewsIsland from './VideoReviewsIsland.astro';
+import TribunaleInfoSection from './TribunaleInfoSection.astro';
 import FaqSection from './FaqSection.astro';
 import ContactFormIsland from './ContactFormIsland.astro';
 import Footer from './Footer.astro';
@@ -87,14 +88,19 @@ const isNational = sedeSlug === 'nazionale';
     </section>
   )}
 
+  <hr class="asterism" aria-hidden="true" />
+
   <WhenPossibleSection sedeSlug={sedeSlug} />
   <ProcedureSection sedeSlug={sedeSlug} />
   <TypesSection sedeSlug={sedeSlug} />
   <TimelineSection sedeSlug={sedeSlug} />
+  <TribunaleInfoSection sedeSlug={sedeSlug} />
   <WhyLawyerSection sedeSlug={sedeSlug} />
   <TerritoryCoverageSection sedeSlug={sedeSlug} />
 
   {showDoveOperiamo && <DoveOperiamoSection />}
+
+  <hr class="asterism" aria-hidden="true" />
 
   <StudioSection sedeSlug={sedeSlug} />
   <ProvvedimentiIsland />
