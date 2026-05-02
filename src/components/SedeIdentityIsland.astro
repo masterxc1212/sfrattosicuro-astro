@@ -50,9 +50,9 @@ const pillars = isNazionale
       {pillars.map((item) => (
         <article class="card">
           <span class="icon" aria-hidden="true">
-            {item.icon === 'scale' && <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 7h8M7 17h8M5 10c0-1.1.9-2 2-2h10M5 14c0 1.1.9 2 2 2h10"/></svg>}
-            {item.icon === 'court' && <svg viewBox="0 0 24 24" fill="none"><path d="M3 10h18M5 10V7l7-4 7 4v3M6 10v8m4-8v8m4-8v8m4-8v8M3 21h18"/></svg>}
-            {item.icon === 'doc' && <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7zM14 3v5h5M9 13h6M9 17h6"/></svg>}
+            {item.icon === 'scale' && <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 21h14M4 7h16M7 7l-3 7a3 3 0 006 0l-3-7M17 7l-3 7a3 3 0 006 0l-3-7"/></svg>}
+            {item.icon === 'court' && <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M5 10V7l7-4 7 4v3M6 10v8m4-8v8m4-8v8m4-8v8M3 21h18"/></svg>}
+            {item.icon === 'doc' && <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7zM14 3v5h5M9 13h6M9 17h6"/></svg>}
           </span>
           <h3>{item.title}</h3>
           <p>{item.text}</p>
