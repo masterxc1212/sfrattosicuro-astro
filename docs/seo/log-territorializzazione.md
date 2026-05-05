@@ -55,3 +55,78 @@
 - File `business-config.json` ha discrepanza nota con `site.json:openingHoursSpecification` (Mon-Fri 09-18 vs promessa landing Lun-Ven 9-19 + Sab 9-13). In caso di conflitto vince `business-config`.
 - Edit tool ha causato 2 troncamenti durante la sessione (`landing-original.ts`, `home-model.ts`). Risolto con `git show HEAD` -> restore + replacement chirurgico via Python script. Per file >500 righe con CRLF, preferire d'ora in poi script Python con assertion `count == 1` prima di sovrascrivere.
 - Build Astro non testato in sandbox per EPERM su Dropbox mount. La verify-site-surface andra' rieseguita post-deploy GitHub Actions.
+
+
+## 2026-05-05 — Baseline GSC pre-deploy + setup monitoring (Step 11-12)
+
+**Account GSC usato:** sfrattosicuro@gmail.com (Send As alias outreach@sfrattosicuro.it). NON danilo.ansalone@gmail.com (zero property).
+
+### Snapshot indicizzazione (BASELINE t=0, da confrontare in Step 12)
+
+**Sitemap:**
+- URL: `https://www.sfrattosicuro.it/sitemap.xml`
+- Stato: Riuscita
+- Ultima lettura GSC: 5 mag 2026
+- Pagine rilevate: 178
+
+**Pages report:**
+- Totale URL note a Google: 193
+- Indicizzate: **35**
+- Non indicizzate: **158**
+
+**Breakdown 6 motivi di non-indicizzazione:**
+
+| # | Motivo | Conteggio | Significato |
+|---|--------|-----------|-------------|
+| 1 | Rilevata, ma attualmente non indicizzata | **128** | Google conosce l'URL (da sitemap) ma non l'ha ancora scansionata |
+| 2 | Pagina scansionata, ma attualmente non indicizzata | **18** | Google ha scansionato ma non indicizza per qualita' contenuto |
+| 3 | Non trovata (404) | 5 | URL morto, da pulire |
+| 4 | Esclusa in base al tag "noindex" | 4 | Volontario |
+| 5 | Pagina con reindirizzamento | 2 | OK |
+| 6 | Pagina alternativa con tag canonical appropriato | 1 | OK (consolidamento) |
+
+**Target cluster del piano 80% = 128 + 18 = 146 sedi non indicizzate.**
+
+### URL Inspection sulle 5 sedi LOM target (BASELINE)
+
+| Sede | Stato GSC | Cluster | Note |
+|------|-----------|---------|------|
+| `/sedi/milano/` | URL non si trova su Google + URL sconosciuto a Google | Discovered (cluster 128) | Nessuna sitemap di referral rilevata da GSC |
+| `/sedi/monza/` | URL non si trova su Google + URL sconosciuto a Google | Discovered (cluster 128) | Stesso pattern |
+| `/sedi/bergamo/` | URL non si trova su Google + URL sconosciuto a Google | Discovered (cluster 128) | Stesso pattern |
+| `/sedi/brescia/` | URL non si trova su Google + URL sconosciuto a Google | Discovered (cluster 128) | Stesso pattern |
+| `/sedi/pavia/` | URL non si trova su Google + Pagina scansionata, ma attualmente non indicizzata | **Crawled (cluster 18)** | Esattamente il target prioritario del vincoli sez. 3.1 |
+
+### Setup monitoring settimanale Step 12 (cadenza lunedi)
+
+**KPI da seguire ogni lunedi mattina nelle prossime 4 settimane post-deploy:**
+
+| Metrica | Baseline 5 mag 2026 | T+1 sett | T+2 sett | T+3 sett | T+4 sett |
+|---------|---------------------|----------|----------|----------|----------|
+| Indicizzate totali | 35 | _ | _ | _ | _ |
+| Discovered not indexed | 128 | _ | _ | _ | _ |
+| Crawled not indexed | 18 | _ | _ | _ | _ |
+| LOM indicizzate (su 13) | 0 (best estimate) | _ | _ | _ | _ |
+| Click totali (28gg) | 123 | _ | _ | _ | _ |
+
+**Trigger di rollout (vincoli sez. 4):** se a T+4 settimane >=10 sedi LOM sono passate a indicizzate, estendere il piano 80% a Lazio (10) -> Campania (12) -> Veneto (10) -> Piemonte (8) -> Sicilia (12) -> Puglia (8) -> Toscana (7) -> minori. Effort proiettato 80-100h aggiuntive.
+
+### Azione immediata richiesta dal cliente (Step 10 chiusura)
+
+**Da eseguire su Windows in `C:\Users\danil\Dropbox\claude_projects\sfratto-sicuro`:**
+
+```powershell
+cd "C:\Users\danil\Dropbox\claude_projects\sfratto-sicuro"
+git push origin main
+```
+
+Il commit `25dc821` e' gia' creato in locale (su Dropbox condiviso) ma il push richiede credenziali GitHub presenti solo sulla macchina del cliente. Dopo il push:
+
+1. Attendere ~3-5 min per build GitHub Actions + FTPS deploy SiteGround.
+2. Verificare https://www.sfrattosicuro.it/sedi/pavia/ visualizzi i 7 nuovi blocchi territoriali.
+3. Tornare in GSC -> URL Inspection su `/sedi/pavia/` (priorita' alta) e cliccare **Richiesta di indicizzazione**. Stessa cosa per Milano, Monza, Bergamo, Brescia (max 10/giorno per property).
+4. Ripetere URL Inspection sulle altre 8 LOM (Como, Varese, Mantova, Cremona, Lecco, Lodi, Sondrio, Busto Arsizio) il giorno dopo.
+
+### Step 2-bis (parking)
+
+Migrare i ~16 punti hardcoded rimasti in `landing-original.ts` (calculator, pricing, faq, urgencyBox). Da fare quando si tocca `landing-v2/index.astro` o si fa un cambio di valore globale.
