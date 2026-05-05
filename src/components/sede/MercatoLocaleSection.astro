@@ -14,7 +14,7 @@ const hasData = !!(m && (m.canoneMedioEur || m.canoneRange || m.note || (m.zoneR
         <p>
           A {sede.nome} il canone medio per un appartamento standard si attesta in un range di
           {' '}<strong>{m.canoneRange}</strong>{m?.canoneMedioEur ? ` (media indicativa EUR ${m.canoneMedioEur})` : ''}.
-          {' '}Quando un inquilino smette di pagare, ogni mese di morosita corrisponde proporzionalmente
+          {' '}Quando un inquilino smette di pagare, ogni mese di morosità corrisponde proporzionalmente
           a questo importo che il proprietario perde, oltre a oneri condominiali e tasse.
         </p>
       )}
@@ -24,7 +24,7 @@ const hasData = !!(m && (m.canoneMedioEur || m.canoneRange || m.note || (m.zoneR
       )}
       {m?.zoneRilevanti && m.zoneRilevanti.length > 0 && (
         <p>
-          Zone con dinamiche locative piu attive a {sede.nome}: {m.zoneRilevanti.join(', ')}.
+          Zone con dinamiche locative più attive a {sede.nome}: {m.zoneRilevanti.join(', ')}.
         </p>
       )}
       <p class="note" style="font-size:0.9em;opacity:0.8;">
