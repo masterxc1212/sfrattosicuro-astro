@@ -4,6 +4,48 @@
 >
 > Ogni sessione che tocca contenuti delle sedi aggiunge una entry datata.
 
+---
+
+## 🔔 REMINDER PROSSIMA SESSIONE (a partire dal 2026-05-06)
+
+**Azione richiesta:** completare il Request Indexing GSC sulle **8 sedi LOM rimanenti** (oggi 5 mag 2026 ne sono state fatte 5: Pavia, Milano, Bergamo, Brescia, Monza — quota giornaliera ~10/property, ma per essere conservativi il restante batch va in giornata successiva).
+
+**Sedi LOM da fare (URL completi pronti per copy-paste in URL Inspection GSC):**
+
+1. https://www.sfrattosicuro.it/sedi/como/
+2. https://www.sfrattosicuro.it/sedi/varese/
+3. https://www.sfrattosicuro.it/sedi/mantova/
+4. https://www.sfrattosicuro.it/sedi/cremona/
+5. https://www.sfrattosicuro.it/sedi/lecco/
+6. https://www.sfrattosicuro.it/sedi/lodi/
+7. https://www.sfrattosicuro.it/sedi/sondrio/
+8. https://www.sfrattosicuro.it/sedi/busto-arsizio/
+
+**Procedura per ciascuna (~15 secondi a sede):**
+1. Apri GSC come account `sfrattosicuro@gmail.com` (path `/u/3/`): https://search.google.com/u/3/search-console?resource_id=sc-domain%3Asfrattosicuro.it
+2. Click sulla searchbar in alto "Controlla qualsiasi URL in 'sfrattosicuro.it'"
+3. Incolla URL della sede + Invio
+4. Attendi ~10 secondi che GSC carichi i dati
+5. Click su **"RICHIESTA DI INDICIZZAZIONE"** (pulsante in alto a destra del banner)
+6. Attendi ~60 secondi per "Verifica della possibilita' di indicizzazione"
+7. Conferma "Indicizzazione richiesta" -> click "Ignora" per chiudere
+8. Ripeti dal punto 2 con la sede successiva
+
+**Tempo totale stimato:** 8 sedi x ~90 secondi = ~12 minuti.
+
+**Verifica baseline GSC al pre-indexing (per il monitoring):** annotare lo stato corrente di ciascuna delle 8 sedi (probabilmente "URL sconosciuto a Google" come Milano/Bergamo, oppure "Pagina scansionata, ma attualmente non indicizzata" come Pavia). Aggiornare la tabella KPI in fondo a questa entry.
+
+---
+
+## 📅 ALTRE SCADENZE PIANIFICATE
+
+- **2026-05-12 (lunedi T+1 settimana post-deploy):** primo monitoring GSC Pages report. Confronto con baseline 5 mag 2026 (35 indicizzate / 158 non / 193 totali). Verifica se le 5 sedi gia' richieste sono passate da "non indicizzata" a "URL is on Google".
+- **2026-05-19 (T+2 settimane):** monitoring + URL Inspection sulle 8 LOM richieste il 6 maggio.
+- **2026-05-26 (T+3 settimane):** monitoring.
+- **2026-06-02 (T+4 settimane):** monitoring + DECISIONE rollout. Trigger: se >=10 sedi LOM indicizzate -> estendere piano 80% a Lazio (10) -> Campania (12) -> Veneto (10) -> Piemonte (8) -> Sicilia (12) -> Puglia (8) -> Toscana (7).
+
+---
+
 ## 2026-05-05 — Pilot Lombardia, Step 1-10 piano 80%
 
 **Operatore:** skill `linkbuilding-sfrattosicuro-ansalone` (sessione Cowork)
