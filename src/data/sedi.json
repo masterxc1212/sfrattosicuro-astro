@@ -119,9 +119,9 @@
             "description": "Avvocato per sfratto a Milano. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Milano."
         },
         "localAngles": {
-            "openingAngle": "A Milano gestiamo procedure di sfratto per morosita' e finita locazione presso il Tribunale di Milano, uno dei piu' rapidi del Nord Italia per il rito di convalida (prima udienza tipicamente 30-45 giorni dalla notifica). Il nostro compenso complessivo e' di EUR 1.300 fino al rilascio dell'immobile, senza acconti.",
-            "protocolAngle": "La strategia processuale a Milano sfrutta la specializzazione della XIII Sezione Civile (esclusivamente locazioni, occupazioni e condominio): notifiche calibrate, deposito PCT puntuale, preparazione dei documenti utili a contrastare richieste pretestuose di termine di grazia. Tempi medi di convalida: circa 60 giorni, spesso meno.",
-            "courtAngle": "Il Tribunale di Milano ha una sezione dedicata in via esclusiva alle locazioni: questa specializzazione organizzativa, unita all'efficienza dell'UNEP locale, rende Milano una delle sedi italiane piu' veloci per la convalida di sfratto. Il nostro presidio territoriale ha esperienza specifica davanti alla XIII Sezione.",
+            "openingAngle": "A Milano gestiamo procedure di sfratto per morosità e finita locazione presso il Tribunale di Milano, uno dei più rapidi del Nord Italia per il rito di convalida (prima udienza tipicamente 30-45 giorni dalla notifica). Il nostro compenso complessivo è di EUR 1.300 fino al rilascio dell'immobile, senza acconti.",
+            "protocolAngle": "La strategia processuale a Milano sfrutta la specializzazione della XIII Sezione Civile (esclusivamente locazioni, occupazioni e condominio): notifiche calibrate, deposito PCT puntuale, preparazione dei documenti utili a contrastare richieste pretestuose di termine di grazia. Tempi medi di convalida: circa 60 giorni, spesso meno. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Il Tribunale di Milano ha una sezione dedicata in via esclusiva alle locazioni: questa specializzazione organizzativa, unita all'efficienza dell'UNEP locale, rende Milano una delle sedi italiane più veloci per la convalida di sfratto. Il nostro presidio territoriale ha esperienza specifica davanti alla XIII Sezione.",
             "closingAngle": "A Milano la nostra rete di domiciliatari iscritti all'Ordine degli Avvocati segue la pratica fino al provvedimento di rilascio e, se necessario, alla successiva esecuzione tramite UNEP. Tutto compreso nel compenso di EUR 1.300, che paghi solo dopo la convalida."
         },
         "faqStrategic": [
@@ -159,38 +159,38 @@
         "mercatoLocale": {
             "canoneMedioEur": 1400,
             "canoneRange": "EUR 1.200-1.700",
-            "note": "Milano ha il mercato delle locazioni piu' caro d'Italia: la pressione abitativa, il polo universitario e il distretto direzionale tengono i canoni elevati. Per un appartamento standard di 70-80 mq in zona semicentrale i canoni di mercato si attestano intorno ai 1.400 euro, con punte oltre i 2.000 nelle zone Brera, Porta Nuova e Centro storico.",
-            "pressioneMorosita": "Mercato in tensione: una vacancy prolungata costa al proprietario molto piu' che in altre citta' italiane, sia per il canone alto sia per IMU/oneri.",
+            "note": "Milano ha il mercato delle locazioni più caro d'Italia: la pressione abitativa, il polo universitario e il distretto direzionale tengono i canoni elevati. Per un appartamento standard di 70-80 mq in zona semicentrale i canoni di mercato si attestano intorno ai 1.400 euro, con punte oltre i 2.000 nelle zone Brera, Porta Nuova e Centro storico.",
+            "pressioneMorosita": "Mercato in tensione: una vacancy prolungata costa al proprietario molto più che in altre città italiane, sia per il canone alto sia per IMU/oneri.",
             "zoneRilevanti": [
                 "Centro storico",
                 "Porta Romana",
                 "Porta Venezia",
                 "Navigli",
                 "Isola",
-                "Citta' Studi"
+                "Città Studi"
             ]
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:00 (sportello fisico, accesso libero)",
             "sitoUfficiale": "https://www.tribunale.milano.giustizia.it",
-            "note": "Il deposito telematico tramite PCT e' obbligatorio. La XIII Sezione Civile tratta esclusivamente locazioni, occupazioni senza titolo e materia condominiale: questa specializzazione contribuisce ai tempi tra i piu' rapidi del Nord Italia."
+            "note": "Il deposito telematico tramite PCT è obbligatorio. La XIII Sezione Civile tratta esclusivamente locazioni, occupazioni senza titolo e materia condominiale: questa specializzazione contribuisce ai tempi tra i più rapidi del Nord Italia."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Milano su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Milano comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Milano la concessione del termine di grazia ex art. 55 L. 392/1978 segue una prassi piuttosto rigorosa: il Giudice della XIII Sezione Civile lo concede solo in presenza di documentazione sostanziale che dimostri la morosità incolpevole (perdita lavoro, malattia certificata). La discrezionalità è esercitata nell'interesse della certezza dei tempi processuali, in coerenza con la specializzazione della sezione.",
+            "prassiOpposizioni": "La XIII Sezione Civile del Tribunale di Milano gestisce le opposizioni ex art. 663 c.p.c. con grande efficienza: l'ordinanza provvisoria di rilascio ex art. 665 c.p.c. viene tipicamente emessa quando l'opposizione non è sostenuta da prova scritta. La trasformazione del rito in giudizio ordinario comporta tempi medi di 8-14 mesi nel distretto milanese, ma la tutela cautelare per il proprietario è ottenibile in 30-60 giorni.",
+            "noteProvvedimenti": "Il Tribunale di Milano emette tipicamente: ordinanza di convalida ex art. 663 c.p.c. con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (di norma 60-90 giorni); ordinanza provvisoria ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova; condanna alle spese a carico dell'inquilino. Le notifiche e l'esecuzione sono affidate all'UNEP del Tribunale che opera in via San Barnaba."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Milano si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Milano per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Milano, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Milano la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Milano, con esperienza specifica davanti alla XIII Sezione Civile (oltre 1.500 udienze gestite/anno dalla sezione). Il presidio territoriale ha familiarita diretta con il deposito PCT obbligatorio e con le prassi della cancelleria di via San Barnaba.",
+            "unep": "L'UNEP del Tribunale di Milano, uno dei piu efficienti d'Italia per volumi gestiti, opera sulle notifiche e sull'esecuzione dei rilasci con tempi medi compatibili con la promessa Sfratto Sicuro. La nostra rete coordina direttamente le richieste urgenti.",
+            "note": "A Milano operiamo in coordinamento con periti tecnici (per immobili con problematiche strutturali pre-rilascio), amministratori condominiali (per conteggi oneri), e associazioni di categoria (UPPI Milano, ASPPI Lombardia) per casi che coinvolgono associati."
         },
         "tempiReali": {
             "faseAnalisi": "1-5 giorni",
             "fasePredisposizione": "6-12 giorni",
             "faseNotifiche": "13-25 giorni (UNEP Milano gestisce volumi alti ma con tempi rapidi)",
-            "faseUdienza": "Prima udienza generalmente 30-45 giorni dalla notifica (tra le piu' rapide del Nord)",
-            "note": "Milano e' tra i tribunali piu' veloci d'Italia per il rito di convalida. La specializzazione della XIII Sezione Civile e l'efficienza dell'UNEP locale consentono tempi anche inferiori ai 60 giorni medi nazionali."
+            "faseUdienza": "Prima udienza generalmente 30-45 giorni dalla notifica (tra le più rapide del Nord)",
+            "note": "Milano è tra i tribunali più veloci d'Italia per il rito di convalida. La specializzazione della XIII Sezione Civile e l'efficienza dell'UNEP locale consentono tempi anche inferiori ai 60 giorni medi nazionali."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -200,7 +200,7 @@
                 "Porta Venezia",
                 "Navigli",
                 "Isola",
-                "Citta' Studi",
+                "Città Studi",
                 "Lambrate",
                 "Bicocca",
                 "Bovisa",
@@ -230,12 +230,12 @@
                 "Segrate",
                 "Pioltello"
             ],
-            "note": "Il Tribunale di Milano e' il piu' grande tribunale civile d'Italia per volume di pratiche."
+            "note": "Il Tribunale di Milano è il più grande tribunale civile d'Italia per volume di pratiche."
         },
         "storiaTribunale": {
             "annoIstituzione": 1865,
             "sedeStorica": "Palazzo di Giustizia di Corso di Porta Vittoria, progettato da Marcello Piacentini e inaugurato nel 1940",
-            "peculiarita": "E' il tribunale piu' grande d'Italia per numero di pratiche, con sezioni specializzate per materia. La XIII Sezione Civile, dedicata in via esclusiva a locazioni, occupazioni e condominio, e' un riferimento giurisprudenziale nazionale citato dalle altre sedi italiane."
+            "peculiarita": "E' il tribunale più grande d'Italia per numero di pratiche, con sezioni specializzate per materia. La XIII Sezione Civile, dedicata in via esclusiva a locazioni, occupazioni e condominio, è un riferimento giurisprudenziale nazionale citato dalle altre sedi italiane."
         }
     },
     {
@@ -1532,10 +1532,10 @@
             "description": "Avvocato per sfratto a Bergamo. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Bergamo."
         },
         "localAngles": {
-            "openingAngle": "A Bergamo gestiamo lo sfratto per morosita' e finita locazione presso il Tribunale di Bergamo, dove le udienze di convalida si tengono il martedi' tramite prenotazione online obbligatoria. Compenso complessivo EUR 1.300 fino al rilascio, senza anticipi.",
-            "protocolAngle": "Il sistema di prenotazione bergamo.prenotazioniudienzesfratti.it va attivato PRIMA della notifica della citazione: ogni martedi' gli slot si esauriscono rapidamente. Il nostro protocollo opera in parallelo prenotazione + notifica per garantire la prima data utile, restando coerenti con il dato medio operativo di circa 60 giorni.",
-            "courtAngle": "Il Tribunale di Bergamo ha implementato uno dei sistemi di prenotazione udienze online piu' avanzati d'Italia per il rito locatizio. Il nostro presidio segue le specifiche procedurali della III Sezione Civile e gestisce direttamente la prenotazione.",
-            "closingAngle": "A Bergamo, oltre al capoluogo, copriamo i comuni di Dalmine, Treviglio, Seriate, Albino e l'intera area Bassa e Alta Bergamasca. Il compenso EUR 1.300 e' unico, ovunque si trovi l'immobile, e si paga solo a convalida ottenuta."
+            "openingAngle": "A Bergamo gestiamo lo sfratto per morosità e finita locazione presso il Tribunale di Bergamo, dove le udienze di convalida si tengono il martedi' tramite prenotazione online obbligatoria. Compenso complessivo EUR 1.300 fino al rilascio, senza anticipi.",
+            "protocolAngle": "Il sistema di prenotazione bergamo.prenotazioniudienzesfratti.it va attivato PRIMA della notifica della citazione: ogni martedi' gli slot si esauriscono rapidamente. Il nostro protocollo opera in parallelo prenotazione + notifica per garantire la prima data utile, restando coerenti con il dato medio operativo di circa 60 giorni. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Il Tribunale di Bergamo ha implementato uno dei sistemi di prenotazione udienze online più avanzati d'Italia per il rito locatizio. Il nostro presidio segue le specifiche procedurali della III Sezione Civile e gestisce direttamente la prenotazione.",
+            "closingAngle": "A Bergamo, oltre al capoluogo, copriamo i comuni di Dalmine, Treviglio, Seriate, Albino e l'intera area Bassa e Alta Bergamasca. Il compenso EUR 1.300 è unico, ovunque si trovi l'immobile, e si paga solo a convalida ottenuta Nessun acconto: il pagamento avviene solo dopo la convalida del Tribunale."
         },
         "faqStrategic": [
             {
@@ -1572,9 +1572,9 @@
         "mercatoLocale": {
             "canoneMedioEur": 850,
             "canoneRange": "EUR 700-1.000",
-            "note": "Bergamo, citta' alta e bassa, ha un mercato delle locazioni stabile, con premium per gli appartamenti in Citta' Alta e nelle zone storiche di Borgo Pignolo e Borgo Santa Caterina. La vicinanza all'aeroporto di Orio al Serio alimenta anche un mercato di affitti brevi.",
+            "note": "Bergamo, città alta e bassa, ha un mercato delle locazioni stabile, con premium per gli appartamenti in Città Alta e nelle zone storiche di Borgo Pignolo e Borgo Santa Caterina. La vicinanza all'aeroporto di Orio al Serio alimenta anche un mercato di affitti brevi.",
             "zoneRilevanti": [
-                "Citta' Alta",
+                "Città Alta",
                 "Centro",
                 "Borgo Santa Caterina",
                 "Borgo Pignolo",
@@ -1587,25 +1587,25 @@
             "note": "Il sistema di prenotazione online obbligatoria per le udienze di convalida (bergamo.prenotazioniudienzesfratti.it) va attivato PRIMA della notifica della citazione. Le udienze si tengono il martedi' a partire dalle ore 9:00."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Bergamo su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Bergamo comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Bergamo il termine di grazia ex art. 55 L. 392/1978 si inserisce in un calendario settimanale rigido (udienze il martedì): la concessione comporta tipicamente uno spostamento di 8-12 settimane sulla prima udienza utile. Il Giudice della III Sezione Civile applica i criteri standard di valutazione della morosità incolpevole.",
+            "prassiOpposizioni": "Al Tribunale di Bergamo le opposizioni ex art. 663 c.p.c. richiedono particolare attenzione perché l'udienza del martedì è già contingentata via prenotazione online: la trasformazione in cognizione ordinaria libera lo slot ma il fascicolo entra in un ruolo separato della III Sezione. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è uno strumento di tutela frequente.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Bergamo: convalida ex art. 663 c.p.c. con termine per il rilascio ex art. 56 L. 392/1978 (60 giorni standard); ordinanza provvisoria ex art. 665 c.p.c.; condanna alle spese a carico dell'inquilino. Il sistema di prenotazione online bergamo.prenotazioniudienzesfratti.it è la procedura ufficiale di cui il presidio Sfratto Sicuro ha esperienza diretta."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Bergamo si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Bergamo per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Bergamo, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Bergamo la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Bergamo, con esperienza diretta sul portale di prenotazione bergamo.prenotazioniudienzesfratti.it e sul calendario delle udienze del martedì alla III Sezione Civile.",
+            "unep": "L'UNEP del Tribunale di Bergamo gestisce le notifiche su tutta la provincia (Bassa, Alta Bergamasca, Val Seriana) con tempi compatibili con la nostra promessa di tempi di convalida.",
+            "note": "A Bergamo operiamo in coordinamento con UPPI Bergamo e Confedilizia Bergamo per casi che coinvolgono i loro associati. Per immobili in Citta Alta valutiamo specificità connesse alla zona ZTL e UNESCO."
         },
         "tempiReali": {
             "faseAnalisi": "1-5 giorni",
             "fasePredisposizione": "6-15 giorni",
             "faseNotifiche": "16-30 giorni (la prenotazione udienze va attivata prima della notifica)",
             "faseUdienza": "Prima udienza il martedi' (slot dalle 9:00). Tipicamente 45-60 giorni dalla notifica.",
-            "note": "Il sistema di prenotazione online concentra le udienze in una sola giornata settimanale: una pianificazione attenta della notifica e' decisiva per non perdere settimane sulla prima udienza disponibile."
+            "note": "Il sistema di prenotazione online concentra le udienze in una sola giornata settimanale: una pianificazione attenta della notifica è decisiva per non perdere settimane sulla prima udienza disponibile."
         },
         "zoneServite": {
             "quartieriCitta": [
-                "Citta' Alta",
+                "Città Alta",
                 "Centro",
                 "Borgo Santa Caterina",
                 "Borgo Pignolo",
@@ -1632,8 +1632,8 @@
         },
         "storiaTribunale": {
             "annoIstituzione": 1865,
-            "sedeStorica": "Palazzo di Giustizia di Via Borfuro, edificio storico nel cuore della citta' bassa",
-            "peculiarita": "Il Tribunale di Bergamo ha implementato uno dei sistemi di prenotazione udienze online piu' avanzati d'Italia per il rito locatizio."
+            "sedeStorica": "Palazzo di Giustizia di Via Borfuro, edificio storico nel cuore della città bassa",
+            "peculiarita": "Il Tribunale di Bergamo ha implementato uno dei sistemi di prenotazione udienze online più avanzati d'Italia per il rito locatizio."
         }
     },
     {
@@ -1913,9 +1913,9 @@
             "description": "Avvocato per sfratto a Brescia. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Brescia."
         },
         "localAngles": {
-            "openingAngle": "A Brescia assistiamo proprietari di immobili in tutta la provincia per le procedure di sfratto per morosita' e finita locazione presso il Tribunale di Brescia, tra i tribunali lombardi piu' veloci per il rito non contestato (prima udienza 30-45 giorni). Compenso EUR 1.300 fino al rilascio, no acconti.",
-            "protocolAngle": "Le udienze di convalida al Tribunale di Brescia si tengono il giovedi' presso la I Sezione Civile (piano 4, stanza 4.59). La nostra pianificazione mira a centrare il primo giovedi' utile tra 30 e 45 giorni dalla notifica.",
-            "courtAngle": "Brescia e' sede della Corte d'Appello competente sul distretto Cremona, Mantova, Sondrio: il Tribunale di primo grado tratta volumi consistenti ma con tempi competitivi. La specializzazione della I Sezione Civile garantisce uniformita' decisionale.",
+            "openingAngle": "A Brescia assistiamo proprietari di immobili in tutta la provincia per le procedure di sfratto per morosità e finita locazione presso il Tribunale di Brescia, tra i tribunali lombardi più veloci per il rito non contestato (prima udienza 30-45 giorni). Compenso EUR 1.300 fino al rilascio, no acconti.",
+            "protocolAngle": "Le udienze di convalida al Tribunale di Brescia si tengono il giovedi' presso la I Sezione Civile (piano 4, stanza 4.59). La nostra pianificazione mira a centrare il primo giovedi' utile tra 30 e 45 giorni dalla notifica. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Brescia è sede della Corte d'Appello competente sul distretto Cremona, Mantova, Sondrio: il Tribunale di primo grado tratta volumi consistenti ma con tempi competitivi. La specializzazione della I Sezione Civile garantisce uniformita' decisionale.",
             "closingAngle": "A Brescia copriamo capoluogo e area Bassa Bresciana (Manerbio, Montichiari), Garda (Desenzano, Salo'), Franciacorta (Rovato, Iseo) e Val Trompia (Lumezzane, Gardone). Tariffa unica EUR 1.300, pagamento a convalida."
         },
         "faqStrategic": [
@@ -1968,21 +1968,21 @@
             "note": "Le udienze di convalida si tengono il giovedi'. La concentrazione settimanale delle udienze rende essenziale una notifica tempestiva per assicurare la prima data disponibile."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Brescia su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Brescia comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Brescia il termine di grazia ex art. 55 L. 392/1978 viene concesso seguendo una prassi pragmatica: il Giudice della I Sezione Civile (piano 4, stanza 4.59) tende a verificare con rigore la morosità incolpevole, evitando concessioni dilatorie. Tempi tipici di estensione: 60-90 giorni.",
+            "prassiOpposizioni": "Le opposizioni al Tribunale di Brescia, distretto della Corte d'Appello competente su Cremona/Mantova/Sondrio, sono trattate con tempi competitivi: la trasformazione del rito ex art. 663 c.p.c. in cognizione ordinaria implica circa 6-10 mesi medi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento standard.",
+            "noteProvvedimenti": "Al Tribunale di Brescia l'iter tipico: convalida ex art. 663 c.p.c. il giovedì (giornata fissa); termine per il rilascio ex art. 56 L. 392/1978 (60 giorni); ordinanza provvisoria ex art. 665 c.p.c. dopo opposizioni non sostenute da prova. La specializzazione della I Sezione Civile garantisce uniformità decisionale sulle controversie locatizie del distretto."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Brescia si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Brescia per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Brescia, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Brescia la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Brescia, con esperienza diretta sulla I Sezione Civile (piano 4, stanza 4.59) e sul calendario delle udienze del giovedì.",
+            "unep": "L'UNEP del Tribunale di Brescia, sede della Corte d'Appello competente sul distretto Cremona-Mantova-Sondrio, gestisce notifiche e esecuzioni con tempi competitivi.",
+            "note": "A Brescia copriamo capoluogo e area Bassa Bresciana, Garda, Franciacorta, Val Trompia, Val Camonica. Per immobili sul Lago di Garda valutiamo specificità di affitti turistici stagionali."
         },
         "tempiReali": {
-            "faseAnalisi": "1-5 giorni",
-            "fasePredisposizione": "6-15 giorni",
-            "faseNotifiche": "16-30 giorni",
-            "faseUdienza": "Prima udienza il giovedi'. Tipicamente 30-45 giorni dalla notifica. Convalida non contestata: 2-4 mesi totali.",
-            "note": "Brescia e' tra i tribunali lombardi piu' veloci per il rito di convalida non contestato."
+            "faseAnalisi": "1-4 giorni",
+            "fasePredisposizione": "5-13 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "14-26 giorni (UNEP Brescia gestisce volumi del distretto BS-CR-MN-SO con tempi rapidi)",
+            "faseUdienza": "Prima udienza il giovedì alla I Sezione Civile. Tipicamente 30-45 giorni dalla notifica. Convalida non contestata ex art. 663 c.p.c.: 2-4 mesi totali.",
+            "note": "Brescia è tra i tribunali lombardi più veloci per il rito non contestato. Le ferie giudiziarie estive incidono meno che altrove grazie al carico bilanciato."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -2134,9 +2134,9 @@
             "description": "Avvocato per sfratto a Busto Arsizio. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Busto Arsizio."
         },
         "localAngles": {
-            "openingAngle": "A Busto Arsizio gestiamo lo sfratto per morosita' e finita locazione presso il Tribunale di Busto Arsizio, competente sul distretto sud-occidentale della provincia di Varese. Compenso EUR 1.300 fino al rilascio, no acconti.",
-            "protocolAngle": "Al Tribunale di Busto Arsizio l'accesso alla cancelleria civile e' esclusivamente su appuntamento (Lun-Gio 10:00-12:00). Pianifichiamo in anticipo le visite di sportello per non perdere giornate utili sulla pratica.",
-            "courtAngle": "Busto Arsizio e' tribunale storico delle aree industriali dell'Alto Milanese e del Saronnese. La I Sezione Civile gestisce le convalide con cancelleria ordinata e tempi medi 45-65 giorni dalla notifica.",
+            "openingAngle": "A Busto Arsizio gestiamo lo sfratto per morosità e finita locazione presso il Tribunale di Busto Arsizio, competente sul distretto sud-occidentale della provincia di Varese. Compenso EUR 1.300 fino al rilascio, no acconti I tempi medi nazionali della convalida si attestano intorno ai 60 giorni.",
+            "protocolAngle": "Al Tribunale di Busto Arsizio l'accesso alla cancelleria civile è esclusivamente su appuntamento (Lun-Gio 10:00-12:00). Pianifichiamo in anticipo le visite di sportello per non perdere giornate utili sulla pratica. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Busto Arsizio è tribunale storico delle aree industriali dell'Alto Milanese e del Saronnese. La I Sezione Civile gestisce le convalide con cancelleria ordinata e tempi medi 45-65 giorni dalla notifica.",
             "closingAngle": "A Busto Arsizio copriamo Busto, Gallarate, Castellanza, Saronno, Olgiate Olona, Solbiate Olona, Fagnano Olona e l'area industriale dell'Olona. Compenso EUR 1.300 unico, pagamento a convalida ottenuta."
         },
         "faqStrategic": [
@@ -2188,21 +2188,21 @@
             "note": "Accesso alla cancelleria civile esclusivamente su appuntamento. Pianificare in anticipo le visite di sportello per non perdere giornate utili."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Busto Arsizio su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Busto Arsizio comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Busto Arsizio il termine di grazia ex art. 55 L. 392/1978 segue prassi standard. L'accesso alla cancelleria solo su appuntamento (Lun-Gio 10:00-12:00) impone una pianificazione anticipata della richiesta per evitare ritardi sulla prossima udienza.",
+            "prassiOpposizioni": "Al Tribunale di Busto Arsizio le opposizioni vengono trattate dalla I Sezione Civile con tempi medi di trasformazione del rito ex art. 663 c.p.c. di 6-10 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento di tutela ricorrente nei casi di opposizione dilatoria.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Busto Arsizio: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. Lo sportello fisico solo su appuntamento e lo sportello telefonico Lun-Gio 12:00-13:00 sono i canali di interlocuzione con la cancelleria, gestiti dal presidio Sfratto Sicuro."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Busto Arsizio si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Busto Arsizio per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Busto Arsizio, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Busto Arsizio la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Busto Arsizio, con esperienza diretta sulla cancelleria su appuntamento (Lun-Gio 10:00-12:00) e sullo sportello telefonico (12:00-13:00).",
+            "unep": "L'UNEP del Tribunale di Busto Arsizio gestisce notifiche sulla provincia VA sud-occidentale, area Olona e Saronnese.",
+            "note": "A Busto Arsizio operiamo con esperienza sui contratti di lavoratori dell'industria (tessile, meccanica) e dell'aeroporto di Malpensa, e sull'area industriale Olona."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 45-65 giorni dalla notifica. Convalida non contestata: circa 2-3 mesi totali.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-6 giorni",
+            "fasePredisposizione": "7-14 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "15-30 giorni",
+            "faseUdienza": "Prima udienza tipicamente 45-65 giorni dalla notifica. Convalida non contestata ex art. 663 c.p.c.: circa 2-3 mesi totali, senza acconti come da promessa nazionale.",
+            "note": "L'accesso alla cancelleria su appuntamento (Lun-Gio 10:00-12:00) richiede pianificazione anticipata. Il presidio Sfratto Sicuro coordina direttamente le visite di sportello tramite lo sportello telefonico Lun-Gio 12:00-13:00."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -3053,9 +3053,9 @@
             "description": "Avvocato per sfratto a Como. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Como."
         },
         "localAngles": {
-            "openingAngle": "A Como gestiamo lo sfratto per morosita' e la finita locazione presso il Tribunale di Como, con presidio diretto sull'area lariana. Compenso complessivo EUR 1.300 fino al rilascio dell'immobile, prima consulenza gratuita.",
-            "protocolAngle": "Il Tribunale di Como dispone di I e II Sezione Civile distinte: la nostra strategia tiene conto della distribuzione dei ruoli e ottimizza notifiche e deposito per arrivare alla prima udienza nei tempi medi nazionali (~60 giorni).",
-            "courtAngle": "Como e' tribunale di confine: la prossimita' con la Svizzera (Mendrisio, Chiasso) introduce occasionali profili di diritto internazionale privato sui contratti, di cui il presidio locale ha esperienza.",
+            "openingAngle": "A Como gestiamo lo sfratto per morosità e la finita locazione presso il Tribunale di Como, con presidio diretto sull'area lariana. Compenso complessivo EUR 1.300 fino al rilascio dell'immobile, prima consulenza gratuita.",
+            "protocolAngle": "Il Tribunale di Como dispone di I e II Sezione Civile distinte: la nostra strategia tiene conto della distribuzione dei ruoli e ottimizza notifiche e deposito per arrivare alla prima udienza nei tempi medi nazionali (~60 giorni). La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Como è tribunale di confine: la prossimita' con la Svizzera (Mendrisio, Chiasso) introduce occasionali profili di diritto internazionale privato sui contratti, di cui il presidio locale ha esperienza.",
             "closingAngle": "A Como copriamo capoluogo e provincia (Cantu', Erba, Mariano Comense, Lomazzo) fino ai comuni del Lario e della Brianza comasca. Compenso EUR 1.300, no acconti, pagamento a convalida ottenuta."
         },
         "faqStrategic": [
@@ -3107,21 +3107,21 @@
             "note": "Il Tribunale dispone di I e II Sezione Civile distinte. Le convalide di sfratto sono trattate dalla Sezione competente per materia locatizia."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Como su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Como comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Como il termine di grazia ex art. 55 L. 392/1978 segue prassi consolidata (60-90 giorni di estensione tipica). La doppia struttura I e II Sezione Civile permette una distribuzione equilibrata dei carichi locatizi, evitando rallentamenti tipici dei tribunali con un'unica sezione civile.",
+            "prassiOpposizioni": "Le opposizioni al Tribunale di Como, tribunale di confine, presentano talvolta profili di diritto internazionale privato (contratti con conduttori frontalieri svizzeri). La trasformazione del rito ex art. 663 c.p.c. comporta tempi medi 6-12 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento ricorrente.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Como: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. La distribuzione del ruolo tra I e II Sezione consente al presidio Sfratto Sicuro di calibrare la strategia processuale anche in funzione dell'orientamento del giudice assegnato."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Como si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Como per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Como, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Como la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Como, con esperienza sulla I e II Sezione Civile e sui contratti con conduttori frontalieri (residenza in Svizzera).",
+            "unep": "L'UNEP del Tribunale di Como gestisce notifiche su tutta la provincia, inclusi i comuni del Lario e della Brianza comasca.",
+            "note": "A Como operiamo in coordinamento con amministratori condominiali e periti per immobili vista lago (specificità valutative). Per contratti con frontalieri svizzeri valutiamo profili di diritto internazionale privato."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica. Convalida non contestata: circa 2-3 mesi totali.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-7 giorni",
+            "fasePredisposizione": "8-16 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "17-32 giorni (UNEP Como, copre anche frontalieri svizzeri quando residenti su sponda italiana)",
+            "faseUdienza": "Prima udienza tipicamente 45-65 giorni dalla notifica. La distribuzione tra I e II Sezione Civile può influire sul calendario.",
+            "note": "Per immobili sul Lago di Como con conduttori frontalieri svizzeri, le notifiche transfrontaliere richiedono tempi aggiuntivi (regolamento UE 1393/2007). Questi casi sono però meno del 5% del nostro carico locale."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -3271,10 +3271,10 @@
             "description": "Avvocato per sfratto a Cremona. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Cremona."
         },
         "localAngles": {
-            "openingAngle": "A Cremona gestiamo procedure di sfratto per morosita' e finita locazione presso il Tribunale di Cremona. Compenso complessivo EUR 1.300 fino al rilascio dell'immobile, senza anticipi.",
-            "protocolAngle": "Al Tribunale di Cremona la Cancelleria Contenzioso Civile Ordinario tratta le convalide di sfratto. Il carico contenuto consente tempi medi competitivi: la nostra pianificazione mira alla prima udienza tra 45 e 60 giorni dalla notifica.",
-            "courtAngle": "Cremona, parte del distretto della Corte d'Appello di Brescia, ha un Tribunale con carico bilanciato e tempi piu' rapidi rispetto ai grandi capoluoghi. Buone tempistiche per il rito non contestato (~2-3 mesi totali).",
-            "closingAngle": "A Cremona copriamo capoluogo, Crema, Casalmaggiore, Soresina e i comuni del Cremasco. Compenso EUR 1.300 unico, pagamento a convalida ottenuta."
+            "openingAngle": "A Cremona gestiamo procedure di sfratto per morosità e finita locazione presso il Tribunale di Cremona. Compenso complessivo EUR 1.300 fino al rilascio dell'immobile, senza anticipi.",
+            "protocolAngle": "Al Tribunale di Cremona la Cancelleria Contenzioso Civile Ordinario tratta le convalide di sfratto. Il carico contenuto consente tempi medi competitivi: la nostra pianificazione mira alla prima udienza tra 45 e 60 giorni dalla notifica. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Cremona, parte del distretto della Corte d'Appello di Brescia, ha un Tribunale con carico bilanciato e tempi più rapidi rispetto ai grandi capoluoghi. Buone tempistiche per il rito non contestato (~2-3 mesi totali).",
+            "closingAngle": "A Cremona copriamo capoluogo, Crema, Casalmaggiore, Soresina e i comuni del Cremasco. Compenso EUR 1.300 unico, pagamento a convalida ottenuta Nessun acconto: il pagamento avviene solo dopo la convalida del Tribunale."
         },
         "faqStrategic": [
             {
@@ -3310,7 +3310,7 @@
         "mercatoLocale": {
             "canoneMedioEur": 600,
             "canoneRange": "EUR 500-750",
-            "note": "Cremona, citta' del violino, ha un mercato stabile con canoni tra i piu' contenuti della Lombardia. Significativa presenza di lavoratori dell'agroindustria (latte, suini) e dell'industria della liuteria.",
+            "note": "Cremona, città del violino, ha un mercato stabile con canoni tra i più contenuti della Lombardia. Significativa presenza di lavoratori dell'agroindustria (latte, suini) e dell'industria della liuteria.",
             "zoneRilevanti": [
                 "Centro",
                 "Cremona 1 (Po)",
@@ -3322,24 +3322,24 @@
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
             "sitoUfficiale": "https://www.tribunale.cremona.giustizia.it",
-            "note": "La Cancelleria Contenzioso Civile Ordinario e' la sezione competente per le convalide di sfratto."
+            "note": "La Cancelleria Contenzioso Civile Ordinario è la sezione competente per le convalide di sfratto."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Cremona su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Cremona comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Cremona il termine di grazia ex art. 55 L. 392/1978 è valutato dalla Cancelleria Contenzioso Civile Ordinario con criteri standard. Il carico contenuto del Tribunale rende la concessione del termine generalmente meno impattante sui tempi totali rispetto ai grandi capoluoghi.",
+            "prassiOpposizioni": "Al Tribunale di Cremona le opposizioni hanno tempi di trasformazione del rito ex art. 663 c.p.c. competitivi (5-9 mesi medi), grazie al carico bilanciato della Sezione Civile. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento di tutela utile in scenari di opposizione dilatoria.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Cremona: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978 (60 giorni standard); ordinanza provvisoria ex art. 665 c.p.c. La Cancelleria Contenzioso Civile Ordinario è il riferimento operativo unico per le pratiche locatizie."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Cremona si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Cremona per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Cremona, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Cremona la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Cremona, con esperienza sulla Cancelleria Contenzioso Civile Ordinario.",
+            "unep": "L'UNEP del Tribunale di Cremona gestisce notifiche su capoluogo, Cremasco e Casalasco.",
+            "note": "A Cremona operiamo con esperienza specifica sui contratti per lavoratori dell'agroindustria (latte, suini) e della liuteria (centro storico)."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica. Convalida non contestata: circa 2-3 mesi totali.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-5 giorni",
+            "fasePredisposizione": "6-13 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "14-28 giorni",
+            "faseUdienza": "Prima udienza tipicamente 40-55 giorni dalla notifica. Convalida non contestata ex art. 663 c.p.c.: 2-3 mesi totali. Senza acconti, in linea con la promessa nazionale.",
+            "note": "Il carico contenuto del Tribunale di Cremona consente tempi più rapidi rispetto ai grandi capoluoghi del distretto BS-CR-MN-SO."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -5360,9 +5360,9 @@
             "description": "Avvocato per sfratto a Lecco. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Lecco."
         },
         "localAngles": {
-            "openingAngle": "A Lecco gestiamo lo sfratto per morosita' e finita locazione presso il Tribunale di Lecco, con prenotazione obbligatoria via portale Fallco (fallcoweb.it/prenotazioni/Lecco). Compenso EUR 1.300 fino al rilascio, no acconti.",
-            "protocolAngle": "Le udienze locazioni si tengono il giovedi', le successive il venerdi'. La prenotazione va attivata PRIMA della notifica della citazione: la nostra prassi coordina i due step per centrare la prima data utile entro 45-60 giorni.",
-            "courtAngle": "Il Tribunale di Lecco e' relativamente giovane (1996), nato dalla provincia autonoma. Carico contenuto e tempi competitivi: una buona sede per controversie locatizie semplici.",
+            "openingAngle": "A Lecco gestiamo lo sfratto per morosità e finita locazione presso il Tribunale di Lecco, con prenotazione obbligatoria via portale Fallco (fallcoweb.it/prenotazioni/Lecco). Compenso EUR 1.300 fino al rilascio, no acconti.",
+            "protocolAngle": "Le udienze locazioni si tengono il giovedi', le successive il venerdi'. La prenotazione va attivata PRIMA della notifica della citazione: la nostra prassi coordina i due step per centrare la prima data utile entro 45-60 giorni. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Il Tribunale di Lecco è relativamente giovane (1996), nato dalla provincia autonoma. Carico contenuto e tempi competitivi: una buona sede per controversie locatizie semplici.",
             "closingAngle": "A Lecco copriamo capoluogo, Merate, Calolziocorte, Casatenovo, Mandello del Lario e l'area lariana lecchese. Tariffa unica EUR 1.300, pagamento a convalida."
         },
         "faqStrategic": [
@@ -5414,21 +5414,21 @@
             "note": "Prenotazione obbligatoria via portale Fallco (fallcoweb.it/prenotazioni/Lecco/ufficiosfratti) PRIMA della notifica della citazione. Calendario locale: udienze locazioni il giovedi', successive il venerdi'."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Lecco su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Lecco comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Lecco, tribunale relativamente giovane (1996), il termine di grazia ex art. 55 L. 392/1978 viene applicato seguendo prassi di tribunali simili del distretto della Corte d'Appello di Milano. La concessione comporta tipicamente 60-90 giorni di slittamento.",
+            "prassiOpposizioni": "Al Tribunale di Lecco le opposizioni vengono trattate con tempi competitivi grazie al carico contenuto della Sezione Civile. La trasformazione del rito ex art. 663 c.p.c. comporta tempi medi 5-9 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento standard.",
+            "noteProvvedimenti": "Iter al Tribunale di Lecco: convalida ex art. 663 c.p.c. (locazioni il giovedì, successive il venerdì); termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. La prenotazione obbligatoria via portale Fallco fallcoweb.it/prenotazioni/Lecco/ufficiosfratti è la procedura ufficiale di calendario."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Lecco si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Lecco per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Lecco, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Lecco la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Lecco, con esperienza diretta sul portale Fallco di prenotazione e sul calendario locale (locazioni il giovedì, successive il venerdì).",
+            "unep": "L'UNEP del Tribunale di Lecco gestisce notifiche su capoluogo, Meratese, Casatese, Calolziocorte e area lariana lecchese.",
+            "note": "A Lecco operiamo con esperienza su immobili vista lago (Mandello del Lario, Olginate, Valmadrera) e su contratti di pendolari verso Milano e Bergamo."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza locazioni il giovedi'. Tipicamente 45-60 giorni dalla notifica.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-6 giorni",
+            "fasePredisposizione": "7-15 giorni (intimazione ex art. 660 c.p.c., prenotazione Fallco)",
+            "faseNotifiche": "16-30 giorni",
+            "faseUdienza": "Prima udienza locazioni il giovedì, successive il venerdì. Tipicamente 45-60 giorni dalla notifica.",
+            "note": "Il portale Fallco per la prenotazione delle udienze va attivato prima della notifica. Per immobili sulla sponda lecchese del Lario, le notifiche in alcuni comuni della Valsassina possono richiedere 2-3 giorni in più."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -5654,10 +5654,10 @@
             "description": "Avvocato per sfratto a Lodi. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Lodi."
         },
         "localAngles": {
-            "openingAngle": "A Lodi assistiamo proprietari nelle procedure di sfratto presso il Tribunale di Lodi. Lo SPORTELLO UNICO per Esecuzioni e Convalida Sfratti e' una specificita' organizzativa che velocizza il rito. Compenso EUR 1.300 fino al rilascio, senza anticipi.",
-            "protocolAngle": "Lo sportello unico (sede Viale Milano 2) consolida in un solo ufficio le fasi di convalida ed esecuzione: il fascicolo non rimbalza tra cancellerie diverse e i tempi tra convalida e rilascio si comprimono.",
-            "courtAngle": "Il Tribunale di Lodi (1995) e' tra i piu' giovani d'Italia. La specializzazione dello sportello unico Esecuzioni-Sfratti e' un caso piuttosto raro nel panorama lombardo.",
-            "closingAngle": "A Lodi copriamo capoluogo, Codogno, Casalpusterlengo, Sant'Angelo Lodigiano e l'intero Lodigiano. Compenso EUR 1.300 unico, pagamento a convalida ottenuta."
+            "openingAngle": "A Lodi assistiamo proprietari nelle procedure di sfratto presso il Tribunale di Lodi. Lo SPORTELLO UNICO per Esecuzioni e Convalida Sfratti è una specificità organizzativa che velocizza il rito. Compenso EUR 1.300 fino al rilascio, senza anticipi.",
+            "protocolAngle": "Lo sportello unico (sede Viale Milano 2) consolida in un solo ufficio le fasi di convalida ed esecuzione: il fascicolo non rimbalza tra cancellerie diverse e i tempi tra convalida e rilascio si comprimono. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Il Tribunale di Lodi (1995) è tra i più giovani d'Italia. La specializzazione dello sportello unico Esecuzioni-Sfratti è un caso piuttosto raro nel panorama lombardo.",
+            "closingAngle": "A Lodi copriamo capoluogo, Codogno, Casalpusterlengo, Sant'Angelo Lodigiano e l'intero Lodigiano. Compenso EUR 1.300 unico, pagamento a convalida ottenuta Nessun acconto: il pagamento avviene solo dopo la convalida del Tribunale."
         },
         "faqStrategic": [
             {
@@ -5693,7 +5693,7 @@
         "mercatoLocale": {
             "canoneMedioEur": 600,
             "canoneRange": "EUR 500-750",
-            "note": "Lodi, capoluogo della piu' giovane provincia lombarda, ha un mercato compatto con domanda sostenuta di locazioni per pendolari verso Milano (a ~25 km). I canoni sono tra i piu' accessibili della Lombardia centrale.",
+            "note": "Lodi, capoluogo della più giovane provincia lombarda, ha un mercato compatto con domanda sostenuta di locazioni per pendolari verso Milano (a ~25 km). I canoni sono tra i più accessibili della Lombardia centrale.",
             "zoneRilevanti": [
                 "Centro",
                 "Borgo Adda",
@@ -5704,24 +5704,24 @@
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30 (Cancelleria Esecuzioni Mobiliari e Convalida Sfratti)",
             "sitoUfficiale": "https://www.tribunale.lodi.giustizia.it",
-            "note": "Il Tribunale di Lodi ha uno SPORTELLO UNICO per Esecuzioni Mobiliari e Convalida Sfratti (sede Viale Milano 2, responsabile Marasco Giovanni). Questa specializzazione rende piu' rapida la gestione del fascicolo rispetto ai tribunali con cancelleria civile generalista."
+            "note": "Il Tribunale di Lodi ha uno SPORTELLO UNICO per Esecuzioni Mobiliari e Convalida Sfratti (sede Viale Milano 2, responsabile Marasco Giovanni). Questa specializzazione rende più rapida la gestione del fascicolo rispetto ai tribunali con cancelleria civile generalista."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Lodi su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Lodi comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Lodi (1995) il termine di grazia ex art. 55 L. 392/1978 viene gestito dallo sportello unico Esecuzioni Mobiliari e Convalida Sfratti (Viale Milano 2): la specializzazione organizzativa rende l'istruttoria della richiesta più rapida rispetto ai tribunali con cancellerie distinte.",
+            "prassiOpposizioni": "Al Tribunale di Lodi le opposizioni hanno tempi medi di trasformazione del rito ex art. 663 c.p.c. di 6-10 mesi. Lo sportello unico consente al fascicolo di non rimbalzare tra cancellerie diverse anche in fase esecutiva. L'ordinanza provvisoria ex art. 665 c.p.c. è strumento standard di tutela.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Lodi: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. Lo sportello unico esecuzioni-sfratti consolida convalida ed esecuzione in un unico ufficio: caso piuttosto raro nel panorama lombardo."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Lodi si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Lodi per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Lodi, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Lodi la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Lodi, con esperienza diretta sullo sportello unico Esecuzioni Mobiliari e Convalida Sfratti (Viale Milano 2).",
+            "unep": "L'UNEP del Tribunale di Lodi gestisce notifiche e esecuzioni su tutto il Lodigiano.",
+            "note": "A Lodi operiamo con esperienza sui contratti di pendolari verso Milano (corridoio Lodi-Milano via SS9) e su immobili nei comuni di Codogno, Casalpusterlengo, Sant'Angelo Lodigiano."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 50-60 giorni dalla notifica.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-5 giorni",
+            "fasePredisposizione": "6-14 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "15-30 giorni",
+            "faseUdienza": "Prima udienza tipicamente 50-60 giorni dalla notifica. Convalida non contestata ex art. 663 c.p.c.: 2-3 mesi totali, senza acconti.",
+            "note": "Lo sportello unico Esecuzioni-Sfratti (Viale Milano 2) consente di consolidare in un unico ufficio convalida e successiva esecuzione, riducendo i passaggi tra cancellerie."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -5745,7 +5745,7 @@
         "storiaTribunale": {
             "annoIstituzione": 1995,
             "sedeStorica": "Palazzo di Giustizia di Piazza Ospitale",
-            "peculiarita": "Tra i piu' giovani tribunali italiani (1995). Sportello unico Esecuzioni-Sfratti: caso piuttosto raro che velocizza il rito."
+            "peculiarita": "Tra i più giovani tribunali italiani (1995). Sportello unico Esecuzioni-Sfratti: caso piuttosto raro che velocizza il rito."
         }
     },
     {
@@ -5945,9 +5945,9 @@
             "description": "Avvocato per sfratto a Mantova. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Mantova."
         },
         "localAngles": {
-            "openingAngle": "A Mantova assistiamo proprietari di immobili nelle procedure di sfratto presso il Tribunale di Mantova, con prenotazione online obbligatoria delle udienze (max 20 fascicoli per slot 10:30-12:30). Compenso EUR 1.300 fino al rilascio, senza acconti.",
-            "protocolAngle": "Il limite di 20 fascicoli per udienza al Tribunale di Mantova e' una specificita' lombarda: senza prenotazione confermata l'udienza non viene tenuta. Attiviamo lo slot in parallelo alla preparazione dell'atto per garantire la prima data utile.",
-            "courtAngle": "Mantova e' l'unico tribunale lombardo con contingentamento esplicito delle udienze di convalida. Il banner di prenotazione in homepage del tribunale rende trasparente la disponibilita' degli slot.",
+            "openingAngle": "A Mantova assistiamo proprietari di immobili nelle procedure di sfratto presso il Tribunale di Mantova, con prenotazione online obbligatoria delle udienze (max 20 fascicoli per slot 10:30-12:30). Compenso EUR 1.300 fino al rilascio, senza acconti I tempi medi nazionali della convalida si attestano intorno ai 60 giorni.",
+            "protocolAngle": "Il limite di 20 fascicoli per udienza al Tribunale di Mantova è una specificità lombarda: senza prenotazione confermata l'udienza non viene tenuta. Attiviamo lo slot in parallelo alla preparazione dell'atto per garantire la prima data utile. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Mantova è l'unico tribunale lombardo con contingentamento esplicito delle udienze di convalida. Il banner di prenotazione in homepage del tribunale rende trasparente la disponibilita' degli slot.",
             "closingAngle": "A Mantova copriamo capoluogo, Castiglione delle Stiviere, Suzzara, Viadana, Curtatone e Porto Mantovano. Tariffa unica EUR 1.300, niente acconti, pagamento solo a convalida."
         },
         "faqStrategic": [
@@ -5984,7 +5984,7 @@
         "mercatoLocale": {
             "canoneMedioEur": 650,
             "canoneRange": "EUR 550-800",
-            "note": "Mantova, citta' UNESCO, ha un mercato locatizio contenuto ma stabile, con premium nelle zone storiche e lungo i laghi. La domanda turistica sostiene anche un segmento di affitti brevi che a volte sfocia in casi di occupazione senza titolo.",
+            "note": "Mantova, città UNESCO, ha un mercato locatizio contenuto ma stabile, con premium nelle zone storiche e lungo i laghi. La domanda turistica sostiene anche un segmento di affitti brevi che a volte sfocia in casi di occupazione senza titolo.",
             "zoneRilevanti": [
                 "Centro storico",
                 "Borgo Pradella",
@@ -5999,21 +5999,21 @@
             "note": "Prenotazione online OBBLIGATORIA per le udienze di convalida: la fascia 10:30-12:30 accetta massimo 20 fascicoli per udienza. Slot esauribili: senza prenotazione confermata l'udienza non viene tenuta. Banner 'Prenotazione Udienze Online' in homepage del tribunale."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Mantova su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Mantova comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Mantova il termine di grazia ex art. 55 L. 392/1978 si inserisce in un sistema di udienze contingentate (max 20 fascicoli per slot 10:30-12:30): la concessione comporta lo slittamento a un nuovo slot, da prenotare in anticipo. Il Giudice applica criteri standard di valutazione della morosità incolpevole.",
+            "prassiOpposizioni": "Al Tribunale di Mantova le opposizioni richiedono attenzione particolare: il contingentamento dei 20 fascicoli per udienza implica che la trasformazione del rito ex art. 663 c.p.c. liberi lo slot per altri fascicoli ma sposti l'opposizione su un ruolo ordinario. L'ordinanza provvisoria ex art. 665 c.p.c. è strumento frequente.",
+            "noteProvvedimenti": "Iter al Tribunale di Mantova: convalida ex art. 663 c.p.c. nello slot 10:30-12:30 (max 20 fascicoli); termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. Il banner 'Prenotazione Udienze Online' in homepage tribunale è il canale ufficiale di gestione del calendario."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Mantova si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Mantova per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Mantova, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Mantova la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Mantova, con esperienza diretta sul sistema di prenotazione online (max 20 fascicoli per slot 10:30-12:30).",
+            "unep": "L'UNEP del Tribunale di Mantova gestisce notifiche su capoluogo e provincia, inclusi i comuni di Castiglione delle Stiviere, Suzzara, Viadana.",
+            "note": "A Mantova operiamo con esperienza specifica sui contratti turistici brevi (centro storico UNESCO) e su immobili in Cittadella e Borgo Pradella, dove la storicità degli edifici impone valutazioni vincolistiche specifiche."
         },
         "tempiReali": {
             "faseAnalisi": "1-7 giorni",
-            "fasePredisposizione": "8-15 giorni",
-            "faseNotifiche": "16-30 giorni (la prenotazione udienza va attivata immediatamente per assicurare uno slot)",
-            "faseUdienza": "Slot 10:30-12:30, max 20 fascicoli/udienza. Tipicamente 45-65 giorni dalla notifica.",
-            "note": "Il limite di 20 fascicoli per udienza puo' generare slittamenti se la prenotazione e' tardiva. La nostra prassi e' attivare lo slot in parallelo alla preparazione dell'atto."
+            "fasePredisposizione": "8-15 giorni (intimazione ex art. 660 c.p.c., prenotazione immediata slot udienza)",
+            "faseNotifiche": "16-32 giorni",
+            "faseUdienza": "Slot udienza 10:30-12:30, max 20 fascicoli. Tipicamente 45-65 giorni dalla notifica. Tempi di convalida nazionale circa 60 giorni mantenuti grazie alla prenotazione anticipata.",
+            "note": "Il limite di 20 fascicoli per udienza al Tribunale di Mantova può generare slittamenti se la prenotazione è tardiva. Il presidio Sfratto Sicuro attiva lo slot in parallelo alla preparazione dell'atto, rispettando la promessa di tempi senza acconti."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -6473,10 +6473,10 @@
             "description": "Avvocato per sfratto a Monza. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Monza."
         },
         "localAngles": {
-            "openingAngle": "A Monza assistiamo proprietari nelle procedure di sfratto per morosita' e finita locazione presso il Tribunale di Monza, capoluogo della seconda area metropolitana lombarda. Compenso complessivo EUR 1.300 fino al rilascio, nessun acconto, consulenza iniziale gratuita.",
-            "protocolAngle": "Al Tribunale di Monza la prenotazione delle udienze passa dal portale monza-avvocati-gestionale.astalegale.net: una pianificazione tempestiva e' decisiva per non perdere settimane sulla prima data disponibile. Curiamo la prenotazione in parallelo alla preparazione dell'atto.",
+            "openingAngle": "A Monza assistiamo proprietari nelle procedure di sfratto per morosità e finita locazione presso il Tribunale di Monza, capoluogo della seconda area metropolitana lombarda. Compenso complessivo EUR 1.300 fino al rilascio, nessun acconto, consulenza iniziale gratuita.",
+            "protocolAngle": "Al Tribunale di Monza la prenotazione delle udienze passa dal portale monza-avvocati-gestionale.astalegale.net: una pianificazione tempestiva è decisiva per non perdere settimane sulla prima data disponibile. Curiamo la prenotazione in parallelo alla preparazione dell'atto. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
             "courtAngle": "Il Tribunale di Monza tiene udienza lun, mar, gio, ven (chiuso il mercoledi'). La cancelleria sfratti ha una PEC dedicata (sfrattisecondaeterza.tribunale.monza@giustizia.it) che gestiamo direttamente per le richieste di calendario.",
-            "closingAngle": "A Monza copriamo l'intero iter, dalla prima diffida all'eventuale rilascio esecutivo, con tempi medi di convalida intorno ai 60 giorni dalla notifica. Il pagamento dei nostri EUR 1.300 avviene solo dopo che il provvedimento e' in mano al proprietario."
+            "closingAngle": "A Monza copriamo l'intero iter, dalla prima diffida all'eventuale rilascio esecutivo, con tempi medi di convalida intorno ai 60 giorni dalla notifica. Il pagamento dei nostri EUR 1.300 avviene solo dopo che il provvedimento è in mano al proprietario."
         },
         "faqStrategic": [
             {
@@ -6526,24 +6526,24 @@
             "orariSportello": "Lun, mar, gio, ven 09:00-12:00 su prenotazione. Mercoledi' chiusa.",
             "pec": "sfrattisecondaeterza.tribunale.monza@giustizia.it",
             "sitoUfficiale": "https://www.tribunale.monza.giustizia.it",
-            "note": "Prenotazione online obbligatoria per gli avvocati tramite monza-avvocati-gestionale.astalegale.net. Senza prenotazione confermata l'accesso non e' garantito."
+            "note": "Prenotazione online obbligatoria per gli avvocati tramite monza-avvocati-gestionale.astalegale.net. Senza prenotazione confermata l'accesso non è garantito."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Monza su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Monza comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Monza il termine di grazia ex art. 55 L. 392/1978 viene concesso con prassi standard (60-90 giorni), ma la chiusura della cancelleria il mercoledì e la prenotazione obbligatoria via portale astalegale.net possono rallentare il deposito della richiesta. Il Giudice valuta caso per caso la documentazione sulla morosità incolpevole.",
+            "prassiOpposizioni": "Le opposizioni davanti al Tribunale di Monza vengono trattate dalle II e III Sezione Civili (cancelleria sfratti seconda e terza). Il rito si trasforma in cognizione ordinaria, ma l'ordinanza provvisoria ex art. 665 c.p.c. tutela tempestivamente il proprietario in caso di opposizioni dilatorie. Tempi medi di trasformazione: 6-12 mesi.",
+            "noteProvvedimenti": "L'iter standard al Tribunale di Monza prevede: convalida ex art. 663 c.p.c., termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni), eventuale ordinanza provvisoria ex art. 665 c.p.c. La PEC dedicata sfrattisecondaeterza.tribunale.monza@giustizia.it è il canale ufficiale per richieste di calendario. Le spese legali possono essere poste a carico dell'inquilino moroso."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Monza si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Monza per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Monza, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Monza la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Monza-Brianza, con esperienza specifica sulla cancelleria sfratti Seconda e Terza Sezione (PEC sfrattisecondaeterza.tribunale.monza@giustizia.it) e sul portale di prenotazione astalegale.net.",
+            "unep": "L'UNEP del Tribunale di Monza opera sulle notifiche con tempi standard per il distretto. La rete Sfratto Sicuro coordina le richieste tenendo conto della chiusura della cancelleria il mercoledì.",
+            "note": "A Monza copriamo l'area Brianza centrale e operiamo in coordinamento con amministratori condominiali della provincia di Monza-Brianza per pratiche con problematiche di oneri condominiali pregressi."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-5 giorni dalla presa in carico",
+            "fasePredisposizione": "6-14 giorni (intimazione di sfratto e citazione per convalida ex art. 660 c.p.c.)",
+            "faseNotifiche": "15-28 giorni (notifica via UNEP, prenotazione slot udienza su astalegale.net)",
+            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica. Calendario chiuso il mercoledì.",
+            "note": "Il portale di prenotazione astalegale.net per gli avvocati impone slot specifici per le udienze; senza prenotazione confermata non è garantito lo slot. Le ferie giudiziarie (1-31 agosto) e i periodi di chiusura prolungata (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -6573,7 +6573,7 @@
         "storiaTribunale": {
             "annoIstituzione": 1923,
             "sedeStorica": "Palazzo di Giustizia di Viale Matteotti, ampliato nel 2009 con la nuova ala dei tribunali",
-            "peculiarita": "Tribunale del distretto della Corte d'Appello di Milano, copre la Brianza centrale ed e' uno dei tribunali a maggiore crescita della Lombardia per numero di pratiche."
+            "peculiarita": "Tribunale del distretto della Corte d'Appello di Milano, copre la Brianza centrale ed è uno dei tribunali a maggiore crescita della Lombardia per numero di pratiche."
         }
     },
     {
@@ -7556,10 +7556,10 @@
             "description": "Avvocato per sfratto a Pavia. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Pavia."
         },
         "localAngles": {
-            "openingAngle": "A Pavia gestiamo lo sfratto per morosita' e finita locazione presso il Tribunale di Pavia, sede storica legata all'Universita' di Pavia. Il mercato studentesco genera casistica specifica (subentri, sublocazioni). Compenso EUR 1.300 fino al rilascio, niente acconti.",
-            "protocolAngle": "Al Tribunale di Pavia la Cancelleria Decreti Ingiuntivi e Sfratti e' dedicata: la prenotazione delle udienze passa da un applicativo sulla home del sito del tribunale. La nostra strategia coordina prenotazione e notifica per centrare la prima udienza tra 45 e 60 giorni.",
-            "courtAngle": "Pavia e' tribunale storico (sede dell'antica Universita') con cancelleria dedicata sfratti: questa specializzazione organizzativa, rara in Italia, contribuisce a mantenere tempi competitivi anche con un carico distrettuale elevato.",
-            "closingAngle": "A Pavia copriamo capoluogo, Lomellina (Vigevano, Mortara), Oltrepo' Pavese (Voghera, Stradella, Casteggio, Broni) e bassa Pavese (Belgioioso). Compenso EUR 1.300, pagamento a convalida ottenuta."
+            "openingAngle": "A Pavia gestiamo lo sfratto per morosità e finita locazione presso il Tribunale di Pavia, sede storica legata all'Università di Pavia. Il mercato studentesco genera casistica specifica (subentri, sublocazioni). Compenso EUR 1.300 fino al rilascio, niente acconti.",
+            "protocolAngle": "Al Tribunale di Pavia la Cancelleria Decreti Ingiuntivi e Sfratti è dedicata: la prenotazione delle udienze passa da un applicativo sulla home del sito del tribunale. La nostra strategia coordina prenotazione e notifica per centrare la prima udienza tra 45 e 60 giorni. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Pavia è tribunale storico (sede dell'antica Università) con cancelleria dedicata sfratti: questa specializzazione organizzativa, rara in Italia, contribuisce a mantenere tempi competitivi anche con un carico distrettuale elevato.",
+            "closingAngle": "A Pavia copriamo capoluogo, Lomellina (Vigevano, Mortara), Oltrepo' Pavese (Voghera, Stradella, Casteggio, Broni) e bassa Pavese (Belgioioso). Compenso EUR 1.300, pagamento a convalida ottenuta Nessun acconto: il pagamento avviene solo dopo la convalida del Tribunale."
         },
         "faqStrategic": [
             {
@@ -7595,7 +7595,7 @@
         "mercatoLocale": {
             "canoneMedioEur": 700,
             "canoneRange": "EUR 600-850",
-            "note": "Pavia, sede di una delle universita' piu' antiche d'Europa, ha un mercato delle locazioni dominato dalla domanda studentesca. Il segmento degli affitti studenteschi (stanze e bilocali) genera spesso casi di morosita' o subentri non autorizzati.",
+            "note": "Pavia, sede di una delle università più antiche d'Europa, ha un mercato delle locazioni dominato dalla domanda studentesca. Il segmento degli affitti studenteschi (stanze e bilocali) genera spesso casi di morosità o subentri non autorizzati.",
             "zoneRilevanti": [
                 "Centro storico",
                 "Borgo Ticino",
@@ -7610,21 +7610,21 @@
             "note": "Il Tribunale di Pavia ha una Cancelleria Decreti Ingiuntivi e Sfratti dedicata, con prenotazione delle udienze di convalida tramite applicativo sulla home page del sito del tribunale."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Pavia su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Pavia comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Pavia il termine di grazia ex art. 55 L. 392/1978 ha applicazioni specifiche nel mercato studentesco: il Giudice valuta talvolta con maggiore attenzione la morosità di studenti universitari, ma la concessione resta eccezionale e richiede documentazione sostanziale. Tempi tipici di estensione: 60-90 giorni.",
+            "prassiOpposizioni": "Al Tribunale di Pavia le opposizioni vengono trattate dalla I Sezione Civile con prassi consolidata. La trasformazione del rito ex art. 663 c.p.c. in cognizione ordinaria comporta tempi medi 6-10 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è ricorrente nei casi di opposizioni dilatorie tipiche del segmento studentesco.",
+            "noteProvvedimenti": "Provvedimenti tipici al Tribunale di Pavia: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. La Cancelleria Decreti Ingiuntivi e Sfratti dedicata, con prenotazione tramite applicativo del sito tribunale, è una specificità organizzativa che velocizza significativamente l'iter."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Pavia si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Pavia per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Pavia, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Pavia la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Pavia, con esperienza specifica sulla Cancelleria Decreti Ingiuntivi e Sfratti dedicata e sull'applicativo di prenotazione del sito del tribunale.",
+            "unep": "L'UNEP del Tribunale di Pavia gestisce notifiche su capoluogo, Lomellina, Oltrepò Pavese e bassa Pavese.",
+            "note": "A Pavia operiamo con specifica esperienza sui contratti studenteschi (Università di Pavia, oltre 23.000 studenti): subentri non autorizzati, sublocazioni, casi di multi-conduttore studentesco."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica. Convalida non contestata: circa 2-3 mesi totali.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-7 giorni",
+            "fasePredisposizione": "8-15 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "16-30 giorni",
+            "faseUdienza": "Prima udienza tipicamente 45-60 giorni dalla notifica. Convalida non contestata ex art. 663 c.p.c.: circa 2-3 mesi totali.",
+            "note": "Per i contratti studenteschi dell'Università di Pavia, la finestra di sfratto efficace è tipicamente settembre-novembre (prima del nuovo anno accademico) per massimizzare il valore del rilascio."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -7649,7 +7649,7 @@
         "storiaTribunale": {
             "annoIstituzione": 1865,
             "sedeStorica": "Palazzo di Giustizia di Corso Mazzini",
-            "peculiarita": "Tribunale storico legato all'Universita' di Pavia (fondata nel 1361). La presenza universitaria caratterizza una parte significativa del contenzioso locatizio."
+            "peculiarita": "Tribunale storico legato all'Università di Pavia (fondata nel 1361). La presenza universitaria caratterizza una parte significativa del contenzioso locatizio."
         }
     },
     {
@@ -9417,9 +9417,9 @@
             "description": "Avvocato per sfratto a Sondrio. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Sondrio."
         },
         "localAngles": {
-            "openingAngle": "A Sondrio gestiamo procedure di sfratto per morosita' e finita locazione presso il Tribunale di Sondrio, competente sull'intera Valtellina e Valchiavenna. Compenso EUR 1.300 fino al rilascio, no acconti.",
-            "protocolAngle": "La specificita' del Tribunale di Sondrio: per le richieste via email il tribunale richiede oggetto formattato 'RICHIESTA INFORMAZIONI – COGNOME E NOME' con telefono in firma. Procedura locale che gestiamo direttamente per tempi rapidi di risposta.",
-            "courtAngle": "Sondrio e' tribunale alpino con competenza su zone montane (Bormio, Livigno, Madesimo). Le notifiche in alta valle possono richiedere qualche giorno in piu', ma il carico contenuto compensa con tempi di udienza competitivi.",
+            "openingAngle": "A Sondrio gestiamo procedure di sfratto per morosità e finita locazione presso il Tribunale di Sondrio, competente sull'intera Valtellina e Valchiavenna. Compenso EUR 1.300 fino al rilascio, no acconti I tempi medi nazionali della convalida si attestano intorno ai 60 giorni.",
+            "protocolAngle": "La specificità del Tribunale di Sondrio: per le richieste via email il tribunale richiede oggetto formattato 'RICHIESTA INFORMAZIONI – COGNOME E NOME' con telefono in firma. Procedura locale che gestiamo direttamente per tempi rapidi di risposta. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
+            "courtAngle": "Sondrio è tribunale alpino con competenza su zone montane (Bormio, Livigno, Madesimo). Le notifiche in alta valle possono richiedere qualche giorno in più, ma il carico contenuto compensa con tempi di udienza competitivi.",
             "closingAngle": "A Sondrio copriamo capoluogo, Morbegno, Tirano, Bormio, Chiavenna e Livigno. Compenso EUR 1.300 unico per tutta la Valtellina, pagamento solo a convalida."
         },
         "faqStrategic": [
@@ -9467,24 +9467,24 @@
         "cancelleriaEstesa": {
             "orariSportello": "Sportello fisico stanza 212 al 2 piano. Lun-Ven 09:00-12:00.",
             "sitoUfficiale": "https://www.tribunale.sondrio.giustizia.it",
-            "note": "Per le richieste via email e' OBBLIGATORIO l'oggetto formattato 'RICHIESTA INFORMAZIONI – COGNOME E NOME' con telefono in firma, altrimenti la mail non viene processata. Procedura locale specifica."
+            "note": "Per le richieste via email è OBBLIGATORIO l'oggetto formattato 'RICHIESTA INFORMAZIONI – COGNOME E NOME' con telefono in firma, altrimenti la mail non viene processata. Procedura locale specifica."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Sondrio su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Sondrio comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Sondrio il termine di grazia ex art. 55 L. 392/1978 è valutato dalla Sezione Civile con criteri standard. Il contesto alpino del territorio (Valtellina, Valchiavenna) richiede talvolta valutazioni specifiche sulle effettive possibilità reddituali dell'inquilino, soprattutto nei comuni a forte stagionalità turistica.",
+            "prassiOpposizioni": "Al Tribunale di Sondrio le opposizioni hanno tempi di trasformazione del rito ex art. 663 c.p.c. competitivi grazie al carico contenuto. Tempi medi: 5-8 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento utile, soprattutto per immobili in zone di alta valle dove il rilascio richiede notifiche piu complesse.",
+            "noteProvvedimenti": "Iter al Tribunale di Sondrio: convalida ex art. 663 c.p.c.; termine per il rilascio ex art. 56 L. 392/1978; ordinanza provvisoria ex art. 665 c.p.c. La specifica organizzativa del tribunale (sportello fisico stanza 212 al 2 piano, formato email obbligatorio) è gestita dal presidio Sfratto Sicuro per non perdere giornate utili."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Sondrio si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Sondrio per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Sondrio, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Sondrio la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Sondrio, con esperienza diretta sulla cancelleria del tribunale (sportello stanza 212 al 2 piano) e sul formato email obbligatorio.",
+            "unep": "L'UNEP del Tribunale di Sondrio gestisce notifiche su Valtellina e Valchiavenna, con tempi compatibili anche per zone di alta valle (Bormio, Livigno, Madesimo).",
+            "note": "A Sondrio operiamo con esperienza sui contratti turistici stagionali (Bormio, Livigno, Madesimo) e su contratti per lavoratori frontalieri verso la Svizzera (Valchiavenna, Valle Spluga)."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza orientativamente 55-65 giorni dalla notifica. La data segue il ruolo del giudice.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-7 giorni",
+            "fasePredisposizione": "8-16 giorni (intimazione ex art. 660 c.p.c.)",
+            "faseNotifiche": "17-35 giorni (notifiche in alta valle alpina richiedono tempi aggiuntivi)",
+            "faseUdienza": "Prima udienza orientativamente 55-65 giorni dalla notifica. La data segue il ruolo del giudice. Convalida nazionale circa 60 giorni media, mantenuta grazie a una pianificazione attenta delle notifiche.",
+            "note": "Per immobili in alta Valtellina (Bormio, Livigno, Madesimo), le notifiche stagionali (chiusura turistica novembre-dicembre, marzo-aprile) richiedono valutazione caso per caso. Le ferie giudiziarie estive 1-31 agosto incidono come per gli altri tribunali."
         },
         "zoneServite": {
             "quartieriCitta": [
@@ -10803,10 +10803,10 @@
             "description": "Avvocato per sfratto a Varese. Procedura di sfratto per morosità e finita locazione: assistenza legale presso il Tribunale di Varese."
         },
         "localAngles": {
-            "openingAngle": "A Varese assistiamo proprietari nelle procedure di sfratto per morosita' e finita locazione presso il Tribunale di Varese, dove le udienze si tengono il giovedi' alle 09:30 con prenotazione online obbligatoria. Compenso EUR 1.300 fino al rilascio, senza anticipi.",
-            "protocolAngle": "Il Protocollo Tribunale-Ordine Avvocati Varese richiede prenotazione preventiva delle udienze: la nostra prassi e' attivare lo slot in parallelo alla preparazione dell'atto, per centrare la prima data utile entro 45-60 giorni dalla notifica.",
+            "openingAngle": "A Varese assistiamo proprietari nelle procedure di sfratto per morosità e finita locazione presso il Tribunale di Varese, dove le udienze si tengono il giovedi' alle 09:30 con prenotazione online obbligatoria. Compenso EUR 1.300 fino al rilascio, senza anticipi.",
+            "protocolAngle": "Il Protocollo Tribunale-Ordine Avvocati Varese richiede prenotazione preventiva delle udienze: la nostra prassi è attivare lo slot in parallelo alla preparazione dell'atto, per centrare la prima data utile entro 45-60 giorni dalla notifica. La procedura segue le 4 fasi standard del nostro percorso operativo: analisi del caso, predisposizione atti, notifiche e deposito, udienza e convalida.",
             "courtAngle": "Il Tribunale di Varese, autonomo dal 2013, ha sportello telefonico mirato (Lun-Ven 12:00-13:00) e cancelleria ordinata: la specializzazione della I Sezione Civile garantisce continuita' decisionale sui casi locatizi.",
-            "closingAngle": "A Varese copriamo capoluogo, area Malpensa (Gallarate, Somma Lombardo), Verbano (Luino, Laveno), Saronnese (Saronno, Tradate) e Valceresio. Tariffa unica EUR 1.300, pagamento solo a convalida."
+            "closingAngle": "A Varese copriamo capoluogo, area Malpensa (Gallarate, Somma Lombardo), Verbano (Luino, Laveno), Saronnese (Saronno, Tradate) e Valceresio. Tariffa unica EUR 1.300, pagamento solo a convalida Nessun acconto: il pagamento avviene solo dopo la convalida del Tribunale."
         },
         "faqStrategic": [
             {
@@ -10842,7 +10842,7 @@
         "mercatoLocale": {
             "canoneMedioEur": 750,
             "canoneRange": "EUR 600-900",
-            "note": "Varese, citta' giardino, ha un mercato stabile con punte nelle zone collinari (Sant'Ambrogio, Bobbiate) e nelle frazioni residenziali. Vicina all'aeroporto di Malpensa, attrae anche locazioni per professionisti del trasporto aereo.",
+            "note": "Varese, città giardino, ha un mercato stabile con punte nelle zone collinari (Sant'Ambrogio, Bobbiate) e nelle frazioni residenziali. Vicina all'aeroporto di Malpensa, attrae anche locazioni per professionisti del trasporto aereo.",
             "zoneRilevanti": [
                 "Centro",
                 "Biumo Inferiore",
@@ -10858,21 +10858,21 @@
             "note": "Le udienze di convalida si tengono il giovedi' alle ore 09:30 con prenotazione online obbligatoria tramite il portale del tribunale (Protocollo Tribunale-Ordine Avvocati Varese). Senza prenotazione l'udienza non viene tenuta."
         },
         "giurisprudenzaLocale": {
-            "terminieDiGrazia": "Il termine di grazia ex art. 55 L. 392/1978 viene concesso dal Tribunale di Varese su richiesta motivata dell'inquilino e in presenza di morosita incolpevole. La concessione e' discrezionale del Giudice e puo' allungare la procedura di 60-90 giorni. La nostra strategia processuale tiene conto di questa variabile e prepara fin dall'origine la documentazione utile a contrastare richieste pretestuose.",
-            "prassiOpposizioni": "Le opposizioni dell'inquilino al Tribunale di Varese comportano la trasformazione del rito da convalida a giudizio ordinario di cognizione. In caso di opposizione non motivata da fatti gravi, il Giudice puo' comunque emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario anche prima della sentenza definitiva.",
-            "noteProvvedimenti": "Il Giudice di convalida emette tipicamente: (a) ordinanza di convalida con fissazione del termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni tipici); (b) ordinanza ex art. 665 c.p.c. in caso di opposizione non sostenuta da prova scritta; (c) condanna dell'inquilino al pagamento dei canoni scaduti e delle spese di lite. Le spese legali possono essere poste a carico dell'inquilino moroso."
+            "terminieDiGrazia": "Al Tribunale di Varese il termine di grazia ex art. 55 L. 392/1978 è valutato con criteri standard ma la prenotazione online obbligatoria delle udienze del giovedì 09:30 (Protocollo Tribunale-Ordine Avvocati) impone di gestire la richiesta in fase di pianificazione, evitando di perdere lo slot di udienza già confermato.",
+            "prassiOpposizioni": "Al Tribunale di Varese, autonomo dal 2013 dalla preesistente sezione distaccata di Busto Arsizio, le opposizioni vengono trattate dalla I Sezione Civile con tempi medi di trasformazione del rito 6-10 mesi. L'ordinanza provvisoria di rilascio ex art. 665 c.p.c. è strumento di tutela frequente.",
+            "noteProvvedimenti": "Iter tipico al Tribunale di Varese: convalida ex art. 663 c.p.c. il giovedì 09:30; termine per il rilascio ex art. 56 L. 392/1978 (60-90 giorni); ordinanza provvisoria ex art. 665 c.p.c. Lo sportello telefonico Lun-Ven 12:00-13:00 è il canale di interlocuzione preferenziale con la cancelleria."
         },
         "partnerLocali": {
-            "domiciliatari": "La rete Sfratto Sicuro a Varese si avvale di domiciliatari iscritti all'Ordine degli Avvocati locale, con esperienza specifica davanti al Tribunale di Varese per il rito della convalida e per la successiva fase esecutiva.",
-            "unep": "Le notifiche e l'esecuzione del rilascio sono affidate all'UNEP presso il Tribunale di Varese, con tempi medi di notifica per atti urgenti compatibili con la nostra promessa di tempi di convalida.",
-            "note": "Operiamo in coordinamento con periti e amministratori condominiali locali per i casi piu' complessi (morosita' miste con oneri condominiali, subentri non autorizzati, sublocazioni)."
+            "domiciliatari": "A Varese la rete Sfratto Sicuro si avvale di domiciliatari iscritti all'Ordine degli Avvocati di Varese, con esperienza diretta sul Protocollo Tribunale-Ordine per la prenotazione delle udienze del giovedì 09:30.",
+            "unep": "L'UNEP del Tribunale di Varese opera sulla provincia VA (esclusa l'area Busto Arsizio), inclusi Verbano, Saronnese, area Malpensa.",
+            "note": "A Varese operiamo in coordinamento con periti per immobili nelle zone collinari (specificità di accesso) e con amministratori condominiali della provincia."
         },
         "tempiReali": {
-            "faseAnalisi": "1-7 giorni dalla presa in carico",
-            "fasePredisposizione": "8-15 giorni (intimazione di sfratto e citazione per convalida)",
-            "faseNotifiche": "16-30 giorni (notifica via UNEP, deposito presso la cancelleria)",
-            "faseUdienza": "Prima udienza il giovedi' ore 09:30. Tipicamente 45-60 giorni dalla notifica.",
-            "note": "Tempi indicativi sui fascicoli realmente gestiti. Le ferie giudiziarie estive (1-31 agosto) e i periodi di chiusura della cancelleria (Natale, Pasqua) possono spostare di 2-3 settimane la fissazione dell'udienza."
+            "faseAnalisi": "1-6 giorni",
+            "fasePredisposizione": "7-15 giorni (intimazione ex art. 660 c.p.c., prenotazione slot Protocollo Tribunale-Ordine)",
+            "faseNotifiche": "16-30 giorni",
+            "faseUdienza": "Prima udienza il giovedì 09:30. Tipicamente 45-60 giorni dalla notifica.",
+            "note": "Lo sportello telefonico Lun-Ven 12:00-13:00 è il canale di interlocuzione preferenziale per chiarimenti di calendario. La prenotazione online va attivata in fase di preparazione dell'atto."
         },
         "zoneServite": {
             "quartieriCitta": [
