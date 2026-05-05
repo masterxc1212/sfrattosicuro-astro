@@ -43,4 +43,11 @@ const faqItems = [
   triggers.forEach((btn) => {
     btn.addEventListener('click', () => {
       const panel = btn.parentElement.querySelector('[data-faq-panel]');
-      const isOpen 
+      const isOpen = panel.classList.contains('open');
+      panel.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+})();
+</script>
+
