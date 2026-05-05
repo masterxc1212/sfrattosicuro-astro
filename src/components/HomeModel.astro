@@ -22,6 +22,16 @@ import ContactFormIsland from './ContactFormIsland.astro';
 import Footer from './Footer.astro';
 import SmoothScrollIsland from './SmoothScrollIsland.astro';
 import PageJumpNavIsland from './PageJumpNavIsland.astro';
+// === Piano 80% — 7 sezioni territoriali ===
+import StoriaTribunaleSection from './sede/StoriaTribunaleSection.astro';
+import CancelleriaOperativaSection from './sede/CancelleriaOperativaSection.astro';
+import MercatoLocaleSection from './sede/MercatoLocaleSection.astro';
+import GiurisprudenzaLocaleSection from './sede/GiurisprudenzaLocaleSection.astro';
+import TempiRealiSection from './sede/TempiRealiSection.astro';
+import PartnerLocaliSection from './sede/PartnerLocaliSection.astro';
+import ZoneServiteSection from './sede/ZoneServiteSection.astro';
+import sediJson from '../data/sedi.json';
+import type { SedeItem } from '../lib/home-model';
 
 interface JumpItem {
   href: string;
@@ -61,6 +71,28 @@ const {
 } = Astro.props;
 
 const isNational = sedeSlug === 'nazionale';
+const sedeData: SedeItem | undefined = isNational
+  ? undefined
+  : (sediJson as SedeItem[]).find((s) => s.slug === sedeSlug);
+
+// Piano 80% — la sede ha almeno un blocco territoriale popolato.
+// Quando true, la pagina sede demolisce le sezioni boilerplate generiche
+// (WhenPossible, Types, WhyLawyer, TerritoryCoverage, TribunaleInfo) e
+// le sostituisce con i 7 blocchi territoriali unici.
+const hasTerritorialContent = !!(sedeData && (
+  sedeData.mercatoLocale
+  || sedeData.cancelleriaEstesa
+  || sedeData.giurisprudenzaLocale
+  || sedeData.partnerLocali
+  || sedeData.tempiReali
+  || sedeData.zoneServite
+  || sedeData.storiaTribunale
+));
+
+// Sezioni boilerplate: render solo se NON c'e' contenuto territoriale specifico.
+// Per le pagine nazionale e per le sedi non ancora popolate (124/137),
+// continuiamo a usare il boilerplate.
+const showBoilerplate = !hasTerritorialContent;
 ---
 
 <HeaderIsland />
@@ -90,15 +122,28 @@ const isNational = sedeSlug === 'nazionale';
 
   <hr class="asterism" aria-hidden="true" />
 
-  <WhenPossibleSection sedeSlug={sedeSlug} />
+  {showBoilerplate && <WhenPossibleSection sedeSlug={sedeSlug} />}
   <ProcedureSection sedeSlug={sedeSlug} />
-  <TypesSection sedeSlug={sedeSlug} />
+  {showBoilerplate && <TypesSection sedeSlug={sedeSlug} />}
   <TimelineSection sedeSlug={sedeSlug} />
-  <TribunaleInfoSection sedeSlug={sedeSlug} />
-  <WhyLawyerSection sedeSlug={sedeSlug} />
-  <TerritoryCoverageSection sedeSlug={sedeSlug} />
+  {showBoilerplate && <TribunaleInfoSection sedeSlug={sedeSlug} />}
+  {showBoilerplate && <WhyLawyerSection sedeSlug={sedeSlug} />}
+  {showBoilerplate && <TerritoryCoverageSection sedeSlug={sedeSlug} />}
 
   {showDoveOperiamo && <DoveOperiamoSection />}
+
+  {sedeData && (
+    <>
+      <hr class="asterism" aria-hidden="true" />
+      <StoriaTribunaleSection sede={sedeData} />
+      <CancelleriaOperativaSection sede={sedeData} />
+      <MercatoLocaleSection sede={sedeData} />
+      <GiurisprudenzaLocaleSection sede={sedeData} />
+      <TempiRealiSection sede={sedeData} />
+      <PartnerLocaliSection sede={sedeData} />
+      <ZoneServiteSection sede={sedeData} />
+    </>
+  )}
 
   <hr class="asterism" aria-hidden="true" />
 

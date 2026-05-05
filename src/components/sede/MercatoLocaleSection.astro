@@ -1,0 +1,37 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+import { tempi, pricing } from '../../lib/business';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const m = sede.mercatoLocale;
+const hasData = !!(m && (m.canoneMedioEur || m.canoneRange || m.note || (m.zoneRilevanti && m.zoneRilevanti.length)));
+---
+{hasData && (
+  <section class="section section--mercato" id="mercato-locale" aria-labelledby="mercato-locale-title">
+    <div class="container">
+      <h2 id="mercato-locale-title">Mercato delle locazioni a {sede.nome}</h2>
+      {m?.canoneRange && (
+        <p>
+          A {sede.nome} il canone medio per un appartamento standard si attesta in un range di
+          {' '}<strong>{m.canoneRange}</strong>{m?.canoneMedioEur ? ` (media indicativa EUR ${m.canoneMedioEur})` : ''}.
+          {' '}Quando un inquilino smette di pagare, ogni mese di morosita corrisponde proporzionalmente
+          a questo importo che il proprietario perde, oltre a oneri condominiali e tasse.
+        </p>
+      )}
+      {m?.note && <p>{m.note}</p>}
+      {m?.pressioneMorosita && (
+        <p><strong>Pressione locale:</strong> {m.pressioneMorosita}</p>
+      )}
+      {m?.zoneRilevanti && m.zoneRilevanti.length > 0 && (
+        <p>
+          Zone con dinamiche locative piu attive a {sede.nome}: {m.zoneRilevanti.join(', ')}.
+        </p>
+      )}
+      <p class="note" style="font-size:0.9em;opacity:0.8;">
+        Il nostro compenso complessivo di <strong>{pricing.compensoFormatted}</strong> copre
+        l'intero iter fino al rilascio dell'immobile, senza acconti e senza commissioni
+        sul canone recuperato. Tempi medi di convalida: {tempi.convalidaMedia}.
+      </p>
+    </div>
+  </section>
+)}

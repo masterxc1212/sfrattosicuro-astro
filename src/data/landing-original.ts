@@ -2,13 +2,26 @@
  * landing-original.ts
  * Full text content for the original landing page (1:1 clone source).
  * Grouped by section. Used by src/pages/landing-v2/index.astro
+ *
+ * MIGRATION (2026-05-05) — Step 2 piano 80%:
+ * I valori di business (1.300 EUR, ~60 giorni, orari) del blocco `hero`
+ * sono ora interpolati da `business-config.json` via `lib/business.ts`.
+ * NON sostituire le interpolazioni con stringhe letterali: cambiare il
+ * valore in `business-config.json` propaga automaticamente al landing.
+ *
+ * TODO follow-up Step 2-bis: migrare anche calculator/pricing/full-faq blocks
+ * che contengono ancora "1.300" e "60 giorni" letterali.
  */
+
+import { pricing, tempi, orari } from '../lib/business';
+
+const compensoIt = pricing.compensoComplessivo.toLocaleString('it-IT', { minimumFractionDigits: 0 });
 
 export const landingOriginal = {
 
   meta: {
-    title: 'Avvocato Sfratto per Morosità | Costo Fisso 1.300€ fino alla Convalida',
-    description: 'Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e costo fisso di 1.300€ fino alla convalida. Nessun anticipo. Consulenza senza impegno.',
+    title: `Avvocato Sfratto per Morosità | Costo Fisso ${compensoIt}€ fino alla Convalida`,
+    description: `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e costo fisso di ${compensoIt}€ fino alla convalida. Nessun anticipo. Consulenza senza impegno.`,
     keywords: 'sfratto per morosità, avvocato sfratto, convalida sfratto, inquilino moroso, rilascio immobile, sfratto veloce',
     canonicalUrl: 'https://www.sfrattosicuro.it/landing/',
   },
@@ -24,14 +37,14 @@ export const landingOriginal = {
     title: 'Avvocato per\nSfratto per Morosità',
     subtitle: 'Non lasciare che un inquilino ti tolga la serenità. Riottieni il tuo immobile in tempi rapidi, <strong class="text-white">senza anticipi.</strong>',
     bullets: [
-      '<strong>1.300 € tutto incluso</strong> – assistenza legale garantita fino al rilascio dell\'immobile',
+      `<strong>${compensoIt} € tutto incluso</strong> – assistenza legale garantita fino al rilascio dell\'immobile`,
       '<strong>Nessun anticipo</strong> – paghi solo al momento della convalida dello sfratto',
-      '<strong>60 giorni medi</strong> – per ottenere, dal Giudice, l\'ordinanza di rilascio dell\'immobile',
+      `<strong>${tempi.convalidaMedia}</strong> – per ottenere, dal Giudice, l\'ordinanza di rilascio dell\'immobile`,
       '<strong>Avvocato dedicato</strong> – un solo referente, sempre aggiornato sulla tua pratica',
       '<strong>Trasparenza totale</strong> – nessuna sorpresa o costo imprevisto',
     ],
     formTitle: 'Ti richiamiamo in giornata',
-    formSubtitle: 'Inserisci i tuoi dati: prima consulenza gratuita e senza impegno.\n    <br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
+    formSubtitle: `Inserisci i tuoi dati: prima consulenza gratuita e senza impegno.\n    <br><span style="font-size: 0.75rem;">(${orari.labelCompatto.replace(/-/g, '–')})</span>`,
     formNamePlaceholder: 'Il tuo nome e cognome',
     formPhonePlaceholder: 'Es: 333 123 4567',
     formSubmitLabel: 'Richiedi una consulenza gratuita',

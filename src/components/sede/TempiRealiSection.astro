@@ -1,0 +1,28 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+import { tempi } from '../../lib/business';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const r = sede.tempiReali;
+const hasData = !!(r && (r.faseAnalisi || r.fasePredisposizione || r.faseNotifiche || r.faseUdienza));
+---
+{hasData && (
+  <section class="section section--tempi-reali" id="tempi-reali" aria-labelledby="tempi-reali-title">
+    <div class="container">
+      <h2 id="tempi-reali-title">Tempi reali della procedura presso il {sede.tribunale}</h2>
+      <p>
+        Sotto i tempi che osserviamo concretamente sulle nostre pratiche di sfratto per morosita
+        gestite davanti al {sede.tribunale}. Il dato medio operativo nazionale e {tempi.convalidaMedia};
+        a {sede.nome} le tempistiche locali si distribuiscono come segue:
+      </p>
+      <dl class="dl-grid">
+        {r?.faseAnalisi && (<><dt>Analisi del caso</dt><dd>{r.faseAnalisi}</dd></>)}
+        {r?.fasePredisposizione && (<><dt>Predisposizione atti</dt><dd>{r.fasePredisposizione}</dd></>)}
+        {r?.faseNotifiche && (<><dt>Notifiche e deposito</dt><dd>{r.faseNotifiche}</dd></>)}
+        {r?.faseUdienza && (<><dt>Udienza e convalida</dt><dd>{r.faseUdienza}</dd></>)}
+      </dl>
+      {r?.note && <p>{r.note}</p>}
+      <p class="note" style="font-size:0.85em;opacity:0.75;">{tempi.disclaimerStandard}</p>
+    </div>
+  </section>
+)}

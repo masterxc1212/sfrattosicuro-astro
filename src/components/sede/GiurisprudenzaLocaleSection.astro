@@ -1,0 +1,32 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const g = sede.giurisprudenzaLocale;
+const hasData = !!(g && (g.terminieDiGrazia || g.prassiOpposizioni || g.noteProvvedimenti));
+---
+{hasData && (
+  <section class="section section--giurisprudenza" id="giurisprudenza-locale" aria-labelledby="giurisprudenza-title">
+    <div class="container">
+      <h2 id="giurisprudenza-title">Orientamento del {sede.tribunale} su sfratto e morosita</h2>
+      {g?.terminieDiGrazia && (
+        <>
+          <h3>Termine di grazia (art. 55 L. 392/1978)</h3>
+          <p>{g.terminieDiGrazia}</p>
+        </>
+      )}
+      {g?.prassiOpposizioni && (
+        <>
+          <h3>Opposizioni dell'inquilino - prassi locale</h3>
+          <p>{g.prassiOpposizioni}</p>
+        </>
+      )}
+      {g?.noteProvvedimenti && (
+        <>
+          <h3>Provvedimenti tipici</h3>
+          <p>{g.noteProvvedimenti}</p>
+        </>
+      )}
+    </div>
+  </section>
+)}

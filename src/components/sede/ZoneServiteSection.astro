@@ -1,0 +1,33 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const z = sede.zoneServite;
+const hasData = !!(z && ((z.quartieriCitta && z.quartieriCitta.length) || (z.comuniServiti && z.comuniServiti.length) || z.note));
+---
+{hasData && (
+  <section class="section section--zone" id="zone-servite" aria-labelledby="zone-title">
+    <div class="container">
+      <h2 id="zone-title">Zone e comuni serviti dalla sede di {sede.nome}</h2>
+      {z?.quartieriCitta && z.quartieriCitta.length > 0 && (
+        <>
+          <h3>Quartieri di {sede.nome}</h3>
+          <p>
+            Operiamo in tutta l'area di {sede.nome}, inclusi i quartieri di
+            {' '}{z.quartieriCitta.join(', ')}.
+          </p>
+        </>
+      )}
+      {z?.comuniServiti && z.comuniServiti.length > 0 && (
+        <>
+          <h3>Comuni della provincia</h3>
+          <p>
+            La competenza territoriale del {sede.tribunale} include anche i comuni di
+            {' '}{z.comuniServiti.join(', ')}.
+          </p>
+        </>
+      )}
+      {z?.note && <p>{z.note}</p>}
+    </div>
+  </section>
+)}

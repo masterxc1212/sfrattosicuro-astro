@@ -1,12 +1,14 @@
 ﻿---
+import { pricing, tempi } from '../lib/business';
+
 const faqItems = [
   {
     q: 'Quanto dura una procedura di sfratto per morosità',
-    a: 'Mediamente la convalida può arrivare in circa 60 giorni, con variazioni legate al tribunale competente e alle specificità del caso.'
+    a: `Mediamente la convalida può arrivare in ${tempi.convalidaMedia}, con variazioni legate al tribunale competente e alle specificità del caso. ${tempi.disclaimerStandard}`
   },
   {
     q: 'Qual è il costo del servizio',
-    a: 'Per il servizio standard è previsto un costo fisso chiaro, senza sorprese in corso d’opera.'
+    a: `Per il servizio standard è previsto un compenso complessivo di ${pricing.compensoFormatted} fino al rilascio dell'immobile, senza sorprese in corso d’opera. ${pricing.modalita}`
   },
   {
     q: 'Operate in tutta Italia',
@@ -41,11 +43,4 @@ const faqItems = [
   triggers.forEach((btn) => {
     btn.addEventListener('click', () => {
       const panel = btn.parentElement.querySelector('[data-faq-panel]');
-      const isOpen = panel.classList.contains('open');
-      panel.classList.toggle('open', !isOpen);
-      btn.setAttribute('aria-expanded', String(!isOpen));
-    });
-  });
-})();
-</script>
-
+      const isOpen 

@@ -1,0 +1,22 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const s = sede.storiaTribunale;
+const hasData = !!(s && (s.annoIstituzione || s.sedeStorica || s.peculiarita || s.testoLibero));
+---
+{hasData && (
+  <section class="section section--storia" id="storia-tribunale" aria-labelledby="storia-title">
+    <div class="container">
+      <h2 id="storia-title">Il {sede.tribunale}</h2>
+      {s?.annoIstituzione && (
+        <p>Il {sede.tribunale} e operativo dal <strong>{s.annoIstituzione}</strong>.</p>
+      )}
+      {s?.sedeStorica && (
+        <p><strong>Sede:</strong> {s.sedeStorica}</p>
+      )}
+      {s?.peculiarita && <p>{s.peculiarita}</p>}
+      {s?.testoLibero && <p>{s.testoLibero}</p>}
+    </div>
+  </section>
+)}

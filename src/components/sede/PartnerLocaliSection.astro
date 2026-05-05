@@ -1,0 +1,27 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const p = sede.partnerLocali;
+const hasData = !!(p && (p.domiciliatari || p.unep || p.note));
+---
+{hasData && (
+  <section class="section section--partner" id="partner-locali" aria-labelledby="partner-title">
+    <div class="container">
+      <h2 id="partner-title">Rete operativa a {sede.nome}</h2>
+      {p?.domiciliatari && (
+        <>
+          <h3>Domiciliatari</h3>
+          <p>{p.domiciliatari}</p>
+        </>
+      )}
+      {p?.unep && (
+        <>
+          <h3>UNEP - Ufficio Notificazioni Esecuzioni Protesti</h3>
+          <p>{p.unep}</p>
+        </>
+      )}
+      {p?.note && <p>{p.note}</p>}
+    </div>
+  </section>
+)}

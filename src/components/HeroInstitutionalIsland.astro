@@ -1,5 +1,6 @@
 ﻿---
 import sedi from '../data/sedi.json';
+import { tempi } from '../lib/business';
 
 interface HeroVars {
   kicker?: string;
@@ -85,7 +86,7 @@ const normalizeLocalCopy = (text?: string) =>
     .trim();
 
 const defaultSubtitle = isNazionale
-  ? 'Assistiamo proprietari e locatori nelle procedure di sfratto per morosità e finita locazione, con un protocollo operativo orientato ad arrivare, in molti casi, all’udienza per la convalida di sfratto in circa 60 giorni.'
+  ? `Assistiamo proprietari e locatori nelle procedure di sfratto per morosità e finita locazione, con un protocollo operativo orientato ad arrivare, in molti casi, all’udienza per la convalida di sfratto in ${tempi.convalidaMedia}.`
   : normalizeLocalCopy(vars.subtitleLocal)
     || `Ti assistiamo per la procedura di sfratto presso il Tribunale di ${sede?.nome ?? 'competenza territoriale'}, fino al rilascio dell'immobile.`;
 
@@ -98,7 +99,7 @@ const defaultBullets = [
 const defaultTrustRow = isNazionale
   ? [
       'Specialisti in sfratti e diritto delle locazioni',
-      'Protocollo operativo orientato alla convalida in circa 60 giorni',
+      `Protocollo operativo orientato alla convalida in ${tempi.convalidaMedia}`,
       'Operativi su tutto il territorio nazionale'
     ]
   : [
@@ -231,8 +232,3 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
 
         root.addEventListener('mouseenter', stop);
         root.addEventListener('mouseleave', play);
-        play();
-      });
-    })();
-  </script>
-)}

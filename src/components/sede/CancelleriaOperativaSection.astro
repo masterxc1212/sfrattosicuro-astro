@@ -1,0 +1,40 @@
+---
+import type { SedeItem } from '../../lib/home-model';
+interface Props { sede: SedeItem; }
+const { sede } = Astro.props;
+const c = sede.cancelleriaEstesa;
+const t = sede.tribunaleInfo;
+const hasData = !!(t || c);
+---
+{hasData && (
+  <section class="section section--cancelleria" id="cancelleria-operativa" aria-labelledby="cancelleria-title">
+    <div class="container">
+      <h2 id="cancelleria-title">Cancelleria del {sede.tribunale} - dati operativi</h2>
+      <dl class="dl-grid">
+        {t?.indirizzo && (<>
+          <dt>Indirizzo</dt><dd>{t.indirizzo}</dd>
+        </>)}
+        {t?.sezione && (<>
+          <dt>Sezione competente</dt><dd>{t.sezione}</dd>
+        </>)}
+        {c?.orariSportello && (<>
+          <dt>Orari sportello</dt><dd>{c.orariSportello}</dd>
+        </>)}
+        {c?.telefono && (<>
+          <dt>Telefono</dt><dd>{c.telefono}</dd>
+        </>)}
+        {c?.pec && (<>
+          <dt>PEC</dt><dd>{c.pec}</dd>
+        </>)}
+        {c?.sitoUfficiale && (<>
+          <dt>Sito ufficiale</dt><dd><a href={c.sitoUfficiale} rel="noopener noreferrer">{c.sitoUfficiale.replace(/^https?:\/\//,'')}</a></dd>
+        </>)}
+        {typeof t?.depositoPCT === 'boolean' && (<>
+          <dt>Deposito PCT</dt><dd>{t.depositoPCT ? 'Obbligatorio (telematico)' : 'Cartaceo / misto'}</dd>
+        </>)}
+      </dl>
+      {t?.note && <p>{t.note}</p>}
+      {c?.note && <p>{c.note}</p>}
+    </div>
+  </section>
+)}

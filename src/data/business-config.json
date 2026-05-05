@@ -1,0 +1,76 @@
+{
+  "$schema": "./business-config.schema.json",
+  "_meta": {
+    "purpose": "Single source of truth per i valori di business di Sfratto Sicuro: prezzi, tempi, garanzie, orari, procedura, contatti. NON hardcodare questi valori in componenti, sedi, blog: importarli sempre da qui (via src/lib/business.ts) cosi' un cambio di prezzo o di tempi si propaga automaticamente a tutto il sito.",
+    "spec": "docs/seo/vincoli-territorializzazione-sedi.md - sez. 2.2",
+    "lastReview": "2026-05-05",
+    "owner": "skill linkbuilding-sfrattosicuro-ansalone (FASE 5)",
+    "notes": [
+      "Le promesse landing (sez. 1 del vincoli) sono inviolabili: ogni copy deve essere coerente con questi valori.",
+      "site.json:openingHoursSpecification attualmente dichiara solo Mon-Fri 09:00-18:00 mentre la promessa landing e Lun-Ven 9-19 + Sab 9-13. Allineamento da gestire in futuro: in caso di conflitto vale la promessa landing dichiarata qui.",
+      "Mai duplicare questi valori in altri JSON. Per cambi globali, modificare solo questo file."
+    ]
+  },
+  "pricing": {
+    "compensoComplessivo": 1300,
+    "compensoFormatted": "EUR 1.300",
+    "compensoFormattedLong": "EUR 1.300 fino al rilascio dell'immobile",
+    "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto."
+  },
+  "tempi": {
+    "convalidaMedia": "circa 60 giorni",
+    "convalidaMediaShort": "~60 gg",
+    "rispostaCallback": "entro 2 ore",
+    "disclaimerStandard": "Dato medio operativo, non promessa assoluta. I tempi dipendono dal Tribunale competente e dall'eventuale opposizione dell'inquilino."
+  },
+  "garanzie": {
+    "consulenzaIniziale": "gratuita",
+    "soloProprietariLocatori": true,
+    "rispostaCallback": "Ti richiamiamo entro 2 ore",
+    "speseInquilino": "Le spese legali possono essere poste a carico dell'inquilino moroso (a discrezione del Giudice)."
+  },
+  "orari": {
+    "settimanaLabel": "Lun-Ven 9:00-19:00",
+    "sabatoLabel": "Sabato 9:00-13:00",
+    "labelCompatto": "Lun-Ven 9-19 - Sab 9-13"
+  },
+  "procedura": {
+    "fasi": [
+      {
+        "n": 1,
+        "giorni": "1-7",
+        "titolo": "Analisi del caso",
+        "descrizione": "Valutazione iniziale della pratica e definizione della strategia."
+      },
+      {
+        "n": 2,
+        "giorni": "8-15",
+        "titolo": "Predisposizione atti",
+        "descrizione": "Intimazione di sfratto e citazione per convalida."
+      },
+      {
+        "n": 3,
+        "giorni": "16-30",
+        "titolo": "Notifiche e deposito",
+        "descrizione": "Gestione delle notifiche e del deposito presso il Tribunale competente."
+      },
+      {
+        "n": 4,
+        "giorni": "31-60",
+        "titolo": "Udienza e convalida",
+        "descrizione": "Assistenza in udienza per ottenere il provvedimento di convalida. Solo dopo questa fase viene richiesto il pagamento."
+      }
+    ]
+  },
+  "contatti": {
+    "telefonoFormatted": "+39 02 8089 8395",
+    "telefonoTelLink": "tel:+390280898395",
+    "telefonoCanonical": "+390280898395",
+    "email": "consulenza@sfrattosicuro.it",
+    "whatsappPrincipale": {
+      "numero": "+39 329 117 5957",
+      "url": "https://wa.me/393291175957",
+      "uso": "default canonico per pagine sede, home, landing"
+    }
+  }
+}

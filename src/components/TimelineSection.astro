@@ -1,5 +1,6 @@
 ﻿---
 import sedi from '../data/sedi.json';
+import { tempi } from '../lib/business';
 
 interface SedeItem { nome: string; slug: string; tribunale?: string; timelineIntro?: string; }
 interface Props { sedeSlug?: string; }
@@ -13,8 +14,8 @@ const tribunale = sede?.tribunale ?? `Tribunale di ${nome}`;
 
 const title = isNazionale ? 'Quanto tempo serve per ottenere la convalida di sfratto' : `Tempi dello sfratto a ${nome}`;
 const supportText = isNazionale
-  ? 'Grazie a un protocollo interno di gestione della pratica e di ottimizzazione dei tempi di notifica, in molti casi puntiamo ad arrivare all’udienza per la convalida di sfratto in circa 60 giorni.'
-  : (sede?.timelineIntro ?? `Grazie a un protocollo interno di gestione della pratica e di ottimizzazione dei tempi di notifica, in molti casi puntiamo ad arrivare all’udienza per la convalida di sfratto in circa 60 giorni presso il ${tribunale}.`);
+  ? `Grazie a un protocollo interno di gestione della pratica e di ottimizzazione dei tempi di notifica, in molti casi puntiamo ad arrivare all’udienza per la convalida di sfratto in ${tempi.convalidaMedia}.`
+  : (sede?.timelineIntro ?? `Grazie a un protocollo interno di gestione della pratica e di ottimizzazione dei tempi di notifica, in molti casi puntiamo ad arrivare all’udienza per la convalida di sfratto in ${tempi.convalidaMedia} presso il ${tribunale}.`);
 
 const steps = ['Deposito intimazione', 'Udienza di convalida', 'Ordinanza di rilascio', 'Esecuzione con ufficiale giudiziario'];
 ---
@@ -33,7 +34,4 @@ const steps = ['Deposito intimazione', 'Udienza di convalida', 'Ordinanza di ril
       ))}
     </div>
 
-    <p class="note">{supportText}</p>
-  </div>
-</section>
-
+  
