@@ -44,7 +44,9 @@ const coreFiles = [
   'cookie-policy/index.html',
   'termini/index.html',
   'blog/index.html',
-  'sitemap.xml'
+  'sitemap.xml',
+  'robots.txt',
+  'llms.txt'
 ];
 
 for (const rel of coreFiles) ensureFile(rel);

@@ -60,6 +60,7 @@ const homeGraph = {
         '@type': 'ImageObject',
         url: org.logoUrl
       },
+      image: `${siteUrl}/og-home.jpg`,
       email: org.email,
       telephone: org.telephone,
       vatID: org.vatID,
@@ -91,14 +92,14 @@ const homeGraph = {
       url: `${siteUrl}/`,
       telephone: org.telephone,
       email: org.email,
+      image: `${siteUrl}/og-home.jpg`,
+      priceRange: '€€',
       address: {
         '@type': 'PostalAddress',
         ...org.nationalAddress
       },
       areaServed: [
-        { '@type': 'Country', name: 'IT' },
-        { '@type': 'AdministrativeArea', name: org.nationalAddress.addressRegion },
-        { '@type': 'City', name: org.nationalAddress.addressLocality }
+        { '@type': 'Country', name: 'IT' }
       ],
       serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
       openingHoursSpecification: org.openingHoursSpecification,

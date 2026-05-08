@@ -3,12 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "predev": "node scripts/generate-provvedimenti-mock.mjs",
+    "predev": "node scripts/generate-provvedimenti-mock.mjs && node scripts/generate-llms-txt.mjs",
     "dev": "astro dev",
-    "prebuild": "node scripts/generate-provvedimenti-mock.mjs",
+    "prebuild": "node scripts/generate-provvedimenti-mock.mjs && node scripts/generate-llms-txt.mjs",
     "build": "astro build",
     "postbuild": "node scripts/generate-sitemaps.mjs",
-    "prepreview": "node scripts/generate-provvedimenti-mock.mjs",
+    "prepreview": "node scripts/generate-provvedimenti-mock.mjs && node scripts/generate-llms-txt.mjs",
     "preview": "astro preview",
     "seo:check:endpoints": "node scripts/check-seo-endpoints.mjs",
     "astro": "astro"

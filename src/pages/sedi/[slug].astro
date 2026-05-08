@@ -37,7 +37,10 @@ const faqEntities = faqVisible.map((item) => ({
 
 const hasRealAddress = !!(sede.officeAddress && sede.officeAddress.streetAddress && sede.officeAddress.addressLocality);
 
-// Indirizzo: usa officeAddress della sede se disponibile, altrimenti indirizzo nazionale
+// Indirizzo: usa officeAddress della sede SOLO se disponibile.
+// Se la sede non ha un ufficio fisico reale, omettiamo `address` per evitare
+// che 137 LegalService dichiarino tutti l'indirizzo nazionale di Salerno
+// (duplicazione di signal che Google penalizza).
 const addressNode = hasRealAddress
   ? {
       '@type': 'PostalAddress',
@@ -47,10 +50,7 @@ const addressNode = hasRealAddress
       addressRegion: sede.officeAddress?.addressRegion,
       addressCountry: sede.officeAddress?.addressCountry || 'IT'
     }
-  : {
-      '@type': 'PostalAddress',
-      ...org.nationalAddress
-    };
+  : null;
 
 const legalServiceNode: Record<string, unknown> = {
   '@type': 'LegalService',
@@ -59,7 +59,9 @@ const legalServiceNode: Record<string, unknown> = {
   url: `${siteUrl}${canonicalPath}`,
   telephone: org.telephone,
   email: org.email,
-  address: addressNode,
+  image: `${siteUrl}/og-sedi.jpg`,
+  priceRange: '€€',
+  ...(addressNode ? { address: addressNode } : {}),
   areaServed: [
     { '@type': 'Country', name: 'IT' },
     { '@type': 'AdministrativeArea', name: sede.regione },
@@ -67,7 +69,8 @@ const legalServiceNode: Record<string, unknown> = {
   ],
   serviceType: ['Sfratto per morosità', 'Sfratto per finita locazione'],
   openingHoursSpecification: org.openingHoursSpecification,
-  provider: { '@id': `${siteUrl}/#organization` }
+  provider: { '@id': `${siteUrl}/#organization` },
+  parentOrganization: { '@id': `${siteUrl}/#organization` }
 };
 
 const sedeGraph = {

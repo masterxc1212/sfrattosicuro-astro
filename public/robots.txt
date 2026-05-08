@@ -1,39 +1,116 @@
 # ===================================================================
-# robots.txt — sfrattosicuro.it — SEO + AI visibility (updated 2025-08-25)
+# robots.txt — sfrattosicuro.it
+# Strategia AI 2026: consenti search-time AI (visibilità nelle risposte
+# generative), blocca training-time AI (no costo, no ROI sul training).
+# Last updated: 2026-05-08
 # ===================================================================
 
-# Default: massima accessibilità
+# Default: massima accessibilità per tutti i crawler classici
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_actions/
+Disallow: /preview-sede/
+Disallow: /blog-astro-backup/
 
-# Crawler principali (esplicitati per chiarezza)
+# -------------------------------------------------------------------
+# Crawler classici di ricerca (esplicitati per chiarezza)
+# -------------------------------------------------------------------
 User-agent: Googlebot
 Allow: /
+
 User-agent: GoogleOther
 Allow: /
+
 User-agent: Bingbot
 Allow: /
+
 User-agent: Applebot
 Allow: /
+
 User-agent: DuckDuckBot
 Allow: /
 
-# Crawler AI / LLM (consentiti per favorire presenza nelle risposte generative)
-# Nota: *Google-Extended* e *Applebot-Extended* sono meccanismi di opt-out: lasciali non bloccati per consentire l'uso.
-User-agent: Google-Extended
-Allow: /
-User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: anthropic-ai
-Allow: /
-User-agent: Claude-Web
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: CCBot
+# -------------------------------------------------------------------
+# AI SEARCH-TIME — CONSENTITI
+# Servono ChatGPT/Claude/Perplexity/Gemini per fornire risposte ai
+# loro utenti citando sfrattosicuro.it. Portano traffico qualificato.
+# -------------------------------------------------------------------
+User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# -------------------------------------------------------------------
+# AI TRAINING-TIME — BLOCCATI
+# Scaricano il contenuto per addestrare i modelli. Nessun ROI per noi:
+# il contenuto del sito alimenterebbe i concorrenti senza ritorno.
+# -------------------------------------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+# -------------------------------------------------------------------
 # Sitemap canonica (www domain)
+# -------------------------------------------------------------------
 Sitemap: https://www.sfrattosicuro.it/sitemap.xml
