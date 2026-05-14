@@ -107,9 +107,10 @@ const keywords: Record<LandingKeywordSlug, LandingKeywordConfig> = {
   'sfratto-per-morosita': {
     slug: 'sfratto-per-morosita',
     primary: 'avvocato per sfratto per morosità',
-    secondary: ['sfratto per morosità', 'avvocato sfratto', 'inquilino moroso'],
-    titleStem: 'Avvocato Sfratto per Morosità',
+    secondary: ['avvocato per sfratto', 'sfratto per morosità', 'avvocato sfratto', 'inquilino moroso'],
+    titleStem: 'Avvocato per Sfratto',
     metaKeywordList: [
+      'avvocato per sfratto',
       'sfratto per morosità',
       'avvocato sfratto',
       'convalida sfratto',
@@ -140,8 +141,8 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       title: `Avvocato specializzato in\nSfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong> con inquilino moroso. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`
-          : `Servizio dedicato ai <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
+          ? `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori con inquilino moroso. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`
+          : `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
       prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
       bullets: [
         '<strong>Compenso complessivo di 1.300€ fino al rilascio dell\'immobile</strong>',
@@ -177,7 +178,7 @@ function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryCon
   if (version === 'v3') {
     return {
       eyebrow: 'Informazioni essenziali prima di partire',
-      title: 'Costo, tempi e procedura spiegati subito',
+      title: 'Avvocato per sfratto: costo, tempi e procedura subito chiari',
       items: [
         {
           label: 'Costo',
@@ -225,9 +226,9 @@ function buildProblems(version: LandingVersion, territory: LandingTerritoryConfi
     return {
       ...landingOriginal.problems,
       badge: 'SEI NELLA SITUAZIONE GIUSTA?',
-      title: 'Questa pagina è per proprietari con un problema concreto di morosità',
+      title: 'Avvocato per sfratto: per proprietari con un problema concreto di morosità',
       subtitle: territory.slug === 'nazionale'
-        ? 'Se l’inquilino non paga e vuoi capire costi, tempi e passaggi della procedura, qui trovi una spiegazione operativa. La pagina è pensata per proprietari o locatori che devono valutare una procedura concreta di sfratto per morosità.'
+        ? 'Se l’inquilino non paga e vuoi capire costi, tempi e passaggi della procedura, qui trovi una spiegazione operativa. La pagina è pensata per proprietari o locatori che cercano un avvocato per sfratto e devono valutare una procedura concreta di sfratto per morosità.'
         : `Se l’inquilino non paga ${territory.dynamicReplacement?.area || ''}, qui trovi solo le risposte operative che servono a un proprietario per partire davvero.`,
       items: landingOriginal.problems.items.slice(0, 4),
     };
