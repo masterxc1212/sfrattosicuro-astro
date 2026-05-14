@@ -1,6 +1,6 @@
 ---
 import '../../styles/landing.css';
-import { buildLandingPageConfig } from '../../data/landing-v2';
+import { buildLandingPageConfig } from '../../data/landing-config';
 import { versionedSrc } from '../../lib/asset-version';
 import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
@@ -148,4 +148,4 @@ const config = buildLandingPageConfig({
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
   </body>
-</html>
+</ht
