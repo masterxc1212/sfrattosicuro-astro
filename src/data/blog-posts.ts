@@ -17,6 +17,69 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "adeguamento-istat-canone-locazione",
+    title: "Adeguamento ISTAT del canone di locazione: la guida per il proprietario",
+    description: "Adeguamento ISTAT del canone di affitto: quando spetta, come si calcola (indice FOI, 75%), la comunicazione all'inquilino e gli errori da evitare. Guida per il locatore.",
+    excerpt: "Ogni anno il canone di locazione può essere aggiornato all'inflazione secondo l'indice ISTAT. Ma l'adeguamento non è automatico: serve una clausola nel contratto, una comunicazione scritta all'inquilino e attenzione a un dettaglio che con la cedolare secca cambia tutto. Guida pratica per il proprietario.",
+    lead: "L'adeguamento ISTAT è lo strumento che permette al proprietario di mantenere il valore reale del canone di affitto nel tempo, allineandolo all'aumento del costo della vita. Non scatta da solo: dipende da cosa prevede il contratto, va richiesto per iscritto e, se hai scelto la cedolare secca, in genere non puoi applicarlo. Vediamo quando spetta, come si calcola e gli errori da evitare.",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-05-29",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-05-29. Keyword: adeguamento istat canone locazione, vol 2900, KD basso (DataForSEO).",
+    html: `  <p>L'adeguamento ISTAT è lo strumento che permette al proprietario di mantenere il valore reale del canone di affitto nel tempo, allineandolo all'aumento del costo della vita. Non scatta da solo: dipende da cosa prevede il contratto, va richiesto per iscritto e, se hai scelto la cedolare secca, in genere non puoi applicarlo. Vediamo quando spetta, come si calcola e gli errori da evitare.</p>
+
+  <h2>Cos'è l'adeguamento ISTAT del canone</h2>
+  <p>L'adeguamento (o rivalutazione) ISTAT è l'aggiornamento annuale del canone di locazione in base all'aumento del costo della vita. Il parametro di riferimento è l'<strong>indice FOI</strong>, cioè l'indice dei prezzi al consumo per le famiglie di operai e impiegati, "al netto dei tabacchi", pubblicato ogni mese dall'ISTAT. In pratica serve a evitare che, con l'inflazione, il canone perda valore reale anno dopo anno.</p>
+
+  <h2>Quando il proprietario può applicarlo</h2>
+  <p>L'adeguamento non è automatico e non è un diritto che esiste a prescindere. Per applicarlo servono due condizioni:</p>
+  <ul>
+    <li><strong>Una clausola nel contratto.</strong> L'aggiornamento ISTAT deve essere espressamente previsto dal contratto di locazione. Se il contratto non lo prevede, il canone resta fisso per tutta la durata.</li>
+    <li><strong>Una richiesta scritta all'inquilino.</strong> L'adeguamento va richiesto: non si applica da solo. Finché non lo comunichi formalmente, il canone non cambia.</li>
+  </ul>
+  <p>Attenzione a un punto che molti proprietari ignorano: <strong>con la cedolare secca l'aggiornamento del canone è sospeso.</strong> Per tutta la durata dell'opzione per la cedolare secca il diritto ad applicare l'adeguamento del canone, ISTAT compreso, è sospeso. Questa rinuncia, peraltro, va comunicata preventivamente all'inquilino con lettera raccomandata: senza quella comunicazione la stessa opzione per la cedolare secca può risultare inefficace. È un classico errore: applicare la rivalutazione mentre si è in cedolare secca non è consentito.</p>
+
+  <h2>Come si calcola</h2>
+  <p>Per i contratti a canone libero (i classici 4+4) la legge consente di applicare <strong>fino al 75% della variazione annuale dell'indice FOI</strong>. Esempio pratico: se nell'ultimo anno l'indice FOI è aumentato del 2%, l'adeguamento massimo applicabile è il 75% di quel 2%, cioè l'1,5%. Su un canone di 700 euro al mese significa circa 10,50 euro in più al mese.</p>
+  <p>Per i contratti a canone concordato (3+2) la percentuale può essere diversa: va verificata nell'accordo territoriale di riferimento e in quanto previsto dal contratto. In ogni caso, non si può applicare una percentuale superiore a quella consentita dal contratto e dalla legge.</p>
+  <h3>Dove trovare l'indice</h3>
+  <p>La variazione percentuale aggiornata si trova sul sito dell'ISTAT, nella sezione dedicata agli indici dei prezzi al consumo per la rivalutazione monetaria. Conviene usare la variazione riferita allo stesso mese dell'anno precedente, coerente con la data di decorrenza del contratto.</p>
+
+  <h2>La comunicazione all'inquilino</h2>
+  <p>L'adeguamento va comunicato al conduttore per iscritto, idealmente con <strong>raccomandata con avviso di ricevimento o PEC</strong>, indicando il periodo di riferimento, la percentuale applicata e il nuovo importo del canone. Due aspetti pratici:</p>
+  <ul>
+    <li>L'aumento <strong>decorre dalla richiesta</strong>: in genere non è retroattivo per gli anni in cui non lo hai mai chiesto.</li>
+    <li>Conserva la prova di invio e ricezione: è utile se in futuro nasce una contestazione sul canone dovuto.</li>
+  </ul>
+
+  <h2>Errori da evitare</h2>
+  <ul>
+    <li><strong>Applicare il 100% dell'indice</strong> invece del 75% consentito per il canone libero.</li>
+    <li><strong>Aggiornare il canone in regime di cedolare secca</strong>, dove l'adeguamento è sospeso.</li>
+    <li><strong>Applicarlo senza clausola contrattuale</strong> che lo preveda.</li>
+    <li><strong>Non comunicarlo per iscritto</strong>, dando per scontato che l'inquilino paghi il nuovo importo.</li>
+    <li><strong>Dimenticarsene per anni</strong> e poi pretendere tutti gli arretrati in una volta: l'aumento parte da quando lo richiedi.</li>
+  </ul>
+
+  <h2>E se l'inquilino non paga l'adeguamento?</h2>
+  <p>Se il conduttore continua a versare il vecchio canone ignorando l'aggiornamento legittimamente richiesto, la differenza non pagata diventa a tutti gli effetti morosità. In questi casi conviene muoversi presto, con una richiesta formale e, se necessario, valutando le vie per il recupero. Può esserti utile la guida su cosa fare quando <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">l'inquilino non paga l'affitto</a>.</p>
+
+  <h2>FAQ sull'adeguamento ISTAT</h2>
+  <ul>
+    <li><strong>L'adeguamento ISTAT è obbligatorio?</strong><br>No. È una facoltà del proprietario, possibile solo se prevista dal contratto e va richiesta. Non scatta in automatico.</li>
+    <li><strong>Posso applicarlo se ho la cedolare secca?</strong><br>In genere no: per la durata dell'opzione per la cedolare secca il diritto all'aggiornamento del canone (ISTAT compreso) è sospeso. La rinuncia va comunicata preventivamente all'inquilino con raccomandata.</li>
+    <li><strong>Quanto posso aumentare?</strong><br>Per il canone libero (4+4) fino al 75% della variazione annuale dell'indice FOI. Per il canone concordato dipende dall'accordo territoriale e dal contratto.</li>
+    <li><strong>Devo comunicarlo all'inquilino?</strong><br>Sì, per iscritto (meglio raccomandata o PEC), indicando periodo, percentuale e nuovo importo. L'aumento decorre dalla richiesta.</li>
+    <li><strong>Posso recuperare gli anni in cui non l'ho chiesto?</strong><br>L'adeguamento di norma parte da quando lo richiedi: gli anni "saltati" senza richiesta in genere non si recuperano integralmente.</li>
+  </ul>
+
+  <p>Gestire correttamente il canone — clausole, aggiornamenti e comunicazioni — significa evitare contestazioni e perdite di valore nel tempo. Se hai dubbi sul tuo contratto o vuoi gestire una morosità nata da un adeguamento non pagato, <a href="/contatti">contatta Sfratto Sicuro</a>: ti aiutiamo a tutelare il tuo immobile con tempi e costi chiari.</p>
+
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata sul singolo contratto.</em></p>`,
+  },
+
+  {
     slug: "sfratto-termine-di-grazia",
     title: "Termine di grazia nello sfratto",
     description: "Scopri cos'è il termine di grazia nello sfratto per morosità, come funziona la procedura e quali sono i diritti del proprietario. Guida completa.",
@@ -2742,78 +2805,4 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
   <li>Eventuali oneri accessori o spese condominiali non pagati</li>
   <li>Il totale complessivo dovuto</li>
 </ul>
-<p>Una quantificazione vaga ("hai diversi mesi di arretrati") non è sufficiente: serve un conteggio dettagliato e verificabile. Un conteggio impreciso dà all'inquilino spazio per contestare.</p>
-
-<h3>4. Il termine perentorio per adempiere</h3>
-<p>La diffida deve fissare all'inquilino un termine entro cui pagare, tipicamente <strong>15 giorni</strong> dal ricevimento della lettera. La prassi giurisprudenziale considera questo periodo ragionevole. Termini eccessivamente brevi (24-48 ore) possono essere contestati come incongrui.</p>
-
-<h3>5. L'avvertimento sulle conseguenze</h3>
-<p>La lettera deve indicare esplicitamente che, se il debito non viene saldato entro il termine, il proprietario procederà con le azioni legali previste, inclusa la procedura di sfratto per morosità. Non deve essere un avvertimento generico: deve risultare chiaro che si tratta di un'intenzione concreta.</p>
-
-<h3>6. Data e firma</h3>
-<p>La lettera deve essere datata e firmata. In assenza di firma, il documento perde credibilità formale.</p>
-
-<h2>Come si invia la lettera di diffida</h2>
-<p>La forma di invio è importante quanto il contenuto. Una comunicazione verbale, un messaggio WhatsApp o un'email ordinaria non hanno valore legale sufficiente per questo scopo.</p>
-<p>Le modalità corrette sono:</p>
-<ul>
-  <li><strong>Raccomandata con avviso di ritorno (A/R)</strong>: è il metodo più usato e più sicuro. La ricevuta firmata dall'inquilino costituisce prova legale della ricezione. Se l'inquilino non ritira la raccomandata, la notifica si perfeziona comunque con il deposito in ufficio postale.</li>
-  <li><strong>PEC (Posta Elettronica Certificata)</strong>: valida a tutti gli effetti se l'inquilino dispone di un indirizzo PEC attivo.</li>
-</ul>
-<p>Il proprietario deve <strong>conservare la prova di invio e di ricezione</strong> — ricevuta A/R o ricevuta PEC — come parte integrante del fascicolo.</p>
-
-<h2>Deve essere scritta da un avvocato?</h2>
-<p>No, la legge non impone che la lettera di diffida venga redatta da un avvocato. Il proprietario può scriverla e inviarla autonomamente, purché rispetti gli elementi formali descritti sopra.</p>
-<p>Tuttavia, una diffida firmata da un legale ha spesso un impatto psicologico diverso: l'inquilino capisce che il proprietario ha già attivato un professionista e che l'azione legale è imminente. Se il rapporto è già conflittuale o se il debito è rilevante, può valere la pena affidarsi a un avvocato fin da questa fase.</p>
-
-<h2>Clausola risolutiva espressa: un uso aggiuntivo della diffida</h2>
-<p>Se il contratto contiene una <strong>clausola risolutiva espressa</strong> (art. 1456 c.c.), la lettera di diffida può svolgere anche una seconda funzione: dichiarare la volontà di avvalersi di quella clausola, facendo scattare la risoluzione automatica del contratto.</p>
-<p>In questo caso, la comunicazione produce due effetti insieme: mette in mora l'inquilino e risolve contestualmente il contratto. Questa opzione va sempre verificata prima di inviare la diffida, perché cambia la strategia legale successiva.</p>
-
-<h2>Cosa fare se l'inquilino non risponde entro il termine</h2>
-<p>Se alla scadenza del termine fissato nella diffida l'inquilino non ha pagato — o ha pagato solo in parte — è il momento di passare all'azione legale. Un pagamento parziale non sana la morosità: il proprietario ha diritto al pagamento integrale del debito.</p>
-<p>Il passo successivo è l'<strong>intimazione di sfratto per morosità e citazione per la convalida</strong>, un atto notificato dal tribunale che avvia la procedura giudiziaria vera e propria. Per capire come funziona quella fase, leggi la guida completa sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità nel 2026</a>.</p>
-
-<h2>Errori comuni da evitare</h2>
-<ul>
-  <li><strong>Non quantificare il debito:</strong> la diffida generica senza importi precisi è debole in giudizio.</li>
-  <li><strong>Inviare tramite email ordinaria o WhatsApp:</strong> non hanno valore legale come prova di ricezione.</li>
-  <li><strong>Fissare un termine troppo breve:</strong> può essere contestato come incongruo dal conduttore.</li>
-  <li><strong>Non conservare la prova di invio:</strong> senza ricevuta A/R o conferma PEC, la diffida diventa difficile da provare in giudizio.</li>
-  <li><strong>Aspettare troppo:</strong> ogni mese di ritardo aumenta il debito ma riduce la probabilità di recuperarlo. Agire subito dopo i primi insoluti è quasi sempre la scelta migliore.</li>
-</ul>
-
-<div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
-  <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Inquilino moroso e non sai come muoverti?</p>
-  <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari dalla prima diffida fino alla convalida dello sfratto. Analizziamo il tuo caso, prepariamo la documentazione e gestiamo tutta la procedura. Contattaci per una valutazione gratuita.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
-</div>
-
-<h2>FAQ — Domande frequenti sulla lettera di diffida all'inquilino moroso</h2>
-
-<h3>La lettera di diffida è obbligatoria prima dello sfratto?</h3>
-<p>No, non è un prerequisito legale obbligatorio per avviare la procedura di sfratto per morosità. Tuttavia è quasi sempre consigliata: dimostra la buona fede del locatore, interrompe la prescrizione del credito e in molti casi risolve il problema senza ricorrere al giudice.</p>
-
-<h3>Quanti giorni devo dare all'inquilino per pagare?</h3>
-<p>La prassi più comune è 15 giorni dal ricevimento della lettera. È un termine considerato ragionevole dalla giurisprudenza. Termini inferiori a 48-72 ore possono essere contestati come sproporzionati.</p>
-
-<h3>Cosa succede se l'inquilino non ritira la raccomandata?</h3>
-<p>La raccomandata non ritirata viene depositata in ufficio postale. Trascorso il periodo di giacenza, la comunicazione si considera comunque notificata. Conserva la ricevuta di spedizione e l'avviso di giacenza come documentazione.</p>
-
-<h3>Posso inviare la diffida via email?</h3>
-<p>Un'email ordinaria non ha valore legale come prova di ricezione. È valida solo la PEC (Posta Elettronica Certificata), se il destinatario ne dispone. Per l'email ordinaria, la controparte può sempre contestare di non averla ricevuta o di non averla letta.</p>
-
-<h3>Se l'inquilino paga solo una parte del debito dopo la diffida, posso procedere comunque?</h3>
-<p>Sì. Un pagamento parziale non sana l'inadempimento. Il proprietario può agire per la parte rimasta non saldata. È importante però che nella diffida sia indicato chiaramente l'importo totale dovuto, in modo che sia evidente cosa copre il pagamento parziale e cosa resta ancora insoluto.</p>
-
-<h3>La diffida può essere usata anche per i danni all'immobile, non solo per i canoni non pagati?</h3>
-<p>Sì. La lettera di diffida e messa in mora può essere usata per qualsiasi inadempimento contrattuale rilevante, inclusi i danni all'immobile o il mancato rispetto di clausole contrattuali. In questi casi va adattata al tipo di inadempimento contestato.</p>
-    `
-  }
-]
-
-export const blogPosts = posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-export const getLatestBlogPosts = (limit = 3) => blogPosts.slice(0, limit);
-export const blogPostsBySlug = new Map(blogPosts.map((post) => [post.slug, post]));
-export const blogCategories: BlogCategory[] = ['Sfratti', 'Locazioni'];
-export const getPostsByCategory = (category: BlogCategory, limit = 3) => blogPosts.filter(p => p.category === category).slice(0, limit);
+<p>Una quantificazione vaga ("hai diversi mesi di arretrati") non è sufficiente: serve un conteggio dettagliat
