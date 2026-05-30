@@ -12,6 +12,7 @@ import { buildLandingPageConfig } from '../../data/landing-config';
 import { versionedSrc } from '../../lib/asset-version';
 import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
+import ClickConversionTracking from '../../components/ClickConversionTracking.astro';
 
 // Section components Ã¢â‚¬â€ 1:1 clones of original landing sections
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
@@ -275,6 +276,7 @@ const config = buildLandingPageConfig({
     <LandingOriginalFooterSection />
     <CookieConsentBanner />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
+    <ClickConversionTracking />
 
     <!-- External script deps (same as original + form handling/tracking) -->
     <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
@@ -283,4 +285,4 @@ const config = buildLandingPageConfig({
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
   </body>
-</h
+</html>

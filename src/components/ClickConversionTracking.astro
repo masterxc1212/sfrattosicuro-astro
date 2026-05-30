@@ -1,0 +1,97 @@
+---
+/**
+ * ClickConversionTracking.astro
+ * ------------------------------------------------------------------
+ * Traccia come conversioni Google Ads i click sui link TELEFONO (tel:)
+ * e WHATSAPP (wa.me / api.whatsapp.com / whatsapp://) presenti in pagina.
+ *
+ * Coerente con l'impianto gtag esistente del sito:
+ *  - usa lo stesso Conversion ID AW-10983419342
+ *  - spara SOLO se l'utente ha dato consenso "marketing"
+ *    (chiave localStorage 'ss_cookie_consent_v1', come GA4TrackingIsland)
+ *  - se il gtag Ads non è ancora stato caricato (consenso marketing),
+ *    lo carica al volo prima di inviare l'evento.
+ *
+ * Si aggancia in delega su document, quindi copre anche pulsanti
+ * aggiunti dopo (es. StickyMobileCTA, footer) e funziona su ogni pagina
+ * in cui il componente è incluso.
+ *
+ * ⚠️ LABEL DA INSERIRE: le due conversion action "Click Telefono" e
+ * "Click WhatsApp" vanno (ri)create in Google Ads — le precedenti sono
+ * REMOVED. Una volta create, sostituire i due placeholder qui sotto con
+ * le rispettive Conversion Label (la parte dopo "AW-10983419342/").
+ * Finché restano i placeholder, il tracking dei click NON invia nulla
+ * (guardia di sicurezza), mentre tutto il resto del sito resta intatto.
+ */
+const AW_ID = 'AW-10983419342';
+// Conversion label da Google Ads (azioni "Click Telefono" / "Click WhatsApp", categoria Contatto).
+const LABEL_TELEFONO = '0HOYCPqxpbYcEM7bpvUo';
+const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';
+---
+
+<script is:inline define:vars={{ AW_ID, LABEL_TELEFONO, LABEL_WHATSAPP }}>
+  (function () {
+    var CONSENT_KEY = 'ss_cookie_consent_v1';
+    var TEL_LABEL = LABEL_TELEFONO;
+    var WA_LABEL = LABEL_WHATSAPP;
+    var placeholder = function (l) { return !l || l.indexOf('__TODO') === 0; };
+
+    function readConsent() {
+      try {
+        var raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) { return null; }
+    }
+
+    function ensureGtag() {
+      // Riusa il gtag già caricato dalla pagina (initAdsIfNeeded / grazie.html).
+      // Se assente, lo inizializza con lo stesso Conversion ID.
+      if (typeof window.gtag === 'function' && window.__landingAdsLoaded) return true;
+      var consent = readConsent();
+      if (!consent || !consent.marketing) return false;
+      window.dataLayer = window.dataLayer || [];
+      if (typeof window.gtag !== 'function') {
+        window.gtag = function () { window.dataLayer.push(arguments); };
+      }
+      if (!window.__clickConvBootstrapped) {
+        window.__clickConvBootstrapped = true;
+        window.gtag('js', new Date());
+        window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+        if (!document.querySelector('script[data-click-conv-aw]')) {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;
+          s.setAttribute('data-click-conv-aw', '1');
+          document.head.appendChild(s);
+        }
+      }
+      return true;
+    }
+
+    function fireConversion(label) {
+      if (placeholder(label)) return;          // guardia: nessuna label reale → non inviare
+      if (!ensureGtag()) return;               // niente consenso marketing → non inviare
+      window.gtag('event', 'conversion', { send_to: AW_ID + '/' + label });
+    }
+
+    function classify(href) {
+      if (!href) return null;
+      var h = href.toLowerCase();
+      if (h.indexOf('tel:') === 0) return 'tel';
+      if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) return 'wa';
+      return null;
+    }
+
+    // Delega sul document: cattura ogni click su un <a> telefono/WhatsApp.
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a) return;
+      var kind = classify(a.getAttribute('href'));
+      if (!kind) return;
+      // dedup: evita doppio invio per lo stesso click
+      if (a.__convFiredAt && (Date.now() - a.__convFiredAt) < 1500) return;
+      a.__convFiredAt = Date.now();
+      fireConversion(kind === 'tel' ? TEL_LABEL : WA_LABEL);
+    }, true);
+  })();
+</script>
