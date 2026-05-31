@@ -138,7 +138,7 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
   if (version === 'v3') {
     return {
       ...landingOriginal.hero,
-      title: `Avvocato specializzato in\nSfratto per Morosità${suffix}`,
+      title: `Avvocato per Sfratto${suffix}\nSolo per Proprietari`,
       subtitle:
         territory.slug === 'nazionale'
           ? `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori con inquilino moroso. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`
