@@ -17,6 +17,74 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "sfratto-esecutivo-rilascio-immobile",
+    title: "Sfratto esecutivo: cosa succede dopo la convalida e come avviene il rilascio",
+    description: "Sfratto esecutivo: dopo la convalida ecco come si arriva al rilascio dell'immobile. Precetto, ufficiale giudiziario, preavviso di rilascio e tempi reali.",
+    excerpt: "Hai ottenuto la convalida dello sfratto, ma l'inquilino è ancora in casa. Cosa succede adesso? Lo sfratto esecutivo è la fase in cui il rilascio dell'immobile passa nelle mani dell'ufficiale giudiziario: precetto, preavviso di rilascio, accesso e, se serve, forza pubblica. Guida pratica per il proprietario su tempi e passaggi reali.",
+    lead: "Ottenere la convalida dello sfratto è una vittoria importante, ma non sempre è l'ultimo passo. Se l'inquilino non lascia l'immobile entro la data fissata dal giudice, si entra nella fase dello sfratto esecutivo: il rilascio viene affidato all'ufficiale giudiziario, con una sequenza precisa di atti. Vediamo cosa succede dopo la convalida, quali sono i passaggi obbligati e i tempi realistici per riavere la tua casa.",
+    publishedAt: "2026-06-01",
+    updatedAt: "2026-06-01",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-06-01. Keyword: sfratto esecutivo, vol 260, KD 0 (DataForSEO). Secondarie: precetto per rilascio immobile, sfratto ufficiale giudiziario.",
+    html: `  <p>Ottenere la convalida dello sfratto è una vittoria importante, ma non sempre è l'ultimo passo. Se l'inquilino non lascia l'immobile entro la data fissata dal giudice, si entra nella fase dello <strong>sfratto esecutivo</strong>: il rilascio della casa viene affidato all'ufficiale giudiziario, con una sequenza precisa di atti. In questa guida vediamo, dalla parte del proprietario, cosa succede dopo la convalida, quali sono i passaggi obbligati e quali tempi aspettarsi per riavere davvero l'immobile.</p>
+
+  <h2>Quando lo sfratto diventa esecutivo</h2>
+  <p>Alla fine del procedimento di convalida il giudice emette un'<strong>ordinanza di convalida</strong>: è il provvedimento che ordina all'inquilino di rilasciare l'immobile. Questa ordinanza è un "titolo esecutivo", cioè il documento che ti dà il diritto di procedere all'esecuzione forzata se l'inquilino non collabora spontaneamente.</p>
+  <p>Insieme alla convalida, il giudice fissa una <strong>data entro cui l'immobile deve essere liberato</strong> (il cosiddetto termine per il rilascio). Solo dopo che questa data è scaduta — e se l'inquilino è ancora dentro — lo sfratto diventa esecutivo e puoi avviare la procedura per il rilascio forzato. Fino a quel momento, la legge concede al conduttore il tempo indicato dal giudice per andarsene da sé.</p>
+
+  <h2>I passaggi dello sfratto esecutivo</h2>
+  <p>Il rilascio forzato non avviene da un giorno all'altro: segue una catena di atti, ognuno con la sua funzione. Ecco la sequenza tipica.</p>
+
+  <h3>1. L'atto di precetto per il rilascio dell'immobile</h3>
+  <p>Il primo passo è notificare all'inquilino un <strong>atto di precetto per il rilascio dell'immobile</strong>. È un'intimazione formale, basata sull'ordinanza di convalida, con cui si ordina al conduttore di liberare la casa entro un termine (di regola non inferiore a dieci giorni). Il precetto è l'atto che "apre" l'esecuzione vera e propria: senza precetto notificato non si può procedere con l'ufficiale giudiziario.</p>
+
+  <h3>2. La richiesta all'ufficiale giudiziario</h3>
+  <p>Se, scaduto anche il termine del precetto, l'inquilino resta nell'immobile, si presenta la richiesta di esecuzione all'<strong>ufficiale giudiziario</strong> (l'ufficio competente è l'UNEP, cioè l'Ufficio Notificazioni, Esecuzioni e Protesti, presso il Tribunale). Da qui in poi è l'ufficiale giudiziario a gestire materialmente il rilascio.</p>
+
+  <h3>3. Il preavviso di rilascio</h3>
+  <p>Prima di presentarsi in casa, l'ufficiale giudiziario notifica all'inquilino il <strong>preavviso di rilascio</strong>: un avviso che indica il giorno e l'ora in cui si recherà sul posto per eseguire lo sgombero. Per legge questo preavviso va comunicato <strong>almeno dieci giorni prima</strong> dell'accesso, così che l'inquilino sappia con certezza quando dovrà lasciare l'immobile.</p>
+
+  <h3>4. L'accesso e il rilascio</h3>
+  <p>Nel giorno e nell'ora stabiliti, l'ufficiale giudiziario si reca sul posto, "immette" il proprietario nel possesso dell'immobile e gli consegna le chiavi. Se l'inquilino non c'è o resiste, si possono rendere necessari accessi successivi e, nei casi più difficili, l'intervento della <strong>forza pubblica</strong> per completare lo sgombero in sicurezza. È normale che servano uno o più accessi prima di arrivare alla consegna effettiva delle chiavi.</p>
+
+  <h2>I tempi reali dello sfratto esecutivo</h2>
+  <p>Non esiste una durata fissa: i tempi della fase esecutiva dipendono dal Tribunale competente, dal carico di lavoro dell'ufficio dell'ufficiale giudiziario e dalla collaborazione (o resistenza) dell'inquilino. In linea di massima:</p>
+  <ul>
+    <li><strong>Il termine per il rilascio</strong> fissato dal giudice può arrivare fino a sei mesi (in casi particolari anche di più): è il tempo che l'inquilino ha per liberare spontaneamente prima che scatti l'esecuzione.</li>
+    <li><strong>Tra preavviso e primo accesso</strong> passano almeno dieci giorni, ma spesso di più per via dei tempi di agenda dell'ufficio.</li>
+    <li><strong>Se servono più accessi</strong> o l'intervento della forza pubblica, la fase può allungarsi di settimane o mesi.</li>
+  </ul>
+  <p>Per questo è importante non perdere tempo: ogni atto della catena (precetto, richiesta all'ufficiale giudiziario, preavviso) va fatto appena possibile, senza lasciar passare giorni inutili. Se ti interessa il quadro complessivo, dai costi ai passaggi iniziali, trovi tutto nella nostra <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a>.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Pensare che la convalida basti.</strong> La convalida è il titolo, ma il rilascio forzato richiede ancora precetto, richiesta all'ufficiale giudiziario e preavviso. Saltare un passaggio blocca tutto.</li>
+    <li><strong>Aspettare troppo dopo la scadenza del termine.</strong> Più si rinvia l'avvio dell'esecuzione, più si allungano i tempi e, spesso, cresce la morosità non pagata.</li>
+    <li><strong>Provare a riprendersi l'immobile da soli.</strong> Cambiare la serratura o rimuovere le cose dell'inquilino senza l'ufficiale giudiziario è illegale e può esporre il proprietario a responsabilità. Il rilascio deve passare sempre dall'esecuzione ufficiale.</li>
+    <li><strong>Trascurare la morosità maturata.</strong> Il rilascio dell'immobile e il recupero dei canoni non pagati sono due binari distinti: riavere la casa non significa aver recuperato il dovuto.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Dopo la convalida posso entrare subito in casa?</h3>
+  <p>No. Devi attendere la scadenza del termine fissato dal giudice e, se l'inquilino non se ne va, avviare l'esecuzione con precetto e ufficiale giudiziario. L'ingresso autonomo non è consentito.</p>
+  <h3>Quanto dura lo sfratto esecutivo?</h3>
+  <p>Dipende dal Tribunale e dalla resistenza dell'inquilino. Tra termine per il rilascio, preavviso ed eventuali accessi ripetuti, la fase può durare da alcune settimane a diversi mesi.</p>
+  <h3>Cosa succede se l'inquilino non apre la porta?</h3>
+  <p>L'ufficiale giudiziario può tornare con nuovi accessi e, se necessario, chiedere l'assistenza della forza pubblica per completare il rilascio.</p>
+  <h3>Devo pagare di nuovo per la fase esecutiva?</h3>
+  <p>La fase esecutiva comporta adempimenti e oneri propri (ad esempio per gli atti dell'ufficiale giudiziario). Le spese legali sostenute possono, a discrezione del giudice, essere poste a carico dell'inquilino moroso, ma non è automatico.</p>
+
+  <h2>In sintesi</h2>
+  <p>Lo sfratto esecutivo è la fase che trasforma una decisione "sulla carta" nel rilascio concreto dell'immobile. Conoscere la sequenza — precetto, ufficiale giudiziario, preavviso di rilascio, accesso — ti permette di non perdere tempo e di arrivare prima alla consegna delle chiavi. Se l'inquilino sfrutta il <a href="/blog/sfratto-termine-di-grazia/">termine di grazia</a> o oppone resistenza, avere accanto chi gestisce ogni atto nei tempi giusti fa la differenza.</p>
+  <p>Se vuoi capire come muoverti nel tuo caso, puoi richiedere una prima valutazione tramite la pagina <a href="/contatti/">contatti</a> di Sfratto Sicuro.</p>
+
+  <p><em>Riferimenti normativi: ordinanza di convalida ex art. 663 c.p.c.; esecuzione per consegna o rilascio, artt. 605-611 c.p.c.; modo del rilascio e preavviso, art. 608 c.p.c.; termine per il rilascio, art. 56 L. 392/1978; quadro procedurale aggiornato dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo (D.Lgs. 164/2024).</em></p>
+
+  <p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale personalizzata. Ogni situazione va valutata sulla base degli atti e del Tribunale competente.</em></p>`,
+  },
+
+  {
     slug: "adeguamento-istat-canone-locazione",
     title: "Adeguamento ISTAT del canone di locazione: la guida per il proprietario",
     description: "Adeguamento ISTAT del canone di affitto: quando spetta, come si calcola (indice FOI, 75%), la comunicazione all'inquilino e gli errori da evitare. Guida per il locatore.",
