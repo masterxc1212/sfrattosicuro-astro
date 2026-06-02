@@ -1,0 +1,41 @@
+---
+// LandingV3FounderSection.astro — blocco "Il tuo avvocato" con foto reale (E-E-A-T / fiducia)
+// Foto recuperata dal sito istituzionale (pagina Chi siamo).
+const founderImage = '/assets/img/ufficio/avv_danilo_ansalone_chi_siamo.webp';
+---
+<section id="il-tuo-avvocato" class="py-16 bg-gray-pearl" aria-labelledby="avvocato-title">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto landing-v3-founder-grid">
+      <picture class="landing-v3-founder-media">
+        <source srcset={founderImage} type="image/webp" />
+        <img
+          src={founderImage}
+          alt="Avv. Danilo Ansalone – fondatore di Sfratto Sicuro"
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="1200"
+        />
+      </picture>
+
+      <div class="landing-v3-founder-copy">
+        <h2 id="avvocato-title" class="text-3xl font-bold text-blue-navy mb-4">Il tuo avvocato</h2>
+        <p class="text-dark-gray mb-3">
+          Sfratto Sicuro è il progetto dell'<strong>Avv. Danilo Ansalone</strong>, dedicato esclusivamente alle procedure di sfratto e al diritto delle locazioni.
+        </p>
+        <p class="text-dark-gray mb-3">
+          <strong>Specializzati solo in sfratti dal 2018.</strong> Predisponiamo gli atti dalle centrali operative di Milano e Salerno e, grazie a una rete di domiciliatari, seguiamo le pratiche presso i Tribunali di tutta Italia.
+        </p>
+        <p class="text-dark-gray mb-4">
+          Un solo referente segue il tuo caso passo passo: dalla prima valutazione fino al rilascio dell'immobile.
+        </p>
+        <ul class="landing-v3-founder-pills">
+          <li><i class="fas fa-gavel" aria-hidden="true"></i> Solo sfratti, dal 2018</li>
+          <li><i class="fas fa-network-wired" aria-hidden="true"></i> Rete in tutti i Tribunali</li>
+          <li><i class="fas fa-star" aria-hidden="true"></i> 5.0 su Google</li>
+        </ul>
+        <a href="#contatti" class="btn-primary px-6 py-3 rounded-lg font-bold btn-mobile-fix" style="margin-top:1.25rem;">Richiedi la richiamata gratuita</a>
+      </div>
+    </div>
+  </div>
+</section>

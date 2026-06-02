@@ -292,3 +292,98 @@ form button[type="submit"] i,
   .landing-v3-rating-hero { padding:1.25rem !important; }
   .landing-v3-faq-item { padding:1rem !important; }
 }
+
+/* ==========================================================================
+   7. LANDING V3 — ALLINEAMENTO SITO ISTITUZIONALE + CONVERSIONE (2026-06)
+   Tutto scoped a .landing-v3-* / .landing-v3-body: la v2 NON è toccata.
+   ========================================================================== */
+
+/* --- Palette sobria + sfondo avorio caldo (come la home rifatta) --- */
+.landing-v3-body {
+  --green-security: #2F9E57;   /* verde più sobrio */
+  --gold-refined: #B0894A;     /* bronzo legale */
+  --gray-pearl: #F4F1EA;       /* avorio caldo */
+  background: #FAF8F3;
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* --- Tipografia editoriale: Fraunces sui titoli --- */
+.landing-v3-body h1,
+.landing-v3-body h2,
+.landing-v3-hero-title,
+.landing-v3-body .form-title {
+  font-family: 'Fraunces', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+/* --- Bottoni: allinea il verde sobrio (override degli hardcoded !important) --- */
+.landing-v3-body .btn-primary,
+.landing-v3-body .form-submit,
+.landing-v3-body button[type="submit"],
+.landing-v3-body .cta-btn,
+.landing-v3-body .btn-call-header,
+.landing-v3-sticky-btn {
+  background: #2F9E57 !important;
+  box-shadow: 0 4px 12px rgba(47,158,87,.22) !important;
+}
+.landing-v3-body .btn-primary:hover,
+.landing-v3-body .form-submit:hover,
+.landing-v3-body button[type="submit"]:hover,
+.landing-v3-body .cta-btn:hover,
+.landing-v3-body .btn-call-header:hover {
+  background: #268049 !important;
+}
+.landing-v3-body summary::after { color: #2F9E57 !important; }
+.landing-v3-body details[open] { border-color: #2F9E57 !important; }
+
+/* --- Hero MOBILE: form sopra la piega (inverte l'ordine content/form) --- */
+@media (max-width: 1023px) {
+  .landing-v3-hero-content { order: 2 !important; }
+  .landing-v3-hero-form-wrap { order: 1 !important; margin-bottom: 1.25rem; }
+  .landing-v3-hero-content .hero-seal-mobile { display: none !important; }
+}
+
+/* --- Barra sticky mobile (social proof + richiamata) --- */
+.landing-v3-sticky-cta {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  display: none; align-items: center; justify-content: space-between; gap: .75rem;
+  padding: .55rem .9rem; background: #fff; border-top: 1px solid #e3e8f0;
+  box-shadow: 0 -6px 20px rgba(9,25,55,.12);
+}
+.landing-v3-sticky-rating { font-size: .8rem; color: var(--blue-navy); line-height: 1.15; }
+.landing-v3-sticky-stars { color: #fbbc05; letter-spacing: 1px; }
+.landing-v3-sticky-btn {
+  color: #fff !important; font-weight: 700; padding: .6rem 1rem; border-radius: .6rem;
+  font-size: .82rem; white-space: nowrap; text-transform: uppercase; letter-spacing: .03em;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .landing-v3-sticky-cta { display: flex; }
+  body.landing-v3-body { padding-bottom: 66px; }
+}
+
+/* --- "Per chi è / per chi non è" --- */
+.landing-v3-forwhom-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; text-align: left; }
+@media (min-width: 768px) { .landing-v3-forwhom-grid { grid-template-columns: 1fr 1fr; } }
+.landing-v3-forwhom-card { border-radius: 1rem; padding: 1.5rem; border: 1px solid #e6e1d6; background: #fff; box-shadow: 0 12px 28px rgba(27,41,81,.06); }
+.landing-v3-forwhom-card.is-yes { border-left: 4px solid #2F9E57; }
+.landing-v3-forwhom-card.is-no { border-left: 4px solid #C0392B; background: #fdfaf8; }
+.landing-v3-forwhom-card h3 { font-size: 1.1rem; margin-bottom: .6rem; }
+.landing-v3-forwhom-card ul { list-style: none; padding: 0; margin: 0; }
+.landing-v3-forwhom-card li { padding: .3rem 0 .3rem 1.4rem; position: relative; color: #4b5563; font-size: .95rem; line-height: 1.5; }
+.landing-v3-forwhom-card.is-yes li::before { content: '✓'; position: absolute; left: 0; color: #2F9E57; font-weight: 700; }
+.landing-v3-forwhom-card.is-no li::before { content: '✕'; position: absolute; left: 0; color: #C0392B; font-weight: 700; }
+
+/* --- Blocco fondatore (foto reale avvocato) --- */
+.landing-v3-founder-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
+@media (min-width: 768px) { .landing-v3-founder-grid { grid-template-columns: minmax(0,340px) 1fr; } }
+.landing-v3-founder-media img { width: 100%; height: auto; border-radius: 1.25rem; box-shadow: 0 20px 48px rgba(27,41,81,.16); object-fit: cover; }
+.landing-v3-founder-copy { text-align: left; }
+.landing-v3-founder-pills { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.landing-v3-founder-pills li { background: #eef1f6; color: var(--blue-navy); font-weight: 600; font-size: .82rem; padding: .4rem .75rem; border-radius: 999px; display: inline-flex; align-items: center; gap: .4rem; }
+.landing-v3-founder-pills i { color: #2F9E57; }
+
+/* --- Value-stack --- */
+.landing-v3-value-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+@media (min-width: 640px) { .landing-v3-value-grid { grid-template-columns: repeat(3,1fr); } }
+.landing-v3-value-num { font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; }

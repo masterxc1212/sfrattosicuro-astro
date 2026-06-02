@@ -74,6 +74,22 @@ const { contactForm = landingOriginal.contactForm } = Astro.props;
               <input type="text" name="città" id="citta-v3" class="form-input" placeholder="In che città si trova l'immobile?" required aria-required="true">
             </div>
 
+            <div>
+              <label for="owner-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Sei proprietario/locatore? *</label>
+              <select name="proprietario" id="owner-v3" class="form-select" required aria-required="true">
+                <option value="">Seleziona…</option>
+                <option value="proprietario">Sì, sono proprietario/locatore</option>
+                <option value="inquilino">No, sono l'inquilino</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="morosita-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">{contactForm.fields.morosita.label}</label>
+              <select name="morosita" id="morosita-v3" class="form-select" required aria-required="true">
+                {contactForm.fields.morosita.options.map((o) => (<option value={o.value}>{o.label}</option>))}
+              </select>
+            </div>
+
             <input type="hidden" name="form_source" value="bottom_form_v3">
             <input type="hidden" name="gclid" value="">
             <input type="hidden" name="utm_source" value="">

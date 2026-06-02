@@ -49,6 +49,7 @@ export const landingOriginal = {
     formPhonePlaceholder: 'Es: 333 123 4567',
     formSubmitLabel: 'Richiedi una consulenza gratuita',
     formSource: 'hero_form',
+    ownerField: false,
   },
 
   problems: {
@@ -181,7 +182,7 @@ export const landingOriginal = {
   procedure: {
     sectionId: 'come-funziona',
     title: 'La Procedura di Sfratto per Morosità: Le Fasi del Nostro Protocollo',
-    subtitle: 'Un processo collaudato che ha già permesso di liberare oltre 1.500 immobili. La nostra procedura per lo sfratto per morosità è ottimizzata per ottenere, mediamente, la convalida in circa 60 giorni.',
+    subtitle: 'Un processo collaudato per arrivare alla convalida dello sfratto per morosità, ottimizzato per ottenere mediamente la convalida in circa 60 giorni.',
     steps: [
       {
         num: '1',
@@ -214,7 +215,7 @@ export const landingOriginal = {
       },
     ],
     bottomTitle: 'Un Metodo Che Funziona Davvero',
-    bottomBody: 'Con il nostro protocollo ottimizzato per lo sfratto per morosità, trasformiamo mesi di incertezza in una procedura tracciabile e prevedibile. Procedura applicata in oltre 1.500 casi documentati.',
+    bottomBody: 'Con il nostro protocollo ottimizzato per lo sfratto per morosità, trasformiamo mesi di incertezza in una procedura tracciabile e prevedibile.',
     bottomCtaLabel: 'ATTIVA IL PROTOCOLLO',
   },
 
@@ -375,7 +376,7 @@ export const landingOriginal = {
       {
         icon: 'fa-chart-line',
         title: 'Metodo Collaudato',
-        body: 'Oltre 1.500 sfratti per morosità completati con successo. Ogni fase è stata ottimizzata.',
+        body: 'Specializzati esclusivamente in sfratti per morosità dal 2018. Ogni fase della procedura è ottimizzata.',
       },
       {
         icon: 'fa-headset',
@@ -501,7 +502,7 @@ export const landingOriginal = {
     rating: '5.0',
     stars: '★★★★★',
     total: '8',
-    line1: 'Oltre 1.500 proprietari soddisfatti',
+    line1: 'Specializzati in sfratti dal 2018',
     line2: 'si sono già affidati a noi con successo',
   },
 
@@ -545,7 +546,7 @@ export const landingOriginal = {
     },
     urgencyBox: {
       title: 'Non Aspettare Oltre',
-      body: 'Ogni giorno che aspetti per attivare lo sfratto per morosità è denaro che perdi. In oltre 1.500 casi completati, abbiamo visto che chi agisce subito ottiene sempre risultati migliori. <strong>La consulenza è gratuita, non hai nulla da perdere.</strong>',
+      body: 'Ogni giorno che aspetti per attivare lo sfratto per morosità è denaro che perdi. Chi agisce subito ottiene risultati migliori. <strong>La consulenza è gratuita, non hai nulla da perdere.</strong>',
     },
   },
 

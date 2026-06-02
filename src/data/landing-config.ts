@@ -138,16 +138,17 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
   if (version === 'v3') {
     return {
       ...landingOriginal.hero,
-      title: `Avvocato per Sfratto${suffix}\nSolo per Proprietari`,
+      title: `Avvocato per Sfratto per Morosità${suffix}\nSolo per Proprietari`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori con inquilino moroso. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`
+          ? `<strong class="text-white">Avvocato per sfratto per morosità</strong> dedicato a proprietari e locatori con inquilino moroso. Avviamo subito la procedura per <strong class="text-white">riottenere il tuo immobile</strong>: paghi solo dopo la convalida, poi ti assistiamo <strong class="text-white">gratis fino al rilascio</strong>.`
           : `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
       prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
+      ownerField: true,
       bullets: [
-        '<strong>Compenso complessivo di 1.300€ fino al rilascio dell\'immobile</strong>',
-        '<strong>Nessun acconto</strong> – il pagamento viene richiesto solo dopo la convalida dello sfratto',
-        '<strong>Convalida mediamente in circa 60 giorni</strong> – dato operativo che può variare in base al Tribunale competente e all\'eventuale opposizione',
+        '<strong>€1.300, pagati solo dopo la convalida</strong> – nessun acconto, paghi a risultato',
+        '<strong>Poi ti assistiamo gratis fino al rilascio</strong> dell\'immobile (spese vive escluse, sempre indicate prima)',
+        '<strong>Convalida mediamente in circa 60 giorni</strong> – variabile in base al Tribunale e all\'eventuale opposizione',
       ],
       formTitle: 'Verifica subito se puoi partire',
       formSubtitle: 'Lascia i tuoi dati essenziali: ricevi una <strong>prima consulenza gratuita</strong> e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
@@ -182,8 +183,8 @@ function buildQuickFacts(version: LandingVersion, territory: LandingTerritoryCon
       items: [
         {
           label: 'Costo',
-          value: '€1.300 fino al rilascio dell’immobile',
-          note: 'Nessun acconto: il compenso viene richiesto solo dopo la convalida',
+          value: '€1.300, pagati dopo la convalida',
+          note: 'Nessun acconto. Dopo la convalida, assistenza gratuita fino al rilascio',
         },
         {
           label: 'Tempi',
@@ -377,11 +378,11 @@ function buildServices(territory: LandingTerritoryConfig) {
     },
     pricingBox: {
       ...landingOriginal.services.pricingBox,
-      title: 'Formula economica chiara',
+      title: 'Valore reale vs prezzo',
       items: [
-        { value: '€1.300', label: 'Compenso complessivo fino al rilascio' },
-        { value: '0€', label: 'Acconto iniziale' },
-        { value: 'Post-convalida', label: 'Momento del pagamento' },
+        { value: '€3.200', label: 'Valore dei servizi professionali' },
+        { value: '€1.300', label: 'Prezzo fisso (paghi dopo la convalida)' },
+        { value: '€1.900', label: 'Il tuo risparmio' },
       ],
       ctaLabel: 'RICHIEDI UNA VALUTAZIONE RAPIDA',
     },
@@ -396,8 +397,8 @@ function buildCostTransparency(territory: LandingTerritoryConfig) {
       territory.slug === 'nazionale'
         ? 'Ti spieghiamo in modo semplice ma corretto cosa comprende il compenso, quando viene richiesto e come si distingue il momento della convalida dal risultato finale del rilascio dell’immobile.'
         : `${landingOriginal.costTransparency.subtitle} Formula valida anche per pratiche ${territory.dynamicReplacement?.area || ''}.`,
-    priceTitle: 'Compenso complessivo: 1.300€ fino al rilascio dell’immobile',
-    priceBody: 'Il compenso complessivo concordato è di <strong>1.300€ fino al rilascio dell’immobile</strong>. <strong>Non chiediamo acconti</strong>: il pagamento viene richiesto solo dopo la convalida dello sfratto. Da quel momento, la procedura prosegue — se necessario — fino al rilascio dell’immobile.',
+    priceTitle: 'Compenso €1.300: lo paghi solo dopo la convalida',
+    priceBody: 'Il compenso concordato è di <strong>€1.300</strong> e <strong>non chiediamo acconti</strong>: lo paghi <strong>solo dopo la convalida</strong> dello sfratto. Da quel momento <strong>continuiamo ad assisterti gratuitamente fino al rilascio</strong> dell’immobile; restano a tuo carico solo le eventuali spese vive della fase esecutiva (es. ufficiale giudiziario), sempre indicate prima.',
   };
 }
 
@@ -456,8 +457,8 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       },
       {
         icon: 'fa-euro-sign',
-        q: 'I 1.300€ coprono la pratica fino al rilascio dell’immobile o solo fino alla convalida?',
-        a: 'Il compenso complessivo di 1.300€ copre l’assistenza fino al rilascio dell’immobile. Non chiediamo acconti: il pagamento viene richiesto solo dopo la convalida dello sfratto.',
+        q: 'Quando si pagano i 1.300€ e cosa comprendono?',
+        a: 'I 1.300€ si pagano <strong>solo dopo la convalida</strong> dello sfratto: nessun acconto. Dopo la convalida continuiamo ad assisterti <strong>gratuitamente fino al rilascio</strong> dell’immobile; restano a tuo carico solo le eventuali spese vive della fase esecutiva, sempre indicate prima.',
       },
       {
         icon: 'fa-file-contract',
@@ -473,6 +474,21 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
         icon: 'fa-home',
         q: 'Questa pagina vale anche per lo sfratto per finita locazione?',
         a: 'Questa landing è dedicata ai casi di sfratto per morosità. Ci occupiamo anche di sfratto per finita locazione, ma quel servizio richiede pagina e annuncio dedicati, perché presupposti e messaggi della procedura sono diversi.',
+      },
+      {
+        icon: 'fa-user-shield',
+        q: 'Devo essere presente all’udienza di convalida?',
+        a: 'No. Segue tutto il nostro avvocato: il proprietario non deve recarsi in Tribunale.',
+      },
+      {
+        icon: 'fa-exclamation-circle',
+        q: 'Cosa succede se l’inquilino si oppone allo sfratto?',
+        a: 'L’opposizione rende il procedimento ordinario, con tempi più lunghi. In quel caso impostiamo subito la strategia processuale più adatta per ottenere comunque il rilascio nel minor tempo possibile.',
+      },
+      {
+        icon: 'fa-coins',
+        q: 'Oltre allo sfratto posso recuperare i canoni arretrati?',
+        a: 'Sì. Possiamo chiedere al Giudice la condanna dell’inquilino al pagamento dei canoni non versati, degli oneri e delle spese legali, valutando poi la concreta recuperabilità.',
       }
     ] : items,
   };

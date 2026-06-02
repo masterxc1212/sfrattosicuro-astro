@@ -23,6 +23,10 @@ import LandingOriginalWhyChooseSection from '../../components/landing/LandingOri
 import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
 import LandingOriginalMiniWidgetSection from '../../components/landing/LandingOriginalMiniWidgetSection.astro';
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
+import LandingV3ForWhomSection from '../../components/landing/LandingV3ForWhomSection.astro';
+import LandingV3ValueStackSection from '../../components/landing/LandingV3ValueStackSection.astro';
+import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
+import LandingOriginalVideoReviewsSection from '../../components/landing/LandingOriginalVideoReviewsSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 
 const config = buildLandingPageConfig({
@@ -67,6 +71,7 @@ const config = buildLandingPageConfig({
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
@@ -127,26 +132,58 @@ const config = buildLandingPageConfig({
     <LandingOriginalHeaderSection />
     <main id="main-content" class="landing-v3-main" style="min-height:100vh; margin-top: var(--header-h, 90px);">
       <LandingOriginalHeroSection hero={config.hero} />
+      <LandingV3ForWhomSection />
       <LandingQuickFactsSection quickFacts={config.quickFacts} />
       <LandingOriginalTrustBarSection trustBar={config.trustBar} />
       <LandingOriginalProblemsSection problemsSection={config.problems} />
       <LandingOriginalCalculatorSection calculator={config.calculator} />
+      <LandingV3ValueStackSection />
       <LandingOriginalReviewsSection />
+      <LandingOriginalVideoReviewsSection />
       <LandingOriginalProvvedimentiSection />
       <LandingOriginalLegalCostSection legalCost={config.legalCost} />
       <LandingOriginalProcedureSection procedure={config.procedure} />
       <LandingOriginalCostTransparencySection costTransparency={config.costTransparency} />
+      <LandingV3FounderSection />
       <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
       <LandingOriginalFaqSection faqSection={config.faq} />
       <LandingV3ContactSection contactForm={config.contactForm} />
     </main>
+
+    <!-- Sticky CTA mobile (social proof + richiamata) -->
+    <div class="landing-v3-sticky-cta">
+      <div class="landing-v3-sticky-rating"><span class="landing-v3-sticky-stars" aria-hidden="true">★★★★★</span> <strong>5.0</strong> Google</div>
+      <a href="#contatti" class="landing-v3-sticky-btn">Richiedi la richiamata</a>
+    </div>
     <LandingOriginalFooterSection />
     <CookieConsentBanner />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
     <ClickConversionTracking />
     <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
+    <script src={versionedSrc('/assets/js/videos.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
+    <script is:inline>
+      (function(){
+        // Qualificazione v3: blocca invio se inquilino o se manca la scelta proprietario/inquilino.
+        document.addEventListener('submit', function(ev){
+          var f = ev.target;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          var sel = f.querySelector('select[name="proprietario"]');
+          if (!sel) return;
+          if (!sel.value) {
+            ev.preventDefault(); ev.stopImmediatePropagation();
+            alert('Indica se sei proprietario/locatore oppure inquilino.');
+            sel.focus();
+            return;
+          }
+          if (sel.value === 'inquilino') {
+            ev.preventDefault(); ev.stopImmediatePropagation();
+            alert('Questo servizio è riservato ai proprietari e ai locatori. Non assistiamo inquilini.');
+          }
+        }, true);
+      })();
+    </script>
   </body>
 </html>

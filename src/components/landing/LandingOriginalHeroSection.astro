@@ -100,6 +100,17 @@ const { hero = landingOriginal.hero } = Astro.props;
                 >
               </div>
 
+              {hero.ownerField && (
+                <div class="form-group">
+                  <label for="owner-hero" class="form-label">Sei proprietario/locatore? *</label>
+                  <select name="proprietario" id="owner-hero" class="form-select" required aria-required="true">
+                    <option value="">Seleziona…</option>
+                    <option value="proprietario">Sì, sono proprietario/locatore</option>
+                    <option value="inquilino">No, sono l'inquilino</option>
+                  </select>
+                </div>
+              )}
+
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
               <input type="hidden" name="utm_source" value="">
