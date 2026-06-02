@@ -431,3 +431,21 @@ form button[type="submit"] i,
   /* evita la sovrapposizione tra la tagline e il bottone CHIAMA nell'header */
   .landing-v3-body .logo-sub-text { display: none; }
 }
+
+/* CTA mobile: font compatto + righe bilanciate per evitare parole orfane/wrap strani */
+@media (max-width: 640px) {
+  .landing-v3-body .btn-primary,
+  .landing-v3-body .cta-btn,
+  .landing-v3-body button[type="submit"],
+  .landing-v3-body .form-submit {
+    font-size: .8rem !important;
+    letter-spacing: 0 !important;
+    line-height: 1.2 !important;
+    text-wrap: balance;
+  }
+}
+/* su schermi molto stretti, il CTA d'invio resta su una riga ("...entro 2 ore") */
+@media (max-width: 400px) {
+  .landing-v3-body button[type="submit"],
+  .landing-v3-body .form-submit { font-size: .72rem !important; }
+}

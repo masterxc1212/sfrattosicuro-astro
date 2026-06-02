@@ -386,7 +386,7 @@ export const landingOriginal = {
     ],
     bottomTitle: 'La Differenza È Nella Specializzazione',
     bottomBody: 'Mentre altri avvocati trattano sfratti occasionalmente, noi lavoriamo SOLO sullo sfratto per morosità. Il risultato? Tempi dimezzati, costi certi, risultati documentati.',
-    ctaLabel: 'RICHIEDI UNA CONSULENZA GRATUITA',
+    ctaLabel: 'Richiedi consulenza gratuita',
     ctaCaption: 'Gratuita, sicura e senza impegno',
   },
 
@@ -494,7 +494,7 @@ export const landingOriginal = {
     ],
     bottomTitle: 'Hai Altre Domande?',
     bottomBody: 'Parla direttamente con noi. Consulenza telefonica gratuita e senza impegno sullo sfratto per morosità.',
-    ctaLabel: 'CONSIGLIERA GRATUITA',
+    ctaLabel: 'CONSULENZA GRATUITA',
     ctaCaption: 'Gratuita, sicura e senza impegno',
   },
 
