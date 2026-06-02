@@ -3,7 +3,6 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import HeaderIsland from '../../components/HeaderIsland.astro';
 import Footer from '../../components/Footer.astro';
 import JsonLd from '../../components/JsonLd.astro';
-import PageJumpNavIsland from '../../components/PageJumpNavIsland.astro';
 import sedi from '../../data/sedi.json';
 import site from '../../data/site.json';
 
@@ -29,47 +28,14 @@ const totalSedi = list.length;
 const totalRegioni = regionNames.length;
 
 const topCities = ['Milano', 'Roma', 'Napoli', 'Torino', 'Bologna', 'Firenze'];
-
-// Risolvi i dati completi (slug, regione, tribunale) per le top cities monolitiche
-const topCityCards = topCities
-  .map((name) => list.find((c) => c.nome === name))
-  .filter((c): c is SedeItem => Boolean(c));
-
-const macroAreaByRegione: Record<string, 'Nord' | 'Centro' | 'Sud' | 'Isole'> = {
-  "Valle d'Aosta": 'Nord',
-  Piemonte: 'Nord',
-  Lombardia: 'Nord',
-  Liguria: 'Nord',
-  Veneto: 'Nord',
-  'Trentino Alto Adige': 'Nord',
-  'Friuli Venezia Giulia': 'Nord',
-  'Emilia Romagna': 'Nord',
-  Toscana: 'Centro',
-  Umbria: 'Centro',
-  Marche: 'Centro',
-  Lazio: 'Centro',
-  Abruzzo: 'Sud',
-  Molise: 'Sud',
-  Campania: 'Sud',
-  Puglia: 'Sud',
-  Basilicata: 'Sud',
-  Calabria: 'Sud',
-  Sicilia: 'Isole',
-  Sardegna: 'Isole'
-};
-
-const macroAreaStats = list.reduce(
-  (acc, item) => {
-    const area = macroAreaByRegione[item.regione] ?? 'Nord';
-    acc[area] += 1;
-    return acc;
-  },
-  { Nord: 0, Centro: 0, Sud: 0, Isole: 0 } as Record<'Nord' | 'Centro' | 'Sud' | 'Isole', number>
-);
+const chipCities = topCities.filter((name) => list.some((c) => c.nome === name));
 
 const regionToId = (region: string) => `regione-${region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
 const siteUrl = site.siteUrl.replace(/\/$/, '');
+
+// Dataset compatto per la ricerca live lato client
+const cityData = list.map((c) => ({ nome: c.nome, slug: c.slug, regione: c.regione }));
 
 const sediItemList = list.map((item, index) => ({
   '@type': 'ListItem',
@@ -142,196 +108,163 @@ const sediGraph = {
   </Fragment>
 
   <HeaderIsland />
-  <PageJumpNavIsland
-    title="Percorso rapido"
-    items={[
-      { href: '#citySearch', label: 'Cerca città' },
-      { href: '#regionIndex', label: 'Indice regioni' },
-      { href: '#regionList', label: 'Elenco sedi' },
-      { href: '/servizi/#contatti', label: 'Richiedi consulenza' }
-    ]}
-  />
 
   <main id="main-content">
     <section class="sedi-hero">
       <div class="container">
-        <div class="hero-copy">
-          <p class="editorial-eyebrow">Rete territoriale</p>
-          <h1>Sedi territoriali</h1>
-          <p class="hero-sub">Trova rapidamente la sede di riferimento per città o regione e accedi alla pagina locale dedicata.</p>
-        </div>
-
+        <p class="editorial-eyebrow">Rete territoriale</p>
+        <h1>Sedi territoriali</h1>
+        <p class="hero-sub">Trova la sede di riferimento per città o regione e apri la pagina locale dedicata.</p>
         <div class="stats" aria-label="Statistiche sedi">
-          <span><strong class="stat-num">{totalSedi}</strong><span class="stat-label">sedi operative</span></span>
-          <span><strong class="stat-num">{totalRegioni}</strong><span class="stat-label">regioni coperte</span></span>
+          <span><span class="stat-num">{totalSedi}</span><span class="stat-label">sedi operative</span></span>
+          <span><span class="stat-num">{totalRegioni}</span><span class="stat-label">regioni coperte</span></span>
         </div>
       </div>
     </section>
 
-    <section class="top-cities" aria-label="Sedi delle città principali">
+    <section class="sedi-search">
       <div class="container">
-        <div class="top-cities__grid">
-          {topCityCards.map((city) => (
-            <a class="top-city" href={`/sedi/${city.slug}/`} data-anim="fade-up">
-              <p class="region-tag">{city.regione}</p>
-              <p class="city-name">{city.nome}</p>
-              <p class="court">{city.tribunale ?? `Tribunale di ${city.nome}`}</p>
-              <span class="arrow">Avvocato per sfratto a {city.nome} →</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
+        <div class="tools-grid">
+          <label class="field">
+            <span>Cerca città</span>
+            <input id="citySearch" type="search" autocomplete="off" placeholder="Es. Milano, Roma, Napoli…" aria-label="Cerca una città" />
+          </label>
 
-    <section class="coverage-visual" aria-label="Copertura nazionale">
-      <div class="container coverage-grid">
-        <div class="coverage-copy">
-          <p class="editorial-eyebrow">Copertura</p>
-          <h2>Copertura nazionale a colpo d'occhio</h2>
-          <p>
-            La rete è distribuita su tutto il territorio italiano, con presidi operativi nelle principali aree
-            geografiche. Seleziona una regione dalla mappa per saltare direttamente alla sezione dedicata.
-          </p>
+          <label class="field field--region">
+            <span>Filtra per regione</span>
+            <select id="regionFilter" aria-label="Filtra per regione">
+              <option value="">Tutte le regioni</option>
+              {regionNames.map((region) => (
+                <option value={region}>{region}</option>
+              ))}
+            </select>
+          </label>
+
+          <button id="resetFilters" type="button" class="btn-reset">Reset</button>
         </div>
 
-        <div class="macro-stats" aria-label="Sedi per macro area">
-          <span><strong>{macroAreaStats.Nord}</strong> Nord</span>
-          <span><strong>{macroAreaStats.Centro}</strong> Centro</span>
-          <span><strong>{macroAreaStats.Sud}</strong> Sud</span>
-          <span><strong>{macroAreaStats.Isole}</strong> Isole</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="sticky-tools" aria-label="Ricerca e filtri">
-      <div class="container tools-grid">
-        <label class="field">
-          <span>Cerca città</span>
-          <input id="citySearch" type="search" placeholder="Es. Milano, Roma, Napoli" aria-label="Cerca una città" />
-        </label>
-
-        <label class="field">
-          <span>Filtra per regione</span>
-          <select id="regionFilter" aria-label="Filtra per regione">
-            <option value="">Tutte le regioni</option>
-            {regionNames.map((region) => (
-              <option value={region}>{region}</option>
+        <div class="quick-links">
+          <p class="quick-title">Città più cercate</p>
+          <div class="chips">
+            {chipCities.map((city) => (
+              <button type="button" class="city-chip" data-city-chip={city}>{city}</button>
             ))}
-          </select>
-        </label>
+          </div>
+        </div>
 
-        <button id="resetFilters" type="button" class="btn-reset">Reset</button>
+        <p id="resultsCounter" class="results-counter" aria-live="polite" hidden></p>
+        <p id="noResults" class="no-results" hidden>Nessuna sede trovata. Prova con un altro nome o regione.</p>
+        <div id="searchResults" class="search-results" hidden></div>
       </div>
+    </section>
 
-      <div class="container quick-links">
-        <p class="quick-title">Città più cercate</p>
-        <div class="chips">
-          {topCities.map((city) => (
-            <button type="button" class="city-chip" data-city-chip={city}>{city}</button>
+    <div id="directory">
+      <section class="section section--compact">
+        <nav class="container region-index" id="regionIndex" aria-label="Indice regioni">
+          {regionNames.map((region) => (
+            <a href={`#${regionToId(region)}`}>{region}</a>
           ))}
+        </nav>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <div class="region-list" id="regionList">
+            {regionNames.map((region, index) => {
+              const indexLabel = String(index + 1).padStart(2, '0') + ' / ' + String(regionNames.length).padStart(2, '0');
+              return (
+                <section class="region" data-region={region} id={regionToId(region)}>
+                  <header class="region-head">
+                    <span class="region-num">{indexLabel}</span>
+                    <h2>
+                      {region}
+                      <span class="count">{grouped[region].length} sedi</span>
+                    </h2>
+                  </header>
+                  <ul class="city-grid">
+                    {grouped[region].map((item) => (
+                      <li><a href={`/sedi/${item.slug}/`}>Avvocato per sfratto a {item.nome}</a></li>
+                    ))}
+                  </ul>
+                </section>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="section section--compact">
-      <nav class="container region-index" id="regionIndex" aria-label="Indice regioni">
-        {regionNames.map((region) => (
-          <a href={`#${regionToId(region)}`}>{region}</a>
-        ))}
-      </nav>
-    </section>
-
-    <section class="section section--compact">
-      <div class="container">
-        <p id="resultsCounter" class="results-counter" aria-live="polite"></p>
-        <p id="noResults" class="no-results" hidden>Nessuna sede trovata con i filtri selezionati.</p>
-
-        <div class="region-list" id="regionList">
-          {regionNames.map((region, index) => {
-            const indexLabel = String(index + 1).padStart(2, '0') + ' / ' + String(regionNames.length).padStart(2, '0');
-            return (
-              <section class="region" data-region={region} id={regionToId(region)}>
-                <header class="region-head">
-                  <span class="region-num">{indexLabel}</span>
-                  <h2>
-                    {region}
-                    <span class="count">{grouped[region].length} sedi</span>
-                  </h2>
-                </header>
-                <ul class="city-grid">
-                  {grouped[region].map((item) => (
-                    <li data-city={item.nome.toLowerCase()}>
-                      <a href={`/sedi/${item.slug}/`}>Avvocato per sfratto a {item.nome}</a>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            );
-          })}
-        </div>
-      </div>
-    </section>
+    <script type="application/json" id="cityData" set:html={JSON.stringify(cityData)}></script>
   </main>
 
   <Footer />
 </SiteLayout>
 
 <script>
-  const searchInput = document.getElementById('citySearch');
-  const regionFilter = document.getElementById('regionFilter');
+  const dataEl = document.getElementById('cityData');
+  const cities = dataEl ? JSON.parse(dataEl.textContent || '[]') : [];
+
+  const searchInput = document.getElementById('citySearch') as HTMLInputElement | null;
+  const regionFilter = document.getElementById('regionFilter') as HTMLSelectElement | null;
   const resetBtn = document.getElementById('resetFilters');
-  const regionList = Array.from(document.querySelectorAll('.region'));
-  const resultsCounter = document.getElementById('resultsCounter');
+  const panel = document.getElementById('searchResults');
+  const directory = document.getElementById('directory');
+  const counter = document.getElementById('resultsCounter');
   const noResults = document.getElementById('noResults');
-  const cityChips = Array.from(document.querySelectorAll('[data-city-chip]'));
+  const chips = Array.from(document.querySelectorAll('[data-city-chip]'));
 
-  const updateCounter = (count) => {
-    if (!resultsCounter) return;
-    resultsCounter.textContent = count === 1 ? '1 sede trovata' : `${count} sedi trovate`;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
+
+  const render = () => {
+    const q = (searchInput?.value || '').trim().toLowerCase();
+    const reg = regionFilter?.value || '';
+    const active = q !== '' || reg !== '';
+
+    if (!active) {
+      if (panel) { panel.hidden = true; panel.innerHTML = ''; }
+      if (directory) directory.hidden = false;
+      if (counter) counter.hidden = true;
+      if (noResults) noResults.hidden = true;
+      return;
+    }
+
+    const matches = cities
+      .filter((c: any) => (!q || c.nome.toLowerCase().includes(q)) && (!reg || c.regione === reg))
+      .sort((a: any, b: any) => a.nome.localeCompare(b.nome, 'it'));
+
+    if (directory) directory.hidden = true;
+    if (counter) {
+      counter.hidden = false;
+      counter.textContent = matches.length === 1 ? '1 sede trovata' : `${matches.length} sedi trovate`;
+    }
+    if (noResults) noResults.hidden = matches.length !== 0;
+    if (panel) {
+      panel.hidden = false;
+      panel.innerHTML = matches
+        .map((c: any) => `<a href="/sedi/${c.slug}/"><span class="r-city">Avvocato per sfratto a ${esc(c.nome)}</span><span class="r-region">${esc(c.regione)}</span></a>`)
+        .join('');
+    }
   };
 
-  const applyFilters = () => {
-    const query = (searchInput?.value || '').trim().toLowerCase();
-    const selectedRegion = regionFilter?.value || '';
-    let totalVisibleCities = 0;
-
-    regionList.forEach((regionEl) => {
-      const regionName = regionEl.getAttribute('data-region') || '';
-      const matchesRegion = !selectedRegion || regionName === selectedRegion;
-
-      let visibleCities = 0;
-      regionEl.querySelectorAll('li[data-city]').forEach((li) => {
-        const city = li.getAttribute('data-city') || '';
-        const show = city.includes(query);
-        li.style.display = show ? '' : 'none';
-        if (show) visibleCities++;
-      });
-
-      const showRegion = matchesRegion && visibleCities > 0;
-      regionEl.style.display = showRegion ? '' : 'none';
-      totalVisibleCities += showRegion ? visibleCities : 0;
-    });
-
-    updateCounter(totalVisibleCities);
-    if (noResults) noResults.hidden = totalVisibleCities !== 0;
-  };
-
-  searchInput?.addEventListener('input', applyFilters);
-  regionFilter?.addEventListener('change', applyFilters);
+  searchInput?.addEventListener('input', render);
+  regionFilter?.addEventListener('change', render);
 
   resetBtn?.addEventListener('click', () => {
     if (searchInput) searchInput.value = '';
     if (regionFilter) regionFilter.value = '';
-    applyFilters();
+    render();
+    searchInput?.focus();
   });
 
-  cityChips.forEach((chip) => {
+  chips.forEach((chip) => {
     chip.addEventListener('click', () => {
       const city = chip.getAttribute('data-city-chip') || '';
       if (searchInput) searchInput.value = city;
-      applyFilters();
+      if (regionFilter) regionFilter.value = '';
+      render();
+      panel?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   });
 
-  applyFilters();
+  render();
 </script>
