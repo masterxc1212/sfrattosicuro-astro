@@ -13,41 +13,41 @@
 /* === LAYER 1 · DESIGN TOKENS ============================== */
 :root {
         /* ---- Brand palette (legacy var names retained) ---- */
-        --blue-navy: #1b2951;            /* Antracite blu istituzionale, titoli, footer */
-        --blue-navy-deep: #131c3a;       /* Footer / sezioni scure */
-        --blue-navy-soft: #2a3a6b;       /* Hover, link su scuro */
-        --green-security: #2f7d4a;       /* Verde sobrio (era #3bae5d, troppo acceso) */
-        --green-security-deep: #245d37;  /* Hover su CTA verde */
-        --gray-pearl: #f7f6f3;           /* Avorio caldo (era #f7f8fc, troppo blu) */
-        --gold-refined: #b08537;         /* Bronzo legale (era #c6902a) */
-        --kicker-gold: #b08537;          /* Alias legacy */
-        --anthracite: #1f2937;           /* Testo titoli leggibile */
+        --blue-navy: oklch(0.16 0.05 250);            /* Antracite blu istituzionale, titoli, footer */
+        --blue-navy-deep: oklch(0.13 0.045 250);       /* Footer / sezioni scure */
+        --blue-navy-soft: oklch(0.36 0.10 248);       /* Hover, link su scuro */
+        --green-security: oklch(0.55 0.15 145);       /* Verde sobrio (era #3bae5d, troppo acceso) */
+        --green-security-deep: oklch(0.45 0.13 145);  /* Hover su CTA verde */
+        --gray-pearl: oklch(0.955 0.016 80);           /* Avorio caldo (era #f7f8fc, troppo blu) */
+        --gold-refined: oklch(0.62 0.12 70);         /* Bronzo legale (era #c6902a) */
+        --kicker-gold: oklch(0.62 0.12 70);          /* Alias legacy */
+        --anthracite: oklch(0.22 0.04 250);           /* Testo titoli leggibile */
 
         /* ---- Surfaces ---- */
-        --surface-canvas: #fbfbfa;       /* Sfondo principale */
-        --surface-card: #ffffff;         /* Card elevation 0 */
-        --surface-soft: #f7f6f3;         /* Section bg alternato */
-        --surface-warm: #f1ede4;         /* Section accent caldo (editorial pause) */
-        --surface-deep: #131c3a;         /* Footer / sezioni scure */
-        --surface-night: #0e1530;        /* Section editorial scura full-bleed */
-        --surface-night-tint: #1a2342;   /* Card su section night */
-        --gold-warm: #c89c5a;            /* Bronzo più caldo per dark sections */
-        --gold-soft: rgba(176, 133, 55, 0.18); /* Hairline decorativa */
+        --surface-canvas: oklch(0.985 0.008 90);       /* Sfondo principale */
+        --surface-card: oklch(0.99 0.005 90);         /* Card elevation 0 */
+        --surface-soft: oklch(0.97 0.012 88);         /* Section bg alternato */
+        --surface-warm: oklch(0.95 0.018 82);         /* Section accent caldo (editorial pause) */
+        --surface-deep: oklch(0.16 0.05 250);         /* Footer / sezioni scure */
+        --surface-night: oklch(0.13 0.045 250);        /* Section editorial scura full-bleed */
+        --surface-night-tint: oklch(0.24 0.05 250);   /* Card su section night */
+        --gold-warm: oklch(0.78 0.10 80);            /* Bronzo più caldo per dark sections */
+        --gold-soft: oklch(0.62 0.12 70 / 0.18); /* Hairline decorativa */
 
         /* ---- Borders ---- */
-        --border-light: #ececea;         /* Hairline standard (era var(--border-light)) */
-        --border-medium: #d8d6d1;        /* Hairline emphasized */
-        --border-strong: #1b2951;        /* Bordo brand */
-        --border-on-dark: rgba(255,255,255,0.12);
+        --border-light: oklch(0.91 0.012 85);         /* Hairline standard (era var(--border-light)) */
+        --border-medium: oklch(0.84 0.020 85);        /* Hairline emphasized */
+        --border-strong: oklch(0.16 0.05 250);        /* Bordo brand */
+        --border-on-dark: oklch(1 0 0 / 0.14);
 
         /* ---- Text ---- */
-        --text-strong: #111827;
-        --text-body: #2f3437;            /* Charcoal warm (era #334155) */
-        --text-muted: #6b7280;
-        --text-dim: #94a3b8;
-        --text-on-dark: #f5f4f0;
-        --link-blue: #1b376b;            /* Più sobrio (era #1e3a8a) */
-        --link-blue-hover: #0e1f47;
+        --text-strong: oklch(0.16 0.05 250);
+        --text-body: oklch(0.22 0.04 250);            /* Charcoal warm (era #334155) */
+        --text-muted: oklch(0.50 0.02 250);
+        --text-dim: oklch(0.65 0.015 250);
+        --text-on-dark: oklch(0.985 0.008 90);
+        --link-blue: oklch(0.36 0.10 248);            /* Più sobrio (era #1e3a8a) */
+        --link-blue-hover: oklch(0.45 0.13 145);
 
         /* ---- Spacing scale (4 / 8 base) ---- */
         --space-3xs: 4px;
@@ -70,29 +70,31 @@
         --section-py-tight: clamp(20px, 2.6vw, 32px);
 
         /* ---- Container ---- */
-        --container-max: 1200px;
+        --container-max: 1240px;
         --container-prose: 720px;
         --container-narrow: 980px;
         --container-px: clamp(16px, 4vw, 32px);
 
         /* ---- Border radius (disciplinata: 0/4/8/12/16/999) ---- */
-        --radius-xs: 4px;
-        --radius-sm: 8px;
-        --radius-md: 12px;
-        --radius-lg: 16px;
+        --radius-xs: 6px;
+        --radius-sm: 10px;
+        --radius-md: 16px;
+        --radius-lg: 24px;
         --radius-pill: 999px;
+        --radius-xl: 32px;
+        --radius-2xl: 44px;
 
         /* ---- Shadows (ultra-diffuse, legal) ---- */
         --shadow-none: none;
         --shadow-hairline: 0 0 0 1px rgba(15, 23, 42, 0.04);
-        --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(15, 23, 42, 0.04);
-        --shadow-elevated: 0 1px 2px rgba(15, 23, 42, 0.05), 0 12px 28px rgba(15, 23, 42, 0.08);
-        --shadow-deep: 0 24px 60px rgba(15, 23, 42, 0.14);
+        --shadow-soft: 0 2px 6px oklch(0.30 0.05 250 / 0.06), 0 1px 2px oklch(0.30 0.05 250 / 0.04);
+        --shadow-elevated: 0 8px 24px oklch(0.30 0.05 250 / 0.08), 0 2px 6px oklch(0.30 0.05 250 / 0.05);
+        --shadow-deep: 0 24px 56px oklch(0.30 0.05 250 / 0.10), 0 6px 16px oklch(0.30 0.05 250 / 0.06);
         --shadow-focus: 0 0 0 3px rgba(27, 41, 81, 0.18);
 
         /* ---- Typography ---- */
-        --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        --font-serif: 'Source Serif 4', 'Charter', 'Iowan Old Style', 'Apple Garamond',
+        --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        --font-serif: 'Fraunces', 'Source Serif 4', 'Charter', 'Iowan Old Style', 'Apple Garamond',
                       'Baskerville', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
         --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
 
@@ -131,7 +133,7 @@
         --dur-slow: 360ms;
 
         /* ---- Header chrome ---- */
-        --header-h: 84px;
+        --header-h: 88px;
         --header-h-mobile: 70px;
 }
 
@@ -350,7 +352,7 @@ main svg[viewBox="0 0 24 24"]:not(.brand-logo):not(.allow-stretch) {
         min-height: 48px;
         padding: 14px 22px;
         border: 1px solid transparent;
-        border-radius: var(--radius-sm);
+        border-radius: var(--radius-pill);
         font-family: var(--font-sans);
         font-weight: 600;
         font-size: 0.98rem;
@@ -368,19 +370,20 @@ main svg[viewBox="0 0 24 24"]:not(.brand-logo):not(.allow-stretch) {
 .btn-primary:active,
 .btn-secondary:active { transform: translateY(1px); }
 
-/* CTA primaria �?? blu navy istituzionale (legal premium) */
+/* CTA primaria - verde azione (firma Credit Media) */
 .btn-primary {
-        background: var(--blue-navy);
+        background: var(--green-security-deep);
         color: #fff;
-        border-color: var(--blue-navy);
+        border-color: var(--green-security-deep);
         box-shadow: var(--shadow-soft);
 }
 .btn-primary:hover,
 .btn-primary:focus-visible {
-        background: var(--blue-navy-deep);
-        border-color: var(--blue-navy-deep);
+        background: var(--green-security);
+        border-color: var(--green-security);
         color: #fff;
         box-shadow: var(--shadow-elevated);
+        transform: translateY(-1px);
 }
 
 /* CTA secondaria �?? outline */
@@ -467,12 +470,9 @@ section[id],
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: saturate(140%) blur(8px);
-    -webkit-backdrop-filter: saturate(140%) blur(8px);
-    border-bottom: 1px solid var(--border-light);
-    /* hairline antracite + bronzo: sostituisce il bordo verde acceso */
-    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04), 0 6px 22px rgba(15, 23, 42, 0.04);
+    background: transparent;
+    padding-block: 12px;
+    /* CM-style: floating pill island instead of full-width bar */
   }
 
   .container {
@@ -481,11 +481,20 @@ section[id],
   }
 
   .header-row {
-    min-height: var(--header-h);
+    min-height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    padding: 8px 12px 8px 18px;
+    background: color-mix(in oklab, var(--surface-canvas) 80%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-inner-hi), var(--shadow-soft);
+    transition: box-shadow var(--dur-base) var(--ease-out-cubic),
+                background-color var(--dur-base) var(--ease-out-cubic);
   }
 
   .logo-container {
@@ -549,16 +558,17 @@ section[id],
     position: absolute;
     left: 0; right: 0;
     bottom: 2px;
-    height: 1px;
-    background: var(--gold-refined);
+    height: 1.5px;
+    border-radius: 2px;
+    background: var(--green-security);
   }
 
   .nav-toggle {
     min-height: 44px;
     border: 1px solid var(--border-medium);
-    background: #fff;
+    background: var(--surface-card);
     color: var(--blue-navy);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-pill);
     padding: 10px 14px;
     font-weight: 600;
     font-size: 0.92rem;
@@ -575,6 +585,14 @@ section[id],
 
   .mobile-nav.is-open {
     display: block;
+    margin-top: 8px;
+    padding: 6px 18px 12px;
+    background: color-mix(in oklab, var(--surface-canvas) 92%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-elevated);
   }
 
   .mobile-nav a {
@@ -819,25 +837,25 @@ section[id],
 
   .hero-media {
     width: 100%;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
+    padding: 6px;
+    border-radius: var(--radius-2xl);
     border: 1px solid var(--border-light);
     box-shadow: var(--shadow-elevated);
     min-height: 360px;
-    background: #ece9e1;
+    background: color-mix(in oklab, var(--text-body) 4%, var(--surface-soft));
     position: relative;
   }
   .hero-media::after {
-    /* sottile inner highlight per effetto "matte premium" */
+    /* inner highlight sul core: effetto bezel premium (Doppelrand CM) */
     content: '';
     position: absolute;
-    inset: 0;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
-    border-radius: inherit;
+    inset: 6px;
+    box-shadow: var(--shadow-inner-hi);
+    border-radius: calc(var(--radius-2xl) - 6px);
     pointer-events: none;
   }
 
-  .hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: calc(var(--radius-2xl) - 6px); }
 
   .hero-carousel { position: relative; }
   .carousel-track, .slide { height: 100%; min-height: 360px; }
@@ -1205,9 +1223,9 @@ section[id],
   .summary-sub { margin: 0 0 10px; color: var(--text-muted); line-height: 1.55; font-size: 0.92rem; }
 
   .btn-primary {
-    background: var(--blue-navy);
+    background: var(--green-security-deep);
     color: #fff;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-pill);
     padding: 14px 24px;
     font-weight: 600;
     text-decoration: none;
@@ -1217,7 +1235,7 @@ section[id],
     justify-content: center;
     transition: background-color var(--dur-base) var(--ease-out-cubic);
   }
-  .btn-primary:hover { background: var(--blue-navy-deep); color: #fff; }
+  .btn-primary:hover { background: var(--green-security); color: #fff; }
 
   .review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .review-skeleton { height: 148px; border-radius: var(--radius-md); background: var(--surface-soft); }
@@ -1961,9 +1979,9 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
   input::placeholder, textarea::placeholder { color: var(--text-dim); }
 
   .btn-primary {
-    background: var(--blue-navy);
+    background: var(--green-security-deep);
     color: #fff;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-pill);
     padding: 16px 28px;
     min-height: 52px;
     font-weight: 600;
@@ -1972,7 +1990,7 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     width: fit-content;
     transition: background-color var(--dur-base) var(--ease-out-cubic), transform var(--dur-base) var(--ease-out-cubic);
   }
-  .btn-primary:hover { background: var(--blue-navy-deep); }
+  .btn-primary:hover { background: var(--green-security); }
   .btn-primary:active { transform: translateY(1px); }
   .privacy, .tiny { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; }
 
@@ -4255,3 +4273,94 @@ section + .asterism { margin-top: calc(-1 * var(--section-py-tight)); }
   transition: transform var(--dur-base) var(--ease-out-cubic);
 }
 .editorial-related__item:hover .arrow { transform: translateX(4px); }
+
+/* === LAYER 6 . CM design primitives (ported from Credit Media) ============ */
+:root {
+  --shadow-inner-hi: inset 0 1px 0 oklch(1 0 0 / 0.6);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Fraunces display axis + editorial italic emphasis (CM signature) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  letter-spacing: -0.022em;
+  line-height: 1.08;
+}
+h1 { letter-spacing: -0.035em; }
+h1 em, h2 em, h3 em, h4 em {
+  font-style: italic;
+  color: var(--green-security-deep);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+
+/* Subtle grain overlay (fixed, non-interactive) */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Double-bezel card (Doppelrand) */
+.bezel {
+  position: relative;
+  padding: 6px;
+  background: color-mix(in oklab, var(--text-body) 4%, var(--surface-soft));
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-soft);
+}
+.bezel > .bezel-core {
+  position: relative;
+  background: var(--surface-canvas);
+  border-radius: calc(var(--radius-2xl) - 6px);
+  padding: clamp(28px, 4vw, 52px);
+  box-shadow: var(--shadow-inner-hi);
+}
+.bezel--ink {
+  background: color-mix(in oklab, var(--blue-navy) 92%, var(--green-security-deep));
+  border-color: color-mix(in oklab, var(--blue-navy) 30%, transparent);
+}
+.bezel--ink > .bezel-core {
+  background: var(--blue-navy);
+  color: var(--text-on-dark);
+}
+.bezel--green {
+  background: color-mix(in oklab, var(--green-security-deep) 92%, var(--blue-navy));
+  border-color: color-mix(in oklab, var(--green-security-deep) 40%, transparent);
+}
+.bezel--green > .bezel-core {
+  background: var(--green-security-deep);
+  color: var(--text-on-dark);
+}
+.bezel--cream > .bezel-core {
+  background: var(--surface-warm);
+}
+/* === LAYER 6b . Authoritative button finish (CM) ========================== */
+/* Wins over scattered component-local .btn/.btn-primary overrides via source order.
+   Dark-section buttons keep their gold treatment (higher specificity). */
+.btn, .btn-primary, .btn-secondary { border-radius: var(--radius-pill); }
+.btn-primary {
+  background: var(--green-security-deep);
+  border-color: var(--green-security-deep);
+  color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus-visible {
+  background: var(--green-security);
+  border-color: var(--green-security);
+  color: #fff;
+}
+.btn-secondary {
+  background: var(--surface-card);
+  color: var(--blue-navy);
+  border-color: var(--border-medium);
+}
+.btn-secondary:hover, .btn-secondary:focus-visible {
+  background: var(--surface-soft);
+  border-color: var(--blue-navy);
+  color: var(--blue-navy);
+}
