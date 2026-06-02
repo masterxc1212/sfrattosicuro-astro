@@ -422,11 +422,11 @@ form button[type="submit"] i,
   .landing-v3-founder-pills li { font-size: .8rem; }
   .landing-v3-forwhom-card li { font-size: .92rem; }
 
-  /* sticky bar più bassa */
-  .landing-v3-sticky-cta { padding: .45rem .7rem; }
+  /* sticky bar più bassa + safe-area iOS (evita il taglio in basso) */
+  .landing-v3-sticky-cta { padding: .45rem .7rem calc(.45rem + env(safe-area-inset-bottom, 0px)); }
   .landing-v3-sticky-btn { padding: .55rem .8rem; font-size: .78rem; }
 }
-@media (max-width: 900px) { body.landing-v3-body { padding-bottom: 58px; } }
+@media (max-width: 900px) { body.landing-v3-body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); } }
 @media (max-width: 480px) {
   /* evita la sovrapposizione tra la tagline e il bottone CHIAMA nell'header */
   .landing-v3-body .logo-sub-text { display: none; }
