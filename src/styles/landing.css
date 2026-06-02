@@ -387,3 +387,47 @@ form button[type="submit"] i,
 .landing-v3-value-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
 @media (min-width: 640px) { .landing-v3-value-grid { grid-template-columns: repeat(3,1fr); } }
 .landing-v3-value-num { font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; }
+
+/* ==========================================================================
+   8. LANDING V3 — FIX MOBILE (giu 2026): no sfarfallio, form compatto, leggibilità
+   ========================================================================== */
+
+/* (1) STOP SFARFALLIO: content-visibility:auto sulle immagini lazy causa
+   re-render/repaint durante lo scroll inerziale iOS → flicker. Disattivato in v3. */
+.landing-v3-body img[loading="lazy"] { content-visibility: visible !important; }
+.landing-v3-founder-media img { content-visibility: visible !important; transform: translateZ(0); }
+.landing-v3-body .cv-auto { content-visibility: visible !important; }
+/* barra sticky su layer GPU dedicato: evita il flicker dei fixed durante lo scroll iOS */
+.landing-v3-sticky-cta { transform: translateZ(0); -webkit-transform: translateZ(0); will-change: transform; backface-visibility: hidden; }
+
+@media (max-width: 640px) {
+  /* (2) FORM HERO COMPATTO — tutto nella prima schermata senza scroll */
+  .landing-v3-hero-form-card { padding: .8rem .9rem !important; }
+  .landing-v3-form-head { margin-bottom: .5rem; }
+  .landing-v3-hero-form-card .form-title { font-size: 1.15rem; line-height: 1.15; margin-bottom: .2rem; }
+  .landing-v3-hero-form-card .form-subtitle { font-size: .76rem; line-height: 1.3; margin-bottom: .45rem; }
+  .landing-v3-hero-form-card .form-subtitle br { display: none; }
+  .landing-v3-hero-form-card .form-subtitle span { display: none; } /* orari: già presenti nel blocco contatti */
+  .landing-v3-hero-form-card .form-group { margin-bottom: .5rem; }
+  .landing-v3-hero-form-card .form-label { font-size: .8rem; margin-bottom: .2rem; }
+  .landing-v3-hero-form-card .form-input,
+  .landing-v3-hero-form-card .form-select { padding: .6rem .8rem; min-height: 46px; font-size: .95rem; }
+  .landing-v3-hero-form-card .form-submit { min-height: 3rem; padding: .7rem .6rem; margin-top: .5rem; font-size: .82rem !important; letter-spacing: .01em !important; line-height: 1.15; gap: .5rem !important; }
+  .landing-v3-hero-form-wrap { margin-bottom: 1rem; }
+  .landing-v3-main .hero-section { padding-top: .4rem !important; padding-bottom: 1rem; }
+
+  /* (3) LEGGIBILITÀ */
+  body.landing-v3-body { font-size: .95rem; }
+  .landing-v3-founder-copy p { font-size: .95rem; line-height: 1.55; }
+  .landing-v3-founder-pills li { font-size: .8rem; }
+  .landing-v3-forwhom-card li { font-size: .92rem; }
+
+  /* sticky bar più bassa */
+  .landing-v3-sticky-cta { padding: .45rem .7rem; }
+  .landing-v3-sticky-btn { padding: .55rem .8rem; font-size: .78rem; }
+}
+@media (max-width: 900px) { body.landing-v3-body { padding-bottom: 58px; } }
+@media (max-width: 480px) {
+  /* evita la sovrapposizione tra la tagline e il bottone CHIAMA nell'header */
+  .landing-v3-body .logo-sub-text { display: none; }
+}
