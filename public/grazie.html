@@ -6,6 +6,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  try{gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',security_storage:'granted'});var __ssc=JSON.parse(localStorage.getItem('ss_cookie_consent_v1')||'null');if(__ssc){gtag('consent','update',{ad_storage:__ssc.marketing?'granted':'denied',ad_user_data:__ssc.marketing?'granted':'denied',ad_personalization:__ssc.marketing?'granted':'denied',analytics_storage:__ssc.analytics?'granted':'denied'});}}catch(e){}
   gtag('js', new Date());
 
   gtag('config', 'AW-10983419342');
