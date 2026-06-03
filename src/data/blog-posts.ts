@@ -17,6 +17,80 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "affitto-con-riscatto-proprietario",
+    title: "Affitto con riscatto: la guida per il proprietario che vuole vendere casa",
+    description: "Affitto con riscatto (rent to buy): come funziona, le due quote del canone e cosa accade se l'inquilino non compra o non paga. Guida per il proprietario.",
+    excerpt: "L'affitto con riscatto permette al proprietario di incassare un canone oggi e vendere domani, mettendo in casa un inquilino-acquirente. Ma il rent to buy non è un affitto qualsiasi: il canone si divide in due quote, il contratto va trascritto e la legge stabilisce cosa accade se l'acquisto non si conclude. Guida pratica per chi vuole vendere un immobile difficile da piazzare.",
+    lead: "Hai un immobile che fai fatica a vendere ma che intanto potresti affittare? L'affitto con riscatto (in inglese rent to buy) ti permette di consegnarlo subito a chi lo userà e, allo stesso tempo, di fissare fin da ora il prezzo e la data della futura vendita. È uno strumento regolato dalla legge, con tutele precise sia per te sia per l'acquirente. Vediamo, dal punto di vista del proprietario, come funziona, quanto incassi davvero e cosa succede se l'inquilino alla fine non compra o smette di pagare.",
+    publishedAt: "2026-06-03",
+    updatedAt: "2026-06-03",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-06-03. Keyword: affitto con riscatto, vol 12100, KD 0 (DataForSEO). Secondarie: rent to buy, affitto con riscatto come funziona.",
+    html: `  <p>Hai un immobile che fai fatica a vendere ma che intanto potresti affittare? L'<strong>affitto con riscatto</strong> (in inglese <em>rent to buy</em>) ti permette di consegnarlo subito a chi lo userà e, allo stesso tempo, di fissare fin da ora il prezzo e la data della futura vendita. È uno strumento regolato dalla legge, con tutele precise sia per te sia per l'acquirente. Vediamo, dal punto di vista del proprietario, come funziona, quanto incassi davvero e cosa succede se l'inquilino alla fine non compra o smette di pagare.</p>
+
+  <h2>Cos'è l'affitto con riscatto (rent to buy)</h2>
+  <p>L'affitto con riscatto è un contratto unico che unisce due elementi: il <strong>godimento</strong> immediato dell'immobile (come in un normale affitto) e il <strong>diritto dell'inquilino di acquistarlo</strong> entro un termine stabilito, a un prezzo già concordato. In sostanza consegni la casa oggi, incassi un canone mensile e, se l'occupante decide di comprare, una parte di quanto ha già versato viene scalata dal prezzo finale.</p>
+  <p>Dal 2014 questo schema ha una disciplina di legge precisa, che lo distingue dai vecchi "affitti con patto di riscatto" costruiti in modo artigianale. La cornice normativa, citata in coda all'articolo, prevede un sistema di garanzie pensato proprio per dare certezza a entrambe le parti.</p>
+
+  <h2>Come funziona il canone: due quote in una</h2>
+  <p>È il punto più importante da capire. Nel rent to buy il canone mensile si divide in <strong>due quote</strong> che vanno indicate nel contratto:</p>
+  <ul>
+    <li><strong>La quota per il godimento.</strong> È il vero e proprio "affitto", cioè il corrispettivo per l'uso dell'immobile. Questa parte resta a te in ogni caso, come in una locazione normale.</li>
+    <li><strong>La quota in conto prezzo (acconto).</strong> È la parte che, in caso di acquisto, viene scalata dal prezzo di vendita. Funziona come un anticipo che l'inquilino accumula mese dopo mese.</li>
+  </ul>
+  <p>Definire bene la proporzione tra le due quote è decisivo: più alta è la parte in conto prezzo, più conveniente diventa per l'inquilino comprare, ma più alta è la somma che potresti dover restituire se l'acquisto non si conclude. È una scelta da calibrare con attenzione, perché determina quanto incassi davvero e quanto rischi.</p>
+
+  <h2>La trascrizione: la tutela che conviene anche a te</h2>
+  <p>Il contratto di affitto con riscatto si <strong>trascrive nei registri immobiliari</strong>, come si fa con un preliminare di vendita. La trascrizione produce un effetto "prenotativo": è come se la futura vendita fosse già annotata fin dal giorno della firma. Per l'acquirente è una garanzia forte, perché lo protegge da ipoteche o vendite a terzi che dovessero arrivare dopo. Questa protezione, a differenza del preliminare ordinario, dura per tutto il contratto e comunque fino a un massimo di dieci anni.</p>
+  <p>Per te proprietario la trascrizione è un costo iniziale (serve l'atto del notaio), ma rende il contratto serio e bancabile: è proprio ciò che convince un occupante a impegnarsi e a versare la quota in conto prezzo. Vale come per qualunque vendita: prima ancora del rent to buy, ti consigliamo di avere il contratto regolarmente <a href="/blog/registrazione-contratto-locazione-online/">registrato all'Agenzia delle Entrate</a>.</p>
+
+  <h2>Cosa succede se l'inquilino non compra</h2>
+  <p>Il diritto di acquisto è una <strong>facoltà</strong> dell'inquilino, non un obbligo: alla scadenza può decidere di non comprare. In quel caso:</p>
+  <ul>
+    <li><strong>Le quote di godimento</strong> (la parte "affitto") restano a te: le hai incassate come corrispettivo dell'uso e non si restituiscono.</li>
+    <li><strong>Le quote in conto prezzo</strong> vanno restituite all'inquilino nella misura stabilita dal contratto. Proprio per questo è fondamentale concordare fin dall'inizio quale percentuale degli acconti torna indietro se l'acquisto non si fa: trattenere tutto, senza una causa, esporrebbe a contestazioni.</li>
+  </ul>
+  <p>Tradotto: se l'operazione "salta" per scelta dell'inquilino, tu hai comunque incassato l'equivalente di un affitto per tutti quegli anni, ma devi essere pronto a rimborsare la parte di anticipo prezzo pattuita.</p>
+
+  <h2>Cosa succede se l'inquilino non paga</h2>
+  <p>Qui scatta una tutela pensata per il proprietario. Il contratto si <strong>risolve</strong> quando l'inquilino non paga un numero di canoni, anche non consecutivi, che le parti fissano nel contratto: la legge stabilisce che questa soglia <strong>non può essere inferiore a un ventesimo (1/20) del totale dei canoni</strong> previsti. In un contratto lungo, quindi, basta un numero limitato di mensilità non pagate per far cadere l'accordo.</p>
+  <p>In caso di risoluzione per inadempimento dell'inquilino, di regola tu <strong>riprendi l'immobile</strong> e trattieni i canoni già versati a titolo di indennità, salvo che il contratto preveda diversamente. Attenzione però: se è il proprietario a rendersi inadempiente, è lui a dover restituire la quota dei canoni imputata a prezzo, maggiorata degli interessi legali.</p>
+  <h3>E per riavere la casa?</h3>
+  <p>Se l'occupante non rilascia spontaneamente l'immobile, puoi agire per ottenerne la restituzione. A seconda di come è costruito il contratto, si può ricorrere alla procedura ordinaria oppure a quella più rapida tipica dello sfratto; se l'atto è stato stipulato per atto pubblico con clausola risolutiva espressa, l'atto stesso può valere come titolo per il rilascio. È una delle ragioni per cui conviene impostare bene il contratto da subito. Se ti trovi già davanti a un occupante che non paga e non lascia l'immobile, è utile sapere <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">cosa fare quando l'inquilino non paga</a>.</p>
+
+  <h2>Vantaggi e rischi per il proprietario</h2>
+  <p>L'affitto con riscatto può essere la soluzione giusta per vendere un immobile rimasto a lungo sul mercato, allargando la platea a chi non ottiene subito il mutuo. I principali <strong>vantaggi</strong>: incassi un canone fin da subito, blocchi il prezzo di vendita, metti in casa una persona che ha interesse a custodirla bene perché punta a comprarla. I principali <strong>rischi</strong>: se l'acquisto non si conclude devi restituire la quota in conto prezzo pattuita; immobilizzi il bene per la durata del contratto; e una cattiva redazione dell'atto può complicare il recupero in caso di problemi. Anche la <a href="/blog/cedolare-secca-affitto/">tassazione del canone</a> va valutata con il commercialista, perché il rent to buy ha aspetti fiscali propri.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Non separare le due quote del canone.</strong> Senza una chiara distinzione tra parte godimento e parte prezzo, il contratto diventa fonte di liti.</li>
+    <li><strong>Non trascrivere il contratto.</strong> Saltare la trascrizione fa perdere la protezione che rende l'operazione solida e appetibile.</li>
+    <li><strong>Non disciplinare la restituzione degli acconti.</strong> Stabilisci da subito quanto torna all'inquilino se non compra: il silenzio gioca contro di te.</li>
+    <li><strong>Affidarsi a un fac-simile generico.</strong> Il rent to buy tocca diritto civile, registri immobiliari e fisco: un modello scaricato online raramente regge.</li>
+    <li><strong>Trascurare la soglia di inadempimento.</strong> Fissa nel contratto dopo quante mensilità non pagate scatta la risoluzione, restando entro i limiti di legge.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>L'affitto con riscatto obbliga l'inquilino a comprare?</h3>
+  <p>No. L'acquisto è una facoltà: l'inquilino può decidere di non esercitarla entro il termine. In quel caso gli vanno restituite le quote in conto prezzo nella misura prevista dal contratto, mentre le quote di godimento restano al proprietario.</p>
+  <h3>Quanto incasso davvero ogni mese?</h3>
+  <p>Dipende da come dividi il canone. Solo la quota di godimento è un guadagno "certo"; la quota in conto prezzo è un anticipo che potresti dover restituire se la vendita non si conclude. Per questo la proporzione tra le due va decisa con attenzione.</p>
+  <h3>Cosa rischio se l'inquilino smette di pagare?</h3>
+  <p>Il contratto può risolversi al raggiungimento del numero di canoni non pagati indicato nell'accordo (per legge non meno di 1/20 del totale). In quel caso riprendi l'immobile e, di regola, trattieni i canoni versati a titolo di indennità, se non hai pattuito diversamente.</p>
+  <h3>Serve il notaio?</h3>
+  <p>Per trascrivere il contratto nei registri immobiliari occorre l'intervento del notaio. È un costo iniziale, ma è ciò che dà certezza all'operazione e protegge entrambe le parti.</p>
+
+  <h2>In sintesi</h2>
+  <p>L'affitto con riscatto è uno strumento utile per il proprietario che vuole vendere senza aspettare l'acquirente "perfetto": incassi un canone subito, fissi il prezzo e dai a chi entra in casa un motivo concreto per comprarla. La chiave è costruire bene il contratto — due quote chiare, trascrizione, soglia di inadempimento, regole sulla restituzione degli acconti — perché è lì che si gioca quanto guadagni e quanto rischi.</p>
+  <p>Se stai valutando un'operazione di questo tipo o vuoi gestire un occupante che non paga, puoi richiedere una prima valutazione tramite la pagina <a href="/contatti/">contatti</a> di Sfratto Sicuro.</p>
+
+  <p><em>Riferimenti normativi: contratto di godimento in funzione della successiva alienazione di immobili (rent to buy), art. 23 D.L. 12 settembre 2014 n. 133, convertito in L. 11 novembre 2014 n. 164 ("Sblocca Italia"); trascrizione con effetto prenotativo, art. 2645-bis c.c.; risoluzione per inadempimento e restituzione delle quote, art. 23, commi 1-bis e 5, D.L. 133/2014; esecuzione in forma specifica dell'obbligo di concludere il contratto, art. 2932 c.c.</em></p>
+
+  <p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale o fiscale personalizzata. Ogni operazione di rent to buy va impostata sul singolo immobile e sul contratto effettivo.</em></p>`,
+  },
+
+  {
     slug: "sfratto-esecutivo-rilascio-immobile",
     title: "Sfratto esecutivo: cosa succede dopo la convalida e come avviene il rilascio",
     description: "Sfratto esecutivo: dopo la convalida ecco come si arriva al rilascio dell'immobile. Precetto, ufficiale giudiziario, preavviso di rilascio e tempi reali.",
