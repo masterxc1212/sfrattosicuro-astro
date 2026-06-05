@@ -10,7 +10,31 @@ header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
 
-$apiKey  = getenv('GOOGLE_PLACES_API_KEY') ?: 'AIzaSyCHsDTZf-Dmrce1mPnCIqEs3832dIbB25g';
+/**
+ * Risolve la Google Places API key SENZA hardcodarla nel sorgente.
+ * Ordine: (1) variabile d'ambiente GOOGLE_PLACES_API_KEY,
+ *         (2) file di config privato fuori da public_html
+ *             (modello private/intake-config.php usato per CreditMedia).
+ * Ritorna null se non configurata: il chiamante gestisce l'errore in modo pulito.
+ */
+$resolveApiKey = static function (): ?string {
+  $env = getenv('GOOGLE_PLACES_API_KEY');
+  if (is_string($env) && $env !== '') {
+    return $env;
+  }
+  // File privato, sibling di public_html (come la cartella logs/ usata da invia-email.php):
+  //   <site-root>/private/places-config.php  ->  <?php return ['GOOGLE_PLACES_API_KEY' => '...'];
+  $configFile = __DIR__ . '/../../private/places-config.php';
+  if (is_file($configFile)) {
+    $cfg = require $configFile;
+    if (is_array($cfg) && isset($cfg['GOOGLE_PLACES_API_KEY']) && $cfg['GOOGLE_PLACES_API_KEY'] !== '') {
+      return (string) $cfg['GOOGLE_PLACES_API_KEY'];
+    }
+  }
+  return null;
+};
+
+$apiKey  = $resolveApiKey();
 $placeId = 'ChIJIxWzpzWPqqgRP8fE9MCaWxM';
 
 $cacheFile = __DIR__ . '/../assets/data/reviews-cache.json';
@@ -38,6 +62,26 @@ $serveCache = static function (string $file): void {
 
 if (!$forceRefresh && is_file($cacheFile) && (time() - filemtime($cacheFile) < $cacheTime)) {
   $serveCache($cacheFile);
+}
+
+// API key assente: nessuna chiave nel sorgente -> errore pulito senza esporre segreti.
+// Prima si tenta comunque la cache (anche scaduta) per non rompere del tutto il widget,
+// poi si risponde HTTP 500 + log (il front-end reviews.js ripiega sul JSON statico).
+if ($apiKey === null) {
+  error_log('get-reviews.php: GOOGLE_PLACES_API_KEY non configurata (env var o private/places-config.php).');
+  $cached = $readCache($cacheFile);
+  if (is_array($cached)) {
+    header('X-Reviews-Source: cache-no-apikey');
+    echo json_encode($cached, JSON_UNESCAPED_UNICODE);
+    exit;
+  }
+  http_response_code(500);
+  header('X-Reviews-Source: config-error');
+  echo json_encode([
+    'ok' => false,
+    'error' => 'config_error',
+  ], JSON_UNESCAPED_UNICODE);
+  exit;
 }
 
 $fields = 'name,rating,user_ratings_total,reviews';

@@ -18,6 +18,11 @@ pnpm-debug.log*
 .env
 .env.production
 
+# private server config (secrets) - il file reale NON va versionato, solo il .example
+private/places-config.php
+private/*-config.php
+!private/*.example.php
+
 # macOS-specific files
 .DS_Store
 
