@@ -5,6 +5,7 @@ import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
 import CookieConsentBanner from '../components/CookieConsentBanner.astro';
 import StickyMobileCTA from '../components/StickyMobileCTA.astro';
 import ClickConversionTracking from '../components/ClickConversionTracking.astro';
+import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
 
 interface Props {
   title?: string;
@@ -52,6 +53,7 @@ const {
     <CookieConsentBanner />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
     <ClickConversionTracking />
+    <WebsiteCallTracking />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {

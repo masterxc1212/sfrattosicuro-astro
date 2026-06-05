@@ -2,8 +2,12 @@
 /**
  * ClickConversionTracking.astro
  * ------------------------------------------------------------------
- * Traccia come conversioni Google Ads i click sui link TELEFONO (tel:)
- * e WHATSAPP (wa.me / api.whatsapp.com / whatsapp://) presenti in pagina.
+ * Traccia come conversione Google Ads i click sui link WHATSAPP
+ * (wa.me / api.whatsapp.com / whatsapp://) presenti in pagina.
+ * NB: il TELEFONO non e' piu' tracciato qui (era click su tel:): le
+ * telefonate sono ora contate dalla conversion action "Chiamate dal
+ * sito web" via il componente WebsiteCallTracking (chiamata reale >=30s),
+ * per evitare il doppio conteggio click + chiamata.
  *
  * Coerente con l'impianto gtag esistente del sito:
  *  - usa lo stesso Conversion ID AW-10983419342
@@ -77,7 +81,10 @@ const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';
     function classify(href) {
       if (!href) return null;
       var h = href.toLowerCase();
-      if (h.indexOf('tel:') === 0) return 'tel';
+      // NB: i click su tel: NON sono piu' tracciati qui. Le telefonate sono
+      // contate dalla conversion action "Chiamate dal sito web" (componente
+      // WebsiteCallTracking), che misura la chiamata reale >= 30s. Tracciare
+      // anche il click tel: produrrebbe doppio conteggio del telefono.
       if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) return 'wa';
       return null;
     }

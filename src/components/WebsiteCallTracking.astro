@@ -1,0 +1,90 @@
+---
+/**
+ * WebsiteCallTracking.astro
+ * ------------------------------------------------------------------
+ * Attiva il tracciamento "Chiamate dal sito web" di Google Ads:
+ * per i visitatori provenienti dagli annunci, la libreria gtag
+ * sostituisce il numero 02 8089 8395 con un NUMERO DI INOLTRO Google.
+ * Quel numero inoltra automaticamente sul numero reale (mycentralino),
+ * quindi il centralino continua a ricevere/registrare le chiamate come
+ * prima, e Google conta la chiamata come conversione se dura >= 30s.
+ *
+ * Conversion action collegata: "Telefonate" (WEBSITE_CALL, primaria),
+ * label tCrKCJeljvwYEM7bpvUo, numero visualizzato +39 02 80898395.
+ *
+ * Caricamento FAIL-OPEN (Consent Mode v2), coerente con grazie.html:
+ *  - il tag viene caricato al page-load anche senza consenso marketing,
+ *    ma con ad_storage/ad_user_data/ad_personalization = 'denied' finche'
+ *    l'utente non accetta (nessun cookie pubblicitario pre-consenso).
+ *  - lo swap del numero e la conversione (modellata) funzionano comunque.
+ *
+ * Coordina con il loader inline delle landing tramite
+ * window.__landingAdsLoaded per non caricare gtag due volte.
+ */
+const AW_ID = 'AW-10983419342';
+const CALL_LABEL = 'tCrKCJeljvwYEM7bpvUo';   // conversion action "Telefonate" (Chiamate dal sito web)
+const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina = numero mycentralino
+---
+
+<script is:inline define:vars={{ AW_ID, CALL_LABEL, PHONE_NUMBER }}>
+  (function () {
+    var CONSENT_KEY = 'ss_cookie_consent_v1';
+
+    function readConsent() {
+      try {
+        var raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) { return null; }
+    }
+
+    function ensureGtagLib() {
+      window.dataLayer = window.dataLayer || [];
+      if (typeof window.gtag !== 'function') {
+        window.gtag = function () { window.dataLayer.push(arguments); };
+      }
+      if (!document.querySelector('script[data-aw-call]')) {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;
+        s.setAttribute('data-aw-call', '1');
+        document.head.appendChild(s);
+      }
+    }
+
+    // Carica il tag Ads una sola volta, fail-open (storage negato di default).
+    if (!window.__landingAdsLoaded) {
+      window.__landingAdsLoaded = true;
+      var c = readConsent();
+      ensureGtagLib();
+      window.gtag('consent', 'default', {
+        ad_storage:         c && c.marketing ? 'granted' : 'denied',
+        ad_user_data:       c && c.marketing ? 'granted' : 'denied',
+        ad_personalization: c && c.marketing ? 'granted' : 'denied',
+        analytics_storage:  c && c.analytics ? 'granted' : 'denied',
+        security_storage:   'granted'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+    } else {
+      ensureGtagLib();
+    }
+
+    // Snippet "Chiamate dal sito web": attiva la sostituzione del numero.
+    if (!window.__awPhoneConfigured) {
+      window.__awPhoneConfigured = true;
+      window.gtag('config', AW_ID + '/' + CALL_LABEL, { phone_conversion_number: PHONE_NUMBER });
+    }
+
+    // Aggiorna il consenso quando l'utente sceglie nel banner cookie.
+    window.addEventListener('ss:cookie-consent-updated', function (event) {
+      var d = (event && event.detail) || {};
+      if (typeof window.gtag !== 'function') return;
+      window.gtag('consent', 'update', {
+        ad_storage:         d.marketing ? 'granted' : 'denied',
+        ad_user_data:       d.marketing ? 'granted' : 'denied',
+        ad_personalization: d.marketing ? 'granted' : 'denied',
+        analytics_storage:  d.analytics ? 'granted' : 'denied'
+      });
+    });
+  })();
+</script>

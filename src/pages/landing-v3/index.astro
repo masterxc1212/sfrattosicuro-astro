@@ -5,6 +5,7 @@ import { versionedSrc } from '../../lib/asset-version';
 import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
 import ClickConversionTracking from '../../components/ClickConversionTracking.astro';
+import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
 
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
 import LandingOriginalTrustBarSection from '../../components/landing/LandingOriginalTrustBarSection.astro';
@@ -159,6 +160,7 @@ const config = buildLandingPageConfig({
     <CookieConsentBanner />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
     <ClickConversionTracking />
+    <WebsiteCallTracking />
     <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
     <script src={versionedSrc('/assets/js/videos.js')} defer></script>
