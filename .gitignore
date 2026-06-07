@@ -36,3 +36,20 @@ tmp_local_audit_output.json
 dist_deploy_blog/
 dist_tmp/
 
+
+# secrets / credenziali (NON versionare)
+google-ads.yaml
+oci-notes.md
+scripts/upload_oci.py
+
+# stato locale agente
+.claude/
+
+# log/artefatti temporanei di build/deploy
+*.err
+build.log
+push-deploy.log
+push-deploy.bat
+_push_result.txt
+_publish_push.bat
+*.restored
