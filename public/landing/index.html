@@ -4254,6 +4254,25 @@ img{max-width:100%;height:auto;display:block}
 
 
 
+<!-- Conversioni Google Ads: Telefonate (numero di inoltro) + click WhatsApp -->
+<script>
+(function(){
+  window.dataLayer=window.dataLayer||[];
+  if(typeof window.gtag!=='function'){window.gtag=function(){dataLayer.push(arguments);};}
+  // Telefonate: attiva la sostituzione col numero di inoltro Google (WEBSITE_CALL, MyCentralino)
+  window.gtag('config','AW-10983419342/tCrKCJeljvwYEM7bpvUo',{phone_conversion_number:'+39 02 80898395'});
+  // WhatsApp: click su wa.me / whatsapp -> conversione Sfratto Sicuro · WhatsApp
+  document.addEventListener('click',function(ev){
+    var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null;
+    if(!a)return;
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    if(h.indexOf('wa.me')===-1&&h.indexOf('whatsapp')===-1)return;
+    if(a.__convFiredAt&&(Date.now()-a.__convFiredAt)<1500)return;
+    a.__convFiredAt=Date.now();
+    window.gtag('event','conversion',{send_to:'AW-10983419342/WnybCP2xpbYcEM7bpvUo'});
+  },true);
+})();
+</script>
 </body>
 
 </html>
