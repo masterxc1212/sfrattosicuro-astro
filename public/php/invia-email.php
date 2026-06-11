@@ -1,563 +1,264 @@
 <?php
-
 /**
-
- * invia-email.php (percorsi root-relative e redirect sicuri)
-
+ * invia-email.php — Sfratto Sicuro (v2, modello CreditMedia)
+ *
+ * I form del sito (hero, contatti, landing v2/v3) fanno POST qui.
+ * Dal 2026-06: il lead viene inoltrato SERVER-TO-SERVER all'endpoint CRM
+ * della dashboard (stesso meccanismo di CreditMedia):
+ *
+ *     POST {LEAD_INTAKE_URL}/api/lead/intake   (header x-intake-secret)
+ *     body: { source:"sfs", nome, cognome, email, telefono, comune, note, gclid, keyword }
+ *
+ * In più viene inviata una EMAIL DI NOTIFICA a consulenza@sfrattosicuro.it
+ * per avvisare che è arrivata una richiesta. L'email NON alimenta più il CRM:
+ * lo scenario Make "Contatti Sfratto Sicuro" è stato dismesso (l'oggetto è
+ * stato cambiato apposta per non combaciare col vecchio parser).
+ *
+ * CONFIG (valori inseriti dall'utente, MAI committati):
+ *   - via env: LEAD_INTAKE_URL, LEAD_INTAKE_SECRET
+ *   - oppure file privato fuori dalla web root: ../../private/intake-config.php
+ *     che ritorna [ 'url' => '...', 'secret' => '...' ]  (vedi .example)
  */
 
-
-
-/* === CONFIGURAZIONE === */
-
+/* === CONFIGURAZIONE / ERRORI === */
 error_reporting(E_ALL);
-
 ini_set('display_errors', 0);
-
 ini_set('log_errors', 1);
-
 ini_set('error_log', __DIR__ . '/../../logs/error_log.txt');
 
-
-
-/* Headers di sicurezza */
-
 header('Content-Type: text/html; charset=utf-8');
-
 header('X-Content-Type-Options: nosniff');
-
 header('X-Frame-Options: DENY');
 
-
-
-/* === CONTROLLO METODO === */
-
-if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-
-    header("Location: /");
-
+/* === SOLO POST === */
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: /');
     exit;
-
 }
 
-
-
-/* === CONFIGURAZIONE EMAIL === */
-
-$destinatario = "consulenza@sfrattosicuro.it";
-
-$oggetto = "Nuova Richiesta Consulenza - Sfratto Sicuro";
-
-
-
-/* === FUNZIONE SANITIZZAZIONE === */
-
-function sanitize($data) {
-
-    if (empty($data)) return '';
-
-    return htmlspecialchars(strip_tags(trim($data)), ENT_QUOTES, 'UTF-8');
-
+/* === CONFIG ENDPOINT (env oppure file privato) === */
+$INTAKE_URL    = getenv('LEAD_INTAKE_URL') ?: 'https://dashboard-integrata.vercel.app';
+$INTAKE_SECRET = getenv('LEAD_INTAKE_SECRET') ?: '';
+$cfg_file = __DIR__ . '/../../private/intake-config.php';
+if (is_readable($cfg_file)) {
+    $cfg = require $cfg_file;
+    if (!empty($cfg['url']))    $INTAKE_URL    = $cfg['url'];
+    if (!empty($cfg['secret'])) $INTAKE_SECRET = $cfg['secret'];
 }
 
+/* === EMAIL DI NOTIFICA === */
+$notifica_destinatario = 'consulenza@sfrattosicuro.it';
+/* NB: oggetto DIVERSO dal vecchio "Nuova Richiesta Consulenza - Sfratto Sicuro"
+   per non riattivare il parser Make dismesso. */
+$notifica_oggetto = 'Nuovo lead dal sito - Sfratto Sicuro [CRM]';
 
+/* === SANITIZZAZIONE === */
+function ss_sanitize($data) {
+    if ($data === null) return '';
+    return htmlspecialchars(strip_tags(trim((string)$data)), ENT_QUOTES, 'UTF-8');
+}
 
 /* === RACCOLTA DATI DAL FORM === */
+$nome          = ss_sanitize($_POST['nome'] ?? '');
+$cognome       = ss_sanitize($_POST['cognome'] ?? '');
+$telefono      = ss_sanitize($_POST['telefono'] ?? '');
+$email_mit     = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$citta         = ss_sanitize($_POST['città'] ?? '');
+$morosita      = ss_sanitize($_POST['morosità'] ?? '');
+$note_utente   = ss_sanitize($_POST['note'] ?? '');
 
-$nome          = sanitize($_POST["nome"] ?? '');
-
-$cognome       = sanitize($_POST["cognome"] ?? '');
-
-$telefono      = sanitize($_POST["telefono"] ?? '');
-
-$email_mittente= filter_var(trim($_POST["email"] ?? ''), FILTER_SANITIZE_EMAIL);
-
-$citta         = sanitize($_POST["città"] ?? '');
-
-$morosita      = sanitize($_POST["morosità"] ?? '');
-
-$note          = sanitize($_POST["note"] ?? '');
-
-$form_source   = sanitize($_POST["form_source"] ?? 'unknown');
-$gclid         = sanitize($_POST["gclid"] ?? '');
-$utm_source    = sanitize($_POST["utm_source"] ?? '');
-$utm_medium    = sanitize($_POST["utm_medium"] ?? '');
-$utm_campaign  = sanitize($_POST["utm_campaign"] ?? '');
-$keyword       = sanitize($_POST["keyword"] ?? '');
-$utm_term      = sanitize($_POST["utm_term"] ?? $keyword);
-$utm_content   = sanitize($_POST["utm_content"] ?? '');
-$matchtype_raw = sanitize($_POST["matchtype"] ?? '');
+$form_source   = ss_sanitize($_POST['form_source'] ?? 'unknown');
+$gclid         = ss_sanitize($_POST['gclid'] ?? '');
+$utm_source    = ss_sanitize($_POST['utm_source'] ?? '');
+$utm_medium    = ss_sanitize($_POST['utm_medium'] ?? '');
+$utm_campaign  = ss_sanitize($_POST['utm_campaign'] ?? '');
+$keyword       = ss_sanitize($_POST['keyword'] ?? '');
+$utm_term      = ss_sanitize($_POST['utm_term'] ?? $keyword);
+$utm_content   = ss_sanitize($_POST['utm_content'] ?? '');
+$matchtype_raw = ss_sanitize($_POST['matchtype'] ?? '');
 $matchtype_labels = ['e' => 'Esatta', 'p' => 'A frase', 'b' => 'Generica'];
 $matchtype     = isset($matchtype_labels[$matchtype_raw]) ? $matchtype_labels[$matchtype_raw] : '';
+$redirect_raw  = $_POST['redirect_url'] ?? '/grazie.html';
 
-
-
-/* NB: vogliamo accettare percorsi root-relative (es. /grazie.html) */
-
-$redirect_url_raw = $_POST["redirect_url"] ?? '';
-
-
-
-/* === CONTROLLO CAMPI OBBLIGATORI === */
-
+/* === VALIDAZIONE (come versione precedente: nome + telefono) === */
 if (empty($nome) || empty($telefono)) {
-
-    error_log("Validazione fallita - Nome: $nome, Telefono: $telefono");
-
-    header("Location: /errore.html");
-
+    error_log("[ss-intake] validazione fallita - Nome: $nome, Telefono: $telefono");
+    header('Location: /errore.html');
     exit;
-
 }
-
-
-
-/* Validazione telefono */
-
 if (!preg_match('/^[0-9\s+]{8,}$/', $telefono)) {
-
-    error_log("Telefono non valido: $telefono");
-
-    header("Location: /errore.html");
-
+    error_log("[ss-intake] telefono non valido: $telefono");
+    header('Location: /errore.html');
     exit;
-
 }
-
-
-
-/* Validazione email (se presente) */
-
-if (!empty($email_mittente) && !filter_var($email_mittente, FILTER_VALIDATE_EMAIL)) {
-
-    error_log("Email non valida: $email_mittente");
-
-    header("Location: /errore.html");
-
+if (!empty($email_mit) && !filter_var($email_mit, FILTER_VALIDATE_EMAIL)) {
+    error_log("[ss-intake] email non valida: $email_mit");
+    header('Location: /errore.html');
     exit;
-
 }
-
-
-
-/* === COSTRUZIONE NOME COMPLETO === */
 
 $nome_completo = $nome . (!empty($cognome) ? ' ' . $cognome : '');
 
-
-
-/* === VERSIONE PLAIN TEXT (per Make automation) === */
-
-$contenuto_text  = "NUOVA RICHIESTA CONSULENZA - SFRATTO SICURO\n";
-
-$contenuto_text .= "==========================================\n\n";
-
-$contenuto_text .= "Nome: $nome\n";
-
-$contenuto_text .= "Cognome: $cognome\n";
-
-$contenuto_text .= "Telefono: $telefono\n";
-
-$contenuto_text .= "Email: $email_mittente\n\n";
-
-$contenuto_text .= "Città Immobile: $citta\n";
-
-$contenuto_text .= "Periodo Morosità: $morosita\n\n";
-
-$contenuto_text .= "Note Aggiuntive: $note\n";
-
-$contenuto_text .= "GCLID: $gclid\n\n";
-
-$contenuto_text .= "==========================================\n";
-
-$contenuto_text .= "Data/Ora: " . date('d/m/Y H:i:s') . "\n";
-
-$contenuto_text .= "Form Source: $form_source\n";
-if (!empty($utm_term)) $contenuto_text .= "Keyword: $utm_term\n";
-if (!empty($matchtype)) $contenuto_text .= "Corrispondenza: $matchtype\n";
-$contenuto_text .= "IP Cliente: " . ($_SERVER['REMOTE_ADDR'] ?? 'N/A') . "\n";
-
-if (!empty($gclid) || !empty($utm_campaign) || !empty($utm_source) || !empty($utm_content)) {
-    $contenuto_text .= "\n--- TRACCIAMENTO ADS ---\n";
-    if (!empty($gclid))        $contenuto_text .= "GCLID: $gclid\n";
-    if (!empty($utm_campaign)) $contenuto_text .= "Campagna: $utm_campaign\n";
-    if (!empty($utm_term))     $contenuto_text .= "Keyword (utm_term): $utm_term\n";
-    if (!empty($utm_source))   $contenuto_text .= "Sorgente: $utm_source / $utm_medium\n";
-    if (!empty($utm_content))  $contenuto_text .= "Contenuto annuncio: $utm_content\n";
-}
-
-
-
-/* === VERSIONE HTML (bella e formattata) === */
-
-$contenuto_html = "
-
-<!DOCTYPE html>
-
-<html lang='it'>
-
-<head>
-
-<meta charset='UTF-8'>
-
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
-<style>
-
-  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; line-height:1.6; color:#333; margin:0; padding:0; background:#f4f4f4; }
-
-  .container { max-width:600px; margin:20px auto; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.1); }
-
-  .header { background:linear-gradient(135deg,#1B2951 0%,#2a4073 100%); color:#fff; padding:30px 20px; text-align:center; }
-
-  .header h1 { margin:0 0 10px 0; font-size:24px; font-weight:700; }
-
-  .header p { margin:0; font-size:14px; opacity:.9; }
-
-  .content { padding:30px 20px; }
-
-  .field { margin-bottom:20px; padding:15px; background:#f7f8fc; border-left:4px solid #3BAE5D; border-radius:4px; }
-
-  .field.urgent { background:#fef2f2; border-left-color:#dc2626; }
-
-  .field.info { background:#e8f5e8; border-left-color:#3BAE5D; }
-
-  .label { font-weight:700; color:#1B2951; margin-bottom:5px; display:block; font-size:13px; text-transform:uppercase; letter-spacing:.5px; }
-
-  .value { color:#2C3E50; font-size:16px; word-wrap:break-word; }
-
-  .value.highlight { font-size:18px; font-weight:700; color:#3BAE5D; }
-
-  .footer { text-align:center; padding:20px; background:#f7f8fc; border-top:2px solid #e5e7eb; color:#666; font-size:12px; }
-
-  .footer strong { color:#1B2951; }
-
-  .badge { display:inline-block; padding:4px 12px; background:#3BAE5D; color:#fff; border-radius:12px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
-
-</style>
-
-</head>
-
-<body>
-
-  <div class='container'>
-
-    <div class='header'>
-
-      <h1>📋 Nuova Richiesta Consulenza</h1>
-
-      <p>Sfratto Sicuro - Il Protocollo Riprendi Casa</p>
-
-      <p style='margin-top:10px;'><span class='badge'>$form_source</span></p>
-
-    </div>
-
-    <div class='content'>
-
-      <div class='field urgent'>
-
-        <span class='label'>⚡ PRIORITÀ</span>
-
-        <span class='value' style='color:#dc2626; font-weight:700;'>ALTA - Rispondere entro 24 ore</span>
-
-      </div>
-
-      <div class='field'>
-
-        <span class='label'>👤 Nome Completo</span>
-
-        <span class='value'>$nome_completo</span>
-
-      </div>
-
-      <div class='field'>
-
-        <span class='label'>📞 Telefono</span>
-
-        <span class='value highlight'>$telefono</span>
-
-      </div>";
-
-
-
-if (!empty($email_mittente)) {
-
-$contenuto_html .= "
-
-      <div class='field'>
-
-        <span class='label'>📧 Email</span>
-
-        <span class='value'><a href='mailto:$email_mittente' style='color:#2563eb; text-decoration:none;'>$email_mittente</a></span>
-
-      </div>";
-
-}
-
-if (!empty($citta)) {
-
-$contenuto_html .= "
-
-      <div class='field'>
-
-        <span class='label'>🏠 Città Immobile</span>
-
-        <span class='value'>$citta</span>
-
-      </div>";
-
-}
-
-if (!empty($morosita)) {
-
-$contenuto_html .= "
-
-      <div class='field'>
-
-        <span class='label'>⏰ Periodo Morosità</span>
-
-        <span class='value'>$morosita</span>
-
-      </div>";
-
-}
-
-if (!empty($note)) {
-
-$contenuto_html .= "
-
-      <div class='field'>
-
-        <span class='label'>📝 Note Aggiuntive</span>
-
-        <span class='value' style='white-space: pre-wrap;'>$note</span>
-
-      </div>";
-
-}
-
-if (!empty($utm_term)) {
-
-$contenuto_html .= "
-
-      <div class='field info'>
-
-        <span class='label'>🔎 Keyword</span>
-
-        <span class='value'><strong>$utm_term</strong></span>
-
-      </div>";
-
-}
-
-if (!empty($matchtype)) {
-
-$contenuto_html .= "
-
-      <div class='field info'>
-
-        <span class='label'>🎯 Corrispondenza</span>
-
-        <span class='value'><strong>$matchtype</strong></span>
-
-      </div>";
-
-}
-
-
-$data_ora   = date('d/m/Y H:i:s');
-
-$ip_cliente = $_SERVER['REMOTE_ADDR'] ?? 'N/A';
-
-$user_agent = $_SERVER['HTTP_USER_AGENT'] ?? 'N/A';
-
-
-
-$contenuto_html .= "
-
-      <div class='field info'>
-
-        <span class='label'>📅 Data/Ora Richiesta</span>
-
-        <span class='value'>$data_ora</span>
-
-      </div>
-
-      <div class='field info'>
-
-        <span class='label'>🌐 Informazioni Tecniche</span>
-
-        <span class='value' style='font-size:12px;'>
-
-          IP: $ip_cliente<br>
-
-          User Agent: $user_agent
-
-        </span>
-
-      </div>
-
-    </div>
-
-    <div class='footer'>
-
-      <p><strong>Sfratto Sicuro</strong> - Il Protocollo Riprendi Casa</p>
-
-      <p style='margin-top:10px;'>Questo messaggio è stato generato automaticamente dal sito web</p>
-
-      <p style='margin-top:5px;'>📞 02 8089 8395 | 📧 consulenza@sfrattosicuro.it</p>
-
-    </div>
-
-  </div>
-
-</body>
-
-</html>
-
-";
-
-
-
-/* === COSTRUZIONE EMAIL MULTIPART === */
-
-$boundary = "----=_Part_" . md5(uniqid(time()));
-
-
-
-$headers = array(
-
-    'MIME-Version: 1.0',
-
-    'Content-Type: multipart/alternative; boundary="' . $boundary . '"',
-
-    'From: Sfratto Sicuro <noreply@sfrattosicuro.it>',
-
-    'Reply-To: ' . (!empty($email_mittente) ? $email_mittente : 'noreply@sfrattosicuro.it'),
-
-    'X-Mailer: PHP/' . phpversion(),
-
-    'X-Priority: 1',
-
-    'Importance: High'
-
-);
-
-
-
-/* Corpo multipart */
-
-$body  = "--$boundary\r\n";
-
-$body .= "Content-Type: text/plain; charset=utf-8\r\n";
-
-$body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
-
-$body .= $contenuto_text . "\r\n\r\n";
-
-$body .= "--$boundary\r\n";
-
-$body .= "Content-Type: text/html; charset=utf-8\r\n";
-
-$body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
-
-$body .= $contenuto_html . "\r\n\r\n";
-
-$body .= "--$boundary--";
-
-
-
-/* === INVIO EMAIL === */
-
-$mail_sent = @mail($destinatario, $oggetto, $body, implode("\r\n", $headers));
-
-
-
-/* === SALVATAGGIO BACKUP === */
-
+/* === COMPOSIZIONE NOTA (dettagli extra dentro Richiesta Iniziale) === */
+$dettagli = [];
+if ($morosita !== '')    $dettagli[] = "Periodo morosità: $morosita";
+if ($form_source !== '') $dettagli[] = "Form: $form_source";
+if ($matchtype !== '')   $dettagli[] = "Corrispondenza: $matchtype";
+$nota = implode(' | ', $dettagli);
+if ($note_utente !== '') $nota = ($nota !== '' ? $nota . "\n\n" : '') . $note_utente;
+
+/* === PAYLOAD PER L'ENDPOINT CRM === */
+$payload = [
+    'source'   => 'sfs',
+    'nome'     => $nome,
+    'cognome'  => $cognome,
+    'email'    => $email_mit,
+    'telefono' => $telefono,
+    'comune'   => $citta,
+    'note'     => $nota,
+    'gclid'    => $gclid,
+    'keyword'  => $utm_term,
+];
+
+/* === BACKUP LOCALE (anti-perdita lead) === */
+$ip_cliente  = $_SERVER['REMOTE_ADDR'] ?? 'N/A';
 $backup_file = __DIR__ . '/../../logs/leads_backup.txt';
-
 $backup_data = sprintf(
-
     "%s | %s | %s | %s | %s | %s | %s | %s | gclid:%s | camp:%s | kw:%s | match:%s\n",
-
     date('Y-m-d H:i:s'),
-
     $nome_completo,
-
     $telefono,
-
-    $email_mittente ?: 'N/A',
-
+    $email_mit ?: 'N/A',
     $citta ?: 'N/A',
-
     $morosita ?: 'N/A',
-
     $form_source,
-
     $ip_cliente,
-
     $gclid ?: '-',
-
     $utm_campaign ?: '-',
-
     $utm_term ?: '-',
-
     $matchtype ?: '-'
-
 );
-
 @file_put_contents($backup_file, $backup_data, FILE_APPEND | LOCK_EX);
 
-
-
-/* Tracciamento GCLID/OCI rimosso 2026-06-03: pipeline offline dismessa */
-
-
-
-/* === REDIRECT SICURI (root-relative) === */
-
-
-
-/**
-
- * Consente solo path interni che iniziano con “/” e senza CR/LF.
-
- * In alternativa, se vuoto o non valido, usa /grazie.html.
-
- */
-
-function sanitize_redirect_path($path) {
-
-    if (!is_string($path) || $path === '') return '/grazie.html';
-
-    if (preg_match('/[\r\n]/', $path)) return '/grazie.html';   // evita header injection
-
-    if (strpos($path, '/') !== 0) return '/grazie.html';        // solo root-relative
-
-    return $path;
-
-}
-
-
-
-if ($mail_sent) {
-
-    error_log("Email inviata con successo - Nome: $nome_completo, Tel: $telefono, Form: $form_source");
-
-    $redirect_path = sanitize_redirect_path($redirect_url_raw);
-
-    header("Location: {$redirect_path}");
-
-    exit;
-
+/* === INOLTRO ALL'ENDPOINT CRM === */
+$crm_ok   = false;
+$crm_info = '';
+if ($INTAKE_SECRET === '') {
+    $crm_info = 'LEAD_INTAKE_SECRET non configurato: lead salvato solo nel backup';
+    error_log('[ss-intake] ' . $crm_info);
 } else {
-
-    error_log("ERRORE invio email - Nome: $nome_completo, Tel: $telefono, Form: $form_source");
-
-    header("Location: /errore.html");
-
-    exit;
-
+    $url = rtrim($INTAKE_URL, '/') . '/api/lead/intake';
+    $ch = curl_init($url);
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => json_encode($payload, JSON_UNESCAPED_UNICODE),
+        CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'x-intake-secret: ' . $INTAKE_SECRET,
+        ],
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 15,
+    ]);
+    $resp = curl_exec($ch);
+    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $err  = curl_error($ch);
+    curl_close($ch);
+    if ($code >= 200 && $code < 300) {
+        $crm_ok = true;
+    } else {
+        $crm_info = "intake fallito (HTTP $code): $err";
+        error_log("[ss-intake] $crm_info | resp: " . substr((string)$resp, 0, 300));
+    }
 }
 
+/* === EMAIL DI NOTIFICA (informativa, non alimenta il CRM) === */
+$esito_crm = $crm_ok ? 'OK - lead registrato nel CRM' : ('ATTENZIONE - ' . ($crm_info ?: 'inoltro CRM fallito') . ' (recuperabile dal backup)');
+
+$contenuto_text  = "NUOVO LEAD DAL SITO - SFRATTO SICURO\n";
+$contenuto_text .= "(notifica automatica: il lead è già nel CRM, questa email non va processata)\n";
+$contenuto_text .= "==========================================\n\n";
+$contenuto_text .= "Nominativo: $nome_completo\n";
+$contenuto_text .= "Telefono: $telefono\n";
+$contenuto_text .= "Email: " . ($email_mit ?: 'N/A') . "\n";
+$contenuto_text .= "Città immobile: " . ($citta ?: 'N/A') . "\n";
+$contenuto_text .= "Periodo morosità: " . ($morosita ?: 'N/A') . "\n";
+if ($note_utente !== '') $contenuto_text .= "Note: $note_utente\n";
+$contenuto_text .= "\nForm: $form_source\n";
+if ($utm_term !== '')     $contenuto_text .= "Keyword: $utm_term\n";
+if ($matchtype !== '')    $contenuto_text .= "Corrispondenza: $matchtype\n";
+if ($utm_campaign !== '') $contenuto_text .= "Campagna: $utm_campaign\n";
+if ($gclid !== '')        $contenuto_text .= "GCLID: $gclid\n";
+$contenuto_text .= "\nEsito CRM: $esito_crm\n";
+$contenuto_text .= "Data/Ora: " . date('d/m/Y H:i:s') . " | IP: $ip_cliente\n";
+
+$riga = function ($label, $value, $highlight = false) {
+    if ($value === '' || $value === null) return '';
+    $style = $highlight ? 'font-size:18px;font-weight:700;color:#3BAE5D;' : 'color:#2C3E50;font-size:15px;';
+    return "<div style='margin-bottom:14px;padding:12px 15px;background:#f7f8fc;border-left:4px solid #3BAE5D;border-radius:4px;'>"
+         . "<span style='display:block;font-weight:700;color:#1B2951;font-size:12px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;'>$label</span>"
+         . "<span style='$style word-wrap:break-word;'>$value</span></div>";
+};
+
+$crm_badge = $crm_ok
+    ? "<div style='margin-bottom:14px;padding:12px 15px;background:#e8f5e8;border-left:4px solid #3BAE5D;border-radius:4px;color:#1B2951;'>✅ Lead registrato nel CRM (Cruscotto Operativo)</div>"
+    : "<div style='margin-bottom:14px;padding:12px 15px;background:#fef2f2;border-left:4px solid #dc2626;border-radius:4px;color:#dc2626;font-weight:700;'>⚠️ Inoltro CRM fallito: lead solo nel backup (logs/leads_backup.txt)</div>";
+
+$contenuto_html = "<!DOCTYPE html><html lang='it'><head><meta charset='UTF-8'></head>"
+    . "<body style='font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;background:#f4f4f4;margin:0;padding:0;'>"
+    . "<div style='max-width:600px;margin:20px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);'>"
+    . "<div style='background:linear-gradient(135deg,#1B2951 0%,#2a4073 100%);color:#fff;padding:26px 20px;text-align:center;'>"
+    . "<h1 style='margin:0 0 8px 0;font-size:22px;'>🔔 Nuovo lead dal sito</h1>"
+    . "<p style='margin:0;font-size:13px;opacity:.9;'>Sfratto Sicuro — notifica automatica (lead già inoltrato al CRM)</p>"
+    . "<p style='margin-top:10px;'><span style='display:inline-block;padding:4px 12px;background:#3BAE5D;color:#fff;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;'>$form_source</span></p>"
+    . "</div><div style='padding:26px 20px;'>"
+    . $crm_badge
+    . $riga('👤 Nominativo', $nome_completo)
+    . $riga('📞 Telefono', $telefono, true)
+    . $riga('📧 Email', $email_mit)
+    . $riga('🏠 Città immobile', $citta)
+    . $riga('⏰ Periodo morosità', $morosita)
+    . $riga('📝 Note', nl2br($note_utente))
+    . $riga('🔎 Keyword', $utm_term)
+    . $riga('🎯 Corrispondenza', $matchtype)
+    . $riga('📣 Campagna', $utm_campaign)
+    . $riga('📅 Data/Ora', date('d/m/Y H:i:s') . " — IP: $ip_cliente")
+    . "</div><div style='text-align:center;padding:16px;background:#f7f8fc;border-top:2px solid #e5e7eb;color:#666;font-size:12px;'>"
+    . "<p style='margin:0;'><strong style='color:#1B2951;'>Sfratto Sicuro</strong> — messaggio generato automaticamente dal sito</p>"
+    . "</div></div></body></html>";
+
+$boundary = '----=_Part_' . md5(uniqid((string)time()));
+$headers = [
+    'MIME-Version: 1.0',
+    'Content-Type: multipart/alternative; boundary="' . $boundary . '"',
+    'From: Sfratto Sicuro <noreply@sfrattosicuro.it>',
+    'Reply-To: ' . (!empty($email_mit) ? $email_mit : 'noreply@sfrattosicuro.it'),
+    'X-Mailer: PHP/' . phpversion(),
+];
+$body  = "--$boundary\r\n";
+$body .= "Content-Type: text/plain; charset=utf-8\r\n";
+$body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+$body .= $contenuto_text . "\r\n\r\n";
+$body .= "--$boundary\r\n";
+$body .= "Content-Type: text/html; charset=utf-8\r\n";
+$body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+$body .= $contenuto_html . "\r\n\r\n";
+$body .= "--$boundary--";
+
+$mail_sent = @mail($notifica_destinatario, $notifica_oggetto, $body, implode("\r\n", $headers));
+if (!$mail_sent) {
+    error_log("[ss-intake] email di notifica NON inviata - Nome: $nome_completo, Tel: $telefono");
+}
+
+/* === REDIRECT SICURO (solo path root-relative) === */
+function ss_safe_redirect($path) {
+    if (!is_string($path) || $path === '') return '/grazie.html';
+    if (preg_match('/[\r\n]/', $path)) return '/grazie.html';   // no header injection
+    if (strpos($path, '/') !== 0)       return '/grazie.html';   // solo root-relative
+    return $path;
+}
+
+/* Il lead è comunque nel backup (e quasi sempre nel CRM): ringraziamo
+   l'utente in ogni caso. Gli errori sono nei log. */
+error_log("[ss-intake] lead processato - Nome: $nome_completo, Tel: $telefono, Form: $form_source, CRM: " . ($crm_ok ? 'ok' : 'KO'));
+header('Location: ' . ss_safe_redirect($redirect_raw));
+exit;
