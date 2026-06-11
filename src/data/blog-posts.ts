@@ -17,6 +17,84 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "contratto-affitto-4-4",
+    title: "Contratto di affitto 4+4: durata, rinnovo e disdetta — guida per il proprietario",
+    description: "Contratto di affitto 4+4: durata, rinnovo automatico, disdetta del proprietario e cedolare secca. Guida pratica per il locatore, con gli errori da evitare.",
+    excerpt: "Il contratto di affitto 4+4 è la formula più usata per affittare casa: quattro anni più quattro di rinnovo automatico. Ma quando può il proprietario riavere l'immobile? Guida pratica a durata, disdetta con sei mesi di preavviso, motivi tassativi alla prima scadenza, cedolare secca al 21% e gli errori che costano altri quattro anni di vincolo.",
+    lead: "Il contratto di affitto 4+4 è la formula più diffusa in Italia per dare in locazione una casa: quattro anni di durata iniziale più quattro di rinnovo automatico. Questa guida serve al proprietario che sta per affittare un immobile e vuole capire tre cose concrete: quanto dura davvero il vincolo, quando e come può riavere la casa, e come impostare canone e tassazione senza errori.",
+    publishedAt: "2026-06-11",
+    updatedAt: "2026-06-11",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-06-11. Keyword: contratto affitto 4 4, vol 2400, KD 0 (DataForSEO). Secondarie: contratto locazione 4 4, contratto affitto 4 4 cedolare secca.",
+    html: `  <p>Il <strong>contratto di affitto 4+4</strong> è la formula più diffusa in Italia per dare in locazione una casa: quattro anni di durata iniziale più quattro di rinnovo automatico. Questa guida serve al proprietario che sta per affittare un immobile (o lo ha già affittato) e vuole capire tre cose concrete: quanto dura davvero il vincolo, quando e come può riavere la casa, e come impostare canone e tassazione senza errori.</p>
+
+  <h2>Che cos'è il contratto di affitto 4+4</h2>
+  <p>Il 4+4 è il contratto di locazione abitativa "a canone libero": proprietario e inquilino concordano liberamente l'importo dell'affitto, senza i tetti previsti per il canone concordato. In cambio di questa libertà, la legge impone una durata minima: <strong>quattro anni, rinnovabili automaticamente per altri quattro</strong>. La fonte è la legge 431 del 1998, la norma che regola tutte le locazioni abitative.</p>
+  <p>Un punto che molti proprietari scoprono tardi: se nel contratto scrivi una durata inferiore (ad esempio due anni), quella clausola è nulla e <strong>la durata torna automaticamente a quattro anni</strong>. Non si può "accorciare" un 4+4. Chi ha esigenze temporanee deve usare un <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a>, che è un tipo di contratto diverso e ammesso solo in casi specifici.</p>
+
+  <h2>Durata e rinnovo: come funziona davvero</h2>
+  <p>Il meccanismo è a due scadenze, e conviene capirlo bene perché è qui che si gioca la possibilità di riavere l'immobile.</p>
+  <ul>
+  <li><strong>Prima scadenza (fine del 4° anno)</strong>: il contratto si rinnova automaticamente per altri quattro anni. Il proprietario può impedire il rinnovo solo nei casi tassativi previsti dalla legge (li vediamo sotto), con preavviso di sei mesi.</li>
+  <li><strong>Seconda scadenza (fine dell'8° anno)</strong>: qui ciascuna parte è libera. Il proprietario può comunicare la disdetta senza dover dare alcuna motivazione, oppure proporre il rinnovo a nuove condizioni (ad esempio un canone aggiornato). Serve sempre una comunicazione scritta <strong>almeno sei mesi prima della scadenza</strong>.</li>
+  <li><strong>Se nessuno si muove</strong>: senza disdetta né proposta di nuove condizioni, il contratto si rinnova tacitamente alle stesse condizioni, di quattro anni in quattro anni. È l'errore più costoso: un promemoria dimenticato può vincolare l'immobile per altri quattro anni.</li>
+  </ul>
+
+  <h2>La disdetta del proprietario: quando puoi riavere la casa</h2>
+  <p>Alla <strong>prima scadenza</strong> il proprietario può negare il rinnovo solo per i motivi elencati dall'articolo 3 della legge 431/1998. I principali: destinare l'immobile ad abitazione propria, del coniuge, dei figli o dei genitori; destinarlo ad attività propria; ricostruire o ristrutturare integralmente l'edificio; vendere l'immobile a terzi (se il proprietario non possiede altre abitazioni oltre a quella in cui vive, e all'inquilino spetta la prelazione); l'inquilino ha a disposizione un alloggio libero e idoneo nello stesso comune; l'inquilino non occupa continuativamente l'immobile senza giustificato motivo.</p>
+  <p>La comunicazione va inviata con <strong>raccomandata con ricevuta di ritorno o PEC (posta elettronica certificata)</strong> almeno sei mesi prima della scadenza, indicando chiaramente il motivo. Attenzione: se poi il motivo dichiarato non viene realizzato (ad esempio si dichiara di volerci abitare e invece si riaffitta ad altri), l'inquilino può chiedere il ripristino del contratto o un risarcimento non inferiore a trentasei mensilità dell'ultimo canone. Per i dettagli su tempi e forma della comunicazione abbiamo una guida dedicata alla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del locatore</a>.</p>
+  <p>Alla <strong>seconda scadenza</strong>, invece, basta la disdetta scritta con sei mesi di preavviso: nessuna motivazione richiesta.</p>
+
+  <h3>E se l'inquilino non lascia la casa alla scadenza?</h3>
+  <p>Se il contratto è scaduto, la disdetta era regolare ma l'inquilino resta nell'immobile, il proprietario non può cambiare la serratura né agire da sé: serve la procedura di <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>, che passa dal Tribunale e si conclude con un ordine di rilascio. Conviene attivarsi presto: l'intimazione può essere notificata anche prima della scadenza del contratto.</p>
+
+  <h2>Il recesso dell'inquilino</h2>
+  <p>Il discorso è asimmetrico: l'inquilino può sempre recedere dal contratto, in qualunque momento, se ricorrono <strong>gravi motivi</strong> (ad esempio un trasferimento di lavoro imprevisto), dando preavviso di sei mesi con raccomandata o PEC. Molti contratti, inoltre, prevedono una clausola di recesso libero a favore dell'inquilino: in quel caso non servono nemmeno i gravi motivi, basta il preavviso pattuito. Durante i mesi di preavviso il canone resta dovuto, anche se l'inquilino lascia prima l'appartamento.</p>
+
+  <h2>Canone, aggiornamento ISTAT e cedolare secca</h2>
+  <p>Nel 4+4 il canone è libero, ma la gestione fiscale richiede una scelta consapevole:</p>
+  <ul>
+  <li><strong>Tassazione ordinaria IRPEF</strong>: il canone si somma agli altri redditi e si può prevedere in contratto l'<a href="/blog/adeguamento-istat-canone-locazione/">aggiornamento ISTAT annuale</a> del canone.</li>
+  <li><strong>Cedolare secca al 21%</strong>: imposta sostitutiva con aliquota fissa, niente imposta di registro né bollo. In cambio, il proprietario rinuncia per legge a ogni aggiornamento del canone, ISTAT compreso, per tutta la durata dell'opzione. Quando conviene l'una o l'altra dipende dal reddito complessivo: ne parliamo nella guida alla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</li>
+  </ul>
+  <p>In entrambi i casi il contratto va <strong>registrato all'Agenzia delle Entrate entro 30 giorni dalla firma</strong> (o dalla decorrenza, se anteriore). Un contratto non registrato è nullo e lascia il proprietario molto più esposto, anche sul fronte fiscale. La procedura si fa comodamente online: ecco la guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+
+  <h2>Checklist del proprietario prima della firma</h2>
+  <ul>
+  <li><strong>Verifica dell'inquilino</strong>: documento, busta paga o dichiarazione dei redditi, eventuali referenze del precedente locatore.</li>
+  <li><strong>Garanzie</strong>: deposito cauzionale (massimo tre mensilità) e, se il profilo reddituale è debole, fideiussione o garante.</li>
+  <li><strong>APE</strong>: l'attestato di prestazione energetica va consegnato all'inquilino e citato in contratto.</li>
+  <li><strong>Clausole utili</strong>: aggiornamento ISTAT (se non si opta per la cedolare), divieto o disciplina della sublocazione, ripartizione delle spese condominiali.</li>
+  <li><strong>Verbale di consegna</strong> con foto e lettura dei contatori, per evitare contestazioni alla riconsegna.</li>
+  <li><strong>Registrazione entro 30 giorni</strong> e comunicazione dell'opzione cedolare, se scelta.</li>
+  </ul>
+
+  <h2>Gli errori più comuni</h2>
+  <ul>
+  <li><strong>Dimenticare la disdetta</strong>: senza raccomandata sei mesi prima, il contratto si rinnova da solo per altri quattro anni. Metti un promemoria almeno otto mesi prima di ogni scadenza.</li>
+  <li><strong>Pattuire durate più corte di quattro anni</strong>: la clausola è nulla, la durata legale prevale.</li>
+  <li><strong>Applicare l'aggiornamento ISTAT con la cedolare secca</strong>: gli aumenti sono inefficaci e l'inquilino può chiederne la restituzione.</li>
+  <li><strong>Incassare canoni senza registrare il contratto</strong>: nullità del contratto e sanzioni fiscali.</li>
+  <li><strong>Disdetta alla prima scadenza con motivo "di comodo"</strong>: se il motivo non si realizza, si rischiano ripristino del contratto o risarcimento.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Posso vendere casa durante il 4+4?</h3>
+  <p>Sì, l'immobile si può vendere anche affittato: il contratto prosegue con il nuovo proprietario, che subentra in tutti i diritti e obblighi. Se invece si vuole vendere libero, occorre attendere una scadenza utile e dare disdetta nei termini.</p>
+  <h3>Posso aumentare il canone durante il contratto?</h3>
+  <p>No, il canone pattuito resta fisso per tutta la durata, salvo l'aggiornamento ISTAT se previsto in contratto e se non si è scelta la cedolare secca. Un canone più alto si può proporre solo alla seconda scadenza, con la procedura di rinnovo a nuove condizioni.</p>
+  <h3>La disdetta via PEC è valida?</h3>
+  <p>Sì, la PEC è equiparata alla raccomandata. L'importante è rispettare il preavviso di sei mesi e, alla prima scadenza, indicare uno dei motivi previsti dalla legge.</p>
+  <h3>Cosa succede se l'inquilino smette di pagare?</h3>
+  <p>La durata del contratto non protegge l'inquilino moroso: si può avviare lo sfratto per morosità anche al primo anno. Il primo passo è una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida</a>, poi si passa alla via giudiziale.</p>
+
+  <h2>In conclusione</h2>
+  <p>Il 4+4 dà stabilità e un canone libero, ma è un impegno lungo: le date di scadenza e il preavviso di sei mesi sono i punti su cui il proprietario non può sbagliare. I riferimenti normativi essenziali sono gli articoli 2 e 3 della legge 431/1998 (durata, rinnovo e disdetta), l'articolo 13 della stessa legge (patti contrari alla legge) e, per la cedolare secca, l'articolo 3 del decreto legislativo 23/2011.</p>
+  <p>Se hai un contratto in scadenza, un rinnovo da gestire o un inquilino che non lascia l'immobile, lo Studio può aiutarti a impostare correttamente disdette e, se serve, la procedura di rilascio: <a href="/#contatti">contattaci per una prima consulenza gratuita</a>.</p>
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+  {
     slug: "contributo-unificato-sfratto",
     title: "Contributo unificato per lo sfratto: quanto si paga e come recuperarlo dall'inquilino",
     description: "Contributo unificato per lo sfratto: quanto si paga (importi ridotti del 50%), come si calcola il valore e come recuperarlo dall'inquilino moroso.",
