@@ -173,7 +173,7 @@ const posts: BlogPost[] = [
 
   <h2>In sintesi</h2>
   <p>Il contributo unificato per lo sfratto � una spesa contenuta  spesso 21,50 o 49,00 euro grazie alla riduzione del 50%  a cui si aggiunge la marca da bollo da 27 euro. Il vero costo della procedura sta nelle notifiche, nell'eventuale fase esecutiva e nell'onorario dell'avvocato. La cosa importante da ricordare � che tutte queste spese sono in linea di massima recuperabili dall'inquilino moroso. Conoscere in anticipo queste voci ti permette di affrontare lo sfratto con un budget realistico e senza sorprese.</p>
-  <p>Se vuoi una valutazione del tuo caso e una stima chiara dei costi prima di partire, puoi richiedere una prima consulenza tramite la pagina <a href="/contatti/">contatti</a> di Sfratto Sicuro.</p>
+  <p>Se vuoi una valutazione del tuo caso e una stima chiara dei costi prima di partire, puoi richiedere una prima consulenza tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
 
   <p><em>Riferimenti normativi: contributo unificato e relativi scaglioni, art. 13 D.P.R. 30 maggio 2002 n. 115 (Testo Unico spese di giustizia); riduzione alla met� per i procedimenti speciali di convalida di sfratto, art. 13, comma 3, D.P.R. 115/2002; determinazione del valore nelle controversie di locazione, art. 12 c.p.c.; anticipazione forfettaria delle spese (marca da bollo da 27 euro), art. 30 D.P.R. 115/2002; condanna della parte soccombente al rimborso delle spese di lite, art. 91 c.p.c.; procedimento per convalida di sfratto, artt. 657 e seguenti c.p.c.; mutamento del rito in caso di opposizione, art. 667 c.p.c.</em></p>
 
@@ -247,7 +247,7 @@ const posts: BlogPost[] = [
 
   <h2>In sintesi</h2>
   <p>L'affitto con riscatto è uno strumento utile per il proprietario che vuole vendere senza aspettare l'acquirente "perfetto": incassi un canone subito, fissi il prezzo e dai a chi entra in casa un motivo concreto per comprarla. La chiave è costruire bene il contratto — due quote chiare, trascrizione, soglia di inadempimento, regole sulla restituzione degli acconti — perché è lì che si gioca quanto guadagni e quanto rischi.</p>
-  <p>Se stai valutando un'operazione di questo tipo o vuoi gestire un occupante che non paga, puoi richiedere una prima valutazione tramite la pagina <a href="/contatti/">contatti</a> di Sfratto Sicuro.</p>
+  <p>Se stai valutando un'operazione di questo tipo o vuoi gestire un occupante che non paga, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
 
   <p><em>Riferimenti normativi: contratto di godimento in funzione della successiva alienazione di immobili (rent to buy), art. 23 D.L. 12 settembre 2014 n. 133, convertito in L. 11 novembre 2014 n. 164 ("Sblocca Italia"); trascrizione con effetto prenotativo, art. 2645-bis c.c.; risoluzione per inadempimento e restituzione delle quote, art. 23, commi 1-bis e 5, D.L. 133/2014; esecuzione in forma specifica dell'obbligo di concludere il contratto, art. 2932 c.c.</em></p>
 
@@ -315,7 +315,7 @@ const posts: BlogPost[] = [
 
   <h2>In sintesi</h2>
   <p>Lo sfratto esecutivo è la fase che trasforma una decisione "sulla carta" nel rilascio concreto dell'immobile. Conoscere la sequenza — precetto, ufficiale giudiziario, preavviso di rilascio, accesso — ti permette di non perdere tempo e di arrivare prima alla consegna delle chiavi. Se l'inquilino sfrutta il <a href="/blog/sfratto-termine-di-grazia/">termine di grazia</a> o oppone resistenza, avere accanto chi gestisce ogni atto nei tempi giusti fa la differenza.</p>
-  <p>Se vuoi capire come muoverti nel tuo caso, puoi richiedere una prima valutazione tramite la pagina <a href="/contatti/">contatti</a> di Sfratto Sicuro.</p>
+  <p>Se vuoi capire come muoverti nel tuo caso, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
 
   <p><em>Riferimenti normativi: ordinanza di convalida ex art. 663 c.p.c.; esecuzione per consegna o rilascio, artt. 605-611 c.p.c.; modo del rilascio e preavviso, art. 608 c.p.c.; termine per il rilascio, art. 56 L. 392/1978; quadro procedurale aggiornato dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo (D.Lgs. 164/2024).</em></p>
 
@@ -380,7 +380,7 @@ const posts: BlogPost[] = [
     <li><strong>Posso recuperare gli anni in cui non l'ho chiesto?</strong><br>L'adeguamento di norma parte da quando lo richiedi: gli anni "saltati" senza richiesta in genere non si recuperano integralmente.</li>
   </ul>
 
-  <p>Gestire correttamente il canone — clausole, aggiornamenti e comunicazioni — significa evitare contestazioni e perdite di valore nel tempo. Se hai dubbi sul tuo contratto o vuoi gestire una morosità nata da un adeguamento non pagato, <a href="/contatti">contatta Sfratto Sicuro</a>: ti aiutiamo a tutelare il tuo immobile con tempi e costi chiari.</p>
+  <p>Gestire correttamente il canone — clausole, aggiornamenti e comunicazioni — significa evitare contestazioni e perdite di valore nel tempo. Se hai dubbi sul tuo contratto o vuoi gestire una morosità nata da un adeguamento non pagato, <a href="/#contatti">contatta Sfratto Sicuro</a>: ti aiutiamo a tutelare il tuo immobile con tempi e costi chiari.</p>
 
   <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata sul singolo contratto.</em></p>`,
   },
@@ -428,7 +428,7 @@ const posts: BlogPost[] = [
 
   <p>Affidarsi a professionisti esperti come Sfratto Sicuro significa avere al proprio fianco un team in grado di gestire ogni fase della procedura, fornendo consulenza e assistenza qualificate per tutelare al meglio i tuoi interessi. Dalla prima udienza alla gestione del termine di grazia, fino all'eventuale fase esecutiva, siamo qui per guidarti con chiarezza e professionalità.</p>
 
-  <p>Se ti trovi a dover affrontare una situazione di morosità o hai domande sul termine di grazia, non esitare a <a href="/contatti">contattarci</a> per una consulenza personalizzata. La nostra esperienza è a tua disposizione per trovare la soluzione più efficace e rapida.</p>
+  <p>Se ti trovi a dover affrontare una situazione di morosità o hai domande sul termine di grazia, non esitare a <a href="/#contatti">contattarci</a> per una consulenza personalizzata. La nostra esperienza è a tua disposizione per trovare la soluzione più efficace e rapida.</p>
 
   <h2>FAQ sul termine di grazia nello sfratto</h2>
   <ul>
@@ -519,7 +519,7 @@ const posts: BlogPost[] = [
 
 <h2>Conclusione</h2>
 <p>La riforma Cartabia non ha stravolto la procedura di sfratto per morosità, ma ha introdotto modifiche concrete che il locatore deve conoscere. La formula esecutiva non serve più. L'avviso sul patrocinio è obbligatorio pena nullità dell'atto. L'attestazione della morosità in udienza deve essere aggiornata e precisa. La mediazione non è un ostacolo nella fase sommaria, ma lo diventa se l'inquilino si oppone. Il termine di grazia — disciplinato dall'art. 55 L. 392/1978, non dal c.p.c. — resta invariato e si applica solo alle locazioni abitative.</p>
-<p>Se vuoi verificare come impostare correttamente il tuo caso, <a href="/contatti/">contattaci</a>: analizziamo contratto, insoluti e situazione specifica per scegliere il percorso più efficace.</p>
+<p>Se vuoi verificare come impostare correttamente il tuo caso, <a href="/#contatti">contattaci</a>: analizziamo contratto, insoluti e situazione specifica per scegliere il percorso più efficace.</p>
 
 <h2>Domande frequenti</h2>
 
@@ -593,7 +593,7 @@ const posts: BlogPost[] = [
 
 <h2>Quando conviene chiedere assistenza</h2>
 <p>È utile chiedere supporto prima della firma quando la motivazione della transitorietà non è lineare, quando il proprietario vuole riottenere l'immobile entro una certa data o quando si teme che l'inquilino possa contestare il contratto in seguito.</p>
-<p>Una verifica preventiva costa meno di un errore che poi diventa contenzioso. Se vuoi valutare il caso concreto prima di firmare, <a href="/contatti/">contattaci</a> per capire quale schema tutela meglio il tuo immobile.</p>
+<p>Una verifica preventiva costa meno di un errore che poi diventa contenzioso. Se vuoi valutare il caso concreto prima di firmare, <a href="/#contatti">contattaci</a> per capire quale schema tutela meglio il tuo immobile.</p>
 
 <h2>Domande frequenti</h2>
 
@@ -675,7 +675,7 @@ const posts: BlogPost[] = [
 <p>Il contratto per studenti universitari è una variante specifica del transitorio, riservata a studenti iscritti a università fuori dalla propria residenza. Ha una durata da 6 a 36 mesi, canoni concordati e agevolazioni fiscali. Se il tuo immobile è vicino a un ateneo, potrebbe essere la soluzione più adatta — e più stabile di un semplice transitorio.</p>
 <h2>Conclusione</h2>
 <p>Il contratto transitorio di affitto è uno strumento potente se usato correttamente, ma non è una scorciatoia per aggirare le tutele degli inquilini. Usarlo senza una reale motivazione transitoria — o senza rispettare i formalismi richiesti — può trasformare un'operazione semplice in un contenzioso lungo e costoso.</p>
-<p>Se hai dubbi sulla situazione specifica del tuo immobile o vuoi capire quale tipo di contratto fa al caso tuo, <a href="/contatti/">contattaci per una consulenza</a>: analizziamo insieme la tua situazione e ti aiutiamo a tutelarti fin dall'inizio.</p>
+<p>Se hai dubbi sulla situazione specifica del tuo immobile o vuoi capire quale tipo di contratto fa al caso tuo, <a href="/#contatti">contattaci per una consulenza</a>: analizziamo insieme la tua situazione e ti aiutiamo a tutelarti fin dall'inizio.</p>
 
 <h2>FAQ</h2>
 
@@ -756,7 +756,7 @@ const posts: BlogPost[] = [
 
 <h2>Quando conviene chiedere assistenza legale</h2>
 <p>Conviene farsi assistere quando non è chiaro se ci si trovi davanti a morosità, finita locazione o occupazione senza titolo, oppure quando l’immobile non viene restituito nonostante la cessazione del titolo.</p>
-<p>Per il proprietario, una valutazione iniziale ben fatta serve proprio a questo: evitare mosse inutili, capire la procedura corretta e impostare fin dall’inizio il percorso più adatto per riottenere il possesso dell’immobile. Talvolta, la controparte potrebbe tentare una <a href="/blog/opposizione-sfratto">opposizione allo sfratto</a> basata su contestazioni al quadro giuridico, rendendo essenziale una strategia legale solida.</p>
+<p>Per il proprietario, una valutazione iniziale ben fatta serve proprio a questo: evitare mosse inutili, capire la procedura corretta e impostare fin dall’inizio il percorso più adatto per riottenere il possesso dell’immobile. Talvolta, la controparte potrebbe tentare una opposizione allo sfratto basata su contestazioni al quadro giuridico, rendendo essenziale una strategia legale solida.</p>
 
 <h2>FAQ</h2>
 <h3>Occupazione abusiva e occupazione senza titolo sono la stessa cosa?</h3>
@@ -773,7 +773,7 @@ const posts: BlogPost[] = [
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">L'inquilino occupa l'immobile senza titolo e non sai come rientrarne in possesso?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro ti offre la consulenza necessaria per analizzare la tua situazione specifica, scegliere l'azione legale più efficace e riottenere rapidamente il possesso del tuo immobile. Non rischiare errori che possono costarti tempo e denaro.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi una valutazione gratuita del tuo caso</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi una valutazione gratuita del tuo caso</a>
 </div>
 `
   },
@@ -1015,7 +1015,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Il tuo inquilino è sparito e non sai come rientrare in possesso del tuo immobile?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro ti assiste nell'accertamento dell'abbandono, nelle procedure per il recupero dei canoni e nel rientro legale in possesso dell'immobile. Contattaci per una valutazione gratuita del tuo caso specifico.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ - Domande frequenti sull'inquilino che sparisce e non paga</h2>
@@ -1144,7 +1144,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Hai un contratto non registrato e vuoi capire come muoverti?</p>
   <p style="margin:0 0 16px 0;">Sfratto Sicuro assiste i proprietari nella gestione regolare della locazione, dalla registrazione del contratto alla tutela in caso di morosità o controversie. Contattaci per una valutazione gratuita della tua situazione.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ</h2>
@@ -1419,7 +1419,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">L'inquilino non paga e la situazione è bloccata?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro è specializzato nella gestione della morosità e nelle procedure di sfratto. Analizziamo il tuo caso, prepariamo la diffida e, se necessario, avviamo l'azione legale per farti recuperare l'immobile nel minor tempo possibile. Contattaci per una valutazione gratuita.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ — Domande frequenti sul mancato pagamento dell'affitto</h2>
@@ -1528,7 +1528,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Hai dubbi sulla gestione del deposito o del rilascio dell'immobile?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari in tutte le fasi della locazione: dalla fine del rapporto alla gestione delle contestazioni. Contattaci per una valutazione gratuita del tuo caso.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ — Domande frequenti sulla restituzione della caparra affitto</h2>
@@ -1627,7 +1627,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Hai un inquilino moroso e vuoi sapere come muoverti?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari in tutte le fasi: dalla diffida stragiudiziale alla procedura di sfratto per morosità. Contattaci per una consulenza gratuita.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ sulla fideiussione per l'affitto</h2>
@@ -1746,7 +1746,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f5f5f5; border-left:4px solid #c0392b; padding:20px; margin:32px 0;">
   <strong>Hai bisogno di recuperare il tuo immobile?</strong>
   <p style="margin:8px 0 0;">Se il contratto si è prorogato senza che tu lo volessi, o se l'inquilino non lascia l'appartamento alla scadenza, Sfratto Sicuro ti aiuta a capire quale strada percorrere. Verifica la tua situazione con una consulenza: i nostri specialisti analizzano il contratto, i termini e le opzioni disponibili per aiutarti a recuperare l'immobile nel minor tempo possibile.</p>
-  <p style="margin:12px 0 0;"><a href="/contatti/" style="color:#c0392b; font-weight:bold;">→ Richiedi una consulenza gratuita</a></p>
+  <p style="margin:12px 0 0;"><a href="/#contatti" style="color:#c0392b; font-weight:bold;">→ Richiedi una consulenza gratuita</a></p>
 </div>
 
 <h2>FAQ</h2>
@@ -2140,7 +2140,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       <h2>Quando affidarsi a un professionista</h2>
       <p>La disdetta del contratto di locazione può sembrare un atto semplice, ma un errore di forma o di tempistica — preavviso tardivo, motivazione non prevista dalla legge, forma non corretta — può vanificare l'intera procedura e portare al rinnovo automatico del contratto.</p>
 
-      <p>In Sfratto Sicuro assistiamo i proprietari nelle procedure di locazione e sfratto, dalla valutazione iniziale alla gestione operativa. Se hai dubbi su come procedere, <a href="/contatti/">contattaci per una consulenza</a>.</p>
+      <p>In Sfratto Sicuro assistiamo i proprietari nelle procedure di locazione e sfratto, dalla valutazione iniziale alla gestione operativa. Se hai dubbi su come procedere, <a href="/#contatti">contattaci per una consulenza</a>.</p>
 
       <h2>FAQ — Domande frequenti sulla disdetta del locatore</h2>
 
@@ -3155,7 +3155,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
 <div style="background:#f4f8ff;border-left:4px solid #2563eb;padding:20px 24px;border-radius:6px;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;">Inquilino moroso e non sai come muoverti?</p>
   <p style="margin:0 0 16px 0;">Il team di Sfratto Sicuro assiste i proprietari dalla prima diffida fino alla convalida dello sfratto. Analizziamo il tuo caso, prepariamo la documentazione e gestiamo tutta la procedura. Contattaci per una valutazione gratuita.</p>
-  <a href="/contatti/" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
+  <a href="/#contatti" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:5px;text-decoration:none;font-weight:600;">Richiedi consulenza gratuita</a>
 </div>
 
 <h2>FAQ — Domande frequenti sulla lettera di diffida all'inquilino moroso</h2>
