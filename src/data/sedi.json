@@ -172,7 +172,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:00 (sportello fisico, accesso libero)",
-            "sitoUfficiale": "https://www.tribunale.milano.giustizia.it",
+            "sitoUfficiale": "https://tribunale-milano.giustizia.it",
             "note": "Il deposito telematico tramite PCT è obbligatorio. La XIII Sezione Civile tratta esclusivamente locazioni, occupazioni senza titolo e materia condominiale: questa specializzazione contribuisce ai tempi tra i più rapidi del Nord Italia."
         },
         "giurisprudenzaLocale": {
@@ -1583,7 +1583,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
-            "sitoUfficiale": "https://www.tribunale.bergamo.giustizia.it",
+            "sitoUfficiale": "https://www.tribunale.bergamo.it",
             "note": "Il sistema di prenotazione online obbligatoria per le udienze di convalida (bergamo.prenotazioniudienzesfratti.it) va attivato PRIMA della notifica della citazione. Le udienze si tengono il martedi' a partire dalle ore 9:00."
         },
         "giurisprudenzaLocale": {
@@ -1964,7 +1964,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30 (cancelleria I Sezione, piano 4 stanza 4.59)",
-            "sitoUfficiale": "https://www.tribunale.brescia.giustizia.it",
+            "sitoUfficiale": "https://tribunale-brescia.giustizia.it",
             "note": "Le udienze di convalida si tengono il giovedi'. La concentrazione settimanale delle udienze rende essenziale una notifica tempestiva per assicurare la prima data disponibile."
         },
         "giurisprudenzaLocale": {
@@ -2184,7 +2184,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Sportello fisico SU APPUNTAMENTO Lun-Gio 10:00-12:00. Sportello telefonico Lun-Gio 12:00-13:00.",
-            "sitoUfficiale": "https://www.tribunale.bustoarsizio.giustizia.it",
+            "sitoUfficiale": "https://tribunale-bustoarsizio.giustizia.it",
             "note": "Accesso alla cancelleria civile esclusivamente su appuntamento. Pianificare in anticipo le visite di sportello per non perdere giornate utili."
         },
         "giurisprudenzaLocale": {
@@ -3103,7 +3103,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
-            "sitoUfficiale": "https://www.tribunale.como.giustizia.it",
+            "sitoUfficiale": "https://tribunale-como.giustizia.it",
             "note": "Il Tribunale dispone di I e II Sezione Civile distinte. Le convalide di sfratto sono trattate dalla Sezione competente per materia locatizia."
         },
         "giurisprudenzaLocale": {
@@ -3321,7 +3321,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
-            "sitoUfficiale": "https://www.tribunale.cremona.giustizia.it",
+            "sitoUfficiale": "https://tribunale-cremona.giustizia.it",
             "note": "La Cancelleria Contenzioso Civile Ordinario è la sezione competente per le convalide di sfratto."
         },
         "giurisprudenzaLocale": {
@@ -5410,7 +5410,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
-            "sitoUfficiale": "https://www.tribunale.lecco.giustizia.it",
+            "sitoUfficiale": "https://tribunale-lecco.giustizia.it",
             "note": "Prenotazione obbligatoria via portale Fallco (fallcoweb.it/prenotazioni/Lecco/ufficiosfratti) PRIMA della notifica della citazione. Calendario locale: udienze locazioni il giovedi', successive il venerdi'."
         },
         "giurisprudenzaLocale": {
@@ -5995,7 +5995,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 09:00-12:30",
-            "sitoUfficiale": "https://www.tribunale.mantova.giustizia.it",
+            "sitoUfficiale": "https://tribunale-mantova.giustizia.it",
             "note": "Prenotazione online OBBLIGATORIA per le udienze di convalida: la fascia 10:30-12:30 accetta massimo 20 fascicoli per udienza. Slot esauribili: senza prenotazione confermata l'udienza non viene tenuta. Banner 'Prenotazione Udienze Online' in homepage del tribunale."
         },
         "giurisprudenzaLocale": {
@@ -6525,7 +6525,7 @@
         "cancelleriaEstesa": {
             "orariSportello": "Lun, mar, gio, ven 09:00-12:00 su prenotazione. Mercoledi' chiusa.",
             "pec": "sfrattisecondaeterza.tribunale.monza@giustizia.it",
-            "sitoUfficiale": "https://www.tribunale.monza.giustizia.it",
+            "sitoUfficiale": "https://tribunale-monza.giustizia.it",
             "note": "Prenotazione online obbligatoria per gli avvocati tramite monza-avvocati-gestionale.astalegale.net. Senza prenotazione confermata l'accesso non è garantito."
         },
         "giurisprudenzaLocale": {
@@ -7590,7 +7590,7 @@
             "sezione": "I Sezione Civile — Locazioni e Condominio",
             "depositoPCT": true,
             "udienze": "Il Tribunale di Pavia ha una Cancelleria Decreti Ingiuntivi e Sfratti dedicata, con prenotazione delle udienze di convalida tramite applicativo sulla home page del sito del tribunale. Cancelleria aperta lun-ven e sab 08:30-12:00 (sabato solo atti scadenti). Prima udienza: 45–60 giorni. Convalida non contestata: circa 2–3 mesi.",
-            "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.pavia@giustiziacert.it. Tel: 0382/398283. Prenotazione udienze sfratto tramite applicativo su www.tribunale.pavia.giustizia.it."
+            "note": "Deposito telematico PCT obbligatorio. PEC: contenziosocivile.tribunale.pavia@giustiziacert.it. Tel: 0382/398283. Prenotazione udienze sfratto tramite applicativo su tribunale-pavia.giustizia.it."
         },
         "mercatoLocale": {
             "canoneMedioEur": 700,
@@ -7606,7 +7606,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Lun-Ven 08:30-12:00. Sabato 08:30-12:00 (solo atti scadenti).",
-            "sitoUfficiale": "https://www.tribunale.pavia.giustizia.it",
+            "sitoUfficiale": "https://tribunale-pavia.giustizia.it",
             "note": "Il Tribunale di Pavia ha una Cancelleria Decreti Ingiuntivi e Sfratti dedicata, con prenotazione delle udienze di convalida tramite applicativo sulla home page del sito del tribunale."
         },
         "giurisprudenzaLocale": {
@@ -9466,7 +9466,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Sportello fisico stanza 212 al 2 piano. Lun-Ven 09:00-12:00.",
-            "sitoUfficiale": "https://www.tribunale.sondrio.giustizia.it",
+            "sitoUfficiale": "https://tribunale-sondrio.giustizia.it",
             "note": "Per le richieste via email è OBBLIGATORIO l'oggetto formattato 'RICHIESTA INFORMAZIONI – COGNOME E NOME' con telefono in firma, altrimenti la mail non viene processata. Procedura locale specifica."
         },
         "giurisprudenzaLocale": {
@@ -10854,7 +10854,7 @@
         },
         "cancelleriaEstesa": {
             "orariSportello": "Sportello telefonico Lun-Ven 12:00-13:00. Sportello fisico su prenotazione.",
-            "sitoUfficiale": "https://www.tribunale.varese.giustizia.it",
+            "sitoUfficiale": "https://tribunale-varese.giustizia.it",
             "note": "Le udienze di convalida si tengono il giovedi' alle ore 09:30 con prenotazione online obbligatoria tramite il portale del tribunale (Protocollo Tribunale-Ordine Avvocati Varese). Senza prenotazione l'udienza non viene tenuta."
         },
         "giurisprudenzaLocale": {
