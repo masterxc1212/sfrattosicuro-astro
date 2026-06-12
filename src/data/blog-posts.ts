@@ -17,6 +17,90 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "comodato-uso-gratuito-rischi-proprietario",
+    title: "Comodato d'uso gratuito di un immobile: i rischi per il proprietario e come riavere la casa",
+    description: "Comodato d'uso gratuito di un immobile: rischi per il proprietario, registrazione, IMU e come riavere la casa. Guida con gli errori da evitare.",
+    excerpt: "Prestare casa a un figlio o a un amico sembra semplice, ma il comodato d'uso gratuito nasconde rischi concreti per il proprietario: vincoli che durano anni se nell'immobile vive una famiglia con figli, regole fiscali precise e tempi lunghi per riavere la casa. Guida pratica con la checklist prima di consegnare le chiavi e gli errori da evitare.",
+    lead: "Prestare casa a un figlio, a un genitore o a un amico sembra il gesto più semplice del mondo: niente contratto, niente affitto, una stretta di mano. In realtà il comodato d'uso gratuito di un immobile nasconde rischi concreti per il proprietario: tempi lunghi per riavere la casa, vincoli che durano anni se nell'immobile vive una famiglia con figli, problemi fiscali se il prestito non è gestito correttamente. Questa guida spiega, dalla parte di chi la casa la presta, come funziona il comodato, quali sono i rischi reali e come tutelarsi.",
+    publishedAt: "2026-06-12",
+    updatedAt: "2026-06-12",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-06-12. Keyword: rischi comodato d'uso gratuito immobile, vol 1300, KD 0 (DataForSEO). Secondarie: comodato d'uso gratuito immobile, comodato precario restituzione.",
+    html: `  <p>Prestare casa a un figlio, a un genitore o a un amico sembra il gesto più semplice del mondo: niente contratto, niente affitto, una stretta di mano. In realtà il <strong>comodato d'uso gratuito di un immobile</strong> nasconde <strong>rischi concreti per il proprietario</strong>: tempi lunghi per riavere la casa, vincoli che durano anni se nell'immobile vive una famiglia con figli, problemi fiscali se il prestito non è gestito correttamente. Questa guida spiega, dalla parte di chi la casa la presta, come funziona il comodato, quali sono i rischi reali e come tutelarsi prima di consegnare le chiavi.</p>
+
+  <h2>Cos'è il comodato d'uso gratuito</h2>
+  <p>Il comodato è il contratto con cui il proprietario (detto <strong>comodante</strong>) consegna un immobile a un'altra persona (il <strong>comodatario</strong>) perché lo usi gratuitamente, con l'obbligo di restituirlo. La gratuità è l'essenza del contratto: se viene pattuito un corrispettivo, non è più un comodato ma qualcos'altro — di solito una locazione, con tutte le regole (e i vincoli di durata) che ne derivano.</p>
+  <p>Il comodato può essere <strong>scritto o verbale</strong>: entrambi sono validi. Ma la differenza pratica è enorme, perché senza un documento scritto diventa difficile dimostrare quando è iniziato il prestito, per quale uso e con quale scadenza. E in caso di lite, ogni cosa non scritta si trasforma in un argomento a favore di chi occupa la casa.</p>
+
+  <h2>I rischi del comodato per il proprietario</h2>
+
+  <h3>1. Riavere la casa: quando si può usare lo sfratto e quando serve una causa</h3>
+  <p>Il rischio principale è il più banale: <strong>il comodatario non restituisce l'immobile</strong>. Qui le regole sono cambiate di recente, e conviene conoscerle bene. Dal 2023, con la riforma Cartabia, la procedura rapida di <strong>convalida di sfratto</strong> — nata per le locazioni — è stata estesa anche al <strong>comodato di immobili con una scadenza</strong>: se il contratto prevede un termine e il comodatario non riconsegna, il proprietario può usare lo stesso canale veloce dello sfratto per finita locazione.</p>
+  <p>Diverso il caso del <strong>comodato senza scadenza</strong> (il prestito informale "a tempo indeterminato", di gran lunga il più diffuso tra familiari): qui l'uso della convalida è ancora discusso nei tribunali, e nella pratica serve di regola una <strong>causa civile di restituzione</strong>, preceduta dal tentativo obbligatorio di <strong>mediazione</strong> (un incontro davanti a un organismo terzo per cercare l'accordo, previsto per legge in materia di comodato). Tempi complessivi: in genere sensibilmente più lunghi di uno sfratto. Ecco perché mettere una scadenza scritta nel contratto non è un dettaglio: cambia la procedura disponibile.</p>
+  <p>Se l'occupante resta nell'immobile dopo che gli è stata chiesta la restituzione, occupa <strong>senza titolo</strong>: il proprietario può chiedere, oltre al rilascio, anche un'<strong>indennità di occupazione</strong> per il periodo di trattenimento ingiustificato e il risarcimento di eventuali danni. Sul tema abbiamo scritto una guida dedicata all'<a href="/blog/occupazione-abusiva-immobile/">occupazione abusiva di immobile</a>.</p>
+
+  <h3>2. Il comodato senza scadenza non significa "via quando voglio"... ma quasi</h3>
+  <p>Se il comodato prevede una <strong>scadenza</strong>, il comodatario deve restituire l'immobile a quella data. Prima della scadenza il proprietario può rientrare in possesso della casa solo se sopravviene un <strong>bisogno urgente e impreveduto</strong>: non solo abitativo (perdere la propria casa), ma anche <strong>economico</strong>, come la sopravvenuta necessità di vendere o affittare l'immobile per difficoltà serie e attuali.</p>
+  <p>Se invece il comodato è <strong>senza determinazione di durata</strong> (il cosiddetto comodato precario), il proprietario può chiedere la restituzione <strong>in qualsiasi momento</strong>, senza dover giustificare la richiesta. Attenzione però: "chiedere" non significa "ottenere". Se il comodatario non se ne va spontaneamente, si torna al punto 1: serve l'azione giudiziaria.</p>
+
+  <h3>3. La casa prestata alla famiglia del figlio: il vincolo più insidioso</h3>
+  <p>È il caso più frequente e più rischioso. Il genitore presta l'appartamento al figlio che ci va a vivere con il coniuge e i bambini. La Corte di Cassazione, nella sua composizione più autorevole (le Sezioni Unite), ha stabilito che quando un immobile è concesso in comodato <strong>per le esigenze abitative della famiglia</strong>, il contratto ha una durata implicita: dura <strong>finché durano quelle esigenze familiari</strong>. Il proprietario non può riprendersi la casa a semplice richiesta, ma solo se dimostra un bisogno urgente e impreveduto.</p>
+  <p>La conseguenza pratica più dura emerge in caso di <strong>separazione del figlio</strong>: se il giudice assegna la casa familiare al coniuge che resta con i figli, il genitore proprietario può ritrovarsi l'ex nuora o l'ex genero nell'immobile <strong>per anni</strong>, finché i nipoti non diventano economicamente autosufficienti. Un punto a favore del proprietario c'è: la destinazione alle esigenze familiari <strong>deve provarla chi la invoca</strong>, non il proprietario. Anche per questo conviene scrivere nero su bianco a chi e per quale uso si presta la casa.</p>
+
+  <h3>4. Il rischio fiscale: registrazione e "rimborsi" pericolosi</h3>
+  <p>Sul piano fiscale i punti da conoscere sono tre:</p>
+  <ul>
+    <li><strong>Registrazione</strong>: il comodato <strong>scritto</strong> va registrato all'Agenzia delle Entrate <strong>entro 30 giorni</strong> dalla firma, con imposta di registro di 200 euro (più l'imposta di bollo). Il comodato <strong>verbale</strong> in generale non ha obbligo di registrazione, ma registrarlo conviene quando serve una data certa o per fruire dei benefici IMU.</li>
+    <li><strong>IMU ridotta</strong> (l'imposta municipale sugli immobili diversi dall'abitazione principale): chi presta casa a <strong>genitori o figli</strong> che la usano come abitazione principale può ottenere la riduzione del 50% della base imponibile, ma solo a condizioni rigide: contratto registrato, proprietario residente nello stesso Comune dell'immobile prestato e proprietario, in Italia, di quel solo immobile abitativo — oppure, in aggiunta, di un solo altro immobile nello stesso Comune <strong>adibito a propria abitazione principale</strong>. Una seconda casa affittata o sfitta, anche nello stesso Comune, fa perdere lo sconto. Sono esclusi dal beneficio gli immobili di lusso (categorie catastali A/1, A/8 e A/9). Senza registrazione, niente sconto.</li>
+    <li><strong>Soldi che girano</strong>: se il comodatario versa al proprietario somme periodiche che somigliano a un canone, il comodato rischia di essere <strong>riqualificato come locazione in nero</strong>, con sanzioni fiscali e possibili pretese dell'occupante sulla durata del contratto. È legittimo solo il rimborso delle spese vive (utenze, condominio ordinario), meglio se documentato e tracciato.</li>
+  </ul>
+
+  <h2>Come tutelarsi: la checklist prima di consegnare le chiavi</h2>
+  <ul>
+    <li><strong>Metti tutto per iscritto</strong>: parti, immobile, uso consentito, durata, divieto di cedere l'uso a terzi.</li>
+    <li><strong>Fissa una scadenza</strong> ragionevole, eventualmente rinnovabile: oltre a delimitare il prestito, oggi apre la strada alla procedura veloce di convalida se la casa non viene restituita.</li>
+    <li><strong>Specifica l'uso personale</strong>: se non vuoi assumerti il vincolo familiare, scrivi che l'immobile è concesso per le esigenze abitative del solo comodatario e non della famiglia.</li>
+    <li><strong>Registra il contratto</strong> se è scritto (è un obbligo) e valuta la registrazione anche del verbale se punti alla riduzione IMU.</li>
+    <li><strong>Fai un verbale di consegna</strong> con lo stato dell'immobile e le letture dei contatori, come per una locazione: la nostra guida sul <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a> vale anche qui.</li>
+    <li><strong>Evita pagamenti periodici non documentati</strong>: solo rimborsi spese tracciati e giustificati.</li>
+  </ul>
+
+  <h2>Gli errori più comuni</h2>
+  <ul>
+    <li><strong>Prestare casa "a voce" e senza scadenza</strong> a una coppia con figli: è la combinazione che genera i vincoli più lunghi e preclude la procedura di convalida.</li>
+    <li><strong>Accettare un piccolo "affitto" in contanti</strong> pensando che resti un favore tra parenti: è la porta d'ingresso alla riqualificazione come locazione non registrata.</li>
+    <li><strong>Non registrare il comodato scritto</strong>: oltre alla sanzione per registrazione tardiva, si perde la prova della data certa proprio quando servirebbe.</li>
+    <li><strong>Aspettare anni prima di chiedere la restituzione</strong>: più l'occupazione si consolida, più la posizione del proprietario si complica.</li>
+    <li><strong>Confondere comodato e locazione</strong>: regole, tutele e procedure di rilascio sono diverse; sbagliare inquadramento significa sbagliare strategia.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+
+  <h3>Posso riavere subito la casa prestata senza scadenza?</h3>
+  <p>Puoi chiederne la restituzione in qualsiasi momento, senza motivarla. Se però nell'immobile vive una famiglia con figli e il prestito era destinato alle esigenze familiari, la richiesta semplice non basta: serve dimostrare un bisogno urgente e impreveduto. E se l'occupante non lascia l'immobile spontaneamente, occorre passare dalle vie legali.</p>
+
+  <h3>Per il comodato si può usare lo sfratto?</h3>
+  <p>Oggi in parte sì: dopo la riforma Cartabia, la convalida di sfratto è utilizzabile anche per il comodato di immobili <strong>con scadenza</strong>, quando il termine è scaduto e la casa non viene riconsegnata. Per il comodato <strong>senza scadenza</strong> l'applicabilità è invece controversa nei tribunali e di regola serve una causa civile di restituzione, preceduta dalla mediazione obbligatoria.</p>
+
+  <h3>Mio figlio si separa: l'ex coniuge può restare nella mia casa?</h3>
+  <p>Se il giudice della separazione assegna la casa familiare al coniuge con cui restano i figli, sì: l'assegnazione prevale sulla richiesta di restituzione del proprietario, finché durano le esigenze dei figli, salvo il bisogno urgente e impreveduto. È il rischio principale da valutare prima di prestare casa a una giovane famiglia.</p>
+
+  <h3>Il comodato va sempre registrato?</h3>
+  <p>Quello scritto sì, entro 30 giorni dalla firma, con imposta di registro di 200 euro più bollo. Quello verbale in generale no, ma la registrazione (volontaria) è necessaria se vuoi la riduzione IMU del 50% per il comodato a genitori o figli.</p>
+
+  <h3>Posso chiedere un rimborso spese al comodatario?</h3>
+  <p>Sì: le spese per l'uso ordinario dell'immobile (utenze, condominio ordinario) sono per legge a carico del comodatario. L'importante è che i versamenti siano riferibili a spese reali e documentate: somme fisse mensili slegate dalle spese somigliano a un canone e mettono a rischio la natura gratuita del contratto.</p>
+
+  <h2>In conclusione</h2>
+  <p>Il comodato gratuito è un gesto generoso, ma per il proprietario è anche un atto giuridico con conseguenze che possono durare anni. Le tre mosse che cambiano davvero le cose sono semplici: contratto scritto con scadenza, uso definito (personale o familiare, scegliendo consapevolmente), gestione fiscale pulita. Se l'immobile è già occupato e la restituzione viene rifiutata, conviene muoversi presto e con la strategia giusta: la pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> descrive come affrontiamo questi casi, e dalla pagina <a href="/#contatti">contatti</a> puoi richiedere una prima valutazione gratuita della tua situazione.</p>
+
+  <p><strong>Riferimenti normativi essenziali</strong>: artt. 1803-1812 del codice civile (comodato), in particolare art. 1808 (spese a carico del comodatario), art. 1809 (restituzione alla scadenza e bisogno urgente e impreveduto) e art. 1810 (comodato senza determinazione di durata); Cass. civ., Sezioni Unite, sent. n. 20448/2014 (comodato di casa destinata a esigenze familiari); art. 657 c.p.c., come modificato dalla riforma Cartabia (D.Lgs. 149/2022), che estende la convalida al comodato di beni immobili con scadenza; art. 447-bis c.p.c. (rito per le controversie su locazione e comodato di immobili urbani); art. 5 D.Lgs. 28/2010 (mediazione obbligatoria in materia di comodato); art. 13 D.P.R. 131/1986, come modificato dal D.L. 73/2022 (termine di registrazione di 30 giorni); art. 1, comma 747, lett. c), legge n. 160/2019 (riduzione IMU del 50% per comodato a parenti in linea retta di primo grado, già art. 1, comma 10, legge n. 208/2015).</p>
+
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+
+  {
     slug: "contratto-affitto-4-4",
     title: "Contratto di affitto 4+4: durata, rinnovo e disdetta — guida per il proprietario",
     description: "Contratto di affitto 4+4: durata, rinnovo automatico, disdetta del proprietario e cedolare secca. Guida pratica per il locatore, con gli errori da evitare.",
