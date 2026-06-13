@@ -1,20 +1,28 @@
 ---
 /**
- * MetaPixelTracking.astro — Meta (Facebook) Pixel consent-gated.
+ * MetaPixelTracking.astro — Meta (Facebook) Pixel consent-gated + eventi.
  *
- * Carica fbevents.js e invia PageView SOLO dopo consenso "marketing",
- * coerente con la stessa logica di GA4TrackingIsland / Google Ads su questa landing
+ * Carica fbevents.js e invia eventi SOLO dopo consenso "marketing",
+ * coerente con GA4TrackingIsland / Google Ads su questa landing
  * (chiave localStorage `ss_cookie_consent_v1`, evento `ss:cookie-consent-updated`).
+ *
+ * Eventi (speculari alle conversioni Google Ads della landing):
+ *  - PageView            : sempre all'init
+ *  - Contact {whatsapp}  : click su link wa.me / whatsapp  (= conversione "Click WhatsApp")
+ *  - Contact {phone}     : click su link tel:              (lato web del telefono; in Google la
+ *                          telefonata vera è contata via numero MyCentralino, non replicabile dal pixel)
+ *  - Lead                : opzionale, via prop `leadOnLoad` (usato sulla pagina grazie)
  *
  * Pixel/dataset Meta "Sfratto Sicuro": 1373903100373659.
  */
 interface Props {
   pixelId?: string;
+  leadOnLoad?: boolean;
 }
-const { pixelId = '1373903100373659' } = Astro.props;
+const { pixelId = '1373903100373659', leadOnLoad = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ pixelId }}>
+<script is:inline define:vars={{ pixelId, leadOnLoad }}>
   (() => {
     if (!pixelId) return;
 
@@ -54,7 +62,34 @@ const { pixelId = '1373903100373659' } = Astro.props;
 
       window.fbq('init', pixelId);
       window.fbq('track', 'PageView');
+      if (leadOnLoad) window.fbq('track', 'Lead');
     };
+
+    // Invia un evento solo se il pixel è attivo (consenso dato)
+    const track = (eventName, params) => {
+      if (!window.__metaPixelLoaded || typeof window.fbq !== 'function') return;
+      window.fbq('track', eventName, params || {});
+    };
+
+    // Click su WhatsApp / telefono → Contact (mirror conversioni Google)
+    const classify = (href) => {
+      if (!href) return null;
+      const h = href.toLowerCase();
+      if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) return 'whatsapp';
+      if (h.indexOf('tel:') === 0) return 'phone';
+      return null;
+    };
+
+    document.addEventListener('click', (ev) => {
+      const a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a) return;
+      const method = classify(a.getAttribute('href'));
+      if (!method) return;
+      // anti-doppio-conteggio sullo stesso link
+      if (a.__metaFiredAt && (Date.now() - a.__metaFiredAt) < 1500) return;
+      a.__metaFiredAt = Date.now();
+      track('Contact', { method });
+    }, true);
 
     const consent = readConsent();
     if (consent?.marketing) initPixelIfNeeded(consent);
