@@ -1,0 +1,76 @@
+---
+/**
+ * MetaPixelTracking.astro — Meta (Facebook) Pixel consent-gated.
+ *
+ * Carica fbevents.js e invia PageView SOLO dopo consenso "marketing",
+ * coerente con la stessa logica di GA4TrackingIsland / Google Ads su questa landing
+ * (chiave localStorage `ss_cookie_consent_v1`, evento `ss:cookie-consent-updated`).
+ *
+ * Pixel/dataset Meta "Sfratto Sicuro": 1373903100373659.
+ */
+interface Props {
+  pixelId?: string;
+}
+const { pixelId = '1373903100373659' } = Astro.props;
+---
+
+<script is:inline define:vars={{ pixelId }}>
+  (() => {
+    if (!pixelId) return;
+
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+
+    const readConsent = () => {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const initPixelIfNeeded = (consent) => {
+      if (!consent?.marketing) return;
+      if (window.__metaPixelLoaded) return;
+      window.__metaPixelLoaded = true;
+
+      // Snippet base Meta Pixel (fbevents)
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      window.fbq('init', pixelId);
+      window.fbq('track', 'PageView');
+    };
+
+    const consent = readConsent();
+    if (consent?.marketing) initPixelIfNeeded(consent);
+
+    window.addEventListener('ss:cookie-consent-updated', (event) => {
+      const detail = event?.detail || {};
+      if (detail.marketing) initPixelIfNeeded(detail);
+    });
+  })();
+</script>
+
+<noscript>
+  <img
+    height="1"
+    width="1"
+    style="display:none"
+    src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
+  />
+</noscript>
