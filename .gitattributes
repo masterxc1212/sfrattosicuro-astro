@@ -1,0 +1,17 @@
+# Normalizza le fini-riga: nel repo sempre LF, evita il rumore CRLF/LF di Windows.
+* text=auto eol=lf
+
+# Binari: mai toccati
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.mp4 binary
+*.webm binary
