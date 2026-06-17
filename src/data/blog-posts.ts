@@ -17,6 +17,94 @@ export interface BlogPost {
 const posts: BlogPost[] = [
 
   {
+    slug: "spese-condominiali-inquilino",
+    title: "Spese condominiali e inquilino: chi paga cosa e cosa fare se non paga",
+    description: "Spese condominiali e inquilino: quali oneri accessori paga il conduttore, quali il proprietario e cosa fare se l'inquilino non paga.",
+    excerpt: "Come si dividono le spese condominiali tra inquilino e proprietario, come chiedere il pagamento degli oneri accessori e cosa fare se il conduttore non paga.",
+    lead: "Alcune spese condominiali seguono l'uso dell'immobile e toccano all'inquilino, altre riguardano la struttura e restano al proprietario: sapere dove passa questa linea evita la maggior parte dei litigi.",
+    publishedAt: "2026-06-17",
+    updatedAt: "2026-06-17",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-06-17. Keyword: spese condominiali inquilino, vol 720, KD 0.",
+    html: `
+<p>Le <strong>spese condominiali</strong> con un immobile in affitto sono una delle fonti piÃ¹ frequenti di tensione tra proprietario e <strong>inquilino</strong>. Chi paga la pulizia delle scale? E l'ascensore? E se l'inquilino non versa la sua quota, il proprietario rischia qualcosa con il condominio? Questa guida spiega in modo pratico, dalla parte del proprietario, come si dividono le spese condominiali tra inquilino e locatore e cosa fare quando il conduttore non paga.</p>
+
+<p>L'idea di fondo Ã¨ semplice: alcune spese seguono l'<strong>uso</strong> dell'immobile e toccano a chi ci abita (l'inquilino), altre riguardano il <strong>valore e la struttura</strong> del bene e restano al proprietario. Sapere in anticipo dove passa questa linea evita la maggior parte dei litigi.</p>
+
+<h2>Spese condominiali a carico dell'inquilino</h2>
+<p>Le spese condominiali a carico dell'inquilino sono quelle legate ai servizi e alla gestione corrente del palazzo, cioÃ¨ a ciÃ² di cui il conduttore beneficia vivendo nell'appartamento. Si chiamano tecnicamente <strong>oneri accessori</strong>. Salvo patto diverso scritto nel contratto, rientrano qui:</p>
+<ul>
+  <li>la <strong>pulizia delle parti comuni</strong> (scale, androni, cortili);</li>
+  <li>il funzionamento e l'<strong>ordinaria manutenzione dell'ascensore</strong>;</li>
+  <li>la fornitura di <strong>acqua, energia elettrica comune, riscaldamento e condizionamento</strong> centralizzati;</li>
+  <li>lo spurgo dei pozzi neri e gli altri <strong>servizi comuni</strong> di uso quotidiano;</li>
+  <li>il <strong>servizio di portineria</strong>, che la legge pone a carico del conduttore nella misura del 90%, salvo accordo per una quota inferiore.</li>
+</ul>
+<p>In pratica, tutto ciÃ² che fa funzionare il palazzo giorno per giorno Ã¨ dell'inquilino. A questi importi si aggiungono le <strong>piccole riparazioni</strong> all'interno dell'appartamento dovute all'uso normale (una guarnizione, una maniglia): spese minute che restano al conduttore.</p>
+
+<h2>Spese a carico del proprietario</h2>
+<p>Al proprietario restano le spese che riguardano la <strong>struttura e il valore</strong> dell'immobile e del fabbricato, cioÃ¨ la cosiddetta <strong>manutenzione straordinaria</strong>. Tra le piÃ¹ comuni:</p>
+<ul>
+  <li>il rifacimento della <strong>facciata</strong>, del <strong>tetto</strong> o delle <strong>fondamenta</strong>;</li>
+  <li>la <strong>sostituzione</strong> dell'ascensore o della caldaia centralizzata (non la sola manutenzione ordinaria);</li>
+  <li>i lavori straordinari sull'impianto idrico, elettrico o di riscaldamento comune;</li>
+  <li>le opere deliberate dall'assemblea che incidono sul valore dell'edificio.</li>
+</ul>
+<p>La regola pratica: se Ã¨ una <strong>spesa una tantum che migliora o conserva il bene</strong>, Ã¨ del proprietario; se Ã¨ una <strong>spesa ricorrente legata all'uso quotidiano</strong>, Ã¨ dell'inquilino. Su questa linea si gioca quasi sempre la discussione, perciÃ² conviene chiarirla giÃ  nel contratto e nel <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna</a> a fine locazione.</p>
+
+<h2>Come si comunica e si chiede il pagamento</h2>
+<p>Il proprietario non puÃ² inviare all'inquilino un importo generico. Prima di chiedere il pagamento degli oneri accessori deve mettere il conduttore nelle condizioni di capire cosa sta pagando. Per legge l'inquilino ha diritto di:</p>
+<ul>
+  <li>ricevere l'<strong>indicazione specifica delle spese</strong> e i <strong>criteri di ripartizione</strong> applicati;</li>
+  <li><strong>prendere visione</strong> dei documenti giustificativi (di norma il consuntivo condominiale e i criteri millesimali);</li>
+  <li>pagare <strong>entro due mesi</strong> dalla richiesta.</li>
+</ul>
+<p>Allegare il consuntivo del condominio e indicare con chiarezza la quota dovuta Ã¨ il modo piÃ¹ semplice per evitare contestazioni. Una richiesta documentata, inviata in forma tracciabile (raccomandata o PEC), mette il proprietario in una posizione molto piÃ¹ solida se la vicenda dovesse poi finire davanti a un giudice.</p>
+
+<h2>Se l'inquilino non paga le spese condominiali</h2>
+<p>Qui sta il punto che molti proprietari ignorano: <strong>verso il condominio il debitore Ã¨ sempre il proprietario</strong>, non l'inquilino. L'amministratore puÃ² richiedere le somme dovute solo al condomino, cioÃ¨ al locatore. Se l'inquilino non versa la sua quota, Ã¨ il proprietario a doverla anticipare al condominio, salvo poi recuperarla dal conduttore.</p>
+<p>Cosa puÃ² fare il proprietario per rientrare delle somme:</p>
+<ul>
+  <li><strong>Sollecito formale</strong>: una richiesta scritta e tracciabile con il dettaglio degli importi. Ãˆ spesso utile una vera e propria <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>.</li>
+  <li><strong>Recupero giudiziale del credito</strong>: per gli oneri accessori non pagati si puÃ² agire, ad esempio, con decreto ingiuntivo, appoggiandosi a un supporto sul <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni e degli oneri non pagati</a>.</li>
+  <li><strong>Sfratto per morositÃ </strong>: quando l'importo degli oneri accessori non pagati <strong>supera il valore di due mensilitÃ  del canone</strong>, il mancato pagamento puÃ² diventare motivo di risoluzione del contratto, esattamente come la morositÃ  sul canone. Per orientarsi conviene leggere cosa fare quando <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">l'inquilino non paga</a>.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+  <li>non specificare nel contratto come si ripartiscono le spese: lasciare tutto al "salvo patto contrario" generico crea ambiguitÃ ;</li>
+  <li>chiedere il pagamento senza allegare il consuntivo e i criteri di ripartizione;</li>
+  <li>pensare che il condominio possa rivolgersi direttamente all'inquilino: non Ã¨ cosÃ¬, paga il proprietario;</li>
+  <li>confondere manutenzione ordinaria (inquilino) e straordinaria (proprietario), addossando al conduttore lavori che non gli competono;</li>
+  <li>lasciar accumulare gli oneri non pagati senza inviare per tempo una richiesta tracciabile.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Quali spese condominiali paga l'inquilino?</h3>
+<p>Gli oneri accessori legati all'uso: pulizia delle parti comuni, ordinaria manutenzione dell'ascensore, acqua, luce comune, riscaldamento e condizionamento centralizzati, servizi comuni e, di regola, il 90% del portierato. La manutenzione straordinaria resta invece al proprietario.</p>
+<h3>L'inquilino puÃ² chiedere di vedere i documenti delle spese?</h3>
+<p>SÃ¬. Prima di pagare ha diritto a conoscere il dettaglio delle spese, i criteri di ripartizione e a prendere visione dei documenti giustificativi, di solito il consuntivo condominiale.</p>
+<h3>Se l'inquilino non paga, il condominio puÃ² rivalersi su di lui?</h3>
+<p>No. Verso il condominio il debitore Ã¨ il proprietario. SarÃ  quindi il proprietario a pagare al condominio e poi a recuperare la quota dall'inquilino.</p>
+<h3>Il mancato pagamento delle spese puÃ² portare allo sfratto?</h3>
+<p>SÃ¬. Quando gli oneri accessori non pagati superano l'importo di due mensilitÃ  del canone, il fatto puÃ² costituire motivo di risoluzione del contratto e fondare uno sfratto per morositÃ .</p>
+<h3>Entro quando l'inquilino deve pagare gli oneri accessori?</h3>
+<p>Entro due mesi dalla richiesta del proprietario, purchÃ© la richiesta sia accompagnata dall'indicazione delle spese e dei criteri di ripartizione.</p>
+
+<h2>In sintesi</h2>
+<p>La divisione delle spese condominiali tra inquilino e proprietario segue una logica chiara: ciÃ² che Ã¨ uso quotidiano tocca al conduttore, ciÃ² che Ã¨ struttura e valore resta al locatore. Mettere per iscritto questa ripartizione, chiedere il pagamento in modo documentato e intervenire subito quando il conduttore non paga Ã¨ il modo migliore per evitare che una questione di poche centinaia di euro si trasformi in un contenzioso lungo.</p>
+<p>Se stai gestendo un inquilino che non paga le spese o il canone e vuoi capire come muoverti, puoi richiedere una prima valutazione gratuita del tuo caso tramite la sezione <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
+
+<p><em>Nota normativa: oneri accessori e ripartizione delle spese sono disciplinati dall'art. 9 della Legge 392/1978; la soglia delle due mensilitÃ  per la morositÃ  sugli oneri accessori dall'art. 5 della stessa legge; la distinzione tra riparazioni a carico del proprietario e piccola manutenzione a carico dell'inquilino dagli artt. 1576 e 1609 del Codice civile; il rapporto di debito verso il condominio fa capo al proprietario in qualitÃ  di condomino.</em></p>
+
+<p><em>Questo contenuto ha finalitÃ  puramente informative e non sostituisce una consulenza legale personalizzata. Ogni situazione va valutata sulla base del contratto e dei documenti specifici.</em></p>
+                                                           
+    `
+  },
+
+
+  {
     slug: "comodato-uso-gratuito-rischi-proprietario",
     title: "Comodato d'uso gratuito di un immobile: i rischi per il proprietario e come riavere la casa",
     description: "Comodato d'uso gratuito di un immobile: rischi per il proprietario, registrazione, IMU e come riavere la casa. Guida con gli errori da evitare.",
@@ -182,24 +270,24 @@ const posts: BlogPost[] = [
     slug: "contributo-unificato-sfratto",
     title: "Contributo unificato per lo sfratto: quanto si paga e come recuperarlo dall'inquilino",
     description: "Contributo unificato per lo sfratto: quanto si paga (importi ridotti del 50%), come si calcola il valore e come recuperarlo dall'inquilino moroso.",
-    excerpt: "Prima di avviare uno sfratto ogni proprietario si chiede quanto costa. La prima spesa è il contributo unificato, la tassa per iscrivere la causa: per lo sfratto è ridotta del 50% e spesso si ferma a 21,50 o 49 euro. Guida pratica agli importi, al calcolo del valore, alla marca da bollo da 27 euro e a come recuperare tutto dall'inquilino moroso.",
-    lead: "Prima di avviare uno sfratto, ogni proprietario si pone la stessa domanda: quanto mi costa? La prima voce di spesa, quella che si paga subito al momento del deposito, è il contributo unificato: una tassa statale dovuta per iscrivere la causa a ruolo. La buona notizia è che per lo sfratto questa tassa è ridotta della metà rispetto alle cause ordinarie. Vediamo, dalla parte del locatore, quanto si paga davvero, come si calcola, quali altre spese mettere in conto e come recuperarle dall'inquilino moroso.",
+    excerpt: "Prima di avviare uno sfratto ogni proprietario si chiede quanto costa. La prima spesa ï¿½ il contributo unificato, la tassa per iscrivere la causa: per lo sfratto ï¿½ ridotta del 50% e spesso si ferma a 21,50 o 49 euro. Guida pratica agli importi, al calcolo del valore, alla marca da bollo da 27 euro e a come recuperare tutto dall'inquilino moroso.",
+    lead: "Prima di avviare uno sfratto, ogni proprietario si pone la stessa domanda: quanto mi costa? La prima voce di spesa, quella che si paga subito al momento del deposito, ï¿½ il contributo unificato: una tassa statale dovuta per iscrivere la causa a ruolo. La buona notizia ï¿½ che per lo sfratto questa tassa ï¿½ ridotta della metï¿½ rispetto alle cause ordinarie. Vediamo, dalla parte del locatore, quanto si paga davvero, come si calcola, quali altre spese mettere in conto e come recuperarle dall'inquilino moroso.",
     publishedAt: "2026-06-05",
     updatedAt: "2026-06-05",
     category: "Sfratti",
     readingTime: "7 min",
-    sourceNote: "Generato automaticamente 2026-06-05. Keyword: contributo unificato sfratto, vol 720, KD 0 (DataForSEO). Secondarie: quanto costa sfratto per morosità, costo sfratto.",
-    html: `  <p>Prima di avviare uno sfratto, ogni proprietario si pone la stessa domanda: <strong>quanto mi costa?</strong> La prima voce di spesa, quella che si paga subito al momento del deposito, è il <strong>contributo unificato</strong>: una tassa statale dovuta per iscrivere la causa a ruolo. La buona notizia è che per lo sfratto questa tassa è ridotta della metà rispetto alle cause ordinarie. In questa guida vediamo, dalla parte del locatore, quanto si paga davvero di contributo unificato per uno sfratto, come si calcola, quali altre spese mettere in conto e  soprattutto  come recuperarle dall'inquilino moroso.</p>
+    sourceNote: "Generato automaticamente 2026-06-05. Keyword: contributo unificato sfratto, vol 720, KD 0 (DataForSEO). Secondarie: quanto costa sfratto per morositï¿½, costo sfratto.",
+    html: `  <p>Prima di avviare uno sfratto, ogni proprietario si pone la stessa domanda: <strong>quanto mi costa?</strong> La prima voce di spesa, quella che si paga subito al momento del deposito, ï¿½ il <strong>contributo unificato</strong>: una tassa statale dovuta per iscrivere la causa a ruolo. La buona notizia ï¿½ che per lo sfratto questa tassa ï¿½ ridotta della metï¿½ rispetto alle cause ordinarie. In questa guida vediamo, dalla parte del locatore, quanto si paga davvero di contributo unificato per uno sfratto, come si calcola, quali altre spese mettere in conto e  soprattutto  come recuperarle dall'inquilino moroso.</p>
 
-  <h2>Cos'è il contributo unificato</h2>
-  <p>Il <strong>contributo unificato</strong> è l'imposta che si versa allo Stato per avviare quasi ogni causa civile: serve a coprire le spese di giustizia. Lo paga la parte che per prima si rivolge al giudice  nel nostro caso il proprietario che intima lo sfratto  al momento del deposito dell'atto. Non è una cifra fissa uguale per tutti: cambia in base al <strong>valore della causa</strong>, cioè, in parole semplici, in base a quanto "vale" la lite.</p>
-  <p>La regola si trova nel Testo Unico sulle spese di giustizia (i riferimenti di legge sono in fondo all'articolo). Tieni a mente fin da subito un punto chiave: il contributo unificato è una spesa <strong>anticipata ma recuperabile</strong>, perché alla fine può essere posta a carico dell'inquilino che perde la causa.</p>
+  <h2>Cos'ï¿½ il contributo unificato</h2>
+  <p>Il <strong>contributo unificato</strong> ï¿½ l'imposta che si versa allo Stato per avviare quasi ogni causa civile: serve a coprire le spese di giustizia. Lo paga la parte che per prima si rivolge al giudice  nel nostro caso il proprietario che intima lo sfratto  al momento del deposito dell'atto. Non ï¿½ una cifra fissa uguale per tutti: cambia in base al <strong>valore della causa</strong>, cioï¿½, in parole semplici, in base a quanto "vale" la lite.</p>
+  <p>La regola si trova nel Testo Unico sulle spese di giustizia (i riferimenti di legge sono in fondo all'articolo). Tieni a mente fin da subito un punto chiave: il contributo unificato ï¿½ una spesa <strong>anticipata ma recuperabile</strong>, perchï¿½ alla fine puï¿½ essere posta a carico dell'inquilino che perde la causa.</p>
 
   <h2>Lo sconto del 50% per lo sfratto</h2>
-  <p>Il procedimento di convalida di sfratto rientra tra i <strong>procedimenti speciali</strong>, e per questo gode di un trattamento agevolato: il contributo unificato è <strong>ridotto alla metà</strong> rispetto a quello previsto per una causa ordinaria di pari valore. È un vantaggio concreto che abbassa il costo d'ingresso della procedura, sia che si tratti di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> sia di sfratto per finita locazione.</p>
+  <p>Il procedimento di convalida di sfratto rientra tra i <strong>procedimenti speciali</strong>, e per questo gode di un trattamento agevolato: il contributo unificato ï¿½ <strong>ridotto alla metï¿½</strong> rispetto a quello previsto per una causa ordinaria di pari valore. ï¿½ un vantaggio concreto che abbassa il costo d'ingresso della procedura, sia che si tratti di <a href="/servizi/sfratto-per-morosita/">sfratto per morositï¿½</a> sia di sfratto per finita locazione.</p>
 
   <h2>Quanto si paga: gli importi del contributo unificato per lo sfratto</h2>
-  <p>Ecco le cifre già dimezzate, cioè quelle che il proprietario versa effettivamente per un procedimento di convalida di sfratto, suddivise per scaglioni di valore della causa:</p>
+  <p>Ecco le cifre giï¿½ dimezzate, cioï¿½ quelle che il proprietario versa effettivamente per un procedimento di convalida di sfratto, suddivise per scaglioni di valore della causa:</p>
   <ul>
     <li>valore <strong>fino a 1.100 euro</strong>: contributo unificato <strong>21,50 euro</strong>;</li>
     <li>da 1.100,01 a <strong>5.200 euro</strong>: <strong>49,00 euro</strong>;</li>
@@ -207,59 +295,59 @@ const posts: BlogPost[] = [
     <li>da 26.000,01 a <strong>52.000 euro</strong>: <strong>259,00 euro</strong>;</li>
     <li>da 52.000,01 a <strong>260.000 euro</strong>: <strong>379,50 euro</strong>.</li>
   </ul>
-  <p>Nella stragrande maggioranza degli sfratti per morosità il valore della causa è contenuto  spesso poche migliaia di euro di canoni arretrati  quindi il contributo unificato che si paga davvero è in genere di <strong>21,50 o 49,00 euro</strong>. Si tratta, come vedi, di una cifra modesta: il vero peso economico di uno sfratto sta altrove, non nella tassa di iscrizione.</p>
+  <p>Nella stragrande maggioranza degli sfratti per morositï¿½ il valore della causa ï¿½ contenuto  spesso poche migliaia di euro di canoni arretrati  quindi il contributo unificato che si paga davvero ï¿½ in genere di <strong>21,50 o 49,00 euro</strong>. Si tratta, come vedi, di una cifra modesta: il vero peso economico di uno sfratto sta altrove, non nella tassa di iscrizione.</p>
 
   <h2>Come si calcola il valore della causa</h2>
   <p>Per sapere in quale scaglione rientri devi prima individuare il <strong>valore</strong> della tua causa di sfratto. Il criterio cambia a seconda del tipo di sfratto:</p>
   <ul>
-    <li><strong>Sfratto per morosità</strong>: il valore è dato dall'importo dei <strong>canoni scaduti e non pagati</strong> alla data in cui notifichi l'atto di intimazione e citazione per la convalida. Esempio: se l'inquilino ti deve 4.000 euro di canoni arretrati, sei nello scaglione fino a 5.200 euro e paghi 49,00 euro.</li>
-    <li><strong>Sfratto per finita locazione</strong>: qui non ci sono arretrati, quindi il valore si calcola sull'<strong>ammontare annuo del canone</strong>. Esempio: con un affitto di 600 euro al mese, il canone annuo è 7.200 euro, sei nello scaglione fino a 26.000 euro e paghi 118,50 euro.</li>
+    <li><strong>Sfratto per morositï¿½</strong>: il valore ï¿½ dato dall'importo dei <strong>canoni scaduti e non pagati</strong> alla data in cui notifichi l'atto di intimazione e citazione per la convalida. Esempio: se l'inquilino ti deve 4.000 euro di canoni arretrati, sei nello scaglione fino a 5.200 euro e paghi 49,00 euro.</li>
+    <li><strong>Sfratto per finita locazione</strong>: qui non ci sono arretrati, quindi il valore si calcola sull'<strong>ammontare annuo del canone</strong>. Esempio: con un affitto di 600 euro al mese, il canone annuo ï¿½ 7.200 euro, sei nello scaglione fino a 26.000 euro e paghi 118,50 euro.</li>
   </ul>
 
   <h2>Non dimenticare la marca da bollo da 27 euro</h2>
-  <p>Al contributo unificato si aggiunge una <strong>marca da bollo da 27 euro</strong> (in termini tecnici, l'anticipazione forfettaria delle spese). Non è una seconda tassa "nascosta": serve a coprire in modo forfettario le spese di notifica e di cancelleria che il tribunale anticipa per tuo conto. È un importo fisso, uguale per tutti, e va prodotto insieme al contributo unificato al momento del deposito. Mettila sempre in conto: senza, il deposito dell'atto non è regolare.</p>
+  <p>Al contributo unificato si aggiunge una <strong>marca da bollo da 27 euro</strong> (in termini tecnici, l'anticipazione forfettaria delle spese). Non ï¿½ una seconda tassa "nascosta": serve a coprire in modo forfettario le spese di notifica e di cancelleria che il tribunale anticipa per tuo conto. ï¿½ un importo fisso, uguale per tutti, e va prodotto insieme al contributo unificato al momento del deposito. Mettila sempre in conto: senza, il deposito dell'atto non ï¿½ regolare.</p>
 
   <h2>Le altre spese dello sfratto (oltre alla tassa)</h2>
-  <p>Il contributo unificato è solo la prima voce. Per avere un quadro realistico del costo di uno sfratto, il proprietario deve considerare anche:</p>
+  <p>Il contributo unificato ï¿½ solo la prima voce. Per avere un quadro realistico del costo di uno sfratto, il proprietario deve considerare anche:</p>
   <ul>
     <li><strong>Le spese di notifica</strong> dell'atto di intimazione all'inquilino, curate dall'ufficiale giudiziario;</li>
     <li><strong>Le spese della fase esecutiva</strong>, se l'inquilino non se ne va dopo la convalida: notifica del precetto e accessi dell'ufficiale giudiziario per il rilascio. Su questo passaggio abbiamo una guida dedicata allo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e al rilascio dell'immobile</a>;</li>
-    <li><strong>L'onorario dell'avvocato</strong>, che varia in base alla complessità della pratica e al tribunale competente.</li>
+    <li><strong>L'onorario dell'avvocato</strong>, che varia in base alla complessitï¿½ della pratica e al tribunale competente.</li>
   </ul>
-  <p>Per una panoramica completa di tempi e passaggi della procedura puoi leggere la nostra <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a>.</p>
+  <p>Per una panoramica completa di tempi e passaggi della procedura puoi leggere la nostra <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morositï¿½</a>.</p>
 
   <h2>Cosa cambia se l'inquilino si oppone</h2>
-  <p>Lo sconto del 50% vale per la <strong>fase sommaria</strong>, quella della convalida vera e propria. Se però l'inquilino <strong>si oppone</strong> e la causa prosegue nel merito come giudizio ordinario, scatta il cosiddetto "mutamento del rito": a quel punto il proprietario deve <strong>integrare</strong> il contributo unificato fino all'importo intero previsto per lo scaglione, perché la riduzione del 50% vale solo per la fase di convalida. È bene saperlo per non trovarsi impreparati, anche se nella maggior parte degli sfratti per morosità l'inquilino non presenta un'opposizione fondata. Un dettaglio a tuo favore: l'inquilino che si limita a opporsi alla convalida, senza avanzare proprie domande, di regola <strong>non versa</strong> alcun contributo unificato.</p>
+  <p>Lo sconto del 50% vale per la <strong>fase sommaria</strong>, quella della convalida vera e propria. Se perï¿½ l'inquilino <strong>si oppone</strong> e la causa prosegue nel merito come giudizio ordinario, scatta il cosiddetto "mutamento del rito": a quel punto il proprietario deve <strong>integrare</strong> il contributo unificato fino all'importo intero previsto per lo scaglione, perchï¿½ la riduzione del 50% vale solo per la fase di convalida. ï¿½ bene saperlo per non trovarsi impreparati, anche se nella maggior parte degli sfratti per morositï¿½ l'inquilino non presenta un'opposizione fondata. Un dettaglio a tuo favore: l'inquilino che si limita a opporsi alla convalida, senza avanzare proprie domande, di regola <strong>non versa</strong> alcun contributo unificato.</p>
 
   <h2>Il contributo unificato si recupera dall'inquilino</h2>
-  <p>Ecco la parte che interessa di più al proprietario: il contributo unificato, la marca da bollo e in generale le spese legali sono voci <strong>ripetibili</strong>. Significa che, di regola, il giudice le pone a carico della parte che perde  cioè dell'inquilino moroso  nel provvedimento finale. Lo anticipi tu al deposito, ma con la condanna alle spese hai titolo per chiederne il rimborso. È un aspetto da tenere presente anche per il <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>: oltre agli arretrati, puoi puntare a recuperare ciò che hai speso per far valere il tuo diritto.</p>
+  <p>Ecco la parte che interessa di piï¿½ al proprietario: il contributo unificato, la marca da bollo e in generale le spese legali sono voci <strong>ripetibili</strong>. Significa che, di regola, il giudice le pone a carico della parte che perde  cioï¿½ dell'inquilino moroso  nel provvedimento finale. Lo anticipi tu al deposito, ma con la condanna alle spese hai titolo per chiederne il rimborso. ï¿½ un aspetto da tenere presente anche per il <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>: oltre agli arretrati, puoi puntare a recuperare ciï¿½ che hai speso per far valere il tuo diritto.</p>
 
   <h2>Errori comuni da evitare</h2>
   <ul>
-    <li><strong>Sottovalutare la differenza tra tassa e onorario.</strong> Il contributo unificato è poche decine di euro: confonderlo con il "costo dello sfratto" porta a stime sbagliate. Il grosso della spesa è altrove.</li>
-    <li><strong>Dimenticare la marca da bollo da 27 euro.</strong> Senza, il deposito non è regolare e si perde tempo.</li>
-    <li><strong>Calcolare male il valore della causa.</strong> Per la morosità contano i canoni scaduti alla notifica; per la finita locazione conta il canone annuo. Sbagliare scaglione significa versare un importo errato.</li>
+    <li><strong>Sottovalutare la differenza tra tassa e onorario.</strong> Il contributo unificato ï¿½ poche decine di euro: confonderlo con il "costo dello sfratto" porta a stime sbagliate. Il grosso della spesa ï¿½ altrove.</li>
+    <li><strong>Dimenticare la marca da bollo da 27 euro.</strong> Senza, il deposito non ï¿½ regolare e si perde tempo.</li>
+    <li><strong>Calcolare male il valore della causa.</strong> Per la morositï¿½ contano i canoni scaduti alla notifica; per la finita locazione conta il canone annuo. Sbagliare scaglione significa versare un importo errato.</li>
     <li><strong>Non considerare l'integrazione in caso di opposizione.</strong> Se la causa prosegue nel merito, il contributo va integrato: tienilo presente nel budget.</li>
     <li><strong>Rinunciare a chiedere il rimborso.</strong> Le spese anticipate vanno richieste a carico dell'inquilino soccombente: non lasciarle sul tuo conto.</li>
   </ul>
 
   <h2>Domande frequenti</h2>
-  <h3>Quanto si paga di contributo unificato per uno sfratto per morosità?</h3>
-  <p>Dipende dall'importo dei canoni arretrati alla notifica dell'atto. Nella maggior parte dei casi si paga 21,50 euro (valore fino a 1.100 euro) o 49,00 euro (da 1.100 a 5.200 euro), perché lo sfratto gode della riduzione del 50% rispetto alle cause ordinarie.</p>
+  <h3>Quanto si paga di contributo unificato per uno sfratto per morositï¿½?</h3>
+  <p>Dipende dall'importo dei canoni arretrati alla notifica dell'atto. Nella maggior parte dei casi si paga 21,50 euro (valore fino a 1.100 euro) o 49,00 euro (da 1.100 a 5.200 euro), perchï¿½ lo sfratto gode della riduzione del 50% rispetto alle cause ordinarie.</p>
   <h3>Oltre al contributo unificato, cosa devo versare al deposito?</h3>
   <p>Una marca da bollo da 27 euro, che copre in modo forfettario le spese di notifica e cancelleria anticipate dal tribunale.</p>
   <h3>Il contributo unificato lo posso recuperare dall'inquilino?</h3>
-  <p>Sì. È una spesa ripetibile: di regola il giudice la pone a carico dell'inquilino che perde la causa, insieme alle altre spese legali. Tu la anticipi, ma puoi chiederne il rimborso.</p>
+  <p>Sï¿½. ï¿½ una spesa ripetibile: di regola il giudice la pone a carico dell'inquilino che perde la causa, insieme alle altre spese legali. Tu la anticipi, ma puoi chiederne il rimborso.</p>
   <h3>Cosa succede al contributo se l'inquilino si oppone?</h3>
-  <p>Se la causa prosegue nel merito come giudizio ordinario, devi integrare il contributo unificato fino all'importo intero dello scaglione, perché la riduzione del 50% vale solo per la fase di convalida. L'inquilino che si limita a opporsi, invece, non versa nulla.</p>
+  <p>Se la causa prosegue nel merito come giudizio ordinario, devi integrare il contributo unificato fino all'importo intero dello scaglione, perchï¿½ la riduzione del 50% vale solo per la fase di convalida. L'inquilino che si limita a opporsi, invece, non versa nulla.</p>
   <h3>Chi non paga il canone deve pagare anche il bollo e la tassa?</h3>
   <p>Non al momento del deposito: quelle somme le anticipa il proprietario. Ma se l'inquilino perde la causa, il giudice di regola lo condanna a rimborsarle.</p>
 
   <h2>In sintesi</h2>
-  <p>Il contributo unificato per lo sfratto è una spesa contenuta  spesso 21,50 o 49,00 euro grazie alla riduzione del 50%  a cui si aggiunge la marca da bollo da 27 euro. Il vero costo della procedura sta nelle notifiche, nell'eventuale fase esecutiva e nell'onorario dell'avvocato. La cosa importante da ricordare è che tutte queste spese sono in linea di massima recuperabili dall'inquilino moroso. Conoscere in anticipo queste voci ti permette di affrontare lo sfratto con un budget realistico e senza sorprese.</p>
+  <p>Il contributo unificato per lo sfratto ï¿½ una spesa contenuta  spesso 21,50 o 49,00 euro grazie alla riduzione del 50%  a cui si aggiunge la marca da bollo da 27 euro. Il vero costo della procedura sta nelle notifiche, nell'eventuale fase esecutiva e nell'onorario dell'avvocato. La cosa importante da ricordare ï¿½ che tutte queste spese sono in linea di massima recuperabili dall'inquilino moroso. Conoscere in anticipo queste voci ti permette di affrontare lo sfratto con un budget realistico e senza sorprese.</p>
   <p>Se vuoi una valutazione del tuo caso e una stima chiara dei costi prima di partire, puoi richiedere una prima consulenza tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
 
-  <p><em>Riferimenti normativi: contributo unificato e relativi scaglioni, art. 13 D.P.R. 30 maggio 2002 n. 115 (Testo Unico spese di giustizia); riduzione alla metà per i procedimenti speciali di convalida di sfratto, art. 13, comma 3, D.P.R. 115/2002; determinazione del valore nelle controversie di locazione, art. 12 c.p.c.; anticipazione forfettaria delle spese (marca da bollo da 27 euro), art. 30 D.P.R. 115/2002; condanna della parte soccombente al rimborso delle spese di lite, art. 91 c.p.c.; procedimento per convalida di sfratto, artt. 657 e seguenti c.p.c.; mutamento del rito in caso di opposizione, art. 667 c.p.c.</em></p>
+  <p><em>Riferimenti normativi: contributo unificato e relativi scaglioni, art. 13 D.P.R. 30 maggio 2002 n. 115 (Testo Unico spese di giustizia); riduzione alla metï¿½ per i procedimenti speciali di convalida di sfratto, art. 13, comma 3, D.P.R. 115/2002; determinazione del valore nelle controversie di locazione, art. 12 c.p.c.; anticipazione forfettaria delle spese (marca da bollo da 27 euro), art. 30 D.P.R. 115/2002; condanna della parte soccombente al rimborso delle spese di lite, art. 91 c.p.c.; procedimento per convalida di sfratto, artt. 657 e seguenti c.p.c.; mutamento del rito in caso di opposizione, art. 667 c.p.c.</em></p>
 
   <p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale personalizzata. Gli importi del contributo unificato sono quelli vigenti alla data di pubblicazione; verifica sempre l'importo aggiornato e il valore della tua causa con un professionista prima del deposito.</em></p>`,
   },
