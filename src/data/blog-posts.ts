@@ -15,6 +15,74 @@ export interface BlogPost {
 }
 
 const posts: BlogPost[] = [
+  {
+    slug: "convalida-di-sfratto",
+    title: "Convalida di sfratto: come funziona l'udienza e cosa succede dopo — guida per il proprietario",
+    description: "Convalida di sfratto: cos'è, come si svolge l'udienza, i tre scenari possibili e cosa fare dopo per riavere l'immobile. Guida per il proprietario.",
+    excerpt: "La convalida di sfratto è il momento in cui il giudice, davanti all'inquilino, conferma lo sfratto e fissa la data del rilascio. Per il proprietario è il passaggio decisivo dell'intera procedura. Guida pratica all'udienza di convalida: cosa succede davvero, i tre scenari possibili (convalida immediata, opposizione dell'inquilino, termine di grazia per il moroso), cosa devi preparare e cosa accade subito dopo per riavere l'immobile.",
+    lead: "La convalida di sfratto è il momento in cui il giudice, davanti alle parti, conferma lo sfratto e fissa la data entro cui l'inquilino deve liberare l'immobile. È il passaggio centrale dell'intera procedura: tutto quello che viene prima (l'intimazione, la notifica) serve ad arrivarci, e tutto quello che viene dopo (precetto ed esecuzione) parte da qui. Questa guida spiega al proprietario, in parole semplici, cos'è la convalida, come si svolge l'udienza, quali sono i tre scenari possibili e cosa fare per non perdere tempo.",
+    publishedAt: "2026-06-19",
+    updatedAt: "2026-06-19",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-06-19. Keyword: convalida di sfratto, vol 210, KD 0 (DataForSEO). Secondarie: udienza di convalida di sfratto, opposizione alla convalida di sfratto, procedimento di convalida di sfratto, ordinanza di convalida.",
+    html: `  <p>La <strong>convalida di sfratto</strong> è il momento in cui il giudice, davanti alle parti, conferma lo sfratto e fissa la data entro cui l'inquilino deve liberare l'immobile. È il passaggio centrale dell'intera procedura: tutto quello che viene prima (l'intimazione, la notifica) serve ad arrivarci, e tutto quello che viene dopo (precetto ed esecuzione) parte da qui. Questa guida spiega al proprietario, in parole semplici, che cos'è la convalida, come si svolge l'udienza, quali sono i tre scenari possibili e cosa fare per non perdere tempo.</p>
+
+  <h2>Che cos'è la convalida di sfratto</h2>
+  <p>La <strong>convalida di sfratto</strong> è il provvedimento (un'ordinanza) con cui il giudice riconosce che lo sfratto intimato dal proprietario è fondato e ordina all'inquilino di rilasciare l'immobile entro una certa data. Si arriva alla convalida attraverso un procedimento giudiziario rapido, chiamato "procedimento per convalida di sfratto", disciplinato dagli articoli 657 e seguenti del codice di procedura civile.</p>
+  <p>Il proprietario (il "locatore") fa notificare all'inquilino (il "conduttore") un atto di <strong>intimazione di sfratto</strong> che contiene già la <strong>citazione a comparire</strong> davanti al Tribunale in una data fissata. Lo sfratto può essere per <strong>morosità</strong> (l'inquilino non paga il canone) o per <strong>finita locazione</strong> (il contratto è scaduto e l'inquilino non lascia l'immobile). In entrambi i casi il cuore della procedura è la stessa: l'udienza di convalida. Se vuoi il quadro completo della procedura passo per passo, abbiamo la <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a>.</p>
+
+  <h2>L'udienza di convalida: cosa succede davvero</h2>
+  <p>All'udienza si presentano (o dovrebbero presentarsi) il proprietario, di solito tramite il proprio avvocato, e l'inquilino. Quello che accade dipende dal comportamento dell'inquilino, e si riduce a <strong>tre scenari</strong>.</p>
+
+  <h3>Scenario 1 — L'inquilino non compare o non si oppone</h3>
+  <p>È il caso più frequente. Se l'inquilino, regolarmente citato, <strong>non si presenta</strong> all'udienza, oppure si presenta ma <strong>non solleva una vera opposizione</strong>, il giudice convalida lo sfratto con un'ordinanza (articolo 663 del codice di procedura civile). L'ordinanza di convalida costituisce <strong>titolo esecutivo</strong>: significa che il proprietario ha in mano il provvedimento per procedere, a tempo debito, al rilascio. Il giudice fissa anche la data entro cui l'immobile deve essere liberato.</p>
+
+  <h3>Scenario 2 — L'inquilino moroso chiede il "termine di grazia"</h3>
+  <p>Solo nello sfratto <strong>per morosità</strong> e nelle locazioni a uso abitativo, l'inquilino può chiedere al giudice un <strong>termine di grazia</strong>: un periodo di tempo (fino a 90 giorni) per pagare tutto quello che deve, canoni arretrati e spese comprese. Se paga entro il termine, lo sfratto si blocca e il contratto prosegue; se non paga, alla nuova udienza il giudice convalida lo sfratto. Questa possibilità è prevista dall'articolo 55 della legge 392 del 1978 e non può essere usata all'infinito: la legge pone un limite al numero di volte in cui l'inquilino può ricorrervi. Ne parliamo in dettaglio nella guida al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+
+  <h3>Scenario 3 — L'inquilino si oppone</h3>
+  <p>Se l'inquilino contesta lo sfratto con motivi seri (per esempio sostiene di aver pagato, o discute l'importo dovuto), il giudice non può convalidare subito: la causa prosegue come un normale processo, con tempi più lunghi. Tuttavia, se l'opposizione <strong>non è sostenuta da prova scritta</strong>, il giudice può comunque emettere un'<strong>ordinanza provvisoria di rilascio</strong> dell'immobile (articolo 665 del codice di procedura civile), che consente al proprietario di procedere ugualmente mentre la causa continua. È qui che si capisce perché impostare bene il caso fin dall'inizio fa la differenza.</p>
+
+  <h2>Convalida o ordinanza di rilascio: che differenza c'è</h2>
+  <p>I due termini creano spesso confusione. L'<strong>ordinanza di convalida</strong> (articolo 663) si ha quando l'inquilino non si oppone: lo sfratto è confermato in via definitiva. L'<strong>ordinanza provvisoria di rilascio</strong> (articolo 665) si ha invece quando l'inquilino si oppone, ma la sua opposizione non è basata su prova scritta: il proprietario ottiene comunque il rilascio, ma la causa sul merito prosegue. In entrambi i casi il proprietario può avviare il rilascio; cambia la "solidità" del provvedimento.</p>
+
+  <h2>Cosa deve preparare il proprietario</h2>
+  <ul>
+  <li><strong>Il contratto di locazione</strong> registrato e gli eventuali rinnovi.</li>
+  <li><strong>La prova della morosità</strong>: conteggio aggiornato dei canoni non pagati, estratti conto, eventuali solleciti. Una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida</a> inviata prima rafforza la posizione.</li>
+  <li><strong>La prova della notifica</strong> regolare dell'intimazione all'inquilino: senza notifica valida, l'udienza salta.</li>
+  <li><strong>Per la finita locazione</strong>: la disdetta inviata nei termini e la prova della scadenza del contratto.</li>
+  </ul>
+  <p>Il deposito degli atti avviene oggi in modo <strong>telematico</strong>, secondo le regole del processo civile aggiornate dalla riforma Cartabia. Avere il fascicolo in ordine prima dell'udienza è il modo più sicuro per ottenere la convalida senza rinvii.</p>
+
+  <h2>Cosa succede dopo la convalida</h2>
+  <p>La convalida non significa che l'immobile si libera da solo il giorno stesso. L'ordinanza è un <strong>titolo esecutivo</strong>: per riavere materialmente la casa, se l'inquilino non se ne va spontaneamente entro la data fissata, il proprietario deve avviare la fase esecutiva, che passa dall'atto di precetto e dall'intervento dell'ufficiale giudiziario. Tutti i passaggi sono spiegati nella guida allo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e al rilascio dell'immobile</a>.</p>
+
+  <h2>Gli errori più comuni</h2>
+  <ul>
+  <li><strong>Notifica difettosa</strong>: un'intimazione notificata male fa rinviare l'udienza e allunga i tempi. È il problema numero uno.</li>
+  <li><strong>Conteggio della morosità impreciso</strong>: cifre sbagliate o non aggiornate indeboliscono la richiesta.</li>
+  <li><strong>Non presentarsi o non chiedere la convalida</strong>: se il proprietario non compare e non insiste, il procedimento può estinguersi.</li>
+  <li><strong>Pensare di poter agire da soli dopo la convalida</strong>: cambiare la serratura o entrare in casa è vietato, anche con l'ordinanza in mano. Il rilascio passa sempre dall'ufficiale giudiziario.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Dopo la convalida posso entrare subito nell'immobile?</h3>
+  <p>No. L'ordinanza di convalida fissa una data per il rilascio, ma se l'inquilino non lascia spontaneamente l'immobile serve la fase esecutiva con l'ufficiale giudiziario. Non è mai consentito riprendere possesso da soli.</p>
+  <h3>Devo essere presente all'udienza di convalida?</h3>
+  <p>Di norma è il tuo avvocato a comparire e a chiedere la convalida. La tua presenza fisica non è richiesta, ma è essenziale che il legale insista per la convalida e che il fascicolo sia completo.</p>
+  <h3>Cosa succede se l'inquilino si oppone?</h3>
+  <p>La causa prosegue come processo ordinario, con tempi più lunghi. Se però l'opposizione non si fonda su prova scritta, il giudice può concederti subito un'ordinanza provvisoria di rilascio (articolo 665), così da non restare bloccato.</p>
+  <h3>Lo sfratto per finita locazione segue lo stesso percorso?</h3>
+  <p>Sì, il procedimento di convalida è lo stesso. Cambia il motivo (contratto scaduto invece di canoni non pagati) e non si applica il termine di grazia, che riguarda solo la morosità. Vedi la guida allo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
+  <h2>In conclusione</h2>
+  <p>La convalida di sfratto è il momento in cui il proprietario passa dalla richiesta al titolo per riavere l'immobile. Arrivarci con una notifica regolare, un conteggio preciso e un fascicolo ordinato è ciò che fa la differenza tra una convalida rapida e mesi di rinvii. I riferimenti normativi essenziali sono gli articoli 657-669 del codice di procedura civile (procedimento per convalida di sfratto), in particolare l'articolo 663 (convalida) e l'articolo 665 (opposizione e ordinanza provvisoria di rilascio), l'articolo 55 della legge 392/1978 (termine di grazia) e la riforma Cartabia (decreto legislativo 149/2022 e correttivo 164/2024) per la parte sul processo telematico.</p>
+  <p>Se hai un'udienza di convalida in arrivo o stai valutando di avviare lo sfratto, lo Studio può seguirti in tutte le fasi: <a href="/#contatti">contattaci per una prima consulenza gratuita</a>.</p>
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+
 
   {
     slug: "spese-condominiali-inquilino",
