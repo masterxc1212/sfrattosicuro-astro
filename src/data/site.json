@@ -21,7 +21,12 @@
     },
     "sameAs": [
       "https://maps.app.goo.gl/Sfratto-Sicuro-Salerno",
-      "https://www.sfrattosicuro.it"
+      "https://www.sfrattosicuro.it",
+      "https://www.facebook.com/sfrattosicuro",
+      "https://www.instagram.com/sfrattosicuro",
+      "https://www.tiktok.com/@sfrattosicuro",
+      "https://www.youtube.com/@SfrattoSicuro",
+      "https://www.linkedin.com/company/sfratto-sicuro"
     ],
     "openingHoursSpecification": [
       {
@@ -39,7 +44,12 @@
     ]
   },
   "social": {
-    "whatsapp": "https://wa.me/393519179179",
+    "whatsapp": "https://wa.me/393291175957",
+    "facebook": "https://www.facebook.com/sfrattosicuro",
+    "instagram": "https://www.instagram.com/sfrattosicuro",
+    "tiktok": "https://www.tiktok.com/@sfrattosicuro",
+    "youtube": "https://www.youtube.com/@SfrattoSicuro",
+    "linkedin": "https://www.linkedin.com/company/sfratto-sicuro",
     "twitter": ""
   }
 }

@@ -40,6 +40,9 @@ const legalName = org?.legalName ?? 'D1 S.R.L.S.';
 const vatId = (org?.vatID || '').replace(/^IT/i, '') || '06177400659';
 const legalEmail = org?.email ?? 'consulenza@sfrattosicuro.it';
 const legalPhone = org?.telephone ?? '+39 02 8089 8395';
+
+const social = (site.social ?? {}) as Record<string, string>;
+const hasSocial = Boolean(social.facebook || social.instagram || social.tiktok || social.youtube || social.linkedin);
 ---
 
 <footer class="site-footer" role="contentinfo">
@@ -54,6 +57,35 @@ const legalPhone = org?.telephone ?? '+39 02 8089 8395';
           </div>
         </a>
         <p class="muted">Il primo servizio legale in Italia specializzato esclusivamente nel recupero immobili per morosità.</p>
+        {hasSocial && (
+          <ul class="social-links" aria-label="Sfratto Sicuro sui social">
+            {social.facebook && (
+              <li><a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Sfratto Sicuro su Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+              </a></li>
+            )}
+            {social.instagram && (
+              <li><a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Sfratto Sicuro su Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.5.01-4.74.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.39-.32-1.71a2.86 2.86 0 0 0-.69-1.06 2.86 2.86 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.95-9.22a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
+              </a></li>
+            )}
+            {social.tiktok && (
+              <li><a href={social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="Sfratto Sicuro su TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.01-2.82h-3.3v12.96a2.59 2.59 0 1 1-2.59-2.59c.27 0 .52.04.77.11V9.95a5.88 5.88 0 0 0-.77-.05A5.88 5.88 0 1 0 15.6 15.8V9.4a7.55 7.55 0 0 0 4.4 1.41V7.5a4.28 4.28 0 0 1-3.4-1.68z"/></svg>
+              </a></li>
+            )}
+            {social.youtube && (
+              <li><a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="Sfratto Sicuro su YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+              </a></li>
+            )}
+            {social.linkedin && (
+              <li><a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Sfratto Sicuro su LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              </a></li>
+            )}
+          </ul>
+        )}
         <p class="muted small legal-links">
           <a href="/privacy-policy/">Privacy Policy</a> ·
           <a href="/termini/">Termini</a> ·

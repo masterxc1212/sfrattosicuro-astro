@@ -712,6 +712,35 @@ section[id],
   .site-footer .where-line strong { color: #fff; font-weight: 600; }
   .site-footer .where-note { margin: 6px 0 0; color: rgba(245, 244, 240, 0.66); font-size: 0.88rem; line-height: 1.5; }
   @media (min-width: 900px) { .site-footer .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 56px; } }
+  .site-footer .social-links {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .site-footer .social-links li { margin: 0; }
+  .site-footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-on-dark);
+    background: rgba(255, 255, 255, 0.025);
+    color: rgba(245, 244, 240, 0.86) !important;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+  .site-footer .social-links a:hover {
+    background: var(--green-security, #1E4A38);
+    border-color: transparent;
+    color: #fff !important;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  .site-footer .social-links svg { width: 18px; height: 18px; display: block; }
 
 /* === HERO === */
 /* --- HeroInstitutionalIsland.astro --- */
