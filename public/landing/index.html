@@ -4196,7 +4196,8 @@ img{max-width:100%;height:auto;display:block}
 
   
 
-  // Carica SOLO dopo interazione o 15 secondi
+  // Carica il tag il prima possibile: lo swap del numero d'inoltro Google (WEBSITE_CALL)
+  // deve essere pronto PRIMA che l'utente tocchi "Chiama". Lo script resta async.
 
   let triggered=false;
 
@@ -4220,7 +4221,10 @@ img{max-width:100%;height:auto;display:block}
 
   
 
-  setTimeout(trigger,15000);
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',trigger,{once:true});}else{trigger();}
+
+  // fallback di sicurezza
+  setTimeout(trigger,1200);
 
 })();
 
