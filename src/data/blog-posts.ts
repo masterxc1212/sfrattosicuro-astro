@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "recesso-anticipato-contratto-locazione",
+    title: "Recesso anticipato del contratto di locazione: cosa può fare il proprietario",
+    description: "Recesso anticipato del contratto di locazione: quando l'inquilino può uscire prima, il preavviso di sei mesi e cosa può fare il proprietario.",
+    excerpt: "Il recesso anticipato è la richiesta dell'inquilino di lasciare l'immobile prima della scadenza del contratto. Guida pratica per il proprietario: quando l'inquilino può davvero recedere, la regola del preavviso di sei mesi, cosa puoi pretendere se non viene rispettato, la restituzione del deposito e perché il proprietario, di norma, non può uscire in anticipo.",
+    lead: "Il recesso anticipato del contratto di locazione è la richiesta dell'inquilino di lasciare l'immobile prima della scadenza naturale. Questa guida spiega al proprietario, in parole semplici, quando l'inquilino può recedere prima del tempo, la regola del preavviso di sei mesi, cosa puoi pretendere e perché tu, di norma, non puoi fare altrettanto.",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    category: "Locazioni",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-06-23. Keyword: recesso anticipato contratto locazione, vol 720, KD 0 (DataForSEO). Secondarie: recesso anticipato contratto locazione da parte del locatore, penale per recesso anticipato, preavviso recesso conduttore.",
+    html: `
+<p>Il <strong>recesso anticipato del contratto di locazione</strong> è la richiesta dell'inquilino di lasciare l'immobile <strong>prima della scadenza naturale</strong> del contratto. Per il proprietario è un momento delicato: il canone si interrompe, l'appartamento torna disponibile in un momento non programmato e spesso restano dubbi su preavviso, penale e restituzione del deposito. Questa guida spiega, in parole semplici e dalla parte del proprietario, quando l'inquilino può davvero recedere prima del tempo, quali regole deve rispettare, cosa puoi pretendere e — punto importante — perché il proprietario, di norma, non gode dello stesso diritto di uscita anticipata.</p>
+
+<h2>Che cos'è il recesso anticipato</h2>
+<p>Il <strong>recesso</strong> è l'atto con cui una parte decide di sciogliere il contratto prima della sua scadenza. Va tenuto distinto da due cose diverse. La <strong>disdetta</strong> è la comunicazione con cui si impedisce il rinnovo del contratto alla scadenza: non interrompe nulla in anticipo, ne blocca soltanto la prosecuzione. La <strong>risoluzione</strong>, invece, è la fine del contratto per un inadempimento (ad esempio l'inquilino che non paga). Il recesso anticipato è un'altra cosa ancora: il rapporto è regolare, nessuno è inadempiente, ma una parte vuole comunque chiuderlo prima del termine. Se ti interessa la differenza con la fine del rapporto alla scadenza, abbiamo una guida dedicata alla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del locatore</a>.</p>
+
+<h2>Quando l'inquilino può recedere prima della scadenza</h2>
+<p>Nella locazione a uso abitativo l'inquilino (il "conduttore") ha due strade per uscire prima del tempo.</p>
+
+<h3>1. Il recesso previsto dal contratto</h3>
+<p>Molti contratti contengono una clausola che riconosce all'inquilino la <strong>facoltà di recedere in qualsiasi momento</strong>, dando un <strong>preavviso</strong> (di solito sei mesi). Se questa clausola c'è, l'inquilino può andarsene anche senza una ragione particolare: gli basta rispettare il preavviso. È la situazione più comune, perché conviene a entrambi avere regole chiare scritte fin dall'inizio.</p>
+
+<h3>2. Il recesso per "gravi motivi"</h3>
+<p>Anche quando il contratto non prevede nulla, la legge consente comunque al conduttore di recedere <strong>per gravi motivi</strong>, con un preavviso di sei mesi. Questo diritto è riconosciuto dall'articolo 3, comma 6, della legge 431 del 1998 e dall'articolo 4 della legge 392 del 1978. I "gravi motivi" non sono un semplice ripensamento: devono essere fatti <strong>sopravvenuti</strong> (cioè successivi alla firma), <strong>estranei alla volontà</strong> dell'inquilino e tali da rendere molto gravoso continuare la locazione. Esempi tipici riconosciuti dai giudici sono il trasferimento di lavoro in un'altra città, una grave malattia, una perdita rilevante di reddito o seri motivi familiari. Un semplice "ho trovato una casa più bella" non basta.</p>
+
+<h2>Il preavviso: la regola dei sei mesi</h2>
+<p>Sia nel recesso da contratto sia in quello per gravi motivi, il punto pratico più importante è il <strong>preavviso di sei mesi</strong>. L'inquilino deve comunicare la sua decisione per iscritto, di norma con <strong>raccomandata con ricevuta di ritorno</strong> o con <strong>PEC</strong> (la posta elettronica certificata, che ha valore legale). I sei mesi decorrono dal momento in cui tu, proprietario, <strong>ricevi</strong> la comunicazione, non dalla data in cui l'inquilino l'ha scritta.</p>
+<p>Durante tutto il periodo di preavviso il contratto resta pienamente in vigore: l'inquilino <strong>deve continuare a pagare il canone</strong> e tu non sei tenuto a liberarlo prima. Le parti possono però accordarsi per una riconsegna anticipata, ad esempio se trovi subito un nuovo inquilino: in quel caso conviene mettere l'accordo per iscritto.</p>
+
+<h2>Cosa puoi pretendere se l'inquilino non rispetta le regole</h2>
+<p>Qui si gioca la tutela del proprietario. Possono capitare due situazioni.</p>
+<ul>
+<li><strong>L'inquilino se ne va senza preavviso (o con preavviso troppo breve).</strong> In questo caso hai diritto al pagamento dei canoni per l'intero periodo di preavviso non rispettato — di regola i sei mesi — a titolo di indennizzo, anche se l'appartamento è già vuoto.</li>
+<li><strong>L'inquilino invoca "gravi motivi" che gravi non sono.</strong> Se i motivi non hanno i requisiti di legge, il recesso non è valido come recesso per gravi motivi: l'inquilino resta vincolato e, se lascia comunque l'immobile, ti deve i canoni fino alla scadenza o, in presenza di una clausola, la penale concordata.</li>
+</ul>
+<p>Attenzione a un punto delicato: se l'inquilino smette di pagare e basta, non sei davanti a un recesso ma a una <strong>morosità</strong>, che si affronta con strumenti diversi. Ne parliamo nella guida alla <a href="/blog/risoluzione-contratto-locazione/">risoluzione del contratto di locazione</a>.</p>
+
+<h2>E il proprietario può recedere prima della scadenza?</h2>
+<p>È la domanda che molti locatori si pongono, e la risposta sorprende: <strong>no, durante il contratto il proprietario non può recedere liberamente</strong>. Nelle locazioni abitative ordinarie (i contratti "4+4" e "3+2") il legislatore ha voluto proteggere la stabilità abitativa dell'inquilino. Il proprietario non può interrompere il rapporto in corso solo perché ha cambiato idea o perché gli serve la casa subito.</p>
+<p>Il proprietario può però <strong>impedire il rinnovo alla prima scadenza</strong> (per i 4+4, dopo i primi quattro anni) inviando la disdetta nei termini e <strong>solo per i motivi tassativi</strong> previsti dall'articolo 3 della legge 431 del 1998: ad esempio se vuole destinare l'immobile a sé o a un familiare stretto, venderlo a certe condizioni, o ristrutturarlo in modo radicale. Alla seconda scadenza, invece, la disdetta è libera. È una differenza importante da capire prima di firmare un contratto pensando di poter "rientrare quando serve".</p>
+
+<h2>La riconsegna e il deposito cauzionale</h2>
+<p>Quando l'inquilino esce, regolarmente o in anticipo, restano due adempimenti pratici. Il primo è la <strong>riconsegna delle chiavi</strong>, che conviene formalizzare con un verbale firmato da entrambi, in cui si annota lo stato dell'immobile e la lettura dei contatori. Il secondo è la <strong>restituzione del deposito cauzionale</strong>: puoi trattenerlo solo se ci sono danni o importi ancora dovuti, e devi essere in grado di documentarli. Abbiamo spiegato quando si può legittimamente trattenere la cauzione nella guida al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>.</p>
+
+<h2>Gli errori più comuni del proprietario</h2>
+<ul>
+<li><strong>Accettare a voce la riconsegna anticipata</strong> senza un accordo scritto: poi è difficile dimostrare cosa era stato pattuito sui canoni residui.</li>
+<li><strong>Non verificare la data di ricevimento del preavviso</strong>: i sei mesi partono da lì, ed è il riferimento per calcolare cosa l'inquilino deve ancora.</li>
+<li><strong>Rinunciare ai canoni del preavviso</strong> pensando di non averne diritto perché la casa è già vuota: se il preavviso non è stato rispettato, quel diritto esiste.</li>
+<li><strong>Trattenere il deposito senza prove</strong>: senza documentazione dei danni, l'inquilino può chiederne la restituzione integrale.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino può andarsene quando vuole?</h3>
+<p>Solo se il contratto glielo consente con una clausola di recesso, oppure se ricorrono "gravi motivi" sopravvenuti ed estranei alla sua volontà. In entrambi i casi deve darti sei mesi di preavviso per iscritto.</p>
+<h3>Durante i sei mesi di preavviso l'inquilino paga ancora?</h3>
+<p>Sì. Il contratto resta in vigore fino alla fine del preavviso, quindi il canone va pagato regolarmente, anche se l'inquilino ha già lasciato fisicamente l'immobile.</p>
+<h3>Se l'inquilino sparisce senza preavviso, cosa posso chiedere?</h3>
+<p>Hai diritto ai canoni per il periodo di preavviso non rispettato, di regola sei mesi, a titolo di indennizzo. È utile farsi assistere per inviare la richiesta nel modo corretto e, se necessario, recuperare le somme.</p>
+<h3>Posso io proprietario mandare via l'inquilino prima della scadenza?</h3>
+<p>No, non con un recesso libero. Durante il contratto sei vincolato; puoi al massimo impedire il rinnovo alla scadenza, con la disdetta nei termini e, alla prima scadenza, solo per i motivi previsti dalla legge.</p>
+<h3>Il recesso vale anche con la cedolare secca?</h3>
+<p>Sì. La cedolare secca è solo un regime fiscale per la tassazione del canone: non cambia le regole sul recesso, sul preavviso o sulla durata del contratto.</p>
+
+<h2>In conclusione</h2>
+<p>Il recesso anticipato non è un "liberi tutti": l'inquilino può uscire prima della scadenza solo con una clausola di contratto o per gravi motivi, sempre con sei mesi di preavviso e continuando a pagare fino alla fine del periodo. Il proprietario, dal canto suo, è più vincolato di quanto pensi e durante il contratto non può recedere liberamente. Conoscere queste regole ti permette di gestire l'uscita dell'inquilino senza perdere i canoni che ti spettano e senza commettere passi falsi sul deposito. I riferimenti normativi essenziali sono l'articolo 3 della legge 431 del 1998 (recesso del conduttore per gravi motivi e disdetta del locatore alla prima scadenza), l'articolo 4 della legge 392 del 1978. Questa guida riguarda gli immobili a uso abitativo; per gli immobili a uso diverso (negozi, uffici) il recesso del conduttore per gravi motivi, con preavviso di almeno sei mesi, è invece regolato dall'articolo 27 della stessa legge 392 del 1978.</p>
+<p>Se un tuo inquilino ti ha comunicato il recesso, oppure è uscito senza rispettare il preavviso e vuoi recuperare i canoni dovuti, lo Studio può valutare il tuo caso: <a href="/#contatti">c`,
+  },
+
+  {
     slug: "convalida-di-sfratto",
     title: "Convalida di sfratto: come funziona l'udienza e cosa succede dopo — guida per il proprietario",
     description: "Convalida di sfratto: cos'è, come si svolge l'udienza, i tre scenari possibili e cosa fare dopo per riavere l'immobile. Guida per il proprietario.",
