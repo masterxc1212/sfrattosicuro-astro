@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-con-ufficiale-giudiziario",
+    title: "Sfratto con ufficiale giudiziario: come funzionano gli accessi",
+    description: "Sfratto con ufficiale giudiziario: come funzionano gli accessi, il preavviso di rilascio, la proroga e cosa fa il proprietario il giorno del rilascio.",
+    excerpt: "Hai la convalida e il precetto, ma l'inquilino è ancora in casa: ora interviene l'ufficiale giudiziario. Guida pratica per il proprietario su come funzionano gli accessi, perché spesso ne serve più di uno, la proroga, la forza pubblica e cosa fare il giorno del rilascio.",
+    lead: "Dopo la convalida e il precetto, il rilascio dell'immobile passa nelle mani dell'ufficiale giudiziario, con uno o più accessi sul posto. Vediamo, dalla parte del proprietario, cosa succede il giorno dell'accesso, perché spesso ne serve più di uno e come arrivare prima alla consegna delle chiavi.",
+    publishedAt: "2026-06-24",
+    updatedAt: "2026-06-24",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-06-24. Keyword: sfratto con ufficiale giudiziario, vol 170, KD 0 (DataForSEO). Secondarie: primo/secondo accesso ufficiale giudiziario, sfratto ufficiale giudiziario proroga.",
+    html: `  <p>Hai ottenuto la convalida dello sfratto, hai notificato il precetto e l'inquilino è ancora in casa: ora entra in scena l'ufficiale giudiziario. Lo <strong>sfratto con ufficiale giudiziario</strong> è la fase in cui il rilascio dell'immobile viene eseguito materialmente, con uno o più accessi sul posto. Questa guida è pensata per il proprietario che vuole sapere, in concreto, cosa succede il giorno dell'accesso, perché spesso ne serve più di uno e cosa fare per arrivare prima alla consegna delle chiavi.</p>
+
+  <h2>Chi è l'ufficiale giudiziario e quando interviene</h2>
+  <p>L'ufficiale giudiziario è il pubblico funzionario che esegue materialmente i provvedimenti del giudice. Opera all'interno dell'UNEP (Ufficio Notificazioni, Esecuzioni e Protesti), un ufficio presente presso ogni Tribunale. Nello sfratto è la persona che, alla fine del percorso, ti rimette nel possesso dell'immobile e ti consegna le chiavi.</p>
+  <p>Prima che l'ufficiale giudiziario possa presentarsi a casa dell'inquilino devono essere già stati fatti alcuni passaggi: l'<strong>ordinanza di convalida</strong> (il provvedimento con cui il giudice ordina il rilascio), la notifica dell'<strong>atto di precetto</strong> (l'intimazione formale a liberare l'immobile) e la richiesta di esecuzione all'UNEP. Se ti mancano questi passaggi, l'accesso non può partire: trovi la sequenza completa nella guida sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e il rilascio dell'immobile</a>.</p>
+
+  <h2>Il preavviso di rilascio: il giorno viene fissato in anticipo</h2>
+  <p>L'ufficiale giudiziario non si presenta a sorpresa. Prima dell'accesso notifica all'inquilino il <strong>preavviso di rilascio</strong>: un avviso che indica il giorno e l'ora in cui si recherà sul posto. Per legge il preavviso va comunicato <strong>di norma almeno dieci giorni prima</strong> dell'accesso, così che il conduttore sappia con certezza quando dovrà lasciare l'immobile. Da quel momento, il proprietario può organizzarsi per essere presente (di persona o tramite un delegato) il giorno indicato.</p>
+
+  <h2>Come funzionano gli accessi dell'ufficiale giudiziario</h2>
+  <p>Il punto che sorprende molti proprietari è che lo sfratto con ufficiale giudiziario quasi mai si chiude al primo tentativo. La legge non fissa un numero massimo di accessi: l'ufficiale giudiziario procede finché il rilascio non è completato. Ecco come si articola di solito.</p>
+
+  <h3>Il primo accesso</h3>
+  <p>Nel giorno e nell'ora del preavviso, l'ufficiale giudiziario si reca sul posto. Se l'inquilino ha già liberato l'immobile, o lo libera in quel momento, l'ufficiale giudiziario verbalizza la riconsegna, ti immette nel possesso e ti consegna le chiavi: lo sfratto è concluso. Se invece l'inquilino è ancora dentro, non collabora o chiede tempo, il <strong>primo accesso</strong> spesso si chiude con un rinvio a una data successiva. È una situazione frequente, non un fallimento della procedura.</p>
+
+  <h3>Il secondo accesso e quelli successivi</h3>
+  <p>Quando il primo tentativo non basta, l'ufficiale giudiziario fissa un <strong>secondo accesso</strong>, e se necessario altri ancora. A ogni accesso valuta la situazione: se l'inquilino resiste, se ci sono persone fragili in casa, se servono più tempo o mezzi per lo sgombero. Nei casi più difficili può rendersi necessario l'intervento della forza pubblica (ne parliamo più avanti). È normale che tra un accesso e l'altro passino settimane, per via dei tempi di agenda dell'ufficio: per questo conviene sollecitare la fissazione delle date e farsi trovare sempre pronti.</p>
+
+  <h2>La proroga e i differimenti del rilascio</h2>
+  <p>L'inquilino può chiedere più tempo. In presenza di motivi seri (per esempio la presenza di figli minori, persone anziane, malati o situazioni di particolare disagio), il <strong>giudice dell'esecuzione</strong> può concedere un differimento del rilascio, cioè una proroga della data dell'accesso (lo prevede l'art. 608-bis del codice di procedura civile, introdotto dalla riforma Cartabia). Si tratta di una valutazione caso per caso: non è automatica e non blocca per sempre lo sfratto, ma può allungare i tempi. Conoscere questa possibilità ti aiuta a non farti cogliere di sorpresa e a programmare le mosse con il tuo legale.</p>
+
+  <h2>L'intervento della forza pubblica</h2>
+  <p>Se l'inquilino oppone una resistenza concreta, o se al momento dell'accesso ci sono ostacoli allo sgombero, l'ufficiale giudiziario può farsi assistere dalla <strong>forza pubblica</strong> (carabinieri o polizia) per completare il rilascio in sicurezza. Anche in questo caso i tempi dipendono dalla disponibilità degli organi coinvolti e dall'organizzazione del singolo Tribunale. Il ricorso alla forza pubblica è una garanzia: assicura che lo sgombero avvenga in modo legale e ordinato, senza che il proprietario debba fare nulla di rischioso da solo.</p>
+
+  <h2>Cosa deve fare il proprietario il giorno dell'accesso</h2>
+  <p>Arrivare preparati all'accesso fa risparmiare tempo. Ecco una checklist pratica:</p>
+  <ul>
+    <li><strong>Essere presenti</strong> di persona o tramite un delegato (spesso il legale o un suo incaricato): serve qualcuno che prenda in consegna l'immobile e le chiavi.</li>
+    <li><strong>Avere con sé un fabbro di fiducia</strong>: se l'inquilino non apre o la serratura va cambiata, poterla sostituire subito evita un nuovo rinvio. L'apertura forzata avviene sempre sotto la direzione dell'ufficiale giudiziario, mai per iniziativa autonoma del proprietario.</li>
+    <li><strong>Predisporre come gestire i beni lasciati in casa</strong>: mobili e oggetti dell'inquilino non si possono buttare. Vanno verbalizzati e, se serve, custoditi; concorda prima con il legale e l'ufficiale giudiziario la soluzione corretta.</li>
+    <li><strong>Portare i documenti della pratica</strong>: copia dell'ordinanza di convalida, del precetto e del preavviso, utili per ogni evenienza.</li>
+    <li><strong>Documentare lo stato dell'immobile</strong> alla riconsegna (foto, eventuale verbale): è importante per quantificare danni e per i conti finali con l'inquilino.</li>
+  </ul>
+  <p>Per il quadro d'insieme dello sfratto per morosità, dalle prime mosse ai costi, puoi consultare la <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a>.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Pensare che il primo accesso risolva tutto.</strong> Spesso ne servono due o più: mettere in conto questa possibilità evita frustrazione e scelte affrettate.</li>
+    <li><strong>Non presentarsi all'accesso.</strong> Se manca il proprietario o un suo delegato, l'ufficiale giudiziario non ha a chi consegnare l'immobile e l'accesso rischia di saltare.</li>
+    <li><strong>Tentare lo sgombero da soli.</strong> Cambiare la serratura o rimuovere le cose dell'inquilino senza l'ufficiale giudiziario è illegale e può ritorcersi contro il proprietario. Il rilascio deve sempre passare dall'esecuzione ufficiale.</li>
+    <li><strong>Lasciar passare i giorni tra un atto e l'altro.</strong> Ritardare la richiesta di esecuzione o la fissazione degli accessi allunga i tempi e, di solito, fa crescere la morosità non incassata.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Quanti accessi servono per completare uno sfratto?</h3>
+  <p>Non c'è un numero fisso. Molte procedure si chiudono al secondo o terzo accesso, ma dipende dalla collaborazione dell'inquilino, dalla necessità della forza pubblica e dai tempi dell'ufficio dell'ufficiale giudiziario.</p>
+  <h3>Cosa succede se al primo accesso l'inquilino non apre?</h3>
+  <p>L'ufficiale giudiziario verbalizza l'esito e fissa un accesso successivo. Se la resistenza continua, può farsi assistere dalla forza pubblica e, se necessario, da un fabbro per aprire l'immobile.</p>
+  <h3>L'inquilino può ottenere una proroga dell'accesso?</h3>
+  <p>Sì, in casi motivati (presenza di minori, anziani, malati o gravi difficoltà) il giudice dell'esecuzione può concedere un differimento. È una valutazione caso per caso, non un diritto automatico.</p>
+  <h3>Devo essere presente di persona il giorno dell'accesso?</h3>
+  <p>Serve che ci sia il proprietario o un suo delegato (spesso il legale) per prendere in consegna l'immobile e le chiavi. Farsi rappresentare da chi gestisce la pratica è la soluzione più comoda.</p>
+  <h3>Chi paga il fabbro e gli oneri dell'accesso?</h3>
+  <p>Alcuni costi della fase esecutiva sono inizialmente a carico di chi procede, cioè il proprietario. Le spese legali possono però essere poste a carico dell'inquilino moroso nella decisione del giudice, ma non è automatico.</p>
+
+  <h2>In sintesi</h2>
+  <p>Lo sfratto con ufficiale giudiziario è la fase che trasforma la convalida in rilascio concreto. Sapere che gli accessi possono essere più di uno, che esiste la possibilità di una proroga e che la forza pubblica può intervenire ti permette di affrontare il giorno del rilascio senza sorprese e di non perdere tempo prezioso. La differenza la fa l'organizzazione: avere ogni atto pronto nei tempi giusti e farsi trovare preparati a ogni accesso.</p>
+  <p>Se vuoi capire come muoverti nel tuo caso specifico, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
+
+  <p><em>Riferimenti normativi: esecuzione per consegna o rilascio, artt. 605-611 c.p.c.; modo del rilascio e preavviso, art. 608 c.p.c.; differimento del rilascio per ragioni sociali, art. 608-bis c.p.c. (introdotto dalla riforma Cartabia); difficoltà nell'esecuzione e poteri del giudice dell'esecuzione, art. 610 c.p.c.; ordin`,
+  },
+  {
     slug: "recesso-anticipato-contratto-locazione",
     title: "Recesso anticipato del contratto di locazione: cosa può fare il proprietario",
     description: "Recesso anticipato del contratto di locazione: quando l'inquilino può uscire prima, il preavviso di sei mesi e cosa può fare il proprietario.",
