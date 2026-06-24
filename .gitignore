@@ -53,3 +53,8 @@ push-deploy.bat
 _push_result.txt
 _publish_push.bat
 *.restored
+
+# asset social di lavoro/output (video+immagini rigenerabili, ~35MB) — NON in git
+# (cartella di lavoro al root, non contenuto del sito Astro). Se ne vuoi tracciare
+# i soli script sorgente, togli questa riga e ignora le sottocartelle media.
+social/
