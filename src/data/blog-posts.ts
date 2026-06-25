@@ -16,6 +16,93 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "manutenzione-riparazioni-affitto-chi-paga",
+    title: "Manutenzione e riparazioni nell'affitto: chi paga, inquilino o proprietario",
+    description: "Riparazioni e manutenzione nell'affitto: chi paga tra inquilino e proprietario, il caso caldaia e cosa scrivere nel contratto. Guida per il locatore.",
+    excerpt: "Si rompe la caldaia, gocciola un rubinetto, si stacca una tapparella: chi paga, l'inquilino o il proprietario? Guida pratica alla ripartizione delle spese di manutenzione e riparazione nell'affitto, con il criterio della causa (uso o vetusta), il caso caldaia e le clausole da inserire nel contratto per evitare liti.",
+    lead: "Quando si affitta una casa, prima o poi arriva la domanda pratica: si rompe la caldaia, gocciola un rubinetto, si stacca una tapparella, chi paga, l'inquilino o il proprietario? Questa guida serve al proprietario che vuole sapere in anticipo quali spese restano a suo carico e quali toccano all'inquilino.",
+    publishedAt: "2026-06-25",
+    updatedAt: "2026-06-25",
+    category: "Locazioni",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-06-25. Keyword: manutenzione ordinaria e straordinaria affitto, vol 50, KD 13. Secondarie: riparazioni caldaia inquilino o proprietario (vol 40), riparazioni casa in affitto chi paga.",
+    html: `
+  <p>Quando si affitta una casa, prima o poi arriva la domanda pratica: si rompe la caldaia, gocciola un rubinetto, si stacca una tapparella — chi paga, l'inquilino o il proprietario? La <strong>manutenzione e le riparazioni nell'affitto</strong> sono una delle cause più frequenti di litigio tra locatore e conduttore, spesso perché nel contratto non si è scritto nulla di chiaro. Questa guida serve al proprietario che vuole sapere in anticipo quali spese restano a suo carico, quali toccano all'inquilino e come evitare discussioni quando qualcosa si guasta.</p>
+
+  <h2>La regola di base: chi paga le riparazioni nell'affitto</h2>
+  <p>Il principio è semplice e si trova nel Codice civile. Il proprietario (in termini giuridici il <em>locatore</em>) deve consegnare l'immobile in buono stato e mantenerlo idoneo all'uso per tutta la durata del contratto. L'inquilino (il <em>conduttore</em>) deve invece farsi carico solo della <strong>piccola manutenzione</strong>, cioè delle riparazioni minori legate all'uso quotidiano della casa.</p>
+  <p>La distinzione chiave è questa: si guarda alla <strong>causa</strong> del guasto, non al suo costo. Se il danno dipende dal normale uso dell'immobile, paga l'inquilino; se dipende da <strong>vetustà</strong> (cioè dall'invecchiamento) o da un evento imprevisto, paga il proprietario. È il criterio che separa la manutenzione ordinaria a carico del conduttore dalla manutenzione straordinaria a carico del locatore.</p>
+
+  <h2>Cosa paga il proprietario (manutenzione straordinaria)</h2>
+  <p>Sono a carico del proprietario tutti gli interventi che riguardano la struttura, gli impianti e gli elementi che si deteriorano con il tempo, indipendentemente da come l'inquilino usa la casa. In pratica:</p>
+  <ul>
+    <li><strong>Tetto, facciate, muri e strutture portanti</strong>: infiltrazioni, crepe, problemi di umidità non causati dall'inquilino.</li>
+    <li><strong>Impianti</strong>: messa a norma o rifacimento di impianto elettrico, idraulico, del gas e di riscaldamento.</li>
+    <li><strong>Sostituzione della caldaia</strong> quando si guasta per vetustà o non è più riparabile.</li>
+    <li><strong>Infissi e serramenti</strong> deteriorati dall'usura del tempo (non rotti per incuria).</li>
+    <li><strong>Guasti improvvisi</strong> non imputabili al conduttore, come la rottura di una tubazione incassata nel muro.</li>
+  </ul>
+  <p>In sintesi, tutto ciò che serve a mantenere l'immobile <strong>idoneo all'uso</strong> e che non nasce da un cattivo utilizzo è una spesa del proprietario.</p>
+
+  <h2>Cosa paga l'inquilino (piccola manutenzione)</h2>
+  <p>L'inquilino si fa carico delle riparazioni minori che derivano dall'uso normale della casa. Tipicamente:</p>
+  <ul>
+    <li>Sostituzione di guarnizioni, rubinetti gocciolanti, piccoli interventi su scarichi e sanitari.</li>
+    <li>Riparazione di tapparelle, maniglie, serrature, interruttori e prese danneggiati dall'uso.</li>
+    <li>Sostituzione di lampadine, fusibili e piccoli ricambi.</li>
+    <li><strong>Manutenzione ordinaria della caldaia</strong> e controllo dei fumi durante la locazione.</li>
+    <li>Tinteggiatura e piccoli ripristini legati all'uso quotidiano.</li>
+  </ul>
+  <p>Restano inoltre a carico dell'inquilino i <strong>danni che lui stesso provoca</strong>, per colpa o per cattivo uso: una porta sfondata, un pavimento rovinato, un sanitario rotto per incuria. Questi importi, se non sistemati, possono essere trattenuti dal <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> alla riconsegna dell'immobile.</p>
+
+  <h2>Il caso più discusso: la caldaia</h2>
+  <p>La caldaia merita un discorso a parte perché è la fonte di lite più comune. La regola pratica, in linea con la normativa sugli impianti termici, è questa:</p>
+  <ul>
+    <li><strong>A carico dell'inquilino</strong>: la manutenzione ordinaria periodica, la pulizia e il controllo dei fumi (il cosiddetto "bollino"), perché chi occupa l'immobile è responsabile dell'esercizio dell'impianto.</li>
+    <li><strong>A carico del proprietario</strong>: la sostituzione della caldaia per vetustà o guasto irreparabile, e la messa a norma dell'impianto.</li>
+  </ul>
+  <p>Un consiglio operativo: consegnare l'immobile con la caldaia revisionata e il libretto in regola, e annotarlo nel <a href="/blog/verbale-riconsegna-immobile/">verbale di consegna</a>. Così, se nasce una contestazione, è chiaro in che stato era l'impianto al momento della consegna.</p>
+
+  <h2>Riparazioni urgenti: cosa deve fare l'inquilino</h2>
+  <p>Se si verifica un guasto che richiede un intervento immediato e che spetta al proprietario (per esempio una perdita d'acqua importante), l'inquilino deve <strong>avvisare subito il locatore</strong>. Solo se l'urgenza non consente di attendere, il conduttore può far eseguire direttamente la riparazione, salvo poi chiedere il rimborso al proprietario. L'inquilino non può invece decidere di sua iniziativa lavori non urgenti e poi scalarli dal canone: il canone va sempre pagato per intero, anche in presenza di contestazioni.</p>
+
+  <h2>Cosa scrivere nel contratto per evitare liti</h2>
+  <p>La legge fissa la regola generale, ma molte discussioni nascono dai casi di confine. Per questo conviene mettere nero su bianco alcuni punti già nel contratto di locazione:</p>
+  <ul>
+    <li>Un <strong>elenco chiaro</strong> di quali manutenzioni sono a carico dell'inquilino (con la formula generale "piccola manutenzione da uso") e quali del proprietario.</li>
+    <li>L'obbligo per l'inquilino di <strong>comunicare tempestivamente</strong> guasti e malfunzionamenti.</li>
+    <li>La regola che la manutenzione ordinaria della caldaia spetta all'inquilino, con consegna del libretto d'impianto aggiornato.</li>
+    <li>Un <strong>verbale di consegna</strong> dettagliato, con stato degli impianti e degli arredi, eventualmente corredato di foto.</li>
+  </ul>
+  <p>Attenzione: non si può scaricare <em>tutto</em> sull'inquilino. Una clausola che mettesse a suo carico anche la manutenzione straordinaria sarebbe in contrasto con la legge e difficilmente difendibile in caso di causa. Per impostare un contratto solido può essere utile la pagina dedicata ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+
+  <h2>Errori comuni del proprietario</h2>
+  <ul>
+    <li><strong>Non fare il verbale di consegna</strong>: senza una fotografia dello stato iniziale, è difficile dimostrare che un danno l'ha causato l'inquilino.</li>
+    <li><strong>Confondere costo e causa</strong>: una riparazione può essere economica ma a carico del proprietario (se dipende da vetustà) o costosa ma a carico dell'inquilino (se l'ha provocata lui).</li>
+    <li><strong>Ignorare le segnalazioni</strong>: rinviare gli interventi che spettano al proprietario può aggravare il danno e legittimare l'inquilino a eseguirli in proprio.</li>
+    <li><strong>Affidarsi ad accordi verbali</strong>: senza nulla di scritto, ogni guasto diventa un'occasione di lite.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Chi paga la sostituzione della caldaia in un appartamento in affitto?</h3>
+  <p>La sostituzione della caldaia per vetustà o guasto irreparabile è a carico del proprietario. All'inquilino spetta solo la manutenzione ordinaria periodica e il controllo dei fumi durante la locazione.</p>
+  <h3>L'inquilino può scalare le riparazioni dall'affitto?</h3>
+  <p>No. Anche se la riparazione spetta al proprietario, il canone va pagato per intero. L'inquilino può chiedere il rimborso solo per le riparazioni urgenti che ha anticipato dopo aver avvisato il locatore, non decidere da solo di trattenere somme dal canone.</p>
+  <h3>Chi paga la tinteggiatura delle pareti a fine affitto?</h3>
+  <p>La tinteggiatura legata al normale uso e usura è in genere a carico dell'inquilino, salvo diverso accordo. Se invece le pareti sono solo "vissute" per il passare del tempo, senza danni, il proprietario non può pretenderne automaticamente il rifacimento.</p>
+  <h3>Le spese di manutenzione si possono mettere tutte nel contratto a carico dell'inquilino?</h3>
+  <p>No. Si può specificare cosa rientra nella piccola manutenzione, ma non si può addossare all'inquilino la manutenzione straordinaria: una clausola del genere sarebbe contraria alla legge.</p>
+  <h3>Cosa succede se l'inquilino non fa la manutenzione ordinaria della caldaia?</h3>
+  <p>L'inquilino risponde dei danni derivanti dalla mancata manutenzione che gli compete e dell'eventuale violazione degli obblighi di legge sull'impianto termico. È bene prevederlo espressamente nel contratto e conservare le ricevute degli interventi.</p>
+
+  <h2>In sintesi</h2>
+  <p>Sapere in anticipo chi paga le riparazioni evita gran parte dei conflitti con l'inquilino. La bussola è sempre la stessa: l'inquilino si occupa della piccola manutenzione legata all'uso, il proprietario di tutto ciò che riguarda struttura, impianti e vetustà. Il modo più sicuro per non discutere è un contratto chiaro e un verbale di consegna dettagliato, fatti prima che qualcosa si rompa.</p>
+  <p>Se hai un dubbio su una spesa contestata o vuoi impostare correttamente un contratto di locazione, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
+  <p><em>Contenuto a scopo informativo, non sostituisce una consulenza legale sul caso concreto.</em></p>
+  <p><em>Riferimenti normativi: obblighi del locatore, art. 1575 c.c.; riparazioni a carico del locatore e piccola manutenzione a carico del conduttore, art. 1576 c.c.; riparazioni urgenti e avviso al locatore, art. 1577 c.c.; nozione di piccola manutenzione legata all'uso e non a vetustà o caso fortuito, art. 1609 c.c.; oneri accessori nelle locazioni abitative, art. 9 L. 392/1978; manutenzione ed esercizio degli impianti termici, D.P.R. 74/2013.</em></p>`,
+  },
+  {
     slug: "sfratto-con-ufficiale-giudiziario",
     title: "Sfratto con ufficiale giudiziario: come funzionano gli accessi",
     description: "Sfratto con ufficiale giudiziario: come funzionano gli accessi, il preavviso di rilascio, la proroga e cosa fa il proprietario il giorno del rilascio.",
