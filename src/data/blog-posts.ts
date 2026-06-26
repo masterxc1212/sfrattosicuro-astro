@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sublocazione",
+    title: "Sublocazione: quando l'inquilino può subaffittare e cosa rischia il proprietario",
+    description: "Sublocazione abitativa: quando l'inquilino può subaffittare, quando serve il tuo consenso e cosa fare contro la sublocazione abusiva. Guida per i proprietari.",
+    excerpt: "Il tuo inquilino può subaffittare casa? In parte sì, ma con regole precise. Guida pratica per il proprietario: differenza tra sublocazione parziale e totale, quando serve il tuo consenso, cosa rischia chi subaffitta in modo abusivo (anche su Airbnb) e come proteggerti già nel contratto.",
+    lead: "La sublocazione è la situazione in cui il tuo inquilino affitta a sua volta, in tutto o in parte, l'immobile che ha preso da te. Non è sempre vietata: la legge la consente entro limiti precisi. Questa guida spiega al proprietario quando l'inquilino può subaffittare, quando serve il tuo consenso, cosa rischia chi lo fa in modo abusivo e come tutelarti già nel contratto.",
+    publishedAt: "2026-06-26",
+    updatedAt: "2026-06-26",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-06-26. Keyword: sublocazione, vol 590, KD 0 (DataForSEO). Secondarie: contratto di sublocazione, sublocazione abitativa, sublocazione affitti brevi.",
+    html: `  <p>Scopri un annuncio del tuo appartamento online, oppure ti accorgi che in casa vivono persone diverse dall'inquilino con cui hai firmato: è il momento in cui molti proprietari si chiedono se l'inquilino possa davvero subaffittare. La <strong>sublocazione</strong> è proprio questo: il conduttore (l'inquilino) concede a sua volta a un terzo, in tutto o in parte, l'immobile che ha in affitto da te. Non è automaticamente illegale, ma segue regole precise. Questa guida, pensata per il proprietario, spiega quando la sublocazione è ammessa, quando serve il tuo consenso e cosa puoi fare se avviene in modo abusivo.</p>
+
+  <h2>Che cos'è la sublocazione (e in cosa differisce dalla cessione del contratto)</h2>
+  <p>Con la sublocazione l'inquilino resta il tuo unico interlocutore: continua a pagarti il canone e a rispondere degli obblighi del contratto, mentre incassa a sua volta un corrispettivo dal <strong>subconduttore</strong> (chi entra nell'immobile). Tra te e il subconduttore non nasce alcun rapporto diretto: tu hai a che fare sempre e solo con l'inquilino originario.</p>
+  <p>Diversa è la <strong>cessione del contratto</strong>: qui l'inquilino esce di scena e al suo posto subentra una nuova persona, che diventa il nuovo conduttore. È un cambio di intestazione vero e proprio e, per le locazioni abitative, richiede sempre il <strong>tuo consenso</strong>. Distinguere le due situazioni è importante, perché le regole e i rischi sono diversi.</p>
+
+  <h2>Quando l'inquilino può fare la sublocazione (e quando no)</h2>
+  <p>La regola di riferimento per gli affitti di casa è l'articolo 2 della legge sull'equo canone (legge 392 del 1978), tuttora in vigore anche per i contratti regolati dalla legge 431 del 1998. La distinzione chiave è tra sublocazione parziale e totale.</p>
+
+  <h3>Sublocazione parziale: ammessa, salvo divieto nel contratto</h3>
+  <p>L'inquilino può <strong>sublocare una parte dell'immobile</strong> (per esempio una stanza) anche senza il tuo consenso, ma solo a due condizioni: che il contratto non lo vieti espressamente e che ti dia una <strong>comunicazione con lettera raccomandata</strong>, indicando chi è il subconduttore, quanto dura la sua sistemazione e quali stanze occupa. Se nel contratto hai inserito un divieto, anche la sublocazione parziale diventa vietata.</p>
+
+  <h3>Sublocazione totale e cessione: serve il tuo consenso</h3>
+  <p>La <strong>sublocazione totale</strong>, cioè dare in subaffitto l'intero appartamento, è <strong>vietata senza il tuo consenso</strong>. Lo stesso vale per la cessione del contratto a un'altra persona. In pratica: se l'inquilino vuole far entrare qualcun altro in tutto l'immobile, o passargli il contratto, deve prima avere il tuo via libera scritto. Senza, sta agendo fuori dalle regole.</p>
+
+  <h2>La sublocazione abusiva: cosa rischia l'inquilino e cosa puoi fare tu</h2>
+  <p>Si parla di <strong>sublocazione abusiva</strong> quando l'inquilino subaffitta violando queste regole: subloca l'intero immobile senza il tuo consenso, oppure subloca una parte nonostante un divieto contrattuale, o ancora omette la comunicazione raccomandata. È una violazione che, se ha un peso concreto, può costituire un <strong>grave inadempimento</strong> del contratto.</p>
+  <p>Quando l'inadempimento è grave, il proprietario può chiedere al giudice la <strong>risoluzione del contratto</strong> e la riconsegna dell'immobile. Trovi un quadro generale su come si scioglie un contratto nella nostra guida alla <a href="/blog/risoluzione-contratto-locazione/">risoluzione del contratto di locazione</a>. Va detto che non ogni irregolarità porta automaticamente alla fine del contratto: il giudice valuta la gravità del caso concreto. Per questo è utile farsi assistere prima di agire, raccogliendo le prove (annunci online, testimonianze, lo stesso contratto con l'eventuale clausola di divieto).</p>
+
+  <h2>Come proteggerti già nel contratto</h2>
+  <p>Il momento migliore per evitare problemi è la firma del contratto. Ecco le mosse pratiche per il proprietario:</p>
+  <ul>
+    <li><strong>Inserisci una clausola chiara sulla sublocazione</strong>: puoi vietarla del tutto (anche quella parziale) oppure ammetterla solo previo tuo consenso scritto. In assenza di clausola, ricorda che la parziale resta consentita.</li>
+    <li><strong>Vieta espressamente la cessione del contratto</strong> e l'uso dell'immobile per finalità diverse dall'abitazione del conduttore e della sua famiglia.</li>
+    <li><strong>Chiarisci il divieto di affitti brevi turistici</strong> (tipo Airbnb) se non vuoi che l'immobile finisca su queste piattaforme.</li>
+    <li><strong>Indica chi può abitare l'immobile</strong>: registrare i nominativi aiuta a distinguere un ospite occasionale da una vera sublocazione.</li>
+    <li><strong>Pretendi sempre la forma scritta</strong> per ogni eventuale consenso che decidi di concedere: niente accordi verbali.</li>
+  </ul>
+  <p>Una buona stesura iniziale del contratto previene gran parte dei conflitti: vedi anche cosa conviene mettere in un <a href="/blog/contratto-affitto-4-4/">contratto di affitto 4+4</a>.</p>
+
+  <h2>Sublocazione e affitti brevi (tipo Airbnb)</h2>
+  <p>Un caso sempre più frequente è quello dell'inquilino che mette l'appartamento su piattaforme di affitti brevi per ricavarne un guadagno. Si tratta a tutti gli effetti di una forma di sublocazione: se è totale e non hai dato il consenso, o se nel contratto l'avevi vietata, è abusiva. Oltre al profilo contrattuale, l'attività di affitto breve comporta obblighi fiscali e amministrativi che restano a carico di chi la svolge, non tuoi. Se non vuoi che il tuo immobile venga usato così, la via più sicura resta una clausola di divieto esplicita nel contratto.</p>
+
+  <h2>Errori comuni del proprietario</h2>
+  <ul>
+    <li><strong>Non disciplinare la sublocazione nel contratto.</strong> Senza una clausola, la sublocazione parziale è consentita per legge: se non la vuoi, devi vietarla per iscritto.</li>
+    <li><strong>Reagire da soli cambiando la serratura o sfrattando di forza.</strong> Anche di fronte a una sublocazione abusiva, la riconsegna dell'immobile passa sempre dal giudice: l'autotutela è illegale.</li>
+    <li><strong>Accettare consensi a voce.</strong> Un permesso dato verbalmente è difficile da provare e può ritorcersi contro di te: metti tutto per iscritto.</li>
+    <li><strong>Confondere ospiti e subconduttori.</strong> Ospitare un familiare o un amico non è sublocazione; lo diventa quando c'è un corrispettivo e un uso stabile da parte di terzi.</li>
+    <li><strong>Aspettare troppo.</strong> Più passa il tempo, più la situazione si consolida: appena hai un sospetto fondato, raccogli le prove e fatti consigliare.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>L'inquilino può subaffittare una stanza senza chiedermi il permesso?</h3>
+  <p>Sì, se il contratto non lo vieta: la sublocazione parziale è ammessa, ma l'inquilino deve comunicartelo con lettera raccomandata indicando il subconduttore, la durata e le stanze interessate. Se nel contratto hai inserito un divieto, invece, non può farlo.</p>
+  <h3>Può subaffittare l'intero appartamento?</h3>
+  <p>No, non senza il tuo consenso. La sublocazione totale dell'immobile è vietata se manca l'autorizzazione del proprietario. Lo stesso vale per la cessione del contratto a un'altra persona.</p>
+  <h3>Che differenza c'è tra sublocazione e cessione del contratto?</h3>
+  <p>Nella sublocazione l'inquilino resta il tuo interlocutore e continua a pagarti il canone; nella cessione esce di scena e subentra un nuovo conduttore. Entrambe, se riguardano l'intero immobile, richiedono il tuo consenso.</p>
+  <h3>Cosa posso fare se scopro una sublocazione abusiva?</h3>
+  <p>Raccogli le prove e fatti assistere: se la violazione è grave, puoi chiedere al giudice la risoluzione del contratto e la riconsegna dell'immobile. Non puoi però agire da solo con lo sgombero forzato.</p>
+  <h3>Posso vietare del tutto la sublocazione?</h3>
+  <p>Sì. Una clausola che vieta la sublocazione (totale e parziale) e la cessione del contratto è valida e ti permette di mantenere il controllo su chi vive nell'immobile.</p>
+
+  <h2>In sintesi</h2>
+  <p>La sublocazione non è di per sé illegale, ma si muove dentro regole precise: la parziale è consentita salvo divieto e previa comunicazione, la totale e la cessione richiedono il tuo consenso. La leva più efficace, per il proprietario, è il contratto: una clausola chiara ti evita gran parte dei problemi e ti consente di intervenire se l'inquilino sgarra. Davanti a una sublocazione abusiva, infine, la strada corretta non è l'autotutela ma la tutela davanti al giudice.</p>
+  <p>Se hai il dubbio che il tuo immobile sia stato subaffittato senza autorizzazione e vuoi capire come muoverti, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
+  <p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>
+
+  <p><em>Riferimenti normativi: disciplina della sublocazione abitativa e cessione del contratto, art. 2 legge 27 luglio 1978 n. 392 (tuttora vigente per i contratti regolati dalla legge 9 dicembre 1998 n. 431); facoltà generale di sublocare e divieto di cedere il contratto senza consenso del locatore, art. 1594 codice civile; risoluzione del contratto per grave inadempimento, art. 1455 codice civile.</em></p>`,
+  },
+  {
     slug: "manutenzione-riparazioni-affitto-chi-paga",
     title: "Manutenzione e riparazioni nell'affitto: chi paga, inquilino o proprietario",
     description: "Riparazioni e manutenzione nell'affitto: chi paga tra inquilino e proprietario, il caso caldaia e cosa scrivere nel contratto. Guida per il locatore.",
