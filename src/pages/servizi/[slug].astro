@@ -219,6 +219,12 @@ const graph = {
             <li><strong>{service.pricing.timing}</strong></li>
           </ul>
           <p class="pricing-note">{service.pricing.note}</p>
+          {service.externalCta && (
+            <p class="pricing-cta">
+              <a class="btn btn-primary" href={service.externalCta.href}>{service.externalCta.label}</a>
+              {service.externalCta.note && <span class="pricing-cta-note">{service.externalCta.note}</span>}
+            </p>
+          )}
         </div>
       </div>
     </section>

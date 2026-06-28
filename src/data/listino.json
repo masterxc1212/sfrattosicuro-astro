@@ -1,0 +1,53 @@
+{
+  "kicker": "Listino pubblico",
+  "title": "Servizi e tariffe",
+  "lead": "Prezzi fissi, pubblicati. Nessun preventivo al buio.",
+  "anchor": {
+    "title": "Procedura di sfratto",
+    "subtitle": "Morosità o finita locazione · tutto incluso · nessun acconto · ~60 gg",
+    "price": "€1.300",
+    "priceNote": "pagamento alla convalida",
+    "links": [
+      { "label": "Sfratto per morosità", "href": "/servizi/sfratto-per-morosita/" },
+      { "label": "Finita locazione", "href": "/servizi/sfratto-per-finita-locazione/" }
+    ]
+  },
+  "families": [
+    {
+      "title": "Contenzioso e recupero",
+      "detailHref": "/servizi/controversie-locazione/",
+      "detailLabel": "Dettagli controversie",
+      "rows": [
+        { "label": "Controversie / contenzioso locatizio", "note": "a fasi, preventivo scritto", "price": "da €990" },
+        { "label": "Recupero canoni e crediti", "note": "servizio del brand specializzato", "external": { "label": "Credit Media", "href": "https://www.creditmedia.it" } }
+      ]
+    },
+    {
+      "title": "Contratti di locazione",
+      "detailHref": "/servizi/contratti-di-locazione/",
+      "detailLabel": "Dettagli",
+      "intro": "Standard: predisposti sui modelli dello Studio, senza personalizzazioni.",
+      "rows": [
+        { "label": "Revisione / check contratto esistente", "price": "€150" },
+        { "label": "Redazione abitativa standard (4+4 / 3+2 cedolare)", "price": "€250" },
+        { "label": "Redazione transitorio / studenti standard", "price": "€200" },
+        { "label": "Redazione commerciale 6+6 standard", "price": "€400" },
+        { "label": "Contratto premium personalizzato", "price": "€600" }
+      ]
+    },
+    {
+      "title": "Consulenza e pareri",
+      "detailHref": "/servizi/consulenza-pareri/",
+      "detailLabel": "Dettagli",
+      "rows": [
+        { "label": "Prima consulenza orientativa", "price": "Gratuita", "free": true },
+        { "label": "Consulenza telefonica (30')", "note": "rimborsata se attivi una pratica", "price": "€60" },
+        { "label": "Videoconsulenza (45')", "price": "€90" },
+        { "label": "Parere scritto — semplice", "price": "€150" },
+        { "label": "Parere scritto — complesso", "price": "da €400" },
+        { "label": "Quesito legale online", "price": "€50" }
+      ]
+    }
+  ],
+  "footnote": "Prezzi IVA esclusa. Spese vive (contributo unificato, notifiche, bolli) e imposte di registrazione indicate a parte. Preventivo scritto prima di ogni incarico."
+}

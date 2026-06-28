@@ -7,9 +7,7 @@ import CoverageSectionIsland from '../components/CoverageSectionIsland.astro';
 import ContactFormIsland from '../components/ContactFormIsland.astro';
 import SmoothScrollIsland from '../components/SmoothScrollIsland.astro';
 import JsonLd from '../components/JsonLd.astro';
-import ServicesIntroIsland from '../components/ServicesIntroIsland.astro';
-import ServicesGridIsland from '../components/ServicesGridIsland.astro';
-import ServicesDetailsIsland from '../components/ServicesDetailsIsland.astro';
+import TariffarioIsland from '../components/TariffarioIsland.astro';
 import ServicesMethodIsland from '../components/ServicesMethodIsland.astro';
 import PageJumpNavIsland from '../components/PageJumpNavIsland.astro';
 import site from '../data/site.json';
@@ -47,6 +45,21 @@ const heroCarousel = [
   }
 ];
 
+const priceCatalog = {
+  '@type': 'OfferCatalog',
+  name: 'Tariffario servizi legali',
+  itemListElement: [
+    { '@type': 'Offer', name: 'Sfratto per morosità o finita locazione', price: '1300', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Controversie e contenzioso locatizio', priceSpecification: { '@type': 'PriceSpecification', minPrice: '990', priceCurrency: 'EUR' } },
+    { '@type': 'Offer', name: 'Revisione contratto di locazione', price: '150', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Redazione contratto di locazione abitativo standard', price: '250', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Redazione contratto di locazione commerciale standard', price: '400', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Contratto di locazione premium personalizzato', price: '600', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Consulenza telefonica (30 minuti)', price: '60', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Parere legale scritto', priceSpecification: { '@type': 'PriceSpecification', minPrice: '150', priceCurrency: 'EUR' } }
+  ]
+};
+
 const servicesGraph = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -70,9 +83,11 @@ const servicesGraph = {
         'Sfratto per finita locazione',
         'Recupero canoni locazione',
         'Controversie locazione',
-        'Predisposizione contratti di locazione'
+        'Predisposizione contratti di locazione',
+        'Consulenza e pareri legali in materia di locazione'
       ],
-      url: `${siteUrl}/servizi/`
+      url: `${siteUrl}/servizi/`,
+      hasOfferCatalog: priceCatalog
     },
     {
       '@type': 'BreadcrumbList',
@@ -105,7 +120,7 @@ const servicesGraph = {
   <PageJumpNavIsland
     title="Percorso rapido"
     items={[
-      { href: '#servizi-legali', label: 'Servizi' },
+      { href: '#servizi-legali', label: 'Tariffario' },
       { href: '#metodo-servizi', label: 'Metodo' },
       { href: '#contatti', label: 'Contatti' },
       { href: '/sedi/', label: 'Sedi territoriali' }
@@ -136,9 +151,7 @@ const servicesGraph = {
       bulletsLabel="Servizi legali principali"
     />
 
-    <ServicesIntroIsland />
-    <ServicesGridIsland />
-    <ServicesDetailsIsland />
+    <TariffarioIsland />
     <ServicesMethodIsland />
     <CoverageSectionIsland />
 

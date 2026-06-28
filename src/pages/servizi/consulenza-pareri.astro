@@ -1,0 +1,198 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HeaderIsland from '../../components/HeaderIsland.astro';
+import Footer from '../../components/Footer.astro';
+import ContactFormIsland from '../../components/ContactFormIsland.astro';
+import SmoothScrollIsland from '../../components/SmoothScrollIsland.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import site from '../../data/site.json';
+import listino from '../../data/listino.json';
+
+const siteUrl = site.siteUrl.replace(/\/$/, '');
+const canonicalPath = '/servizi/consulenza-pareri/';
+const title = 'Consulenza legale e pareri | Locazioni e sfratti | Sfratto Sicuro';
+const description =
+  'Consulenza legale per proprietari su locazioni e sfratti: prima consulenza gratuita, consulenza telefonica, videoconsulenza, pareri scritti e quesito online. Prezzi chiari.';
+
+const family = listino.families.find((item) => item.detailHref === canonicalPath);
+const rows = family?.rows ?? [];
+const splitPrice = (p) =>
+  typeof p === 'string' && p.startsWith('da ') ? { da: true, fig: p.slice(3) } : { da: false, fig: p };
+
+const faqs = [
+  {
+    q: 'La prima consulenza è davvero gratuita?',
+    a: 'Sì: il primo colloquio orientativo, per inquadrare il caso e valutare la fattibilità della procedura, è gratuito e senza impegno.'
+  },
+  {
+    q: 'Le consulenze a pagamento si scalano dalla pratica?',
+    a: 'Sì. La consulenza telefonica e la videoconsulenza vengono rimborsate se affidi allo Studio una pratica collegata.'
+  },
+  {
+    q: 'In quanto tempo ricevo un parere scritto?',
+    a: 'In tempi rapidi dopo la trasmissione della documentazione. Per i pareri complessi e motivati i tempi dipendono dall’approfondimento necessario.'
+  }
+];
+
+const offerItems = [
+  { '@type': 'Offer', name: 'Prima consulenza orientativa', price: '0', priceCurrency: 'EUR' },
+  { '@type': 'Offer', name: 'Consulenza telefonica (30 minuti)', price: '60', priceCurrency: 'EUR' },
+  { '@type': 'Offer', name: 'Videoconsulenza (45 minuti)', price: '90', priceCurrency: 'EUR' },
+  { '@type': 'Offer', name: 'Parere legale scritto semplice', price: '150', priceCurrency: 'EUR' },
+  { '@type': 'Offer', name: 'Parere legale scritto complesso', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
+  { '@type': 'Offer', name: 'Quesito legale online', price: '50', priceCurrency: 'EUR' }
+];
+
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}${canonicalPath}#webpage`,
+      url: `${siteUrl}${canonicalPath}`,
+      name: title,
+      description,
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      about: { '@id': `${siteUrl}${canonicalPath}#service` },
+      inLanguage: 'it-IT'
+    },
+    {
+      '@type': 'Service',
+      '@id': `${siteUrl}${canonicalPath}#service`,
+      serviceType: 'Consulenza e pareri legali in materia di locazione',
+      name: 'Consulenza legale e pareri',
+      provider: { '@id': `${siteUrl}/#organization` },
+      areaServed: { '@type': 'Country', name: 'IT' },
+      url: `${siteUrl}${canonicalPath}`,
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Consulenza e pareri',
+        itemListElement: offerItems
+      }
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${siteUrl}${canonicalPath}#faq`,
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a }
+      }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}${canonicalPath}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Servizi', item: `${siteUrl}/servizi/` },
+        { '@type': 'ListItem', position: 3, name: 'Consulenza e pareri', item: `${siteUrl}${canonicalPath}` }
+      ]
+    }
+  ]
+};
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  image="/assets/img/provvedimenti/02.webp"
+>
+  <Fragment slot="head">
+    <JsonLd graph={graph} />
+  </Fragment>
+
+  <HeaderIsland />
+
+  <main id="main-content">
+    <section class="service-hero section" aria-labelledby="service-title">
+      <div class="container narrow">
+        <p class="kicker">Servizi legali in diritto delle locazioni</p>
+        <h1 id="service-title">Consulenza legale e pareri</h1>
+        <p class="lead">
+          Hai un dubbio su una locazione, un contratto o un inquilino? Prima di avviare una procedura puoi parlare
+          con un avvocato e ottenere un quadro chiaro. La prima consulenza orientativa è gratuita; per analisi più
+          approfondite il prezzo è fisso e pubblicato.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contatti">Richiedi una consulenza</a>
+          <a class="btn btn-secondary" href="/servizi/">Torna al tariffario</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tariffe-consulenza" class="section" aria-labelledby="tariffe-title">
+      <div class="container narrow">
+        <h2 id="tariffe-title">Tariffe di consulenza</h2>
+        <ul class="cp-rows">
+          {rows.map((row) => (
+            <li class="cp-row">
+              <div class="cp-label">
+                <span>{row.label}</span>
+                {row.note && <span class="cp-note">{row.note}</span>}
+              </div>
+              <span class={`cp-price${row.free ? ' is-free' : ''}`}>{splitPrice(row.price).da && <span class="cp-da">da </span>}{splitPrice(row.price).fig}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="cp-footnote">
+          Prezzi IVA esclusa. Consulenza telefonica e videoconsulenza vengono rimborsate se affidi allo Studio una
+          pratica collegata. Preventivo scritto prima di ogni incarico a pagamento.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light" aria-labelledby="quando-title">
+      <div class="container narrow">
+        <h2 id="quando-title">Quando è utile</h2>
+        <ul class="check-list">
+          <li>Vuoi capire se hai i presupposti per uno sfratto o un recupero prima di agire.</li>
+          <li>Hai ricevuto una comunicazione dall’inquilino e non sai come rispondere.</li>
+          <li>Ti serve un parere scritto da usare in una trattativa o in una decisione.</li>
+          <li>Hai un dubbio puntuale e cerchi una risposta rapida e affidabile.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq-servizio" class="section" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <h2 id="faq-title">FAQ sulla consulenza</h2>
+        <div class="faq-list">
+          {faqs.map((faq) => (
+            <details>
+              <summary>{faq.q}</summary>
+              <p>{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <ContactFormIsland
+      title="Richiedi una consulenza"
+      description="Descrivi brevemente la tua situazione: ti indichiamo la consulenza più adatta e i tempi di risposta."
+    />
+  </main>
+
+  <Footer sedeSlug="nazionale" />
+  <SmoothScrollIsland />
+</SiteLayout>
+
+<style>
+  .cp-rows { list-style: none; margin: var(--space-md) 0 0; padding: 0; }
+  .cp-row {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: var(--space-md); padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .cp-row:last-child { border-bottom: 0; }
+  .cp-label { color: var(--text-body); font-size: 1.02rem; }
+  .cp-note { display: block; font-size: var(--text-small); color: var(--text-dim); margin-top: 2px; }
+  .cp-price {
+    font-size: 1.2rem; font-weight: 700; color: var(--text-strong); white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .cp-price.is-free { color: var(--green-security-deep); }
+  .cp-da { font-size: var(--text-small); font-weight: 400; color: var(--text-dim); }
+  .cp-footnote { font-size: var(--text-small); color: var(--text-dim); margin-top: var(--space-lg); }
+</style>

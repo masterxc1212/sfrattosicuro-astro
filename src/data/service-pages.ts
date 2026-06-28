@@ -22,6 +22,7 @@ export interface ServicePage {
     timing: string;
     note: string;
   };
+  externalCta?: { label: string; href: string; note?: string };
   faqs: Array<{ q: string; a: string }>;
 }
 
@@ -243,11 +244,12 @@ export const servicePages: ServicePage[] = [
         'Il credito viene trattato in modo strutturato, con percorso coordinato rispetto alla situazione dell’immobile.'
     },
     pricing: {
-      fee: '10% delle somme da recuperare.',
-      payment: 'Compenso orientato al risultato: paghi in funzione di quanto viene realmente recuperato.',
-      timing: 'Avvio operativo rapido dopo verifica documentale e quantificazione del credito.',
-      note: 'Il compenso si applica alle somme effettivamente incassate. Eventuali spese vive e oneri di procedura sono indicati con trasparenza in preventivo.'
+      fee: 'Il recupero crediti è gestito dal nostro brand specializzato Credit Media.',
+      payment: 'Avvocati dedicati e listino trasparente: la quotazione del recupero è pubblicata su creditmedia.it.',
+      timing: 'Per i canoni arretrati di importo rilevante l’azione è affidata a Credit Media; nei casi semplici il recupero può essere coordinato con la procedura di sfratto.',
+      note: 'Sfratto Sicuro e Credit Media fanno capo allo stesso Studio: un unico interlocutore per il rilascio dell’immobile e per il recupero delle somme dovute.'
     },
+    externalCta: { label: 'Vai a Credit Media', href: 'https://www.creditmedia.it', note: 'Servizio dedicato di recupero crediti.' },
     faqs: [
       {
         q: 'Il recupero canoni può partire anche senza sfratto?',
@@ -379,7 +381,7 @@ export const servicePages: ServicePage[] = [
       'Dati immobile e proprietario.',
       'Eventuale bozza contrattuale già esistente.',
       'Indicazioni operative desiderate dal locatore.',
-      'Elementi utili alla personalizzazione delle clausole.'
+      'Indicazioni operative per scegliere il modello più adatto (standard o premium).'
     ],
     includes: [
       'Analisi preventiva dei rischi contrattuali.',
@@ -397,10 +399,10 @@ export const servicePages: ServicePage[] = [
         'Il contratto finale risulta più leggibile e più solido in ottica preventiva.'
     },
     pricing: {
-      fee: 'Revisione contratto da 149 €; redazione completa da 290 €; versione premium da 590 €.',
-      payment: 'Prezzo chiaro prima dell’incarico, definito in base al livello di personalizzazione richiesto.',
+      fee: 'Revisione 150 €; redazione standard 250 € (abitativa 4+4 / 3+2 cedolare), 200 € (transitorio/studenti), 400 € (commerciale 6+6); contratto premium personalizzato 600 €.',
+      payment: 'Prezzo fisso definito prima dell’incarico. I contratti standard sono predisposti sui modelli dello Studio, senza personalizzazioni; per clausole su misura si sceglie il contratto premium.',
       timing: 'Prima bozza operativa in tempi rapidi dopo raccolta delle informazioni essenziali.',
-      note: 'Un contratto impostato bene riduce il rischio di contenziosi futuri: il costo preventivo è spesso inferiore al costo di una gestione correttiva successiva.'
+      note: 'Prezzi IVA esclusa. Le imposte di registrazione (imposta di registro 2%, bollo o cedolare secca) sono dovute all’erario e restano a parte.'
     },
     faqs: [
       {
@@ -476,7 +478,7 @@ export const servicePages: ServicePage[] = [
         'La gestione resta sotto controllo e, in caso di peggioramento, è già pronto il percorso legale più adatto.'
     },
     pricing: {
-      fee: 'Abbonamento mensile: Base 79 €, Plus 129 €, Pro 199 €.',
+      fee: 'Abbonamento annuale: Base 149 €, Plus 349 €, Pro 690 € (Pro disponibile anche a 79 €/mese).',
       payment: 'Formula continuativa con livello di supporto modulabile, così il proprietario investe in prevenzione prima che il danno economico aumenti.',
       timing: 'Attivazione del piano dopo onboarding documentale e definizione priorità operative.',
       note: 'I piani differiscono per intensità di supporto, priorità e profondità della gestione continuativa; il livello viene scelto in base a rischio e numero di pratiche da presidiare.'
