@@ -16,6 +16,92 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "intimazione-di-sfratto-per-morosita",
+    title: "Intimazione di sfratto per morosità: cos'è, cosa contiene e come funziona",
+    description: "Intimazione di sfratto per morosità: cos'è, cosa deve contenere l'atto, l'avviso ex art. 660 c.p.c. e i passi del procedimento. Guida per il proprietario.",
+    excerpt: "Il tuo inquilino non paga e devi avviare lo sfratto: tutto parte dall'intimazione di sfratto per morosità. Guida pratica per il proprietario: cos'è questo atto, in cosa differisce dalla diffida, cosa deve contenere (compreso l'avviso ex art. 660 c.p.c.), come si svolge l'udienza di convalida, la checklist prima di procedere e gli errori da evitare.",
+    lead: "Quando un inquilino smette di pagare, l'atto che dà il via alla procedura di rilascio è l'intimazione di sfratto per morosità. Questa guida spiega al proprietario, in modo semplice, che cos'è, in cosa differisce dalla diffida, cosa deve contenere e quali sono i passi del procedimento di convalida.",
+    publishedAt: "2026-06-29",
+    updatedAt: "2026-06-29",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-06-29. Keyword: intimazione di sfratto per morosità, vol 390, KD 0 (DataForSEO). Secondarie: intimazione di sfratto (vol 170), intimazione di sfratto per finita locazione (vol 140), intimazione di sfratto per morosità fac simile (vol 140).",
+    html: `
+  <p>Quando un inquilino smette di pagare, prima o poi al proprietario serve l'atto che dà il via vero e proprio alla procedura di rilascio: l'<strong>intimazione di sfratto per morosità</strong>. È il documento con cui il locatore, tramite il proprio avvocato, intima formalmente al conduttore di lasciare l'immobile per il mancato pagamento dei canoni e, allo stesso tempo, lo cita a comparire davanti al giudice per la convalida. Questa guida spiega, in modo semplice e dalla parte del proprietario, che cos'è l'intimazione di sfratto, cosa deve contenere, in cosa differisce dalla diffida e quali sono i passi del procedimento.</p>
+
+  <h2>Che cos'è l'intimazione di sfratto per morosità</h2>
+  <p>L'intimazione di sfratto è l'<strong>atto giudiziario che apre il procedimento di convalida</strong>. Ha una doppia natura: da un lato è una vera e propria intimazione (l'ordine di rilasciare l'immobile), dall'altro è una citazione, cioè invita il conduttore a presentarsi a un'udienza davanti al giudice in una data precisa. Quando la causa del rilascio è il mancato pagamento del canone (o degli oneri accessori, come le spese condominiali concordate), si parla appunto di intimazione di sfratto <strong>per morosità</strong>.</p>
+  <p>Si tratta di un atto che non può essere improvvisato dal proprietario da solo: va redatto e firmato da un avvocato e notificato all'inquilino. Per questo è il primo vero passo della fase giudiziale, quella che porta — se tutto fila liscio — alla convalida e poi al rilascio dell'immobile.</p>
+
+  <h2>Intimazione, diffida e licenza: da non confondere</h2>
+  <p>Tre termini si somigliano ma indicano cose diverse, ed è utile tenerli distinti.</p>
+  <ul>
+    <li><strong>La diffida (o messa in mora)</strong> è una lettera stragiudiziale con cui chiedi all'inquilino di pagare entro un termine, prima di andare dal giudice. Non apre alcuna causa: è un sollecito formale. Ne parliamo in dettaglio nella guida alla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>.</li>
+    <li><strong>L'intimazione di sfratto per morosità</strong> è invece l'atto giudiziale che, citato l'inquilino in giudizio, avvia la procedura di convalida per il mancato pagamento.</li>
+    <li><strong>La licenza o lo sfratto per finita locazione</strong> riguardano un'altra ipotesi: la fine naturale del contratto, non la morosità. Stesso "contenitore" procedurale, ma causa diversa.</li>
+  </ul>
+  <p>In sintesi: la diffida è facoltativa e arriva prima; l'intimazione è l'atto formale che fa partire il giudizio.</p>
+
+  <h2>Cosa deve contenere l'intimazione di sfratto</h2>
+  <p>Perché l'atto sia valido ed efficace, deve indicare alcuni elementi precisi. I principali sono:</p>
+  <ul>
+    <li><strong>I dati delle parti</strong>: il proprietario (intimante) e l'inquilino (intimato), con i rispettivi riferimenti.</li>
+    <li><strong>L'immobile</strong> e gli estremi del contratto di locazione.</li>
+    <li><strong>La morosità</strong>, cioè l'importo dei canoni (ed eventuali oneri) non pagati, con il dettaglio dei periodi scoperti.</li>
+    <li><strong>La data dell'udienza</strong> davanti al giudice e l'invito a comparire.</li>
+    <li><strong>L'avviso obbligatorio</strong> previsto dall'articolo 660 del codice di procedura civile (la legge che regola il processo civile): è l'avvertimento all'inquilino che, se non si presenta o non si oppone, lo sfratto sarà convalidato. La riforma del processo civile ha aggiunto anche l'avviso sulla possibilità di chiedere il patrocinio a spese dello Stato (l'assistenza legale gratuita per chi ha redditi bassi).</li>
+  </ul>
+  <p>L'assenza dell'avviso ex articolo 660, o un suo contenuto scorretto, è uno dei difetti che possono compromettere la procedura. Per questo la redazione va lasciata a un professionista.</p>
+
+  <h2>Come funziona il procedimento, passo per passo</h2>
+  <p>Una volta deciso di procedere, la sequenza tipica è questa:</p>
+  <ul>
+    <li><strong>1. Redazione dell'atto.</strong> L'avvocato predispone l'intimazione di sfratto per morosità con la citazione a comparire.</li>
+    <li><strong>2. Notifica all'inquilino.</strong> L'atto viene notificato al conduttore. Tra il giorno della notifica e quello dell'udienza devono passare <strong>almeno venti giorni liberi</strong>: è un termine minimo a garanzia del diritto di difesa. In casi urgenti il giudice può abbreviarlo.</li>
+    <li><strong>3. Udienza di convalida.</strong> Alla data fissata si tiene l'udienza. Qui si possono verificare scenari diversi a seconda del comportamento dell'inquilino.</li>
+    <li><strong>4. Provvedimento del giudice.</strong> Se ne ricorrono i presupposti, il giudice convalida lo sfratto e fissa la data per il rilascio.</li>
+  </ul>
+  <p>Approfondiamo l'udienza e gli scenari possibili nella guida alla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>; cosa succede dopo, invece, lo trovi nell'articolo sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e il rilascio dell'immobile</a>.</p>
+
+  <h3>Cosa può succedere all'udienza</h3>
+  <p>Se l'inquilino <strong>non compare</strong> o compare ma non si oppone, il giudice in genere convalida lo sfratto: è lo scenario più rapido. Se l'inquilino <strong>si oppone</strong> con motivi seri, la procedura prosegue con un giudizio più articolato. C'è poi una possibilità tipica della morosità: il conduttore può chiedere il <strong>termine di grazia</strong>, cioè un periodo (fino a un massimo previsto dalla legge) per pagare quanto dovuto e sanare la morosità. Se paga tutto entro quel termine, lo sfratto non viene convalidato; se non paga, il proprietario può tornare dal giudice per far accertare la mancata sanatoria.</p>
+
+  <h2>Checklist per il proprietario prima di procedere</h2>
+  <ul>
+    <li><strong>Verifica l'entità della morosità</strong>: quanti canoni, da quando, quali importi. Tieni l'estratto dei pagamenti.</li>
+    <li><strong>Recupera il contratto registrato</strong> e gli eventuali aggiornamenti del canone.</li>
+    <li><strong>Conserva ogni comunicazione</strong> con l'inquilino: solleciti, messaggi, l'eventuale diffida inviata.</li>
+    <li><strong>Affidati a un avvocato</strong> per la redazione e la notifica: l'intimazione è un atto giudiziale, non un fac-simile da compilare da soli.</li>
+    <li><strong>Non agire mai con l'autotutela</strong>: cambiare la serratura o sgomberare di forza l'immobile è illegale, anche se l'inquilino non paga da mesi.</li>
+  </ul>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Confondere la diffida con l'intimazione.</strong> Inviare una raccomandata di sollecito non "avvia lo sfratto": serve l'atto giudiziale notificato.</li>
+    <li><strong>Sbagliare il conteggio della morosità.</strong> Importi imprecisi o periodi non documentati indeboliscono la posizione del proprietario.</li>
+    <li><strong>Trascurare i termini di notifica.</strong> Se non si rispettano i venti giorni liberi prima dell'udienza, l'atto rischia di essere inefficace.</li>
+    <li><strong>Dimenticare gli avvisi obbligatori.</strong> L'avviso ex articolo 660 è un requisito di legge: senza, la convalida può saltare.</li>
+    <li><strong>Aspettare troppo.</strong> Più si lascia crescere il debito, più diventa difficile recuperarlo: appena la morosità è seria, conviene muoversi.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Posso scrivere io l'intimazione di sfratto con un fac-simile?</h3>
+  <p>No. L'intimazione di sfratto è un atto giudiziale che dà avvio a una causa: deve essere redatta e sottoscritta da un avvocato e poi notificata. I fac-simile che si trovano online non sostituiscono l'assistenza legale e, se l'atto è viziato, si rischia di far ripartire tutto da capo.</p>
+  <h3>Quanti canoni non pagati servono per intimare lo sfratto?</h3>
+  <p>Per gli immobili a uso abitativo la legge considera rilevante il mancato pagamento anche di una sola mensilità di canone protratto oltre un breve termine, oppure il mancato pagamento degli oneri accessori oltre una certa soglia. La valutazione concreta va però fatta caso per caso con il proprio avvocato.</p>
+  <h3>Cosa succede se l'inquilino paga dopo aver ricevuto l'intimazione?</h3>
+  <p>All'udienza l'inquilino può chiedere il termine di grazia per pagare e sanare la morosità. Se paga tutto (canoni, interessi e spese) entro il termine concesso dal giudice, lo sfratto non viene convalidato. È una possibilità prevista dalla legge per gli affitti abitativi.</p>
+  <h3>L'intimazione di sfratto vale anche per la finita locazione?</h3>
+  <p>La stessa procedura di convalida si usa anche per la finita locazione, ma in quel caso si parla di licenza o sfratto per finita locazione e la causa non è la morosità, bensì la scadenza del contratto. Cambiano i presupposti, non il "contenitore" procedurale.</p>
+
+  <h2>In sintesi</h2>
+  <p>L'intimazione di sfratto per morosità è l'atto che trasforma un problema di mancato pagamento in una procedura giudiziale ordinata: intima il rilascio e, allo stesso tempo, porta l'inquilino davanti al giudice. È un atto tecnico, con requisiti di forma e termini precisi, che va affidato a un avvocato per evitare vizi che facciano perdere tempo prezioso. Curare bene la documentazione della morosità e muoversi per tempo sono, dalla parte del proprietario, le due mosse che fanno la differenza.</p>
+  <p>Se hai un inquilino moroso e vuoi capire come avviare correttamente la procedura, puoi richiedere una prima valutazione tramite la pagina <a href="/#contatti">contatti</a> di Sfratto Sicuro.</p>
+  <p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>
+
+  <p><em>Riferimenti normativi: procedimento per convalida di licenza o sfratto, artt. 657-669 del codice di procedura civile; intimazione di sfratto per mancato pagamento del canone, art. 658 c.p.c.; forma dell'intimazione, avviso al conduttore e termine libero minimo di venti giorni, art. 660 c.p.c.; convalida in caso di mancata comparizione o non opposizione, art. 663 c.p.c.; termine di grazia per la sanatoria della morosità negli immobili abitativi, art. 55 della legge 27 luglio 1978 n. 392; riforma del processo civile, decreto legislativo 10 ottobre 2022 n. 149, e relativo correttivo, decreto legislativo 31 ottobre 2024 n. 164, in vigore dal 26 novembre 2024.</em></p>`,
+  },
+  {
     slug: "sublocazione",
     title: "Sublocazione: quando l'inquilino può subaffittare e cosa rischia il proprietario",
     description: "Sublocazione abitativa: quando l'inquilino può subaffittare, quando serve il tuo consenso e cosa fare contro la sublocazione abusiva. Guida per i proprietari.",
