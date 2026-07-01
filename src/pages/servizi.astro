@@ -1,4 +1,4 @@
-﻿---
+---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import HeaderIsland from '../components/HeaderIsland.astro';
 import Footer from '../components/Footer.astro';
@@ -51,7 +51,7 @@ const priceCatalog = {
   itemListElement: [
     { '@type': 'Offer', name: 'Sfratto per morosità o finita locazione', price: '1300', priceCurrency: 'EUR' },
     { '@type': 'Offer', name: 'Controversie e contenzioso locatizio', priceSpecification: { '@type': 'PriceSpecification', minPrice: '990', priceCurrency: 'EUR' } },
-    { '@type': 'Offer', name: 'Revisione contratto di locazione', price: '150', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Revisione contratto di locazione', priceSpecification: { '@type': 'UnitPriceSpecification', price: '50', priceCurrency: 'EUR', unitText: 'pagina' } },
     { '@type': 'Offer', name: 'Redazione contratto di locazione abitativo standard', price: '250', priceCurrency: 'EUR' },
     { '@type': 'Offer', name: 'Redazione contratto di locazione commerciale standard', price: '400', priceCurrency: 'EUR' },
     { '@type': 'Offer', name: 'Contratto di locazione premium personalizzato', price: '600', priceCurrency: 'EUR' },

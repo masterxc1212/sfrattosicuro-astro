@@ -6,127 +6,194 @@ const splitPrice = (p) =>
 ---
 
 <section class="section tariffario-section" id="servizi-legali" aria-labelledby="tariffario-title">
-  <div class="container narrow">
-    <div class="section-head">
-      <p class="kicker">{listino.kicker}</p>
-      <h2 id="tariffario-title">{listino.title}</h2>
-      <p class="tariffario-lead">{listino.lead}</p>
+  <div class="container">
+    <div class="tf-head">
+      <div>
+        <p class="kicker">{listino.kicker}</p>
+        <h2 id="tariffario-title">{listino.title}</h2>
+      </div>
+      <p class="tf-lead">{listino.lead}</p>
     </div>
 
-    <div class="tf-anchor">
-      <div class="tf-anchor-copy">
-        <h3>{listino.anchor.title}</h3>
-        <p>{listino.anchor.subtitle}</p>
-        <div class="tf-anchor-links">
-          {listino.anchor.links.map((link) => (
-            <a href={link.href}>{link.label} <span aria-hidden="true">→</span></a>
-          ))}
-        </div>
-      </div>
-      <div class="tf-anchor-price">
-        <span class="tf-figure">{listino.anchor.price}</span>
-        <span class="tf-figure-note">{listino.anchor.priceNote}</span>
-      </div>
-    </div>
+    <div class="tf-card bezel bezel--ink" data-anim="fade-up">
+      <div class="bezel-core">
 
-    {listino.families.map((family) => (
-      <div class="tf-group">
-        <div class="tf-grouphead">
-          <p class="tf-glabel">{family.title}</p>
-          {family.detailHref && (
-            <a class="tf-detail" href={family.detailHref}>Approfondisci <span aria-hidden="true">→</span></a>
-          )}
+        <div class="tf-anchor">
+          <div class="tf-anchor-copy">
+            <h3>{listino.anchor.title}</h3>
+            <p>{listino.anchor.subtitle}</p>
+            <div class="tf-anchor-links">
+              {listino.anchor.links.map((link) => (
+                <a href={link.href}>{link.label} <span aria-hidden="true">&#8594;</span></a>
+              ))}
+            </div>
+          </div>
+          <div class="tf-anchor-price">
+            <span class="tf-figure">{listino.anchor.price}</span>
+            <span class="tf-figure-note">{listino.anchor.priceNote}</span>
+          </div>
         </div>
-        {family.intro && <p class="tf-gintro">{family.intro}</p>}
-        <ul class="tf-rows">
-          {family.rows.map((row) => (
-            <li class="tf-row">
-              <div class="tf-name">
-                <span>{row.label}</span>
-                {row.note && <span class="tf-rownote">{row.note}</span>}
-              </div>
-              {row.external ? (
-                <a class="tf-external" href={row.external.href}>{row.external.label} <span aria-hidden="true">↗</span></a>
-              ) : (
-                <span class={`tf-price${row.free ? ' is-free' : ''}`}>
-                  {splitPrice(row.price).da && <span class="tf-da">da </span>}{splitPrice(row.price).fig}
-                </span>
+
+        {listino.families.map((family) => (
+          <div class="tf-group">
+            <div class="tf-grouphead">
+              <p class="tf-glabel">{family.title}</p>
+              {family.detailHref && (
+                <a class="tf-detail" href={family.detailHref}>{family.detailLabel || 'Approfondisci'} <span aria-hidden="true">&#8594;</span></a>
               )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))}
+            </div>
+            {family.intro && <p class="tf-gintro">{family.intro}</p>}
+            <ul class="tf-rows">
+              {family.rows.map((row) => (
+                <li class="tf-row">
+                  <div class="tf-name">
+                    <span class="tf-label">{row.label}</span>
+                    {row.note && <span class="tf-rownote">{row.note}</span>}
+                  </div>
+                  {row.external ? (
+                    <a class="tf-external" href={row.external.href}>{row.external.label} <span aria-hidden="true">&#8599;</span></a>
+                  ) : (
+                    <span class={`tf-price${row.free ? ' is-free' : ''}`}>
+                      {splitPrice(row.price).da && <span class="tf-da">da </span>}{splitPrice(row.price).fig}{row.unit && <span class="tf-unit">{row.unit}</span>}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            {family.note && <p class="tf-familynote">{family.note}</p>}
+          </div>
+        ))}
 
-    <p class="tf-footnote">{listino.footnote}</p>
+        <div class="tf-foot">
+          <p class="tf-footnote">{listino.footnote}</p>
+          <a class="tf-cta" href="#contatti">
+            Prima consulenza gratuita
+            <span class="tf-cta-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
-  .tariffario-section .section-head { max-width: 46ch; margin-bottom: var(--space-lg); }
-  .tariffario-lead { color: var(--text-muted); font-size: var(--text-lead); line-height: var(--lh-normal); margin: var(--space-sm) 0 0; }
+  .tariffario-section {
+    background: linear-gradient(180deg, var(--surface-canvas) 0%, var(--surface-soft) 100%);
+  }
 
+  /* Head — two-column editorial (title left, lead right) */
+  .tf-head {
+    display: grid; grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-xl); align-items: end; margin-bottom: var(--space-xl);
+  }
+  .tf-head h2 { margin: var(--space-3xs) 0 0; }
+  .tf-lead {
+    color: var(--text-muted); font-size: var(--text-lead);
+    line-height: var(--lh-normal); margin: 0; padding-bottom: 4px;
+  }
+
+  /* Dark card — Credit Media port */
+  .tf-card { box-shadow: var(--shadow-lg, 0 30px 60px -20px rgba(16,24,40,.35)); }
+  .tf-card > .bezel-core { padding: clamp(24px, 3.5vw, 48px); }
+
+  /* Anchor — emphasised first block inside the dark card */
   .tf-anchor {
     display: flex; align-items: center; justify-content: space-between;
     gap: var(--space-lg); flex-wrap: wrap;
-    background: var(--surface-card); border: 1px solid var(--border-medium);
-    border-radius: var(--radius-lg); padding: var(--space-lg) var(--space-xl);
-    box-shadow: var(--shadow-soft); margin-bottom: var(--space-md);
+    padding-bottom: var(--space-lg); margin-bottom: var(--space-md);
+    border-bottom: 1px solid color-mix(in oklab, var(--text-on-dark) 22%, transparent);
   }
   .tf-anchor-copy h3 {
     font-family: var(--font-serif); font-size: var(--text-h3);
-    color: var(--text-strong); margin: 0 0 var(--space-3xs);
+    color: var(--text-on-dark); margin: 0 0 var(--space-3xs);
   }
-  .tf-anchor-copy p { color: var(--text-muted); font-size: var(--text-small); margin: 0; }
+  .tf-anchor-copy p { color: color-mix(in oklab, var(--text-on-dark) 68%, transparent); font-size: var(--text-small); margin: 0; }
   .tf-anchor-links { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-sm); }
-  .tf-anchor-links a { font-size: var(--text-small); font-weight: 600; color: var(--link-blue); text-decoration: none; }
-  .tf-anchor-links a:hover { color: var(--green-security-deep); }
+  .tf-anchor-links a { font-size: var(--text-small); font-weight: 600; color: var(--gold-warm); text-decoration: none; }
+  .tf-anchor-links a:hover { color: var(--text-on-dark); }
   .tf-anchor-price { text-align: right; line-height: 1.05; }
   .tf-figure {
-    font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 2.9rem);
-    font-weight: 600; color: var(--text-strong); font-variant-numeric: tabular-nums;
+    font-family: var(--font-serif); font-size: clamp(2.1rem, 4.5vw, 3rem);
+    font-weight: 600; color: var(--gold-warm); font-variant-numeric: tabular-nums;
   }
-  .tf-figure-note { display: block; font-size: var(--text-eyebrow); color: var(--text-dim); margin-top: var(--space-3xs); }
+  .tf-figure-note {
+    display: block; font-size: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase; color: color-mix(in oklab, var(--text-on-dark) 55%, transparent); margin-top: var(--space-3xs);
+  }
 
-  .tf-group { margin-top: var(--space-2xl); }
-  .tf-grouphead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-md); }
+  /* Groups */
+  .tf-group { margin-top: var(--space-lg); }
+  .tf-group:first-of-type { margin-top: 0; }
+  .tf-grouphead {
+    display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-md);
+    padding-bottom: var(--space-2xs, 8px);
+    border-bottom: 1px solid color-mix(in oklab, var(--text-on-dark) 16%, transparent);
+  }
   .tf-glabel {
     font-size: var(--text-eyebrow); letter-spacing: var(--tracking-eyebrow);
-    text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin: 0;
+    text-transform: uppercase; color: var(--gold-warm); font-weight: 700; margin: 0;
   }
-  .tf-detail { font-size: var(--text-small); color: var(--link-blue); text-decoration: none; white-space: nowrap; }
-  .tf-detail:hover { color: var(--green-security-deep); }
-  .tf-gintro { font-size: var(--text-small); color: var(--text-dim); margin: var(--space-3xs) 0 0; }
+  .tf-detail { font-size: var(--text-small); color: color-mix(in oklab, var(--text-on-dark) 70%, transparent); text-decoration: none; white-space: nowrap; }
+  .tf-detail:hover { color: var(--gold-warm); }
+  .tf-gintro { font-size: var(--text-small); color: color-mix(in oklab, var(--text-on-dark) 55%, transparent); margin: var(--space-xs) 0 0; font-style: italic; }
 
-  .tf-rows { list-style: none; margin: var(--space-xs) 0 0; padding: 0; }
+  /* display:block overrides a leaked global `ul { display:grid }` in global.css */
+  .tf-rows { list-style: none; margin: var(--space-2xs, 6px) 0 0; padding: 0; display: block; }
   .tf-row {
     display: flex; align-items: baseline; justify-content: space-between;
     gap: var(--space-md); padding: var(--space-sm) 0;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid color-mix(in oklab, var(--text-on-dark) 11%, transparent);
   }
   .tf-row:last-child { border-bottom: 0; }
-  .tf-name { color: var(--text-body); font-size: 1.02rem; }
-  .tf-rownote { display: block; font-size: var(--text-small); color: var(--text-dim); margin-top: 2px; }
+  .tf-name { color: var(--text-on-dark); }
+  .tf-label { font-size: 1.02rem; font-weight: 500; }
+  .tf-rownote { display: block; font-size: var(--text-small); color: color-mix(in oklab, var(--text-on-dark) 50%, transparent); margin-top: 2px; }
   .tf-price {
     font-family: var(--font-sans); font-size: 1.2rem; font-weight: 700;
-    color: var(--text-strong); white-space: nowrap; font-variant-numeric: tabular-nums;
+    color: var(--text-on-dark); white-space: nowrap; font-variant-numeric: tabular-nums;
   }
-  .tf-price.is-free { color: var(--green-security-deep); }
-  .tf-da { font-size: var(--text-small); font-weight: 400; color: var(--text-dim); }
+  .tf-price.is-free { color: oklch(0.82 0.13 145); }
+  .tf-da { font-size: var(--text-small); font-weight: 400; color: color-mix(in oklab, var(--text-on-dark) 55%, transparent); }
+  .tf-unit { font-size: var(--text-small); font-weight: 500; color: color-mix(in oklab, var(--text-on-dark) 55%, transparent); margin-left: 3px; }
   .tf-external {
+    font-size: var(--text-small); font-weight: 700; white-space: nowrap;
+    color: var(--gold-warm); text-decoration: none;
+  }
+  .tf-external:hover { color: var(--text-on-dark); text-decoration: underline; }
+
+  .tf-familynote {
+    font-size: var(--text-small); color: var(--gold-warm); font-weight: 600;
+    margin: var(--space-sm) 0 0; padding-left: 12px;
+    border-left: 2px solid var(--gold-warm);
+  }
+
+  /* Foot */
+  .tf-foot {
+    margin-top: var(--space-lg); padding-top: var(--space-md);
+    border-top: 1px solid color-mix(in oklab, var(--text-on-dark) 16%, transparent);
+    display: flex; flex-wrap: wrap; gap: var(--space-md);
+    align-items: center; justify-content: space-between;
+  }
+  .tf-footnote { font-size: var(--text-small); color: color-mix(in oklab, var(--text-on-dark) 60%, transparent); flex: 1 1 46ch; line-height: 1.55; margin: 0; }
+  .tf-cta {
+    display: inline-flex; align-items: center; gap: 8px;
     font-size: var(--text-small); font-weight: 600; white-space: nowrap;
-    color: var(--green-security-deep); text-decoration: none;
+    color: var(--blue-navy); background: var(--gold-warm);
+    padding: 10px 20px; border-radius: var(--radius-pill, 999px); text-decoration: none;
+    transition: filter .18s ease, transform .18s ease;
   }
-  .tf-external:hover { text-decoration: underline; }
+  .tf-cta:hover { filter: brightness(1.07); transform: translateY(-1px); }
+  .tf-cta-icon { display: inline-flex; }
 
-  .tf-footnote {
-    font-size: var(--text-small); color: var(--text-dim);
-    margin-top: var(--space-2xl); padding-top: var(--space-md);
-    border-top: 1px solid var(--border-light);
-  }
-
-  @media (max-width: 600px) {
-    .tf-anchor { padding: var(--space-md) var(--space-lg); }
+  @media (max-width: 720px) {
+    .tf-head { grid-template-columns: 1fr; gap: var(--space-sm); margin-bottom: var(--space-lg); }
     .tf-anchor-price { text-align: left; }
+    .tf-foot { flex-direction: column; align-items: stretch; }
+    .tf-cta { justify-content: center; }
   }
 </style>

@@ -28,7 +28,7 @@
       "detailLabel": "Dettagli",
       "intro": "Standard: predisposti sui modelli dello Studio, senza personalizzazioni.",
       "rows": [
-        { "label": "Revisione / check contratto esistente", "price": "€150" },
+        { "label": "Revisione / check contratto esistente", "price": "€50", "unit": "/pag.", "note": "allegati inclusi" },
         { "label": "Redazione abitativa standard (4+4 / 3+2 cedolare)", "price": "€250" },
         { "label": "Redazione transitorio / studenti standard", "price": "€200" },
         { "label": "Redazione commerciale 6+6 standard", "price": "€400" },
@@ -39,13 +39,14 @@
       "title": "Consulenza e pareri",
       "detailHref": "/servizi/consulenza-pareri/",
       "detailLabel": "Dettagli",
+      "note": "Consulenza diretta con l’Avv. Danilo Ansalone: tariffe raddoppiate.",
       "rows": [
         { "label": "Prima consulenza orientativa", "price": "Gratuita", "free": true },
         { "label": "Consulenza telefonica (30')", "note": "rimborsata se attivi una pratica", "price": "€60" },
         { "label": "Videoconsulenza (45')", "price": "€90" },
         { "label": "Parere scritto — semplice", "price": "€150" },
         { "label": "Parere scritto — complesso", "price": "da €400" },
-        { "label": "Quesito legale online", "price": "€50" }
+        { "label": "Quesito legale online", "note": "singolo quesito · anche via WhatsApp", "price": "€50" }
       ]
     }
   ],
