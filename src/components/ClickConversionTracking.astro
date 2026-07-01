@@ -2,12 +2,12 @@
 /**
  * ClickConversionTracking.astro
  * ------------------------------------------------------------------
- * Traccia come conversione Google Ads i click sui link WHATSAPP
- * (wa.me / api.whatsapp.com / whatsapp://) presenti in pagina.
- * NB: il TELEFONO non e' piu' tracciato qui (era click su tel:): le
- * telefonate sono ora contate dalla conversion action "Chiamate dal
- * sito web" via il componente WebsiteCallTracking (chiamata reale >=30s),
- * per evitare il doppio conteggio click + chiamata.
+ * Traccia come conversione Google Ads i click sui link TELEFONO (tel:)
+ * e WHATSAPP (wa.me / api.whatsapp.com / whatsapp://) presenti in pagina.
+ * Il tap "Chiama" e' il segnale telefono osservabile e affidabile: la
+ * conversione GFN "Chiamate dal sito web" (WebsiteCallTracking, >=30s)
+ * conta ~0 a questo volume/consenso, quindi va tenuta SECONDARIA su
+ * Google Ads per non duplicare il telefono in bidding.
  *
  * Coerente con l'impianto gtag esistente del sito:
  *  - usa lo stesso Conversion ID AW-10983419342
@@ -20,17 +20,16 @@
  * aggiunti dopo (es. StickyMobileCTA, footer) e funziona su ogni pagina
  * in cui il componente è incluso.
  *
- * ⚠️ LABEL DA INSERIRE: le due conversion action "Click Telefono" e
- * "Click WhatsApp" vanno (ri)create in Google Ads — le precedenti sono
- * REMOVED. Una volta create, sostituire i due placeholder qui sotto con
- * le rispettive Conversion Label (la parte dopo "AW-10983419342/").
- * Finché restano i placeholder, il tracking dei click NON invia nulla
- * (guardia di sicurezza), mentre tutto il resto del sito resta intatto.
+ * LABEL ATTIVE (verificate live su Google Ads, account 8657895088):
+ *  - Click Telefono -> conversion action 7667759003 (ENABLED, creata 2026-06-30)
+ *  - Click WhatsApp -> conversion action 7630051581 (ENABLED)
+ * Se una label torna REMOVED il tracking non conta: ricrearla e
+ * aggiornare la costante corrispondente qui sotto.
  */
 const AW_ID = 'AW-10983419342';
 // Conversion label da Google Ads (azioni "Click Telefono" / "Click WhatsApp", categoria Contatto).
-const LABEL_TELEFONO = '0HOYCPqxpbYcEM7bpvUo';
-const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';
+const LABEL_TELEFONO = 'D6OGCJvvosgcEM7bpvUo';  // 7667759003 "Sfratto Sicuro · Click Telefono" (ENABLED, creata 2026-06-30)
+const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';  // 7630051581 "Sfratto Sicuro · WhatsApp" (ENABLED)
 ---
 
 <script is:inline define:vars={{ AW_ID, LABEL_TELEFONO, LABEL_WHATSAPP }}>
@@ -81,11 +80,12 @@ const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';
     function classify(href) {
       if (!href) return null;
       var h = href.toLowerCase();
-      // NB: i click su tel: NON sono piu' tracciati qui. Le telefonate sono
-      // contate dalla conversion action "Chiamate dal sito web" (componente
-      // WebsiteCallTracking), che misura la chiamata reale >= 30s. Tracciare
-      // anche il click tel: produrrebbe doppio conteggio del telefono.
       if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) return 'wa';
+      // Click su telefono (tap "Chiama") -> conversione "Click Telefono".
+      // La GFN WEBSITE_CALL (>=30s) conta ~0 a questo volume/consenso: il tap
+      // e' il segnale telefono osservabile e affidabile. Tenere la GFN
+      // SECONDARIA per non duplicare il telefono in bidding.
+      if (h.indexOf('tel:') === 0) return 'tel';
       return null;
     }
 
