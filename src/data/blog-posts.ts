@@ -16,6 +16,69 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-morosita-locale-commerciale",
+    title: "Sfratto per morosità di un locale commerciale: cosa cambia per il proprietario",
+    description: "Sfratto per morosità di un locale commerciale: perché non c'è il termine di grazia, quando la morosità è grave e i passi per il proprietario.",
+    excerpt: "Il tuo inquilino commerciale non paga il canone? Guida pratica per il proprietario: perché nella locazione a uso diverso non c'è il termine di grazia, quando la morosità è \"grave\", il ruolo della clausola risolutiva espressa, i passi fino al rilascio e perché non devi l'indennità di avviamento.",
+    lead: "Lo sfratto per morosità di un locale commerciale segue la stessa procedura veloce di quello abitativo, ma con regole più favorevoli al proprietario: niente termine di grazia per l'inquilino, spesso una clausola risolutiva espressa nel contratto e nessuna indennità di avviamento da versare. Questa guida spiega al locatore quando la morosità è abbastanza grave, quali passi seguire e quali errori evitare.",
+    publishedAt: "2026-07-01",
+    updatedAt: "2026-07-01",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-01. Keyword: sfratto per morosità locale commerciale, vol 170, KD 0.",
+    html: `  <p>Hai affittato un negozio, un ufficio o un capannone e da qualche mese l'inquilino non ti versa più il canone. La buona notizia, per il proprietario, è che lo <strong>sfratto per morosità di un locale commerciale</strong> segue la stessa procedura veloce dello sfratto di casa, ma con una differenza che gioca a tuo favore: nella locazione commerciale l'inquilino non ha diritto al cosiddetto "termine di grazia" per rimettersi in pari all'ultimo momento. Questa guida spiega, dalla parte del locatore, come funziona lo <strong>sfratto per morosità del locale commerciale</strong>, quando la morosità è abbastanza "grave" da giustificarlo e quali passi seguire senza commettere errori.</p>
+
+  <h2>Che cos'è una locazione commerciale (uso diverso)</h2>
+  <p>Si parla di locazione commerciale, o più correttamente di <strong>locazione a uso diverso dall'abitazione</strong>, quando l'immobile è affittato per svolgervi un'attività: un negozio, un bar, uno studio professionale, un laboratorio artigiano, un magazzino. Queste locazioni sono regolate dalla legge 392 del 1978 (la cosiddetta legge sull'equo canone), agli articoli da 27 a 42 e hanno di norma una durata di <strong>sei anni più sei</strong> (nove più nove per gli alberghi). È una categoria diversa dall'affitto abitativo, e proprio queste differenze cambiano le regole del gioco quando l'inquilino smette di pagare.</p>
+
+  <h2>La differenza chiave: niente "termine di grazia"</h2>
+  <p>Nello sfratto di un'abitazione, l'inquilino moroso può chiedere al giudice un <strong>termine di grazia</strong> (fino a 90 giorni) per pagare tutto il dovuto ed evitare così lo sfratto: è la sanatoria prevista dall'articolo 55 della legge 392 del 1978, utilizzabile fino a tre volte in quattro anni. Se vuoi capire meglio come funziona nell'abitativo, ne abbiamo parlato nella guida al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+  <p>Nella locazione commerciale, invece, <strong>questa possibilità non esiste</strong>. La Corte di Cassazione, anche a Sezioni Unite, ha chiarito da tempo che il termine di grazia dell'articolo 55 si applica solo alle locazioni abitative, non a quelle a uso diverso. Per il proprietario è un vantaggio concreto: l'inquilino di un locale commerciale non può bloccare lo sfratto pagando all'improvviso in udienza. Se la morosità è grave e viene accertata, la strada verso il rilascio dell'immobile è più lineare.</p>
+
+  <h2>Quando la morosità è "grave" in un locale commerciale</h2>
+  <p>Qui sta la seconda differenza importante. Per gli affitti di casa la legge fissa una soglia automatica: basta un canone non pagato per oltre venti giorni dalla scadenza (articolo 5 della legge 392/1978). Per i locali commerciali <strong>questa soglia fissa non c'è</strong>: è il giudice a valutare, caso per caso, se il mancato pagamento è un <strong>inadempimento grave</strong> secondo i principi generali del codice civile (articolo 1455). In pratica conta l'importo complessivo non pagato, il numero di mensilità arretrate e il peso di quel debito rispetto all'intero rapporto.</p>
+  <p>Attenzione però: quasi tutti i contratti commerciali ben scritti contengono una <strong>clausola risolutiva espressa</strong> (articolo 1456 del codice civile). Con questa clausola le parti stabiliscono in anticipo che il mancato pagamento anche di un solo canone, entro un certo termine, scioglie automaticamente il contratto. Se il tuo contratto la prevede, la tua posizione è molto più solida: il giudice deve solo prendere atto che la condizione si è verificata. È il primo documento da controllare quando l'inquilino smette di pagare.</p>
+
+  <h2>I passi operativi per il proprietario</h2>
+  <p>La procedura è quella dell'intimazione di sfratto con contestuale citazione per la convalida, disciplinata dagli articoli 657 e seguenti del codice di procedura civile e aggiornata dalla riforma Cartabia. Ecco i passaggi principali:</p>
+  <ul>
+    <li><strong>Controlla il contratto e i pagamenti.</strong> Verifica la presenza della clausola risolutiva espressa, calcola con precisione i canoni arretrati (compresi IVA e oneri accessori, se dovuti) e conserva le prove: solleciti, estratti conto, comunicazioni.</li>
+    <li><strong>Valuta un sollecito formale.</strong> Prima di agire in tribunale può essere utile una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>: a volte basta a sbloccare il pagamento, e comunque documenta la tua buona fede.</li>
+    <li><strong>Notifica l'intimazione di sfratto.</strong> Con l'assistenza di un avvocato, si notifica all'inquilino l'atto di intimazione con citazione a comparire in udienza davanti al tribunale del luogo dove si trova l'immobile.</li>
+    <li><strong>Udienza di convalida.</strong> Se l'inquilino non compare o non si oppone in modo fondato, il giudice <strong>convalida lo sfratto</strong> e fissa la data per il rilascio. Trovi il dettaglio nella nostra guida alla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</li>
+    <li><strong>Esecuzione e rilascio.</strong> Dopo la convalida si notificano il precetto e l'avviso di rilascio; se l'inquilino non libera spontaneamente, interviene l'ufficiale giudiziario per la riconsegna dell'immobile.</li>
+  </ul>
+  <p>Un vantaggio ulteriore per il locatore commerciale: nello stesso procedimento è spesso possibile ottenere anche un'ordinanza di ingiunzione di pagamento per i canoni scaduti, contestuale alla convalida, così da avere subito un titolo per recuperare le somme, non solo l'immobile.</p>
+
+  <h2>L'indennità di avviamento: quando NON la devi</h2>
+  <p>Molti proprietari temono di dover pagare all'inquilino l'<strong>indennità per la perdita dell'avviamento commerciale</strong> (prevista dagli articoli 34 e 35 della legge 392/1978 per le attività a contatto diretto con il pubblico). È un timore comprensibile, ma va chiarito: quell'indennità è dovuta quando il contratto finisce alla scadenza per volontà del proprietario, <strong>non</strong> quando il rapporto si scioglie per colpa dell'inquilino. In caso di risoluzione per morosità o per inadempimento del conduttore, <strong>l'indennità di avviamento non spetta</strong>. Chi non paga il canone, in altre parole, perde anche il diritto a questo indennizzo.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Aspettare troppo.</strong> Più mensilità lasci accumulare, più difficile diventa recuperare le somme se l'attività chiude. Meglio muoversi ai primi segnali.</li>
+    <li><strong>Accettare pagamenti parziali senza riserve.</strong> Incassare acconti "a saldo" può indebolire la tua posizione o far pensare a una tolleranza. Ogni incasso va gestito con cautela e con una chiara riserva di agire.</li>
+    <li><strong>Farsi giustizia da soli.</strong> Cambiare la serratura, staccare le utenze o rimuovere la merce dell'inquilino è illegale e può ritorcersi contro di te. Il rilascio passa sempre dal tribunale e dall'ufficiale giudiziario.</li>
+    <li><strong>Trascurare la clausola risolutiva espressa.</strong> Nei nuovi contratti, inserirla (con l'assistenza di un professionista) ti mette al riparo: la sua assenza rende tutto più lungo.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Quanti canoni non pagati servono per lo sfratto di un locale commerciale?</h3>
+  <p>Non c'è un numero fisso, a differenza dell'abitativo. Il giudice valuta la gravità complessiva della morosità. In presenza di una clausola risolutiva espressa nel contratto, però, può bastare anche un solo canone non pagato entro il termine pattuito.</p>
+  <h3>L'inquilino può evitare lo sfratto pagando in udienza?</h3>
+  <p>No. Nella locazione commerciale non si applica il termine di grazia previsto per le abitazioni: l'inquilino non ha il diritto di sanare la morosità all'ultimo momento per bloccare lo sfratto.</p>
+  <h3>Quanto dura la procedura?</h3>
+  <p>Dipende dal tribunale competente e dall'eventuale opposizione dell'inquilino. Se non c'è opposizione, la convalida può arrivare in tempi relativamente brevi; il rilascio effettivo richiede poi la fase esecutiva. È un dato medio operativo, non una promessa: molto dipende dal singolo caso.</p>
+  <h3>Devo pagare l'indennità di avviamento se sfratto per morosità?</h3>
+  <p>No. L'indennità di avviamento non è dovuta quando il contratto si scioglie per inadempimento dell'inquilino, come nel caso della morosità.</p>
+  <h3>Posso recuperare anche i canoni arretrati?</h3>
+  <p>Sì. Nello stesso procedimento puoi ottenere un'ordinanza di ingiunzione di pagamento per le somme non versate, così da avere un titolo per il recupero del credito.</p>
+
+  <h2>In sintesi</h2>
+  <p>Lo <strong>sfratto per morosità di un locale commerciale</strong> è per molti versi più favorevole al proprietario rispetto a quello abitativo: niente termine di grazia, spesso una clausola risolutiva espressa che semplifica l'accertamento e nessuna indennità di avviamento da versare all'inquilino inadempiente. Le insidie stanno però nei dettagli — il calcolo esatto della morosità, la lettura del contratto, i tempi delle notifiche — dove un errore può allungare i tempi o indebolire la posizione. Per questo conviene farsi seguire fin dall'inizio.</p>
+  <p>Se ti trovi in questa situazione, <a href="/contatti/">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso: analizziamo il contratto e la morosità e ti indichiamo la strada più efficace per riavere il tuo immobile. Puoi approfondire anche il nostro servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata. Le norme citate — legge 392/1978 (in particolare gli articoli 5, 27-42, 34-35 e 55), articoli 657-669 del codice di procedura civile, articoli 1455 e 1456 del codice civile e la riforma Cartabia (D.Lgs. 149/2022, con il correttivo D.Lgs. 164/2024) — vanno applicate al caso concreto con l'assistenza di un professionista.</em></p>`,
+  },
+  {
     slug: "intimazione-di-sfratto-per-morosita",
     title: "Intimazione di sfratto per morosità: cos'è, cosa contiene e come funziona",
     description: "Intimazione di sfratto per morosità: cos'è, cosa deve contenere l'atto, l'avviso ex art. 660 c.p.c. e i passi del procedimento. Guida per il proprietario.",
