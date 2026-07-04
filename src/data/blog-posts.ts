@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "diritto-di-prelazione-inquilino",
+    title: "Diritto di prelazione dell'inquilino: quando il proprietario deve rispettarlo",
+    description:
+      "Diritto di prelazione dell'inquilino: quando spetta se vendi o non rinnovi, la differenza tra casa e negozio e come evitare il riscatto.",
+    excerpt:
+      "Se vuoi vendere l'immobile affittato o non rinnovare il contratto, il tuo inquilino puo' avere il diritto di essere preferito a parita' di condizioni. Ma la prelazione non vale sempre: cambia tutto se l'immobile e' una casa o un locale commerciale. Guida pratica per il proprietario, con procedura, eccezioni ed errori da evitare.",
+    lead:
+      "Se sei un proprietario e stai pensando di vendere l'immobile che hai affittato o di non rinnovare il contratto, la prima domanda e': il mio inquilino ha un diritto di prelazione? La risposta dipende soprattutto dal fatto che l'immobile sia una casa di abitazione o un locale commerciale. Vediamo quando la prelazione esiste davvero, come va gestita e quali errori possono farti annullare la vendita.",
+    publishedAt: "2026-07-04",
+    updatedAt: "2026-07-04",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-04. Keyword: diritto di prelazione inquilino, vol 480, KD 0 (DataForSEO).",
+    html: `  <p>Se sei un proprietario e stai pensando di <strong>vendere l'immobile che hai affittato</strong> o di non rinnovare il contratto, la prima domanda da farti è: il mio inquilino ha un <strong>diritto di prelazione</strong>? Cioè può pretendere di essere preferito a un altro acquirente o a un altro affittuario, a parità di condizioni? La risposta non è uguale per tutti: dipende soprattutto dal fatto che l'immobile sia una casa di abitazione oppure un locale commerciale. Vediamo quando la prelazione esiste davvero, come va gestita e quali errori possono farti annullare la vendita.</p>
+
+  <h2>Che cos'è il diritto di prelazione</h2>
+  <p>Il <strong>diritto di prelazione</strong> è il diritto dell'inquilino (in linguaggio giuridico il "conduttore") di essere <strong>preferito a chiunque altro</strong>, a parità di prezzo e condizioni, quando il proprietario decide di vendere l'immobile locato o di darlo di nuovo in affitto alla scadenza. Non obbliga il proprietario a vendere: lo obbliga, se decide di vendere, a <strong>offrire prima l'affare all'inquilino</strong> alle stesse condizioni proposte a terzi.</p>
+  <p>Il punto che confonde molti proprietari è che questo diritto <strong>non vale sempre</strong>. Esiste in modo pieno per gli immobili commerciali, mentre per le case di abitazione è previsto solo in casi molto limitati. Chiarire subito questa differenza ti evita sia di violare un diritto dell'inquilino, sia di rinunciare inutilmente a una vendita libera.</p>
+
+  <h2>Casa di abitazione: di regola nessuna prelazione sulla vendita</h2>
+  <p>Se affitti un appartamento a uso abitativo e vuoi venderlo, nella <strong>grande maggioranza dei casi l'inquilino NON ha diritto di prelazione</strong>. Puoi vendere a chi vuoi, al prezzo che vuoi, senza doverlo offrire prima al conduttore.</p>
+  <p>Attenzione però a un aspetto pratico: la vendita <strong>non cancella il contratto di affitto in corso</strong>. Vale il principio per cui "la vendita non scioglie la locazione" (art. 1599 del Codice civile): se il contratto ha una data certa anteriore alla vendita — ad esempio perché è registrato — l'acquirente <strong>subentra come nuovo locatore</strong> e deve rispettare il contratto fino alla sua scadenza naturale. In parole semplici: vendi la proprietà, ma l'inquilino resta in casa con lo stesso contratto e paga il canone al nuovo proprietario.</p>
+  <p>Esiste una sola eccezione rilevante in cui, sull'abitativo, scatta la prelazione a favore dell'inquilino. È il caso previsto dalla legge sulle locazioni abitative (art. 3, comma 1, lettera g, della Legge 431/1998): quando <strong>alla prima scadenza</strong> del contratto il proprietario nega il rinnovo (la cosiddetta disdetta) <strong>proprio perché intende vendere a terzi</strong> e <strong>non possiede altri immobili abitativi</strong> oltre a quello in cui eventualmente abita. Solo in questa ipotesi il conduttore va preferito, con le stesse regole previste per i locali commerciali (di cui parliamo tra poco). Se vuoi approfondire come funziona il diniego di rinnovo, puoi leggere la guida sulla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del proprietario</a>.</p>
+
+  <h2>Locale commerciale: qui la prelazione esiste (in due momenti)</h2>
+  <p>Il quadro cambia radicalmente per gli immobili a <strong>uso diverso dall'abitazione</strong> — negozi, botteghe, uffici, capannoni, laboratori — regolati dalla legge sull'equo canone (Legge 392/1978). Qui l'inquilino ha un diritto di prelazione in <strong>due situazioni distinte</strong>.</p>
+
+  <h3>1. Prelazione in caso di vendita</h3>
+  <p>Se vuoi <strong>vendere</strong> il locale commerciale affittato, l'inquilino ha diritto di essere preferito, a parità di condizioni, a un acquirente esterno (art. 38 Legge 392/1978). Prima di vendere devi comunicargli formalmente la tua intenzione con un <strong>atto notificato tramite ufficiale giudiziario</strong>, indicando il prezzo (sempre in denaro), tutte le condizioni della vendita e l'invito a esercitare o meno la prelazione. Questa comunicazione formale si chiama <em>denuntiatio</em>.</p>
+
+  <h3>2. Prelazione in caso di nuovo affitto</h3>
+  <p>Se invece, alla scadenza del contratto rinnovato, vuoi <strong>affittare il locale a un nuovo inquilino</strong>, devi prima comunicare al conduttore attuale le offerte ricevute, tramite raccomandata con avviso di ricevimento, <strong>almeno 60 giorni prima della scadenza</strong> (art. 40 Legge 392/1978). Il conduttore può conservare l'affitto offrendo, entro 30 giorni, le stesse condizioni proposte dai terzi.</p>
+
+  <h2>Come si gestisce la prelazione: i passi corretti</h2>
+  <p>Per una vendita di immobile commerciale locato, la procedura ordinata è questa:</p>
+  <ul>
+    <li><strong>Prepara la denuntiatio.</strong> Metti per iscritto prezzo, condizioni di pagamento e ogni altro elemento della compravendita. Devono essere le <strong>stesse condizioni</strong> che offriresti a un terzo.</li>
+    <li><strong>Notifica tramite ufficiale giudiziario.</strong> La legge richiede questa forma per la vendita: una semplice email o raccomandata non basta a mettere al riparo la vendita.</li>
+    <li><strong>Attendi 60 giorni.</strong> L'inquilino ha 60 giorni dalla ricezione per esercitare la prelazione, a sua volta con atto notificato, accettando le identiche condizioni.</li>
+    <li><strong>Se non risponde o rinuncia,</strong> sei libero di vendere a terzi <strong>alle stesse condizioni</strong> comunicate. Se cambi il prezzo in ribasso a favore del terzo, il diritto dell'inquilino può riespandersi.</li>
+    <li><strong>Conserva ogni documento.</strong> Copia della notifica, ricevute e date sono la tua prova di aver rispettato la legge.</li>
+  </ul>
+
+  <h2>Il diritto di riscatto: cosa rischi se sbagli</h2>
+  <p>Sui locali commerciali, ignorare la prelazione ha una conseguenza pesante. Se non fai la comunicazione all'inquilino, oppure se nell'atto indichi un prezzo più alto di quello a cui poi vendi davvero, il conduttore può esercitare il <strong>diritto di riscatto</strong> (art. 39 Legge 392/1978): entro <strong>sei mesi dalla trascrizione</strong> della vendita può "riscattare" l'immobile direttamente dall'acquirente, subentrando nell'acquisto. In pratica rischi di far saltare la vendita e di trovarti in un contenzioso con il compratore. Ecco perché, sul commerciale, la procedura va seguita alla lettera.</p>
+
+  <h2>Quando la prelazione NON si applica</h2>
+  <p>Anche quando il diritto in teoria esisterebbe, la legge prevede alcune eccezioni in cui il proprietario <strong>non è tenuto</strong> a offrire l'immobile all'inquilino:</p>
+  <ul>
+    <li><strong>Vendita a familiari stretti:</strong> il trasferimento a favore del coniuge o dei parenti entro il secondo grado (genitori, figli, nonni, nipoti, fratelli) è escluso dalla prelazione.</li>
+    <li><strong>Divisione tra coeredi:</strong> non si applica nelle ipotesi di prelazione tra coeredi previste dall'art. 732 del Codice civile.</li>
+    <li><strong>Vendita "in blocco":</strong> secondo l'orientamento consolidato dei giudici, se vendi l'intero edificio o più unità insieme come un unico complesso — e non il singolo locale affittato — la prelazione del conduttore in genere non opera.</li>
+    <li><strong>Contratto già cessato:</strong> l'obbligo di offerta per il nuovo affitto non ricorre se l'inquilino ha già comunicato che non intende rinnovare, oppure in caso di risoluzione per inadempimento o recesso del conduttore.</li>
+  </ul>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Trattare la casa come il negozio.</strong> Offrire la prelazione su un appartamento quando non serve può rallentare o complicare inutilmente la vendita.</li>
+    <li><strong>Trattare il negozio come la casa.</strong> Vendere un locale commerciale senza la denuntiatio espone al riscatto: è l'errore più costoso.</li>
+    <li><strong>Usare la forma sbagliata.</strong> Per la vendita commerciale serve la notifica tramite ufficiale giudiziario, non una semplice raccomandata o PEC.</li>
+    <li><strong>Vendere a un prezzo più basso di quello comunicato.</strong> Se offri al terzo condizioni migliori di quelle proposte all'inquilino, riapri la strada alla prelazione o al riscatto.</li>
+    <li><strong>Dimenticare che il contratto prosegue.</strong> Sull'abitativo, chi compra si tiene l'inquilino fino alla scadenza: va detto chiaramente all'acquirente.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <ul>
+    <li><strong>Devo per forza offrire prima la casa al mio inquilino se la vendo?</strong><br>No. Per le abitazioni, di regola non c'è prelazione sulla vendita. Puoi vendere liberamente; l'acquirente subentra però nel contratto in corso.</li>
+    <li><strong>E se affitto un negozio e voglio venderlo?</strong><br>Qui la prelazione c'è: devi comunicare all'inquilino prezzo e condizioni con atto notificato dall'ufficiale giudiziario. Ha 60 giorni per esercitarla.</li>
+    <li><strong>Cosa succede se vendo il negozio senza avvisare l'inquilino?</strong><br>Può esercitare il diritto di riscatto entro sei mesi dalla trascrizione della vendita, subentrando all'acquirente. Rischi di far saltare l'operazione.</li>
+    <li><strong>La prelazione vale anche se vendo a mio figlio?</strong><br>No. La vendita al coniuge o ai parenti entro il secondo grado è esclusa dall'obbligo di prelazione.</li>
+    <li><strong>L'inquilino può bloccare la vendita?</strong><br>No. Non può impedirti di vendere: può solo, quando ha diritto di prelazione, essere preferito a parità di condizioni. Se rinuncia o non risponde nei termini, procedi liberamente.</li>
+  </ul>
+
+  <h2>In sintesi</h2>
+  <p>Per la <strong>casa di abitazione</strong>, di norma nessuna prelazione sulla vendita (salvo il caso del diniego di rinnovo per vendere quando non hai altri immobili): vendi liberamente, ma l'acquirente eredita il contratto. Per il <strong>locale commerciale</strong>, la prelazione esiste sia sulla vendita (art. 38) sia sul nuovo affitto (art. 40), con il rischio del riscatto (art. 39) se non rispetti la procedura. Prima di firmare un preliminare o dare disdetta, verifica in che categoria ricade il tuo immobile: è il modo più semplice per evitare contestazioni e vendite annullate.</p>
+
+  <p>Se hai un immobile affittato e vuoi capire come muoverti tra vendita, disdetta e gestione dell'inquilino, <a href="/#contatti">contatta Sfratto Sicuro</a>: la prima consulenza è gratuita e senza impegno, e ti aiutiamo a tutelare il tuo immobile con tempi e costi chiari. Può interessarti anche la guida sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata sul singolo contratto. I riferimenti normativi principali sono gli artt. 38, 39 e 40 della Legge 392/1978, l'art. 3 della Legge 431/1998 e l'art. 1599 del Codice civile.</em></p>`,
+  },
+  {
     slug: "sfratto-morosita-locale-commerciale",
     title: "Sfratto per morosità di un locale commerciale: cosa cambia per il proprietario",
     description: "Sfratto per morosità di un locale commerciale: perché non c'è il termine di grazia, quando la morosità è grave e i passi per il proprietario.",
