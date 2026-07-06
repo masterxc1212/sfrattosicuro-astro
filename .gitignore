@@ -58,3 +58,6 @@ _publish_push.bat
 # (cartella di lavoro al root, non contenuto del sito Astro). Se ne vuoi tracciare
 # i soli script sorgente, togli questa riga e ignora le sottocartelle media.
 social/
+
+# Contratti (engine legal design, non parte del sito)
+/contratti/
