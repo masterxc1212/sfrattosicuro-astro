@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "precetto-per-rilascio-immobile",
+    title: "Precetto per rilascio immobile: cos'è e come funziona dopo lo sfratto",
+    description:
+      "Precetto per rilascio immobile: cos'è, cosa deve contenere e i passaggi per liberare la casa dopo la convalida dello sfratto. Guida per il proprietario.",
+    excerpt:
+      "Ottenuta la convalida dello sfratto, l'immobile non torna libero da solo: serve un ultimo passaggio, l'atto di precetto per rilascio, seguito dall'intervento dell'ufficiale giudiziario. Guida pratica per il proprietario su cos'è il precetto, cosa deve contenere, i tempi e gli errori che possono far ripartire tutto da capo.",
+    lead:
+      "Il precetto per rilascio immobile è l'atto con cui, dopo aver ottenuto lo sfratto, il proprietario intima formalmente all'inquilino di lasciare la casa prima di far intervenire l'ufficiale giudiziario. È il ponte tra la sentenza e la riconsegna materiale dell'immobile: sbagliarlo o lasciarlo scadere significa perdere settimane preziose. Vediamo, in parole semplici, cos'è, cosa deve contenere e come si arriva davvero a riavere l'immobile.",
+    publishedAt: "2026-07-06",
+    updatedAt: "2026-07-06",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-07-06. Keyword: precetto per rilascio immobile, vol 210, KD 0 (DataForSEO). Secondarie: precetto per rilascio immobile riforma Cartabia, avviso di rilascio, esecuzione per rilascio.",
+    html: `  <p>Hai ottenuto la <strong>convalida dello sfratto</strong> e pensavi che, a quel punto, l'inquilino se ne sarebbe andato. Invece la casa è ancora occupata e non succede nulla. È la situazione più frustrante per un proprietario, ma anche la più comune: la sentenza da sola non libera l'immobile. Serve un ultimo atto formale, il <strong>precetto per rilascio immobile</strong>, seguito dall'intervento dell'ufficiale giudiziario. Questa guida spiega, dalla parte del proprietario, cos'è il precetto, cosa deve contenere, i tempi realistici e gli errori che possono far ripartire tutto da zero.</p>
+
+  <h2>Che cos'è il precetto per rilascio immobile</h2>
+  <p>Il <strong>precetto per rilascio immobile</strong> è l'atto con cui il proprietario <strong>intima formalmente all'inquilino di liberare l'immobile</strong> entro un certo termine, avvertendolo che, in mancanza, si procederà con l'esecuzione forzata (cioè l'intervento dell'ufficiale giudiziario). In pratica è l'ultimo avviso "civile" prima di passare alla riconsegna coatta della casa.</p>
+  <p>Il precetto non nasce dal nulla: presuppone un <strong>titolo esecutivo</strong>, cioè un provvedimento del giudice che ti dà diritto a riavere l'immobile. Nello sfratto questo titolo è di norma l'<strong>ordinanza di convalida</strong> (il provvedimento con cui il giudice, se l'inquilino non compare o non si oppone, convalida lo sfratto) oppure l'<strong>ordinanza di rilascio</strong> emessa quando l'inquilino solleva contestazioni non provate per iscritto. Senza uno di questi provvedimenti, il precetto non si può fare.</p>
+
+  <h2>Prima del precetto: la data di rilascio fissata dal giudice</h2>
+  <p>Un passaggio che molti proprietari ignorano: quando il giudice dispone il rilascio, <strong>fissa anche la data entro cui l'immobile deve essere liberato</strong>. Questa data non è libera: la legge la colloca entro un termine massimo di <strong>sei mesi</strong> dal provvedimento (in casi eccezionali fino a dodici mesi), tenendo conto della situazione dell'inquilino e del proprietario. Nei casi di sfratto per morosità in cui viene concesso all'inquilino un termine per pagare, la data di esecuzione non può invece essere fissata oltre <strong>sessanta giorni</strong> dalla scadenza di quel termine.</p>
+  <p>Solo <strong>dopo che è passata inutilmente la data fissata</strong> il proprietario può notificare il precetto e avviare l'esecuzione vera e propria. Chi si muove prima rischia di spendere per un atto ancora inefficace. Se hai dubbi su come si arriva al provvedimento, è utile ripassare come funziona la <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</p>
+
+  <h2>Cosa deve contenere il precetto (a pena di nullità)</h2>
+  <p>Il precetto per il rilascio di un immobile deve avere un contenuto preciso: alcune indicazioni sono richieste <strong>a pena di nullità</strong>, cioè se mancano l'atto è invalido e va rifatto. In particolare deve contenere:</p>
+  <ul>
+    <li><strong>L'intimazione ad adempiere entro un termine non inferiore a dieci giorni</strong>, con l'avvertimento che, in caso contrario, si procederà a esecuzione forzata.</li>
+    <li><strong>L'indicazione delle parti</strong> (proprietario e inquilino) e la data di notifica del titolo esecutivo, se questa è avvenuta separatamente.</li>
+    <li>La <strong>descrizione sommaria dell'immobile</strong> da rilasciare: è una richiesta specifica del rilascio, che serve a individuare con esattezza la casa o il locale interessato.</li>
+    <li>L'indicazione del <strong>giudice competente per l'esecuzione</strong> e l'elezione di domicilio o l'indirizzo di posta elettronica certificata (PEC, la casella email con valore legale) del proprietario.</li>
+    <li>La <strong>sottoscrizione</strong> e la <strong>notifica all'inquilino personalmente</strong>, nelle forme di legge.</li>
+  </ul>
+  <p>Se il titolo esecutivo indica già un termine per il rilascio, l'intimazione va costruita facendo riferimento a quel termine. Sono dettagli tecnici che conviene affidare a un professionista: un precetto scritto male è un regalo alla controparte.</p>
+
+  <h2>I passaggi operativi, in ordine</h2>
+  <p>Ecco la sequenza reale che porta dalla sentenza alla riconsegna delle chiavi:</p>
+  <ul>
+    <li><strong>1. Notifica del titolo e del precetto.</strong> Si notifica all'inquilino l'ordinanza (il titolo esecutivo) insieme al precetto, che concede almeno dieci giorni per liberare spontaneamente l'immobile.</li>
+    <li><strong>2. Attesa del termine.</strong> Se l'inquilino rilascia la casa nel termine, la vicenda si chiude qui. Nella maggior parte dei casi problematici, però, non lo fa.</li>
+    <li><strong>3. Avviso di rilascio dell'ufficiale giudiziario.</strong> Scaduto il termine, l'esecuzione inizia con la notifica di un avviso con cui l'ufficiale giudiziario comunica, <strong>almeno dieci giorni prima</strong>, il giorno e l'ora in cui si presenterà per liberare l'immobile.</li>
+    <li><strong>4. Accesso e immissione nel possesso.</strong> Nel giorno stabilito l'ufficiale giudiziario, munito del titolo e del precetto, accede all'immobile e <strong>reimmette il proprietario nel possesso</strong> (cioè gli riconsegna materialmente l'immobile), consegnandogli le chiavi. Se serve, può farsi assistere dalla forza pubblica.</li>
+  </ul>
+  <p>Come si svolgono concretamente gli accessi — e cosa fare se l'inquilino non apre o chiede un rinvio — lo trovi spiegato nella guida sullo <a href="/blog/sfratto-con-ufficiale-giudiziario/">sfratto con ufficiale giudiziario</a>. Per una visione d'insieme della fase finale può aiutare anche l'articolo sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo</a>.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Lasciare scadere il precetto.</strong> Il precetto diventa inefficace se entro <strong>novanta giorni</strong> dalla notifica non è iniziata l'esecuzione. Se resti fermo troppo a lungo, devi rifare e rinotificare l'atto, con nuovi costi e nuovi tempi.</li>
+    <li><strong>Muoversi prima della data fissata dal giudice.</strong> Notificare il precetto prima che sia passata la data di rilascio indicata nel provvedimento espone a contestazioni e a un atto inefficace.</li>
+    <li><strong>Descrivere male l'immobile.</strong> Una descrizione imprecisa o assente può rendere il precetto attaccabile.</li>
+    <li><strong>Fare da soli sulla notifica.</strong> La notifica è un passaggio tecnico: un errore di destinatario, di indirizzo o di forma può azzerare l'atto.</li>
+    <li><strong>Farsi giustizia da soli.</strong> Cambiare la serratura o svuotare l'appartamento senza l'ufficiale giudiziario è illegittimo e può esporti a responsabilità. Il rilascio deve passare sempre dall'esecuzione ufficiale.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Il precetto per rilascio è sempre necessario dopo lo sfratto?</h3>
+  <p>Di norma sì. Anche con l'ordinanza di convalida in mano, per procedere all'esecuzione forzata occorre prima notificare il titolo e il precetto: è il passaggio che apre formalmente la fase esecutiva. I dettagli e le eventuali eccezioni vanno valutati dal legale sul caso concreto.</p>
+  <h3>Quanti giorni ho per far liberare la casa?</h3>
+  <p>Il precetto concede all'inquilino almeno dieci giorni per rilasciare spontaneamente. Poi l'ufficiale giudiziario deve avvisare, almeno dieci giorni prima, la data dell'accesso. I tempi effettivi dipendono però dal carico del singolo Tribunale e dalla disponibilità dell'ufficiale giudiziario.</p>
+  <h3>L'inquilino può ancora bloccare tutto?</h3>
+  <p>Può proporre opposizione al precetto o chiedere un differimento del rilascio: sono strumenti previsti dalla legge, che possono allungare i tempi. Per questo è importante che ogni atto sia impeccabile e notificato correttamente.</p>
+  <h3>Se l'inquilino se ne va da solo devo comunque fare il precetto?</h3>
+  <p>No. Se libera l'immobile spontaneamente e ti riconsegna le chiavi, l'esecuzione non serve. Conviene però formalizzare la riconsegna con un verbale, per evitare contestazioni successive.</p>
+
+  <h2>In sintesi</h2>
+  <p>Il <strong>precetto per rilascio immobile</strong> è l'anello che collega la sentenza di sfratto alla riconsegna reale della casa. Rispettare la data fissata dal giudice, redigere l'atto con tutti i requisiti di legge e non lasciarlo scadere nei novanta giorni sono i tre punti che fanno la differenza tra un rilascio rapido e mesi persi. È una fase tecnica, in cui gli errori formali si pagano con settimane di ritardo.</p>
+  <p>Se hai ottenuto lo sfratto e vuoi arrivare al rilascio nel modo più rapido e sicuro possibile, puoi <a href="/contatti/">contattare Sfratto Sicuro</a> per una prima valutazione della tua situazione.</p>
+  <p><em>Riferimenti normativi: artt. 480, 481, 605 e 608 del codice di procedura civile (c.p.c.) sulla forma del precetto, sulla sua efficacia e sul modo del rilascio; ordinanza di convalida (art. 663 c.p.c.) e ordinanza di rilascio (art. 665 c.p.c.) come titoli esecutivi; artt. 55 e 56 della legge 392/1978 sul termine di grazia e sulla data di esecuzione fissata dal giudice. La disciplina va letta alla luce della riforma Cartabia (D.Lgs. 149/2022) e del correttivo (D.Lgs. 164/2024).</em></p>
+  <p><em>Contenuto informativo, aggiornato a luglio 2026: non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+  {
     slug: "diritto-di-prelazione-inquilino",
     title: "Diritto di prelazione dell'inquilino: quando il proprietario deve rispettarlo",
     description:
