@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "locazioni-brevi",
+    title: "Locazioni brevi: la guida 2026 per il proprietario (CIN, cedolare secca e adempimenti)",
+    description: "Locazioni brevi 2026: guida per il proprietario a CIN, cedolare secca 21%/26%, soglia dei due appartamenti e adempimenti da rispettare.",
+    excerpt: "Vuoi affittare casa a turisti con la formula degli affitti brevi? Guida pratica per il proprietario: cos'è una locazione breve, il CIN obbligatorio dal 2025, i requisiti di sicurezza, la cedolare secca al 21% e 26%, la nuova soglia dei due appartamenti dal 2026 e gli adempimenti da rispettare per evitare sanzioni.",
+    lead: "Le locazioni brevi (gli affitti fino a 30 giorni) sono un modo diffuso per mettere a reddito un immobile, ma dal 2025 servono il CIN obbligatorio e precisi requisiti di sicurezza, e dal 2026 cambia la tassazione e si abbassa la soglia oltre la quale si diventa imprenditori. Questa guida spiega al proprietario cosa fare, passo per passo, e quali errori evitare.",
+    publishedAt: "2026-07-08",
+    updatedAt: "2026-07-08",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-08. Keyword: locazioni brevi, vol 720, KD 0.",
+    html: `<p>Stai pensando di affittare un appartamento a turisti o a chi ha bisogno di una sistemazione per pochi giorni? Le <strong>locazioni brevi</strong> (i cosiddetti "affitti brevi") sono una delle formule più diffuse per mettere a reddito un immobile, ma dal 2024 e ancora di più nel 2026 le regole sono cambiate: è arrivato il <strong>CIN</strong>, il codice identificativo obbligatorio, ed è cambiata la tassazione. Questa guida spiega, dalla parte del <strong>proprietario</strong>, cosa sono le locazioni brevi, quali adempimenti devi rispettare e quali errori evitare per non rischiare sanzioni.</p>
+
+<h2>Che cosa sono le locazioni brevi</h2>
+<p>Si parla di <strong>locazioni brevi</strong> quando affitti un immobile a uso abitativo per un periodo <strong>non superiore a 30 giorni</strong>, al di fuori dell'esercizio di un'attività d'impresa. È la definizione fissata dall'articolo 4 del decreto legge 50 del 2017 (convertito nella legge 96 del 2017). La durata "breve" ha due conseguenze pratiche importanti: il contratto <strong>non va registrato</strong> all'Agenzia delle Entrate (a differenza degli affitti ordinari, di cui parliamo nella guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>) e il rapporto può includere anche servizi accessori come la fornitura di biancheria e la pulizia dei locali.</p>
+<p>La formula riguarda il singolo proprietario che affitta la propria casa o una seconda casa, direttamente o tramite portali online come i più noti siti di annunci turistici. Proprio perché è pensata per il privato, quando l'attività diventa "grande" scattano regole diverse, come vedremo più avanti.</p>
+
+<h2>Il CIN: il nuovo obbligo per chi affitta</h2>
+<p>La novità più importante degli ultimi anni è il <strong>CIN</strong>, cioè il <strong>Codice Identificativo Nazionale</strong>. È un codice univoco che identifica ogni immobile destinato a locazione breve o turistica, introdotto dall'articolo 13-ter del decreto legge 145 del 2023 (convertito nella legge 191 del 2023). Serve allo Stato per mappare tutti gli alloggi affittati a fini turistici e contrastare l'evasione e l'abusivismo.</p>
+<p>Il CIN si richiede <strong>gratuitamente online</strong> sulla Banca Dati delle Strutture Ricettive (BDSR) del Ministero del Turismo, accedendo con SPID o CIE (la carta d'identità elettronica). Una volta ottenuto, il codice va:</p>
+<ul>
+  <li><strong>esposto all'esterno dello stabile</strong> dove si trova l'immobile;</li>
+  <li><strong>indicato in ogni annuncio</strong>, sui portali e sui siti di prenotazione;</li>
+  <li><strong>riportato nella dichiarazione dei redditi</strong> a partire dal 2025 (nel modello 730 va inserito nella sezione dedicata ai redditi da locazione).</li>
+</ul>
+<p>L'obbligo è pienamente operativo <strong>dal 1° gennaio 2025</strong> e le sanzioni si applicano dallo stesso periodo. Chi affitta un immobile privo di CIN rischia una <strong>sanzione da 800 a 8.000 euro</strong>; la mancata esposizione o indicazione del codice negli annunci è punita con una sanzione <strong>da 500 a 5.000 euro</strong>. Sono cifre che rendono conveniente mettersi in regola prima di pubblicare qualsiasi annuncio.</p>
+
+<h2>I requisiti di sicurezza</h2>
+<p>Insieme al CIN, la stessa normativa ha introdotto <strong>obblighi di sicurezza uniformi</strong> per tutti gli immobili affittati a breve termine, a prescindere da chi li gestisce. In particolare, l'alloggio deve essere dotato di <strong>dispositivi per la rilevazione di gas combustibili e monossido di carbonio</strong> e di <strong>estintori portatili</strong> a norma. Sono requisiti che vanno verificati e dichiarati proprio in fase di richiesta del CIN: senza di essi il codice non viene rilasciato.</p>
+
+<h2>La tassazione: cedolare secca sugli affitti brevi</h2>
+<p>Sul piano fiscale, il proprietario può scegliere di tassare i canoni delle locazioni brevi con la <strong>cedolare secca</strong>, cioè un'imposta sostitutiva che prende il posto dell'IRPEF (l'imposta sul reddito delle persone fisiche) e delle relative addizionali. Se vuoi capire il meccanismo generale, ne parliamo nella guida alla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>. Per le locazioni brevi, però, valgono aliquote specifiche:</p>
+<ul>
+  <li><strong>21%</strong> sui redditi di <strong>un solo immobile</strong>, scelto dal proprietario in sede di dichiarazione dei redditi;</li>
+  <li><strong>26%</strong> sui redditi <strong>del secondo immobile</strong> destinato ad affitti brevi nello stesso anno.</li>
+</ul>
+<p>La cedolare, quando applicata, ha un vantaggio pratico: rende <strong>non dovuta l'imposta di bollo e di registro</strong> e non fa cumulare quel reddito con gli altri ai fini delle aliquote IRPEF. Resta però una scelta da valutare caso per caso, in base alla propria situazione fiscale complessiva.</p>
+
+<h2>La regola dei due appartamenti (novità 2026)</h2>
+<p>Attenzione a una novità che riguarda proprio il 2026. Fino al 2025 il regime delle locazioni brevi (e quindi la cedolare secca) era riconosciuto a chi destinava a questa finalità <strong>fino a quattro appartamenti</strong> nell'anno. Dal periodo d'imposta 2026, per effetto della Legge di Bilancio 2026 (recepita nella guida aggiornata dell'Agenzia delle Entrate), la soglia è stata <strong>ridotta a due appartamenti</strong>. Oltre tale limite — quindi <strong>dal terzo immobile</strong> affittato a breve termine nello stesso anno — l'attività, chiunque la eserciti, si presume svolta in <strong>forma imprenditoriale</strong>: scattano l'obbligo di partita IVA, la SCIA (la segnalazione di inizio attività) e l'iscrizione al Registro delle imprese.</p>
+<p>In pratica: con uno o due appartamenti resti nel regime "leggero" del privato; dal terzo diventi un imprenditore a tutti gli effetti, con adempimenti e costi molto diversi. È il primo calcolo da fare se possiedi più immobili e stai pensando di affittarli tutti a turisti.</p>
+
+<h2>Gli adempimenti pratici: la checklist del proprietario</h2>
+<p>Oltre al CIN e alla scelta fiscale, chi affitta a breve termine deve rispettare alcuni obblighi operativi. Ecco i principali:</p>
+<ul>
+  <li><strong>Comunicazione degli ospiti alla Questura.</strong> Entro <strong>24 ore</strong> dall'arrivo devi trasmettere i dati delle persone alloggiate tramite il portale "Alloggiati Web" della Polizia di Stato (obbligo previsto dall'articolo 109 del Testo Unico delle Leggi di Pubblica Sicurezza). Vale anche per i soggiorni di una sola notte.</li>
+  <li><strong>Esposizione e indicazione del CIN.</strong> Il codice va pubblicato in ogni annuncio e affisso all'esterno dello stabile.</li>
+  <li><strong>Ritenuta del 21% da parte degli intermediari.</strong> Se affitti tramite un portale o un'agenzia che incassa il canone per tuo conto, quel soggetto applica una <strong>ritenuta del 21%</strong> sull'importo e la versa allo Stato come acconto o imposta. Se invece il pagamento avviene direttamente tra te e l'ospite, la ritenuta non si applica e la tassazione resta interamente a tuo carico in dichiarazione.</li>
+  <li><strong>Comunicazione dei dati all'Agenzia delle Entrate.</strong> Gli intermediari immobiliari devono trasmettere i dati dei contratti conclusi entro il 30 giugno dell'anno successivo.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+  <li><strong>Pubblicare l'annuncio senza CIN.</strong> È l'errore più costoso: basta un annuncio online privo di codice per esporsi alle sanzioni.</li>
+  <li><strong>Dimenticare la comunicazione alla Questura.</strong> Non è un adempimento "turistico" facoltativo: è un obbligo di pubblica sicurezza, con sanzioni proprie.</li>
+  <li><strong>Superare la soglia senza accorgersene.</strong> Chi affitta più immobili deve monitorare quanti ne destina agli affitti brevi nell'anno, per non ritrovarsi "imprenditore" senza averlo pianificato.</li>
+  <li><strong>Confondere breve e transitorio.</strong> La locazione breve (fino a 30 giorni, non registrata) è cosa diversa dal contratto transitorio (da 1 a 18 mesi, registrato): regole, durata e tassazione non coincidono.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Devo registrare il contratto di locazione breve?</h3>
+<p>No. Se la durata non supera i 30 giorni, il contratto non va registrato all'Agenzia delle Entrate. Restano però gli altri obblighi: CIN, comunicazione degli ospiti alla Questura e dichiarazione dei redditi.</p>
+<h3>Il CIN è obbligatorio anche se affitto una sola casa?</h3>
+<p>Sì. Il CIN è richiesto per ogni immobile destinato a locazione breve o turistica, indipendentemente dal numero di case che possiedi. Va richiesto gratuitamente sulla banca dati del Ministero del Turismo.</p>
+<h3>Quanti immobili posso affittare a breve termine come privato?</h3>
+<p>Dal 2026 fino a due appartamenti nello stesso anno. Dal terzo, l'attività si presume imprenditoriale e servono partita IVA, SCIA e iscrizione al Registro delle imprese.</p>
+<h3>Che aliquota di cedolare secca si applica?</h3>
+<p>Il 21% sui redditi di un immobile scelto in dichiarazione e il 26% sul secondo immobile destinato ad affitti brevi nello stesso anno.</p>
+
+<h2>In sintesi</h2>
+<p>Le <strong>locazioni brevi</strong> restano una formula interessante per il proprietario, ma nel 2026 richiedono più attenzione di un tempo: il CIN è ora obbligatorio, gli immobili devono rispettare requisiti di sicurezza, la tassazione distingue tra primo e secondo immobile e la soglia oltre la quale si diventa imprenditori si è abbassata a due appartamenti. Muoversi in ordine — codice, sicurezza, comunicazioni e scelta fiscale — evita sanzioni che possono superare di gran lunga il guadagno di una singola stagione.</p>
+<p>Se hai dubbi sul regime da applicare al tuo immobile o vuoi verificare la tua posizione prima di iniziare, <a href="/contatti/">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata. Le norme citate — articolo 4 del D.L. 50/2017 (convertito in L. 96/2017), articolo 13-ter del D.L. 145/2023 (convertito in L. 191/2023), articolo 109 del R.D. 773/1931 (TULPS) e le disposizioni sulla cedolare secca e sulla soglia dei due appartamenti agg`,
+  },
+  {
     slug: "precetto-per-rilascio-immobile",
     title: "Precetto per rilascio immobile: cos'è e come funziona dopo lo sfratto",
     description:
