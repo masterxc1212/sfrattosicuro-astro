@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'contratto-locazione-commerciale',
+    title: 'Contratto di locazione commerciale: la guida per il proprietario',
+    description:
+      'Contratto di locazione commerciale: durata 6+6, disdetta, recesso, indennità di avviamento e prelazione. Guida pratica per il proprietario.',
+    excerpt:
+      "Come funziona il contratto di locazione commerciale dal punto di vista del proprietario: durata minima, disdetta, indennità di avviamento e gli errori da evitare.",
+    lead:
+      "Affittare un locale a un'attività non è come affittare una casa: la legge fissa regole più rigide su durata, disdetta e uscita dal contratto. Conoscerle prima di firmare protegge il proprietario da vincoli lunghi e da costi inattesi.",
+    publishedAt: '2026-07-10',
+    updatedAt: '2026-07-10',
+    category: 'Locazioni',
+    readingTime: '8 min',
+    sourceNote:
+      'Generato automaticamente 2026-07-10. Keyword: contratto di locazione commerciale, vol 1000, KD 0.',
+    html: `
+      <p>Il <strong>contratto di locazione commerciale</strong> è lo strumento con cui un proprietario affitta un immobile a chi vi svolge un'attività: un negozio, un bar, uno studio professionale, un laboratorio o un magazzino. Le regole sono molto diverse da quelle dell'affitto di casa e, nella maggior parte dei casi, vincolano il proprietario più a lungo. Capire come funziona prima di firmare è il modo migliore per evitare sorprese sulla durata, sull'uscita dal contratto e su eventuali somme da versare all'inquilino alla fine del rapporto.</p>
+      <p>Questa guida spiega, in modo pratico e dal punto di vista del locatore, cosa contiene un contratto di locazione commerciale, quali sono i vincoli di legge e dove conviene fare attenzione. Se il tuo obiettivo è impostare correttamente il testo, può esserti utile anche il supporto sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+
+      <h2>Che cos'è un contratto di locazione commerciale</h2>
+      <p>Si parla di locazione commerciale, o più correttamente di <strong>locazione a uso diverso dall'abitazione</strong>, quando l'immobile è destinato a un'attività economica o professionale. Questi contratti sono regolati dalla legge 27 luglio 1978, n. 392 (la cosiddetta legge sull'equo canone), agli articoli da 27 a 42. È proprio questa cornice normativa a rendere la locazione commerciale meno "libera" di quanto molti proprietari immaginino: diverse regole sono <strong>inderogabili</strong>, cioè valide anche se il contratto dice il contrario.</p>
+      <p>La differenza pratica è netta. Nell'affitto abitativo il proprietario ha più margini di manovra su durata e disdetta; nella locazione commerciale, invece, la legge tende a proteggere la continuità dell'attività dell'inquilino, e questo si traduce in vincoli più stringenti per chi affitta.</p>
+
+      <h2>La durata: il vincolo del 6+6</h2>
+      <p>La regola base riguarda la durata. Un contratto di locazione commerciale non può avere una durata inferiore a <strong>sei anni</strong>. Alla prima scadenza, se nessuna delle due parti interviene, il contratto <strong>si rinnova automaticamente per altri sei anni</strong>: è il meccanismo che tutti conoscono come <strong>"6+6"</strong>. Per le attività alberghiere la durata minima sale a nove anni, con rinnovo di altri nove (il "9+9").</p>
+      <p>Il punto delicato per il proprietario è che, alla <strong>prima scadenza</strong>, non può semplicemente decidere di non rinnovare. La legge (articolo 29) gli consente di negare il rinnovo solo per <strong>motivi tassativi</strong>, cioè elencati in modo preciso: ad esempio se intende usare l'immobile per sé o per un familiare, esercitarvi un'attività, ricostruirlo o ristrutturarlo integralmente, oppure demolirlo. Fuori da questi casi, il contratto prosegue per un secondo periodo di sei anni. Solo alla <strong>seconda scadenza</strong> il proprietario può dare disdetta liberamente, senza dover motivare.</p>
+
+      <h2>La disdetta: tempi e forma</h2>
+      <p>Per impedire il rinnovo automatico non basta far scadere il contratto: serve una <strong>disdetta formale</strong>, inviata con largo anticipo. Il preavviso è di <strong>dodici mesi</strong> prima della scadenza (diciotto mesi per le attività alberghiere). La comunicazione va fatta con un mezzo tracciabile — lettera raccomandata con avviso di ricevimento oppure PEC, la posta elettronica certificata che ha lo stesso valore legale di una raccomandata — e, se serve a negare il rinnovo alla prima scadenza, deve indicare il <strong>motivo</strong> tra quelli previsti dalla legge.</p>
+      <p>Se il proprietario dimentica di inviare la disdetta nei tempi, il contratto si rinnova per l'intero periodo successivo. È uno degli errori più costosi: un semplice ritardo può vincolare l'immobile per altri sei anni.</p>
+
+      <h2>Il recesso dell'inquilino</h2>
+      <p>Anche l'inquilino ha una via d'uscita, ma regolata, ed è bene che il proprietario la conosca in anticipo. Il conduttore può recedere dal contratto in qualsiasi momento se ricorrono <strong>gravi motivi</strong>, dando un preavviso di <strong>sei mesi</strong> (articolo 27, ultimo comma). In più, le parti possono inserire nel contratto una clausola che consenta al conduttore di recedere liberamente, sempre con sei mesi di preavviso. Per il proprietario questo significa che l'inquilino può liberarsi prima della scadenza più facilmente di quanto possa fare lui: un motivo in più per selezionare con cura chi entra nel locale e per chiedere garanzie adeguate.</p>
+
+      <h2>L'indennità per la perdita dell'avviamento</h2>
+      <p>È il punto che spaventa di più i proprietari, e va spiegato con precisione. La legge (articoli 34 e 35) prevede che, per le attività <strong>a contatto diretto con il pubblico</strong> (negozi, bar, ristoranti e simili), alla fine del contratto il proprietario debba pagare all'inquilino un'<strong>indennità per la perdita dell'avviamento commerciale</strong>, pari a <strong>18 mensilità</strong> dell'ultimo canone (21 mensilità per gli alberghi). Va tenuto presente un dettaglio economicamente rilevante: quando è dovuta, il pagamento dell'indennità è <strong>condizione per ottenere il rilascio</strong> dell'immobile.</p>
+      <p>Ma attenzione: questa indennità è dovuta <strong>solo</strong> quando il rapporto finisce per una causa non imputabile all'inquilino, tipicamente la disdetta del proprietario alla scadenza. <strong>Non</strong> è dovuta quando il contratto si scioglie per <strong>colpa dell'inquilino</strong> (per esempio in caso di morosità), quando è l'inquilino stesso a recedere, o quando l'attività <strong>non</strong> comporta contatto diretto con il pubblico (uffici, magazzini, depositi). Su come funziona quando l'inquilino non paga abbiamo approfondito nella guida allo <a href="/blog/sfratto-morosita-locale-commerciale/">sfratto per morosità di un locale commerciale</a>.</p>
+
+      <h2>Prelazione, canone e registrazione</h2>
+      <p>Ci sono altri tre aspetti che il proprietario deve tenere presenti quando prepara un contratto di locazione commerciale:</p>
+      <ul>
+        <li><strong>Diritto di prelazione</strong>: se il proprietario vuole vendere l'immobile, l'inquilino ha spesso un diritto di preferenza a parità di condizioni (articoli 38 e 39). In questo caso, se il proprietario "salta" la prelazione, l'inquilino può addirittura riscattare l'immobile dal nuovo acquirente (il cosiddetto <strong>retratto</strong>). Un diritto di preferenza esiste anche quando, alla scadenza, il proprietario affitta di nuovo lo stesso locale (articolo 40): qui però l'inquilino pretermesso ha diritto solo al risarcimento del danno, non al riscatto. La prelazione, come l'indennità di avviamento, non spetta per le attività prive di contatto diretto con il pubblico.</li>
+        <li><strong>Aggiornamento del canone</strong>: l'adeguamento annuale agli indici ISTAT (l'indice dell'inflazione calcolato dall'Istituto nazionale di statistica) è possibile solo se previsto da un'apposita clausola e, di regola, nel limite del 75% della variazione dell'indice, salvo le deroghe di legge per i contratti di lunga durata o di importo elevato. Senza clausola, il canone resta fermo.</li>
+        <li><strong>Registrazione e imposte</strong>: il contratto va registrato all'Agenzia delle Entrate. Per gli immobili strumentali per natura — i più comuni nel commerciale, come i negozi (categoria catastale C/1) e gli uffici (A/10) — l'imposta di registro è dell'<strong>1% del canone annuo</strong> (di norma divisa tra le parti); sale al 2% solo nei casi residuali di immobile non strumentale. La <strong>cedolare secca</strong>, il regime fiscale agevolato a imposta fissa, <strong>non si applica</strong> alle locazioni commerciali ordinarie, a differenza di molti contratti abitativi.</li>
+      </ul>
+      <p>Ricorda anche che il <strong>deposito cauzionale</strong> (la somma versata dall'inquilino a garanzia) non può superare le tre mensilità e, se versato in denaro, produce interessi legali a favore dell'inquilino.</p>
+
+      <h2>Errori da evitare</h2>
+      <ul>
+        <li>credere di poter recuperare l'immobile a piacimento alla prima scadenza: alla prima scadenza servono i motivi tassativi di legge;</li>
+        <li>inviare la disdetta in ritardo o con un mezzo non tracciabile, facendo così scattare il rinnovo automatico;</li>
+        <li>dimenticare la clausola di aggiornamento ISTAT e ritrovarsi con un canone fermo per anni;</li>
+        <li>non gestire correttamente la prelazione in caso di vendita, rischiando il retratto dell'inquilino;</li>
+        <li>sottovalutare l'indennità di avviamento quando si dà disdetta a un'attività aperta al pubblico.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>Qual è la durata minima di un contratto di locazione commerciale?</h3>
+      <p>Sei anni, con rinnovo automatico di altri sei (il "6+6"). Per le attività alberghiere la durata è di nove anni, rinnovabili per altri nove.</p>
+      <h3>Posso non rinnovare il contratto alla prima scadenza?</h3>
+      <p>Solo per i motivi tassativi previsti dalla legge (uso proprio o di un familiare, ristrutturazione integrale, demolizione e casi simili) e con disdetta motivata inviata almeno dodici mesi prima. Alla seconda scadenza, invece, la disdetta è libera.</p>
+      <h3>Devo sempre pagare l'indennità di avviamento?</h3>
+      <p>No. È dovuta solo per le attività a contatto diretto con il pubblico e solo quando il contratto finisce per causa non imputabile all'inquilino. Non spetta in caso di morosità, recesso dell'inquilino o attività senza contatto con il pubblico.</p>
+      <h3>Si può applicare la cedolare secca a un affitto commerciale?</h3>
+      <p>In generale no: la cedolare secca riguarda soprattutto le locazioni abitative. Il contratto commerciale sconta l'imposta di registro, di norma pari all'1% del canone annuo per negozi e uffici.</p>
+
+      <h2>In sintesi</h2>
+      <p>Il contratto di locazione commerciale offre al proprietario un reddito stabile, ma in cambio di vincoli lunghi e di alcune regole inderogabili: la durata 6+6, i tempi stretti per la disdetta, la possibile indennità di avviamento e il diritto di prelazione dell'inquilino. Impostare bene il contratto fin dalla firma — clausole, canone, garanzie — è il modo migliore per evitare contenziosi più avanti. Se hai dubbi sul tuo caso specifico puoi <a href="/contatti">contattare Sfratto Sicuro</a> per una prima valutazione.</p>
+      <p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata: ogni contratto va valutato alla luce della situazione concreta.</em></p>
+    `,
+  },
+  {
     slug: "locazioni-brevi",
     title: "Locazioni brevi: la guida 2026 per il proprietario (CIN, cedolare secca e adempimenti)",
     description: "Locazioni brevi 2026: guida per il proprietario a CIN, cedolare secca 21%/26%, soglia dei due appartamenti e adempimenti da rispettare.",
