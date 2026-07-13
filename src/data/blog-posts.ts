@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sospensione-esecuzione-sfratto",
+    title: "Sospensione dell'esecuzione dello sfratto: quando può essere rinviata",
+    description:
+      "Sospensione dell'esecuzione dello sfratto: quando il rilascio può essere rinviato, quanto dura e come il proprietario può ridurre i ritardi.",
+    excerpt:
+      "Dopo la convalida l'inquilino non lascia l'immobile e l'esecuzione si blocca tra rinvii: ecco quando lo sfratto può essere davvero sospeso e cosa può fare il proprietario.",
+    lead:
+      "Ottenuto il titolo esecutivo, il rilascio può ancora slittare tra differimenti e opposizioni. Vediamo, dal punto di vista del locatore, quando la sospensione è legittima e come limitare i ritardi.",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote:
+      "Generato automaticamente 2026-07-13. Keyword: sospensione esecuzione sfratto, vol 50, KD 0.",
+    html: `
+<p>Hai ottenuto la convalida dello sfratto, l'inquilino non ha lasciato l'immobile e ora l'esecuzione sembra bloccarsi tra rinvii e nuove date fissate dall'ufficiale giudiziario. È una delle situazioni più frustranti per un proprietario: il titolo c'è, ma il rilascio non arriva. La <strong>sospensione dell'esecuzione dello sfratto</strong> è proprio il meccanismo che, in alcuni casi, consente all'inquilino di guadagnare tempo. Capire quando può scattare davvero, e quando invece è solo una tattica dilatoria, aiuta a difendersi e a ridurre i ritardi.</p>
+<p>Questa guida spiega, dal punto di vista del locatore, in quali casi lo sfratto può essere sospeso o rinviato nella fase esecutiva, quanto possono durare i differimenti e cosa può fare concretamente il proprietario per arrivare prima al rilascio. Se vuoi prima capire come funziona l'ultima fase, può esserti utile l'approfondimento sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e il rilascio dell'immobile</a>.</p>
+
+<h2>Dove si colloca la sospensione dell'esecuzione</h2>
+<p>La sospensione di cui parliamo riguarda la <strong>fase esecutiva</strong>, cioè quella che si apre <em>dopo</em> la convalida dello sfratto o la sentenza di rilascio. A questo punto il proprietario ha già un titolo esecutivo, notifica il <strong>precetto</strong> (l'atto con cui si intima di rilasciare l'immobile entro un termine) e incarica l'ufficiale giudiziario di procedere. È qui che l'inquilino può tentare di sospendere o rinviare il rilascio.</p>
+<p>Va tenuta distinta da un'altra pausa, che scatta invece prima, in udienza di convalida: il cosiddetto <strong>termine di grazia</strong>, con cui l'inquilino moroso può chiedere di sanare il debito ed evitare lo sfratto. Su quel meccanismo, che appartiene a una fase diversa, trovi un approfondimento dedicato al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+
+<h2>Come procede l'esecuzione (e dove si inseriscono i rinvii)</h2>
+<p>Una volta avviata, l'esecuzione per rilascio segue passaggi precisi. L'ufficiale giudiziario notifica un <strong>avviso di sloggio</strong> almeno dieci giorni prima, indicando giorno e ora del primo accesso; nel giorno stabilito si reca sul posto e immette il proprietario nel possesso dell'immobile, consegnandogli le chiavi. È quanto prevede l'articolo 608 del codice di procedura civile (c.p.c.), la raccolta di norme che regola i processi civili.</p>
+<p>Nella pratica, però, il primo accesso spesso non basta: l'inquilino non apre, non c'è ancora la forza pubblica autorizzata, oppure il giudice concede tempo. Ogni volta l'ufficiale giudiziario fissa un nuovo accesso. Questi rinvii tecnici non sono una vera "sospensione" giuridica, ma allungano i tempi. Per capire cosa succede nel dettaglio il giorno del rilascio, è utile l'articolo su <a href="/blog/sfratto-con-ufficiale-giudiziario/">come funziona lo sfratto con l'ufficiale giudiziario</a>.</p>
+
+<h2>Quando lo sfratto può essere davvero sospeso o rinviato</h2>
+<p>La regola generale è rigorosa: secondo l'articolo 623 c.p.c., l'esecuzione forzata non può essere sospesa se non nei casi previsti <strong>dalla legge</strong> o con un <strong>provvedimento del giudice</strong>. Non basta quindi la volontà dell'inquilino: serve un titolo giuridico preciso. I casi principali sono quattro.</p>
+
+<h3>1. Il differimento del rilascio per finita locazione</h3>
+<p>Nei contratti abitativi cessati per <strong>finita locazione</strong>, l'inquilino può chiedere una sola volta al giudice che venga fissata una nuova data di rilascio, entro un termine massimo di <strong>sei mesi</strong>. Il termine sale fino a <strong>diciotto mesi</strong> in situazioni di particolare disagio: conduttore che abbia compiuto 65 anni, con cinque o più figli a carico, in mobilità o che percepisca un'indennità di disoccupazione o la cassa integrazione, oppure quando il conduttore stesso o un componente del nucleo familiare convivente sia portatore di handicap o affetto da grave malattia. Lo prevede l'articolo 6 della legge 431 del 1998. È il vero strumento di "graduazione" degli sfratti e vale soprattutto per la finita locazione, non per la morosità.</p>
+
+<h3>2. L'opposizione all'esecuzione</h3>
+<p>L'inquilino può contestare il diritto del proprietario a procedere con un'<strong>opposizione all'esecuzione</strong> (articolo 615 c.p.c.). In quel caso il giudice dell'esecuzione, solo se ricorrono <strong>gravi motivi</strong>, può sospendere la procedura (articolo 624 c.p.c.). È un'ipotesi meno frequente e va sostenuta da ragioni serie: un'opposizione palesemente pretestuosa, presentata solo per prendere tempo, di norma non ottiene la sospensione.</p>
+
+<h3>3. Le sospensioni disposte dalla legge</h3>
+<p>In circostanze eccezionali il legislatore può bloccare in via generale l'esecuzione degli sfratti per un certo periodo, come è accaduto durante l'emergenza sanitaria del 2020. Sono misure straordinarie, a tempo, che oggi non sono in vigore: contano solo se e quando una legge le reintroduce. Vanno quindi verificate caso per caso e non possono essere date per scontate.</p>
+
+<h3>4. Il termine per l'esecuzione fissato dal giudice</h3>
+<p>Già nel provvedimento di rilascio il giudice può fissare la data dell'esecuzione entro un termine massimo di <strong>sei mesi</strong> e, in casi eccezionali, fino a <strong>dodici mesi</strong>, valutando le condizioni dell'inquilino rispetto a quelle del proprietario (articolo 56 della legge 392 del 1978). Non è una sospensione in senso tecnico, ma un differimento iniziale che può spostare in avanti il momento del rilascio.</p>
+
+<h2>Cosa può fare il proprietario per limitare i ritardi</h2>
+<p>Il locatore non è impotente di fronte ai rinvii. Alcune mosse pratiche accorciano i tempi ed evitano errori che li allungano:</p>
+<ul>
+<li><strong>Muoversi subito con precetto e avviso di sloggio.</strong> Ogni settimana persa prima di notificare gli atti è tempo regalato all'inquilino.</li>
+<li><strong>Chiedere per tempo l'autorizzazione alla forza pubblica.</strong> Se si prevede che l'inquilino non collaborerà, l'assistenza della forza pubblica va richiesta subito, così il primo accesso non va sprecato.</li>
+<li><strong>Presidiare le udienze e le istanze dell'inquilino.</strong> Un'opposizione o una richiesta di differimento vanno contestate con memorie puntuali: lasciarle senza risposta favorisce la sospensione.</li>
+<li><strong>Continuare a documentare la morosità.</strong> Anche durante i rinvii, l'inquilino resta tenuto a pagare un'indennità per l'occupazione: tenere aggiornato il conteggio serve al recupero delle somme.</li>
+</ul>
+<p>Su quest'ultimo punto, va ricordato che durante i periodi di differimento del rilascio l'occupante deve versare una somma mensile pari al canone, maggiorata del 20%, oltre agli oneri accessori (sempre articolo 6 della legge 431 del 1998, richiamando l'articolo 1591 del codice civile sul danno da ritardata restituzione). La sospensione del rilascio, insomma, non azzera il debito: lo fa crescere.</p>
+
+<h2>Errori comuni da evitare</h2>
+<p>Il primo errore è <strong>attendere passivamente</strong> tra un accesso e l'altro, pensando che l'esecuzione proceda da sola: senza sollecitare le date e la forza pubblica, i tempi si dilatano. Il secondo è <strong>sottovalutare le istanze dell'inquilino</strong>, lasciando che una richiesta di differimento o un'opposizione passino senza contraddittorio. Il terzo è <strong>rinunciare a conteggiare l'indennità di occupazione</strong>: molti proprietari, concentrati sul rilascio, dimenticano di quantificare le somme dovute mese per mese, indebolendo il successivo recupero. Infine, affrontare la fase esecutiva senza assistenza tecnica espone a vizi di notifica e a passi falsi che offrono all'inquilino appigli per allungare i tempi.</p>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino può bloccare lo sfratto semplicemente opponendosi?</h3>
+<p>No. L'opposizione non sospende automaticamente l'esecuzione: la sospensione va chiesta al giudice, che la concede solo in presenza di gravi motivi. Un'opposizione pretestuosa, di regola, non ferma il rilascio.</p>
+<h3>Quanto può durare al massimo il differimento del rilascio?</h3>
+<p>Per la finita locazione, il differimento richiesto dall'inquilino è concesso una sola volta, fino a sei mesi, elevabili a diciotto in casi di documentato disagio. Il giudice, inoltre, può già fissare nel provvedimento un termine per l'esecuzione fino a sei mesi, o dodici in casi eccezionali.</p>
+<h3>Durante la sospensione l'inquilino smette di dover pagare?</h3>
+<p>No. Chi resta nell'immobile è tenuto a versare un'indennità di occupazione pari al canone maggiorato del 20%, oltre agli oneri accessori. Il debito continua ad accumularsi fino al rilascio effettivo.</p>
+<h3>La sospensione vale anche per lo sfratto per morosità?</h3>
+<p>Il differimento pensato per la finita locazione non si applica allo stesso modo alla morosità, dove la principale "pausa" è il termine di grazia in fase di convalida. Nella fase esecutiva, per la morosità, restano le sospensioni disposte dal giudice su opposizione o quelle straordinarie previste dalla legge.</p>
+
+<h2>In sintesi</h2>
+<p>La sospensione dell'esecuzione dello sfratto non è una porta sempre aperta per l'inquilino: fuori dai casi previsti dalla legge o autorizzati dal giudice, l'esecuzione deve proseguire. Per il proprietario la differenza la fanno la tempestività degli atti, il presidio delle udienze e la corretta gestione dell'indennità di occupazione. Muoversi con metodo, fin dal precetto, è il modo migliore per trasformare un titolo esecutivo in un rilascio effettivo nel minor tempo possibile.</p>
+<p>Se stai affrontando uno sfratto che si sta trascinando tra rinvii e vuoi capire come accelerare, puoi <a href="/#contatti">contattare Sfratto Sicuro</a> per una valutazione della tua situazione.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata. Le norme citate — in particolare gli articoli 608, 615, 623 e 624 del codice di procedura civile, l'articolo 1591 del codice civile, l'articolo 6 della legge 431 del 1998 e l'articolo 56 della legge 392 del 1978 — vanno sempre calate nel caso concreto e verificate nella versione vigente.</em></p>
+`,
+  },
+  {
     slug: 'contratto-locazione-commerciale',
     title: 'Contratto di locazione commerciale: la guida per il proprietario',
     description:
