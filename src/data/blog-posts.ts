@@ -16,6 +16,73 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "aumento-canone-locazione",
+    title: "Aumento del canone di locazione: quando e come il proprietario può farlo",
+    description: "Aumento del canone di locazione: quando il proprietario può alzarlo, i limiti di cedolare secca e canone concordato e gli errori da evitare.",
+    excerpt: "Molti proprietari pensano di poter alzare l'affitto quando vogliono. In realtà l'aumento del canone segue regole precise: dipende dal tipo di contratto, dal momento in cui lo chiedi e dal regime fiscale. Guida pratica per il locatore su quando e come farlo in modo valido.",
+    lead: "L'aumento del canone di locazione segue regole precise: dipende dal tipo di contratto, dal momento in cui lo chiedi e dal regime fiscale che hai scelto. Sbagliare significa vedersi rifiutare l'aumento dall'inquilino o dover restituire le somme incassate. Vediamo, dalla parte del locatore, quando e come puoi aumentare il canone in modo valido.",
+    publishedAt: "2026-07-14",
+    updatedAt: "2026-07-14",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-14. Keyword: aumento canone locazione, vol 320, KD 0 (DataForSEO).",
+    html: `  <p>Molti proprietari danno per scontato di poter alzare l'affitto quando vogliono, magari perché il mercato è salito o perché sono aumentate le spese. In realtà l'aumento del canone di locazione segue regole precise: dipende dal tipo di contratto, dal momento in cui lo chiedi e dal regime fiscale che hai scelto. Sbagliare significa vedersi rifiutare l'aumento dall'inquilino, o peggio dover restituire le somme incassate. Vediamo, dalla parte del locatore, quando e come puoi aumentare il canone in modo valido.</p>
+
+  <h2>Aumento del canone e adeguamento ISTAT non sono la stessa cosa</h2>
+  <p>È la prima distinzione da mettere a fuoco. L'<strong>adeguamento ISTAT</strong> è il semplice aggiornamento annuale del canone all'inflazione: mantiene il valore reale dell'affitto, ma non lo aumenta davvero in termini di potere d'acquisto. L'<strong>aumento del canone</strong> in senso proprio è invece un incremento reale dell'importo, deciso perché è cambiato il valore dell'immobile o le condizioni di mercato. Le due cose hanno regole diverse: sull'adeguamento all'inflazione trovi tutti i dettagli nella guida sull'<a href="/blog/adeguamento-istat-canone-locazione/">adeguamento ISTAT del canone</a>. Qui parliamo dell'aumento vero e proprio.</p>
+
+  <h2>Durante il contratto in corso il canone è bloccato</h2>
+  <p>Il principio di base spiazza molti proprietari: <strong>durante la durata del contratto il canone non si può aumentare unilateralmente.</strong> Una volta firmato, l'importo pattuito resta fisso per tutto il periodo concordato (i primi 4 anni di un 4+4, i primi 3 di un 3+2), salvo il solo aggiornamento ISTAT se il contratto lo prevede.</p>
+  <p>Questo significa che non puoi mandare all'inquilino una lettera dicendo "da gennaio l'affitto sale di 100 euro" e pretendere che paghi. Se lo fai, il conduttore può legittimamente rifiutare e continuare a versare il canone originario. Un aumento imposto a metà contratto, senza il consenso dell'inquilino, è privo di effetto.</p>
+
+  <h2>Quando puoi davvero aumentare il canone</h2>
+  <p>Ci sono tre situazioni concrete in cui un aumento è possibile e valido:</p>
+  <ul>
+    <li><strong>Alla scadenza definitiva del contratto, con un nuovo accordo.</strong> Attenzione al meccanismo del 4+4: alla prima scadenza (dopo 4 anni) il contratto si rinnova automaticamente <em>alle medesime condizioni</em> per altri 4 anni, e il proprietario può evitarlo solo per i motivi qualificati previsti dalla legge (ad esempio uso proprio o vendita). Il momento in cui sei davvero libero di proporre un canone diverso è la scadenza finale: se l'inquilino accetta si firma un nuovo contratto con l'importo aggiornato, altrimenti il rapporto si chiude.</li>
+    <li><strong>Con la rinegoziazione consensuale, anche in corso di contratto.</strong> Proprietario e inquilino possono sempre accordarsi per modificare il canone, in aumento o in diminuzione. Serve però un accordo scritto e firmato da entrambi: è la strada corretta se, ad esempio, hai eseguito lavori di miglioramento importanti e concordate insieme un adeguamento.</li>
+    <li><strong>Alla riconsegna, cambiando inquilino.</strong> Quando l'immobile torna libero, il nuovo contratto parte dal canone che decidi tu (nei limiti di legge per il tipo di contratto scelto).</li>
+  </ul>
+
+  <h2>I limiti del contratto a canone concordato</h2>
+  <p>Se hai un contratto a <a href="/blog/canone-concordato/">canone concordato</a> (il classico 3+2), la libertà di fissare o aumentare il canone è ridotta. L'importo non può superare i valori stabiliti dagli <strong>accordi territoriali</strong> siglati tra le associazioni di proprietari e inquilini nel tuo Comune. Puoi muoverti solo dentro quella forbice: un canone superiore al massimo previsto è nullo per la parte eccedente, e l'inquilino può chiederne la restituzione. Nel contratto a canone libero (4+4), invece, l'importo iniziale lo fissi liberamente, ma restano validi i vincoli visti sopra sulla modifica in corso di rapporto.</p>
+
+  <h2>L'ostacolo della cedolare secca</h2>
+  <p>C'è un punto che blocca molti aumenti e che va conosciuto bene: se hai optato per la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a>, per tutta la durata dell'opzione <strong>rinunci al diritto di aggiornare il canone</strong>, ISTAT compreso. Questo riguarda gli aggiornamenti automatici collegati all'indice dei prezzi. Un aumento reale concordato con l'inquilino può richiedere di rivedere la stessa opzione per la cedolare secca: meglio verificarlo prima con un professionista, per non perdere il vantaggio fiscale. In ogni caso, finché sei in cedolare secca non puoi applicare rivalutazioni unilaterali del canone.</p>
+
+  <h2>Come formalizzare l'aumento, passo per passo</h2>
+  <p>Una volta che l'aumento è legittimo (nuovo contratto o rinegoziazione), va messo nero su bianco correttamente:</p>
+  <ul>
+    <li><strong>Metti l'accordo per iscritto.</strong> Un aumento concordato deve risultare da un documento firmato da entrambe le parti, con il nuovo importo, la data di decorrenza e il riferimento al contratto originario.</li>
+    <li><strong>Registra la modifica.</strong> La variazione del canone va comunicata all'Agenzia delle Entrate con l'apposito modello RLI (Registrazione Locazioni Immobili), di norma entro 30 giorni. La registrazione dà data certa all'accordo ed evita contestazioni future.</li>
+    <li><strong>Conserva le prove.</strong> Tieni copia dell'accordo firmato, della ricevuta di registrazione e delle comunicazioni inviate all'inquilino.</li>
+  </ul>
+
+  <h2>Errori da evitare</h2>
+  <ul>
+    <li><strong>Aumentare il canone a metà contratto</strong> senza il consenso scritto dell'inquilino: l'aumento non è valido.</li>
+    <li><strong>Chiedere somme "fuori busta"</strong> oltre il canone registrato. I patti diretti a far pagare più del canone risultante dal contratto registrato sono nulli e l'inquilino può recuperare quanto versato in più.</li>
+    <li><strong>Superare i massimi</strong> degli accordi territoriali in un contratto a canone concordato.</li>
+    <li><strong>Applicare rivalutazioni</strong> mentre sei in cedolare secca, dove gli aggiornamenti sono sospesi.</li>
+    <li><strong>Dimenticare la registrazione</strong> della modifica: un accordo non registrato è più fragile e ti espone a contestazioni.</li>
+  </ul>
+
+  <h2>E se l'inquilino smette di pagare la differenza?</h2>
+  <p>Se hai concordato regolarmente un aumento e l'inquilino, dopo averlo accettato, continua a versare il vecchio importo, la differenza non pagata diventa a tutti gli effetti morosità. In quel caso conviene muoversi presto con una richiesta formale e, se il ritardo prosegue, valutare le vie per il recupero del credito e, nei casi più gravi, la procedura di sfratto per morosità.</p>
+
+  <h2>Domande frequenti sull'aumento del canone</h2>
+  <ul>
+    <li><strong>Posso aumentare l'affitto quando voglio?</strong><br>No. Durante il contratto il canone è fisso, salvo il solo adeguamento ISTAT se previsto. Un aumento reale è possibile alla scadenza con un nuovo accordo o tramite rinegoziazione consensuale scritta.</li>
+    <li><strong>Posso aumentare il canone al primo rinnovo del 4+4?</strong><br>No, non unilateralmente: dopo i primi 4 anni il contratto si rinnova automaticamente alle stesse condizioni. Per cambiare il canone serve l'accordo dell'inquilino o un nuovo contratto alla scadenza definitiva.</li>
+    <li><strong>Con la cedolare secca posso aumentarlo?</strong><br>Durante l'opzione per la cedolare secca rinunci agli aggiornamenti automatici del canone, ISTAT compreso. Un aumento va valutato con attenzione anche sul piano fiscale.</li>
+    <li><strong>L'aumento concordato va registrato?</strong><br>Sì. La modifica del canone si comunica all'Agenzia delle Entrate con il modello RLI, di norma entro 30 giorni, per dare data certa all'accordo.</li>
+    <li><strong>L'inquilino può rifiutare l'aumento?</strong><br>Sì, se l'aumento non è dovuto per legge o per contratto. In corso di rapporto l'aumento richiede il suo consenso; senza accordo, resta il canone originario.</li>
+  </ul>
+
+  <p>Gestire il canone con le regole giuste — momento corretto, accordo scritto, registrazione — ti permette di valorizzare l'immobile senza rischiare contestazioni o restituzioni. Se hai dubbi sul tuo contratto, vuoi impostare una rinegoziazione al rialzo o gestire una morosità nata da un aumento non pagato, <a href="/#contatti">contatta Sfratto Sicuro</a>: ti aiutiamo a tutelare il tuo immobile con tempi e costi chiari.</p>
+
+  <p><em>Riferimenti normativi essenziali: Legge 9 dicembre 1998 n. 431 sulle locazioni abitative (contratti a canone libero 4+4 e a canone concordato 3+2; in particolare l'art. 13 sulla nullità dei patti diretti ad attribuire un canone superiore a quello del contratto registrato e a superare i massimi degli accordi territoriali), Legge 27 luglio 1978 n. 392 (art. 32, aggiornamento ISTAT del canone), D.Lgs. 14 marzo 2011 n. 23 (art. 3, cedolare secca). Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata sul singolo contratto.</em></p>`,
+  },
+  {
     slug: "sospensione-esecuzione-sfratto",
     title: "Sospensione dell'esecuzione dello sfratto: quando può essere rinviata",
     description:
