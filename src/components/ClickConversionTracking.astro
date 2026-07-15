@@ -49,9 +49,9 @@ const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';  // 7630051581 "Sfratto Sicuro ·
     function ensureGtag() {
       // Riusa il gtag già caricato dalla pagina (initAdsIfNeeded / grazie.html).
       // Se assente, lo inizializza con lo stesso Conversion ID.
-      if (typeof window.gtag === 'function' && window.__landingAdsLoaded) return true;
       var consent = readConsent();
       if (!consent || !consent.marketing) return false;
+      if (typeof window.gtag === 'function' && window.__landingAdsLoaded) return true;
       window.dataLayer = window.dataLayer || [];
       if (typeof window.gtag !== 'function') {
         window.gtag = function () { window.dataLayer.push(arguments); };

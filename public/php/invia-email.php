@@ -260,5 +260,17 @@ function ss_safe_redirect($path) {
 /* Il lead è comunque nel backup (e quasi sempre nel CRM): ringraziamo
    l'utente in ogni caso. Gli errori sono nei log. */
 error_log("[ss-intake] lead processato - Nome: $nome_completo, Tel: $telefono, Form: $form_source, CRM: " . ($crm_ok ? 'ok' : 'KO'));
-header('Location: ' . ss_safe_redirect($redirect_raw));
+$redirect = ss_safe_redirect($redirect_raw);
+$tracking_query = array_filter([
+    'gclid'        => $gclid,
+    'utm_source'   => $utm_source,
+    'utm_medium'   => $utm_medium,
+    'utm_campaign' => $utm_campaign,
+    'utm_term'     => $utm_term,
+    'utm_content'  => $utm_content,
+]);
+if (!empty($tracking_query)) {
+    $redirect .= '?' . http_build_query($tracking_query);
+}
+header('Location: ' . $redirect);
 exit;

@@ -195,11 +195,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
       (function () {
         var AW_ID = 'AW-10983419342';
-        var TEL_LABEL = '0HOYCPqxpbYcEM7bpvUo';
+        var TEL_LABEL = 'D6OGCJvvosgcEM7bpvUo';
         var WA_LABEL = 'WnybCP2xpbYcEM7bpvUo';
         var placeholder = function (l) { return !l || l.indexOf('__TODO') === 0; };
         function fireConversion(label) {
           if (placeholder(label)) return;
+          try {
+            var consent = JSON.parse(localStorage.getItem('ss_cookie_consent_v1') || 'null');
+            if (!consent || !consent.marketing) return;
+          } catch (e) { return; }
           if (typeof window.gtag !== 'function') return;
           window.gtag('event', 'conversion', { send_to: AW_ID + '/' + label });
         }

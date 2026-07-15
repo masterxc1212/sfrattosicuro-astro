@@ -10,7 +10,7 @@
     // Salva gclid e UTM in sessionStorage appena la pagina si carica
     // (l'utente potrebbe cliccare un link interno prima di compilare il form)
     const _up = new URLSearchParams(window.location.search);
-    ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(p => {
+    ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'keyword', 'matchtype'].forEach(p => {
       const v = _up.get(p);
       if (v) sessionStorage.setItem(p, v);
     });
@@ -18,7 +18,7 @@
     function attachTrackingFields(form) {
       if (!form) return;
       const urlParams = new URLSearchParams(window.location.search);
-      ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(name => {
+      ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'keyword', 'matchtype'].forEach(name => {
         const value = urlParams.get(name) || sessionStorage.getItem(name) || '';
         if (!value) return;
         sessionStorage.setItem(name, value);
@@ -107,19 +107,10 @@
       attachTrackingFields(heroForm);
 
       const urlParams = new URLSearchParams(window.location.search);
-      ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(p => {
+      ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'keyword', 'matchtype'].forEach(p => {
         const v = urlParams.get(p) || sessionStorage.getItem(p) || '';
         if (v) sessionStorage.setItem(p, v);
       });
-
-      // Tracking conversione best-effort prima del submit
-      if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-10983419342/xxxxx',
-          'event_category': 'Form',
-          'event_label': 'Hero Form Submit'
-        });
-      }
 
       heroForm.submit();
       return true;

@@ -82,7 +82,10 @@ const config = buildLandingPageConfig({
       (function(){
         const CONSENT_KEY = 'ss_cookie_consent_v1';
         const AW_ID = 'AW-10983419342';
-        function getParam(name){ const params = new URLSearchParams(window.location.search); return params.get(name) || ''; }
+        function getParam(name){
+          const params = new URLSearchParams(window.location.search);
+          return params.get(name) || sessionStorage.getItem(name) || '';
+        }
         function captureTrackingParams(){
           const gclid = getParam('gclid');
           const utmSource = getParam('utm_source');

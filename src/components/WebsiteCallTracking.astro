@@ -12,11 +12,9 @@
  * Conversion action collegata: "Telefonate" (WEBSITE_CALL, primaria),
  * label tCrKCJeljvwYEM7bpvUo, numero visualizzato +39 02 80898395.
  *
- * Caricamento FAIL-OPEN (Consent Mode v2), coerente con grazie.html:
- *  - il tag viene caricato al page-load anche senza consenso marketing,
- *    ma con ad_storage/ad_user_data/ad_personalization = 'denied' finche'
- *    l'utente non accetta (nessun cookie pubblicitario pre-consenso).
- *  - lo swap del numero e la conversione (modellata) funzionano comunque.
+ * Caricamento consent-gated:
+ *  - il tag viene caricato subito se il consenso marketing e' gia' presente;
+ *  - altrimenti parte appena l'utente accetta il marketing nel banner.
  *
  * Coordina con il loader inline delle landing tramite
  * window.__landingAdsLoaded per non caricare gtag due volte.
@@ -42,7 +40,7 @@ const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina =
       if (typeof window.gtag !== 'function') {
         window.gtag = function () { window.dataLayer.push(arguments); };
       }
-      if (!document.querySelector('script[data-aw-call]')) {
+      if (!document.querySelector('script[data-aw-call], script[data-landing-aw], script[data-click-conv-aw]')) {
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;
@@ -51,40 +49,32 @@ const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina =
       }
     }
 
-    // Carica il tag Ads una sola volta, fail-open (storage negato di default).
-    if (!window.__landingAdsLoaded) {
-      window.__landingAdsLoaded = true;
-      var c = readConsent();
+    function initCallTracking(consent) {
+      if (!consent || !consent.marketing) return;
       ensureGtagLib();
-      window.gtag('consent', 'default', {
-        ad_storage:         c && c.marketing ? 'granted' : 'denied',
-        ad_user_data:       c && c.marketing ? 'granted' : 'denied',
-        ad_personalization: c && c.marketing ? 'granted' : 'denied',
-        analytics_storage:  c && c.analytics ? 'granted' : 'denied',
-        security_storage:   'granted'
-      });
-      window.gtag('js', new Date());
-      window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
-    } else {
-      ensureGtagLib();
+      if (!window.__landingAdsLoaded) {
+        window.__landingAdsLoaded = true;
+        window.gtag('consent', 'default', {
+          ad_storage:         'granted',
+          ad_user_data:       'granted',
+          ad_personalization: 'granted',
+          analytics_storage:  consent.analytics ? 'granted' : 'denied',
+          security_storage:   'granted'
+        });
+        window.gtag('js', new Date());
+        window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+      }
+      if (!window.__awPhoneConfigured) {
+        window.__awPhoneConfigured = true;
+        window.gtag('config', AW_ID + '/' + CALL_LABEL, { phone_conversion_number: PHONE_NUMBER });
+      }
     }
 
-    // Snippet "Chiamate dal sito web": attiva la sostituzione del numero.
-    if (!window.__awPhoneConfigured) {
-      window.__awPhoneConfigured = true;
-      window.gtag('config', AW_ID + '/' + CALL_LABEL, { phone_conversion_number: PHONE_NUMBER });
-    }
+    initCallTracking(readConsent());
 
-    // Aggiorna il consenso quando l'utente sceglie nel banner cookie.
     window.addEventListener('ss:cookie-consent-updated', function (event) {
       var d = (event && event.detail) || {};
-      if (typeof window.gtag !== 'function') return;
-      window.gtag('consent', 'update', {
-        ad_storage:         d.marketing ? 'granted' : 'denied',
-        ad_user_data:       d.marketing ? 'granted' : 'denied',
-        ad_personalization: d.marketing ? 'granted' : 'denied',
-        analytics_storage:  d.analytics ? 'granted' : 'denied'
-      });
+      if (d.marketing) initCallTracking(d);
     });
   })();
 </script>
