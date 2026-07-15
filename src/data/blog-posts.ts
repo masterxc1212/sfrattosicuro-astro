@@ -16,6 +16,115 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "opposizione-sfratto-per-morosita",
+    title: "Opposizione allo sfratto per morosità: cosa succede e cosa può fare il proprietario",
+    description:
+      "Opposizione allo sfratto per morosità: cosa succede in udienza, come funziona l'ordinanza di rilascio ex art. 665 c.p.c. e come si difende il proprietario.",
+    excerpt:
+      "L'inquilino compare in udienza e contesta tutto: lo sfratto non salta. Ecco l'ordinanza provvisoria di rilascio, le contestazioni più frequenti e come arrivare preparati.",
+    lead:
+      "Opporsi allo sfratto è facile: basta comparire in udienza. Ma la legge dà al locatore uno strumento preciso per non restare bloccato. Vediamo come funziona e come usarlo bene.",
+    publishedAt: "2026-07-15",
+    updatedAt: "2026-07-15",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote:
+      "Generato automaticamente 2026-07-15. Keyword: opposizione sfratto per morosità, vol 170, KD 0.",
+    html: `
+<p>Hai notificato l'intimazione di sfratto, sei arrivato all'udienza convinto che sarebbe stata una formalità e l'inquilino si è presentato per contestare tutto. È lo scenario che ogni proprietario teme: l'<strong>opposizione allo sfratto per morosità</strong>. La buona notizia è che opporsi non significa vincere: la legge prevede uno strumento pensato proprio per evitare che una contestazione priva di riscontri blocchi il rilascio dell'immobile.</p>
+<p>Questa guida spiega, dal punto di vista del locatore, cosa succede concretamente quando l'inquilino si oppone, qual è lo strumento che consente di riavere comunque la casa senza attendere la fine della causa, quali sono le contestazioni più frequenti e come arrivare in udienza preparato. Se non hai ancora avviato la procedura, può esserti utile partire dall'approfondimento sull'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+
+<h2>Cosa significa opposizione allo sfratto per morosità</h2>
+<p>Il procedimento di sfratto è una corsia veloce prevista dal <strong>codice di procedura civile</strong> (c.p.c.), la raccolta di norme che regola i processi civili. Funziona così: il proprietario notifica l'intimazione e cita l'inquilino davanti al giudice per la cosiddetta <strong>udienza di convalida</strong>, di cui trovi il dettaglio nella guida alla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>. A quell'udienza si aprono due strade.</p>
+<p>Se l'inquilino <strong>non compare</strong>, oppure compare ma non contesta nulla, il giudice convalida lo sfratto con un'ordinanza esecutiva. Se invece l'inquilino <strong>compare e solleva eccezioni</strong> — cioè contesta la morosità, l'ammontare del debito, la validità del contratto o della notifica — si ha l'opposizione.</p>
+<p>Attenzione a un equivoco molto diffuso: nella fase di convalida l'opposizione <strong>non è un'impugnazione</strong> e non richiede forme particolari. Non esiste un "atto di opposizione allo sfratto" da depositare entro un termine: l'articolo 660 c.p.c. stabilisce espressamente che, ai fini dell'opposizione, è sufficiente la <strong>comparizione personale</strong> dell'inquilino. Gli basta presentarsi e dichiarare di contestare. Proprio perché è così facile, la legge ha previsto un contrappeso a favore del proprietario.</p>
+
+<h2>L'ordinanza provvisoria di rilascio: lo strumento chiave per il proprietario</h2>
+<p>Il contrappeso è l'<strong>articolo 665 c.p.c.</strong> (in gergo si parla di "ordinanza ex art. 665", dove <em>ex</em> significa semplicemente "in base a"), la norma più importante che un locatore debba conoscere. Prevede che, se l'inquilino compare e solleva eccezioni <strong>non fondate su prova scritta</strong>, il giudice — su istanza del locatore e se non sussistono gravi motivi in contrario — pronuncia un'<strong>ordinanza di rilascio</strong> dell'immobile, lasciando impregiudicate le contestazioni dell'inquilino, che verranno esaminate dopo.</p>
+<p>In parole semplici: il proprietario ottiene subito il titolo per riavere la casa, mentre la discussione sul merito prosegue separatamente. L'ordinanza è <strong>immediatamente esecutiva</strong> e <strong>non impugnabile</strong>. Il giudice può però subordinarla a una <strong>cauzione</strong>, cioè una somma a garanzia di eventuali danni e spese: attenzione, perché a versarla è <em>il locatore</em>, non l'inquilino. La norma non lo dice espressamente per l'ordinanza, ma è la lettura prevalente, coerente con l'articolo 663 c.p.c., che prevede in modo esplicito la cauzione a carico del locatore.</p>
+<p>Tre condizioni meritano attenzione, perché è lì che le pratiche si perdono:</p>
+<ul>
+<li><strong>Serve l'istanza del locatore.</strong> Il giudice non concede l'ordinanza di sua iniziativa: va chiesta. È l'errore più costoso in assoluto — chi si presenta impreparato all'udienza rischia di uscirne senza titolo.</li>
+<li><strong>Le eccezioni non devono essere fondate su prova scritta.</strong> Se l'inquilino esibisce bonifici, ricevute o accordi scritti che rendono credibile la sua difesa, il giudice può negare l'ordinanza.</li>
+<li><strong>Non devono esserci "gravi motivi in contrario".</strong> È una valvola di sicurezza affidata alla valutazione del giudice.</li>
+</ul>
+
+<h3>Attenzione ai tempi: la data dell'esecuzione</h3>
+<p>Qui va detta una cosa che molte guide omettono, e che evita amare sorprese. Ottenere l'ordinanza non significa riavere le chiavi la settimana dopo. L'<strong>articolo 56 della legge 392/1978</strong> stabilisce che con il provvedimento che dispone il rilascio il giudice <strong>fissa la data dell'esecuzione</strong>: il termine massimo è di <strong>sei mesi</strong> dal provvedimento, elevabile a <strong>dodici mesi</strong> in casi eccezionali.</p>
+<p>Due precisazioni, perché il dato non venga letto peggio di quel che è. Primo: il termine riguarda la data entro cui si può procedere al <em>rilascio</em>, ed è una fase successiva e distinta dall'ottenimento del titolo in udienza. Secondo: sei e dodici mesi sono <strong>tetti massimi</strong>, non la regola. Il giudice deve motivare la data tenendo conto delle condizioni dell'inquilino confrontate con quelle del proprietario e delle ragioni per cui il rilascio viene disposto: quanto più la morosità è netta e documentata, tanto meno c'è spazio per collocare l'esecuzione lontano nel tempo.</p>
+<p>C'è però una regola più favorevole al locatore quando è stato concesso il termine di grazia (vedi sotto): in quel caso, se l'inquilino non paga entro il termine assegnato, la data dell'esecuzione non può essere fissata oltre <strong>sessanta giorni</strong> dalla scadenza. Trascorsa inutilmente la data fissata, il proprietario può promuovere l'esecuzione vera e propria.</p>
+
+<h2>Le contestazioni più frequenti (e come si affrontano)</h2>
+
+<h3>L'inquilino contesta l'importo dovuto</h3>
+<p>Capita spesso: l'inquilino non nega di essere indietro, ma sostiene che la cifra richiesta sia gonfiata, magari per via degli <strong>oneri accessori</strong> (spese condominiali, utenze e simili). Qui interviene l'<strong>articolo 666 c.p.c.</strong>: il giudice può ordinare il pagamento della <strong>somma non controversa</strong>, cioè della parte di debito che l'inquilino stesso ammette, assegnando un termine non superiore a <strong>venti giorni</strong>. Se il conduttore non paga entro quel termine, il giudice convalida lo sfratto. È un meccanismo che gioca a favore del proprietario, perché mette alla prova le contestazioni puramente dilatorie.</p>
+
+<h3>L'inquilino chiede il termine di grazia</h3>
+<p>Non è tecnicamente un'opposizione, ma spesso viaggia insieme. In base all'<strong>articolo 55 della legge 392/1978</strong> (la legge sull'equo canone), nelle locazioni <strong>abitative</strong> l'inquilino può sanare la morosità pagando <strong>alla prima udienza</strong> tutti i canoni scaduti, gli oneri accessori, gli interessi legali e le spese liquidate dal giudice. Se non ha la somma e dimostra comprovate difficoltà, il giudice può concedergli un termine fino a <strong>novanta giorni</strong>, rinviando poi l'udienza a non oltre dieci giorni dalla scadenza.</p>
+<p>Il termine sale a <strong>centoventi giorni</strong> in un'ipotesi più ristretta di quanto molti credano: serve che l'inadempienza si sia protratta per <strong>non oltre due mesi</strong> e derivi da precarie condizioni economiche insorte <em>dopo</em> la firma del contratto, dipendenti da disoccupazione, malattia o gravi difficoltà comprovate.</p>
+<p>Il pagamento nei termini esclude la <strong>risoluzione</strong> del contratto, cioè il suo scioglimento. La sanatoria è però ammessa <strong>non più di tre volte in un quadriennio</strong>, elevate a quattro complessive proprio nell'ipotesi delle difficoltà economiche sopravvenute. Due precisazioni utili: secondo un orientamento consolidato della Corte di Cassazione il termine di grazia <strong>non si applica alle locazioni a uso diverso da quello abitativo</strong> (negozi, uffici, capannoni); e sul funzionamento pratico trovi un approfondimento dedicato al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+
+<h3>L'inquilino solleva l'eccezione di inadempimento</h3>
+<p>La difesa classica: "non ho pagato perché la caldaia era rotta e il proprietario non è intervenuto". Il giudice la valuta in base alla proporzione tra il disservizio lamentato e il mancato pagamento: sospendere l'intero canone per mesi a fronte di un disservizio limitato è difficilmente sostenibile. Se l'eccezione non è sorretta da prova scritta, resta terreno su cui chiedere l'ordinanza di rilascio.</p>
+
+<h3>L'inquilino contesta la notifica</h3>
+<p>Qui il discorso cambia. Un vizio nella notifica dell'intimazione è un problema <strong>procedurale</strong>, non di merito, e può costringere a rinotificare, con settimane perse. È il motivo per cui la fase di notifica va curata in modo maniacale.</p>
+
+<h2>Cosa succede dopo l'ordinanza: il mutamento del rito</h2>
+<p>Pronunciata l'ordinanza di rilascio, il procedimento non finisce: cambia forma. L'<strong>articolo 667 c.p.c.</strong> prevede il cosiddetto <strong>mutamento del rito</strong>, cioè il passaggio dalla corsia veloce dello sfratto al <strong>rito speciale delle locazioni</strong> (articolo 447-bis c.p.c., che ricalca le forme del rito del lavoro): un giudizio a cognizione piena in cui si discute con calma delle ragioni dell'inquilino.</p>
+<p>È il punto che genera più ansia nei proprietari, ed è invece quello da capire meglio: le due vicende <strong>corrono su binari separati</strong>. Il proprietario non deve attendere la fine della causa per riavere l'immobile. Con l'ordinanza in mano può notificare il <strong>precetto</strong> — l'atto formale con cui si intima il rilascio entro un termine — e procedere, nei tempi visti sopra, mentre la causa prosegue per definire chi ha ragione sul debito. Se vuoi sapere come si svolge materialmente il rilascio, trovi tutto nell'articolo sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e il rilascio dell'immobile</a>.</p>
+<p>Un passaggio merita una riga in più, perché è operativamente rilevante e viene spesso trascurato. La materia delle locazioni è soggetta a <strong>mediazione obbligatoria</strong>: prima di fare causa bisogna cioè tentare una conciliazione davanti a un organismo apposito. Il procedimento di convalida di sfratto ne è esentato, ma <strong>solo fino al mutamento del rito</strong>. Superata quella soglia, la mediazione diventa condizione di procedibilità: se non viene esperita, la domanda può essere dichiarata improcedibile. Non è una novità della <strong>riforma Cartabia</strong>, che l'ha confermata riscrivendo la norma senza cambiarne la sostanza, ma resta un adempimento da presidiare. Sulle modifiche effettivamente introdotte dalla riforma trovi l'approfondimento su <a href="/blog/sfratto-morosita-riforma-cartabia/">sfratto per morosità e riforma Cartabia</a>.</p>
+<p>Un'ultima nota utile: se hai chiesto anche l'ingiunzione di pagamento per i canoni scaduti (possibilità prevista dagli articoli 658 e 664 c.p.c.), il giudice pronuncia un <strong>decreto ingiuntivo</strong> separato — l'ordine di pagamento — che copre i canoni scaduti <em>e quelli che matureranno fino all'esecuzione dello sfratto</em>, oltre alle spese dell'intimazione. È immediatamente esecutivo, e l'eventuale opposizione dell'inquilino a quel decreto non toglie efficacia alla risoluzione del contratto già avvenuta.</p>
+
+<h2>E se il giudice nega l'ordinanza di rilascio?</h2>
+<p>È lo scenario meno frequente ma va conosciuto. Se l'inquilino porta prova scritta credibile — bonifici, ricevute, un accordo firmato che giustifica il mancato pagamento — il giudice può non concedere l'ordinanza. In quel caso la corsia veloce si chiude: il giudizio prosegue nelle forme a cognizione piena del rito locatizio, con la mediazione da esperire, e <strong>l'immobile resta occupato</strong> fino alla sentenza.</p>
+<p>Non è un vicolo cieco, ma cambia la strategia. A quel punto si valuta se l'inadempimento residuo è comunque sufficiente a chiedere la risoluzione, se conviene concentrarsi sul recupero del credito, oppure se una trattativa per un rilascio concordato — magari con rinuncia a parte del debito in cambio della riconsegna in tempi certi — sia economicamente più conveniente di una causa ordinaria. È una scelta che va fatta con il proprio legale, numeri alla mano.</p>
+
+<h2>Checklist: arrivare all'udienza preparati</h2>
+<p>La differenza tra un'opposizione che costa poche settimane e una che costa un anno si gioca quasi tutta sulla preparazione. Cosa avere pronto:</p>
+<ul>
+<li><strong>Il contratto registrato</strong> e le eventuali proroghe o rinnovi.</li>
+<li><strong>Il conteggio aggiornato della morosità</strong>, canone per canone, con date e importi, distinguendo canoni e oneri accessori.</li>
+<li><strong>L'estratto conto</strong> che dimostra i mancati accrediti.</li>
+<li><strong>Le comunicazioni inviate</strong> all'inquilino: solleciti, <a href="/blog/lettera-diffida-inquilino-moroso/">diffide</a>, raccomandate, PEC (posta elettronica certificata). Servono a dimostrare che la morosità è nota e persistente.</li>
+<li><strong>L'istanza ex art. 665</strong> pronta da formulare in udienza.</li>
+<li><strong>L'attestazione di persistenza della morosità</strong>: l'articolo 663 c.p.c. subordina la convalida alla dichiarazione, resa in giudizio dal locatore o dal suo procuratore, che la morosità persiste.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Presentarsi senza chiedere l'ordinanza di rilascio.</strong> Il giudice non la concede da solo.</li>
+<li><strong>Rifiutare i pagamenti parziali, o accettarli senza specificare a cosa si imputano.</strong> Sono due errori opposti. Rifiutare un versamento può ritorcersi contro il proprietario; accettarlo senza chiarimenti può essere letto come tolleranza della morosità. La strada corretta è accettare il pagamento e comunicare per iscritto — meglio tramite il proprio legale — a quali mensilità viene imputato e che resta impregiudicata la richiesta di risoluzione per il residuo.</li>
+<li><strong>Trascurare la notifica.</strong> Un vizio formale annulla settimane di lavoro.</li>
+<li><strong>Conteggi approssimativi.</strong> Un importo impreciso è un regalo alla contestazione sull'ammontare.</li>
+<li><strong>Formalizzare male gli accordi presi dopo l'udienza</strong>, rimettendo in discussione una risoluzione già ottenuta.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+
+<h3>Se l'inquilino si oppone, lo sfratto salta?</h3>
+<p>No, non automaticamente. Se le eccezioni non sono fondate su prova scritta, la legge consente al giudice di pronunciare l'ordinanza di rilascio ex art. 665 c.p.c. su richiesta del proprietario. L'opposizione sposta la discussione sul merito senza necessariamente trattenere l'immobile; la valutazione resta però del giudice, caso per caso.</p>
+
+<h3>Quanto tempo aggiunge l'opposizione?</h3>
+<p>Dipende dal tribunale e dal tipo di eccezioni. Se il giudice concede l'ordinanza, il proprietario ha subito il titolo, ma la data di esecuzione che il giudice vi fissa può collocarsi fino a sei mesi dopo (dodici in casi eccezionali): è un tetto massimo, non la regola. Se invece viene concesso il termine di grazia, si aggiungono fino a novanta giorni — o centoventi nell'ipotesi ristretta prevista dalla legge — più il rinvio dell'udienza. La causa sul merito prosegue poi separatamente.</p>
+
+<h3>L'ordinanza di rilascio si può impugnare?</h3>
+<p>No: l'articolo 665 c.p.c. la definisce espressamente non impugnabile, ed è immediatamente esecutiva. Entrambe le parti possono però proporre al tribunale collegiale un'opposizione <strong>limitata alla sola data fissata per l'esecuzione</strong>. Va inoltre ricordato che l'ordinanza è provvisoria: i suoi effetti sono destinati a essere assorbiti dalla sentenza che chiude il giudizio di merito.</p>
+
+<h3>Devo comparire personalmente in udienza?</h3>
+<p>No, può comparire il tuo avvocato, che è anche legittimato a rendere l'attestazione di persistenza della morosità richiesta per la convalida.</p>
+
+<h3>Se l'inquilino paga tutto in udienza, ho perso?</h3>
+<p>Il pagamento integrale nei termini di legge esclude la risoluzione e la locazione prosegue. Non hai però perso il credito: hai diritto ai canoni, agli interessi legali e alle spese processuali liquidate dal giudice. E la sanatoria non è ripetibile all'infinito: vale tre volte in un quadriennio, quattro nell'ipotesi delle difficoltà economiche sopravvenute.</p>
+
+<h2>In conclusione</h2>
+<p>L'opposizione allo sfratto per morosità spaventa più di quanto meriti. La legge ha costruito un sistema che tutela il proprietario proprio contro le contestazioni pretestuose: l'ordinanza provvisoria di rilascio esiste per impedire che una contestazione priva di riscontri si traduca, di fatto, in un prolungamento indefinito dell'occupazione. Ma quello strumento va chiesto, e va chiesto bene, con un fascicolo ordinato e un conteggio inattaccabile.</p>
+<p>Se stai affrontando un inquilino moroso che contesta le tue richieste, o vuoi capire come impostare la pratica prima di arrivare in udienza, puoi vedere come funziona il nostro servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> oppure <a href="/#contatti">contattare Sfratto Sicuro</a> per una prima valutazione del tuo caso, gratuita e senza impegno.</p>
+<p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale personalizzata: ogni situazione presenta elementi specifici che vanno valutati caso per caso.</em></p>
+<p><strong>Riferimenti normativi:</strong> artt. 657, 658, 660, 663, 664, 665, 666, 667 e 447-bis del codice di procedura civile; artt. 55 e 56 della legge 27 luglio 1978, n. 392; art. 5 del D.Lgs. 4 marzo 2010, n. 28, come sostituito dalla riforma Cartabia (D.Lgs. 10 ottobre 2022, n. 149) e successivamente modificato dal D.Lgs. 10 marzo 2023, n. 28. Gli artt. 658, 660, 663 e 664 c.p.c. risentono, per i procedimenti introdotti dopo il 28 febbraio 2023, della riforma Cartabia e del correttivo D.Lgs. 31 ottobre 2024, n. 164.</p>
+`,
+  },
+  {
     slug: "aumento-canone-locazione",
     title: "Aumento del canone di locazione: quando e come il proprietario può farlo",
     description: "Aumento del canone di locazione: quando il proprietario può alzarlo, i limiti di cedolare secca e canone concordato e gli errori da evitare.",
