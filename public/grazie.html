@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10983419342"></script>
+    <!-- Google Ads + GTM: consent-gated. L'azione "Web - Modulo" è gestita
+         dal container GTM sulla page-view di /grazie.html: non duplicare qui
+         un secondo evento conversion con label separata. -->
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  try{gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',security_storage:'granted'});var __ssc=JSON.parse(localStorage.getItem('ss_cookie_consent_v1')||'null');if(__ssc){gtag('consent','update',{ad_storage:__ssc.marketing?'granted':'denied',ad_user_data:__ssc.marketing?'granted':'denied',ad_personalization:__ssc.marketing?'granted':'denied',analytics_storage:__ssc.analytics?'granted':'denied'});}}catch(e){}
-  gtag('js', new Date());
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  (function () {
+    var consent = null;
+    try { consent = JSON.parse(localStorage.getItem('ss_cookie_consent_v1') || 'null'); }
+    catch (e) { consent = null; }
+    if (!consent || !consent.marketing) return;
 
-  gtag('config', 'AW-10983419342');
+    window.gtag('consent', 'default', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: consent.analytics ? 'granted' : 'denied',
+      security_storage: 'granted'
+    });
+    window.gtag('js', new Date());
+    window.gtag('config', 'AW-10983419342');
+
+    var aw = document.createElement('script');
+    aw.async = true;
+    aw.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10983419342';
+    aw.setAttribute('data-grazie-aw', '1');
+    document.head.appendChild(aw);
+
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var gtm = document.createElement('script');
+    gtm.async = true;
+    gtm.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KFR8V7BD';
+    gtm.setAttribute('data-grazie-gtm', '1');
+    document.head.appendChild(gtm);
+  })();
 </script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFR8V7BD');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richiesta Ricevuta | Sfratto Sicuro</title>
