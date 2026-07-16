@@ -146,9 +146,9 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       prequalificationNote: undefined,
       ownerField: true,
       bullets: [
-        '<strong>€1.300 tutta l’assistenza</strong>, fino al rilascio',
+        '<strong>€1.300 fino al rilascio</strong>, IVA e cassa incluse',
         '<strong>Zero anticipi</strong>: non paghi nulla per partire',
-        '<strong>Paghi solo a risultato</strong> ottenuto',
+        '<strong>Paghi solo dopo l’udienza</strong> di convalida',
         '<strong>Convalida in ~60 giorni</strong> in media',
       ],
       formTitle: 'Verifica se puoi partire',
@@ -300,14 +300,14 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
         {
           num: '✓',
           title: 'Giorni 31-60: convalida dello sfratto',
-          body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo aver ottenuto il risultato.</strong>',
+          body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
           badge: 'Assistenza inclusa fino al rilascio',
           badgeEmoji: '',
           isGold: true,
         },
       ],
       bottomTitle: 'Un metodo collaudato',
-      bottomBody: 'Solo sfratti per morosità, dal 2018, in tutti i Tribunali d’Italia.',
+      bottomBody: 'Solo sfratti dal 2018: circa 200 procedure seguite ogni anno, in tutti i Tribunali d’Italia.',
       bottomCtaLabel: 'Verifica se puoi partire',
     };
   }
@@ -499,7 +499,7 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-euro-sign',
         q: 'Quando si pagano i 1.300€ e cosa comprendono?',
-        a: 'Solo <strong>dopo aver ottenuto il risultato</strong>: avvii la procedura senza anticipare nulla. Il compenso comprende <strong>tutta l’assistenza legale fino al rilascio</strong> dell’immobile. Restano escluse le spese vive (contributo unificato, notifiche, eventuale ufficiale giudiziario), sempre indicate prima e mai richieste in anticipo.',
+        a: 'Solo <strong>dopo l’udienza per la convalida</strong>: avvii la procedura senza anticipare nulla. Il compenso è di €1.300 <strong>IVA e cassa incluse</strong> e comprende tutta l’assistenza legale fino al rilascio dell’immobile. Restano escluse le spese vive di legge: indicativamente <strong>€100–150</strong> per la convalida e circa <strong>€300 in totale</strong> se serve la fase esecutiva — sempre indicate per iscritto prima, mai richieste in anticipo.',
       },
       {
         icon: 'fa-clock',
@@ -512,6 +512,11 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
         a: 'Città dell’immobile, mesi di morosità e un contatto diretto. Se hai già contratto di locazione e prova dei mancati pagamenti, la valutazione è ancora più precisa.',
       },
       {
+        icon: 'fa-store',
+        q: 'Vale anche per negozi, uffici o per la finita locazione?',
+        a: 'Sì. Trattiamo anche lo sfratto di immobili commerciali (negozi, uffici, capannoni) e lo sfratto per finita locazione, alle stesse condizioni: <strong>€1.300 IVA e cassa incluse, zero anticipi</strong>.',
+      },
+      {
         icon: 'fa-user-shield',
         q: 'Devo essere presente all’udienza?',
         a: 'No. Segue tutto il nostro avvocato: non devi recarti in Tribunale.',
@@ -519,7 +524,7 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-exclamation-circle',
         q: 'Cosa succede se l’inquilino si oppone?',
-        a: 'Il procedimento prosegue con tempi più lunghi e impostiamo subito la strategia più adatta per ottenere comunque il rilascio nel minor tempo possibile.',
+        a: 'L’opposizione apre un giudizio ordinario con tempi più lunghi. Il patto economico non cambia da solo: i €1.300 coprono il procedimento di convalida; per l’eventuale giudizio di merito ricevi un <strong>preventivo scritto separato</strong> e nulla prosegue senza il tuo consenso.',
       },
       {
         icon: 'fa-coins',
@@ -566,8 +571,8 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = version === 'v3'
     ? (territory.slug === 'nazionale'
-        ? `Sfratto per morosità: €1.300 per tutta l'assistenza fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`
-        : `Sfratto per morosità${territorySuffix}: €1.300 per tutta l'assistenza fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`)
+        ? `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`
+        : `Sfratto per morosità${territorySuffix}: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;

@@ -1,27 +1,42 @@
 ---
-// LandingV3PriceSection.astro — prezzo unico, frame "a risultato" (solo v3).
-// Message match con gli RSA: €1.300 fino al rilascio · nessun anticipo · paghi a risultato.
+// LandingV3PriceSection.astro — prezzo unico + Patto Sfratto Sicuro (solo v3).
+// Termini approvati dall'avvocato (2026-07-17): €1.300 IVA e cassa INCLUSE;
+// compenso dovuto solo DOPO L'UDIENZA per la convalida (milestone, mai "a risultato");
+// opposizione/merito = preventivo scritto separato; spese vive ~€100-150 / ~€300 totali;
+// perimetro: morosità + finita locazione + commerciale, stesse condizioni.
 const WA_URL = 'https://wa.me/393291175957?text=Salve%2C%20sono%20proprietario%2Flocatore%20e%20ho%20un%20inquilino%20moroso%3A%20vorrei%20una%20valutazione%20gratuita%20del%20mio%20caso.';
 ---
 <section id="prezzo" class="landing-v3-price" aria-labelledby="prezzo-title">
   <div class="container mx-auto px-4">
     <div class="landing-v3-price-inner">
       <p class="landing-v3-price-eyebrow">Compenso unico, senza sorprese</p>
-      <h2 id="prezzo-title">Un solo prezzo. Lo paghi solo a risultato.</h2>
+      <h2 id="prezzo-title">Un solo prezzo. Zero anticipi.</h2>
 
       <div class="landing-v3-price-figure">
         <span class="landing-v3-price-amount">€1.300</span>
-        <span class="landing-v3-price-scope">tutta l'assistenza legale, fino al rilascio dell'immobile</span>
+        <span class="landing-v3-price-scope">tutta l'assistenza legale fino al rilascio dell'immobile — <strong>IVA e cassa incluse</strong></span>
       </div>
 
       <ul class="landing-v3-price-points">
-        <li><i class="fas fa-bolt" aria-hidden="true"></i><span><strong>Avvii subito, senza anticipare nulla</strong>: nemmeno le spese.</span></li>
+        <li><i class="fas fa-bolt" aria-hidden="true"></i><span><strong>Avvii subito senza anticipare nulla</strong>: nessun acconto per partire.</span></li>
         <li><i class="fas fa-file-signature" aria-hidden="true"></i><span><strong>Tutta l'assistenza legale inclusa</strong>: dall'analisi del caso all'udienza, fino al rilascio.</span></li>
-        <li><i class="fas fa-flag-checkered" aria-hidden="true"></i><span><strong>Il compenso si paga dopo aver ottenuto il risultato</strong>, mai prima.</span></li>
+        <li><i class="fas fa-flag-checkered" aria-hidden="true"></i><span><strong>Il compenso si paga solo dopo l'udienza di convalida</strong>, mai prima.</span></li>
+        <li><i class="fas fa-store" aria-hidden="true"></i><span><strong>Vale anche per locali commerciali</strong> e per lo sfratto per finita locazione: stesse condizioni.</span></li>
         <li><i class="fas fa-gavel" aria-hidden="true"></i><span><strong>Le spese legali possono essere addebitate all'inquilino</strong> nella convalida.</span></li>
       </ul>
 
-      <p class="landing-v3-price-note">Oltre al compenso restano solo le spese vive di legge (contributo unificato, notifiche, eventuale ufficiale giudiziario): te le indichiamo <strong>per iscritto prima di partire</strong>, non le anticipi mai e in convalida chiediamo al Giudice di addebitarle all'inquilino.</p>
+      <div class="landing-v3-patto">
+        <h3><i class="fas fa-handshake" aria-hidden="true"></i> Il Patto Sfratto Sicuro</h3>
+        <p class="landing-v3-patto-sub">Non uno slogan: una clausola scritta nel mandato che firmi prima di partire.</p>
+        <ol>
+          <li>Parti con <strong>zero anticipi</strong>.</li>
+          <li>Il compenso di <strong>€1.300 (IVA e cassa incluse)</strong> è dovuto solo <strong>dopo l'udienza per la convalida</strong> dello sfratto.</li>
+          <li>Dopo la convalida ti assistiamo <strong>fino al rilascio dell'immobile</strong> senza compensi aggiuntivi.</li>
+          <li>Se l'inquilino si oppone e serve il giudizio di merito, <strong>nulla prosegue senza un preventivo scritto e il tuo consenso</strong>.</li>
+        </ol>
+      </div>
+
+      <p class="landing-v3-price-note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>€100–150</strong> per la fase di convalida (contributo unificato, marca, notifiche) e circa <strong>€300 in totale</strong> se serve il rilascio forzato con l'ufficiale giudiziario. Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
 
       <div class="landing-v3-price-cta">
         <a href="#form-rapido" class="btn-primary px-6 py-4 rounded-lg font-bold btn-mobile-fix">Verifica se puoi partire</a>
