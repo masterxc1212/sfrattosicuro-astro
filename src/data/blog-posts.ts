@@ -414,7 +414,7 @@ const posts: BlogPost[] = [
       <p>In generale no: la cedolare secca riguarda soprattutto le locazioni abitative. Il contratto commerciale sconta l'imposta di registro, di norma pari all'1% del canone annuo per negozi e uffici.</p>
 
       <h2>In sintesi</h2>
-      <p>Il contratto di locazione commerciale offre al proprietario un reddito stabile, ma in cambio di vincoli lunghi e di alcune regole inderogabili: la durata 6+6, i tempi stretti per la disdetta, la possibile indennità di avviamento e il diritto di prelazione dell'inquilino. Impostare bene il contratto fin dalla firma — clausole, canone, garanzie — è il modo migliore per evitare contenziosi più avanti. Se hai dubbi sul tuo caso specifico puoi <a href="/contatti">contattare Sfratto Sicuro</a> per una prima valutazione.</p>
+      <p>Il contratto di locazione commerciale offre al proprietario un reddito stabile, ma in cambio di vincoli lunghi e di alcune regole inderogabili: la durata 6+6, i tempi stretti per la disdetta, la possibile indennità di avviamento e il diritto di prelazione dell'inquilino. Impostare bene il contratto fin dalla firma — clausole, canone, garanzie — è il modo migliore per evitare contenziosi più avanti. Se hai dubbi sul tuo caso specifico puoi <a href="/#contatti">contattare Sfratto Sicuro</a> per una prima valutazione.</p>
       <p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata: ogni contratto va valutato alla luce della situazione concreta.</em></p>
     `,
   },
@@ -489,7 +489,7 @@ const posts: BlogPost[] = [
 
 <h2>In sintesi</h2>
 <p>Le <strong>locazioni brevi</strong> restano una formula interessante per il proprietario, ma nel 2026 richiedono più attenzione di un tempo: il CIN è ora obbligatorio, gli immobili devono rispettare requisiti di sicurezza, la tassazione distingue tra primo e secondo immobile e la soglia oltre la quale si diventa imprenditori si è abbassata a due appartamenti. Muoversi in ordine — codice, sicurezza, comunicazioni e scelta fiscale — evita sanzioni che possono superare di gran lunga il guadagno di una singola stagione.</p>
-<p>Se hai dubbi sul regime da applicare al tuo immobile o vuoi verificare la tua posizione prima di iniziare, <a href="/contatti/">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso.</p>
+<p>Se hai dubbi sul regime da applicare al tuo immobile o vuoi verificare la tua posizione prima di iniziare, <a href="/#contatti">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso.</p>
 <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata. Le norme citate — articolo 4 del D.L. 50/2017 (convertito in L. 96/2017), articolo 13-ter del D.L. 145/2023 (convertito in L. 191/2023), articolo 109 del R.D. 773/1931 (TULPS) e le disposizioni sulla cedolare secca e sulla soglia dei due appartamenti agg`,
   },
   {
@@ -558,7 +558,7 @@ const posts: BlogPost[] = [
 
   <h2>In sintesi</h2>
   <p>Il <strong>precetto per rilascio immobile</strong> è l'anello che collega la sentenza di sfratto alla riconsegna reale della casa. Rispettare la data fissata dal giudice, redigere l'atto con tutti i requisiti di legge e non lasciarlo scadere nei novanta giorni sono i tre punti che fanno la differenza tra un rilascio rapido e mesi persi. È una fase tecnica, in cui gli errori formali si pagano con settimane di ritardo.</p>
-  <p>Se hai ottenuto lo sfratto e vuoi arrivare al rilascio nel modo più rapido e sicuro possibile, puoi <a href="/contatti/">contattare Sfratto Sicuro</a> per una prima valutazione della tua situazione.</p>
+  <p>Se hai ottenuto lo sfratto e vuoi arrivare al rilascio nel modo più rapido e sicuro possibile, puoi <a href="/#contatti">contattare Sfratto Sicuro</a> per una prima valutazione della tua situazione.</p>
   <p><em>Riferimenti normativi: artt. 480, 481, 605 e 608 del codice di procedura civile (c.p.c.) sulla forma del precetto, sulla sua efficacia e sul modo del rilascio; ordinanza di convalida (art. 663 c.p.c.) e ordinanza di rilascio (art. 665 c.p.c.) come titoli esecutivi; artt. 55 e 56 della legge 392/1978 sul termine di grazia e sulla data di esecuzione fissata dal giudice. La disciplina va letta alla luce della riforma Cartabia (D.Lgs. 149/2022) e del correttivo (D.Lgs. 164/2024).</em></p>
   <p><em>Contenuto informativo, aggiornato a luglio 2026: non sostituisce una consulenza legale sul caso concreto.</em></p>`,
   },
@@ -703,7 +703,7 @@ const posts: BlogPost[] = [
 
   <h2>In sintesi</h2>
   <p>Lo <strong>sfratto per morosità di un locale commerciale</strong> è per molti versi più favorevole al proprietario rispetto a quello abitativo: niente termine di grazia, spesso una clausola risolutiva espressa che semplifica l'accertamento e nessuna indennità di avviamento da versare all'inquilino inadempiente. Le insidie stanno però nei dettagli — il calcolo esatto della morosità, la lettura del contratto, i tempi delle notifiche — dove un errore può allungare i tempi o indebolire la posizione. Per questo conviene farsi seguire fin dall'inizio.</p>
-  <p>Se ti trovi in questa situazione, <a href="/contatti/">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso: analizziamo il contratto e la morosità e ti indichiamo la strada più efficace per riavere il tuo immobile. Puoi approfondire anche il nostro servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
+  <p>Se ti trovi in questa situazione, <a href="/#contatti">contatta Sfratto Sicuro</a> per una prima valutazione del tuo caso: analizziamo il contratto e la morosità e ti indichiamo la strada più efficace per riavere il tuo immobile. Puoi approfondire anche il nostro servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
   <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata. Le norme citate — legge 392/1978 (in particolare gli articoli 5, 27-42, 34-35 e 55), articoli 657-669 del codice di procedura civile, articoli 1455 e 1456 del codice civile e la riforma Cartabia (D.Lgs. 149/2022, con il correttivo D.Lgs. 164/2024) — vanno applicate al caso concreto con l'assistenza di un professionista.</em></p>`,
   },
   {
@@ -2032,7 +2032,7 @@ const posts: BlogPost[] = [
 
 <h2>Differenza tra occupazione abusiva, detenzione senza titolo e morosità</h2>
 <p>Per un proprietario è fondamentale non usare queste espressioni come se fossero sinonimi perfetti.</p>
-<p>La <strong>morosità</strong> riguarda il mancato pagamento dei canoni in presenza di un rapporto locatizio in essere. Puoi approfondire i passaggi e le tempistiche nella nostra guida sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026">sfratto per morosità</a>. La <strong>finita locazione</strong> riguarda invece la cessazione del rapporto e il mancato rilascio dell’immobile alla scadenza o alla fine del titolo, come spiegato nell'articolo dedicato allo <a href="/blog/sfratto-per-finita-locazione">sfratto per finita locazione</a>.</p>
+<p>La <strong>morosità</strong> riguarda il mancato pagamento dei canoni in presenza di un rapporto locatizio in essere. Puoi approfondire i passaggi e le tempistiche nella nostra guida sullo <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">sfratto per morosità</a>. La <strong>finita locazione</strong> riguarda invece la cessazione del rapporto e il mancato rilascio dell’immobile alla scadenza o alla fine del titolo, come spiegato nell'articolo dedicato allo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
 <p>L’<strong>occupazione senza titolo</strong> o la <strong>detenzione senza titolo</strong> possono presentare elementi diversi. In alcuni casi esisteva un titolo originario che non è più valido; in altri il quadro è più complesso e richiede una ricostruzione accurata dei fatti e dei documenti.</p>
 <p>Per questo motivo il proprietario sbaglia quando tratta automaticamente ogni problema come “semplice sfratto”. Se il caso è inquadrato male all’inizio, si rischia di perdere tempo e di scegliere una strada non adatta. Quando il rapporto locativo è già degenerato o ci sono contestazioni sul titolo, può essere utile inquadrare subito anche il tema delle <a href="/servizi/controversie-locazione/">controversie di locazione</a> e della <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
 
@@ -2055,7 +2055,7 @@ const posts: BlogPost[] = [
   <li>quali comunicazioni sono già state inviate;</li>
   <li>quali documenti possono provare la posizione del proprietario.</li>
 </ul>
-<p>Agire senza questa base documentale è rischioso. Per questo, anche le comunicazioni preliminari come una <a href="/blog/lettera-diffida-inquilino-moroso">lettera di messa in mora</a> vanno impostate con attenzione. In molti casi il problema non è “fare qualcosa subito a ogni costo”, ma fare la cosa giusta nel modo corretto.</p>
+<p>Agire senza questa base documentale è rischioso. Per questo, anche le comunicazioni preliminari come una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di messa in mora</a> vanno impostate con attenzione. In molti casi il problema non è “fare qualcosa subito a ogni costo”, ma fare la cosa giusta nel modo corretto.</p>
 
 <h2>Quali rimedi legali possono essere valutati</h2>
 <p>Quando il proprietario vuole riottenere il possesso dell’immobile, la scelta dell’azione dipende dal caso concreto. È proprio per questo che la fase iniziale di analisi conta tanto.</p>
