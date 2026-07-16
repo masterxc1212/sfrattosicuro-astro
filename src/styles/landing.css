@@ -359,8 +359,8 @@ form button[type="submit"] i,
   background: var(--blue-navy);
 }
 .landing-v3-sticky-actions { display: flex; align-items: center; gap: .5rem; }
-.landing-v3-sticky-btn.is-wa { background: #25D366; }
-.landing-v3-sticky-btn.is-call { background: var(--blue-navy); padding: .6rem .8rem; }
+.landing-v3-sticky-btn.is-wa { background: #25D366 !important; }
+.landing-v3-sticky-btn.is-call { background: var(--blue-navy) !important; padding: .6rem .8rem; }
 .landing-v3-sticky-btn i { font-size: 1rem; }
 @media (max-width: 900px) {
   .landing-v3-sticky-cta { display: flex; }
