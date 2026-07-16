@@ -16,6 +16,91 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "clausola-risolutiva-espressa-locazione",
+    title: "Clausola risolutiva espressa nel contratto di locazione: quando serve davvero al proprietario",
+    description:
+      "Clausola risolutiva espressa nel contratto di locazione: quando protegge davvero il proprietario, perche' conta poco sulla morosita' di casa e l'errore che la rende inutile.",
+    excerpt:
+      "La riga che quasi tutti hanno nel contratto e quasi nessuno sa usare. Vale poco sulla morosita' di un'abitazione, moltissimo su un negozio: e resta inerte finche' non la attivi.",
+    lead:
+      "«Il contratto si intende risolto di diritto in caso di mancato pagamento»: quella riga non e' l'assicurazione che credi. Ecco quanto vale davvero, caso per caso.",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+    category: "Locazioni",
+    readingTime: "9 min",
+    sourceNote:
+      "Generato automaticamente 2026-07-16. Keyword: clausola risolutiva espressa locazione, vol 720, KD 0.",
+    html: `
+<p>Quasi tutti i contratti di affitto contengono una riga che suona così: «il contratto si intenderà risolto di diritto ai sensi dell'art. 1456 c.c. in caso di mancato pagamento anche di una sola mensilità». È la <strong>clausola risolutiva espressa</strong> nel contratto di locazione, e la maggior parte dei proprietari la considera un'assicurazione: se l'inquilino salta un canone, il contratto salta da solo.</p>
+<p>La realtà è più sfumata, e conoscerla fa una differenza enorme. La stessa identica clausola ha un peso <strong>modesto se il problema è la morosità di una casa</strong> e <strong>decisivo se affitti un negozio o un ufficio</strong>. Vediamo che cosa puoi davvero ottenere da questa clausola, quando serve poco e — soprattutto — l'errore che ogni anno la rende inutilizzabile a moltissimi locatori.</p>
+
+<h2>Che cos'è la clausola risolutiva espressa in un contratto di locazione</h2>
+<p>La base è l'<strong>articolo 1456 del codice civile</strong> (c.c., la raccolta di norme che regola i rapporti tra privati). Dice due cose: le parti possono mettere nero su bianco che il contratto <strong>si risolve</strong> — cioè si scioglie — se una <strong>determinata obbligazione</strong> non viene rispettata; e la risoluzione «si verifica di diritto quando la parte interessata <strong>dichiara all'altra</strong> che intende valersi della clausola risolutiva».</p>
+<p>Il vantaggio teorico è chiaro. Senza clausola, per liberarsi di un inquilino inadempiente il proprietario deve convincere un giudice che l'inadempimento è «di non scarsa importanza» (art. 1455 c.c.): una valutazione discrezionale, caso per caso, che si può perdere. Con la clausola quella valutazione in linea di principio non serve: le parti l'hanno già fatta firmando.</p>
+<p>Due precisazioni. L'obbligazione dev'essere <strong>determinata</strong>: una formula generica del tipo «in caso di inadempimento di qualsiasi obbligo il contratto si risolve» è una clausola di stile — una frase di rito senza contenuto — e non protegge nessuno. E la clausola non è una tagliola automatica: la risoluzione presuppone comunque un inadempimento <strong>imputabile</strong> al conduttore, cioè addebitabile a lui (Cass. civ. n. 21836/2014).</p>
+
+<h2>Se affitti una casa: sulla morosità la clausola conta meno di quanto credi</h2>
+<p>Qui arriva la notizia che sorprende quasi tutti. Nelle <strong>locazioni abitative</strong>, e limitatamente a ciò che interessa la maggioranza dei proprietari — il <strong>mancato pagamento del canone</strong> — la clausola aggiunge pochissimo, perché la legge ha già preso il posto dell'accordo tra le parti in entrambe le direzioni. Attenzione però: il discorso vale <strong>solo per la morosità</strong>. Su ogni altro obbligo — sublocazione, destinazione d'uso, polizza — la clausola torna a mordere anche sulla casa. Ci torniamo tra poco.</p>
+<p>Da un lato la legge è già dalla tua parte. L'<strong>articolo 5 della legge 392/1978</strong> (la storica «legge sull'equo canone») stabilisce che il mancato pagamento del canone <strong>decorsi venti giorni</strong> dalla scadenza, oppure il mancato pagamento degli oneri accessori — le spese a carico dell'inquilino, tipicamente quelle condominiali — quando l'importo non pagato supera <strong>due mensilità del canone</strong>, è già di per sé motivo di risoluzione. La Cassazione parla di <em>predeterminazione legale della gravità</em>: superata quella soglia, il giudice non può più discutere se l'inadempimento fosse grave (Cass. civ. n. 8628/2006). La clausola ti darebbe un vantaggio che <strong>hai già per legge</strong>, anche se nel contratto non c'è scritto nulla.</p>
+<p>Dall'altro lato c'è un contrappeso che nessuna clausola spazza via: il <strong>termine di grazia</strong> dell'<strong>articolo 55 della legge 392/1978</strong>, che consente all'inquilino di casa di <strong>sanare la morosità in tribunale</strong> pagando tutto l'arretrato. L'ultimo comma è netto: «Il pagamento, nei termini di cui ai commi precedenti, <strong>esclude la risoluzione del contratto</strong>». Nessuna eccezione per i contratti con clausola risolutiva. E non è un caso: lo stesso art. 5 si apre con l'inciso «<em>Salvo quanto previsto dall'articolo 55</em>».</p>
+<p>In concreto l'art. 55 funziona così:</p>
+<ul>
+<li>l'inquilino può sanare <strong>alla prima udienza</strong>, versando tutti i canoni scaduti, gli oneri maturati, gli interessi legali e le spese processuali liquidate dal giudice;</li>
+<li>se non paga in udienza, il giudice — <strong>solo</strong> davanti a comprovate condizioni di difficoltà — può concedergli un termine <strong>non superiore a novanta giorni</strong>, rinviando l'udienza a non oltre dieci giorni dalla scadenza;</li>
+<li>la sanatoria è ammessa <strong>non più di tre volte in un quadriennio</strong>. Il tetto sale a <strong>quattro volte complessive nel quadriennio</strong>, con termine fino a <strong>centoventi giorni</strong>, se la morosità è durata non oltre due mesi ed è dovuta a precarie condizioni economiche sopravvenute per disoccupazione, malattia o altre gravi difficoltà comprovate.</li>
+</ul>
+<p>Detto questo, non uscirne con l'idea di essere disarmato: quel che ti resta è tutt'altro che poco. La morosità oltre soglia è <strong>già grave per legge</strong> e non devi dimostrare nulla. La sanatoria dev'essere <strong>integrale</strong>: pagare «quasi tutto» non basta — la Cassazione ha confermato la risoluzione in un caso in cui erano rimasti impagati soltanto IVA e contributo previdenziale sulle spese legali (Cass. civ. n. 920/2013). I tetti sono rigidi e si contano. E se il giudice concede il termine ma l'inquilino non paga, il termine è perentorio: si arriva alla convalida e l'esecuzione, per l'art. 56 della stessa legge, non può essere fissata oltre <strong>sessanta giorni</strong> dalla scadenza del termine concesso. Approfondimento nella guida al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+<p><strong>In pratica</strong>: nel contratto di casa la clausola resta utile per gli obblighi diversi dal canone, e lì va scritta bene. Ma sulla morosità non contarci come scorciatoia: il tuo vero strumento è la procedura di sfratto, non la riga sul contratto.</p>
+
+<h2>Se affitti un negozio o un ufficio: qui la clausola è un'arma vera</h2>
+<p>Nelle <strong>locazioni a uso diverso dall'abitativo</strong> — negozi, uffici, capannoni, laboratori — lo scenario si ribalta, per due ragioni che si sommano.</p>
+<p>Primo: l'<strong>articolo 5 non si applica</strong>. La soglia dei venti giorni non vale per il commerciale: è orientamento consolidato (Cass. civ. n. 1428/2017; n. 30730/2019; n. 27955/2020). Senza clausola, quindi, il giudice torna a valutare la gravità ex art. 1455 c.c., «non solo in relazione alla entità oggettiva dell'inadempimento, ma anche con riguardo all'interesse che l'altra parte intende realizzare»: il mancato pagamento del canone, pur violando l'obbligazione principale del conduttore, può in concreto essere giudicato «di scarsa importanza» e non portare alla risoluzione (Cass. civ. n. 3966/2019, che ha escluso la gravità perché si trattava dell'ultimo canone dovuto su un contratto già disdettato dal locatore stesso). Il giudice non è del tutto libero — può usare la soglia dei venti giorni come <em>parametro di orientamento</em> (Cass. civ. n. 1428/2017) — ma decide lui.</p>
+<p>Secondo: <strong>non si applica nemmeno l'articolo 55</strong>. Il termine di grazia è pensato per chi affitta per soddisfare esigenze abitative primarie e non vale per il commerciale: lo hanno stabilito le Sezioni Unite (Cass. S.U. n. 272/1999) e lo confermano le pronunce successive (Cass. civ. n. 22905/2016; n. 9555/2017; n. 13248/2010). L'inquilino commerciale che dopo l'intimazione arriva in udienza con l'assegno degli arretrati <strong>non cancella</strong> l'inadempimento.</p>
+<p>Sommando: nel commerciale la clausola risolutiva espressa è <strong>valida ed efficace</strong> e consente la risoluzione di diritto per il mancato pagamento decorso il termine pattuito, <strong>senza valutazione giudiziale sulla gravità</strong> (Cass. civ. n. 22905/2016; n. 4540/2012). È esattamente il vantaggio che i proprietari immaginano di avere: solo che ce l'hanno qui, non sulla morosità di casa. Restano però due limiti da non dimenticare, su cui torniamo sotto: l'inadempimento dev'essere imputabile e la clausola va esercitata in buona fede. Per il quadro completo della procedura, vedi lo <a href="/blog/sfratto-morosita-locale-commerciale/">sfratto per morosità di un locale commerciale</a>.</p>
+
+<h2>L'errore che rende la clausola carta straccia: la dichiarazione</h2>
+<p>È il punto su cui si perdono più cause, tanto banale quanto letale. La clausola <strong>non opera da sola</strong>: serve una <strong>dichiarazione</strong> del locatore.</p>
+<p>La Cassazione è chirurgica (Cass. civ. n. 4540/2012): al verificarsi dell'inadempimento la risoluzione «non può essere dichiarata d'ufficio, ma solo se la parte nel cui interesse la clausola è stata inserita nel contratto <strong>dichiara di volersene avvalere</strong>». La via classica è un <strong>atto stragiudiziale recettizio</strong> — che deve arrivare al destinatario — nella stessa forma del contratto risolto. Ma non è l'unica: per giurisprudenza costante la dichiarazione «può essere resa, senza necessità di formule rituali, anche in maniera implicita, purché inequivocabile, pure nell'atto di citazione in giudizio per la risoluzione del contratto o in atti giudiziari equipollenti, senza la necessità che sia preceduta da una previa manifestazione di volontà diretta a tale scopo» (Cass. civ. n. 28260/2024; nello stesso senso n. 9275/2005 e n. 14195/2022). <strong>Anche l'intimazione di sfratto per morosità può contenerla</strong>, purché vi si dichiari espressamente di volersi avvalere della clausola (Cass. civ. n. 25743/2013; n. 9555/2017).</p>
+<p>Tre conseguenze da tatuarsi:</p>
+<ul>
+<li><strong>Un sollecito non basta.</strong> «Ti invito a pagare quanto prima» non equivale alla dichiarazione richiesta dall'art. 1456, comma 2, c.c. Serve un collegamento esplicito tra l'inadempimento e la volontà di avvalersi della clausola.</li>
+<li><strong>Se non la fai mai, la clausola è inoperante</strong> e torna la valutazione giudiziale della gravità ex art. 1455 c.c. Nel caso deciso nel 2012 la locatrice ha perso proprio così: canone in ritardo di quindici giorni, nessuna dichiarazione né prima né durante la causa, ricorso rigettato. Consolazione parziale: anche non azionata, la clausola <em>pesa</em> nel giudizio, perché dimostra l'importanza che le parti attribuivano alla puntualità (Cass. civ. n. 30730/2019).</li>
+<li><strong>La risoluzione «automatica» va scritta.</strong> Le parti possono pattuire che il contratto si risolva senza preventiva comunicazione, ma l'esclusione «deve risultare espressamente». Se il contratto tace, l'onere c'è.</li>
+</ul>
+<p><strong>Che cosa deve contenere la dichiarazione</strong>: gli estremi del contratto, l'obbligo violato con date e importi, il richiamo espresso all'art. 1456 c.c. e alla clausola (indicando l'articolo del contratto), la dichiarazione inequivoca di volersene avvalere, data e firma. Per impostare la comunicazione, vedi la guida alla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>.</p>
+
+<h2>Gli altri errori comuni</h2>
+<ul>
+<li><strong>Firmare una clausola che estende l'art. 55 al commerciale.</strong> È il regalo più costoso che un proprietario possa fare. La Cassazione ha stabilito che è pienamente valida la clausola con cui le parti estendono <em>per accordo</em> la tutela dell'art. 55 anche al conduttore di un immobile a uso diverso (Cass. civ. n. 7621/2010): l'art. 79 della legge 392/1978 — che oggi vale solo per le locazioni non abitative, essendo stato abrogato per quelle abitative dall'art. 14 della legge 431/1998 — vieta i patti a vantaggio del <em>locatore</em>, non quelli a vantaggio del conduttore.</li>
+<li><strong>Contare sulla clausola dopo anni di ritardi tollerati.</strong> Da un lato la tolleranza su ritardi passati non equivale a una modifica del contratto (Cass. civ. n. 27955/2020). Dall'altro, la prassi instauratasi tra le parti può essere valorizzata per <strong>escludere l'essenzialità del termine</strong> pattuito (Cass. civ. n. 4540/2012). Se hai sempre accettato il pagamento il 20 del mese, azionare la clausola il giorno 6 è terreno scivoloso.</li>
+<li><strong>Ignorare la buona fede.</strong> L'operatività della clausola è subordinata alla valutazione della condotta del debitore secondo buona fede: se il comportamento del conduttore, «pur realizzando sotto il profilo materiale il fatto contemplato dalla clausola risolutiva espressa, è conforme a buona fede», il giudice deve escludere l'inadempimento (Cass. civ. n. 3969/2019).</li>
+<li><strong>Smettere di incassare troppo presto.</strong> L'azione fondata sulla clausola punta a una sentenza che si limita ad <em>accertare</em> la risoluzione già avvenuta: finché quella sentenza non diventa definitiva, il rapporto <strong>permane</strong>, e con esso l'obbligo dell'inquilino di pagare il canone (Cass. civ. n. 25743/2013).</li>
+<li><strong>Credere che la clausola sostituisca lo sfratto.</strong> Non lo fa. Anche con la clausola più blindata, per riavere le chiavi serve un provvedimento del giudice che ti autorizzi all'esecuzione e, se l'inquilino non se ne va, l'ufficiale giudiziario.</li>
+</ul>
+
+<h2>Che cosa controllare adesso nel tuo contratto</h2>
+<ul>
+<li><strong>La clausola c'è?</strong> Se affitti commerciale ed è assente, è la prima cosa da inserire alla prossima stipula o al rinnovo.</li>
+<li><strong>È determinata?</strong> Deve indicare l'obbligo preciso (il pagamento del canone) e il termine oltre il quale scatta.</li>
+<li><strong>Copre anche gli altri obblighi?</strong> Sublocazione, destinazione d'uso, polizza: sono i terreni dove la clausola serve anche sulla casa.</li>
+<li><strong>Che termine prevede?</strong> Nel commerciale lo scegli tu, perché non c'è la soglia legale dei venti giorni. Nell'abitativo la soglia c'è comunque.</li>
+<li><strong>Prevede la risoluzione senza comunicazione?</strong> Se sì, è scritto <em>espressamente</em>? Se no, la dichiarazione è obbligatoria.</li>
+<li><strong>C'è una clausola che estende l'art. 55 al commerciale?</strong> Se sì, è valida e ti vincola.</li>
+<li><strong>La prassi dei pagamenti coincide con il contratto?</strong> Se da mesi tolleri ritardi, il termine contrattuale si sta indebolendo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>La clausola risolutiva espressa mi fa risparmiare tempo nello sfratto di casa?</h3>
+<p>Sulla morosità, praticamente no. Nell'abitativo la gravità è già stabilita per legge dall'art. 5 della legge 392/1978 e il termine di grazia dell'art. 55 opera comunque. I tempi li determinano il tribunale competente e l'eventuale opposizione dell'inquilino, non la clausola.</p>
+<h3>Posso scrivere nel contratto di casa che l'inquilino non può sanare la morosità?</h3>
+<p>No, non conta su una clausola del genere. L'art. 5 fa espressamente salvo l'art. 55, e l'art. 55 stabilisce che il pagamento nei termini «esclude la risoluzione del contratto», senza eccezioni per i contratti con clausola risolutiva. Sono le due norme a chiudere la porta, e una clausola che pretendesse di sottrarre al conduttore la sanatoria è esposta a nullità: in giudizio non ti proteggerebbe.</p>
+<h3>Devo per forza mandare una raccomandata prima di fare causa?</h3>
+<p>No. La forma più sicura resta scritta e con prova di ricezione — raccomandata A/R o PEC (posta elettronica certificata) — ma la dichiarazione può anche essere contenuta nell'atto che apre la causa, intimazione di sfratto compresa, purché vi si dichiari espressamente di volersi avvalere della clausola. Il rischio non è il mezzo, è l'ambiguità: contestare la morosità senza collegarla esplicitamente alla clausola non equivale a esercitarla. Muoversi presto conviene comunque: finché non dichiari, l'inquilino può ancora pagare in ritardo e neutralizzare la clausola.</p>
+<h3>Se l'inquilino commerciale paga tutto prima dell'udienza, lo sfratto si ferma?</h3>
+<p>Non per effetto del pagamento. Nel commerciale l'art. 55 non si applica e l'offerta dei canoni insoluti effettuata dopo l'intimazione di sfratto non elide l'inadempimento rilevante a fini risolutori (Cass. civ. n. 9555/2017; n. 25743/2013). Puoi comunque scegliere tu di accettare e proseguire il rapporto: è
+`,
+  },
+  {
     slug: "opposizione-sfratto-per-morosita",
     title: "Opposizione allo sfratto per morosità: cosa succede e cosa può fare il proprietario",
     description:
