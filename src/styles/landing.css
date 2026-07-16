@@ -355,11 +355,32 @@ form button[type="submit"] i,
 .landing-v3-sticky-btn {
   color: #fff !important; font-weight: 700; padding: .6rem 1rem; border-radius: .6rem;
   font-size: .82rem; white-space: nowrap; text-transform: uppercase; letter-spacing: .03em;
-  text-decoration: none;
+  text-decoration: none; display: inline-flex; align-items: center; gap: .4rem;
+  background: var(--blue-navy);
 }
+.landing-v3-sticky-actions { display: flex; align-items: center; gap: .5rem; }
+.landing-v3-sticky-btn.is-wa { background: #25D366; }
+.landing-v3-sticky-btn.is-call { background: var(--blue-navy); padding: .6rem .8rem; }
+.landing-v3-sticky-btn i { font-size: 1rem; }
 @media (max-width: 900px) {
   .landing-v3-sticky-cta { display: flex; }
   body.landing-v3-body { padding-bottom: 66px; }
+}
+
+/* CTA WhatsApp secondaria nell'hero (alternativa a bassa frizione al form) */
+.hero-wa-cta {
+  display: flex; align-items: center; justify-content: center; gap: .5rem;
+  margin-top: .7rem; padding: .7rem 1rem; border-radius: .6rem;
+  background: #25D366; color: #fff !important; font-weight: 600; font-size: .9rem;
+  text-decoration: none; line-height: 1.2;
+}
+.hero-wa-cta i { font-size: 1.15rem; }
+.hero-wa-cta:hover { background: #1FB855; }
+
+/* Frase rassicurante sotto "Per chi è / non è" */
+.landing-v3-forwhom-reassure {
+  max-width: 46rem; margin: 1.5rem auto 0; text-align: center;
+  color: #4b5563; font-size: .98rem; line-height: 1.55;
 }
 
 /* --- "Per chi è / per chi non è" --- */

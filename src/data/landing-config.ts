@@ -143,7 +143,7 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
         territory.slug === 'nazionale'
           ? `<strong class="text-white">Avvocato per sfratto per morosità</strong> dedicato a proprietari e locatori con inquilino moroso. Avviamo subito la procedura per <strong class="text-white">riottenere il tuo immobile</strong>: paghi solo dopo la convalida, poi ti assistiamo <strong class="text-white">gratis fino al rilascio</strong>.`
           : `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
-      prequalificationNote: '<strong>Solo proprietari/locatori.</strong> Nessuna assistenza per inquilini o richieste puramente informative.',
+      prequalificationNote: '<strong>Solo proprietari e locatori.</strong> La prima valutazione del tuo caso è gratuita e senza impegno.',
       ownerField: true,
       bullets: [
         '<strong>€1.300, pagati solo dopo la convalida</strong> – nessun acconto, paghi a risultato',
@@ -443,12 +443,12 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
 
   return {
     ...landingOriginal.faq,
-    title: version === 'v3' ? 'Le 5 domande decisive prima di partire' : landingOriginal.faq.title,
+    title: version === 'v3' ? 'Le domande decisive prima di partire' : landingOriginal.faq.title,
     subtitle:
       territory.slug === 'nazionale'
         ? (version === 'v3' ? 'Solo le risposte essenziali che aiutano un proprietario a decidere se attivare subito la procedura.' : landingOriginal.faq.subtitle)
         : `Le risposte alle domande più frequenti dei proprietari che cercano ${keyword.primary}${suffix}.`,
-    subtitle2: version === 'v3' ? 'Abbiamo ridotto la sezione alle obiezioni che incidono davvero sulla conversione da Google Ads: tempi, costi, requisiti, udienza e recupero immobile.' : landingOriginal.faq.subtitle2,
+    subtitle2: version === 'v3' ? 'Tempi, costi, requisiti, udienza e recupero dell’immobile: le risposte che servono per capire se puoi partire.' : landingOriginal.faq.subtitle2,
     items: version === 'v3' ? [
       {
         icon: 'fa-clock',
