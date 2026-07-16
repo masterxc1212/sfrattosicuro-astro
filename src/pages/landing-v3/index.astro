@@ -8,26 +8,14 @@ import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
 import MetaPixelTracking from '../../components/MetaPixelTracking.astro';
 
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
-import LandingOriginalTrustBarSection from '../../components/landing/LandingOriginalTrustBarSection.astro';
 import LandingOriginalHeroSection from '../../components/landing/LandingOriginalHeroSection.astro';
-import LandingQuickFactsSection from '../../components/landing/LandingQuickFactsSection.astro';
-import LandingOriginalProblemsSection from '../../components/landing/LandingOriginalProblemsSection.astro';
-import LandingOriginalCalculatorSection from '../../components/landing/LandingOriginalCalculatorSection.astro';
 import LandingOriginalReviewsSection from '../../components/landing/LandingOriginalReviewsSection.astro';
 import LandingOriginalProvvedimentiSection from '../../components/landing/LandingOriginalProvvedimentiSection.astro';
-import LandingOriginalLegalCostSection from '../../components/landing/LandingOriginalLegalCostSection.astro';
 import LandingOriginalProcedureSection from '../../components/landing/LandingOriginalProcedureSection.astro';
-import LandingOriginalPricingSection from '../../components/landing/LandingOriginalPricingSection.astro';
-import LandingOriginalCostTransparencySection from '../../components/landing/LandingOriginalCostTransparencySection.astro';
-import LandingOriginalWhoWeAreSection from '../../components/landing/LandingOriginalWhoWeAreSection.astro';
-import LandingOriginalWhyChooseSection from '../../components/landing/LandingOriginalWhyChooseSection.astro';
 import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
-import LandingOriginalMiniWidgetSection from '../../components/landing/LandingOriginalMiniWidgetSection.astro';
+import LandingV3PriceSection from '../../components/landing/LandingV3PriceSection.astro';
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
-import LandingV3ForWhomSection from '../../components/landing/LandingV3ForWhomSection.astro';
-import LandingV3ValueStackSection from '../../components/landing/LandingV3ValueStackSection.astro';
 import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
-import LandingOriginalVideoReviewsSection from '../../components/landing/LandingOriginalVideoReviewsSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 
 const config = buildLandingPageConfig({
@@ -136,20 +124,11 @@ const config = buildLandingPageConfig({
     <LandingOriginalHeaderSection />
     <main id="main-content" class="landing-v3-main" style="min-height:100vh; margin-top: var(--header-h, 90px);">
       <LandingOriginalHeroSection hero={config.hero} />
-      <LandingV3ForWhomSection />
-      <LandingQuickFactsSection quickFacts={config.quickFacts} />
-      <LandingOriginalTrustBarSection trustBar={config.trustBar} />
-      <LandingOriginalProblemsSection problemsSection={config.problems} />
-      <LandingOriginalCalculatorSection calculator={config.calculator} />
-      <LandingV3ValueStackSection />
-      <LandingOriginalReviewsSection />
-      <LandingOriginalVideoReviewsSection />
-      <LandingOriginalProvvedimentiSection />
-      <LandingOriginalLegalCostSection legalCost={config.legalCost} />
       <LandingOriginalProcedureSection procedure={config.procedure} />
-      <LandingOriginalCostTransparencySection costTransparency={config.costTransparency} />
+      <LandingV3PriceSection />
+      <LandingOriginalReviewsSection />
+      <LandingOriginalProvvedimentiSection />
       <LandingV3FounderSection />
-      <LandingOriginalWhyChooseSection whyChooseUs={config.whyChooseUs} />
       <LandingOriginalFaqSection faqSection={config.faq} />
       <LandingV3ContactSection contactForm={config.contactForm} />
     </main>
@@ -167,9 +146,7 @@ const config = buildLandingPageConfig({
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
     <MetaPixelTracking pixelId="1373903100373659" />
-    <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
-    <script src={versionedSrc('/assets/js/videos.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
     <script is:inline>

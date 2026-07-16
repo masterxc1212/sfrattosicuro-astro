@@ -138,20 +138,21 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
   if (version === 'v3') {
     return {
       ...landingOriginal.hero,
-      title: `Avvocato per Sfratto per Morosità${suffix}\nSolo per Proprietari`,
+      title: `Avvocato per Sfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `<strong class="text-white">Avvocato per sfratto per morosità</strong> dedicato a proprietari e locatori con inquilino moroso. Avviamo subito la procedura per <strong class="text-white">riottenere il tuo immobile</strong>: paghi solo dopo la convalida, poi ti assistiamo <strong class="text-white">gratis fino al rilascio</strong>.`
-          : `<strong class="text-white">Avvocato per sfratto</strong> dedicato a proprietari e locatori${territory.dynamicReplacement?.area ? ` ${territory.dynamicReplacement.area}` : ''}. Ti aiutiamo ad avviare rapidamente la procedura per <strong class="text-white">riottenere il tuo immobile</strong>, con costo chiaro e assistenza legale fino al rilascio.`,
-      prequalificationNote: '<strong>Solo proprietari e locatori.</strong> La prima valutazione del tuo caso è gratuita e senza impegno.',
+          ? `Riprendi il tuo immobile dall'inquilino moroso. Solo per <strong class="text-white">proprietari e locatori</strong>, in tutta Italia.`
+          : `Riprendi il tuo immobile dall'inquilino moroso. Solo per <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
+      prequalificationNote: undefined,
       ownerField: true,
       bullets: [
-        '<strong>€1.300, pagati solo dopo la convalida</strong> – nessun acconto, paghi a risultato',
-        '<strong>Poi ti assistiamo gratis fino al rilascio</strong> dell\'immobile (spese vive escluse, sempre indicate prima)',
-        '<strong>Convalida mediamente in circa 60 giorni</strong> – variabile in base al Tribunale e all\'eventuale opposizione',
+        '<strong>€1.300 tutto compreso</strong>, fino al rilascio',
+        '<strong>Zero anticipi</strong>, nemmeno per le spese',
+        '<strong>Paghi solo a risultato</strong> ottenuto',
+        '<strong>Convalida in ~60 giorni</strong> in media',
       ],
-      formTitle: 'Verifica subito se puoi partire',
-      formSubtitle: 'Lascia i tuoi dati essenziali: ricevi una <strong>prima consulenza gratuita</strong> e ti richiamiamo con una prima valutazione operativa del caso.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
+      formTitle: 'Verifica se puoi partire',
+      formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
       formSubmitLabel: 'Ti richiamiamo entro 2 ore',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
@@ -265,7 +266,51 @@ function buildLegalCost(territory: LandingTerritoryConfig) {
   };
 }
 
-function buildProcedure(territory: LandingTerritoryConfig) {
+function buildProcedure(version: LandingVersion, territory: LandingTerritoryConfig) {
+  if (version === 'v3') {
+    return {
+      ...landingOriginal.procedure,
+      title: 'Come funziona lo sfratto per morosità',
+      subtitle: territory.slug === 'nazionale'
+        ? 'Quattro fasi, un avvocato dedicato. In media 60 giorni alla convalida.'
+        : `Quattro fasi, un avvocato dedicato, anche presso ${territory.tribunalsLabel}.`,
+      steps: [
+        {
+          num: '1',
+          title: 'Oggi: valutazione gratuita del caso',
+          body: 'Ci racconti la situazione. Ti diciamo subito se puoi partire, senza anticipare nulla.',
+          badge: 'Avvocato dedicato da subito',
+          badgeEmoji: '🚀',
+        },
+        {
+          num: '2',
+          title: 'Giorni 1-7: intimazione di sfratto',
+          body: 'Prepariamo l’atto e lo notifichiamo all’inquilino moroso.',
+          badge: 'Atto notificato in tempi rapidi',
+          badgeEmoji: '📄',
+        },
+        {
+          num: '3',
+          title: 'Giorni 8-30: deposito in Tribunale',
+          body: 'Iscriviamo la causa e otteniamo la data d’udienza.',
+          badge: 'Iter dedicato in Tribunale',
+          badgeEmoji: '⚖️',
+        },
+        {
+          num: '✓',
+          title: 'Giorni 31-60: convalida dello sfratto',
+          body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo aver ottenuto il risultato.</strong>',
+          badge: 'Assistenza inclusa fino al rilascio',
+          badgeEmoji: '🔑',
+          isGold: true,
+        },
+      ],
+      bottomTitle: 'Un metodo collaudato',
+      bottomBody: 'Solo sfratti per morosità, dal 2018, in tutti i Tribunali d’Italia.',
+      bottomCtaLabel: 'Verifica se puoi partire',
+    };
+  }
+
   const baseSteps = landingOriginal.procedure.steps.map((step, index) => {
     if (index === 3) {
       return {
@@ -446,49 +491,39 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
     title: version === 'v3' ? 'Le domande decisive prima di partire' : landingOriginal.faq.title,
     subtitle:
       territory.slug === 'nazionale'
-        ? (version === 'v3' ? 'Solo le risposte essenziali che aiutano un proprietario a decidere se attivare subito la procedura.' : landingOriginal.faq.subtitle)
+        ? (version === 'v3' ? 'Le risposte essenziali per decidere.' : landingOriginal.faq.subtitle)
         : `Le risposte alle domande più frequenti dei proprietari che cercano ${keyword.primary}${suffix}.`,
-    subtitle2: version === 'v3' ? 'Tempi, costi, requisiti, udienza e recupero dell’immobile: le risposte che servono per capire se puoi partire.' : landingOriginal.faq.subtitle2,
+    subtitle2: version === 'v3' ? '' : landingOriginal.faq.subtitle2,
     items: version === 'v3' ? [
-      {
-        icon: 'fa-clock',
-        q: 'In quanto tempo si può ottenere la convalida dello sfratto per morosità?',
-        a: 'Non esiste un termine identico per tutti i Tribunali, ma nella nostra operatività il provvedimento di convalida arriva mediamente in circa 60 giorni. I tempi effettivi dipendono anche dal carico del Tribunale competente e dalla presenza o meno di opposizione.',
-      },
       {
         icon: 'fa-euro-sign',
         q: 'Quando si pagano i 1.300€ e cosa comprendono?',
-        a: 'I 1.300€ si pagano <strong>solo dopo la convalida</strong> dello sfratto: nessun acconto. Dopo la convalida continuiamo ad assisterti <strong>gratuitamente fino al rilascio</strong> dell’immobile; restano a tuo carico solo le eventuali spese vive della fase esecutiva, sempre indicate prima.',
+        a: 'Solo <strong>dopo aver ottenuto il risultato</strong>: avvii la procedura senza anticipare nulla, nemmeno le spese. Il prezzo comprende <strong>tutta l’assistenza fino al rilascio</strong> dell’immobile: analisi, atti, contributo unificato, notifiche e udienza. Eventuali costi vivi dell’ufficiale giudiziario nella fase esecutiva ti vengono sempre indicati prima.',
+      },
+      {
+        icon: 'fa-clock',
+        q: 'In quanto tempo si ottiene la convalida dello sfratto?',
+        a: 'In media in circa 60 giorni. I tempi effettivi dipendono dal Tribunale competente e dall’eventuale opposizione dell’inquilino.',
       },
       {
         icon: 'fa-file-contract',
-        q: 'Di cosa avete bisogno per capire se il caso è attivabile?',
-        a: 'Per una prima valutazione ci servono almeno città dell’immobile, mesi di morosità, un contatto diretto del proprietario e, quando disponibili, contratto di locazione e prova dei mancati pagamenti.',
-      },
-      {
-        icon: 'fa-gavel',
-        q: 'Cosa succede dopo la convalida dello sfratto?',
-        a: 'Dopo la convalida, se l’immobile non viene rilasciato spontaneamente, si passa alla fase esecutiva per ottenere il rilascio. Per questo distinguiamo il momento della convalida dal risultato finale di riottenere materialmente il possesso dell’immobile.',
-      },
-      {
-        icon: 'fa-home',
-        q: 'Questa pagina vale anche per lo sfratto per finita locazione?',
-        a: 'Questa landing è dedicata ai casi di sfratto per morosità. Ci occupiamo anche di sfratto per finita locazione, ma quel servizio richiede pagina e annuncio dedicati, perché presupposti e messaggi della procedura sono diversi.',
+        q: 'Cosa vi serve per dirmi se posso partire?',
+        a: 'Città dell’immobile, mesi di morosità e un contatto diretto. Se hai già contratto di locazione e prova dei mancati pagamenti, la valutazione è ancora più precisa.',
       },
       {
         icon: 'fa-user-shield',
-        q: 'Devo essere presente all’udienza di convalida?',
-        a: 'No. Segue tutto il nostro avvocato: il proprietario non deve recarsi in Tribunale.',
+        q: 'Devo essere presente all’udienza?',
+        a: 'No. Segue tutto il nostro avvocato: non devi recarti in Tribunale.',
       },
       {
         icon: 'fa-exclamation-circle',
-        q: 'Cosa succede se l’inquilino si oppone allo sfratto?',
-        a: 'L’opposizione rende il procedimento ordinario, con tempi più lunghi. In quel caso impostiamo subito la strategia processuale più adatta per ottenere comunque il rilascio nel minor tempo possibile.',
+        q: 'Cosa succede se l’inquilino si oppone?',
+        a: 'Il procedimento prosegue con tempi più lunghi e impostiamo subito la strategia più adatta per ottenere comunque il rilascio nel minor tempo possibile.',
       },
       {
         icon: 'fa-coins',
-        q: 'Oltre allo sfratto posso recuperare i canoni arretrati?',
-        a: 'Sì. Possiamo chiedere al Giudice la condanna dell’inquilino al pagamento dei canoni non versati, degli oneri e delle spese legali, valutando poi la concreta recuperabilità.',
+        q: 'Recupero anche i canoni arretrati?',
+        a: 'Sì. Chiediamo al Giudice la condanna dell’inquilino al pagamento dei canoni non versati, degli oneri e delle spese legali, valutando poi la concreta recuperabilità.',
       }
     ] : items,
   };
@@ -497,10 +532,10 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
 function buildContactForm(version: LandingVersion, territory: LandingTerritoryConfig) {
   return {
     ...landingOriginal.contactForm,
-    title: version === 'v3' ? 'Parliamo solo di casi concreti di morosità' : landingOriginal.contactForm.title,
+    title: version === 'v3' ? 'Parliamo del tuo caso' : landingOriginal.contactForm.title,
     subtitle:
       version === 'v3'
-        ? `Se sei il proprietario dell'immobile e hai già una morosità in corso, inviaci i dati essenziali: ricevi una prima consulenza gratuita e ti richiamiamo con una valutazione pratica del caso, spiegandoti in modo chiaro costi, tempi e passaggi della procedura.`
+        ? `Inviaci i dati essenziali: ti richiamiamo con una valutazione gratuita e ti diciamo costi, tempi e passaggi.`
         : territory.slug === 'nazionale'
           ? landingOriginal.contactForm.subtitle
           : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Ti spieghiamo costi, tempi medi e percorso fino al rilascio dell'immobile.`,
@@ -530,8 +565,8 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = version === 'v3'
     ? (territory.slug === 'nazionale'
-        ? `Assistenza dedicata a proprietari e locatori con inquilino moroso: costo chiaro, tempi medi della convalida, procedura spiegata in modo semplice e supporto fino al rilascio dell'immobile.`
-        : `Assistenza dedicata a proprietari e locatori con inquilino moroso${territorySuffix}: costo chiaro, tempi medi della convalida, procedura spiegata in modo semplice e supporto fino al rilascio dell'immobile.`)
+        ? `Sfratto per morosità: €1.300 tutto compreso fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`
+        : `Sfratto per morosità${territorySuffix}: €1.300 tutto compreso fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
@@ -630,7 +665,7 @@ export function buildLandingPageConfig(options?: {
   const problems = buildProblems(version, territory);
   const calculator = buildCalculator(territory);
   const legalCost = buildLegalCost(territory);
-  const procedure = buildProcedure(territory);
+  const procedure = buildProcedure(version, territory);
   const services = buildServices(territory);
   const costTransparency = buildCostTransparency(territory);
   const whoWeAre = buildWhoWeAre(territory);
