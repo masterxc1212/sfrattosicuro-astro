@@ -30,9 +30,11 @@ const AW_ID = 'AW-10983419342';
 // Conversion label da Google Ads (azioni "Click Telefono" / "Click WhatsApp", categoria Contatto).
 const LABEL_TELEFONO = 'D6OGCJvvosgcEM7bpvUo';  // 7667759003 "Sfratto Sicuro · Click Telefono" (ENABLED, creata 2026-06-30)
 const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';  // 7630051581 "Sfratto Sicuro · WhatsApp" (ENABLED)
+// eager=true: bypassa il gate consenso (landing Ads allineate alla principale). Default false → sito organico invariato.
+const { eager = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ AW_ID, LABEL_TELEFONO, LABEL_WHATSAPP }}>
+<script is:inline define:vars={{ AW_ID, LABEL_TELEFONO, LABEL_WHATSAPP, eager }}>
   (function () {
     var CONSENT_KEY = 'ss_cookie_consent_v1';
     var TEL_LABEL = LABEL_TELEFONO;
@@ -49,7 +51,7 @@ const LABEL_WHATSAPP = 'WnybCP2xpbYcEM7bpvUo';  // 7630051581 "Sfratto Sicuro ·
     function ensureGtag() {
       // Riusa il gtag già caricato dalla pagina (initAdsIfNeeded / grazie.html).
       // Se assente, lo inizializza con lo stesso Conversion ID.
-      var consent = readConsent();
+      var consent = eager ? { marketing: true } : readConsent();
       if (!consent || !consent.marketing) return false;
       if (typeof window.gtag === 'function' && window.__landingAdsLoaded) return true;
       window.dataLayer = window.dataLayer || [];

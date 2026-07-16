@@ -2,7 +2,6 @@
 import '../../styles/landing.css';
 import { buildLandingPageConfig } from '../../data/landing-config';
 import { versionedSrc } from '../../lib/asset-version';
-import CookieConsentBanner from '../../components/CookieConsentBanner.astro';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
 import ClickConversionTracking from '../../components/ClickConversionTracking.astro';
 import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
@@ -127,9 +126,9 @@ const config = buildLandingPageConfig({
             captureTrackingParams();
           }
         }, true);
-        const consent = readConsent();
-        if (consent?.marketing) initAdsIfNeeded(consent);
-        window.addEventListener('ss:cookie-consent-updated', function(event){ const detail = event?.detail || {}; if (detail.marketing) initAdsIfNeeded(detail); });
+        // Allineata alla landing principale: tag Ads EAGER, senza gate consenso (decisione utente 2026-07-16).
+        // Così il gclid viene salvato nel cookie e le conversioni (modulo su grazie, WhatsApp, telefono) si attribuiscono.
+        initAdsIfNeeded({ marketing: true });
       })();
     </script>
   </head>
@@ -161,10 +160,9 @@ const config = buildLandingPageConfig({
       <a href="#form-rapido" class="landing-v3-sticky-btn">Richiedi la richiamata</a>
     </div>
     <LandingOriginalFooterSection />
-    <CookieConsentBanner />
-    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
-    <ClickConversionTracking />
-    <WebsiteCallTracking />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
+    <ClickConversionTracking eager />
+    <WebsiteCallTracking eager />
     <MetaPixelTracking pixelId="1373903100373659" />
     <script src={versionedSrc('/assets/js/calculator.js')} defer></script>
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>

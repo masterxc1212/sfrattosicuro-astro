@@ -1,12 +1,13 @@
 ---
 interface Props {
   measurementId: string;
+  eager?: boolean;
 }
 
-const { measurementId } = Astro.props;
+const { measurementId, eager = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ measurementId }}>
+<script is:inline define:vars={{ measurementId, eager }}>
   (() => {
     if (!measurementId) return;
 
@@ -77,8 +78,9 @@ const { measurementId } = Astro.props;
       }
     };
 
-    const consent = readConsent();
-    if (consent?.analytics) {
+    // eager: landing Ads allineate alla principale (nessun gate consenso).
+    const consent = eager ? { necessary: true, analytics: true, marketing: true } : readConsent();
+    if (eager || consent?.analytics) {
       initGaIfNeeded(consent);
     } else {
       applyDeniedState();

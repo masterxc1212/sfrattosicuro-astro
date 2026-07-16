@@ -22,9 +22,11 @@
 const AW_ID = 'AW-10983419342';
 const CALL_LABEL = 'tCrKCJeljvwYEM7bpvUo';   // conversion action "Telefonate" (Chiamate dal sito web)
 const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina = numero mycentralino
+// eager=true: bypassa il gate consenso (landing Ads allineate alla principale). Default false → sito organico invariato.
+const { eager = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ AW_ID, CALL_LABEL, PHONE_NUMBER }}>
+<script is:inline define:vars={{ AW_ID, CALL_LABEL, PHONE_NUMBER, eager }}>
   (function () {
     var CONSENT_KEY = 'ss_cookie_consent_v1';
 
@@ -70,7 +72,7 @@ const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina =
       }
     }
 
-    initCallTracking(readConsent());
+    initCallTracking(eager ? { marketing: true, analytics: true } : readConsent());
 
     window.addEventListener('ss:cookie-consent-updated', function (event) {
       var d = (event && event.detail) || {};
