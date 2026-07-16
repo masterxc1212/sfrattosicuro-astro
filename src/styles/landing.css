@@ -487,6 +487,84 @@ form button[type="submit"] i,
   .landing-v3-price-cta .btn-primary, .landing-v3-price-wa { flex: 1; }
 }
 
+/* ==========================================================================
+   10. LANDING V3 — RESTYLE PREMIUM (2026-07): studio legale, non funnel.
+   Direzione: navy committed + avorio, hairline 1px, verde SOLO sulle azioni.
+   Tutto scoped .landing-v3-body: v2 e /landing/ statica NON toccate.
+   ========================================================================== */
+
+/* --- Header: hairline neutra, niente banda verde, logo non-cliccabile (stop uscite) --- */
+.landing-v3-body #site-header { border-bottom: 1px solid #E7E2D6 !important; box-shadow: 0 1px 0 rgba(27,41,81,.05) !important; }
+.landing-v3-body .logo-container { pointer-events: none; }
+.landing-v3-body .logo-container:hover .logo-main-image { filter: none; }
+
+/* --- Bottoni: sentence case, pieni, sobri (override della patch uppercase globale) --- */
+.landing-v3-body .btn-primary,
+.landing-v3-body .btn-secondary,
+.landing-v3-body .cta-btn,
+.landing-v3-body .form-submit,
+.landing-v3-body button[type="submit"],
+.landing-v3-body .btn-call-header {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 1rem !important;
+  border-radius: .8rem !important;
+}
+.landing-v3-body .form-submit { box-shadow: 0 6px 18px -6px rgba(47,158,87,.45) !important; }
+
+/* --- Hero: drench navy più profondo, titolo con presenza --- */
+.landing-v3-body .hero-section { background: linear-gradient(168deg, #15203C 0%, #1B2951 55%, #223258 100%) !important; }
+.landing-v3-hero-title { font-size: clamp(1.9rem, 5.5vw, 2.8rem) !important; line-height: 1.08 !important; font-weight: 600; }
+.landing-v3-hero-form-card { border-radius: 1.1rem; border: 1px solid rgba(231,226,214,.9); box-shadow: 0 34px 80px -24px rgba(7,16,38,.55); }
+.landing-v3-hero-benefits .hero-benefit-item { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }
+
+/* WA nell'hero: azione secondaria (outline), non compete col submit */
+.hero-wa-cta { background: #F2FBF5; border: 1.5px solid #25D366; color: #14683A !important; }
+.hero-wa-cta:hover { background: #E4F7EB; }
+.hero-wa-cta i { color: #1DA851; }
+
+/* Microtrust + telefono sotto il form */
+.hero-form-trust { margin: .8rem 0 0; text-align: center; font-size: .78rem; color: #5B6472; line-height: 1.4; }
+.hero-form-trust .hero-form-stars { color: #F5B301; letter-spacing: .08em; margin-right: .25rem; }
+.hero-form-trust strong { color: var(--blue-navy); }
+.hero-form-alt { margin: .4rem 0 0; text-align: center; font-size: .88rem; color: #4B5563; }
+.hero-form-alt a { color: var(--blue-navy); font-weight: 800; text-decoration: none; white-space: nowrap; }
+
+/* --- Sezioni: ritmo verticale coerente, titoli navy --- */
+.landing-v3-main > section:not(.hero-section):not(.landing-v3-price) { padding-top: clamp(2.8rem, 7vw, 4.5rem); padding-bottom: clamp(2.8rem, 7vw, 4.5rem); }
+.landing-v3-body h2 { color: var(--blue-navy); }
+.landing-v3-price h2 { color: #fff; }
+
+/* --- Timeline "come funziona": pulita, navy, niente glow verde --- */
+.landing-v3-body .timeline-step { background: #fff !important; border: 1px solid #E7E2D6 !important; border-radius: .9rem; box-shadow: 0 12px 34px -22px rgba(27,41,81,.35) !important; }
+.landing-v3-body .timeline-step:hover { transform: none !important; box-shadow: 0 12px 34px -22px rgba(27,41,81,.35) !important; }
+.landing-v3-body .timeline-line::before { width: 1px; background: #D9D2C2; box-shadow: none; }
+.landing-v3-body .step-circle { background: var(--blue-navy) !important; box-shadow: none !important; }
+
+/* --- Recensioni: card sobrie, via la striscia arcobaleno e gli avatar sgargianti --- */
+.landing-v3-body .review-card-google { background: #fff !important; border: 1px solid #E7E2D6 !important; border-radius: .9rem !important; }
+.landing-v3-body .review-card-google::before { display: none !important; }
+.landing-v3-body .review-card-google:hover { transform: none !important; border-color: #C9C2B2 !important; box-shadow: 0 12px 30px -20px rgba(27,41,81,.3) !important; }
+.landing-v3-body .review-avatar { background: #24365F !important; font-size: 1rem; }
+.landing-v3-body .verified-badge { background: #F1F7F2 !important; color: #256B40 !important; }
+.landing-v3-body .landing-v3-rating-hero { border: 1px solid #E7E2D6 !important; border-radius: 1rem !important; box-shadow: 0 18px 48px -28px rgba(27,41,81,.35) !important; padding: 1.6rem 1.5rem !important; }
+.landing-v3-body .landing-v3-rating-hero > div:first-child { font-size: clamp(2.8rem, 9vw, 3.8rem) !important; line-height: 1 !important; color: var(--blue-navy) !important; margin-bottom: .4rem !important; }
+.landing-v3-body .landing-v3-rating-hero #rating-stars { font-size: clamp(1.5rem, 5vw, 2rem) !important; margin-bottom: .4rem !important; }
+
+/* --- FAQ: hairline neutra, chevron navy --- */
+.landing-v3-body details { border: 1px solid #E7E2D6 !important; border-radius: .8rem !important; box-shadow: none !important; }
+.landing-v3-body details[open] { border-color: var(--blue-navy) !important; box-shadow: 0 14px 34px -24px rgba(27,41,81,.4) !important; }
+.landing-v3-body summary { font-size: 1rem !important; }
+.landing-v3-body summary::after { color: var(--blue-navy) !important; }
+
+/* --- Founder / card contatti: coerenza avorio + hairline --- */
+.landing-v3-founder-pills li { background: #F4F1EA; }
+.landing-v3-contact-card, .landing-v3-contact-formcol { border: 1px solid #E7E2D6; }
+
+/* --- Sticky bar: pill, sentence case --- */
+.landing-v3-sticky-cta { border-top: 1px solid #E7E2D6; box-shadow: 0 -12px 32px rgba(9,25,55,.10); }
+.landing-v3-sticky-btn { border-radius: 999px !important; text-transform: none !important; letter-spacing: 0 !important; font-size: .875rem !important; }
+
 /* CTA mobile: font compatto + righe bilanciate per evitare parole orfane/wrap strani */
 @media (max-width: 640px) {
   .landing-v3-body .btn-primary,

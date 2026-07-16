@@ -158,6 +158,7 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       formPhonePlaceholder: 'Numero di telefono diretto',
       formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
       formSource: 'hero_form_v3',
+      formTrustLine: true,
     };
   }
 

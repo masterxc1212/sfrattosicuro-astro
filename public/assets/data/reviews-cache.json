@@ -1,40 +1,40 @@
 {
   "ok": true,
-  "rating": 4.9,
-  "total_reviews": 19,
-  "total": 19,
-  "updated_at": "2026-03-12T18:00:00+01:00",
-  "source": "google_places_seed_cache",
+  "rating": 5,
+  "total_reviews": 21,
+  "total": 21,
+  "updated_at": "2026-07-16T22:38:38.092772+02:00",
+  "source": "google_places",
   "reviews": [
+    {
+      "author": "gianni saratoga",
+      "rating": 5,
+      "text": "Esperienza positiva risolto lo sfratto con 2 intestatari del contratto in maniera semplice, grazie",
+      "time": "nell'ultima settimana"
+    },
+    {
+      "author": "Vincenzo Vitale",
+      "rating": 5,
+      "text": "Ragazzi splendidi competenti puntuali ….i nr 1",
+      "time": "2 mesi fa"
+    },
     {
       "author": "aAa Six",
       "rating": 5,
-      "text": "Servizio comodo perché gestito a distanza in ogni sua fase. Prezzo e condizioni chiare e senza sorprese. Disamina dei casi in modo leale e trasparente.",
-      "time": "nell'ultima settimana"
+      "text": "Servizio comodo perché gestito a distanza in ogni sua fase. Per l’esito vedremo",
+      "time": "3 mesi fa"
+    },
+    {
+      "author": "Donatella Caroli",
+      "rating": 4,
+      "text": "Dopo mesi di stress e pressione psicologica non da poco, perdita di soldi, (sono disoccupata per giunta) l'inquilino moroso ha finalmente lasciato il mio appartamento, purtoppo non sono riuscita a recuperare i canoni persi ma la notifica del giudice è giunta in pochi mesi dall'avvio della pratica. Consigliato. Grazie di cuore all'Avvocato Ansalone...",
+      "time": "4 mesi fa"
     },
     {
       "author": "Maison D'art Rossella Gozio",
       "rating": 5,
-      "text": "Quando un inquilino smette di pagarti, inizia un calvario per il proprietario. Ho contattato Sfratto Sicuro e l'avvocato Ansalone mi ha confortato subito. Tempi eccezionalmente brevissimi: contattati a novembre 2025, il 15 gennaio 2026 avevo l'udienza. Sono uscita con uno sfratto esecutivo. Il percorso non è ancora finito, ma oggi sono molto più serena perché ho un team di avvocati al mio fianco.",
-      "time": "2 settimane fa"
-    },
-    {
-      "author": "Marco In -",
-      "rating": 5,
-      "text": "Pensavo fosse una procedura lunga e complicata, invece è stata gestita in modo ordinato e senza perdite di tempo. Mi hanno tolto un peso, occupandosi di tutto con grande semplicità.",
-      "time": "un mese fa"
-    },
-    {
-      "author": "Max",
-      "rating": 5,
-      "text": "Ho apprezzato molto la comunicazione: risposte rapide, spiegazioni comprensibili e aggiornamenti costanti. Anche non essendo pratico di queste procedure, mi sono sempre sentito tranquillo e informato.",
-      "time": "un mese fa"
-    },
-    {
-      "author": "Marco \"Mark\" Bianchin",
-      "rating": 5,
-      "text": "Mi sono rivolto a Sfratto Sicuro e fin da subito mi è stato spiegato tutto in modo chiaro. Non ho versato acconti e ho pagato solo dopo la decisione del giudice. Ho partecipato anche all'udienza e mi sono sentito seguito in ogni passaggio. Esperienza positiva.",
-      "time": "un mese fa"
+      "text": "Quando un inquilino smette di pagarti, inizia un calvario per il proprietario, un verme solitario che piano piano ti mangia lo stomaco, pagherà? quanto? questa attesa snervante dove tutti intorno a te, ti guardano dicendoti \"aspetta cosa puoi farci?\" e con il sentirsi completamente soli, non capiti, aspetti, il nulla. Aumentano le spese, gli affitti arretrati e le prese in giro dell'inquilino che spavaldo che non gli succederà nulla ti illude e ti offense e, tanto, se dovessi intraprendere un percorso legale sicuramente sarà incerto e lungo e continua tranquillo a utilizzare e disfare il tuo i",
+      "time": "4 mesi fa"
     }
   ]
 }

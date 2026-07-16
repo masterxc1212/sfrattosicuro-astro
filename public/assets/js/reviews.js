@@ -37,6 +37,10 @@
       const el = document.getElementById(id);
       if (el) el.textContent = Number(total || 0);
     });
+
+    // Aggiorna QUALSIASI elemento marcato (sticky bar, pill founder, microtrust form).
+    document.querySelectorAll('[data-live-rating]').forEach(el => { el.textContent = ratingStr; });
+    document.querySelectorAll('[data-live-total]').forEach(el => { el.textContent = Number(total || 0); });
   }
 
   function clearSkeletons() {

@@ -137,6 +137,20 @@ const { hero = landingOriginal.hero } = Astro.props;
                 <i class="fab fa-whatsapp" aria-hidden="true"></i>
                 <span>Preferisci scrivere? <strong>Scrivici su WhatsApp</strong></span>
               </a>
+
+              {hero.formTrustLine && (
+                <>
+                  <p class="hero-form-trust">
+                    <span class="hero-form-stars" aria-hidden="true">★★★★★</span>
+                    <strong><span data-live-rating>5.0</span></strong> su Google
+                    · <span data-live-total>21</span> recensioni · Dati protetti
+                  </p>
+                  <p class="hero-form-alt">
+                    Preferisci parlare subito?
+                    <a href="tel:+390280898395">02 8089 8395</a>
+                  </p>
+                </>
+              )}
             </form>
           </div>
         </div>
