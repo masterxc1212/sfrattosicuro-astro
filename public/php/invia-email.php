@@ -64,7 +64,7 @@ $cognome       = ss_sanitize($_POST['cognome'] ?? '');
 $telefono      = ss_sanitize($_POST['telefono'] ?? '');
 $email_mit     = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 $citta         = ss_sanitize($_POST['città'] ?? '');
-$morosita      = ss_sanitize($_POST['morosità'] ?? '');
+$morosita      = ss_sanitize($_POST['morosità'] ?? $_POST['morosita'] ?? '');
 $note_utente   = ss_sanitize($_POST['note'] ?? '');
 
 $form_source   = ss_sanitize($_POST['form_source'] ?? 'unknown');

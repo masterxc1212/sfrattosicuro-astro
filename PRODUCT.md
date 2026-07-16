@@ -9,8 +9,8 @@ Servizio legale verticale dello Studio Avv. Danilo Ansalone dedicato esclusivame
 Proprietari e locatori individuali, 45–70 anni, prevalentemente da Roma in su, con inquilino moroso in immobile residenziale (a volte commerciale). Arrivano da mobile, sotto stress, dopo mesi di canoni non pagati. Cercano su Google "sfratto per morosità", "come sfrattare un inquilino moroso", "avvocato per sfratto". Diffidenti verso i preventivi legali opachi; temono anticipi, parcelle che lievitano e tempi infiniti.
 
 ## Offer (source of truth per la copy)
-- **€1.300 tutto compreso, fino al rilascio dell'immobile.**
-- **Zero anticipi, nemmeno per le spese**: si avvia la procedura senza versare nulla.
+- **€1.300 per tutta l'assistenza legale, fino al rilascio dell'immobile.** ⚠️ Contributo unificato e spese di notifica NON sono incluse (mai scrivere che lo sono): sono spese vive, sempre indicate prima e mai richieste in anticipo.
+- **Zero anticipi**: si avvia la procedura senza versare nulla.
 - **Si paga solo dopo aver ottenuto un risultato** (mai parlare di "pagati alla convalida" come momento contrattuale: il frame è "a risultato").
 - Convalida mediamente in ~60 giorni (dato medio, mai promessa assoluta).
 - Solo proprietari/locatori: non si assistono inquilini.

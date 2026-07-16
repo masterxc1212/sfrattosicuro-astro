@@ -146,14 +146,14 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       prequalificationNote: undefined,
       ownerField: true,
       bullets: [
-        '<strong>€1.300 tutto compreso</strong>, fino al rilascio',
-        '<strong>Zero anticipi</strong>, nemmeno per le spese',
+        '<strong>€1.300 tutta l’assistenza</strong>, fino al rilascio',
+        '<strong>Zero anticipi</strong>: non paghi nulla per partire',
         '<strong>Paghi solo a risultato</strong> ottenuto',
         '<strong>Convalida in ~60 giorni</strong> in media',
       ],
       formTitle: 'Verifica se puoi partire',
       formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
-      formSubmitLabel: 'Ti richiamiamo entro 2 ore',
+      formSubmitLabel: 'Ti richiamiamo entro 2 ore lavorative',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
       formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
@@ -281,28 +281,28 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
           title: 'Oggi: valutazione gratuita del caso',
           body: 'Ci racconti la situazione. Ti diciamo subito se puoi partire, senza anticipare nulla.',
           badge: 'Avvocato dedicato da subito',
-          badgeEmoji: '🚀',
+          badgeEmoji: '',
         },
         {
           num: '2',
           title: 'Giorni 1-7: intimazione di sfratto',
           body: 'Prepariamo l’atto e lo notifichiamo all’inquilino moroso.',
           badge: 'Atto notificato in tempi rapidi',
-          badgeEmoji: '📄',
+          badgeEmoji: '',
         },
         {
           num: '3',
           title: 'Giorni 8-30: deposito in Tribunale',
           body: 'Iscriviamo la causa e otteniamo la data d’udienza.',
           badge: 'Iter dedicato in Tribunale',
-          badgeEmoji: '⚖️',
+          badgeEmoji: '',
         },
         {
           num: '✓',
           title: 'Giorni 31-60: convalida dello sfratto',
           body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo aver ottenuto il risultato.</strong>',
           badge: 'Assistenza inclusa fino al rilascio',
-          badgeEmoji: '🔑',
+          badgeEmoji: '',
           isGold: true,
         },
       ],
@@ -499,7 +499,7 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-euro-sign',
         q: 'Quando si pagano i 1.300€ e cosa comprendono?',
-        a: 'Solo <strong>dopo aver ottenuto il risultato</strong>: avvii la procedura senza anticipare nulla, nemmeno le spese. Il prezzo comprende <strong>tutta l’assistenza fino al rilascio</strong> dell’immobile: analisi, atti, contributo unificato, notifiche e udienza. Eventuali costi vivi dell’ufficiale giudiziario nella fase esecutiva ti vengono sempre indicati prima.',
+        a: 'Solo <strong>dopo aver ottenuto il risultato</strong>: avvii la procedura senza anticipare nulla. Il compenso comprende <strong>tutta l’assistenza legale fino al rilascio</strong> dell’immobile. Restano escluse le spese vive (contributo unificato, notifiche, eventuale ufficiale giudiziario), sempre indicate prima e mai richieste in anticipo.',
       },
       {
         icon: 'fa-clock',
@@ -566,8 +566,8 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = version === 'v3'
     ? (territory.slug === 'nazionale'
-        ? `Sfratto per morosità: €1.300 tutto compreso fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`
-        : `Sfratto per morosità${territorySuffix}: €1.300 tutto compreso fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`)
+        ? `Sfratto per morosità: €1.300 per tutta l'assistenza fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`
+        : `Sfratto per morosità${territorySuffix}: €1.300 per tutta l'assistenza fino al rilascio dell'immobile. Zero anticipi, paghi solo a risultato. Solo proprietari e locatori. Valutazione gratuita.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;

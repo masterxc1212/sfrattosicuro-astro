@@ -59,6 +59,12 @@ const { hero = landingOriginal.hero } = Astro.props;
         </div>
 
         <div class="hero-form-container landing-v3-hero-form-wrap">
+          {hero.formTrustLine && (
+            <div class="landing-v3-offer-strip lg:hidden" aria-hidden="false">
+              <div class="landing-v3-offer-strip-l1">Sfratto per morosità: <strong>€1.300 fino al rilascio</strong></div>
+              <div class="landing-v3-offer-strip-l2">Zero anticipi · Paghi solo a risultato · <span class="landing-v3-offer-star" aria-hidden="true">★</span> <strong><span data-live-rating>5.0</span></strong> su Google (<span data-live-total>21</span>)</div>
+            </div>
+          )}
           <div class="hero-form-card landing-v3-hero-form-card">
             <div class="text-center landing-v3-form-head">
               <h3 class="form-title">{hero.formTitle}</h3>
@@ -71,7 +77,7 @@ const { hero = landingOriginal.hero } = Astro.props;
               id="hero-form"
             >
               <div class="form-group">
-                <label for="nome-hero" class="form-label">Nominativo *</label>
+                <label for="nome-hero" class="form-label">Nome e cognome *</label>
                 <input
                   type="text"
                   name="nome"
@@ -93,7 +99,8 @@ const { hero = landingOriginal.hero } = Astro.props;
                   id="telefono-hero"
                   class="form-input"
                   placeholder={hero.formPhonePlaceholder}
-                  pattern="[0-9\s+]{8,}"
+                  inputmode="tel"
+                  minlength="8"
                   required
                   aria-required="true"
                   autocomplete="tel"
@@ -127,6 +134,17 @@ const { hero = landingOriginal.hero } = Astro.props;
                 <span>{hero.formSubmitLabel}</span>
               </button>
 
+              {hero.formTrustLine && (
+                <p class="hero-form-hours">Lun–Ven 9:00–19:00 · Sab 9:00–13:00</p>
+              )}
+
+              {hero.formTrustLine && (
+                <a href="tel:+390280898395" class="hero-call-cta" aria-label="Chiama ora lo studio">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <span>Chiama ora: <strong>+39 02 80898395</strong></span>
+                </a>
+              )}
+
               <a
                 href="https://wa.me/393291175957?text=Salve%2C%20sono%20proprietario%2Flocatore%20e%20ho%20un%20inquilino%20moroso%3A%20vorrei%20una%20valutazione%20gratuita%20del%20mio%20caso."
                 class="hero-wa-cta"
@@ -145,9 +163,8 @@ const { hero = landingOriginal.hero } = Astro.props;
                     <strong><span data-live-rating>5.0</span></strong> su Google
                     · <span data-live-total>21</span> recensioni · Dati protetti
                   </p>
-                  <p class="hero-form-alt">
-                    Preferisci parlare subito?
-                    <a href="tel:+390280898395">02 8089 8395</a>
+                  <p class="hero-form-whocalls">
+                    Ti richiama lo studio dell'Avv. Ansalone dal numero <strong>+39 02 80898395</strong>: salvalo in rubrica. Nessun call center.
                   </p>
                 </>
               )}

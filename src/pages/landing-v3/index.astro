@@ -135,11 +135,8 @@ const config = buildLandingPageConfig({
 
     <!-- Sticky CTA mobile (social proof + richiamata) -->
     <div class="landing-v3-sticky-cta">
-      <div class="landing-v3-sticky-rating"><span class="landing-v3-sticky-stars" aria-hidden="true">★★★★★</span> <strong data-live-rating>5.0</strong> Google</div>
-      <div class="landing-v3-sticky-actions">
-        <a href="tel:+390280898395" class="landing-v3-sticky-btn is-call" aria-label="Chiama ora"><i class="fas fa-phone" aria-hidden="true"></i></a>
-        <a href="https://wa.me/393291175957?text=Salve%2C%20sono%20proprietario%2Flocatore%20e%20ho%20un%20inquilino%20moroso%3A%20vorrei%20una%20valutazione%20gratuita%20del%20mio%20caso." class="landing-v3-sticky-btn is-wa" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-      </div>
+      <a href="tel:+390280898395" class="landing-v3-sticky-btn is-call"><i class="fas fa-phone" aria-hidden="true"></i> Chiama ora</a>
+      <a href="https://wa.me/393291175957?text=Salve%2C%20sono%20proprietario%2Flocatore%20e%20ho%20un%20inquilino%20moroso%3A%20vorrei%20una%20valutazione%20gratuita%20del%20mio%20caso." class="landing-v3-sticky-btn is-wa" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
     </div>
     <LandingOriginalFooterSection />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
@@ -149,6 +146,38 @@ const config = buildLandingPageConfig({
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
+    <script is:inline>
+      (function(){
+        // Eventi funnel GA4 (blocco A11 commissione): misura dove si perde l'utente.
+        function ev(name, params){ if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
+        var formStarted = false;
+        document.addEventListener('focusin', function(e){
+          if (formStarted) return;
+          var f = e.target && e.target.closest && e.target.closest('form[action="/php/invia-email.php"]');
+          if (!f) return;
+          formStarted = true;
+          ev('form_start', { form_id: f.id || (f.querySelector('[name=form_source]')||{}).value || '' });
+        });
+        document.addEventListener('submit', function(e){
+          var f = e.target;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          ev('submit_attempt', { form_id: f.id || '' });
+        }, true);
+        document.addEventListener('invalid', function(e){
+          var el = e.target, f = el && el.form;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          ev('submit_blocked', { form_id: f.id || '', field: el.name || el.id || '', reason: (el.validationMessage || '').slice(0, 80) });
+        }, true);
+        document.addEventListener('click', function(e){
+          var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+          if (!a) return;
+          var h = (a.getAttribute('href') || '').toLowerCase();
+          var kind = h.indexOf('tel:') === 0 ? 'tel' : ((h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) ? 'whatsapp' : null);
+          if (!kind) return;
+          ev('cta_click', { channel: kind, position: (a.className || '').toString().split(' ')[0].slice(0, 40) });
+        }, true);
+      })();
+    </script>
     <script is:inline>
       (function(){
         // Qualificazione v3: blocca invio se inquilino o se manca la scelta proprietario/inquilino.

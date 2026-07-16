@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!-- Google Ads + GTM: consent-gated. L'azione "Web - Modulo" è gestita
+    <!-- Google Ads + GTM: EAGER (2026-07-16). L'azione "Web - Modulo" è gestita
          dal container GTM sulla page-view di /grazie.html: non duplicare qui
-         un secondo evento conversion con label separata. -->
+         un secondo evento conversion con label separata.
+         NOTA: il vecchio gate sul consenso (ss_cookie_consent_v1) impediva di
+         contare la conversione per i visitatori freschi da Ads, perché le landing
+         non mostrano più il banner (decisione utente 2026-07-16: funnel Ads senza gate). -->
 <script>
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   (function () {
-    var consent = null;
-    try { consent = JSON.parse(localStorage.getItem('ss_cookie_consent_v1') || 'null'); }
-    catch (e) { consent = null; }
-    if (!consent || !consent.marketing) return;
-
     window.gtag('consent', 'default', {
       ad_storage: 'granted',
       ad_user_data: 'granted',
       ad_personalization: 'granted',
-      analytics_storage: consent.analytics ? 'granted' : 'denied',
+      analytics_storage: 'granted',
       security_storage: 'granted'
     });
     window.gtag('js', new Date());
@@ -40,7 +38,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richiesta Ricevuta | Sfratto Sicuro</title>
-    <meta name="description" content="Grazie per averci contattato. Un nostro consulente la richiamerà entro 24 ore per analizzare la sua situazione.">
+    <meta name="description" content="Grazie per averci contattato. La richiameremo entro 2 ore lavorative per analizzare la sua situazione.">
     <meta name="robots" content="noindex, nofollow">
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -113,26 +111,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </h1>
                 
                 <p class="text-lg text-dark-gray mb-8 leading-relaxed">
-                    Grazie per averci contattato. Un nostro consulente specializzato in sfratti per morosità la richiamerà telefonicamente <strong>entro le prossime 24 ore lavorative</strong> per analizzare gratuitamente la sua situazione.
+                    Grazie per averci contattato. Lo studio dell'Avv. Ansalone la richiamerà <strong>entro 2 ore lavorative</strong> (Lun–Ven 9–19 · Sab 9–13) per una prima valutazione gratuita del suo caso.
                 </p>
 
                 <div class="bg-gray-pearl p-6 rounded-lg text-left mb-8">
                     <h2 class="font-bold text-blue-navy mb-3">Cosa succederà ora?</h2>
                     <ul class="list-disc list-inside text-dark-gray space-y-2">
-                        <li>Riceverà una chiamata da un nostro avvocato specializzato.</li>
+                        <li>La chiameremo dal numero <strong>+39 02 80898395</strong>: lo salvi in rubrica per riconoscerci. Nessun call center.</li>
                         <li>Analizzeremo insieme i dettagli del suo caso, senza impegno.</li>
-                        <li>Le confermeremo la possibilità di procedere con il protocollo "Sfratto Sicuro".</li>
+                        <li>Tenga a portata di mano il <strong>contratto di locazione</strong> e la prova dei mancati pagamenti: la valutazione sarà più rapida.</li>
                     </ul>
                 </div>
-                
-                <p class="text-dark-gray mb-10">
-                    Se la sua richiesta è particolarmente urgente, può contattarci direttamente al numero <a href="tel:+390280898395" class="text-green-security font-semibold hover:underline">+39 02 80898395</a>.
+
+                <p class="text-dark-gray mb-6">
+                    Se la sua richiesta è particolarmente urgente, può chiamarci subito al numero <a href="tel:+390280898395" class="text-green-security font-semibold hover:underline">+39 02 80898395</a>.
                 </p>
-                
-                <a href="https://www.sfrattosicuro.it/" class="btn-secondary inline-block px-8 py-3 rounded-lg font-bold text-white text-lg">
-                    <i class="fas fa-arrow-left mr-2"></i>
-                    Torna alla Home Page
+
+                <a href="https://wa.me/393291175957?text=Salve%2C%20ho%20appena%20inviato%20la%20richiesta%20dal%20sito%3A%20le%20anticipo%20citt%C3%A0%20dell%27immobile%20e%20mesi%20di%20morosit%C3%A0." target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center justify-center px-8 py-3 rounded-lg font-bold text-white text-lg">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Velocizza la valutazione su WhatsApp
                 </a>
+                <p class="text-sm text-gray-500 mt-3">Inviaci città dell'immobile e mesi di morosità: prepariamo la chiamata.</p>
 
             </div>
         </div>
@@ -145,8 +144,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div>
                         <h3 class="text-xl font-bold mb-4">Sfratto Sicuro</h3>
                         <p class="text-gray-300 text-sm mb-4">
-                            Specialisti in sfratto per morosità. Convalida in 60 giorni, 
-                            €1.300 tutto incluso, pagamento solo a risultato.
+                            Specialisti in sfratto per morosità. Convalida in media in 60 giorni,
+                            €1.300 fino al rilascio, pagamento solo a risultato.
                         </p>
                         <div class="text-gold-refined text-sm">
                             ★ Dal 2018
@@ -177,7 +176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="font-bold mb-4">Contatti</h4>
                         <ul class="space-y-2 text-gray-300 text-sm">
                             <li><i class="fas fa-phone mr-2" aria-hidden="true"></i><a href="tel:+390280898395" class="hover:text-gold-refined">+39 02 80898395</a></li>
-                            <li><i class="fab fa-whatsapp mr-2" aria-hidden="true"></i><a href="https://wa.me/393519179179" target="_blank" rel="noopener noreferrer" class="hover:text-gold-refined">+39 351 917 9179</a></li>
+                            <li><i class="fab fa-whatsapp mr-2" aria-hidden="true"></i><a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer" class="hover:text-gold-refined">+39 329 117 5957</a></li>
                             <li><i class="fas fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:consulenza@sfrattosicuro.it" class="hover:text-gold-refined">consulenza@sfrattosicuro.it</a></li>
                         </ul>
                     </div>
@@ -189,8 +188,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             © 2025 Sfratto Sicuro - Il Protocollo Riprendi Casa. Tutti i diritti riservati.
                         </div>
                         <div class="text-gray-300 text-sm space-x-4">
-                            <a href="#" class="hover:text-gold-refined">Privacy Policy</a>
-                            <a href="#" class="hover:text-gold-refined">Termini di Servizio</a>
+                            <a href="/privacy-policy" class="hover:text-gold-refined">Privacy Policy</a>
+                            <a href="/termini" class="hover:text-gold-refined">Termini di Servizio</a>
                         </div>
                     </div>
                     <div class="text-gray-300 text-xs mt-4">
@@ -202,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
     
     <div class="whatsapp-sticky">
-        <a href="https://wa.me/393519179179?text=Ciao%2C%20ho%20visto%20la%20vostra%20pagina%20su%20Sfratto%20Sicuro.%20Vorrei%20maggiori%20informazioni%20sullo%20sfratto%20per%20morosità." target="_blank" rel="noopener noreferrer" class="btn-primary flex items-center justify-center px-4 py-3 rounded-full shadow-lg text-white font-bold" aria-label="Contattaci su WhatsApp">
+        <a href="https://wa.me/393291175957?text=Salve%2C%20ho%20appena%20inviato%20la%20richiesta%20dal%20sito%3A%20le%20anticipo%20citt%C3%A0%20dell%27immobile%20e%20mesi%20di%20morosit%C3%A0." target="_blank" rel="noopener noreferrer" class="btn-primary flex items-center justify-center px-4 py-3 rounded-full shadow-lg text-white font-bold" aria-label="Contattaci su WhatsApp">
             <i class="fab fa-whatsapp text-xl mr-2" aria-hidden="true"></i>
             <span class="hidden md:inline">WhatsApp</span>
             <span class="md:hidden text-sm">Chat</span>
@@ -219,10 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var placeholder = function (l) { return !l || l.indexOf('__TODO') === 0; };
         function fireConversion(label) {
           if (placeholder(label)) return;
-          try {
-            var consent = JSON.parse(localStorage.getItem('ss_cookie_consent_v1') || 'null');
-            if (!consent || !consent.marketing) return;
-          } catch (e) { return; }
+          // EAGER: nessun gate consenso (funnel Ads, coerente con lo script in <head>).
           if (typeof window.gtag !== 'function') return;
           window.gtag('event', 'conversion', { send_to: AW_ID + '/' + label });
         }
