@@ -146,10 +146,11 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       prequalificationNote: undefined,
       ownerField: true,
       bullets: [
-        '<strong>€1.300 IVA inclusa</strong>: un solo prezzo, tutto il percorso',
+        '<strong>€1.300 IVA e cassa incluse</strong>: un solo prezzo, tutto il percorso',
         '<strong>Convalida + fase esecutiva</strong>, fino alle chiavi',
         '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
         '<strong>Convalida in ~60 giorni</strong> in media',
+        '<strong>Vale anche per finita locazione</strong> e locali commerciali: stesse condizioni',
       ],
       formTitle: 'Verifica se puoi partire',
       formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
@@ -509,7 +510,7 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-file-contract',
         q: 'Cosa vi serve per dirmi se posso partire?',
-        a: 'Città dell’immobile, mesi di morosità e un contatto diretto. Se hai già contratto di locazione e prova dei mancati pagamenti, la valutazione è ancora più precisa.',
+        a: 'Città dell’immobile, la situazione (mesi di morosità, oppure contratto scaduto o disdettato) e un contatto diretto. Se hai già il contratto di locazione, la valutazione è ancora più precisa.',
       },
       {
         icon: 'fa-store',
@@ -524,7 +525,12 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-exclamation-circle',
         q: 'Cosa succede se l’inquilino si oppone?',
-        a: 'L’opposizione apre un giudizio ordinario con tempi più lunghi. Il patto economico non cambia da solo: i €1.300 coprono il procedimento di convalida; per l’eventuale giudizio di merito ricevi un <strong>preventivo scritto separato</strong> e nulla prosegue senza il tuo consenso.',
+        a: 'L’opposizione apre un giudizio ordinario con tempi più lunghi. Il compenso di €1.300 copre la fase di convalida e resta dovuto <strong>dopo l’udienza, qualunque ne sia l’esito</strong>; per l’eventuale giudizio di merito ricevi un <strong>preventivo scritto separato</strong> e nulla prosegue senza il tuo consenso.',
+      },
+      {
+        icon: 'fa-key',
+        q: 'E se dopo la convalida l’inquilino non se ne va?',
+        a: 'Si passa alla fase esecutiva, <strong>già inclusa nei €1.300</strong>: notifichiamo il precetto (l’intimazione formale a lasciare l’immobile), poi il preavviso di rilascio e, se serve, interviene l’ufficiale giudiziario fino alla riconsegna delle chiavi. Tu non devi fare nulla: ti aggiorniamo a ogni passaggio.',
       },
       {
         icon: 'fa-coins',

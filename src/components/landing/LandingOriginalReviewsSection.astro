@@ -53,10 +53,38 @@
         </a>
       </div>
 
+      <!-- Fallback statico (recensioni Google reali): il JS le sostituisce con le più recenti quando il fetch riesce -->
       <div id="google-reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" style="min-height:280px">
-        <div class="review-skeleton animate-pulse" style="background:#f3f4f6;border-radius:1rem;height:250px"></div>
-        <div class="review-skeleton animate-pulse hidden md:block" style="background:#f3f4f6;border-radius:1rem;height:250px"></div>
-        <div class="review-skeleton animate-pulse hidden lg:block" style="background:#f3f4f6;border-radius:1rem;height:250px"></div>
+        <article class="review-card-google" data-static-review>
+          <div class="flex items-start justify-between mb-3 sm:mb-4 gap-2">
+            <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+              <div class="review-avatar" style="background:#24365f" aria-hidden="true">GS</div>
+              <div class="min-w-0"><div class="font-bold text-blue-navy text-sm sm:text-base truncate">gianni saratoga</div></div>
+            </div>
+          </div>
+          <div class="star-rating-google mb-3" aria-label="5 stelle">★★★★★</div>
+          <blockquote class="text-dark-gray text-sm leading-relaxed italic">"Esperienza positiva: risolto lo sfratto con 2 intestatari del contratto in maniera semplice, grazie"</blockquote>
+        </article>
+        <article class="review-card-google" data-static-review>
+          <div class="flex items-start justify-between mb-3 sm:mb-4 gap-2">
+            <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+              <div class="review-avatar" style="background:#24365f" aria-hidden="true">DC</div>
+              <div class="min-w-0"><div class="font-bold text-blue-navy text-sm sm:text-base truncate">Donatella Caroli</div></div>
+            </div>
+          </div>
+          <div class="star-rating-google mb-3" aria-label="4 stelle">★★★★☆</div>
+          <blockquote class="text-dark-gray text-sm leading-relaxed italic">"Dopo mesi di stress e pressione psicologica non da poco, l'inquilino moroso ha finalmente lasciato il mio appartamento…"</blockquote>
+        </article>
+        <article class="review-card-google" data-static-review>
+          <div class="flex items-start justify-between mb-3 sm:mb-4 gap-2">
+            <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+              <div class="review-avatar" style="background:#24365f" aria-hidden="true">AS</div>
+              <div class="min-w-0"><div class="font-bold text-blue-navy text-sm sm:text-base truncate">aAa Six</div></div>
+            </div>
+          </div>
+          <div class="star-rating-google mb-3" aria-label="5 stelle">★★★★★</div>
+          <blockquote class="text-dark-gray text-sm leading-relaxed italic">"Servizio comodo perché gestito a distanza in ogni sua fase."</blockquote>
+        </article>
       </div>
 
     </div>
