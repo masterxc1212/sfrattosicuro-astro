@@ -16,6 +16,100 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-morosita-inquilino-paga",
+    title: "Sfratto per morosità: cosa succede se l'inquilino paga dopo la notifica",
+    description:
+      "Sfratto per morosità se l'inquilino paga: quando la sanatoria è valida, cosa deve versare davvero e perché la procedura non si ferma da sola.",
+    excerpt:
+      "Hai notificato lo sfratto e arriva un bonifico: la procedura si ferma? Dipende da quanto paga, quando paga e che immobile hai affittato. Per un'abitazione la sanatoria vale solo se è integrale — canoni, oneri, interessi legali e spese liquidate dal giudice — e solo tre volte in quattro anni. Per un negozio, il pagamento dopo l'intimazione è già tardivo. Guida pratica per il proprietario.",
+    lead:
+      "È la situazione più frequente e più fraintesa: l'inquilino paga dopo la notifica dell'intimazione di sfratto. Devi rinunciare? Quasi mai. Vediamo, dalla parte del proprietario, quando quel pagamento salva davvero l'inquilino, cosa deve versare per sanare la morosità e cosa fare nelle ore successive al bonifico.",
+    publishedAt: "2026-07-17",
+    updatedAt: "2026-07-17",
+    category: "Sfratti",
+    readingTime: "8 min",
+    sourceNote:
+      "Generato automaticamente 2026-07-17. Keyword: sfratto per morosità se l'inquilino paga, vol 110, KD 0.",
+    html: `
+<p>Hai notificato l'intimazione di sfratto e, all'improvviso, arriva un bonifico. L'inquilino ha pagato. La procedura è finita? Devi rinunciare? Hai buttato via i soldi dell'avvocato?</p>
+<p>È una delle situazioni più frequenti e più fraintese. La risposta breve: <strong>dipende da quanto paga, quando paga e che tipo di immobile hai affittato</strong>. Un pagamento arrivato dopo la notifica non chiude automaticamente nulla.</p>
+
+<h2>Sfratto per morosità: se l'inquilino paga, la procedura si ferma?</h2>
+<p>No, non si ferma da sola. Nello <strong>sfratto per morosità</strong> di un'abitazione la legge concede all'inquilino la possibilità di rimettersi in regola in corso di causa — è la cosiddetta <em>sanatoria</em> — ma solo a condizioni precise e rigorose. Se non sono rispettate integralmente, la morosità resta e la procedura prosegue.</p>
+<p>Il punto che quasi nessun proprietario conosce è questo: <strong>la sanatoria non è un pagamento qualsiasi, è un pagamento completo</strong>. E "completo" ha un significato tecnico molto più ampio dei soli canoni arretrati.</p>
+
+<h2>Pagare non basta: cosa deve versare davvero l'inquilino</h2>
+<p>Per sanare la morosità e salvare il contratto, l'inquilino deve versare <strong>tutto</strong> quanto segue:</p>
+<ul>
+<li><strong>tutti i canoni scaduti</strong>, compresi quelli maturati dopo la notifica dello sfratto;</li>
+<li><strong>gli oneri accessori</strong> maturati (tipicamente le spese condominiali a suo carico);</li>
+<li><strong>gli interessi legali</strong> su quelle somme;</li>
+<li><strong>le spese processuali</strong>, nella misura liquidata dal giudice.</li>
+</ul>
+<p>Manca anche solo una di queste voci? La morosità <strong>non</strong> è sanata. La Cassazione lo ripete da decenni con una formula netta: la sanatoria è subordinata al pagamento integrale di canoni, interessi e spese, e l'inadempimento che resta <em>non</em> può essere riesaminato dal giudice sotto il profilo della gravità. Tradotto: il giudice non può dire "vabbè, mancano solo gli interessi, chiudiamo un occhio". Non ha questo potere.</p>
+<p>Attenzione a un dettaglio che manda a monte molte sanatorie: <strong>gli interessi legali l'inquilino deve calcolarseli da solo</strong>. Il giudice liquida le spese, non gli interessi. Chi paga solo il capitale "riservandosi di versare il resto" non ha sanato nulla.</p>
+
+<h2>I tre scenari concreti</h2>
+
+<h3>1. L'inquilino paga tutto alla prima udienza</h3>
+<p>Se in udienza versa canoni, oneri, interessi e spese liquidate dal giudice, la sanatoria è perfezionata: <strong>il contratto non si risolve</strong> e lo sfratto non viene convalidato. Non è una sconfitta dell'avvocato: è l'esito che la legge stessa prevede quando l'inquilino paga tutto. E tu hai recuperato l'intero credito e le spese legali, che senza la causa probabilmente non avresti visto.</p>
+
+<h3>2. L'inquilino chiede il termine di grazia</h3>
+<p>Se non riesce a pagare in udienza, l'inquilino può chiedere al giudice un <strong>termine di grazia</strong>: fino a <strong>90 giorni</strong> per saldare, concedibile solo davanti a comprovate condizioni di difficoltà. Il termine sale a <strong>120 giorni</strong> nel caso particolare in cui la morosità non superi i due mesi e dipenda da difficoltà economiche sopravvenute alla firma del contratto (disoccupazione, malattia, altre gravi situazioni documentate). L'udienza viene rinviata a non oltre dieci giorni dalla scadenza.</p>
+<p>Qui c'è una buona notizia per il proprietario, spesso ignorata: chi chiede il termine di grazia <strong>manifesta una volontà di pagare incompatibile con l'opposizione allo sfratto</strong>. Se poi non paga entro il termine — che è perentorio, senza tolleranze nemmeno di un giorno — il giudice convalida lo sfratto, e quell'ordinanza è appellabile solo per far valere che è stata emessa fuori dai casi previsti dalla legge; per il resto all'inquilino resta la sola opposizione tardiva, un rimedio a maglie strette. Se il pagamento non arriva, inoltre, la data di rilascio non può essere fissata oltre <strong>60 giorni</strong> dalla scadenza del termine concesso (è un limite di legge sulla data del rilascio, non una previsione sulla durata della procedura). Approfondiamo tutto nella guida dedicata al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+
+<h3>3. L'inquilino paga solo una parte</h3>
+<p>È il caso più frequente: arrivano i canoni, non gli interessi né le spese legali. La sanatoria non c'è, quindi l'inquilino non è al sicuro. Ma la strada tecnica cambia, ed è bene saperlo prima.</p>
+<p>Per convalidare lo sfratto il tuo avvocato deve dichiarare in udienza che la morosità c'è ancora: se i canoni sono stati pagati, quella dichiarazione non è più possibile nella forma piena e il giudice di solito <strong>non convalida subito</strong>. Non significa che l'inquilino resta: il giudice può comunque emettere un'<strong>ordinanza di rilascio</strong> — un provvedimento immediatamente eseguibile che ti fa riavere l'immobile mentre la causa prosegue per interessi e spese. Ottieni l'immobile lo stesso, con un passaggio in più. Su questo punto la giurisprudenza non è del tutto univoca: tanto più conta arrivare in udienza con i conti in ordine.</p>
+
+<h2>Cosa fare nelle prossime 48 ore</h2>
+<p>Se il pagamento è appena arrivato, questi sono i passi concreti:</p>
+<ul>
+<li><strong>Incassa, ma senza formule liberatorie.</strong> Non rilasciare quietanze "a saldo e stralcio" o "a definizione di ogni pendenza": una causale sbagliata può essere usata contro di te in udienza. Se serve, fai mettere per iscritto dal tuo avvocato una riserva espressa.</li>
+<li><strong>Niente accordi verbali o via messaggio</strong> del tipo "ok, allora lasciamo perdere lo sfratto": rischi di rinunciare alla causa senza rendertene conto.</li>
+<li><strong>Metti insieme i documenti</strong>: contratto, registrazione, estratto conto dei canoni, spese condominiali a carico dell'inquilino, data esatta della notifica.</li>
+<li><strong>Fai preparare il conteggio aggiornato al giorno dell'udienza</strong>, canoni maturati dopo la notifica compresi, con gli interessi legali già calcolati.</li>
+<li><strong>Vai all'udienza</strong>, o fatti rappresentare: è lì che si decide tutto.</li>
+</ul>
+
+<h2>Negozi e uffici: qui il pagamento tardivo non salva l'inquilino</h2>
+<p>Cambio di scenario totale se hai affittato un <strong>immobile commerciale</strong>. La sanatoria e il termine di grazia valgono <strong>solo per le locazioni abitative</strong>: la norma richiama espressamente le obbligazioni previste per gli immobili ad uso abitazione, e la Cassazione ne ha tratto la conseguenza in modo consolidato.</p>
+<p>Per un negozio vale la regola generale del codice civile: <strong>dalla domanda di risoluzione — già contenuta nell'intimazione di sfratto — l'inquilino non può più adempiere per evitare la risoluzione</strong>. Se paga dopo la notifica, paga tardi. Il contratto può essere risolto lo stesso, purché l'inadempimento sia grave: e il ritardo su più mensilità, trattandosi dell'obbligazione principale del conduttore, di regola lo è. Se il contratto contiene una <strong>clausola risolutiva espressa</strong> — quella con cui avete già scritto che il mancato pagamento scioglie il contratto — il pagamento tardivo non la disattiva, purché la clausola indichi in modo specifico l'obbligazione violata e il locatore dichiari di volersene avvalere: una formula generica su "tutte le obbligazioni" non regge. Vedi la guida allo <a href="/blog/sfratto-morosita-locale-commerciale/">sfratto per morosità del locale commerciale</a>.</p>
+
+<h2>Quante volte l'inquilino può sanare la morosità</h2>
+<p>Non all'infinito, ed è una tutela concreta per chi affitta: la morosità può essere sanata in sede giudiziale <strong>non più di tre volte nel corso di un quadriennio</strong>, quattro solo nell'ipotesi particolare delle difficoltà economiche sopravvenute vista sopra. Se hai già subito sanatorie negli ultimi quattro anni, <strong>documentale</strong>: se l'inquilino le ha esaurite, non può più farvi ricorso.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Ritirare lo sfratto per quieto vivere.</strong> Se rinunci alla causa e la morosità riprende tre mesi dopo, riparti da zero: nuovo atto, nuova notifica, nuovi tempi.</li>
+<li><strong>Dimenticare i canoni che maturano durante la causa.</strong> La sanatoria comprende anche quelli: il conteggio è mobile, non fotografa il giorno della notifica.</li>
+<li><strong>Trattare un negozio come una casa.</strong> Sulla locazione commerciale la legge non prevede sanatoria né termine di grazia: concedere spontaneamente un termine per pagare significa rinunciare a una posizione che la legge riconosce al locatore. Se vuoi venire incontro all'inquilino, fallo per iscritto e con il tuo avvocato.</li>
+<li><strong>Rinunciare al recupero del credito.</strong> Insieme allo sfratto si può chiedere l'ingiunzione di pagamento per i canoni scaduti e per quelli che matureranno fino al rilascio.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<p><strong>Se l'inquilino paga tutto prima dell'udienza, devo comunque andarci?</strong><br>Sì. La causa è pendente e va gestita: solo in udienza si verifica se il pagamento è completo (interessi e spese comprese) e si definiscono le spese legali.</p>
+<p><strong>Chi paga il mio avvocato se l'inquilino sana?</strong><br>La sanatoria è valida solo se l'inquilino versa anche le spese processuali <strong>nella misura che il giudice liquida</strong>: se non le paga, non ha sanato.</p>
+<p><strong>L'inquilino può pagare dopo la convalida dello sfratto?</strong><br>Una volta emessa l'ordinanza di convalida hai un titolo esecutivo — il documento che ti permette di procedere al rilascio con l'ufficiale giudiziario — e il contratto è sciolto: un pagamento successivo non lo fa rivivere automaticamente. Puoi valutare un accordo, ma è una tua scelta, non un suo diritto.</p>
+<p><strong>Ha pagato solo i canoni, non gli interessi: la sanatoria è valida?</strong><br>No: la sanatoria richiede il pagamento integrale, quindi la tua posizione resta solida. Non è però un automatismo: la strada tecnica in udienza cambia rispetto alla convalida ordinaria e va impostata bene.</p>
+<p><strong>Posso rifiutare il pagamento per andare avanti con lo sfratto?</strong><br>No, e non converrebbe neanche. Quelle somme ti sono dovute: rifiutarle non è corretto, ti espone a contestazioni e non serve a nulla, perché l'inquilino può comunque offrirle formalmente in udienza. La linea giusta è incassare quello che arriva e far valere ciò che manca.</p>
+
+<h2>In sintesi</h2>
+<p>Un pagamento dopo la notifica dello sfratto non è una resa del proprietario. Su un'abitazione salva l'inquilino <strong>solo se è integrale</strong> — canoni, oneri, interessi legali e spese liquidate dal giudice — e solo entro il limite di tre (o eccezionalmente quattro) sanatorie nel quadriennio. Su un negozio è tardivo e non impedisce la risoluzione. In ogni caso, la differenza tra riavere l'immobile e ricominciare da capo la fanno <strong>il conteggio esatto e la gestione dell'udienza</strong>.</p>
+<p>Se hai un inquilino che paga a singhiozzo o che ha versato qualcosa dopo la notifica dello sfratto, <a href="/#contatti">parlane con noi</a>: la prima consulenza è gratuita e senza impegno, e ci occupiamo esclusivamente di proprietari e locatori. Puoi anche vedere come funziona il nostro <a href="/servizi/sfratto-per-morosita/">servizio di sfratto per morosità</a>.</p>
+
+<h2>Norme e riferimenti citati</h2>
+<ul>
+<li><strong>Legge 27 luglio 1978, n. 392</strong> — art. 5 (inadempimento del conduttore nelle locazioni abitative: mancato pagamento del canone decorsi venti giorni dalla scadenza); art. 55 (sanatoria della morosità e termine di grazia: 90 giorni, 120 nel caso di difficoltà economiche sopravvenute; tre sanatorie nel quadriennio, quattro nell'ipotesi particolare); art. 56 (data di esecuzione del rilascio in caso di mancato pagamento nel termine).</li>
+<li><strong>Codice di procedura civile (c.p.c.)</strong> — artt. 657-669 sul procedimento per convalida di sfratto: in particolare art. 663 (convalida subordinata all'attestazione che la morosità persiste), art. 664 (ingiunzione per i canoni), art. 665 (ordinanza di rilascio), art. 667 (mutamento del rito) e art. 668 (opposizione tardiva).</li>
+<li><strong>Codice civile (c.c.)</strong> — art. 1453, comma 3 (dalla domanda di risoluzione il debitore non può più adempiere), art. 1455 (gravità dell'inadempimento), art. 1456 (clausola risolutiva espressa).</li>
+<li><strong>Riforma Cartabia</strong> — d.lgs. 10 ottobre 2022, n. 149, applicabile ai procedimenti instaurati dopo il 28 febbraio 2023, e correttivo d.lgs. 31 ottobre 2024, n. 164, che hanno aggiornato fra l'altro gli artt. 660 e 663 c.p.c.</li>
+<li><strong>Giurisprudenza</strong> — Cass. civ., sez. III, n. 18224/2013 (sanatoria valida solo se integrale; interessi legali a calcolo del conduttore); n. 16669/2016 (integralità; canoni maturati dopo l'intimazione); n. 17738/2002 (pagamento dei soli canoni e venir meno della morosità persistente ai fini dell'art. 663 c.p.c.); n. 8002/2015 e n. 18984/2016 (inapplicabilità dell'art. 55 alle locazioni commerciali); ord. n. 4616/2023 (richiesta del termine di grazia e volontà solutoria).</li>
+</ul>
+<p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale sul caso concreto. Ogni situazione va valutata sulla base del contratto e dei documenti specifici.</em></p>
+`,
+  },
+  {
     slug: "clausola-risolutiva-espressa-locazione",
     title: "Clausola risolutiva espressa nel contratto di locazione: quando serve davvero al proprietario",
     description:
