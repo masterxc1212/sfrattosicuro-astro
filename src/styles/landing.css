@@ -588,6 +588,32 @@ form button[type="submit"] i,
 .landing-v3-price-note { margin: 1.2rem 0 0; font-size: .85rem; line-height: 1.55; color: rgba(255,255,255,.78); }
 .landing-v3-price-note strong { color: rgba(255,255,255,.95); }
 
+/* FIX contrasto sottotitolo hero: una regola tipografica lo rendeva navy-su-navy e Fraunces */
+.landing-v3-body .hero-subtitle,
+.landing-v3-body .landing-v3-hero-subtitle {
+  color: #E8EDF6 !important;
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+.landing-v3-body .landing-v3-hero-subtitle strong { color: #fff !important; }
+
+/* Desktop: hero allineato in alto (era centrato verticalmente) */
+@media (min-width: 1024px) {
+  .landing-v3-hero-grid { align-items: start !important; }
+  .landing-v3-hero-content { padding-top: .25rem; }
+}
+
+/* Confronto "solo convalida" vs percorso completo (card bianca nella banda navy) */
+.landing-v3-compare { margin-top: 1.6rem; background: #fff; border-radius: .9rem; padding: 1.2rem 1.3rem; color: var(--anthracite); }
+.landing-v3-compare h3 { color: var(--blue-navy); font-weight: 800; font-size: 1.1rem; margin: 0 0 .4rem; }
+.landing-v3-compare p { font-size: .88rem; line-height: 1.5; margin: 0 0 .9rem; color: #4b5563; }
+.landing-v3-compare-tablewrap { overflow-x: auto; }
+.landing-v3-compare table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.landing-v3-compare th { text-align: left; padding: .45rem .5rem; border-bottom: 2px solid #e5e7eb; color: var(--blue-navy); font-size: .76rem; background: #fff; }
+.landing-v3-compare td { padding: .45rem .5rem; border-bottom: 1px solid #f0f1f4; color: #4b5563; }
+.landing-v3-compare th:nth-child(3), .landing-v3-compare td:nth-child(3) { background: #F0FAF4; font-weight: 600; color: var(--blue-navy); }
+.landing-v3-compare tr:last-child td { border-bottom: 0; }
+@media (max-width: 480px) { .landing-v3-compare table { font-size: .78rem; } .landing-v3-compare td, .landing-v3-compare th { padding: .4rem .35rem; } }
+
 /* Il Patto Sfratto Sicuro (B1 commissione, testo approvato dall'avvocato) */
 .landing-v3-patto { margin-top: 1.6rem; border: 1px solid rgba(255,255,255,.28); border-radius: .9rem; padding: 1.2rem 1.3rem; background: rgba(255,255,255,.05); }
 .landing-v3-patto h3 { font-size: 1.15rem; font-weight: 800; color: #fff; margin: 0 0 .25rem; display: flex; align-items: center; gap: .5rem; }

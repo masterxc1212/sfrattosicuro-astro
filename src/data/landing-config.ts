@@ -141,14 +141,14 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       title: `Avvocato per Sfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `Riprendi il tuo immobile dall'inquilino moroso. Solo per <strong class="text-white">proprietari e locatori</strong>, in tutta Italia.`
-          : `Riprendi il tuo immobile dall'inquilino moroso. Solo per <strong class="text-white">proprietari e locatori</strong>${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
+          ? `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.`
+          : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
       prequalificationNote: undefined,
       ownerField: true,
       bullets: [
-        '<strong>€1.300 fino al rilascio</strong>, IVA e cassa incluse',
-        '<strong>Zero anticipi</strong>: non paghi nulla per partire',
-        '<strong>Paghi solo dopo l’udienza</strong> di convalida',
+        '<strong>€1.300 IVA inclusa</strong>: un solo prezzo, tutto il percorso',
+        '<strong>Convalida + fase esecutiva</strong>, fino alle chiavi',
+        '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
         '<strong>Convalida in ~60 giorni</strong> in media',
       ],
       formTitle: 'Verifica se puoi partire',
@@ -499,7 +499,7 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
       {
         icon: 'fa-euro-sign',
         q: 'Quando si pagano i 1.300€ e cosa comprendono?',
-        a: 'Solo <strong>dopo l’udienza per la convalida</strong>: avvii la procedura senza anticipare nulla. Il compenso è di €1.300 <strong>IVA e cassa incluse</strong> e comprende tutta l’assistenza legale fino al rilascio dell’immobile. Restano escluse le spese vive di legge: indicativamente <strong>€100–150</strong> per la convalida e circa <strong>€300 in totale</strong> se serve la fase esecutiva — sempre indicate per iscritto prima, mai richieste in anticipo.',
+        a: 'Solo <strong>dopo l’udienza per la convalida</strong>: avvii la procedura senza anticipare nulla. Il compenso è di €1.300 <strong>IVA e cassa incluse</strong> e comprende tutta l’assistenza legale, dalla convalida alla fase esecutiva, <strong>fino alla riconsegna delle chiavi</strong>. Restano escluse le spese vive di legge: indicativamente <strong>€100–150</strong> per la convalida e circa <strong>€300 in totale</strong> se serve la fase esecutiva, sempre indicate per iscritto prima e mai richieste in anticipo.',
       },
       {
         icon: 'fa-clock',
