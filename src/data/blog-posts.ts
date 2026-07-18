@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "contratto-affitto-studenti-universitari",
+    title: "Contratto di affitto per studenti universitari: la guida per il proprietario",
+    description: "Contratto di affitto per studenti universitari: durata, canone concordato, cedolare secca e garanzie. La guida pratica per il proprietario.",
+    excerpt: "Affittare a studenti universitari fuori sede conviene, ma richiede il contratto giusto. Guida pratica per il proprietario: durata 6-36 mesi, canone da accordi territoriali, cedolare secca al 10%, garanzie e registrazione, con gli errori da evitare.",
+    lead: "Il contratto di affitto per studenti universitari è uno strumento speciale, con durata flessibile e un ottimo trattamento fiscale, ma anche regole precise su canone e garanzie. Usare il modello sbagliato ti fa perdere i vantaggi. Vediamo, dalla parte del locatore, come funziona e come impostarlo bene.",
+    publishedAt: "2026-07-18",
+    updatedAt: "2026-07-18",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-18. Keyword: contratto affitto studenti universitari, vol 170, KD 0 (DataForSEO).",
+    html: `  <p>Affittare a <strong>studenti universitari fuori sede</strong> può essere un’ottima scelta per un proprietario: domanda costante nelle città sedi di ateneo, possibilità di applicare un regime fiscale agevolato e uno strumento contrattuale pensato apposta. Ma il <strong>contratto di affitto per studenti universitari</strong> ha regole precise su durata, canone e garanzie: usare il modello sbagliato, o un normale 4+4, ti fa perdere i vantaggi e ti espone a contestazioni. Vediamo, dalla parte del locatore, come funziona e come impostarlo bene.</p>
+
+  <h2>Che cos’è il contratto di affitto per studenti universitari</h2>
+  <p>È un contratto di locazione a uso abitativo di tipo speciale, previsto dall’articolo 5 della Legge 431 del 1998 (la legge che regola gli affitti abitativi). Nasce per soddisfare le esigenze di chi studia lontano da casa e vive nel Comune dell’università solo per il periodo dei corsi. Non è un affitto “libero” che decidi tu liberamente: si appoggia ai <strong>contratti-tipo</strong> definiti dagli accordi territoriali tra le associazioni dei proprietari e degli inquilini, come avviene per il <a href="/blog/canone-concordato/">canone concordato</a>. In cambio di alcuni vincoli, ottieni durata flessibile e un trattamento fiscale favorevole.</p>
+
+  <h2>Quando puoi usarlo: i requisiti</h2>
+  <p>Non è un contratto che si può firmare sempre. Servono alcune condizioni:</p>
+  <ul>
+    <li><strong>L’immobile deve trovarsi in un Comune sede di università</strong> (o di corsi universitari distaccati, di specializzazione o di perfezionamento), oppure in un Comune limitrofo.</li>
+    <li><strong>Il conduttore deve essere uno studente universitario iscritto</strong> a un corso in un Comune diverso da quello di residenza. L’iscrizione va documentata: è la ragione stessa che giustifica il contratto.</li>
+    <li><strong>Deve esistere un accordo territoriale</strong> nel Comune o in ambito provinciale, perché è lì che vengono fissati i canoni e i contratti-tipo. Nella pratica esiste in tutte le principali città universitarie.</li>
+  </ul>
+  <p>Il contratto può essere intestato al singolo studente, a un gruppo di studenti oppure — soluzione frequente — anche alle aziende per il diritto allo studio o alle cooperative che poi ospitano gli iscritti.</p>
+
+  <h2>Durata: da 6 a 36 mesi, con rinnovo automatico</h2>
+  <p>Qui sta la differenza principale rispetto agli altri contratti. La durata è <strong>libera tra un minimo di 6 mesi e un massimo di 36 mesi (3 anni)</strong>: la scegli in base all’anno accademico e alle esigenze dello studente. È una flessibilità che il classico <a href="/blog/contratto-transitorio-affitto/">contratto transitorio</a> ordinario non ti dà nella stessa misura.</p>
+  <p>Attenzione al meccanismo del rinnovo, spesso frainteso dai proprietari: alla scadenza il contratto <strong>si rinnova automaticamente per un periodo di pari durata</strong>, a meno che sia lo studente a comunicare disdetta, di norma da uno a tre mesi prima della scadenza. Il proprietario, invece, non ha un potere di disdetta libera equivalente: il contratto è costruito a tutela della continuità abitativa dello studente. Tienine conto quando pianifichi la disponibilità dell’immobile.</p>
+
+  <h2>Il canone e la cedolare secca al 10%</h2>
+  <p>Il canone non lo fissi liberamente: deve rientrare nei valori minimi e massimi stabiliti dagli <strong>accordi territoriali</strong> del Comune, calcolati per fasce e zone. Un canone superiore al massimo previsto è nullo per la parte eccedente, e lo studente può chiederne la restituzione. Prima di firmare, verifica i valori dell’accordo locale della tua città.</p>
+  <p>In compenso arriva il vantaggio fiscale più interessante: se scegli la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> (l’imposta sostitutiva sui redditi da locazione), per i contratti per studenti universitari stipulati nei Comuni ad <strong>alta tensione abitativa</strong> (le città a maggiore domanda di case individuate dalla legge) e nei capoluoghi di provincia l’aliquota agevolata è del <strong>10%</strong>, contro il 21% ordinario. Con la cedolare, inoltre, non versi l’imposta di registro né l’imposta di bollo, ma rinunci per la durata dell’opzione ad aggiornare il canone all’inflazione (indice ISTAT, cioè l’indice dei prezzi al consumo). Per un immobile affittato tutto l’anno a fuori sede, il conto è quasi sempre a tuo favore.</p>
+
+  <h2>Le garanzie: deposito cauzionale e garante</h2>
+  <p>Affittare a studenti spesso significa avere di fronte persone senza reddito proprio. Per tutelarti puoi usare due strumenti:</p>
+  <ul>
+    <li><strong>Il deposito cauzionale</strong>, che per legge non può superare le <strong>tre mensilità</strong> di canone e va restituito a fine rapporto salvo danni o morosità. Tutte le regole nella guida sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale nell’affitto</a>.</li>
+    <li><strong>Il garante</strong>, quasi sempre un genitore, che si impegna a pagare se lo studente non lo fa. È la garanzia più diffusa in questi contratti: prima di accettarla, verifica la solidità reddituale del garante (busta paga, situazione patrimoniale). In alternativa esiste la <a href="/blog/fideiussione-affitto/">fideiussione</a> bancaria o assicurativa.</li>
+  </ul>
+  <p>Se in casa vivono più studenti con un unico contratto, valuta la <strong>solidarietà</strong> tra i conduttori: con una clausola di responsabilità solidale, puoi chiedere l’intero canone a ciascuno di loro, senza dover rincorrere le singole quote.</p>
+
+  <h2>Come si stipula e si registra, passo per passo</h2>
+  <ol>
+    <li><strong>Usa il contratto-tipo</strong> allegato all’accordo territoriale del Comune: è il modello corretto, non un fac-simile qualsiasi trovato online.</li>
+    <li><strong>Allega l’attestazione di conformità</strong> del canone rilasciata da un’associazione firmataria dell’accordo, se prevista: serve anche per confermare il diritto alle agevolazioni fiscali.</li>
+    <li><strong>Verifica e allega l’iscrizione universitaria</strong> dello studente, che è il presupposto del contratto.</li>
+    <li><strong>Registra il contratto</strong> all’Agenzia delle Entrate entro 30 giorni dalla firma con il modello RLI (Registrazione Locazioni Immobili). Se scegli la cedolare secca, l’opzione si esercita proprio in fase di registrazione. Tutti i passaggi nella guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</li>
+    <li><strong>Consegna copia registrata</strong> allo studente e conserva ricevute e documentazione.</li>
+  </ol>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Usare un 4+4 o un transitorio generico</strong> quando serve il contratto per studenti: perdi la durata flessibile e, in molti casi, la cedolare al 10%.</li>
+    <li><strong>Superare il canone massimo</strong> degli accordi territoriali: la parte eccedente è nulla e recuperabile dallo studente.</li>
+    <li><strong>Non registrare nei termini</strong>: un contratto non registrato è nullo e ti lascia molto più esposto, anche sul piano fiscale.</li>
+    <li><strong>Dimenticare il garante o la clausola di solidarietà</strong> quando affitti a più studenti o a persone senza reddito.</li>
+    <li><strong>Non documentare l’iscrizione</strong> universitaria: senza il presupposto, il contratto è contestabile.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <ul>
+    <li><strong>Quanto dura un contratto per studenti universitari?</strong><br>Da un minimo di 6 mesi a un massimo di 36 mesi. La durata la concordi con lo studente in base all’anno accademico.</li>
+    <li><strong>Posso disdire il contratto alla scadenza?</strong><br>Il contratto si rinnova automaticamente per pari durata salvo disdetta dello studente. Il proprietario non ha una disdetta libera equivalente: è uno strumento pensato per la continuità abitativa dello studente.</li>
+    <li><strong>Posso decidere io liberamente il canone?</strong><br>No. Devi restare nei valori minimi e massimi fissati dagli accordi territoriali del Comune. Oltre il massimo, l’eccedenza è nulla.</li>
+    <li><strong>Che cedolare secca si applica?</strong><br>Nei Comuni ad alta tensione abitativa e nei capoluoghi di provincia l’aliquota agevolata è del 10%. Rinunci però all’aggiornamento ISTAT del canone per la durata dell’opzione.</li>
+    <li><strong>Che garanzie posso chiedere?</strong><br>Un deposito cauzionale fino a tre mensilità e, molto spesso, un garante (di solito un genitore) o una fideiussione bancaria o assicurativa.</li>
+  </ul>
+
+  <p>Il contratto per studenti universitari, impostato correttamente, ti permette di affittare a una domanda stabile con un ottimo trattamento fiscale e regole chiare. Se hai dubbi sul modello da usare, sul canone ammesso nella tua città o vuoi tutelarti al meglio con garanzie e clausole adeguate, puoi partire dalla pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a> o <a href="/#contatti">contattare Sfratto Sicuro</a>: ti aiutiamo a proteggere il tuo immobile con tempi e costi chiari.</p>
+
+  <p><em>Riferimenti normativi essenziali: Legge 9 dicembre 1998 n. 431 (in particolare l’art. 5 sui contratti di natura transitoria e per studenti universitari, e l’art. 2, comma 3, sui contratti a canone concordato); Decreto del Ministero delle Infrastrutture e dei Trasporti 16 gennaio 2017 (contratti-tipo e accordi territoriali); D.Lgs. 14 marzo 2011 n. 23, art. 3 (cedolare secca e aliquota agevolata al 10% per i contratti a canone concordato); D.P.R. 26 aprile 1986 n. 131 (imposta di registro e obbligo di registrazione entro 30 giorni). Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale personalizzata sul singolo contratto.</em></p>`,
+  },
+  {
     slug: "sfratto-morosita-inquilino-paga",
     title: "Sfratto per morosità: cosa succede se l'inquilino paga dopo la notifica",
     description:
