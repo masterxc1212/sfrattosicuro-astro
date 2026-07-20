@@ -68,7 +68,12 @@ const { eager = false } = Astro.props;
       }
       if (!window.__awPhoneConfigured) {
         window.__awPhoneConfigured = true;
-        window.gtag('config', AW_ID + '/' + CALL_LABEL, { phone_conversion_number: PHONE_NUMBER });
+        // country_code esplicito: senza, gtag mandava cc=ZZ al wcm e Google NON assegnava
+        // mai il numero d'inoltro -> swap mai avvenuto -> WEBSITE_CALL sempre 0 (bug 2026-07-20)
+        window.gtag('config', AW_ID + '/' + CALL_LABEL, {
+          phone_conversion_number: PHONE_NUMBER,
+          phone_conversion_country_code: 'IT'
+        });
       }
     }
 
