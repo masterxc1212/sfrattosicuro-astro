@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "licenza-per-finita-locazione",
+    title: "Licenza per finita locazione: cos'è e differenza con lo sfratto",
+    description: "Licenza per finita locazione: cos'è, in cosa differisce dallo sfratto per finita locazione e come il proprietario riottiene l'immobile alla scadenza.",
+    excerpt: "Vuoi riavere la tua casa alla scadenza del contratto? La licenza per finita locazione è l'atto che ti fa recuperare l'immobile prima ancora che il termine arrivi. Guida per il proprietario: cos'è, in cosa si distingue dallo sfratto per finita locazione, quale disdetta serve prima e come funziona la procedura passo per passo.",
+    lead: "La licenza per finita locazione è lo strumento con cui il proprietario chiede di riavere il proprio immobile alla scadenza del contratto, muovendosi in anticipo rispetto al termine. Spesso viene confusa con lo sfratto per finita locazione, ma è una cosa diversa. Vediamo, dalla parte del locatore, cos'è la licenza per finita locazione, in cosa si distingue dallo sfratto e come si arriva concretamente alla riconsegna delle chiavi.",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-20. Keyword: licenza per finita locazione, vol 390, KD 0 (DataForSEO). Secondarie: intimazione di licenza, differenza tra sfratto e licenza per finita locazione.",
+    html: `  <p>La <strong>licenza per finita locazione</strong> è lo strumento con cui il proprietario chiede di riavere il proprio immobile alla scadenza del contratto, muovendosi in anticipo rispetto al termine. Spesso viene confusa con lo sfratto per finita locazione, ma è una cosa diversa. Vediamo, dalla parte del locatore, cos'è la licenza per finita locazione, in cosa si distingue dallo sfratto e come si arriva concretamente alla riconsegna delle chiavi.</p>
+
+  <h2>Che cos’è la licenza per finita locazione</h2>
+  <p>La <strong>licenza per finita locazione</strong> è l’atto con cui il proprietario, <strong>prima</strong> che il contratto di affitto scada, comunica formalmente all’inquilino che alla scadenza dovrà lasciare l’immobile e, nello stesso atto, lo cita davanti al giudice per far confermare (in linguaggio tecnico, «convalidare») il rilascio. In pratica è un modo per portarsi avanti: invece di aspettare che il contratto finisca e l’inquilino resti dentro, il locatore mette subito in chiaro — con un atto che ha valore legale — che il rapporto non proseguirà oltre il termine.</p>
+  <p>È uno strumento <strong>preventivo</strong>: serve a chi vuole tornare in possesso della casa alla naturale scadenza del contratto e vuole avere in mano, già prima di quella data, un provvedimento del giudice pronto a essere eseguito. A differenza dello sfratto per morosità, il presupposto non è un inadempimento dell’inquilino, ma semplicemente la <strong>fine del contratto</strong>.</p>
+
+  <h2>Licenza o sfratto per finita locazione: qual è la differenza</h2>
+  <p>Licenza e sfratto per finita locazione sono due facce della stessa medaglia e si distinguono per un solo elemento: <strong>il momento in cui il proprietario agisce</strong>.</p>
+  <ul>
+    <li><strong>Licenza per finita locazione</strong>: si intima <strong>prima</strong> della scadenza del contratto. Il proprietario si porta avanti e, alla data di cessazione, ha già (o sta per avere) un provvedimento del giudice.</li>
+    <li><strong>Sfratto per finita locazione</strong>: si intima <strong>dopo</strong> la scadenza, quando il contratto è già finito ma l’inquilino non ha liberato l’immobile. È la strada che descriviamo nella guida sullo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</li>
+  </ul>
+  <p>Il concetto chiave, in entrambi i casi, è la <strong>tacita riconduzione</strong>: cioè il rinnovo automatico del contratto quando il proprietario lascia passare la scadenza senza attivarsi e continua a incassare il canone. La <strong>licenza</strong> serve proprio a impedirla, mettendo per iscritto in anticipo che il rapporto non proseguirà; lo <strong>sfratto</strong> per finita locazione, invece, presuppone che la tacita riconduzione sia <strong>già esclusa</strong>. Se il contratto si rinnova da solo, non si può più parlare di «finita locazione»: ecco perché muoversi in anticipo con la licenza è spesso la scelta più prudente per chi vuole davvero riavere l’immobile alla scadenza.</p>
+
+  <h2>Prima serve la disdetta: quando e con quale preavviso</h2>
+  <p>Attenzione a un punto che molti proprietari sottovalutano: la licenza (come lo sfratto) per finita locazione presuppone che il contratto sia <strong>effettivamente destinato a finire</strong>. E per i normali contratti di affitto abitativo la fine non è mai automatica alla prima scadenza: serve una <strong>disdetta</strong> valida e tempestiva. Le regole cambiano a seconda del tipo di contratto e del momento.</p>
+  <p>Nel <strong>contratto abitativo “4+4”</strong> (quattro anni, rinnovabili di altri quattro):</p>
+  <ul>
+    <li><strong>Alla prima scadenza</strong> (dopo i primi quattro anni) il contratto si rinnova automaticamente. Il locatore può negare il rinnovo solo per <strong>uno dei motivi tassativi</strong> previsti dalla legge — ad esempio se vuole destinare l’immobile a sé, al coniuge, ai genitori o ai figli, se intende venderlo (non possedendo altri immobili abitativi oltre a quello in cui vive), o per gravi lavori di ristrutturazione — e comunque <strong>con un preavviso di almeno sei mesi</strong>. Le regole di questa <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del locatore</a> sono precise e vanno rispettate alla lettera.</li>
+    <li><strong>Alla seconda scadenza</strong> (dopo otto anni complessivi) la disdetta è <strong>libera</strong>: il proprietario non deve indicare alcun motivo, ma deve comunque avvisare con <strong>lettera raccomandata almeno sei mesi prima</strong>. Se non lo fa, il contratto si rinnova tacitamente alle stesse condizioni.</li>
+  </ul>
+  <p>Nel <strong>contratto a canone concordato “3+2”</strong> il meccanismo è simile: dopo i primi tre anni, se le parti non si accordano, scatta la proroga di diritto di due anni; alla scadenza dei due anni serve la comunicazione con almeno sei mesi di preavviso. Per gli <strong>immobili commerciali</strong>, invece, i termini sono più lunghi (in genere dodici mesi di preavviso, diciotto per le attività alberghiere): un caso a sé, con regole proprie.</p>
+  <p>Il messaggio pratico è semplice: <strong>senza una disdetta valida e nei tempi giusti, non c’è finita locazione</strong>, e la licenza non ha basi su cui reggersi. La prima mossa, quindi, è verificare tipo di contratto, data di scadenza e termine di preavviso.</p>
+
+  <h2>Come funziona la procedura, passo per passo</h2>
+  <p>Una volta chiarito che il contratto è destinato a finire, la licenza per finita locazione segue passaggi ben definiti.</p>
+  <ul>
+    <li><strong>1. Predisposizione e notifica dell’atto.</strong> Si prepara l’<strong>intimazione di licenza</strong>, con la contestuale <strong>citazione</strong> a comparire davanti al giudice per la convalida, e la si notifica all’inquilino nel rispetto dei termini di legge. È qui che si concentra il lavoro tecnico dell’avvocato.</li>
+    <li><strong>2. Udienza di convalida.</strong> Alla data indicata le parti compaiono davanti al giudice. Se l’inquilino <strong>non si presenta o non si oppone</strong>, il giudice <strong>convalida</strong> la licenza con un’<strong>ordinanza immediatamente esecutiva</strong>: un provvedimento che dà titolo per riottenere l’immobile. È lo stesso meccanismo che spieghiamo nella pagina sulla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</li>
+    <li><strong>3. Data del rilascio.</strong> Con la convalida il giudice fissa (o consente di fissare) la data entro cui l’immobile deve essere liberato.</li>
+    <li><strong>4. Esecuzione, se serve.</strong> Se, arrivata la data, l’inquilino non se ne va spontaneamente, si passa alla fase esecutiva con l’ufficiale giudiziario, esattamente come per lo sfratto. Nella maggior parte dei casi, però, un provvedimento del giudice già in mano spinge l’inquilino a liberare i locali senza arrivare all’intervento forzato.</li>
+  </ul>
+  <p>Il vantaggio della licenza sta tutto qui: muovendosi <strong>prima</strong> della scadenza, si arriva al termine del contratto con il provvedimento già pronto, riducendo i tempi morti fino al rientro in possesso dell’immobile.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Continuare a incassare il canone dopo la scadenza senza attivarsi.</strong> È il modo più rapido per far rinnovare il contratto per tacita riconduzione e perdere il presupposto della finita locazione.</li>
+    <li><strong>Dimenticare la disdetta o inviarla in ritardo.</strong> Sei mesi di preavviso per l’abitativo non sono un dettaglio: se salti il termine, il contratto si rinnova e devi aspettare la scadenza successiva.</li>
+    <li><strong>Indicare un motivo sbagliato alla prima scadenza.</strong> Alla prima scadenza del “4+4” il diniego di rinnovo vale solo per i motivi previsti dalla legge: una motivazione generica o non consentita rende la disdetta inefficace.</li>
+    <li><strong>Confondere licenza e sfratto.</strong> Agire dopo la scadenza quando si poteva (e doveva) muoversi prima significa spesso allungare i tempi. Verifica sempre le date con un legale.</li>
+    <li><strong>Farsi giustizia da sé.</strong> Cambiare la serratura, togliere le utenze o rimuovere le cose dell’inquilino è illegittimo. Il rilascio avviene solo con il provvedimento del giudice e, se necessario, con l’ufficiale giudiziario.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <ul>
+    <li><strong>Qual è la differenza tra licenza e sfratto per finita locazione?</strong><br>
+    La licenza si intima <strong>prima</strong> della scadenza del contratto; lo sfratto per finita locazione <strong>dopo</strong>, quando il contratto è già finito ma l’inquilino non ha liberato l’immobile. La procedura successiva (udienza di convalida ed eventuale esecuzione) è la stessa.</li>
+    <li><strong>Posso intimare la licenza anche se l’inquilino paga regolarmente?</strong><br>
+    Sì. La licenza per finita locazione non presuppone un inadempimento: si fonda sulla fine del contratto, non sul mancato pagamento. Se invece l’inquilino non paga, la strada è lo sfratto per morosità.</li>
+    <li><strong>Con quanto anticipo devo dare la disdetta?</strong><br>
+    Per i contratti abitativi il preavviso è di norma di <strong>almeno sei mesi</strong> prima della scadenza. Per gli immobili commerciali i termini sono più lunghi (dodici mesi, diciotto per le attività alberghiere).</li>
+    <li><strong>Cosa succede se lascio passare la scadenza senza fare nulla?</strong><br>
+    Il contratto rischia di rinnovarsi automaticamente per tacita riconduzione, alle stesse condizioni. A quel punto non puoi più invocare la finita locazione e devi attendere la scadenza successiva.</li>
+    <li><strong>La convalida basta per riavere subito l’immobile?</strong><br>
+    La convalida è un’ordinanza esecutiva che fissa la data del rilascio. Se l’inquilino non collabora, serve la fase esecutiva con l’ufficiale giudiziario, con tempi che dipendono dal Tribunale competente.</li>
+  </ul>
+
+  <p>La licenza per finita locazione è lo strumento giusto per il proprietario che vuole programmare per tempo il rientro nella propria casa, senza restare in balìa dei rinnovi automatici. La chiave è muoversi in anticipo: verificare il tipo di contratto, inviare la disdetta nei termini e predisporre l’atto prima della scadenza. Se vuoi capire qual è la strada più rapida e sicura per il tuo caso, parti dalla pagina sullo <a href="/servizi/sfratto-per-finita-locazione/">sfratto per finita locazione</a> o <a href="/#contatti">contatta Sfratto Sicuro</a>: valutiamo con te tempi, passaggi e la mossa migliore per riavere il tuo immobile.</p>
+
+  <p><em>Riferimenti normativi essenziali: art. 657 del Codice di procedura civile (c.p.c.), che disciplina l’intimazione di licenza per finita locazione prima della scadenza e lo sfratto per finita locazione dopo la scadenza; art. 663 c.p.c. sulla convalida della licenza o dello sfratto con ordinanza esecutiva in caso di mancata comparizione o mancata opposizione dell’intimato; artt. 2 e 3 della Legge 9 dicembre 1998 n. 431 (durata dei contratti abitativi, rinnovo, disdetta del locatore e relativi motivi e preavvisi); per gli immobili a uso diverso, artt. 27, 28 e 29 della Legge 27 luglio 1978 n. 392. La disciplina processuale va letta alla luce della riforma del processo civile (D.Lgs. 10 ottobre 2022 n. 149, cosiddetta riforma Cartabia), applicabile ai procedimenti instaurati dopo il 28 febbraio 2023, e del successivo correttivo (D.Lgs. 31 ottobre 2024 n. 164), entrato in vigore a fine 2024 con una propria decorrenza. Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata sul singolo caso.</em></p>`
+  },
+  {
     slug: "morosita-incolpevole",
     title: "Morosità incolpevole: cosa significa e cosa può fare il proprietario",
     description: "Morosità incolpevole: cosa significa, come funziona il Fondo che paga i canoni arretrati e cosa può fare il proprietario per lo sfratto.",
