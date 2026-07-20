@@ -16,6 +16,70 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "morosita-incolpevole",
+    title: "Morosità incolpevole: cosa significa e cosa può fare il proprietario",
+    description: "Morosità incolpevole: cosa significa, come funziona il Fondo che paga i canoni arretrati e cosa può fare il proprietario per lo sfratto.",
+    excerpt: "Quando l'inquilino non paga per perdita di reddito parla di morosità incolpevole. Guida per il proprietario: cos'è, come funziona il Fondo pubblico che può saldare i canoni arretrati, se blocca lo sfratto e come muoversi passo per passo.",
+    lead: "Se il tuo inquilino non paga e sostiene che «non è colpa sua», sta richiamando la morosità incolpevole: una condizione che non ferma lo sfratto ma può aprire l'accesso a un fondo pubblico che salda i canoni arretrati direttamente a te. Vediamo, dalla parte del proprietario, cosa significa e come muoverti.",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-07-20. Keyword: morosità incolpevole, vol 320, KD 0 (DataForSEO).",
+    html: `  <p>Quando un inquilino smette di pagare l’affitto e ti dice che «non è colpa sua» — ha perso il lavoro, si è ammalato, gli hanno tagliato lo stipendio — non sta solo cercando comprensione: sta richiamando una figura giuridica precisa, la <strong>morosità incolpevole</strong>. Per un proprietario è importante capire cosa significa davvero, perché incide sui tempi dello sfratto ma, allo stesso tempo, può aprire la strada a un fondo pubblico che paga i canoni arretrati direttamente a te. Vediamo, dalla parte del locatore, di cosa si tratta e come muoverti.</p>
+
+  <h2>Che cos’è la morosità incolpevole</h2>
+  <p>La <strong>morosità incolpevole</strong> è l’impossibilità dell’inquilino di pagare il canone di locazione a causa della <strong>perdita o della consistente riduzione del reddito</strong> del suo nucleo familiare, per un evento non dipendente dalla sua volontà. È un concetto introdotto per distinguere l’inquilino che non paga per difficoltà economiche improvvise da quello che semplicemente sceglie di non pagare. Attenzione: non è una scusa che blocca lo sfratto, ma una condizione che dà accesso a specifiche tutele e, soprattutto, a un contributo economico pubblico.</p>
+  <p>Perché la morosità sia riconosciuta come «incolpevole», la difficoltà deve derivare da cause tipiche indicate dalla legge, tra cui la perdita del lavoro (licenziamento, mancato rinnovo di un contratto a termine, accordi di riduzione dell’orario), la cassa integrazione, la cessazione di un’attività autonoma, una malattia grave, un infortunio o un’invalidità che riducono il reddito, oppure il decesso di un componente del nucleo familiare che contribuiva al reddito. Non basta quindi affermare genericamente di essere in difficoltà: la causa va documentata.</p>
+
+  <h2>Il Fondo per la morosità incolpevole: come può pagarti i canoni arretrati</h2>
+  <p>Questo è il punto che interessa di più a un proprietario. Esiste un <strong>Fondo nazionale per la morosità incolpevole</strong>, gestito tramite Regioni e Comuni, che eroga contributi per coprire in tutto o in parte i canoni non pagati o per accompagnare l’inquilino verso una nuova sistemazione. Il Fondo è stato rifinanziato anche per il 2026, quindi è uno strumento attuale e non teorico.</p>
+  <p>Il contributo viene di norma <strong>versato al proprietario</strong> per sanare la morosità, oppure serve a garantire un nuovo contratto a canone sostenibile. Per te significa una cosa concreta: se l’inquilino accede al Fondo, puoi recuperare somme che, con un debitore senza reddito, rischieresti altrimenti di non vedere mai. In molti bandi comunali, inoltre, si dà priorità proprio ai casi in cui il locatore si dichiara disponibile a rinviare l’esecuzione dello sfratto o a stipulare un nuovo contratto: la tua collaborazione può quindi accelerare l’erogazione.</p>
+  <p>I requisiti principali per l’inquilino, fissati a livello nazionale (con possibili integrazioni regionali), sono in sintesi:</p>
+  <ul>
+    <li><strong>Contratto di locazione regolarmente registrato</strong> per un immobile a uso abitativo, con esclusione degli immobili di pregio (categorie catastali A1, A8 e A9).</li>
+    <li><strong>Residenza nell’alloggio da almeno un anno</strong> al momento della procedura di rilascio.</li>
+    <li><strong>Un indicatore ISEE</strong> (l’Indicatore della Situazione Economica Equivalente, cioè la misura della ricchezza del nucleo familiare) entro le soglie previste dal bando: in genere un reddito ISE non superiore a 35.000 euro, oppure un ISEE non superiore a 26.000 euro.</li>
+    <li>La presenza di un <strong>atto di intimazione di sfratto</strong> o di una procedura di rilascio già avviata.</li>
+  </ul>
+  <p>Il contributo massimo erogabile è contenuto (nell’ordine di alcune migliaia di euro, con un tetto di norma fino a 12.000 euro a beneficiario) e dipende dalle risorse disponibili in ciascuna Regione. È l’inquilino a doverne fare domanda al Comune, ma è nel tuo interesse segnalargli per tempo questa possibilità e agevolare la documentazione. Tieni presente che i tempi dei bandi comunali possono essere lunghi e non coincidere con quelli della procedura giudiziaria: conviene attivarsi il prima possibile.</p>
+
+  <h2>La morosità incolpevole ferma lo sfratto? No, ma può rallentarlo</h2>
+  <p>Chiariamo un equivoco frequente. La morosità incolpevole <strong>non ti impedisce di agire</strong>: puoi comunque procedere con l’<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a> e ottenerne la convalida davanti al giudice, esattamente come in ogni altro caso di mancato pagamento. Il quadro dei passaggi lo trovi nella <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a>.</p>
+  <p>Quello che cambia riguarda la <strong>fase esecutiva</strong>, cioè il momento in cui l’inquilino viene effettivamente allontanato dall’immobile con l’ufficiale giudiziario. Per gli inquilini che rientrano nelle categorie di morosità incolpevole, la legge prevede la possibilità di una <strong>graduazione o di un differimento del rilascio</strong>: in pratica, l’intervento della forza pubblica necessaria all’esecuzione può essere programmato e dilazionato dal Prefetto, dando priorità ai casi più fragili. A questo si aggiunge la possibilità, su richiesta dell’inquilino e per gravi motivi, di una <a href="/blog/sospensione-esecuzione-sfratto/">sospensione dell’esecuzione dello sfratto</a> disposta dal giudice. Per te questo può tradursi in qualche mese in più di attesa: non un blocco, ma un allungamento dei tempi da mettere in conto.</p>
+
+  <h2>Cosa può fare il proprietario, passo per passo</h2>
+  <ol>
+    <li><strong>Non fermarti.</strong> Alla prima morosità significativa, invia una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all’inquilino moroso</a> e, se il debito non rientra, avvia l’intimazione di sfratto. La procedura non è in contrasto con l’eventuale accesso al Fondo.</li>
+    <li><strong>Valuta il termine di grazia.</strong> All’udienza di convalida l’inquilino può chiedere il <a href="/blog/sfratto-termine-di-grazia/">termine di grazia</a>, cioè un breve periodo (fino a 90 giorni) per pagare tutto l’arretrato ed evitare lo sfratto. Nei casi di morosità incolpevole, è proprio la finestra in cui il contributo pubblico può arrivare e sanare il debito.</li>
+    <li><strong>Segnala il Fondo all’inquilino.</strong> Indicargli l’esistenza del Fondo comunale e la documentazione da presentare è nel tuo interesse: è lo strumento più realistico per essere pagato quando il debitore non ha reddito.</li>
+    <li><strong>Metti tutto per iscritto.</strong> Se accetti un piano di rientro o ti dichiari disponibile al differimento per favorire il contributo, formalizzalo. Un accordo scritto ti tutela e spesso è richiesto dal Comune per erogare le somme.</li>
+    <li><strong>Quantifica e documenta il credito.</strong> Tieni conto aggiornato di canoni scaduti, spese e interessi: ti serve sia per il Fondo sia per l’eventuale <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a> per la parte non coperta dal contributo.</li>
+  </ol>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Credere che la morosità incolpevole cancelli il debito.</strong> Non è così: l’inquilino resta obbligato a pagare. Il Fondo aiuta a coprire l’arretrato, ma ciò che eccede il contributo resta a suo carico e recuperabile.</li>
+    <li><strong>Aspettare troppo prima di agire.</strong> Rinviare l’intimazione «per umanità» allunga solo i tempi e aumenta il credito perso. Puoi essere comprensivo e, al contempo, avviare la procedura.</li>
+    <li><strong>Farsi giustizia da sé.</strong> Cambiare la serratura, staccare le utenze o rimuovere le cose dell’inquilino è illegittimo e ti espone a responsabilità, anche penali. L’allontanamento avviene solo con l’ufficiale giudiziario.</li>
+    <li><strong>Ignorare i bandi comunali.</strong> Molti proprietari non sanno che il Fondo esiste e perdono l’unica strada concreta per essere pagati. Informarsi presso il Comune dove si trova l’immobile è spesso decisivo.</li>
+    <li><strong>Non registrare o aver registrato male il contratto.</strong> Senza un contratto regolarmente registrato, l’inquilino non può accedere al Fondo e tu perdi anche questa tutela.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <ul>
+    <li><strong>La morosità incolpevole blocca lo sfratto?</strong><br>No. Puoi ottenere la convalida dello sfratto come sempre. Può però rallentare la fase esecutiva, con un possibile differimento del rilascio deciso dal Prefetto o una sospensione disposta dal giudice.</li>
+    <li><strong>Chi paga i canoni arretrati?</strong><br>Se l’inquilino accede al Fondo per la morosità incolpevole, il contributo pubblico viene di norma versato al proprietario per sanare la morosità. La parte eccedente resta un debito dell’inquilino.</li>
+    <li><strong>Devo essere io a fare domanda al Fondo?</strong><br>No, la domanda la presenta l’inquilino al Comune. A te conviene però segnalargli questa possibilità e collaborare, perché è la via più concreta per recuperare le somme.</li>
+    <li><strong>Quanto vale il contributo?</strong><br>Dipende dal bando regionale e dalle risorse disponibili: in genere alcune mensilità, con un tetto massimo nell’ordine di 12.000 euro per beneficiario.</li>
+    <li><strong>Se collaboro col Fondo, rinuncio allo sfratto?</strong><br>Non necessariamente. Puoi dichiararti disponibile a rinviare l’esecuzione o a un nuovo contratto per favorire l’erogazione, ma sono scelte tue da valutare caso per caso, meglio se con un legale.</li>
+  </ul>
+
+  <p>La morosità incolpevole non è un ostacolo insormontabile: gestita con metodo, può addirittura diventare l’occasione per recuperare canoni che, altrimenti, resterebbero sulla carta. La chiave è muoversi subito e sui due binari — la procedura di sfratto e l’accesso al Fondo — senza contrapporli. Se hai un inquilino moroso e vuoi capire la strada più rapida e sicura per il tuo caso, parti dalla pagina sullo <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> o <a href="/#contatti">contatta Sfratto Sicuro</a>: valutiamo con te tempi, costi e la mossa migliore per proteggere il tuo immobile.</p>
+
+  <p><em>Riferimenti normativi essenziali: art. 6, commi 5 e 6, del Decreto Legge 31 agosto 2013 n. 102 (convertito dalla Legge 28 ottobre 2013 n. 124), che istituisce il Fondo destinato agli inquilini morosi incolpevoli e prevede la graduazione del rilascio; Decreto del Ministero delle Infrastrutture e dei Trasporti 30 marzo 2016 (requisiti e criteri di accesso al Fondo); Legge di Bilancio 2026 (rifinanziamento del Fondo); artt. 658 e 663 del Codice di procedura civile (intimazione e convalida dello sfratto per morosità); art. 55 della Legge 27 luglio 1978 n. 392 (termine di grazia); riforma del processo civile di cui al D.Lgs. 10 ottobre 2022 n. 149 — cosiddetta riforma Cartabia — e relativo correttivo D.Lgs. 31 ottobre 2024 n. 164. Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata sul singolo caso.</em></p>`,
+  },
+  {
     slug: "contratto-affitto-studenti-universitari",
     title: "Contratto di affitto per studenti universitari: la guida per il proprietario",
     description: "Contratto di affitto per studenti universitari: durata, canone concordato, cedolare secca e garanzie. La guida pratica per il proprietario.",
