@@ -73,16 +73,6 @@
             background-color: #152238;
             transform: translateY(-2px);
         }
-        .whatsapp-sticky {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        .whatsapp-sticky:hover {
-            transform: scale(1.1);
-        }
         .btn-primary {
             background-color: var(--green-security);
             transition: all 0.3s ease;
@@ -123,15 +113,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ul>
                 </div>
 
-                <p class="text-dark-gray mb-6">
-                    Se la tua richiesta è particolarmente urgente, puoi chiamarci subito al numero <a href="tel:+390280898395" class="text-green-security font-semibold hover:underline">+39 02 80898395</a>.
-                </p>
-
-                <a href="https://wa.me/393291175957?text=Salve%2C%20ho%20appena%20inviato%20la%20richiesta%20dal%20sito%3A%20le%20anticipo%20citt%C3%A0%20dell%27immobile%20e%20la%20mia%20situazione." target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center justify-center px-8 py-3 rounded-lg font-bold text-white text-lg">
-                    <i class="fab fa-whatsapp mr-2"></i>
-                    Velocizza la valutazione su WhatsApp
+                <a href="tel:+390280898395" class="btn-primary inline-flex items-center justify-center px-8 py-3 rounded-lg font-bold text-white text-lg">
+                    <i class="fas fa-phone mr-2"></i>
+                    È urgente? Chiama ora: 02 80898395
                 </a>
-                <p class="text-sm text-gray-500 mt-3">Inviaci città dell'immobile e la tua situazione: prepariamo la chiamata.</p>
+                <p class="text-sm text-gray-500 mt-3">Se siamo in linea o in udienza, il centralino raccoglie la richiesta e ti ricontattiamo in giornata.</p>
 
             </div>
         </div>
@@ -176,7 +162,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="font-bold mb-4">Contatti</h4>
                         <ul class="space-y-2 text-gray-300 text-sm">
                             <li><i class="fas fa-phone mr-2" aria-hidden="true"></i><a href="tel:+390280898395" class="hover:text-gold-refined">+39 02 80898395</a></li>
-                            <li><i class="fab fa-whatsapp mr-2" aria-hidden="true"></i><a href="https://wa.me/393291175957" target="_blank" rel="noopener noreferrer" class="hover:text-gold-refined">+39 329 117 5957</a></li>
                             <li><i class="fas fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:consulenza@sfrattosicuro.it" class="hover:text-gold-refined">consulenza@sfrattosicuro.it</a></li>
                         </ul>
                     </div>
@@ -200,14 +185,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
     
-    <div class="whatsapp-sticky">
-        <a href="https://wa.me/393291175957?text=Salve%2C%20ho%20appena%20inviato%20la%20richiesta%20dal%20sito%3A%20le%20anticipo%20citt%C3%A0%20dell%27immobile%20e%20mesi%20di%20morosit%C3%A0." target="_blank" rel="noopener noreferrer" class="btn-primary flex items-center justify-center px-4 py-3 rounded-full shadow-lg text-white font-bold" aria-label="Contattaci su WhatsApp">
-            <i class="fab fa-whatsapp text-xl mr-2" aria-hidden="true"></i>
-            <span class="hidden md:inline">WhatsApp</span>
-            <span class="md:hidden text-sm">Chat</span>
-        </a>
-    </div>
-
     <!-- Tracciamento conversioni click Telefono/WhatsApp (coerente col gtag AW del sito) -->
     <!-- Label: Click Telefono=D6OGCJvvosgcEM7bpvUo (7667759003), Click WhatsApp=WnybCP2xpbYcEM7bpvUo (7630051581) -->
     <script>

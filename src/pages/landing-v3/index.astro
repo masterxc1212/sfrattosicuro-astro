@@ -136,7 +136,7 @@ const config = buildLandingPageConfig({
     <!-- Sticky CTA mobile (social proof + richiamata) -->
     <div class="landing-v3-sticky-cta">
       <a href="tel:+390280898395" class="landing-v3-sticky-btn is-call"><i class="fas fa-phone" aria-hidden="true"></i> Chiama ora</a>
-      <a href="https://wa.me/393291175957?text=Salve%2C%20devo%20liberare%20il%20mio%20immobile%20da%20un%20inquilino%3A%20vorrei%20una%20valutazione%20gratuita%20del%20mio%20caso." class="landing-v3-sticky-btn is-wa" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+      <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><i class="fas fa-pen" aria-hidden="true"></i> Lascia il numero</a>
     </div>
     <LandingOriginalFooterSection />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
@@ -150,7 +150,7 @@ const config = buildLandingPageConfig({
       (function(){
         // Fuori orario (R7 commissione 2): il tap "Chiama ora" a studio chiuso squilla a vuoto.
         // Lun-Ven 9-19, Sab 9-13 (Europe/Rome): fuori da queste fasce la sticky-call diventa
-        // un'ancora al form. WhatsApp resta invariato (si può scrivere a qualunque ora).
+        // un'ancora al form e il bottone-form dedicato si nasconde (sarebbe un doppione).
         try {
           var parts = new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', hour: 'numeric', weekday: 'short', hour12: false }).formatToParts(new Date());
           var h = parseInt((parts.find(function(p){ return p.type === 'hour'; }) || {}).value, 10);
@@ -159,11 +159,13 @@ const config = buildLandingPageConfig({
           var open = (feriale && h >= 9 && h < 19) || (wd === 'sab' && h >= 9 && h < 13);
           if (!open) {
             var call = document.querySelector('.landing-v3-sticky-btn.is-call');
+            var formBtn = document.querySelector('.landing-v3-sticky-btn.is-form');
             if (call) {
               call.setAttribute('href', '#form-rapido');
               call.innerHTML = '<i class="fas fa-phone" aria-hidden="true"></i> Chiusi ora: lascia il numero';
               call.classList.add('is-closed');
             }
+            if (formBtn) formBtn.style.display = 'none';
           }
         } catch (e) {}
       })();

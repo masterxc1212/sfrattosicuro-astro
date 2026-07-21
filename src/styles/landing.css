@@ -359,7 +359,7 @@ form button[type="submit"] i,
   background: var(--blue-navy);
 }
 .landing-v3-sticky-actions { display: flex; align-items: center; gap: .5rem; }
-.landing-v3-sticky-btn.is-wa { background: #25D366 !important; }
+.landing-v3-sticky-btn.is-form { background: #2F9E57 !important; }
 .landing-v3-sticky-btn.is-call { background: var(--blue-navy) !important; padding: .6rem .8rem; }
 .landing-v3-sticky-btn i { font-size: 1rem; }
 @media (max-width: 900px) {
@@ -480,11 +480,11 @@ form button[type="submit"] i,
 .landing-v3-price-points i { color: #7CE3A2; margin-top: .22rem; flex-shrink: 0; width: 1.1rem; text-align: center; }
 .landing-v3-price-cta { margin-top: 1.7rem; display: flex; flex-direction: column; gap: .7rem; }
 .landing-v3-price-cta .btn-primary { text-align: center; }
-.landing-v3-price-wa { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .85rem 1rem; border-radius: .6rem; border: 1px solid rgba(37,211,102,.65); background: rgba(37,211,102,.14); color: #fff !important; font-weight: 600; text-decoration: none; }
-.landing-v3-price-wa i { font-size: 1.15rem; }
+.landing-v3-price-call { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .85rem 1rem; border-radius: .6rem; border: 1.5px solid rgba(255,255,255,.8); background: rgba(255,255,255,.1); color: #fff !important; font-weight: 600; text-decoration: none; }
+.landing-v3-price-call i { font-size: 1.05rem; }
 @media (min-width: 640px) {
   .landing-v3-price-cta { flex-direction: row; }
-  .landing-v3-price-cta .btn-primary, .landing-v3-price-wa { flex: 1; }
+  .landing-v3-price-cta .btn-primary, .landing-v3-price-call { flex: 1; }
 }
 
 /* ==========================================================================
