@@ -129,13 +129,13 @@ const { hero = landingOriginal.hero } = Astro.props;
               <input type="hidden" name="matchtype" value="">
               <input type="hidden" name="redirect_url" value="/grazie.html">
 
-              <button type="submit" class="form-submit" aria-label="Richiedi una consulenza gratuita">
-                <i class="fas fa-phone" aria-hidden="true"></i>
+              <button type="submit" class="form-submit" aria-label="Invia la richiesta di consulenza gratuita">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 <span>{hero.formSubmitLabel}</span>
               </button>
 
               {hero.formTrustLine && (
-                <p class="hero-form-hours">Lun–Ven 9:00–19:00 · Sab 9:00–13:00</p>
+                <p class="hero-form-hours">Ti richiamiamo entro 2 ore lavorative · Lun–Ven 9–19 · Sab 9–13</p>
               )}
 
               {hero.formTrustLine && (

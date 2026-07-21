@@ -154,7 +154,7 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       ],
       formTitle: 'Verifica se puoi partire',
       formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
-      formSubmitLabel: 'Ti richiamiamo entro 2 ore lavorative',
+      formSubmitLabel: 'Invia la richiesta',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
       formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
