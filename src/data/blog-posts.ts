@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "vendere-casa-con-inquilino",
+    title: "Vendere casa con inquilino: cosa succede al contratto di affitto",
+    description: "Vendere casa con inquilino: il contratto continua, chi incassa i canoni, quando c'e prelazione e come vendere l'immobile libero. Guida per il proprietario.",
+    excerpt: "Puoi vendere un immobile affittato senza il permesso dell'inquilino, ma il contratto di locazione prosegue con il nuovo proprietario. Guida pratica per il locatore: opponibilita del contratto, diritto di prelazione, come vendere libero, checklist prima del rogito ed errori da evitare.",
+    lead: "Vendere un appartamento con l'inquilino dentro e legittimo e non richiede il suo consenso. Il punto delicato e capire cosa succede al contratto dopo il rogito, chi incassa i canoni e cosa puoi fare se invece vuoi vendere l'immobile libero.",
+    publishedAt: "2026-07-21",
+    updatedAt: "2026-07-21",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-07-21. Keyword: vendere casa con inquilino, vol 70, KD 0 (DataForSEO).",
+    html: `  <p>Hai un appartamento affittato e vuoi metterlo in vendita, ma ti chiedi se puoi farlo con l'inquilino ancora dentro. La risposta breve è sì: <strong>vendere casa con inquilino</strong> è legittimo e non serve il permesso del conduttore (è il termine giuridico per «inquilino»). Il punto delicato è un altro: cosa succede al contratto di affitto dopo il rogito, cioè l'atto notarile di vendita, chi incassa i canoni e cosa puoi fare se invece vuoi vendere l'immobile libero. Vediamolo dalla parte del proprietario.</p>
+
+  <h2>Vendere casa con inquilino: il contratto di affitto continua</h2>
+  <p>La vendita non cancella la locazione. In linguaggio tecnico si dice che il contratto è <strong>opponibile</strong> al nuovo proprietario: chi compra si trova l'inquilino in casa e deve rispettare il contratto fino alla scadenza, alle stesse condizioni. Subentra al venditore in tutti i diritti e gli obblighi: incassa i canoni, ma si fa carico delle manutenzioni a carico del locatore (il proprietario che affitta) e restituisce il deposito cauzionale alla riconsegna.</p>
+  <p>Serve però una condizione: il contratto deve avere <strong>data certa anteriore</strong> alla vendita, cioè una prova, valida verso i terzi, che esisteva già prima del rogito. Per una locazione abitativa la data certa si ottiene con la <strong>registrazione all'Agenzia delle Entrate</strong>, comunque obbligatoria salvo i contratti che non superano trenta giorni complessivi nell'anno con lo stesso conduttore. Un contratto registrato prima dell'atto è quindi opponibile all'acquirente anche senza trascrizione nei registri immobiliari; solo per le locazioni di durata <strong>superiore a nove anni</strong> la trascrizione è necessaria, altrimenti l'acquirente le rispetta soltanto entro il novennio.</p>
+  <p>Buona notizia per chi teme il contrario: una clausola che preveda lo scioglimento automatico dell'affitto in caso di vendita è <strong>nulla</strong> e non produce effetti.</p>
+
+  <h3>E se il contratto non è opponibile?</h3>
+  <p>Se il contratto è in nero, non registrato o comunque privo di data certa anteriore, l'acquirente non è vincolato e può chiedere il rilascio senza attendere la scadenza, rispettando il termine di preavviso. Sembra un vantaggio, ma per te è un problema: il contratto abitativo non registrato è <strong>nullo</strong>, l'affitto non dichiarato ti espone a sanzioni fiscali e a contestazioni sul canone, e verso l'inquilino rimani tu il responsabile dei danni. Non è mai una scorciatoia conveniente.</p>
+
+  <h2>L'inquilino ha diritto di prelazione se vendi?</h2>
+  <p>È la domanda più frequente e quella su cui circolano più equivoci. Per le <strong>abitazioni</strong>, di regola l'inquilino <strong>non ha</strong> alcuna prelazione sull'acquisto: puoi vendere a chi vuoi e al prezzo che vuoi. Fanno eccezione tre casi:</p>
+  <ul>
+    <li><strong>Immobili a uso diverso dall'abitativo</strong> destinati ad attività con contatto diretto con il pubblico (negozi, bar, esercizi aperti alla clientela): qui la legge riconosce la prelazione, con obbligo di comunicare l'offerta tramite ufficiale giudiziario e possibilità per il conduttore di <strong>riscattare</strong> l'immobile dall'acquirente, cioè di prenderne il posto, se non lo fai. Restano esclusi gli studi professionali e le attività senza contatto col pubblico, così come le vendite in blocco dell'intero edificio e quelle tra coniugi o parenti entro il secondo grado.</li>
+    <li><strong>Diniego di rinnovo alla prima scadenza perché vuoi vendere</strong> (lo vediamo tra poco): in quel caso devi offrire prima l'immobile al tuo inquilino.</li>
+    <li><strong>Clausola contrattuale</strong>: se nel contratto avete pattuito una prelazione a suo favore, va rispettata.</li>
+  </ul>
+  <p>Se rientri in questi casi, approfondisci il <a href="/blog/diritto-di-prelazione-inquilino/">diritto di prelazione dell'inquilino</a> prima di firmare qualsiasi preliminare (il compromesso).</p>
+
+  <h2>Vendere l'immobile libero: le tre strade</h2>
+  <p>Un immobile venduto libero in genere si vende meglio e più in fretta. Se è il tuo obiettivo, hai tre possibilità.</p>
+  <ul>
+    <li><strong>Accordo con l'inquilino</strong>. La via più rapida e sicura: un accordo scritto che fissa la data di riconsegna e regola canoni, spese e deposito cauzionale, con comunicazione della chiusura anticipata all'Agenzia delle Entrate. Spesso funziona riconoscendo un contributo per il trasloco, che di solito costa meno di mesi di attesa o di una causa.</li>
+    <li><strong>Disdetta alla prima scadenza per vendita</strong>. Per i contratti abitativi liberi (4+4) e a canone concordato (3+2) puoi negare il rinnovo alla prima scadenza se intendi vendere a terzi, ma solo se <strong>non possiedi altri immobili a uso abitativo</strong> oltre a quello in cui abiti. La comunicazione va inviata con raccomandata, almeno <strong>sei mesi prima</strong>, indicando il motivo a pena di nullità; l'inquilino ha la prelazione. Se poi non vendi entro <strong>dodici mesi</strong> da quando hai riavuto la disponibilità dell'immobile, il conduttore può scegliere tra il ripristino del contratto e un risarcimento che la legge fissa in misura <strong>non inferiore a trentasei mensilità</strong> dell'ultimo canone percepito.</li>
+    <li><strong>Attendere la scadenza naturale</strong> e inviare regolare disdetta nei termini: trovi tutto nella guida alla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del locatore</a>.</li>
+  </ul>
+  <p>Una precisazione importante: <strong>la vendita non è di per sé un motivo di sfratto</strong>. Non puoi mandare via l'inquilino perché hai trovato un acquirente. Lo sfratto resta lo strumento per la morosità o per la finita locazione, cioè la scadenza del contratto.</p>
+
+  <h2>Se l'inquilino non paga, meglio prima liberare</h2>
+  <p>Vendere un immobile occupato da un inquilino moroso è quasi sempre un cattivo affare: il prezzo tende ad abbassarsi sensibilmente e molti acquirenti si tirano indietro. Con canoni arretrati la scelta ragionevole è avviare l'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a> e vendere dopo il rilascio, oppure recuperare almeno il credito prima del rogito. Se vendi a causa già iniziata il giudizio non si ferma, ma nell'atto va scritto chiaramente chi incassa gli arretrati, chi prosegue la causa e chi ne sopporta i costi.</p>
+
+  <h2>Checklist pratica prima del rogito</h2>
+  <ul>
+    <li><strong>Recupera il contratto registrato</strong> e la ricevuta di registrazione: servono al notaio e all'acquirente come prova della data certa.</li>
+    <li><strong>Scrivi nell'atto</strong> l'esistenza della locazione, la scadenza, il canone e l'eventuale morosità in corso. Tacere l'occupazione è la causa più frequente di lite dopo la vendita.</li>
+    <li><strong>Trasferisci il deposito cauzionale</strong> all'acquirente, dandone atto per iscritto: sarà lui a doverlo restituire alla riconsegna. Nell'occasione chiarisci la posizione degli interessi legali, che per legge vanno corrisposti al conduttore alla fine di ogni anno.</li>
+    <li><strong>Consegna la documentazione</strong>: storico dei pagamenti, comunicazioni scambiate con l'inquilino, verbale di consegna iniziale e situazione delle spese condominiali.</li>
+    <li><strong>Avvisa l'inquilino per iscritto</strong> del cambio di proprietario, indicando a chi versare i canoni dal rogito in poi.</li>
+    <li><strong>Sistema la parte fiscale</strong>: la cedolare secca, cioè il regime di tassazione sostitutiva sui canoni, non passa automaticamente. Il subentro va comunicato all'Agenzia delle Entrate con il <strong>modello RLI</strong> e il nuovo proprietario, se vuole, esercita l'opzione entro trenta giorni dal subentro.</li>
+  </ul>
+
+  <h2>Gli errori più comuni</h2>
+  <ul>
+    <li><strong>Promettere all'acquirente l'immobile libero</strong> senza avere in mano un accordo scritto con l'inquilino: se poi non se ne va, ne rispondi tu.</li>
+    <li><strong>Gestire male le visite</strong>. Il conduttore non può opporre un rifiuto ingiustificato alle visite finalizzate alla vendita, e un rifiuto sistematico può costituire inadempimento. Il diritto va però esercitato con buona fede: concorda giorni e orari per iscritto e con ragionevole preavviso, senza compromettere il pacifico godimento dell'immobile.</li>
+    <li><strong>Non comunicare la vendita</strong>, generando mesi di pagamenti sul conto sbagliato e discussioni sulla morosità.</li>
+    <li><strong>Usare la disdetta per vendita senza averne i requisiti</strong>: se possiedi altri immobili abitativi quel motivo non regge e l'inquilino può contestarlo.</li>
+    <li><strong>Dimenticare il deposito cauzionale</strong>, che qualcuno dovrà pur restituire: se non è stato trasferito, la lite tra venditore e acquirente è quasi certa.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Posso vendere casa se l'inquilino non è d'accordo?</h3>
+  <p>Sì: il suo consenso non serve mai. Se però si tratta di un immobile commerciale con contatto diretto col pubblico devi prima offrirgli formalmente l'immobile, altrimenti può riscattarlo dall'acquirente. Se invece la prelazione è prevista solo da una clausola del contratto, violarla non gli consente il riscatto ma ti espone a una richiesta di risarcimento.</p>
+
+  <h3>Il nuovo proprietario può mandare via l'inquilino subito?</h3>
+  <p>No, se il contratto era registrato prima della vendita. Dovrà rispettarlo fino alla scadenza e, per non rinnovarlo, seguire le stesse regole e gli stessi termini che valevano per te.</p>
+
+  <h3>A chi paga l'affitto l'inquilino dopo il rogito?</h3>
+  <p>Al nuovo proprietario, dal momento in cui viene a conoscenza della vendita, anche senza una comunicazione formale. Fino ad allora il pagamento fatto in buona fede al vecchio proprietario lo libera: per evitare equivoci, la comunicazione scritta con i nuovi riferimenti va fatta subito.</p>
+
+  <h3>Devo dire all'acquirente che c'è un inquilino moroso?</h3>
+  <p>Sì. Nascondere una morosità in corso espone a contestazioni e a richieste di risarcimento. Dichiararla nell'atto, con l'importo e lo stato di eventuali procedure, è la scelta corretta e anche la più conveniente.</p>
+
+  <h2>In sintesi</h2>
+  <p>Vendere un immobile affittato si può, senza chiedere il permesso all'inquilino e nel rispetto degli eventuali diritti di prelazione. La differenza tra un'operazione lineare e mesi di problemi la fanno tre cose: un contratto registrato e ben documentato, chiarezza totale nell'atto sull'occupazione in corso, e una scelta consapevole tra vendere occupato oppure liberare prima l'immobile. Se l'inquilino è moroso o la situazione è ingarbugliata, conviene sistemare la locazione prima di pubblicare l'annuncio, non dopo.</p>
+  <p>Se hai un immobile locato da vendere e vuoi capire quale strada è più rapida nel tuo caso, il team di Sfratto Sicuro può esaminare il contratto e indicarti le opzioni concrete dalla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+  <p><em>Riferimenti normativi: artt. 1599, 1600 e 1602 del codice civile (opponibilità della locazione al terzo acquirente e subentro dell'acquirente nei diritti e negli obblighi del contratto); art. 2643 n. 8 del codice civile (trascrizione delle locazioni ultranovennali); art. 7 della legge 27 luglio 1978 n. 392 (nullità della clausola di scioglimento del contratto in caso di alienazione della cosa locata); art. 11 della legge n. 392/1978 (deposito cauzionale e interessi legali); artt. 38, 39 e 41 della legge n. 392/1978, con i limiti dell'art. 35 (prelazione e riscatto per gli immobili a uso diverso); art. 3, comma 1, lettera g) e commi 3 e 5 della legge 9 dicembre 1998 n. 431 (diniego di rinnovo alla prima scadenza per vendita, prelazione del conduttore e conseguenze del mancato utilizzo); art. 1, comma 346, della legge 30 dicembre 2004 n. 311 (nullità del contratto non registrato); Cass. civ., sez. III, 17 settembre 1981 n. 5147 sulle visite all'immobile locato.</em></p>
+  <p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>
+`,
+  },
+  {
     slug: "licenza-per-finita-locazione",
     title: "Licenza per finita locazione: cos'è e differenza con lo sfratto",
     description: "Licenza per finita locazione: cos'è, in cosa differisce dallo sfratto per finita locazione e come il proprietario riottiene l'immobile alla scadenza.",
