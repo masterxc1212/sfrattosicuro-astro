@@ -16,6 +16,72 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-con-figli-minori",
+    title: "Sfratto con figli minori: il proprietario può liberare l'immobile?",
+    description: "Sfratto con figli minori: la presenza di minorenni non blocca la procedura ma può allungare i tempi. Guida pratica per il proprietario.",
+    excerpt: "La presenza di figli minori non impedisce lo sfratto per morosità o finita locazione: convalida, titolo esecutivo ed esecuzione proseguono. Può però allungare i tempi, perché il giudice e l'ufficiale giudiziario graduano la data di rilascio a tutela dei minori. Guida pratica per il proprietario: cosa cambia davvero, passi da seguire ed errori da evitare.",
+    lead: "Quando nell'immobile affittato vive una famiglia con bambini, molti proprietari temono di non poter più rientrare in possesso della casa. In realtà lo sfratto con minorenni si può fare: cambiano i tempi, non il diritto del proprietario.",
+    publishedAt: "2026-07-22",
+    updatedAt: "2026-07-22",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-07-22. Keyword: sfratto con minorenni, vol 260, KD 0 (DataForSEO).",
+    html: `
+<p>Molti proprietari, quando scoprono che nell'appartamento affittato vive una famiglia con bambini, si bloccano davanti a una domanda: <strong>si può fare lo sfratto se ci sono figli minori?</strong> La paura è che la presenza di minorenni renda impossibile riprendere il proprio immobile. La risposta, in sintesi, è che <strong>lo sfratto con minorenni si può fare</strong>: la presenza di figli minori non cancella né blocca la procedura. Può però allungare i tempi, perché il giudice e l'ufficiale giudiziario tengono conto della fragilità del nucleo familiare. Questa guida spiega, dalla parte del proprietario, cosa cambia davvero, quali passi seguire e quali errori evitare.</p>
+
+<h2>Lo sfratto con figli minori si può fare: nessun blocco automatico</h2>
+<p>Partiamo dal punto che genera più confusione. Nel nostro ordinamento <strong>non esiste una norma che vieti lo sfratto quando in casa ci sono bambini</strong>. La presenza di minori non è una causa che impedisce la convalida dello sfratto, né la formazione del titolo esecutivo (il documento che consente di procedere al rilascio), né l'esecuzione vera e propria dello sgombero. Il proprietario che ha un valido motivo, per morosità (mancato pagamento del canone) o per finita locazione (contratto scaduto e disdettato), conserva pienamente il diritto di riavere il suo immobile.</p>
+<p>La presenza di figli minori, quindi, <strong>non è un motivo di opposizione</strong> che l'inquilino possa far valere per fermare lo sfratto. È invece un elemento che il giudice e, più avanti, l'ufficiale giudiziario possono considerare per <strong>graduare i tempi</strong>: cioè per concedere qualche settimana o mese in più prima del rilascio, così da tutelare i minori coinvolti. In pratica: la procedura arriva in fondo, ma può richiedere più pazienza.</p>
+
+<h2>Cosa cambia in concreto: i tempi, non il risultato</h2>
+<p>La differenza tra uno sfratto "ordinario" e uno con minori sta quasi tutta nella tempistica. Ci sono tre momenti in cui la fragilità del nucleo familiare può pesare.</p>
+
+<h3>1. Il termine di grazia (solo per la morosità)</h3>
+<p>Nello sfratto per morosità, alla prima udienza l'inquilino può chiedere il cosiddetto <strong>termine di grazia</strong>: un periodo che il giudice può concedere per pagare tutto l'arretrato ed evitare così la risoluzione del contratto. Di norma è fino a 90 giorni, ma sale <strong>fino a 120 giorni</strong> quando la morosità dipende da comprovate difficoltà economiche, come disoccupazione o malattia. In un nucleo con figli minori il giudice è spesso più propenso a riconoscere queste difficoltà e a concedere il termine più lungo. Attenzione però: se l'inquilino paga davvero tutto entro il termine, lo sfratto si ferma perché il contratto non si risolve. È un rischio che il proprietario deve mettere in conto. Ne parliamo in dettaglio nella guida al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto</a>.</p>
+
+<h3>2. La data di rilascio fissata dal giudice</h3>
+<p>Quando dispone il rilascio, il giudice non ordina di liberare l'immobile "da subito": <strong>fissa una data per l'esecuzione</strong>. Per legge questa data può arrivare fino a un massimo di sei mesi dal provvedimento e, in casi eccezionali, fino a dodici mesi. Nel decidere, il giudice deve motivare confrontando le <strong>condizioni dell'inquilino con quelle del proprietario</strong> e le ragioni dello sfratto. La presenza di figli minori pesa proprio qui: rientra tra le condizioni che possono spingere il giudice verso un termine più ampio. Non è automatico, ma è realistico attendersi qualche mese in più rispetto a un inquilino senza vincoli familiari.</p>
+
+<h3>3. L'esecuzione con l'ufficiale giudiziario</h3>
+<p>Superata la data fissata, se l'inquilino non se ne va, il proprietario avvia l'<strong>esecuzione per rilascio</strong>. L'esecuzione inizia con un avviso (spesso chiamato preavviso di rilascio) con cui l'ufficiale giudiziario comunica, almeno dieci giorni prima, il giorno e l'ora in cui si presenterà. Anche in questa fase la presenza di minori o di persone malate può portare l'ufficiale giudiziario a concedere <strong>brevi rinvii</strong> per motivi sociali, o a chiedere più tempo per organizzare l'accesso. Se l'inquilino continua a non lasciare l'immobile, si ricorre all'<strong>assistenza della forza pubblica</strong>, la cui concessione è coordinata dal Prefetto secondo criteri generali che possono dare una corsia più cauta alle famiglie con minori, anziani o disabili. Tutti i passaggi dell'esecuzione sono spiegati nella guida allo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo e rilascio dell'immobile</a>.</p>
+
+<h2>I passi pratici per il proprietario</h2>
+<p>Se nel tuo immobile vive una famiglia con bambini e devi procedere, ecco come muoverti in modo ordinato ed efficace.</p>
+<ul>
+<li><strong>Non cambiare atteggiamento per la presenza dei minori.</strong> Procedi con l'intimazione di sfratto come faresti in ogni altro caso: la procedura è la stessa.</li>
+<li><strong>Documenta tutto.</strong> Conserva contratto, ricevute mancanti, solleciti scritti e ogni comunicazione. Un fascicolo ordinato aiuta a ottenere una convalida rapida e a difenderti da richieste di rinvio pretestuose.</li>
+<li><strong>Metti in conto tempi più lunghi.</strong> Programma i tuoi impegni (una vendita, un nuovo affitto) tenendo conto che la data di rilascio può slittare di alcuni mesi.</li>
+<li><strong>Chiedi termini ragionevoli ma contenuti.</strong> Tramite il tuo avvocato puoi rappresentare al giudice le tue esigenze (ad esempio un mutuo da pagare) per bilanciare la richiesta di tempo dell'inquilino.</li>
+<li><strong>Valuta una soluzione concordata.</strong> A volte un accordo con un termine certo di rilascio, magari con la rinuncia a parte degli arretrati, libera l'immobile prima di un'esecuzione forzata.</li>
+</ul>
+
+<h2>Gli errori da evitare</h2>
+<p>Alcuni comportamenti, dettati dall'esasperazione, si ritorcono contro il proprietario.</p>
+<ul>
+<li><strong>Pensare di non poter sfrattare.</strong> È l'equivoco più diffuso: la presenza di minori non toglie il tuo diritto. Rinunciare significa solo perdere altri mesi di canone.</li>
+<li><strong>Farsi giustizia da soli.</strong> Cambiare la serratura, staccare luce o acqua, portare via i mobili o impedire l'accesso all'inquilino è vietato e può costituire reato. Lo sfratto passa sempre e solo dal giudice e dall'ufficiale giudiziario.</li>
+<li><strong>Minacciare o esercitare pressioni.</strong> Oltre a essere illecite, queste condotte possono ritorcersi in giudizio e rallentare, non velocizzare, il rilascio.</li>
+<li><strong>Muoversi in ritardo.</strong> Più si aspetta a intimare lo sfratto, più cresce l'arretrato e più difficile diventa recuperarlo. Agire per tempo è la vera tutela.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Se ci sono figli minori l'inquilino può bloccare lo sfratto?</h3>
+<p>No. La presenza di minori non è un motivo che permette di opporsi allo sfratto. Può portare il giudice a concedere termini più lunghi per il rilascio, ma non ferma la procedura.</p>
+<h3>Quanto tempo in più può servire con dei bambini in casa?</h3>
+<p>Dipende dal singolo caso. Il giudice fissa la data di esecuzione entro un massimo di sei mesi (in casi eccezionali dodici) dal provvedimento, valutando le condizioni delle due parti. Un nucleo con minori tende a ottenere termini verso la fascia più alta.</p>
+<h3>L'ufficiale giudiziario può rifiutarsi di eseguire lo sfratto per la presenza di minori?</h3>
+<p>Non può rifiutarsi di eseguire un titolo valido. Può concedere brevi rinvii per motivi sociali o coordinarsi con la forza pubblica e i servizi del territorio, ma l'esecuzione resta dovuta.</p>
+<h3>Devo avvisare i servizi sociali?</h3>
+<p>Non spetta al proprietario attivarli, ma è frequente che, in presenza di minori, il tribunale o l'ufficiale giudiziario coinvolga i servizi sociali del Comune per accompagnare il nucleo verso una nuova sistemazione. È un passaggio che tutela i minori e non pregiudica il tuo diritto.</p>
+
+<h2>In conclusione</h2>
+<p>Lo sfratto con figli minori richiede soprattutto pazienza: il diritto del proprietario a riavere l'immobile resta intatto, ma i tempi possono allungarsi anche di diversi mesi, perché il giudice e l'ufficiale giudiziario li graduano per proteggere i minori. La strada corretta è una sola: procedere per via legale, in modo ordinato e senza scorciatoie fai-da-te. Se vuoi capire come impostare al meglio la tua pratica, puoi affidarti al servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro per una valutazione del tuo caso.</p>
+<p>I riferimenti normativi di questa guida sono gli articoli 657-664 del codice di procedura civile (intimazione e convalida dello sfratto), l'articolo 55 della legge n. 392/1978 (termine di grazia per la morosità), l'articolo 56 della stessa legge (modalità e data del rilascio) e l'articolo 608 del codice di procedura civile (esecuzione per rilascio con l'ufficiale giudiziario), nel quadro aggiornato dalla riforma Cartabia (D.Lgs. n. 149/2022) e dal suo correttivo (D.Lgs. n. 164/2024).</p>
+<p><em>Contenuto a scopo informativo, aggiornato a luglio 2026; non sostituisce una consulenza legale sul caso concreto.</em></p>
+`,
+  },
+
+  {
     slug: "vendere-casa-con-inquilino",
     title: "Vendere casa con inquilino: cosa succede al contratto di affitto",
     description: "Vendere casa con inquilino: il contratto continua, chi incassa i canoni, quando c'e prelazione e come vendere l'immobile libero. Guida per il proprietario.",
