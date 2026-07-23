@@ -16,6 +16,72 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'contratto-locazione-uso-foresteria',
+    title: 'Contratto di locazione a uso foresteria: la guida per il proprietario',
+    description: 'Contratto di locazione a uso foresteria: cos\'è, durata libera, chi può firmarlo e il nodo cedolare secca. Guida pratica per il proprietario.',
+    excerpt: 'Il contratto a uso foresteria è un affitto in cui l\'inquilino è un\'azienda che alloggia i propri dipendenti: durata libera, niente prelazione, più controllo per il locatore. Guida pratica per il proprietario: cos\'è, chi può firmarlo, il nodo cedolare secca ed errori da evitare.',
+    lead: 'Se un\'azienda vuole affittare il tuo immobile per i propri dipendenti in trasferta, il contratto a uso foresteria offre durate flessibili e meno vincoli rispetto all\'affitto abitativo classico. Ma va impostato bene per non farlo riqualificare dal giudice.',
+    publishedAt: '2026-07-23',
+    updatedAt: '2026-07-23',
+    category: 'Locazioni',
+    readingTime: '6 min',
+    sourceNote: 'Generato automaticamente 2026-07-23. Keyword: contratto uso foresteria, vol 720, KD 0 (DataForSEO).',
+    html: `
+<p>Se possiedi un appartamento e ti ha contattato un'azienda che vuole affittarlo per alloggiare i propri dipendenti in trasferta, ti sei probabilmente imbattuto nel <strong>contratto di locazione a uso foresteria</strong>. È uno strumento poco conosciuto dai proprietari, ma in certe situazioni molto vantaggioso: consente durate flessibili e libera il locatore da diversi vincoli tipici degli affitti abitativi. Questa guida ti spiega, in parole semplici, cos'è, quando puoi usarlo, quali vantaggi offre e — soprattutto — quali errori evitare per non ritrovarti con un contratto riqualificato dal giudice.</p>
+
+<h2>Cos'è il contratto di locazione a uso foresteria</h2>
+<p>Il <strong>contratto a uso foresteria</strong> è un affitto di un immobile abitativo in cui l'inquilino (il conduttore) non è un privato che ci va a vivere per sé, ma un'<strong>azienda o un soggetto che agisce nell'esercizio di un'attività d'impresa o di lavoro autonomo</strong>. L'immobile viene destinato ad alloggio dei suoi dipendenti, collaboratori o ospiti — per esempio manager in trasferta, tecnici distaccati su un cantiere, personale assunto da un'altra città.</p>
+<p>La differenza chiave rispetto a un normale affitto è proprio <em>chi</em> firma come inquilino: non una persona fisica per esigenze abitative proprie, ma un'impresa per esigenze aziendali. Questo cambia le regole applicabili. La locazione a uso foresteria, infatti, resta <strong>fuori dal campo di applicazione della legge sulle locazioni abitative</strong> (la Legge 431 del 1998, quella che impone durate rigide come il 4+4 o il 3+2) ed è regolata soltanto dalle norme generali del Codice Civile.</p>
+
+<h2>Chi può essere il conduttore</h2>
+<p>Perché il contratto sia davvero "a uso foresteria" — e non una normale locazione abitativa travestita — il conduttore deve essere un soggetto qualificato: una società, una cooperativa, un ente o comunque un soggetto che agisce nell'esercizio della propria impresa o professione. Non può essere un privato cittadino che affitta per andarci a vivere.</p>
+<p>La logica è questa: la legge sugli affitti abitativi tutela chi prende casa <em>per abitarci</em>. Nel contratto a uso foresteria, invece, l'inquilino formale (l'azienda) non usa l'immobile come propria abitazione, ma come strumento della propria attività. Per questo il rapporto viene trattato in modo diverso, con maggiore libertà per entrambe le parti.</p>
+
+<h2>Il vantaggio principale: la durata è libera</h2>
+<p>È il motivo per cui molti proprietari scelgono questa formula. Non essendo soggetto alla Legge 431/1998, il contratto a uso foresteria <strong>non deve rispettare le durate minime</strong> del 4+4 o del 3+2. Locatore e azienda possono concordare liberamente la durata: sei mesi, un anno, due anni, il tempo di una trasferta. L'unico limite è quello generale previsto dal Codice Civile per tutte le locazioni, cioè un massimo di <strong>30 anni</strong>.</p>
+<p>Ci sono altri due aspetti favorevoli per il proprietario. Il primo: non si applica il <strong>diritto di prelazione</strong> del conduttore in caso di vendita, che invece grava sugli affitti ordinari. Il secondo: alla scadenza concordata il contratto termina secondo quanto pattuito, senza i meccanismi di rinnovo automatico e di forte tutela del conduttore tipici della locazione abitativa. In pratica, hai un controllo molto maggiore sui tempi di rientro in possesso dell'immobile.</p>
+
+<h2>Il nodo fiscale: registrazione e cedolare secca</h2>
+<p>Come ogni contratto di locazione di durata superiore a 30 giorni, anche quello a uso foresteria va <strong>registrato all'Agenzia delle Entrate entro 30 giorni</strong> dalla firma. In assenza di regimi agevolati si paga l'<strong>imposta di registro pari al 2% del canone annuo</strong> (con un minimo di 67 euro), di norma divisa a metà tra proprietario e azienda, oltre all'imposta di bollo. Se vuoi capire meglio la procedura, trovi i passaggi nella nostra guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+<p>Il punto più delicato riguarda la <strong>cedolare secca</strong>, cioè la tassazione agevolata con aliquota fissa che molti proprietari usano al posto dell'IRPEF ordinaria (l'imposta sul reddito delle persone fisiche). Qui la situazione è <strong>incerta e va affrontata con prudenza</strong>: l'Agenzia delle Entrate, con la Circolare 26/E del 2011, esclude la cedolare secca quando l'inquilino è un'impresa, e in concreto il portale di registrazione telematica (procedura RLI) non permette di selezionare l'opzione per i contratti a uso foresteria. La Corte di Cassazione, con diverse pronunce recenti, ha invece affermato che la cedolare secca dovrebbe essere ammessa anche quando il conduttore agisce nell'esercizio d'impresa, purché l'immobile sia a uso abitativo. Il contrasto è tuttora aperto ed è stato rimesso alle Sezioni Unite.</p>
+<p>Traduzione pratica per il proprietario: <strong>non dare per scontato di poter applicare la cedolare secca</strong> su un contratto a uso foresteria e, prima di firmare, fatti valutare la posizione da un professionista. Per un confronto con l'affitto abitativo classico puoi leggere la nostra guida sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</p>
+
+<h2>Passi pratici per il proprietario</h2>
+<ul>
+<li><strong>Verifica il conduttore.</strong> Assicurati che l'inquilino sia effettivamente una società o un soggetto d'impresa e fatti indicare per iscritto che l'immobile serve ad alloggiare dipendenti o collaboratori.</li>
+<li><strong>Scrivi la causale nel contratto.</strong> Indica in modo chiaro che si tratta di locazione "a uso foresteria" e che l'immobile è destinato ad esigenze abitative del personale dell'azienda.</li>
+<li><strong>Definisci la durata reale.</strong> Concorda una durata coerente con l'esigenza aziendale, senza limiti minimi di legge ma nel tetto dei 30 anni.</li>
+<li><strong>Prevedi garanzie.</strong> Deposito cauzionale, individuazione dei soggetti autorizzati ad abitare l'immobile, regole su utenze e riconsegna.</li>
+<li><strong>Registra nei termini.</strong> Deposita il contratto entro 30 giorni e valuta con un professionista il regime fiscale più adatto.</li>
+</ul>
+
+<h2>Gli errori da evitare</h2>
+<p>Il rischio più serio è usare il contratto a uso foresteria per <strong>mascherare una normale locazione abitativa</strong>. Se firmi come inquilino un privato che ci va a vivere per conto proprio, ma etichetti il contratto come "foresteria" solo per aggirare la durata minima del 4+4, il giudice può <strong>riqualificare il rapporto</strong>: in quel caso si applicano comunque le durate e le tutele della Legge 431/1998, e tu ti ritrovi legato al contratto per anni, con l'effetto opposto a quello che cercavi.</p>
+<p>Altri errori frequenti: non farsi indicare a chi verrà effettivamente destinato l'alloggio; dare per scontata la cedolare secca; dimenticare di registrare il contratto nei termini (con sanzioni e rischio di nullità sostanziale del rapporto); non disciplinare la riconsegna dell'immobile e lo stato dei luoghi, punto spesso trascurato che genera contestazioni a fine locazione.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Un privato può firmare un contratto a uso foresteria come inquilino?</h3>
+<p>No. Il conduttore deve essere un'azienda o un soggetto che agisce nell'esercizio di un'impresa o professione e destina l'immobile ad alloggio del proprio personale. Se l'inquilino è un privato per esigenze abitative proprie, il contratto non è a uso foresteria.</p>
+<h3>Quanto può durare?</h3>
+<p>La durata è libera, perché non si applicano i minimi di legge del 4+4 o del 3+2. Il solo limite è il tetto generale di 30 anni previsto dal Codice Civile.</p>
+<h3>Posso applicare la cedolare secca?</h3>
+<p>È una questione controversa. L'Agenzia delle Entrate la esclude quando l'inquilino è un'impresa, mentre la Cassazione l'ha ammessa in più occasioni; la materia è ancora aperta. Meglio non darla per scontata e farsi assistere prima di firmare.</p>
+<h3>L'azienda ha diritto di prelazione se vendo l'immobile?</h3>
+<p>No. Nella locazione a uso foresteria non si applica il diritto di prelazione del conduttore, che invece riguarda gli affitti abitativi ordinari.</p>
+<h3>Cosa succede se lo uso per aggirare il 4+4?</h3>
+<p>Se il contratto è in realtà una comune locazione abitativa a un privato, il giudice può riqualificarlo e applicare le durate minime e le tutele della Legge 431/1998, vanificando il vantaggio della durata breve.</p>
+
+<h2>In sintesi</h2>
+<p>Il contratto a uso foresteria è un'ottima soluzione quando dall'altra parte c'è davvero un'azienda che deve alloggiare il proprio personale: ti dà durata flessibile, niente prelazione e maggiore controllo sui tempi di rientro. Va però impostato correttamente, con un conduttore qualificato e una causale chiara, e va gestito con attenzione sul fronte fiscale, dove il tema della cedolare secca è tutt'altro che pacifico.</p>
+<p>Se vuoi affittare a un'azienda in sicurezza o hai un dubbio su come inquadrare il tuo contratto, <a href="/servizi/tutela-proprietario/">Sfratto Sicuro affianca i proprietari</a> nella scelta della formula più adatta e nella tutela dell'immobile. Una prima valutazione del tuo caso è gratuita e senza impegno.</p>
+<p><em>Contenuto a scopo informativo, aggiornato al 2026: non sostituisce una consulenza legale personalizzata. Per la tua situazione specifica rivolgiti a un avvocato.</em></p>
+
+<h3>Norme di riferimento</h3>
+<p>Artt. 1571 e seguenti del Codice Civile (nozione e disciplina generale della locazione); art. 1573 c.c. (durata massima trentennale); Legge 9 dicembre 1998, n. 431 (disciplina delle locazioni a uso abitativo, da cui il contratto a uso foresteria resta escluso); art. 3, comma 6, del D.Lgs. 14 marzo 2011, n. 23 e Circolare Agenzia delle Entrate 26/E del 2011 (regime della cedolare secca); orientamento della Corte di Cassazione in materia di cedolare secca con conduttore che agisce nell'esercizio d'impresa, oggi rimesso alle Sezioni Unite.</p>
+`,
+  },
+
+  {
     slug: "sfratto-con-figli-minori",
     title: "Sfratto con figli minori: il proprietario può liberare l'immobile?",
     description: "Sfratto con figli minori: la presenza di minorenni non blocca la procedura ma può allungare i tempi. Guida pratica per il proprietario.",
