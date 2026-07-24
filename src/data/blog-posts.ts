@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'recupero-canoni-arretrati-dopo-sfratto',
+    title: "Canoni arretrati dopo lo sfratto per morosità: come recuperarli dall'inquilino",
+    description: "Lo sfratto libera l'immobile ma non ti ridà i canoni non pagati. Ecco come il proprietario recupera gli arretrati: ingiunzione, decreto e pignoramento.",
+    excerpt: "Riavere le chiavi non basta: i mesi di affitto non pagati vanno recuperati con strumenti diversi. Guida pratica per il proprietario: ingiunzione insieme allo sfratto, decreto ingiuntivo, precetto e pignoramento, con deposito cauzionale e garante come prime leve.",
+    lead: "Hai ottenuto la convalida dello sfratto e riavuto l'immobile, ma i mesi di affitto non pagati restano da incassare. Ecco i passaggi concreti per trasformare la morosità in un titolo esecutivo e provare a recuperare i soldi dall'inquilino.",
+    publishedAt: '2026-07-24',
+    updatedAt: '2026-07-24',
+    category: 'Sfratti',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-07-24. Keyword: recupero canoni arretrati dopo lo sfratto (cluster long-tail: 'sfratto e canoni non pagati' vol 70; 'pagamento canoni dopo notifica sfratto' vol 90), KD 0 (DataForSEO).",
+    html: `
+<p>Ottenere la convalida dello sfratto e riavere le chiavi è solo metà del risultato. L'altra metà, quella che spesso pesa di più sul portafoglio del proprietario, sono i <strong>canoni arretrati</strong>: le mensilità che l'inquilino non ha mai pagato. Liberare l'immobile e recuperare quei soldi sono due percorsi diversi, con strumenti diversi. Questa guida spiega come un locatore può rientrare delle somme dovute dopo (o insieme a) lo sfratto, quali documenti servono e quali errori evitare.</p>
+
+<h2>Perché lo sfratto, da solo, non ti restituisce i soldi</h2>
+<p>Il procedimento di sfratto per morosità serve a un obiettivo preciso: <strong>sciogliere il contratto e riavere l'immobile</strong>. La convalida accerta che l'inquilino è moroso e ordina il rilascio, ma non è di per sé un ordine di pagamento che puoi portare da un ufficiale giudiziario per aggredire il conto o lo stipendio del debitore. Per recuperare i <strong>canoni non pagati</strong> ti serve un documento diverso: un <strong>titolo esecutivo</strong> per il denaro, cioè un provvedimento del giudice che condanna l'inquilino a versarti una cifra determinata.</p>
+<p>La buona notizia è che la legge ti permette di ottenere questo titolo <strong>nello stesso procedimento</strong> dello sfratto, senza dover avviare una causa separata da zero. Vediamo come.</p>
+
+<h2>L'ingiunzione di pagamento chiesta insieme allo sfratto</h2>
+<p>Quando l'avvocato prepara l'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>, può inserire nello stesso atto anche la <strong>domanda di ingiunzione di pagamento</strong> dei canoni già scaduti. È una possibilità prevista dal codice di procedura civile: si porta davanti al giudice, in un colpo solo, sia la richiesta di rilascio dell'immobile sia la richiesta dei soldi.</p>
+<p>Se l'inquilino non si presenta all'udienza, o si presenta ma non contesta seriamente il debito, il giudice <strong>convalida lo sfratto e allo stesso tempo emette un decreto ingiuntivo</strong> per i canoni scaduti richiesti. Questo decreto è un vero titolo esecutivo per il denaro: da lì puoi partire con il recupero forzato. È la via più rapida ed economica: eviti una seconda causa e un contributo in più.</p>
+<p>Un aspetto a tuo favore: per legge questo decreto copre i canoni <strong>scaduti e quelli che matureranno fino all'esecuzione dello sfratto</strong>, oltre alle spese dell'intimazione. Non devi quindi avviare un secondo procedimento per le mensilità che continuano ad accumularsi mentre l'inquilino resta in casa. Per eventuali danni all'immobile, invece, può servire un passaggio a parte. Resta essenziale che il conteggio sia curato dal legale fino alla riconsegna delle chiavi.</p>
+
+<h2>Se non hai chiesto l'ingiunzione: il decreto ingiuntivo separato</h2>
+<p>Non sempre si sceglie la strada dell'ingiunzione contestuale. Magari lo sfratto è già stato definito, oppure hai preferito concentrarti prima sul rilascio. In questi casi puoi comunque recuperare gli arretrati con un <strong>decreto ingiuntivo autonomo</strong>: un procedimento rapido in cui il giudice, sulla base di una prova scritta, ordina all'inquilino di pagare senza una causa ordinaria.</p>
+<p>Per i canoni di locazione la prova scritta è solida: il <strong>contratto registrato</strong> e il conteggio delle mensilità non versate bastano di norma a ottenere il decreto. Un elemento importante è la <strong>provvisoria esecutività</strong>: il giudice può dichiarare il decreto immediatamente esecutivo, così non devi aspettare i tempi di un'eventuale opposizione per iniziare a recuperare.</p>
+<p>Attenzione a un limite temporale spesso ignorato: i canoni di locazione si <strong>prescrivono in cinque anni</strong>. Trascorso quel termine dalla scadenza di ciascuna mensilità, il diritto a pretenderle si estingue. È un motivo in più per non lasciar passare troppo tempo prima di attivarsi.</p>
+
+<h2>Dal titolo al recupero vero: precetto e pignoramento</h2>
+<p>Avere il decreto ingiuntivo non significa ancora avere i soldi in tasca. Se l'inquilino non paga spontaneamente, i passaggi successivi sono due:</p>
+<ul>
+<li><strong>Atto di precetto</strong>: è l'intimazione formale a pagare entro un termine (di norma dieci giorni), altrimenti si procederà con l'esecuzione forzata.</li>
+<li><strong>Pignoramento</strong>: se il precetto resta senza esito, l'ufficiale giudiziario può pignorare i beni del debitore. Le forme più comuni sono il pignoramento <strong>presso terzi</strong> (una quota dello stipendio, della pensione entro i limiti di legge, o le somme sul conto corrente) e il pignoramento dei beni mobili. Nei casi più rilevanti si può arrivare al pignoramento immobiliare.</li>
+</ul>
+<p>Qui entra in gioco il tema più delicato: la <strong>solvibilità</strong> dell'inquilino. Un inquilino senza reddito stabile, senza beni e senza conti aggredibili è, in pratica, difficile da escutere anche con un titolo perfetto in mano. Prima di investire tempo e spese nel recupero forzato conviene valutare, con il legale, quali beni siano realmente aggredibili.</p>
+
+<h2>Deposito cauzionale e garante: due leve da non dimenticare</h2>
+<p>Prima ancora del pignoramento, controlla due strumenti che spesso il proprietario ha già tra le mani.</p>
+<p>Il <strong>deposito cauzionale</strong> (la cauzione versata alla firma del contratto, per legge fino a un massimo di tre mensilità) può essere trattenuto a copertura dei canoni non pagati e degli eventuali danni all'immobile. Non è un incasso automatico: va conteggiato in modo trasparente e l'eventuale eccedenza va restituita all'inquilino.</p>
+<p>Se al momento della firma avevi ottenuto un <strong>garante</strong> o una <strong>fideiussione</strong> (per esempio bancaria), quella è spesso la strada più concreta per rientrare: puoi rivolgerti direttamente al garante o escutere la polizza secondo le condizioni pattuite. Rileggere contratto e allegati, prima di avviare procedure lunghe, è il primo passo utile.</p>
+
+<h2>Checklist operativa per il proprietario</h2>
+<ul>
+<li>Recupera il <strong>contratto registrato</strong> e la ricevuta di registrazione: sono la base della prova scritta.</li>
+<li>Prepara un <strong>conteggio chiaro</strong> delle mensilità non pagate, con date e importi, aggiornato fino al rilascio.</li>
+<li>Verifica se conviene chiedere l'<strong>ingiunzione insieme allo sfratto</strong> o procedere con un decreto ingiuntivo separato.</li>
+<li>Controlla <strong>deposito cauzionale</strong> e presenza di un <strong>garante o fideiussione</strong>.</li>
+<li>Raccogli ogni informazione utile sulla <strong>solvibilità</strong> dell'inquilino (datore di lavoro, conti noti, beni).</li>
+<li>Muoviti per tempo: ricorda la <strong>prescrizione di cinque anni</strong> dei canoni.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<p>Il primo errore è <strong>affidarsi solo allo sfratto</strong> e dimenticare la domanda di pagamento: riavuto l'immobile, molti proprietari lasciano perdere gli arretrati per stanchezza, rinunciando a somme recuperabili. Il secondo è <strong>non far registrare il contratto</strong> o averlo registrato in ritardo: senza contratto regolare la prova scritta si indebolisce e la posizione del locatore diventa più fragile. Il terzo è <strong>aspettare troppo</strong>, tra la speranza che l'inquilino paghi e i tempi morti, fino a rischiare la prescrizione. L'ultimo è <strong>pignorare senza verificare la solvibilità</strong>: si sostengono spese per un recupero che, su un debitore nullatenente, resta sulla carta.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Posso recuperare i canoni anche se l'inquilino ha già lasciato l'immobile?</h3>
+<p>Sì. Il diritto ai canoni arretrati resta anche dopo la riconsegna delle chiavi. Puoi agire con un decreto ingiuntivo basato sul contratto registrato, purché non sia decorsa la prescrizione di cinque anni.</p>
+<h3>Conviene chiedere subito l'ingiunzione insieme allo sfratto?</h3>
+<p>Nella maggior parte dei casi sì: ottieni in un unico procedimento sia il rilascio sia un titolo per il denaro, con tempi e costi più contenuti rispetto a due cause separate. La scelta va comunque valutata con l'avvocato in base alla situazione concreta.</p>
+<h3>Se l'inquilino non ha reddito né beni, posso comunque recuperare qualcosa?</h3>
+<p>Il titolo esecutivo resta valido nel tempo e puoi riprovare l'esecuzione se in futuro emergono beni o redditi aggredibili. Nell'immediato, però, su un debitore nullatenente il recupero forzato può risultare senza esito: per questo la verifica di solvibilità va fatta prima.</p>
+<h3>Le spese legali per il recupero le paga l'inquilino?</h3>
+<p>Di norma il giudice, quando accoglie la domanda, pone le spese a carico della parte soccombente, cioè l'inquilino. Resta però il tema pratico della sua capacità di pagare: la condanna alle spese vale quanto il patrimonio effettivamente aggredibile.</p>
+
+<h2>In sintesi</h2>
+<p>Recuperare i canoni arretrati è un percorso distinto dallo sfratto, ma i due possono viaggiare insieme. La sequenza tipica è: domanda di pagamento (meglio se chiesta con lo sfratto), poi titolo esecutivo, poi precetto e infine pignoramento, con il deposito cauzionale e l'eventuale garante come leve immediate. Se stai ancora affrontando la fase del rilascio, trovi il quadro completo nella <a href="/blog/guida-pratica-sfratto-per-morosita-nel-2026/">guida pratica allo sfratto per morosità</a> e nella pagina dedicata al <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>.</p>
+<p>Ogni pratica ha le sue variabili: importo, registrazione del contratto, presenza di un garante e solvibilità del debitore cambiano la strategia. Se vuoi capire quale strada conviene nel tuo caso, il team di Sfratto Sicuro può aiutarti a muoverti nell'ordine giusto.</p>
+<p><em>Contenuto informativo, aggiornato alla normativa vigente. Non sostituisce una consulenza legale personalizzata: per la tua pratica rivolgiti a un avvocato.</em></p>
+<p><em>Riferimenti normativi: intimazione di sfratto per morosità con contestuale domanda di ingiunzione di pagamento dei canoni scaduti e da scadere fino all'esecuzione dello sfratto, artt. 658 e 664 del codice di procedura civile (c.p.c.); procedimento d'ingiunzione, artt. 633 ss. c.p.c.; provvisoria esecutività, art. 642 c.p.c.; precetto, art. 480 c.p.c.; espropriazione forzata e pignoramento, artt. 491 ss. c.p.c. (pignoramento presso terzi, art. 543 c.p.c.); deposito cauzionale, art. 11 L. 392/1978; fideiussione, artt. 1936 ss. c.c.; prescrizione quinquennale dei canoni, art. 2948 n. 3 c.c. Il rito locatizio risente della riforma Cartabia (D.Lgs. 10 ottobre 2022, n. 149) e del successivo correttivo (D.Lgs. 31 ottobre 2024, n. 164) per i procedimenti introdotti dopo il 28 febbraio 2023.</em></p>
+`,
+  },
+
+  {
     slug: 'contratto-locazione-uso-foresteria',
     title: 'Contratto di locazione a uso foresteria: la guida per il proprietario',
     description: 'Contratto di locazione a uso foresteria: cos\'è, durata libera, chi può firmarlo e il nodo cedolare secca. Guida pratica per il proprietario.',
