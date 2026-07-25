@@ -16,6 +16,85 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'imposta-di-registro-locazione',
+    title: "Imposta di registro sul contratto di locazione: quanto si paga e chi la paga",
+    description: "Imposta di registro locazione: quanto si paga (2% del canone), chi la paga tra proprietario e inquilino, come versarla con F24 ELIDE e la cedolare secca.",
+    excerpt: "L'imposta di registro tiene in regola il tuo contratto di locazione: 2% del canone annuo, con minimo di 67 euro alla prima registrazione, da dividere con l'inquilino. Guida pratica per il proprietario su calcolo, codici tributo F24 ELIDE, versamento annuale o unico e alternativa cedolare secca.",
+    lead: "Se affitti un immobile in regime ordinario, ogni anno devi versare l'imposta di registro sul contratto di locazione. Ecco quanto si paga, chi la paga tra proprietario e inquilino, come versarla e quando conviene invece la cedolare secca.",
+    publishedAt: '2026-07-25',
+    updatedAt: '2026-07-25',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-07-25. Keyword: imposta di registro locazione, vol 2900, KD 0 (DataForSEO).",
+    html: `
+<p>Se affitti un immobile e non hai scelto la cedolare secca, ogni anno devi fare i conti con l'<strong>imposta di registro sul contratto di locazione</strong>: la tassa che tiene "in regola" il tuo contratto davanti all'Agenzia delle Entrate. È un adempimento semplice, ma sbagliarlo o dimenticarlo espone a sanzioni evitabili. Questa guida spiega al proprietario quanto si paga, chi la paga, come e quando versarla, e quando conviene invece optare per la cedolare secca.</p>
+
+<h2>Cos'è l'imposta di registro sulla locazione</h2>
+<p>L'<strong>imposta di registro</strong> è l'imposta dovuta per registrare presso l'Agenzia delle Entrate un contratto di locazione. La registrazione è obbligatoria per tutti i contratti di durata superiore a 30 giorni complessivi nell'anno e serve a dare data certa e validità fiscale al rapporto. Senza registrazione, il contratto è nullo e il proprietario non può nemmeno agire in giudizio per il recupero dei canoni o per lo sfratto.</p>
+<p>La tassa non si paga una sola volta: salvo scelte diverse, va versata <strong>alla prima registrazione</strong> e poi <strong>per ogni annualità successiva</strong>, finché il contratto resta in vigore. È qui che molti proprietari si perdono, perché la scadenza annuale passa facilmente inosservata.</p>
+
+<h2>Quanto si paga: il calcolo dell'imposta</h2>
+<p>Per le locazioni a uso abitativo l'imposta di registro è pari al <strong>2% del canone annuo</strong>. Alla prima registrazione è previsto un <strong>importo minimo di 67 euro</strong>: se il 2% del canone risulta inferiore, si versano comunque 67 euro. Per le annualità successive, invece, il minimo non si applica e si paga esattamente il 2% del canone di quell'anno.</p>
+<p>Un esempio pratico: con un canone di 700 euro al mese, il canone annuo è 8.400 euro. Il 2% fa <strong>168 euro</strong> l'anno, sia per la prima registrazione sia per ciascuna annualità. Con un canone molto basso (ad esempio 250 euro al mese, cioè 3.000 euro l'anno), il 2% sarebbe 60 euro: alla prima registrazione si versano comunque i 67 euro minimi.</p>
+<p>Attenzione a due casi particolari. Per gli <strong>immobili strumentali</strong> (uffici, negozi, capannoni) locati da un soggetto con partita IVA l'aliquota può essere dell'1%; per i fondi rustici si applica lo 0,50%. In questa guida ci concentriamo sull'uso abitativo, il caso più frequente per il proprietario privato.</p>
+
+<h2>Chi paga: proprietario o inquilino?</h2>
+<p>Sul piano fiscale, la legge (articolo 57 del DPR — Decreto del Presidente della Repubblica — 131/1986) rende <strong>locatore e conduttore solidalmente obbligati</strong>: l'Agenzia delle Entrate può chiedere l'intera imposta a uno qualsiasi dei due. Nei rapporti tra le parti, però, la prassi consolidata è la <strong>ripartizione a metà</strong>: il 50% a carico del proprietario e il 50% a carico dell'inquilino, salvo diverso accordo scritto nel contratto.</p>
+<p>In concreto significa due cose. Primo: chi materialmente esegue il versamento (di solito il proprietario) può chiedere all'inquilino il rimborso della sua quota. Secondo: se l'inquilino non collabora, il proprietario resta comunque esposto verso il Fisco per l'intero importo, perché la solidarietà tutela l'Agenzia, non regola i rapporti interni. Meglio quindi versare per intero e regolare la quota con l'inquilino, piuttosto che rischiare l'omissione.</p>
+
+<h2>Pagare anno per anno o per l'intera durata?</h2>
+<p>Il proprietario può scegliere tra due modalità di versamento:</p>
+<ul>
+<li><strong>Annualità per annualità</strong>: si paga il 2% del canone ogni anno, entro 30 giorni dalla scadenza dell'annualità precedente. È la soluzione più diffusa perché non immobilizza denaro.</li>
+<li><strong>In un'unica soluzione per tutta la durata</strong> del contratto: si versa subito il 2% calcolato su tutti gli anni previsti. Chi sceglie questa via ha diritto a uno <strong>sconto</strong>, sotto forma di detrazione pari alla <strong>metà del tasso di interesse legale moltiplicato per il numero delle annualità</strong>.</li>
+</ul>
+<p>Il pagamento in un'unica soluzione conviene a chi vuole "chiudere" l'adempimento e non pensarci più, evitando il rischio di dimenticare le scadenze annuali. Un vantaggio ulteriore: se il contratto si risolve prima della scadenza, il proprietario ha diritto al <strong>rimborso</strong> dell'imposta versata per le annualità successive a quella in corso. Lo svantaggio è l'esborso iniziale più alto.</p>
+
+<h2>Come si versa: modello F24 ELIDE e codici tributo</h2>
+<p>Dal 2014 l'imposta di registro sulle locazioni si paga con il <strong>modello F24 ELIDE</strong> ("elementi identificativi"), oppure automaticamente tramite i servizi telematici dell'Agenzia delle Entrate quando si usa il <strong>modello RLI</strong> (Registrazione Locazioni Immobili) per registrare il contratto online. I codici tributo da indicare sono:</p>
+<ul>
+<li><strong>1500</strong> — imposta di registro per la prima registrazione del contratto;</li>
+<li><strong>1501</strong> — imposta di registro per le annualità successive;</li>
+<li><strong>1502</strong> — imposta per le cessioni del contratto;</li>
+<li><strong>1503</strong> — imposta per le risoluzioni;</li>
+<li><strong>1504</strong> — imposta per le proroghe;</li>
+<li><strong>1505</strong> — imposta di bollo.</li>
+</ul>
+<p>Per la prima registrazione, oltre all'imposta di registro è dovuta anche l'<strong>imposta di bollo</strong> (16 euro ogni 4 facciate o ogni 100 righe di contratto). Chi registra il contratto online tramite RLI vede i due tributi conteggiati e addebitati direttamente dal sistema. Per approfondire tutta la procedura puoi leggere la nostra guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</p>
+
+<h2>L'alternativa: la cedolare secca</h2>
+<p>Il proprietario che opta per la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> è <strong>esente</strong> sia dall'imposta di registro sia dall'imposta di bollo, per tutta la durata del contratto e in caso di proroga. La cedolare sostituisce queste imposte con un'unica aliquota fissa sul canone. Non è però automatica: va scelta espressamente e, una volta optata, comporta la rinuncia all'aggiornamento ISTAT (indice dei prezzi al consumo) del canone.</p>
+<p>Per molti locatori privati la cedolare secca è più conveniente e più semplice, perché azzera l'adempimento annuale dell'imposta di registro. La scelta va però valutata caso per caso, confrontando l'aliquota della cedolare con la tassazione ordinaria dei canoni ai fini IRPEF (Imposta sul Reddito delle Persone Fisiche).</p>
+
+<h2>Cosa succede se paghi in ritardo</h2>
+<p>Se salti la scadenza dell'imposta di registro, puoi rimediare in autonomia con il <strong>ravvedimento operoso</strong> (articolo 13 del D.Lgs., Decreto Legislativo, 472/1997), versando l'imposta dovuta più una sanzione ridotta e gli interessi legali. La riduzione è tanto maggiore quanto prima ci si ravvede: conviene quindi regolarizzare subito, prima che l'Agenzia delle Entrate avvii un controllo. Un dato utile: se hai scelto il versamento annuale, un'eventuale sanzione per tardiva registrazione si commisura solo alla prima annualità, non all'intera durata del contratto.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Dimenticare l'annualità successiva</strong>: la prima registrazione è quasi sempre curata, ma le scadenze annuali sfuggono. Segna in calendario la data di scadenza di ogni annualità.</li>
+<li><strong>Non riscuotere la quota dell'inquilino</strong>: se il contratto prevede la ripartizione al 50%, chiedi al conduttore la sua parte quando versi, senza lasciar accumulare.</li>
+<li><strong>Confondere cedolare secca e regime ordinario</strong>: con la cedolare non paghi l'imposta di registro; se sei in regime ordinario sì. Verifica sempre quale regime hai scelto prima di procedere.</li>
+<li><strong>Non conservare le ricevute</strong> dei versamenti: sono la prova dell'adempimento in caso di controllo.</li>
+<li><strong>Credere che il pagamento sostituisca la comunicazione</strong>: per proroghe, cessioni e risoluzioni il versamento va accompagnato dal modello RLI, altrimenti l'adempimento resta incompleto.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'imposta di registro si paga ogni anno?</h3>
+<p>Sì, se hai scelto il versamento annuale e sei in regime ordinario: si paga il 2% del canone entro 30 giorni dalla scadenza di ogni annualità, per tutta la durata del contratto. In alternativa puoi versarla in un'unica soluzione all'inizio, con diritto a uno sconto. Con la cedolare secca, invece, non è dovuta.</p>
+<h3>Chi deve pagare l'imposta di registro, il proprietario o l'inquilino?</h3>
+<p>Verso il Fisco sono obbligati entrambi in solido. Tra le parti, salvo diverso accordo, l'imposta si divide a metà: 50% al proprietario e 50% all'inquilino. In pratica di solito versa il proprietario, che poi recupera la quota dal conduttore.</p>
+<h3>Qual è l'importo minimo dell'imposta di registro?</h3>
+<p>Alla prima registrazione il minimo è 67 euro: se il 2% del canone annuo è inferiore, si versano comunque 67 euro. Per le annualità successive il minimo non si applica e si paga l'esatto 2% del canone.</p>
+<h3>Cosa succede se non registro il contratto o non pago l'imposta?</h3>
+<p>Il contratto non registrato è nullo e non tutela il proprietario. Il mancato pagamento dell'imposta espone a sanzioni e interessi, sanabili con il ravvedimento operoso se ci si attiva spontaneamente. La regolarità fiscale è anche un presupposto pratico per poter agire in caso di morosità.</p>
+
+<h2>In sintesi</h2>
+<p>L'imposta di registro è un adempimento gestibile: 2% del canone annuo (minimo 67 euro alla prima registrazione), divisa al 50% con l'inquilino, versata con F24 ELIDE o tramite il modello RLI online, oppure evitata del tutto con la cedolare secca. La cosa più importante è non perdere le scadenze annuali. Se vuoi impostare correttamente il tuo contratto e la sua gestione fiscale, il team di <a href="/servizi/tutela-proprietario/">Sfratto Sicuro</a> può affiancarti con un supporto pratico e su misura per il proprietario.</p>
+
+<p><em>Contenuto informativo aggiornato alla normativa vigente. Non sostituisce una consulenza legale o fiscale personalizzata: per il tuo caso specifico rivolgiti a un professionista. Riferimenti normativi: DPR 26 aprile 1986, n. 131 (Testo Unico dell'Imposta di Registro), in particolare l'art. 5 sull'obbligo di registrazione in termine fisso e l'art. 57 in tema di soggetti obbligati al pagamento; art. 3 del D.Lgs. 14 marzo 2011, n. 23 sulla cedolare secca; art. 13 del D.Lgs. 18 dicembre 1997, n. 472 sul ravvedimento operoso.</em></p>
+`,
+  },
+  {
     slug: 'recupero-canoni-arretrati-dopo-sfratto',
     title: "Canoni arretrati dopo lo sfratto per morosità: come recuperarli dall'inquilino",
     description: "Lo sfratto libera l'immobile ma non ti ridà i canoni non pagati. Ecco come il proprietario recupera gli arretrati: ingiunzione, decreto e pignoramento.",
