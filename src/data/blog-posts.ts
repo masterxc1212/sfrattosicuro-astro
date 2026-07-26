@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'inquilino-moroso-nullatenente',
+    title: "Inquilino moroso nullatenente: cosa può fare davvero il proprietario",
+    description: "Inquilino moroso e nullatenente? Lo sfratto va avanti comunque. Ecco i limiti reali del recupero canoni e come tutelarti, anche col Fisco.",
+    excerpt: "Un inquilino moroso e senza redditi né beni non blocca lo sfratto: il rilascio dell'immobile si ottiene comunque. Guida pratica per il proprietario sui limiti del pignoramento, sulla validità decennale del titolo, sulla non imponibilità dei canoni non incassati e sugli strumenti di prevenzione.",
+    lead: "Se l'inquilino non paga e non ha né lavoro né beni intestati, puoi comunque riprendere l'immobile: lo sfratto non dipende dalla sua solvibilità. Ecco cosa fare davvero, i limiti del recupero dei canoni e come proteggere la tua posizione fiscale.",
+    publishedAt: '2026-07-26',
+    updatedAt: '2026-07-26',
+    category: 'Sfratti',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-07-26. Keyword: inquilino moroso nullatenente, vol 90, KD 0 (DataForSEO).",
+    html: `
+<p>È la situazione che ogni proprietario teme: l'inquilino non paga da mesi e scopri che <strong>non ha né un lavoro stabile né beni intestati</strong>. In gergo si dice che è "nullatenente". La domanda è una sola: se non ha nulla, ha ancora senso lo sfratto? E i canoni, li rivedrò mai? Questa guida spiega al proprietario cosa puoi fare davvero quando l'<strong>inquilino moroso è nullatenente</strong>, i limiti reali del recupero del credito e come proteggere il tuo immobile e la tua posizione fiscale.</p>
+
+<h2>Sfratto e recupero dei soldi sono due cose diverse</h2>
+<p>Il primo chiarimento è il più importante, perché sgombra il campo da un equivoco molto diffuso. Lo <strong>sfratto per morosità</strong> serve a riprendere possesso dell'immobile; il <strong>recupero dei canoni</strong> arretrati è un'operazione distinta, che segue regole e tempi propri. Sono due binari separati: sul primo puoi arrivare in fondo quasi sempre, sul secondo il risultato dipende da quanto l'inquilino possiede.</p>
+<p>Questo significa che la solvibilità del conduttore <strong>non è una condizione per ottenere lo sfratto</strong>. Il giudice convalida lo sfratto quando la morosità persiste, non quando l'inquilino "può permettersi" di pagare. Anche di fronte a un inquilino senza un euro, quindi, puoi ottenere il rilascio dell'immobile e tornare in possesso della tua casa. È proprio questo, di solito, l'obiettivo prioritario: fermare l'emorragia e rimettere l'immobile a reddito.</p>
+
+<h2>Perché conviene muoversi subito, anche se non paga</h2>
+<p>Con un nullatenente la tentazione è aspettare, ma è l'errore più costoso: ogni mese il debito cresce e l'immobile resta improduttivo. Attivarsi presto ha un vantaggio pratico immediato: nello stesso atto con cui intimi lo sfratto per morosità puoi chiedere anche l'<strong>ingiunzione di pagamento</strong> per i canoni già scaduti. Ottieni così, in un colpo solo, sia l'ordine di rilascio dell'immobile sia un <strong>titolo esecutivo</strong> per il credito. Il titolo è il documento che ti permette, in futuro, di procedere al pignoramento: averlo pronto è utile anche se oggi l'inquilino non ha nulla, perché resta valido a lungo (vedi più avanti).</p>
+
+<h2>Recuperare i canoni da un inquilino moroso nullatenente: cosa dice la legge</h2>
+<p>Avere un titolo esecutivo non basta: bisogna che ci sia <strong>qualcosa da pignorare</strong>. La legge protegge una parte del patrimonio del debitore per garantirgli un minimo vitale. Ecco i limiti da conoscere prima di spendere altri soldi in una causa di recupero.</p>
+<ul>
+<li><strong>Stipendio</strong>: se l'inquilino lavora come dipendente, puoi pignorare al massimo <strong>un quinto</strong> dello stipendio netto (pignoramento presso il datore di lavoro, detto "presso terzi").</li>
+<li><strong>Pensione</strong>: è impignorabile fino a un importo pari al <strong>doppio dell'assegno sociale</strong> (l'assegno sociale è la prestazione assistenziale di base dell'INPS, nel 2026 circa 546 euro al mese), con un minimo di 1.000 euro; solo la parte eccedente può essere pignorata, e comunque entro il limite di un quinto.</li>
+<li><strong>Conto corrente</strong>: se stipendio o pensione sono già stati accreditati prima del pignoramento, resta impignorabile una somma pari al <strong>triplo dell'assegno sociale</strong>; è aggredibile solo l'eccedenza.</li>
+<li><strong>Beni in casa</strong>: gran parte degli oggetti domestici non si può pignorare. La legge esclude espressamente letti, vestiti, il frigorifero, la lavatrice, i fornelli, il tavolo e le sedie per i pasti e gli utensili indispensabili. In pratica, il pignoramento dei mobili di casa quasi mai produce un incasso.</li>
+</ul>
+<p>Tradotto: se l'inquilino non ha reddito da lavoro dipendente né pensione, non possiede immobili e sul conto non tiene somme rilevanti, il recupero forzato oggi rischia di essere <strong>infruttuoso</strong>. Prima di un pignoramento conviene quindi una verifica sulla reale consistenza del patrimonio, per non aggiungere spese a un credito già difficile.</p>
+
+<h2>Il titolo non "scade" subito: puoi riprovare più avanti</h2>
+<p>Che l'inquilino sia nullatenente oggi non significa che lo sarà per sempre: può trovare un lavoro, ricevere un'eredità, accumulare somme sul conto. Il <strong>titolo esecutivo</strong> che hai ottenuto non si consuma con un tentativo a vuoto: l'azione per farlo valere si prescrive in <strong>dieci anni</strong>, termine interrompibile con atti formali. Puoi quindi tenere il titolo "nel cassetto" e riattivare il pignoramento quando la situazione del debitore migliora. Per questo vale la pena procurarselo anche se l'incasso immediato appare improbabile.</p>
+
+<h2>Almeno il Fisco non ti penalizza: i canoni non incassati</h2>
+<p>C'è una tutela che molti proprietari ignorano. Per le locazioni <strong>a uso abitativo</strong>, i canoni non percepiti <strong>non concorrono a formare il reddito</strong> imponibile, purché la mancata percezione sia comprovata dall'<strong>intimazione di sfratto per morosità</strong> o dall'ingiunzione di pagamento. In pratica, avviata la procedura, non paghi l'imposta sui redditi su affitti mai incassati. È previsto anche un <strong>credito d'imposta</strong> per le tasse già versate su canoni poi accertati come non riscossi. Un motivo in più per formalizzare subito lo sfratto.</p>
+
+<h2>Gli errori da evitare</h2>
+<ul>
+<li><strong>Farsi giustizia da soli</strong>: cambiare la serratura, staccare luce, acqua o gas, portare via le cose dell'inquilino o impedirgli l'accesso è vietato e costituisce reato, anche se sei il proprietario e anche se lui non paga. L'unica strada legale è lo sfratto davanti al giudice.</li>
+<li><strong>Aspettare troppo</strong>: più rimandi, più cresce il debito e più a lungo l'immobile resta bloccato. Con un nullatenente il tempo gioca solo contro di te.</li>
+<li><strong>Buttare via il titolo</strong>: dopo un pignoramento a vuoto, non rinunciare al decreto ottenuto. Conservalo: ha valore per dieci anni.</li>
+<li><strong>Spendere alla cieca nel recupero</strong>: prima di avviare azioni esecutive costose, valuta con un professionista se esiste davvero qualcosa da aggredire. Talvolta la scelta razionale è concentrare le energie sul rilascio veloce dell'immobile.</li>
+<li><strong>Trascurare la posizione fiscale</strong>: assicurati che l'avvio della procedura sia documentato, così da beneficiare della non imponibilità dei canoni non incassati.</li>
+</ul>
+
+<h2>Come proteggersi la prossima volta</h2>
+<p>La vera difesa contro l'inquilino insolvente si costruisce <strong>prima</strong> di firmare il contratto. Alcuni strumenti riducono il rischio di un credito inesigibile:</p>
+<ul>
+<li><strong>Deposito cauzionale</strong>: la legge consente di chiederne uno fino a tre mensilità. È il primo cuscinetto in caso di mancati pagamenti o danni.</li>
+<li><strong>Garanzie personali o bancarie</strong>: una <a href="/blog/fideiussione-affitto/">fideiussione</a> di un familiare solvibile o di una banca ti dà un secondo soggetto da cui pretendere il pagamento, anche se l'inquilino è nullatenente.</li>
+<li><strong>Valutazione preventiva dell'inquilino</strong>: chiedere buste paga, documentazione di reddito e referenze prima della firma aiuta a evitare a monte i profili più rischiosi.</li>
+<li><strong>Polizze assicurative</strong> sui mancati canoni, da valutare in base ai costi.</li>
+</ul>
+<p>Se invece la morosità è già in corso, il primo passo formale è quasi sempre una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>, seguita, se serve, dall'intimazione di sfratto. Per la parte relativa al recupero delle somme, trovi il percorso completo nella guida ai <a href="/blog/recupero-canoni-arretrati-dopo-sfratto/">canoni arretrati dopo lo sfratto</a>.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Se l'inquilino è nullatenente posso comunque sfrattarlo?</h3>
+<p>Sì. Lo sfratto per morosità e il conseguente rilascio dell'immobile non dipendono dalla capacità economica dell'inquilino. Il giudice convalida lo sfratto quando la morosità persiste: il fatto che il conduttore non abbia beni non impedisce di riottenere la casa.</p>
+<h3>Posso cambiare la serratura o staccare le utenze se non paga e non ha nulla?</h3>
+<p>No, mai. Anche di fronte a un inquilino moroso e insolvente, farsi giustizia da soli è illegale e ti espone a conseguenze penali. Devi passare dallo sfratto giudiziale. È l'unico modo per liberare l'immobile senza rischi.</p>
+<h3>Recupererò mai i canoni arretrati da un nullatenente?</h3>
+<p>Nell'immediato può essere difficile o impossibile, perché la legge protegge una quota di stipendio, pensione e conto corrente e molti beni di casa non sono pignorabili. Ma il titolo esecutivo resta valido dieci anni: se la situazione economica dell'inquilino migliora, potrai riprovare il pignoramento.</p>
+<h3>Devo pagare le tasse sui canoni che non ho mai incassato?</h3>
+<p>Per le locazioni a uso abitativo no, purché la mancata percezione sia provata dall'intimazione di sfratto per morosità o dall'ingiunzione di pagamento. È previsto anche un credito d'imposta per le tasse già versate su canoni poi accertati come non riscossi.</p>
+<h3>Conviene fare causa per i soldi se l'inquilino non ha nulla?</h3>
+<p>Dipende. Se non ci sono redditi né beni aggredibili, avviare subito un pignoramento aggiunge solo spese. Spesso conviene ottenere presto il rilascio dell'immobile, procurarsi comunque il titolo e agire sul credito quando emergono beni o redditi.</p>
+
+<h2>In sintesi</h2>
+<p>Un inquilino nullatenente non ti impedisce di riprendere la tua casa: lo sfratto va avanti a prescindere dalla sua solvibilità, e questo resta l'obiettivo prioritario. Sul fronte dei soldi sii realista sui limiti del pignoramento, ma conserva il titolo: vale dieci anni. Intanto la procedura ti evita di pagare tasse su canoni mai incassati e, per il futuro, ti proteggi con deposito, garanzie e una valutazione seria dell'inquilino. Per la strada più efficace nel tuo caso, il team di <a href="/servizi/tutela-proprietario/">Sfratto Sicuro</a> può affiancarti con un supporto pratico pensato per il proprietario.</p>
+
+<p><em>Contenuto informativo aggiornato alla normativa vigente. Non sostituisce una consulenza legale personalizzata: per il tuo caso specifico rivolgiti a un professionista. Riferimenti normativi: art. 658 c.p.c. (intimazione di sfratto per morosità e contestuale ingiunzione di pagamento) e art. 663 c.p.c. (convalida subordinata al persistere della morosità), come modificati dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo D.Lgs. 164/2024; artt. 514 e 545 c.p.c. (beni e crediti impignorabili, con i limiti su stipendio, pensione e conto corrente); art. 2953 c.c. (prescrizione decennale dell'actio iudicati); art. 26 del DPR 917/1986 — Testo Unico delle Imposte sui Redditi — sulla non imponibilità dei canoni non percepiti nelle locazioni abitative; art. 11 della L. 392/1978 sul deposito cauzionale.</em></p>
+`,
+  },
+  {
     slug: 'imposta-di-registro-locazione',
     title: "Imposta di registro sul contratto di locazione: quanto si paga e chi la paga",
     description: "Imposta di registro locazione: quanto si paga (2% del canone), chi la paga tra proprietario e inquilino, come versarla con F24 ELIDE e la cedolare secca.",
