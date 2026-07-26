@@ -1,18 +1,11 @@
 ---
-import { pricing } from '../../lib/business';
+import { formatBusinessEuro, pricing } from '../../lib/business';
 
 const { testV4 } = pricing;
-const formatEuro = (value: number) =>
-  new Intl.NumberFormat('it-IT', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0,
-  }).format(value);
-
-const convalida = formatEuro(testV4.faseConvalida);
-const esecuzione = formatEuro(testV4.faseEsecutiva);
-const completa = formatEuro(pricing.compensoComplessivo);
-const risparmio = formatEuro(
+const convalida = formatBusinessEuro(testV4.faseConvalida);
+const esecuzione = formatBusinessEuro(testV4.faseEsecutiva);
+const completa = formatBusinessEuro(pricing.compensoComplessivo);
+const risparmio = formatBusinessEuro(
   testV4.faseConvalida + testV4.faseEsecutiva - pricing.compensoComplessivo,
 );
 ---

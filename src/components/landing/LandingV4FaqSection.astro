@@ -1,18 +1,11 @@
 ---
 import { landingOriginal } from '../../data/landing-original';
-import { pricing } from '../../lib/business';
+import { formatBusinessEuro, pricing } from '../../lib/business';
 import LandingOriginalFaqSection from './LandingOriginalFaqSection.astro';
 
-const formatEuro = (value: number) =>
-  new Intl.NumberFormat('it-IT', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0,
-  }).format(value);
-
-const convalida = formatEuro(pricing.testV4.faseConvalida);
-const esecuzione = formatEuro(pricing.testV4.faseEsecutiva);
-const completa = formatEuro(pricing.compensoComplessivo);
+const convalida = formatBusinessEuro(pricing.testV4.faseConvalida);
+const esecuzione = formatBusinessEuro(pricing.testV4.faseEsecutiva);
+const completa = formatBusinessEuro(pricing.compensoComplessivo);
 
 const faqSection = {
   ...landingOriginal.faq,
@@ -28,7 +21,7 @@ const faqSection = {
     {
       icon: 'fa-piggy-bank',
       q: 'Perché la formula completa costa meno delle due fasi?',
-      a: `Le due fasi separate arrivano complessivamente a <strong>${formatEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva)}</strong>. Scegliendo subito la formula completa a <strong>${completa}</strong>, il risparmio è di <strong>${formatEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva - pricing.compensoComplessivo)}</strong>.`,
+      a: `Le due fasi separate arrivano complessivamente a <strong>${formatBusinessEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva)}</strong>. Scegliendo subito la formula completa a <strong>${completa}</strong>, il risparmio è di <strong>${formatBusinessEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva - pricing.compensoComplessivo)}</strong>.`,
     },
     {
       icon: 'fa-calendar-check',

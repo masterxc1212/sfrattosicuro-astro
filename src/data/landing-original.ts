@@ -137,7 +137,7 @@ export const landingOriginal = {
     subtitle: 'Recensioni autentiche e verificate dai nostri clienti',
     ratingNumber: '5.0',
     ratingLabel: 'Eccellente',
-    totalReviews: '8',
+    totalReviews: '22',
     googleLink: 'https://www.google.com/search?kgmid=/g/11xzr2cjfr&hl=it-IT&q=Sfratto+Sicuro',
   },
 
@@ -501,7 +501,7 @@ export const landingOriginal = {
   miniWidget: {
     rating: '5.0',
     stars: '★★★★★',
-    total: '8',
+    total: '22',
     line1: 'Specializzati in sfratti dal 2018',
     line2: 'si sono già affidati a noi con successo',
   },

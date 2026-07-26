@@ -1,4 +1,5 @@
 import { landingOriginal } from './landing-original';
+import { formatBusinessEuro, pricing } from '../lib/business';
 
 export type LandingVersion = 'v2' | 'v3' | 'v4';
 export type LandingKeywordSlug = 'sfratto-per-morosita';
@@ -152,9 +153,9 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
       ownerField: true,
       bullets: isV4
         ? [
-            '<strong>€800</strong> per la fase di convalida',
-            '<strong>€700</strong> per l’eventuale fase esecutiva',
-            '<strong>€1.300 formula completa</strong>: risparmi €200',
+            `<strong>${formatBusinessEuro(pricing.testV4.faseConvalida)}</strong> per la fase di convalida`,
+            `<strong>${formatBusinessEuro(pricing.testV4.faseEsecutiva)}</strong> per l’eventuale fase esecutiva`,
+            `<strong>${formatBusinessEuro(pricing.compensoComplessivo)} formula completa</strong>: risparmi ${formatBusinessEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva - pricing.compensoComplessivo)}`,
             '<strong>Nessun acconto</strong> per avviare la convalida',
             '<strong>Convalida in ~60 giorni</strong> in media',
           ]
@@ -314,8 +315,10 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
         {
           num: '✓',
           title: 'Giorni 31-60: convalida dello sfratto',
-          body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
-          badge: 'Assistenza inclusa fino al rilascio',
+          body: version === 'v4'
+            ? 'Il Giudice decide sulla convalida. Se serve proseguire, la fase esecutiva è già inclusa nella formula completa oppure può essere attivata separatamente. <strong>Il compenso della convalida si paga solo dopo l’udienza.</strong>'
+            : 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
+          badge: version === 'v4' ? 'Formula completa o percorso per fasi' : 'Assistenza inclusa fino al rilascio',
           badgeEmoji: '',
           isGold: true,
         },
@@ -592,7 +595,7 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const description = isConversionVersion(version)
     ? (territory.slug === 'nazionale'
         ? (version === 'v4'
-            ? `Sfratto per morosità: scegli la fase di convalida a €800, l'eventuale fase esecutiva a €700 oppure la formula completa a €1.300. Solo proprietari e locatori.`
+            ? `Sfratto per morosità: scegli la fase di convalida a ${formatBusinessEuro(pricing.testV4.faseConvalida)}, l'eventuale fase esecutiva a ${formatBusinessEuro(pricing.testV4.faseEsecutiva)} oppure la formula completa a ${formatBusinessEuro(pricing.compensoComplessivo)}. Solo proprietari e locatori.`
             : `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
         : `Sfratto per morosità${territorySuffix}: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
     : territory.slug === 'nazionale'
@@ -600,7 +603,7 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
   const landingPath = version === 'v4' ? '/landing-v4/' : version === 'v3' ? '/landing-v3/' : '/landing-v2/';
   const conversionTitle = version === 'v4'
-    ? `${keyword.titleStem}${territorySuffix} | Da €800 o formula completa €1.300`
+    ? `${keyword.titleStem}${territorySuffix} | Da ${formatBusinessEuro(pricing.testV4.faseConvalida)} o formula completa ${formatBusinessEuro(pricing.compensoComplessivo)}`
     : `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
 
   return {

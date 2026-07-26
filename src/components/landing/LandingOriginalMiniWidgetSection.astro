@@ -1,6 +1,9 @@
 ---
 // LandingOriginalMiniWidgetSection.astro — 1:1 clone of original mini rating widget
 // Source: public/landing/index.html
+import { socialProof } from '../../lib/business';
+
+const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section class="pt-6 sm:pt-8 bg-gray-pearl">
   <div class="container mx-auto px-4">
@@ -14,7 +17,7 @@
             <div>
               <div id="mini-widget-stars" class="text-2xl sm:text-3xl text-yellow-400 mb-1" aria-label="5 stelle su 5">★★★★★</div>
               <div class="text-xs sm:text-sm text-dark-gray font-semibold">
-                <span id="mini-widget-total">8</span> recensioni Google
+                <span id="mini-widget-total">{googleReviewsTotal}</span> recensioni Google
               </div>
             </div>
           </div>

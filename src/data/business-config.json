@@ -35,6 +35,9 @@
     "rispostaCallback": "Ti richiamiamo entro 2 ore",
     "speseInquilino": "Le spese legali possono essere poste a carico dell'inquilino moroso (a discrezione del Giudice)."
   },
+  "socialProof": {
+    "googleReviewsTotal": 22
+  },
   "orari": {
     "settimanaLabel": "Lun-Ven 9:00-19:00",
     "sabatoLabel": "Sabato 9:00-13:00",

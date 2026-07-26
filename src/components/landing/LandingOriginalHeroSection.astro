@@ -2,12 +2,14 @@
 // LandingOriginalHeroSection.astro — 1:1 clone of original hero
 // Source: public/landing/index.html
 import { landingOriginal } from '../../data/landing-original';
+import { socialProof } from '../../lib/business';
 
 interface Props {
   hero?: typeof landingOriginal.hero;
 }
 
 const { hero = landingOriginal.hero } = Astro.props;
+const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section
   class="hero-section text-white relative overflow-hidden"
@@ -74,7 +76,7 @@ const { hero = landingOriginal.hero } = Astro.props;
           {hero.formTrustLine && (
             <div class="landing-v3-offer-strip lg:hidden" aria-hidden="false">
               <div class="landing-v3-offer-strip-l1">Sfratto: <strong>€1.300 chiavi in mano</strong>, convalida + esecuzione</div>
-              <div class="landing-v3-offer-strip-l2">Zero anticipi · IVA e cassa incluse · <span class="landing-v3-offer-star" aria-hidden="true">★</span> <strong><span data-live-rating>5.0</span></strong> su Google (<span data-live-total>21</span>)</div>
+              <div class="landing-v3-offer-strip-l2">Zero anticipi · IVA e cassa incluse · <span class="landing-v3-offer-star" aria-hidden="true">★</span> <strong><span data-live-rating>5.0</span></strong> su Google (<span data-live-total>{googleReviewsTotal}</span>)</div>
             </div>
           )}
           <div class="hero-form-card landing-v3-hero-form-card">
@@ -162,7 +164,7 @@ const { hero = landingOriginal.hero } = Astro.props;
                   <p class="hero-form-trust">
                     <span class="hero-form-stars" aria-hidden="true">★★★★★</span>
                     <strong><span data-live-rating>5.0</span></strong> su Google
-                    · <span data-live-total>21</span> recensioni · Dati protetti
+                    · <span data-live-total>{googleReviewsTotal}</span> recensioni · Dati protetti
                   </p>
                   <p class="hero-form-whocalls">
                     Ti richiama lo studio dell'Avv. Ansalone dal numero <strong>+39 02 80898395</strong>: salvalo in rubrica. Nessun call center.

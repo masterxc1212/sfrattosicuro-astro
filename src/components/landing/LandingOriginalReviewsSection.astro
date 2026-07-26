@@ -1,6 +1,9 @@
 ---
 // LandingOriginalReviewsSection.astro — 1:1 clone of original Google reviews section
 // Source: public/landing/index.html
+import { socialProof } from '../../lib/business';
+
+const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section id="recensioni-google" class="py-14 md:py-16 bg-gradient-to-b from-gray-pearl to-white landing-v3-reviews" aria-labelledby="recensioni-title">
 
@@ -37,7 +40,7 @@
           Eccellente
         </div>
         <div class="text-base sm:text-lg text-dark-gray mb-4 sm:mb-6">
-          Basato su <strong id="total-reviews">21</strong> recensioni Google
+          Basato su <strong id="total-reviews">{googleReviewsTotal}</strong> recensioni Google
         </div>
         <a
           href="https://www.google.com/search?kgmid=/g/11xzr2cjfr&hl=it-IT&q=Sfratto+Sicuro"

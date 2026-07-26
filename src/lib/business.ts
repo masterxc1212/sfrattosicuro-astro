@@ -70,6 +70,11 @@ export type Garanzie = {
   speseInquilino: string;
 };
 
+export type SocialProof = {
+  /** Numero corrente di recensioni Google, usato come fallback prima del caricamento live. */
+  googleReviewsTotal: number;
+};
+
 export type Orari = {
   /** "Lun-Ven 9:00-19:00" */
   settimanaLabel: string;
@@ -121,6 +126,7 @@ export type BusinessConfig = {
   pricing: Pricing;
   tempi: Tempi;
   garanzie: Garanzie;
+  socialProof: SocialProof;
   orari: Orari;
   procedura: Procedura;
   contatti: Contatti;
@@ -141,6 +147,7 @@ export const businessConfig: BusinessConfig = rawConfig as unknown as BusinessCo
 export const pricing = businessConfig.pricing;
 export const tempi = businessConfig.tempi;
 export const garanzie = businessConfig.garanzie;
+export const socialProof = businessConfig.socialProof;
 export const orari = businessConfig.orari;
 export const procedura = businessConfig.procedura;
 export const contatti = businessConfig.contatti;
@@ -148,6 +155,11 @@ export const contatti = businessConfig.contatti;
 // =============================================================================
 // Convenience helpers
 // =============================================================================
+
+/** Formatta un importo intero nello stile usato nelle landing: "€1.300". */
+export function formatBusinessEuro(value: number): string {
+  return `€${Math.trunc(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
+}
 
 /**
  * "EUR 1.300 fino al rilascio dell'immobile" — promessa primaria.
