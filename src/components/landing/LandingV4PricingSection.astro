@@ -1,0 +1,93 @@
+---
+import { pricing } from '../../lib/business';
+
+const { testV4 } = pricing;
+const formatEuro = (value: number) =>
+  new Intl.NumberFormat('it-IT', {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0,
+  }).format(value);
+
+const convalida = formatEuro(testV4.faseConvalida);
+const esecuzione = formatEuro(testV4.faseEsecutiva);
+const completa = formatEuro(pricing.compensoComplessivo);
+const risparmio = formatEuro(
+  testV4.faseConvalida + testV4.faseEsecutiva - pricing.compensoComplessivo,
+);
+---
+<section id="prezzo" class="landing-v4-pricing" aria-labelledby="prezzo-heading-v4">
+  <div class="container mx-auto px-4">
+    <div class="landing-v4-pricing-inner">
+      <header class="landing-v4-pricing-head">
+        <p class="landing-v4-eyebrow">SCEGLI COME PROCEDERE</p>
+        <h2 id="prezzo-heading-v4">Un percorso completo o due fasi separate</h2>
+        <p>
+          La consulenza iniziale serve a capire quale formula è adatta al tuo caso.
+          Gli importi del test sono {testV4.ivaCassaIncluse ? 'IVA e cassa incluse' : 'oltre IVA e cassa'}.
+        </p>
+      </header>
+
+      <div class="landing-v4-offer-layout">
+        <article class="landing-v4-complete">
+          <div class="landing-v4-offer-topline">
+            <span class="landing-v4-recommended">Formula consigliata</span>
+            <span class="landing-v4-saving">Risparmi {risparmio}</span>
+          </div>
+          <p class="landing-v4-offer-kicker">TUTTO IL PERCORSO</p>
+          <h3>Formula completa</h3>
+          <p class="landing-v4-price">{completa}</p>
+          <p class="landing-v4-price-caption">fino alla riconsegna delle chiavi</p>
+          <ul>
+            <li><span aria-hidden="true">✓</span> Fase di convalida inclusa</li>
+            <li><span aria-hidden="true">✓</span> Eventuale fase esecutiva inclusa</li>
+            <li><span aria-hidden="true">✓</span> Un solo riferimento economico</li>
+          </ul>
+          <a href="#form-rapido" class="landing-v4-primary-cta">Verifica se puoi partire</a>
+        </article>
+
+        <div class="landing-v4-phases" aria-label="Percorso per fasi">
+          <div class="landing-v4-phases-head">
+            <div>
+              <p class="landing-v4-offer-kicker">PERCORSO MODULARE</p>
+              <h3>Procedi per fasi</h3>
+            </div>
+            <p>Paghi la seconda fase soltanto se diventa necessaria.</p>
+          </div>
+
+          <article class="landing-v4-phase-row">
+            <div class="landing-v4-phase-index">01</div>
+            <div class="landing-v4-phase-copy">
+              <h4>Fase di convalida</h4>
+              <p>Dall'analisi del caso all'udienza per ottenere il provvedimento.</p>
+            </div>
+            <p class="landing-v4-phase-price">{convalida}</p>
+          </article>
+
+          <article class="landing-v4-phase-row">
+            <div class="landing-v4-phase-index">02</div>
+            <div class="landing-v4-phase-copy">
+              <h4>Eventuale fase esecutiva</h4>
+              <p>Se l'immobile non viene rilasciato spontaneamente, si prosegue fino alle chiavi.</p>
+            </div>
+            <p class="landing-v4-phase-price">{esecuzione}</p>
+          </article>
+
+          <a href="#form-rapido" class="landing-v4-secondary-cta">Parla del tuo caso con lo studio</a>
+        </div>
+      </div>
+
+      <div class="landing-v4-terms">
+        <p>
+          <strong>Nessun acconto per avviare la convalida.</strong>
+          Il compenso della fase di convalida è dovuto dopo l'udienza, qualunque ne sia l'esito.
+          Nel percorso per fasi, la fase esecutiva viene attivata separatamente solo se necessaria.
+        </p>
+        <p>
+          Restano escluse le spese vive di legge, sempre indicate prima.
+          L'eventuale giudizio di merito successivo a un'opposizione richiede un preventivo scritto separato.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

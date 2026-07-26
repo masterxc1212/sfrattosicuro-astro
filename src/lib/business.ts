@@ -39,6 +39,13 @@ export type Pricing = {
   compensoFormattedLong: string;
   /** Disclaimer "Nessun acconto. Pagamento solo dopo la convalida dello sfratto." */
   modalita: string;
+  /** Valori isolati della variante sperimentale V4; non alterano l'offerta permanente V3. */
+  testV4: {
+    faseConvalida: number;
+    faseEsecutiva: number;
+    ivaCassaIncluse: boolean;
+    experimentId: string;
+  };
 };
 
 export type Tempi = {

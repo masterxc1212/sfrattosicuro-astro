@@ -121,6 +121,8 @@ const keywords: Record<LandingKeywordSlug, LandingKeywordConfig> = {
   },
 };
 
+const isConversionVersion = (version: LandingVersion) => version === 'v3' || version === 'v4';
+
 function withTerritoryCopy(text: string, territory: LandingTerritoryConfig) {
   if (territory.slug === 'nazionale') return text;
   return text
@@ -135,30 +137,41 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
     return item.replace('dal Giudice', `dal Giudice${territory.keywordSuffix ? ` ${territory.keywordSuffix}` : ''}`);
   });
 
-  if (version === 'v3') {
+  if (isConversionVersion(version)) {
+    const isV4 = version === 'v4';
     return {
       ...landingOriginal.hero,
       title: `Avvocato per Sfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.`
+          ? (isV4
+              ? `Scegli la formula completa <strong class="text-white">fino alla riconsegna delle chiavi</strong>, oppure procedi per fasi. Prezzi chiari, solo per proprietari e locatori.`
+              : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.`)
           : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
       prequalificationNote: undefined,
       ownerField: true,
-      bullets: [
-        '<strong>€1.300 IVA e cassa incluse</strong>: un solo prezzo, tutto il percorso',
-        '<strong>Convalida + fase esecutiva</strong>, fino alle chiavi',
-        '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
-        '<strong>Convalida in ~60 giorni</strong> in media',
-        '<strong>Vale anche per finita locazione</strong> e locali commerciali: stesse condizioni',
-      ],
+      bullets: isV4
+        ? [
+            '<strong>€800</strong> per la fase di convalida',
+            '<strong>€700</strong> per l’eventuale fase esecutiva',
+            '<strong>€1.300 formula completa</strong>: risparmi €200',
+            '<strong>Nessun acconto</strong> per avviare la convalida',
+            '<strong>Convalida in ~60 giorni</strong> in media',
+          ]
+        : [
+            '<strong>€1.300 IVA e cassa incluse</strong>: un solo prezzo, tutto il percorso',
+            '<strong>Convalida + fase esecutiva</strong>, fino alle chiavi',
+            '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
+            '<strong>Convalida in ~60 giorni</strong> in media',
+            '<strong>Vale anche per finita locazione</strong> e locali commerciali: stesse condizioni',
+          ],
       formTitle: 'Verifica se puoi partire',
       formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
       formSubmitLabel: 'Invia la richiesta',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
       formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
-      formSource: 'hero_form_v3',
+      formSource: isV4 ? 'hero_form_v4' : 'hero_form_v3',
       formTrustLine: true,
     };
   }
@@ -269,7 +282,7 @@ function buildLegalCost(territory: LandingTerritoryConfig) {
 }
 
 function buildProcedure(version: LandingVersion, territory: LandingTerritoryConfig) {
-  if (version === 'v3') {
+  if (isConversionVersion(version)) {
     return {
       ...landingOriginal.procedure,
       title: 'Come funziona lo sfratto per morosità',
@@ -542,18 +555,19 @@ function buildFaq(version: LandingVersion, territory: LandingTerritoryConfig, ke
 }
 
 function buildContactForm(version: LandingVersion, territory: LandingTerritoryConfig) {
+  const isConversion = isConversionVersion(version);
   return {
     ...landingOriginal.contactForm,
-    title: version === 'v3' ? 'Parliamo del tuo caso' : landingOriginal.contactForm.title,
+    title: isConversion ? 'Parliamo del tuo caso' : landingOriginal.contactForm.title,
     subtitle:
-      version === 'v3'
+      isConversion
         ? `Inviaci i dati essenziali: ti richiamiamo con una valutazione gratuita e ti diciamo costi, tempi e passaggi.`
         : territory.slug === 'nazionale'
           ? landingOriginal.contactForm.subtitle
           : `In meno di 24 ore puoi avere il nostro avvocato al lavoro sul tuo caso ${territory.dynamicReplacement?.area || ''}. Ti spieghiamo costi, tempi medi e percorso fino al rilascio dell'immobile.`,
-    formTitle: version === 'v3' ? 'Richiesta rapida proprietario' : landingOriginal.contactForm.formTitle,
-    formNote: version === 'v3' ? 'Prima consulenza gratuita su casi già attivabili\nSolo proprietari / locatori' : landingOriginal.contactForm.formNote,
-    urgencyBox: version === 'v3'
+    formTitle: isConversion ? 'Richiesta rapida proprietario' : landingOriginal.contactForm.formTitle,
+    formNote: isConversion ? 'Prima consulenza gratuita su casi già attivabili\nSolo proprietari / locatori' : landingOriginal.contactForm.formNote,
+    urgencyBox: isConversion
       ? {
           title: 'Prima di inviare la richiesta',
           body: 'Preparati ad indicare <strong>città dell’immobile</strong>, <strong>mesi di morosità</strong> e un <strong>contatto diretto</strong>. Se hai già contratto di locazione o prova dei mancati pagamenti, la valutazione sarà ancora più precisa.'
@@ -575,26 +589,31 @@ function buildContactForm(version: LandingVersion, territory: LandingTerritoryCo
 function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, keyword: LandingKeywordConfig): LandingSeoConfig {
   const territorySuffix = territory.keywordSuffix ? ` ${territory.keywordSuffix}` : '';
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
-  const description = version === 'v3'
+  const description = isConversionVersion(version)
     ? (territory.slug === 'nazionale'
-        ? `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`
+        ? (version === 'v4'
+            ? `Sfratto per morosità: scegli la fase di convalida a €800, l'eventuale fase esecutiva a €700 oppure la formula completa a €1.300. Solo proprietari e locatori.`
+            : `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
         : `Sfratto per morosità${territorySuffix}: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
-  const landingPath = version === 'v3' ? '/landing-v3/' : '/landing-v2/';
+  const landingPath = version === 'v4' ? '/landing-v4/' : version === 'v3' ? '/landing-v3/' : '/landing-v2/';
+  const conversionTitle = version === 'v4'
+    ? `${keyword.titleStem}${territorySuffix} | Da €800 o formula completa €1.300`
+    : `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
 
   return {
-    title: version === 'v3'
-      ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`
+    title: isConversionVersion(version)
+      ? conversionTitle
       : title,
     description,
     keywords: [...keyword.metaKeywordList, territory.label !== 'nazionale' ? `sfratto ${territory.label.toLowerCase()}` : ''].filter(Boolean).join(', '),
     canonicalUrl: `https://www.sfrattosicuro.it${landingPath}`,
-    ogTitle: version === 'v3' ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile` : title,
+    ogTitle: isConversionVersion(version) ? conversionTitle : title,
     ogDescription: description,
     ogUrl: `https://www.sfrattosicuro.it${landingPath}`,
-    twitterTitle: version === 'v3' ? `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile` : title,
+    twitterTitle: isConversionVersion(version) ? conversionTitle : title,
     twitterDescription: description,
     robots: 'noindex,nofollow',
   };

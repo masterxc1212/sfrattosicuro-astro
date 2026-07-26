@@ -41,6 +41,18 @@ const { hero = landingOriginal.hero } = Astro.props;
 
           <h2 class="hero-subtitle landing-v3-hero-subtitle" set:html={hero.subtitle}></h2>
 
+          {hero.formTrustLine && (
+            <p class="landing-v3-mobile-proof">
+              <strong>Avv. Danilo Ansalone</strong>
+              <span aria-hidden="true">·</span>
+              Solo sfratti dal 2018
+              <span aria-hidden="true">·</span>
+              <span class="landing-v3-mobile-proof-rating">
+                <span aria-hidden="true">★</span> <span data-live-rating>5.0</span> su Google
+              </span>
+            </p>
+          )}
+
           {hero.prequalificationNote && (
             <div class="inline-block landing-v3-prequal bg-white/10 border border-white/20 rounded-lg px-4 py-3 mb-4 text-sm font-semibold backdrop-blur-sm">
               <span set:html={hero.prequalificationNote}></span>

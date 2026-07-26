@@ -336,11 +336,36 @@ form button[type="submit"] i,
 .landing-v3-body summary::after { color: #2F9E57 !important; }
 .landing-v3-body details[open] { border-color: #2F9E57 !important; }
 
-/* --- Hero MOBILE: form sopra la piega (inverte l'ordine content/form) --- */
+/* --- Hero MOBILE: promessa e prova prima del form --- */
 @media (max-width: 1023px) {
-  .landing-v3-hero-content { order: 2 !important; }
-  .landing-v3-hero-form-wrap { order: 1 !important; margin-bottom: 1.25rem; }
+  .landing-v3-hero-grid { gap:0 !important; }
+  .landing-v3-hero-content { order: 1 !important; }
+  .landing-v3-hero-form-wrap { order: 2 !important; margin: .85rem 0 1rem; }
   .landing-v3-hero-content .hero-seal-mobile { display: none !important; }
+  .landing-v3-offer-strip { display: none !important; }
+  .landing-v3-hero-benefits .hero-benefit-item:nth-child(n+4) { display: none; }
+  .landing-v3-hero-benefits .hero-benefit-item:nth-child(3) { grid-column:1 / -1; }
+  .landing-v3-hero-form-card .hero-call-cta,
+  .landing-v3-hero-form-card .hero-form-trust,
+  .landing-v3-hero-form-card .hero-form-whocalls { display: none !important; }
+}
+
+.landing-v3-mobile-proof { display:none; }
+@media (max-width: 1023px) {
+  .landing-v3-mobile-proof {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:.25rem .45rem;
+    margin:.15rem auto .7rem;
+    color:rgba(255,255,255,.86);
+    font-size:.72rem;
+    line-height:1.35;
+  }
+  .landing-v3-mobile-proof strong { color:#fff; }
+  .landing-v3-mobile-proof-rating { color:#fff; white-space:nowrap; }
+  .landing-v3-mobile-proof-rating > span:first-child { color:#F5B301; }
 }
 
 /* --- Barra sticky mobile (social proof + richiamata) --- */
@@ -587,6 +612,205 @@ form button[type="submit"] i,
 /* A5: nota spese vive nella banda prezzo */
 .landing-v3-price-note { margin: 1.2rem 0 0; font-size: .85rem; line-height: 1.55; color: rgba(255,255,255,.78); }
 .landing-v3-price-note strong { color: rgba(255,255,255,.95); }
+
+/* ==========================================================================
+   12. LANDING V4 — TEST OFFERTA A TRE FORMULE
+   ========================================================================== */
+.landing-v4-pricing {
+  padding:clamp(4rem,7vw,6.5rem) 0;
+  background:#eef2f7;
+  color:#17213b;
+}
+.landing-v4-pricing-inner { max-width:72rem; margin:0 auto; }
+.landing-v4-pricing-head { max-width:48rem; margin:0 auto 2.25rem; text-align:center; }
+.landing-v4-eyebrow {
+  margin:0 0 .7rem;
+  color:#a06f19;
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:.16em;
+}
+.landing-v4-pricing-head h2 {
+  margin:0;
+  color:#1b2951;
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.03;
+  letter-spacing:-.025em;
+}
+.landing-v4-pricing-head > p:last-child {
+  max-width:42rem;
+  margin:1rem auto 0;
+  color:#556176;
+  font-size:1rem;
+  line-height:1.65;
+}
+.landing-v4-offer-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1.02fr) minmax(0,1.18fr);
+  gap:1rem;
+  align-items:stretch;
+}
+.landing-v4-complete {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  padding:2rem;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:1.25rem;
+  background:#1b2951;
+  color:#fff;
+  box-shadow:0 24px 54px rgba(27,41,81,.18);
+}
+.landing-v4-complete::after {
+  content:"";
+  position:absolute;
+  right:-4rem;
+  bottom:-4rem;
+  width:12rem;
+  height:12rem;
+  border:1px solid rgba(210,164,74,.2);
+  border-radius:50%;
+}
+.landing-v4-offer-topline {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  margin-bottom:2.35rem;
+}
+.landing-v4-recommended,
+.landing-v4-saving {
+  display:inline-flex;
+  align-items:center;
+  min-height:1.8rem;
+  padding:.3rem .65rem;
+  border-radius:999px;
+  font-size:.72rem;
+  font-weight:800;
+}
+.landing-v4-recommended { background:#d2a44a; color:#1b2951; }
+.landing-v4-saving { border:1px solid rgba(255,255,255,.24); color:#f4d898; }
+.landing-v4-offer-kicker {
+  margin:0 0 .4rem;
+  color:#d2a44a;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.landing-v4-complete h3,
+.landing-v4-phases h3 { margin:0; font-size:1.35rem; line-height:1.2; }
+.landing-v4-price {
+  margin:1.2rem 0 0;
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(3.5rem,7vw,5.3rem);
+  font-weight:700;
+  line-height:.9;
+  letter-spacing:-.055em;
+}
+.landing-v4-price-caption { margin:.65rem 0 1.4rem; color:#d9e0ee; font-size:.9rem; }
+.landing-v4-complete ul { display:grid; gap:.7rem; margin:0 0 1.75rem; padding:0; list-style:none; }
+.landing-v4-complete li { display:flex; gap:.65rem; color:#f4f6fa; line-height:1.45; }
+.landing-v4-complete li span { color:#d2a44a; font-weight:800; }
+.landing-v4-primary-cta,
+.landing-v4-secondary-cta {
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:3.25rem;
+  padding:.8rem 1.15rem;
+  border-radius:.7rem;
+  font-weight:800;
+  text-align:center;
+  text-decoration:none;
+  transition:transform .18s ease,background-color .18s ease;
+}
+.landing-v4-primary-cta { margin-top:auto; background:#d2a44a; color:#17213b !important; }
+.landing-v4-primary-cta:hover { background:#e0b65f; transform:translateY(-1px); }
+.landing-v4-phases {
+  display:flex;
+  flex-direction:column;
+  padding:2rem;
+  border:1px solid #dce3ed;
+  border-radius:1.25rem;
+  background:#fff;
+}
+.landing-v4-phases-head {
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:1.5rem;
+  padding-bottom:1.35rem;
+  border-bottom:1px solid #e3e8f0;
+}
+.landing-v4-phases-head > p { max-width:15rem; margin:0; color:#697489; font-size:.82rem; line-height:1.45; text-align:right; }
+.landing-v4-phase-row {
+  display:grid;
+  grid-template-columns:2.5rem minmax(0,1fr) auto;
+  gap:1rem;
+  align-items:center;
+  padding:1.55rem 0;
+  border-bottom:1px solid #e3e8f0;
+}
+.landing-v4-phase-index {
+  color:#a06f19;
+  font-family:"Fraunces",Georgia,serif;
+  font-size:1.2rem;
+  font-weight:700;
+}
+.landing-v4-phase-copy h4 { margin:0; color:#1b2951; font-size:1rem; }
+.landing-v4-phase-copy p { margin:.35rem 0 0; color:#667287; font-size:.82rem; line-height:1.45; }
+.landing-v4-phase-price {
+  margin:0;
+  color:#1b2951;
+  font-family:"Fraunces",Georgia,serif;
+  font-size:1.8rem;
+  font-weight:700;
+  letter-spacing:-.03em;
+  white-space:nowrap;
+}
+.landing-v4-secondary-cta {
+  margin-top:auto;
+  border:1px solid #1b2951;
+  background:#fff;
+  color:#1b2951 !important;
+}
+.landing-v4-secondary-cta:hover { background:#f3f5f8; transform:translateY(-1px); }
+.landing-v4-terms {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem 2rem;
+  margin-top:1.25rem;
+  padding:1.1rem 1.25rem;
+  border-left:3px solid #d2a44a;
+  background:#fff;
+  color:#606b7e;
+  font-size:.78rem;
+  line-height:1.55;
+}
+.landing-v4-terms p { margin:0; }
+.landing-v4-terms strong { color:#1b2951; }
+
+@media (max-width:767px) {
+  .landing-v4-pricing { padding:3.5rem 0; }
+  .landing-v4-pricing-head { margin-bottom:1.5rem; text-align:left; }
+  .landing-v4-pricing-head h2 { font-size:2.25rem; }
+  .landing-v4-pricing-head > p:last-child { margin-left:0; }
+  .landing-v4-offer-layout { grid-template-columns:1fr; }
+  .landing-v4-complete,
+  .landing-v4-phases { padding:1.35rem; }
+  .landing-v4-offer-topline { margin-bottom:1.65rem; }
+  .landing-v4-price { font-size:4rem; }
+  .landing-v4-phases-head { display:block; }
+  .landing-v4-phases-head > p { max-width:none; margin:.5rem 0 0; text-align:left; }
+  .landing-v4-phase-row { grid-template-columns:2rem minmax(0,1fr); gap:.75rem; }
+  .landing-v4-phase-price { grid-column:2; font-size:1.65rem; }
+  .landing-v4-secondary-cta { margin-top:1.25rem; }
+  .landing-v4-terms { grid-template-columns:1fr; }
+}
 
 /* FIX contrasto sottotitolo hero: una regola tipografica lo rendeva navy-su-navy e Fraunces */
 .landing-v3-body .hero-subtitle,

@@ -1,0 +1,239 @@
+---
+import '../../styles/landing.css';
+import { buildLandingPageConfig } from '../../data/landing-config';
+import { versionedSrc } from '../../lib/asset-version';
+import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
+import ClickConversionTracking from '../../components/ClickConversionTracking.astro';
+import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
+import MetaPixelTracking from '../../components/MetaPixelTracking.astro';
+import LandingExperimentTracking from '../../components/LandingExperimentTracking.astro';
+import { pricing } from '../../lib/business';
+
+import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
+import LandingOriginalHeroSection from '../../components/landing/LandingOriginalHeroSection.astro';
+import LandingOriginalReviewsSection from '../../components/landing/LandingOriginalReviewsSection.astro';
+import LandingOriginalProvvedimentiSection from '../../components/landing/LandingOriginalProvvedimentiSection.astro';
+import LandingOriginalProcedureSection from '../../components/landing/LandingOriginalProcedureSection.astro';
+import LandingOriginalFaqSection from '../../components/landing/LandingOriginalFaqSection.astro';
+import LandingV3PriceSection from '../../components/landing/LandingV3PriceSection.astro';
+import LandingV4PricingSection from '../../components/landing/LandingV4PricingSection.astro';
+import LandingV4FaqSection from '../../components/landing/LandingV4FaqSection.astro';
+import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
+import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
+import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
+
+interface Props {
+  variant?: 'v3' | 'v4';
+}
+
+const { variant = 'v3' } = Astro.props;
+const isV4 = variant === 'v4';
+
+const config = buildLandingPageConfig({
+  version: variant,
+  territory: 'nazionale',
+  keyword: 'sfratto-per-morosita',
+});
+---
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Sfratto">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1B2951">
+    <title>{config.seo.title}</title>
+    <meta name="description" content={config.seo.description}>
+    <meta name="keywords" content={config.seo.keywords}>
+    <meta name="robots" content={config.seo.robots}>
+    <meta name="author" content="SfrattoSicuro.it">
+    <link rel="canonical" href={config.seo.canonicalUrl}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={config.seo.ogTitle}>
+    <meta property="og:description" content={config.seo.ogDescription}>
+    <meta property="og:url" content={config.seo.ogUrl}>
+    <meta property="og:site_name" content="SfrattoSicuro.it">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={config.seo.twitterTitle}>
+    <meta name="twitter:description" content={config.seo.twitterDescription}>
+    <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
+    {!isV4 && <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.faq)} />}
+    <script>
+      (function(){
+        const CONSENT_KEY = 'ss_cookie_consent_v1';
+        const AW_ID = 'AW-10983419342';
+        function getParam(name){
+          const params = new URLSearchParams(window.location.search);
+          return params.get(name) || sessionStorage.getItem(name) || '';
+        }
+        function captureTrackingParams(){
+          const gclid = getParam('gclid');
+          const utmSource = getParam('utm_source');
+          const utmMedium = getParam('utm_medium');
+          const utmCampaign = getParam('utm_campaign');
+          const utmTerm = getParam('utm_term');
+          const utmContent = getParam('utm_content');
+          const keyword = getParam('keyword');
+          const matchtype = getParam('matchtype');
+          document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
+            var set = function(n, v){ var i = f.querySelector('[name="'+n+'"]'); if(i) i.value = v; };
+            set('gclid', gclid); set('utm_source', utmSource); set('utm_medium', utmMedium); set('utm_campaign', utmCampaign); set('utm_term', utmTerm); set('utm_content', utmContent); set('keyword', keyword); set('matchtype', matchtype);
+          });
+        }
+        function readConsent(){ try { const raw = localStorage.getItem(CONSENT_KEY); return raw ? JSON.parse(raw) : null; } catch { return null; } }
+        function initAdsIfNeeded(consent){
+          if (!consent?.marketing) return;
+          if (window.__landingAdsLoaded) return;
+          window.__landingAdsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          window.gtag = window.gtag || gtag;
+          window.gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+          window.gtag('js', new Date());
+          window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+          if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
+            var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID; s.setAttribute('data-landing-aw', AW_ID); document.head.appendChild(s);
+          }
+        }
+        // Applica al DOM quando è pronto (la call diretta è in <head>, form non ancora nel DOM)
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', captureTrackingParams, { once: true });
+        } else {
+          captureTrackingParams();
+        }
+        // Belt-and-suspenders: ri-applica al submit (copre form dinamici)
+        document.addEventListener('submit', function(ev) {
+          if (ev.target && ev.target.matches && ev.target.matches('form[action="/php/invia-email.php"]')) {
+            captureTrackingParams();
+          }
+        }, true);
+        // Allineata alla landing principale: tag Ads EAGER, senza gate consenso (decisione utente 2026-07-16).
+        // Così il gclid viene salvato nel cookie e le conversioni (modulo su grazie, WhatsApp, telefono) si attribuiscono.
+        initAdsIfNeeded({ marketing: true });
+      })();
+    </script>
+  </head>
+  <body class:list={['landing-v3-body', { 'landing-v4-body': isV4 }]}>
+    <LandingOriginalHeaderSection />
+    <main id="main-content" class="landing-v3-main" style="min-height:100vh; margin-top: var(--header-h, 90px);">
+      <LandingOriginalHeroSection hero={config.hero} />
+      <LandingOriginalProcedureSection procedure={config.procedure} />
+      {isV4 ? <LandingV4PricingSection /> : <LandingV3PriceSection />}
+      <LandingOriginalReviewsSection />
+      <LandingOriginalProvvedimentiSection />
+      <LandingV3FounderSection />
+      {isV4 ? <LandingV4FaqSection /> : <LandingOriginalFaqSection faqSection={config.faq} />}
+      <LandingV3ContactSection contactForm={config.contactForm} formSource={isV4 ? 'bottom_form_v4' : 'bottom_form_v3'} />
+    </main>
+
+    <!-- Sticky CTA mobile (social proof + richiamata) -->
+    <div class="landing-v3-sticky-cta">
+      <a href="tel:+390280898395" class="landing-v3-sticky-btn is-call"><i class="fas fa-phone" aria-hidden="true"></i> Chiama ora</a>
+      <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><i class="fas fa-pen" aria-hidden="true"></i> Lascia il numero</a>
+    </div>
+    <LandingOriginalFooterSection />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
+    <ClickConversionTracking eager />
+    <WebsiteCallTracking eager />
+    <MetaPixelTracking pixelId="1373903100373659" />
+    <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
+    <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
+    <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
+    <script src={versionedSrc('/assets/js/main.js')} defer></script>
+    <script is:inline>
+      (function(){
+        // Fuori orario (R7 commissione 2): il tap "Chiama ora" a studio chiuso squilla a vuoto.
+        // Lun-Ven 9-19, Sab 9-13 (Europe/Rome): fuori da queste fasce la sticky-call diventa
+        // un'ancora al form e il bottone-form dedicato si nasconde (sarebbe un doppione).
+        try {
+          var parts = new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', hour: 'numeric', weekday: 'short', hour12: false }).formatToParts(new Date());
+          var h = parseInt((parts.find(function(p){ return p.type === 'hour'; }) || {}).value, 10);
+          var wd = ((parts.find(function(p){ return p.type === 'weekday'; }) || {}).value || '').toLowerCase().slice(0, 3);
+          var feriale = ['lun','mar','mer','gio','ven'].indexOf(wd) > -1;
+          var open = (feriale && h >= 9 && h < 19) || (wd === 'sab' && h >= 9 && h < 13);
+          if (!open) {
+            var call = document.querySelector('.landing-v3-sticky-btn.is-call');
+            var formBtn = document.querySelector('.landing-v3-sticky-btn.is-form');
+            if (call) {
+              call.setAttribute('href', '#form-rapido');
+              call.innerHTML = '<i class="fas fa-phone" aria-hidden="true"></i> Chiusi ora: lascia il numero';
+              call.classList.add('is-closed');
+            }
+            if (formBtn) formBtn.style.display = 'none';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script is:inline>
+      (function(){
+        // Eventi funnel GA4 (blocco A11 commissione): misura dove si perde l'utente.
+        function ev(name, params){ if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
+        var formStarted = false;
+        document.addEventListener('focusin', function(e){
+          if (formStarted) return;
+          var f = e.target && e.target.closest && e.target.closest('form[action="/php/invia-email.php"]');
+          if (!f) return;
+          formStarted = true;
+          ev('form_start', { form_id: f.id || (f.querySelector('[name=form_source]')||{}).value || '' });
+        });
+        document.addEventListener('submit', function(e){
+          var f = e.target;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          ev('submit_attempt', { form_id: f.id || '' });
+        }, true);
+        document.addEventListener('invalid', function(e){
+          var el = e.target, f = el && el.form;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          ev('submit_blocked', { form_id: f.id || '', field: el.name || el.id || '', reason: (el.validationMessage || '').slice(0, 80) });
+        }, true);
+        document.addEventListener('click', function(e){
+          var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+          if (!a) return;
+          var h = (a.getAttribute('href') || '').toLowerCase();
+          var kind = h.indexOf('tel:') === 0 ? 'tel' : ((h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) ? 'whatsapp' : null);
+          if (!kind) return;
+          ev('cta_click', { channel: kind, position: (a.className || '').toString().split(' ')[0].slice(0, 40) });
+        }, true);
+      })();
+    </script>
+    <script is:inline>
+      (function(){
+        // Qualificazione v3: blocca invio se inquilino o se manca la scelta proprietario/inquilino.
+        document.addEventListener('submit', function(ev){
+          var f = ev.target;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          var sel = f.querySelector('select[name="proprietario"]');
+          if (!sel) return;
+          if (!sel.value) {
+            ev.preventDefault(); ev.stopImmediatePropagation();
+            alert('Indica se sei proprietario/locatore oppure inquilino.');
+            sel.focus();
+            return;
+          }
+          if (sel.value === 'inquilino') {
+            ev.preventDefault(); ev.stopImmediatePropagation();
+            alert('Questo servizio è riservato ai proprietari e ai locatori. Non assistiamo inquilini.');
+          }
+        }, true);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+---
+interface Props {
+  experimentId: string;
+  variant: 'v3' | 'v4';
+}
+
+const { experimentId, variant } = Astro.props;
+---
+<script is:inline define:vars={{ experimentId, variant }}>
+  (function () {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+    window.gtag('event', 'landing_experiment_view', {
+      experiment_id: experimentId,
+      experiment_variant: variant,
+    });
+
+    function annotateForms() {
+      document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function (form) {
+        [
+          ['experiment_id', experimentId],
+          ['experiment_variant', variant],
+        ].forEach(function (entry) {
+          var input = form.querySelector('input[name="' + entry[0] + '"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = entry[0];
+            form.appendChild(input);
+          }
+          input.value = entry[1];
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', annotateForms, { once: true });
+    } else {
+      annotateForms();
+    }
+  })();
+</script>

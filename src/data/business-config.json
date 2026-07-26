@@ -15,7 +15,13 @@
     "compensoComplessivo": 1300,
     "compensoFormatted": "EUR 1.300",
     "compensoFormattedLong": "EUR 1.300 fino al rilascio dell'immobile",
-    "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto."
+    "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto.",
+    "testV4": {
+      "faseConvalida": 800,
+      "faseEsecutiva": 700,
+      "ivaCassaIncluse": true,
+      "experimentId": "pricing_v3_v4_2026_07"
+    }
   },
   "tempi": {
     "convalidaMedia": "circa 60 giorni",

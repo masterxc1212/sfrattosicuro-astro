@@ -3,9 +3,13 @@ import { landingOriginal } from '../../data/landing-original';
 
 interface Props {
   contactForm?: typeof landingOriginal.contactForm;
+  formSource?: string;
 }
 
-const { contactForm = landingOriginal.contactForm } = Astro.props;
+const {
+  contactForm = landingOriginal.contactForm,
+  formSource = 'bottom_form_v3',
+} = Astro.props;
 ---
 <section id={contactForm.sectionId} class="py-16 bg-gray-pearl landing-v3-contact" aria-labelledby="contatti-heading-v3">
   <div class="container mx-auto px-4">
@@ -96,7 +100,7 @@ const { contactForm = landingOriginal.contactForm } = Astro.props;
               </select>
             </div>
 
-            <input type="hidden" name="form_source" value="bottom_form_v3">
+            <input type="hidden" name="form_source" value={formSource}>
             <input type="hidden" name="gclid" value="">
             <input type="hidden" name="utm_source" value="">
             <input type="hidden" name="utm_medium" value="">
