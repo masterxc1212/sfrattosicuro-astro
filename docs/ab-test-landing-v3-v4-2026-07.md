@@ -1,5 +1,16 @@
 # A/B test landing V3 vs V4 — luglio 2026
 
+## Stato operativo
+
+- Implementazione V3/V4 completata e build locale verificata il 26 luglio
+  2026: 213 pagine.
+- Hero mobile condiviso: promessa e spiegazione dell'offerta prima del form.
+- Recensioni Google aggiornate a 22 tramite fallback centralizzato e cache
+  locale; il dato live resta aggiornabile da `/php/get-reviews.php`.
+- Tracking variante e campi hidden dei form verificati.
+- Deploy autorizzato su `main` tramite GitHub Actions/SiteGround.
+- Configurazione dell'esperimento Google Ads da completare dopo il deploy.
+
 ## Ipotesi
 
 Mostrare una scelta economica più flessibile (`€800` convalida, `€700` eventuale
@@ -27,6 +38,19 @@ la presentazione dell'offerta e le FAQ economiche.
 6. Disattivare l'applicazione automatica del vincitore.
 7. Non modificare la campagna base durante il test; se disponibile, attivare la
    sincronizzazione delle modifiche non sperimentali.
+
+### Identificativi operativi
+
+- Account Google Ads: `865-789-5088`
+- Campagna: `Avvocato per Sfratto`
+- Campaign ID: `22849022328`
+- Variante controllo: `/landing-v3/`
+- Variante trattamento: `/landing-v4/`
+- Ripartizione prevista: `50/50`
+
+Prima di avviare il test, aprire entrambe le URL di produzione e verificare
+risposta HTTP 200, valore recensioni 22, form e tracking. Annotare nel presente
+documento data di avvio e durata iniziale scelta in Google Ads.
 
 ## Misurazione
 

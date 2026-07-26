@@ -104,6 +104,39 @@ Gli 8 sitelink attuali (`#hero`, `#servizi`, `#come-funziona`, `#prezzi`, `#faq`
 
 **Fix hash-scroll esterno (aprile 2026)**: `public/assets/js/main.js` include le funzioni `scrollToHash()` e `initInitialHashScroll()` per gestire l'arrivo con hash da Google SERP. Il vecchio `initSmoothScroll()` gestiva solo i click interni. Senza il nuovo handler, arrivando da un sitelink l'utente atterrava sull'hero invece che sulla sezione target.
 
+## Landing V3/V4 + A/B test pricing (aggiornamento 26 luglio 2026)
+
+Le route `/landing-v3/` e `/landing-v4/` condividono ora il componente
+`src/components/landing/LandingExperimentPage.astro`, così struttura, form,
+prove sociali e tracking restano identici nel test:
+
+- **V3 controllo:** formula completa da EUR 1.300 fino alle chiavi.
+- **V4 trattamento:** EUR 800 fase di convalida, EUR 700 eventuale fase
+  esecutiva, oppure EUR 1.300 formula completa consigliata.
+- **Experiment ID:** `pricing_v3_v4_2026_07`.
+- **Documento operativo:** `docs/ab-test-landing-v3-v4-2026-07.md`.
+
+Su mobile la promessa, il titolo, la prova sociale e i benefici vengono prima
+del form. Il vecchio ordinamento form-first non va ripristinato senza dati che
+lo giustifichino. La V4 usa `LandingV4PricingSection.astro` e
+`LandingV4FaqSection.astro`; la V3 mantiene i blocchi economici precedenti.
+
+Il tracking condiviso è gestito da
+`src/components/LandingExperimentTracking.astro`: invia la vista variante in
+GA4 e aggiunge ai form `experiment_id` e `experiment_variant`. Restano attivi
+anche gli eventi diagnostici `form_start`, `submit_attempt` e
+`submit_blocked`.
+
+Le recensioni Google reali sono **22**. Il fallback è centralizzato in
+`business-config.json` come `socialProof.googleReviewsTotal`; il caricamento
+live tramite `/php/get-reviews.php` può aggiornare il DOM, con fallback
+`public/assets/data/reviews-cache.json`. Non reintrodurre numeri hardcodati nei
+componenti.
+
+Build verificata il 26 luglio 2026: **213 pagine**, completata senza errori.
+Il rilascio V3/V4 è destinato alla campagna Google Ads `Avvocato per Sfratto`
+(customer `865-789-5088`, campaign `22849022328`).
+
 ## Progetto sedi/tribunali (chiuso)
 
 `tribunali-batch-progress.json` traccia l'arricchimento di `sedi.json.tribunaleInfo` per tutte le 137 sedi. Stato al 30 aprile 2026: **137/137 completate**, batch 0-5 chiusi, zero duplicati `udienze`/`note`. La skill `tribunali-sedi-ansalone` documenta il workflow se serve riprendere.
