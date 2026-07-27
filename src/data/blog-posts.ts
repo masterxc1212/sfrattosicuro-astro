@@ -16,6 +16,83 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'contratto-affitto-cointestato',
+    title: "Contratto di affitto cointestato: come funziona per il proprietario",
+    description: "Contratto di affitto cointestato: come funziona la solidarietà tra più inquilini, cosa fare se uno non paga o recede e le clausole da inserire.",
+    excerpt: "Affittare a più inquilini con un contratto cointestato è un'ottima garanzia per il proprietario, ma solo se è scritto bene. Guida pratica alla solidarietà tra co-conduttori, alla gestione delle morosità, al recesso di un solo inquilino e alle clausole da inserire per proteggersi.",
+    lead: "Quando affitti a una coppia o a più coinquilini firmi un contratto cointestato. Ecco come funziona la solidarietà tra gli inquilini, cosa succede se uno non paga o se ne va, e le clausole indispensabili per tutelarti.",
+    publishedAt: '2026-07-27',
+    updatedAt: '2026-07-27',
+    category: 'Locazioni',
+    readingTime: '6 min',
+    sourceNote: "Generato automaticamente 2026-07-27. Keyword: contratto affitto cointestato, vol 90, KD 0 (DataForSEO).",
+    html: `
+<p>Affittare a una coppia, a un gruppo di studenti o a due amici che dividono le spese è molto comune. In questi casi si firma un <strong>contratto di affitto cointestato</strong>, cioè intestato a più inquilini insieme. Per il proprietario cambia parecchio: chi risponde del canone se uno non paga? Che succede se uno se ne va prima della scadenza? In questa guida pratica vediamo come funziona la locazione con più conduttori e come proteggersi fin dalla firma.</p>
+
+<h2>Che cos'è un contratto di affitto cointestato</h2>
+<p>Un contratto è cointestato quando come conduttori (cioè inquilini) figurano due o più persone che firmano tutte lo stesso contratto per lo stesso immobile. Non è la stessa cosa della sublocazione o del subentro: qui gli inquilini sono contitolari sin dall'inizio, tutti insieme, dello stesso rapporto con il locatore (il proprietario).</p>
+<p>Il vantaggio per il proprietario è evidente: più persone tenute a rispettare gli obblighi significa, di regola, più garanzie di pagamento. Ma solo se il contratto è scritto bene. Vediamo il punto più importante.</p>
+
+<h2>La regola d'oro: la solidarietà tra gli inquilini</h2>
+<p>Quando gli inquilini sono più di uno, il canone è dovuto in modo <strong>solidale</strong>. &laquo;Solidale&raquo; vuol dire che il proprietario può pretendere l'intero canone da uno qualsiasi dei conduttori, e non solo la sua quota. Se uno non paga, gli altri rispondono per l'intero; sarà poi loro il compito di regolare i conti tra di loro. La Corte di Cassazione ha ribadito questo principio anche di recente (ordinanza n. 21051 del 27 luglio 2024).</p>
+<p>Attenzione però: per evitare qualunque discussione, la solidarietà va <strong>scritta in modo espresso</strong> nel contratto, con una clausola del tipo &laquo;i conduttori sono obbligati in solido tra loro per il pagamento del canone e per ogni altra obbligazione contrattuale&raquo;. È l'accorgimento più importante di tutti: senza, rischi di doverti muovere separatamente contro ciascun inquilino per la sua quota.</p>
+
+<h2>Se uno degli inquilini non paga</h2>
+<p>Grazie alla solidarietà, se un inquilino salta il pagamento puoi rivolgerti agli altri per l'intero importo, senza dover prima &laquo;dividere&raquo; il debito. In pratica:</p>
+<ul>
+<li><strong>Sollecita per iscritto tutti i conduttori</strong>, non solo quello che ha mancato il pagamento: sono tutti responsabili.</li>
+<li><strong>Conserva le prove</strong> dei mancati pagamenti (estratti conto, solleciti) intestandole al rapporto e non al singolo.</li>
+<li>Se la morosità continua, la strada resta quella ordinaria dello sfratto per morosità e del recupero delle somme: trovi i passaggi nella guida su <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">cosa fare quando l'inquilino non paga</a>.</li>
+</ul>
+<p>Nel giudizio conviene agire nei confronti di tutti i conduttori: essendo un'obbligazione solidale, puoi comunque chiedere l'intero a ciascuno, ma coinvolgerli tutti mette al riparo da eccezioni e rende più solido il recupero.</p>
+
+<h2>Se uno degli inquilini se ne va</h2>
+<p>Capita spesso, soprattutto con coppie che si separano o coinquilini che cambiano città: uno vuole uscire dal contratto prima della scadenza. Ecco i punti da conoscere:</p>
+<ul>
+<li><strong>Il recesso di un solo conduttore è generalmente possibile</strong> quando è previsto dal contratto o ricorrono gravi motivi, ma <strong>non scioglie il contratto</strong>: il rapporto prosegue con gli inquilini rimasti, che restano obbligati per l'intero canone.</li>
+<li>Il conduttore che esce resta responsabile fino a quando il suo recesso diventa efficace (di norma con il preavviso previsto dal contratto o dalla legge). Se è stata pattuita la solidarietà, la sua uscita non alleggerisce automaticamente la posizione degli altri.</li>
+<li>È opportuno aggiornare la registrazione del contratto presso l'<strong>Agenzia delle Entrate</strong> (modello RLI) quando cambia la composizione degli inquilini. Su come si gestisce la parte fiscale del contratto, vedi la guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione</a>.</li>
+</ul>
+<p>Come proprietario, non sei obbligato a sostituire l'inquilino uscente: il contratto continua così com'è con chi resta. Se invece vuoi inserire un nuovo conduttore al posto di quello uscito, serve il tuo consenso e un aggiornamento formale del contratto.</p>
+
+<h2>Cosa mettere nel contratto: la checklist del proprietario</h2>
+<p>Un contratto cointestato scritto bene ti evita quasi tutti i problemi. Prima della firma verifica che ci siano:</p>
+<ul>
+<li><strong>Clausola di solidarietà</strong> espressa tra tutti i conduttori (il punto più importante).</li>
+<li><strong>Dati completi di ogni inquilino</strong> e firma di tutti sul contratto e sul verbale di consegna.</li>
+<li><strong>Regola sul recesso</strong>: modalità e preavviso, chiarendo che il recesso del singolo non libera gli altri.</li>
+<li><strong>Deposito cauzionale</strong> unico a garanzia dell'intero rapporto, non frazionato per persona.</li>
+<li><strong>Domicilio per le comunicazioni</strong>, così da poter inviare validamente solleciti e disdette a tutti.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Dimenticare la clausola di solidarietà</strong>: è l'errore più costoso, perché ti costringerebbe a inseguire ogni inquilino per la sua quota.</li>
+<li><strong>Accettare pagamenti &laquo;pro quota&raquo;</strong> come normalità: se accetti solo la parte di chi paga, rischi di indebolire la tua posizione verso gli altri.</li>
+<li><strong>Liberare l'inquilino che se ne va</strong> senza un accordo scritto con tutti: fallo solo con un atto chiaro, altrimenti restano dubbi sulle responsabilità.</li>
+<li><strong>Non aggiornare la registrazione</strong> quando cambia la composizione degli inquilini.</li>
+<li><strong>Far firmare uno solo &laquo;per tutti&raquo;</strong>: ogni conduttore deve firmare personalmente per essere davvero obbligato.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso chiedere l'intero canone a uno solo degli inquilini?</h3>
+<p>Sì, se nel contratto è prevista la solidarietà (ed è comunque il principio riconosciuto per la pluralità di conduttori). Puoi rivolgerti a uno qualsiasi per l'intero; sarà poi lui a rivalersi sugli altri per le rispettive quote.</p>
+<h3>Se uno degli inquilini recede, gli altri pagano meno?</h3>
+<p>No. Il recesso del singolo non riduce il canone: gli inquilini rimasti continuano a dover pagare l'intero importo pattuito, salvo che tu accetti di rinegoziare il contratto.</p>
+<h3>Devo sostituire l'inquilino che se ne va?</h3>
+<p>No, non sei obbligato. Il contratto prosegue con chi resta. Un eventuale nuovo conduttore entra solo con il tuo consenso e con la modifica formale del contratto.</p>
+<h3>La solidarietà vale anche per i danni all'immobile?</h3>
+<p>Se il contratto la prevede in modo ampio (&laquo;per ogni obbligazione contrattuale&raquo;), copre anche gli obblighi diversi dal canone, come la corretta riconsegna dell'immobile. Per questo conviene una clausola formulata in senso generale.</p>
+
+<h2>In sintesi</h2>
+<p>Il contratto di affitto cointestato è un'ottima garanzia per il proprietario, a una condizione: <strong>prevedere per iscritto la solidarietà</strong> tra gli inquilini. Con quella clausola puoi pretendere l'intero canone da chiunque di loro, il recesso di uno non ti lascia scoperto e la gestione delle morosità diventa più semplice. Ricorda solo di far firmare tutti, tenere aggiornata la registrazione e mettere per iscritto ogni cambiamento.</p>
+<p>Se stai preparando un contratto con più inquilini o devi gestire un recesso o una morosità in una locazione cointestata, il team di <strong>Sfratto Sicuro</strong> può assisterti: scopri il servizio di <a href="/servizi/contratti-di-locazione/">assistenza sui contratti di locazione</a> e di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto a scopo informativo, aggiornato alla normativa vigente: non sostituisce una consulenza legale sul caso concreto.</em></p>
+
+<p><small>Riferimenti normativi: artt. 1292 e 1294 del Codice civile (nozione di solidarietà passiva e presunzione di solidarietà tra più debitori, salvo diversa previsione); art. 1590 del Codice civile (obbligo di restituzione dell'immobile locato); Legge 9 dicembre 1998, n. 431 (disciplina delle locazioni abitative, forma scritta e registrazione); Corte di Cassazione, sez. III civile, ordinanza n. 21051 del 27 luglio 2024 (solidarietà tra co-conduttori e recesso del singolo).</small></p>
+`,
+  },
+  {
     slug: 'inquilino-moroso-nullatenente',
     title: "Inquilino moroso nullatenente: cosa può fare davvero il proprietario",
     description: "Inquilino moroso e nullatenente? Lo sfratto va avanti comunque. Ecco i limiti reali del recupero canoni e come tutelarti, anche col Fisco.",
