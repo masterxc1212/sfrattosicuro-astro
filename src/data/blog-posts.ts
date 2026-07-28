@@ -16,6 +16,71 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'sfratto-inquilino-senza-contratto',
+    title: "Sfratto di un inquilino senza contratto: come riprendere l'immobile",
+    description: "Sfratto di un inquilino senza contratto: perche non puoi usare la procedura veloce e come riprendere davvero l'immobile con gli strumenti giusti.",
+    excerpt: "Hai lasciato entrare qualcuno senza un contratto scritto e ora non se ne va? Lo sfratto rapido spesso non si puo usare. Ecco perche, quali vie hai per riprendere l'immobile e gli errori da evitare per non peggiorare la situazione.",
+    lead: "Quando manca un contratto valido, la procedura veloce di sfratto non e utilizzabile: chi occupa e un occupante senza titolo. Vediamo, passo per passo, come un proprietario puo riprendere l'immobile senza commettere errori.",
+    publishedAt: '2026-07-28',
+    updatedAt: '2026-07-28',
+    category: 'Sfratti',
+    readingTime: '6 min',
+    sourceNote: "Generato automaticamente 2026-07-28. Keyword: sfratto inquilino senza contratto, vol 20, KD 0 (DataForSEO).",
+    html: `
+<p>Hai lasciato entrare qualcuno in un tuo immobile senza mai firmare un contratto scritto — un accordo solo a voce, magari con un parente o un conoscente — e ora quella persona non se ne vuole andare? Lo <strong>sfratto di un inquilino senza contratto</strong> è una delle situazioni più insidiose per un proprietario, perché il rimedio veloce che tutti conoscono (lo sfratto vero e proprio) qui spesso non si può usare. In questa guida vediamo, in modo semplice, perché succede, quali sono le tue reali possibilità per riprendere l'immobile e gli errori che possono trasformare un problema gestibile in un guaio serio.</p>
+
+<h2>Cosa significa davvero "sfratto senza contratto"</h2>
+<p>Iniziamo da un chiarimento importante: l'espressione "sfratto senza contratto" è, tecnicamente, una contraddizione. Lo <strong>sfratto</strong> è una procedura pensata per chiudere un rapporto di <strong>locazione</strong> (l'affitto), quindi presuppone che un contratto ci sia. Quando il contratto manca, cambia tutto: cambiano gli strumenti, i tempi e ciò che devi dimostrare davanti al giudice.</p>
+<p>Sotto la stessa etichetta si nascondono in realtà tre situazioni molto diverse:</p>
+<ul>
+<li><strong>Accordo solo verbale:</strong> avete pattuito un affitto a voce, la persona ti paga (o pagava) qualcosa, ma non avete mai messo nulla per iscritto.</li>
+<li><strong>Contratto scritto ma mai registrato:</strong> un foglio firmato esiste, però non è stato registrato all'Agenzia delle Entrate (il classico "affitto in nero").</li>
+<li><strong>Occupazione senza alcun accordo:</strong> hai concesso l'uso della casa a titolo di cortesia (a un familiare, a un amico) e ora chi la occupa non vuole liberarla, oppure è entrato senza il tuo permesso.</li>
+</ul>
+<p>Capire in quale casella ricadi è il primo passo, perché ognuna ha una via d'uscita diversa.</p>
+
+<h2>Perché non puoi usare la procedura veloce di sfratto</h2>
+<p>La legge, per proteggere l'inquilino e per contrastare l'evasione fiscale, impone che i contratti di affitto di un'abitazione siano fatti <strong>per iscritto</strong>: un accordo solo a voce è considerato <strong>nullo</strong>, cioè come se non esistesse. Lo stesso vale, di regola, per un contratto che non viene registrato.</p>
+<p>La conseguenza pratica è netta: senza un contratto valido non hai un rapporto di locazione da "chiudere", e quindi <strong>non puoi ricorrere al procedimento rapido di convalida di sfratto</strong>, quello che porta davanti al giudice in poche settimane. Chi occupa la casa, in assenza di un titolo valido, è considerato un <strong>occupante senza titolo</strong>: per mandarlo via devi seguire la strada più lunga della causa ordinaria, chiedendo il rilascio dell'immobile e, di solito, anche un'indennità per il periodo di occupazione.</p>
+
+<h3>Una trappola da conoscere: la tutela dell'inquilino</h3>
+<p>C'è un'eccezione che gioca a sfavore del proprietario. Se la forma verbale è stata <strong>imposta da te</strong> (per esempio per non pagare le tasse sull'affitto), la legge consente all'inquilino di rivolgersi al giudice per far "registrare" d'ufficio il contratto, spesso a un canone più basso di quello pattuito. In parole povere: chi affitta in nero rischia di ritrovarsi un contratto imposto dal tribunale, a condizioni peggiori, invece di liberarsi dell'occupante. È un motivo in più per non improvvisare.</p>
+
+<h2>I passi pratici per riprendere l'immobile</h2>
+<p>Ecco un percorso ragionato, dal più semplice al più impegnativo.</p>
+<ul>
+<li><strong>1. Raccogli le prove.</strong> Anche senza contratto, servono elementi che raccontino cosa è successo: bonifici o ricevute dei pagamenti, messaggi (WhatsApp, e-mail), eventuali testimoni, la data in cui la persona è entrata. Ti serviranno sia per dimostrare la tua proprietà, sia per chiarire la natura del rapporto.</li>
+<li><strong>2. Manda una diffida scritta.</strong> Prima di andare in causa, invia una lettera formale (raccomandata con ricevuta di ritorno o PEC, la posta elettronica certificata) con cui chiedi la riconsegna dell'immobile entro un termine preciso. Spesso una richiesta formale, fatta bene, basta a sbloccare la situazione.</li>
+<li><strong>3. Se rifiuta, avvia la causa di rilascio.</strong> Con l'assistenza di un avvocato, puoi agire in giudizio per ottenere una sentenza che ordini il rilascio dell'immobile per occupazione senza titolo. È la via ordinaria: più lenta dello sfratto, ma è quella corretta quando manca un contratto valido.</li>
+<li><strong>4. Valuta se conviene regolarizzare.</strong> In alcuni casi, mettere in regola la posizione (registrando un contratto) può essere più conveniente e rapido che affrontare una causa. È una scelta da ponderare con un professionista, soprattutto per i risvolti fiscali del passato.</li>
+</ul>
+
+<h2>Gli errori da evitare assolutamente</h2>
+<p>Quando l'occupante non collabora, la tentazione di "fare da sé" è forte. È qui che molti proprietari si mettono nei guai.</p>
+<ul>
+<li><strong>Non cambiare la serratura</strong> e non buttare fuori la persona con la forza. Riprendersi l'immobile da soli, anche se sei il proprietario, può configurare un reato (l'esercizio arbitrario delle proprie ragioni) e ribaltare la situazione a tuo danno.</li>
+<li><strong>Non staccare luce, acqua o gas</strong> per costringere l'occupante ad andarsene: è una condotta che può esporti a responsabilità civili e penali.</li>
+<li><strong>Non trattare come "abusivo" chi è entrato con il tuo consenso.</strong> Un conto è chi ha occupato la casa contro la tua volontà (l'<a href="/blog/occupazione-abusiva-immobile/">occupazione abusiva di immobile</a> ha regole sue), un altro è chi è entrato con un accordo, anche solo verbale: la strada legale è diversa.</li>
+<li><strong>Non ignorare il lato fiscale.</strong> Se hai incassato affitti mai dichiarati, prima di muoverti conviene mettere in conto i <a href="/blog/affitto-a-nero-rischi-proprietario/">rischi dell'affitto in nero per il proprietario</a>, perché l'occupante potrebbe usarli contro di te.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso sfrattare chi vive in casa mia senza contratto?</h3>
+<p>Non con la procedura rapida di sfratto, che presuppone un affitto regolare. Puoi però ottenere il rilascio dell'immobile con una causa ordinaria per occupazione senza titolo. È più lenta, ma è lo strumento giusto.</p>
+<h3>Chi non ha un contratto ha comunque dei diritti?</h3>
+<p>Sì. Anche senza un contratto scritto, chi occupa non può essere cacciato con la forza. E se la forma verbale è stata imposta dal proprietario, l'occupante può addirittura chiedere al giudice di far valere un contratto a condizioni di legge.</p>
+<h3>Quanto tempo serve per liberare l'immobile?</h3>
+<p>Non esiste un tempo fisso: dipende dal tribunale, dalla complessità e dalla collaborazione dell'occupante. La causa ordinaria richiede in genere più tempo di uno sfratto per morosità con contratto regolare. Prima raccogli prove solide, prima il percorso si sblocca.</p>
+<h3>Se la persona mi pagava l'affitto a voce, è considerata un inquilino?</h3>
+<p>I pagamenti dimostrano che un accordo di fatto c'era, ma senza forma scritta quel contratto resta nullo. Le somme incassate servono a ricostruire la vicenda, non a trasformare l'accordo verbale in una locazione valida.</p>
+
+<h2>In sintesi</h2>
+<p>Se ti trovi con un occupante senza contratto, la cosa peggiore è agire d'impulso. La via corretta è ricostruire le prove, diffidare per iscritto la persona a lasciare l'immobile e, se serve, agire in giudizio per il rilascio, valutando insieme a un professionista anche i profili fiscali. Un percorso ordinato, fin dal primo passo, è ciò che fa la differenza tra recuperare la casa e complicarsi la vita.</p>
+<p>Se vuoi capire qual è la strada giusta nel tuo caso, gli avvocati di <strong>Sfratto Sicuro</strong> possono aiutarti a valutare la situazione e a muoverti nel modo corretto: scopri come funziona la <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale sul caso concreto. Riferimenti normativi: forma scritta obbligatoria a pena di nullità per le locazioni abitative (art. 1, comma 4, Legge 431/1998); nullità dei contratti non registrati (art. 1, comma 346, Legge 311/2004); tutela dell'inquilino in caso di forma verbale imposta dal locatore o di mancata registrazione (art. 13, comma 6, Legge 431/1998); procedimento per convalida di sfratto (artt. 657-669 del codice di procedura civile), non utilizzabile in assenza di un contratto valido; riforma del processo civile "Cartabia" (D.Lgs. 149/2022) e relativo correttivo (D.Lgs. 164/2024) per il rito ordinario di cognizione.</em></p>
+`,
+  },
+  {
     slug: 'contratto-affitto-cointestato',
     title: "Contratto di affitto cointestato: come funziona per il proprietario",
     description: "Contratto di affitto cointestato: come funziona la solidarietà tra più inquilini, cosa fare se uno non paga o recede e le clausole da inserire.",
