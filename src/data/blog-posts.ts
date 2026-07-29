@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "morte-inquilino-contratto-affitto",
+    title: "Morte dell'inquilino: cosa succede al contratto di affitto",
+    description: "Morte dell'inquilino: il contratto di affitto non finisce da solo. Chi subentra e quando il proprietario può riavere la casa. Guida pratica.",
+    excerpt: "Quando l'inquilino muore il contratto di affitto non si estingue automaticamente: alcune persone conviventi possono subentrare. Ecco, dalla parte del proprietario, chi ha diritto a restare, quando puoi riavere l'immobile e i passaggi pratici e fiscali da seguire.",
+    lead: "La morte del conduttore non chiude da sola il contratto di locazione: la legge stabilisce chi, tra familiari conviventi e partner stabile, può prenderne il posto. Vediamo dalla parte del proprietario chi ha diritto a subentrare, quando puoi rientrare in possesso della casa e cosa fare sul piano pratico e fiscale.",
+    publishedAt: "2026-07-29",
+    updatedAt: "2026-07-29",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-07-29. Keyword: morte conduttore contratto locazione, vol 90, KD 0 (DataForSEO). Secondarie: morte inquilino affitto, successione nel contratto di locazione.",
+    html: `
+<p>La scomparsa di un inquilino è prima di tutto una vicenda umana, ma lascia il proprietario con dubbi concreti da chiarire con serenità. il contratto è finito? Puoi riprenderti la casa? Devi continuare ad accettare i canoni da chi vive ancora nell'appartamento? Sono domande frequenti e delicate, perché la morte del conduttore (cioè dell'inquilino, la parte che ha in affitto l'immobile) <strong>non fa sparire automaticamente il contratto di locazione</strong>. In questa guida vediamo, dalla parte del proprietario, chi ha diritto a subentrare, quando puoi rientrare in possesso dell'immobile e quali passaggi pratici e fiscali seguire per non commettere errori.</p>
+
+<h2>La regola di base: il contratto non si estingue con la morte</h2>
+<p>Molti proprietari danno per scontato che, morto l'inquilino, il contratto cessi da solo. Non è così. La legge prevede che, alla morte del conduttore, alcune persone a lui legate possano <strong>succedergli nel contratto</strong>, cioè prenderne il posto alle stesse condizioni. Il rapporto di affitto prosegue quindi con il nuovo intestatario, con gli stessi obblighi (pagare il canone, custodire l'immobile) e gli stessi diritti.</p>
+<p>Questo significa due cose importanti per te proprietario: da un lato non puoi trattare la casa come "libera" solo perché l'intestatario è deceduto; dall'altro, se c'è qualcuno che ha diritto a subentrare, hai comunque un interlocutore tenuto a rispettare il contratto.</p>
+
+<h2>Chi ha diritto a subentrare nel contratto</h2>
+<p>Per gli affitti di abitazione, la legge indica una cerchia precisa di persone che subentrano al conduttore defunto. Il criterio chiave è la <strong>convivenza abituale</strong> nell'immobile al momento della morte. Hanno diritto a succedere:</p>
+<ul>
+<li>il <strong>coniuge</strong> (per il quale la convivenza si presume) e, oggi, la parte dell'unione civile;</li>
+<li>gli <strong>eredi</strong> e i <strong>parenti e affini</strong> che abitavano stabilmente con lui;</li>
+<li>il <strong>convivente di fatto</strong>, cioè il partner stabile non sposato, che per legge ha facoltà di succedere nel contratto della casa di comune residenza;</li>
+<li>in caso di separazione o divorzio, il coniuge a cui era stata assegnata la casa familiare, secondo le regole di legge.</li>
+</ul>
+<p>Il punto da capire è che non basta essere "erede" in senso ereditario: per subentrare in un affitto abitativo occorre di regola aver <strong>convissuto</strong> stabilmente con l'inquilino. Un figlio che viveva altrove, ad esempio, non subentra automaticamente nel contratto solo perché è erede.</p>
+
+<h2>E se non c'è nessuno che conviveva? Quando rientri in possesso</h2>
+<p>Qui sta la differenza pratica più rilevante per il proprietario. Se nell'immobile <strong>non vive nessuna delle persone aventi diritto</strong> a succedere, il contratto non prosegue con eredi che abitavano altrove: in questo caso puoi attivarti per riavere la disponibilità della casa. Restano invece a carico dell'eredità i canoni e le somme eventualmente maturate fino alla riconsegna dell'immobile.</p>
+<p>Attenzione però: anche quando ritieni di avere diritto a rientrare, <strong>non devi mai riprendere possesso da solo</strong>, cambiando la serratura o svuotando l'appartamento. I beni lasciati nell'immobile appartengono all'eredità e non possono essere rimossi o trattenuti. Se qualcuno occupa ancora l'immobile o vi sono beni del defunto, la strada corretta è formalizzare la situazione e, se necessario, rivolgerti al giudice. Agire di testa propria può trasformare una posizione favorevole in un problema legale.</p>
+
+<h2>I passi pratici per il proprietario</h2>
+<p>Ecco un percorso ordinato, dal momento in cui apprendi del decesso fino alla regolarizzazione.</p>
+<h3>1. Accerta la situazione di fatto</h3>
+<p>Verifica chi risiedeva e conviveva realmente nell'immobile al momento della morte. La residenza anagrafica e la stabile convivenza sono elementi decisivi per capire se qualcuno ha diritto a subentrare.</p>
+<h3>2. Individua se c'è un avente diritto</h3>
+<p>Se un convivente avente diritto intende continuare, il contratto prosegue con lui: fatti indicare per iscritto chi subentra e a quale titolo. Se invece nessuno ha diritto a succedere, prendi atto della situazione e prepara i passi per la riconsegna.</p>
+<h3>3. Formalizza il subentro (o la chiusura)</h3>
+<p>Il cambio di intestatario del contratto va comunicato per iscritto e regolarizzato. Anche sotto il profilo fiscale, la successione o la cessazione del contratto va comunicata all'<strong>Agenzia delle Entrate</strong> (l'ente che gestisce la registrazione dei contratti di affitto). Se il rapporto era in regime di cedolare secca — la tassazione agevolata sostitutiva sugli affitti — il nuovo intestatario può a sua volta scegliere se applicarla.</p>
+<h3>4. Gestisci canoni e deposito cauzionale</h3>
+<p>I canoni non pagati fino alla data della riconsegna restano dovuti e vanno reclamati nei confronti di chi subentra o dell'eredità. Il deposito cauzionale segue le regole ordinarie: va restituito a fine rapporto, salvo trattenute giustificate da danni o morosità.</p>
+
+<h2>Il caso degli affitti commerciali</h2>
+<p>Se l'immobile è affittato per un'attività (negozio, studio, laboratorio), le regole della successione sono diverse: subentrano coloro che, per successione o in base a un rapporto precedente con data certa, hanno diritto a continuare l'attività, e in alcuni casi gli altri professionisti o soci che vi lavoravano. È un ambito con regole proprie: se ti trovi in questa situazione, conviene farsi assistere prima di prendere decisioni.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Considerare il contratto automaticamente chiuso.</strong> Se c'era un convivente avente diritto, il rapporto prosegue: ignorarlo può portarti a contestazioni.</li>
+<li><strong>Riprendere la casa da soli.</strong> Cambiare la serratura o rimuovere i beni del defunto senza le procedure corrette è un errore che può esporti a responsabilità.</li>
+<li><strong>Dimenticare la parte fiscale.</strong> Non comunicare all'Agenzia delle Entrate il subentro o la cessazione del contratto può creare problemi di registrazione e imposte.</li>
+<li><strong>Non mettere per iscritto il subentro.</strong> Lasciare la situazione "a voce" rende difficile provare chi è oggi il tuo interlocutore e a quali condizioni.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Se muore l'inquilino posso riprendermi subito la casa?</h3>
+<p>Non automaticamente. Se nell'immobile vive un familiare convivente o il partner stabile avente diritto, il contratto prosegue con lui. Puoi rientrare in possesso quando non c'è nessun avente diritto che conviveva con l'inquilino, seguendo però le vie corrette e senza agire di forza.</p>
+<h3>Il figlio dell'inquilino subentra sempre?</h3>
+<p>No. Per gli affitti abitativi il figlio subentra se conviveva stabilmente con il genitore nell'immobile. Un figlio che risiedeva altrove, di norma, non prende il posto nel contratto solo perché è erede.</p>
+<h3>Il convivente non sposato ha diritto di restare?</h3>
+<p>Sì. Il convivente di fatto, cioè il partner stabile legato da un rapporto di coppia, ha facoltà di succedere nel contratto della casa in cui vivevano insieme. È una tutela riconosciuta espressamente dalla legge.</p>
+<h3>Chi paga i canoni arretrati del defunto?</h3>
+<p>I canoni maturati fino alla riconsegna restano dovuti: ne rispondono chi subentra nel contratto oppure l'eredità del defunto. È bene quantificarli e reclamarli formalmente.</p>
+<h3>Devo comunicare qualcosa all'Agenzia delle Entrate?</h3>
+<p>Sì. Il subentro nel contratto o la sua cessazione vanno comunicati e registrati. Se era attiva la cedolare secca, chi subentra valuta se confermarla. Meglio non trascurare questi adempimenti per evitare irregolarità.</p>
+
+<h2>In sintesi</h2>
+<p>La morte dell'inquilino non chiude da sola il contratto di affitto: la legge stabilisce chi, tra familiari conviventi e partner stabile, può prenderne il posto. Per il proprietario la mossa giusta è verificare con calma chi viveva davvero nell'immobile, distinguere tra chi ha diritto a subentrare e chi no, e regolarizzare il tutto anche sul piano fiscale. Solo quando nessuno ha titolo per succedere puoi attivarti per riavere la casa, sempre per vie legittime e mai con iniziative "fai da te".</p>
+<p>Se ti trovi in questa situazione e vuoi capire come muoverti nel tuo caso concreto, puoi rivolgerti a <a href="/servizi/tutela-proprietario/">Sfratto Sicuro per la tutela del proprietario</a>. Possono esserti utili anche i nostri approfondimenti su <a href="/blog/subentro-contratto-locazione/">il subentro nel contratto di locazione</a> e su <a href="/blog/disdetta-contratto-locatore/">la disdetta del contratto da parte del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata. Le norme richiamate: successione nel contratto di locazione abitativa in caso di morte del conduttore (art. 6 L. 392/1978), estesa dalla Corte Costituzionale al convivente more uxorio (sent. n. 404/1988); facoltà di successione del convivente di fatto (art. 1, comma 44, L. 76/2016); successione nelle locazioni a uso diverso, cioè non abitativo (art. 37 L. 392/1978).</em></p>
+`,
+  },
+  {
     slug: 'sfratto-inquilino-senza-contratto',
     title: "Sfratto di un inquilino senza contratto: come riprendere l'immobile",
     description: "Sfratto di un inquilino senza contratto: perche non puoi usare la procedura veloce e come riprendere davvero l'immobile con gli strumenti giusti.",
