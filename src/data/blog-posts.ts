@@ -16,6 +16,71 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'preavviso-di-rilascio-immobile',
+    title: "Preavviso di rilascio dell'immobile: cos'è e cosa deve fare il proprietario",
+    description: "Preavviso di rilascio dell'immobile: cos'è l'avviso dell'ufficiale giudiziario prima dello sfratto, i 10 giorni e cosa deve fare il proprietario.",
+    excerpt: "Il preavviso di rilascio è l'avviso con cui l'ufficiale giudiziario fissa giorno e ora per liberare l'immobile dopo lo sfratto, con almeno dieci giorni di anticipo. Guida pratica per il proprietario: cos'è, come si distingue da precetto e sfratto esecutivo, cosa fare agli accessi e quali errori evitare.",
+    lead: "Dopo la convalida e il precetto, il preavviso di rilascio è l'ultimo passaggio prima della riconsegna delle chiavi: l'ufficiale giudiziario avvisa l'inquilino, almeno dieci giorni prima, del giorno in cui libererà l'immobile. Ecco cosa deve fare il proprietario.",
+    publishedAt: '2026-07-30',
+    updatedAt: '2026-07-30',
+    category: 'Sfratti',
+    readingTime: '6 min',
+    sourceNote: "Generato automaticamente 2026-07-30. Keyword: preavviso di rilascio immobile, vol 170, KD 0 (DataForSEO).",
+    html: `
+<p>Hai ottenuto la convalida dello sfratto, hai fatto notificare il precetto, ma l'inquilino ancora non lascia la casa. A questo punto entra in gioco il <strong>preavviso di rilascio</strong> dell'immobile: l'avviso con cui l'ufficiale giudiziario ti comunica il giorno e l'ora in cui andrà fisicamente a liberare l'appartamento. È l'ultimo passaggio prima della riconsegna delle chiavi. In questa guida vediamo che cos'è, quanto tempo prima arriva, cosa deve fare il proprietario e quali errori evitare.</p>
+
+<h2>Che cos'è il preavviso di rilascio dell'immobile</h2>
+<p>Il <strong>preavviso di rilascio</strong> (chiamato anche &laquo;avviso di sloggio&raquo;) è l'atto con cui l'ufficiale giudiziario avvisa l'inquilino che deve lasciare l'immobile, indicando il giorno e l'ora in cui si presenterà per eseguire il rilascio. Non è una nuova causa e non è una minaccia generica: è l'inizio vero e proprio dell'esecuzione forzata, cioè della fase in cui lo Stato interviene materialmente per riconsegnarti la casa.</p>
+<p>La legge stabilisce che questo avviso deve essere notificato all'inquilino <strong>almeno dieci giorni prima</strong> della data fissata per l'accesso. Quei dieci giorni sono un termine minimo pensato per dare all'inquilino un'ultima occasione per liberare spontaneamente l'immobile, evitando l'intervento forzato. Nella pratica, tra il preavviso e il primo accesso possono passare anche più di dieci giorni, a seconda dei tempi dell'ufficio giudiziario del tribunale competente.</p>
+
+<h2>Preavviso, precetto e sfratto esecutivo: non confonderli</h2>
+<p>Tre atti diversi si susseguono e spesso vengono confusi. Vale la pena tenerli distinti, perché sapere a che punto sei ti aiuta a capire quanto manca.</p>
+<ul>
+<li><strong>Il precetto</strong> è l'intimazione formale a rilasciare l'immobile entro un termine (di solito dieci giorni), con l'avvertimento che, in mancanza, si procederà con l'esecuzione forzata. È l'atto che apre la fase esecutiva sul piano formale.</li>
+<li><strong>Il preavviso di rilascio</strong> arriva dopo: è l'ufficiale giudiziario che, ricevuto l'incarico, fissa concretamente giorno e ora del primo accesso e lo comunica all'inquilino con almeno dieci giorni di anticipo.</li>
+<li><strong>Lo sfratto esecutivo</strong> (l'accesso vero e proprio) è il momento in cui l'ufficiale giudiziario si reca sul posto, ti immette nel possesso dell'immobile e ti consegna le chiavi.</li>
+</ul>
+<p>In sintesi: prima il precetto, poi il preavviso, infine l'accesso. Se vuoi approfondire i due passaggi che stanno intorno al preavviso, trovi due guide dedicate sul <a href="/blog/precetto-per-rilascio-immobile/">precetto per rilascio immobile</a> e sullo <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo dopo la convalida</a>.</p>
+
+<h2>Cosa succede il giorno dell'accesso</h2>
+<p>Nel giorno e nell'ora indicati nel preavviso, l'ufficiale giudiziario si presenta all'immobile munito del titolo esecutivo (la sentenza o l'ordinanza di convalida) e del precetto. Se l'inquilino ha già liberato la casa, l'ufficiale ti immette nel possesso e ti consegna le chiavi: la procedura si chiude lì.</p>
+<p>Se invece l'inquilino è ancora dentro, o l'immobile non è del tutto libero, l'ufficiale giudiziario può disporre un nuovo accesso a distanza di qualche settimana, e quando serve può avvalersi della forza pubblica e di un fabbro. È frequente che occorrano <strong>due o tre accessi</strong> prima del rilascio effettivo: è la parte più imprevedibile nei tempi, perché dipende dal carico dell'ufficio e dall'atteggiamento dell'inquilino. Su come funzionano concretamente questi passaggi puoi leggere la guida sullo <a href="/blog/sfratto-con-ufficiale-giudiziario/">sfratto con ufficiale giudiziario</a>.</p>
+
+<h2>Cosa deve fare il proprietario: la checklist</h2>
+<p>Il preavviso lo notifica l'ufficiale giudiziario, ma il proprietario ha comunque alcune cose da seguire per non perdere tempo.</p>
+<ul>
+<li><strong>Attiva l'ufficiale giudiziario tramite il tuo avvocato.</strong> Dopo il precetto, l'esecuzione non parte da sola: serve depositare la richiesta all'ufficio competente, che darà luogo al preavviso.</li>
+<li><strong>Segna la data del primo accesso.</strong> Devi essere presente (o farti rappresentare) il giorno dell'accesso: è a te, o a una persona da te designata, che l'ufficiale consegna le chiavi.</li>
+<li><strong>Organizza per tempo un fabbro.</strong> Se l'inquilino non apre, spesso serve cambiare la serratura: averlo già pronto evita di rimandare tutto al prossimo accesso.</li>
+<li><strong>Pensa ai beni lasciati dentro.</strong> Se l'inquilino lascia mobili e oggetti nell'immobile, non puoi buttarli via di tua iniziativa: la gestione va concordata con l'ufficiale giudiziario, che può indicare come procedere per non incorrere in responsabilità.</li>
+<li><strong>Documenta lo stato dell'immobile.</strong> Al momento della riconsegna, fotografa le condizioni della casa: ti servirà se vuoi trattenere il deposito cauzionale o chiedere i danni.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<p>Alcuni errori ricorrenti fanno perdere settimane o espongono il proprietario a guai.</p>
+<ul>
+<li><strong>Riprendersi la casa da soli.</strong> Cambiare la serratura o svuotare l'appartamento senza l'ufficiale giudiziario, anche dopo la convalida, può configurare un reato. Il rilascio deve sempre passare dall'esecuzione ufficiale.</li>
+<li><strong>Pensare che il preavviso chiuda la partita.</strong> Il preavviso fissa una data, ma non garantisce che al primo accesso l'immobile sia libero: mettere in conto più accessi evita brutte sorprese.</li>
+<li><strong>Fermare l'esecuzione a ogni promessa dell'inquilino.</strong> Se l'inquilino chiede tempo promettendo di pagare o di andarsene, valuta con il tuo legale prima di sospendere: rinviare senza garanzie allunga solo i tempi.</li>
+<li><strong>Aspettare troppo per attivare l'ufficiale giudiziario.</strong> Ogni settimana persa dopo il precetto è tempo in più senza canone. Prima parte la richiesta, prima arriva il preavviso.</li>
+</ul>
+
+<h2>Domande frequenti sul preavviso di rilascio</h2>
+<h3>Quanti giorni prima arriva il preavviso di rilascio?</h3>
+<p>L'ufficiale giudiziario deve comunicare il giorno e l'ora dell'accesso <strong>almeno dieci giorni prima</strong>. È un termine minimo: nella pratica l'attesa può essere più lunga in base ai tempi dell'ufficio.</p>
+<h3>L'inquilino può opporsi al preavviso di rilascio?</h3>
+<p>Il preavviso in sé non si &laquo;impugna&raquo; come una sentenza. Se durante l'esecuzione sorgono contestazioni o difficoltà, la parte interessata può rivolgersi al giudice dell'esecuzione, che decide con provvedimenti rapidi. Non è una via per bloccare a piacimento il rilascio.</p>
+<h3>Cosa succede se al primo accesso l'inquilino è ancora in casa?</h3>
+<p>L'ufficiale giudiziario prende atto della situazione e fissa un nuovo accesso, potendo poi avvalersi della forza pubblica e di un fabbro per liberare l'immobile. Possono servire più accessi prima della riconsegna definitiva.</p>
+<h3>Devo essere presente il giorno del rilascio?</h3>
+<p>Sì, tu o una persona da te designata: è a chi rappresenta il proprietario che l'ufficiale consegna le chiavi, immettendolo nel possesso dell'immobile.</p>
+
+<h2>In sintesi</h2>
+<p>Il <strong>preavviso di rilascio</strong> è il segnale che lo sfratto è ormai alle battute finali: l'ufficiale giudiziario ha fissato la data per riconsegnarti la casa e ha avvisato l'inquilino con almeno dieci giorni di anticipo. Il proprietario non deve fare la parte dell'ufficiale, ma deve muoversi con ordine: attivare per tempo l'esecuzione, farsi trovare pronto agli accessi e non agire mai di testa propria. Se vuoi capire a che punto è la tua procedura e velocizzare i tempi, puoi chiedere una valutazione del tuo caso attraverso il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. Le regole sull'esecuzione per rilascio sono dettate dal codice di procedura civile (in particolare l'articolo 608, rubricato &laquo;Modo del rilascio&raquo;, e l'articolo 605 sul precetto per consegna o rilascio); per la situazione concreta è sempre consigliabile rivolgersi a un avvocato.</em></p>
+`,
+  },
+  {
     slug: "morte-inquilino-contratto-affitto",
     title: "Morte dell'inquilino: cosa succede al contratto di affitto",
     description: "Morte dell'inquilino: il contratto di affitto non finisce da solo. Chi subentra e quando il proprietario può riavere la casa. Guida pratica.",
