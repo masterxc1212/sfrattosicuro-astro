@@ -207,8 +207,8 @@ fascia(
 doc.add_paragraph().paragraph_format.space_after = Pt(3)
 fascia(
     "Tariffa completa", "€ 3.500,00",
-    "Quando il giudizio richiede attività istruttoria, in aggiunta alla trattazione.",
-    "In particolare quando ricorrono",
+    "Tariffa base più un supplemento di € 1.000,00, quando il giudizio richiede attività istruttoria. Comprende tutto quanto previsto dalla tariffa base.",
+    "Il supplemento si applica quando ricorrono",
     ["prove testimoniali;",
      "interrogatorio formale delle parti;",
      "consulenza tecnica d’ufficio (CTU);",
@@ -230,7 +230,6 @@ for v in ["spese dell’organismo di mediazione;",
           "compensi di consulenti tecnici (CTU / CTP);"]:
     bullet(ecL, v)
 for v in ["spese vive e di trasferta;",
-          "attività esecutiva successiva alla sentenza (preavviso di rilascio, ufficiale giudiziario);",
           "giudizio di appello."]:
     bullet(ecR, v)
 
@@ -239,6 +238,14 @@ para_bottom_rule(sep, BORDO_HEX, sz=4)
 
 # ---------- NOTE ----------
 note_items = [
+    [("Pagamento della tariffa base", True),
+     (" in tre soluzioni: € 1.000,00 di acconto alla sottoscrizione, € 750,00 alla memoria integrativa, "
+      "€ 750,00 quando il Giudice trattiene la causa in decisione; con la tariffa completa, l’ulteriore "
+      "€ 1.000,00 quando il Giudice dispone i mezzi istruttori.", False)],
+    [("L’", False), ("attività esecutiva per il rilascio", True),
+     (" (preavviso di rilascio, ufficiale giudiziario) non rientra in questi importi: resta coperta ", False),
+     ("a titolo gratuito", True),
+     (" dal mandato della fase iniziale, salve le sole spese vive.", False)],
     [("I compensi indicati si riferiscono al ", False), ("solo primo grado", True), (" di giudizio.", False)],
     [("Il compenso è dovuto ", False), ("indipendentemente dall’esito", True),
      (" della causa: l’avvocato assume un’obbligazione di mezzi, non di risultato.", False)],

@@ -7,7 +7,7 @@
 
 #set page(
   paper: "a4",
-  margin: (top: 1.4cm, bottom: 1.15cm, left: 2cm, right: 2cm),
+  margin: (top: 1.3cm, bottom: 1cm, left: 2cm, right: 2cm),
   footer: context [
     #set text(font: "Garamond", size: 8pt, fill: grigio)
     #line(length: 100%, stroke: 0.4pt + rgb("#cccccc"))
@@ -61,12 +61,12 @@ In caso di opposizione dell'inquilino e prosecuzione del giudizio dopo il
 mutamento del rito, la causa entra nella fase di merito e si applicano, *in
 aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
 
-#v(7pt)
+#v(6pt)
 
 // ————————————————————————————————————— BOX FASE INIZIALE
 #block(
   width: 100%,
-  inset: (x: 14pt, y: 8pt),
+  inset: (x: 14pt, y: 7pt),
   radius: 3pt,
   fill: rgb("#f4f2ec"),
   stroke: 0.5pt + rgb("#d8d3c4"),
@@ -78,7 +78,7 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
   ),
 )
 
-#v(9pt)
+#v(7pt)
 
 // ————————————————————————————————————— FUNZIONE FASCIA DI PREZZO
 #let fascia(titolo, prezzo, condizione, occhiello, voci) = block(
@@ -91,7 +91,7 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
   [
     #block(
       width: 100%,
-      inset: (x: 14pt, y: 7pt),
+      inset: (x: 14pt, y: 6pt),
       fill: verde,
       grid(
         columns: (1fr, auto),
@@ -102,7 +102,7 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
     )
     #block(
       width: 100%,
-      inset: (x: 14pt, top: 8pt, bottom: 9pt),
+      inset: (x: 14pt, top: 6pt, bottom: 7pt),
       [
         #set par(leading: 0.58em, spacing: 0.6em)
         #text(style: "italic", fill: grigio, size: 10pt)[#condizione]
@@ -129,13 +129,13 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
   ],
 )
 
-#v(9pt)
+#v(7pt)
 
 #fascia(
   "Tariffa completa",
   "€ 3.500,00",
-  [Quando il giudizio richiede attività istruttoria, in aggiunta alla trattazione.],
-  [In particolare quando ricorrono],
+  [Tariffa base più un supplemento di € 1.000,00, quando il giudizio richiede attività istruttoria. Comprende tutto quanto previsto dalla tariffa base.],
+  [Il supplemento si applica quando ricorrono],
   [
     - prove testimoniali;
     - interrogatorio formale delle parti;
@@ -145,7 +145,7 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
   ],
 )
 
-#v(11pt)
+#v(8pt)
 
 // ————————————————————————————————————— ESCLUSIONI
 #text(size: 11pt, weight: "medium", fill: verde, smallcaps[Restano escluse (a carico del cliente)])
@@ -165,29 +165,30 @@ aggiunta al compenso della fase iniziale*, le tariffe indicate di seguito.
     #set par(leading: 0.55em)
     #set list(spacing: 0.5em)
     - spese vive e di trasferta;
-    - attività esecutiva successiva alla sentenza (preavviso di rilascio, ufficiale giudiziario);
     - giudizio di appello.
   ],
 )
 
-#v(8pt)
+#v(6pt)
 #line(length: 100%, stroke: 0.4pt + rgb("#d8d3c4"))
-#v(5pt)
+#v(4pt)
 
 // ————————————————————————————————————— NOTE
-#set text(size: 9.5pt, fill: rgb("#444444"))
-#set par(leading: 0.55em, spacing: 0.55em)
+#set text(size: 9pt, fill: rgb("#444444"))
+#set par(leading: 0.52em, spacing: 0.5em)
 #grid(
   columns: (auto, 1fr),
   column-gutter: 7pt,
-  row-gutter: 4pt,
+  row-gutter: 3pt,
+  text(fill: verde)[▪], [*Pagamento della tariffa base* in tre soluzioni: € 1.000,00 di acconto alla sottoscrizione, € 750,00 alla memoria integrativa, € 750,00 quando il Giudice trattiene la causa in decisione; con la tariffa completa, l'ulteriore € 1.000,00 quando il Giudice dispone i mezzi istruttori.],
+  text(fill: verde)[▪], [L'*attività esecutiva per il rilascio* (preavviso di rilascio, ufficiale giudiziario) non rientra in questi importi: resta coperta *a titolo gratuito* dal mandato della fase iniziale, salve le sole spese vive.],
   text(fill: verde)[▪], [I compensi indicati si riferiscono al *solo primo grado* di giudizio.],
   text(fill: verde)[▪], [Il compenso è dovuto *indipendentemente dall'esito* della causa: l'avvocato assume un'obbligazione di mezzi, non di risultato.],
   text(fill: verde)[▪], [Gli importi sono *comprensivi di IVA e contributo Cassa Forense (CPA)* e sono al netto delle spese sopra escluse.],
   text(fill: verde)[▪], [Il presente tariffario vale come preventivo di massima ai sensi dell'art. 13, co. 5, L. 31 dicembre 2012 n. 247; per ciascun incarico verrà rilasciato preventivo scritto personalizzato.],
 )
 
-#v(9pt)
+#v(7pt)
 #set text(size: 10pt, fill: inchiostro)
 #grid(
   columns: (1fr, auto),
