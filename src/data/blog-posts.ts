@@ -16,6 +16,86 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "ape-contratto-locazione",
+    title: "APE e contratto di locazione: gli obblighi del proprietario",
+    description: "APE e contratto di locazione: quando il proprietario deve dotare l'immobile dell'attestato energetico, cosa fare in contratto e le sanzioni.",
+    excerpt: "L'Attestato di Prestazione Energetica (APE) è obbligatorio per affittare casa: il proprietario deve procurarlo prima dell'annuncio, indicare la classe energetica, consegnarlo all'inquilino e inserire la clausola in contratto. Guida pratica agli obblighi, alla validità decennale e alle sanzioni da evitare.",
+    lead: "Affittare senza l'Attestato di Prestazione Energetica (APE) espone il proprietario a una sanzione fino a diverse migliaia di euro. Ecco quando serve, cosa fare al momento del contratto e come evitare gli errori più comuni.",
+    publishedAt: "2026-07-31",
+    updatedAt: "2026-07-31",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-07-31. Keyword: ape contratto locazione, vol 480, KD 0 (DataForSEO).",
+    html: `<p>Se stai per affittare una casa, tra i documenti che devi avere in ordine c'è l'<strong>APE</strong>, cioè l'<strong>Attestato di Prestazione Energetica</strong>. È un obbligo che ricade sul proprietario, spesso trascurato, e che se ignorato può costare una sanzione fino a diverse migliaia di euro. In questa guida vediamo, dal punto di vista del locatore, che cos'è l'APE, quando serve davvero, cosa devi fare al momento del contratto, quanto vale nel tempo e come evitare gli errori che portano a multe.</p>
+
+<h2>Che cos'è l'APE e a cosa serve</h2>
+<p>L'<strong>Attestato di Prestazione Energetica (APE)</strong> è un documento, redatto da un tecnico abilitato, che indica quanto è efficiente dal punto di vista energetico un immobile: assegna una <strong>classe energetica</strong> (dalla A4, la migliore, alla G, la peggiore) e fornisce informazioni su consumi e possibili miglioramenti. Serve a dare all'inquilino un'idea chiara di quanto costerà, in bolletta, vivere in quella casa.</p>
+<p>Per il proprietario non è solo un adempimento burocratico: è il documento che certifica ufficialmente lo stato energetico dell'immobile che stai per dare in affitto. Averlo pronto prima ancora di pubblicare l'annuncio ti evita corse dell'ultimo minuto e possibili contestazioni.</p>
+
+<h2>Quando il proprietario è obbligato ad avere l'APE</h2>
+<p>La regola è chiara: il proprietario deve dotare l'immobile di APE in caso di <strong>nuova locazione</strong>. L'obbligo scatta quando metti la casa sul mercato per affittarla, quindi devi procurarti l'attestato <strong>prima</strong> di firmare il contratto. Attenzione a due passaggi spesso sottovalutati:</p>
+<ul>
+<li><strong>Negli annunci.</strong> Quando pubblichi un annuncio di locazione (su un portale, in vetrina di un'agenzia o altrove), devi indicare la <strong>classe energetica</strong> e l'indice di prestazione dell'immobile. È un obbligo di trasparenza previsto dalla legge.</li>
+<li><strong>Alla firma del contratto.</strong> Devi consegnare l'APE all'inquilino e inserire nel contratto un'apposita clausola in cui il conduttore dichiara di aver ricevuto le informazioni e la documentazione sulla prestazione energetica, attestato compreso.</li>
+</ul>
+<p>Va precisato un punto tecnico utile: per l'affitto di una <strong>singola unità immobiliare</strong> (il caso normale, un appartamento) la legge richiede la consegna dell'attestato e la clausola in contratto; l'obbligo di <strong>allegare</strong> materialmente l'APE al contratto è invece previsto per la locazione di <strong>interi edifici</strong>. Nella pratica, molti proprietari allegano comunque una copia dell'APE anche per il singolo appartamento: è una prudenza in più, non un errore.</p>
+
+<h2>Quando l'APE non serve</h2>
+<p>Non tutti i casi richiedono l'attestato. In particolare, <strong>non</strong> occorre un nuovo APE quando:</p>
+<ul>
+<li>Il contratto in corso viene semplicemente <strong>rinnovato o prorogato</strong> con lo stesso inquilino: l'obbligo riguarda le <strong>nuove</strong> locazioni, non il proseguimento di un rapporto già in essere.</li>
+<li>Si tratta di determinate categorie escluse dalla normativa, come alcuni fabbricati isolati di piccolissime dimensioni, ruderi o immobili privi di impianti, e certi edifici industriali o agricoli. Sono eccezioni specifiche: in caso di dubbio conviene chiedere conferma al tecnico.</li>
+</ul>
+<p>Per tutto il resto, dando in affitto un normale appartamento abitativo, l'APE è dovuto.</p>
+
+<h2>Quanto dura e quando va rifatto</h2>
+<p>L'APE ha una validità di <strong>dieci anni</strong> dalla data di rilascio. Non è però una validità automatica: resta valido a condizione che siano rispettati gli obblighi di <strong>manutenzione degli impianti</strong> (in particolare quello di riscaldamento e climatizzazione, con il relativo libretto e i controlli periodici). Se salti la manutenzione, l'attestato può perdere efficacia prima della scadenza.</p>
+<p>Inoltre, l'APE va <strong>rifatto prima dei dieci anni</strong> se esegui interventi che modificano la prestazione energetica dell'immobile: ad esempio una ristrutturazione importante, la sostituzione della caldaia, il cappotto termico o il cambio degli infissi. In quei casi il vecchio attestato non fotografa più la situazione reale e ne serve uno aggiornato.</p>
+
+<h2>Le sanzioni: cosa rischi se manca la dichiarazione</h2>
+<p>Qui sta il punto più delicato per il proprietario. Se, al momento della locazione, manca la dichiarazione o l'informazione sull'APE prevista dalla legge, è prevista una <strong>sanzione pecuniaria</strong>. Per i contratti di locazione l'importo va, di regola, <strong>da 1.000 a 4.000 euro</strong>, ridotto alla metà (quindi da 500 a 2.000 euro) se la durata del contratto non supera i tre anni. La sanzione è a carico delle parti in solido.</p>
+<p>Due precisazioni importanti, spesso fraintese:</p>
+<ul>
+<li>La mancanza dell'APE o della clausola <strong>non rende nullo il contratto</strong>: l'affitto resta valido, ma scatta la sanzione economica.</li>
+<li>Chi si trova in difetto è tenuto a <strong>regolarizzare</strong> presentando l'attestato e la relativa dichiarazione entro un termine breve (indicativamente 45 giorni), per sanare la posizione.</li>
+</ul>
+<p>Tradotto in pratica: non avere l'APE non ti impedisce di affittare, ma ti espone a una multa che è facilmente evitabile organizzandoti per tempo.</p>
+
+<h2>La checklist del proprietario prima di affittare</h2>
+<ul>
+<li><strong>Richiedi l'APE a un tecnico abilitato</strong> (certificatore energetico) prima di pubblicare l'annuncio: i tempi di rilascio sono di solito rapidi.</li>
+<li><strong>Inserisci la classe energetica nell'annuncio</strong> di locazione, in modo visibile.</li>
+<li><strong>Consegna l'attestato all'inquilino</strong> e conserva prova della consegna.</li>
+<li><strong>Fai firmare la clausola energetica</strong> in contratto, con cui il conduttore dichiara di aver ricevuto informazioni e documentazione.</li>
+<li><strong>Controlla la scadenza</strong>: verifica che l'APE non sia più vecchio di dieci anni e che non ci siano stati lavori tali da renderlo superato.</li>
+<li><strong>Tieni in ordine la manutenzione degli impianti</strong>, così l'attestato resta valido per tutto il periodo.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Affittare senza APE contando sul fatto che &laquo;tanto il contratto è valido&raquo;.</strong> È vero che il contratto tiene, ma la sanzione arriva lo stesso.</li>
+<li><strong>Pubblicare l'annuncio senza la classe energetica.</strong> Anche questa è una violazione autonoma.</li>
+<li><strong>Riutilizzare un APE vecchio dopo una ristrutturazione.</strong> Se hai cambiato caldaia o infissi, quell'attestato non è più affidabile.</li>
+<li><strong>Dimenticare la clausola in contratto.</strong> La consegna dell'attestato va accompagnata dalla dichiarazione dell'inquilino: è proprio la sua assenza a far scattare la sanzione.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Chi paga l'APE, il proprietario o l'inquilino?</h3>
+<p>Il costo dell'attestato è a carico del proprietario, perché è lui a doverne dotare l'immobile per poterlo affittare.</p>
+<h3>Serve un nuovo APE a ogni rinnovo del contratto?</h3>
+<p>No. L'obbligo riguarda le nuove locazioni. Se rinnovi o proroghi il contratto con lo stesso inquilino e l'immobile non ha subìto interventi che ne modificano la prestazione energetica, l'attestato in corso di validità va bene.</p>
+<h3>Se affitto senza APE il contratto è nullo?</h3>
+<p>No, il contratto resta valido. Ciò che rischi è la sanzione pecuniaria e l'obbligo di regolarizzare presentando l'attestato e la dichiarazione.</p>
+<h3>Quanto dura l'APE?</h3>
+<p>Dieci anni dal rilascio, purché siano rispettati gli obblighi di manutenzione degli impianti e non siano stati eseguiti lavori che cambiano la prestazione energetica.</p>
+
+<h2>In sintesi</h2>
+<p>L'APE è un tassello semplice ma obbligatorio dell'affitto: procuratelo prima di pubblicare l'annuncio, indica la classe energetica, consegnalo all'inquilino e fai firmare la clausola in contratto. Così eviti una sanzione che può arrivare a diverse migliaia di euro e ti presenti in modo trasparente e professionale. Per completare la parte burocratica del contratto può esserti utile anche la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>, mentre per impostare correttamente clausole e garanzie trovi tutto nel servizio dedicato ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+<p>Se hai dubbi su un contratto da firmare o su una posizione da regolarizzare, lo Studio può affiancarti: dai un'occhiata al servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro. <em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>
+
+<p><strong>Riferimenti normativi:</strong> Decreto Legislativo 19 agosto 2005, n. 192 (attuazione delle direttive europee sul rendimento energetico in edilizia), in particolare l'art. 6 sull'obbligo di dotazione dell'Attestato di Prestazione Energetica, di consegna al conduttore, di inserimento della clausola nel contratto e di indicazione della classe energetica negli annunci, e l'art. 15 sulle sanzioni; disposizioni introdotte e modificate dal D.L. 4 giugno 2013, n. 63 (convertito dalla L. 3 agosto 2013, n. 90) e dal D.L. 23 dicembre 2013, n. 145 (convertito dalla L. 21 febbraio 2014, n. 9), che hanno sostituito la nullità del contratto con le sanzioni pecuniarie e la facoltà di regolarizzazione. Validità decennale dell'attestato subordinata al rispetto degli obblighi di manutenzione degli impianti.</p>`
+  },
+  {
     slug: 'preavviso-di-rilascio-immobile',
     title: "Preavviso di rilascio dell'immobile: cos'è e cosa deve fare il proprietario",
     description: "Preavviso di rilascio dell'immobile: cos'è l'avviso dell'ufficiale giudiziario prima dello sfratto, i 10 giorni e cosa deve fare il proprietario.",
