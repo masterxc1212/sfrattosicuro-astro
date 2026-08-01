@@ -16,6 +16,86 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "ravvedimento-operoso-imposta-registro-locazione",
+    title: "Ravvedimento operoso sull'imposta di registro della locazione: come mettersi in regola",
+    description: "Ravvedimento operoso sull'imposta di registro della locazione: quando conviene, quanto si paga con le sanzioni ridotte e come fare passo per passo.",
+    excerpt: "Hai registrato o pagato in ritardo l'imposta di registro dell'affitto? Con il ravvedimento operoso puoi metterti in regola da solo, con sanzioni ridotte e interessi. Guida pratica per il proprietario: quando conviene, quanto si paga dopo la riforma D.Lgs. 87/2024 e come fare passo per passo.",
+    lead: "Registrazione o versamento dell'imposta di registro in ritardo? Il ravvedimento operoso permette al proprietario di regolarizzare la propria posizione prima dell'Agenzia delle Entrate, pagando una sanzione fortemente ridotta e gli interessi. Ecco quando conviene, quanto si paga e come procedere.",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-01. Keyword: ravvedimento operoso imposta di registro locazione, vol 170, KD 0 (DataForSEO).",
+    html: `
+<p>Se hai registrato in ritardo il contratto d'affitto, oppure hai dimenticato di versare l'imposta di registro per una delle annualità, non sei costretto ad aspettare la contestazione dell'Agenzia delle Entrate. Con il <strong>ravvedimento operoso dell'imposta di registro sulla locazione</strong> puoi metterti in regola da solo, pagando l'imposta dovuta più una sanzione fortemente ridotta e gli interessi. Questa guida spiega, dalla parte del proprietario, quando conviene, quanto si paga e come si fa passo per passo.</p>
+
+<h2>Cos'è il ravvedimento operoso e perché conviene al proprietario</h2>
+<p>Il <strong>ravvedimento operoso</strong> è lo strumento che permette a chi ha commesso una violazione fiscale di sistemarla spontaneamente, prima che arrivi un accertamento, versando una sanzione ridotta rispetto a quella piena. È previsto dall'articolo 13 del Decreto Legislativo (D.Lgs.) 472/1997 e vale anche per l'imposta di registro sui contratti di locazione.</p>
+<p>Per un locatore il vantaggio è doppio: eviti che la posizione diventi irregolare (con il rischio, in alcuni casi, di contestazioni sul contratto stesso) e paghi molto meno di quanto ti chiederebbe l'ufficio se fosse lui a scoprire l'omissione. Prima ti muovi, meno paghi: la sanzione cresce con il passare del tempo.</p>
+
+<h2>Entro quando si registra il contratto e cosa scatta con il ritardo</h2>
+<p>Il contratto di locazione va registrato <strong>entro 30 giorni</strong> dalla data di stipula (o dalla decorrenza, se anteriore). Nello stesso termine va pagata l'imposta di registro, salvo tu abbia scelto la <strong>cedolare secca</strong>: in quel caso l'imposta di registro non è dovuta e il problema del ravvedimento su questa imposta non si pone.</p>
+<p>Per i contratti a tassazione ordinaria l'imposta di registro è pari, in genere, al <strong>2% del canone annuo</strong> (con un minimo di 67 euro per la prima annualità). Puoi versarla tutta in una volta per l'intera durata oppure anno per anno: in quest'ultimo caso ogni annualità successiva va pagata entro 30 giorni dalla scadenza di quella precedente.</p>
+<p>Se salti il termine, scattano due tipi di violazione diverse, che è importante non confondere:</p>
+<ul>
+<li><strong>Tardiva o omessa registrazione</strong> del contratto: riguarda il caso in cui il contratto non è stato registrato affatto nei 30 giorni.</li>
+<li><strong>Omesso o tardivo versamento</strong> dell'imposta per un'annualità successiva: il contratto è già registrato, ma non hai pagato l'imposta di un anno.</li>
+</ul>
+
+<h2>Quanto si paga con il ravvedimento sull'imposta di registro</h2>
+<p>Le sanzioni base sono cambiate con la riforma del sistema sanzionatorio (D.Lgs. 87/2024), che si applica alle violazioni commesse dal 1° settembre 2024. Oggi, per la <strong>tardiva o omessa registrazione</strong> del contratto, la sanzione piena è del <strong>120% dell'imposta dovuta</strong>, ridotta al <strong>45%</strong> se il ritardo non supera i 30 giorni.</p>
+<p>Su questa base il ravvedimento operoso applica una riduzione tanto più conveniente quanto prima intervieni. Le riduzioni previste dall'articolo 13 sono, in sintesi:</p>
+<ul>
+<li><strong>1/10</strong> della sanzione se paghi entro 30 giorni dalla scadenza;</li>
+<li><strong>1/9</strong> se paghi entro 90 giorni;</li>
+<li><strong>1/8</strong> se paghi entro un anno;</li>
+<li><strong>1/7</strong> se paghi oltre un anno;</li>
+<li><strong>1/6</strong> solo dopo che l'ufficio ti ha comunicato uno schema di atto o un accertamento con adesione.</li>
+</ul>
+<p>Gli scaglioni sono quelli aggiornati dalla riforma: il vecchio riferimento ai "due anni" non c'è più.</p>
+<p>A queste somme vanno aggiunti gli <strong>interessi legali</strong>, calcolati giorno per giorno al tasso annuo fissato dal Ministero dell'Economia, che per il 2026 è dell'<strong>1,6%</strong>.</p>
+<p>Un esempio pratico rende l'idea, riferito a una registrazione tardiva. Immagina un'imposta di 200 euro con un piccolo ritardo (entro 30 giorni): la sanzione base ridotta al 45% è 90 euro; con il ravvedimento a 1/10 diventano 9 euro, più pochi centesimi di interessi. Regolarizzare subito costa quindi una cifra minima; lasciar passare mesi o anni fa lievitare sia la sanzione base sia la frazione applicata.</p>
+
+<h3>Prima registrazione e annualità successive: due conti diversi</h3>
+<p>Attenzione a distinguere. Se il problema è l'<strong>omesso versamento dell'imposta di un'annualità successiva</strong> (contratto già registrato), non si applica la sanzione da omessa registrazione ma quella per omesso versamento, pari al <strong>25%</strong> dell'imposta non pagata (art. 13 del D.Lgs. 471/1997, come modificato dalla riforma), anch'essa riducibile con le stesse frazioni del ravvedimento. È un errore comune calcolare il 120% quando in realtà il contratto era già registrato e mancava solo il pagamento di un anno.</p>
+
+<h2>Come fare il ravvedimento passo per passo</h2>
+<p>Ecco la sequenza operativa per un proprietario che vuole sistemare la propria posizione:</p>
+<ul>
+<li><strong>Individua la violazione esatta:</strong> registrazione mai fatta oppure versamento di un'annualità saltato. Da qui dipende quale sanzione usare.</li>
+<li><strong>Calcola l'imposta dovuta:</strong> in genere il 2% del canone annuo (minimo 67 euro sulla prima annualità).</li>
+<li><strong>Applica la sanzione ridotta:</strong> individua lo scaglione temporale in cui rientri e la relativa frazione (1/10, 1/9 e così via).</li>
+<li><strong>Aggiungi gli interessi legali</strong> calcolati dal giorno successivo alla scadenza fino al giorno del pagamento.</li>
+<li><strong>Versa il dovuto:</strong> per l'imposta di registro sulle locazioni si usa il modello <strong>F24 Elide</strong>, con i codici tributo dedicati (imposta, sanzione e interessi indicati separatamente). Se stai registrando ora un contratto in ritardo, la registrazione avviene con il modello RLI (Registrazione Locazioni Immobili).</li>
+<li><strong>Conserva le ricevute:</strong> il ravvedimento si perfeziona solo con il pagamento completo di imposta, sanzione e interessi. Tieni traccia di tutto.</li>
+</ul>
+<p>Se registri per la prima volta un contratto rimasto "fermo", ricordati che la registrazione e il pagamento del ravvedimento vanno coordinati: prima si perfeziona la registrazione tardiva, poi (o contestualmente) si versano sanzione e interessi ridotti.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Confondere le due violazioni</strong> e calcolare il 120% quando il contratto era già registrato: paghi molto più del dovuto.</li>
+<li><strong>Dimenticare gli interessi legali:</strong> senza di essi il ravvedimento non è valido e la regolarizzazione resta incompleta.</li>
+<li><strong>Aspettare l'avviso dell'Agenzia:</strong> il ravvedimento è possibile solo finché non ti è stato notificato un atto di liquidazione o accertamento su quella violazione.</li>
+<li><strong>Pensare che con la cedolare secca ci sia da ravvedersi sull'imposta di registro:</strong> con la cedolare quell'imposta non è dovuta, ma restano altri obblighi (ad esempio la comunicazione dell'opzione e, alla scadenza, eventuali adempimenti).</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Ho registrato il contratto con qualche giorno di ritardo: rischio grosso?</h3>
+<p>No, se intervieni subito. Entro 30 giorni di ritardo la sanzione base è ridotta e con il ravvedimento a 1/10 il costo aggiuntivo è minimo. L'importante è pagare imposta, sanzione ridotta e interessi prima di qualsiasi contestazione.</p>
+<h3>Posso ravvedermi anche dopo diversi anni?</h3>
+<p>Sì, finché non ti è stato notificato un atto sulla violazione. La frazione di sanzione, però, sale (fino a 1/7 se superi l'anno; il 1/6 scatta solo dopo la comunicazione di un atto dell'ufficio), quindi conviene non rimandare.</p>
+<h3>Il ravvedimento lo posso fare da solo?</h3>
+<p>Per i casi semplici sì, seguendo i passaggi sopra. Quando ci sono più annualità arretrate, dubbi sul tipo di violazione o importi rilevanti, farsi affiancare evita errori di calcolo che poi si pagano.</p>
+<h3>Chi paga l'imposta e il ravvedimento, il proprietario o l'inquilino?</h3>
+<p>L'imposta di registro è dovuta in solido da locatore e conduttore, ma nella pratica l'onere è spesso ripartito a metà. La responsabilità verso l'Agenzia, però, ricade su entrambi: per questo al proprietario conviene sistemare la posizione senza attendere.</p>
+
+<h2>In sintesi</h2>
+<p>Il ravvedimento operoso è l'alleato del proprietario che ha sbagliato un termine: trasforma una possibile sanzione pesante in un costo contenuto, a patto di muoversi per tempo e di calcolare bene imposta, sanzione e interessi. Se hai dubbi sulla tua situazione — soprattutto con più annualità da recuperare — <a href="/servizi/contratti-di-locazione/">il nostro servizio dedicato ai contratti di locazione</a> può aiutarti a fare i conti giusti e a mettere in regola il contratto. Puoi approfondire anche quanto e come si paga l'<a href="/blog/imposta-di-registro-locazione/">imposta di registro sulla locazione</a> e come funziona la <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto online</a>.</p>
+<p>Per una valutazione sul tuo caso puoi <a href="/servizi/tutela-proprietario/">contattare Sfratto Sicuro</a>: ti diciamo con chiarezza cosa fare e quanto costa mettersi in regola.</p>
+<p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale o fiscale personalizzata. Riferimenti normativi: art. 13 D.Lgs. 472/1997 (ravvedimento operoso); D.Lgs. 87/2024 (riforma delle sanzioni tributarie, in vigore per le violazioni dal 1° settembre 2024); art. 13 D.Lgs. 471/1997 (sanzione per omesso versamento); D.P.R. 131/1986 (Testo Unico dell'imposta di registro). Tasso di interesse legale 2026: 1,6% (D.M. Economia 10 dicembre 2025).</em></p>
+`,
+  },
+  {
     slug: "ape-contratto-locazione",
     title: "APE e contratto di locazione: gli obblighi del proprietario",
     description: "APE e contratto di locazione: quando il proprietario deve dotare l'immobile dell'attestato energetico, cosa fare in contratto e le sanzioni.",
