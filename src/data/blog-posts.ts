@@ -16,6 +16,66 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'imu-casa-affittata',
+    title: "IMU su casa affittata: chi paga, quanto e come funziona con la cedolare secca",
+    description: "IMU su casa affittata: la paga sempre il proprietario, anche con cedolare secca. Guida a prima e seconda casa, aliquote, canone concordato e scadenze.",
+    excerpt: "Sulla casa data in affitto l'IMU e quasi sempre dovuta e resta a carico del proprietario, anche quando si sceglie la cedolare secca. Guida pratica per il locatore: chi paga, cosa cambia tra prima e seconda casa, come si calcola l'imposta, lo sconto del 25% per il canone concordato e le scadenze del 16 giugno e 16 dicembre.",
+    lead: "Molti proprietari credono che affittando casa l'IMU sparisca o che la cedolare secca la copra: non e cosi. Ecco, in parole semplici, quando l'IMU sulla casa affittata e dovuta, quanto si paga e quali errori evitare.",
+    publishedAt: '2026-08-02',
+    updatedAt: '2026-08-02',
+    category: 'Locazioni',
+    readingTime: '6 min',
+    sourceNote: "Generato automaticamente 2026-08-02. Keyword: IMU casa affittata, vol 210, KD 0 (DataForSEO).",
+    html: `
+<p>Hai una casa affittata e ti chiedi se e quanto devi pagare di <strong>IMU</strong>? È uno dei dubbi più frequenti tra i proprietari, soprattutto quando entra in gioco la cedolare secca. La risposta breve è che, salvo il caso dell'abitazione dove vivi tu, l'<strong>IMU sulla casa affittata</strong> è quasi sempre dovuta e resta a carico del proprietario. In questa guida vediamo chi paga, quanto, come cambia tra prima e seconda casa, perché la cedolare secca non ti esonera e quali sono le scadenze da rispettare.</p>
+
+<h2>IMU su casa affittata: chi la paga</h2>
+<p>L'IMU (Imposta Municipale Propria) è un'imposta comunale che colpisce il <strong>possesso</strong> degli immobili: la paga chi è proprietario (o titolare di un diritto reale come l'usufrutto), non chi ci abita. Per questo, quando affitti un immobile, l'IMU resta a carico tuo e non dell'inquilino: l'inquilino paga il canone e, se previste, le spese; l'IMU no.</p>
+<p>La regola generale è semplice: l'IMU si paga su tutti gli immobili, con un'unica grande eccezione, l'<strong>abitazione principale</strong>, cioè la casa dove il proprietario ha insieme la residenza anagrafica e la dimora abituale. Se una casa è affittata, per definizione non è la tua abitazione principale, perché non ci vivi tu. Ecco perché, nella stragrande maggioranza dei casi, sulla casa data in affitto l'IMU è dovuta.</p>
+
+<h2>Prima casa affittata: attenzione, perdi l'esenzione</h2>
+<p>Molti proprietari pensano che la &laquo;prima casa&raquo; sia sempre esente da IMU. Non è così. L'esenzione non è legata all'etichetta di prima casa che usi per altre imposte, ma al fatto che l'immobile sia davvero la tua <strong>abitazione principale</strong>: devi averci la residenza e viverci abitualmente. Nel momento in cui affitti quella casa a un terzo, smetti di abitarci e l'immobile perde la qualifica di abitazione principale. Il risultato è che sulla <strong>prima casa affittata</strong> l'IMU torna dovuta, con l'aliquota ordinaria decisa dal tuo Comune.</p>
+<p>Fa eccezione l'ipotesi in cui affitti solo una parte della casa in cui continui a risiedere e vivere (per esempio una stanza): in quel caso mantieni residenza e dimora abituale nell'immobile e l'esenzione per l'abitazione principale resta valida. Diverso è il discorso per le abitazioni di lusso (categorie catastali A/1, A/8 e A/9): su queste l'IMU è dovuta anche quando sono abitazione principale.</p>
+
+<h2>IMU e cedolare secca: sono due cose diverse</h2>
+<p>È qui che si concentra l'equivoco più diffuso. La <strong>cedolare secca</strong> è un regime di tassazione del <em>reddito da affitto</em>: sostituisce l'IRPEF (l'Imposta sul Reddito delle Persone Fisiche) e le relative addizionali sul canone, più l'imposta di registro e il bollo sul contratto. Non tocca in alcun modo l'IMU. L'<strong>IMU sulla casa affittata con cedolare secca</strong> resta quindi dovuta per intero, esattamente come per chi tassa l'affitto in modo ordinario.</p>
+<p>Il motivo è che le due imposte guardano cose diverse: la cedolare secca guarda il <strong>guadagno</strong> che ricavi dall'affitto, l'IMU guarda il <strong>possesso</strong> dell'immobile. Sono binari separati e vanno pagate entrambe. Un dettaglio utile: l'IMU sostituisce l'IRPEF solo sugli immobili <em>non</em> locati (per esempio la seconda casa tenuta a disposizione); appena la casa è affittata, invece, IMU e imposta sul reddito da affitto convivono. Se stai valutando quale regime fiscale scegliere per l'affitto, trovi un approfondimento nella guida sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</p>
+
+<h2>Quanto si paga: aliquote e sconto per il canone concordato</h2>
+<p>L'IMU si calcola applicando un'aliquota alla base imponibile, che si ottiene dalla rendita catastale rivalutata del 5% e moltiplicata per un coefficiente (160 per le abitazioni del gruppo A, esclusa A/10). Sull'importo così ottenuto si applica l'aliquota fissata dal Comune.</p>
+<p>Per gli immobili diversi dall'abitazione principale, tra cui rientra la <strong>seconda casa affittata</strong>, l'aliquota base prevista dalla legge è dello <strong>0,86%</strong>, ma ogni Comune può ridurla fino ad azzerarla o aumentarla fino a un massimo dell'<strong>1,06%</strong> (in alcuni casi particolari fino all'1,14%). Per sapere l'aliquota esatta devi quindi controllare la delibera del tuo Comune, di solito pubblicata sul sito comunale o sul portale del Ministero dell'Economia.</p>
+<p>C'è una buona notizia per chi affitta a canone calmierato: se il contratto è a <strong>canone concordato</strong>, l'IMU si riduce del 25%, cioè si versa solo il 75% dell'imposta calcolata con l'aliquota comunale. È uno dei vantaggi, insieme alla cedolare agevolata, che rendono interessante questa formula. Ne parliamo nella guida dedicata al <a href="/blog/canone-concordato/">contratto a canone concordato</a>.</p>
+
+<h2>Quando si paga: acconto e saldo</h2>
+<p>L'IMU si versa in due rate con il modello F24: l'<strong>acconto entro il 16 giugno</strong> e il <strong>saldo entro il 16 dicembre</strong> di ogni anno. L'acconto è pari alla metà dell'imposta annua, calcolata in genere sulle aliquote dell'anno precedente; il saldo si conguaglia applicando le aliquote aggiornate che il Comune deve deliberare entro l'autunno. Se possiedi la casa solo per una parte dell'anno (per esempio l'hai comprata o venduta in corso d'anno), l'IMU si calcola in proporzione ai mesi di possesso, contando per intero il mese in cui il possesso si è protratto per più della metà dei giorni.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Credere che la cedolare secca copra anche l'IMU.</strong> Sono imposte distinte: la cedolare riguarda il reddito da affitto, l'IMU il possesso dell'immobile. Vanno versate entrambe.</li>
+<li><strong>Dare per scontata l'esenzione &laquo;prima casa&raquo;.</strong> Se affitti l'immobile e non ci vivi più, non è abitazione principale e l'IMU torna dovuta.</li>
+<li><strong>Chiedere l'IMU all'inquilino.</strong> L'imposta è per legge a carico del proprietario; non puoi accollarla al conduttore inserendola come voce a parte oltre al canone.</li>
+<li><strong>Usare l'aliquota sbagliata.</strong> Ogni Comune fissa la propria: applicare quella di un altro Comune o un valore generico può portare a pagare troppo o troppo poco, con il rischio di sanzioni.</li>
+<li><strong>Dimenticare lo sconto del canone concordato.</strong> Con questi contratti hai diritto alla riduzione del 25%: non applicarla significa versare più del dovuto.</li>
+</ul>
+
+<h2>Domande frequenti sull'IMU per la casa affittata</h2>
+<h3>Chi paga l'IMU su una casa in affitto, il proprietario o l'inquilino?</h3>
+<p>La paga il proprietario. L'IMU colpisce il possesso dell'immobile, quindi resta a carico di chi ne è titolare, non di chi lo abita in forza del contratto di locazione.</p>
+<h3>Se ho la cedolare secca devo pagare comunque l'IMU?</h3>
+<p>Sì. La cedolare secca sostituisce l'imposta sul reddito da affitto, l'imposta di registro e il bollo sul contratto, ma non l'IMU, che resta dovuta per intero.</p>
+<h3>La prima casa affittata è esente da IMU?</h3>
+<p>No, se l'affitti interamente. L'esenzione spetta all'abitazione principale, cioè alla casa dove risiedi e vivi abitualmente: affittandola perdi questo requisito e l'IMU torna dovuta. L'esenzione resta solo se affitti una parte della casa in cui continui ad abitare.</p>
+<h3>Quanto si paga di IMU su una seconda casa affittata?</h3>
+<p>Dipende dal Comune: l'aliquota base è dello 0,86%, ma il Comune può portarla fino all'1,06% (in casi particolari 1,14%). L'importo si calcola sulla rendita catastale rivalutata. Con contratto a canone concordato si versa solo il 75%.</p>
+<h3>L'IMU sulla casa affittata si può scaricare?</h3>
+<p>Per il privato che affitta un'abitazione l'IMU non è deducibile dall'imposta sul reddito. La deducibilità parziale è prevista solo per l'IMU sugli immobili strumentali nell'ambito di un'attività d'impresa o di lavoro autonomo.</p>
+
+<h2>In sintesi</h2>
+<p>Sull'<strong>IMU della casa affittata</strong> la regola da tenere a mente è una sola: se l'immobile non è la casa dove vivi, l'imposta è dovuta e la paghi tu proprietario, a prescindere dal fatto che tu abbia scelto la cedolare secca. Per non sbagliare, verifica l'aliquota del tuo Comune, ricordati la riduzione del 25% se hai un canone concordato e rispetta le scadenze del 16 giugno e del 16 dicembre. Se stai affittando un immobile e vuoi impostare fin dall'inizio un contratto solido, con il regime fiscale più adatto e le tutele giuste in caso di morosità, puoi chiedere una valutazione del tuo caso attraverso il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza fiscale o legale su misura. L'IMU è disciplinata dalla Legge 27 dicembre 2019, n. 160 (art. 1, commi 738 e seguenti): in particolare il comma 741 definisce l'abitazione principale, il comma 754 fissa l'aliquota base per gli immobili diversi e il comma 760 prevede la riduzione al 75% per gli immobili locati a canone concordato; la cedolare secca è regolata dall'art. 3 del D.Lgs. 14 marzo 2011, n. 23. Le aliquote sono deliberate dai singoli Comuni: per il caso concreto è sempre consigliabile verificare la delibera comunale e rivolgersi a un professionista.</em></p>
+`,
+  },
+  {
     slug: "ravvedimento-operoso-imposta-registro-locazione",
     title: "Ravvedimento operoso sull'imposta di registro della locazione: come mettersi in regola",
     description: "Ravvedimento operoso sull'imposta di registro della locazione: quando conviene, quanto si paga con le sanzioni ridotte e come fare passo per passo.",
