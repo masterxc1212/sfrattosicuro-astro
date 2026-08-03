@@ -16,6 +16,81 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "decreto-ingiuntivo-canoni-locazione",
+    title: "Decreto ingiuntivo per i canoni di locazione non pagati: come funziona per il proprietario",
+    description: "Decreto ingiuntivo per i canoni di locazione non pagati: quando conviene, come funziona, i tempi e la differenza con lo sfratto per morosità.",
+    excerpt: "Come usare il decreto ingiuntivo per i canoni di locazione non pagati: quando conviene rispetto allo sfratto per morosità, cosa serve, i tempi (30 e 40 giorni) e come si arriva al recupero forzato del credito.",
+    lead: "Se l'inquilino non paga e vuoi un documento per pretendere gli arretrati, il decreto ingiuntivo è una delle strade principali. Ecco quando conviene, come funziona e in cosa si distingue dallo sfratto per morosità.",
+    publishedAt: "2026-08-03",
+    updatedAt: "2026-08-03",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-03. Keyword: decreto ingiuntivo per canoni di locazione, vol 70, KD 0.",
+    html: `
+<p>L'inquilino non paga e tu vuoi un documento che ti permetta di pretendere i canoni arretrati, anche pignorando i suoi beni se necessario. Lo strumento che serve si chiama <strong>decreto ingiuntivo</strong>: un ordine di pagamento emesso dal giudice in tempi rapidi. In questa guida vediamo, dalla parte del proprietario, quando conviene chiederlo per i canoni di locazione non pagati, come funziona passo per passo, quanto tempo richiede e in cosa si distingue dallo sfratto per morosità.</p>
+
+<h2>Che cos'è il decreto ingiuntivo</h2>
+<p>Il <strong>decreto ingiuntivo</strong> (spesso abbreviato in "DI") è un provvedimento con cui il giudice, senza aspettare un processo lungo, ordina a chi deve dei soldi di <strong>pagarli entro un termine</strong>. È il cuore del cosiddetto <strong>procedimento monitorio</strong>, cioè quella procedura veloce che si usa quando il credito è certo e risulta da un documento scritto. Per il proprietario che vanta canoni arretrati è una delle strade principali per trasformare la morosità in un <strong>titolo</strong> (un documento con cui la legge ti autorizza a procedere al recupero forzato, ad esempio pignorando i beni del debitore) con cui poi agire.</p>
+
+<h2>Quando conviene chiederlo</h2>
+<p>Il decreto ingiuntivo per i canoni ha senso soprattutto in alcune situazioni:</p>
+<ul>
+<li><strong>Il rapporto è già finito o l'immobile è già stato rilasciato</strong>, ma restano canoni non pagati da recuperare: qui non serve più lo sfratto, serve un titolo per il debito.</li>
+<li><strong>Vuoi solo il pagamento, non la liberazione dell'immobile</strong>: ad esempio perché l'inquilino ha già lasciato la casa o perché il contratto è cessato.</li>
+<li><strong>Vuoi affiancare</strong> allo sfratto un'azione mirata al recupero delle somme, quando la posizione richiede un titolo autonomo.</li>
+</ul>
+<p>Se invece l'inquilino è ancora dentro e non paga, spesso lo strumento più efficiente è direttamente lo sfratto per morosità: vediamo perché.</p>
+
+<h2>Decreto ingiuntivo o sfratto per morosità?</h2>
+<p>È la domanda che conta di più, perché evita di pagare due procedure quando ne basta una. Lo <strong>sfratto per morosità</strong> (il procedimento di convalida) ha un vantaggio importante: nella stessa causa con cui chiedi il rilascio dell'immobile, il giudice può emettere anche un <strong>decreto d'ingiunzione per i canoni scaduti e per quelli che matureranno fino all'effettivo rilascio</strong>, oltre alle spese. In pratica, con lo sfratto ottieni in un colpo solo due cose: la casa e un titolo per i canoni.</p>
+<p>Il decreto ingiuntivo "autonomo", invece, serve quando il rilascio non è più in gioco (immobile già libero, rapporto chiuso) oppure quando vuoi concentrarti solo sul denaro. Come regola pratica: se devi ancora liberare l'immobile e recuperare gli arretrati, di solito conviene lo <a href="/blog/intimazione-di-sfratto-per-morosita/">sfratto per morosità</a>; se l'immobile è già tuo e restano solo i soldi da incassare, il decreto ingiuntivo è la via diretta.</p>
+
+<h2>Cosa serve per ottenerlo</h2>
+<p>Il decreto ingiuntivo si concede quando il credito è provato da un <strong>documento scritto</strong>. Nel caso dei canoni, la prova principale è il <strong>contratto di locazione scritto e registrato</strong>, accompagnato da un <strong>prospetto della morosità</strong> (il conteggio dei canoni non pagati, con date e importi). Un contratto regolarmente registrato rende la posizione molto più solida: è uno dei motivi per cui conviene sempre registrare e conservare tutta la documentazione dei pagamenti.</p>
+<p>La domanda si presenta con un <strong>ricorso</strong> al giudice competente. La <strong>competenza</strong> dipende dal valore del credito: per gli importi più contenuti è competente il <strong>Giudice di pace</strong>, per quelli maggiori il <strong>Tribunale</strong>. Con la riforma del processo civile (la cosiddetta <strong>riforma Cartabia</strong>), dal 28 febbraio 2023 la soglia del Giudice di pace per le cause su beni mobili è salita da 5.000 a <strong>10.000 euro</strong>: sotto quella cifra, in genere, ci si rivolge al Giudice di pace. È il tuo avvocato a individuare il giudice giusto in base all'importo.</p>
+
+<h2>Come funziona, passo per passo</h2>
+<ul>
+<li><strong>Deposito del ricorso</strong> con il contratto e il conteggio della morosità.</li>
+<li><strong>Emissione del decreto</strong>: il giudice, verificati i documenti, emette il decreto d'ingiunzione, di regola <strong>entro trenta giorni</strong> dal deposito del ricorso.</li>
+<li><strong>Notifica all'inquilino</strong>: il decreto va notificato al debitore, che da quel momento ha <strong>quaranta giorni</strong> per pagare oppure per fare opposizione.</li>
+<li><strong>Cosa succede dopo</strong>: se l'inquilino non paga e non si oppone nei quaranta giorni, il decreto diventa <strong>definitivo ed esecutivo</strong>, e puoi passare al recupero forzato. In alcuni casi il giudice può concedere l'<strong>esecuzione provvisoria</strong> già in partenza, ad esempio quando c'è pericolo di grave pregiudizio nel ritardo.</li>
+</ul>
+
+<h3>Se l'inquilino fa opposizione</h3>
+<p>L'opposizione trasforma la procedura veloce in una <strong>causa ordinaria</strong>, in cui si discute nel merito il credito. Non è una catastrofe: se la tua posizione è documentata, il giudice può comunque concedere l'<strong>esecuzione provvisoria</strong> del decreto durante il giudizio, e va concessa almeno per le somme non contestate. Un'opposizione pretestuosa, cioè fatta solo per prendere tempo, difficilmente regge di fronte a un contratto registrato e a canoni non pagati.</p>
+
+<h2>Dal decreto al recupero effettivo</h2>
+<p>Il decreto ingiuntivo, da solo, non fa comparire i soldi: è il <strong>titolo</strong> che ti permette di agire. Una volta divenuto esecutivo, si notifica un <strong>atto di precetto</strong> (l'intimazione formale a pagare entro un termine) e, in mancanza di pagamento, si può procedere al <strong>pignoramento</strong> dei beni, dello stipendio o del conto dell'inquilino.</p>
+<p>Qui va messa in conto la realtà: se il debitore è senza redditi né beni aggredibili, anche il miglior titolo rischia di restare sulla carta. Prima di investire tempo e spese, conviene valutare la reale recuperabilità del credito. Su questo aspetto è utile l'approfondimento su cosa può fare davvero il proprietario con un <a href="/blog/inquilino-moroso-nullatenente/">inquilino moroso nullatenente</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Attivare due procedure inutilmente</strong>: se stai già facendo lo sfratto per morosità, ricorda che quel procedimento può darti anche l'ingiunzione per i canoni, senza un decreto separato.</li>
+<li><strong>Presentarsi senza un conteggio ordinato</strong>: un prospetto della morosità chiaro, con date e importi, velocizza tutto.</li>
+<li><strong>Trascurare la registrazione del contratto</strong>: un contratto non registrato indebolisce la posizione e crea problemi anche fiscali.</li>
+<li><strong>Fermarsi al decreto</strong>: ottenuto il titolo, vanno fatti precetto ed eventuale pignoramento; il decreto in un cassetto non recupera nulla.</li>
+<li><strong>Non valutare la solvibilità dell'inquilino</strong> prima di sostenere le spese della procedura.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso chiedere il decreto ingiuntivo mentre l'inquilino è ancora in casa?</h3>
+<p>Sì, ma spesso non è la scelta più efficiente. Se vuoi anche liberare l'immobile, con lo sfratto per morosità ottieni nella stessa procedura sia il rilascio sia l'ingiunzione di pagamento dei canoni. Il decreto ingiuntivo autonomo conviene soprattutto quando l'immobile è già libero o il rapporto è cessato.</p>
+<h3>Quanto tempo ci vuole per avere il decreto?</h3>
+<p>Il giudice, di regola, emette il decreto entro trenta giorni dal deposito del ricorso. Dopo la notifica all'inquilino decorrono i quaranta giorni per il pagamento o l'opposizione. I tempi effettivi dipendono poi dalla notifica e dall'eventuale opposizione.</p>
+<h3>Serve l'avvocato?</h3>
+<p>Per predisporre il ricorso e seguire correttamente la procedura è fortemente consigliato l'avvocato, che individua anche il giudice competente e cura la parte esecutiva (precetto e pignoramento). Un errore formale può far perdere tempo prezioso.</p>
+<h3>Il decreto ingiuntivo mi restituisce anche l'immobile?</h3>
+<p>No: il decreto ingiuntivo riguarda il pagamento di una somma, non la liberazione dell'immobile. Per riavere la casa serve la procedura di sfratto o rilascio.</p>
+
+<h2>In sintesi</h2>
+<p>Il decreto ingiuntivo è lo strumento giusto per trasformare i canoni non pagati in un titolo con cui agire, soprattutto quando l'immobile è già tuo o il rapporto è finito. Se invece devi ancora liberare la casa, valuta con il tuo legale se convenga lo sfratto per morosità, che nella stessa procedura ti dà rilascio e ingiunzione di pagamento. In entrambi i casi contano tre cose: un contratto registrato, un conteggio della morosità ordinato e una valutazione realistica di quanto sia recuperabile il credito. Se vuoi anche capire come incassare davvero dopo aver ottenuto il titolo, può esserti utile la guida sul <a href="/blog/recupero-canoni-arretrati-dopo-sfratto/">recupero dei canoni arretrati</a>.</p>
+<p>Se vuoi far valutare il tuo caso concreto e scegliere la strada più conveniente, gli avvocati di <strong>Sfratto Sicuro</strong> possono aiutarti: scopri come funziona la <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso specifico.</em></p>
+<p><strong>Riferimenti normativi:</strong> procedimento d'ingiunzione disciplinato dagli articoli 633 e seguenti del codice di procedura civile (l'art. 633 fissa le condizioni, tra cui la prova scritta del credito; l'art. 641 prevede l'emissione del decreto entro trenta giorni e il termine di quaranta giorni per pagamento o opposizione; gli artt. 642 e 648 disciplinano l'esecuzione provvisoria, rispettivamente immediata e in pendenza di opposizione); nello sfratto per morosità l'ingiunzione per i canoni scaduti e da scadere è prevista dall'art. 664 c.p.c.; la competenza per valore, con l'innalzamento della soglia del Giudice di pace a 10.000 euro per le cause su beni mobili, deriva dalla riforma Cartabia (D.Lgs. 149/2022), applicabile ai procedimenti introdotti dopo il 28 febbraio 2023.</p>
+`,
+  },
+  {
     slug: 'imu-casa-affittata',
     title: "IMU su casa affittata: chi paga, quanto e come funziona con la cedolare secca",
     description: "IMU su casa affittata: la paga sempre il proprietario, anche con cedolare secca. Guida a prima e seconda casa, aliquote, canone concordato e scadenze.",
