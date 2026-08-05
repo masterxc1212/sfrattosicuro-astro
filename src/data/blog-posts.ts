@@ -16,6 +16,75 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "tari-affitto-chi-paga",
+    title: "Chi paga la TARI in caso di affitto: proprietario o inquilino?",
+    description: "TARI in caso di affitto: la paga l'inquilino se il contratto supera i 6 mesi, il proprietario nelle occupazioni brevi. Guida pratica per il locatore.",
+    excerpt: "In un immobile affittato la TARI, la tassa comunale sui rifiuti, di regola la paga l'inquilino: il criterio decisivo è la durata dell'occupazione. Ecco, dalla parte del proprietario, chi paga per i contratti oltre sei mesi e per le occupazioni brevi, cosa mettere a contratto e quali errori evitare.",
+    lead: "La tassa sui rifiuti in una casa affittata segue una regola precisa: la paga l'inquilino quando l'occupazione supera i sei mesi, il proprietario nelle occupazioni brevi. Vediamo, dalla parte del locatore, chi e' il soggetto obbligato verso il Comune, cosa scrivere nel contratto e come non pagare un conto che non ti spetta.",
+    publishedAt: "2026-08-05",
+    updatedAt: "2026-08-05",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-05. Keyword: chi paga la tari in caso di affitto, vol 210, KD 0 (DataForSEO). Secondarie: tari affitto chi paga, casa in affitto chi paga la tari.",
+    html: `
+<p>Hai una casa affittata e ti arriva l'avviso di pagamento della <strong>TARI</strong>, la tassa comunale sui rifiuti. La domanda che quasi tutti i proprietari si fanno è semplice: <strong>chi paga la TARI in caso di affitto, il proprietario o l'inquilino?</strong> Nella grande maggioranza dei casi il proprietario non deve pagarla &mdash; l'onere ricade sull'inquilino &mdash; ma dipende da un dettaglio: la durata dell'occupazione. Vediamo, dalla parte del proprietario, chi è tenuto a pagare, cosa cambia tra un contratto lungo e un'occupazione breve e quali errori evitare per non ritrovarti con un conto che non ti spetta.</p>
+
+<h2>Chi paga la TARI in caso di affitto: la regola di base</h2>
+<p>La TARI (Tassa sui Rifiuti) è il tributo comunale che serve a coprire il costo del servizio di raccolta e smaltimento dei rifiuti urbani. Si paga al Comune dove si trova l'immobile, non al proprietario, ed è cosa ben diversa dal canone di affitto e dalle spese condominiali.</p>
+<p>Il principio di fondo è intuitivo: <strong>la TARI la paga chi possiede o detiene un immobile idoneo a produrre rifiuti</strong> e concretamente lo usa. In una casa data in affitto, la persona che ci vive e produce rifiuti è l'inquilino (in linguaggio giuridico il &laquo;conduttore&raquo;). Per questo, di regola, <strong>in caso di affitto la TARI è a carico dell'inquilino</strong> e non del proprietario. La legge introduce però un'eccezione importante, legata a quanto dura l'occupazione.</p>
+
+<h2>Contratto oltre 6 mesi: paga l'inquilino</h2>
+<p>Quando l'inquilino occupa l'immobile per un periodo <strong>superiore a sei mesi</strong> nello stesso anno solare &mdash; cioè in tutti i contratti di affitto normali, come il 4+4, il 3+2, il transitorio di durata piena o l'affitto a studenti per l'anno accademico &mdash; il soggetto obbligato verso il Comune è <strong>solo l'inquilino</strong>. È lui che deve presentare la dichiarazione TARI, ricevere gli avvisi e pagare direttamente all'ente.</p>
+<p>Questo significa che, per un contratto di locazione ordinario, il proprietario <strong>non deve pagare la TARI dell'inquilino</strong> e non ne è responsabile verso il Comune. Il tuo compito, come vedremo, è soprattutto assicurarti che l'inquilino faccia la sua parte, cioè che si registri all'inizio e si cancelli alla fine.</p>
+
+<h2>Occupazioni brevi fino a 6 mesi: paga il proprietario</h2>
+<p>La regola si ribalta quando la <strong>detenzione è temporanea</strong>, cioè di durata <strong>non superiore a sei mesi</strong> nel corso dello stesso anno solare. In questi casi la TARI non è dovuta da chi occupa, ma <strong>dal proprietario</strong> dell'immobile (o da chi ne ha l'usufrutto, l'uso, l'abitazione o la superficie).</p>
+<p>È il tipico scenario degli <strong>affitti brevi</strong>: se affitti la casa per poche settimane o per qualche mese, il Comune non insegue i singoli ospiti, ma chiede la tassa a te. Se gestisci questo tipo di locazioni, tieni presente che la TARI resta un tuo costo: puoi approfondire gli altri adempimenti nella guida dedicata alle <a href="/blog/locazioni-brevi/">locazioni brevi per il proprietario</a>.</p>
+
+<h2>Cosa dice il contratto e cosa dice la legge</h2>
+<p>Molti contratti di affitto contengono una clausola che stabilisce chi paga la tassa rifiuti. È utile per chiarezza tra le parti, ma va capito bene il suo valore: <strong>un accordo tra proprietario e inquilino vincola solo loro due, non il Comune</strong>. Verso l'ente, chi è tenuto a pagare resta stabilito dalla legge in base alla durata dell'occupazione.</p>
+<p>In pratica: se preferisci gestire tu la TARI e riaddebitarla all'inquilino inserendola tra le spese, puoi farlo con un patto interno, ma il criterio di legge non cambia. Per evitare confusione, tieni la TARI ben distinta dalle <a href="/blog/spese-condominiali-inquilino/">spese condominiali dell'inquilino</a> e dall'<a href="/blog/imu-casa-affittata/">IMU sulla casa affittata</a>, che seguono regole del tutto diverse.</p>
+
+<h2>Cosa deve fare il proprietario: la checklist</h2>
+<p>Anche quando la TARI spetta all'inquilino, il proprietario ha alcune cose da presidiare per non trovarsi sorprese a fine locazione.</p>
+<ul>
+<li><strong>Metti nero su bianco chi paga la TARI.</strong> Una clausola chiara nel contratto evita discussioni e ti aiuta a dimostrare gli accordi presi.</li>
+<li><strong>Verifica che l'inquilino presenti la dichiarazione TARI.</strong> Chi entra nell'immobile deve comunicare al Comune l'inizio dell'occupazione (la cosiddetta denuncia di occupazione), entro i termini fissati dal regolamento comunale.</li>
+<li><strong>Alla riconsegna, chiedi la prova della cessazione.</strong> Fatti consegnare copia della dichiarazione con cui l'inquilino comunica al Comune che ha lasciato la casa: è ciò che &laquo;chiude&raquo; la sua posizione ed evita che l'immobile risulti ancora occupato.</li>
+<li><strong>Gestisci per tempo la casa sfitta.</strong> Se l'appartamento torna vuoto, comunica al Comune lo stato dell'immobile per non ricevere avvisi che non ti competono.</li>
+<li><strong>Conserva il contratto registrato.</strong> Per stabilire chi paga e per quanto tempo, al Comune serve la data e la durata del contratto: la <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto</a> è quindi utile anche su questo fronte.</li>
+</ul>
+
+<h2>Il proprietario risponde della TARI non pagata dall'inquilino?</h2>
+<p>È il timore più diffuso: se l'inquilino non paga la tassa rifiuti, il Comune può poi chiederla a me? Per i <strong>contratti oltre i sei mesi la risposta è no</strong>: il soggetto obbligato è l'inquilino, e il proprietario non è coobbligato per il solo fatto di essere il locatore. Il conto della TARI non &laquo;ricade&raquo; automaticamente su di te.</p>
+<p>Il proprietario torna a essere il soggetto tenuto al pagamento nei casi visti sopra, cioè nelle <strong>occupazioni brevi fino a sei mesi</strong>, e quando l'immobile è potenzialmente in grado di produrre rifiuti pur essendo sfitto. Un appartamento vuoto ma arredato e con le utenze attive, ad esempio, viene di norma considerato idoneo a produrre rifiuti e la relativa TARI resta a carico del proprietario. Per contro, un immobile completamente vuoto, privo di mobili e con le utenze staccate, può essere escluso dalla tassa: ma l'esclusione non è automatica, va dichiarata al Comune e dipende dal regolamento locale.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Dare per scontato che &laquo;tanto paga l'inquilino&raquo;.</strong> Se non verifichi che si sia registrato e poi cancellato, la posizione può restare aperta e generare confusione proprio quando la casa torna a te.</li>
+<li><strong>Confondere la TARI con le spese condominiali.</strong> Sono voci diverse, con regole diverse: trattarle come un'unica cosa porta a errori di conteggio e a contestazioni.</li>
+<li><strong>Pensare che una clausola sposti l'obbligo verso il Comune.</strong> L'accordo tra le parti vale tra proprietario e inquilino, non cambia chi la legge indica come obbligato verso l'ente.</li>
+<li><strong>Non comunicare al Comune la casa tornata sfitta.</strong> Senza una dichiarazione aggiornata puoi continuare a ricevere avvisi per un immobile che non è più occupato.</li>
+</ul>
+
+<h2>Domande frequenti sulla TARI in affitto</h2>
+<h3>In un affitto la TARI la paga il proprietario o l'inquilino?</h3>
+<p>Dipende dalla durata dell'occupazione. Se l'inquilino occupa l'immobile per più di sei mesi nell'anno solare &mdash; cioè in tutti i contratti ordinari &mdash; paga <strong>l'inquilino</strong>. Se l'occupazione è temporanea, fino a sei mesi, paga il <strong>proprietario</strong>.</p>
+<h3>Chi deve presentare la dichiarazione TARI?</h3>
+<p>La presenta l'occupante dell'immobile, quindi di regola l'inquilino, comunicando al Comune l'inizio dell'occupazione entro i termini previsti dal regolamento comunale. Alla fine del contratto deve presentare anche la dichiarazione di cessazione.</p>
+<h3>Se l'inquilino non paga la TARI, il Comune può chiederla a me?</h3>
+<p>Per i contratti oltre i sei mesi no: l'obbligato è l'inquilino e il proprietario non risponde al suo posto. Il proprietario è tenuto al pagamento solo nelle occupazioni temporanee fino a sei mesi o quando è lui a possedere o occupare l'immobile.</p>
+<h3>Chi paga la TARI se la casa è sfitta?</h3>
+<p>Di norma il proprietario, quando l'immobile è potenzialmente in grado di produrre rifiuti (ad esempio se resta arredato e con le utenze attive). Se invece è del tutto vuoto e inidoneo a produrre rifiuti, può essere escluso dalla tassa, ma l'esclusione va dichiarata al Comune e dipende dal regolamento locale.</p>
+<h3>Posso mettere la TARI a carico dell'inquilino con una clausola del contratto?</h3>
+<p>Sì, come accordo interno tra le parti. Resta però fermo che, verso il Comune, l'obbligato è individuato dalla legge in base alla durata dell'occupazione: la clausola regola i rapporti economici tra te e l'inquilino, non li sostituisce.</p>
+
+<h2>In sintesi</h2>
+<p>Nella stragrande maggioranza dei casi la <strong>TARI in caso di affitto la paga l'inquilino</strong>, perché è lui a occupare la casa e a produrre rifiuti per un periodo superiore a sei mesi. Il proprietario paga solo nelle occupazioni brevi fino a sei mesi e per l'immobile sfitto ma ancora idoneo a produrre rifiuti. Il consiglio pratico è sempre lo stesso: scrivi chiaramente nel contratto chi paga, verifica che l'inquilino si registri e si cancelli al Comune, e tieni aggiornata la posizione quando la casa torna vuota. Se hai dubbi sulla gestione fiscale o contrattuale del tuo immobile locato, o se l'inquilino non paga e la situazione rischia di degenerare, puoi chiedere una valutazione del tuo caso attraverso il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale o fiscale su misura. La disciplina della TARI è dettata dalla legge 27 dicembre 2013, n. 147 (Legge di Stabilità 2014), articolo 1, in particolare ai commi 641 (presupposto della tassa), 642 (soggetto passivo) e 643 (regola per la detenzione temporanea non superiore a sei mesi); le modalità di dichiarazione, le scadenze e le esclusioni sono definite dal regolamento del singolo Comune. Per la tua situazione concreta è sempre consigliabile rivolgersi a un professionista.</em></p>
+`,
+  },
+  {
     slug: "decreto-ingiuntivo-canoni-locazione",
     title: "Decreto ingiuntivo per i canoni di locazione non pagati: come funziona per il proprietario",
     description: "Decreto ingiuntivo per i canoni di locazione non pagati: quando conviene, come funziona, i tempi e la differenza con lo sfratto per morosità.",
