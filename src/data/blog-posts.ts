@@ -16,6 +16,68 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'tempi-sfratto-per-morosita',
+    title: "Tempi dello sfratto per morosita': quanto dura davvero, fase per fase",
+    description: "Quanto dura uno sfratto per morosita'? Tempi realistici fase per fase per il proprietario: intimazione, convalida, termine di grazia e rilascio.",
+    excerpt: "Quanto tempo ci vuole per riavere la casa da un inquilino moroso? La guida per il proprietario ai tempi reali dello sfratto, dall'intimazione al rilascio.",
+    lead: "Dall'intimazione alla riconsegna delle chiavi: quali sono i tempi realistici dello sfratto per morosita', da cosa dipendono e come evitare di allungarli.",
+    publishedAt: '2026-08-07',
+    updatedAt: '2026-08-07',
+    category: 'Sfratti',
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-07. Keyword: tempi sfratto per morosita', vol 260, KD 0.",
+    html: `<p>Quando un inquilino smette di pagare, la prima domanda del proprietario è quasi sempre la stessa: quanto tempo ci vuole per riavere la casa? Capire i <strong>tempi dello sfratto per morosità</strong> serve a farsi un'idea realistica, a non commettere passi falsi e a muoversi subito, perché ogni settimana persa è un canone che non torna indietro. Questa guida spiega, fase per fase, quanto dura davvero la procedura e da cosa dipendono i tempi.</p>
+
+<h2>Perché non esiste un tempo unico</h2>
+<p>Lo sfratto per morosità è una procedura giudiziale: passa da un giudice e da una serie di passaggi obbligati. La durata complessiva dipende da fattori che non sono tutti nelle mani del proprietario: il <strong>Tribunale competente</strong> (alcuni fissano le udienze in poche settimane, altri in qualche mese), l'eventuale <strong>opposizione dell'inquilino</strong> e la fase finale di rilascio con l'ufficiale giudiziario. Per questo si ragiona per fasi, non con un numero secco.</p>
+
+<h2>Le fasi e i tempi realistici</h2>
+
+<h3>1. Diffida e messa in mora (prima della causa)</h3>
+<p>Non è obbligatoria, ma è consigliata. Con una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida</a> il proprietario mette per iscritto la richiesta di pagamento. In molti casi bastano pochi giorni per capire se l'inquilino salda o meno. Se non paga, si passa alla fase giudiziale. Saltare questo passaggio non allunga i tempi della causa, ma la diffida crea una prova utile.</p>
+
+<h3>2. Intimazione di sfratto e prima udienza</h3>
+<p>Il proprietario, tramite l'avvocato, notifica all'inquilino l'<strong>intimazione di sfratto</strong> con contestuale citazione a comparire davanti al giudice. Tra la notifica e la prima udienza deve passare un termine minimo di legge (almeno 20 giorni liberi). In pratica, la <strong>prima udienza di convalida</strong> viene fissata mediamente entro qualche settimana o pochi mesi, a seconda del Tribunale. È la fase in cui il proprietario può ottenere la <a href="/blog/sfratto-morosita-riforma-cartabia/">convalida dello sfratto</a>.</p>
+
+<h3>3. L'udienza di convalida</h3>
+<p>Se l'inquilino non si presenta o non si oppone, il giudice <strong>convalida lo sfratto</strong> nella stessa udienza e fissa la data entro cui l'immobile deve essere liberato. Questo è lo scenario più rapido: la morosità è pacifica e la procedura fila. Con una gestione ordinata, dall'intimazione alla convalida si arriva <strong>mediamente in circa 60 giorni</strong>. <em>Si tratta di un dato medio operativo, non di una promessa assoluta: i tempi dipendono dal Tribunale competente e dall'eventuale opposizione dell'inquilino.</em></p>
+
+<h3>4. Il termine di grazia (se l'inquilino chiede tempo)</h3>
+<p>All'udienza l'inquilino può chiedere il <a href="/blog/sfratto-termine-di-grazia/">termine di grazia</a>: il giudice può concedergli fino a 90 giorni per pagare tutto il dovuto (canoni scaduti, interessi e spese). Se paga entro il termine, la morosità è "sanata" e lo sfratto non va avanti; se non paga, alla nuova udienza lo sfratto viene convalidato. Questo passaggio, quando richiesto, allunga i tempi di qualche mese.</p>
+
+<h3>5. Il preavviso di rilascio e l'esecuzione</h3>
+<p>Ottenuta la convalida, se l'inquilino non lascia spontaneamente l'immobile entro la data fissata, si passa alla fase esecutiva: si notifica il <strong>preavviso di rilascio</strong> e si chiede l'intervento dell'<a href="/blog/sfratto-esecutivo-rilascio-immobile/">ufficiale giudiziario</a>. L'ufficiale fissa un primo accesso e, se necessario, ne fissa altri, eventualmente con l'ausilio della forza pubblica. È la fase più variabile: in caso di inquilino che resiste, servono più accessi e i tempi si allungano di settimane o mesi.</p>
+
+<h2>Riepilogo dei tempi</h2>
+<ul>
+<li><strong>Caso semplice</strong> (inquilino non si oppone, rilascia dopo la convalida): la convalida arriva mediamente in circa 60 giorni, poi il rilascio nelle settimane successive.</li>
+<li><strong>Caso con termine di grazia</strong>: si aggiungono fino a circa 90 giorni per l'eventuale pagamento.</li>
+<li><strong>Caso con opposizione o resistenza al rilascio</strong>: la procedura può protrarsi diversi mesi in più, perché si trasforma in un giudizio ordinario o richiede più accessi dell'ufficiale giudiziario.</li>
+</ul>
+
+<h2>Come non allungare i tempi: errori da evitare</h2>
+<ul>
+<li><strong>Aspettare troppo prima di agire.</strong> Più mensilità si accumulano, più tardi parte la procedura e più difficile è recuperare gli arretrati. Conviene muoversi già dopo il primo mancato pagamento significativo.</li>
+<li><strong>Tentare lo "sfratto fai da te".</strong> Cambiare la serratura, staccare le utenze o togliere le cose dell'inquilino sono azioni illegali (violenza privata) che espongono il proprietario a denunce e rallentano tutto.</li>
+<li><strong>Notifiche fatte male.</strong> Un indirizzo sbagliato o un vizio nella notifica fa saltare l'udienza e ne impone una nuova, con settimane di ritardo.</li>
+<li><strong>Trascurare il recupero dei canoni.</strong> Lo sfratto libera la casa ma non recupera automaticamente i soldi: conviene affiancare fin da subito l'azione per il recupero degli arretrati.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>In quanto tempo posso ottenere la convalida dello sfratto?</h3>
+<p>Se l'inquilino non si oppone, la convalida arriva mediamente in circa 60 giorni dall'avvio, ma è un dato medio: dipende dal Tribunale competente e dall'eventuale opposizione. Con opposizione o termine di grazia i tempi si allungano.</p>
+<h3>L'inquilino può bloccare lo sfratto pagando?</h3>
+<p>Sì, entro certi limiti. Con il termine di grazia il giudice può concedere fino a 90 giorni per saldare tutto il dovuto. Se paga, la morosità è sanata; se non paga, lo sfratto prosegue.</p>
+<h3>Dopo la convalida, quanto ci vuole per liberare la casa?</h3>
+<p>Se l'inquilino rilascia spontaneamente entro la data fissata dal giudice, pochi giorni. Se resiste, serve l'esecuzione con l'ufficiale giudiziario, che può richiedere più accessi e diversi mesi nei casi difficili.</p>
+<h3>Posso agire anche senza contratto registrato?</h3>
+<p>La procedura di convalida presuppone un contratto scritto e registrato. In mancanza, esistono strade alternative per ottenere il rilascio, ma i tempi e la strategia cambiano: è un caso da valutare con un legale.</p>
+
+<h2>In sintesi</h2>
+<p>Nei casi lineari lo sfratto per morosità arriva alla convalida mediamente in circa 60 giorni (dato medio operativo, non promessa assoluta: dipende dal Tribunale e dall'eventuale opposizione), con il rilascio nelle settimane seguenti. Termine di grazia, opposizione e resistenza al rilascio possono allungare la procedura di diversi mesi. La cosa più importante, per accorciare i tempi, è muoversi presto e con atti fatti bene. Se vuoi capire come procedere sul tuo caso, puoi vedere come funziona il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Riferimenti normativi essenziali: procedimento per convalida di sfratto, artt. 657 e seguenti del Codice di procedura civile; termine di grazia, art. 55 della Legge 392/1978; riforma del processo civile (cosiddetta riforma Cartabia), D.Lgs. 149/2022 e correttivo D.Lgs. 164/2024. Questo contenuto ha finalità informative e non sostituisce una consulenza legale personalizzata.</em></p>`,
+  },
+  {
     slug: 'manutenzione-ordinaria-straordinaria-affitto',
     title: "Manutenzione ordinaria e straordinaria nell'affitto: chi paga tra proprietario e inquilino",
     description: "Manutenzione ordinaria e straordinaria nell'affitto: guida per il proprietario su chi paga riparazioni e caldaia, tra uso e vetusta'.",
