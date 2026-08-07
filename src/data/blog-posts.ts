@@ -16,6 +16,91 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'manutenzione-ordinaria-straordinaria-affitto',
+    title: "Manutenzione ordinaria e straordinaria nell'affitto: chi paga tra proprietario e inquilino",
+    description: "Manutenzione ordinaria e straordinaria nell'affitto: guida per il proprietario su chi paga riparazioni e caldaia, tra uso e vetusta'.",
+    excerpt: "Chi paga le riparazioni in una casa in affitto? La guida pratica per il proprietario: manutenzione ordinaria a carico dell'inquilino, straordinaria e vetusta' a carico tuo.",
+    lead: "Dalla caldaia rotta alla tinteggiatura: come distinguere le spese di manutenzione a carico dell'inquilino da quelle del proprietario, ed evitare contestazioni.",
+    publishedAt: '2026-08-06',
+    updatedAt: '2026-08-06',
+    category: 'Locazioni',
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-06. Keyword: manutenzione ordinaria e straordinaria affitto, vol 50, KD 13.",
+    html: `<p>Quando affitti un immobile, prima o poi arriva la domanda pratica: la <strong>caldaia si è rotta, chi paga?</strong> E la tinteggiatura delle pareti? E la sostituzione degli infissi? La <strong>manutenzione ordinaria e straordinaria nell'affitto</strong> è una delle prime fonti di tensione tra proprietario e inquilino, spesso perché nessuno dei due sa con precisione quali spese gli spettano. Questa guida è pensata per il <strong>proprietario</strong> che vuole capire cosa deve pagare lui, cosa può addebitare al conduttore (l'inquilino) e come evitare contestazioni al momento della riconsegna dell'immobile.</p>
+
+<h2>Manutenzione ordinaria e straordinaria nell'affitto: la regola di base</h2>
+<p>La legge parte da un principio semplice: il proprietario deve consegnare l'immobile in buono stato e mantenerlo idoneo all'uso per tutta la durata del contratto. Di conseguenza, <strong>tutte le riparazioni necessarie sono a carico del proprietario</strong>, tranne quelle di <strong>piccola manutenzione</strong>, che spettano all'inquilino.</p>
+<p>Nel linguaggio comune si parla di manutenzione "ordinaria" (a carico dell'inquilino) e "straordinaria" (a carico del proprietario). È una semplificazione utile, ma il criterio giuridico vero non è la dimensione della spesa: è la <strong>causa</strong> del guasto. La domanda giusta da porsi è sempre una: <em>il danno nasce dal normale utilizzo quotidiano dell'immobile, oppure dall'usura del tempo o da un evento imprevisto?</em></p>
+
+<h3>Cosa paga l'inquilino</h3>
+<p>Sono a carico del conduttore le <strong>piccole riparazioni dovute all'uso</strong> dell'immobile, cioè al normale logorio della vita di tutti i giorni. In pratica rientrano tipicamente qui:</p>
+<ul>
+<li>sostituzione di guarnizioni, rubinetti gocciolanti, flessibili e piccole parti dell'impianto idraulico soggette a usura;</li>
+<li>ripristino di serrature, maniglie, cerniere e piccole parti di porte e finestre;</li>
+<li>sostituzione di lampadine, interruttori e piccoli componenti elettrici;</li>
+<li>tinteggiatura delle pareti quando il consumo dipende dal normale utilizzo;</li>
+<li>manutenzione ordinaria della caldaia: controlli periodici, pulizia e analisi dei fumi.</li>
+</ul>
+<p>La logica è che chi usa la casa ogni giorno se ne deve prendere cura come un buon padre di famiglia, sostenendo le spese minime che l'uso comporta.</p>
+
+<h3>Cosa paga il proprietario</h3>
+<p>Restano a carico del proprietario le riparazioni che <strong>non nascono dall'uso</strong>, ma dalla <strong>vetustà</strong> (l'invecchiamento naturale dell'immobile e degli impianti) o dal <strong>caso fortuito</strong> (un evento imprevisto e non imputabile all'inquilino). In concreto:</p>
+<ul>
+<li>sostituzione della caldaia guasta per vetustà o fine vita, o di componenti importanti dell'impianto termico;</li>
+<li>rifacimento dell'impianto elettrico o idraulico non a norma o deteriorato dal tempo;</li>
+<li>interventi su tetto, facciata, muri portanti e strutture;</li>
+<li>riparazione di infiltrazioni, umidità di risalita e danni dovuti a difetti dell'immobile;</li>
+<li>sostituzione di infissi e serramenti usurati dal tempo.</li>
+</ul>
+
+<h2>Caldaia rotta in affitto: chi paga?</h2>
+<p>È il caso più frequente, quindi merita un chiarimento a parte. Vale la stessa distinzione:</p>
+<ul>
+<li><strong>manutenzione ordinaria e controlli</strong> (pulizia, revisione periodica, analisi dei fumi, bollino): a carico dell'<strong>inquilino</strong>, perché legati all'uso;</li>
+<li><strong>sostituzione della caldaia o riparazione di un guasto grave</strong> dovuto a vetustà o a un difetto non imputabile all'inquilino: a carico del <strong>proprietario</strong>.</li>
+</ul>
+<p>Attenzione a un punto pratico: se il guasto della caldaia (o di un altro impianto) dipende dalla <strong>mancata manutenzione ordinaria</strong> da parte dell'inquilino — per esempio la caldaia si rompe perché non è mai stata revisionata — il proprietario può chiedere il rimborso del danno, perché il deterioramento è colpa di chi non se n'è occupato.</p>
+
+<h2>Riparazioni urgenti: cosa deve fare l'inquilino</h2>
+<p>Se durante l'affitto serve una riparazione a carico del proprietario, l'inquilino deve <strong>avvisarlo tempestivamente</strong>. Se la riparazione è <strong>urgente</strong> (per esempio una perdita d'acqua che rischia di allagare l'appartamento), l'inquilino può eseguirla direttamente, ma ha diritto al rimborso solo se avvisa contemporaneamente il proprietario. Per te è importante saperlo per due motivi: da un lato non puoi ignorare le segnalazioni urgenti, dall'altro puoi contestare rimborsi per lavori decisi dall'inquilino senza avvisarti e senza reale urgenza.</p>
+
+<h2>La checklist pratica per il proprietario</h2>
+<ul>
+<li><strong>Scrivi tutto nel contratto.</strong> La ripartizione delle spese può essere personalizzata: un elenco chiaro degli interventi a carico di ciascuno evita quasi tutte le liti.</li>
+<li><strong>Fai il verbale di consegna con foto.</strong> Fotografa lo stato dell'immobile e degli impianti all'ingresso: sarà la prova per distinguere l'usura normale dai danni.</li>
+<li><strong>Conserva libretti e scadenze.</strong> Tieni traccia dell'età della caldaia e degli impianti: aiuta a stabilire se un guasto è dovuto a vetustà (tua) o a cattivo uso (dell'inquilino).</li>
+<li><strong>Pretendi le prove della manutenzione ordinaria.</strong> Chiedi all'inquilino le ricevute delle revisioni della caldaia: sono la sua responsabilità.</li>
+<li><strong>Rispondi alle segnalazioni per iscritto.</strong> Una traccia scritta ti tutela sia se intervieni, sia se contesti richieste non dovute.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Addebitare tutto all'inquilino.</strong> Scaricare sul conduttore anche i lavori da vetustà è illegittimo e apre a contestazioni e a trattenute indebite sul deposito cauzionale.</li>
+<li><strong>Non fare il verbale di consegna.</strong> Senza uno stato iniziale documentato è quasi impossibile dimostrare che un danno non c'era prima.</li>
+<li><strong>Ignorare le segnalazioni urgenti.</strong> Rimandare un intervento necessario può aggravare il danno e le tue responsabilità.</li>
+<li><strong>Confondere le spese di manutenzione con gli oneri condominiali.</strong> Sono due capitoli diversi, con regole proprie.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>La tinteggiatura delle pareti a fine affitto la paga l'inquilino?</h3>
+<p>Se l'annerimento o l'usura dipendono dal normale uso, la spesa è tipicamente a carico dell'inquilino. Non puoi però pretendere il rifacimento a nuovo se il consumo è quello fisiologico di una casa vissuta per anni.</p>
+<h3>Chi paga se si rompe un elettrodomestico presente nell'immobile?</h3>
+<p>Dipende dalla causa e da cosa prevede il contratto. Se il guasto nasce dall'uso scorretto risponde l'inquilino; se è per vetustà di un elettrodomestico fornito dal proprietario, di norma risponde il proprietario. Metterlo nero su bianco nel contratto è la soluzione più sicura.</p>
+<h3>Posso trattenere le spese di riparazione dal deposito cauzionale?</h3>
+<p>Solo per i danni realmente imputabili all'inquilino, non per l'usura normale né per la vetustà. Le trattenute vanno sempre giustificate e documentate.</p>
+<h3>L'inquilino può fare i lavori e chiedermi il rimborso?</h3>
+<p>Solo per le riparazioni a tuo carico e realmente urgenti, e a condizione che ti abbia avvisato contestualmente. Per gli altri interventi serve il tuo accordo preventivo.</p>
+
+<h2>In sintesi</h2>
+<p>La regola d'oro per il proprietario è distinguere sempre in base alla <strong>causa</strong> del guasto: l'usura da uso quotidiano è dell'inquilino, la vetustà e gli eventi imprevisti sono tuoi. Un contratto dettagliato, un verbale di consegna con foto e la richiesta delle prove di manutenzione ordinaria ti mettono al riparo dalla stragrande maggioranza delle contestazioni. Se vuoi approfondire, leggi anche le nostre guide sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>, sul <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a> e sulle <a href="/blog/spese-condominiali-inquilino/">spese condominiali a carico dell'inquilino</a>.</p>
+
+<p>Se hai un dubbio su una spesa specifica o una contestazione in corso con il tuo inquilino, il team di Sfratto Sicuro può aiutarti a valutare la tua posizione e a tutelare il tuo immobile: scopri il nostro servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+
+<p><em>Riferimenti normativi: artt. 1575, 1576, 1577, 1587 e 1609 del codice civile (obblighi del locatore e del conduttore, piccole riparazioni, riparazioni urgenti). La manutenzione degli impianti termici è disciplinata anche dal D.P.R. 74/2013.</em></p>
+
+<p><em>Contenuto a scopo informativo, aggiornato ad agosto 2026. Non sostituisce una consulenza legale su un caso concreto.</em></p>`,
+  },
+  {
     slug: "tari-affitto-chi-paga",
     title: "Chi paga la TARI in caso di affitto: proprietario o inquilino?",
     description: "TARI in caso di affitto: la paga l'inquilino se il contratto supera i 6 mesi, il proprietario nelle occupazioni brevi. Guida pratica per il locatore.",
