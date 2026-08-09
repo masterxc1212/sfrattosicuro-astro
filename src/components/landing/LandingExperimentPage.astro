@@ -36,6 +36,11 @@ const augustPromo = pricing.promozioni.agosto2026;
 const augustPrice = formatBusinessEuro(augustPromo.compensoComplessivo);
 const regularPrice = formatBusinessEuro(pricing.compensoComplessivo);
 
+// URL auto-referenziale: la promo di agosto e' pubblicata su piu' percorsi
+// (/landing-v3-agosto/ e /sfratto-agosto/) e ognuno deve dichiarare se stesso in
+// canonical, og:url e JSON-LD. Non reintrodurre l'URL fisso.
+const augustUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://www.sfrattosicuro.it').href;
+
 const baseConfig = buildLandingPageConfig({
   version: variant,
   territory: 'nazionale',
@@ -69,10 +74,10 @@ const config = isAugust ? {
     ...baseConfig.seo,
     title: `Avvocato per Sfratto ad Agosto | ${augustPrice} fino al rilascio`,
     description: augustDescription,
-    canonicalUrl: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    canonicalUrl: augustUrl,
     ogTitle: `Sfratto ad agosto: studio aperto, tariffa ${augustPrice}`,
     ogDescription: augustDescription,
-    ogUrl: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    ogUrl: augustUrl,
     twitterTitle: `Sfratto ad agosto: studio aperto, tariffa ${augustPrice}`,
     twitterDescription: augustDescription,
   },
@@ -102,16 +107,16 @@ const config = isAugust ? {
     legalService: {
       ...baseConfig.jsonLd.legalService,
       description: augustDescription,
-      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+      url: augustUrl,
       priceRange: augustPrice,
     },
     organization: {
       ...baseConfig.jsonLd.organization,
-      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+      url: augustUrl,
     },
     website: {
       ...baseConfig.jsonLd.website,
-      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+      url: augustUrl,
     },
     faq: {
       '@context': 'https://schema.org',
