@@ -1,5 +1,20 @@
 # A/B test landing V3 vs V4 — luglio 2026
 
+> **Aggiornamento 9 agosto 2026 — il test è chiuso.** L'utente ha dichiarato concluso
+> l'esperimento V3/V4. Attenzione: alla data di questo aggiornamento la campagna
+> `Avvocato per Sfratto [V4] Tripla offerta` (ID `24063657507`) risultava ancora
+> **ENABLED e in spesa** (per esempio €35,76 il 7 agosto, ≈ metà del budget condiviso
+> da €50/giorno). **Da spegnere**, altrimenti continua a sottrarre budget alla
+> promozione di agosto.
+>
+> Nel frattempo è entrata in produzione la promozione **«V3 Agosto»**
+> (`/landing-v3-agosto/`, €1.000 entro il 31 agosto 2026): vedi
+> `docs/promo-v3-agosto-2026.md`. La regola qui sotto — «l'offerta temporanea di
+> agosto va testata dopo questo confronto, non durante» — è quindi soddisfatta:
+> il confronto V3/V4 è terminato prima dell'avvio della promozione.
+>
+> Quanto segue resta valido come registro di come il test è stato impostato.
+
 ## Stato operativo
 
 - Implementazione V3/V4 completata e build locale verificata il 26 luglio

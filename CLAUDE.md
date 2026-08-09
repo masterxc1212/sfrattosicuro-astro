@@ -137,6 +137,35 @@ Build verificata il 26 luglio 2026: **213 pagine**, completata senza errori.
 Il rilascio V3/V4 è destinato alla campagna Google Ads `Avvocato per Sfratto`
 (customer `865-789-5088`, campaign `22849022328`).
 
+## Promozione «V3 Agosto» 2026 (aggiornamento 9 agosto 2026)
+
+Terza landing dallo stesso componente: `/landing-v3-agosto/`
+(`<LandingExperimentPage variant="v3" campaign="august2026" />`), con
+**€1.000 IVA e cassa incluse** per mandato sottoscritto **entro il 31 agosto 2026**.
+Prezzo e scadenza vivono in `business-config.json` →
+`pricing.promozioni.agosto2026`: non ricopiarli nei componenti.
+
+Documento operativo completo: **`docs/promo-v3-agosto-2026.md`** (offerta, esito
+della verifica integrale, ID dei 5 annunci `_agosto`, mappa dei sitelink, blocco
+Google residuo, checklist di rientro del 1° settembre).
+
+Tre punti da non perdere:
+
+- **Anchor**: dopo il redesign di luglio `#costi-trasparenza` e `#perche-sceglierci`
+  **non esistono più** (ora `#prezzo` e `#il-tuo-avvocato`). Verificare sempre
+  l'anchor sul DOM di produzione prima di usarlo in un sitelink.
+- **Sospensione feriale**: l'esclusione riguarda la **sola fase sommaria di
+  convalida** (Cass. civ. Sez. III 25601/2016). Dopo l'opposizione, nel rito
+  ordinario la sospensione si applica. Mai formule assolute nel copy.
+- **Asset condivisi**: sitelink e callout si agganciano a campagna o gruppo, mai al
+  singolo annuncio. Far convivere nello stesso gruppo un'offerta da €1.300 e una da
+  €1.000 con asset coerenti per entrambe è impossibile: o si separa la struttura, o
+  gli asset restano senza prezzo e senza URL contraddittori.
+
+⚠️ Il connettore MCP `google-ads` è fermo alla v20 dell'API (dismessa) e restituisce
+`UNSUPPORTED_VERSION`. Usare la libreria Python diretta con `version="v23"` — vedi
+§9 del documento operativo.
+
 ## Progetto sedi/tribunali (chiuso)
 
 `tribunali-batch-progress.json` traccia l'arricchimento di `sedi.json.tribunaleInfo` per tutte le 137 sedi. Stato al 30 aprile 2026: **137/137 completate**, batch 0-5 chiusi, zero duplicati `udienze`/`note`. La skill `tribunali-sedi-ansalone` documenta il workflow se serve riprendere.

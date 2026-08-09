@@ -95,12 +95,17 @@ In alternativa il `.gitattributes` del repo già forza `* text=auto eol=crlf` su
 
 ## Landing v3 + sitelink Google Ads
 
-La landing `landing-v3/index.html` è target dei sitelink della campagna "Avvocato per Sfratto" (customer 865-789-5088, campaign 22849022328). Sitelink attivi con tag `SL_V3_*` puntano ad anchor del DOM.
+Le landing `/landing-v3/`, `/landing-v4/` e `/landing-v3-agosto/` sono target degli asset della campagna "Avvocato per Sfratto" (customer 865-789-5088, campaign 22849022328). Dal 26 luglio 2026 sono tutte generate dallo stesso componente `src/components/landing/LandingExperimentPage.astro`, quindi **condividono la stessa struttura di anchor**.
 
-**Section ID realmente presenti nel DOM della landing-v3** (verificati 19 aprile 2026):
-`#main-content`, `#calcolatore-perdite`, `#cta-rapida`, `#recensioni-google`, `#rimborso-spese`, `#come-funziona`, `#costi-trasparenza`, `#perche-sceglierci`, `#faq`, `#contatti`.
+**Section ID realmente presenti nel DOM (riverificati sulla produzione il 9 agosto 2026):**
+`#main-content`, `#site-header`, `#come-funziona`, `#prezzo`, `#recensioni-google`, `#il-tuo-avvocato`, `#faq`, `#contatti`, `#form-rapido`, `#procedura-protocollo`, `#provvedimenti-carousel`, `#hero-form`, `#total-reviews` (+ `#august-notice-title` solo sulla landing agosto).
 
-Gli 8 sitelink attuali (`#hero`, `#servizi`, `#come-funziona`, `#prezzi`, `#faq`, `#chi-siamo`, `#recensioni`, `#contatti`) hanno 4 mismatch con il DOM: `#servizi`, `#prezzi`, `#chi-siamo`, `#recensioni` NON esistono come ID. Da rimappare (es. `#prezzi`->`#costi-trasparenza`, `#chi-siamo`->`#perche-sceglierci`, `#recensioni`->`#recensioni-google`). `#hero` non esiste ma lo scroll fallisce silenziosamente -> utente atterra in cima, comportamento accettabile.
+⚠️ **Non esistono più** gli anchor citati nelle versioni precedenti di questo file: `#costi-trasparenza`, `#perche-sceglierci`, `#calcolatore-perdite`, `#cta-rapida`, `#rimborso-spese`. Il redesign di luglio 2026 li ha sostituiti — in particolare `#costi-trasparenza` → **`#prezzo`** e `#perche-sceglierci` → **`#il-tuo-avvocato`**. Non usarli mai come destinazione di un sitelink: lo scroll fallisce in silenzio e l'utente resta in cima alla pagina.
+
+**Regola operativa**: prima di creare o modificare un sitelink, verificare che l'anchor esista davvero nel DOM di produzione, per esempio con
+`curl -s <url> | grep -o 'id="[a-z0-9-]*"' | sort -u`.
+
+Stato dei sitelink di campagna al 9 agosto 2026: 6 sitelink, tutti verso `/landing-v3-agosto/` con anchor verificati (vedi `docs/promo-v3-agosto-2026.md`).
 
 **Fix hash-scroll esterno (aprile 2026)**: `public/assets/js/main.js` include le funzioni `scrollToHash()` e `initInitialHashScroll()` per gestire l'arrivo con hash da Google SERP. Il vecchio `initSmoothScroll()` gestiva solo i click interni. Senza il nuovo handler, arrivando da un sitelink l'utente atterrava sull'hero invece che sulla sezione target.
 
