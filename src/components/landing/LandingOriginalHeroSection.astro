@@ -6,9 +6,14 @@ import { socialProof } from '../../lib/business';
 
 interface Props {
   hero?: typeof landingOriginal.hero;
+  augustPromotion?: {
+    price: string;
+    regularPrice: string;
+    validThrough: string;
+  };
 }
 
-const { hero = landingOriginal.hero } = Astro.props;
+const { hero = landingOriginal.hero, augustPromotion } = Astro.props;
 const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section
@@ -21,6 +26,13 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
       <div class="hero-grid landing-v3-hero-grid">
 
         <div class="hero-content landing-v3-hero-content">
+
+          {augustPromotion && (
+            <p class="landing-v3-august-badge">
+              <span aria-hidden="true">●</span>
+              Aperti tutto agosto · tariffa valida fino al {augustPromotion.validThrough}
+            </p>
+          )}
 
           <div class="hero-seal-mobile lg:hidden">
             <picture>
@@ -75,7 +87,13 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
         <div class="hero-form-container landing-v3-hero-form-wrap">
           {hero.formTrustLine && (
             <div class="landing-v3-offer-strip lg:hidden" aria-hidden="false">
-              <div class="landing-v3-offer-strip-l1">Sfratto: <strong>€1.300 chiavi in mano</strong>, convalida + esecuzione</div>
+              <div class="landing-v3-offer-strip-l1">
+                {augustPromotion ? (
+                  <>Agosto: <s>{augustPromotion.regularPrice}</s> <strong>{augustPromotion.price} fino alle chiavi</strong></>
+                ) : (
+                  <>Sfratto: <strong>€1.300 chiavi in mano</strong>, convalida + esecuzione</>
+                )}
+              </div>
               <div class="landing-v3-offer-strip-l2">Zero anticipi · IVA e cassa incluse · <span class="landing-v3-offer-star" aria-hidden="true">★</span> <strong><span data-live-rating>5.0</span></strong> su Google (<span data-live-total>{googleReviewsTotal}</span>)</div>
             </div>
           )}
@@ -182,3 +200,26 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
     </div>
   </div>
 </section>
+
+<style>
+  .landing-v3-august-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 0 0 .9rem;
+    padding: .52rem .75rem;
+    border: 1px solid rgba(244,232,200,.45);
+    border-radius: 999px;
+    background: rgba(244,232,200,.12);
+    color: #f4e8c8;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+  }
+  .landing-v3-august-badge span { color: #59c67a; }
+  .landing-v3-offer-strip s { color: rgba(255,255,255,.7); margin-right: .25rem; }
+  @media (max-width: 640px) {
+    .landing-v3-august-badge { font-size: .68rem; line-height: 1.3; text-align: left; }
+  }
+</style>

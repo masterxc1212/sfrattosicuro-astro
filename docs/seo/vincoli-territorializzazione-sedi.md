@@ -25,6 +25,10 @@ I contenuti delle landing-v2 / landing-v3 sono il riferimento commerciale di Sfr
 | Operativita' | **Tutta Italia tramite rete di domiciliatari** | 137 sedi/tribunali coperti |
 | Orari studio | **Lun-Ven 9:00-19:00, Sabato 9:00-13:00** | Source of truth: `site.json:openingHoursSpecification` |
 
+### Eccezione temporanea approvata: V3 Agosto 2026
+
+Solo per la landing `/landing-v3-agosto/`, il compenso promozionale e' **EUR 1.000 IVA e cassa incluse** invece di EUR 1.300, a condizione che il mandato professionale venga sottoscritto entro il 31 agosto 2026. Restano invariati il perimetro del servizio, l'assenza di acconti, il pagamento dopo l'udienza di convalida, l'esclusione delle spese vive e l'eventuale preventivo separato per il giudizio di merito in caso di opposizione. La promozione e' centralizzata in `business-config.json:pricing.promozioni.agosto2026` e non modifica il prezzo ordinario delle altre pagine.
+
 **Esempi di copy compatibile / non compatibile:**
 
 OK Compatibile: *"Al Tribunale di Milano la prima udienza arriva mediamente in 30-45 giorni — un tempo coerente con il dato medio operativo di circa 60 giorni dichiarato nella nostra formula a compenso complessivo di EUR 1.300."*

@@ -21,19 +21,112 @@ import LandingV4FaqSection from '../../components/landing/LandingV4FaqSection.as
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
 import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
+import LandingAugustNoticeSection from '../../components/landing/LandingAugustNoticeSection.astro';
+import { formatBusinessEuro } from '../../lib/business';
 
 interface Props {
   variant?: 'v3' | 'v4';
+  campaign?: 'standard' | 'august2026';
 }
 
-const { variant = 'v3' } = Astro.props;
+const { variant = 'v3', campaign = 'standard' } = Astro.props;
 const isV4 = variant === 'v4';
+const isAugust = campaign === 'august2026';
+const augustPromo = pricing.promozioni.agosto2026;
+const augustPrice = formatBusinessEuro(augustPromo.compensoComplessivo);
+const regularPrice = formatBusinessEuro(pricing.compensoComplessivo);
 
-const config = buildLandingPageConfig({
+const baseConfig = buildLandingPageConfig({
   version: variant,
   territory: 'nazionale',
   keyword: 'sfratto-per-morosita',
 });
+
+const augustDescription = `Studio aperto tutto agosto. Procedimenti per convalida di sfratto esclusi dalla sospensione feriale dei termini. ${augustPrice} invece di ${regularPrice} per mandati sottoscritti entro il 31 agosto 2026.`;
+const replaceAugustPrice = (text: string) => text
+  .replace(/€1\.300/g, augustPrice)
+  .replace(/1\.300€/g, `${augustPrice.replace('€', '')}€`);
+const augustFaqItems = [
+  {
+    icon: 'fa-calendar-check',
+    q: 'Posso avviare uno sfratto durante il mese di agosto?',
+    a: 'Sì. I procedimenti per convalida di sfratto sono esclusi dalla sospensione feriale dei termini prevista per molti altri procedimenti civili. Lo Studio resta operativo tutto agosto. La data concreta dell’udienza e le attività dei singoli uffici dipendono comunque dal Tribunale competente.',
+  },
+  {
+    icon: 'fa-tag',
+    q: `Come si ottiene la tariffa di agosto a ${augustPrice}?`,
+    a: `La tariffa di ${augustPrice}, IVA e cassa incluse, si applica se il mandato professionale viene sottoscritto entro il 31 agosto 2026. Comprende lo stesso servizio della formula V3 ordinaria: convalida e, se necessaria, fase esecutiva fino alla riconsegna delle chiavi. Restano escluse le spese vive di legge e l’eventuale giudizio di merito in caso di opposizione.`,
+  },
+  ...baseConfig.faq.items.map((item) => ({
+    ...item,
+    q: replaceAugustPrice(item.q),
+    a: replaceAugustPrice(item.a),
+  })),
+];
+const config = isAugust ? {
+  ...baseConfig,
+  seo: {
+    ...baseConfig.seo,
+    title: `Avvocato per Sfratto ad Agosto | ${augustPrice} fino al rilascio`,
+    description: augustDescription,
+    canonicalUrl: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    ogTitle: `Sfratto ad agosto: studio aperto, tariffa ${augustPrice}`,
+    ogDescription: augustDescription,
+    ogUrl: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    twitterTitle: `Sfratto ad agosto: studio aperto, tariffa ${augustPrice}`,
+    twitterDescription: augustDescription,
+  },
+  hero: {
+    ...baseConfig.hero,
+    title: 'Sfratto ad agosto: lo Studio resta aperto',
+    subtitle: `I procedimenti per convalida di sfratto sono esclusi dalla sospensione feriale dei termini. <strong class="text-white">Avviamo la pratica anche ad agosto</strong>, in tutta Italia.`,
+    bullets: [
+      `<strong>${augustPrice} invece di ${regularPrice}</strong> per il mandato firmato entro il 31 agosto`,
+      '<strong>Studio operativo tutto il mese di agosto</strong>',
+      '<strong>Convalida di sfratto esclusa</strong> dalla sospensione feriale dei termini',
+      '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
+      '<strong>Convalida + fase esecutiva</strong>, fino alla riconsegna delle chiavi',
+    ],
+    formTitle: 'Blocca la tariffa di agosto',
+    formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>. La tariffa si applica al mandato sottoscritto entro il 31 agosto 2026.',
+    formSource: 'hero_form_v3_agosto',
+  },
+  faq: {
+    ...baseConfig.faq,
+    title: 'Agosto, tariffa e procedura: risposte chiare',
+    subtitle: 'Cosa cambia davvero nel mese di agosto e quali condizioni si applicano.',
+    items: augustFaqItems,
+  },
+  jsonLd: {
+    ...baseConfig.jsonLd,
+    legalService: {
+      ...baseConfig.jsonLd.legalService,
+      description: augustDescription,
+      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+      priceRange: augustPrice,
+    },
+    organization: {
+      ...baseConfig.jsonLd.organization,
+      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    },
+    website: {
+      ...baseConfig.jsonLd.website,
+      url: 'https://www.sfrattosicuro.it/landing-v3-agosto/',
+    },
+    faq: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: augustFaqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a.replace(/<[^>]+>/g, ''),
+        },
+      })),
+    },
+  },
+} : baseConfig;
 ---
 <!DOCTYPE html>
 <html lang="it">
@@ -134,14 +227,18 @@ const config = buildLandingPageConfig({
   <body class:list={['landing-v3-body', { 'landing-v4-body': isV4 }]}>
     <LandingOriginalHeaderSection />
     <main id="main-content" class="landing-v3-main" style="min-height:100vh; margin-top: var(--header-h, 90px);">
-      <LandingOriginalHeroSection hero={config.hero} />
+      {isAugust && <LandingAugustNoticeSection />}
+      <LandingOriginalHeroSection
+        hero={config.hero}
+        augustPromotion={isAugust ? { price: augustPrice, regularPrice, validThrough: '31 agosto 2026' } : undefined}
+      />
       <LandingOriginalProcedureSection procedure={config.procedure} />
-      {isV4 ? <LandingV4PricingSection /> : <LandingV3PriceSection />}
+      {isV4 ? <LandingV4PricingSection /> : <LandingV3PriceSection isAugust={isAugust} />}
       <LandingOriginalReviewsSection />
       <LandingOriginalProvvedimentiSection />
       <LandingV3FounderSection />
       {isV4 ? <LandingV4FaqSection /> : <LandingOriginalFaqSection faqSection={config.faq} />}
-      <LandingV3ContactSection contactForm={config.contactForm} formSource={isV4 ? 'bottom_form_v4' : 'bottom_form_v3'} />
+      <LandingV3ContactSection contactForm={config.contactForm} formSource={isV4 ? 'bottom_form_v4' : isAugust ? 'bottom_form_v3_agosto' : 'bottom_form_v3'} />
     </main>
 
     <!-- Sticky CTA mobile (social proof + richiamata) -->

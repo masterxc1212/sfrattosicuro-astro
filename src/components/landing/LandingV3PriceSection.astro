@@ -5,19 +5,35 @@
 // opposizione/merito = preventivo scritto separato; spese vive ~€100-150 / ~€300 totali;
 // perimetro: morosità + finita locazione + commerciale, stesse condizioni.
 // Canali (decisione titolare 21/07): telefono + form. WhatsApp rimosso (mai portato contatti).
+import { pricing, formatBusinessEuro } from '../../lib/business';
+
+interface Props {
+  isAugust?: boolean;
+}
+
+const { isAugust = false } = Astro.props;
+const promo = isAugust ? pricing.promozioni.agosto2026 : undefined;
+const currentPrice = formatBusinessEuro(promo?.compensoComplessivo ?? pricing.compensoComplessivo);
+const regularPrice = formatBusinessEuro(pricing.compensoComplessivo);
+const savings = promo ? formatBusinessEuro(pricing.compensoComplessivo - promo.compensoComplessivo) : undefined;
+const liveCosts = pricing.speseVive;
 ---
 <section id="prezzo" class="landing-v3-price" aria-labelledby="prezzo-title">
   <div class="container mx-auto px-4">
     <div class="landing-v3-price-inner">
-      <p class="landing-v3-price-eyebrow">Compenso unico, senza sorprese</p>
-      <h2 id="prezzo-title">Un solo prezzo. Zero anticipi.</h2>
+      <p class="landing-v3-price-eyebrow">{promo ? 'Tariffa Agosto 2026' : 'Compenso unico, senza sorprese'}</p>
+      <h2 id="prezzo-title">{promo ? `Firma il mandato ad agosto: risparmi ${savings}` : 'Un solo prezzo. Zero anticipi.'}</h2>
 
       <div class="landing-v3-price-figure">
-        <span class="landing-v3-price-amount">€1.300</span>
+        {promo && <span class="landing-v3-price-regular">Tariffa ordinaria <s>{regularPrice}</s></span>}
+        <span class="landing-v3-price-amount">{currentPrice}</span>
         <span class="landing-v3-price-scope">convalida + fase esecutiva, fino alla riconsegna delle chiavi. <strong>IVA e cassa incluse</strong></span>
       </div>
 
-      <p class="landing-v3-price-plain">Oggi non paghi nulla. I €1.300 si pagano una volta sola, <strong>dopo l'udienza davanti al Giudice</strong> (in media entro ~60 giorni), qualunque ne sia l'esito.</p>
+      <p class="landing-v3-price-plain">Oggi non paghi nulla. I {currentPrice} si pagano una volta sola, <strong>dopo l'udienza davanti al Giudice</strong> (in media entro ~60 giorni), qualunque ne sia l'esito.</p>
+      {promo && (
+        <p class="landing-v3-price-deadline"><i class="fas fa-calendar-check" aria-hidden="true"></i> La tariffa si applica se il mandato professionale viene sottoscritto entro il 31 agosto 2026. Non basta inviare la richiesta entro la scadenza.</p>
+      )}
 
       <ul class="landing-v3-price-points">
         <li><i class="fas fa-bolt" aria-hidden="true"></i><span><strong>Avvii subito senza anticipare nulla</strong>: nessun acconto per partire.</span></li>
@@ -33,7 +49,7 @@
         <div class="landing-v3-compare-tablewrap">
           <table>
             <thead>
-              <tr><th></th><th>Preventivi "solo convalida"</th><th>Sfratto Sicuro</th></tr>
+              <tr><th></th><th>Preventivi "solo convalida"</th><th>{promo ? 'Sfratto Sicuro, Agosto' : 'Sfratto Sicuro'}</th></tr>
             </thead>
             <tbody>
               <tr><td>Convalida dello sfratto</td><td>✓</td><td>✓</td></tr>
@@ -52,13 +68,13 @@
         <p class="landing-v3-patto-sub">Non uno slogan: una clausola scritta nel mandato che firmi prima di partire.</p>
         <ol>
           <li>Parti con <strong>zero anticipi</strong>.</li>
-          <li>Il compenso di <strong>€1.300 (IVA e cassa incluse)</strong> è dovuto solo <strong>dopo l'udienza per la convalida</strong> dello sfratto, qualunque ne sia l'esito.</li>
+          <li>Il compenso di <strong>{currentPrice} (IVA e cassa incluse)</strong> è dovuto solo <strong>dopo l'udienza per la convalida</strong> dello sfratto, qualunque ne sia l'esito.</li>
           <li>Dopo la convalida ti assistiamo, senza compensi aggiuntivi, <strong>fino al rilascio dell'immobile e alla riconsegna delle chiavi</strong>.</li>
           <li>Se l'inquilino si oppone e serve il giudizio di merito, <strong>nulla prosegue senza un preventivo scritto e il tuo consenso</strong>.</li>
         </ol>
       </div>
 
-      <p class="landing-v3-price-note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>€100–150</strong> per la fase di convalida (contributo unificato, marca, notifiche) e circa <strong>€300 in totale</strong> se serve il rilascio forzato con l'ufficiale giudiziario. Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
+      <p class="landing-v3-price-note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>{formatBusinessEuro(liveCosts.convalidaMin)}–{formatBusinessEuro(liveCosts.convalidaMax)}</strong> per la fase di convalida (contributo unificato, marca, notifiche) e circa <strong>{formatBusinessEuro(liveCosts.totaleConEsecuzione)} in totale</strong> se serve il rilascio forzato con l'ufficiale giudiziario. Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
 
       <div class="landing-v3-price-cta">
         <a href="#form-rapido" class="btn-primary px-6 py-4 rounded-lg font-bold btn-mobile-fix">Verifica se puoi partire</a>
@@ -70,3 +86,10 @@
     </div>
   </div>
 </section>
+
+<style>
+  .landing-v3-price-regular { display: block; margin-bottom: .35rem; color: rgba(255,255,255,.7); font-size: .9rem; font-weight: 600; }
+  .landing-v3-price-regular s { margin-left: .25rem; text-decoration-thickness: 2px; }
+  .landing-v3-price-deadline { margin: 1rem 0 0; padding: .8rem 1rem; border: 1px solid rgba(244,232,200,.42); border-radius: .7rem; background: rgba(244,232,200,.1); color: #f7edcf; font-size: .86rem; line-height: 1.5; }
+  .landing-v3-price-deadline i { margin-right: .4rem; color: #7ce3a2; }
+</style>
