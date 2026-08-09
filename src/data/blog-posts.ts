@@ -16,6 +16,79 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'registrazione-tardiva-contratto-locazione',
+    title: "Registrazione tardiva del contratto di locazione: sanzioni e ravvedimento operoso",
+    description: "Registrazione tardiva del contratto di locazione: sanzioni, come sanare la nullità e ridurre tutto con il ravvedimento operoso. Guida per il proprietario.",
+    excerpt: "Hai registrato in ritardo il contratto di affitto, o non l'hai mai registrato? Guida pratica per il proprietario: il termine dei 30 giorni, perché il contratto non registrato è nullo, come la registrazione tardiva sana la nullità, le sanzioni e come ridurle con il ravvedimento operoso.",
+    lead: "Registrare il contratto oltre i 30 giorni non è una situazione senza uscita: si può regolarizzare in qualsiasi momento e, muovendosi spontaneamente, ridurre di molto le sanzioni con il ravvedimento operoso. Ecco cosa deve sapere il proprietario.",
+    publishedAt: '2026-08-09',
+    updatedAt: '2026-08-09',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-08-09. Keyword: registrazione tardiva contratto locazione, vol 320, KD 0 (DataForSEO).",
+    html: `
+<p>Hai firmato un contratto di affitto ma sono passati più di trenta giorni senza registrarlo? Oppure ti sei accorto che un vecchio contratto non è mai stato registrato? Non sei l'unico e, soprattutto, non è una situazione senza uscita. La <strong>registrazione tardiva del contratto di locazione</strong> è possibile in qualsiasi momento e, se ti muovi spontaneamente, puoi ridurre di molto le sanzioni grazie al ravvedimento operoso. In questa guida vediamo, dal punto di vista del proprietario, cosa rischi davvero, come si regolarizza e quali errori evitare.</p>
+
+<h2>Registrazione del contratto: il termine dei 30 giorni</h2>
+<p>Chi affitta un immobile ha l'obbligo di far registrare il contratto presso l'<strong>Agenzia delle Entrate entro 30 giorni</strong> dalla data della firma o, se anteriore, dalla data di decorrenza del contratto. L'adempimento riguarda i contratti di durata superiore a trenta giorni complessivi nell'anno; l'onere ricade in primo luogo sul <strong>locatore</strong>, cioè su di te come proprietario, anche se la spesa può essere divisa a metà con l'inquilino.</p>
+<p>Si parla di <strong>registrazione tardiva</strong> quando questo termine di trenta giorni è già scaduto. Non cambia la sostanza dell'adempimento: dovrai comunque presentare il <strong>modello RLI</strong> (Registrazione Locazioni Immobili), cioè il modulo dell'Agenzia delle Entrate con cui si registra l'affitto, pagare i tributi dovuti e, in più, una sanzione per il ritardo. La buona notizia è che il ritardo, da solo, non ti impedisce di mettere in regola il contratto.</p>
+
+<h2>Perché non registrare è un problema serio</h2>
+<p>Un contratto di locazione non registrato è <strong>nullo</strong>. Non si tratta di una semplice irregolarità fiscale: senza registrazione il contratto, sul piano civile, è come se non esistesse. Per il proprietario questo è un rischio concreto, perché indebolisce moltissimo la sua posizione: diventa difficile pretendere il pagamento del canone pattuito, contestare la morosità o avviare uno sfratto basandosi su un contratto che formalmente non produce effetti.</p>
+<p>C'è però un rimedio, riconosciuto dalla giurisprudenza: la <strong>registrazione tardiva sana la nullità</strong> del contratto, e lo fa con effetto retroattivo, cioè come se il contratto fosse valido fin dall'inizio. La condizione è che il contratto registrato sia quello vero, con il canone realmente pattuito: registrare tardivamente un contratto con un canone inferiore a quello effettivamente incassato non salva la situazione e apre problemi ben più gravi. In pratica, registrare — anche in ritardo — è quasi sempre la mossa che ti conviene per riportare il contratto su un binario sicuro.</p>
+
+<h2>Le sanzioni per la registrazione tardiva</h2>
+<p>Alla registrazione tardiva si applica una sanzione amministrativa collegata all'imposta di registro dovuta. Con le riforme più recenti del sistema sanzionatorio, per l'<strong>omessa o tardiva registrazione</strong> la sanzione base è pari al <strong>120% dell'imposta dovuta</strong> (in passato era prevista una forbice più ampia, dal 120% al 240%). Su questa cornice sono intervenute norme successive che hanno ritoccato le misure minime, per cui l'importo esatto dipende dalla data in cui è stata commessa la violazione.</p>
+<p>Per capire su cosa si applica la sanzione, ricorda come si calcola l'imposta di registro nel regime ordinario: è pari al <strong>2% del canone annuo</strong>, con un minimo di 67 euro, a cui si aggiunge l'imposta di bollo. Se invece hai scelto la <strong>cedolare secca</strong>, non paghi né imposta di registro né bollo: in questo caso la registrazione va comunque fatta, ma la base su cui si calcola l'eventuale sanzione da ritardo cambia. Per il funzionamento di questo regime puoi leggere la guida dedicata alla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</p>
+
+<h2>Il ravvedimento operoso: come ridurre la sanzione</h2>
+<p>Il vero alleato del proprietario in ritardo è il <strong>ravvedimento operoso</strong>. È lo strumento che ti permette di regolarizzare spontaneamente la posizione pagando l'imposta dovuta, gli interessi legali e una sanzione <strong>fortemente ridotta</strong> rispetto a quella piena. Funziona a una condizione: devi muoverti <strong>prima</strong> che l'Agenzia delle Entrate ti contesti la violazione. Una volta arrivato un avviso o iniziato un controllo di cui hai avuto notizia formale, il ravvedimento non è più possibile.</p>
+<p>La logica è semplice: <strong>prima ti metti in regola, meno paghi</strong>. La riduzione della sanzione è tanto più vantaggiosa quanto più breve è il ritardo. In estrema sintesi, la riduzione segue scaglioni legati al tempo trascorso:</p>
+<ul>
+<li><strong>Entro 30 giorni</strong> dalla scadenza: riduzione ai minimi termini (la frazione più favorevole).</li>
+<li><strong>Dal 31° al 90° giorno</strong>: riduzione ancora molto conveniente.</li>
+<li><strong>Entro un anno</strong>: riduzione più contenuta.</li>
+<li><strong>Oltre l'anno</strong> (fino a due anni e oltre): la riduzione si assottiglia progressivamente.</li>
+</ul>
+<p>Le percentuali esatte di riduzione e la base di calcolo dipendono dalle norme vigenti al momento della violazione, che negli ultimi tempi sono cambiate più volte. Per questo, invece di affidarti a un calcolo &laquo;fai da te&raquo;, conviene farti quantificare l'importo con precisione: un errore in eccesso ti fa pagare più del dovuto, un errore in difetto rischia di non chiudere davvero la pendenza.</p>
+
+<h2>Come regolarizzare passo dopo passo</h2>
+<p>Ecco la sequenza pratica per mettere in regola un contratto registrato in ritardo.</p>
+<ul>
+<li><strong>Recupera il contratto e i dati.</strong> Ti servono il testo firmato, i dati di locatore e conduttore, i dati catastali dell'immobile, la data di firma e quella di decorrenza.</li>
+<li><strong>Verifica il regime scelto.</strong> Stabilisci se il contratto è a regime ordinario (imposta di registro) o in cedolare secca: cambia cosa devi pagare.</li>
+<li><strong>Fai calcolare imposta, interessi e sanzione ridotta.</strong> È il cuore del ravvedimento: la somma da versare va determinata con esattezza in base al ritardo maturato.</li>
+<li><strong>Versa i tributi con il modello F24 Elide.</strong> È la versione del modello F24 usata per le imposte e le sanzioni di registro: imposta di registro (se dovuta), interessi legali e sanzione da ravvedimento si pagano con gli appositi codici tributo.</li>
+<li><strong>Presenta il modello RLI.</strong> La registrazione vera e propria avviene tramite il modello RLI, in via telematica o presso l'ufficio. Sul funzionamento della procedura trovi tutto nella guida alla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</li>
+<li><strong>Conserva le ricevute.</strong> La ricevuta di registrazione e le quietanze di pagamento sono la prova che il contratto è ora valido ed efficace.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<p>Alcuni comportamenti, dettati dalla fretta o dalla paura, peggiorano la situazione invece di risolverla.</p>
+<ul>
+<li><strong>Rimandare ancora.</strong> Ogni mese di ritardo in più aumenta interessi e sanzioni e avvicina il rischio che sia il Fisco a contestarti la violazione, chiudendoti la porta del ravvedimento.</li>
+<li><strong>Registrare un canone più basso di quello reale.</strong> Non riduce le tasse in modo sicuro e non sana la nullità: espone a contestazioni molto più pesanti.</li>
+<li><strong>Pensare che con la cedolare secca non si registri nulla.</strong> La cedolare toglie imposta di registro e bollo, ma la registrazione del contratto resta obbligatoria.</li>
+<li><strong>Fare da soli il calcolo del ravvedimento.</strong> Con norme cambiate di recente, un conteggio impreciso vanifica la regolarizzazione: meglio una verifica professionale.</li>
+<li><strong>Ignorare la posizione dell'inquilino.</strong> La legge prevede che, in caso di mancata registrazione, anche il conduttore possa attivarsi: non registrare non è mai un vantaggio per il proprietario.</li>
+</ul>
+
+<h2>Domande frequenti sulla registrazione tardiva</h2>
+<h3>Entro quando va registrato il contratto di locazione?</h3>
+<p>Entro <strong>30 giorni</strong> dalla data di firma o, se precedente, dalla data di decorrenza. Superato questo termine si parla di registrazione tardiva, che resta comunque possibile con applicazione di sanzioni.</p>
+<h3>Posso ancora registrare un contratto di anni fa?</h3>
+<p>Sì. La registrazione tardiva è ammessa anche a distanza di anni e sana la nullità del contratto con effetto retroattivo, a patto che il canone registrato sia quello effettivo. Più tardi lo fai, però, più crescono interessi e sanzioni.</p>
+<h3>Chi paga la sanzione, il proprietario o l'inquilino?</h3>
+<p>L'obbligo di registrazione grava in primo luogo sul locatore, quindi la sanzione è a suo carico. L'imposta di registro, invece, è per legge divisa a metà tra le parti, salvo diversi accordi.</p>
+<h3>Il ravvedimento è sempre possibile?</h3>
+<p>No. È possibile solo se ti muovi <strong>spontaneamente</strong>, prima che l'Agenzia delle Entrate ti notifichi un controllo o un accertamento sulla stessa violazione. Ecco perché conviene regolarizzare al più presto.</p>
+
+<h2>In sintesi</h2>
+<p>La <strong>registrazione tardiva del contratto di locazione</strong> non è una condanna: è un problema che si risolve. Registrando — anche in ritardo — riporti in vita un contratto altrimenti nullo e rimetti al sicuro il tuo diritto a incassare il canone e, se necessario, ad agire contro l'inquilino moroso. La chiave è agire in fretta e usare il ravvedimento operoso finché sei ancora in tempo, facendoti calcolare con precisione quanto versare. Se vuoi una valutazione della tua situazione e del contratto, puoi rivolgerti al servizio dedicato ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale o fiscale su misura. L'obbligo di registrazione e le relative imposte sono disciplinati dal D.P.R. 26 aprile 1986, n. 131 (Testo unico dell'imposta di registro), in particolare gli articoli 17 (&laquo;Cessioni, risoluzioni e proroghe anche tacite&raquo;) e 69 (&laquo;Omissione della richiesta di registrazione&raquo;), quest'ultimo modificato dal D.Lgs. 14 giugno 2024, n. 87; il ravvedimento operoso è previsto dall'articolo 13 del D.Lgs. 18 dicembre 1997, n. 472; la nullità del contratto non registrato è stabilita dall'articolo 1, comma 346, della L. 30 dicembre 2004, n. 311. Per la tua situazione specifica rivolgiti sempre a un professionista.</em></p>
+`,
+  },
+  {
     slug: 'tempi-sfratto-per-morosita',
     title: "Tempi dello sfratto per morosita': quanto dura davvero, fase per fase",
     description: "Quanto dura uno sfratto per morosita'? Tempi realistici fase per fase per il proprietario: intimazione, convalida, termine di grazia e rilascio.",
