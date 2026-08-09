@@ -16,6 +16,21 @@
     "compensoFormatted": "EUR 1.300",
     "compensoFormattedLong": "EUR 1.300 fino al rilascio dell'immobile",
     "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto.",
+    "speseVive": {
+      "convalidaMin": 100,
+      "convalidaMax": 150,
+      "totaleConEsecuzione": 300
+    },
+    "promozioni": {
+      "agosto2026": {
+        "nome": "V3 Agosto",
+        "compensoComplessivo": 1000,
+        "validaDal": "2026-08-01",
+        "validaAl": "2026-08-31",
+        "requisito": "Mandato professionale sottoscritto entro il 31 agosto 2026",
+        "ivaCassaIncluse": true
+      }
+    },
     "testV4": {
       "faseConvalida": 800,
       "faseEsecutiva": 700,

@@ -39,6 +39,23 @@ export type Pricing = {
   compensoFormattedLong: string;
   /** Disclaimer "Nessun acconto. Pagamento solo dopo la convalida dello sfratto." */
   modalita: string;
+  /** Spese vive indicative, escluse dal compenso professionale. */
+  speseVive: {
+    convalidaMin: number;
+    convalidaMax: number;
+    totaleConEsecuzione: number;
+  };
+  /** Promozioni temporanee, separate dall'offerta permanente V3. */
+  promozioni: {
+    agosto2026: {
+      nome: string;
+      compensoComplessivo: number;
+      validaDal: string;
+      validaAl: string;
+      requisito: string;
+      ivaCassaIncluse: boolean;
+    };
+  };
   /** Valori isolati della variante sperimentale V4; non alterano l'offerta permanente V3. */
   testV4: {
     faseConvalida: number;

@@ -1,0 +1,53 @@
+---
+import { pricing, formatBusinessEuro } from '../../lib/business';
+
+const promo = pricing.promozioni.agosto2026;
+const promoPrice = formatBusinessEuro(promo.compensoComplessivo);
+const regularPrice = formatBusinessEuro(pricing.compensoComplessivo);
+---
+<section class="august-notice" aria-labelledby="august-notice-title">
+  <div class="container mx-auto px-4 august-notice__inner">
+    <div class="august-notice__status">
+      <span class="august-notice__dot" aria-hidden="true"></span>
+      Studio aperto tutto agosto
+    </div>
+    <div class="august-notice__copy">
+      <p class="august-notice__eyebrow">Agosto 2026</p>
+      <h2 id="august-notice-title">La procedura di sfratto non va in ferie.</h2>
+      <p>I procedimenti per convalida di sfratto sono esclusi dalla sospensione feriale dei termini. Possiamo quindi predisporre, notificare e depositare gli atti anche nel mese di agosto.</p>
+      <p class="august-notice__legal">Riferimenti: art. 3, Legge 7 ottobre 1969 n. 742, in relazione all’art. 92 del R.D. 30 gennaio 1941 n. 12. Calendari e tempi concreti dipendono dall’organizzazione del Tribunale competente.</p>
+    </div>
+    <div class="august-notice__offer">
+      <span class="august-notice__old">{regularPrice}</span>
+      <strong>{promoPrice}</strong>
+      <span>IVA e cassa incluse</span>
+      <small>Mandato sottoscritto entro il 31 agosto</small>
+    </div>
+  </div>
+</section>
+
+<style>
+  .august-notice { background: #f4e8c8; color: #172441; border-bottom: 1px solid rgba(23,36,65,.14); }
+  .august-notice__inner { max-width: 72rem; display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 1.5rem; align-items: center; padding-top: 1rem; padding-bottom: 1rem; }
+  .august-notice__status { display: inline-flex; align-items: center; gap: .55rem; padding: .55rem .75rem; border-radius: 999px; background: #172441; color: #f9f5ea; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .055em; white-space: nowrap; }
+  .august-notice__dot { width: .58rem; height: .58rem; border-radius: 50%; background: #59c67a; box-shadow: 0 0 0 .22rem rgba(89,198,122,.18); }
+  .august-notice__eyebrow { margin: 0 0 .15rem; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #6b531d; }
+  .august-notice h2 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.35rem,2.4vw,2rem); line-height: 1.1; color: #172441; }
+  .august-notice__copy > p:not(.august-notice__eyebrow):not(.august-notice__legal) { margin: .35rem 0 0; max-width: 70ch; line-height: 1.48; }
+  .august-notice__legal { margin: .32rem 0 0; max-width: 78ch; font-size: .72rem; line-height: 1.45; color: #5a5549; }
+  .august-notice__offer { min-width: 11rem; text-align: center; padding: .72rem 1rem; border: 1px solid rgba(23,36,65,.18); border-radius: .8rem; background: #fbf7ec; }
+  .august-notice__offer strong { display: block; font-size: 2rem; line-height: 1; color: #1f7f42; }
+  .august-notice__offer span:not(.august-notice__old), .august-notice__offer small { display: block; margin-top: .2rem; font-size: .7rem; line-height: 1.3; }
+  .august-notice__old { display: block; color: #766d5e; text-decoration: line-through; font-size: .82rem; }
+  @media (max-width: 850px) {
+    .august-notice__inner { grid-template-columns: 1fr auto; gap: .8rem 1rem; }
+    .august-notice__status { grid-column: 1 / -1; justify-self: start; }
+  }
+  @media (max-width: 620px) {
+    .august-notice__inner { grid-template-columns: 1fr; padding-top: .8rem; padding-bottom: .9rem; }
+    .august-notice__offer { min-width: 0; display: grid; grid-template-columns: auto auto; column-gap: .55rem; align-items: baseline; justify-content: center; text-align: left; }
+    .august-notice__offer .august-notice__old { grid-column: 1; }
+    .august-notice__offer strong { grid-column: 2; grid-row: 1 / span 2; font-size: 2.25rem; }
+    .august-notice__offer span:not(.august-notice__old), .august-notice__offer small { grid-column: 1 / -1; text-align: center; }
+  }
+</style>
