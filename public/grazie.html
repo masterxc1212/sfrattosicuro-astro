@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <script>
+      (function () {
+        var isAugust = new URLSearchParams(window.location.search).get('promo') === 'agosto2026';
+        if (!isAugust) return;
+        document.documentElement.setAttribute('data-campaign', 'agosto2026');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.title = 'Richiesta Agosto Ricevuta | Sfratto Sicuro';
+        }, { once: true });
+      })();
+    </script>
     <!-- Google Ads + GTM: EAGER (2026-07-16). L'azione "Web - Modulo" è gestita
          dal container GTM sulla page-view di /grazie.html: non duplicare qui
          un secondo evento conversion con label separata.
@@ -79,6 +89,31 @@
             border: none;
             cursor: pointer;
         }
+        .august-only { display: none; }
+        html[data-campaign="agosto2026"] .standard-only { display: none; }
+        html[data-campaign="agosto2026"] .august-only { display: block; }
+        .august-badge {
+            width: fit-content;
+            margin: 0 auto 1.25rem;
+            padding: .5rem .85rem;
+            border-radius: 999px;
+            background: rgba(59, 174, 93, .12);
+            color: #24753d;
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+        .august-offer {
+            margin-bottom: 2rem;
+            padding: 1.1rem 1.25rem;
+            border: 1px solid rgba(27, 41, 81, .14);
+            border-radius: .75rem;
+            background: #eef3fb;
+            color: var(--blue-navy);
+            text-align: left;
+        }
+        .august-offer strong { color: #24753d; }
     </style>
 </head>
 
@@ -91,18 +126,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main id="main-content" class="flex items-center justify-center min-h-screen">
         <div class="container mx-auto px-4 py-16">
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg card-shadow text-center">
+
+                <div class="august-only august-badge">V3 Agosto 2026</div>
                 
                 <div class="text-green-security text-6xl mb-6">
                     <i class="fas fa-check-circle"></i>
                 </div>
                 
-                <h1 class="text-3xl md:text-4xl font-bold text-blue-navy mb-4">
+                <h1 class="standard-only text-3xl md:text-4xl font-bold text-blue-navy mb-4">
                     Richiesta Inviata con Successo!
                 </h1>
+                <h1 class="august-only text-3xl md:text-4xl font-bold text-blue-navy mb-4">
+                    Richiesta di agosto ricevuta
+                </h1>
                 
-                <p class="text-lg text-dark-gray mb-8 leading-relaxed">
+                <p class="standard-only text-lg text-dark-gray mb-8 leading-relaxed">
                     Grazie per averci contattato. Lo studio dell'Avv. Ansalone ti richiamerà <strong>entro 2 ore lavorative</strong> (Lun–Ven 9–19 · Sab 9–13) per una prima valutazione gratuita del tuo caso.
                 </p>
+                <p class="august-only text-lg text-dark-gray mb-5 leading-relaxed">
+                    Grazie per averci contattato. Lo studio dell'Avv. Ansalone resta operativo tutto agosto e ti richiamerà <strong>entro 2 ore lavorative</strong> (Lun–Ven 9–19 · Sab 9–13) per una prima valutazione gratuita.
+                </p>
+
+                <div class="august-only august-offer">
+                    <strong>Tariffa Agosto: €1.000 IVA e cassa incluse.</strong><br>
+                    La tariffa si applica al mandato professionale sottoscritto entro il 31 agosto 2026. Nessun acconto, il compenso è dovuto dopo l'udienza per la convalida. L'invio della richiesta, da solo, non equivale alla sottoscrizione del mandato.
+                </div>
 
                 <div class="bg-gray-pearl p-6 rounded-lg text-left mb-8">
                     <h2 class="font-bold text-blue-navy mb-3">Cosa succederà ora?</h2>
@@ -129,9 +177,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="grid md:grid-cols-4 gap-8">
                     <div>
                         <h3 class="text-xl font-bold mb-4">Sfratto Sicuro</h3>
-                        <p class="text-gray-300 text-sm mb-4">
+                        <p class="standard-only text-gray-300 text-sm mb-4">
                             Specialisti in sfratti. Convalida in media in 60 giorni,
                             €1.300 IVA e cassa incluse fino al rilascio, zero anticipi.
+                        </p>
+                        <p class="august-only text-gray-300 text-sm mb-4">
+                            Studio aperto tutto agosto. Tariffa promozionale di €1.000 IVA e cassa incluse per mandati sottoscritti entro il 31 agosto 2026, zero anticipi.
                         </p>
                         <div class="text-gold-refined text-sm">
                             ★ Dal 2018

@@ -6,6 +6,7 @@ import { socialProof } from '../../lib/business';
 
 interface Props {
   hero?: typeof landingOriginal.hero;
+  redirectUrl?: string;
   augustPromotion?: {
     price: string;
     regularPrice: string;
@@ -13,7 +14,7 @@ interface Props {
   };
 }
 
-const { hero = landingOriginal.hero, augustPromotion } = Astro.props;
+const { hero = landingOriginal.hero, redirectUrl = '/grazie.html', augustPromotion } = Astro.props;
 const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section
@@ -159,7 +160,7 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
               <input type="hidden" name="keyword" value="">
               <input type="hidden" name="utm_content" value="">
               <input type="hidden" name="matchtype" value="">
-              <input type="hidden" name="redirect_url" value="/grazie.html">
+              <input type="hidden" name="redirect_url" value={redirectUrl}>
 
               <button type="submit" class="form-submit" aria-label="Invia la richiesta di consulenza gratuita">
                 <i class="fas fa-paper-plane" aria-hidden="true"></i>

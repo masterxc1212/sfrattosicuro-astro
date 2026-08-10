@@ -4,11 +4,13 @@ import { landingOriginal } from '../../data/landing-original';
 interface Props {
   contactForm?: typeof landingOriginal.contactForm;
   formSource?: string;
+  redirectUrl?: string;
 }
 
 const {
   contactForm = landingOriginal.contactForm,
   formSource = 'bottom_form_v3',
+  redirectUrl = '/grazie.html',
 } = Astro.props;
 ---
 <section id={contactForm.sectionId} class="py-16 bg-gray-pearl landing-v3-contact" aria-labelledby="contatti-heading-v3">
@@ -109,7 +111,7 @@ const {
             <input type="hidden" name="keyword" value="">
             <input type="hidden" name="utm_content" value="">
             <input type="hidden" name="matchtype" value="">
-            <input type="hidden" name="redirect_url" value="/grazie.html">
+            <input type="hidden" name="redirect_url" value={redirectUrl}>
 
             <p class="text-xs text-dark-gray text-center">I tuoi dati sono protetti e non verranno condivisi. Inviando accetti la <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
 

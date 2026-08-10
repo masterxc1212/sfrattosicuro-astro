@@ -270,7 +270,8 @@ $tracking_query = array_filter([
     'utm_content'  => $utm_content,
 ]);
 if (!empty($tracking_query)) {
-    $redirect .= '?' . http_build_query($tracking_query);
+    $separator = strpos($redirect, '?') === false ? '?' : '&';
+    $redirect .= $separator . http_build_query($tracking_query);
 }
 header('Location: ' . $redirect);
 exit;

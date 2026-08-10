@@ -235,6 +235,7 @@ const config = isAugust ? {
       {isAugust && <LandingAugustNoticeSection />}
       <LandingOriginalHeroSection
         hero={config.hero}
+        redirectUrl={isAugust ? '/grazie.html?promo=agosto2026' : '/grazie.html'}
         augustPromotion={isAugust ? { price: augustPrice, regularPrice, validThrough: '31 agosto 2026' } : undefined}
       />
       <LandingOriginalProcedureSection procedure={config.procedure} />
@@ -243,7 +244,11 @@ const config = isAugust ? {
       <LandingOriginalProvvedimentiSection />
       <LandingV3FounderSection />
       {isV4 ? <LandingV4FaqSection /> : <LandingOriginalFaqSection faqSection={config.faq} />}
-      <LandingV3ContactSection contactForm={config.contactForm} formSource={isV4 ? 'bottom_form_v4' : isAugust ? 'bottom_form_v3_agosto' : 'bottom_form_v3'} />
+      <LandingV3ContactSection
+        contactForm={config.contactForm}
+        formSource={isV4 ? 'bottom_form_v4' : isAugust ? 'bottom_form_v3_agosto' : 'bottom_form_v3'}
+        redirectUrl={isAugust ? '/grazie.html?promo=agosto2026' : '/grazie.html'}
+      />
     </main>
 
     <!-- Sticky CTA mobile (social proof + richiamata) -->
