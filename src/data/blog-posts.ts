@@ -16,6 +16,71 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'iscrizione-a-ruolo-sfratto-per-morosita',
+    title: "Iscrizione a ruolo dello sfratto per morosità: cos’è e perché conta per il proprietario",
+    description: "Iscrizione a ruolo dello sfratto per morosità: cos’è, chi la fa, il termine dei 10 giorni e cosa rischia il proprietario se manca. Guida pratica.",
+    excerpt: "L’iscrizione a ruolo trasforma l’atto notificato in una causa vera davanti al giudice. Guida per il proprietario: cos’è, chi la fa, il termine dei 10 giorni, la regola speciale dell’art. 660 c.p.c. e cosa succede se lo sfratto non viene iscritto a ruolo.",
+    lead: "Dopo aver notificato lo sfratto per morosità, la causa va iscritta a ruolo per arrivare davvero in udienza. Ecco cos’è questo passaggio, chi lo compie, quali termini rispettare e cosa rischia il proprietario se salta.",
+    publishedAt: '2026-08-10',
+    updatedAt: '2026-08-10',
+    category: 'Sfratti',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-08-10. Keyword: iscrizione a ruolo sfratto per morosità, vol 140, KD 0 (DataForSEO).",
+    html: `
+<p>Hai avviato uno <strong>sfratto per morosità</strong> e senti parlare di <strong>iscrizione a ruolo</strong>? È uno dei passaggi tecnici che spaventano di più il proprietario, perché sembra un ostacolo burocratico da cui dipende tutta la procedura. In realtà è un adempimento preciso, che di regola svolge il tuo avvocato, ma che conviene conoscere: sapere cos'è l'<strong>iscrizione a ruolo dello sfratto per morosità</strong>, chi la fa e quali termini rispettare ti aiuta a capire i tempi reali e a evitare che la pratica si areni per una svista. Vediamo tutto dal punto di vista di chi vuole riavere la casa.</p>
+
+<h2>Cos'è l'iscrizione a ruolo nello sfratto per morosità</h2>
+<p>L'<strong>iscrizione a ruolo</strong> è l'atto con cui una causa viene ufficialmente registrata presso il tribunale: il fascicolo entra nel &laquo;ruolo&raquo; delle cause pendenti, riceve un numero (il numero di ruolo generale, o R.G.) e viene assegnato a un giudice, che potrà così fissare o confermare l'udienza. Fino a quando la causa non è iscritta a ruolo, per il tribunale il procedimento semplicemente non esiste, anche se l'atto è già stato notificato all'inquilino.</p>
+<p>Nello sfratto la sequenza è questa: prima l'avvocato prepara e <strong>notifica</strong> all'inquilino l'intimazione di sfratto con la citazione a comparire in udienza; poi la stessa parte deve <strong>costituirsi in giudizio</strong>, cioè depositare l'atto notificato in tribunale iscrivendo la causa a ruolo. La costituzione con iscrizione a ruolo è quindi il ponte tra la notifica dell'atto e l'udienza di convalida: senza di essa, l'udienza non si tiene e lo sfratto non va avanti.</p>
+
+<h2>Chi la fa e come: il deposito telematico</h2>
+<p>A iscrivere la causa a ruolo è la parte che agisce, cioè tu come locatore, tramite il tuo <strong>avvocato</strong>. Non è un'attività che il proprietario compie da solo: oggi il deposito degli atti nei procedimenti civili avviene in modalità telematica, attraverso il <strong>processo civile telematico</strong> (il sistema informatico con cui i difensori depositano gli atti al tribunale). In concreto l'avvocato carica il fascicolo con:</p>
+<ul>
+<li>l'<strong>originale dell'intimazione di sfratto</strong> e della citazione, con la relazione di notifica (la &laquo;relata&raquo;, cioè la prova che l'atto è stato consegnato all'inquilino);</li>
+<li>la <strong>procura alle liti</strong>, cioè il documento con cui gli hai conferito l'incarico di rappresentarti;</li>
+<li>i <strong>documenti</strong> a sostegno della domanda: il contratto di locazione, il conteggio della morosità, gli eventuali solleciti.</li>
+</ul>
+<p>Su come si arriva a questo punto, e su cosa deve contenere l'atto di partenza, trovi il dettaglio nella guida all'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+
+<h2>Il termine dei 10 giorni e la regola speciale dello sfratto</h2>
+<p>Qui nasce la confusione più frequente. La regola generale del processo civile prevede che chi promuove la causa si costituisca, <strong>iscrivendo la causa a ruolo, entro dieci giorni</strong> dalla notifica dell'atto all'altra parte. È da qui che viene la ricerca ricorrente su &laquo;iscrizione a ruolo entro 10 giorni&raquo;.</p>
+<p>Lo sfratto, però, segue un rito speciale, con una regola pensata apposta: nel procedimento di convalida le parti possono costituirsi depositando l'intimazione con la relata di notifica, <strong>oppure presentando quegli stessi atti direttamente al giudice in udienza</strong>. In altre parole, la legge consente al locatore di costituirsi anche in extremis, portando il fascicolo il giorno dell'udienza, senza che questo comporti automaticamente la perdita della causa.</p>
+<p>Attenzione, però: questa non è un'autorizzazione a rimandare. Molti tribunali chiedono che il fascicolo sia iscritto a ruolo <strong>per tempo</strong>, così che la cancelleria possa formare il fascicolo e il giudice svolgere i controlli preliminari; e le prassi possono variare da un ufficio giudiziario all'altro. Per questo l'approccio prudente resta uno solo: <strong>iscrivere a ruolo appena possibile</strong>, idealmente entro dieci giorni dalla notifica, senza affidarsi alla possibilità di rimediare all'ultimo. Fra la notifica dell'atto e l'udienza, in ogni caso, devono passare <strong>almeno venti giorni liberi</strong>, il termine minimo previsto a garanzia della difesa dell'inquilino.</p>
+
+<h2>Cosa succede se lo sfratto non viene iscritto a ruolo</h2>
+<p>Se, dopo aver notificato l'intimazione, nessuno la iscrive a ruolo e non ci si costituisce, la procedura si <strong>ferma</strong>. La causa non viene mai portata all'attenzione del giudice, l'udienza non produce effetti e, con il decorso dei termini, il processo si estingue: in pratica è come non aver mai agito. Il risultato per il proprietario è il peggiore possibile: l'inquilino resta nell'immobile e occorre ripartire da capo con una nuova notifica, perdendo settimane preziose e, spesso, altre mensilità di canone.</p>
+<p>È esattamente per evitare questo tipo di intoppi che il calendario dello sfratto va presidiato con attenzione. Se vuoi un quadro d'insieme dei tempi realistici, dalla notifica al rilascio, puoi leggere la guida ai <a href="/blog/tempi-sfratto-per-morosita/">tempi dello sfratto per morosità</a>.</p>
+
+<h2>Iscrizione a ruolo e richiesta dei canoni arretrati</h2>
+<p>Un vantaggio pratico del rito dello sfratto è che, nello stesso atto con cui intimi lo sfratto per morosità, puoi chiedere anche l'<strong>ingiunzione di pagamento per i canoni già scaduti</strong>. Significa che con un'unica iniziativa il proprietario può muoversi su due fronti: ottenere il rilascio dell'immobile e farsi riconoscere un titolo per recuperare gli arretrati. Quando l'atto è impostato così, l'iscrizione a ruolo &laquo;porta dentro&raquo; al fascicolo anche la domanda di pagamento, che verrà esaminata dal giudice insieme allo sfratto. È una scelta quasi sempre più efficiente rispetto a frammentare le due richieste in momenti diversi; ne parliamo nel servizio dedicato al <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Pensare che la notifica basti.</strong> Notificare l'intimazione non equivale ad avere una causa in corso: senza iscrizione a ruolo e costituzione, davanti al tribunale non c'è nulla.</li>
+<li><strong>Affidarsi alla costituzione &laquo;all'udienza&raquo; come regola.</strong> La possibilità esiste, ma è una rete di sicurezza, non un metodo: iscrivere a ruolo per tempo evita contestazioni e ritardi.</li>
+<li><strong>Trascurare la procura e la relata.</strong> Un fascicolo incompleto, senza procura o senza prova della notifica, può bloccare o rallentare la convalida.</li>
+<li><strong>Dimenticare gli arretrati.</strong> Non chiedere l'ingiunzione per i canoni scaduti nello stesso atto significa spesso doverli poi recuperare con un procedimento separato.</li>
+<li><strong>Fare da soli.</strong> Il deposito telematico e i termini processuali richiedono un difensore abilitato: nel rito dello sfratto l'assistenza di un avvocato è la norma.</li>
+</ul>
+
+<h2>Domande frequenti sull'iscrizione a ruolo dello sfratto</h2>
+<h3>La deve fare il proprietario o l'avvocato?</h3>
+<p>La compie l'<strong>avvocato</strong> per conto del locatore, attraverso il deposito telematico. Al proprietario spetta fornire per tempo il contratto, il conteggio della morosità e la documentazione utile.</p>
+<h3>Devo iscrivere a ruolo entro 10 giorni dalla notifica?</h3>
+<p>La regola generale del processo civile indica dieci giorni dalla notifica. Nello sfratto vige però una regola speciale che consente di costituirsi anche presentando gli atti al giudice in udienza. Poiché le prassi dei tribunali variano, l'orientamento prudente è iscrivere a ruolo il prima possibile.</p>
+<h3>Cosa succede se non iscrivo la causa a ruolo?</h3>
+<p>Il procedimento non prosegue e, con il decorso dei termini, si estingue. L'inquilino resta nell'immobile e occorre ricominciare con una nuova notifica, perdendo tempo e mensilità.</p>
+<h3>Quanto costa l'iscrizione a ruolo?</h3>
+<p>All'iscrizione a ruolo si collegano il contributo unificato e alcuni diritti fissi, il cui importo dipende dal valore e dal tipo di causa. Trovi un approfondimento dedicato nella guida al <a href="/blog/contributo-unificato-sfratto/">contributo unificato per lo sfratto</a>.</p>
+<h3>Posso chiedere gli arretrati nello stesso atto?</h3>
+<p>Sì. Nell'intimazione di sfratto per morosità puoi chiedere anche l'ingiunzione di pagamento per i canoni scaduti, così da unire in un'unica iniziativa rilascio dell'immobile e recupero delle somme.</p>
+
+<h2>In sintesi</h2>
+<p>L'<strong>iscrizione a ruolo dello sfratto per morosità</strong> non è un cavillo, ma il passaggio che trasforma un atto notificato in una causa realmente pendente davanti al giudice. Conoscerne il funzionamento ti permette di seguire la tua pratica con occhio critico: verificare che, dopo la notifica, il fascicolo sia depositato per tempo, con procura, relata e documenti in ordine, e che gli arretrati siano stati inseriti nella domanda. È un dettaglio tecnico dalle conseguenze molto concrete, perché da esso dipende che l'udienza di <a href="/blog/convalida-di-sfratto/">convalida</a> si tenga davvero. Se vuoi che ogni passaggio sia gestito senza margini di errore, dalla notifica alla riconsegna delle chiavi, puoi affidarti al servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. La costituzione della parte con iscrizione a ruolo è disciplinata dall'articolo 165 del codice di procedura civile (&laquo;Costituzione dell'attore&raquo;), mentre la regola speciale del rito dello sfratto — costituzione anche mediante presentazione degli atti al giudice in udienza e termine libero minimo di venti giorni tra notifica e udienza — è prevista dall'articolo 660 c.p.c. (&laquo;Forma dell'intimazione&raquo;). La possibilità di chiedere nello stesso atto l'ingiunzione di pagamento dei canoni scaduti è stabilita dall'articolo 658 c.p.c. (&laquo;Intimazione di sfratto per morosità&raquo;); la convalida in caso di mancata comparizione o opposizione dell'intimato è regolata dall'articolo 663 c.p.c. Le norme sul rito sono state incise dalla riforma Cartabia (D.Lgs. 10 ottobre 2022, n. 149) e dal relativo correttivo (D.Lgs. 31 ottobre 2024, n. 164). Per la tua situazione specifica rivolgiti sempre a un professionista.</em></p>
+`,
+  },
+  {
     slug: 'registrazione-tardiva-contratto-locazione',
     title: "Registrazione tardiva del contratto di locazione: sanzioni e ravvedimento operoso",
     description: "Registrazione tardiva del contratto di locazione: sanzioni, come sanare la nullità e ridurre tutto con il ravvedimento operoso. Guida per il proprietario.",
