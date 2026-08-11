@@ -2,9 +2,11 @@
 
 **Data dell'ultima verifica operativa:** 11 agosto 2026
 **Esito:** landing e asset coerenti; struttura dei gruppi e delle keyword riallineata;
-3 annunci attivi, tutti idonei e diretti a V3 Agosto.
-**Stato residuo:** monitorare le due keyword nuove senza «moroso» e il rendimento
-della keyword storica riattivata (vedi §10).
+3 annunci attivi, tutti idonei e diretti a V3 Agosto. Testo dei 2 annunci attivi
+principali ricorretto l'11 agosto: le correzioni del 9 erano rientrate (vedi §5).
+**Stato residuo:** (a) monitorare le due keyword nuove senza «moroso» e il rendimento
+della keyword storica riattivata (§10); (b) **collaudare end-to-end l'invio del
+modulo** dopo il cambio di redirect del 10 agosto (§11).
 
 ---
 
@@ -134,6 +136,26 @@ URL verso `/landing-v3/` o altre landing precedenti.
 2. Descrizione «La convalida di sfratto è esclusa dalla sospensione feriale. Studio
    aperto ad agosto.» → «**La fase di convalida è sottratta alla sospensione feriale.
    Studio aperto tutto agosto.**» (86 caratteri), per la ragione esposta al §3.
+
+**Correzioni applicate l'11 agosto 2026 (le due del 9 agosto erano rientrate).**
+Un audit della cronologia ha mostrato che entrambe le correzioni sopra erano state
+disfatte sui due annunci attivi più importanti, per due strade diverse:
+
+| Annuncio | Difetto | Come si era prodotto |
+|---|---|---|
+| `820365206550` Come Sfrattare Inquilino | «· **21** Recensioni» e la descrizione con la **formula assoluta** vietata dal §3 | l'annuncio **non esisteva** il 9 agosto: è stato creato il 10 agosto alle 12:49 clonando l'annuncio ordinario del gruppo, quindi si è riportato dietro il testo pre-correzione |
+| `820323505594` Avvocato per Sfratto | «· **23** Recensioni», titolo «Sconti entro il 31 Agosto», titolo «studio legale sfratto» tutto minuscolo (quasi doppione di «Studio Legale Sfratti») | modifica manuale da interfaccia il 10 agosto alle 12:43 |
+
+Entrambi riportati in linea via `AdService.mutate_ads`: recensioni a **22**, descrizione
+per fase, «**Mandato Entro il 31 Agosto**» e «**Il Patto Sfratto Sicuro**» come negli
+altri quattro. Riverificati **Attivati · Idonei · Revisionati**; l'efficacia torna a
+`PENDING` dopo ogni modifica di testo e si riassesta in poche ore.
+
+⚠️ **Regola che ne discende.** Clonare un annuncio ordinario per farne una copia
+`_agosto` riporta indietro anche i difetti già corretti. Dopo ogni clonazione o
+modifica manuale, rileggere titoli e descrizioni dall'API e confrontarli con questo
+paragrafo: il numero di recensioni e la formula sulla sospensione feriale sono i due
+punti che si rompono per primi.
 
 ## 6. Asset — il nodo architetturale e come è stato sciolto
 
@@ -285,3 +307,56 @@ le metriche storiche. Per questo le due varianti «moroso» spostate nel gruppo 
 sembravano nuove ma mostravano dati di luglio: erano criteri preesistenti riattivati,
 non keyword prive di storico. Non duplicarle e non riattivare automaticamente le
 versioni esatte o i gruppi in pausa.
+
+## 11. Rendimento dal lancio e punti aperti — 11 agosto 2026
+
+### Il numero che conta
+
+| Giorno | Impressioni | Clic | Spesa | Conversioni |
+|---|---|---|---|---|
+| 7 agosto (ante promo) | 253 | 28 | €31,67 | **2** (Modulo) |
+| 9 agosto (domenica) | — | — | — | non pubblica, atteso |
+| 10 agosto | 430 | 64 | **€99,85** | 0 da modulo, 2 click-telefono |
+| 11 agosto (parziale) | 181 | 11 | €18,16 | 0 |
+
+**75 clic e €118,01 in due giorni, zero conversioni da modulo.** Nel CRM
+(«Anagrafica», base `appXqSXlxeLUcR25p`) l'unico lead della finestra è **telefonico**
+(canale MyCentralino, 10 agosto 13:20): **nessun lead da form web**.
+
+Non è un guasto di tracciamento accertato: `invia-email.php` scrive nel CRM **prima**
+del redirect, quindi un modulo inviato lascerebbe traccia anche con il redirect rotto.
+Sono proprio zero invii. Ma il percorso è cambiato il 10 agosto — i form della landing
+di agosto puntano ora a `/grazie.html?promo=agosto2026` — e nello stesso commit è stato
+corretto il separatore in `invia-email.php` (`?` → `&` quando il redirect ha già una
+query), senza il quale l'URL sarebbe stato `…?promo=agosto2026?gclid=…`. **Non è
+verificato se la versione difettosa sia stata online per qualche ora del 10 agosto.**
+Un invio di prova dalla landing chiude la questione: se il lead arriva in CRM **e** la
+conversione «Sfratto Sicuro · Modulo» viene contata, il percorso è sano.
+
+Verificato invece staticamente l'11 agosto: la landing risponde 200, non produce errori
+in console, ed entrambi i form (`hero_form_v3_agosto`, `bottom_form_v3_agosto`) hanno
+`action` e `redirect_url` corretti.
+
+### Dove sono finiti i soldi del 10 agosto
+
+**€63,43 su €99,85 — il 64% — li ha bruciati «Sfratto Inquilino Moroso»**, il gruppo con
+Quality Score 3/10 e zero conversioni storiche, messo in pausa solo l'11 agosto alle
+11:11. La spesa del 10 agosto è pari al **doppio esatto del budget giornaliero**: è il
+tetto 2× che Google consente sul singolo giorno, non un errore di configurazione.
+
+### Tre elementi non censiti altrove
+
+- **Asset CALL aggiunto il 10 agosto** alla campagna (asset `370295469619`,
+  `02 8089 8395`). La conversione «Clicks to call» è attiva e primaria, quindi traccia;
+  ma è il numero diretto, non il numero di inoltro Google usato per le chiamate da sito
+  (vedi la memoria `call-tracking-numero-inoltro-google`).
+- **Campagna V4 `24063657507`**: `status=ENABLED` ma `serving_status=ENDED` — ultime
+  impressioni l'8 agosto. Il budget da €50 condiviso è quindi **tutto** sulla campagna
+  principale. I suoi asset contengono ancora il callout «Prezzo fisso €1.300» e sitelink
+  verso `/landing-v4/`: innocui finché la campagna è ferma, **tornerebbero a erogare se
+  qualcuno ne prolungasse le date**.
+- **`/sfratto-agosto/`** (creata il 9 agosto come URL di riserva contro il blocco
+  `DESTINATION_NOT_WORKING`) è online ma **non è usata da nessun annuncio né sitelink**:
+  il blocco è rientrato e tutto punta a `/landing-v3-agosto/`. È `noindex,nofollow`,
+  quindi non crea contenuto duplicato indicizzabile, ma resta un doppione da rimuovere
+  consapevolmente o da tenere come riserva dichiarata.
