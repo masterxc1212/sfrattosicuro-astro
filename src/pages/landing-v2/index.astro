@@ -168,7 +168,9 @@ const config = buildLandingPageConfig({
             ad_personalization: 'granted'
           });
           window.gtag('js', new Date());
-          window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+          // Niente `send_page_view: false` (2026-08-11): sopprimeva la page_view di GA4
+          // sull'intera pagina. Vedi docs/promo-v3-agosto-2026.md §12.
+          window.gtag('config', AW_ID, { transport_type: 'beacon' });
 
           if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
             var s = document.createElement('script');

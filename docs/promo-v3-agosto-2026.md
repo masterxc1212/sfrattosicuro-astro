@@ -423,6 +423,74 @@ blocca soltanto la query identica «sfratto» e lascia passare tutto ciò che la
 («sfratto per morosità», «avvocato per sfratto», «quanto costa uno sfratto»…). Una
 negativa a frase `"sfratto"` avrebbe spento l'intera campagna.
 
+## 12. Il flag che rendeva le landing invisibili in GA4 — 11 agosto 2026
+
+**Il sintomo.** In GA4, negli ultimi 7 giorni: **239 sessioni ma 11 `page_view`**, e le
+uniche pagine nei report erano «Richiesta Ricevuta» e «Richiesta Agosto Ricevuta», cioe'
+le due `grazie.html`. Le landing — dove arriva tutto il traffico a pagamento — non
+comparivano. Zero sessioni da ricerca organica.
+
+**La causa.** Nel `gtag('config', 'AW-10983419342', …)` c'era `send_page_view: false`.
+Impostato su una destinazione Google Ads **dopo** il config di GA4, quel flag sopprime la
+page view automatica dell'**intera pagina**, non solo della destinazione su cui e'
+scritto. GA4 continuava a mandare gli eventi espliciti (`landing_experiment_view`,
+`form_start`) ma mai la `page_view`.
+
+**Come e' stata isolata.** Mettendo in pausa il banner cookie (§13) il sito normale ha
+iniziato a tracciare senza gate, e li' la `page_view` di GA4 **partiva**. Confronto a tre:
+
+| Pagina | Config AW | `page_view` GA4 |
+|---|---|---|
+| `grazie.html` | nessun flag | parte — ed erano le uniche 11 registrate |
+| sito normale | nessun flag | parte |
+| landing | `send_page_view: false` | **non parte** |
+
+Una sola variabile, e segue perfettamente l'esito.
+
+**Dove si annidava.** Cinque punti, tutti corretti:
+
+| File | Nota |
+|---|---|
+| `src/components/landing/LandingExperimentPage.astro` | il principale: v3, v4 e v3-agosto |
+| `src/components/WebsiteCallTracking.astro` | attivo sulle landing, sfuggito alle prime due ricerche |
+| `src/components/ClickConversionTracking.astro` | latente, ma stessa trappola |
+| `src/pages/landing-v2/index.astro` | landing precedente, stesso difetto |
+| `public/landing/index.html` | pagina statica di archivio |
+
+⚠️ **Non reintrodurre `send_page_view: false` su un config `AW-`.** Se serve evitare che
+una page view generi una conversione, si agisce sulla definizione della conversione, non
+sul flag: nessuna conversione di questo account e' legata alla page view delle landing —
+«Sfratto Sicuro · Modulo» scatta sul caricamento di `grazie.html`, «· WhatsApp» e
+«· Click Telefono» su evento con etichetta.
+
+**Verificato.** Config ripulito nel DOM di tutte le landing; build di produzione senza
+occorrenze residue. **La conferma definitiva e' il conteggio `page_view` in GA4 nei
+prossimi giorni**: deve allinearsi al numero di sessioni.
+
+## 13. Banner cookie in pausa — 11 agosto 2026
+
+Interruttore unico in **`src/lib/tracking-config.ts`** (`consentBannerEnabled = false`).
+Nessun codice rimosso: il banner e la sua logica restano intatti, non vengono montati.
+Con il banner in pausa gli script del sito partono in modalita' `eager`, lo stesso regime
+che le landing hanno dal 16 luglio.
+
+**Perche':** non era distinguibile se il traffico non fosse misurato per un guasto tecnico
+o perche' quasi nessuno accettava il banner. Spegnendolo si toglie la seconda variabile.
+Ed e' cosi' che e' saltato fuori il difetto del §12.
+
+⚠️ **Da riaccendere** (basta rimettere `true`): finche' e' spento il sito raccoglie dati
+analitici e di marketing senza consenso, e l'11 agosto e' stato attivato **Google Signals**
+sulla proprieta' GA4 dichiarando a Google di avere informative e consensi. Inoltre
+`/cookie-policy/` descrive un banner che al momento non compare.
+
+**Altre modifiche dello stesso giro:** tag Google Ads esteso a tutto il sito
+(`src/components/GoogleAdsTagIsland.astro`, montato in `SiteLayout`) — prima esisteva solo
+sulle landing e dentro `ClickConversionTracking`, che pero' lo carica **solo al click** su
+telefono/WhatsApp, mai all'apertura della pagina: era il motivo per cui gli elenchi di
+remarketing restavano sotto le 500 persone. E **pixel Meta sbloccato sulle landing**
+(prop `eager`): era l'unico dei quattro script montato senza bypass, quindi attendeva un
+consenso che su quelle pagine non puo' arrivare.
+
 ### Decisione presa e NON presa — 11 agosto, pomeriggio
 
 | Decisione | Esito |

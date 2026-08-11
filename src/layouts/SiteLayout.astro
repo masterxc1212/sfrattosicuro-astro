@@ -7,6 +7,7 @@ import CookieConsentBanner from '../components/CookieConsentBanner.astro';
 import StickyMobileCTA from '../components/StickyMobileCTA.astro';
 import ClickConversionTracking from '../components/ClickConversionTracking.astro';
 import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
+import { consentBannerEnabled, trackingEager } from '../lib/tracking-config';
 
 interface Props {
   title?: string;
@@ -51,11 +52,14 @@ const {
     <span class="grain" aria-hidden="true"></span>
     <slot />
     {!hideStickyMobileCta && <StickyMobileCTA />}
-    <CookieConsentBanner />
-    <GA4TrackingIsland measurementId="G-509YE5HCYB" />
-    <GoogleAdsTagIsland />
-    <ClickConversionTracking />
-    <WebsiteCallTracking />
+    {/* Banner e gate del consenso sono comandati da src/lib/tracking-config.ts.
+        Nessun codice e' stato rimosso: con `consentBannerEnabled = true` tutto
+        torna esattamente com'era. */}
+    {consentBannerEnabled && <CookieConsentBanner />}
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager={trackingEager} />
+    <GoogleAdsTagIsland eager={trackingEager} />
+    <ClickConversionTracking eager={trackingEager} />
+    <WebsiteCallTracking eager={trackingEager} />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {

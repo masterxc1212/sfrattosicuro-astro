@@ -206,7 +206,16 @@ const config = isAugust ? {
           window.gtag = window.gtag || gtag;
           window.gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
           window.gtag('js', new Date());
-          window.gtag('config', AW_ID, { send_page_view: false, transport_type: 'beacon' });
+          // NON rimettere `send_page_view: false` qui (2026-08-11).
+          // Quel flag, impostato su una destinazione AW dopo il config di GA4,
+          // sopprimeva la page_view automatica dell'INTERA pagina: GA4 registrava
+          // 11 page_view su 239 sessioni e nei report comparivano solo le
+          // grazie.html — cioe' le uniche pagine il cui config AW non aveva il flag.
+          // Le landing restavano invisibili in Analytics. Nessuna conversione e'
+          // legata alla page view di queste pagine: «Sfratto Sicuro · Modulo» scatta
+          // sul caricamento di grazie.html, «· WhatsApp» e «· Click Telefono» su
+          // evento con etichetta. Vedi docs/promo-v3-agosto-2026.md §12.
+          window.gtag('config', AW_ID, { transport_type: 'beacon' });
           if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
             var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID; s.setAttribute('data-landing-aw', AW_ID); document.head.appendChild(s);
           }
@@ -260,7 +269,7 @@ const config = isAugust ? {
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
-    <MetaPixelTracking pixelId="1373903100373659" />
+    <MetaPixelTracking pixelId="1373903100373659" eager />
     <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>

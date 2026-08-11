@@ -18,11 +18,20 @@
 interface Props {
   pixelId?: string;
   leadOnLoad?: boolean;
+  /**
+   * `eager` = carica senza attendere il consenso, come gia' fanno
+   * GA4TrackingIsland / ClickConversionTracking / WebsiteCallTracking sulle landing.
+   * Aggiunto il 2026-08-11: sulle landing il pixel era l'unico dei quattro montato
+   * SENZA questa opzione, quindi restava in attesa di un consenso che su quelle
+   * pagine non puo' arrivare (li' il banner non c'e'). In pratica non partiva mai,
+   * salvo per chi aveva gia' accettato sul sito normale.
+   */
+  eager?: boolean;
 }
-const { pixelId = '1373903100373659', leadOnLoad = false } = Astro.props;
+const { pixelId = '1373903100373659', leadOnLoad = false, eager = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ pixelId, leadOnLoad }}>
+<script is:inline define:vars={{ pixelId, leadOnLoad, eager }}>
   (() => {
     if (!pixelId) return;
 
@@ -91,7 +100,7 @@ const { pixelId = '1373903100373659', leadOnLoad = false } = Astro.props;
       track('Contact', { method });
     }, true);
 
-    const consent = readConsent();
+    const consent = eager ? { marketing: true } : readConsent();
     if (consent?.marketing) initPixelIfNeeded(consent);
 
     window.addEventListener('ss:cookie-consent-updated', (event) => {

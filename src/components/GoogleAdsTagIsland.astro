@@ -21,12 +21,15 @@
  */
 interface Props {
   conversionId?: string;
+  /** `eager` = carica senza attendere il consenso (usato quando il banner e' in
+   *  pausa: vedi src/lib/tracking-config.ts). */
+  eager?: boolean;
 }
 
-const { conversionId = 'AW-10983419342' } = Astro.props;
+const { conversionId = 'AW-10983419342', eager = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ conversionId }}>
+<script is:inline define:vars={{ conversionId, eager }}>
   (() => {
     if (!conversionId) return;
 
@@ -78,7 +81,7 @@ const { conversionId = 'AW-10983419342' } = Astro.props;
       }
     };
 
-    loadAdsTag(readConsent());
+    loadAdsTag(eager ? { marketing: true } : readConsent());
 
     window.addEventListener('ss:cookie-consent-updated', (event) => {
       loadAdsTag(event?.detail || {});
