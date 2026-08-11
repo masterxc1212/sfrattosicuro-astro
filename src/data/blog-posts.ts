@@ -16,6 +16,75 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'affitti-non-percepiti-tasse',
+    title: "Affitti non percepiti: si pagano le tasse sui canoni che l'inquilino non versa?",
+    description: "Affitti non percepiti: quando il proprietario paga le tasse sui canoni non incassati, come fermarle e recuperare il credito d'imposta.",
+    excerpt: "Il canone non incassato può restare tassato: il reddito da locazione si dichiara per competenza, non per cassa. Guida per il proprietario su quando gli affitti non percepiti smettono di pagare le tasse, la differenza tra abitativo e commerciale e il credito d'imposta per recuperare quanto già versato.",
+    lead: "Il tuo inquilino non paga, ma il fisco pretende comunque le tasse sul canone? Ecco quando, per un immobile abitativo o commerciale, il proprietario smette davvero di dichiarare gli affitti non percepiti e come recuperare le imposte già pagate.",
+    publishedAt: '2026-08-11',
+    updatedAt: '2026-08-11',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-08-11. Keyword: affitti non percepiti (long-tail ad alto intento; volume puntuale non disponibile su DataForSEO, concorrenza debole).",
+    html: `
+<p>Il tuo inquilino ha smesso di pagare, ma il canone che non hai mai incassato continua a comparire tra i tuoi redditi da tassare? È la beffa che teme ogni proprietario: pagare tasse su soldi mai visti. Il tema degli <strong>affitti non percepiti</strong> è tra i più delicati per chi affitta, perché la regola di partenza è controintuitiva e cambia a seconda del tipo di immobile. Vediamo, dal punto di vista del locatore, quando si pagano davvero le tasse sui canoni non versati e come recuperare quanto già pagato di troppo.</p>
+
+<h2>La regola di partenza: l'affitto si tassa anche se non lo incassi</h2>
+<p>Il punto che sorprende molti proprietari è questo: il reddito da locazione di un immobile abitativo si dichiara <strong>per competenza</strong>, non per cassa. Significa che il canone concorre a formare il tuo reddito nel momento in cui matura in base al contratto, a prescindere dal fatto che l'inquilino lo abbia effettivamente pagato. In altre parole, finché il contratto è in vita e non interviene una causa formale, il fisco presume che tu abbia percepito il canone e lo tassa &laquo;sulla carta&raquo;. È il principio fissato dall'articolo 26 del Testo unico delle imposte sui redditi (il TUIR, cioè la legge che stabilisce come si calcolano le imposte sui redditi).</p>
+<p>Non basta quindi smettere di ricevere i bonifici: occorre un atto preciso che interrompa quella presunzione. E qui la disciplina distingue nettamente tra immobili <strong>abitativi</strong> e <strong>commerciali</strong>.</p>
+
+<h2>Immobili abitativi: quando smetti di dichiarare i canoni non percepiti</h2>
+<p>Per gli immobili a uso abitativo la legge prevede una via d'uscita, e la buona notizia è che oggi vale per tutti i contratti, indipendentemente da quando li hai firmati. Ciò che conta non è la data di stipula, ma l'anno in cui il canone è rimasto impagato: la data spartiacque è il <strong>1º gennaio 2020</strong>.</p>
+<p>Per i <strong>canoni abitativi non percepiti a partire dal 1º gennaio 2020</strong>, le somme non riscosse <strong>non concorrono al reddito</strong> dal momento in cui avvii l'<strong>intimazione di sfratto per morosità</strong> oppure l'<strong>ingiunzione di pagamento</strong> nei confronti dell'inquilino. Non devi più aspettare la fine della causa: è sufficiente aver documentato la morosità con uno di questi due atti. È il risultato del cosiddetto Decreto Crescita del 2019, la cui applicazione è stata poi estesa a tutti i canoni non riscossi dal 2020 in poi, a prescindere dalla data di stipula del contratto.</p>
+<p>La regola precedente, più severa, sopravvive solo per i <strong>canoni rimasti impagati fino al 2019</strong>: per quelle vecchie annualità l'esenzione scatta unicamente <strong>dalla conclusione del procedimento di convalida di sfratto per morosità</strong>. Per tutto ciò che matura dal 2020, invece, contano l'intimazione o l'ingiunzione, non l'età del contratto.</p>
+<p>In entrambi i casi c'è un dettaglio importante: quando scatta l'esenzione, non è che l'immobile sparisce dal quadro dei redditi. Continui a dichiararlo, ma sulla base della sola <strong>rendita catastale</strong> (il valore fiscale dell'immobile), che di norma è molto più bassa del canone.</p>
+
+<h2>Vale anche con la cedolare secca?</h2>
+<p>Sì. Se hai scelto la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> — l'imposta sostitutiva che tassa il canone con un'aliquota fissa — vale lo stesso meccanismo: i canoni abitativi non percepiti non vengono assoggettati all'imposta a partire dagli stessi atti visti sopra. Anche qui serve la documentazione della morosità: senza un atto formale, il canone maturato resta imponibile.</p>
+
+<h2>Immobili commerciali: la regola è molto più dura</h2>
+<p>Qui arriva la notizia sgradevole per chi affitta negozi, uffici o capannoni. Per gli immobili a uso <strong>diverso dall'abitativo</strong> l'esenzione degli affitti non percepiti <strong>non è prevista</strong>. Il canone di un immobile commerciale va dichiarato e tassato, <strong>anche se l'inquilino non paga</strong>, finché il contratto non viene giuridicamente <strong>risolto</strong> o non scade.</p>
+<p>Il proprietario di un locale commerciale può quindi versare imposte su canoni mai incassati fino alla fine del rapporto. Su questa disparità di trattamento tra abitativo e commerciale sono stati sollevati anche dubbi di legittimità costituzionale, ma allo stato la regola è questa. La conseguenza pratica è chiara: per un immobile commerciale conviene <strong>muoversi subito</strong> per chiudere il contratto, ad esempio attivando la <a href="/blog/clausola-risolutiva-espressa-locazione/">clausola risolutiva espressa</a> se prevista, così da fermare l'obbligo di dichiarare canoni che non arriveranno mai.</p>
+
+<h2>Come fermare il conto con il fisco: i passi pratici</h2>
+<ul>
+<li><strong>Agisci in fretta con l'atto giusto.</strong> Per un immobile abitativo, è l'avvio dell'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a> (o dell'ingiunzione di pagamento) a interrompere la tassazione dei canoni non incassati dal 2020 in poi. Ogni mese di ritardo è un mese di tasse su affitti che non ricevi.</li>
+<li><strong>Conserva la documentazione.</strong> Contratto, conteggio della morosità e copia dell'atto notificato ti servono per giustificare in dichiarazione la scelta di non tassare il canone.</li>
+<li><strong>Compila correttamente la dichiarazione.</strong> I canoni non percepiti per i quali è scattata l'esenzione vanno indicati con le apposite modalità nel quadro dei redditi da fabbricati, dichiarando la sola rendita catastale.</li>
+<li><strong>Per il commerciale, punta alla risoluzione del contratto.</strong> Solo la fine del rapporto ferma l'obbligo di dichiarare il canone: prima si chiude, prima si smette di pagarci le tasse.</li>
+</ul>
+
+<h2>Le tasse già pagate su canoni mai incassati si recuperano</h2>
+<p>E se negli anni scorsi hai già versato imposte su un affitto che poi si è rivelato inesigibile? La legge prevede un <strong>credito d'imposta</strong> a tuo favore. Una volta accertata giudizialmente la mancata percezione dei canoni, puoi recuperare le imposte pagate sui canoni maturati e tassati nelle annualità precedenti ma di fatto mai riscossi. In pratica il fisco ti restituisce quanto avevi anticipato su redditi mai visti: un aspetto che molti proprietari ignorano e vale la pena far valutare a un professionista.</p>
+<p>Sono due piani diversi: il <strong>credito d'imposta</strong> riguarda il fisco, mentre il diritto a farti pagare gli arretrati dall'inquilino resta pieno. Su questo fronte trovi una guida dedicata al <a href="/blog/recupero-canoni-arretrati-dopo-sfratto/">recupero dei canoni arretrati dopo lo sfratto</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Pensare che &laquo;se non incasso, non dichiaro&raquo;.</strong> Falso di partenza: fino all'atto che interrompe la tassazione, il canone abitativo maturato va dichiarato comunque.</li>
+<li><strong>Aspettare troppo per avviare lo sfratto.</strong> Il conto con il fisco continua a correre finché non parte l'intimazione o l'ingiunzione: il tempismo incide direttamente sulle tasse.</li>
+<li><strong>Applicare al commerciale le regole dell'abitativo.</strong> Per negozi e uffici non c'è esenzione: si paga fino alla risoluzione del contratto.</li>
+<li><strong>Dimenticare il credito d'imposta.</strong> Le imposte versate su canoni poi riconosciuti inesigibili si possono recuperare.</li>
+<li><strong>Fare da soli in dichiarazione.</strong> Sbagliare quadro o presupposti può esporti a contestazioni: meglio farsi seguire.</li>
+</ul>
+
+<h2>Domande frequenti sugli affitti non percepiti</h2>
+<h3>Devo dichiarare un affitto che non ho incassato?</h3>
+<p>Per un immobile abitativo sì, fino a quando non avvii l'intimazione di sfratto per morosità o l'ingiunzione di pagamento: da quel momento i canoni non percepiti dal 2020 in poi non si tassano e dichiari la sola rendita catastale. Per gli arretrati rimasti impagati fino al 2019 vale invece la conclusione della convalida.</p>
+<h3>Da quando smetto di pagarci le tasse?</h3>
+<p>Per i canoni non incassati dal 1º gennaio 2020 in poi, dal momento dell'intimazione di sfratto per morosità o dell'ingiunzione di pagamento, qualunque sia la data del contratto. Per i canoni rimasti impagati fino al 2019 vale la vecchia regola: dalla conclusione del procedimento di convalida.</p>
+<h3>Vale anche se ho la cedolare secca?</h3>
+<p>Sì, con la documentazione della morosità si applica lo stesso meccanismo.</p>
+<h3>E se l'immobile è un locale commerciale?</h3>
+<p>Per il commerciale non c'è esenzione: il canone va dichiarato e tassato fino alla risoluzione o alla scadenza del contratto, anche se l'inquilino non paga.</p>
+<h3>Posso recuperare le tasse già pagate su canoni mai riscossi?</h3>
+<p>Sì, tramite un credito d'imposta, una volta accertata l'inesigibilità dei canoni nei modi previsti dalla legge.</p>
+
+<h2>In sintesi</h2>
+<p>Sugli <strong>affitti non percepiti</strong> la regola pratica è una sola: il tempo è denaro anche con il fisco. Per l'abitativo, muoverti subito con l'intimazione di sfratto per morosità o l'ingiunzione di pagamento ferma la tassazione dei canoni che non incassi; per il commerciale, l'unica via è chiudere in fretta il contratto. In entrambi i casi, le imposte versate su affitti poi rivelatisi inesigibili si possono recuperare con il credito d'imposta. Sapere come funziona ti evita di regalare allo Stato tasse su soldi mai visti. Se vuoi capire come proteggere il tuo immobile e i tuoi incassi, puoi affidarti al servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale o fiscale su misura. La disciplina dei canoni non percepiti è regolata dall'articolo 26 del Testo unico delle imposte sui redditi (D.P.R. 22 dicembre 1986, n. 917); la regola che àncora l'esenzione all'intimazione di sfratto per morosità o all'ingiunzione di pagamento è stata introdotta dall'articolo 3-quinquies del D.L. 30 aprile 2019, n. 34 (&laquo;Decreto Crescita&raquo;), convertito dalla legge 28 giugno 2019, n. 58, e si applica ai canoni abitativi non percepiti a decorrere dal 1º gennaio 2020, a prescindere dalla data di stipula del contratto (art. 6-septies del D.L. 22 marzo 2021, n. 41, convertito dalla legge 21 maggio 2021, n. 69). L'intimazione di sfratto per morosità è disciplinata dall'articolo 658 del codice di procedura civile. Per la tua situazione specifica, e per la corretta compilazione della dichiarazione dei redditi, rivolgiti sempre a un professionista.</em></p>
+`,
+  },
+  {
     slug: 'iscrizione-a-ruolo-sfratto-per-morosita',
     title: "Iscrizione a ruolo dello sfratto per morosità: cos’è e perché conta per il proprietario",
     description: "Iscrizione a ruolo dello sfratto per morosità: cos’è, chi la fa, il termine dei 10 giorni e cosa rischia il proprietario se manca. Guida pratica.",
