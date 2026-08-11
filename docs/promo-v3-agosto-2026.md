@@ -1,8 +1,10 @@
 # Promozione «V3 Agosto» 2026 — landing, annunci, asset
 
-**Data della verifica integrale:** 9 agosto 2026
-**Esito:** landing conforme, asset resi coerenti, 5 annunci attivati.
-**Blocco residuo:** bocciatura Google `DESTINATION_NOT_WORKING` non ancora smaltita (vedi §7).
+**Data dell'ultima verifica operativa:** 11 agosto 2026
+**Esito:** landing e asset coerenti; struttura dei gruppi e delle keyword riallineata;
+3 annunci attivi, tutti idonei e diretti a V3 Agosto.
+**Stato residuo:** monitorare le due keyword nuove senza «moroso» e il rendimento
+della keyword storica riattivata (vedi §10).
 
 ---
 
@@ -86,23 +88,39 @@ media, mai come garanzia.
   (Zero impressioni di domenica è il comportamento atteso, non un guasto.)
 - Etichetta delle copie promozionali: **`_agosto`** (label ID `22278677714`)
 
-Gruppi coinvolti: Avvocato per Sfratto · Sfratto Inquilino Moroso · Sfratto
-Commerciale · Finita Locazione · Costi Sfratto.
+Stato operativo dei gruppi dopo l'intervento dell'11 agosto 2026:
 
-## 5. I cinque annunci `_agosto`
+| Gruppo | Stato | Decisione |
+|---|---|---|
+| Avvocato per Sfratto | **Attivo** | gruppo principale; riattivata la keyword a frase storicamente convertente |
+| Come Sfrattare Inquilino | **Attivo** | mantiene solo le due varianti senza «moroso» |
+| Costi Sfratto | **Attivo** | invariato |
+| Sfratto Inquilino Moroso | **In pausa** | 0 conversioni e forte sovrapposizione semantica |
+| Finita Locazione | **In pausa** | già in pausa prima dell'audit |
+| Sfratto Commerciale | **In pausa** | già in pausa prima dell'audit |
+
+## 5. Gli annunci `_agosto`
 
 Tutti con URL finale `https://www.sfrattosicuro.it/landing-v3-agosto/` e percorso
 visualizzato `/sfratto/agosto`.
 
+### Annunci attivi verificati l'11 agosto 2026
+
+| Gruppo | ID annuncio | Stato / efficacia |
+|---|---|
+| Avvocato per Sfratto | `820323505594` | Idoneo · Media |
+| Come Sfrattare Inquilino | `820365206550` | Idoneo · Eccellente |
+| Costi Sfratto | `820282626684` | Idoneo · Buono |
+
+### Copie promozionali non attive perché il gruppo è in pausa
+
 | Gruppo | ID annuncio |
 |---|---|
-| Avvocato per Sfratto | `820323505594` |
 | Sfratto Inquilino Moroso | `820398240449` |
 | Sfratto Commerciale | `820398279107` |
 | Finita Locazione | `820323514492` |
-| Costi Sfratto | `820282626684` |
 
-Titoli comuni presenti in tutti e cinque: «Sfratto €1.000 ad Agosto», «Studio Aperto
+Titoli comuni presenti nelle copie promozionali: «Sfratto €1.000 ad Agosto», «Studio Aperto
 Tutto Agosto», «Mandato Entro il 31 Agosto». Ogni annuncio conserva i titoli
 specifici della keyword del proprio gruppo. Nessuna occorrenza di €1.300, nessun
 URL verso `/landing-v3/` o altre landing precedenti.
@@ -110,8 +128,9 @@ URL verso `/landing-v3/` o altre landing precedenti.
 **Correzioni applicate il 9 agosto 2026:**
 
 1. Titolo «5,0 su Google · **21** Recensioni» → «· **22** Recensioni», per allinearlo
-   al dato reale del sito (`socialProof.googleReviewsTotal`). Riguarda 4 annunci su 5;
-   il quinto usava «5,0 su Google» senza numero ed è rimasto invariato.
+   al dato reale del sito (`socialProof.googleReviewsTotal`). La correzione riguardava
+   i quattro annunci censiti con il numero nel titolo; gli altri usavano «5,0 su
+   Google» senza numero e sono rimasti invariati.
 2. Descrizione «La convalida di sfratto è esclusa dalla sospensione feriale. Studio
    aperto ad agosto.» → «**La fase di convalida è sottratta alla sospensione feriale.
    Studio aperto tutto agosto.**» (86 caratteri), per la ragione esposta al §3.
@@ -119,7 +138,7 @@ URL verso `/landing-v3/` o altre landing precedenti.
 ## 6. Asset — il nodo architetturale e come è stato sciolto
 
 **Il problema.** In Google Ads gli asset si agganciano ad account, campagna o gruppo
-di annunci: **mai al singolo annuncio**. I cinque annunci `_agosto` vivono negli stessi
+di annunci: **mai al singolo annuncio**. Le copie `_agosto` vivono negli stessi
 gruppi degli annunci ordinari da €1.300, quindi qualunque sitelink o callout è
 inevitabilmente condiviso fra le due offerte. Nessuna configurazione poteva renderle
 coerenti entrambe nello stesso momento.
@@ -179,28 +198,22 @@ gli asset restano in account e si possono ricollegare il 1° settembre.
 anchor inesistente. Gli anchor mai esistiti citati nella vecchia documentazione
 (`#servizi`, `#prezzi`, `#chi-siamo`, `#recensioni`) non sono usati da nessun asset.
 
-## 7. Stato degli annunci e blocco residuo
+## 7. Stato degli annunci
 
-I cinque annunci sono stati portati a **ENABLED** il 9 agosto 2026.
+Il precedente blocco `DESTINATION_NOT_WORKING` è **risolto**. Alla verifica
+dell'11 agosto 2026 i tre annunci dei gruppi rimasti attivi risultano **Attivati** e
+**Idonei**; Google Ads mostra tre righe attive e tutte e tre puntano a
+`https://www.sfrattosicuro.it/landing-v3-agosto/`.
 
-**Risultano però ancora `DISAPPROVED` per `DESTINATION_NOT_WORKING`.** È un verdetto
-stantio: gli annunci erano stati creati *prima* che la landing esistesse. La pagina è
-andata online solo con il commit `24ad294` delle **19:48 UTC del 9 agosto 2026**, e
-prima di quel momento l'URL rispondeva 404 — Google ha semplicemente fotografato quello.
-
-La destinazione è stata verificata sana sotto ogni profilo (§2). È stato richiesto il
-ricontrollo tramite `policy_validation_parameter.ignorable_policy_topics`, l'equivalente
-API del pulsante «Richiedi revisione»; alla chiusura della sessione Google non lo aveva
-ancora smaltito.
-
-**Conseguenza pratica:** gli annunci non pubblicano finché la bocciatura non cade.
-Sono stati comunque attivati perché partano da soli nel momento dell'approvazione,
-senza bisogno di un altro intervento. **Da ricontrollare**, e se dopo 24-48 ore la
-bocciatura persiste, aprire un reclamo dall'interfaccia Google Ads.
+Le altre tre copie promozionali non sono bocciate per la destinazione: non erogano
+perché i rispettivi gruppi sono in pausa. Non riattivarle senza prima riesaminare la
+struttura keyword descritta al §10.
 
 ## 8. Cosa fare il 1° settembre 2026
 
-1. Mettere in pausa (o rimuovere) i cinque annunci `_agosto`.
+1. Mettere in pausa i tre annunci `_agosto` rimasti attivi (Avvocato per Sfratto,
+   Come Sfrattare Inquilino e Costi Sfratto). Le altre copie sono già escluse dalla
+   pubblicazione perché i rispettivi gruppi sono in pausa.
 2. Riattivare gli annunci ordinari da €1.300.
 3. Ricollegare alla campagna i 6 sitelink verso `/landing-v3/` — **correggendo però
    `#costi-trasparenza` in `#prezzo`**, altrimenti si reintroduce il bug — e il callout
@@ -224,3 +237,51 @@ client = GoogleAdsClient.load_from_storage(
 
 Su Windows serve `PYTHONIOENCODING=utf-8`, altrimenti il redirect dell'output rompe
 gli accenti.
+
+## 10. Audit gruppi e decisioni keyword — 11 agosto 2026
+
+Periodo analizzato nell'interfaccia: **1-31 luglio 2026**. Le modifiche sono state
+applicate direttamente in Google Ads l'11 agosto e poi riverificate.
+
+### Decisioni applicate
+
+1. Nel gruppo **Come Sfrattare Inquilino** sono state messe in pausa:
+   - `"come sfrattare un inquilino moroso"` — 34 clic, €39,32, 0 conversioni;
+   - `[come sfrattare un inquilino moroso]` — 42 clic, €44,14, 0 conversioni.
+2. Nello stesso gruppo restano attive soltanto:
+   - `"come sfrattare un inquilino"`;
+   - `[come sfrattare un inquilino]`.
+   Sono keyword appena attivate e senza dati storici: non giudicarle prima di aver
+   raccolto traffico sufficiente.
+3. Nel gruppo **Avvocato per Sfratto** è stata riattivata soltanto la corrispondenza
+   a frase `"come sfrattare un inquilino moroso"`: a luglio aveva 407 clic,
+   5,60 conversioni e CPA €76,82. La corrispondenza esatta omonima resta in pausa.
+4. Il gruppo **Sfratto Inquilino Moroso** è stato messo interamente in pausa. La sua
+   keyword principale a frase aveva 124 clic, €133,50 di costo, 0 conversioni e
+   Quality Score 3/10; il gruppo era inoltre sovrapposto semanticamente agli altri.
+   Le keyword interne possono risultare tecnicamente «attivate», ma non erogano finché
+   il gruppo resta in pausa.
+5. **Costi Sfratto** non è stato modificato: `"quanto costa uno sfratto"` aveva
+   prodotto 2 conversioni a CPA €9,37. Anche **Avvocato per Sfratto** resta attivo;
+   l'annuncio con efficacia «Media» va ottimizzato solo con un intervento separato,
+   senza alterare ora la struttura validata.
+
+### Configurazione finale da considerare fonte di verità
+
+| Gruppo attivo | Keyword positive operative |
+|---|---|
+| Avvocato per Sfratto | 6: le 5 già attive + `"come sfrattare un inquilino moroso"` riattivata |
+| Come Sfrattare Inquilino | 2: frase ed esatta di `come sfrattare un inquilino` senza «moroso» |
+| Costi Sfratto | 5, invariate |
+
+Totale: **3 gruppi attivi, 13 keyword positive operative e 3 annunci attivi**. Tutti
+gli annunci attivi sono idonei e portano a V3 Agosto. I gruppi Finita Locazione,
+Sfratto Commerciale e Sfratto Inquilino Moroso restano in pausa.
+
+### Nota per Claude e per gli audit successivi
+
+Quando una keyword già esistente viene riattivata, Google Ads conserva e ripresenta
+le metriche storiche. Per questo le due varianti «moroso» spostate nel gruppo Come
+sembravano nuove ma mostravano dati di luglio: erano criteri preesistenti riattivati,
+non keyword prive di storico. Non duplicarle e non riattivare automaticamente le
+versioni esatte o i gruppi in pausa.
