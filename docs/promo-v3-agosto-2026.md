@@ -4,9 +4,12 @@
 **Esito:** landing e asset coerenti; struttura dei gruppi e delle keyword riallineata;
 3 annunci attivi, tutti idonei e diretti a V3 Agosto. Testo dei 2 annunci attivi
 principali ricorretto l'11 agosto: le correzioni del 9 erano rientrate (vedi §5).
+Aggiunta la negativa esatta `[sfratto]` (§11).
 **Stato residuo:** (a) monitorare le due keyword nuove senza «moroso» e il rendimento
-della keyword storica riattivata (§10); (b) **collaudare end-to-end l'invio del
-modulo** dopo il cambio di redirect del 10 agosto (§11).
+della keyword storica riattivata, che in agosto non converte (§11); (b) **collaudare
+end-to-end l'invio del modulo** dopo il cambio di redirect del 10 agosto (§11).
+**Da non fare per errore:** le 0 conversioni del 10-11 agosto sono statisticamente
+attese, non un guasto — il conto è al §11.
 
 ---
 
@@ -310,32 +313,84 @@ versioni esatte o i gruppi in pausa.
 
 ## 11. Rendimento dal lancio e punti aperti — 11 agosto 2026
 
-### Il numero che conta
+### Rendimento
 
-| Giorno | Impressioni | Clic | Spesa | Conversioni |
-|---|---|---|---|---|
-| 7 agosto (ante promo) | 253 | 28 | €31,67 | **2** (Modulo) |
-| 9 agosto (domenica) | — | — | — | non pubblica, atteso |
-| 10 agosto | 430 | 64 | **€99,85** | 0 da modulo, 2 click-telefono |
-| 11 agosto (parziale) | 181 | 11 | €18,16 | 0 |
+| Giorno | Impressioni | Clic | CTR | Spesa | Conversioni |
+|---|---|---|---|---|---|
+| 7 agosto (ante promo) | 253 | 28 | 11,07% | €31,67 | 2 |
+| 8 agosto (sabato) | 84 | 6 | 7,14% | €6,49 | 0 |
+| 9 agosto (domenica) | — | — | — | — | non pubblica, atteso |
+| **10 agosto** (1º giorno pieno con landing e annunci nuovi) | 430 | 64 | **14,88%** | **€99,85** | 0 |
+| 11 agosto (parziale, alle 14) | 188 | 13 | 6,91% | €21,64 | 0 |
 
-**75 clic e €118,01 in due giorni, zero conversioni da modulo.** Nel CRM
-(«Anagrafica», base `appXqSXlxeLUcR25p`) l'unico lead della finestra è **telefonico**
-(canale MyCentralino, 10 agosto 13:20): **nessun lead da form web**.
+### Le 0 conversioni NON sono un sintomo — il calcolo che lo dimostra
 
-Non è un guasto di tracciamento accertato: `invia-email.php` scrive nel CRM **prima**
-del redirect, quindi un modulo inviato lascerebbe traccia anche con il redirect rotto.
-Sono proprio zero invii. Ma il percorso è cambiato il 10 agosto — i form della landing
-di agosto puntano ora a `/grazie.html?promo=agosto2026` — e nello stesso commit è stato
-corretto il separatore in `invia-email.php` (`?` → `&` quando il redirect ha già una
-query), senza il quale l'URL sarebbe stato `…?promo=agosto2026?gclid=…`. **Non è
-verificato se la versione difettosa sia stata online per qualche ora del 10 agosto.**
-Un invio di prova dalla landing chiude la questione: se il lead arriva in CRM **e** la
-conversione «Sfratto Sicuro · Modulo» viene contata, il percorso è sano.
+Il riflesso è leggere «zero conversioni» come un guasto. **Non lo è**, e il conto è
+questo:
+
+> **14 luglio – 9 agosto (tutto ante-modifiche): 769 clic, 7 conversioni → tasso 0,91%.**
+> Attesa su 77 clic (10-11 agosto): **0,70 conversioni**. Probabilità di osservarne
+> zero: **≈50%**.
+
+Zero conversioni in due giorni è l'esito **più probabile** che ci fosse, non una
+deviazione. Su questi volumi servono **300-400 clic — otto-dieci giorni** — prima che il
+dato di conversione dica qualcosa.
+
+⚠️ **Errore da non ripetere.** Il primo inquadramento aveva paragonato il periodo al
+7 agosto (2 conversioni su 28 clic = 7,1%), concludendo che qualcosa si fosse rotto. Sul
+dato mensile quel giorno è un **picco isolato**, non la norma. Confrontare sempre col
+tasso di lungo periodo, mai col giorno buono più vicino.
+
+### Il percorso del modulo resta comunque da collaudare
+
+Nel CRM («Anagrafica», base `appXqSXlxeLUcR25p`) l'unico lead della finestra è
+**telefonico** (canale MyCentralino, 10 agosto 13:20): nessun lead da form web —
+coerente con l'attesa di 0,70 di cui sopra, quindi non è di per sé una prova di guasto.
+
+Non c'è guasto di tracciamento accertato: `invia-email.php` scrive nel CRM **prima** del
+redirect, quindi un modulo inviato lascerebbe traccia anche con il redirect rotto. Ma il
+percorso è cambiato il 10 agosto — i form della landing di agosto puntano ora a
+`/grazie.html?promo=agosto2026` — e nello stesso commit è stato corretto il separatore in
+`invia-email.php` (`?` → `&` quando il redirect ha già una query), senza il quale l'URL
+sarebbe stato `…?promo=agosto2026?gclid=…`. **Non è verificato se la versione difettosa
+sia stata online per qualche ora del 10 agosto.** Un invio di prova chiude la questione:
+se il lead arriva in CRM **e** la conversione «Sfratto Sicuro · Modulo» viene contata, il
+percorso è sano.
 
 Verificato invece staticamente l'11 agosto: la landing risponde 200, non produce errori
 in console, ed entrambi i form (`hero_form_v3_agosto`, `bottom_form_v3_agosto`) hanno
 `action` e `redirect_url` corretti.
+
+### Il CTR: le modifiche non l'hanno abbassato, una sì
+
+Il 10 agosto — primo giorno pieno con annunci nuovi, prezzo nuovo e landing nuova — ha
+fatto **CTR 14,88%, il secondo giorno migliore delle ultime tre settimane** (solo il
+28 luglio ha fatto meglio, 17,68%). Se il pacchetto di modifiche avesse un problema di
+attrattività si sarebbe visto lì.
+
+Il 6,91% dell'11 agosto non è fuori scala: 1 ago 6,78% · 8 ago 7,14% · 29 lug 7,81% ·
+4 ago 8,02% · 6 ago 8,74%. È la fascia bassa del normale, toccata cinque volte **prima**
+che si modificasse alcunché.
+
+Scomposizione del CTR dell'11 agosto, in ordine di peso:
+
+| Causa | Effetto misurato |
+|---|---|
+| **«Sfratto Inquilino Moroso» ha erogato fino alle 11:11** | 76 impressioni, 2 clic (**2,63%**) = 40% delle impressioni della giornata. Al netto di questo gruppo i tre attivi fanno **9,82%**, in linea con la media storica |
+| **Riattivazione di `"come sfrattare un inquilino moroso"` alle 11:10** | si è presa **55 delle 77 impressioni** del gruppo Avvocato per Sfratto (71%) al **7,27%**; il gruppo è passato da 23,26% (10 ago) a 10,39% |
+| **Posizione in pagina scesa** | quota impressioni **salita** 56,6% → 61,1%, quota in cima **scesa** 27,3% → 19,4%. Comportamento atteso di *Massimizza clic* dopo aver speso il doppio del budget il giorno prima |
+
+⚠️ **La riattivazione va rivista.** La decisione al §10 punto 3 poggiava sui dati di
+luglio (407 clic, 5,60 conversioni, CPA €76,82). In **agosto** la stessa keyword nello
+stesso gruppo aveva già prodotto:
+
+| | 5 ago | 6 ago | 7 ago | 8 ago |
+|---|---|---|---|---|
+| Impressioni | 41 | 47 | 34 | 11 |
+| Clic | 1 | 0 | 1 | 0 |
+| Conversioni | 0 | 0 | 0 | 0 |
+
+**133 impressioni, 2 clic, 0 conversioni.** Il rendimento di luglio non si è trasferito.
 
 ### Dove sono finiti i soldi del 10 agosto
 
@@ -343,6 +398,43 @@ in console, ed entrambi i form (`hero_form_v3_agosto`, `bottom_form_v3_agosto`) 
 Quality Score 3/10 e zero conversioni storiche, messo in pausa solo l'11 agosto alle
 11:11. La spesa del 10 agosto è pari al **doppio esatto del budget giornaliero**: è il
 tetto 2× che Google consente sul singolo giorno, non un errore di configurazione.
+
+### La query «sfratto» — negativa aggiunta l'11 agosto
+
+La query secca **«sfratto»** non è nuova: gira dal 29 luglio attraverso il gruppo Moroso,
+sempre a CTR ≈ 0. Quello che è cambiato è il **volume**, gonfiato dalla spesa doppia del
+10 agosto che si è riversata sul match più largo:
+
+| | 3-8 agosto | **10 agosto** | 11 agosto |
+|---|---|---|---|
+| Impressioni | 2-13 al giorno | **75** | 16 |
+| Clic | 1 in totale | 1 | 0 |
+
+Il 10 agosto è stata **la prima query per volume**, il 47% delle impressioni censite nel
+report sui termini di ricerca, con **un solo clic**.
+
+**Applicato:** negativa a **corrispondenza esatta** `[sfratto]` nell'elenco condiviso
+**«Sfratti»** (`shared set 11334473938`, criterio `316767628511`), che è dove questo
+account tiene le negative — 965 voci, collegato sia a `22849022328` sia alla V4
+`24063657507`, e **non** a CreditMedia né a Pronto Soccorso Esattoriale.
+
+Perché esatta e non a frase: **le negative non hanno varianti simili**. `[sfratto]`
+blocca soltanto la query identica «sfratto» e lascia passare tutto ciò che la contiene
+(«sfratto per morosità», «avvocato per sfratto», «quanto costa uno sfratto»…). Una
+negativa a frase `"sfratto"` avrebbe spento l'intera campagna.
+
+### Decisione presa e NON presa — 11 agosto, pomeriggio
+
+| Decisione | Esito |
+|---|---|
+| Negativa esatta `[sfratto]` | **applicata** (sopra) |
+| Mettere in pausa `"come sfrattare un inquilino moroso"` nel gruppo Avvocato per Sfratto | **deliberatamente NON applicata** |
+
+La pausa della keyword era stata proposta insieme alla negativa; l'utente ha scelto di
+applicare **solo la negativa** e di lasciare la keyword in erogazione. **Non rimetterla
+in pausa in un audit successivo senza chiederlo**: è una scelta esplicita, non una
+dimenticanza. Resta però il punto aperto documentato sopra — 133 impressioni, 2 clic e
+0 conversioni in agosto — da riesaminare quando avrà accumulato altro traffico.
 
 ### Tre elementi non censiti altrove
 

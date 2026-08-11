@@ -1,0 +1,87 @@
+---
+/**
+ * Tag Google Ads (remarketing) per TUTTO il sito — 2026-08-11.
+ *
+ * Perche' esiste. Prima di questo componente il tag Ads viveva solo sulle landing
+ * (`LandingExperimentPage`) e dentro `ClickConversionTracking`, che pero' lo carica
+ * SOLO quando qualcuno clicca telefono o WhatsApp: sulle 200+ pagine del sito
+ * (home, blog, 137 sedi) non partiva mai al caricamento. Risultato: tutto il
+ * traffico organico non alimentava alcun pubblico di remarketing, e gli elenchi in
+ * Google Ads erano fermi sotto le 500 persone («Elenco troppo piccolo per essere
+ * pubblicato»).
+ *
+ * Gate del consenso. Qui il tag parte SOLO con consenso marketing (a differenza
+ * delle landing, che lo forzano). Se l'utente rifiuta o non sceglie, non si carica
+ * nulla; se accetta dopo, l'evento `ss:cookie-consent-updated` lo accende senza
+ * ricaricare la pagina.
+ *
+ * Convivenza con gli altri script. Usa lo stesso flag `__landingAdsLoaded` gia'
+ * adottato da LandingExperimentPage e letto da ClickConversionTracking, cosi' i tre
+ * non si configurano a vicenda due volte.
+ */
+interface Props {
+  conversionId?: string;
+}
+
+const { conversionId = 'AW-10983419342' } = Astro.props;
+---
+
+<script is:inline define:vars={{ conversionId }}>
+  (() => {
+    if (!conversionId) return;
+
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+
+    const readConsent = () => {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const loadAdsTag = (consent) => {
+      if (!consent?.marketing) return;
+
+      window.dataLayer = window.dataLayer || [];
+      if (typeof window.gtag !== 'function') {
+        window.gtag = function () { window.dataLayer.push(arguments); };
+      }
+
+      // Il tag e' gia' stato configurato da un altro script della pagina
+      // (landing o ClickConversionTracking): aggiorno solo lo stato del consenso.
+      if (window.__landingAdsLoaded) {
+        window.gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+        return;
+      }
+      window.__landingAdsLoaded = true;
+
+      window.gtag('consent', 'update', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', conversionId, { transport_type: 'beacon' });
+
+      if (!document.querySelector(`script[data-ads-island="${conversionId}"]`)) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${conversionId}`;
+        s.setAttribute('data-ads-island', conversionId);
+        document.head.appendChild(s);
+      }
+    };
+
+    loadAdsTag(readConsent());
+
+    window.addEventListener('ss:cookie-consent-updated', (event) => {
+      loadAdsTag(event?.detail || {});
+    });
+  })();
+</script>

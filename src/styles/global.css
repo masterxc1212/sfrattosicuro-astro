@@ -2134,10 +2134,21 @@ h2 { margin: 0 0 18px; color: var(--blue-navy); }
     cursor: pointer;
   }
 
+  /* «Accetta» in verde e in risalto (2026-08-11). Il pulsante «Rifiuta» resta
+     della stessa misura, nella stessa posizione e con contrasto pieno: la
+     gerarchia e' data da colore e rilievo, non dal nascondere il rifiuto.
+     Non ridurre dimensione, contrasto o leggibilita' di «Rifiuta». */
   .cc__actions .primary {
-    background: var(--blue-navy);
+    background: var(--green-security);
     color: #fff;
-    border-color: var(--blue-navy);
+    border-color: var(--green-security);
+    box-shadow: 0 2px 8px oklch(0.55 0.15 145 / 0.35);
+  }
+
+  .cc__actions .primary:hover,
+  .cc__actions .primary:focus-visible {
+    background: var(--green-security-deep);
+    border-color: var(--green-security-deep);
   }
 
   .cc-manage {

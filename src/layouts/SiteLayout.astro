@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SeoHead from '../components/SeoHead.astro';
 import GA4TrackingIsland from '../components/GA4TrackingIsland.astro';
+import GoogleAdsTagIsland from '../components/GoogleAdsTagIsland.astro';
 import CookieConsentBanner from '../components/CookieConsentBanner.astro';
 import StickyMobileCTA from '../components/StickyMobileCTA.astro';
 import ClickConversionTracking from '../components/ClickConversionTracking.astro';
@@ -52,6 +53,7 @@ const {
     {!hideStickyMobileCta && <StickyMobileCTA />}
     <CookieConsentBanner />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" />
+    <GoogleAdsTagIsland />
     <ClickConversionTracking />
     <WebsiteCallTracking />
     <script is:inline>
