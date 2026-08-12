@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'opposizione-al-precetto-sfratto',
+    title: "Opposizione al precetto nello sfratto: cosa può fare il proprietario",
+    description: "Opposizione al precetto nello sfratto: se blocca l'esecuzione, i termini (20 giorni), il giudice competente e cosa deve fare il proprietario.",
+    excerpt: "Dopo la convalida hai notificato il precetto e l'inquilino propone opposizione al precetto: niente panico. Ecco, dalla parte del locatore, le due forme di opposizione, se davvero blocca lo sfratto, i termini, il giudice competente e la checklist operativa.",
+    lead: "L'opposizione al precetto spaventa i proprietari, ma da sola non ferma l'esecuzione dello sfratto. Vediamo dalla parte del locatore che cos'è, quando l'inquilino può proporla, quando può sospendere il rilascio e come reagire per non perdere tempo.",
+    publishedAt: '2026-08-12',
+    updatedAt: '2026-08-12',
+    category: 'Sfratti',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-08-12. Keyword: opposizione al precetto, vol 320, KD 0 (DataForSEO).",
+    html: `
+<p>Hai ottenuto la convalida dello sfratto, hai fatto notificare il precetto per il rilascio dell'immobile e pensavi di essere ormai a un passo dalla riconsegna delle chiavi. Poi arriva un atto dell'inquilino: un'<strong>opposizione al precetto</strong>. È il momento in cui molti proprietari si spaventano, temendo che tutto si blocchi. In questa guida vediamo, dalla parte del locatore, che cos'è davvero l'opposizione al precetto, quando l'inquilino può proporla, se ferma lo sfratto e cosa conviene fare per non perdere tempo.</p>
+
+<h2>Che cos'è l'opposizione al precetto</h2>
+<p>Il <strong>precetto</strong> è l'atto con cui, dopo la convalida, intimi formalmente all'inquilino di lasciare l'immobile entro un termine (di regola non inferiore a dieci giorni), avvertendolo che in mancanza si procederà con l'esecuzione forzata. L'<strong>opposizione al precetto</strong> è la reazione con cui l'inquilino contesta quel precetto davanti al giudice, chiedendo che l'esecuzione non vada avanti. Non è una nuova causa sul contratto: è un rimedio della fase esecutiva, quella che serve a riprenderti materialmente la casa.</p>
+<p>Attenzione a non confonderla con l'<a href="/blog/opposizione-sfratto-per-morosita/">opposizione allo sfratto per morosità</a>: quella è la contestazione che l'inquilino solleva prima, all'udienza di convalida, quando ancora non hai un titolo. L'opposizione al precetto arriva invece dopo, quando il titolo (l'ordinanza di convalida o la sentenza) esiste già e stai per eseguirlo. Sono due momenti diversi della stessa procedura.</p>
+
+<h2>Le due forme di opposizione: sul diritto e sui vizi formali</h2>
+<p>La legge distingue due tipi di opposizione, con presupposti e tempi molto diversi. Capire in quale delle due rientra l'atto dell'inquilino è fondamentale, perché cambia tutto.</p>
+<h3>Opposizione all'esecuzione (contesta il tuo diritto)</h3>
+<p>Con questa opposizione l'inquilino contesta il <strong>tuo diritto a procedere</strong> con l'esecuzione. In pratica dice: non puoi eseguire lo sfratto perché, ad esempio, ho pagato tutto quello che dovevo, il contratto è stato rinnovato, oppure il titolo su cui ti basi non è valido. Quando l'esecuzione non è ancora iniziata, si propone con un <strong>atto di citazione</strong> davanti al giudice competente per materia, valore e territorio. Non c'è un termine fisso di decadenza: l'inquilino può proporla fino a quando l'esecuzione non è cominciata. Se l'esecuzione è già partita, la stessa contestazione si propone invece con ricorso al giudice dell'esecuzione.</p>
+<h3>Opposizione agli atti esecutivi (contesta la forma)</h3>
+<p>Con questa opposizione l'inquilino non nega il tuo diritto, ma contesta la <strong>regolarità formale</strong> del titolo esecutivo o del precetto: per esempio una notifica fatta male, un importo indicato in modo errato, un termine sbagliato. Qui il termine è preciso e insidioso per chi sbaglia gli atti: <strong>venti giorni</strong> (termine perentorio) dalla notificazione del titolo o del precetto. È il motivo per cui un precetto scritto e notificato in modo impeccabile è la tua migliore difesa: toglie in partenza spazio a questo tipo di eccezioni.</p>
+
+<h2>L'opposizione al precetto blocca lo sfratto?</h2>
+<p>È la domanda che conta di più, e la risposta rassicura: <strong>no, l'opposizione da sola non ferma automaticamente l'esecuzione</strong>. Il semplice deposito dell'atto non sospende nulla. Perché lo sfratto si fermi serve un provvedimento del giudice che disponga la <strong>sospensione</strong>, e il giudice la concede solo se ricorrono <strong>gravi motivi</strong> e su istanza di parte. Un'opposizione palesemente pretestuosa, presentata solo per guadagnare tempo, di norma non ottiene la sospensione.</p>
+<p>Se la sospensione viene concessa, l'esecuzione resta ferma finché la questione non è decisa; contro l'ordinanza che decide sulla sospensione è previsto il reclamo. Trovi un quadro completo dei casi di stop nella guida dedicata alla <a href="/blog/sospensione-esecuzione-sfratto/">sospensione dell'esecuzione dello sfratto</a>.</p>
+
+<h2>Il precetto ha una scadenza: i 90 giorni</h2>
+<p>C'è un dettaglio pratico che il proprietario deve tenere d'occhio. Il precetto <strong>diventa inefficace se entro novanta giorni dalla notifica non è iniziata l'esecuzione</strong>: superato quel termine, dovresti notificarne uno nuovo, con tempi e costi aggiuntivi. Se l'inquilino propone opposizione al precetto, quel termine di novanta giorni resta sospeso e riprende a decorrere dopo. In ogni caso, l'obiettivo del locatore è muoversi con rapidità: prima si avvia l'esecuzione, meno spazio si lascia alle tattiche dilatorie. Sul funzionamento dell'atto trovi tutto nella guida al <a href="/blog/precetto-per-rilascio-immobile/">precetto per rilascio immobile</a>.</p>
+
+<h2>Il giudice competente</h2>
+<p>Molti si chiedono davanti a quale giudice si svolge tutto questo. Per l'opposizione che contesta il diritto (prima dell'inizio dell'esecuzione) è competente il giudice individuato in base alle regole ordinarie di competenza per materia, valore e territorio; una volta iniziata l'esecuzione, subentra il giudice dell'esecuzione. C'è poi una regola utile a tua tutela: se nel precetto non hai indicato un domicilio o una PEC (posta elettronica certificata) nel comune del giudice dell'esecuzione, le opposizioni si propongono davanti al giudice del luogo in cui il precetto è stato notificato. È un altro motivo per cui la redazione dell'atto, curata da un avvocato, non è un dettaglio.</p>
+
+<h2>Cosa deve fare il proprietario: la checklist</h2>
+<p>Ricevere un'opposizione non significa aver perso. Significa gestire bene la fase. Ecco i passi concreti.</p>
+<ul>
+<li><strong>Non fermarti da solo.</strong> L'opposizione non sospende l'esecuzione: finché non c'è un provvedimento del giudice, la procedura può proseguire. Non dare per scontato che tutto sia bloccato.</li>
+<li><strong>Fai analizzare subito l'atto al tuo avvocato.</strong> Serve capire se l'inquilino contesta il tuo diritto (merito) o solo la forma degli atti: la strategia cambia completamente.</li>
+<li><strong>Verifica se c'è un'istanza di sospensione.</strong> Il pericolo vero non è l'opposizione in sé, ma un'eventuale sospensione per gravi motivi. Prepara per tempo le tue controdeduzioni.</li>
+<li><strong>Tieni d'occhio i novanta giorni del precetto.</strong> Avvia l'esecuzione senza indugio, così il termine non scade e non devi ricominciare.</li>
+<li><strong>Conserva le prove.</strong> Ricevute dei pagamenti mancati, diffide, comunicazioni: sono ciò che smonta le opposizioni pretestuose.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<p>Alcuni errori ricorrenti fanno perdere settimane o indeboliscono la posizione del locatore.</p>
+<ul>
+<li><strong>Credere che l'opposizione blocchi tutto.</strong> È l'equivoco più diffuso: senza un provvedimento di sospensione, l'esecuzione va avanti.</li>
+<li><strong>Trascurare la forma del precetto.</strong> Importi, termini e notifica imprecisi aprono la porta all'opposizione agli atti esecutivi entro venti giorni. Un atto curato è la miglior prevenzione.</li>
+<li><strong>Lasciar scadere il precetto.</strong> Aspettare troppo a chiedere l'esecuzione può far superare i novanta giorni e costringerti a notificare di nuovo.</li>
+<li><strong>Reagire d'istinto.</strong> Rispondere senza una strategia legale, o peggio cercare di rientrare in possesso della casa da soli, espone a conseguenze serie: il rilascio deve sempre passare dall'esecuzione ufficiale.</li>
+</ul>
+
+<h2>Domande frequenti sull'opposizione al precetto</h2>
+<h3>L'opposizione al precetto sospende lo sfratto?</h3>
+<p>No, non automaticamente. Serve un provvedimento del giudice che disponga la sospensione, e questo avviene solo in presenza di <strong>gravi motivi</strong> e su istanza di parte. Il solo deposito dell'atto non ferma l'esecuzione.</p>
+<h3>Quali sono i termini per l'opposizione al precetto?</h3>
+<p>Dipende dal tipo. L'opposizione che contesta il <strong>diritto</strong> a procedere non ha un termine fisso di decadenza, ma va proposta prima che l'esecuzione inizi; quella che contesta i <strong>vizi formali</strong> del titolo o del precetto ha un termine perentorio di <strong>venti giorni</strong> dalla notificazione.</p>
+<h3>Qual è il giudice competente?</h3>
+<p>Prima dell'inizio dell'esecuzione è il giudice competente secondo le regole ordinarie per materia, valore e territorio; dopo, il giudice dell'esecuzione. Se nel precetto manca l'elezione di domicilio o la PEC nel comune del giudice, l'opposizione si propone davanti al giudice del luogo in cui il precetto è stato notificato.</p>
+<h3>Quanto allunga i tempi dello sfratto?</h3>
+<p>Non c'è una durata fissa: se non viene concessa la sospensione, l'esecuzione può proseguire in parallelo; se la sospensione viene concessa, i tempi si allungano fino alla decisione. Molto dipende dalla fondatezza dell'opposizione e dalla prontezza con cui il proprietario reagisce.</p>
+<h3>L'inquilino può usarla solo per prendere tempo?</h3>
+<p>Può provarci, ma un'opposizione manifestamente infondata di norma non ottiene la sospensione e può esporlo alle spese di lite. Ecco perché conta avere atti curati e prove solide.</p>
+
+<h2>In sintesi</h2>
+<p>L'<strong>opposizione al precetto</strong> è un passaggio che spaventa più di quanto pesi davvero: non blocca lo sfratto in automatico e, se pretestuosa, difficilmente ottiene una sospensione. Per il proprietario la partita si gioca su due fronti: atti impeccabili fin dal precetto, per non lasciare appigli formali, e rapidità nell'avviare e portare avanti l'esecuzione. Se hai ricevuto un'opposizione o vuoi che la tua procedura sia blindata fin dall'inizio, puoi chiedere una valutazione del tuo caso con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. La disciplina richiamata è contenuta nel codice di procedura civile: articolo 615 (rubricato &laquo;Forma dell'opposizione&raquo;, sull'opposizione all'esecuzione), articolo 617 (&laquo;Forma dell'opposizione&raquo;, sull'opposizione agli atti esecutivi), articolo 624 (&laquo;Sospensione per opposizione all'esecuzione&raquo;), articolo 480 (&laquo;Forma del precetto&raquo;) e articolo 481 (&laquo;Cessazione dell'efficacia del precetto&raquo;). Per il tuo caso concreto è sempre consigliabile rivolgersi a un avvocato.</em></p>
+`,
+  },
+  {
     slug: 'affitti-non-percepiti-tasse',
     title: "Affitti non percepiti: si pagano le tasse sui canoni che l'inquilino non versa?",
     description: "Affitti non percepiti: quando il proprietario paga le tasse sui canoni non incassati, come fermarle e recuperare il credito d'imposta.",
