@@ -1,8 +1,17 @@
 /* Meta Pixel (Sfratto Sicuro 1373903100373659) — pagina grazie.
    Consent-gated (ss_cookie_consent_v1, flag marketing). PageView + Lead + Contact. */
+/* FIX 12 agosto 2026: questo file era l'unico tag della pagina senza opzione
+   eager. Con il banner in pausa dall'11/08 (consentBannerEnabled = false in
+   src/lib/tracking-config.ts) nessuno puo' piu' dare il consenso, quindi il
+   pixel non partiva affatto: verificato in produzione, fbq risultava undefined
+   su grazie.html e le conversioni Meta del form non venivano registrate.
+   EAGER rispecchia quella policy, come per tiktok-pixel-grazie.js e come fanno
+   gia' GA4 e Google Ads su questa pagina.
+   QUANDO SI RIACCENDE IL BANNER: rimettere EAGER = false. */
 (function () {
   var PIXEL_ID = '1373903100373659';
   var CONSENT_KEY = 'ss_cookie_consent_v1';
+  var EAGER = true;
   function readConsent() {
     try { var raw = localStorage.getItem(CONSENT_KEY); return raw ? JSON.parse(raw) : null; }
     catch (e) { return null; }
@@ -42,7 +51,7 @@
     a.__metaFiredAt = Date.now();
     track('Contact', { method: method });
   }, true);
-  var consent = readConsent();
+  var consent = EAGER ? { marketing: true } : readConsent();
   if (consent && consent.marketing) initPixel(consent);
   window.addEventListener('ss:cookie-consent-updated', function (event) {
     var d = (event && event.detail) || {};
