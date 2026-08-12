@@ -328,6 +328,37 @@ const config = isAugust ? {
           if (!kind) return;
           ev('cta_click', { channel: kind, position: (a.className || '').toString().split(' ')[0].slice(0, 40) });
         }, true);
+
+        // === Qualificazione proprietario / inquilino (2026-08-11) ===
+        // Scatta alla SELEZIONE nel form, non all'invio: intercetta anche chi si
+        // qualifica e poi abbandona. E' il pubblico che serve al remarketing Meta —
+        // «si e' dichiarato proprietario ma non ha inviato» — senza inquilini dentro.
+        // La keyword «avvocato per sfratto» attira anche gli inquilini: un pubblico
+        // «tutti i visitatori» farebbe pagare annunci alla controparte.
+        // L'evento inquilino serve a due cose: escluderli dai pubblici e misurare
+        // quanta parte del traffico a pagamento e' controparte.
+        function fbq_(name, params){
+          if (typeof window.fbq === 'function') window.fbq('trackCustom', name, params || {});
+        }
+        var qualificato = {};
+        document.addEventListener('change', function(e){
+          var sel = e.target;
+          if (!sel || sel.name !== 'proprietario') return;
+          var f = sel.form;
+          if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+          var v = sel.value;
+          if (v !== 'proprietario' && v !== 'inquilino') return;
+          if (qualificato[v]) return;              // una sola volta per tipo, per pagina
+          qualificato[v] = true;
+          var src = (f.querySelector('[name=form_source]') || {}).value || '';
+          if (v === 'proprietario') {
+            ev('proprietario_qualificato', { form_source: src });
+            fbq_('ProprietarioQualificato', { form_source: src });
+          } else {
+            ev('inquilino_dichiarato', { form_source: src });
+            fbq_('InquilinoDichiarato', { form_source: src });
+          }
+        }, true);
       })();
     </script>
     <script is:inline>
