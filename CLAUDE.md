@@ -59,27 +59,51 @@ Lo script legge il dist da `C:\Users\danil\.astro-local-builds\retrograde-ring\d
 
 ## Git: line endings (CRLF)
 
-**Il problema**: Edit/Write tool salvano LF, ma il repo usa CRLF (Windows). Senza normalizzazione ogni edit produce diff di centinaia di righe spurie.
+**Il problema**: Edit/Write tool salvano LF, ma il repo usa CRLF (Windows). Senza normalizzazione un edit puo' produrre diff di centinaia di righe spurie.
 
-**Fix manuale** (da PowerShell) per un singolo file:
+### ⚠️ PRIMA REGOLA: quasi sempre NON serve normalizzare nulla
+
+Il `.gitattributes` del repo forza gia' `* text=auto eol=crlf`: Git gestisce la conversione da solo al momento del commit (i warning «CRLF will be replaced by LF» sono quello, non un errore). **Prima di normalizzare a mano, guarda il diff**: se `git diff --stat` mostra solo le righe che hai davvero toccato, non c'e' niente da sistemare.
+
+### ⚠️ IL COMANDO DI NORMALIZZAZIONE CORROMPE L'UTF-8 SE SCRITTO MALE
+
+Incidente reale del 12 agosto 2026 (installazione del pixel TikTok), intercettato ispezionando il diff **prima** del commit. Questo comando — che era quello documentato qui — legge il file con la codepage ANSI di sistema e lo riscrive in UTF-8:
+
 ```powershell
-$f = "src\data\sedi.json"
+# ❌ NON USARE: distrugge i caratteri non ASCII
 $text = Get-Content -Raw $f
-$text = ($text -replace "`r`n","`n") -replace "`n","`r`n"
 [System.IO.File]::WriteAllText("$PWD\$f", $text)
 ```
 
-**Fix di massa** prima di un commit:
+Effetto su `LandingExperimentPage.astro`: `€1.300` → `â‚¬1.300`, `Sì` → `SÃ¬`, `è` → `Ã¨`, `’` → `â€™`, `«»` → `Â«Â»`.
+
+Non e' solo un problema estetico: `replaceAugustPrice` cerca `/€1\.300/` per costruire la promo di agosto. Con il simbolo corrotto la sostituzione non aggancia piu' nulla e la landing mostra **l'hero a €1.000 e le FAQ a €1.300**. Un danno di questo tipo passa il build senza un solo warning.
+
+**Versione corretta** (encoding esplicito in lettura E scrittura), per un singolo file:
+```powershell
+$f = "src\data\sedi.json"
+$text = [System.IO.File]::ReadAllText("$PWD\$f", [System.Text.Encoding]::UTF8)
+$text = ($text -replace "`r`n","`n") -replace "`n","`r`n"
+[System.IO.File]::WriteAllText("$PWD\$f", $text, (New-Object System.Text.UTF8Encoding $false))
+```
+
+Il `$false` di `UTF8Encoding` evita di aggiungere il BOM, che sui file `.astro` e `.json` e' a sua volta una sorgente di problemi.
+
+**Fix di massa** prima di un commit (stessa accortezza):
 ```powershell
 git diff --name-only | ForEach-Object {
   if ($_ -match '\.(js|ts|css|html|md|json|yml|yaml|astro|mjs|cjs|jsx|tsx)$' -and (Test-Path $_)) {
-    $t = Get-Content -Raw $_
-    [System.IO.File]::WriteAllText("$PWD\$_", (($t -replace "`r`n","`n") -replace "`n","`r`n"))
+    $t = [System.IO.File]::ReadAllText("$PWD\$_", [System.Text.Encoding]::UTF8)
+    [System.IO.File]::WriteAllText("$PWD\$_", (($t -replace "`r`n","`n") -replace "`n","`r`n"), (New-Object System.Text.UTF8Encoding $false))
   }
 }
 ```
 
-In alternativa il `.gitattributes` del repo già forza `* text=auto eol=crlf` su Windows, ma Git non riapplica le conversioni a file già modificati: la rinormalizzazione manuale resta utile dopo grossi edit batch.
+**Controllo dopo qualunque normalizzazione** (da bash, prima di committare):
+```bash
+node -e "const fs=require('fs');for(const f of process.argv.slice(1)){const t=fs.readFileSync(f,'utf8');console.log(f,'| mojibake:',/Ã|â€|â‚¬|Â«|Â§/.test(t));}" <file...>
+```
+Se stampa `mojibake: true` la codifica e' andata: `git checkout -- <file>` e riapplica le modifiche senza normalizzare.
 
 ## Struttura Astro
 
