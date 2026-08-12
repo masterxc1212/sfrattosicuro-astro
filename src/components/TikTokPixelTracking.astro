@@ -1,0 +1,146 @@
+---
+/**
+ * TikTokPixelTracking.astro - TikTok Pixel consent-gated + eventi.
+ *
+ * Gemello di MetaPixelTracking.astro: stessa chiave di consenso
+ * (`ss_cookie_consent_v1`), stesso evento di aggiornamento
+ * (`ss:cookie-consent-updated`), stessa opzione `eager`.
+ *
+ * PERCHE' ESISTE (12 agosto 2026). L'account TikTok @sfrattosicuro produce
+ * ~75.000 visualizzazioni al mese con un pubblico molto in target (89% over 45,
+ * 95% Italia) ma non porta ancora traffico al sito. Il pixel viene installato in
+ * anticipo rispetto alle campagne per iniziare ad accumulare il pubblico di
+ * retargeting: senza storico, una campagna TikTok partirebbe cieca.
+ *
+ * Eventi (nomi standard TikTok Web Events):
+ *  - Pageview             : sempre all'init (ttq.page())
+ *  - Contact {method}     : click su wa.me / whatsapp / tel:  (mirror del pixel Meta)
+ *  - SubmitForm           : submit di un form della pagina
+ *  - CompleteRegistration : opzionale via prop `leadOnLoad` (pagina di ringraziamento)
+ *
+ * ID PIXEL: si imposta in UN SOLO punto, `tiktokPixelId` in src/lib/tracking-config.ts.
+ * Finche' e' vuoto questo componente non emette nulla (nessuno script in pagina):
+ * si puo' quindi deployare in sicurezza prima di avere l'ID.
+ */
+interface Props {
+  pixelId?: string;
+  leadOnLoad?: boolean;
+  /**
+   * `eager` = carica senza attendere il consenso. Va passato coerentemente con
+   * gli altri tag della pagina (`trackingEager` sul sito, `eager` sulle landing
+   * pubblicitarie): vedi src/lib/tracking-config.ts per la policy corrente.
+   */
+  eager?: boolean;
+}
+const { pixelId = '', leadOnLoad = false, eager = false } = Astro.props;
+---
+
+{pixelId && (
+<script is:inline define:vars={{ pixelId, leadOnLoad, eager }}>
+  (() => {
+    if (!pixelId) return;
+
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+
+    const readConsent = () => {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const initPixelIfNeeded = (consent) => {
+      if (!consent?.marketing) return;
+      if (window.__tiktokPixelLoaded) return;
+      window.__tiktokPixelLoaded = true;
+
+      // Snippet base TikTok Pixel (events.js)
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        const ttq = (w[t] = w[t] || []);
+        ttq.methods = [
+          'page', 'track', 'identify', 'instances', 'debug', 'on', 'off', 'once',
+          'ready', 'alias', 'group', 'enableCookie', 'disableCookie', 'holdConsent',
+          'revokeConsent', 'grantConsent',
+        ];
+        ttq.setAndDefer = function (obj, method) {
+          obj[method] = function () {
+            obj.push([method].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (let i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function (id) {
+          const inst = (ttq._i || {})[id] || [];
+          for (let i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(inst, ttq.methods[i]);
+          return inst;
+        };
+        ttq.load = function (id, options) {
+          const url = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+          ttq._i = ttq._i || {};
+          ttq._i[id] = [];
+          ttq._i[id]._u = url;
+          ttq._t = ttq._t || {};
+          ttq._t[id] = +new Date();
+          ttq._o = ttq._o || {};
+          ttq._o[id] = options || {};
+          const script = d.createElement('script');
+          script.type = 'text/javascript';
+          script.async = true;
+          script.src = url + '?sdkid=' + id + '&lib=' + t;
+          const first = d.getElementsByTagName('script')[0];
+          first.parentNode.insertBefore(script, first);
+        };
+        ttq.load(pixelId);
+        ttq.page();
+      })(window, document, 'ttq');
+
+      if (leadOnLoad) window.ttq.track('CompleteRegistration');
+    };
+
+    // Invia un evento solo se il pixel e' attivo (consenso dato)
+    const track = (eventName, params) => {
+      if (!window.__tiktokPixelLoaded || !window.ttq || typeof window.ttq.track !== 'function') return;
+      window.ttq.track(eventName, params || {});
+    };
+
+    // Click su WhatsApp / telefono -> Contact (mirror del pixel Meta)
+    const classify = (href) => {
+      if (!href) return null;
+      const h = href.toLowerCase();
+      if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) return 'whatsapp';
+      if (h.indexOf('tel:') === 0) return 'phone';
+      return null;
+    };
+
+    document.addEventListener('click', (ev) => {
+      const a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a) return;
+      const method = classify(a.getAttribute('href'));
+      if (!method) return;
+      // anti-doppio-conteggio sullo stesso link
+      if (a.__ttFiredAt && (Date.now() - a.__ttFiredAt) < 1500) return;
+      a.__ttFiredAt = Date.now();
+      track('Contact', { method });
+    }, true);
+
+    // Submit di un form della pagina -> SubmitForm
+    document.addEventListener('submit', (ev) => {
+      const form = ev.target;
+      if (!form || form.tagName !== 'FORM') return;
+      if (form.__ttFiredAt && (Date.now() - form.__ttFiredAt) < 1500) return;
+      form.__ttFiredAt = Date.now();
+      track('SubmitForm', { form_id: form.id || form.getAttribute('name') || 'form' });
+    }, true);
+
+    const consent = eager ? { marketing: true } : readConsent();
+    if (consent?.marketing) initPixelIfNeeded(consent);
+
+    window.addEventListener('ss:cookie-consent-updated', (event) => {
+      const detail = event?.detail || {};
+      if (detail.marketing) initPixelIfNeeded(detail);
+    });
+  })();
+</script>
+)}

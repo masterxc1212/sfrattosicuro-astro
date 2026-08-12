@@ -45,3 +45,20 @@ export const consentBannerPausedSince = '2026-08-11';
  * accettare) e la diagnosi sarebbe impossibile.
  */
 export const trackingEager = !consentBannerEnabled;
+
+/**
+ * ID del TikTok Pixel - UNICO punto in cui va scritto.
+ *
+ * Installato il 12 agosto 2026 per iniziare ad accumulare il pubblico di
+ * retargeting prima di un'eventuale campagna TikTok Ads: senza storico, una
+ * campagna partirebbe cieca.
+ *
+ * FINCHE' QUESTA STRINGA E' VUOTA IL PIXEL NON VIENE EMESSO: il componente
+ * TikTokPixelTracking.astro non produce alcuno script in pagina e non fa
+ * nessuna richiesta di rete. Per attivarlo:
+ *   1. ads.tiktok.com -> Strumenti -> Eventi -> Eventi web -> Configura evento web
+ *   2. scegliere "Pixel TikTok" + "Installa manualmente il codice"
+ *   3. copiare l'ID (stringa alfanumerica, es. "CQXXXXXXXXXXXXXXXXXX")
+ *   4. incollarlo qui sotto e fare il deploy
+ */
+export const tiktokPixelId = '';

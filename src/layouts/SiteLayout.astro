@@ -7,7 +7,8 @@ import CookieConsentBanner from '../components/CookieConsentBanner.astro';
 import StickyMobileCTA from '../components/StickyMobileCTA.astro';
 import ClickConversionTracking from '../components/ClickConversionTracking.astro';
 import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
-import { consentBannerEnabled, trackingEager } from '../lib/tracking-config';
+import TikTokPixelTracking from '../components/TikTokPixelTracking.astro';
+import { consentBannerEnabled, trackingEager, tiktokPixelId } from '../lib/tracking-config';
 
 interface Props {
   title?: string;
@@ -60,6 +61,7 @@ const {
     <GoogleAdsTagIsland eager={trackingEager} />
     <ClickConversionTracking eager={trackingEager} />
     <WebsiteCallTracking eager={trackingEager} />
+    <TikTokPixelTracking pixelId={tiktokPixelId} eager={trackingEager} />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {
