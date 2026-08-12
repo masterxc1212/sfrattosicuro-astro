@@ -61,4 +61,4 @@ export const trackingEager = !consentBannerEnabled;
  *   3. copiare l'ID (stringa alfanumerica, es. "CQXXXXXXXXXXXXXXXXXX")
  *   4. incollarlo qui sotto e fare il deploy
  */
-export const tiktokPixelId = '';
+export const tiktokPixelId = 'D9U9S8RC77UE01JNU150';
