@@ -16,6 +16,79 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'cessione-di-fabbricato',
+    title: 'Cessione di fabbricato: cos\'è e quando il proprietario deve comunicarla',
+    description: 'Cessione di fabbricato: quando il proprietario deve comunicarla e quando la registrazione del contratto la sostituisce. Modulo, tempi e sanzioni.',
+    excerpt: 'Stai per consegnare le chiavi a un inquilino, a un familiare o a un ospite? La cessione di fabbricato è l\'adempimento di pubblica sicurezza che riguarda proprio te. Ecco, dalla parte del proprietario, quando la comunicazione è obbligatoria, quando basta la registrazione del contratto e cosa si rischia.',
+    lead: 'La cessione di fabbricato spaventa i proprietari, ma con un contratto di locazione registrato spesso non c\'è nulla da fare. Vediamo dalla parte del locatore quando la comunicazione all\'autorità di pubblica sicurezza è davvero obbligatoria, come si fa e quali sanzioni si rischiano.',
+    publishedAt: '2026-08-13',
+    updatedAt: '2026-08-13',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: 'Generato automaticamente 2026-08-13. Keyword: cessione di fabbricato, vol 3600, KD 0 (DataForSEO).',
+    html: `
+<p>Stai per consegnare le chiavi di un immobile a un inquilino, a un familiare o a un ospite e ti chiedi se devi avvisare qualche ufficio? &Egrave; il tema della <strong>cessione di fabbricato</strong>: un adempimento di pubblica sicurezza che riguarda proprio chi mette a disposizione di un'altra persona una casa o un locale. In questa guida vediamo, dalla parte del proprietario, che cos'&egrave; la cessione di fabbricato, quando la comunicazione &egrave; davvero obbligatoria, quando invece basta la registrazione del contratto e cosa si rischia a dimenticarsene.</p>
+
+<h2>Che cos'&egrave; la cessione di fabbricato</h2>
+<p>La <strong>cessione di fabbricato</strong> &egrave; la comunicazione con cui chi mette a disposizione di un'altra persona un immobile deve segnalare all'autorit&agrave; di pubblica sicurezza chi &egrave; il nuovo occupante. Nasce da una norma degli anni Settanta pensata per motivi di sicurezza pubblica: lo Stato vuole sapere chi vive, a qualunque titolo, in un determinato appartamento o locale.</p>
+<p>In concreto, l'obbligo scatta quando cedi a un'altra persona la <strong>propriet&agrave;</strong> o anche solo il <strong>godimento</strong> di un fabbricato (o di una sua parte) per un periodo <strong>superiore a un mese</strong>. Non conta il titolo: pu&ograve; trattarsi di una vendita, di un affitto, di un comodato o di una semplice ospitalit&agrave;. Quello che conta &egrave; che qualcuno diverso da te assuma la disponibilit&agrave; esclusiva dell'immobile per pi&ugrave; di trenta giorni.</p>
+<p>La comunicazione va fatta <strong>entro 48 ore</strong> dalla consegna dell'immobile e deve indicare i tuoi dati, quelli della persona a cui hai ceduto l'uso, gli estremi del suo documento d'identit&agrave; e l'esatta ubicazione dell'immobile. &Egrave; un adempimento semplice, ma con termini stretti.</p>
+
+<h2>Quando il proprietario non deve fare nulla: la registrazione assorbe la comunicazione</h2>
+<p>Ecco la notizia che interessa la maggior parte dei proprietari: se affitti casa con un <strong>contratto di locazione regolarmente registrato</strong> all'Agenzia delle Entrate, <strong>non devi presentare nessuna comunicazione di cessione di fabbricato</strong>. La registrazione del contratto assorbe e sostituisce quell'obbligo.</p>
+<p>La regola &egrave; entrata in vigore nel 2011: da allora, chi registra il contratto ha gi&agrave; assolto anche l'adempimento verso la pubblica sicurezza, perch&eacute; l'Agenzia delle Entrate condivide i dati del contratto con le altre amministrazioni. Vale sia per gli affitti abitativi sia per quelli commerciali, e resta valida anche se scegli la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a>. Lo stesso principio si applica alle compravendite: registrando l'atto di vendita non devi fare alcuna comunicazione separata.</p>
+<p>In pratica, se segui la strada ordinaria &mdash; contratto scritto e <a href="/blog/registrazione-contratto-locazione-online/">registrazione entro trenta giorni</a> &mdash; puoi dimenticarti della cessione di fabbricato. &Egrave; uno dei tanti buoni motivi per non lasciare mai un affitto "in nero" o non registrato.</p>
+
+<h2>Quando la comunicazione resta obbligatoria</h2>
+<p>L'obbligo di comunicare la cessione di fabbricato sopravvive solo in alcuni casi ben precisi, cio&egrave; quando <strong>non c'&egrave; un contratto registrato</strong> che lo assorba. I principali sono:</p>
+<ul>
+  <li><strong>Comodato d'uso gratuito verbale</strong> non soggetto a registrazione: se presti casa a un parente o a un amico senza un contratto scritto registrato, per pi&ugrave; di un mese, devi fare la comunicazione. Prima di scegliere questa formula, valuta bene i <a href="/blog/comodato-uso-gratuito-rischi-proprietario/">rischi del comodato per il proprietario</a>.</li>
+  <li><strong>Ospitalit&agrave; gratuita prolungata</strong>: chi ospita in casa propria una persona per oltre trenta giorni, senza alcun contratto, rientra nell'obbligo.</li>
+  <li><strong>Contratti non soggetti a registrazione in termine fisso</strong>, come alcune situazioni di uso temporaneo dell'immobile non formalizzate con atto registrato.</li>
+</ul>
+<p>In tutti questi casi la comunicazione pu&ograve; essere presentata anche tramite l'apposito <strong>modello informatico</strong> approvato dal Ministero dell'Interno, oltre che con il classico modulo cartaceo.</p>
+
+<h3>Il caso a parte: ospiti e inquilini stranieri</h3>
+<p>C'&egrave; una situazione in cui la comunicazione va fatta <strong>sempre</strong>, anche se il contratto &egrave; registrato: quando dai alloggio, ospiti o affitti a un cittadino <strong>straniero extracomunitario o a un apolide</strong>. Qui interviene una norma diversa, contenuta nel Testo unico sull'immigrazione, che impone a chiunque ceda propriet&agrave; o godimento di un immobile (o anche solo ospiti) uno straniero di darne comunicazione scritta all'autorit&agrave; locale di pubblica sicurezza <strong>entro 48 ore</strong>. Questo obbligo non &egrave; assorbito dalla registrazione del contratto: convivono. Se affitti a un cittadino di un Paese dell'Unione Europea, invece, questa comunicazione specifica non &egrave; richiesta.</p>
+<p>Attenzione a non confondere questa comunicazione con quella degli <a href="/blog/locazioni-brevi/">affitti brevi ai turisti</a>, dove la segnalazione degli ospiti alla Questura entro 24 ore tramite il portale "Alloggiati Web" segue regole proprie.</p>
+
+<h2>Come si fa la comunicazione: modulo, tempi e dove presentarla</h2>
+<p>Quando l'obbligo esiste, la procedura &egrave; lineare. Ecco i passaggi da tenere a mente:</p>
+<ul>
+  <li><strong>Compila il modulo di cessione di fabbricato.</strong> Riporta i tuoi dati, quelli dell'occupante, gli estremi del suo documento d'identit&agrave;, l'ubicazione dell'immobile e il titolo (comodato, ospitalit&agrave;, ecc.).</li>
+  <li><strong>Rispetta il termine di 48 ore</strong> dalla consegna dell'immobile o dall'inizio dell'ospitalit&agrave;. &Egrave; il punto pi&ugrave; delicato: il conteggio parte dal momento in cui l'altra persona entra nella disponibilit&agrave; della casa.</li>
+  <li><strong>Presentala all'autorit&agrave; competente.</strong> A seconda del territorio, il modulo si consegna al Comune o alla Questura; in molti Comuni &egrave; possibile l'invio telematico tramite lo sportello online o il modello ministeriale.</li>
+  <li><strong>Conserva la ricevuta.</strong> &Egrave; la prova di aver adempiuto e ti tutela in caso di controlli.</li>
+</ul>
+
+<h2>Le sanzioni per chi non comunica</h2>
+<p>Dimenticare la comunicazione, quando &egrave; dovuta, ha un costo. Per l'<strong>omessa o tardiva comunicazione di cessione di fabbricato</strong> &egrave; prevista una sanzione amministrativa <strong>da 103 a 1.549 euro</strong>, applicata dal Sindaco, con proventi che vanno al Comune.</p>
+<p>Nel caso degli occupanti stranieri la sanzione &egrave; pi&ugrave; pesante: la mancata comunicazione prevista dal Testo unico sull'immigrazione &egrave; punita con una somma <strong>da 500 a 3.500 euro</strong>. Sono cifre che rendono conveniente mettere in agenda l'adempimento fin dal giorno della consegna delle chiavi.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+  <li><strong>Pensare che l'obbligo esista sempre.</strong> Con un contratto di locazione registrato non devi fare nessuna comunicazione: la registrazione basta.</li>
+  <li><strong>Dimenticare l'immobile prestato "in famiglia".</strong> Il comodato verbale non registrato e l'ospitalit&agrave; gratuita oltre il mese richiedono invece la comunicazione.</li>
+  <li><strong>Trascurare la regola sugli stranieri.</strong> Con un inquilino o un ospite extracomunitario la comunicazione va fatta comunque, anche se il contratto &egrave; registrato.</li>
+  <li><strong>Superare le 48 ore.</strong> Il termine &egrave; breve: organizzati prima della consegna, non dopo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Ho registrato il contratto di affitto: devo fare anche la cessione di fabbricato?</h3>
+<p>No. Se il contratto di locazione &egrave; regolarmente registrato all'Agenzia delle Entrate, la registrazione assorbe e sostituisce la comunicazione di cessione di fabbricato. Fa eccezione il caso in cui l'inquilino sia un cittadino straniero extracomunitario o apolide: in quella situazione la comunicazione va fatta comunque.</p>
+<h3>Presto casa a mio figlio senza contratto: cosa devo fare?</h3>
+<p>Se si tratta di un comodato verbale non registrato, per un periodo superiore a un mese, sei tenuto a presentare la comunicazione di cessione di fabbricato entro 48 ore dalla consegna. Registrare un comodato scritto ti solleva da questo adempimento e mette per iscritto i patti.</p>
+<h3>Entro quanto tempo devo comunicare la cessione di fabbricato?</h3>
+<p>Entro 48 ore dalla consegna dell'immobile o dall'inizio dell'ospitalit&agrave;. &Egrave; lo stesso termine previsto per la comunicazione relativa agli occupanti stranieri.</p>
+<h3>Dove si presenta il modulo?</h3>
+<p>All'autorit&agrave; locale di pubblica sicurezza: a seconda del Comune, l'ufficio competente pu&ograve; essere il Comune stesso o la Questura, spesso con possibilit&agrave; di invio telematico. Conviene verificare le modalit&agrave; sul sito del proprio Comune.</p>
+
+<h2>In sintesi</h2>
+<p>La <strong>cessione di fabbricato</strong> spaventa pi&ugrave; del dovuto: per il proprietario che affitta con un contratto regolarmente registrato non c'&egrave; nulla da fare, perch&eacute; la registrazione assolve gi&agrave; l'obbligo. La comunicazione resta invece necessaria per il comodato verbale, l'ospitalit&agrave; gratuita prolungata e, in ogni caso, quando l'occupante &egrave; uno straniero extracomunitario o apolide. Sapere in quale situazione ti trovi ti evita sanzioni inutili e ti fa gestire la consegna delle chiavi con serenit&agrave;. Se vuoi una valutazione del tuo contratto e della tua posizione, puoi affidarti al servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalit&agrave; puramente informative e non sostituisce una consulenza legale su misura. L'obbligo di comunicazione di cessione di fabbricato &egrave; previsto dall'articolo 12 del decreto-legge 21 marzo 1978, n. 59, convertito dalla legge 18 maggio 1978, n. 191; l'assorbimento dell'obbligo in caso di contratto registrato deriva dalle norme di semplificazione fiscale (articolo 3, comma 3, del D.Lgs. 14 marzo 2011, n. 23, per le locazioni, e articolo 5 del D.L. 13 maggio 2011, n. 70, per le compravendite). L'obbligo relativo agli occupanti stranieri &egrave; disciplinato dall'articolo 7 del Testo unico sull'immigrazione (D.Lgs. 25 luglio 1998, n. 286, rubricato &laquo;Obblighi dell'ospitante e del datore di lavoro&raquo;), con sanzione amministrativa da 500 a 3.500 euro. Per la tua situazione specifica rivolgiti sempre a un professionista.</em></p>
+`,
+  },
+  {
     slug: 'opposizione-al-precetto-sfratto',
     title: "Opposizione al precetto nello sfratto: cosa può fare il proprietario",
     description: "Opposizione al precetto nello sfratto: se blocca l'esecuzione, i termini (20 giorni), il giudice competente e cosa deve fare il proprietario.",
