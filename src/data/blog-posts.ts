@@ -16,6 +16,73 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'mediazione-sfratto-per-morosita',
+    title: "Mediazione e sfratto per morosità: quando è obbligatoria per il proprietario",
+    description: "Mediazione e sfratto per morosità: quando è obbligatoria, perché non blocca la convalida e cosa cambia dopo l'opposizione dell'inquilino.",
+    excerpt: "Devi sfrattare un inquilino moroso e ti chiedi se prima serve la mediazione? Dalla parte del locatore: perché nella convalida non è richiesta, quando diventa obbligatoria dopo l'opposizione e come non perdere tempo.",
+    lead: "La mediazione spaventa i proprietari che vogliono sfrattare un inquilino moroso, ma nella fase di convalida non è richiesta. Vediamo, dalla parte del locatore, quando diventa obbligatoria, perché non blocca il rilascio e come gestire bene i tempi.",
+    publishedAt: '2026-08-14',
+    updatedAt: '2026-08-14',
+    category: 'Sfratti',
+    readingTime: '8 min',
+    sourceNote: "Generato automaticamente 2026-08-14. Keyword: mediazione sfratto per morosità, vol 70, KD 0 (DataForSEO).",
+    html: `
+<p>Hai un inquilino che non paga e vuoi avviare lo <strong>sfratto per morosità</strong>, ma qualcuno ti ha detto che prima devi passare da un tentativo di conciliazione. È una delle domande più frequenti dei proprietari: la <strong>mediazione</strong> è davvero obbligatoria per sfrattare chi non versa il canone? In questa guida, dalla parte del locatore, vediamo quando la mediazione entra in gioco, perché non ferma la convalida dello sfratto e cosa cambia se l'inquilino si oppone. Così saprai esattamente cosa aspettarti e non perderai tempo prezioso.</p>
+
+<h2>Che cos'è la mediazione obbligatoria</h2>
+<p>La <strong>mediazione</strong> è un tentativo di accordo davanti a un organismo terzo (un ente iscritto in un apposito registro del Ministero della Giustizia), guidato da un mediatore che aiuta le parti a trovare un'intesa senza andare fino in fondo con la causa. In alcune materie la legge la rende <strong>obbligatoria</strong>: significa che, prima di poter far decidere la controversia al giudice, bisogna aver almeno provato a mediare. Si parla infatti di <strong>condizione di procedibilità</strong>: senza il tentativo, la domanda al giudice non può proseguire.</p>
+<p>Le controversie in materia di <strong>locazione</strong> (cioè di affitto) rientrano tra quelle per cui la mediazione è, in generale, obbligatoria. Da qui il dubbio del proprietario: se voglio recuperare l'immobile perché l'inquilino non paga, devo prima chiamarlo davanti a un mediatore? La risposta, per la fase iniziale dello sfratto, è rassicurante.</p>
+
+<h2>La buona notizia: per la convalida dello sfratto la mediazione non serve</h2>
+<p>La legge prevede un'eccezione precisa e importante per chi deve sfrattare. Il tentativo di <strong>mediazione nello sfratto per morosità</strong> <strong>non è richiesto</strong> nella fase iniziale, quella sommaria che serve a ottenere la convalida. In pratica puoi far notificare l'<strong>intimazione di sfratto</strong> e presentarti all'udienza per la convalida <strong>senza aver prima avviato alcuna mediazione</strong>. Il procedimento di convalida è costruito per essere rapido, e la legge lo esonera espressamente dal filtro conciliativo.</p>
+<p>Questo vale finché il rito resta quello speciale e veloce dello sfratto. Se l'inquilino non compare o non solleva contestazioni serie, il giudice convalida lo sfratto e tu ottieni il titolo per riprenderti la casa, senza che la mediazione ti abbia mai rallentato. È un punto che molti proprietari ignorano e che li porta, per eccesso di prudenza, a perdere settimane in tentativi non necessari.</p>
+
+<h2>Quando la mediazione diventa obbligatoria: l'opposizione dell'inquilino</h2>
+<p>La musica cambia se l'inquilino si difende. Quando il conduttore compare all'udienza e <strong>si oppone</strong> con eccezioni serie, la procedura non può più restare nel binario veloce: si trasforma in una causa ordinaria. È il cosiddetto <strong>mutamento del rito</strong>. Ed è esattamente da questo momento che la <strong>mediazione</strong> diventa una condizione di procedibilità per proseguire nel merito.</p>
+<h3>Prima puoi già avere in mano l'ordinanza di rilascio</h3>
+<p>C'è però una tutela concreta per il locatore. Anche quando l'inquilino si oppone, se le sue eccezioni non sono fondate su prova scritta il giudice può pronunciare, su tua richiesta, un'<strong>ordinanza provvisoria di rilascio</strong> immediatamente esecutiva. In altre parole: puoi ottenere il titolo per eseguire lo sfratto <strong>mentre</strong> la causa di merito (e la relativa mediazione) va avanti in parallelo. La mediazione, quindi, non ti impedisce di riprendere la casa: incide sulla prosecuzione del giudizio, non sul rilascio già disposto.</p>
+<h3>Il mutamento del rito e il termine per mediare</h3>
+<p>Con il passaggio al rito ordinario, il giudice verifica che la mediazione sia stata tentata. Se non lo è stata, <strong>assegna alle parti un termine di quindici giorni</strong> per presentare la domanda di mediazione. Non serve quindi muoversi in anticipo: sarà il giudice a fissare il momento in cui il tentativo va fatto. Sapere che questo passaggio scatta solo dopo l'opposizione ti aiuta a non confondere le fasi e a programmare bene i tempi con il tuo avvocato. Puoi approfondire la contestazione dell'inquilino nella guida all'<a href="/blog/opposizione-sfratto-per-morosita/">opposizione allo sfratto per morosità</a>.</p>
+
+<h2>Come funziona la mediazione in concreto</h2>
+<p>Se il momento arriva, ecco cosa succede in pratica, senza tecnicismi.</p>
+<ul>
+<li><strong>Dove si deposita.</strong> La domanda si presenta a un organismo di mediazione del luogo del giudice competente. Di norma se ne occupa l'avvocato, che ti assiste anche negli incontri.</li>
+<li><strong>Il primo incontro.</strong> Le parti si confrontano davanti al mediatore. Se non c'è accordo o l'altra parte non partecipa, la condizione di procedibilità si considera comunque soddisfatta e la causa può proseguire.</li>
+<li><strong>La durata.</strong> La procedura ha tempi definiti: deve concludersi entro sei mesi, prorogabili (quando la mediazione è disposta dal giudice, per una sola volta di ulteriori tre mesi), così da non allungare in modo indefinito il giudizio.</li>
+<li><strong>L'esito.</strong> Se si trova un'intesa, l'accordo firmato ha valore vincolante e può diventare titolo per l'esecuzione. Se salta, si torna davanti al giudice per il merito.</li>
+</ul>
+<p>Vista dalla parte del proprietario, la mediazione non è solo un adempimento: a volte è l'occasione per chiudere in fretta con un piano di rientro o con la riconsegna concordata delle chiavi, evitando l'attesa della sentenza.</p>
+
+<h2>Cosa rischia il proprietario se la trascura</h2>
+<p>Ignorare la mediazione, quando è dovuta, ha una conseguenza netta: la <strong>domanda di merito diventa improcedibile</strong>. Se dopo il mutamento del rito nessuno avvia la mediazione nel termine assegnato dal giudice, il giudizio si blocca. Attenzione: questo riguarda la causa di merito, non necessariamente l'ordinanza di rilascio già ottenuta, che resta valida come titolo esecutivo. Ma per definire la controversia (ad esempio per la condanna al pagamento dei canoni arretrati) il passaggio va rispettato. Per questo conviene affidarsi a un avvocato che gestisca i termini con precisione. Sul recupero delle somme trovi la guida ai <a href="/blog/recupero-canoni-arretrati-dopo-sfratto/">canoni arretrati dopo lo sfratto</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Avviare la mediazione prima di intimare lo sfratto.</strong> Nella fase di convalida non serve: partire con una mediazione anticipata significa quasi sempre perdere tempo utile.</li>
+<li><strong>Credere che l'opposizione fermi tutto.</strong> Anche dopo il mutamento del rito puoi ottenere l'ordinanza provvisoria di rilascio ed eseguire lo sfratto mentre la mediazione prosegue.</li>
+<li><strong>Dimenticare il termine di quindici giorni.</strong> Quando il giudice assegna il termine per mediare, lasciarlo scadere rende improcedibile la domanda di merito.</li>
+<li><strong>Presentarsi impreparati al primo incontro.</strong> Portare conteggio dei canoni, diffide e comunicazioni rafforza la tua posizione e può favorire un accordo rapido.</li>
+</ul>
+
+<h2>Domande frequenti sulla mediazione nello sfratto per morosità</h2>
+<h3>Devo fare la mediazione prima di intimare lo sfratto per morosità?</h3>
+<p>No. Nella fase di convalida lo sfratto è esonerato dal tentativo di mediazione. Puoi notificare l'intimazione e chiedere la convalida senza alcuna mediazione preventiva.</p>
+<h3>Da quando la mediazione diventa obbligatoria?</h3>
+<p>Solo se l'inquilino si oppone con eccezioni serie e la procedura si trasforma in causa ordinaria (mutamento del rito). Da quel momento la mediazione è condizione di procedibilità del giudizio di merito.</p>
+<h3>La mediazione blocca lo sfratto?</h3>
+<p>No. Anche in caso di opposizione il giudice può concederti un'ordinanza provvisoria di rilascio immediatamente esecutiva. Il rilascio può quindi procedere mentre la mediazione si svolge in parallelo.</p>
+<h3>Chi deve avviare la mediazione e in quanto tempo?</h3>
+<p>Dopo il mutamento del rito il giudice assegna alle parti un termine di quindici giorni per presentare la domanda. In concreto se ne occupa l'avvocato, insieme all'organismo di mediazione competente.</p>
+<h3>Cosa succede se l'inquilino non si presenta alla mediazione?</h3>
+<p>Se l'altra parte non partecipa senza giustificato motivo, la condizione di procedibilità si considera comunque soddisfatta e la causa prosegue; la mancata partecipazione può inoltre essere valutata dal giudice a sfavore di chi si è sottratto.</p>
+
+<h2>In sintesi</h2>
+<p>La <strong>mediazione nello sfratto per morosità</strong> spaventa più del dovuto. Nella fase che conta di più per il proprietario, quella della convalida, <strong>non è richiesta</strong>: puoi intimare lo sfratto e ottenere il titolo senza passare dal mediatore. Diventa obbligatoria solo se l'inquilino si oppone e la causa si trasforma in giudizio ordinario, ma anche allora puoi ottenere l'ordinanza di rilascio ed eseguire lo sfratto in parallelo. La chiave è gestire fasi e termini con metodo. Se vuoi avviare la procedura nel modo giusto o hai già ricevuto un'opposizione, puoi chiedere una valutazione del tuo caso con il servizio di <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. La disciplina richiamata è contenuta nel decreto legislativo 4 marzo 2010 n. 28 (mediazione finalizzata alla conciliazione), in particolare l'articolo 5 (&laquo;Condizione di procedibilit&agrave; e rapporti con il processo&raquo;), che alla materia della locazione affianca l'esclusione della mediazione nei procedimenti per convalida di licenza o sfratto fino al mutamento del rito, e nel codice di procedura civile agli articoli 665 (ordinanza provvisoria di rilascio in caso di opposizione) e 667 (mutamento del rito). Il quadro tiene conto della riforma Cartabia (decreto legislativo 149/2022) e dei successivi correttivi, incluso il decreto legislativo 216/2024, che ha ridefinito in sei mesi la durata del procedimento di mediazione. Per il tuo caso concreto rivolgiti sempre a un avvocato.</em></p>
+`,
+  },
+  {
     slug: 'cessione-di-fabbricato',
     title: 'Cessione di fabbricato: cos\'è e quando il proprietario deve comunicarla',
     description: 'Cessione di fabbricato: quando il proprietario deve comunicarla e quando la registrazione del contratto la sostituisce. Modulo, tempi e sanzioni.',
