@@ -140,11 +140,17 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
                 >
               </div>
 
+              <div class="form-group">
+                <label for="email-hero" class="form-label">Email</label>
+                <input type="email" name="email" id="email-hero" class="form-input"
+                       placeholder="Per ricevere il riepilogo scritto" autocomplete="email">
+              </div>
+
               {hero.ownerField && (
                 <div class="form-group">
-                  <label for="owner-hero" class="form-label">Sei proprietario/locatore? *</label>
-                  <select name="proprietario" id="owner-hero" class="form-select" required aria-required="true">
-                    <option value="">Seleziona…</option>
+                  <label for="owner-hero" class="form-label">Sei proprietario/locatore?</label>
+                  <select name="proprietario" id="owner-hero" class="form-select">
+                    <option value="">Preferisco dirlo al telefono</option>
                     <option value="proprietario">Sì, sono proprietario/locatore</option>
                     <option value="inquilino">No, sono l'inquilino</option>
                   </select>

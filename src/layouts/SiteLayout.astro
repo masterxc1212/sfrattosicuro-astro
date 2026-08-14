@@ -8,6 +8,8 @@ import StickyMobileCTA from '../components/StickyMobileCTA.astro';
 import ClickConversionTracking from '../components/ClickConversionTracking.astro';
 import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
 import TikTokPixelTracking from '../components/TikTokPixelTracking.astro';
+import MetaPixelTracking from '../components/MetaPixelTracking.astro';
+import BehaviourTracking from '../components/BehaviourTracking.astro';
 import { consentBannerEnabled, trackingEager, tiktokPixelId } from '../lib/tracking-config';
 
 interface Props {
@@ -62,6 +64,11 @@ const {
     <ClickConversionTracking eager={trackingEager} />
     <WebsiteCallTracking eager={trackingEager} />
     <TikTokPixelTracking pixelId={tiktokPixelId} eager={trackingEager} />
+    {/* Pixel Meta esteso a tutto il sito il 2026-08-14: prima viveva solo sulle
+        landing, quindi home, blog e 137 pagine sede non alimentavano alcun
+        pubblico di remarketing. Stessa lacuna gia' chiusa per Google Ads. */}
+    <MetaPixelTracking eager={trackingEager} />
+    <BehaviourTracking />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {

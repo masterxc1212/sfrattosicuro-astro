@@ -76,23 +76,28 @@ const {
             </div>
 
             <div>
-              <label for="citta-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Città immobile *</label>
-              <input type="text" name="città" id="citta-v3" class="form-input" placeholder="In che città si trova l'immobile?" required aria-required="true">
+              <label for="email-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Email</label>
+              <input type="email" name="email" id="email-v3" class="form-input" placeholder="Per ricevere il riepilogo scritto" autocomplete="email">
             </div>
 
             <div>
-              <label for="owner-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Sei proprietario/locatore? *</label>
-              <select name="proprietario" id="owner-v3" class="form-select" required aria-required="true">
-                <option value="">Seleziona…</option>
+              <label for="citta-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Città immobile</label>
+              <input type="text" name="città" id="citta-v3" class="form-input" placeholder="In che città si trova l'immobile?">
+            </div>
+
+            <div>
+              <label for="owner-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Sei proprietario/locatore?</label>
+              <select name="proprietario" id="owner-v3" class="form-select">
+                <option value="">Preferisco dirlo al telefono</option>
                 <option value="proprietario">Sì, sono proprietario/locatore</option>
                 <option value="inquilino">No, sono l'inquilino</option>
               </select>
             </div>
 
             <div>
-              <label for="morosita-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Qual è la situazione dei pagamenti? *</label>
-              <select name="morosita" id="morosita-v3" class="form-select" required aria-required="true">
-                <option value="">Seleziona…</option>
+              <label for="morosita-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Qual è la situazione dei pagamenti?</label>
+              <select name="morosita" id="morosita-v3" class="form-select">
+                <option value="">Preferisco dirlo al telefono</option>
                 <option value="Contratto scaduto/disdettato (finita locazione)">Paga, ma il contratto è scaduto o disdettato (finita locazione)</option>
                 <option value="Paga in ritardo o parzialmente">Paga in ritardo o parzialmente</option>
                 <option value="1-2 mesi">Non paga da 1-2 mesi</option>

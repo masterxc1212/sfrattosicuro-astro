@@ -1,0 +1,131 @@
+---
+/**
+ * BehaviourTracking.astro — capire cosa fanno gli utenti sulla pagina (2026-08-14).
+ *
+ * PERCHE'. Su 688 utenti in 28 giorni solo 26 toccano il modulo (3,8%) e 12 provano
+ * a inviarlo. Sappiamo QUANTI se ne vanno, non DOVE. Questi eventi servono a
+ * rispondere a: fin dove leggono? quali sezioni vedono davvero? su quale campo del
+ * modulo si fermano? quanto restano prima di uscire?
+ *
+ * Tutti gli eventi vanno in GA4 con `gtag`. Se il consenso marketing manca, `gtag`
+ * non esiste e le chiamate cadono senza errori: nessun dato raccolto, nessun crash.
+ *
+ * EVENTI EMESSI
+ *   scroll_depth        {percent}                 25 / 50 / 75 / 90 — una volta ciascuno
+ *   section_view        {section}                 sezione entrata per meta' nel viewport
+ *   form_field_focus    {field, form_source}      primo tocco su ogni campo
+ *   form_field_abandon  {last_field, form_source} ultimo campo toccato prima di uscire
+ *   time_on_page        {seconds}                 15 / 30 / 60 / 120 — una volta ciascuno
+ *   rage_click          {target}                  3+ click in 1s sullo stesso elemento
+ *
+ * NOTA. Questi eventi rispondono al "dove" ma non al "perche'". Per quello serve la
+ * registrazione delle sessioni: vedi ClarityTracking.astro, gia' pronto e inerte
+ * finche' manca l'ID in tracking-config.ts.
+ */
+---
+
+<script is:inline>
+  (function () {
+    function ev(name, params) {
+      if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+    }
+
+    /* ---- profondita' di lettura ---- */
+    var soglie = [25, 50, 75, 90];
+    var viste = {};
+    function checkScroll() {
+      var doc = document.documentElement;
+      var alt = doc.scrollHeight - window.innerHeight;
+      if (alt <= 0) return;
+      var pct = Math.round((window.scrollY / alt) * 100);
+      for (var i = 0; i < soglie.length; i++) {
+        var s = soglie[i];
+        if (pct >= s && !viste[s]) { viste[s] = true; ev('scroll_depth', { percent: s }); }
+      }
+    }
+    var tScroll = null;
+    window.addEventListener('scroll', function () {
+      if (tScroll) return;
+      tScroll = setTimeout(function () { tScroll = null; checkScroll(); }, 250);
+    }, { passive: true });
+    checkScroll();
+
+    /* ---- quali sezioni vengono davvero viste ---- */
+    if ('IntersectionObserver' in window) {
+      var sezioni = document.querySelectorAll('section[id], main[id]');
+      if (sezioni.length) {
+        var visteSez = {};
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            var id = e.target.id;
+            if (!id || visteSez[id]) return;
+            visteSez[id] = true;
+            ev('section_view', { section: id });
+          });
+        }, { threshold: 0.5 });
+        Array.prototype.forEach.call(sezioni, function (s) { io.observe(s); });
+      }
+    }
+
+    /* ---- dove si ferma chi compila il modulo ---- */
+    var ultimoCampo = '';
+    var ultimoForm = '';
+    var campiVisti = {};
+    document.addEventListener('focusin', function (e) {
+      var el = e.target;
+      if (!el || !el.name) return;
+      var f = el.form;
+      if (!f || !f.matches || !f.matches('form[action="/php/invia-email.php"]')) return;
+      var src = (f.querySelector('[name=form_source]') || {}).value || '';
+      ultimoCampo = el.name;
+      ultimoForm = src;
+      var chiave = src + ':' + el.name;
+      if (campiVisti[chiave]) return;
+      campiVisti[chiave] = true;
+      ev('form_field_focus', { field: el.name, form_source: src });
+    });
+
+    var inviato = false;
+    document.addEventListener('submit', function (e) {
+      if (e.target && e.target.matches && e.target.matches('form[action="/php/invia-email.php"]')) inviato = true;
+    }, true);
+
+    // `visibilitychange` invece di `unload`: e' l'unico che scatta in modo
+    // affidabile su iOS, dove muore la maggior parte del traffico mobile.
+    var abbandonoInviato = false;
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState !== 'hidden') return;
+      if (abbandonoInviato || inviato || !ultimoCampo) return;
+      abbandonoInviato = true;
+      ev('form_field_abandon', { last_field: ultimoCampo, form_source: ultimoForm });
+    });
+
+    /* ---- quanto restano ---- */
+    [15, 30, 60, 120].forEach(function (s) {
+      setTimeout(function () {
+        if (document.visibilityState === 'visible') ev('time_on_page', { seconds: s });
+      }, s * 1000);
+    });
+
+    /* ---- click di frustrazione: 3+ volte sullo stesso punto in 1 secondo ---- */
+    var ultimoTarget = null, conta = 0, tRage = 0;
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var ora = Date.now();
+      if (t === ultimoTarget && ora - tRage < 1000) {
+        conta++;
+        if (conta === 3) {
+          var etichetta = (t.tagName || '').toLowerCase() +
+            (t.id ? '#' + t.id : '') +
+            (t.className && typeof t.className === 'string' ? '.' + t.className.split(' ')[0] : '');
+          ev('rage_click', { target: etichetta.slice(0, 60) });
+        }
+      } else {
+        conta = 1;
+        ultimoTarget = t;
+      }
+      tRage = ora;
+    }, true);
+  })();
+</script>
