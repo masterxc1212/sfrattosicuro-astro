@@ -62,3 +62,26 @@ export const trackingEager = !consentBannerEnabled;
  *   4. incollarlo qui sotto e fare il deploy
  */
 export const tiktokPixelId = 'D9U9S8RC77UE01JNU150';
+
+/**
+ * ID progetto Microsoft Clarity - UNICO punto in cui va scritto.
+ *
+ * Clarity da' registrazioni delle sessioni e mappe di calore: risponde al PERCHE'
+ * la gente non compila, dove gli eventi GA4 rispondono solo al DOVE si ferma.
+ * E' gratuito e senza limiti di traffico.
+ *
+ * FINCHE' QUESTA STRINGA E' VUOTA CLARITY NON VIENE CARICATO: il componente
+ * ClarityTracking.astro non produce alcuno script in pagina e non fa nessuna
+ * richiesta di rete. Per attivarlo:
+ *   1. clarity.microsoft.com -> accedi con account Microsoft o Google
+ *   2. "New project": nome "Sfratto Sicuro", sito www.sfrattosicuro.it
+ *   3. scegliere "Install manually" e copiare l'ID dallo snippet:
+ *      e' la stringa dentro clarity.ms/tag/XXXXXXXXXX (10 caratteri circa)
+ *   4. incollarlo qui sotto e fare il deploy
+ *
+ * NOTA PRIVACY: Clarity maschera per impostazione predefinita il contenuto dei
+ * campi di input, ma la registrazione della sessione resta un trattamento piu'
+ * invasivo dell'analitica. Quando il banner tornera' attivo, va citato nella
+ * cookie policy.
+ */
+export const clarityProjectId = '';

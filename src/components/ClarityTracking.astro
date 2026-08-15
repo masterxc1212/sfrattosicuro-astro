@@ -1,0 +1,111 @@
+---
+/**
+ * ClarityTracking.astro — Microsoft Clarity: registrazioni di sessione + mappe di calore.
+ *
+ * Gemello di TikTokPixelTracking.astro / MetaPixelTracking.astro: stessa chiave di
+ * consenso (`ss_cookie_consent_v1`), stesso evento di aggiornamento
+ * (`ss:cookie-consent-updated`), stessa opzione `eager`.
+ *
+ * PERCHE' ESISTE (14 agosto 2026). Gli eventi di BehaviourTracking.astro dicono
+ * DOVE si ferma la gente — scroll, sezioni viste, ultimo campo toccato prima di
+ * uscire. Non dicono PERCHE'. Su 688 utenti in 28 giorni solo 26 toccano il modulo
+ * e 12 tentano l'invio: per capire cosa succede in quei pochi secondi serve vedere
+ * la sessione, non un contatore. Clarity e' gratuito e senza limiti di traffico.
+ *
+ * COSA AGGIUNGE rispetto a GA4:
+ *  - registrazione della sessione (replay del movimento, click, scroll, esitazioni)
+ *  - mappe di calore per click e per profondita' di scorrimento
+ *  - rilevazione automatica di click rabbiosi, click morti e scroll all'indietro
+ *  - segmentazione: si puo' guardare SOLO chi ha abbandonato il modulo
+ *
+ * PRIVACY. Clarity maschera per impostazione predefinita il contenuto dei campi di
+ * input: nei replay i dati digitati non si vedono. Resta comunque un trattamento
+ * piu' invasivo della semplice analitica, ed e' bene che la cookie policy lo citi
+ * quando il banner tornera' attivo (vedi src/lib/tracking-config.ts).
+ *
+ * ID PROGETTO: si imposta in UN SOLO punto, `clarityProjectId` in
+ * src/lib/tracking-config.ts. Finche' e' vuoto questo componente non emette nulla
+ * — nessuno script in pagina, nessuna richiesta di rete — quindi si puo' deployare
+ * in sicurezza prima di avere l'ID.
+ */
+interface Props {
+  projectId?: string;
+  /**
+   * `eager` = carica senza attendere il consenso. Va passato coerentemente con gli
+   * altri tag della pagina (`trackingEager` sul sito, `eager` sulle landing).
+   */
+  eager?: boolean;
+}
+const { projectId = '', eager = false } = Astro.props;
+---
+
+{projectId && (
+<script is:inline define:vars={{ projectId, eager }}>
+  (() => {
+    if (!projectId) return;
+
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+
+    const readConsent = () => {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const initClarityIfNeeded = (consent) => {
+      // Clarity registra il comportamento: lo trattiamo come "marketing",
+      // coerentemente con gli altri pixel della pagina.
+      if (!consent?.marketing) return;
+      if (window.__clarityLoaded) return;
+      window.__clarityLoaded = true;
+
+      // Snippet ufficiale Microsoft Clarity
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', projectId);
+
+      // Etichette per filtrare i replay senza doverli guardare tutti.
+      // In Clarity diventano filtri su "Custom tags".
+      try {
+        const path = location.pathname;
+        const tipo = /^\/landing|^\/sfratto-agosto/.test(path) ? 'landing'
+                   : path === '/grazie.html' ? 'grazie'
+                   : /^\/blog/.test(path) ? 'blog'
+                   : /^\/sedi/.test(path) ? 'sede'
+                   : 'sito';
+        window.clarity('set', 'tipo_pagina', tipo);
+
+        const gclid = new URLSearchParams(location.search).get('gclid');
+        if (gclid) window.clarity('set', 'da_annuncio', 'si');
+      } catch (e) { /* le etichette sono un di piu': non devono mai rompere la pagina */ }
+
+      // Aggancio agli eventi che gia' emettiamo: cosi' in Clarity si possono
+      // isolare le sessioni di chi ha abbandonato il modulo o si e' spazientito.
+      const segnala = (nome) => {
+        try { if (typeof window.clarity === 'function') window.clarity('event', nome); } catch (e) {}
+      };
+      document.addEventListener('submit', (e) => {
+        if (e.target && e.target.matches && e.target.matches('form[action="/php/invia-email.php"]')) {
+          segnala('modulo_inviato');
+        }
+      }, true);
+      document.addEventListener('change', (e) => {
+        const s = e.target;
+        if (s && s.name === 'proprietario' && s.value) segnala('qualificato_' + s.value);
+      }, true);
+    };
+
+    initClarityIfNeeded(eager ? { marketing: true } : readConsent());
+
+    window.addEventListener('ss:cookie-consent-updated', (event) => {
+      initClarityIfNeeded(event?.detail || {});
+    });
+  })();
+</script>
+)}

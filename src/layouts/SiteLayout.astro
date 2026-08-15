@@ -10,7 +10,8 @@ import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
 import TikTokPixelTracking from '../components/TikTokPixelTracking.astro';
 import MetaPixelTracking from '../components/MetaPixelTracking.astro';
 import BehaviourTracking from '../components/BehaviourTracking.astro';
-import { consentBannerEnabled, trackingEager, tiktokPixelId } from '../lib/tracking-config';
+import ClarityTracking from '../components/ClarityTracking.astro';
+import { consentBannerEnabled, trackingEager, tiktokPixelId, clarityProjectId } from '../lib/tracking-config';
 
 interface Props {
   title?: string;
@@ -69,6 +70,7 @@ const {
         pubblico di remarketing. Stessa lacuna gia' chiusa per Google Ads. */}
     <MetaPixelTracking eager={trackingEager} />
     <BehaviourTracking />
+    <ClarityTracking projectId={clarityProjectId} eager={trackingEager} />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {

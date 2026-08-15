@@ -9,7 +9,8 @@ import MetaPixelTracking from '../../components/MetaPixelTracking.astro';
 import TikTokPixelTracking from '../../components/TikTokPixelTracking.astro';
 import LandingExperimentTracking from '../../components/LandingExperimentTracking.astro';
 import BehaviourTracking from '../../components/BehaviourTracking.astro';
-import { tiktokPixelId } from '../../lib/tracking-config';
+import ClarityTracking from '../../components/ClarityTracking.astro';
+import { tiktokPixelId, clarityProjectId } from '../../lib/tracking-config';
 import { pricing } from '../../lib/business';
 
 import LandingOriginalHeaderSection from '../../components/landing/LandingOriginalHeaderSection.astro';
@@ -276,6 +277,7 @@ const config = isAugust ? {
     <TikTokPixelTracking pixelId={tiktokPixelId} eager />
     <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <BehaviourTracking />
+    <ClarityTracking projectId={clarityProjectId} eager />
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>
