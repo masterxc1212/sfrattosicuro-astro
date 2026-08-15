@@ -101,6 +101,12 @@ foreach ($legacy in $legacyFiles) {
 Write-Host "=== PAGINE PRINCIPALI ===" -ForegroundColor Cyan
 $mainPages = @("index.html","chi-siamo/index.html","servizi/index.html","sedi/index.html",
                "blog/index.html","landing-v2/index.html","sitemap.xml",
+               # Landing della campagna Ads: mancavano fino al 2026-08-15 e questo
+               # script non le ha MAI caricate. Le modifiche alle landing passavano
+               # solo da GitHub Actions: quando Actions falliva, restavano indietro
+               # in silenzio. Non toglierle da qui.
+               "landing-v3/index.html","landing-v3-agosto/index.html",
+               "landing-v4/index.html","sfratto-agosto/index.html","grazie.html",
                "privacy-policy/index.html","cookie-policy/index.html","termini/index.html",
                "favicon.ico","favicon.svg","robots.txt")
 foreach ($p in $mainPages) {
