@@ -84,4 +84,4 @@ export const tiktokPixelId = 'D9U9S8RC77UE01JNU150';
  * invasivo dell'analitica. Quando il banner tornera' attivo, va citato nella
  * cookie policy.
  */
-export const clarityProjectId = '';
+export const clarityProjectId = 'y2mljrqg7c';
