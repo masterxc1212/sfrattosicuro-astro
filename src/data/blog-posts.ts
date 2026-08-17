@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'bollette-intestate-proprietario-inquilino-non-paga',
+    title: "Inquilino che non paga le bollette intestate al proprietario: cosa fare",
+    description: "Inquilino che non paga le bollette intestate al proprietario: come recuperare i consumi e quando gli oneri non pagati aprono la strada allo sfratto.",
+    excerpt: "Le utenze sono a tuo nome e l'inquilino non paga i consumi? Dalla parte del proprietario: perche il fornitore chiede a te, come recuperare le somme e quando le bollette non pagate aprono la strada allo sfratto.",
+    lead: "Quando l'inquilino non paga le bollette intestate al proprietario, il fornitore chiede i soldi a te. Vediamo, dalla parte del locatore, come recuperare i consumi dall'inquilino e quando il mancato pagamento puo portare allo sfratto.",
+    publishedAt: '2026-08-17',
+    updatedAt: '2026-08-17',
+    category: 'Sfratti',
+    readingTime: '8 min',
+    sourceNote: "Generato automaticamente 2026-08-17. Keyword: inquilino non paga bollette intestate al proprietario, vol 50, KD <=30 (DataForSEO).",
+    html: `
+<p>Hai dato in affitto un appartamento con la <strong>luce, il gas o l'acqua ancora intestati a te</strong> e adesso l'inquilino non paga i consumi: le fatture continuano ad arrivare a tuo nome e il fornitore chiede i soldi a te. È una situazione più frequente di quanto si pensi, tipica di quando non si è provveduto alla voltura delle utenze alla consegna delle chiavi. Il caso è quello dell'<strong>inquilino che non paga le bollette intestate al proprietario</strong>: vediamo, dalla parte del locatore, perché quelle fatture restano un tuo problema verso il fornitore, come recuperare le somme e quando il mancato pagamento dei consumi può diventare motivo di sfratto.</p>
+
+<h2>Perché le bollette intestate a te restano un tuo problema</h2>
+<p>Se il contratto di fornitura (energia elettrica, gas, acqua) è intestato a te proprietario, il <strong>fornitore considera te l'unico debitore</strong>: non gli interessa chi vive nell'immobile o chi ha materialmente consumato. Anche se l'inquilino produce i consumi, la società delle utenze può chiedere il pagamento solo a chi ha firmato il contratto, cioè a te. In caso di fatture non saldate rischi il <strong>distacco della fornitura</strong> e la segnalazione come cattivo pagatore, per un debito che di fatto non è tuo.</p>
+<p>Per questo, quando le utenze sono a nome tuo, conviene quasi sempre <strong>pagare il fornitore per fermare i danni</strong> e poi rivalerti sull'inquilino: è il modo più rapido per proteggere il tuo nome, mentre attivi gli strumenti per farti restituire quanto anticipato.</p>
+
+<h2>Consumi e oneri accessori: cosa dice il contratto</h2>
+<p>Nel rapporto tra proprietario e inquilino, le spese di <strong>acqua, energia elettrica, riscaldamento e condizionamento</strong> sono considerate <strong>oneri accessori</strong> e, per legge, sono interamente a carico del conduttore, salvo che il contratto preveda diversamente. In altre parole: chi vive nell'immobile paga i consumi che genera. Poco importa che l'utenza sia intestata a te; nei rapporti interni il costo grava sull'inquilino.</p>
+<p>C'è però una regola di trasparenza da rispettare prima di pretendere il pagamento: il conduttore ha <strong>diritto di ricevere l'indicazione specifica delle spese</strong>, con i criteri di ripartizione, e di prendere visione dei documenti giustificativi (le bollette). Il pagamento è dovuto <strong>entro due mesi dalla richiesta</strong>. Tradotto in pratica: non basta dire "mi devi le bollette"; devi presentare all'inquilino il conteggio e le fatture, così la tua richiesta è chiara e difficilmente contestabile.</p>
+
+<h2>Inquilino che non paga le bollette intestate al proprietario: cosa fare, passo per passo</h2>
+<p>Se l'inquilino non paga i consumi, muoviti in modo ordinato: ogni passaggio prepara il successivo e ti costruisce le prove utili davanti al giudice.</p>
+<ul>
+<li><strong>Raccogli e conteggia le fatture.</strong> Metti insieme le bollette del periodo, calcola l'importo di competenza dell'inquilino e prepara un prospetto chiaro. Se i consumi riguardano anche periodi in cui l'immobile era vuoto, tienili separati.</li>
+<li><strong>Invia una richiesta scritta.</strong> Comunica per iscritto (meglio con raccomandata o PEC) l'importo dovuto, allegando il conteggio e copia delle fatture. È l'atto che fa partire i due mesi per il pagamento e rispetta il diritto dell'inquilino all'informazione.</li>
+<li><strong>Passa alla diffida e messa in mora.</strong> Se il termine scade senza pagamento, invia una <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>: intima il pagamento entro un breve termine, avvertendo che in mancanza agirai per vie legali. Serve a mettere nero su bianco l'inadempimento.</li>
+<li><strong>Chiedi il decreto ingiuntivo.</strong> Con il contratto, le fatture e la prova di aver pagato il fornitore, hai la prova scritta per ottenere un <a href="/blog/decreto-ingiuntivo-canoni-locazione/">decreto ingiuntivo</a>: è un ordine del giudice che condanna l'inquilino a restituirti le somme. Vale sia per i canoni sia per gli oneri accessori non pagati.</li>
+<li><strong>Valuta lo sfratto, se ricorrono le condizioni.</strong> Il mancato pagamento dei consumi può, oltre una certa soglia, giustificare la risoluzione del contratto e quindi lo sfratto per morosità. Vediamo quando, nel paragrafo che segue.</li>
+</ul>
+
+<h3>La soglia delle due mensilità: quando le bollette portano allo sfratto</h3>
+<p>Per i canoni non pagati basta il ritardo oltre venti giorni per aprire la strada allo sfratto. Per gli <strong>oneri accessori</strong> — cioè i consumi come le bollette, quando il contratto li pone a carico dell'inquilino — la regola è più severa: il mancato pagamento diventa motivo di risoluzione del contratto solo quando l'importo non pagato <strong>supera due mensilità del canone</strong>. Se l'inquilino ti deve consumi per una somma inferiore, puoi comunque agire per recuperare il denaro (con decreto ingiuntivo), ma non hai ancora il presupposto per lo sfratto fondato sulle sole bollette.</p>
+<p>Quando la soglia è superata, puoi avviare l'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>, indicando nell'atto l'importo degli oneri non pagati. Attenzione a un passaggio tipico: davanti al giudice l'inquilino può chiedere il <strong>termine di grazia</strong> (una breve proroga concessa dal giudice per pagare e sanare la morosità, evitando il rilascio). È un meccanismo di favore per il conduttore, ma limitato nel numero di volte: non azzera i tuoi diritti, allunga solo un po' i tempi.</p>
+
+<h2>Prevenire è meglio: voltura e cauzione</h2>
+<p>La soluzione più efficace è non trovarsi mai con le utenze a nome tuo mentre un altro le consuma.</p>
+<ul>
+<li><strong>Volturare o disdire le utenze alla consegna.</strong> Al momento della consegna delle chiavi, fai in modo che l'inquilino intesti a sé i contratti di fornitura (la cosiddetta voltura, cioè il passaggio dell'utenza al suo nome, o un nuovo subentro). Così il fornitore chiederà i consumi direttamente a lui e tu esci dalla catena dei pagamenti. Metti questo obbligo per iscritto nel contratto.</li>
+<li><strong>Usare il deposito cauzionale.</strong> La cauzione versata all'inizio serve anche a coprire i consumi non pagati alla fine del rapporto: alla riconsegna, se restano importi scoperti di competenza dell'inquilino, potrai trattenere quanto dovuto e restituire il resto.</li>
+<li><strong>Leggere i contatori a inizio e fine rapporto.</strong> Annota i numeri con data, meglio in un verbale firmato da entrambi: eviti contestazioni su chi ha consumato cosa.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Ignorare le bollette sperando che paghi l'inquilino.</strong> Se l'utenza è a tuo nome, il debito verso il fornitore resta tuo: aspettare rischia solo il distacco e la segnalazione come cattivo pagatore.</li>
+<li><strong>Pretendere il pagamento senza mostrare le fatture.</strong> L'inquilino ha diritto al conteggio dettagliato e ai documenti giustificativi: senza, la tua richiesta è più facile da contestare.</li>
+<li><strong>Confondere bollette e canone.</strong> Per lo sfratto basato sui soli oneri accessori serve superare le due mensilità, soglia che non vale per il canone.</li>
+<li><strong>Fare da soli con le utenze.</strong> Staccare la corrente o l'acqua all'inquilino per "costringerlo" a pagare è vietato e può ritorcersi contro di te: gli strumenti giusti sono la richiesta scritta, il decreto ingiuntivo e, se ne ricorrono i presupposti, lo sfratto.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Le bollette intestate al proprietario le paga comunque l'inquilino?</h3>
+<p>Nei rapporti tra le parti sì: i consumi di luce, gas e acqua sono oneri accessori a carico del conduttore, salvo patto contrario. Verso il fornitore, però, resti tu il debitore finché l'utenza è a tuo nome: per questo conviene volturarla all'inquilino.</p>
+<h3>L'inquilino non paga i consumi: posso sfrattarlo?</h3>
+<p>Solo se il debito per gli oneri accessori supera due mensilità del canone. Sotto quella soglia puoi comunque recuperare le somme con un decreto ingiuntivo, ma non hai il presupposto per lo sfratto fondato sulle sole bollette.</p>
+<h3>Come recupero le bollette che ho pagato al posto dell'inquilino?</h3>
+<p>Dopo una richiesta scritta con conteggio e fatture, se non paga puoi inviare una diffida e poi chiedere un decreto ingiuntivo, portando come prova il contratto, le bollette e la ricevuta dei pagamenti che hai anticipato al fornitore.</p>
+<h3>Posso trattenere il deposito cauzionale per le bollette non pagate?</h3>
+<p>Sì, alla riconsegna la cauzione può essere trattenuta per coprire i consumi di competenza dell'inquilino rimasti scoperti, restituendo l'eventuale eccedenza. È utile leggere i contatori a inizio e fine rapporto.</p>
+<h3>Devo dare all'inquilino la prova dei consumi prima di chiedere il pagamento?</h3>
+<p>Sì. Il conduttore ha diritto di ricevere l'indicazione specifica delle spese, con i criteri di ripartizione, e di visionare i documenti giustificativi. Il pagamento è dovuto entro due mesi dalla richiesta.</p>
+
+<h2>In sintesi</h2>
+<p>Quando l'<strong>inquilino non paga le bollette intestate al proprietario</strong>, la strategia è chiara: proteggi subito la fornitura pagando il fornitore, poi recupera dall'inquilino i consumi che per legge spettano a lui. Presenta sempre il conteggio con le fatture, usa la diffida e, se serve, il decreto ingiuntivo. Lo sfratto per morosità entra in gioco solo quando gli oneri non pagati superano le due mensilità del canone. E la mossa che ti evita gran parte dei problemi resta una sola: volturare le utenze all'inquilino alla consegna delle chiavi. Se ti trovi con bollette scoperte e un inquilino che non collabora, puoi chiedere una valutazione del tuo caso con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. Gli oneri accessori (acqua, energia elettrica, riscaldamento e condizionamento) sono a carico del conduttore, salvo patto contrario, ai sensi dell'articolo 9 della legge 27 luglio 1978 n. 392, che riconosce anche al conduttore il diritto all'indicazione specifica delle spese e alla visione dei documenti giustificativi, con pagamento dovuto entro due mesi dalla richiesta. Il mancato pagamento degli oneri accessori costituisce motivo di risoluzione, ai sensi dell'articolo 1455 del codice civile, quando l'importo non pagato supera quello di due mensilità del canone (articolo 5 della legge n. 392/1978). Il termine di grazia in sede giudiziale è previsto dall'articolo 55 della stessa legge. Il recupero delle somme può avvenire con decreto ingiuntivo ex articoli 633 e seguenti del codice di procedura civile. Per il tuo caso concreto rivolgiti sempre a un avvocato.</em></p>
+`,
+  },
+
+  {
     slug: 'contratto-verbale-locazione',
     title: "Contratto verbale di locazione: è valido? Cosa rischia il proprietario",
     description: "Contratto verbale di locazione: per l'affitto abitativo serve la forma scritta. Perché l'accordo a voce è nullo e come tutelarti da proprietario.",
