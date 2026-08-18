@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'proprietario-entrare-casa-affittata',
+    title: "Il proprietario può entrare in casa affittata? Diritti e limiti",
+    description: "Il proprietario può entrare in casa affittata? Non liberamente: servono consenso o casi di legge. Quando puoi accedere e cosa non fare mai.",
+    excerpt: "La casa è tua ma il domicilio è dell'inquilino: durante l'affitto non puoi entrare quando vuoi. Dalla parte del proprietario, quando l'accesso è legittimo, come regolarlo nel contratto e gli errori da evitare.",
+    lead: "Molti proprietari credono di poter entrare nell'immobile affittato quando vogliono. Non è così: durante il contratto comanda l'inquilino. Vediamo, dalla parte del locatore, quando puoi accedere davvero e cosa non devi mai fare.",
+    publishedAt: '2026-08-18',
+    updatedAt: '2026-08-18',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: "Generato automaticamente 2026-08-18. Keyword: il proprietario può entrare in casa affittata, vol 70, KD <=30 (DataForSEO).",
+    html: `
+<p>Hai affittato un tuo appartamento e ti chiedi se puoi ancora andarci quando vuoi, magari per controllare come lo tiene l'inquilino o per far vedere alcuni lavori. La risposta sorprende molti proprietari: <strong>il proprietario può entrare in casa affittata solo con il consenso dell'inquilino o nei casi previsti dalla legge</strong>, non liberamente e non con le proprie chiavi. Finché il contratto è in corso, chi vive nell'immobile ha il diritto di usarlo in modo esclusivo, anche nei tuoi confronti. Vediamo, dalla parte del locatore, quando puoi accedere davvero, come regolarlo nel contratto e cosa non devi mai fare.</p>
+
+<h2>Durante l'affitto comanda l'inquilino: il godimento esclusivo</h2>
+<p>Quando dai in locazione un immobile, ti obblighi a <strong>farlo godere</strong> all'inquilino per tutta la durata del contratto. In cambio del canone, il conduttore ottiene la disponibilità piena ed esclusiva della casa: può usarla come propria dimora, tenerla come crede e, soprattutto, <strong>decidere chi entra e chi no</strong>. Tu resti il proprietario, ma il tuo diritto di proprietà, durante la locazione, è "sospeso" nella parte che riguarda l'uso materiale dei locali.</p>
+<p>È un punto che genera molti malintesi: la casa è tua, ma per la legge, finché è affittata, <strong>il domicilio è dell'inquilino</strong>. Il proprietario conserva poteri di controllo e custodia solo verso l'esterno (per esempio la responsabilità per danni a terzi causati dallo stabile), non un potere di ingresso a piacimento. Il diritto di controllo con accesso che la legge riconosce per l'affitto di beni produttivi, come un fondo agricolo o un'azienda, alla locazione di una casa di abitazione non si applica.</p>
+
+<h2>Il proprietario può entrare in casa affittata senza permesso?</h2>
+<p>No. Entrare nell'immobile affittato <strong>senza il consenso dell'inquilino</strong> non è un diritto del proprietario, ed è un errore che può costare caro. Se ti introduci nella casa contro la volontà, anche solo tacita, di chi ci abita, puoi commettere il reato di <strong>violazione di domicilio</strong>: è punibile anche il proprietario, perché ciò che conta è chi ha il diritto di escludere gli altri da quel luogo, e durante l'affitto quel diritto è dell'inquilino.</p>
+<p>Non fa differenza che tu abbia conservato una copia delle chiavi: usarle per entrare mentre l'inquilino è fuori, o per "dare un'occhiata" senza avvertirlo, è esattamente il comportamento che la legge vieta. Oltre al profilo penale, un ingresso non autorizzato ti espone a richieste di risarcimento e indebolisce la tua posizione in ogni futura controversia, sfratto compreso. La regola pratica è semplice: <strong>si entra solo su appuntamento e con il sì dell'inquilino</strong>, salvo le eccezioni che vediamo ora.</p>
+
+<h2>Quando il proprietario può entrare: le eccezioni</h2>
+<p>Ci sono situazioni in cui l'accesso è legittimo. In tutte, però, la parola d'ordine resta <strong>preavviso e accordo</strong>: nessuna di queste ipotesi autorizza a forzare l'ingresso.</p>
+
+<h3>Con il consenso dell'inquilino</h3>
+<p>È la via maestra. Se concordi con il conduttore giorno e ora, puoi entrare per qualsiasi ragionevole motivo: un controllo periodico, la verifica di un guasto, la misurazione per un intervento. Meglio mettere l'accordo per iscritto (anche un messaggio va bene) così resta traccia della disponibilità dell'inquilino.</p>
+
+<h3>Visite per vendere o per riaffittare</h3>
+<p>Se vuoi <strong>vendere l'immobile</strong> o cercare un nuovo inquilino per quando il contratto scadrà, hai diritto di far visitare la casa a potenziali acquirenti o conduttori, secondo gli usi locali e in modo non vessatorio. Qui l'inquilino <strong>non può opporre rifiuti ingiustificati</strong>: se lo fa, è lui a essere inadempiente, con possibili conseguenze fino alla risoluzione del contratto. "Diritto di visita" non significa però visite quotidiane o senza avviso: vanno concordate in giorni e fasce orarie ragionevoli, meglio se previste espressamente nel contratto.</p>
+
+<h3>Riparazioni urgenti e manutenzione</h3>
+<p>Se l'immobile ha bisogno di <strong>riparazioni non rinviabili</strong> a fine contratto (ad esempio un impianto da sistemare), l'inquilino è tenuto a tollerarle, anche se ciò comporta un disagio o la temporanea perdita dell'uso di una parte della casa. Restano fermi due punti a tutela del conduttore: se i lavori si protraggono a lungo ha diritto a una riduzione del canone e, se rendono inabitabile la parte necessaria all'alloggio, può chiedere lo scioglimento del contratto. Anche qui, l'accesso di tecnici e maestranze va <strong>coordinato con l'inquilino</strong>, non imposto entrando di sorpresa. Sul confine tra interventi a tuo carico e a carico dell'inquilino può aiutarti la guida su <a href="/blog/manutenzione-ordinaria-straordinaria-affitto/">manutenzione ordinaria e straordinaria nell'affitto</a>.</p>
+
+<h3>Vere emergenze</h3>
+<p>In caso di pericolo immediato — una fuga di gas, un allagamento che minaccia gli altri appartamenti — l'ingresso per contenere il danno risponde a uno stato di necessità. Sono casi eccezionali: appena possibile, avvisa l'inquilino e documenta cos'è successo.</p>
+
+<h2>La clausola giusta nel contratto</h2>
+<p>La maggior parte dei problemi si previene alla firma, con un contratto che disciplina in anticipo i casi di accesso. Alcuni accorgimenti utili:</p>
+<ul>
+<li><strong>Clausola di accesso e visite</strong>: indica che il locatore può accedere per controlli, verifiche tecniche e, nell'ultimo periodo del contratto, per visite di vendita o nuova locazione, sempre <strong>previo preavviso</strong> (per esempio 24-48 ore) e in fasce orarie da concordare.</li>
+<li><strong>Preavviso e forma</strong>: stabilisci come avvisare (messaggio, e-mail, PEC), così hai la prova di aver chiesto l'accesso correttamente.</li>
+<li><strong>Stato dei luoghi</strong>: allega al contratto un verbale con foto della casa alla consegna. Serve a confrontare com'era e com'è al termine, senza bisogno di "sopralluoghi a sorpresa". Trovi come farlo nella guida al <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a>.</li>
+<li><strong>Niente rinuncia mascherata</strong>: una clausola che ti desse le chiavi e il potere di entrare quando vuoi sarebbe con ogni probabilità nulla, perché svuota il godimento dell'inquilino. Punta su accessi programmati, non su un ingresso libero.</li>
+</ul>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Entrare con le proprie chiavi in assenza dell'inquilino.</strong> È il rischio più concreto di violazione di domicilio, anche se l'intenzione era innocua.</li>
+<li><strong>Cambiare la serratura per "riprendere" l'immobile.</strong> È una forma di giustizia fai-da-te vietata: per riavere la casa serve la procedura di sfratto, non l'iniziativa personale.</li>
+<li><strong>Presentarsi per visite senza preavviso o troppo di frequente.</strong> Il diritto di far visitare la casa esiste, ma va esercitato in modo ragionevole, altrimenti diventi tu la parte scorretta.</li>
+<li><strong>Confondere la proprietà con il possesso.</strong> Essere proprietario non ti dà, da solo, il diritto di entrare: durante l'affitto il potere di fatto sui locali è dell'inquilino. E anche quando entri legittimamente, tieni traccia dell'accordo e del motivo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso tenere una copia delle chiavi della casa che ho affittato?</h3>
+<p>Puoi conservarla per emergenze, ma non puoi usarla per entrare senza il consenso dell'inquilino. Aprire la porta in sua assenza, anche solo per un controllo, può integrare la violazione di domicilio.</p>
+<h3>Ogni quanto posso controllare lo stato dell'immobile?</h3>
+<p>La legge non fissa una frequenza per la locazione abitativa. I controlli si fanno d'accordo con l'inquilino, su appuntamento. È utile prevedere nel contratto la possibilità di verifiche periodiche con preavviso.</p>
+<h3>L'inquilino può impedirmi di far vedere la casa a chi vuole comprarla?</h3>
+<p>No, se le visite sono per vendere o riaffittare l'immobile e vengono proposte con preavviso e in orari ragionevoli. Il rifiuto ingiustificato del conduttore è un inadempimento e, nei casi gravi, può giustificare la risoluzione del contratto.</p>
+<h3>Se l'inquilino non paga posso entrare e riprendermi la casa?</h3>
+<p>No. Anche di fronte alla morosità non puoi entrare, cambiare la serratura o sgomberare da solo. La strada corretta è la procedura di sfratto per morosità davanti al giudice.</p>
+
+<h2>In sintesi</h2>
+<p>La domanda "<strong>il proprietario può entrare in casa affittata?</strong>" ha una risposta chiara: durante il contratto no, se non con il consenso dell'inquilino o nelle poche ipotesi previste dalla legge, come le visite per vendita e nuova locazione o le riparazioni urgenti, sempre con preavviso e mai forzando l'ingresso. La casa è tua, ma il domicilio è di chi ci vive. La mossa migliore è preventiva: un contratto con una buona clausola di accesso e un verbale dello stato dei luoghi ti evitano quasi tutte le discussioni. Se un inquilino ti nega accessi legittimi o la situazione si sta complicando, puoi chiedere una valutazione del tuo caso con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale su misura. La locazione obbliga il locatore a far godere la cosa e a garantirne il pacifico godimento (articoli 1571 e 1575 del codice civile), mentre la proprietà si esercita nei limiti fissati dall'ordinamento (articolo 832 del codice civile). L'ingresso contro la volontà di chi ha il diritto di escludere altri può integrare la violazione di domicilio (articolo 614 del codice penale; Cassazione penale, sezione V, sentenza n. 4689 del 2009, che l'ha ritenuta configurabile anche a carico del locatore), a tutela dell'inviolabilità del domicilio (articolo 14 della Costituzione). Il diritto del locatore di far visitare la cosa per venderla o riaffittarla, con il correlativo obbligo del conduttore di consentire le visite secondo gli usi, è affermato da Cassazione civile, sezione III, sentenza n. 5147 del 1981. Le riparazioni non differibili sono disciplinate dagli articoli 1577, 1583 e 1584 del codice civile; il diritto di controllo con accesso dell'articolo 1619 riguarda l'affitto di beni produttivi, non la locazione abitativa. Per il tuo caso concreto rivolgiti sempre a un avvocato.</em></p>
+`,
+  },
+
+  {
     slug: 'bollette-intestate-proprietario-inquilino-non-paga',
     title: "Inquilino che non paga le bollette intestate al proprietario: cosa fare",
     description: "Inquilino che non paga le bollette intestate al proprietario: come recuperare i consumi e quando gli oneri non pagati aprono la strada allo sfratto.",
