@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "cambio-destinazione-uso-immobile-affittato",
+    title: "Cambio di destinazione d'uso dell'immobile affittato: cosa può fare il proprietario",
+    description: "L'inquilino usa la casa affittata per un uso diverso da quello pattuito? Guida per il proprietario: diritti, risoluzione del contratto e rischi.",
+    excerpt: "L'inquilino ha trasformato la casa in ufficio, studio o casa vacanze? Dalla parte del proprietario: cosa significa uso diverso da quello pattuito, come reagire nei tempi giusti e quali rischi eviti.",
+    lead: "Hai affittato un appartamento a uso abitativo e ora viene usato in modo diverso. Vediamo, dalla parte del proprietario, cosa puoi fare, entro quando muoverti e quali rischi corri se lasci correre.",
+    publishedAt: "2026-08-20",
+    updatedAt: "2026-08-20",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-20. Keyword: cambio destinazione d'uso immobile, vol 110, KD 0 (DataForSEO).",
+    html: `
+<p>Hai affittato un appartamento come abitazione e ora scopri che l'inquilino lo usa come ufficio, come studio professionale con clienti che entrano ed escono, come deposito merci o addirittura come casa vacanze data a turisti. È uno dei problemi più insidiosi per un proprietario: l'immobile viene destinato a un uso diverso da quello scritto nel contratto. Questa guida ti spiega, in modo pratico, cosa comporta un <strong>cambio di destinazione d'uso dell'immobile affittato</strong>, quali sono i tuoi diritti, entro quando devi muoverti e quali rischi corri se lasci correre.</p>
+
+<h2>Cosa significa davvero "destinazione d'uso"</h2>
+<p>Quando si parla di destinazione d'uso bisogna distinguere due piani, perché spesso vengono confusi e le conseguenze sono diverse.</p>
+<p>Il primo è la <strong>destinazione contrattuale</strong>: è l'uso che tu e l'inquilino avete pattuito nel contratto di locazione (per esempio "uso esclusivamente abitativo"). Il conduttore è obbligato a servirsi dell'immobile solo per quell'uso. Se lo cambia senza il tuo consenso, viola il contratto.</p>
+<p>Il secondo è la <strong>destinazione urbanistico-catastale</strong>: è la categoria a cui l'immobile appartiene secondo il Comune e il Catasto (residenziale, commerciale, direzionale e così via). Cambiare questa categoria, anche senza opere, può richiedere un titolo edilizio e il rispetto delle regole comunali e regionali. Un uso di fatto diverso può quindi generare anche un problema urbanistico, non solo contrattuale.</p>
+
+<h2>Cosa può fare il proprietario se l'inquilino cambia uso</h2>
+<p>Sul piano del contratto, l'uso diverso da quello pattuito è un inadempimento del conduttore. La legge ti dà uno strumento specifico: puoi <strong>chiedere la risoluzione del contratto</strong>, cioè scioglierlo per colpa dell'inquilino e ottenere il rilascio dell'immobile.</p>
+<p>Attenzione però al tempo, perché qui si gioca la partita: la richiesta di risoluzione va fatta <strong>entro tre mesi dal momento in cui vieni a conoscenza</strong> del diverso uso. Se lasci passare questo termine senza attivarti, al contratto si applica il regime giuridico corrispondente all'uso effettivo dell'immobile; se il diverso uso riguarda solo una parte dell'immobile, conta l'uso prevalente. In parole semplici: se tolleri per mesi, rischi di "consolidare" il nuovo uso e di perdere il diritto di contestarlo.</p>
+<p>Un'ultima precisazione utile: perché il giudice conceda la risoluzione, l'inadempimento non deve essere di scarsa importanza rispetto al tuo interesse. Un uso occasionale e innocuo può non bastare; un uso stabile, che snatura la destinazione dell'immobile o ti espone a responsabilità, sì.</p>
+
+<h3>I passi pratici, in ordine</h3>
+<ul>
+<li><strong>Rileggi il contratto</strong> e verifica come è scritta la clausola sull'uso. Se manca del tutto, conta l'uso che si può presumere dalle circostanze.</li>
+<li><strong>Raccogli le prove</strong> del diverso uso: foto, insegne, targhe, annunci online (affitti brevi, attività), corrispondenza, testimonianze, eventuali visure.</li>
+<li><strong>Contesta per iscritto</strong> con una lettera raccomandata o una PEC (posta elettronica certificata), diffidando l'inquilino a ripristinare l'uso pattuito entro un termine.</li>
+<li><strong>Muoviti nei tempi</strong>: annota la data in cui hai avuto conoscenza del fatto e rispetta il termine di tre mesi per la domanda di risoluzione.</li>
+<li><strong>Verifica la clausola risolutiva espressa</strong>: se il contratto la prevede per il caso di uso diverso, la strada può essere più rapida.</li>
+<li><strong>Valuta l'azione giudiziale</strong> di risoluzione, con eventuale richiesta di risarcimento dei danni, affidandoti a un legale.</li>
+</ul>
+
+<h2>I rischi per il proprietario (che spesso si sottovalutano)</h2>
+<p>Il cambio d'uso non è solo una questione di principio: ti espone concretamente su più fronti.</p>
+<p><strong>Rischio urbanistico.</strong> Se l'inquilino trasforma di fatto un'abitazione in un'altra categoria funzionale (per esempio commerciale o turistico-ricettiva) senza i titoli necessari, l'abuso riguarda un immobile di tua proprietà: come proprietario puoi essere chiamato a risponderne davanti al Comune.</p>
+<p><strong>Rischio fiscale.</strong> Un uso non abitativo può far <strong>decadere la cedolare secca</strong>, che è ammessa solo per le locazioni abitative, e può cambiare il trattamento ai fini IMU, TARI (che per un'attività segue la tariffa non domestica) e imposta di registro. Ti ritrovi imposte diverse da quelle preventivate.</p>
+<p><strong>Rischio condominiale.</strong> Molti regolamenti di condominio vietano determinate attività (studi con forte afflusso di persone, bed and breakfast, magazzini). Un uso vietato può generare contestazioni da parte degli altri condomini, con te chiamato in causa come proprietario.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Aspettare troppo.</strong> È l'errore più grave: superato il termine di tre mesi dalla conoscenza, il diritto di chiedere la risoluzione per uso diverso si indebolisce e può applicarsi il regime dell'uso effettivo.</li>
+<li><strong>Tollerare in silenzio.</strong> Non contestare nulla equivale, di fatto, ad accettare la nuova situazione.</li>
+<li><strong>Accettare un canone "maggiorato" per il diverso uso.</strong> Incassare consapevolmente di più per l'uso commerciale può essere letto come consenso al cambio.</li>
+<li><strong>Confondere sfratto e risoluzione.</strong> Per l'uso diverso non si usa lo sfratto per morosità: la via è la risoluzione del contratto per inadempimento.</li>
+<li><strong>Contestare solo a voce.</strong> Senza una diffida scritta e datata è difficile provare quando hai avuto conoscenza del fatto e di aver reagito nei tempi.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino può usare come ufficio una casa affittata a uso abitativo?</h3>
+<p>Solo se il contratto lo consente. Se l'uso pattuito è esclusivamente abitativo, adibirla a studio o ufficio con clientela è un uso diverso e ti dà diritto a contestarlo.</p>
+<h3>Posso sfrattarlo subito?</h3>
+<p>No. Lo sfratto per morosità serve per il mancato pagamento del canone. Per l'uso diverso lo strumento è la risoluzione del contratto per inadempimento, che presuppone una pronuncia del giudice (salvo il caso di clausola risolutiva espressa, che comunque va fatta valere).</p>
+<h3>Se tollero per anni, cosa rischio?</h3>
+<p>Rischi che al contratto si applichi il regime giuridico corrispondente all'uso effettivo dell'immobile, con conseguenze anche sulla durata e sulle tutele del rapporto. Meglio reagire subito e per iscritto.</p>
+<h3>Cambia qualcosa per la cedolare secca?</h3>
+<p>Sì. La cedolare secca è pensata per le locazioni abitative: un uso non abitativo può farla decadere ed esporti a imposte diverse e a sanzioni.</p>
+<h3>Serve il mio consenso per il cambio urbanistico?</h3>
+<p>Sì. Un mutamento di destinazione urbanisticamente rilevante presuppone la disponibilità del titolo sull'immobile e riguarda un bene di tua proprietà: senza il tuo consenso l'inquilino non può regolarizzarlo, e gli abusi ricadono anche su di te.</p>
+
+<h2>In sintesi</h2>
+<p>Il cambio di destinazione d'uso dell'immobile affittato è un problema da affrontare presto e con metodo: verifica il contratto, raccogli le prove, contesta per iscritto entro tempi brevi e valuta la risoluzione. Ignorarlo significa rischiare imposte diverse, contestazioni condominiali e problemi urbanistici su un bene che resta tuo.</p>
+<p>Se ti trovi in questa situazione, <strong>Sfratto Sicuro</strong> può aiutarti a valutare il caso e a scegliere la strada più efficace per tutelare il tuo immobile: puoi dare un'occhiata al nostro servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>. Possono esserti utili anche gli approfondimenti sulla <a href="/blog/risoluzione-contratto-locazione/">risoluzione del contratto di locazione</a>, sulla <a href="/blog/clausola-risolutiva-espressa-locazione/">clausola risolutiva espressa</a> e sulla <a href="/blog/sublocazione/">sublocazione</a>.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata. Per la tua situazione specifica rivolgiti a un avvocato.</em></p>
+
+<p><small>Riferimenti normativi: art. 1587 del codice civile (obbligazioni principali del conduttore); art. 80 della legge 27 luglio 1978, n. 392 (uso diverso da quello pattuito), tenuto conto della sentenza della Corte costituzionale n. 185 del 1988 che ha eliminato il termine annuale; art. 1455 del codice civile (importanza dell'inadempimento); art. 23-ter del D.P.R. 6 giugno 2001, n. 380 (mutamento d'uso urbanisticamente rilevante).</small></p>
+`,
+  },
+
+  {
     slug: 'sfratto-immediato',
     title: "Sfratto immediato: esiste davvero? Cosa può ottenere il proprietario",
     description: "Sfratto immediato: non esiste una scorciatoia legale per la casa affittata. Cosa può ottenere il proprietario, in quanto tempo e cosa non fare mai.",
