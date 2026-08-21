@@ -16,6 +16,85 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "indennita-occupazione-senza-titolo",
+    title: "Indennità di occupazione senza titolo: cosa spetta al proprietario",
+    description: "Indennità di occupazione senza titolo: cos'è, da quando è dovuta, quanto vale secondo l'art. 1591 c.c. e come il proprietario la calcola e recupera.",
+    excerpt: "Il contratto è finito o lo sfratto è stato convalidato, ma l'inquilino non lascia. Per tutto il periodo di occupazione senza titolo al proprietario spetta un'indennità: cos'è, quanto vale e come recuperarla.",
+    lead: "Quando l'immobile resta occupato dopo la fine del contratto o dopo lo sfratto, al proprietario spetta un'indennità di occupazione. Vediamo, dalla parte del proprietario, cos'è, da quando decorre, quanto vale davvero e come si chiede.",
+    publishedAt: "2026-08-21",
+    updatedAt: "2026-08-21",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-21. Keyword: indennità di occupazione senza titolo, vol 170, KD 0 (DataForSEO).",
+    html: `
+<p>Il contratto è finito, oppure lo sfratto è stato convalidato, ma l'inquilino continua a occupare l'immobile. Molti proprietari, in questa fase, pensano solo a riavere le chiavi e dimenticano un diritto che vale denaro: per tutto il tempo in cui l'immobile resta trattenuto, spetta loro un'<strong>indennità di occupazione senza titolo</strong>. Questa guida spiega, dalla parte del proprietario, cos'è, da quando decorre, quanto vale davvero, come si chiede e quali errori fanno perdere soldi.</p>
+
+<h2>Cos'è l'indennità di occupazione senza titolo</h2>
+<p>L'<strong>indennità di occupazione</strong> è la somma che l'occupante deve al proprietario per il periodo in cui tiene l'immobile senza più averne diritto. La base normativa è l'<strong>articolo 1591 del codice civile</strong>, secondo cui il conduttore in ritardo nel restituire la cosa è tenuto a dare al locatore il corrispettivo convenuto fino alla riconsegna, salvo l'obbligo di risarcire il maggior danno.</p>
+<p>Attenzione a un punto che genera confusione: dal momento in cui il contratto finisce, chi resta non paga più un "canone". Paga un'<strong>indennità</strong> che ha natura di risarcimento e prende il posto del canone. Non è una distinzione da giuristi: cambia le regole su prescrizione, calcolo e recupero, come vediamo tra poco.</p>
+
+<h2>Da quando è dovuta e fino a quando</h2>
+<p>L'indennità scatta quando il conduttore è <strong>in mora nel restituire</strong> l'immobile, cioè quando il titolo che gli permetteva di stare lì è venuto meno e lui non riconsegna. Questo può accadere in diversi momenti:</p>
+<ul>
+<li><strong>Alla scadenza del contratto</strong> non rinnovato, se l'inquilino non lascia (finita locazione).</li>
+<li><strong>Con la risoluzione per morosità</strong>, dopo la convalida dello sfratto.</li>
+<li><strong>Dopo qualunque cessazione del rapporto</strong> (recesso, disdetta efficace) in cui l'occupante resti oltre il dovuto.</li>
+</ul>
+<p>Il diritto matura giorno per giorno e si chiude solo con la <strong>riconsegna effettiva</strong> dell'immobile: la data che conta è quella della restituzione reale delle chiavi e della disponibilità del bene, non quella della sentenza o della scadenza sulla carta.</p>
+
+<h2>Quanto spetta al proprietario: due voci diverse</h2>
+<p>L'articolo 1591 prevede due componenti, con regole di prova molto diverse. Capire la differenza è ciò che separa un proprietario che recupera il giusto da uno che lascia soldi sul tavolo.</p>
+
+<h3>1. Il risarcimento "minimo": pari all'ultimo canone</h3>
+<p>La prima voce è automatica. Per legge, il proprietario ha diritto ad almeno una somma <strong>pari al canone</strong> che l'inquilino pagava prima della cessazione, per ogni mese di occupazione. La Cassazione lo definisce un danno "presunto" che non va dimostrato: al proprietario basta provare che esisteva il contratto, mentre spetta all'occupante dimostrare di aver riconsegnato. Non serve provare di aver perso un affitto o un acquirente: questa base minima è dovuta comunque.</p>
+
+<h3>2. Il "maggior danno": va provato</h3>
+<p>Se il proprietario ha subito un danno superiore all'ultimo canone, può chiederlo, ma qui l'onere cambia: <strong>deve dimostrarlo in modo specifico</strong>. Non basta un richiamo generico ai "prezzi di mercato". Occorre provare in concreto, ad esempio, che c'erano inquilini o acquirenti seri e disponibili a certe condizioni economiche, poi saltate a causa dell'occupazione, oppure i costi di un ripristino reso necessario. È un punto delicato: molti proprietari perdono la richiesta di maggior danno proprio perché la prova è troppo vaga.</p>
+
+<h2>Contratto scaduto o occupazione mai autorizzata: la prova cambia</h2>
+<p>Le regole appena viste valgono quando <strong>c'era un contratto</strong> poi cessato: è il caso più comune, l'ex inquilino che non se ne va. In questa ipotesi il proprietario è avvantaggiato, perché la base minima spetta senza dover dimostrare la perdita.</p>
+<p>Diverso è il caso di chi occupa <strong>senza aver mai avuto un titolo</strong> (un'occupazione abusiva vera e propria, fin dall'inizio). Le Sezioni Unite della Cassazione hanno chiarito che, in mancanza di un contratto di partenza, il danno non è automatico: il proprietario deve provare di non aver potuto godere o mettere a reddito l'immobile. Se il tuo problema è di questo tipo, e non un ex conduttore, leggi la guida dedicata all'<a href="/blog/occupazione-abusiva-immobile/">occupazione abusiva di immobile</a>, dove il percorso è differente.</p>
+
+<h2>Durante il differimento del rilascio: canone più 20%</h2>
+<p>Un caso particolare riguarda la fase esecutiva dello sfratto per finita locazione. Quando il giudice, su richiesta dell'inquilino, concede un <strong>differimento della data di rilascio</strong>, la legge fissa l'importo dovuto: una somma mensile pari al canone alla cessazione del contratto, con aggiornamento ISTAT (l'adeguamento al costo della vita rilevato dall'Istituto nazionale di statistica), <strong>maggiorata del 20%</strong>, oltre agli oneri accessori (articolo 6 della legge 431 del 1998). In altre parole, aspettare non conviene all'inquilino: il debito continua a crescere. Va ricordato che, secondo la Corte costituzionale (sentenza 482 del 2000), questa maggiorazione del 20% non copre automaticamente ogni pretesa: per il periodo successivo alla scadenza del termine di sospensione il proprietario può comunque chiedere il maggior danno, se lo prova. Su come si gestisce questa fase abbiamo un approfondimento sulla <a href="/blog/sospensione-esecuzione-sfratto/">sospensione dell'esecuzione dello sfratto</a>.</p>
+
+<h2>Come si chiede e si recupera</h2>
+<p>L'indennità non arriva da sola: va richiesta e quantificata con precisione. I passi pratici per il proprietario sono:</p>
+<ul>
+<li><strong>Conteggia mese per mese</strong> dalla cessazione del titolo fino alla riconsegna, tenendo da parte la prova dell'ultimo canone e delle date.</li>
+<li><strong>Metti in mora l'occupante</strong> con una diffida scritta e tracciabile (raccomandata o PEC), chiedendo il rilascio e il pagamento dell'indennità maturata.</li>
+<li><strong>Inserisci la richiesta nel procedimento di sfratto</strong>: nella causa di convalida puoi domandare anche la condanna al pagamento, senza aprire un secondo giudizio.</li>
+<li><strong>Se serve un titolo autonomo</strong>, valuta il <a href="/blog/decreto-ingiuntivo-canoni-locazione/">decreto ingiuntivo</a> per le somme dovute, come per gli arretrati.</li>
+</ul>
+<p>Un vantaggio importante: trattandosi di un'obbligazione di natura contrattuale, il diritto all'indennità si prescrive nel termine ordinario di <strong>dieci anni</strong>, non nei cinque anni previsti per i canoni maturati durante il contratto. C'è quindi più tempo per agire, ma non è un motivo per rimandare: prima si documenta e si chiede, più solido è il recupero. Sul recupero delle somme dopo il rilascio trovi la guida ai <a href="/blog/recupero-canoni-arretrati-dopo-sfratto/">canoni arretrati dopo lo sfratto</a>.</p>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Non conteggiare l'indennità.</strong> Concentrati solo sul rilascio, dimentichi di quantificare le somme mese per mese e indebolisci il recupero.</li>
+<li><strong>Chiamarla "canone" negli atti.</strong> Dopo la cessazione non è più canone: usare la qualificazione giusta evita eccezioni e confusione sulla prescrizione.</li>
+<li><strong>Pretendere il maggior danno senza prove.</strong> La base minima spetta comunque; il di più va dimostrato in concreto, altrimenti si perde solo quella parte.</li>
+<li><strong>Farsi giustizia da sé.</strong> Cambiare la serratura o togliere le cose dell'occupante è illegittimo: la riconsegna passa sempre dall'ufficiale giudiziario, e l'indennità si recupera in via legale.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino che resta dopo la scadenza deve pagare l'affitto?</h3>
+<p>Non un "affitto" in senso tecnico: deve un'indennità di occupazione. La misura minima è però pari all'ultimo canone per ogni mese, quindi in pratica continua a dover versare almeno quanto pagava prima, fino alla riconsegna.</p>
+
+<h3>Devo dimostrare di aver perso un altro inquilino per avere l'indennità?</h3>
+<p>No, non per la parte minima: quando c'era un contratto poi cessato, la somma pari al canone spetta senza prova del danno. La dimostrazione serve solo se chiedi un importo superiore (il maggior danno).</p>
+
+<h3>Entro quando posso chiedere l'indennità di occupazione?</h3>
+<p>Il diritto ha natura contrattuale e si prescrive in dieci anni dalla maturazione. Meglio comunque documentare e richiedere subito, così da non indebolire il recupero.</p>
+
+<h3>Posso chiedere l'indennità nello stesso giudizio di sfratto?</h3>
+<p>Sì. Nella procedura di convalida puoi domandare anche la condanna al pagamento delle somme dovute, senza dover avviare una causa separata.</p>
+
+<h2>In sintesi</h2>
+<p>Finché l'immobile resta occupato senza titolo, il proprietario ha diritto a un'indennità almeno pari all'ultimo canone, con la possibilità di chiedere il maggior danno se lo prova. La differenza la fanno un conteggio ordinato fin dal primo giorno, la qualificazione giuridica corretta e la tempestività nel mettere in mora e agire. Se ti trovi in questa situazione e vuoi impostare bene la richiesta, puoi chiedere una valutazione del tuo caso con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo contenuto ha finalità puramente informative e non sostituisce una consulenza legale sul caso concreto. Riferimenti normativi: articolo 1591 del codice civile (danni per ritardata restituzione: corrispettivo convenuto fino alla riconsegna e maggior danno); articolo 1590 del codice civile (restituzione della cosa locata nello stato in cui è stata ricevuta); articolo 6, comma 6, della legge 9 dicembre 1998 n. 431 (somma dovuta durante il differimento del rilascio, pari al canone aggiornato e maggiorato del 20%), tenuto conto della sentenza della Corte costituzionale n. 482 del 2000 sul maggior danno. Sul regime dell'onere della prova e sulla prescrizione decennale si vedano, tra le altre, Cass. civ. Sez. III n. 18946/2019, Cass. civ. Sez. III n. 9256/2021 e Cass. civ. Sez. VI-3 n. 38970/2021; sulla differenza rispetto all'occupazione priva di titolo originario, Cass. civ. Sez. Unite n. 33645/2022. Per il tuo caso concreto rivolgiti sempre a un avvocato.</em></p>
+`,
+  },
+  {
     slug: "cambio-destinazione-uso-immobile-affittato",
     title: "Cambio di destinazione d'uso dell'immobile affittato: cosa può fare il proprietario",
     description: "L'inquilino usa la casa affittata per un uso diverso da quello pattuito? Guida per il proprietario: diritti, risoluzione del contratto e rischi.",
