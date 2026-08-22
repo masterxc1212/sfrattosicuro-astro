@@ -6,6 +6,7 @@ import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
 import ClickConversionTracking from '../../components/ClickConversionTracking.astro';
 import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
 import MetaPixelTracking from '../../components/MetaPixelTracking.astro';
+import MetaAdvancedMatching from '../../components/MetaAdvancedMatching.astro';
 import TikTokPixelTracking from '../../components/TikTokPixelTracking.astro';
 import LandingExperimentTracking from '../../components/LandingExperimentTracking.astro';
 import BehaviourTracking from '../../components/BehaviourTracking.astro';
@@ -274,6 +275,10 @@ const config = isAugust ? {
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
     <MetaPixelTracking pixelId="1373903100373659" eager />
+    {/* Advanced Matching: qui e' il punto che conta piu' di tutti, perche' e' la
+        pagina su cui atterrano gli annunci ed e' dove il modulo viene compilato.
+        Va montato esplicitamente: queste landing non passano dal SiteLayout. */}
+    <MetaAdvancedMatching pixelId="1373903100373659" />
     <TikTokPixelTracking pixelId={tiktokPixelId} eager />
     <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <BehaviourTracking />

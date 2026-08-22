@@ -124,9 +124,32 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1373903100373659');
-    fbq('track', 'PageView');
-    fbq('track', 'Lead');
+    // Advanced Matching (2026-08-22). Gli hash SHA-256 di email/telefono sono
+    // stati calcolati sulla pagina del modulo (MetaAdvancedMatching.astro) e
+    // depositati in sessionStorage: qui vengono letti PRIMA dell'init, cosi'
+    // l'evento Lead parte con i dati di contatto e non piu' col solo cookie.
+    // Senza questo passaggio il Lead — la conversione che conta — aveva l'EMQ
+    // piu' basso di tutti, perche' questa e' un'altra pagina e i campi non ci sono.
+    // Il deposito viene cancellato subito dopo l'uso.
+    (function () {
+      var am = {};
+      try {
+        var raw = sessionStorage.getItem('ss_meta_am_v1');
+        if (raw) {
+          var d = JSON.parse(raw);
+          // Solo se fresco (< 10 min): oltre, non e' questo invio.
+          if (d && d.t && (Date.now() - d.t) < 600000) {
+            if (d.em) am.em = d.em;
+            if (d.ph) am.ph = d.ph;
+          }
+          sessionStorage.removeItem('ss_meta_am_v1');
+        }
+      } catch (e) {}
+      if (am.em || am.ph) fbq('init', '1373903100373659', am);
+      else fbq('init', '1373903100373659');
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+    })();
     </script>
     <noscript><img height="1" width="1" style="display:none" alt=""
       src="https://www.facebook.com/tr?id=1373903100373659&ev=Lead&noscript=1"/></noscript>

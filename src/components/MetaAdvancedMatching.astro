@@ -1,0 +1,136 @@
+---
+/**
+ * MetaAdvancedMatching.astro — Advanced Matching manuale per il Meta Pixel.
+ *
+ * PERCHE'. Verifica del 2026-08-22 sul dataset 1373903100373659: l'Event Match
+ * Quality di PageView era **6,1/10**, con copertura ip_address 100%, user_agent
+ * 100%, fbp 100% e fbc 14,4%. Mancavano del tutto **email e telefono**: Meta non
+ * aveva modo di riconoscere la persona oltre il browser. E' la causa principale
+ * del punteggio.
+ *
+ * COSA FA. Calcola lo SHA-256 di email e telefono **normalizzati secondo le
+ * regole Meta** e li passa al pixel come Advanced Matching. In chiaro non esce
+ * mai nulla: l'hash e' calcolato sul dispositivo dell'utente.
+ *
+ * ┌── LA PARTE DELICATA: NON BLOCCARE MAI L'INVIO DEL MODULO ──────────────────┐
+ * │ I form fanno una POST nativa che naviga via subito. crypto.subtle e'       │
+ * │ ASINCRONO, quindi calcolare l'hash dentro l'handler di submit avrebbe      │
+ * │ voluto dire o perdere l'evento (la pagina cambia prima) o trattenere       │
+ * │ l'invio con preventDefault. La seconda strada e' esclusa: il modulo e' il  │
+ * │ canale che porta i clienti paganti, e a fine luglio si e' gia' rimosso un  │
+ * │ blocco JS che impediva l'invio. Nessun codice di tracciamento puo'         │
+ * │ mettersi fra l'utente e il pulsante.                                       │
+ * │                                                                            │
+ * │ Soluzione: l'hash si calcola MENTRE l'utente digita (input con debounce +  │
+ * │ blur). Al submit e' gia' pronto e si usa in modo sincrono. Se per qualche  │
+ * │ motivo non lo fosse, si procede lo stesso senza Advanced Matching.         │
+ * └────────────────────────────────────────────────────────────────────────────┘
+ *
+ * IL RELAY VERSO /grazie.html. L'evento `Lead` non scatta qui ma sulla pagina di
+ * ringraziamento, che e' un altro caricamento: l'Advanced Matching impostato qui
+ * non la raggiunge. Gli hash vengono quindi depositati in `sessionStorage` e letti
+ * la' subito prima di `fbq('track','Lead')`, poi cancellati.
+ * ⚠️ MAI passarli in querystring: anche se sono hash, restano dati personali
+ * pseudonimizzati e finirebbero nei log del server e nel referrer.
+ *
+ * PRIVACY. L'hash e' pseudonimizzazione, NON anonimizzazione: per il GDPR resta
+ * un dato personale. Questo componente segue lo stesso regime di consenso del
+ * pixel (parte solo se `window.__metaPixelLoaded` e' vero), quindi quando il
+ * banner tornera' attivo rispettera' il rifiuto senza modifiche. Finche' il
+ * banner e' in pausa vale l'esposizione gia' nota e accettata: vedi
+ * src/lib/tracking-config.ts. Da citare nella cookie policy alla riaccensione.
+ */
+interface Props {
+  pixelId?: string;
+}
+const { pixelId = '1373903100373659' } = Astro.props;
+---
+
+<script is:inline define:vars={{ pixelId }}>
+  (() => {
+    if (!pixelId) return;
+    // crypto.subtle esiste solo in contesto sicuro (HTTPS). In locale su http
+    // semplicemente non si attiva: nessun errore, nessun Advanced Matching.
+    if (!(window.crypto && window.crypto.subtle)) return;
+
+    const RELAY_KEY = 'ss_meta_am_v1';
+    /** Hash pronti, tenuti solo in memoria finche' non serve il relay. */
+    const hashed = { em: null, ph: null };
+
+    /** Normalizzazione email secondo Meta: spazi via, tutto minuscolo. */
+    const normEmail = (raw) => String(raw || '').trim().toLowerCase();
+
+    /**
+     * Normalizzazione telefono secondo Meta: solo cifre, con prefisso
+     * internazionale, senza "+" ne' zeri iniziali.
+     *
+     * ⚠️ Attenzione al caso italiano: NON basta controllare che inizi per "39",
+     * perche' esistono cellulari nazionali che iniziano davvero per 39
+     * (391..., 392..., 393...). Un "3911755957" e' un numero nazionale di 10
+     * cifre, non un numero gia' prefissato. Serve anche la lunghezza.
+     */
+    const normPhone = (raw) => {
+      let d = String(raw || '').replace(/\D/g, '');
+      if (!d) return '';
+      if (d.indexOf('00') === 0) d = d.slice(2);        // 0039... → 39...
+      const haGiaPrefisso = d.indexOf('39') === 0 && d.length >= 11;
+      if (!haGiaPrefisso) d = '39' + d;
+      return d;
+    };
+
+    const sha256Hex = async (text) => {
+      const bytes = new TextEncoder().encode(text);      // UTF-8, gestisce gli accenti
+      const buf = await window.crypto.subtle.digest('SHA-256', bytes);
+      return Array.from(new Uint8Array(buf))
+        .map((b) => b.toString(16).padStart(2, '0'))
+        .join('');
+    };
+
+    /** Campi da cui pescare, per attributo name (i form del sito usano questi). */
+    const isEmail = (el) => el && el.name === 'email';
+    const isPhone = (el) => el && el.name === 'telefono';
+
+    let timer = null;
+    const aggiorna = (el) => {
+      const raw = el.value || '';
+      const chiave = isEmail(el) ? 'em' : 'ph';
+      const norm = isEmail(el) ? normEmail(raw) : normPhone(raw);
+      // Soglie minime: sotto queste il valore e' quasi certamente incompleto e
+      // un hash sbagliato peggiora l'EMQ invece di migliorarlo.
+      const valido = isEmail(el) ? /.+@.+\..+/.test(norm) : norm.length >= 11;
+      if (!valido) { hashed[chiave] = null; return; }
+      sha256Hex(norm).then((h) => { hashed[chiave] = h; }).catch(() => {});
+    };
+
+    const suCampo = (ev) => {
+      const el = ev.target;
+      if (!isEmail(el) && !isPhone(el)) return;
+      clearTimeout(timer);
+      timer = setTimeout(() => aggiorna(el), 250);
+    };
+
+    document.addEventListener('input', suCampo, true);
+    document.addEventListener('blur', (ev) => {
+      const el = ev.target;
+      if (isEmail(el) || isPhone(el)) aggiorna(el);
+    }, true);
+
+    // Al submit: tutto SINCRONO, nessun preventDefault, nessuna attesa.
+    document.addEventListener('submit', () => {
+      if (!hashed.em && !hashed.ph) return;
+      const am = {};
+      if (hashed.em) am.em = hashed.em;
+      if (hashed.ph) am.ph = hashed.ph;
+
+      // 1) Migliora gli eventi ancora sparabili su QUESTA pagina.
+      if (window.__metaPixelLoaded && typeof window.fbq === 'function') {
+        try { window.fbq('init', pixelId, am); } catch {}
+      }
+
+      // 2) Relay verso /grazie.html, dove scatta il Lead vero.
+      try {
+        sessionStorage.setItem(RELAY_KEY, JSON.stringify({ ...am, t: Date.now() }));
+      } catch {}
+    }, true);
+  })();
+</script>

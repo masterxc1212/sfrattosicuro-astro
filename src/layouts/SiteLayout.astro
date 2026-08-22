@@ -9,6 +9,7 @@ import ClickConversionTracking from '../components/ClickConversionTracking.astro
 import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
 import TikTokPixelTracking from '../components/TikTokPixelTracking.astro';
 import MetaPixelTracking from '../components/MetaPixelTracking.astro';
+import MetaAdvancedMatching from '../components/MetaAdvancedMatching.astro';
 import BehaviourTracking from '../components/BehaviourTracking.astro';
 import ClarityTracking from '../components/ClarityTracking.astro';
 import { consentBannerEnabled, trackingEager, tiktokPixelId, clarityProjectId } from '../lib/tracking-config';
@@ -69,6 +70,11 @@ const {
         landing, quindi home, blog e 137 pagine sede non alimentavano alcun
         pubblico di remarketing. Stessa lacuna gia' chiusa per Google Ads. */}
     <MetaPixelTracking eager={trackingEager} />
+    {/* Advanced Matching (email/telefono in SHA-256) aggiunto il 2026-08-22:
+        l'EMQ del pixel era 6,1/10 perche' a Meta non arrivava alcun dato di
+        contatto. Non tocca l'invio del modulo: gli hash si calcolano mentre
+        l'utente digita. Vedi il componente per il dettaglio. */}
+    <MetaAdvancedMatching />
     <BehaviourTracking />
     <ClarityTracking projectId={clarityProjectId} eager={trackingEager} />
     <script is:inline>
