@@ -1,5 +1,30 @@
 # Promozione «V3 Agosto» 2026 — landing, annunci, asset
 
+> ## 🔴 PROMO RITIRATA — 22 agosto 2026 (decisione utente)
+>
+> **Le due landing sono state rimosse** e reindirizzate con 301 a `/landing-v3/`:
+> `/landing-v3-agosto/` e `/sfratto-agosto/` (erano gemelle, stesso contenuto a
+> €1.000; la seconda era nata per aggirare la lista nera Google, vedi §9).
+>
+> **Perché.** Erano rimaste online a promettere **€1.000** mentre annunci e sito
+> erano già tornati a **€1.300**. Il **21 agosto** un lead vero è entrato proprio da
+> lì (modulo `hero_form_v3_agosto`, CRM: Pamela Cordioli) ed è stato poi quotato
+> **€1.300** in consulenza: un disallineamento di offerta con una cliente in mezzo.
+> La promo, per i suoi stessi termini, sarebbe stata valida fino al 31 agosto.
+>
+> **Nota su quel lead:** non è stato attribuito da Google Ads, e **correttamente** —
+> nel CRM ha GCLID, UTM e Keyword vuoti, e non c'era attribuzione da cookie. La
+> pagina era `noindex`, quindi nemmeno da organico: arrivo diretto. Verificato che
+> NON si trattava di un guasto: il consenso su `grazie.html` è `granted`, la cattura
+> del gclid su quella landing era identica a `/landing-v3/`, e l'azione «Modulo»
+> (`WEBPAGE_CODELESS`) aveva sparato fino al 7 agosto.
+>
+> **Restano da valutare (non fatto):** i 6 asset sitelink `_agosto` esistono ancora
+> nella libreria dell'account — già **scollegati** dalla campagna il 22 agosto, quindi
+> non erogano, ma ora puntano a un URL che risponde 301.
+> Il blocco `pricing.promozioni.agosto2026` in `business-config.json` è stato lasciato
+> intatto: non lo legge più nessuna pagina, ma rimuoverlo tocca componenti condivisi.
+
 **Data dell'ultima verifica operativa:** 11 agosto 2026
 **Esito:** landing e asset coerenti; struttura dei gruppi e delle keyword riallineata;
 3 annunci attivi, tutti idonei e diretti a V3 Agosto. Testo dei 2 annunci attivi

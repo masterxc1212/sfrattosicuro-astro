@@ -8,6 +8,16 @@ RewriteRule ^privacy-policy$ /privacy-policy/ [R=301,L]
 RewriteRule ^sfratto-per-morosita/?$ /servizi/sfratto-per-morosita/ [R=301,L]
 RewriteRule ^locazioni/?$ /servizi/contratti-di-locazione/ [R=301,L]
 
+# Promo «V3 Agosto» ritirata il 2026-08-22 (decisione utente).
+# Erano DUE pagine gemelle con lo stesso contenuto a €1.000 (/sfratto-agosto/
+# nacque perche' Google aveva messo /landing-v3-agosto/ in lista nera con
+# DESTINATION_NOT_WORKING). Restavano online e promettevano ancora €1.000
+# mentre annunci e sito erano tornati a €1.300: il 21/08 un lead vero e' entrato
+# proprio da li' ed e' stato poi quotato €1.300. Disallineamento di offerta chiuso.
+# Redirect e non 404: chi ha il link salvato deve atterrare sull'offerta corrente.
+RewriteRule ^landing-v3-agosto/?$ /landing-v3/ [R=301,L]
+RewriteRule ^sfratto-agosto/?$ /landing-v3/ [R=301,L]
+
 # Vecchi endpoint sitemap legacy -> sitemap canonica unica
 RewriteRule ^sitemap-pages\.xml$ /sitemap.xml [R=301,L]
 RewriteRule ^sitemap-index\.xml$ /sitemap.xml [R=301,L]
