@@ -16,6 +16,70 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-per-morosita-quante-mensilita",
+    title: "Sfratto per morosità: da quante mensilità non pagate si può procedere",
+    description: "Sfratto per morosità: da quante mensilità non pagate si può procedere? La soglia dell'art. 5 L. 392/1978, il termine di grazia e cosa fare.",
+    excerpt: "Per l'affitto di casa basta una mensilità non pagata da oltre venti giorni. Ecco la soglia di legge, la differenza con il commerciale, il termine di grazia e cosa deve fare il proprietario.",
+    lead: "Un inquilino che salta i pagamenti: da quante mensilità non pagate puoi chiedere lo sfratto per morosità? Vediamo la soglia di legge e come muoverti, dalla parte del proprietario.",
+    publishedAt: "2026-08-22",
+    updatedAt: "2026-08-22",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-22. Keyword: sfratto per morosità quante mensilità, vol 20, KD 0 (DataForSEO).",
+    html: `
+<p>Se hai un inquilino che salta i pagamenti, la prima domanda è quasi sempre la stessa: <strong>lo sfratto per morosità da quante mensilità non pagate si può chiedere</strong>? La risposta sorprende molti proprietari, perché la soglia è più bassa di quello che si crede. In questa guida vediamo, in modo pratico e dalla parte del locatore, quante rate scoperte servono davvero per agire, che differenza c'è tra affitto di casa e locale commerciale, e come muoverti senza commettere errori che allungano i tempi.</p>
+
+<h2>Da quante mensilità si può fare lo sfratto per morosità</h2>
+<p>Per la locazione di un immobile a uso abitativo la regola è netta: <strong>basta una sola mensilità non pagata</strong>, purché siano trascorsi più di venti giorni dalla scadenza prevista nel contratto. Non devi aspettare che l'inquilino accumuli tre, quattro o sei rate. Molti proprietari lo ignorano e lasciano crescere il debito nella speranza che il conduttore si metta in regola, perdendo mesi preziosi.</p>
+<p>Questa soglia non è un'interpretazione, ma il contenuto di una norma precisa (l'articolo 5 della legge sull'equo canone, di cui parliamo in coda). Il mancato pagamento del canone oltre i venti giorni dalla scadenza è considerato dalla legge un inadempimento abbastanza grave da giustificare la risoluzione del contratto e, quindi, lo sfratto.</p>
+
+<h3>Il canone: basta una rata scaduta da oltre venti giorni</h3>
+<p>Il conteggio è semplice. Se l'affitto scade, per esempio, il primo del mese e il giorno 22 non è ancora arrivato nulla, sei già nelle condizioni per procedere. Il ritardo, di per sé, è sufficiente: non conta il motivo per cui l'inquilino non ha pagato, e non serve dimostrare un danno particolare. Conta il fatto oggettivo del mancato pagamento entro il termine.</p>
+
+<h3>Gli oneri accessori: la soglia delle due mensilità</h3>
+<p>Discorso diverso per gli <strong>oneri accessori</strong>, cioè le spese che per legge spettano all'inquilino: quota condominiale a suo carico, riscaldamento centralizzato, piccole spese di gestione. Qui una singola rata scoperta non basta. Per usarle come motivo autonomo di sfratto, l'importo non pagato deve <strong>superare due mensilità del canone</strong>. È una soglia pensata per evitare che una controversia su poche decine di euro di spese porti alla perdita della casa.</p>
+
+<h2>Casa e locale commerciale: due regole diverse</h2>
+<p>La soglia della singola mensilità vale per gli affitti abitativi. Per i <strong>locali commerciali</strong> (negozi, uffici, capannoni) la legge non fissa un numero automatico di rate: il giudice valuta caso per caso quanto è grave l'inadempimento, secondo il principio generale del codice civile. In pratica, per il commerciale conta l'entità complessiva del debito rispetto al valore del contratto: un ritardo modesto su un canone alto può non bastare, mentre una morosità consistente e prolungata legittima senz'altro l'azione.</p>
+<p>Se hai dubbi sulla natura del tuo contratto, verificalo prima di muoverti: applicare la regola sbagliata è uno degli errori che fanno naufragare la procedura in udienza.</p>
+
+<h2>La soglia apre la porta, ma il giudice guarda il quadro</h2>
+<p>Attenzione a una distinzione che salva molte pratiche. La soglia di legge stabilisce <strong>quando puoi agire</strong>, cioè quando hai il diritto di avviare lo sfratto. Non significa che ogni ritardo si tradurrà automaticamente nel rilascio dell'immobile. Nel procedimento, il giudice guarda comunque il comportamento complessivo delle parti fino all'udienza.</p>
+<p>Il caso tipico è quello dell'inquilino che, ricevuto l'atto, paga in extremis quasi tutto lasciando scoperti pochi spiccioli, oppure versa a singhiozzo. Per questo è fondamentale documentare con precisione ogni scadenza, ogni pagamento mancato o parziale e ogni sollecito: un conteggio ordinato è la base su cui il giudice decide. Più la morosità è chiara e continuativa, più la posizione del proprietario è solida.</p>
+
+<h2>Il termine di grazia: l'inquilino può sanare</h2>
+<p>Anche quando hai tutte le carte in regola, la legge dà al conduttore una via d'uscita: il <strong>termine di grazia</strong>. Alla prima udienza l'inquilino può chiedere al giudice un termine per pagare tutto il dovuto: canoni scaduti, oneri accessori maturati, interessi legali e spese di lite liquidate in quella sede. Se salda entro il termine (in genere fino a novanta giorni), la morosità è sanata e lo sfratto non viene convalidato.</p>
+<p>Due cose da sapere per non farti trovare impreparato. La prima: questa sanatoria non è illimitata, può essere concessa <strong>non più di tre volte nell'arco di un quadriennio</strong>, quindi l'inquilino cronicamente moroso non può abusarne. La seconda: se paga davvero tutto, hai comunque recuperato il credito e le spese; se non paga entro il termine, la strada verso il rilascio prosegue. Trovi un approfondimento dedicato nella nostra guida al <a href="/blog/sfratto-termine-di-grazia/">sfratto e termine di grazia</a>.</p>
+
+<h2>Cosa deve fare il proprietario, passo per passo</h2>
+<p>Una volta chiarita la soglia, ecco i passaggi concreti per non perdere tempo:</p>
+<ul>
+<li><strong>Conta i giorni, non solo le rate.</strong> Verifica la data di scadenza sul contratto e appunta quando sono trascorsi i venti giorni: è da quel momento che puoi agire.</li>
+<li><strong>Prepara il conteggio della morosità.</strong> Elenca canoni e oneri scoperti con date e importi. È il documento che regge tutta la procedura.</li>
+<li><strong>Non aspettare troppo.</strong> Ogni mese di attesa è un canone che rischi di non incassare più e su cui, per l'abitativo, potresti perfino dover pagare le tasse.</li>
+<li><strong>Muoviti con l'atto giusto.</strong> Lo strumento più rapido è l'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>, che porta davanti al giudice in tempi contenuti.</li>
+<li><strong>Metti in conto la tempistica reale.</strong> Tra notifiche, udienza e rilascio i tempi variano: qui trovi una stima nella guida ai <a href="/blog/tempi-sfratto-per-morosita/">tempi dello sfratto per morosità</a>.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<p>Il primo errore è <strong>aspettare troppe mensilità</strong> pensando che serva un debito consistente: non è così, e l'attesa gioca solo a tuo sfavore. Il secondo è <strong>farsi giustizia da soli</strong> cambiando la serratura, staccando le utenze o rimuovendo le cose dell'inquilino: sono condotte vietate, che ti espongono a responsabilità anche quando hai ragione nel merito. Il terzo è <strong>accettare pagamenti parziali senza mettere nulla per iscritto</strong>: rischi di indebolire la posizione e di dare l'impressione di aver tollerato il ritardo. Infine, non confondere il regime dell'abitativo con quello del commerciale: la soglia della singola mensilità vale solo per la casa.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Posso sfrattare l'inquilino per una sola mensilità non pagata?</h3>
+<p>Sì, per l'affitto abitativo è sufficiente il mancato pagamento di un canone decorsi venti giorni dalla scadenza. Non occorre attendere l'accumulo di più rate.</p>
+<h3>Quanto deve essere alta la morosità sulle spese condominiali?</h3>
+<p>Per usare gli oneri accessori come motivo autonomo di sfratto, l'importo non pagato deve superare due mensilità del canone. Sotto quella soglia puoi comunque recuperare il credito, ma non fondare su di esso lo sfratto.</p>
+<h3>Se l'inquilino paga dopo che ho avviato la procedura, lo sfratto si ferma?</h3>
+<p>Può fermarsi se il conduttore ottiene il termine di grazia e salda tutto il dovuto, interessi e spese comprese, entro il termine fissato dal giudice. Questa possibilità è però limitata nel tempo e nel numero di volte.</p>
+<h3>Per un negozio valgono le stesse regole?</h3>
+<p>No. Per le locazioni commerciali non c'è una soglia fissa di mensilità: è il giudice a valutare la gravità dell'inadempimento in base all'entità del debito e alle circostanze.</p>
+
+<h2>In sintesi</h2>
+<p>Per lo <strong>sfratto per morosità</strong> non serve un inquilino con mesi e mesi di arretrato: per la casa basta una mensilità non pagata da oltre venti giorni, mentre per le sole spese accessorie occorre superare le due mensilità di canone. La soglia ti dà il diritto di agire, ma il giudice valuta comunque il quadro complessivo, e l'inquilino può ancora sanare con il termine di grazia. La mossa vincente resta una sola: muoverti presto, con un conteggio ordinato e gli atti fatti bene. Se vuoi capire come procedere sul tuo caso e liberare l'immobile nel modo più rapido, puoi chiedere una valutazione con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Contenuto informativo, aggiornato alla normativa vigente; non sostituisce una consulenza legale sul caso concreto. Riferimenti normativi: articolo 5 della legge 27 luglio 1978, n. 392 (soglia di morosità del canone e degli oneri accessori); articolo 55 della stessa legge (termine di grazia e sanatoria della morosità in sede giudiziale); articolo 1455 del codice civile (gravità dell'inadempimento); articoli 657 e 658 del codice di procedura civile (procedimento di convalida di sfratto), come incisi dalla riforma Cartabia (D.Lgs. 149/2022) e dal relativo correttivo (D.Lgs. 164/2024).</em></p>
+`,
+  },
+  {
     slug: "indennita-occupazione-senza-titolo",
     title: "Indennità di occupazione senza titolo: cosa spetta al proprietario",
     description: "Indennità di occupazione senza titolo: cos'è, da quando è dovuta, quanto vale secondo l'art. 1591 c.c. e come il proprietario la calcola e recupera.",
