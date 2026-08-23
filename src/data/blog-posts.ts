@@ -16,6 +16,74 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "interessi-legali-cauzione-affitto",
+    title: "Interessi legali sulla cauzione dell'affitto: cosa deve fare il proprietario",
+    description: "Interessi legali sulla cauzione dell'affitto: quanto valgono, quando pagarli e le clausole nulle da evitare. Guida pratica per il proprietario.",
+    excerpt: "Il deposito cauzionale produce interessi legali a favore dell'inquilino: quanto valgono con il tasso 2026, quando riconoscerli e gli errori da evitare.",
+    lead: "La cauzione che l'inquilino ti versa non è ferma: per legge produce interessi legali a suo favore. Ecco quanto valgono, quando pagarli e come gestirli senza contestazioni.",
+    publishedAt: "2026-08-23",
+    updatedAt: "2026-08-23",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-23. Keyword: interessi legali cauzione affitto, vol 260, KD 0 (DataForSEO).",
+    html: `
+      <p>Se affitti un immobile e hai ricevuto un deposito cauzionale, c'è un dettaglio che molti proprietari trascurano: quella somma non è un semplice "fondo di garanzia" fermo in un cassetto. Per legge produce <strong>interessi legali</strong> a favore dell'inquilino, e sei tu locatore a doverli riconoscere. Capire come funzionano gli <strong>interessi legali sulla cauzione dell'affitto</strong> ti evita contestazioni alla fine del contratto, richieste di rimborso a sorpresa e clausole del contratto che rischiano di essere dichiarate nulle. Questa guida spiega, in modo pratico, quanto valgono, quando vanno pagati e cosa conviene fare.</p>
+
+      <h2>La regola in parole semplici</h2>
+      <p>Il deposito cauzionale è la somma che l'inquilino versa alla firma del contratto come garanzia per eventuali danni all'immobile o canoni non pagati. La legge fissa due paletti che riguardano direttamente il proprietario: il deposito <strong>non può superare le tre mensilità</strong> del canone e, soprattutto, <strong>produce interessi legali</strong> che spettano all'inquilino. In pratica, tenere la cauzione senza mai riconoscere nulla non è corretto: quei soldi, finché restano nella tua disponibilità, maturano un interesse a favore di chi te li ha versati.</p>
+      <p>La ragione è semplice: la cauzione serve a garantirti, non a diventare un guadagno nascosto. Se potessi trattenere anche i frutti di quella somma, di fatto il canone sarebbe più alto di quello scritto nel contratto. Per questo la legge protegge l'inquilino imponendoti di riconoscere l'interesse.</p>
+
+      <h2>Interessi legali sulla cauzione: quanto valgono ogni anno</h2>
+      <p>Gli interessi si calcolano applicando alla cauzione il <strong>tasso di interesse legale</strong>, che il Ministero dell'Economia aggiorna ogni anno con un decreto. Non è un valore fisso: per il <strong>2026 è pari all'1,60%</strong> annuo, mentre nel 2025 era il 2%. Questo significa che il conteggio va fatto anno per anno, usando il tasso in vigore in ciascun periodo.</p>
+      <p>Un esempio concreto aiuta a capire l'ordine di grandezza. Immaginiamo un canone di 700 euro al mese e una cauzione di due mensilità, cioè 1.400 euro:</p>
+      <ul>
+        <li>con il tasso 2026 all'1,60%, l'interesse di un anno pieno è circa <strong>22,40 euro</strong> (1.400 × 1,60%);</li>
+        <li>con il tasso 2025 al 2%, per lo stesso anno sarebbero stati 28 euro;</li>
+        <li>su un contratto lungo, questi importi si sommano e alla fine possono valere qualche decina o centinaio di euro.</li>
+      </ul>
+      <p>Le cifre non sono enormi, ma proprio perché sono piccole vengono spesso dimenticate: ed è alla riconsegna dell'immobile che l'inquilino, magari mal consigliato, le rivendica tutte insieme creando tensione su un rapporto che stava per chiudersi bene.</p>
+
+      <h2>Quando vanno pagati: ogni anno o a fine contratto?</h2>
+      <p>Qui la pratica è meno netta di quanto sembri, e conviene conoscerla. La norma parla di interessi da corrispondere "alla fine di ogni anno". Alcune pronunce della Corte di Cassazione hanno seguito questa lettura in modo rigoroso: gli interessi maturano annualmente e vanno riconosciuti con cadenza annuale, a prescindere dal fatto che il deposito sia ancora nelle tue mani. Altre pronunce, invece, hanno ammesso che il proprietario possa versare tutto insieme, capitale e interessi, alla scadenza definitiva del contratto, ritenendo prematura la richiesta dell'inquilino prima di quel momento.</p>
+      <p>Cosa farne, in concreto? La scelta più prudente per il proprietario è <strong>non ignorare l'obbligo</strong> e tenere il conteggio aggiornato di anno in anno, così da poter riconoscere gli interessi corretti quando serve. Che tu decida di versarli annualmente o di conteggiarli alla riconsegna insieme alla restituzione del deposito, l'importante è che la somma sia calcolata e disponibile: è l'assenza totale di riconoscimento a esporti a contestazioni.</p>
+
+      <h2>Attenzione alle clausole nulle nel contratto</h2>
+      <p>Un errore diffuso è inserire nel contratto una frase del tipo "il deposito non produce interessi" oppure "le parti rinunciano agli interessi sulla cauzione". Clausole di questo tipo sono considerate <strong>nulle</strong>: l'obbligo di riconoscere gli interessi legali ha natura imperativa, cioè non può essere aggirato dalla volontà delle parti perché tutela l'inquilino come contraente più debole. Anche se l'inquilino firma, quella rinuncia non ha valore e gli interessi restano dovuti.</p>
+      <p>Vale la pena chiarire anche un dubbio molto comune tra i proprietari: la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> non cancella questo obbligo. La cedolare è un regime fiscale che sostituisce alcune imposte sui canoni, ma non tocca l'obbligazione civile sugli interessi del deposito, che resta valida a prescindere dal regime fiscale scelto.</p>
+
+      <h2>Cosa fare in pratica: la checklist del proprietario</h2>
+      <ul>
+        <li><strong>Verifica l'importo della cauzione</strong>: se supera le tre mensilità del canone, sei fuori dai limiti di legge.</li>
+        <li><strong>Segna la data di versamento</strong> del deposito: è da lì che parte il conteggio degli interessi.</li>
+        <li><strong>Tieni una tabella semplice</strong> anno per anno, applicando a ogni annualità il tasso legale in vigore in quel periodo.</li>
+        <li><strong>Non inserire clausole di rinuncia</strong> agli interessi: sarebbero comunque nulle e ti espongono a contestazioni.</li>
+        <li><strong>Alla riconsegna</strong>, se decidi di trattenere in tutto o in parte il deposito, calcola separatamente gli interessi maturati e mettili per iscritto nei conteggi finali.</li>
+        <li><strong>Documenta tutto</strong>: verbale di riconsegna, conteggi e comunicazioni scritte riducono drasticamente il rischio di liti.</li>
+      </ul>
+
+      <h2>Errori comuni da evitare</h2>
+      <p>Il primo errore è considerare la cauzione un guadagno: non lo è, e i suoi frutti spettano all'inquilino. Il secondo è confondere gli interessi con la <a href="/blog/deposito-cauzionale-affitto/">trattenuta del deposito</a>: sono due questioni distinte. Puoi avere pieno diritto di trattenere la cauzione per danni o insoluti e, allo stesso tempo, dover comunque conteggiare gli interessi maturati fino a quel momento. Il terzo errore è affidarsi a clausole "furbe" di rinuncia, che non reggono. Il quarto è rimandare tutto alla fine senza aver tenuto traccia dei calcoli: quando arriva la richiesta dell'inquilino, ricostruire anni di conteggi a memoria diventa complicato e fonte di errori a tuo sfavore.</p>
+
+      <h2>Domande frequenti</h2>
+      <h3>Devo pagare gli interessi anche se l'inquilino non li chiede?</h3>
+      <p>Sì. L'obbligo esiste a prescindere da una richiesta espressa dell'inquilino. Diverso è il piano processuale: per farli valere in un giudizio (ad esempio in compensazione con canoni non pagati) l'inquilino deve comunque proporre la relativa domanda o eccezione. Ma sul piano sostanziale gli interessi restano dovuti.</p>
+      <h3>Su quale importo si calcolano?</h3>
+      <p>Sull'intera somma versata a titolo di deposito cauzionale, applicando il tasso legale in vigore in ciascun anno. Se il deposito resta invariato, cambia solo il tasso da un anno all'altro.</p>
+      <h3>Posso compensare gli interessi dovuti con i canoni non pagati?</h3>
+      <p>In linea di principio sì: l'obbligo di riconoscere gli interessi e quello dell'inquilino di pagare il canone sono autonomi e possono compensarsi quando ne ricorrono i presupposti. È comunque opportuno mettere i conteggi per iscritto ed evitare compensazioni "a occhio".</p>
+      <h3>La cauzione può superare le tre mensilità se l'inquilino è d'accordo?</h3>
+      <p>No. Il limite delle tre mensilità è fissato dalla legge e non è derogabile dall'accordo delle parti. Chiedere di più ti espone a contestazioni sulla parte eccedente.</p>
+
+      <h2>Riferimenti normativi essenziali</h2>
+      <p>La disciplina è contenuta nell'articolo 11 della legge 27 luglio 1978 n. 392 (la storica "legge sull'equo canone", tuttora applicabile a questi aspetti anche per i contratti liberi), che fissa il tetto delle tre mensilità e stabilisce che il deposito è produttivo di interessi legali da corrispondere all'inquilino. La natura imperativa dell'obbligo, con la conseguente nullità delle clausole difformi, è affermata in modo costante dalla Corte di Cassazione (tra le altre, Cass. civ. Sez. III n. 9059/2002 e n. 75/2010). Che gli interessi siano dovuti anche senza richiesta dell'inquilino è ribadito da Cass. civ. n. 8405/1993 e n. 979/1995; sulla cadenza annuale si veda Cass. civ. Sez. III n. 24282/2017, mentre un diverso orientamento ammette il versamento cumulativo alla scadenza del contratto (Cass. civ. Sez. III n. 16669/2016). Il tasso legale applicabile è quello fissato di anno in anno con decreto del Ministero dell'Economia: per il 2026 è pari all'1,60%.</p>
+
+      <h2>In sintesi</h2>
+      <p>Gli interessi legali sulla cauzione sono un obbligo del proprietario spesso dimenticato ma facile da gestire: basta rispettare il limite delle tre mensilità, tenere un conteggio aggiornato con il tasso di ciascun anno ed evitare clausole di rinuncia che non hanno valore. Farlo con ordine ti mette al riparo da richieste dell'ultimo minuto e rende più semplice la chiusura del rapporto.</p>
+      <p>Se hai dubbi sulla gestione della cauzione, sulla restituzione del deposito o su un contratto già in corso, il team di Sfratto Sicuro può aiutarti a fare i conteggi corretti e a impostare bene il contratto: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+      <p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata sul tuo caso specifico.</em></p>
+`,
+  },
+  {
     slug: "sfratto-per-morosita-quante-mensilita",
     title: "Sfratto per morosità: da quante mensilità non pagate si può procedere",
     description: "Sfratto per morosità: da quante mensilità non pagate si può procedere? La soglia dell'art. 5 L. 392/1978, il termine di grazia e cosa fare.",
