@@ -16,6 +16,104 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "differenza-convalida-sfratto-ordinanza-rilascio",
+    title: "Convalida di sfratto e ordinanza di rilascio: che differenza c'è",
+    description: "Convalida di sfratto e ordinanza di rilascio: quando il giudice pronuncia l'una o l'altra e cosa cambia per il proprietario che vuole l'immobile.",
+    excerpt: "Convalida di sfratto e ordinanza di rilascio non sono la stessa cosa: quando arriva l'una o l'altra e cosa significa per il proprietario che vuole riavere casa.",
+    lead: "Alla tua udienza di sfratto il giudice può arrivare a due esiti diversi: la convalida o l'ordinanza provvisoria di rilascio. Ecco che differenza c'è e cosa cambia per te che sei il proprietario.",
+    publishedAt: "2026-08-24",
+    updatedAt: "2026-08-24",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-24. Keyword: differenza tra convalida di sfratto e ordinanza di rilascio, vol 50, KD 0 (DataForSEO).",
+    html: `
+<p>Hai chiesto lo sfratto del tuo inquilino e ti stai preparando all'udienza. Girando tra siti e forum trovi due parole che sembrano dire la stessa cosa: <strong>convalida di sfratto</strong> e <strong>ordinanza di rilascio</strong>. In realtà indicano due esiti diversi dell'udienza, con conseguenze diverse per te che sei il proprietario. Capire la differenza tra convalida di sfratto e ordinanza di rilascio ti aiuta a sapere cosa aspettarti in aula e cosa potrai fare subito dopo per riavere l'immobile.</p>
+
+<p>In questa guida spieghiamo, in parole semplici, quando il giudice pronuncia l'una o l'altra, quale ti fa recuperare la casa più in fretta e quali errori evitare.</p>
+
+<h2>Cosa succede all'udienza di convalida</h2>
+
+<p>La procedura di sfratto (per morosità o per finita locazione) parte con un atto, l'<strong>intimazione di sfratto</strong>, con cui chiami l'inquilino davanti al giudice a un'udienza detta "di convalida". Quello che accade in quell'udienza dipende dal comportamento dell'inquilino, e sono proprio i suoi comportamenti a portare alla convalida oppure all'ordinanza di rilascio.</p>
+
+<p>Si aprono, in sostanza, tre strade:</p>
+
+<ul>
+<li>l'inquilino <strong>non si presenta</strong> in udienza;</li>
+<li>l'inquilino <strong>si presenta ma non si oppone</strong>;</li>
+<li>l'inquilino <strong>si presenta e si oppone</strong>, contestando la tua richiesta.</li>
+</ul>
+
+<p>Le prime due strade portano alla convalida. La terza, a certe condizioni, all'ordinanza di rilascio.</p>
+
+<h2>La convalida di sfratto: quando l'inquilino non reagisce</h2>
+
+<p>Se l'inquilino non compare, oppure compare ma non solleva contestazioni, il giudice <strong>convalida lo sfratto con un'ordinanza esecutiva</strong>. È l'esito più rapido e più frequente: la procedura sommaria si chiude lì, e tu ottieni un titolo per procedere al rilascio dell'immobile.</p>
+
+<p>C'è una regola in più quando lo sfratto è per <strong>mancato pagamento del canone</strong>: la convalida è subordinata alla tua dichiarazione (o del tuo avvocato) in udienza che <strong>la morosità persiste ancora</strong>. In pratica devi confermare che, alla data dell'udienza, l'inquilino non ha saldato. Il giudice, in alcuni casi, può anche chiederti una cauzione a garanzia.</p>
+
+<p>Attenzione a un punto che spesso genera confusione: la convalida non significa che l'inquilino lascia la casa il giorno stesso. È il documento che ti serve per avviare la fase successiva (notifica del titolo e dell'atto di intimazione al rilascio, avviso di sloggio, eventuale intervento dell'ufficiale giudiziario). Abbiamo spiegato questi passaggi nell'articolo dedicato alla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</p>
+
+<h2>L'ordinanza di rilascio: quando l'inquilino si oppone</h2>
+
+<p>Se invece l'inquilino <strong>compare e si oppone</strong>, la convalida "secca" non è più possibile: c'è un contrasto tra le parti che va deciso in un vero e proprio giudizio. Il rischio, per te proprietario, sarebbe quello di dover attendere mesi o anni prima di riavere l'immobile.</p>
+
+<p>Per evitare questo blocco, la legge prevede una scorciatoia importante: se le eccezioni dell'inquilino <strong>non sono fondate su prova scritta</strong>, il giudice, <strong>su tua richiesta</strong> e se non ci sono gravi motivi contrari, può pronunciare comunque un'<strong>ordinanza provvisoria di rilascio</strong>. Tradotto: anche se l'inquilino contesta, se lo fa a parole e senza documenti convincenti, tu puoi ottenere subito un titolo per riprenderti la casa, mentre la causa vera e propria continua.</p>
+
+<p>Due caratteristiche di questa ordinanza contano molto in concreto:</p>
+
+<ul>
+<li>è <strong>immediatamente esecutiva</strong>, quindi ti permette di avviare il rilascio senza aspettare la fine della causa;</li>
+<li>è <strong>non impugnabile</strong>, cioè l'inquilino non può bloccarla con un ricorso, anche se la causa di merito prosegue.</li>
+</ul>
+
+<p>Il giudice può subordinare l'ordinanza al versamento di una <strong>cauzione</strong> a copertura di eventuali danni e spese, nel caso in cui, a fine causa, l'inquilino avesse ragione. Dopo l'ordinanza, il procedimento cambia forma (si parla di "mutamento del rito") e prosegue nel merito con il rito speciale delle locazioni. Se vuoi capire cosa comporta l'opposizione dell'inquilino, ne parliamo nell'articolo sull'<a href="/blog/opposizione-sfratto-per-morosita/">opposizione allo sfratto per morosità</a>.</p>
+
+<h2>Le differenze pratiche tra convalida di sfratto e ordinanza di rilascio</h2>
+
+<p>Messe a confronto, le due strade hanno molto in comune ma anche differenze decisive:</p>
+
+<ul>
+<li><strong>Presupposto</strong>: la convalida nasce dall'inerzia dell'inquilino (assente o non opponente); l'ordinanza di rilascio nasce nonostante l'opposizione, quando questa è debole e senza prove scritte.</li>
+<li><strong>Effetto sulla causa</strong>: con la convalida la fase sommaria si chiude; con l'ordinanza di rilascio la causa continua nel merito, ma tu hai già in mano un titolo per il rilascio.</li>
+<li><strong>Rapidità</strong>: la convalida è la via più veloce in assoluto; l'ordinanza di rilascio è il modo più veloce per non restare bloccato quando l'inquilino si oppone.</li>
+<li><strong>Rischio</strong>: l'ordinanza di rilascio è provvisoria, quindi legata all'esito finale della causa; per questo può essere accompagnata da una cauzione.</li>
+</ul>
+
+<p>In entrambi i casi il risultato utile per te è lo stesso: <strong>un titolo esecutivo</strong> che ti consente di passare alla fase di riconsegna dell'immobile. Cambia il percorso, non l'obiettivo.</p>
+
+<h2>Errori comuni da evitare</h2>
+
+<ul>
+<li><strong>Non presentarti (o non farti rappresentare) all'udienza</strong>: se manchi tu, per lo sfratto per morosità rischi di non poter confermare che la morosità persiste, e la convalida può saltare.</li>
+<li><strong>Dimenticare di chiedere l'ordinanza di rilascio</strong>: se l'inquilino si oppone, il giudice pronuncia l'ordinanza <em>su istanza del locatore</em>. Se nessuno la chiede, non arriva da sola.</li>
+<li><strong>Confondere il titolo con la riconsegna</strong>: ottenere convalida o ordinanza non significa avere già le chiavi. Serve la fase esecutiva successiva, con tempi tecnici da mettere in conto.</li>
+<li><strong>Sottovalutare la sanatoria della morosità</strong>: nello sfratto per morosità l'inquilino può, entro certi limiti, pagare il dovuto ed evitare la risoluzione (il cosiddetto "termine di grazia"). È un elemento che può cambiare l'esito dell'udienza.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+
+<h3>La convalida di sfratto è più veloce dell'ordinanza di rilascio?</h3>
+<p>Sì, quando l'inquilino non si oppone. La convalida chiude subito la fase sommaria. L'ordinanza di rilascio serve invece proprio nei casi in cui c'è opposizione: è la via più rapida per non restare fermi, ma la causa prosegue nel merito.</p>
+
+<h3>L'inquilino può bloccare l'ordinanza di rilascio?</h3>
+<p>No, l'ordinanza provvisoria di rilascio è non impugnabile ed è immediatamente esecutiva. L'inquilino può continuare a difendersi nella causa di merito, ma non può sospendere il rilascio con un'impugnazione dell'ordinanza.</p>
+
+<h3>Cosa succede dopo la convalida o l'ordinanza di rilascio?</h3>
+<p>Ottenuto il titolo, si passa alla fase esecutiva: notifica dell'atto di intimazione a rilasciare, preavviso di rilascio e, se l'inquilino non lascia spontaneamente, accesso dell'ufficiale giudiziario per la riconsegna dell'immobile.</p>
+
+<h3>Serve un avvocato?</h3>
+<p>Nella procedura di sfratto l'assistenza di un avvocato è di regola necessaria. Un professionista sa quando e come chiedere l'ordinanza di rilascio e cura la fase esecutiva, riducendo il rischio di errori che allungano i tempi.</p>
+
+<h2>In sintesi</h2>
+
+<p>Convalida di sfratto e ordinanza di rilascio non sono la stessa cosa: la prima arriva quando l'inquilino non reagisce, la seconda quando si oppone ma senza prove scritte solide. In tutti e due i casi ottieni un titolo per riprenderti l'immobile; cambia solo la strada per arrivarci. La cosa più importante, come proprietario, è farti trovare pronto all'udienza e chiedere il provvedimento giusto al momento giusto.</p>
+
+<p>Se stai affrontando uno sfratto e vuoi capire quale sarà probabilmente l'esito della tua udienza, <a href="/servizi/tutela-proprietario/">Sfratto Sicuro può affiancarti</a> nella scelta della strategia e nella gestione di tutte le fasi, fino alla riconsegna delle chiavi.</p>
+
+<p><em>Contenuto a scopo informativo, aggiornato alla riforma Cartabia (D.Lgs. 149/2022) e al correttivo (D.Lgs. 164/2024). Non sostituisce una consulenza legale sul caso concreto. Riferimenti normativi: artt. 663 (mancata comparizione o mancata opposizione dell'intimato), 664 (pagamento dei canoni), 665 (opposizione, provvedimenti del giudice) e 667 (mutamento del rito) del codice di procedura civile; art. 55 della legge n. 392/1978 (termine per il pagamento dei canoni scaduti).</em></p>
+`,
+  },
+  {
     slug: "interessi-legali-cauzione-affitto",
     title: "Interessi legali sulla cauzione dell'affitto: cosa deve fare il proprietario",
     description: "Interessi legali sulla cauzione dell'affitto: quanto valgono, quando pagarli e le clausole nulle da evitare. Guida pratica per il proprietario.",
