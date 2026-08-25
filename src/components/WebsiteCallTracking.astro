@@ -71,8 +71,21 @@ const { eager = false } = Astro.props;
       }
       if (!window.__awPhoneConfigured) {
         window.__awPhoneConfigured = true;
-        // country_code esplicito: senza, gtag mandava cc=ZZ al wcm e Google NON assegnava
-        // mai il numero d'inoltro -> swap mai avvenuto -> WEBSITE_CALL sempre 0 (bug 2026-07-20)
+        // ⚠️ NOTA CORRETTA IL 2026-08-25 — la spiegazione precedente era sbagliata.
+        // Diceva: "senza country_code gtag manda cc=ZZ e Google non assegna mai il
+        // numero d'inoltro -> WEBSITE_CALL sempre 0 (bug 2026-07-20)".
+        // Verificato in produzione: gtag manda `cc=ZZ` al wcm COMUNQUE, sia col numero
+        // in formato internazionale sia in formato nazionale, e sia con questo
+        // country_code impostato sia senza. Il parametro non finisce nella richiesta.
+        // E soprattutto: le conversioni WEBSITE_CALL registrate sono del **3 luglio**
+        // (PRIMA del presunto fix) e del **28 luglio** (dopo) — quindi il meccanismo
+        // funziona CON cc=ZZ e quel parametro non e' mai stato il blocco.
+        // Si lascia il country_code perche' e' corretto dichiararlo e non fa danno,
+        // ma NON aspettarsi che cambi `cc`: non e' li' il problema.
+        // Il vero limite e' strutturale: la sostituzione del numero vale solo per chi
+        // arriva da un annuncio, chiama dallo stesso dispositivo/sessione e compone il
+        // numero sostituito. Per uno sfratto — dove si chiama dopo aver riflettuto,
+        // spesso da un altro telefono — e' una minoranza dei casi.
         window.gtag('config', AW_ID + '/' + CALL_LABEL, {
           phone_conversion_number: PHONE_NUMBER,
           phone_conversion_country_code: 'IT'
