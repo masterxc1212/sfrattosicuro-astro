@@ -4316,6 +4316,35 @@ img{max-width:100%;height:auto;display:block}
   },true);
 })();
 </script>
+
+<!-- Cattura GCLID/UTM con ripiego su localStorage 90gg + cookie _gcl_aw.
+     Gemello inline di AdAttributionFields.astro: questa landing e' statica e non
+     passa dal SiteLayout. Aggiunto il 2026-08-22 — la cattura preesistente leggeva
+     solo l'URL, quindi chi tornava dopo giorni perdeva l'attribuzione. -->
+<script>
+(function(){
+  var CAMPI=['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','keyword','matchtype'];
+  var P='ss_attr_', G=90*24*60*60*1000;
+  function ls(n){try{var r=localStorage.getItem(P+n);if(!r)return '';var d=JSON.parse(r);
+    if(!d||!d.v||!d.t)return '';if(Date.now()-d.t>G){localStorage.removeItem(P+n);return ''}return d.v}catch(e){return ''}}
+  function save(n,v){try{sessionStorage.setItem(n,v)}catch(e){}try{localStorage.setItem(P+n,JSON.stringify({v:v,t:Date.now()}))}catch(e){}}
+  function ck(){try{var c=document.cookie.split(';').map(function(x){return x.trim()})
+    .filter(function(x){return x.indexOf('_gcl_aw=')===0})[0];if(!c)return '';
+    var a=c.split('=').slice(1).join('=').split('.');return a.length>=3?a.slice(2).join('.'):''}catch(e){return ''}}
+  function val(n,u){var v=u.get(n);if(v){save(n,v);return v}
+    try{v=sessionStorage.getItem(n)}catch(e){v=null} if(v)return v;
+    v=ls(n); if(v)return v;
+    if(n==='gclid'){v=ck(); if(v){save(n,v);return v}} return ''}
+  function run(){var u=new URLSearchParams(location.search);
+    var fs=document.querySelectorAll('form[action*="invia-email"]');
+    for(var i=0;i<fs.length;i++){for(var j=0;j<CAMPI.length;j++){var n=CAMPI[j],v=val(n,u);
+      if(!v)continue;var el=fs[i].querySelector('input[name="'+n+'"]');
+      if(!el){el=document.createElement('input');el.type='hidden';el.name=n;fs[i].appendChild(el)}
+      if(!el.value)el.value=v}}}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
+  document.addEventListener('submit',run,true);
+})();
+</script>
 </body>
 
 </html>

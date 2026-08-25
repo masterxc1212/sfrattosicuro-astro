@@ -10,6 +10,7 @@ import WebsiteCallTracking from '../components/WebsiteCallTracking.astro';
 import TikTokPixelTracking from '../components/TikTokPixelTracking.astro';
 import MetaPixelTracking from '../components/MetaPixelTracking.astro';
 import MetaAdvancedMatching from '../components/MetaAdvancedMatching.astro';
+import AdAttributionFields from '../components/AdAttributionFields.astro';
 import BehaviourTracking from '../components/BehaviourTracking.astro';
 import ClarityTracking from '../components/ClarityTracking.astro';
 import { consentBannerEnabled, trackingEager, tiktokPixelId, clarityProjectId } from '../lib/tracking-config';
@@ -75,6 +76,10 @@ const {
         contatto. Non tocca l'invio del modulo: gli hash si calcolano mentre
         l'utente digita. Vedi il componente per il dettaglio. */}
     <MetaAdvancedMatching />
+    {/* Cattura GCLID/UTM su TUTTI i moduli. Aggiunto il 2026-08-22: il modulo di
+        home e sedi non aveva nemmeno il campo nascosto `gclid`, quindi ogni lead
+        nato li' arrivava in CRM senza attribuzione. Vedi il componente. */}
+    <AdAttributionFields />
     <BehaviourTracking />
     <ClarityTracking projectId={clarityProjectId} eager={trackingEager} />
     <script is:inline>

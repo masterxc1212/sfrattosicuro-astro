@@ -1,0 +1,128 @@
+---
+/**
+ * AdAttributionFields.astro — cattura GCLID e UTM su OGNI modulo del sito.
+ *
+ * ┌── PERCHE' ESISTE (diagnosi del 2026-08-25) ────────────────────────────────┐
+ * │ Su 14 lead da modulo dal 25/07, SEI erano senza GCLID — tutti provenienti  │
+ * │ dal modulo del sito, non dalle landing. La causa, verificata in produzione:│
+ * │                                                                            │
+ * │   - le landing (v2/v3/v4 + /landing/) hanno la cattura e funzionano;       │
+ * │   - la HOME e le 137 pagine sede montano un modulo che NON HA NEPPURE il   │
+ * │     campo nascosto `gclid`, e non carica `form-validation.js`.             │
+ * │                                                                            │
+ * │ Ogni lead nato li' arrivava in CRM con GCLID vuoto. Senza GCLID non si     │
+ * │ possono caricare le conversioni offline, quindi Google non puo' sapere     │
+ * │ quali clic sono diventati clienti: e' il collo di bottiglia che impedisce  │
+ * │ di ottimizzare sui CLIENTI invece che sui moduli.                          │
+ * │ Piu' volte si e' provato a risolvere guardando solo le landing: il buco    │
+ * │ era altrove.                                                               │
+ * └────────────────────────────────────────────────────────────────────────────┘
+ *
+ * LA SECONDA FALLA: la memoria durava una scheda.
+ * La cattura esistente leggeva solo da URL o `sessionStorage`. `sessionStorage`
+ * muore alla chiusura della scheda e non e' condivisa fra schede. Per uno sfratto
+ * la gente ci pensa giorni e torna: chi clicca l'annuncio oggi e compila
+ * dopodomani perdeva comunque l'attribuzione.
+ *
+ * Qui si aggiunge una catena di ripiego a quattro livelli, dal piu' fresco:
+ *   1. parametro nell'URL            (arrivo diretto dall'annuncio)
+ *   2. sessionStorage                (stessa scheda, navigazione interna)
+ *   3. localStorage, 90 giorni       (torna dopo giorni, stesso browser)
+ *   4. cookie `_gcl_aw` di Google    (rete di sicurezza: lo scrive gtag da solo)
+ *
+ * Il punto 4 e' quello che cambia le cose: `_gcl_aw` e' mantenuto da Google per
+ * 90 giorni indipendentemente dal nostro codice. Verificato in produzione il
+ * 2026-08-25: formato `GCL.<timestamp>.<gclid>`.
+ *
+ * ⚠️ NON INTERFERISCE MAI CON L'INVIO. Scrive solo campi nascosti: nessun
+ * preventDefault, nessuna attesa asincrona. Stessa regola dell'Advanced Matching
+ * Meta: il modulo e' il canale che porta i clienti paganti e non si tocca.
+ *
+ * Convive con `form-validation.js` sulle landing: quello salta i valori vuoti
+ * (`if (!value) return;`), quindi non sovrascrive cio' che troviamo dal cookie.
+ */
+---
+
+<script is:inline>
+  (() => {
+    var CAMPI = ['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','keyword','matchtype'];
+    var LS_PREFIX = 'ss_attr_';
+    var NOVANTA_GIORNI = 90 * 24 * 60 * 60 * 1000;
+
+    function daLocalStorage(nome) {
+      try {
+        var raw = localStorage.getItem(LS_PREFIX + nome);
+        if (!raw) return '';
+        var d = JSON.parse(raw);
+        if (!d || !d.v || !d.t) return '';
+        if (Date.now() - d.t > NOVANTA_GIORNI) { localStorage.removeItem(LS_PREFIX + nome); return ''; }
+        return d.v;
+      } catch (e) { return ''; }
+    }
+
+    function salva(nome, valore) {
+      try { sessionStorage.setItem(nome, valore); } catch (e) {}
+      try { localStorage.setItem(LS_PREFIX + nome, JSON.stringify({ v: valore, t: Date.now() })); } catch (e) {}
+    }
+
+    /**
+     * Rete di sicurezza: il gclid dal cookie `_gcl_aw` che gtag mantiene per 90
+     * giorni. Formato `GCL.<timestamp>.<gclid>`; il gclid puo' contenere punti,
+     * quindi si ricompone tutto quello che segue il secondo punto.
+     */
+    function gclidDalCookie() {
+      try {
+        var c = document.cookie.split(';').map(function (x) { return x.trim(); })
+          .find(function (x) { return x.indexOf('_gcl_aw=') === 0; });
+        if (!c) return '';
+        var parti = c.split('=').slice(1).join('=').split('.');
+        return parti.length >= 3 ? parti.slice(2).join('.') : '';
+      } catch (e) { return ''; }
+    }
+
+    function risolvi(nome, urlParams) {
+      var v = urlParams.get(nome);
+      if (v) { salva(nome, v); return v; }
+      try { v = sessionStorage.getItem(nome); } catch (e) { v = null; }
+      if (v) return v;
+      v = daLocalStorage(nome);
+      if (v) return v;
+      if (nome === 'gclid') {
+        v = gclidDalCookie();
+        if (v) { salva(nome, v); return v; }
+      }
+      return '';
+    }
+
+    function applica() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var moduli = document.querySelectorAll('form[action*="invia-email"]');
+      for (var i = 0; i < moduli.length; i++) {
+        var form = moduli[i];
+        for (var j = 0; j < CAMPI.length; j++) {
+          var nome = CAMPI[j];
+          var valore = risolvi(nome, urlParams);
+          if (!valore) continue;
+          var input = form.querySelector('input[name="' + nome + '"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = nome;
+            form.appendChild(input);
+          }
+          // Non sovrascrivere un valore gia' messo da form-validation.js sulle landing.
+          if (!input.value) input.value = valore;
+        }
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applica);
+    } else {
+      applica();
+    }
+    // Ultima passata al submit, per i moduli montati tardi (isole Astro).
+    // Solo scrittura di campi nascosti: l'invio non viene mai trattenuto.
+    document.addEventListener('submit', applica, true);
+  })();
+</script>

@@ -7,6 +7,7 @@ import ClickConversionTracking from '../../components/ClickConversionTracking.as
 import WebsiteCallTracking from '../../components/WebsiteCallTracking.astro';
 import MetaPixelTracking from '../../components/MetaPixelTracking.astro';
 import MetaAdvancedMatching from '../../components/MetaAdvancedMatching.astro';
+import AdAttributionFields from '../../components/AdAttributionFields.astro';
 import TikTokPixelTracking from '../../components/TikTokPixelTracking.astro';
 import LandingExperimentTracking from '../../components/LandingExperimentTracking.astro';
 import BehaviourTracking from '../../components/BehaviourTracking.astro';
@@ -279,6 +280,9 @@ const config = isAugust ? {
         pagina su cui atterrano gli annunci ed e' dove il modulo viene compilato.
         Va montato esplicitamente: queste landing non passano dal SiteLayout. */}
     <MetaAdvancedMatching pixelId="1373903100373659" />
+    {/* Aggiunge la catena di ripiego (localStorage 90gg + cookie _gcl_aw) che
+        form-validation.js non ha: recupera chi torna dopo giorni. */}
+    <AdAttributionFields />
     <TikTokPixelTracking pixelId={tiktokPixelId} eager />
     <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <BehaviourTracking />
