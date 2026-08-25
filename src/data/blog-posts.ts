@@ -16,6 +16,93 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "successione-contratto-locazione-morte-locatore",
+    title: "Successione nel contratto di locazione: cosa succede alla morte del locatore",
+    description: "Alla morte del locatore il contratto non si scioglie: prosegue con gli eredi. Canoni, cedolare secca, modello RLI e i passi da fare.",
+    excerpt: "Quando muore il proprietario che ha affittato casa, il contratto continua con gli eredi. Ecco cosa cambia per canoni, cedolare secca e adempimenti.",
+    lead: "Alla morte del locatore il contratto di locazione non finisce: prosegue con gli eredi, che diventano i nuovi proprietari-locatori. Ecco cosa fare subito, dai canoni alla cedolare secca.",
+    publishedAt: "2026-08-25",
+    updatedAt: "2026-08-25",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-25. Keyword: successione contratto locazione morte del locatore, vol 90, KD 0 (DataForSEO).",
+    html: `
+<p>Quando muore il proprietario di una casa data in affitto, la prima domanda degli eredi è quasi sempre la stessa: il contratto finisce con lui? La risposta, che spesso sorprende, è no. Alla morte del locatore il contratto <strong>non si scioglie</strong>: prosegue con gli eredi, che subentrano nella sua identica posizione. Questa guida spiega, dal punto di vista di chi eredita un immobile affittato, cosa succede al contratto, come si incassano i canoni, quali comunicazioni fare all'inquilino e all'Agenzia delle Entrate e quali errori evitare.</p>
+
+<h2>La regola di base: il contratto passa agli eredi</h2>
+<p>La <strong>successione nel contratto di locazione in caso di morte del locatore</strong> segue un principio semplice: chi eredita l'immobile eredita anche il contratto che lo riguarda. Il rapporto di affitto è un bene che entra nell'asse ereditario insieme al muro, e passa agli eredi con tutti i diritti e gli obblighi che aveva il defunto. Gli eredi diventano quindi i nuovi locatori a tutti gli effetti, senza bisogno di firmare un nuovo contratto con l'inquilino.</p>
+<p>La Corte di Cassazione lo ha ribadito più volte: la morte del locatore <em>determina la trasmissione della titolarità del rapporto locatizio agli eredi, con possibilità per essi di esercitare i diritti e le azioni che derivano dal contratto</em>. In pratica, gli eredi possono riscuotere i canoni, chiedere gli adeguamenti previsti, contestare la morosità e, se serve, avviare lo sfratto, esattamente come avrebbe potuto fare il proprietario scomparso.</p>
+
+<h3>Attenzione a non confondere: morte del locatore ≠ morte dell'inquilino</h3>
+<p>È un equivoco frequente. Le norme che molti citano — l'articolo 6 della Legge 392/1978 (la legge sull'equo canone) e l'articolo 1614 del Codice civile — regolano la successione quando muore <strong>l'inquilino</strong>, cioè chi abita l'immobile: in quel caso subentrano il coniuge, gli eredi e i parenti conviventi. Quando invece muore <strong>il proprietario che affitta</strong>, non esiste una norma speciale: si applicano le regole ordinarie della successione, e il contratto continua con i suoi eredi. Tenere distinti i due casi evita di dare (o ricevere) risposte sbagliate.</p>
+
+<h2>Cosa succede se gli eredi sono più di uno</h2>
+<p>Se l'immobile viene ereditato da più persone — per esempio i figli — si crea una <strong>comunione ereditaria</strong>: tutti gli eredi diventano contitolari del contratto in proporzione alla loro quota. Questo ha conseguenze pratiche importanti:</p>
+<ul>
+<li><strong>I canoni si dividono per quota.</strong> Ogni erede ha diritto alla parte di affitto corrispondente alla sua quota di eredità, salvo diversi accordi tra loro.</li>
+<li><strong>Le scelte di gestione vanno distinte.</strong> Stipulare una nuova locazione o modificare il contratto richiede, di regola, l'accordo di tutti i contitolari. Per la tutela del credito — ad esempio lo sfratto per morosità — la giurisprudenza riconosce invece che anche un singolo coerede può agire da solo, trattandosi di un rapporto "scindibile".</li>
+<li><strong>Serve un conto e un referente chiari.</strong> Per non generare confusione nell'inquilino conviene indicare a chi e su quale conto versare, ed eventualmente nominare un erede come referente.</li>
+</ul>
+
+<h2>I passi pratici per gli eredi</h2>
+<p>Ecco, in ordine, cosa conviene fare quando si eredita una casa già affittata.</p>
+<ul>
+<li><strong>1. Recuperare il contratto e i documenti.</strong> Serve la copia del contratto di locazione registrato, le ricevute dei canoni, l'eventuale deposito cauzionale versato e i dati dell'inquilino. Sono la base di tutto.</li>
+<li><strong>2. Comunicare per iscritto all'inquilino il subentro.</strong> Una comunicazione (meglio con raccomandata o PEC) che informa l'inquilino della morte del locatore, del subentro degli eredi e delle nuove coordinate di pagamento (a chi versare e su quale IBAN). Da quel momento l'inquilino deve pagare a voi: se continua a versare al defunto o su un conto non più valido, va avvisato subito per evitare contestazioni.</li>
+<li><strong>3. Presentare la dichiarazione di successione.</strong> Va inviata all'Agenzia delle Entrate, di norma <strong>entro dodici mesi</strong> dalla data del decesso, e include anche l'immobile affittato. È il passaggio che formalizza il trasferimento del bene agli eredi.</li>
+<li><strong>4. Fare la voltura catastale.</strong> Aggiorna l'intestazione dell'immobile al Catasto a nome dei nuovi proprietari.</li>
+<li><strong>5. Comunicare il subentro all'Agenzia delle Entrate anche per il contratto.</strong> Il cambio del locatore va segnalato con il <strong>modello RLI</strong> (Registrazione Locazioni Immobili, lo stesso modello usato per registrazioni e proroghe). È una semplice comunicazione: per il subentro per successione <strong>non si paga imposta di registro</strong>.</li>
+</ul>
+
+<h2>Il nodo della cedolare secca: da rifare, non si eredita automaticamente</h2>
+<p>La <strong>cedolare secca</strong> è il regime fiscale che permette di tassare i canoni con un'imposta fissa (in genere il 21%) al posto dell'IRPEF e delle imposte di registro e bollo. Qui c'è un errore che costa caro: <strong>l'opzione per la cedolare secca non passa automaticamente agli eredi</strong>. Anche se il proprietario defunto l'aveva scelta, i nuovi locatori devono esercitarla di nuovo a proprio nome.</p>
+<p>In concreto, gli eredi che vogliono continuare con la cedolare secca devono:</p>
+<ul>
+<li>esercitare l'opzione con il <strong>modello RLI</strong>, di regola <strong>entro trenta giorni</strong> dalla data della successione;</li>
+<li><strong>comunicarlo all'inquilino</strong> con lettera raccomandata, perché la scelta della cedolare comporta la rinuncia agli aggiornamenti ISTAT del canone (l'adeguamento annuale al costo della vita) per il periodo di applicazione.</li>
+</ul>
+<p>Se non si rinnova l'opzione, i canoni tornano a essere tassati con l'IRPEF ordinaria e si perde il vantaggio fiscale. Chi eredita un immobile affittato in cedolare secca dovrebbe quindi occuparsene subito, senza aspettare la chiusura di tutte le altre pratiche successorie.</p>
+
+<h2>Gli eredi possono mandare via l'inquilino?</h2>
+<p>No, non per il solo fatto di aver ereditato. Gli eredi subentrano nel contratto <em>così com'è</em>: sono vincolati alla durata pattuita e alle sue scadenze esattamente come lo era il defunto. Questo significa che:</p>
+<ul>
+<li>non possono chiedere all'inquilino di liberare l'immobile prima della scadenza solo perché è cambiato il proprietario;</li>
+<li>possono dare la <strong>disdetta per finita locazione</strong> alle scadenze e con i preavvisi previsti dal contratto e dalla legge, come qualunque locatore;</li>
+<li>se l'inquilino <strong>non paga</strong>, possono agire per la morosità e, nei casi previsti, avviare lo sfratto: il diritto di tutela del proprietario si trasferisce agli eredi insieme al contratto.</li>
+</ul>
+<p>In altre parole, ereditare la casa non è una scorciatoia per svuotarla, ma nemmeno un ostacolo: gli strumenti a tutela del locatore restano tutti disponibili.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Pensare che il contratto sia decaduto.</strong> Lasciare l'inquilino "senza interlocutore" per mesi crea solo confusione sui pagamenti e possibili contestazioni.</li>
+<li><strong>Non comunicare le nuove coordinate di pagamento.</strong> Senza istruzioni chiare, l'inquilino può continuare a pagare come prima, e recuperare quegli importi diventa complicato.</li>
+<li><strong>Dimenticare di rinnovare la cedolare secca.</strong> È l'errore fiscale più frequente: si dà per scontato che si "eredita" anche il regime, e invece va rifatto entro i termini.</li>
+<li><strong>Non coordinarsi tra eredi.</strong> Una disdetta o una modifica del contratto decise da un singolo contitolare, senza il consenso degli altri, rischiano di essere inefficaci: meglio muoversi d'accordo.</li>
+<li><strong>Trascurare i termini della successione.</strong> Ritardare la dichiarazione di successione espone a sanzioni: meglio muoversi per tempo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Alla morte del proprietario l'inquilino deve lasciare la casa?</h3>
+<p>No. Il contratto prosegue con gli eredi e l'inquilino conserva il diritto di restare fino alla scadenza, alle stesse condizioni. Nessuno deve liberare l'immobile solo perché è cambiato il locatore.</p>
+
+<h3>A chi deve pagare l'affitto l'inquilino dopo la morte del locatore?</h3>
+<p>Agli eredi, secondo le nuove coordinate che questi gli comunicheranno. Fino alla comunicazione, l'inquilino continua a essere obbligato al pagamento e non è liberato dal debito: per questo è importante avvisarlo subito su a chi e come versare.</p>
+
+<h3>Devo firmare un nuovo contratto con l'inquilino?</h3>
+<p>No. Il contratto in corso resta valido e si trasferisce automaticamente agli eredi. Basta comunicare il subentro all'Agenzia delle Entrate con il modello RLI; non serve un nuovo contratto.</p>
+
+<h3>La cedolare secca del defunto vale anche per me che eredito?</h3>
+<p>No, non automaticamente. Se volete mantenere la cedolare secca dovete esercitare di nuovo l'opzione con il modello RLI (di regola entro trenta giorni dalla successione) e comunicarlo all'inquilino. Altrimenti i canoni tornano alla tassazione IRPEF ordinaria.</p>
+
+<h3>Se siamo più eredi, chi gestisce il contratto?</h3>
+<p>Tutti gli eredi sono contitolari in proporzione alla loro quota. Conviene indicare all'inquilino un referente unico e un conto su cui versare, ma le decisioni importanti (disdetta, sfratto, modifiche) vanno prese d'accordo tra tutti.</p>
+
+<h2>In sintesi</h2>
+<p>Ereditare una casa affittata significa ereditare anche il contratto: il rapporto continua, i canoni spettano agli eredi e gli strumenti a tutela del proprietario restano tutti utilizzabili. Le mosse da fare subito sono poche ma precise: informare l'inquilino del subentro e delle nuove coordinate di pagamento, presentare la dichiarazione di successione, comunicare il cambio di locatore con il modello RLI e, se serve, rinnovare l'opzione per la cedolare secca entro i termini. Se il quadro è complesso, o se l'inquilino è già moroso, un confronto con un professionista aiuta a muoversi nell'ordine giusto.</p>
+<p>Per approfondire i passaggi collegati puoi leggere le nostre guide su <a href="/blog/subentro-contratto-locazione/">il subentro nel contratto di locazione</a>, sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> e su <a href="/blog/vendere-casa-con-inquilino/">cosa succede al contratto quando l'immobile cambia proprietario</a>. Se hai ereditato un immobile affittato e vuoi capire come tutelare al meglio i tuoi diritti, il team di Sfratto Sicuro può affiancarti: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto a scopo informativo, aggiornato ad agosto 2026. Non sostituisce una consulenza legale personalizzata: ogni situazione ereditaria e contrattuale va valutata nel caso concreto.</em></p>`,
+  },
+  {
     slug: "differenza-convalida-sfratto-ordinanza-rilascio",
     title: "Convalida di sfratto e ordinanza di rilascio: che differenza c'è",
     description: "Convalida di sfratto e ordinanza di rilascio: quando il giudice pronuncia l'una o l'altra e cosa cambia per il proprietario che vuole l'immobile.",
