@@ -16,6 +16,83 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "notifica-sfratto-come-funziona",
+    title: "Notifica dello sfratto: come funziona, tempi e cosa deve controllare il proprietario",
+    description: "Notifica dello sfratto: chi la esegue, i venti giorni prima dell'udienza, la PEC dopo la Cartabia e gli errori da evitare.",
+    excerpt: "La notifica dell'intimazione di sfratto fa partire i termini e fissa l'udienza. Chi la esegue, in quanto tempo e cosa controllare per evitare rinvii.",
+    lead: "La notifica dello sfratto è il momento in cui l'intimazione arriva ufficialmente all'inquilino: da lì partono i termini e si fissa l'udienza. Ecco come funziona e cosa deve controllare il proprietario.",
+    publishedAt: "2026-08-26",
+    updatedAt: "2026-08-26",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-26. Keyword: notifica di sfratto, vol 90, KD 0 (DataForSEO).",
+    html: `
+<p>Hai deciso di avviare lo sfratto del tuo inquilino, l'avvocato ha preparato l'atto ed è arrivato il momento di "notificarlo". Ma cosa vuol dire davvero, e perché questo passaggio è così delicato? La <strong>notifica dello sfratto</strong> è il momento in cui l'intimazione viene consegnata formalmente all'inquilino: da lì partono i termini, si fissa l'udienza e si mette in moto tutta la procedura. Un errore qui può far slittare tutto di settimane. Questa guida spiega, dal punto di vista del proprietario, come funziona la notifica di sfratto, chi la esegue, quali tempi rispetta e cosa conviene controllare.</p>
+
+<h2>Cos'è la notifica dello sfratto</h2>
+<p>La <strong>notifica di sfratto</strong> è la consegna ufficiale, con valore legale, dell'atto con cui il proprietario chiama l'inquilino davanti al giudice. Quell'atto si chiama <strong>intimazione di sfratto</strong> (una citazione, cioè un invito formale a comparire in tribunale a una certa data). Finché l'atto non è notificato, per la legge non è ancora "arrivato" all'inquilino: la notifica serve proprio a dare la prova che l'intimato è stato informato e messo in condizione di difendersi.</p>
+<p>È un passaggio che non ha solo valore burocratico. Dalla data della notifica decorrono i termini per l'udienza, e la regolarità della notifica è la prima cosa che il giudice verifica. Se la notifica è nulla o incompleta, l'udienza salta o viene rinviata, con perdita di tempo per chi vuole riavere l'immobile.</p>
+
+<h2>Chi esegue la notifica e in quali modi</h2>
+<p>La notifica dell'intimazione può avvenire, in pratica, attraverso tre canali:</p>
+<ul>
+<li><strong>Tramite l'ufficiale giudiziario.</strong> È il canale tradizionale: l'atto viene consegnato dall'ufficiale giudiziario presso la residenza o il domicilio dell'inquilino, secondo le regole ordinarie delle notifiche (articoli 137 e seguenti del Codice di procedura civile).</li>
+<li><strong>Direttamente dall'avvocato.</strong> La legge consente al difensore di eseguire le notifiche "in proprio" (Legge 53 del 1994): l'avvocato può notificare l'atto tramite il servizio postale oppure, oggi soprattutto, per via digitale.</li>
+<li><strong>A mezzo PEC (Posta Elettronica Certificata).</strong> Quando l'inquilino ha un domicilio digitale valido, la notifica può essere fatta via PEC. È il canale più rapido, ma è possibile solo a certe condizioni, che vediamo tra poco.</li>
+</ul>
+<p>La scelta del canale non è indifferente: incide sui tempi e, come vedremo, sul modo in cui l'atto raggiunge davvero l'inquilino, aspetto che pesa sull'esito dell'udienza.</p>
+
+<h3>La notifica via PEC dopo la riforma Cartabia</h3>
+<p>La riforma del processo civile (il cosiddetto <strong>decreto Cartabia</strong>, Decreto legislativo 149 del 2022, con il correttivo Decreto legislativo 164 del 2024) ha spinto molto verso le notifiche digitali. Per le imprese e i professionisti, che hanno un indirizzo PEC obbligatorio iscritto nei pubblici elenchi (come INI-PEC, l'Indice Nazionale degli Indirizzi PEC), la notifica a mezzo PEC è ormai il canale ordinario. Per i privati — la maggior parte degli inquilini — la notifica via PEC è possibile solo se hanno spontaneamente registrato un proprio domicilio digitale nell'apposito registro pubblico (l'INAD, Indice Nazionale dei Domicili Digitali). Se quel domicilio non c'è, si torna alla notifica "cartacea" tramite ufficiale giudiziario o posta.</p>
+<p>Per il proprietario la conseguenza pratica è semplice: quando l'inquilino è un'azienda o un professionista, la notifica digitale è quasi sempre veloce; quando è un privato senza PEC registrata, i tempi dipendono dalla notifica tradizionale.</p>
+
+<h2>I tempi: almeno venti giorni prima dell'udienza</h2>
+<p>Qui c'è la regola che più interessa chi ha fretta di recuperare la casa. Tra il giorno della notifica dell'intimazione e il giorno dell'udienza di convalida devono passare <strong>almeno venti giorni liberi</strong> (articolo 660 del Codice di procedura civile). "Liberi" significa che non si contano né il giorno della notifica né quello dell'udienza: servono venti giorni pieni in mezzo.</p>
+<p>C'è un'eccezione utile: nei casi di urgenza il giudice può, su richiesta motivata, <strong>abbreviare il termine fino alla metà</strong>. Non è automatico e va chiesto, ma può accorciare l'attesa quando ci sono ragioni concrete. Attenzione a non confondere questo termine con quello, molto più lungo, previsto per le cause ordinarie: lo sfratto è un procedimento speciale e più rapido, e proprio per questo mantiene un termine ridotto.</p>
+
+<h2>La notifica "in mani proprie": perché conta per la convalida</h2>
+<p>Non tutte le notifiche sono uguali. Un conto è consegnare l'atto <strong>"in mani proprie"</strong>, cioè direttamente nelle mani dell'inquilino; un altro è depositarlo presso la casa comunale o consegnarlo a un familiare o al portiere quando l'inquilino non viene trovato. Questa distinzione è cruciale nello sfratto.</p>
+<p>Se la notifica <strong>non è avvenuta in mani proprie</strong> e all'udienza l'inquilino non si presenta, il giudice può ritenere che l'intimato non abbia avuto effettiva conoscenza dell'atto e, invece di convalidare subito lo sfratto, <strong>ordinare che la notifica venga rinnovata</strong>. Il risultato è un rinvio: la procedura non si blocca, ma si allunga. Ecco perché una notifica fatta bene — e possibilmente ricevuta di persona dall'inquilino — è la strada più sicura per arrivare alla convalida senza intoppi. Quando la consegna non avviene a mani proprie, l'ufficiale giudiziario invia comunque all'inquilino un avviso della notifica con raccomandata: è una garanzia in più che l'atto sia conosciuto.</p>
+
+<h2>Dopo la convalida: le notifiche della fase esecutiva</h2>
+<p>La notifica dell'intimazione non è l'unica del percorso. Se lo sfratto viene convalidato e l'inquilino non lascia spontaneamente l'immobile, servono altre due notifiche per arrivare all'esecuzione:</p>
+<ul>
+<li><strong>La notifica del titolo esecutivo e dell'atto di precetto</strong> (articolo 480 del Codice di procedura civile): è l'intimazione formale a rilasciare l'immobile entro un termine, di regola dieci giorni.</li>
+<li><strong>Il preavviso di rilascio</strong> (articolo 608 del Codice di procedura civile): l'ufficiale giudiziario comunica, almeno dieci giorni prima, il giorno e l'ora in cui accederà all'immobile per eseguire lo sfratto.</li>
+</ul>
+<p>Anche in questa fase la regolarità delle notifiche è decisiva: sono i passaggi che trasformano una sentenza "sulla carta" nella riconsegna concreta delle chiavi.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Indirizzo sbagliato o vecchio.</strong> Notificare a un indirizzo dove l'inquilino non abita più è la causa più frequente di notifiche nulle. Vanno verificati residenza e domicilio aggiornati.</li>
+<li><strong>Sottovalutare il termine dei venti giorni.</strong> Se la notifica arriva troppo a ridosso dell'udienza, il termine non è rispettato e l'udienza va rifissata.</li>
+<li><strong>Pensare che la PEC vada sempre bene.</strong> Verso un inquilino privato senza domicilio digitale registrato la notifica via PEC non è valida: bisogna usare l'ufficiale giudiziario o la posta.</li>
+<li><strong>Non conservare le prove.</strong> Relazione di notifica, ricevute PEC e avvisi di ricevimento vanno custoditi: sono la prova che l'atto è stato notificato correttamente.</li>
+<li><strong>Fare da soli.</strong> La notifica è un atto tecnico con regole precise; un vizio anche piccolo può far ripartire i tempi da capo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Quanto tempo prima dell'udienza va notificato lo sfratto?</h3>
+<p>Tra la notifica dell'intimazione e l'udienza devono passare almeno venti giorni liberi. Solo in casi di urgenza, e su richiesta motivata, il giudice può ridurre il termine fino alla metà.</p>
+
+<h3>La notifica dello sfratto può arrivare via PEC?</h3>
+<p>Sì, ma non sempre. È possibile quando l'inquilino ha un domicilio digitale valido: è la regola per aziende e professionisti, mentre per i privati serve che abbiano registrato una PEC nell'apposito registro pubblico. In mancanza, si notifica tramite ufficiale giudiziario o posta.</p>
+
+<h3>Cosa succede se l'inquilino non ritira o non riceve la notifica?</h3>
+<p>La notifica può perfezionarsi comunque, ad esempio con il deposito presso la casa comunale e l'invio di una raccomandata di avviso. Se però la consegna non è avvenuta a mani proprie e l'inquilino non compare, il giudice può disporre la rinnovazione della notifica, con un rinvio dell'udienza.</p>
+
+<h3>Chi paga i costi della notifica?</h3>
+<p>Le spese vive di notifica sono a carico di chi promuove lo sfratto, cioè il proprietario, che le anticipa. Con la convalida, però, il giudice può porre le spese di procedura a carico dell'inquilino moroso: si tratta di una possibilità, non di una garanzia.</p>
+
+<h3>Posso notificare lo sfratto da solo, senza avvocato?</h3>
+<p>La procedura di sfratto davanti al giudice richiede di regola l'assistenza di un avvocato, che cura anche la notifica dell'atto secondo le regole di legge. È la via più sicura per evitare vizi che allunghino i tempi.</p>
+
+<h2>In sintesi</h2>
+<p>La notifica dello sfratto è il passaggio che dà ufficialmente il via alla procedura: fissa i termini, informa l'inquilino e apre la strada all'udienza di convalida. Le cose da tenere a mente sono poche ma decisive: rispettare i venti giorni liberi prima dell'udienza, scegliere il canale di notifica corretto (ufficiale giudiziario, posta o PEC a seconda di chi è l'inquilino), curare che l'atto raggiunga davvero l'intimato e conservare tutte le prove. Un atto notificato bene evita rinvii e accorcia i tempi; un vizio, anche piccolo, li allunga.</p>
+<p>Per approfondire i passaggi collegati puoi leggere le nostre guide sull'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>, su <a href="/blog/sfratto-con-ufficiale-giudiziario/">come funziona lo sfratto con l'ufficiale giudiziario</a> e sull'<a href="/blog/convalida-di-sfratto/">udienza di convalida</a>. Se stai avviando uno sfratto e vuoi essere sicuro che la notifica e la procedura siano gestite senza errori, il team di Sfratto Sicuro può affiancarti: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto a scopo informativo, aggiornato ad agosto 2026. Non sostituisce una consulenza legale personalizzata: ogni procedura di notifica va valutata nel caso concreto e nel rispetto delle regole del tribunale competente.</em></p>`,
+  },
+  {
     slug: "successione-contratto-locazione-morte-locatore",
     title: "Successione nel contratto di locazione: cosa succede alla morte del locatore",
     description: "Alla morte del locatore il contratto non si scioglie: prosegue con gli eredi. Canoni, cedolare secca, modello RLI e i passi da fare.",
