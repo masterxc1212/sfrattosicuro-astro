@@ -16,6 +16,70 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "risoluzione-consensuale-contratto-locazione",
+    title: "Risoluzione consensuale del contratto di locazione: come funziona per il proprietario",
+    description: "Risoluzione consensuale del contratto di locazione: come sciogliere l'affitto d'accordo, modello RLI, imposta di 67 euro e cedolare secca.",
+    excerpt: "Proprietario e inquilino d'accordo nel chiudere l'affitto prima della scadenza? La risoluzione consensuale è la via più semplice: ecco come farla, la comunicazione all'Agenzia delle Entrate e i costi.",
+    lead: "Quando locatore e inquilino sono d'accordo nel chiudere il contratto prima della scadenza, la strada corretta è la risoluzione consensuale. Ecco come funziona, come si comunica al Fisco e quanto costa, dal punto di vista del proprietario.",
+    publishedAt: "2026-08-27",
+    updatedAt: "2026-08-27",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-08-27. Keyword: risoluzione consensuale del contratto di locazione, vol 260, KD 0 (DataForSEO).",
+    html: `
+<p>Hai un immobile affittato e tu e l'inquilino siete d'accordo nel chiudere il contratto prima della scadenza naturale? La strada corretta è la <strong>risoluzione consensuale del contratto di locazione</strong>: un accordo con cui locatore e conduttore decidono, insieme, di sciogliere il rapporto. È lo strumento più semplice e meno rischioso quando c'è intesa tra le parti, ma va gestito nel modo giusto per non incorrere in sanzioni fiscali o contestazioni sulla riconsegna. Questa guida spiega, dal punto di vista del proprietario, come funziona, come si comunica all'Agenzia delle Entrate, quanto costa e quali errori evitare.</p>
+
+<h2>Che cos'è la risoluzione consensuale del contratto di locazione</h2>
+<p>La <strong>risoluzione consensuale</strong> è lo scioglimento del contratto di locazione per accordo tra le due parti. Il principio è quello del "mutuo consenso": così come il contratto è nato dall'incontro delle due volontà, allo stesso modo può cessare quando entrambe sono d'accordo a interromperlo. Non serve una giusta causa, non servono motivi particolari e non c'è bisogno di un giudice: basta che locatore e inquilino vogliano davvero chiudere il rapporto e fissino insieme la data di cessazione.</p>
+<p>Per il proprietario è spesso la soluzione ideale quando l'inquilino chiede di andarsene prima del tempo e tu sei disposto a lasciarlo fare: si evita ogni contenzioso, si riprende la disponibilità dell'immobile in tempi certi e si può subito ricollocarlo sul mercato. A differenza dello sfratto, qui non c'è conflitto: c'è un'intesa da mettere nero su bianco.</p>
+
+<h2>Risoluzione consensuale, disdetta e recesso: le differenze</h2>
+<p>Sono tre cose diverse che spesso vengono confuse. La <strong>disdetta</strong> è la comunicazione con cui una parte impedisce il rinnovo del contratto alla sua scadenza naturale, rispettando il preavviso previsto. Il <strong>recesso</strong> è l'uscita anticipata decisa da una sola parte: l'inquilino, per esempio, può recedere prima della scadenza per gravi motivi o se il contratto lo consente, dando il preavviso (di norma sei mesi). La <strong>risoluzione consensuale</strong>, invece, non è una decisione unilaterale: è un accordo a due. Proprio perché entrambe le parti sono d'accordo, non occorre rispettare alcun preavviso: la data di cessazione è quella che locatore e inquilino scelgono liberamente.</p>
+<p>Capire in quale delle tre situazioni ti trovi è importante, perché cambiano forma, tempi e conseguenze. Se l'inquilino vuole uscire ma tu non sei d'accordo, non siamo nella risoluzione consensuale: leggi allora la nostra guida sulla <a href="/blog/risoluzione-contratto-locazione/">risoluzione del contratto di locazione</a>.</p>
+
+<h2>Come si fa, passo per passo</h2>
+<p>La risoluzione consensuale si realizza in pochi passaggi ordinati. Vediamoli.</p>
+
+<h3>1. Mettere l'accordo per iscritto</h3>
+<p>Anche se la legge non impone sempre una forma solenne, è fortemente consigliabile redigere un <strong>accordo scritto</strong> (una scrittura privata) firmato da entrambe le parti. Nel documento vanno indicati gli estremi del contratto originario, la volontà comune di risolverlo, la <strong>data esatta di cessazione</strong> e la riconsegna dell'immobile. Avere un testo firmato ti protegge: dimostra da quando il contratto non produce più effetti e da quando cessano gli obblighi dell'inquilino, a partire dal pagamento del canone.</p>
+
+<h3>2. Comunicare la risoluzione all'Agenzia delle Entrate</h3>
+<p>Se il contratto era registrato, la sua cessazione anticipata va <strong>comunicata all'Agenzia delle Entrate entro 30 giorni</strong> dalla data di risoluzione. La comunicazione si fa con il <strong>modello RLI</strong> (sigla che sta per "Registrazione Locazioni Immobili"), online tramite i servizi telematici dell'Agenzia oppure in cartaceo all'ufficio dove è stato registrato il contratto. È un adempimento da non trascurare: ometterlo o farlo in ritardo può comportare sanzioni.</p>
+
+<h3>3. Riconsegna dell'immobile e deposito cauzionale</h3>
+<p>Alla data concordata l'inquilino riconsegna le chiavi. È buona pratica redigere un <strong>verbale di riconsegna</strong> in cui si dà atto dello stato dell'immobile e delle eventuali letture dei contatori. Solo dopo aver verificato che non ci siano danni oltre il normale uso puoi procedere alla restituzione del <strong>deposito cauzionale</strong>. Su questo aspetto, spesso fonte di discussioni, è utile la guida dedicata al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale nell'affitto</a>.</p>
+
+<h2>Quanto costa e il caso della cedolare secca</h2>
+<p>La risoluzione consensuale di un contratto registrato sconta un'<strong>imposta di registro in misura fissa pari a 67 euro</strong>, da versare entro 30 giorni. L'imposta è dovuta una sola volta, a prescindere dal numero di annualità residue, e può essere ripartita d'accordo tra le parti (tipicamente a metà tra locatore e inquilino, salvo diverso accordo).</p>
+<p>C'è però un'eccezione importante per chi ha scelto la <strong>cedolare secca</strong>: in questo caso la risoluzione va comunque comunicata con il modello RLI, ma <strong>non è dovuta l'imposta di registro</strong>. La cedolare, infatti, sostituisce anche l'imposta sulle risoluzioni, purché sia in corso l'annualità per cui è stata esercitata l'opzione. Attenzione a un dettaglio: se i proprietari sono più di uno, l'esenzione vale solo se <strong>tutti</strong> hanno optato per la cedolare secca.</p>
+
+<h2>Gli errori da evitare</h2>
+<p>Anche in una separazione "amichevole" alcuni passi falsi possono creare problemi. Ecco i principali:</p>
+<ul>
+<li><strong>Affidarsi solo agli accordi verbali</strong>: senza un documento scritto e firmato rischi contestazioni su data di uscita, canoni e stato dell'immobile.</li>
+<li><strong>Dimenticare la comunicazione all'Agenzia delle Entrate</strong>: il contratto risulterebbe ancora "attivo" agli occhi del Fisco, con possibili sanzioni.</li>
+<li><strong>Non fissare una data certa di cessazione</strong>: senza una data chiara resta incerto fino a quando l'inquilino deve pagare il canone.</li>
+<li><strong>Restituire il deposito prima della verifica</strong>: controlla sempre lo stato dell'immobile con un verbale prima di riconsegnare la cauzione.</li>
+<li><strong>Confondere la risoluzione consensuale con lo sfratto</strong>: se l'inquilino non è d'accordo o è moroso, la strada è un'altra.</li>
+</ul>
+
+<h2>Domande frequenti sulla risoluzione consensuale</h2>
+<h3>Serve un motivo per risolvere il contratto in modo consensuale?</h3>
+<p>No. Trattandosi di un accordo tra le due parti, non occorre indicare alcuna giusta causa: è sufficiente la volontà comune di chiudere il rapporto alla data scelta.</p>
+<h3>Devo rispettare un preavviso?</h3>
+<p>No. Il preavviso serve per la disdetta o per il recesso unilaterale. Nella risoluzione consensuale la data di cessazione è quella concordata insieme, quindi non c'è alcun termine di preavviso da osservare.</p>
+<h3>Chi paga l'imposta di registro di 67 euro?</h3>
+<p>La legge non impone una ripartizione fissa: locatore e inquilino sono obbligati in solido, quindi possono accordarsi liberamente. Nella prassi la spesa viene spesso divisa a metà. Con la cedolare secca l'imposta non è dovuta.</p>
+<h3>Cosa succede se non comunico la risoluzione al Fisco?</h3>
+<p>Il contratto continua a risultare in essere e potresti ricevere richieste o sanzioni collegate alla mancata comunicazione. È bene rispettare il termine dei 30 giorni; in caso di ritardo si può valutare il ravvedimento operoso.</p>
+
+<h2>In sintesi</h2>
+<p>La risoluzione consensuale è il modo più lineare per chiudere anticipatamente un affitto quando proprietario e inquilino sono d'accordo: nessun preavviso da rispettare, una scrittura privata a tutela di entrambi, la comunicazione all'Agenzia delle Entrate entro 30 giorni con il modello RLI e un'imposta di registro fissa di 67 euro (non dovuta con la cedolare secca). Gestita bene, ti restituisce l'immobile in tempi certi e senza contenzioso. Se hai dubbi sulla forma dell'accordo o vuoi impostare correttamente la chiusura del contratto, il team di <strong>Sfratto Sicuro</strong> può affiancarti: scopri il nostro supporto sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata. Ogni situazione va valutata alla luce del contratto e delle circostanze concrete.</em></p>
+<p><small>Riferimenti: art. 1372 del codice civile (il contratto può sciogliersi per mutuo consenso); art. 1571 del codice civile (nozione di locazione); D.P.R. 26 aprile 1986, n. 131 (imposta di registro in misura fissa sulle risoluzioni); art. 3 del D.Lgs. 14 marzo 2011, n. 23 e chiarimenti dell'Agenzia delle Entrate sull'esenzione da imposta di registro in regime di cedolare secca. La comunicazione della risoluzione si effettua con il modello RLI entro 30 giorni.</small></p>
+`,
+  },
+  {
     slug: "notifica-sfratto-come-funziona",
     title: "Notifica dello sfratto: come funziona, tempi e cosa deve controllare il proprietario",
     description: "Notifica dello sfratto: chi la esegue, i venti giorni prima dell'udienza, la PEC dopo la Cartabia e gli errori da evitare.",
