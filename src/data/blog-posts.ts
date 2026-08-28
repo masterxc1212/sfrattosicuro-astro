@@ -16,6 +16,67 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "inquilino-paga-sempre-in-ritardo",
+    title: "Inquilino che paga sempre in ritardo: cosa può fare il proprietario",
+    description: "Inquilino che paga sempre in ritardo? Quando il ritardo diventa morosità, come agire passo per passo e gli errori da evitare. Guida per il proprietario.",
+    excerpt: "L'affitto arriva, ma sempre in ritardo. Ecco quando il ritardo diventa morosità agli occhi della legge, come reagire senza indebolire la tua posizione e i passi concreti per tutelarti.",
+    lead: "Un inquilino che paga sempre in ritardo mette alla prova il proprietario ogni mese. Non è morosità totale, ma è comunque un inadempimento: ecco quando la legge ti dà il diritto di agire, come muoverti per gradi e quali errori evitare per non perdere le tue tutele.",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-28. Keyword: inquilino paga sempre in ritardo, vol 30, KD n/d; cluster sollecito pagamento affitto, vol 110, KD 0.",
+    html: `<p>Se hai un <strong>inquilino che paga sempre in ritardo</strong> — l'affitto arriva, ma con giorni o settimane di sfasamento ogni mese — questa guida è per te. Non parliamo di chi ha smesso del tutto di pagare, ma del proprietario costretto a rincorrere il canone ad ogni scadenza. È una situazione stressante e, se gestita male, può logorarsi per anni. La buona notizia è che la legge ti dà strumenti precisi: qui vedrai quando il ritardo diventa un vero problema giuridico, cosa puoi fare passo per passo e quali errori evitano che tu perda i tuoi diritti.</p>
+
+<h2>Ritardo cronico non vuol dire morosità totale (ma è comunque un problema)</h2>
+<p>Molti proprietari pensano di poter agire solo quando l'inquilino smette del tutto di pagare. Non è così. Un affitto pagato in ritardo, mese dopo mese, resta un <strong>inadempimento</strong>: l'inquilino non sta rispettando l'obbligo di pagare il canone alla scadenza pattuita nel contratto. Il fatto che alla fine il denaro arrivi non cancella il ritardo; al massimo lo rende meno grave del mancato pagamento assoluto.</p>
+<p>La differenza pratica è importante. Con la morosità piena (l'inquilino non paga) la strada è lineare: diffida e poi sfratto per morosità. Con il ritardo cronico il proprietario deve muoversi con più attenzione, perché deve dimostrare che quel ritardo, ripetuto nel tempo, è abbastanza serio da giustificare la fine del contratto.</p>
+
+<h2>Quando il ritardo diventa "morosità" agli occhi della legge</h2>
+<p>Per gli affitti di casa (uso abitativo) esiste una soglia oggettiva. La legge sulle locazioni considera l'inquilino in mora quando non paga il canone entro <strong>venti giorni dalla scadenza</strong> prevista dal contratto. Superato quel termine, il ritardo non è più una semplice distrazione: è tecnicamente morosità, e ti dà il diritto di attivarti, anche se poi l'inquilino salda con qualche giorno di ulteriore ritardo.</p>
+<p>Attenzione a una regola diversa per le spese accessorie (per esempio la quota di spese condominiali a carico dell'inquilino): lì la soglia scatta solo quando l'importo non pagato supera le <strong>due mensilità</strong> di canone. Sono due binari distinti: il canone da un lato, gli oneri accessori dall'altro.</p>
+
+<h2>Il ritardo ripetuto può far risolvere il contratto</h2>
+<p>Qui sta il punto più utile per chi ha un <strong>inquilino che paga sempre in ritardo</strong>. Per chiudere il contratto in tribunale non basta un inadempimento qualsiasi: deve essere un inadempimento <strong>grave</strong>. Un singolo pagamento arrivato con tre giorni di ritardo, di solito, non lo è. Ma un ritardo <strong>sistematico e ripetuto</strong>, che si protrae mese dopo mese, cambia completamente il quadro.</p>
+<p>La Corte di Cassazione ha chiarito che il ritardo, anche di pochi giorni, quando diventa abitudine e si prolunga nel tempo, assume "gravità e importanza" tali da giustificare la risoluzione del contratto: la valutazione del giudice non guarda al singolo mese, ma al comportamento complessivo dell'inquilino e all'interesse del proprietario rimasto insoddisfatto. In altre parole: la costanza del ritardo può pesare quanto una morosità vera e propria.</p>
+
+<h2>L'errore che rovina la tua posizione: la tolleranza</h2>
+<p>C'è una trappola in cui cadono moltissimi proprietari. Se per mesi (o anni) accetti senza dire nulla i pagamenti in ritardo, rischi di creare quella che la legge chiama <strong>tolleranza</strong>: un atteggiamento di accettazione che può indebolire, e in alcuni casi impedire, la richiesta di risoluzione. La tolleranza può addirittura rendere inefficace la <strong>clausola risolutiva espressa</strong>, cioè quella clausola del contratto in base alla quale, se l'inquilino paga oltre una certa data, il contratto si risolve di diritto non appena il locatore dichiara di volersene avvalere.</p>
+<p>La conseguenza pratica è chiara: non restare in silenzio. Ogni ritardo va segnalato per iscritto. Anche solo un messaggio o una email che dice "ho ricevuto il canone di marzo, ma con dieci giorni di ritardo: ti ricordo che la scadenza è il giorno 5" ti costruisce una prova che non stai tollerando nulla e che pretendi il rispetto delle scadenze.</p>
+
+<h2>Cosa fare, passo per passo</h2>
+<p>Ecco la scala di interventi, dal più morbido al più deciso. L'obiettivo è risolvere presto e con la carta giusta in mano.</p>
+<ul>
+<li><strong>Il sollecito di pagamento dell'affitto.</strong> È il primo passo, informale e bonario: un promemoria scritto (email, WhatsApp con conferma di lettura, o lettera) in cui ricordi l'importo, la scadenza saltata e chiedi il pagamento entro una data breve. Serve a due cose: spesso risolve subito, e comincia a documentare i ritardi.</li>
+<li><strong>La diffida ad adempiere (messa in mora).</strong> Se i solleciti non bastano, si passa all'atto formale. La diffida scritta intima all'inquilino di pagare entro un termine (per legge non inferiore a quindici giorni) e avverte che, in mancanza, il contratto si intenderà risolto. Va inviata con un mezzo che lasci traccia: raccomandata con ricevuta di ritorno o PEC (posta elettronica certificata).</li>
+<li><strong>La clausola risolutiva espressa.</strong> Se il contratto la contiene e non hai tollerato i ritardi, puoi farla valere per ottenere lo scioglimento del contratto in modo più diretto.</li>
+<li><strong>L'intimazione di sfratto per morosità.</strong> Quando il ritardo è ormai morosità e le richieste bonarie non hanno funzionato, si avvia la procedura giudiziale vera e propria, che porta davanti al giudice per la convalida e, poi, al rilascio dell'immobile.</li>
+</ul>
+<p>In ogni fase conta la <strong>documentazione</strong>: conserva il contratto registrato, l'estratto conto con le date esatte degli accrediti, le comunicazioni inviate e un semplice foglio con lo storico dei ritardi. È questo storico che trasforma un fastidio in una prova utilizzabile.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Farsi giustizia da soli.</strong> Cambiare la serratura, staccare le utenze o entrare nell'immobile senza il consenso dell'inquilino è illegale, anche se lui è in ritardo. Il recupero passa sempre dai canali previsti dalla legge.</li>
+<li><strong>Accettare i ritardi in silenzio.</strong> Come visto, la tolleranza gioca contro di te. Segnala sempre per iscritto.</li>
+<li><strong>Aspettare troppo.</strong> Più il ritardo si consolida come "normalità", più diventa difficile dimostrare che per te è un problema serio. Muoviti ai primi mesi.</li>
+<li><strong>Contare su accordi solo verbali.</strong> Un piano di rientro o una nuova scadenza vanno messi per iscritto, altrimenti non ti proteggono.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso sfrattare un inquilino che paga sempre in ritardo ma alla fine paga?</h3>
+<p>Sì, è possibile, ma non in automatico. Devi dimostrare che il ritardo è ripetuto e sistematico, tale da costituire un inadempimento grave. Un solo ritardo occasionale non basta; una lunga serie di ritardi documentati, sì.</p>
+<h3>Dopo quanti giorni il ritardo diventa morosità?</h3>
+<p>Per il canone di un immobile a uso abitativo, la legge fissa la soglia a venti giorni dalla scadenza contrattuale. Per le sole spese accessorie serve invece che l'arretrato superi due mensilità di canone.</p>
+<h3>Se l'inquilino paga dopo che ho avviato la procedura, si ferma tutto?</h3>
+<p>Nello sfratto per morosità di un'abitazione, l'inquilino può in genere sanare il debito entro un termine concesso dal giudice (il cosiddetto termine di grazia), che però non può essere concesso più di tre volte nel quadriennio (quattro in caso di comprovata difficoltà economica). È un motivo in più per privilegiare la strada del ritardo grave e reiterato quando il pagamento arriva sempre, seppur tardi.</p>
+<h3>Conviene accettare un piano di rientro?</h3>
+<p>Può essere una soluzione ragionevole per evitare il tribunale, ma solo se messo per iscritto, con importi e scadenze chiare e con l'avvertenza che il mancato rispetto comporterà l'azione legale. Un accordo verbale non ti tutela.</p>
+
+<h2>In sintesi</h2>
+<p>Un <strong>inquilino che paga sempre in ritardo</strong> non è un problema che devi subire in silenzio. Il ritardo oltre venti giorni è già morosità per la legge, e se diventa un'abitudine può giustificare la fine del contratto. La mossa vincente è duplice: non tollerare mai in silenzio (segnala ogni ritardo per iscritto) e agire per gradi, dal sollecito alla diffida fino, se serve, allo sfratto. Se vuoi capire come impostare correttamente le comunicazioni e valutare la strada più efficace nel tuo caso, puoi chiedere una valutazione con il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro. Possono esserti utili anche gli approfondimenti sulla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>, sulla <a href="/blog/clausola-risolutiva-espressa-locazione/">clausola risolutiva espressa</a> e sull'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+<p><em>Contenuto informativo, aggiornato alla riforma Cartabia (D.Lgs. 149/2022) e al relativo correttivo (D.Lgs. 164/2024). Non sostituisce una consulenza legale sul caso concreto. Riferimenti normativi principali: art. 5 e art. 55 della Legge 392/1978 (soglia di morosità e termine di grazia); artt. 1454, 1455 e 1456 del Codice civile (diffida ad adempiere, gravità dell'inadempimento e clausola risolutiva espressa); artt. 657-669 del Codice di procedura civile (procedimento per convalida di sfratto).</em></p>`,
+  },
+  {
     slug: "risoluzione-consensuale-contratto-locazione",
     title: "Risoluzione consensuale del contratto di locazione: come funziona per il proprietario",
     description: "Risoluzione consensuale del contratto di locazione: come sciogliere l'affitto d'accordo, modello RLI, imposta di 67 euro e cedolare secca.",
