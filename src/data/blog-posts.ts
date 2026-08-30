@@ -16,6 +16,75 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "esecuzione-sfratto-forza-pubblica",
+    title: "Esecuzione dello sfratto con la forza pubblica: come funziona per il proprietario",
+    description: "Sfratto con la forza pubblica: quando serve, chi la concede, cosa fa il proprietario e come reagire ai ritardi. Guida pratica per il locatore.",
+    excerpt: "L'inquilino non se ne va nemmeno dopo la convalida? Ecco come funziona l'esecuzione dello sfratto con la forza pubblica: chi la concede, cosa deve fare il proprietario e cosa ottenere se i tempi si allungano.",
+    lead: "Quando l'inquilino resta nell'immobile anche dopo l'accesso dell'ufficiale giudiziario, per liberarlo serve la forza pubblica. Ecco come funziona, chi la concede e cosa può fare il proprietario.",
+    publishedAt: "2026-08-30",
+    updatedAt: "2026-08-30",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-08-30. Keyword: esecuzione sfratto con forza pubblica, vol 40, KD 0 (DataForSEO).",
+    html: `
+<p>Hai ottenuto la convalida dello sfratto, l'ufficiale giudiziario si è presentato sul posto, ma l'inquilino è ancora dentro e non ha alcuna intenzione di andarsene. È a questo punto che entra in gioco l'<strong>esecuzione dello sfratto con la forza pubblica</strong>: il momento in cui, per liberare davvero l'immobile, non basta più un pezzo di carta, ma serve l'intervento delle forze di polizia in ausilio all'ufficiale giudiziario. Questa guida spiega, dal punto di vista del proprietario, quando la forza pubblica viene richiesta, chi la concede, che cosa deve fare concretamente il locatore e cosa può ottenere se l'intervento tarda o viene negato.</p>
+
+<h2>Quando entra in gioco la forza pubblica</h2>
+<p>La forza pubblica non si vede fin dal primo giorno. Arriva alla fine di un percorso preciso. Dopo la convalida dello sfratto e la notifica del precetto, l'ufficiale giudiziario avvia l'esecuzione per il rilascio dell'immobile: notifica un <strong>preavviso di rilascio</strong>, con cui comunica giorno e ora dell'accesso con almeno dieci giorni di anticipo, e poi si reca sul posto. Se all'accesso l'inquilino ha già lasciato l'immobile, la questione si chiude con la consegna delle chiavi al proprietario. Se invece l'occupante è ancora lì e non collabora, l'ufficiale giudiziario non può usare la forza da solo: quando incontra resistenza, <strong>richiede l'assistenza della forza pubblica</strong> per poter procedere.</p>
+<p>In genere il primo accesso serve a "fotografare" la situazione: se l'immobile è ancora occupato, l'ufficiale giudiziario rinvia e chiede l'intervento delle forze di polizia. È normale, quindi, che di accessi ne servano più di uno: non è un fallimento della procedura, è il modo in cui è costruita.</p>
+
+<h2>Chi concede la forza pubblica (e perché è un atto dovuto)</h2>
+<p>L'assistenza della forza pubblica viene concessa dal <strong>Prefetto</strong>, cioè dall'autorità di pubblica sicurezza, su richiesta dell'ufficiale giudiziario. Molti proprietari temono che si tratti di una decisione "politica", rimessa alla libera scelta dell'amministrazione. Non è così, e questo è il punto più importante da capire.</p>
+<p>La concessione della forza pubblica per eseguire un provvedimento del giudice è un <strong>atto dovuto</strong>, privo di contenuto discrezionale. Le Sezioni Unite della Cassazione lo hanno affermato con chiarezza: l'autorità di polizia ha, al massimo, un limitato margine di valutazione tecnica sul momento concreto in cui prestare assistenza, ma non può decidere <em>se</em> eseguire o meno lo sfratto. La Corte costituzionale, dal canto suo, ha stabilito che il Prefetto non può differire la singola esecuzione con valutazioni di opportunità amministrativa: il diritto di agire in giudizio garantito dalla Costituzione comprende anche la fase esecutiva, che non può essere elusa né condizionata da scelte discrezionali.</p>
+<p>In parole semplici: una volta che c'è un titolo esecutivo (la convalida di sfratto) e l'ufficiale giudiziario chiede la forza pubblica, l'amministrazione deve fornirla. Può rinviare solo per una vera e propria <strong>impossibilità</strong> tecnica o di forza maggiore, non perché "non è il momento".</p>
+
+<h2>Cosa deve fare il proprietario, passo per passo</h2>
+<p>Il locatore non richiede la forza pubblica in prima persona: la richiesta parte dall'ufficiale giudiziario. Il proprietario, però, ha un ruolo attivo che può fare la differenza sui tempi. Ecco i passaggi concreti:</p>
+<ul>
+<li><strong>Farsi rilasciare il titolo in forma esecutiva e notificare il precetto</strong>, se non è già stato fatto: senza questi atti l'esecuzione non può nemmeno iniziare.</li>
+<li><strong>Seguire il preavviso di rilascio</strong>: annotare la data dell'accesso fissato dall'ufficiale giudiziario e organizzarsi per essere presenti.</li>
+<li><strong>Presentarsi all'accesso</strong>, di persona o tramite una persona designata (spesso il proprio avvocato o un incaricato): serve qualcuno che possa essere immesso nel possesso e ricevere le chiavi.</li>
+<li><strong>Sollecitare la richiesta di forza pubblica</strong> tramite l'ufficiale giudiziario e il proprio legale, quando il primo accesso si chiude senza rilascio.</li>
+<li><strong>Predisporre l'occorrente per il giorno del rilascio</strong>: fabbro per il cambio serratura da eseguire quel giorno alla presenza dell'ufficiale giudiziario, eventuale ditta di trasloco o custodia per i beni lasciati dall'occupante.</li>
+</ul>
+
+<h3>L'errore più grave: farsi giustizia da soli</h3>
+<p>Attenzione: solo l'ufficiale giudiziario, se necessario con la forza pubblica, può immettere il proprietario nel possesso dell'immobile. Il locatore <strong>non può</strong> cambiare la serratura, staccare le utenze, portare via i mobili o entrare in casa mentre l'inquilino è ancora dentro. Sono comportamenti di autotutela vietati, che oltre a esporre a possibili conseguenze penali (dalla violenza privata all'esercizio arbitrario delle proprie ragioni) rischiano di rovesciare la posizione: da creditore, il proprietario diventa la parte che ha commesso un abuso. La pazienza di seguire la procedura, per quanto frustrante, resta la strada più veloce e sicura.</p>
+
+<h2>Se la forza pubblica tarda o viene negata</h2>
+<p>Nelle grandi città, dove gli sfratti da eseguire sono molti, capita che tra la richiesta e la concessione effettiva passino settimane o mesi. Se i rinvii diventano ingiustificati, il proprietario non è senza tutele.</p>
+<p>Un primo strumento è previsto dal codice: quando nel corso dell'esecuzione sorgono difficoltà che non ammettono dilazione, ciascuna parte può rivolgersi al <strong>giudice dell'esecuzione</strong> per ottenere i provvedimenti temporanei necessari. Il proprio avvocato può quindi portare la questione davanti al giudice quando i rinvii si accumulano senza reali ragioni.</p>
+<p>Il secondo strumento è il <strong>risarcimento del danno</strong>. La giurisprudenza è netta: l'obbligo della pubblica amministrazione di dare esecuzione ai provvedimenti del giudice è incondizionato, e il ritardo protratto oltre il tempo ragionevolmente necessario è di per sé fonte di responsabilità. In un caso deciso dalla Cassazione nel 2025, a fronte di rinvii durati anni, il Ministero dell'Interno è stato condannato a risarcire il proprietario, con danno liquidato anche in base al canone di mercato dell'immobile. È l'amministrazione a dover provare l'effettiva impossibilità di intervenire: semplici carenze di organico o la generica priorità di altri impegni non bastano a giustificare il ritardo.</p>
+
+<h2>Tempi realistici</h2>
+<p>Non esistono tempi garantiti per questa fase, e conviene diffidare di chi li promette. La durata dipende dal Tribunale, dalla città e dal carico di sfratti in coda presso la Prefettura: in sedi poco congestionate il rilascio con forza pubblica può arrivare in poche settimane dal primo accesso, in aree metropolitane può richiedere diversi mesi e più accessi. La cosa utile che il proprietario può fare è non lasciare "dormire" la pratica: ogni accesso a vuoto va seguito da una nuova richiesta, per non azzerare la fila.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Pensare che la forza pubblica arrivi al primo accesso</strong>: quasi sempre il primo accesso serve solo a constatare l'occupazione e a far partire la richiesta.</li>
+<li><strong>Non presentarsi agli accessi</strong>: senza il proprietario o un suo incaricato l'immissione nel possesso non può avvenire.</li>
+<li><strong>Rassegnarsi ai rinvii</strong>: i ritardi ingiustificati si combattono davanti al giudice dell'esecuzione e, nei casi gravi, con l'azione risarcitoria.</li>
+<li><strong>Agire di testa propria</strong>: cambiare serratura o svuotare l'immobile prima del rilascio ufficiale è un autogol che può costare caro.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Devo chiamare io la polizia per lo sfratto?</h3>
+<p>No. La richiesta di assistenza della forza pubblica parte dall'ufficiale giudiziario quando incontra resistenza. Il proprietario collabora sollecitando e organizzando il rilascio, ma non contatta direttamente le forze di polizia per farsi aprire l'immobile.</p>
+<h3>Il Prefetto può rifiutarsi di concedere la forza pubblica?</h3>
+<p>La concessione è un atto dovuto. Un rinvio è ammesso solo per un'impossibilità tecnica o di forza maggiore concreta e provata. Non sono valide ragioni la mancanza generica di personale o la scelta di dare priorità ad altri interessi.</p>
+<h3>Cosa succede ai mobili e alle cose lasciate dall'inquilino?</h3>
+<p>Il giorno del rilascio l'ufficiale giudiziario immette il proprietario nel possesso. Per i beni presenti nell'immobile si segue quanto disposto dal giudice o dallo stesso ufficiale giudiziario: è prudente predisporre in anticipo una soluzione di custodia o trasloco, senza disfarsene arbitrariamente.</p>
+<h3>Posso chiedere i danni per il ritardo nello sfratto?</h3>
+<p>Sì, quando il ritardo nella concessione della forza pubblica è ingiustificato. La responsabilità è dell'amministrazione, che deve provare l'impossibilità di intervenire; il danno per il mancato godimento dell'immobile può essere liquidato anche col parametro del canone di mercato.</p>
+
+<h2>In sintesi</h2>
+<p>L'esecuzione dello sfratto con la forza pubblica è l'ultimo tratto di un percorso che il proprietario non deve subire passivamente: seguire gli accessi, sollecitare le richieste e, se serve, far valere i propri diritti davanti al giudice sono le mosse che accorciano i tempi. Se vuoi affrontare questa fase con metodo, senza commettere passi falsi che rischiano di allungare tutto, puoi affidarti al team di <a href="/servizi/tutela-proprietario/">Sfratto Sicuro per la tutela del proprietario</a>. Trovi utili anche le guide su come funzionano <a href="/blog/sfratto-con-ufficiale-giudiziario/">gli accessi dell'ufficiale giudiziario</a>, sul <a href="/blog/preavviso-di-rilascio-immobile/">preavviso di rilascio</a> e sulle fasi dello <a href="/blog/sfratto-esecutivo-rilascio-immobile/">sfratto esecutivo</a>.</p>
+<p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale personalizzata. Ogni situazione va valutata con l'assistenza di un avvocato sulla base degli atti concreti.</em></p>
+
+<p><small>Riferimenti: artt. 608, 513 e 610 c.p.c. (modo del rilascio, poteri dell'ufficiale giudiziario e richiesta della forza pubblica, provvedimenti del giudice dell'esecuzione); Corte costituzionale n. 321/1998; Corte di Cassazione, Sezioni Unite, n. 5233/1998; Corte di Cassazione, Sez. III, ordinanza n. 24053/2025 e sentenza n. 3873/2004.</small></p>
+`,
+  },
+  {
     slug: "inquilino-paga-sempre-in-ritardo",
     title: "Inquilino che paga sempre in ritardo: cosa può fare il proprietario",
     description: "Inquilino che paga sempre in ritardo? Quando il ritardo diventa morosità, come agire passo per passo e gli errori da evitare. Guida per il proprietario.",
