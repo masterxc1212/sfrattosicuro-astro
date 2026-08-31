@@ -16,6 +16,92 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "disdetta-contratto-locazione-commerciale-locatore",
+    title: "Disdetta del contratto di locazione commerciale da parte del locatore: quando e come",
+    description: "Disdetta del contratto di locazione commerciale da parte del locatore: motivi, preavviso 12 o 18 mesi e indennità di avviamento. Guida per il proprietario.",
+    excerpt: "Riprendere un locale commerciale alla scadenza non è come per una casa: la disdetta del locatore ha regole rigide. Quando puoi darla, con quale preavviso (12 o 18 mesi), i motivi tassativi alla prima scadenza e l'indennità di avviamento da mettere in conto. Guida pratica per il proprietario.",
+    lead: "Il contratto di locazione commerciale si rinnova da solo di sei anni in sei anni, salvo disdetta valida e nei tempi. Per il proprietario che vuole riprendersi il locale, sbagliare preavviso o motivazione significa restare vincolato per un altro ciclo. Ecco quando e come dare la disdetta, cosa scrivere e cosa mettere in conto.",
+    publishedAt: "2026-08-31",
+    updatedAt: "2026-08-31",
+    category: "Locazioni",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-08-31. Keyword: disdetta contratto locazione commerciale, vol 320, KD basso (DataForSEO). Secondarie: disdetta locazione commerciale da parte del locatore, diniego di rinnovo prima scadenza, preavviso 12 mesi, indennità di avviamento.",
+    html: `  <p>Sei un proprietario e hai affittato un negozio, un ufficio o un capannone e ora vuoi che l'attività lasci il locale alla scadenza? La <strong>disdetta del contratto di locazione commerciale da parte del locatore</strong> non funziona come per una casa: la legge protegge molto di più chi svolge un'attività economica, e sbagliare tempi o motivazioni significa ritrovarsi il contratto rinnovato per altri sei anni. Questa guida spiega, dalla parte del proprietario, quando puoi dare la disdetta, con quale preavviso, cosa devi scrivere nella comunicazione e cosa rischi di dover pagare all'inquilino.</p>
+
+  <h2>Perche' la locazione commerciale e' piu' rigida</h2>
+  <p>Quando affitti un immobile a un'attivita' (negozio, studio professionale, laboratorio, bar, magazzino), il contratto ricade nella disciplina degli immobili "ad uso diverso dall'abitazione". La durata minima e' di <strong>sei anni</strong>, che salgono a <strong>nove</strong> se il locale ospita un'attivita' alberghiera o teatrale. Alla scadenza il contratto non finisce da solo: si <strong>rinnova automaticamente</strong> per un ugual periodo (il cosiddetto "6+6"), a meno che una delle due parti non invii una disdetta valida e nei tempi giusti.</p>
+  <p>Questa e' la prima cosa da capire: il silenzio gioca a favore dell'inquilino. Se non fai nulla, il contratto prosegue. Per riprendere il locale devi muoverti in anticipo e con un atto formale.</p>
+
+  <h2>Disdetta del contratto di locazione commerciale: le due situazioni</h2>
+  <p>Il punto piu' importante e' distinguere tra la <strong>prima scadenza</strong> del contratto e le scadenze successive, perche' i tuoi poteri di proprietario cambiano radicalmente.</p>
+
+  <h3>Alla prima scadenza: serve un motivo preciso (diniego di rinnovo)</h3>
+  <p>Alla prima scadenza (i primi sei anni, o nove per gli alberghi) <strong>non puoi dare una disdetta libera</strong>. Puoi negare il rinnovo solo se rientri in uno dei motivi tassativi previsti dalla legge, tra cui:</p>
+  <ul>
+    <li>vuoi <strong>usare l'immobile come abitazione</strong> tua, del coniuge o di parenti entro il secondo grado in linea retta (quindi figli, genitori, nipoti diretti: non i fratelli);</li>
+    <li>vuoi <strong>esercitare nel locale un'attivita' tua</strong> (o del coniuge o di parenti entro il secondo grado in linea retta);</li>
+    <li>intendi <strong>demolire e ricostruire</strong> l'immobile, oppure ristrutturarlo o restaurarlo integralmente (avendo gia' il titolo edilizio necessario);</li>
+    <li>devi ristrutturarlo per adeguare la superficie di vendita nei casi previsti dalla legge.</li>
+  </ul>
+  <p>Questo si chiama <strong>diniego di rinnovazione alla prima scadenza</strong>. La comunicazione deve indicare, <strong>a pena di nullita'</strong>, quale di questi motivi stai invocando: una disdetta generica o "senza motivo" alla prima scadenza non ha alcun valore e lascia il contratto in piedi.</p>
+
+  <h3>Alla seconda scadenza (e successive): disdetta libera</h3>
+  <p>Superata la prima scadenza, il contratto si e' rinnovato per un secondo periodo. A questo punto, alle scadenze successive, puoi dare la disdetta <strong>senza dover indicare alcun motivo</strong>: ti basta rispettare i termini di preavviso. E' la finestra in cui il proprietario ha le mani piu' libere per riprendersi il locale.</p>
+
+  <h2>I termini di preavviso: 12 o 18 mesi</h2>
+  <p>Qui si concentra l'errore piu' frequente e piu' costoso. La disdetta va inviata all'inquilino con <strong>lettera raccomandata</strong> (o PEC, se prevista) rispettando questi termini minimi:</p>
+  <ul>
+    <li><strong>almeno 12 mesi prima</strong> della scadenza per la generalita' delle attivita' commerciali, artigianali e professionali;</li>
+    <li><strong>almeno 18 mesi prima</strong> per le attivita' alberghiere.</li>
+  </ul>
+  <p>Un anno intero di anticipo significa che devi pensarci molto presto: se il contratto scade il 31 dicembre, la disdetta ordinaria deve partire, al piu' tardi, entro il 31 dicembre dell'anno precedente. Se invii la comunicazione anche solo un giorno oltre il termine, la disdetta e' inefficace e il contratto si rinnova automaticamente per un altro sei anni. Vale sia per il diniego alla prima scadenza sia per la disdetta libera successiva.</p>
+
+  <h2>L'indennita' per la perdita dell'avviamento</h2>
+  <p>Quando riprendi un locale commerciale a fine contratto, devi in molti casi versare all'inquilino un'<strong>indennita' per la perdita dell'avviamento</strong>. Serve a compensare il valore commerciale che l'attivita' ha costruito in quel luogo (clientela, posizione). Attenzione pero': spetta solo per le <strong>attivita' a contatto diretto con il pubblico</strong> degli utenti e dei consumatori (tipicamente i negozi). Restano quindi escluse, ad esempio, le attivita' professionali e gli uffici senza sbocco al pubblico. Quando e' dovuta, l'importo di base e' pari a <strong>18 mensilita' dell'ultimo canone</strong> (21 mensilita' per le attivita' alberghiere).</p>
+  <p>Attenzione a un dettaglio pratico decisivo: <strong>l'esecuzione del rilascio e' condizionata al pagamento di questa indennita'</strong>. In altre parole, finche' non la corrispondi, non puoi far liberare materialmente il locale. Va quindi messa a bilancio come parte del "costo" dell'operazione.</p>
+  <p>L'indennita', pero', <strong>non e' sempre dovuta</strong>. Non spetta all'inquilino quando il rapporto cessa per:</p>
+  <ul>
+    <li><strong>risoluzione per inadempimento</strong> dell'inquilino (ad esempio la morosita');</li>
+    <li><strong>disdetta o recesso dell'inquilino</strong> stesso;</li>
+    <li>procedure concorsuali (come il fallimento) a suo carico.</li>
+  </ul>
+  <p>C'e' inoltre un raddoppio dell'indennita' se, entro un anno, nell'immobile viene avviata la stessa attivita' o un'attivita' affine: una regola pensata per evitare che il proprietario "scippi" l'avviamento del vecchio inquilino.</p>
+
+  <h2>Se dichiari un motivo, devi rispettarlo</h2>
+  <p>Chi nega il rinnovo alla prima scadenza per un motivo specifico (ad esempio "voglio aprirci la mia attivita'") deve poi realizzarlo davvero. La legge tutela l'inquilino contro gli abusi: se, dopo aver ottenuto il rilascio, il proprietario <strong>non destina l'immobile all'uso dichiarato</strong>, l'ex conduttore puo' avere diritto al ripristino del contratto o al risarcimento del danno. Il motivo indicato nella disdetta, quindi, non e' una formula di comodo: e' un impegno.</p>
+
+  <h2>Cosa fare se l'inquilino non lascia il locale</h2>
+  <p>Hai dato una disdetta valida e nei tempi, ma alla scadenza l'attivita' e' ancora dentro? La disdetta da sola non "sfratta" nessuno: e' l'atto che impedisce il rinnovo, non un ordine di rilascio. Se l'inquilino non se ne va spontaneamente, devi rivolgerti al giudice con la <strong>procedura di licenza o sfratto per finita locazione</strong>. Il vantaggio e' che l'intimazione puo' essere notificata anche prima della scadenza del contratto, cosi' da arrivare all'udienza gia' pronti a ottenere il rilascio. Su come funziona questa procedura trovi una guida dedicata allo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>; per il quadro generale del rapporto puoi leggere la guida al <a href="/blog/contratto-locazione-commerciale/">contratto di locazione commerciale</a>.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Muoversi tardi.</strong> Con 12 o 18 mesi di preavviso, chi ci pensa "qualche mese prima" ha gia' perso: il contratto si e' rinnovato.</li>
+    <li><strong>Disdetta generica alla prima scadenza.</strong> Senza uno dei motivi tassativi, e senza indicarlo con precisione, la comunicazione e' nulla.</li>
+    <li><strong>Dimenticare l'indennita' di avviamento.</strong> Non conteggiarla puo' bloccare il rilascio proprio sul piu' bello.</li>
+    <li><strong>Usare un canale sbagliato.</strong> La disdetta va inviata con uno strumento che ne provi data e ricezione (raccomandata con ricevuta di ritorno o PEC), non con un semplice messaggio.</li>
+    <li><strong>Confondere disdetta e sfratto.</strong> Sono due cose diverse: la disdetta blocca il rinnovo, il rilascio forzato passa dal giudice.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Posso mandare via l'inquilino commerciale quando voglio?</h3>
+  <p>No. Fuori dai casi di morosita' o altro grave inadempimento, devi attendere una scadenza contrattuale e rispettare il preavviso. Alla prima scadenza puoi negare il rinnovo solo per i motivi tassativi di legge.</p>
+  <h3>Quanto preavviso devo dare?</h3>
+  <p>Almeno 12 mesi prima della scadenza per la maggior parte delle attivita', 18 mesi per gli alberghi. Il termine e' minimo: puoi darlo anche prima, mai dopo.</p>
+  <h3>Devo sempre pagare l'indennita' di avviamento?</h3>
+  <p>No. Non e' dovuta se il contratto cessa per morosita' o altro inadempimento dell'inquilino, o se e' l'inquilino a recedere o dare disdetta. E' invece dovuta, di regola, quando sei tu a riprendere il locale a fine contratto.</p>
+  <h3>La disdetta vale anche se l'inquilino non risponde?</h3>
+  <p>Si', purche' sia stata inviata correttamente e nei termini. Non serve il "consenso" dell'inquilino: se poi non libera il locale, si procede con lo sfratto per finita locazione.</p>
+  <h3>E se il contratto e' gia' oltre il 6+6?</h3>
+  <p>Alle scadenze successive alla prima la disdetta e' libera: non devi indicare motivi, ti basta rispettare il preavviso di 12 (o 18) mesi.</p>
+
+  <h2>In sintesi</h2>
+  <p>Per riprendere un locale commerciale alla scadenza devi muoverti con largo anticipo: individua la scadenza, verifica se sei alla prima o a una successiva, prepara una disdetta scritta e inviala con raccomandata o PEC almeno 12 (o 18) mesi prima. Alla prima scadenza serve un motivo tassativo, chiaramente indicato; alle successive no. Metti in conto l'eventuale indennita' di avviamento e, se l'inquilino non collabora, preparati alla procedura di rilascio. Un errore su tempi o motivazioni costa un altro ciclo di sei anni: e' una materia in cui la precisione vale piu' della fretta.</p>
+
+  <p>Se stai valutando la disdetta di un contratto commerciale e vuoi essere sicuro di tempi, motivazioni e importi, il team di <strong>Sfratto Sicuro</strong> puo' affiancarti nella <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>, dalla lettera di disdetta fino al rilascio dell'immobile.</p>
+
+  <p><em>Questo articolo ha finalita' informative e non sostituisce una consulenza legale su un caso concreto. I riferimenti normativi principali sono gli articoli 27, 28, 29, 31 e 34 della legge 27 luglio 1978, n. 392 (disciplina delle locazioni di immobili urbani) e l'articolo 657 del codice di procedura civile per la licenza o sfratto per finita locazione, nel testo aggiornato dalla riforma Cartabia (D.Lgs. 149/2022 e correttivo D.Lgs. 164/2024).</em></p>`,
+  },
+  {
     slug: "esecuzione-sfratto-forza-pubblica",
     title: "Esecuzione dello sfratto con la forza pubblica: come funziona per il proprietario",
     description: "Sfratto con la forza pubblica: quando serve, chi la concede, cosa fa il proprietario e come reagire ai ritardi. Guida pratica per il locatore.",
