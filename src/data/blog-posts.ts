@@ -16,6 +16,73 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "cambiare-serratura-inquilino-moroso",
+    title: "Cambiare la serratura all'inquilino moroso: si può? Cosa rischia il proprietario",
+    description: "Il proprietario può cambiare la serratura o staccare le utenze all'inquilino moroso? No, è reato. Ecco cosa rischi e la sola via legale.",
+    excerpt: "Cambiare la serratura o staccare le utenze all'inquilino moroso è un reato che può ritorcersi contro di te. Ecco cosa rischi e come riprendere l'immobile nel modo giusto.",
+    lead: "Se l'inquilino non paga, cambiare la serratura o staccare le utenze sembra la via più rapida per rientrare in casa. In realtà è un reato che può costarti caro. Ecco perché è vietato e qual è l'unica strada sicura.",
+    publishedAt: "2026-09-01",
+    updatedAt: "2026-09-01",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-01. Keyword: cambiare serratura inquilino moroso, vol 30, KD 0 (DataForSEO).",
+    html: `
+<p>Hai un inquilino che non paga da mesi, magari non risponde più al telefono, e ti stai chiedendo se puoi semplicemente <strong>cambiare la serratura</strong> o staccare la luce per rientrare in casa tua. È una delle domande più frequenti tra i proprietari, e la risposta è netta: <strong>no, non puoi farlo</strong>. Anche se l'immobile è tuo e l'inquilino è chiaramente in torto, agire da solo ti espone a un reato e può addirittura rimettere l'inquilino in casa con una sentenza. In questa guida vediamo perché cambiare la serratura all'inquilino moroso è vietato, cosa rischi concretamente e qual è l'unica strada che ti fa riprendere l'immobile senza brutte sorprese.</p>
+
+<h2>Cambiare la serratura all'inquilino moroso: perché è vietato</h2>
+<p>Nel nostro ordinamento chi vanta un diritto non può farselo da sé: deve rivolgersi al giudice. Questo principio vale anche per il proprietario che vuole liberare la propria casa. Finché il contratto non è stato sciolto e non c'è un provvedimento del tribunale che ordina il rilascio, l'inquilino — anche se moroso — ha il <strong>possesso legittimo</strong> dell'immobile. Sostituire la serratura per impedirgli di entrare significa farsi giustizia da soli, ed è proprio questo che la legge punisce.</p>
+<p>La Cassazione è ormai costante: cambiare la serratura all'inquilino moroso, impedendogli di fatto l'accesso, integra il reato di <strong>esercizio arbitrario delle proprie ragioni con violenza sulle cose</strong>. Non serve rompere nulla: per la legge c'è "violenza sulle cose" anche quando un bene viene semplicemente trasformato o ne viene mutata la destinazione, e la sostituzione della serratura rientra pienamente in questo concetto.</p>
+
+<h2>Vale anche per le utenze: staccare luce, acqua e gas</h2>
+<p>Molti proprietari pensano di aggirare il problema in modo "morbido": non cambio la serratura, ma disdico i contratti di luce, acqua o gas per rendere la casa invivibile e spingere l'inquilino ad andarsene. È un errore altrettanto grave. La Corte di Cassazione ha confermato la condanna di proprietari che avevano interrotto le utenze proprio per costringere l'inquilino moroso a lasciare l'immobile: anche il distacco dei servizi è considerato violenza sulle cose e rientra nello stesso reato.</p>
+<p>In certi casi la situazione può essere ancora più seria. Se le utenze vengono staccate per costringere l'inquilino a fare qualcosa — per esempio a pagare somme non dovute o ad accettare nuove condizioni — la condotta può configurare il più grave reato di <strong>violenza privata</strong>. Il messaggio è chiaro: nessuna scorciatoia "di pressione" è sicura.</p>
+
+<h2>Cosa rischi davvero</h2>
+<p>Agire di testa propria non è solo teoricamente sbagliato: ha conseguenze molto concrete, spesso peggiori del problema che volevi risolvere.</p>
+<ul>
+<li><strong>Una condanna penale.</strong> L'esercizio arbitrario delle proprie ragioni con violenza sulle cose è punito con la multa ed è procedibile a querela della persona offesa: basta che l'inquilino sporga querela per avviare il procedimento a tuo carico.</li>
+<li><strong>Il risarcimento dei danni.</strong> Oltre al profilo penale, l'inquilino può chiederti i danni per non aver potuto usare la casa e per gli effetti personali rimasti dentro.</li>
+<li><strong>L'inquilino torna in casa.</strong> È la conseguenza più beffarda. Chi viene estromesso con la forza o con l'inganno può agire con l'<strong>azione di reintegrazione</strong> (lo "spoglio"): il giudice, in tempi rapidi, ordina di rimetterlo nel possesso dell'immobile. Ti ritroveresti l'inquilino dentro, con un provvedimento contro di te e le spese legali da pagare.</li>
+</ul>
+<p>In pratica, il "fai da te" allunga i tempi, aumenta i costi e sposta il torto dalla parte dell'inquilino a quella tua.</p>
+
+<h2>L'unica strada legale: la procedura di sfratto</h2>
+<p>Per riprendere l'immobile in modo sicuro esiste una via sola, ed è quella giudiziaria. Quando l'inquilino non paga, il proprietario può avviare l'<strong>intimazione di sfratto per morosità</strong>, la procedura speciale e più rapida rispetto a una causa ordinaria. In sintesi funziona così:</p>
+<ul>
+<li><strong>Diffida (facoltativa ma utile).</strong> Una lettera formale che mette in mora l'inquilino e fissa un termine per pagare. A volte basta a sbloccare la situazione.</li>
+<li><strong>Intimazione di sfratto e citazione in udienza.</strong> Con l'assistenza di un avvocato si notifica all'inquilino l'atto di sfratto, che lo cita davanti al giudice per l'udienza di convalida.</li>
+<li><strong>Udienza di convalida.</strong> Se l'inquilino non si oppone (o non compare), il giudice convalida lo sfratto e fissa la data del rilascio. Se compare e vuole sanare, può chiedere il <strong>termine di grazia</strong> per pagare tutto il dovuto.</li>
+<li><strong>Esecuzione con l'ufficiale giudiziario.</strong> Se l'inquilino non libera l'immobile spontaneamente, il rilascio avviene con l'intervento dell'ufficiale giudiziario, se necessario con la forza pubblica.</li>
+</ul>
+<p>Solo al termine di questo percorso l'immobile torna nella tua piena disponibilità. Se vuoi capire quanto dura ciascuna fase, abbiamo dedicato una guida specifica ai <a href="/blog/tempi-sfratto-per-morosita/">tempi dello sfratto per morosità</a>, e una che spiega passo per passo l'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+
+<h2>Quando invece puoi cambiare la serratura</h2>
+<p>Il divieto non è eterno. Il reato non si configura quando il proprietario sostituisce la serratura <strong>dopo</strong> aver ottenuto la convalida dello sfratto e riottenuto l'immobile. In concreto, il momento sicuro arriva quando l'ufficiale giudiziario, completata l'esecuzione, ti restituisce la disponibilità della casa e viene redatto il verbale di rilascio: da quel momento l'inquilino non ha più alcun titolo per rientrare e puoi legittimamente cambiare la serratura.</p>
+<p>Attenzione anche agli effetti personali che l'inquilino avesse lasciato dentro: non puoi buttarli via di tua iniziativa. Vanno gestiti secondo le indicazioni contenute nel verbale, di regola con un termine per il ritiro, per evitare nuove contestazioni.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Aspettare troppo prima di agire.</strong> Più mesi di canoni si accumulano, più difficile è recuperarli. Meglio muoversi ai primi segnali di morosità.</li>
+<li><strong>Fidarsi delle "soluzioni rapide".</strong> Cambiare serratura, staccare utenze, sgomberare i mobili di nascosto: tutte scorciatoie che si ritorcono contro il proprietario.</li>
+<li><strong>Entrare in casa in assenza dell'inquilino.</strong> Anche solo entrare senza consenso può configurare la violazione di domicilio: il possesso resta suo fino al rilascio.</li>
+<li><strong>Gestire tutto "tra privati" senza formalizzare nulla.</strong> Accordi verbali e minacce non hanno valore e rischiano di peggiorare la tua posizione.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'immobile è mio: davvero non posso cambiare la serratura?</h3>
+<p>No, non finché l'inquilino ha un titolo per occuparlo. La proprietà non ti autorizza a farti giustizia da solo: serve un provvedimento del giudice che ordini il rilascio. Prima di quel momento, cambiare la serratura è reato.</p>
+<h3>E se lascio semplicemente scadere il contratto di utenze intestato a me?</h3>
+<p>Se disdici o interrompi le utenze per costringere l'inquilino ad andarsene, rischi lo stesso reato. La Cassazione ha condannato proprietari che avevano staccato acqua e gas proprio con questo scopo.</p>
+<h3>L'inquilino se n'è già andato e ha lasciato le chiavi: posso cambiare la serratura?</h3>
+<p>Se l'inquilino ha riconsegnato spontaneamente l'immobile e le chiavi, la casa è di nuovo nella tua disponibilità e puoi cambiare la serratura. È prudente far risultare per iscritto la riconsegna, con un verbale che attesti data e stato dell'immobile.</p>
+<h3>Quanto tempo serve per uno sfratto per morosità?</h3>
+<p>Dipende dal tribunale e dalla condotta dell'inquilino, ma la procedura di convalida è molto più rapida di una causa ordinaria. I passaggi e le tempistiche indicative sono descritti nella nostra guida dedicata ai tempi dello sfratto.</p>
+
+<h2>In sintesi</h2>
+<p>Cambiare la serratura o staccare le utenze all'inquilino moroso non è una scorciatoia: è un reato che può costarti una condanna, un risarcimento e persino il ritorno dell'inquilino in casa. L'unico modo davvero efficace per riprendere l'immobile è la procedura di sfratto, che oggi — grazie al rito speciale di convalida — è più rapida di quanto molti proprietari immaginino. Se hai un inquilino che non paga e vuoi muoverti nel modo giusto fin da subito, puoi rivolgerti a <a href="/servizi/tutela-proprietario/">Sfratto Sicuro</a> per farti seguire nella procedura corretta.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale su un caso concreto. Le norme richiamate sono l'art. 392 del codice penale (esercizio arbitrario delle proprie ragioni con violenza sulle cose) e l'art. 393 c.p. per la violenza alle persone, l'art. 610 c.p. (violenza privata), l'art. 1168 del codice civile (azione di reintegrazione nel possesso), oltre all'art. 658 del codice di procedura civile sull'intimazione di sfratto per morosità (nell'ambito degli artt. 657 e seguenti c.p.c.) e all'art. 55 della Legge 392/1978 sul termine di grazia; la disciplina processuale tiene conto della riforma Cartabia (D.Lgs. 149/2022).</em></p>`,
+  },
+  {
     slug: "disdetta-contratto-locazione-commerciale-locatore",
     title: "Disdetta del contratto di locazione commerciale da parte del locatore: quando e come",
     description: "Disdetta del contratto di locazione commerciale da parte del locatore: motivi, preavviso 12 o 18 mesi e indennità di avviamento. Guida per il proprietario.",
