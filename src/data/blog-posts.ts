@@ -16,6 +16,75 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "animali-domestici-casa-affitto",
+    title: "Animali domestici in casa in affitto: il proprietario può vietarli?",
+    description: "Il proprietario può vietare gli animali in affitto? Il divieto assoluto rischia di essere nullo: ecco cosa dice la legge e come tutelare l'immobile.",
+    excerpt: "Vietare gli animali domestici in affitto non è così semplice: la clausola di divieto assoluto può essere nulla. Ecco cosa può fare davvero il proprietario.",
+    lead: "Molti proprietari mettono nel contratto un divieto di tenere animali, ma una clausola scritta male rischia di non valere nulla. Ecco cosa dice la legge, cosa resta a carico dell'inquilino e come tutelarti.",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
+    category: "Locazioni",
+    readingTime: "8 min",
+    sourceNote: "Generato automaticamente 2026-09-02. Keyword: si possono vietare gli animali in affitto, vol 20, KD n/d (DataForSEO). Bassa concorrenza.",
+    html: `
+<p>Stai per affittare casa e ti chiedi se puoi mettere nel contratto un bel "vietato tenere animali", oppure hai già un inquilino che è arrivato con un cane e temi per il parquet e per i vicini. È una delle domande più frequenti tra i proprietari, e la risposta non è quella netta che molti si aspettano: <strong>vietare gli animali in affitto non è così semplice come sembra</strong>, e una clausola scritta male rischia di non valere nulla. In questa guida vediamo cosa dice davvero la legge, se il proprietario può inserire un divieto, cosa resta comunque a tuo carico e a carico dell'inquilino, e come proteggere concretamente il tuo immobile.</p>
+
+<h2>Animali domestici in affitto: cosa dice (e cosa non dice) la legge</h2>
+<p>Partiamo da un punto che sorprende molti proprietari: <strong>non esiste una legge specifica</strong> che disciplini la presenza di animali domestici negli immobili in affitto. Non c'è una norma che dica "l'inquilino può" o "l'inquilino non può". Il tema si regge su principi generali del Codice civile e sull'interpretazione che ne danno i giudici.</p>
+<p>Il riferimento principale è l'<strong>articolo 1587 del Codice civile</strong>, che impone al conduttore (l'inquilino) di servirsi della casa con la "diligenza del buon padre di famiglia", cioè con la cura di una persona ragionevole, e per l'uso previsto dal contratto. Tenere un animale, di per sé, rientra nel normale uso di un'abitazione. Il problema nasce quando l'animale <strong>causa danni all'immobile</strong> oppure <strong>disturbo ai vicini</strong>: è lì che si gioca tutto.</p>
+
+<h2>Il proprietario può vietare gli animali nel contratto?</h2>
+<p>Qui arriva la parte delicata, perché la risposta onesta è: <strong>dipende, e la questione è tuttora discussa nei tribunali</strong>. Diffida di chi ti dà certezze assolute in un senso o nell'altro.</p>
+<p>L'orientamento più diffuso nei tribunali di merito è severo verso il proprietario: una clausola che vieta <strong>in modo assoluto e generalizzato</strong> di tenere animali viene spesso considerata <strong>vessatoria e quindi nulla</strong>. In sostanza, secondo questa lettura il proprietario non può impedire in blocco all'inquilino di tenere un animale; l'inquilino può tenerlo, a condizione che non arrechi danni all'immobile e non crei disturbo agli altri.</p>
+<p>Attenzione però: non è una posizione unanime. Alcune decisioni recenti hanno seguito la strada opposta. Una sentenza della <strong>Corte d'Appello di Napoli (n. 1254 del 13 marzo 2025)</strong> ha stabilito che la clausola "no animali" <strong>non è automaticamente vessatoria</strong> - perché non rientra nell'elenco chiuso delle clausole vessatorie previsto dall'articolo 1341, secondo comma, del Codice civile - e che, in nome della libertà contrattuale, le parti possono validamente pattuirla. Secondo questa impostazione si tratta comunque di un'obbligazione accessoria: per far risolvere il contratto in caso di violazione bisogna dimostrare che l'inadempimento è <strong>grave</strong>, e conta anche il comportamento tenuto in precedenza (ad esempio se il proprietario aveva già tollerato la presenza dell'animale).</p>
+<p>Cosa significa in pratica per te? Che scommettere tutto su un divieto assoluto è rischioso: potresti ritrovarti con una clausola inutilizzabile proprio quando ti serve. Molto più solido è <strong>regolamentare</strong> la presenza dell'animale invece di vietarla del tutto.</p>
+
+<h2>Non confondere il contratto con il regolamento di condominio</h2>
+<p>Un equivoco frequente riguarda il condominio. L'<strong>articolo 1138, ultimo comma, del Codice civile</strong> è chiaro: le norme del regolamento condominiale <strong>non possono vietare di possedere o detenere animali domestici</strong>. Ma questa regola riguarda il regolamento approvato dall'assemblea a maggioranza, non il contratto di locazione tra te e il tuo inquilino: sono due piani diversi. Il divieto contenuto in un regolamento condominiale "ordinario" non è valido; quello inserito nel contratto segue invece le regole (discusse) che abbiamo visto sopra. Tienili separati, perché confonderli porta a decisioni sbagliate.</p>
+
+<h2>Cosa resta sempre a carico dell'inquilino</h2>
+<p>Ecco la buona notizia per il proprietario: <strong>anche se la clausola di divieto fosse nulla, l'inquilino non è affatto libero di fare come vuole</strong>. Restano fermi due obblighi che ti tutelano a prescindere.</p>
+<ul>
+<li><strong>Rispondere dei danni.</strong> Gli articoli 1588 e 1590 del Codice civile stabiliscono che l'inquilino risponde del deterioramento della casa e deve restituirla nello stato in cui l'ha ricevuta. Se il cane rovina il parquet, graffia le porte o l'animale danneggia arredi e tappeti, quei danni sono a carico suo. I tribunali lo confermano regolarmente, addebitando all'inquilino il ripristino e compensando gli importi con il deposito cauzionale.</li>
+<li><strong>Non disturbare i vicini.</strong> Se l'animale crea immissioni intollerabili - cattivi odori, deiezioni sul balcone che si propagano alle parti comuni, rumori molesti - l'inquilino viene meno al dovere di usare la casa correttamente. In diversi casi i giudici hanno dichiarato la <strong>risoluzione del contratto per grave inadempimento</strong> proprio per questi comportamenti, anche quando la clausola "no animali" era stata giudicata nulla. Conta il comportamento concreto, non solo la clausola.</li>
+</ul>
+<p>C'è anche un motivo in più per non voltarti dall'altra parte: se tolleri per anni un uso scorretto da parte dell'inquilino che danneggia gli altri condomini, in alcuni casi puoi risponderne tu stesso come proprietario. Intervenire per tempo, quindi, protegge anche te.</p>
+
+<h2>Come tutelarti da proprietario: la checklist pratica</h2>
+<p>Invece di puntare tutto su un divieto che potrebbe non reggere, costruisci una difesa concreta. Ecco i passi utili.</p>
+<ul>
+<li><strong>Fai un verbale di consegna con inventario e foto.</strong> Descrivere per iscritto lo stato dell'immobile e degli arredi alla consegna è la tua arma migliore: senza una descrizione iniziale la legge presume che la casa fosse in buono stato, ma le foto rendono tutto molto più facile da provare al momento della riconsegna.</li>
+<li><strong>Prevedi un deposito cauzionale adeguato.</strong> È la prima somma da cui attingere per coprire eventuali danni. Regolalo correttamente nel contratto.</li>
+<li><strong>Scrivi una clausola equilibrata, non un divieto assoluto.</strong> Ad esempio: consenti la presenza dell'animale a condizione che non provochi danni, disturbo o problemi igienico-sanitari, e prevedi conseguenze chiare in caso contrario. Una clausola così è molto più difendibile di un "vietato" secco.</li>
+<li><strong>Lega le conseguenze ai comportamenti concreti, non al semplice possesso dell'animale.</strong> Prevedi che danni, immissioni o mancata pulizia costituiscano inadempimento: ricorda però che, trattandosi di un obbligo accessorio, prima di risolvere il contratto il giudice valuta comunque la gravità di quanto accaduto.</li>
+<li><strong>Agisci subito sui problemi.</strong> Se arrivano lamentele dei vicini, contesta per iscritto l'inadempimento senza lasciar passare mesi: la tolleranza prolungata indebolisce la tua posizione.</li>
+</ul>
+
+<h2>Gli errori da evitare</h2>
+<ul>
+<li><strong>Affidarsi a un "vietato animali" copiato da un modello.</strong> Un divieto assoluto e generico è proprio quello che i giudici tendono a considerare nullo.</li>
+<li><strong>Pensare che il divieto del condominio risolva il problema.</strong> Il regolamento condominiale a maggioranza non può vietare gli animali: non è una scorciatoia valida.</li>
+<li><strong>Non documentare lo stato iniziale della casa.</strong> Senza verbale e foto, provare i danni causati dall'animale diventa molto più complicato.</li>
+<li><strong>Tollerare a lungo disturbi e danni e poi pretendere lo sfratto.</strong> Il comportamento passato conta: reagire tardi può farti perdere la causa.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso scrivere nel contratto che è vietato tenere animali?</h3>
+<p>Puoi inserirla, ma non è detto che regga. Molti tribunali considerano nulla la clausola che vieta in modo assoluto gli animali; altre decisioni recenti la ritengono valida. Proprio per questa incertezza conviene regolamentare l'uso (niente danni né disturbo) invece di vietare del tutto.</p>
+<h3>L'inquilino ha preso un cane senza dirmelo: posso sfrattarlo?</h3>
+<p>Non basta la sola presenza dell'animale. Per arrivare alla risoluzione del contratto devi dimostrare un inadempimento grave: danni all'immobile, immissioni o disturbo ai vicini. Contesta l'inadempimento per iscritto e documenta i problemi concreti.</p>
+<h3>Chi paga i danni causati dall'animale all'appartamento?</h3>
+<p>L'inquilino. Risponde del deterioramento della casa e degli arredi e deve restituire l'immobile nello stato in cui l'ha ricevuto. Puoi trattenere dal deposito cauzionale quanto serve a coprire il ripristino, fermo restando l'eventuale maggior danno.</p>
+<h3>Il regolamento di condominio può vietare gli animali?</h3>
+<p>No, se è il regolamento approvato dall'assemblea a maggioranza: l'articolo 1138 del Codice civile lo vieta espressamente. Discorso diverso per il contratto di locazione, dove valgono le regole (discusse) che abbiamo visto.</p>
+
+<h2>In sintesi</h2>
+<p>Vietare gli animali in affitto è un terreno più insidioso di quanto sembri: il divieto assoluto rischia di essere dichiarato nullo, mentre il vero scudo del proprietario sta altrove - nella documentazione dello stato dell'immobile, in un deposito cauzionale adeguato, in una clausola equilibrata e nella reazione tempestiva a danni e disturbi. Ricorda che, in ogni caso, l'inquilino risponde sempre dei danni e non può molestare i vicini.</p>
+<p>Se stai preparando un nuovo contratto o vuoi mettere in sicurezza una situazione già in corso, il team di <strong>Sfratto Sicuro</strong> può aiutarti a redigere clausole solide e a tutelare il tuo immobile: scopri il servizio dedicato ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>. Può esserti utile anche approfondire come funziona il <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a> e perché conviene sempre redigere un <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a>.</p>
+<p><em>Contenuto a scopo informativo, aggiornato a settembre 2026: non sostituisce una consulenza legale personalizzata. Riferimenti normativi: artt. 1587, 1588, 1590, 1341 comma 2, 1138 ultimo comma, 1453, 1455, 1456, 1322 e 2043 del Codice civile; tra le pronunce citate, Corte d'Appello di Napoli n. 1254/2025 e la giurisprudenza di merito in tema di clausola sugli animali domestici.</em></p>
+`,
+  },
+  {
     slug: "cambiare-serratura-inquilino-moroso",
     title: "Cambiare la serratura all'inquilino moroso: si può? Cosa rischia il proprietario",
     description: "Il proprietario può cambiare la serratura o staccare le utenze all'inquilino moroso? No, è reato. Ecco cosa rischi e la sola via legale.",
