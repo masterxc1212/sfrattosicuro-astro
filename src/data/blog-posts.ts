@@ -16,6 +16,70 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-con-disabile-in-casa",
+    title: "Sfratto con un disabile in casa: cosa può fare il proprietario",
+    description: "Uno sfratto con un disabile in casa si può fare: la disabilità non lo blocca, ma può incidere sui tempi del rilascio. Cosa decide il giudice e cosa fare.",
+    excerpt: "La presenza di una persona disabile non impedisce lo sfratto: può però allungare i tempi del rilascio. Ecco cosa può decidere il giudice e come muoversi.",
+    lead: "La presenza di una persona con disabilità non fa perdere al proprietario il diritto di riavere l’immobile: incide semmai sui tempi del rilascio. Ecco come funziona davvero e cosa conviene fare.",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-03",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-03. Keyword: sfratto con disabile in casa, vol 50, KD 0 (DataForSEO).",
+    html: `
+<p>Ti trovi a dover liberare un immobile ma sai che nella casa vive una persona con disabilità: un tuo inquilino con disabilità, un suo familiare convivente o un anziano non autosufficiente. È una delle situazioni che mettono più in difficoltà i proprietari, perché si teme che la presenza di un soggetto fragile blocchi tutto. Questa guida spiega, dal punto di vista del proprietario, cosa comporta davvero uno <strong>sfratto con un disabile in casa</strong>: quando e come la condizione di disabilità incide sulla procedura, cosa può decidere il giudice, come funziona la fase esecutiva e quali passi conviene fare per tutelare i tuoi diritti senza commettere errori.</p>
+
+<h2>La presenza di un disabile non blocca lo sfratto</h2>
+<p>Partiamo dal punto più importante, perché è quello che genera più ansia: la presenza di una persona disabile <strong>non fa perdere al proprietario il diritto di riavere il suo immobile</strong>. Non esiste una norma che impedisca in assoluto lo sfratto quando nell'abitazione vive un invalido, un malato o un anziano. Se il presupposto c'è — morosità nel pagamento del canone, oppure scadenza del contratto per la finita locazione — la procedura di convalida si svolge regolarmente e il giudice emette il provvedimento di rilascio.</p>
+<p>La condizione di disabilità, quindi, non è una causa che cancella lo sfratto. È però un elemento che può <strong>influenzare i tempi</strong>: il giudice, e più avanti l'autorità che gestisce l'esecuzione, possono tenerne conto per dilazionare il momento in cui l'immobile viene materialmente liberato. Capire dove pesa questa condizione è la chiave per gestire la pratica con realismo.</p>
+
+<h2>Dove incide la disabilità: la data del rilascio</h2>
+<p>Il punto in cui la condizione della persona conta di più è la <strong>fissazione della data di rilascio</strong>. Quando il giudice dispone la liberazione dell'immobile, non sempre impone di uscire subito: può concedere al conduttore un termine per andarsene. Lo prevede l'articolo 56 della Legge 392 del 1978 (la legge sull'equo canone), che disciplina le "modalità per il rilascio".</p>
+<p>Secondo questa norma il giudice, tenuto conto delle <em>condizioni del conduttore e del locatore</em> e delle ragioni per cui il rilascio viene disposto, fissa la data entro cui l'immobile deve essere lasciato libero. Il termine, di regola, non supera i <strong>sei mesi</strong> e solo in casi eccezionali può arrivare fino a <strong>dodici mesi</strong>. È qui che la presenza di una persona gravemente disabile può spingere il giudice verso un termine più lungo: si tratta di un bilanciamento tra l'interesse del proprietario a rientrare nel possesso e la tutela di un soggetto fragile che deve trovare una nuova sistemazione.</p>
+<p>Un aspetto tecnico utile da conoscere: questo provvedimento sulla data di rilascio ha natura <strong>ordinatoria</strong>, non definitiva. Significa che può essere modificato o revocato anche dopo, in fase esecutiva, dal giudice dell'esecuzione. In concreto, il termine iniziale non è scolpito nella pietra: sia l'inquilino sia il proprietario possono chiederne una rivalutazione se le circostanze cambiano.</p>
+
+<h2>La fase esecutiva: differimento e forza pubblica</h2>
+<p>Se, scaduto il termine, l'inquilino non lascia spontaneamente l'immobile, il proprietario passa alla fase esecutiva: si notifica il precetto e si chiede all'ufficiale giudiziario di procedere al rilascio forzato (l'esecuzione per consegna o rilascio è regolata dall'articolo 608 del Codice di procedura civile). Anche in questa fase la fragilità della persona presente in casa può incidere su due fronti.</p>
+<p>Il primo è il <strong>differimento dell'esecuzione</strong>: davanti a una situazione di particolare gravità, con documentazione medica che attesta una disabilità seria, l'ufficiale giudiziario può rinviare l'accesso e il giudice dell'esecuzione può concedere un rinvio della liberazione, per evitare che il rilascio avvenga senza una minima tutela della persona vulnerabile.</p>
+<p>Il secondo fronte è la <strong>concessione della forza pubblica</strong>. Quando l'inquilino resiste, l'ufficiale giudiziario ha bisogno dell'assistenza delle forze dell'ordine, che viene autorizzata dal Prefetto. Nelle zone ad alta tensione abitativa il Prefetto stabilisce un ordine di priorità (la cosiddetta graduazione), dando la precedenza ai casi meno delicati e mettendo in coda quelli in cui sono coinvolti soggetti fragili come disabili, anziani o malati. Questo può allungare i tempi. È importante però sapere che, in presenza di un titolo esecutivo valido, il proprietario ha <strong>diritto</strong> all'assistenza della forza pubblica: se questa viene negata o rinviata senza una reale giustificazione, la Pubblica amministrazione può essere chiamata a rispondere dei danni causati dal ritardo. Il funzionamento di questa fase è spiegato in dettaglio nella guida su <a href="/blog/esecuzione-sfratto-forza-pubblica/">l'esecuzione dello sfratto con la forza pubblica</a>.</p>
+
+<h2>Le sospensioni straordinarie: cosa resta oggi</h2>
+<p>Negli anni passati si sono susseguite leggi che sospendevano gli sfratti per alcune categorie protette (per esempio inquilini a basso reddito con over 65, malati terminali o disabili in determinati Comuni). Sono provvedimenti <strong>a tempo, ormai cessati</strong>: oggi non esiste un blocco automatico e generalizzato degli sfratti a favore delle persone disabili. Diffida da chi ti dice che "con un disabile in casa lo sfratto non si può fare": non è così. Gli strumenti reali sono quelli visti sopra, cioè la fissazione di un termine di rilascio più ampio e la graduazione dell'intervento della forza pubblica, non una sospensione perenne.</p>
+
+<h2>Cosa può fare il proprietario, passo per passo</h2>
+<ul>
+<li><strong>Non fermarti per timore.</strong> Avvia comunque la procedura di convalida: rinviare l'azione allunga solo i tempi e fa crescere la morosità.</li>
+<li><strong>Fatti assistere da un legale fin dall'inizio.</strong> La presenza di un soggetto fragile richiede di curare bene la documentazione e le richieste al giudice sul termine di rilascio.</li>
+<li><strong>Chiedi un termine di rilascio ragionevole, ma non eccessivo.</strong> Il tuo avvocato può argomentare in udienza contro un differimento troppo lungo, evidenziando le tue esigenze (ad esempio spese, mutuo, necessità abitativa).</li>
+<li><strong>Documenta la morosità e i tuoi danni.</strong> Serve per il recupero dei canoni e per giustificare la richiesta di un rilascio in tempi rapidi.</li>
+<li><strong>Attiva i servizi sociali del Comune.</strong> Segnalare la presenza di una persona disabile ai servizi sociali non è solo un gesto di correttezza: una soluzione alloggiativa alternativa trovata dal Comune accelera la liberazione dell'immobile.</li>
+<li><strong>Se la forza pubblica tarda senza motivo, valuta l'azione risarcitoria.</strong> Un rinvio ingiustificato dell'assistenza può fondare una richiesta di danni verso la Pubblica amministrazione.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Agire da soli con le "vie di fatto".</strong> Cambiare la serratura, staccare le utenze o portare via i mobili quando in casa vive una persona disabile è illegale e ti espone a conseguenze penali, oltre che civili.</li>
+<li><strong>Aspettare che "si risolva da sé".</strong> Più passa il tempo, più cresce l'arretrato e più diventa difficile recuperare i canoni.</li>
+<li><strong>Confondere disabilità e sospensione automatica.</strong> Come detto, non esiste un blocco perenne: chi lo sostiene rischia di farti perdere mesi preziosi.</li>
+<li><strong>Trascurare la documentazione medica altrui.</strong> Se l'inquilino produce certificati, va verificato che siano pertinenti e aggiornati: un legale può contestare richieste di differimento non adeguatamente provate.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Con un disabile in casa lo sfratto si può fare?</h3>
+<p>Sì. La disabilità non impedisce lo sfratto: se ci sono i presupposti (morosità o finita locazione), il giudice convalida e dispone il rilascio. La condizione della persona può incidere sui tempi, non sul diritto del proprietario a riavere l'immobile.</p>
+<h3>Quanto tempo in più può concedere il giudice?</h3>
+<p>Con il termine di rilascio previsto dall'articolo 56 della Legge 392/1978 il giudice, di regola, non supera i sei mesi; solo in casi eccezionali può arrivare fino a dodici mesi, valutando le condizioni di entrambe le parti.</p>
+<h3>La presenza di un disabile può bloccare la forza pubblica?</h3>
+<p>Non la blocca, ma può influenzarne l'ordine di priorità stabilito dal Prefetto nelle zone ad alta tensione abitativa. Il proprietario conserva il diritto all'assistenza; un rifiuto o un rinvio ingiustificato può essere fonte di risarcimento.</p>
+<h3>Cosa succede se la persona disabile non trova un'altra casa?</h3>
+<p>Trovare una nuova sistemazione non è un obbligo del proprietario. È utile però coinvolgere i servizi sociali del Comune: una soluzione abitativa alternativa individuata da loro rende più rapido e sereno il rilascio.</p>
+
+<h2>In sintesi</h2>
+<p>Uno <strong>sfratto con un disabile in casa</strong> si può portare a termine: la fragilità della persona non cancella il diritto del proprietario, ma può allungare i tempi attraverso il termine di rilascio fissato dal giudice (articolo 56 della Legge 392/1978) e la graduazione dell'intervento della forza pubblica da parte del Prefetto, mentre l'esecuzione forzata segue l'articolo 608 del Codice di procedura civile. Le vecchie sospensioni straordinarie per categorie protette sono cessate: nessun blocco automatico. La strada giusta è muoversi per tempo, con documentazione ordinata e assistenza legale, evitando sempre le iniziative "fai da te". Per approfondire i passaggi collegati puoi leggere le guide su <a href="/blog/sfratto-con-ufficiale-giudiziario/">come funzionano gli accessi dell'ufficiale giudiziario</a> e sulla <a href="/blog/sospensione-esecuzione-sfratto/">sospensione dell'esecuzione dello sfratto</a>.</p>
+<p>Se ti trovi in questa situazione e vuoi capire come muoverti nel tuo caso concreto, <a href="/servizi/tutela-proprietario/">Sfratto Sicuro</a> può affiancarti con una prima consulenza dedicata ai proprietari. <em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale personalizzata: ogni situazione va valutata caso per caso.</em></p>
+`,
+  },
+  {
     slug: "animali-domestici-casa-affitto",
     title: "Animali domestici in casa in affitto: il proprietario può vietarli?",
     description: "Il proprietario può vietare gli animali in affitto? Il divieto assoluto rischia di essere nullo: ecco cosa dice la legge e come tutelare l'immobile.",
