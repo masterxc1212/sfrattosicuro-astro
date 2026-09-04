@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "ricevuta-affitto",
+    title: "Ricevuta di affitto: cosa deve contenere e quando serve la marca da bollo",
+    description: "Ricevuta di affitto: cosa deve contenere, quando serve la marca da bollo da 2 euro (con esenzione in cedolare secca) e come gestirla dalla parte del proprietario.",
+    excerpt: "Ogni volta che l'inquilino paga il canone il proprietario dovrebbe rilasciare una ricevuta di affitto. Guida pratica per il locatore: a cosa serve, quando e obbligatoria (art. 1199 c.c.), cosa deve contenere, quando serve la marca da bollo da 2 euro e l'esenzione con la cedolare secca, come conservarle e gli errori da evitare.",
+    lead: "La ricevuta di affitto e un documento semplice ma prezioso: e la prova che il canone di quel mese e stato pagato e, in caso di contestazioni o di uno sfratto per morosita, puo fare la differenza. Vediamo, dalla parte del proprietario, cosa deve contenere, quando e obbligatoria, quando serve la marca da bollo e quali errori evitare.",
+    publishedAt: "2026-09-04",
+    updatedAt: "2026-09-04",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-04. Keyword: ricevuta affitto, vol 590, KD 0 (DataForSEO). Secondarie: marca da bollo ricevuta affitto (vol 260), ricevuta di pagamento affitto (vol 170), fac simile ricevuta affitto.",
+    html: `<p>Ogni volta che l'inquilino paga il canone, il proprietario dovrebbe rilasciare una <strong>ricevuta di affitto</strong>. È un documento semplice ma importante: è la prova che quel mese è stato pagato e, in caso di contestazioni o di uno sfratto per morosità, può fare la differenza. Questa guida spiega al proprietario, in modo pratico, cosa deve contenere la ricevuta, quando è obbligatoria, quando serve la marca da bollo e quali errori evitare.</p>
+
+<h2>Cos'è la ricevuta di affitto e a cosa serve</h2>
+<p>La ricevuta di affitto (chiamata anche <em>quietanza</em>) è il documento con cui il proprietario dichiara di aver ricevuto dall'inquilino il pagamento del canone per un determinato periodo. Serve a due cose: dà all'inquilino la prova di aver pagato e dà al proprietario un registro ordinato degli incassi.</p>
+<p>Il suo valore non è solo pratico. La ricevuta è una <strong>prova documentale</strong>: se un domani nasce una lite sul mancato pagamento, i conti tornano proprio a partire dalle ricevute rilasciate. Per questo conviene emetterle sempre, con ordine e continuità, anche quando l'inquilino paga con bonifico (dove la causale già lascia una traccia, ma una ricevuta ben fatta è comunque più chiara e completa).</p>
+
+<h2>La ricevuta è obbligatoria?</h2>
+<p>Sì, quando l'inquilino la chiede. Il codice civile, all'<strong>articolo 1199</strong> (rubricato "Diritto del debitore alla quietanza"), stabilisce che chi riceve un pagamento deve rilasciare <strong>quietanza</strong> "a richiesta e a spese del debitore". In pratica, se l'inquilino domanda la ricevuta, il proprietario è tenuto a fornirla, e le eventuali spese del documento (come la marca da bollo, quando dovuta) sono per legge a carico dell'inquilino stesso. Al di là dell'obbligo di legge, è comunque nell'interesse del proprietario emetterla sempre: una gestione trasparente e documentata è la prima difesa contro le contestazioni.</p>
+<p>Attenzione a un punto spesso trascurato: i canoni di locazione abitativa vanno pagati con strumenti <strong>tracciabili</strong> (bonifico, assegno e simili), come previsto dalla legge di stabilità 2016 (L. 208/2015). Con questi mezzi esiste già una traccia bancaria, ma la ricevuta resta comunque utile per collegare in modo chiaro l'importo alla mensilità e al contratto.</p>
+
+<h2>Cosa deve contenere la ricevuta di affitto</h2>
+<p>Non esiste un modulo ufficiale: la ricevuta è un documento libero, ma per essere utile deve contenere alcuni elementi. Ecco cosa non deve mancare:</p>
+<ul>
+<li><strong>Dati del proprietario</strong> (locatore): nome, cognome e codice fiscale.</li>
+<li><strong>Dati dell'inquilino</strong> (conduttore): nome, cognome e codice fiscale.</li>
+<li><strong>Importo pagato</strong>, indicato in cifre e in lettere.</li>
+<li><strong>Periodo di riferimento</strong>: la mensilità o le mensilità che il pagamento copre (per esempio "canone di marzo 2026").</li>
+<li><strong>Causale</strong>: che si tratta del canone di locazione, con l'indicazione del contratto e dell'immobile.</li>
+<li><strong>Modalità di pagamento</strong>: contanti, bonifico, assegno.</li>
+<li><strong>Data e luogo</strong> del rilascio.</li>
+<li><strong>Firma del proprietario</strong>.</li>
+</ul>
+<p>Se il pagamento comprende anche altre voci (per esempio le spese condominiali o gli oneri accessori), conviene indicarle separatamente rispetto al canone: distinguere le somme evita malintesi e rende la ricevuta più chiara in caso di verifica.</p>
+
+<h2>La marca da bollo sulla ricevuta di affitto</h2>
+<p>È la domanda più frequente. La regola generale è questa: sulle quietanze di pagamento serve una <strong>marca da bollo da 2 euro</strong> quando l'importo supera <strong>77,47 euro</strong>. Poiché quasi tutti i canoni mensili superano questa soglia, in linea di principio la ricevuta di affitto va assoggettata al bollo da 2 euro.</p>
+<p>C'è però un'eccezione molto importante per i proprietari. Se il contratto è in regime di <strong>cedolare secca</strong>, la ricevuta è <strong>esente dall'imposta di bollo</strong>: la cedolare, infatti, sostituisce anche l'imposta di bollo e di registro sul contratto e sulle somme correlate. Quindi:</p>
+<ul>
+<li><strong>Contratto con tassazione ordinaria (IRPEF)</strong>: sulla ricevuta va applicata la marca da bollo da 2 euro se il canone supera 77,47 euro.</li>
+<li><strong>Contratto in cedolare secca</strong>: nessuna marca da bollo sulla ricevuta.</li>
+</ul>
+<p>Il costo della marca da bollo, per legge, è a carico di chi paga (l'inquilino). Va però ricordato che, verso il Fisco, le parti sono <strong>obbligate in solido</strong>: se la ricevuta viene rilasciata senza il bollo dovuto, l'Agenzia delle Entrate può rivalersi anche sul proprietario che l'ha emessa. È un dettaglio di poco valore economico, ma dimenticarlo dove è dovuto è un'irregolarità formale che conviene evitare.</p>
+
+<h2>Come conservare e gestire le ricevute</h2>
+<p>Le ricevute vanno conservate con ordine, in copia, per tutta la durata del contratto e anche dopo. Un consiglio pratico è tenere un registro (anche un semplice foglio) con la data e l'importo di ogni mensilità incassata: in caso di morosità, avere il quadro dei pagamenti mancanti rende immediato quantificare il debito e avviare, se serve, la procedura di recupero.</p>
+<p>Se emetti la ricevuta in formato digitale, valgono le stesse regole di contenuto; per la marca da bollo, quando dovuta, esistono modalità di assolvimento in modo virtuale. In ogni caso, l'importante è che ogni pagamento resti tracciato e collegato in modo chiaro alla mensilità e al contratto.</p>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Non rilasciare la ricevuta</strong> quando l'inquilino la chiede: oltre a violare l'art. 1199 del codice civile, ti priva di una prova utile.</li>
+<li><strong>Ricevute generiche</strong> senza indicare la mensilità: "ricevuti 700 euro" non basta, va scritto per quale periodo.</li>
+<li><strong>Dimenticare la marca da bollo</strong> quando il contratto non è in cedolare secca e il canone supera 77,47 euro.</li>
+<li><strong>Applicare il bollo con la cedolare secca</strong>: in quel regime non serve, sarebbe una spesa inutile.</li>
+<li><strong>Non conservare le copie</strong>: senza uno storico ordinato, ricostruire i pagamenti in caso di lite diventa complicato.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Sono obbligato a dare la ricevuta se l'inquilino paga con bonifico?</h3>
+<p>L'obbligo scatta su richiesta dell'inquilino (art. 1199 c.c.). Con il bonifico esiste già una traccia, ma se te la chiede devi comunque rilasciarla; conviene farlo in ogni caso.</p>
+<h3>Quanto costa la marca da bollo sulla ricevuta?</h3>
+<p>2 euro, dovuti quando l'importo supera 77,47 euro e il contratto non è in cedolare secca. Con la cedolare secca la ricevuta è esente.</p>
+<h3>Chi paga la marca da bollo, io o l'inquilino?</h3>
+<p>L'onere economico è per legge a carico di chi paga, cioè l'inquilino, ed è prassi diffusa che sia lui a sostenerlo. Verso il Fisco, però, le parti rispondono in solido: anche il proprietario che rilascia la ricevuta priva del bollo dovuto può esserne chiamato a rispondere.</p>
+<h3>La ricevuta serve come prova in un eventuale sfratto?</h3>
+<p>Le ricevute (e la loro assenza) aiutano a ricostruire quali mensilità sono state pagate e quali no: sono un elemento utile per documentare la morosità.</p>
+<h3>Devo registrare le ricevute all'Agenzia delle Entrate?</h3>
+<p>No, la singola ricevuta di pagamento non si registra. Va registrato il contratto di locazione; la ricevuta è solo la prova dei versamenti periodici.</p>
+
+<h2>In sintesi</h2>
+<p>La ricevuta di affitto è un documento piccolo ma prezioso: emetterla sempre, con l'indicazione chiara della mensilità e degli eventuali oneri, protegge il proprietario e mette ordine nella gestione. Ricorda la regola della marca da bollo da 2 euro sopra i 77,47 euro, con l'esenzione per i contratti in cedolare secca, e conserva ogni ricevuta con cura.</p>
+<p>Se hai dubbi sulla gestione del contratto o stai affrontando un inquilino che non paga, <a href="/servizi/tutela-proprietario/">Sfratto Sicuro</a> offre ai proprietari una prima consulenza gratuita e senza impegno. Puoi approfondire anche la <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> e la gestione del <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>.</p>
+<p><em>Contenuto informativo, aggiornato alla normativa vigente; non sostituisce una consulenza legale o fiscale sul caso concreto. Riferimenti: art. 1199 del codice civile (quietanza); D.P.R. 642/1972 e relativa tariffa (imposta di bollo, 2 euro oltre 77,47 euro); art. 3 del D.Lgs. 23/2011 (cedolare secca ed esenzione da imposta di bollo e di registro).</em></p>`,
+  },
+  {
     slug: "sfratto-con-disabile-in-casa",
     title: "Sfratto con un disabile in casa: cosa può fare il proprietario",
     description: "Uno sfratto con un disabile in casa si può fare: la disabilità non lo blocca, ma può incidere sui tempi del rilascio. Cosa decide il giudice e cosa fare.",
