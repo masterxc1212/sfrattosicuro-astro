@@ -75,11 +75,7 @@ const {
               <input type="email" name="email" id="email-v3" class="form-input" placeholder="Per inviarti l’accesso alla tua pratica" inputmode="email" autocomplete="email" required aria-required="true">
             </div>
 
-            <div>
-              <label for="nome-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Nome <span class="form-optional">(facoltativo)</span></label>
-              <input type="text" name="nome" id="nome-v3" class="form-input" placeholder="Come possiamo chiamarti" autocomplete="name">
-            </div>
-
+            <input type="hidden" name="nome" value="">
             <input type="hidden" name="form_source" value={formSource}>
             <input type="hidden" name="gclid" value="">
             <input type="hidden" name="utm_source" value="">

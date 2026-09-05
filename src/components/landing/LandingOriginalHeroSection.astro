@@ -142,19 +142,9 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
                        placeholder="Per inviarti l’accesso alla tua pratica" autocomplete="email" inputmode="email" required aria-required="true">
               </div>
 
-              <div class="form-group">
-                <label for="nome-hero" class="form-label">Nome <span class="form-optional">(facoltativo)</span></label>
-                <input
-                  type="text"
-                  name="nome"
-                  id="nome-hero"
-                  class="form-input"
-                  placeholder="Come possiamo chiamarti"
-                  autocomplete="name"
-                >
-              </div>
               <p class="hero-form-owners">Servizio riservato a proprietari e locatori.</p>
 
+              <input type="hidden" name="nome" value="">
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
               <input type="hidden" name="utm_source" value="">
