@@ -104,32 +104,36 @@ const { eager = false } = Astro.props;
     // mobile) restavano su tel:+390280898395 → chiamate dai bottoni principali su mobile
     // MAI attribuite. Con _googWcmGet(callback, numero) riceviamo il numero d'inoltro e lo
     // applichiamo a TUTTI i link tel: della pagina.
-    function applyForwardingNumber(formattedNumber, mobileNumber) {
-      if (!mobileNumber) return;
-      var digits = String(mobileNumber).replace(/\D/g, '');
-      if (!digits) return;
-      var links = document.querySelectorAll('a[href^="tel:"]');
-      for (var i = 0; i < links.length; i++) {
-        var a = links[i];
-        var current = (a.getAttribute('href') || '').replace(/\D/g, '');
-        if (current === digits) continue;
-        a.setAttribute('href', 'tel:' + mobileNumber);
-        a.setAttribute('data-gfn', '1');
-      }
+    // Il loader wcm attuale NON espone piu' `_googWcmGet` (verificato 2026-09-05: esistono solo
+    // `_googWcmImpl`/`_googCallTrackingImpl`, entrambi opachi). Strategia indipendente dall'API:
+    // Google riscrive da solo i link tel: il cui TESTO contiene il numero; noi leggiamo l'href
+    // gia' riscritto e lo propaghiamo ai link tel: rimasti sul numero reale.
+    var BUSINESS_DIGITS = PHONE_NUMBER.replace(/\D/g, '');   // '0280898395'
+    function isBusiness(href) {
+      var d = (href || '').replace(/\D/g, '');
+      return d === BUSINESS_DIGITS || d === '39' + BUSINESS_DIGITS;
     }
-
+    function propagateForwardingNumber() {
+      var links = document.querySelectorAll('a[href^="tel:"]');
+      var swapped = null;
+      for (var i = 0; i < links.length; i++) {
+        var h = links[i].getAttribute('href');
+        if (h && !isBusiness(h) && h.replace(/\D/g, '').length >= 9) { swapped = h; break; }
+      }
+      if (!swapped) return false;
+      for (var j = 0; j < links.length; j++) {
+        if (isBusiness(links[j].getAttribute('href'))) {
+          links[j].setAttribute('href', swapped);
+          links[j].setAttribute('data-gfn', '1');
+        }
+      }
+      return true;
+    }
     function armForwardingCallback() {
       var tries = 0;
       var timer = setInterval(function () {
         tries += 1;
-        if (typeof window._googWcmGet === 'function') {
-          clearInterval(timer);
-          try {
-            window._googWcmGet(applyForwardingNumber, PHONE_NUMBER);
-          } catch (e) { /* nessun numero d'inoltro: pagina invariata */ }
-        } else if (tries > 40) {
-          clearInterval(timer); // ~10 s: loader wcm non arrivato
-        }
+        if (propagateForwardingNumber() || tries > 60) clearInterval(timer); // max ~15 s
       }, 250);
     }
 
