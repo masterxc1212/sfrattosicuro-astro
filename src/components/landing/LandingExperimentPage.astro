@@ -28,6 +28,7 @@ import LandingV4FaqSection from '../../components/landing/LandingV4FaqSection.as
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
 import LandingV3KeyQuestionsSection from '../../components/landing/LandingV3KeyQuestionsSection.astro';
 import LandingV3CallbackModal from '../../components/landing/LandingV3CallbackModal.astro';
+import EngagedLoader from '../../components/EngagedLoader.astro';
 import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 import LandingAugustNoticeSection from '../../components/landing/LandingAugustNoticeSection.astro';
@@ -177,20 +178,7 @@ const config = isAugust ? {
         tutti render-blocking. Lighthouse mobile prima: LCP 10,4 s. */}
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-var.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin-var.woff2" crossorigin>
-    <script is:inline>
-      // 2026-09-05 — Pixel di remarketing (Meta, TikTok, Clarity) DIFFERITI: partono alla prima
-      // interazione (touch, scroll, mouse, tasto) oppure 8 s dopo il load, il primo che arriva (round 3: era 3 s; il lab di Lighthouse,
-      // che non tocca mai lo schermo, contava i pixel nel punteggio).
-      // I pubblici si riempiono comunque (PageView parte entro pochi secondi per chiunque legga la
-      // pagina); si toglie solo il costo di parse/esecuzione dal primo paint. Google Ads resta subito.
-      window.__ssWhenEngaged = function (fn) {
-        var done = false, evs = ['pointerdown','touchstart','keydown','scroll','mousemove'];
-        function go(){ if (done) return; done = true; evs.forEach(function(e){ window.removeEventListener(e, go, true); }); try { fn(); } catch (err) {} }
-        evs.forEach(function(e){ window.addEventListener(e, go, { capture: true, passive: true, once: true }); });
-        if (document.readyState === 'complete') setTimeout(go, 8000);
-        else window.addEventListener('load', function(){ setTimeout(go, 8000); }, { once: true });
-      };
-    </script>
+    <EngagedLoader />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />

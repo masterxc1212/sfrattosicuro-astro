@@ -1,3 +1,33 @@
+/* ============================================
+   FONT SELF-HOSTED (2026-09-05) — latin, variabili, display: swap.
+   File in public/assets/fonts/ (Google Fonts, licenza OFL). Fraunces con asse SOFT.
+   ============================================ */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/assets/fonts/fraunces-soft-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* CONTENT-VISIBILITY sotto la piega (2026-09-05): il browser rimanda stile+layout delle sezioni
+   non visibili. Escluse le prime tre (hero, identita', CTA territoriale). Sul blog: correlati,
+   CTA in linea e footer. contain-intrinsic-size tiene stabile la barra di scorrimento. */
+#main-content > section:nth-of-type(n+4),
+.editorial-related, .editorial-inline-cta, body > footer, #main-content ~ footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 /* v6 - 2026-05-02 �?? Editorial Magazine restyle (no copy changes, no imagery) */
 /* ============================================
    global.css �?? sfrattosicuro.it

@@ -13,6 +13,7 @@ import MetaAdvancedMatching from '../components/MetaAdvancedMatching.astro';
 import AdAttributionFields from '../components/AdAttributionFields.astro';
 import BehaviourTracking from '../components/BehaviourTracking.astro';
 import ClarityTracking from '../components/ClarityTracking.astro';
+import EngagedLoader from '../components/EngagedLoader.astro';
 import { consentBannerEnabled, trackingEager, tiktokPixelId, clarityProjectId } from '../lib/tracking-config';
 
 interface Props {
@@ -40,10 +41,12 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {/* Google Fonts — Fraunces (display) + Plus Jakarta Sans (body) + JetBrains Mono, allineati al design system Credit Media */}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..600,30..100&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    {/* 2026-09-05 — Font self-hosted (Fraunces con asse SOFT + Plus Jakarta Sans, latin, variabili,
+        @font-face in global.css). Prima: CSS di Google Fonts render-blocking (~840 ms nel lab mobile),
+        JetBrains Mono mai usato (--font-mono ricade sul monospace di sistema). */}
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-var.woff2" crossorigin />
+    {/* Fraunces (118 KB, asse SOFT usato dalle pull-quote) NON in preload: arriva dal CSS con swap, senza rubare banda al CSS. */}
+    <EngagedLoader />
     <SeoHead
       title={title}
       description={description}
@@ -62,15 +65,19 @@ const {
         Nessun codice e' stato rimosso: con `consentBannerEnabled = true` tutto
         torna esattamente com'era. */}
     {consentBannerEnabled && <CookieConsentBanner />}
-    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager={trackingEager} />
-    <GoogleAdsTagIsland eager={trackingEager} />
+    {/* 2026-09-05: con `deferred` i tracker partono alla prima interazione (o 8 s dopo il load),
+        vedi EngagedLoader. Lighthouse mobile prima: home 55, blog 53, sede 56. */}
+    {/* Ads PRIMA di GA4: la libreria caricata con id AW- avvia anche il loader del numero d'inoltro (wcm);
+        GA4 poi si appoggia alla stessa gtag.js (controllo generico in ogni island). */}
+    <GoogleAdsTagIsland eager={trackingEager} deferred />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager={trackingEager} deferred />
     <ClickConversionTracking eager={trackingEager} />
     <WebsiteCallTracking eager={trackingEager} />
-    <TikTokPixelTracking pixelId={tiktokPixelId} eager={trackingEager} />
+    <TikTokPixelTracking pixelId={tiktokPixelId} eager={trackingEager} deferred />
     {/* Pixel Meta esteso a tutto il sito il 2026-08-14: prima viveva solo sulle
         landing, quindi home, blog e 137 pagine sede non alimentavano alcun
         pubblico di remarketing. Stessa lacuna gia' chiusa per Google Ads. */}
-    <MetaPixelTracking eager={trackingEager} />
+    <MetaPixelTracking eager={trackingEager} deferred />
     {/* Advanced Matching (email/telefono in SHA-256) aggiunto il 2026-08-22:
         l'EMQ del pixel era 6,1/10 perche' a Meta non arrivava alcun dato di
         contatto. Non tocca l'invio del modulo: gli hash si calcolano mentre
@@ -81,7 +88,7 @@ const {
         nato li' arrivava in CRM senza attribuzione. Vedi il componente. */}
     <AdAttributionFields />
     <BehaviourTracking />
-    <ClarityTracking projectId={clarityProjectId} eager={trackingEager} />
+    <ClarityTracking projectId={clarityProjectId} eager={trackingEager} deferred />
     <script is:inline>
       (function () {
         if (!('IntersectionObserver' in window)) {

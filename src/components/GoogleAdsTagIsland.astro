@@ -24,12 +24,14 @@ interface Props {
   /** `eager` = carica senza attendere il consenso (usato quando il banner e' in
    *  pausa: vedi src/lib/tracking-config.ts). */
   eager?: boolean;
+  /** deferred = parte alla prima interazione o 8 s dopo il load (window.__ssWhenEngaged). */
+  deferred?: boolean;
 }
 
-const { conversionId = 'AW-10983419342', eager = false } = Astro.props;
+const { conversionId = 'AW-10983419342', eager = false, deferred = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ conversionId, eager }}>
+<script is:inline define:vars={{ conversionId, eager, deferred }}>
   (() => {
     if (!conversionId) return;
 
@@ -72,7 +74,8 @@ const { conversionId = 'AW-10983419342', eager = false } = Astro.props;
       window.gtag('js', new Date());
       window.gtag('config', conversionId, { transport_type: 'beacon' });
 
-      if (!document.querySelector(`script[data-ads-island="${conversionId}"]`)) {
+      // una sola gtag.js in pagina (2026-09-05): controllo generico, non solo il proprio marcatore
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
         const s = document.createElement('script');
         s.async = true;
         s.src = `https://www.googletagmanager.com/gtag/js?id=${conversionId}`;
@@ -81,7 +84,11 @@ const { conversionId = 'AW-10983419342', eager = false } = Astro.props;
       }
     };
 
-    loadAdsTag(eager ? { marketing: true } : readConsent());
+    {
+      const c0 = eager ? { marketing: true } : readConsent();
+      if (deferred && typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(() => loadAdsTag(c0));
+      else loadAdsTag(c0);
+    }
 
     window.addEventListener('ss:cookie-consent-updated', (event) => {
       loadAdsTag(event?.detail || {});

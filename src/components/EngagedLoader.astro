@@ -1,0 +1,21 @@
+---
+/**
+ * EngagedLoader.astro — helper condiviso «alla prima interazione» (2026-09-05).
+ * ------------------------------------------------------------------
+ * Espone window.__ssWhenEngaged(fn): esegue fn al primo tocco/scroll/mouse/tasto oppure
+ * 8 s dopo il load, il primo che arriva. Lo usano i tracker con prop `deferred`
+ * (GA4, Ads, Meta, TikTok, Clarity, call tracking): i pubblici di remarketing si
+ * riempiono comunque, ma niente parse/esecuzione di terze parti prima del primo paint.
+ * Il lab di Lighthouse non tocca mai lo schermo: con 3 s contava ancora i pixel.
+ * Va messo PRIMA di qualunque tracker (in <head>).
+ */
+---
+<script is:inline>
+  window.__ssWhenEngaged = window.__ssWhenEngaged || function (fn) {
+    var done = false, evs = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+    function go() { if (done) return; done = true; evs.forEach(function (e) { window.removeEventListener(e, go, true); }); try { fn(); } catch (err) {} }
+    evs.forEach(function (e) { window.addEventListener(e, go, { capture: true, passive: true, once: true }); });
+    if (document.readyState === 'complete') setTimeout(go, 8000);
+    else window.addEventListener('load', function () { setTimeout(go, 8000); }, { once: true });
+  };
+</script>

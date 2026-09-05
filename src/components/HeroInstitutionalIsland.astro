@@ -169,9 +169,18 @@ const enableCarousel = useCarousel && carouselItems.length > 0;
         </div>
       </div>
     ) : (
+      <!-- 2026-09-05: varianti responsive. L originale (535 KB, 2064x2048) veniva scaricato con priorita alta
+           anche su mobile, dove .hero-media e display:none. Su mobile ora parte la 480 (~24 KB). -->
       <picture class="hero-media">
-        <source srcset={mediaImage} type="image/webp" />
-        <img src={mediaImage} alt={mediaAlt} loading="eager" fetchpriority="high" decoding="async" width="2064" height="2048" />
+        {mediaImage === '/assets/img/ufficio/hero_home.webp' ? (
+          <>
+            <source media="(max-width: 767px)" srcset="/assets/img/ufficio/hero_home-480.webp" type="image/webp" />
+            <source media="(min-width: 768px)" srcset="/assets/img/ufficio/hero_home-960.webp 960w, /assets/img/ufficio/hero_home-1440.webp 1440w" sizes="(min-width: 1200px) 560px, 50vw" type="image/webp" />
+          </>
+        ) : (
+          <source srcset={mediaImage} type="image/webp" />
+        )}
+        <img src={mediaImage === '/assets/img/ufficio/hero_home.webp' ? '/assets/img/ufficio/hero_home-960.webp' : mediaImage} alt={mediaAlt} loading="eager" fetchpriority="high" decoding="async" width="2064" height="2048" />
       </picture>
     )}
   </div>
