@@ -18,7 +18,7 @@ const regularPrice = formatBusinessEuro(pricing.compensoComplessivo);
 const savings = promo ? formatBusinessEuro(pricing.compensoComplessivo - promo.compensoComplessivo) : undefined;
 const liveCosts = pricing.speseVive;
 ---
-<section id="prezzo" class="landing-v3-price" aria-labelledby="prezzo-title">
+<section id="prezzo" class="landing-cv landing-v3-price" aria-labelledby="prezzo-title">
   <div class="container mx-auto px-4">
     <div class="landing-v3-price-inner">
       <p class="landing-v3-price-eyebrow">{promo ? 'Tariffa Agosto 2026' : 'Compenso unico, senza sorprese'}</p>

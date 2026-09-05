@@ -69,7 +69,9 @@ const { measurementId, eager = false } = Astro.props;
         transport_type: 'beacon'
       });
 
-      if (!document.querySelector(`script[data-ga4-island="${measurementId}"]`)) {
+      // 2026-09-05: una sola copia di gtag.js. Se la pagina ha gia' caricato la libreria per
+      // Google Ads (stesso file, 190 KB), il config GA4 viene servito da quella.
+      if (!document.querySelector(`script[data-ga4-island="${measurementId}"]`) && !document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
         const s = document.createElement('script');
         s.async = true;
         s.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;

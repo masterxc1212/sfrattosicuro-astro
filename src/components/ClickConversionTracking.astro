@@ -66,7 +66,7 @@ const { eager = false } = Astro.props;
         // latente (questo ramo parte solo se nessun altro script ha gia' configurato
         // il tag), ma e' la stessa trappola che rendeva le landing invisibili in GA4.
         window.gtag('config', AW_ID, { transport_type: 'beacon' });
-        if (!document.querySelector('script[data-click-conv-aw]')) {
+        if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
           var s = document.createElement('script');
           s.async = true;
           s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;

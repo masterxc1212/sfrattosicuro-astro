@@ -42,7 +42,7 @@ interface Props {
 const { procedure = landingOriginal.procedure } = Astro.props;
 const steps = procedure.steps?.length ? procedure.steps : defaultSteps;
 ---
-<section id={procedure.sectionId} class="py-16 bg-gray-pearl" aria-labelledby="procedura-protocollo">
+<section id={procedure.sectionId} class="landing-cv py-16 bg-gray-pearl" aria-labelledby="procedura-protocollo">
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
 

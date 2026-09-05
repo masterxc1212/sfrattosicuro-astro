@@ -175,11 +175,27 @@ const config = isAugust ? {
         tutti render-blocking. Lighthouse mobile prima: LCP 10,4 s. */}
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-var.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin-var.woff2" crossorigin>
+    <script is:inline>
+      // 2026-09-05 — Pixel di remarketing (Meta, TikTok, Clarity) DIFFERITI: partono alla prima
+      // interazione (touch, scroll, mouse, tasto) oppure 3 s dopo il load, il primo che arriva.
+      // I pubblici si riempiono comunque (PageView parte entro pochi secondi per chiunque legga la
+      // pagina); si toglie solo il costo di parse/esecuzione dal primo paint. Google Ads resta subito.
+      window.__ssWhenEngaged = function (fn) {
+        var done = false, evs = ['pointerdown','touchstart','keydown','scroll','mousemove'];
+        function go(){ if (done) return; done = true; evs.forEach(function(e){ window.removeEventListener(e, go, true); }); try { fn(); } catch (err) {} }
+        evs.forEach(function(e){ window.addEventListener(e, go, { capture: true, passive: true, once: true }); });
+        if (document.readyState === 'complete') setTimeout(go, 3000);
+        else window.addEventListener('load', function(){ setTimeout(go, 3000); }, { once: true });
+      };
+    </script>
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
     {!isV4 && <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.faq)} />}
-    <script>
+    <script is:inline>
+      // is:inline (2026-09-05): prima Astro lo bundlava e lo spostava in fondo al body, dopo l'isola
+      // GA4. Risultato: la prima gtag.js in pagina era quella "G-..." e il loader del numero
+      // d'inoltro (wcm) non partiva. Ora gira davvero nel <head> e carica per prima la libreria Ads.
       (function(){
         const CONSENT_KEY = 'ss_cookie_consent_v1';
         const AW_ID = 'AW-10983419342';
@@ -221,7 +237,7 @@ const config = isAugust ? {
           // sul caricamento di grazie.html, «· WhatsApp» e «· Click Telefono» su
           // evento con etichetta. Vedi docs/promo-v3-agosto-2026.md §12.
           window.gtag('config', AW_ID, { transport_type: 'beacon' });
-          if (!document.querySelector('script[data-landing-aw="' + AW_ID + '"]')) {
+          if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
             var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID; s.setAttribute('data-landing-aw', AW_ID); document.head.appendChild(s);
           }
         }
@@ -274,7 +290,7 @@ const config = isAugust ? {
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
-    <MetaPixelTracking pixelId="1373903100373659" eager />
+    <MetaPixelTracking pixelId="1373903100373659" eager deferred />
     {/* Advanced Matching: qui e' il punto che conta piu' di tutti, perche' e' la
         pagina su cui atterrano gli annunci ed e' dove il modulo viene compilato.
         Va montato esplicitamente: queste landing non passano dal SiteLayout. */}
@@ -282,10 +298,10 @@ const config = isAugust ? {
     {/* Aggiunge la catena di ripiego (localStorage 90gg + cookie _gcl_aw) che
         form-validation.js non ha: recupera chi torna dopo giorni. */}
     <AdAttributionFields />
-    <TikTokPixelTracking pixelId={tiktokPixelId} eager />
+    <TikTokPixelTracking pixelId={tiktokPixelId} eager deferred />
     <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <BehaviourTracking />
-    <ClarityTracking projectId={clarityProjectId} eager />
+    <ClarityTracking projectId={clarityProjectId} eager deferred />
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
     <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
     <script src={versionedSrc('/assets/js/main.js')} defer></script>

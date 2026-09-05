@@ -35,12 +35,14 @@ interface Props {
    * altri tag della pagina (`trackingEager` sul sito, `eager` sulle landing).
    */
   eager?: boolean;
+  /** deferred = carica alla prima interazione o 3 s dopo il load (richiede window.__ssWhenEngaged). */
+  deferred?: boolean;
 }
-const { projectId = '', eager = false } = Astro.props;
+const { projectId = '', eager = false, deferred = false } = Astro.props;
 ---
 
 {projectId && (
-<script is:inline define:vars={{ projectId, eager }}>
+<script is:inline define:vars={{ projectId, eager, deferred }}>
   (() => {
     if (!projectId) return;
 
@@ -101,7 +103,11 @@ const { projectId = '', eager = false } = Astro.props;
       }, true);
     };
 
-    initClarityIfNeeded(eager ? { marketing: true } : readConsent());
+    {
+      const c0 = eager ? { marketing: true } : readConsent();
+      const run = () => initClarityIfNeeded(c0);
+      if (deferred && typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(run); else run();
+    }
 
     window.addEventListener('ss:cookie-consent-updated', (event) => {
       initClarityIfNeeded(event?.detail || {});

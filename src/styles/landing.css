@@ -920,3 +920,11 @@ form button[type="submit"] i,
   .landing-v3-body button[type="submit"],
   .landing-v3-body .form-submit { font-size: .72rem !important; }
 }
+
+/* ==========================================================================
+   7. CONTENT-VISIBILITY sulle sezioni sotto la piega (2026-09-05)
+   Il browser rimanda stile+layout delle sezioni non visibili: su mobile la pagina e'
+   ~14.000 px e il primo paint pagava il layout di tutto. contain-intrinsic-size tiene
+   la barra di scorrimento stabile. Diverso dal vecchio .cv-auto sulle immagini.
+   ========================================================================== */
+.landing-v3-body .landing-cv { content-visibility: auto; contain-intrinsic-size: auto 1100px; }

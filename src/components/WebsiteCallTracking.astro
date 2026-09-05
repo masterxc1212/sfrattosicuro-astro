@@ -47,7 +47,7 @@ const { eager = false } = Astro.props;
       if (typeof window.gtag !== 'function') {
         window.gtag = function () { window.dataLayer.push(arguments); };
       }
-      if (!document.querySelector('script[data-aw-call], script[data-landing-aw], script[data-click-conv-aw]')) {
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID;

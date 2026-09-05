@@ -31,12 +31,14 @@ interface Props {
    * pubblicitarie): vedi src/lib/tracking-config.ts per la policy corrente.
    */
   eager?: boolean;
+  /** deferred = carica alla prima interazione o 3 s dopo il load (richiede window.__ssWhenEngaged). */
+  deferred?: boolean;
 }
-const { pixelId = '', leadOnLoad = false, eager = false } = Astro.props;
+const { pixelId = '', leadOnLoad = false, eager = false, deferred = false } = Astro.props;
 ---
 
 {pixelId && (
-<script is:inline define:vars={{ pixelId, leadOnLoad, eager }}>
+<script is:inline define:vars={{ pixelId, leadOnLoad, eager, deferred }}>
   (() => {
     if (!pixelId) return;
 
@@ -135,7 +137,10 @@ const { pixelId = '', leadOnLoad = false, eager = false } = Astro.props;
     }, true);
 
     const consent = eager ? { marketing: true } : readConsent();
-    if (consent?.marketing) initPixelIfNeeded(consent);
+    if (consent?.marketing) {
+      const run = () => initPixelIfNeeded(consent);
+      if (deferred && typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(run); else run();
+    }
 
     window.addEventListener('ss:cookie-consent-updated', (event) => {
       const detail = event?.detail || {};

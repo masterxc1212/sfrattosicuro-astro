@@ -108,7 +108,7 @@ interface Props {
 const { faqSection = landingOriginal.faq } = Astro.props;
 const faqItems = faqSection.items?.length ? faqSection.items : defaultFaqItems;
 ---
-<section id={faqSection.sectionId} class="py-14 md:py-16 bg-white landing-v3-faq" aria-labelledby="faq-section-title">
+<section id={faqSection.sectionId} class="landing-cv py-14 md:py-16 bg-white landing-v3-faq" aria-labelledby="faq-section-title">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
 
