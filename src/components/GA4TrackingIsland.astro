@@ -2,12 +2,14 @@
 interface Props {
   measurementId: string;
   eager?: boolean;
+  /** deferred = sulle landing, parte alla prima interazione o 8 s dopo il load (window.__ssWhenEngaged). */
+  deferred?: boolean;
 }
 
-const { measurementId, eager = false } = Astro.props;
+const { measurementId, eager = false, deferred = false } = Astro.props;
 ---
 
-<script is:inline define:vars={{ measurementId, eager }}>
+<script is:inline define:vars={{ measurementId, eager, deferred }}>
   (() => {
     if (!measurementId) return;
 
@@ -83,7 +85,8 @@ const { measurementId, eager = false } = Astro.props;
     // eager: landing Ads allineate alla principale (nessun gate consenso).
     const consent = eager ? { necessary: true, analytics: true, marketing: true } : readConsent();
     if (eager || consent?.analytics) {
-      initGaIfNeeded(consent);
+      if (deferred && typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(() => initGaIfNeeded(consent));
+      else initGaIfNeeded(consent);
     } else {
       applyDeniedState();
     }

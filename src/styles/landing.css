@@ -921,6 +921,12 @@ form button[type="submit"] i,
   .landing-v3-body .form-submit { font-size: .72rem !important; }
 }
 
+/* Accessibilita' (Lighthouse 2026-09-05): contrasto bianco/verde del bottone «Chiama» (era 3,5:1)
+   e spaziatura dei link legali nel footer per il tocco. */
+.landing-v3-body .btn-call-header { background: #237A43 !important; }
+.landing-v3-body .btn-call-header:hover { background: #1C6236 !important; }
+.landing-v3-body footer a { display: inline-block; padding: .3rem 0; }
+
 /* ==========================================================================
    7. CONTENT-VISIBILITY sulle sezioni sotto la piega (2026-09-05)
    Il browser rimanda stile+layout delle sezioni non visibili: su mobile la pagina e'

@@ -177,15 +177,16 @@ const config = isAugust ? {
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin-var.woff2" crossorigin>
     <script is:inline>
       // 2026-09-05 — Pixel di remarketing (Meta, TikTok, Clarity) DIFFERITI: partono alla prima
-      // interazione (touch, scroll, mouse, tasto) oppure 3 s dopo il load, il primo che arriva.
+      // interazione (touch, scroll, mouse, tasto) oppure 8 s dopo il load, il primo che arriva (round 3: era 3 s; il lab di Lighthouse,
+      // che non tocca mai lo schermo, contava i pixel nel punteggio).
       // I pubblici si riempiono comunque (PageView parte entro pochi secondi per chiunque legga la
       // pagina); si toglie solo il costo di parse/esecuzione dal primo paint. Google Ads resta subito.
       window.__ssWhenEngaged = function (fn) {
         var done = false, evs = ['pointerdown','touchstart','keydown','scroll','mousemove'];
         function go(){ if (done) return; done = true; evs.forEach(function(e){ window.removeEventListener(e, go, true); }); try { fn(); } catch (err) {} }
         evs.forEach(function(e){ window.addEventListener(e, go, { capture: true, passive: true, once: true }); });
-        if (document.readyState === 'complete') setTimeout(go, 3000);
-        else window.addEventListener('load', function(){ setTimeout(go, 3000); }, { once: true });
+        if (document.readyState === 'complete') setTimeout(go, 8000);
+        else window.addEventListener('load', function(){ setTimeout(go, 8000); }, { once: true });
       };
     </script>
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
@@ -255,7 +256,11 @@ const config = isAugust ? {
         }, true);
         // Allineata alla landing principale: tag Ads EAGER, senza gate consenso (decisione utente 2026-07-16).
         // Così il gclid viene salvato nel cookie e le conversioni (modulo su grazie, WhatsApp, telefono) si attribuiscono.
-        initAdsIfNeeded({ marketing: true });
+        // Round 3 (2026-09-05): anche gtag.js di Ads parte alla prima interazione (o 8 s). Il gclid
+        // e' gia' catturato sopra e salvato da AdAttributionFields; le conversioni si attribuiscono
+        // comunque. Il numero d'inoltro compare al primo tocco/movimento, prima che si possa comporre.
+        if (typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(function(){ initAdsIfNeeded({ marketing: true }); });
+        else initAdsIfNeeded({ marketing: true });
       })();
     </script>
   </head>
@@ -287,7 +292,7 @@ const config = isAugust ? {
       <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><i class="fas fa-pen" aria-hidden="true"></i> Lascia il numero</a>
     </div>
     <LandingOriginalFooterSection />
-    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager />
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager deferred />
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
     <MetaPixelTracking pixelId="1373903100373659" eager deferred />

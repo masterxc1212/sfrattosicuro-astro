@@ -137,7 +137,12 @@ const { eager = false } = Astro.props;
       }, 250);
     }
 
-    initCallTracking(eager ? { marketing: true, analytics: true } : readConsent());
+    (function(){
+      var c0 = eager ? { marketing: true, analytics: true } : readConsent();
+      // Round 3: sulle landing (eager) parte con gtag alla prima interazione, insieme al loader Ads.
+      if (eager && typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(function(){ initCallTracking(c0); });
+      else initCallTracking(c0);
+    })();
 
     window.addEventListener('ss:cookie-consent-updated', function (event) {
       var d = (event && event.detail) || {};
