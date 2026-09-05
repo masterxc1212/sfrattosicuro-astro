@@ -15,6 +15,7 @@ interface Props {
 }
 
 const { hero = landingOriginal.hero, redirectUrl = '/grazie.html', augustPromotion } = Astro.props;
+const bulletDetails: string[] | undefined = (hero as any).bulletDetails;
 const googleReviewsTotal = socialProof.googleReviewsTotal;
 ---
 <section
@@ -75,10 +76,20 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
           )}
 
           <ul class="hero-benefits landing-v3-hero-benefits">
-            {hero.bullets.map((bullet) => (
+            {hero.bullets.map((bullet, i) => (
               <li class="hero-benefit-item">
                 <span class="checkmark" aria-hidden="true">✓</span>
-                <span set:html={bullet}></span>
+                {bulletDetails && bulletDetails[i] ? (
+                  <span class="ss-toggle-wrap">
+                    <button type="button" class="ss-toggle" aria-expanded="false" aria-controls={`hero-bullet-more-${i}`}>
+                      <span set:html={bullet}></span>
+                      <span class="ss-toggle-caret" aria-hidden="true">+</span>
+                    </button>
+                    <span id={`hero-bullet-more-${i}`} class="ss-toggle-more" hidden>{bulletDetails[i]}</span>
+                  </span>
+                ) : (
+                  <span set:html={bullet}></span>
+                )}
               </li>
             ))}
           </ul>

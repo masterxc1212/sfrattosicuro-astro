@@ -151,6 +151,14 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
           : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
       prequalificationNote: undefined,
       ownerField: true,
+      // 2026-09-05 (Clarity): ~16% dei tocchi mobile cadeva su bullet/chip non tappabili.
+      // Ogni bullet apre una riga di dettaglio (v3). Testi allineati a PRODUCT.md: il compenso e'
+      // dovuto dopo l'udienza, mai «a risultato»; spese vive escluse e indicate prima.
+      bulletDetails: isV4 ? undefined : [
+        'Un solo compenso, €1.300 IVA e cassa incluse, per la convalida e per l’eventuale fase esecutiva fino alla riconsegna delle chiavi. Restano fuori solo le spese vive di legge (indicativamente €100–150, circa €300 con il rilascio forzato), che ti indichiamo per iscritto prima di partire.',
+        'Se dopo la convalida l’inquilino non lascia l’immobile, precetto, preavviso di rilascio e accessi dell’ufficiale giudiziario sono già compresi: nessun compenso aggiuntivo.',
+        'Oggi non paghi nulla e non versi acconti. Il compenso è dovuto una volta sola, dopo l’udienza per la convalida, qualunque ne sia l’esito.',
+      ],
       bullets: isV4
         ? [
             `<strong>${formatBusinessEuro(pricing.testV4.faseConvalida)}</strong> per la fase di convalida`,
@@ -297,6 +305,7 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
           body: 'Ci racconti la situazione. Ti diciamo subito se puoi partire, senza anticipare nulla.',
           badge: 'Avvocato dedicato da subito',
           badgeEmoji: '',
+          hint: 'Ti richiamiamo entro 2 ore lavorative. Se puoi partire, l’incarico si firma a distanza e un solo avvocato segue la pratica dall’inizio alla riconsegna delle chiavi.',
         },
         {
           num: '2',
@@ -304,6 +313,7 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
           body: 'Prepariamo l’atto e lo notifichiamo all’inquilino moroso.',
           badge: 'Atto notificato in tempi rapidi',
           badgeEmoji: '',
+          hint: 'L’intimazione di sfratto viene redatta e notificata all’inquilino di norma entro 7 giorni dall’incarico, con la citazione per l’udienza di convalida.',
         },
         {
           num: '3',
@@ -311,6 +321,7 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
           body: 'Iscriviamo la causa e otteniamo la data d’udienza.',
           badge: 'Iter dedicato in Tribunale',
           badgeEmoji: '',
+          hint: 'Iscriviamo la causa a ruolo nel Tribunale competente e otteniamo la data d’udienza. Con la rete di domiciliatari seguiamo le pratiche in tutti i Tribunali d’Italia.',
         },
         {
           num: '✓',
@@ -320,6 +331,7 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
             : 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
           badge: version === 'v4' ? 'Formula completa o percorso per fasi' : 'Assistenza inclusa fino al rilascio',
           badgeEmoji: '',
+          hint: version === 'v4' ? undefined : 'Ottenuta la convalida, se l’inquilino non lascia l’immobile proseguiamo con precetto e rilascio forzato, senza compensi aggiuntivi. Tu non devi essere presente.',
           isGold: true,
         },
       ],

@@ -928,6 +928,36 @@ form button[type="submit"] i,
 .landing-v3-body footer a { display: inline-block; padding: .3rem 0; }
 
 /* ==========================================================================
+   8. INTERVENTI DA CLARITY (2026-09-05)
+   ========================================================================== */
+/* Barra fissa mobile: «Chiama ora» primario (11 tocchi vs 5), «Lascia il numero» secondario */
+.landing-v3-body .landing-v3-sticky-btn.is-call { background: #237A43 !important; padding: .7rem 1rem; font-size: .9rem; flex: 1 1 auto; justify-content: center; }
+.landing-v3-body .landing-v3-sticky-btn.is-form { background: var(--blue-navy) !important; }
+/* Il «Chiama» nell'header mobile era quasi inutilizzato (1-2 tocchi): via, spazio al logo. */
+.landing-v3-body .btn-call-header { display: none !important; }
+
+/* Toggle «+» su bullet e chip */
+.ss-toggle-wrap { display: inline; }
+.ss-toggle { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; display: inline; }
+.ss-toggle-caret { display: inline-block; margin-left: .35rem; font-weight: 700; opacity: .75; }
+.ss-toggle-more { display: block; margin-top: .4rem; font-size: .9em; font-weight: 400; line-height: 1.45; }
+.ss-toggle-more[hidden] { display: none !important; }
+.landing-v3-hero-benefits .ss-toggle-more { color: #e9edf5; }
+.timeline-step .ss-toggle-more { color: #4b5563; }
+
+/* «Le tre domande decisive» dopo il prezzo */
+.landing-v3-keyq { padding: 2.5rem 0 2rem; background: #fff; }
+.landing-v3-keyq-kicker { text-align: center; color: #237A43; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: .8rem; margin: 0 0 .4rem; }
+.landing-v3-keyq-title { text-align: center; font-family: 'Fraunces', Georgia, serif; color: var(--blue-navy); font-size: 1.6rem; line-height: 1.2; margin: 0 0 1.25rem; }
+.landing-v3-keyq-grid { display: grid; gap: .9rem; }
+.landing-v3-keyq-card { background: var(--gray-pearl); border: 1px solid #e6e2d8; border-radius: 1rem; padding: 1rem 1.1rem; }
+.landing-v3-keyq-q { color: var(--blue-navy); font-weight: 700; font-size: 1.02rem; margin: 0 0 .4rem; }
+.landing-v3-keyq-a { color: #374151; font-size: .95rem; line-height: 1.5; margin: 0; }
+.landing-v3-keyq-more { text-align: center; margin: 1.1rem 0 0; }
+.landing-v3-keyq-more a { color: #237A43; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 768px) { .landing-v3-keyq { padding: 3.5rem 0 3rem; } .landing-v3-keyq-grid { grid-template-columns: repeat(3, 1fr); } .landing-v3-keyq-title { font-size: 2rem; } }
+
+/* ==========================================================================
    7. CONTENT-VISIBILITY sulle sezioni sotto la piega (2026-09-05)
    Il browser rimanda stile+layout delle sezioni non visibili: su mobile la pagina e'
    ~14.000 px e il primo paint pagava il layout di tutto. contain-intrinsic-size tiene

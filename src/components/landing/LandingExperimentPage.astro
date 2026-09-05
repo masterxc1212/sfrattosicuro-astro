@@ -26,6 +26,7 @@ import LandingV3PriceSection from '../../components/landing/LandingV3PriceSectio
 import LandingV4PricingSection from '../../components/landing/LandingV4PricingSection.astro';
 import LandingV4FaqSection from '../../components/landing/LandingV4FaqSection.astro';
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
+import LandingV3KeyQuestionsSection from '../../components/landing/LandingV3KeyQuestionsSection.astro';
 import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 import LandingAugustNoticeSection from '../../components/landing/LandingAugustNoticeSection.astro';
@@ -275,6 +276,7 @@ const config = isAugust ? {
       />
       <LandingOriginalProcedureSection procedure={config.procedure} />
       {isV4 ? <LandingV4PricingSection /> : <LandingV3PriceSection isAugust={isAugust} />}
+      {!isV4 && <LandingV3KeyQuestionsSection faqSection={config.faq} />}
       <LandingOriginalReviewsSection />
       <LandingOriginalProvvedimentiSection />
       <LandingV3FounderSection />
@@ -293,6 +295,19 @@ const config = isAugust ? {
     </div>
     <LandingOriginalFooterSection />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager deferred />
+    <script is:inline>
+      // Toggle «+» su bullet hero e chip procedura (Clarity 2026-09-05: tocchi a vuoto su quegli elementi).
+      document.addEventListener('click', function (ev) {
+        var b = ev.target && ev.target.closest ? ev.target.closest('button.ss-toggle') : null;
+        if (!b) return;
+        var id = b.getAttribute('aria-controls'); var more = id ? document.getElementById(id) : null;
+        if (!more) return;
+        var open = b.getAttribute('aria-expanded') === 'true';
+        b.setAttribute('aria-expanded', open ? 'false' : 'true');
+        more.hidden = open;
+        var c = b.querySelector('.ss-toggle-caret'); if (c) c.textContent = open ? '+' : '–';
+      });
+    </script>
     <ClickConversionTracking eager />
     <WebsiteCallTracking eager />
     <MetaPixelTracking pixelId="1373903100373659" eager deferred />

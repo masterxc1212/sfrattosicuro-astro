@@ -72,7 +72,15 @@ const steps = procedure.steps?.length ? procedure.steps : defaultSteps;
                 <p class="text-dark-gray text-base mb-3" set:html={step.body}></p>
                 <div class="text-sm font-semibold" style={step.isGold ? 'color: var(--gold-refined);' : 'color: var(--green-security);'}>
                   <span class="mr-1" aria-hidden="true">{step.badgeEmoji}</span>
-                  {step.badge}
+                  {(step as any).hint ? (
+                    <span class="ss-toggle-wrap">
+                      <button type="button" class="ss-toggle" aria-expanded="false" aria-controls={`step-hint-${i}`}>
+                        <span>{step.badge}</span>
+                        <span class="ss-toggle-caret" aria-hidden="true">+</span>
+                      </button>
+                      <span id={`step-hint-${i}`} class="ss-toggle-more text-dark-gray" hidden>{(step as any).hint}</span>
+                    </span>
+                  ) : step.badge}
                 </div>
               </div>
             </div>

@@ -1,0 +1,45 @@
+---
+/**
+ * LandingV3KeyQuestionsSection.astro — «Le 3 domande decisive», subito dopo il prezzo.
+ * ------------------------------------------------------------------
+ * Perché (Clarity, 30 gg al 2026-09-05): le FAQ sono la sezione con più attenzione
+ * (2:45 medi, 35% dei tocchi) ma stanno all'85-90% della pagina, dove arriva l'8% degli
+ * utenti; al prezzo arriva il 25%. Qui le tre domande più aperte, già risposte, e il
+ * rimando alle FAQ complete. Le risposte sono le stesse di config.faq (nessun testo nuovo).
+ */
+import { landingOriginal } from '../../data/landing-original';
+
+interface Props {
+  faqSection?: typeof landingOriginal.faq;
+}
+const { faqSection = landingOriginal.faq } = Astro.props;
+
+const WANTED = [
+  /^E se dopo la convalida/i,
+  /^In quanto tempo si ottiene/i,
+  /^Cosa succede se l.inquilino si oppone/i,
+];
+const items = (faqSection.items || []) as { q: string; a: string; icon?: string }[];
+const picked = WANTED.map((re) => items.find((it) => re.test(it.q))).filter(Boolean) as { q: string; a: string; icon?: string }[];
+---
+{picked.length === 3 && (
+  <section id="domande-decisive" class="landing-cv landing-v3-keyq" aria-labelledby="keyq-title">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <p class="landing-v3-keyq-kicker">Le tre domande che ci fanno tutti</p>
+        <h2 id="keyq-title" class="landing-v3-keyq-title">Prima di chiamare, tre risposte chiare</h2>
+        <div class="landing-v3-keyq-grid">
+          {picked.map((it) => (
+            <article class="landing-v3-keyq-card">
+              <h3 class="landing-v3-keyq-q">{it.q}</h3>
+              <p class="landing-v3-keyq-a" set:html={it.a}></p>
+            </article>
+          ))}
+        </div>
+        <p class="landing-v3-keyq-more">
+          <a href={`#${faqSection.sectionId}`}>Tutte le domande e le risposte</a>
+        </p>
+      </div>
+    </div>
+  </section>
+)}
