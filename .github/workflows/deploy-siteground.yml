@@ -50,6 +50,6 @@ jobs:
           set net:reconnect-interval-base 5
           set xfer:clobber true
           mkdir -p $FTP_TARGET_DIR
-          mirror -R --verbose --delete --parallel=2 --exclude-glob .git* --exclude-glob node_modules --exclude-glob .github dist/ $FTP_TARGET_DIR
+          mirror -R --verbose --delete --parallel=2 --exclude-glob .git* --exclude-glob node_modules --exclude-glob .github --exclude-glob reviews-cache.json dist/ $FTP_TARGET_DIR
           bye
           EOF

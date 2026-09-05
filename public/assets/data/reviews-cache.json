@@ -1,40 +1,40 @@
 {
-  "ok": true,
-  "rating": 5,
-  "total_reviews": 22,
-  "total": 22,
-  "updated_at": "2026-07-16T22:38:38.092772+02:00",
-  "source": "google_places",
-  "reviews": [
-    {
-      "author": "gianni saratoga",
-      "rating": 5,
-      "text": "Esperienza positiva risolto lo sfratto con 2 intestatari del contratto in maniera semplice, grazie",
-      "time": "nell'ultima settimana"
-    },
-    {
-      "author": "Vincenzo Vitale",
-      "rating": 5,
-      "text": "Ragazzi splendidi competenti puntuali ….i nr 1",
-      "time": "2 mesi fa"
-    },
-    {
-      "author": "aAa Six",
-      "rating": 5,
-      "text": "Servizio comodo perché gestito a distanza in ogni sua fase. Per l’esito vedremo",
-      "time": "3 mesi fa"
-    },
-    {
-      "author": "Donatella Caroli",
-      "rating": 4,
-      "text": "Dopo mesi di stress e pressione psicologica non da poco, perdita di soldi, (sono disoccupata per giunta) l'inquilino moroso ha finalmente lasciato il mio appartamento, purtoppo non sono riuscita a recuperare i canoni persi ma la notifica del giudice è giunta in pochi mesi dall'avvio della pratica. Consigliato. Grazie di cuore all'Avvocato Ansalone...",
-      "time": "4 mesi fa"
-    },
-    {
-      "author": "Maison D'art Rossella Gozio",
-      "rating": 5,
-      "text": "Quando un inquilino smette di pagarti, inizia un calvario per il proprietario, un verme solitario che piano piano ti mangia lo stomaco, pagherà? quanto? questa attesa snervante dove tutti intorno a te, ti guardano dicendoti \"aspetta cosa puoi farci?\" e con il sentirsi completamente soli, non capiti, aspetti, il nulla. Aumentano le spese, gli affitti arretrati e le prese in giro dell'inquilino che spavaldo che non gli succederà nulla ti illude e ti offense e, tanto, se dovessi intraprendere un percorso legale sicuramente sarà incerto e lungo e continua tranquillo a utilizzare e disfare il tuo i",
-      "time": "4 mesi fa"
-    }
-  ]
+    "ok": true,
+    "rating": 5,
+    "total_reviews": 27,
+    "total": 27,
+    "updated_at": "2026-09-05T12:40:31+00:00",
+    "source": "google_places",
+    "reviews": [
+        {
+            "author": "sokol mollaj",
+            "rating": 5,
+            "text": "",
+            "time": "nell'ultima settimana"
+        },
+        {
+            "author": "paolo radici",
+            "rating": 5,
+            "text": "ottimo servizio in tutto non c’è che dire.\navevo un problema urgente e mi hanno risposto immediatamente (ad agosto mentre la quasi totalità di legali sono chiusi)\ncontattati e immediatamente sul pezzo, inviato documenti e meno di 24h lavoro (ottimo) già preparato ed inviato. eccellente servizio e cortesia impareggiabile. 10 e lode.",
+            "time": "una settimana fa"
+        },
+        {
+            "author": "Andrea DR",
+            "rating": 5,
+            "text": "Cordiali.. preparati👍\nPersonale competente che ti soddisfa anche con una semplice consulenza.\nSe avete uno sfratto da fare ve lo consiglio.",
+            "time": "2 settimane fa"
+        },
+        {
+            "author": "Stefano nicolasio",
+            "rating": 5,
+            "text": "Non ero molto convinto ma dopo il primo contatto telefonico ho capito che avevo contattato le persone giuste. Anno risposto a tutte le mie domande a miei dubbi dopo otto mesi di problemi sono riuscito a risolvere i miei problemi con l'inquilino. Non ho pagato nulla di anticipo ma solo alla consegna del appartamento. I prezzi sono modici rispetto ad altri avvocati grazie Danilo Stefano Nicolasio",
+            "time": "3 settimane fa"
+        },
+        {
+            "author": "Mauro A.",
+            "rating": 5,
+            "text": "I migliori che ho incontrato,tutti cercano di nascondere il preventivo ma queste persone,anche se non era per uno sfratto,mi hanno consigliato al meglio e farmi valutare,bene\nSe per uno sfratto ho bisogno di loro ad occhi chiusi!\nSi sono adoperati al massimo.",
+            "time": "un mese fa"
+        }
+    ]
 }
