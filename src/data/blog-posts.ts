@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "come-ottenere-cin-affitti-brevi",
+    title: "Come ottenere il CIN per gli affitti brevi: guida per il proprietario",
+    description: "Come ottenere il CIN per gli affitti brevi: richiesta gratuita online con SPID, requisiti di sicurezza, dove esporlo e le sanzioni per il proprietario.",
+    excerpt: "Vuoi affittare casa a turisti? Dal 2025 serve il CIN. Guida pratica per il proprietario: come richiederlo gratis online, i requisiti di sicurezza da avere prima, dove esporre il codice e le sanzioni fino a 8.000 euro se parti senza.",
+    lead: "Dal 2025 non puoi affittare un immobile a breve termine senza il CIN, il Codice Identificativo Nazionale. Ecco, dalla parte del proprietario, come ottenerlo passo per passo, quanto tempo serve, dove va esposto e quali sanzioni si rischiano partendo senza.",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-05. Keyword: come ottenere il CIN per affitti brevi, vol 320, KD 9 (DataForSEO). Secondarie: CIN affitti brevi, quanto costa il cin, dove esporre il cin.",
+    html: `  <p>Se possiedi un appartamento e vuoi affittarlo a turisti o a chi cerca una sistemazione per pochi giorni, dal 2025 non puoi più pubblicare un annuncio senza il <strong>CIN</strong>, il <strong>Codice Identificativo Nazionale</strong>. È un adempimento a cui molti proprietari arrivano tardi, spesso solo dopo aver ricevuto una richiesta dal portale su cui vogliono inserire l'annuncio. Questa guida spiega, passo per passo e dalla parte del proprietario, <strong>come ottenere il CIN per gli affitti brevi</strong>, quanto tempo serve, dove va esposto e quali sanzioni si rischiano se si parte senza.</p>
+
+  <h2>Che cos'è il CIN e a chi serve</h2>
+  <p>Il <strong>CIN (Codice Identificativo Nazionale)</strong> è un codice unico assegnato a ogni immobile destinato a locazione breve o a finalità turistiche. Lo Stato lo usa per avere una mappa nazionale degli alloggi affittati ai turisti, così da contrastare l'evasione e l'abusivismo. In pratica è la "targa" del tuo immobile: senza quel codice, l'appartamento non può essere pubblicizzato né affittato a breve termine.</p>
+  <p>L'obbligo riguarda <strong>chiunque</strong> affitti un immobile con la formula degli affitti brevi, cioè i contratti di durata non superiore a 30 giorni: non fa differenza se lo fai da privato, se ti appoggi a un gestore o se usi portali come Airbnb e Booking. Vale anche se affitti <strong>una sola casa</strong>: il CIN si richiede per ogni singola unità immobiliare, non per proprietario. Se hai più appartamenti, ognuno avrà il suo codice.</p>
+
+  <h2>Come ottenere il CIN, passo per passo</h2>
+  <p>La richiesta è interamente online e <strong>gratuita</strong>: non si paga alcun diritto per ottenere il codice. Ecco la sequenza dei passaggi.</p>
+  <ul>
+    <li><strong>1. Accedi alla banca dati del Ministero del Turismo.</strong> Il CIN si richiede sulla <strong>BDSR</strong>, la Banca Dati nazionale delle Strutture Ricettive, tramite il portale del Ministero del Turismo. L'accesso avviene con <strong>SPID</strong> (l'identità digitale) oppure con la <strong>CIE</strong> (la carta d'identità elettronica): sono le stesse credenziali che usi per gli altri servizi della pubblica amministrazione.</li>
+    <li><strong>2. Inserisci i dati dell'immobile.</strong> Devi indicare i <strong>dati catastali</strong> dell'appartamento (quelli che trovi nella visura o nell'atto di acquisto) e i dati identificativi della struttura. Il sistema verifica che l'immobile esista e sia correttamente censito.</li>
+    <li><strong>3. Collega l'eventuale codice regionale.</strong> Molte Regioni avevano già un proprio codice identificativo (spesso chiamato CIR o CIU). Se lo possiedi, in questa fase lo colleghi all'immobile: il codice regionale viene ricodificato nel CIN nazionale (con l'aggiunta di un prefisso), ma restano fermi gli adempimenti previsti dalle banche dati e dalle normative regionali.</li>
+    <li><strong>4. Dichiara i requisiti di sicurezza.</strong> Per ottenere il codice devi attestare che l'alloggio è in regola con i requisiti di sicurezza previsti (ne parliamo nel prossimo paragrafo). È una autodichiarazione: dichiarare il falso espone a responsabilità.</li>
+    <li><strong>5. Ottieni il codice.</strong> Completata la procedura, il sistema genera il <strong>CIN</strong> associato al tuo immobile. Da quel momento sei in regola per pubblicare l'annuncio, a patto di rispettare gli obblighi di esposizione.</li>
+  </ul>
+
+  <h2>I requisiti di sicurezza da avere prima</h2>
+  <p>Il CIN non viene rilasciato se l'immobile non rispetta alcuni <strong>requisiti minimi di sicurezza</strong>, uguali su tutto il territorio nazionale. In particolare l'alloggio deve essere dotato di <strong>dispositivi per la rilevazione di gas combustibili e di monossido di carbonio</strong> e di <strong>estintori portatili</strong> a norma, oltre a impianti (elettrico, gas, riscaldamento) conformi. Conviene procurarsi e installare questi dispositivi <strong>prima</strong> di avviare la richiesta: sono la condizione che dichiari per ottenere il codice e, in caso di controllo, devono esserci davvero.</p>
+
+  <h2>Quanto tempo serve</h2>
+  <p>La generazione del codice, quando i dati sono corretti e i requisiti sono già a posto, può essere molto rapida. Nella pratica, però, conviene mettere in conto un margine di <strong>alcune settimane</strong> tra reperimento dei dati catastali, verifica del codice regionale, acquisto e installazione dei dispositivi di sicurezza e completamento della domanda. Il consiglio pratico è semplice: <strong>non lasciare il CIN per ultimo</strong>. Programmalo con anticipo rispetto alla data in cui vuoi pubblicare l'annuncio o iniziare la stagione.</p>
+
+  <h2>Dove va esposto il CIN</h2>
+  <p>Ottenere il codice non basta: la legge impone anche di renderlo <strong>visibile</strong>. In concreto il CIN va:</p>
+  <ul>
+    <li><strong>indicato in ogni annuncio</strong>, su qualsiasi canale: portali come Airbnb e Booking, siti di agenzie, inserzioni sui social. Un annuncio senza codice è irregolare;</li>
+    <li><strong>esposto all'esterno dello stabile</strong> in cui si trova l'immobile, ad esempio con una targhetta vicino all'ingresso o al citofono, così da essere riconoscibile dall'esterno.</li>
+  </ul>
+  <p>Questi due obblighi vanno rispettati insieme: mancarne anche uno solo espone a sanzione, come vediamo tra poco.</p>
+
+  <h2>Le sanzioni se parti senza CIN</h2>
+  <p>Le somme in gioco rendono l'adempimento tutt'altro che trascurabile. Chi affitta o pubblicizza un immobile <strong>privo di CIN</strong> rischia una sanzione <strong>da 800 a 8.000 euro</strong>, commisurata alle dimensioni della struttura. La <strong>mancata indicazione del codice negli annunci</strong> o la <strong>mancata esposizione</strong> all'esterno dell'edificio sono punite con una sanzione <strong>da 500 a 5.000 euro</strong>. Sono cifre che possono superare l'incasso di un'intera stagione: mettersi in regola prima di pubblicare qualsiasi annuncio è quasi sempre la scelta più conveniente.</p>
+
+  <h2>Errori comuni da evitare</h2>
+  <ul>
+    <li><strong>Pubblicare l'annuncio prima di avere il codice.</strong> È l'errore più costoso: basta un'inserzione online priva di CIN per esporsi alla sanzione.</li>
+    <li><strong>Confondere il CIN con il codice regionale.</strong> Il CIR o CIU rilasciato dalla Regione non sostituisce il CIN nazionale. Se ne avevi già uno, va collegato, ma il nuovo codice resta obbligatorio.</li>
+    <li><strong>Dimenticare la targhetta esterna.</strong> Molti indicano il codice nell'annuncio ma non lo espongono sullo stabile: è comunque una violazione sanzionabile.</li>
+    <li><strong>Dichiarare requisiti di sicurezza che non ci sono.</strong> La richiesta si basa su una autodichiarazione: rilevatori ed estintori devono essere realmente presenti e a norma.</li>
+    <li><strong>Sottovalutare gli altri adempimenti.</strong> Il CIN è solo un tassello: restano la comunicazione degli ospiti alla Questura, la scelta fiscale e, per i soggiorni oltre i 30 giorni, la registrazione del contratto.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <ul>
+    <li><strong>Quanto costa il CIN?</strong><br>
+    La richiesta del codice è <strong>gratuita</strong>. Non si paga alcun diritto per ottenerlo sulla banca dati del Ministero del Turismo. I costi che puoi sostenere riguardano semmai i dispositivi di sicurezza (rilevatori, estintori) e l'eventuale assistenza di un professionista.</li>
+    <li><strong>Serve il CIN anche se affitto una sola stanza o una sola casa?</strong><br>
+    Sì. Il codice è richiesto per ogni immobile (o porzione) destinato a locazione breve o turistica, a prescindere dal numero di case che possiedi.</li>
+    <li><strong>Ho già un codice regionale: devo comunque richiedere il CIN?</strong><br>
+    Sì. In fase di richiesta il codice regionale (CIR/CIU) va collegato e viene ricodificato nel CIN nazionale: il CIN resta un obbligo che non puoi saltare, e continuano ad applicarsi gli eventuali adempimenti regionali.</li>
+    <li><strong>Posso richiederlo da solo o mi serve un intermediario?</strong><br>
+    Puoi farlo da solo, accedendo con SPID o CIE. Serve però avere sotto mano i dati catastali corretti e i requisiti di sicurezza già in ordine. Se hai dubbi sui dati o sulla posizione dell'immobile, un professionista può evitarti errori.</li>
+    <li><strong>Il contratto breve va registrato all'Agenzia delle Entrate?</strong><br>
+    No, se la durata non supera i 30 giorni. Restano però gli altri obblighi (CIN, comunicazione degli ospiti, dichiarazione dei redditi). Oltre i 30 giorni si applicano le regole ordinarie: vedi la guida sulla <a href="/blog/registrazione-contratto-locazione-online/">registrazione del contratto di locazione online</a>.</li>
+  </ul>
+
+  <h2>In sintesi</h2>
+  <p>Ottenere il CIN è un passaggio semplice ma da non rimandare: si richiede gratuitamente online con SPID o CIE sulla banca dati del Ministero del Turismo, dopo aver messo in ordine i dati catastali e i requisiti di sicurezza dell'immobile. Una volta ottenuto, il codice va indicato in ogni annuncio ed esposto all'esterno dello stabile. Partire senza CIN, o senza esporlo, espone a sanzioni che possono arrivare a diverse migliaia di euro. Se vuoi il quadro completo degli adempimenti degli affitti brevi — inclusa la tassazione — leggi la guida sulle <a href="/blog/locazioni-brevi/">locazioni brevi per il proprietario</a> e quella sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca</a>.</p>
+  <p>Se preferisci muoverti sul sicuro ed evitare errori che costano cari, <a href="/servizi/tutela-proprietario/">gli avvocati di Sfratto Sicuro</a> possono affiancarti nella verifica dei requisiti e degli adempimenti per affittare il tuo immobile in regola.</p>
+
+  <p><em>Riferimenti normativi essenziali: art. 13-ter del decreto legge 18 ottobre 2023 n. 145, convertito con modificazioni dalla legge 15 dicembre 2023 n. 191, che ha istituito il Codice Identificativo Nazionale (CIN), gli obblighi di esposizione e sicurezza e il relativo apparato sanzionatorio per le locazioni per finalità turistiche e le locazioni brevi (queste ultime disciplinate, sul piano civilistico e fiscale, dall'art. 4 del decreto legge 24 aprile 2017 n. 50, convertito dalla legge 21 giugno 2017 n. 96). L'obbligo del CIN è pienamente operativo dal 1° gennaio 2025. Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata sul singolo caso.</em></p>
+`
+  },
+  {
     slug: "ricevuta-affitto",
     title: "Ricevuta di affitto: cosa deve contenere e quando serve la marca da bollo",
     description: "Ricevuta di affitto: cosa deve contenere, quando serve la marca da bollo da 2 euro (con esenzione in cedolare secca) e come gestirla dalla parte del proprietario.",
