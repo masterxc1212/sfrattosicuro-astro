@@ -1,5 +1,6 @@
 ---
 import '../../styles/landing.css';
+import '../../styles/landing-icons.css';
 import { buildLandingPageConfig } from '../../data/landing-config';
 import { versionedSrc } from '../../lib/asset-version';
 import GA4TrackingIsland from '../../components/GA4TrackingIsland.astro';
@@ -140,7 +141,7 @@ const config = isAugust ? {
 } : baseConfig;
 ---
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="fa-inline">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,14 +169,12 @@ const config = isAugust ? {
     <meta name="twitter:description" content={config.seo.twitterDescription}>
     <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    {/* 2026-09-05 — Font self-hosted (Plus Jakarta Sans + Fraunces, latin, variabili) e icone SVG inline
+        (landing-icons.css): rimossi Inter (mai usato), Font Awesome da cdnjs e i CSS di Google Fonts,
+        tutti render-blocking. Lighthouse mobile prima: LCP 10,4 s. */}
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-var.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin-var.woff2" crossorigin>
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
     <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
