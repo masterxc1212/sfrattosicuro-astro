@@ -1,6 +1,11 @@
 # Redirect 301 — vecchie URL dell'ex sito (ora 404 in GSC)
 RewriteEngine On
 
+# Canonicalizzazione (2026-09-05): senza www -> www (https://sfrattosicuro.it/ rispondeva 200 senza
+# redirect: duplicato del dominio canonico con www). http -> https e' gia' gestito da SiteGround.
+RewriteCond %{HTTP_HOST} ^sfrattosicuro\.it$ [NC]
+RewriteRule ^(.*)$ https://www.sfrattosicuro.it/$1 [R=301,L]
+
 # privacy-policy senza slash finale (senza www)
 RewriteRule ^privacy-policy$ /privacy-policy/ [R=301,L]
 
