@@ -958,6 +958,32 @@ form button[type="submit"] i,
 @media (min-width: 768px) { .landing-v3-keyq { padding: 3.5rem 0 3rem; } .landing-v3-keyq-grid { grid-template-columns: repeat(3, 1fr); } .landing-v3-keyq-title { font-size: 2rem; } }
 
 /* ==========================================================================
+   9. POPUP «LASCIA IL NUMERO» + moduli a 3 campi (2026-09-05)
+   ========================================================================== */
+.form-optional { font-weight: 400; color: #6b7280; font-size: .85em; }
+.hero-form-owners { font-size: .8rem; color: #6b7280; margin: -.25rem 0 .75rem; }
+.ss-callback { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; }
+.ss-callback::backdrop { background: rgba(9, 25, 55, .55); backdrop-filter: blur(2px); }
+.ss-callback-form { position: relative; width: min(92vw, 420px); background: #fff; border-radius: 1.25rem; padding: 1.5rem 1.35rem 1.25rem; box-shadow: 0 25px 60px rgba(0,0,0,.35); margin: 0; border: 0; }
+@media (max-width: 640px) { .ss-callback { margin: auto 0 0; width: 100vw; } .ss-callback-form { width: 100vw; border-radius: 1.25rem 1.25rem 0 0; padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); } }
+.ss-callback-close { position: absolute; top: .6rem; right: .7rem; background: none; border: 0; font-size: 1.6rem; line-height: 1; color: #6b7280; cursor: pointer; padding: .25rem .5rem; }
+.ss-callback-kicker { color: #237A43; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .3rem; }
+.ss-callback-title { font-family: 'Fraunces', Georgia, serif; color: var(--blue-navy); font-size: 1.45rem; line-height: 1.2; margin: 0 0 .5rem; }
+.ss-callback-sub { color: #374151; font-size: .95rem; line-height: 1.45; margin: 0 0 1rem; }
+.ss-callback-label { display: block; font-weight: 600; color: var(--blue-navy); font-size: .9rem; margin: 0 0 .3rem; }
+.ss-callback-input { width: 100%; font-size: 1.05rem; padding: .85rem 1rem; border: 2px solid #e5e7eb; border-radius: .6rem; margin-bottom: .85rem; }
+.ss-callback-input:focus { outline: 0; border-color: #237A43; box-shadow: 0 0 0 3px rgba(35,122,67,.15); }
+.ss-callback-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.ss-callback-error { color: #b91c1c; font-size: .9rem; margin: -.4rem 0 .6rem; }
+.ss-callback-submit { width: 100%; background: #237A43 !important; color: #fff !important; font-weight: 700; font-size: 1.05rem; padding: .95rem 1rem; border: 0; border-radius: .75rem; cursor: pointer; box-shadow: 0 4px 14px rgba(35,122,67,.3); }
+.ss-callback-submit:disabled { opacity: .7; cursor: wait; }
+.ss-callback-submit.is-secondary { background: var(--blue-navy) !important; box-shadow: none; margin-top: .5rem; }
+.ss-callback-hours { text-align: center; font-size: .82rem; color: #374151; margin: .7rem 0 0; }
+.ss-callback-privacy { text-align: center; font-size: .72rem; color: #6b7280; margin: .4rem 0 0; }
+.ss-callback-privacy a { color: #237A43; }
+.ss-callback-done-icon { width: 3rem; height: 3rem; border-radius: 50%; background: #237A43; color: #fff; font-size: 1.6rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto .75rem; }
+
+/* ==========================================================================
    7. CONTENT-VISIBILITY sulle sezioni sotto la piega (2026-09-05)
    Il browser rimanda stile+layout delle sezioni non visibili: su mobile la pagina e'
    ~14.000 px e il primo paint pagava il layout di tutto. contain-intrinsic-size tiene

@@ -27,6 +27,7 @@ import LandingV4PricingSection from '../../components/landing/LandingV4PricingSe
 import LandingV4FaqSection from '../../components/landing/LandingV4FaqSection.astro';
 import LandingV3ContactSection from '../../components/landing/LandingV3ContactSection.astro';
 import LandingV3KeyQuestionsSection from '../../components/landing/LandingV3KeyQuestionsSection.astro';
+import LandingV3CallbackModal from '../../components/landing/LandingV3CallbackModal.astro';
 import LandingV3FounderSection from '../../components/landing/LandingV3FounderSection.astro';
 import LandingOriginalFooterSection from '../../components/landing/LandingOriginalFooterSection.astro';
 import LandingAugustNoticeSection from '../../components/landing/LandingAugustNoticeSection.astro';
@@ -294,6 +295,7 @@ const config = isAugust ? {
       <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><i class="fas fa-pen" aria-hidden="true"></i> Lascia il numero</a>
     </div>
     <LandingOriginalFooterSection />
+    <LandingV3CallbackModal formSource={isV4 ? 'popup_telefono_v4' : isAugust ? 'popup_telefono_agosto' : 'popup_telefono'} redirectUrl={isAugust ? '/grazie.html?promo=agosto2026' : '/grazie.html'} />
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager deferred />
     <script is:inline>
       // Toggle «+» su bullet hero e chip procedura (Clarity 2026-09-05: tocchi a vuoto su quegli elementi).

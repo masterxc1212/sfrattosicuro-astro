@@ -80,8 +80,16 @@ $matchtype_labels = ['e' => 'Esatta', 'p' => 'A frase', 'b' => 'Generica'];
 $matchtype     = isset($matchtype_labels[$matchtype_raw]) ? $matchtype_labels[$matchtype_raw] : '';
 $redirect_raw  = $_POST['redirect_url'] ?? '/grazie.html';
 
-/* === VALIDAZIONE (come versione precedente: nome + telefono) === */
-if (empty($nome) || empty($telefono)) {
+/* === ANTI-BOT: il campo nascosto `website` deve restare vuoto === */
+if (!empty($_POST['website'])) {
+    header('Location: /grazie.html');
+    exit;
+}
+/* === VALIDAZIONE (2026-09-05: il nome e' facoltativo - popup a 2 campi e moduli a 3; si chiede al telefono) === */
+if (empty($nome)) {
+    $nome = 'Da richiamare';
+}
+if (empty($telefono)) {
     error_log("[ss-intake] validazione fallita - Nome: $nome, Telefono: $telefono");
     header('Location: /errore.html');
     exit;

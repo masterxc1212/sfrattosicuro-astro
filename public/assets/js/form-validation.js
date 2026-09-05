@@ -71,12 +71,12 @@
       let isValid = true;
       let errorMessage = '';
 
-      // Valida nome
-      if (!nome.value.trim() || nome.value.trim().length < 2) {
+      // Valida nome (facoltativo dal 2026-09-05: si controlla solo se compilato)
+      if (nome && nome.value.trim() && nome.value.trim().length < 2) {
         isValid = false;
         errorMessage += '• Inserisci un nome valido\n';
         nome.classList.add('border-red-500');
-      } else {
+      } else if (nome) {
         nome.classList.remove('border-red-500');
       }
 

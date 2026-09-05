@@ -1,0 +1,145 @@
+---
+/**
+ * LandingV3CallbackModal.astro — popup «Lascia il numero» (2026-09-05).
+ * ------------------------------------------------------------------
+ * Due campi soli (telefono + email), stile «un tocco e via». Decisioni titolare 05/09:
+ * niente nome (si chiede al telefono), niente scelta proprietario/inquilino (solo nel testo),
+ * email obbligatoria perché a ogni lead si manda il link della piattaforma.
+ * - Stesso intake dei moduli (/php/invia-email.php): gclid/utm arrivano dai campi nascosti
+ *   riempiti da form-validation.js e AdAttributionFields; il PHP accetta `nome` vuoto.
+ * - Invio in fetch: l'utente resta in pagina e vede la conferma; la conversione Ads «Modulo»
+ *   (che sui moduli scatta su grazie.html) qui parte da script con la stessa etichetta.
+ * - Si apre da ogni link a #form-rapido / #contatti (delega in LandingExperimentPage).
+ */
+interface Props { formSource?: string; redirectUrl?: string; }
+const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.props;
+---
+<dialog id="ss-callback" class="ss-callback" aria-labelledby="ss-callback-title">
+  <form action="/php/invia-email.php" method="POST" class="ss-callback-form" id="ss-callback-form" novalidate>
+    <button type="button" class="ss-callback-close" aria-label="Chiudi" data-close>×</button>
+    <div class="ss-callback-step" data-step="form">
+      <p class="ss-callback-kicker">Ti richiamiamo noi</p>
+      <h2 id="ss-callback-title" class="ss-callback-title">Lascia il numero, al resto pensiamo noi</h2>
+      <p class="ss-callback-sub">Prima valutazione gratuita e senza impegno. Servizio riservato a proprietari e locatori.</p>
+
+      <label class="ss-callback-label" for="ss-cb-tel">Telefono</label>
+      <input id="ss-cb-tel" class="ss-callback-input" type="tel" name="telefono" inputmode="tel" autocomplete="tel"
+             placeholder="Il numero su cui richiamarti" required minlength="8" aria-required="true">
+
+      <label class="ss-callback-label" for="ss-cb-email">Email</label>
+      <input id="ss-cb-email" class="ss-callback-input" type="email" name="email" inputmode="email" autocomplete="email"
+             placeholder="Per inviarti l’accesso alla tua pratica" required aria-required="true">
+
+      <!-- trappola anti-bot: resta vuoto -->
+      <input type="text" name="website" class="ss-callback-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <input type="hidden" name="nome" value="">
+      <input type="hidden" name="form_source" value={formSource}>
+      <input type="hidden" name="gclid" value="">
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value="">
+      <input type="hidden" name="utm_term" value="">
+      <input type="hidden" name="keyword" value="">
+      <input type="hidden" name="utm_content" value="">
+      <input type="hidden" name="matchtype" value="">
+      <input type="hidden" name="redirect_url" value={redirectUrl}>
+
+      <p class="ss-callback-error" role="alert" hidden></p>
+      <button type="submit" class="ss-callback-submit">Richiamatemi</button>
+      <p class="ss-callback-hours">Entro 2 ore lavorative · Lun–Ven 9–19 · Sab 9–13</p>
+      <p class="ss-callback-privacy">Inviando accetti la <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. I tuoi dati non verranno condivisi.</p>
+    </div>
+    <div class="ss-callback-step" data-step="done" hidden>
+      <p class="ss-callback-done-icon" aria-hidden="true">✓</p>
+      <h2 class="ss-callback-title">Fatto.</h2>
+      <p class="ss-callback-sub" data-done-text>Ti chiamiamo entro 2 ore lavorative dal numero <strong>02 80898395</strong>: salvalo in rubrica.</p>
+      <p class="ss-callback-sub">Ti abbiamo mandato un’email con il link alla tua pratica.</p>
+      <button type="button" class="ss-callback-submit is-secondary" data-close>Chiudi</button>
+    </div>
+    <div class="ss-callback-step" data-step="fail" hidden>
+      <h2 class="ss-callback-title">Non siamo riusciti a ricevere la richiesta.</h2>
+      <p class="ss-callback-sub">Chiamaci direttamente: <a href="tel:+390280898395"><strong>02 80898395</strong></a></p>
+      <button type="button" class="ss-callback-submit is-secondary" data-retry>Riprova</button>
+    </div>
+  </form>
+</dialog>
+
+<script is:inline>
+  (function () {
+    var dlg = document.getElementById('ss-callback');
+    if (!dlg || typeof dlg.showModal !== 'function') return; // senza <dialog> restano gli anchor ai moduli
+    var form = document.getElementById('ss-callback-form');
+    var steps = { form: dlg.querySelector('[data-step="form"]'), done: dlg.querySelector('[data-step="done"]'), fail: dlg.querySelector('[data-step="fail"]') };
+    var err = dlg.querySelector('.ss-callback-error');
+    var sending = false;
+
+    function show(step) { Object.keys(steps).forEach(function (k) { steps[k].hidden = k !== step; }); }
+    function open(origin) {
+      show('form'); err.hidden = true;
+      dlg.dataset.origin = origin || '';
+      dlg.showModal();
+      setTimeout(function () { var t = document.getElementById('ss-cb-tel'); if (t) t.focus(); }, 50);
+      try { if (typeof window.gtag === 'function') window.gtag('event', 'callback_popup_open', { origin: origin || '' }); } catch (e) {}
+      try { if (typeof window.clarity === 'function') window.clarity('event', 'popup_aperto'); } catch (e) {}
+    }
+    function close() { if (dlg.open) dlg.close(); }
+
+    // Orari studio (Europe/Rome): Lun–Ven 9–19, Sab 9–13
+    function doneText() {
+      var now = new Date();
+      var rome = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Rome' }));
+      var d = rome.getDay(), h = rome.getHours() + rome.getMinutes() / 60;
+      var inHours = (d >= 1 && d <= 5 && h >= 9 && h < 19) || (d === 6 && h >= 9 && h < 13);
+      if (inHours) return 'Ti chiamiamo entro 2 ore lavorative dal numero <strong>02 80898395</strong>: salvalo in rubrica.';
+      var next = (d === 6 && h >= 13) || d === 0 ? 'lunedì' : (d === 5 && h >= 19) ? 'lunedì' : 'domani';
+      return 'Siamo chiusi in questo momento: ti chiamiamo ' + next + ' dalle 9 dal numero <strong>02 80898395</strong>. Salvalo in rubrica.';
+    }
+
+    // Apertura da: barra fissa, tutti i CTA verso #form-rapido / #contatti, [data-open-callback]
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href="#form-rapido"], a[href="#contatti"], [data-open-callback]') : null;
+      if (!a) return;
+      ev.preventDefault();
+      open((a.textContent || '').trim().slice(0, 40));
+    });
+    dlg.addEventListener('click', function (ev) {
+      if (ev.target === dlg) close(); // click sullo sfondo
+      var b = ev.target.closest ? ev.target.closest('[data-close], [data-retry]') : null;
+      if (!b) return;
+      if (b.hasAttribute('data-retry')) { show('form'); return; }
+      close();
+    });
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      if (sending) return;
+      var tel = form.telefono.value.trim(), mail = form.email.value.trim();
+      var okTel = /^[0-9\s+]{8,}$/.test(tel), okMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
+      if (!okTel || !okMail) {
+        err.textContent = !okTel ? 'Controlla il numero di telefono.' : 'Controlla l’indirizzo email.';
+        err.hidden = false; (!okTel ? form.telefono : form.email).focus();
+        return;
+      }
+      if (form.website && form.website.value) { show('done'); return; } // bot
+      err.hidden = true; sending = true;
+      var btn = form.querySelector('.ss-callback-submit'); btn.disabled = true; btn.textContent = 'Invio in corso…';
+      var fd = new FormData(form);
+      fetch(form.getAttribute('action'), { method: 'POST', body: fd, credentials: 'same-origin', redirect: 'follow' })
+        .then(function (r) {
+          var okUrl = (r.url || '').indexOf('/errore') === -1;
+          if (!r.ok || !okUrl) throw new Error('intake');
+          dlg.querySelector('[data-done-text]').innerHTML = doneText();
+          show('done');
+          try { if (typeof window.gtag === 'function') {
+            window.gtag('event', 'conversion', { send_to: 'AW-10983419342/zf21CNaG4P4aEM7bpvUo' });
+            window.gtag('event', 'generate_lead', { form_source: form.form_source.value });
+          } } catch (e) {}
+          try { if (typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: form.form_source.value }); } catch (e) {}
+          try { if (typeof window.clarity === 'function') window.clarity('event', 'popup_inviato'); } catch (e) {}
+        })
+        .catch(function () { show('fail'); })
+        .finally(function () { sending = false; btn.disabled = false; btn.textContent = 'Richiamatemi'; });
+    });
+  })();
+</script>

@@ -66,45 +66,18 @@ const {
           <form action="/php/invia-email.php" method="POST" class="landing-v3-contact-form" aria-label="Form richiesta rapida proprietario" style="display:flex; flex-direction:column; gap:1rem;">
 
             <div>
-              <label for="nome-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Nome e cognome *</label>
-              <input type="text" name="nome" id="nome-v3" class="form-input" placeholder="Nome e cognome del proprietario" required aria-required="true">
-            </div>
-
-            <div>
               <label for="telefono-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Telefono *</label>
-              <input type="tel" name="telefono" id="telefono-v3" class="form-input" placeholder="Numero di telefono diretto" required aria-required="true">
+              <input type="tel" name="telefono" id="telefono-v3" class="form-input" placeholder="Numero di telefono diretto" inputmode="tel" autocomplete="tel" required aria-required="true">
             </div>
 
             <div>
-              <label for="email-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Email</label>
-              <input type="email" name="email" id="email-v3" class="form-input" placeholder="Per ricevere il riepilogo scritto" autocomplete="email">
+              <label for="email-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Email *</label>
+              <input type="email" name="email" id="email-v3" class="form-input" placeholder="Per inviarti l’accesso alla tua pratica" inputmode="email" autocomplete="email" required aria-required="true">
             </div>
 
             <div>
-              <label for="citta-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Città immobile</label>
-              <input type="text" name="città" id="citta-v3" class="form-input" placeholder="In che città si trova l'immobile?">
-            </div>
-
-            <div>
-              <label for="owner-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Sei proprietario/locatore?</label>
-              <select name="proprietario" id="owner-v3" class="form-select">
-                <option value="">Preferisco dirlo al telefono</option>
-                <option value="proprietario">Sì, sono proprietario/locatore</option>
-                <option value="inquilino">No, sono l'inquilino</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="morosita-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Qual è la situazione dei pagamenti?</label>
-              <select name="morosita" id="morosita-v3" class="form-select">
-                <option value="">Preferisco dirlo al telefono</option>
-                <option value="Contratto scaduto/disdettato (finita locazione)">Paga, ma il contratto è scaduto o disdettato (finita locazione)</option>
-                <option value="Paga in ritardo o parzialmente">Paga in ritardo o parzialmente</option>
-                <option value="1-2 mesi">Non paga da 1-2 mesi</option>
-                <option value="3-6 mesi">Non paga da 3-6 mesi</option>
-                <option value="6-12 mesi">Non paga da 6-12 mesi</option>
-                <option value="Oltre 12 mesi">Non paga da oltre 12 mesi</option>
-              </select>
+              <label for="nome-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Nome <span class="form-optional">(facoltativo)</span></label>
+              <input type="text" name="nome" id="nome-v3" class="form-input" placeholder="Come possiamo chiamarti" autocomplete="name">
             </div>
 
             <input type="hidden" name="form_source" value={formSource}>

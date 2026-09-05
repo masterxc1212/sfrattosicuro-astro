@@ -121,21 +121,6 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
               id="hero-form"
             >
               <div class="form-group">
-                <label for="nome-hero" class="form-label">Nome e cognome *</label>
-                <input
-                  type="text"
-                  name="nome"
-                  id="nome-hero"
-                  class="form-input"
-                  placeholder={hero.formNamePlaceholder}
-                  required
-                  minlength="2"
-                  aria-required="true"
-                  autocomplete="name"
-                >
-              </div>
-
-              <div class="form-group">
                 <label for="telefono-hero" class="form-label">Telefono *</label>
                 <input
                   type="tel"
@@ -152,21 +137,23 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
               </div>
 
               <div class="form-group">
-                <label for="email-hero" class="form-label">Email</label>
+                <label for="email-hero" class="form-label">Email *</label>
                 <input type="email" name="email" id="email-hero" class="form-input"
-                       placeholder="Per ricevere il riepilogo scritto" autocomplete="email">
+                       placeholder="Per inviarti l’accesso alla tua pratica" autocomplete="email" inputmode="email" required aria-required="true">
               </div>
 
-              {hero.ownerField && (
-                <div class="form-group">
-                  <label for="owner-hero" class="form-label">Sei proprietario/locatore?</label>
-                  <select name="proprietario" id="owner-hero" class="form-select">
-                    <option value="">Preferisco dirlo al telefono</option>
-                    <option value="proprietario">Sì, sono proprietario/locatore</option>
-                    <option value="inquilino">No, sono l'inquilino</option>
-                  </select>
-                </div>
-              )}
+              <div class="form-group">
+                <label for="nome-hero" class="form-label">Nome <span class="form-optional">(facoltativo)</span></label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome-hero"
+                  class="form-input"
+                  placeholder="Come possiamo chiamarti"
+                  autocomplete="name"
+                >
+              </div>
+              <p class="hero-form-owners">Servizio riservato a proprietari e locatori.</p>
 
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
