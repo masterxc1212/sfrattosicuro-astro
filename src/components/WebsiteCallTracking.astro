@@ -21,7 +21,12 @@
  */
 const AW_ID = 'AW-10983419342';
 const CALL_LABEL = 'tCrKCJeljvwYEM7bpvUo';   // conversion action "Telefonate" (Chiamate dal sito web)
-const PHONE_NUMBER = '+39 02 80898395';       // numero visualizzato in pagina = numero mycentralino
+// Formato NAZIONALE senza "+" (2026-09-05): con '+39 02 80898395' il test reale
+// (click sull'annuncio) sostituiva il numero con "+02 8295 8803", cioe' lasciava
+// il "+" davanti al numero d'inoltro nazionale — esattamente l'artefatto che la
+// guida Google attribuisce al formato internazionale. Il testo in pagina deve
+// coincidere carattere per carattere con questa stringa.
+const PHONE_NUMBER = '02 80898395';           // numero visualizzato in pagina = numero mycentralino
 // eager=true: bypassa il gate consenso (landing Ads allineate alla principale). Default false → sito organico invariato.
 const { eager = false } = Astro.props;
 ---
@@ -90,7 +95,42 @@ const { eager = false } = Astro.props;
           phone_conversion_number: PHONE_NUMBER,
           phone_conversion_country_code: 'IT'
         });
+        armForwardingCallback();
       }
+    }
+
+    // 2026-09-05 — Test reale (click sull'annuncio): Google sostituiva SOLO i link il cui
+    // testo contiene il numero. I bottoni "Chiama" (header mobile) e "Chiama ora" (sticky
+    // mobile) restavano su tel:+390280898395 → chiamate dai bottoni principali su mobile
+    // MAI attribuite. Con _googWcmGet(callback, numero) riceviamo il numero d'inoltro e lo
+    // applichiamo a TUTTI i link tel: della pagina.
+    function applyForwardingNumber(formattedNumber, mobileNumber) {
+      if (!mobileNumber) return;
+      var digits = String(mobileNumber).replace(/\D/g, '');
+      if (!digits) return;
+      var links = document.querySelectorAll('a[href^="tel:"]');
+      for (var i = 0; i < links.length; i++) {
+        var a = links[i];
+        var current = (a.getAttribute('href') || '').replace(/\D/g, '');
+        if (current === digits) continue;
+        a.setAttribute('href', 'tel:' + mobileNumber);
+        a.setAttribute('data-gfn', '1');
+      }
+    }
+
+    function armForwardingCallback() {
+      var tries = 0;
+      var timer = setInterval(function () {
+        tries += 1;
+        if (typeof window._googWcmGet === 'function') {
+          clearInterval(timer);
+          try {
+            window._googWcmGet(applyForwardingNumber, PHONE_NUMBER);
+          } catch (e) { /* nessun numero d'inoltro: pagina invariata */ }
+        } else if (tries > 40) {
+          clearInterval(timer); // ~10 s: loader wcm non arrivato
+        }
+      }, 250);
     }
 
     initCallTracking(eager ? { marketing: true, analytics: true } : readConsent());

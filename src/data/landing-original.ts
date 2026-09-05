@@ -535,7 +535,7 @@ export const landingOriginal = {
     formNote: 'Ti ricontattamo entro 24 ore\nConsulenza gratuita e senza impegno',
     contacts: {
       phoneLabel: 'Telefono',
-      phoneValue: '+39 02 80898395',
+      phoneValue: '02 80898395',
       phoneHours: 'Lun-Ven 9:00-19:00 | Sab 9:00-13:00',
       whatsappLabel: 'WhatsApp',
       whatsappValue: '+39 329 117 5957',
