@@ -41,15 +41,23 @@ jobs:
           FTP_USER: ghdeploy@sfrattosicuro.it
           FTP_PASS: ${{ secrets.SG_FTP_PASSWORD }}
           FTP_TARGET_DIR: /sfrattosicuro.it/public_html/
+        # 2026-09-05: 3 tentativi con pausa. Il mirror falliva a intermittenza con
+        # "max-retries exceeded" (SiteGround irraggiungibile dal runner per qualche minuto).
         run: |
-          lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<EOF
+          for attempt in 1 2 3; do
+            echo "== tentativo $attempt =="
+            if lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<EOF
           set ssl:verify-certificate no
           set ftp:passive-mode true
-          set net:max-retries 2
-          set net:timeout 20
-          set net:reconnect-interval-base 5
+          set net:max-retries 3
+          set net:timeout 30
+          set net:reconnect-interval-base 10
           set xfer:clobber true
           mkdir -p $FTP_TARGET_DIR
           mirror -R --verbose --delete --parallel=2 --exclude-glob .git* --exclude-glob node_modules --exclude-glob .github --exclude-glob reviews-cache.json dist/ $FTP_TARGET_DIR
           bye
           EOF
+            then echo "deploy ok"; exit 0; fi
+            echo "tentativo $attempt fallito"; sleep 60
+          done
+          echo "deploy fallito dopo 3 tentativi"; exit 1
