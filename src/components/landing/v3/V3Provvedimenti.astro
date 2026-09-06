@@ -1,0 +1,42 @@
+---
+/** V3Provvedimenti.astro — quattro convalide reali, anonimizzate, in carosello a scorrimento nativo. */
+import V3Icon from './V3Icon.astro';
+const images = ['01', '02', '03', '04'].map((n) => ({ src: `/assets/img/provvedimenti/${n}.webp`, alt: 'Provvedimento di convalida di sfratto, anonimizzato' }));
+const id = 'provvedimenti-carousel';
+---
+<section id="provvedimenti" class="section section--sheet cv" aria-labelledby="prov-title">
+  <div class="wrap">
+    <div class="prov__head">
+      <div>
+        <p class="doc-label" data-n="05">Documentazione</p>
+        <h2 id="prov-title" class="section-title">Provvedimenti ottenuti</h2>
+        <p class="section-lead">Alcune convalide reali ottenute per i nostri clienti, mostrate in forma anonimizzata.</p>
+      </div>
+      <div class="prov__nav">
+        <button type="button" class="prov__btn" aria-label="Provvedimento precedente" data-prov-prev><V3Icon name="arrowLeft" /></button>
+        <button type="button" class="prov__btn" aria-label="Provvedimento successivo" data-prov-next><V3Icon name="arrowRight" /></button>
+      </div>
+    </div>
+
+    <div id={id} class="prov__track" tabindex="0" aria-label="Galleria dei provvedimenti">
+      {images.map((img, i) => (
+        <figure class="prov__item">
+          <div class="prov__frame">
+            <img src={img.src} alt={img.alt} loading="lazy" decoding="async" width="727" height="1029">
+            <span class="prov__tag">Convalida ottenuta</span>
+          </div>
+          <figcaption class="prov__cap">Tribunale italiano · atto n. {i + 1} di {images.length}, dati oscurati a tutela della privacy</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script is:inline define:vars={{ id }}>
+  (function () {
+    var t = document.getElementById(id); if (!t) return;
+    var step = function () { var f = t.querySelector('.prov__item'); return f ? f.getBoundingClientRect().width + 14 : 280; };
+    document.querySelector('[data-prov-prev]').addEventListener('click', function () { t.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    document.querySelector('[data-prov-next]').addEventListener('click', function () { t.scrollBy({ left: step(), behavior: 'smooth' }); });
+  })();
+</script>

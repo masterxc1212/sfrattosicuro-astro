@@ -1,0 +1,59 @@
+---
+/**
+ * V3Reviews.astro — recensioni Google. Gli id rating-number / rating-stars / total-reviews / google-reviews-grid
+ * e la classe review-card-google sono letti e riscritti da /assets/js/reviews.js: non cambiarli.
+ */
+import { socialProof } from '../../../lib/business';
+const total = socialProof.googleReviewsTotal;
+const gLink = 'https://www.google.com/search?kgmid=/g/11xzr2cjfr&hl=it-IT&q=Sfratto+Sicuro';
+---
+<section id="recensioni-google" class="section cv" aria-labelledby="recensioni-title">
+  <div class="wrap">
+    <div class="rev__head">
+      <div>
+        <p class="doc-label" data-n="04">Recensioni Google</p>
+        <h2 id="recensioni-title" class="section-title">Cosa dicono i proprietari che abbiamo assistito</h2>
+      </div>
+      <div class="rev__score" id="google-rating-hero">
+        <span class="rev__num" id="rating-number">5.0</span>
+        <div>
+          <div class="rev__stars" id="rating-stars" aria-label="5 stelle su 5">★★★★★</div>
+          <p class="rev__meta">Basato su <strong id="total-reviews">{total}</strong> recensioni · <a href={gLink} target="_blank" rel="noopener noreferrer">Leggile su Google</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="google-reviews-grid" class="rev__grid">
+      <article class="review-card-google" data-static-review>
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="review-avatar" aria-hidden="true">GS</div>
+            <div class="min-w-0"><div class="font-bold truncate">gianni saratoga</div></div>
+          </div>
+        </div>
+        <div class="star-rating-google" aria-label="5 stelle">★★★★★</div>
+        <blockquote>«Esperienza positiva: risolto lo sfratto con 2 intestatari del contratto in maniera semplice, grazie»</blockquote>
+      </article>
+      <article class="review-card-google" data-static-review>
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="review-avatar" aria-hidden="true">DC</div>
+            <div class="min-w-0"><div class="font-bold truncate">Donatella Caroli</div></div>
+          </div>
+        </div>
+        <div class="star-rating-google" aria-label="4 stelle">★★★★☆</div>
+        <blockquote>«Dopo mesi di stress e pressione psicologica non da poco, l’inquilino moroso ha finalmente lasciato il mio appartamento…»</blockquote>
+      </article>
+      <article class="review-card-google" data-static-review>
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="review-avatar" aria-hidden="true">AS</div>
+            <div class="min-w-0"><div class="font-bold truncate">aAa Six</div></div>
+          </div>
+        </div>
+        <div class="star-rating-google" aria-label="5 stelle">★★★★★</div>
+        <blockquote>«Servizio comodo perché gestito a distanza in ogni sua fase.»</blockquote>
+      </article>
+    </div>
+  </div>
+</section>

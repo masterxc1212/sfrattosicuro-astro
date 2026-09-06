@@ -1,0 +1,136 @@
+---
+/**
+ * V3Page.astro — documento della landing /landing-v3/ ridisegnata (2026-09-06).
+ * ------------------------------------------------------------------
+ * Sostituisce LandingExperimentPage SOLO per questa rotta: /landing-v4/, /landing-v3-agosto/ e
+ * /sfratto-agosto/ restano sul componente precedente. Tutto l'impianto di tracciamento è identico
+ * (stessi componenti, stesso ordine): cambiano solo struttura visiva e foglio di stile.
+ * Testi: da landing-config (v3, nazionale). Valori di business: da business-config.json.
+ */
+import '../../../styles/landing-v3.css';
+import { buildLandingPageConfig } from '../../../data/landing-config';
+import { versionedSrc } from '../../../lib/asset-version';
+import { pricing, contatti } from '../../../lib/business';
+import { tiktokPixelId, clarityProjectId } from '../../../lib/tracking-config';
+
+import EngagedLoader from '../../EngagedLoader.astro';
+import LandingAdsBootstrap from '../LandingAdsBootstrap.astro';
+import GA4TrackingIsland from '../../GA4TrackingIsland.astro';
+import ClickConversionTracking from '../../ClickConversionTracking.astro';
+import WebsiteCallTracking from '../../WebsiteCallTracking.astro';
+import MetaPixelTracking from '../../MetaPixelTracking.astro';
+import MetaAdvancedMatching from '../../MetaAdvancedMatching.astro';
+import AdAttributionFields from '../../AdAttributionFields.astro';
+import TikTokPixelTracking from '../../TikTokPixelTracking.astro';
+import LandingExperimentTracking from '../../LandingExperimentTracking.astro';
+import BehaviourTracking from '../../BehaviourTracking.astro';
+import ClarityTracking from '../../ClarityTracking.astro';
+import LandingV3CallbackModal from '../LandingV3CallbackModal.astro';
+
+import V3Icon from './V3Icon.astro';
+import V3Header from './V3Header.astro';
+import V3Hero from './V3Hero.astro';
+import V3Trust from './V3Trust.astro';
+import V3Price from './V3Price.astro';
+import V3KeyQuestions from './V3KeyQuestions.astro';
+import V3Steps from './V3Steps.astro';
+import V3Reviews from './V3Reviews.astro';
+import V3Provvedimenti from './V3Provvedimenti.astro';
+import V3Founder from './V3Founder.astro';
+import V3Faq from './V3Faq.astro';
+import V3Contact from './V3Contact.astro';
+import V3Footer from './V3Footer.astro';
+
+const config = buildLandingPageConfig({ version: 'v3', territory: 'nazionale', keyword: 'sfratto-per-morosita' });
+const redirectUrl = '/grazie.html';
+---
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Sfratto">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#F5F1E8">
+    <title>{config.seo.title}</title>
+    <meta name="description" content={config.seo.description}>
+    <meta name="keywords" content={config.seo.keywords}>
+    <meta name="robots" content={config.seo.robots}>
+    <meta name="author" content="SfrattoSicuro.it">
+    <link rel="canonical" href={config.seo.canonicalUrl}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={config.seo.ogTitle}>
+    <meta property="og:description" content={config.seo.ogDescription}>
+    <meta property="og:url" content={config.seo.ogUrl}>
+    <meta property="og:site_name" content="SfrattoSicuro.it">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={config.seo.twitterTitle}>
+    <meta name="twitter:description" content={config.seo.twitterDescription}>
+    <meta name="twitter:image" content="https://www.sfrattosicuro.it/assets/img/hero.webp">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-var.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin-var.woff2" crossorigin>
+    <EngagedLoader />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.legalService)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.organization)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.website)} />
+    <script type="application/ld+json" set:html={JSON.stringify(config.jsonLd.faq)} />
+    <LandingAdsBootstrap />
+  </head>
+  <body class="landing-v3-body">
+    <V3Header />
+    <main id="main-content">
+      <V3Hero hero={config.hero} redirectUrl={redirectUrl} />
+      <V3Trust />
+      <V3Price />
+      <V3KeyQuestions faqSection={config.faq} />
+      <V3Steps procedure={config.procedure} />
+      <V3Reviews />
+      <V3Provvedimenti />
+      <V3Founder />
+      <V3Faq faqSection={config.faq} />
+      <V3Contact contactForm={config.contactForm} formSource="bottom_form_v3" redirectUrl={redirectUrl} />
+    </main>
+
+    <!-- Barra fissa mobile: telefono + popup «Lascia il numero» -->
+    <div class="landing-v3-sticky-cta">
+      <a href={contatti.telefonoTelLink} class="landing-v3-sticky-btn is-call"><V3Icon name="phone" /> Chiama ora</a>
+      <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><V3Icon name="send" /> Lascia il numero</a>
+    </div>
+    <V3Footer />
+    <LandingV3CallbackModal formSource="popup_telefono" redirectUrl={redirectUrl} />
+
+    <GA4TrackingIsland measurementId="G-509YE5HCYB" eager deferred />
+    <script is:inline>
+      // Toggle «+» su punti chiave e fasi (Clarity 2026-09-05: tocchi a vuoto su quegli elementi).
+      document.addEventListener('click', function (ev) {
+        var b = ev.target && ev.target.closest ? ev.target.closest('button.ss-toggle') : null;
+        if (!b) return;
+        var id = b.getAttribute('aria-controls'); var more = id ? document.getElementById(id) : null;
+        if (!more) return;
+        var open = b.getAttribute('aria-expanded') === 'true';
+        b.setAttribute('aria-expanded', open ? 'false' : 'true');
+        more.hidden = open;
+        var c = b.querySelector('.ss-toggle-caret'); if (c) c.textContent = open ? '+' : '–';
+      });
+    </script>
+    <ClickConversionTracking eager />
+    <WebsiteCallTracking eager />
+    <MetaPixelTracking pixelId="1373903100373659" eager deferred />
+    <MetaAdvancedMatching pixelId="1373903100373659" />
+    <AdAttributionFields />
+    <TikTokPixelTracking pixelId={tiktokPixelId} eager deferred />
+    <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant="v3" />
+    <BehaviourTracking />
+    <ClarityTracking projectId={clarityProjectId} eager deferred />
+    <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
+    <script src={versionedSrc('/assets/js/form-validation.js')} defer></script>
+    <script src={versionedSrc('/assets/js/main.js')} defer></script>
+  </body>
+</html>

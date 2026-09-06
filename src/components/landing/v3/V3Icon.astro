@@ -1,0 +1,33 @@
+---
+/**
+ * V3Icon.astro — icone SVG inline della landing-v3 (niente Font Awesome, niente CSS di maschere).
+ * Tratti sottili 1.8, 24x24. Aggiungere qui una voce per ogni nuova icona.
+ */
+interface Props { name: keyof typeof paths; class?: string; fill?: boolean; }
+const paths = {
+  phone: '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  checkCircle: '<circle cx="12" cy="12" r="9.5"/><path d="m8 12.5 2.6 2.5L16 9.5"/>',
+  key: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.8-9.8M15 5l3 3M13 7l3 3"/>',
+  star: '<path d="m12 2.8 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.6l-5.8 3.1 1.1-6.5L2.6 9.6l6.5-.9z"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  gavel: '<path d="m14 13-7.5 7.5a1.4 1.4 0 0 1-2 0l-1-1a1.4 1.4 0 0 1 0-2L11 10"/><path d="m16 16 6-6M10 4l10 10M13 7l-2 2M18 12l-2 2M3 21h8"/>',
+  scale: '<path d="M12 3v18M4 21h16M6 7h12"/><path d="m6 7-3.5 7a3.5 3.5 0 0 0 7 0L6 7zm12 0-3.5 7a3.5 3.5 0 0 0 7 0L18 7z"/>',
+  file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+  clock: '<circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/>',
+  bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+  map: '<path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"/><path d="M9 3v15M15 6v15"/>',
+  handshake: '<path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a5 5 0 0 0-7 0L8 10.2"/><path d="m21 3 1 11h-2M3 3 2 14h2"/><path d="M3 4h5l3 3-3 3a4 4 0 0 0 5.7 0"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  arrowLeft: '<path d="M19 12H5m7-7-7 7 7 7"/>',
+  arrowRight: '<path d="M5 12h14m-7-7 7 7-7 7"/>',
+  send: '<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',
+  store: '<path d="M3 9.5 5 4h14l2 5.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8M10 20v-5h4v5"/>',
+  folder: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  badge: '<circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/>',
+  euro: '<path d="M18.5 5.5A8 8 0 0 0 6.7 8M18.5 18.5A8 8 0 0 1 6.7 16M4 10h10M4 14h10"/>',
+  flag: '<path d="M4 22V4"/><path d="M4 4h12l-2 4 2 4H4"/>',
+};
+const { name, class: cls = '', fill = false } = Astro.props;
+---
+<svg class={`ic ${fill ? 'ic--fill' : ''} ${cls}`.trim()} viewBox="0 0 24 24" aria-hidden="true" focusable="false" set:html={paths[name]} />

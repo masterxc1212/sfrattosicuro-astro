@@ -1,0 +1,31 @@
+---
+/** V3Footer.astro — piè di pagina essenziale: marchio, servizi, dati societari, link legali. */
+const year = new Date().getFullYear();
+---
+<footer class="ft" role="contentinfo">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div>
+        <div class="ft__brand">
+          <img src="/assets/img/logo/logo-88.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+          <div><strong>Sfratto Sicuro</strong><span>Avvocati specializzati</span></div>
+        </div>
+        <p style="margin-top:.9rem">Servizio legale dedicato esclusivamente agli sfratti, dal 2018. Sede centrale a Salerno, Via F. P. Volpe 2; domiciliatari presso tutti i Tribunali d’Italia.</p>
+      </div>
+      <div>
+        <h4>Servizi</h4>
+        <p>Sfratto per morosità<br>Sfratto per finita locazione<br>Sfratto commerciale<br>Recupero canoni<br>Esecuzione forzata</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <div class="ft__links">
+          <a href="#faq">Domande frequenti</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/cookie-policy">Cookie Policy</a>
+          <a href="/termini">Termini e condizioni</a>
+        </div>
+      </div>
+    </div>
+    <p class="ft__legal">© {year} Sfratto Sicuro · D1 S.R.L.S. · P. IVA 06177400659. Servizio riservato a proprietari e locatori. I contenuti di questa pagina hanno scopo informativo e non costituiscono consulenza legale; i tempi indicati sono medie operative e dipendono dal Tribunale competente e dall’eventuale opposizione dell’inquilino.</p>
+  </div>
+</footer>

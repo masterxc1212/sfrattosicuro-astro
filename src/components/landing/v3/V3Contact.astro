@@ -1,0 +1,82 @@
+---
+/**
+ * V3Contact.astro — modulo finale (#form-rapido) + contatti diretti. Stessi name/hidden del vecchio LandingV3ContactSection.
+ * I link a #form-rapido e #contatti aprono il popup «Lascia il numero» (delega in LandingV3CallbackModal).
+ */
+import V3Icon from './V3Icon.astro';
+import { contatti, orari } from '../../../lib/business';
+interface Props { contactForm: any; formSource?: string; redirectUrl?: string }
+const { contactForm, formSource = 'bottom_form_v3', redirectUrl = '/grazie.html' } = Astro.props;
+const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+const hours = `${orari.settimanaLabel.replace('-', '–').replace(/:00/g, '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(/:00/g, '')}`;
+---
+<section id={contactForm.sectionId} class="section cv" aria-labelledby="contatti-title">
+  <div class="wrap">
+    <p class="doc-label" data-n="08">Contatti</p>
+    <h2 id="contatti-title" class="section-title">{contactForm.title}</h2>
+    <p class="section-lead">{contactForm.subtitle}</p>
+
+    <div class="contact__grid">
+      <div class="contact__aside">
+        <div class="cbox">
+          <h3>{contactForm.formTitle}</h3>
+          <ul>
+            <li>sei il proprietario o il locatore dell’immobile;</li>
+            <li>l’inquilino ha accumulato morosità, oppure il contratto è scaduto o disdettato;</li>
+            <li>puoi indicarci la città dell’immobile e la situazione.</li>
+          </ul>
+        </div>
+        <div class="cbox cbox--ink">
+          <h3>Contatti diretti</h3>
+          <p class="cbox__small">Servizio riservato a proprietari e locatori: non assistiamo inquilini.</p>
+          <span class="cbox__lbl">Telefono</span>
+          <a href={contatti.telefonoTelLink} class="cbox__big">{phoneShort}</a>
+          <p class="cbox__small">{hours}</p>
+          <span class="cbox__lbl">Se siamo in linea o in udienza</span>
+          <p class="cbox__small">Il centralino raccoglie la richiesta e ti ricontattiamo in giornata dal numero <strong>{phoneShort}</strong>: salvalo in rubrica.</p>
+        </div>
+        <div class="cbox cbox--note">
+          <h3>{contactForm.urgencyBox.title}</h3>
+          <p set:html={contactForm.urgencyBox.body}></p>
+        </div>
+      </div>
+
+      <div id="form-rapido" class="contact__form">
+        <div class="card-form">
+          <p class="card-form__eyebrow">Richiesta rapida</p>
+          <h3 class="card-form__title">Lascia il numero, al resto pensiamo noi</h3>
+          <p class="card-form__sub">Prima valutazione gratuita e senza impegno.</p>
+          <form action="/php/invia-email.php" method="POST" class="landing-v3-contact-form" aria-label="Modulo richiesta rapida proprietario">
+            <div class="field">
+              <label for="telefono-v3">Telefono</label>
+              <input type="tel" name="telefono" id="telefono-v3" placeholder="Numero di telefono diretto" inputmode="tel" autocomplete="tel" minlength="8" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="email-v3">Email</label>
+              <input type="email" name="email" id="email-v3" placeholder="Per inviarti l’accesso alla tua pratica" inputmode="email" autocomplete="email" required aria-required="true">
+            </div>
+
+            <input type="hidden" name="nome" value="">
+            <input type="hidden" name="form_source" value={formSource}>
+            <input type="hidden" name="gclid" value="">
+            <input type="hidden" name="utm_source" value="">
+            <input type="hidden" name="utm_medium" value="">
+            <input type="hidden" name="utm_campaign" value="">
+            <input type="hidden" name="utm_term" value="">
+            <input type="hidden" name="keyword" value="">
+            <input type="hidden" name="utm_content" value="">
+            <input type="hidden" name="matchtype" value="">
+            <input type="hidden" name="redirect_url" value={redirectUrl}>
+
+            <button type="submit" class="btn btn--act btn--block card-form__submit" aria-label="Invia la richiesta">
+              <V3Icon name="send" /><span>Invia la richiesta</span>
+            </button>
+            <p class="card-form__hours">Ti richiamiamo entro 2 ore lavorative · {hours}</p>
+            <p class="card-form__fine">Ti richiama lo studio dell’Avv. Ansalone dal numero <strong>{phoneShort}</strong>: salvalo in rubrica. Nessun call center.</p>
+            <p class="card-form__fine">I tuoi dati sono protetti e non verranno condivisi. Inviando accetti la <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

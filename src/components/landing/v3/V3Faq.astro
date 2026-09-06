@@ -1,0 +1,31 @@
+---
+/** V3Faq.astro — domande e risposte in <details> nativo, senza JS. Testi da config.faq. */
+import V3Icon from './V3Icon.astro';
+interface Props { faqSection: any }
+const { faqSection } = Astro.props;
+---
+<section id={faqSection.sectionId} class="section section--sheet cv" aria-labelledby="faq-title">
+  <div class="wrap wrap--mid">
+    <p class="doc-label" data-n="07">Domande e risposte</p>
+    <h2 id="faq-title" class="section-title">{faqSection.title}</h2>
+    {faqSection.subtitle && <p class="section-lead">{faqSection.subtitle}</p>}
+
+    <div class="faq__list">
+      {faqSection.items.map((item: { q: string; a: string }) => (
+        <details class="faq__item">
+          <summary><span>{item.q}</span><V3Icon name="plus" /></summary>
+          <div class="faq__a" set:html={item.a}></div>
+        </details>
+      ))}
+    </div>
+
+    <div class="faq__foot">
+      <div>
+        <h3>{faqSection.bottomTitle}</h3>
+        <p>{faqSection.bottomBody}</p>
+        <small>✓ {faqSection.ctaCaption}</small>
+      </div>
+      <a href="#contatti" class="btn btn--act">{faqSection.ctaLabel}</a>
+    </div>
+  </div>
+</section>

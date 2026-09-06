@@ -1,0 +1,47 @@
+---
+/** V3Steps.astro — le quattro fasi, in riga su desktop. Testi da config.procedure (con «hint» a scomparsa). */
+import V3Icon from './V3Icon.astro';
+interface Props { procedure: any }
+const { procedure } = Astro.props;
+const steps: any[] = procedure.steps;
+---
+<section id={procedure.sectionId} class="section section--sheet cv" aria-labelledby="steps-title">
+  <div class="wrap">
+    <p class="doc-label" data-n="03">La procedura</p>
+    <h2 id="steps-title" class="section-title">{procedure.title}</h2>
+    <p class="section-lead">{procedure.subtitle}</p>
+
+    <ol class="steps">
+      {steps.map((s, i) => (
+        <li class:list={['step', { 'step--final': s.isGold }]}>
+          <div class="step__n" aria-hidden="true">{s.isGold ? <V3Icon name="check" /> : s.num}</div>
+          <div>
+            <p class="step__when">{s.title.split(':')[0]}</p>
+            <h3 class="step__title">{s.title.split(':').slice(1).join(':').trim()}</h3>
+            <p class="step__body" set:html={s.body}></p>
+            <p class="step__badge">
+              <V3Icon name="checkCircle" />
+              {s.hint ? (
+                <span class="ss-toggle-wrap">
+                  <button type="button" class="ss-toggle" aria-expanded="false" aria-controls={`step-hint-${i}`}>
+                    <span>{s.badge}</span>
+                    <span class="ss-toggle-caret" aria-hidden="true">+</span>
+                  </button>
+                  <span id={`step-hint-${i}`} class="ss-toggle-more" hidden>{s.hint}</span>
+                </span>
+              ) : <span>{s.badge}</span>}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <div class="steps__foot">
+      <div>
+        <h3>{procedure.bottomTitle}</h3>
+        <p>{procedure.bottomBody}</p>
+      </div>
+      <a href="#form-rapido" class="btn btn--ink">{procedure.bottomCtaLabel}</a>
+    </div>
+  </div>
+</section>

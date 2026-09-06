@@ -1,0 +1,75 @@
+---
+/**
+ * V3Price.astro — il compenso, il Patto Sfratto Sicuro, il confronto con i preventivi «solo convalida».
+ * Termini approvati dall'avvocato (2026-07-17): €1.300 IVA e cassa INCLUSE; compenso dovuto solo DOPO
+ * L'UDIENZA per la convalida (mai «a risultato»); opposizione/merito con preventivo separato;
+ * spese vive ~€100-150 / ~€300 totali, mai anticipate. Testi ripresi dal vecchio LandingV3PriceSection.
+ */
+import V3Icon from './V3Icon.astro';
+import { pricing, contatti, formatBusinessEuro } from '../../../lib/business';
+const price = formatBusinessEuro(pricing.compensoComplessivo);
+const live = pricing.speseVive;
+const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+---
+<section id="prezzo" class="price cv" aria-labelledby="prezzo-title">
+  <div class="wrap">
+    <p class="doc-label doc-label--light" data-n="01">Il compenso</p>
+    <div class="price__head">
+      <h2 id="prezzo-title" class="price__title">Un solo prezzo. Zero anticipi.</h2>
+      <div class="price__figure">
+        <span class="price__amount">{price}</span>
+        <span class="price__scope">convalida + fase esecutiva, fino alla riconsegna delle chiavi. <strong>IVA e cassa incluse.</strong></span>
+      </div>
+    </div>
+
+    <p class="price__plain">Oggi non paghi nulla. I {price} si pagano una volta sola, <strong>dopo l’udienza davanti al Giudice</strong> (in media entro circa 60 giorni), qualunque ne sia l’esito.</p>
+
+    <div class="price__grid">
+      <ul class="price__list">
+        <li><V3Icon name="bolt" /><span><strong>Avvii subito senza anticipare nulla</strong>: nessun acconto per partire.</span></li>
+        <li><V3Icon name="key" /><span><strong>Convalida e fase esecutiva incluse</strong>: ti assistiamo fino alla riconsegna delle chiavi.</span></li>
+        <li><V3Icon name="flag" /><span><strong>Il compenso si paga solo dopo l’udienza di convalida</strong>, mai prima, qualunque sia l’esito.</span></li>
+        <li><V3Icon name="store" /><span><strong>Vale anche per locali commerciali</strong> e per lo sfratto per finita locazione: stesse condizioni.</span></li>
+        <li><V3Icon name="gavel" /><span><strong>Le spese legali possono essere addebitate all’inquilino</strong> nella convalida.</span></li>
+      </ul>
+
+      <aside class="patto" aria-labelledby="patto-title">
+        <h3 id="patto-title"><V3Icon name="handshake" /> Il Patto Sfratto Sicuro</h3>
+        <p class="patto__sub">Non uno slogan: una clausola scritta nel mandato che firmi prima di partire.</p>
+        <ol>
+          <li><span>Parti con <strong>zero anticipi</strong>.</span></li>
+          <li><span>Il compenso di <strong>{price} (IVA e cassa incluse)</strong> è dovuto solo <strong>dopo l’udienza per la convalida</strong> dello sfratto, qualunque ne sia l’esito.</span></li>
+          <li><span>Dopo la convalida ti assistiamo, senza compensi aggiuntivi, <strong>fino al rilascio dell’immobile e alla riconsegna delle chiavi</strong>.</span></li>
+          <li><span>Se l’inquilino si oppone e serve il giudizio di merito, <strong>nulla prosegue senza un preventivo scritto e il tuo consenso</strong>.</span></li>
+        </ol>
+      </aside>
+    </div>
+
+    <p class="price__note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>{formatBusinessEuro(live.convalidaMin)}–{formatBusinessEuro(live.convalidaMax)}</strong> per la fase di convalida (contributo unificato, marca, notifiche) e circa <strong>{formatBusinessEuro(live.totaleConEsecuzione)} in totale</strong> se serve il rilascio forzato con l’ufficiale giudiziario. Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
+
+    <details class="compare">
+      <summary><h3>Occhio ai preventivi «solo convalida»</h3><span class="compare__caret" aria-hidden="true">+</span></summary>
+      <p>Molte offerte online («da €500–800») coprono solo la prima fase. Se l’inquilino non lascia l’immobile, precetto e fase esecutiva si pagano a parte. Qui è tutto dentro, con un solo prezzo.</p>
+      <div class="compare__wrap">
+        <table>
+          <thead>
+            <tr><th scope="col"><span class="sr-only">Voce</span></th><th scope="col">Preventivi «solo convalida»</th><th scope="col">Sfratto Sicuro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Convalida dello sfratto</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Precetto e fase esecutiva <span class="gloss">i passaggi per far liberare davvero l’immobile</span></td><td>di solito a parte, a preventivo</td><td>✓ inclusi</td></tr>
+            <tr><td>Assistenza fino alle chiavi</td><td>–</td><td>✓</td></tr>
+            <tr><td>IVA e cassa</td><td>spesso escluse</td><td>✓ incluse</td></tr>
+            <tr><td>Anticipi</td><td>di norma acconti per fase</td><td>zero</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare__note">Confronto indicativo basato su preventivi pubblicati online: verifica sempre cosa copre esattamente un preventivo.</p>
+    </details>
+
+    <div class="price__cta">
+      <a href="#form-rapido" class="btn btn--act">Verifica se puoi partire</a>
+      <a href={contatti.telefonoTelLink} class="btn btn--paper"><V3Icon name="phone" /><span>Chiama ora: <strong>{phoneShort}</strong></span></a>
+    </div>
+  </div>
+</section>

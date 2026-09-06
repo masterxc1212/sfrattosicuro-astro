@@ -1,0 +1,27 @@
+---
+/**
+ * V3KeyQuestions.astro — le tre domande più aperte, subito dopo il prezzo (Clarity 2026-09-05:
+ * le FAQ sono la sezione più letta ma stanno troppo in basso). Testi presi da config.faq, nessun testo nuovo.
+ */
+interface Props { faqSection: { sectionId: string; items: { q: string; a: string }[] } }
+const { faqSection } = Astro.props;
+const WANTED = [/^E se dopo la convalida/i, /^In quanto tempo si ottiene/i, /^Cosa succede se l.inquilino si oppone/i];
+const picked = WANTED.map((re) => faqSection.items.find((it) => re.test(it.q))).filter(Boolean) as { q: string; a: string }[];
+---
+{picked.length === 3 && (
+  <section id="domande-decisive" class="section cv" aria-labelledby="keyq-title">
+    <div class="wrap">
+      <p class="doc-label" data-n="02">Prima di chiamare</p>
+      <h2 id="keyq-title" class="section-title">Le tre domande che ci fanno tutti</h2>
+      <div class="keyq__grid">
+        {picked.map((it) => (
+          <article class="keyq__card">
+            <h3 class="keyq__q">{it.q}</h3>
+            <p class="keyq__a" set:html={it.a}></p>
+          </article>
+        ))}
+      </div>
+      <p class="keyq__more"><a href={`#${faqSection.sectionId}`}>Tutte le domande e le risposte</a></p>
+    </div>
+  </section>
+)}

@@ -1,0 +1,110 @@
+---
+/**
+ * V3Hero.astro — prima schermata: promessa, tre timbri (prezzo, anticipi, tempi), modulo a due campi.
+ * Il modulo mantiene id, name e campi nascosti del vecchio hero (#hero-form, telefono-hero, email-hero):
+ * li usano form-validation.js, LandingAdsBootstrap, AdAttributionFields e l'intake PHP.
+ * Su mobile l'ordine è: titolo → timbri → modulo → punti chiave (il modulo resta nella prima schermata).
+ */
+import V3Icon from './V3Icon.astro';
+import { contatti, orari, pricing, socialProof, tempi, formatBusinessEuro } from '../../../lib/business';
+
+interface Props {
+  hero: any;
+  redirectUrl?: string;
+}
+const { hero, redirectUrl = '/grazie.html' } = Astro.props;
+const bulletDetails: string[] = hero.bulletDetails || [];
+const price = formatBusinessEuro(pricing.compensoComplessivo);
+const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').replace(':00', '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(':00', '').replace(':00', '')}`;
+---
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__grid">
+
+    <div class="hero__copy">
+      <p class="hero__kicker">
+        <span>Avv. Danilo Ansalone</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Solo sfratti dal 2018</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span class="rating"><V3Icon name="star" fill /><span><span data-live-rating>5.0</span> su Google (<span data-live-total>{socialProof.googleReviewsTotal}</span>)</span></span>
+      </p>
+      <h1 id="hero-title" class="hero__title">Avvocato per sfratto per morosità</h1>
+      <p class="hero__sub">Non solo la convalida: ti assistiamo <strong>fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.</p>
+
+      <div class="stamps" role="list" aria-label="I tre punti fermi">
+        <div class="stamp" role="listitem"><span class="stamp__v">{price}</span><span class="stamp__l">IVA e cassa incluse, fino alle chiavi</span></div>
+        <div class="stamp" role="listitem"><span class="stamp__v">Zero</span><span class="stamp__l">anticipi: paghi dopo l’udienza</span></div>
+        <div class="stamp" role="listitem"><span class="stamp__v">{tempi.convalidaMediaShort.replace(' gg', '')}<small style="font-size:.55em"> gg</small></span><span class="stamp__l">in media alla convalida</span></div>
+      </div>
+    </div>
+
+    <div class="hero__form">
+      <div class="card-form">
+        <p class="card-form__eyebrow">Valutazione gratuita</p>
+        <h2 class="card-form__title">{hero.formTitle}</h2>
+        <p class="card-form__sub">Ti richiamiamo noi, senza impegno. Bastano due dati.</p>
+
+        <form action="/php/invia-email.php" method="POST" id="hero-form">
+          <div class="field">
+            <label for="telefono-hero">Telefono</label>
+            <input type="tel" name="telefono" id="telefono-hero" placeholder={hero.formPhonePlaceholder} inputmode="tel" minlength="8" required aria-required="true" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="email-hero">Email</label>
+            <input type="email" name="email" id="email-hero" placeholder="Per inviarti l’accesso alla tua pratica" autocomplete="email" inputmode="email" required aria-required="true">
+          </div>
+
+          <input type="hidden" name="nome" value="">
+          <input type="hidden" name="form_source" value={hero.formSource}>
+          <input type="hidden" name="gclid" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="utm_term" value="">
+          <input type="hidden" name="keyword" value="">
+          <input type="hidden" name="utm_content" value="">
+          <input type="hidden" name="matchtype" value="">
+          <input type="hidden" name="redirect_url" value={redirectUrl}>
+
+          <button type="submit" class="btn btn--act btn--block card-form__submit" aria-label="Invia la richiesta di valutazione gratuita">
+            <V3Icon name="send" />
+            <span>{hero.formSubmitLabel}</span>
+          </button>
+          <p class="card-form__hours">Ti richiamiamo entro 2 ore lavorative · {hours}</p>
+
+          <p class="card-form__or">oppure</p>
+          <a href={contatti.telefonoTelLink} class="btn btn--ghost btn--block card-form__call" aria-label="Chiama ora lo studio">
+            <V3Icon name="phone" />
+            <span>Chiama ora: <strong>{phoneShort}</strong></span>
+          </a>
+
+          <p class="card-form__fine">Ti richiama lo studio dell’Avv. Ansalone dal numero <strong>{phoneShort}</strong>: salvalo in rubrica. Nessun call center. Servizio riservato a proprietari e locatori.</p>
+          <p class="card-form__fine">Inviando accetti la <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. I tuoi dati non verranno condivisi.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero__copy-more">
+      <ul class="points" aria-label="Cosa comprende">
+        {hero.bullets.map((bullet: string, i: number) => (
+          <li>
+            <V3Icon name="checkCircle" />
+            {bulletDetails[i] ? (
+              <span class="ss-toggle-wrap">
+                <button type="button" class="ss-toggle" aria-expanded="false" aria-controls={`hero-bullet-more-${i}`}>
+                  <span set:html={bullet}></span>
+                  <span class="ss-toggle-caret" aria-hidden="true">+</span>
+                </button>
+                <span id={`hero-bullet-more-${i}`} class="ss-toggle-more" hidden>{bulletDetails[i]}</span>
+              </span>
+            ) : (
+              <span set:html={bullet}></span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+/** V3Founder.astro — il tuo avvocato. Foto in tre tagli (360/560/800) generati da sharp: la sorgente era 714 KB. */
+import V3Icon from './V3Icon.astro';
+const base = '/assets/img/ufficio/avv-ansalone';
+---
+<section id="il-tuo-avvocato" class="section cv" aria-labelledby="avvocato-title">
+  <div class="wrap who">
+    <div class="who__media">
+      <img
+        src={`${base}-560.webp`}
+        srcset={`${base}-360.webp 360w, ${base}-560.webp 560w, ${base}-800.webp 800w`}
+        sizes="(min-width: 800px) 380px, (min-width: 480px) 420px, 92vw"
+        alt="Avv. Danilo Ansalone, fondatore di Sfratto Sicuro"
+        width="560" height="556" loading="lazy" decoding="async">
+      <div class="who__plate"><strong>Avv. Danilo Ansalone</strong>Foro di Salerno · fondatore di Sfratto Sicuro</div>
+    </div>
+    <div class="who__copy">
+      <p class="doc-label" data-n="06">Chi segue la pratica</p>
+      <h2 id="avvocato-title" class="section-title">Il tuo avvocato</h2>
+      <p>Sfratto Sicuro è il progetto dell’<strong>Avv. Danilo Ansalone</strong>, dedicato esclusivamente alle procedure di sfratto e al diritto delle locazioni.</p>
+      <p><strong>Solo sfratti dal 2018.</strong> Predisponiamo gli atti dalle centrali operative di Milano e Salerno e, grazie a una rete di domiciliatari, seguiamo le pratiche presso i Tribunali di tutta Italia.</p>
+      <p>Un solo referente segue il tuo caso passo passo: dalla prima valutazione fino al rilascio dell’immobile.</p>
+      <ul class="who__facts">
+        <li><V3Icon name="gavel" /> Solo sfratti, dal 2018</li>
+        <li><V3Icon name="folder" /> ~200 procedure l’anno</li>
+        <li><V3Icon name="map" /> Rete in tutti i Tribunali</li>
+        <li><V3Icon name="star" fill class="ic--star" /> <span data-live-rating>5.0</span>&nbsp;su Google</li>
+      </ul>
+      <div class="who__cta"><a href="#contatti" class="btn btn--act">Richiedi la richiamata gratuita</a></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+---
+/**
+ * LandingAdsBootstrap.astro — script di testa condiviso dalle landing Ads (estratto il 2026-09-06
+ * da LandingExperimentPage per riusarlo nella landing-v3 ridisegnata). Cattura gclid/UTM nei moduli
+ * e carica gtag.js di Ads alla prima interazione. Va messo nel <head>, DOPO <EngagedLoader />.
+ */
+---
+<script is:inline>
+  // is:inline (2026-09-05): prima Astro lo bundlava e lo spostava in fondo al body, dopo l'isola
+  // GA4. Risultato: la prima gtag.js in pagina era quella "G-..." e il loader del numero
+  // d'inoltro (wcm) non partiva. Ora gira davvero nel <head> e carica per prima la libreria Ads.
+  (function(){
+    const CONSENT_KEY = 'ss_cookie_consent_v1';
+    const AW_ID = 'AW-10983419342';
+    function getParam(name){
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name) || sessionStorage.getItem(name) || '';
+    }
+    function captureTrackingParams(){
+      const gclid = getParam('gclid');
+      const utmSource = getParam('utm_source');
+      const utmMedium = getParam('utm_medium');
+      const utmCampaign = getParam('utm_campaign');
+      const utmTerm = getParam('utm_term');
+      const utmContent = getParam('utm_content');
+      const keyword = getParam('keyword');
+      const matchtype = getParam('matchtype');
+      document.querySelectorAll('form[action="/php/invia-email.php"]').forEach(function(f){
+        var set = function(n, v){ var i = f.querySelector('[name="'+n+'"]'); if(i) i.value = v; };
+        set('gclid', gclid); set('utm_source', utmSource); set('utm_medium', utmMedium); set('utm_campaign', utmCampaign); set('utm_term', utmTerm); set('utm_content', utmContent); set('keyword', keyword); set('matchtype', matchtype);
+      });
+    }
+    function readConsent(){ try { const raw = localStorage.getItem(CONSENT_KEY); return raw ? JSON.parse(raw) : null; } catch { return null; } }
+    function initAdsIfNeeded(consent){
+      if (!consent?.marketing) return;
+      if (window.__landingAdsLoaded) return;
+      window.__landingAdsLoaded = true;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = window.gtag || gtag;
+      window.gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+      window.gtag('js', new Date());
+      // NON rimettere `send_page_view: false` qui (2026-08-11).
+      // Quel flag, impostato su una destinazione AW dopo il config di GA4,
+      // sopprimeva la page_view automatica dell'INTERA pagina: GA4 registrava
+      // 11 page_view su 239 sessioni e nei report comparivano solo le
+      // grazie.html — cioe' le uniche pagine il cui config AW non aveva il flag.
+      // Le landing restavano invisibili in Analytics. Nessuna conversione e'
+      // legata alla page view di queste pagine: «Sfratto Sicuro · Modulo» scatta
+      // sul caricamento di grazie.html, «· WhatsApp» e «· Click Telefono» su
+      // evento con etichetta. Vedi docs/promo-v3-agosto-2026.md §12.
+      window.gtag('config', AW_ID, { transport_type: 'beacon' });
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+        var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + AW_ID; s.setAttribute('data-landing-aw', AW_ID); document.head.appendChild(s);
+      }
+    }
+    // Applica al DOM quando è pronto (la call diretta è in <head>, form non ancora nel DOM)
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', captureTrackingParams, { once: true });
+    } else {
+      captureTrackingParams();
+    }
+    // Belt-and-suspenders: ri-applica al submit (copre form dinamici)
+    document.addEventListener('submit', function(ev) {
+      if (ev.target && ev.target.matches && ev.target.matches('form[action="/php/invia-email.php"]')) {
+        captureTrackingParams();
+      }
+    }, true);
+    // Allineata alla landing principale: tag Ads EAGER, senza gate consenso (decisione utente 2026-07-16).
+    // Così il gclid viene salvato nel cookie e le conversioni (modulo su grazie, WhatsApp, telefono) si attribuiscono.
+    // Round 3 (2026-09-05): anche gtag.js di Ads parte alla prima interazione (o 8 s). Il gclid
+    // e' gia' catturato sopra e salvato da AdAttributionFields; le conversioni si attribuiscono
+    // comunque. Il numero d'inoltro compare al primo tocco/movimento, prima che si possa comporre.
+    if (typeof window.__ssWhenEngaged === 'function') window.__ssWhenEngaged(function(){ initAdsIfNeeded({ marketing: true }); });
+    else initAdsIfNeeded({ marketing: true });
+  })();
+</script>

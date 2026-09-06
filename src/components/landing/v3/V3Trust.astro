@@ -1,0 +1,13 @@
+---
+/** V3Trust.astro — fascia con i quattro fatti verificabili (numeri pubblicabili da PRODUCT.md). */
+import V3Icon from './V3Icon.astro';
+import { socialProof } from '../../../lib/business';
+---
+<section class="trust" aria-label="Punti di riferimento dello studio">
+  <div class="wrap trust__row">
+    <div class="trust__item"><V3Icon name="star" fill class="ic--star" /><span><strong><span data-live-rating>5.0</span> su 5 su Google</strong><span data-live-total>{socialProof.googleReviewsTotal}</span> recensioni verificate</span></div>
+    <div class="trust__item"><V3Icon name="folder" /><span><strong>~200 procedure l’anno</strong>solo sfratti, dal 2018</span></div>
+    <div class="trust__item"><V3Icon name="map" /><span><strong>Tutti i Tribunali d’Italia</strong>rete di domiciliatari</span></div>
+    <div class="trust__item"><V3Icon name="badge" /><span><strong>Avv. Danilo Ansalone</strong>iscritto al Foro di Salerno</span></div>
+  </div>
+</section>

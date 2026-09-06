@@ -1,0 +1,28 @@
+---
+/**
+ * V3Header.astro — testata compatta: marchio + orari + «Chiama».
+ * `#site-header` è letto da main.js per l'offset dello scroll: non rinominare.
+ * Il testo del bottone contiene il numero: Google lo riscrive con quello d'inoltro.
+ */
+import V3Icon from './V3Icon.astro';
+import { contatti, orari } from '../../../lib/business';
+const phoneShort = contatti.telefonoFormatted.replace('+39 ', '').replace(' 8089 ', ' 8089');
+---
+<header id="site-header" role="banner">
+  <div class="wrap hd">
+    <a href="/" class="hd__brand" aria-label="Sfratto Sicuro">
+      <img src="/assets/img/logo/logo-88.webp" width="40" height="40" alt="" fetchpriority="high" decoding="async">
+      <span>
+        <span class="hd__name">Sfratto Sicuro</span>
+        <span class="hd__sub">Avv. Danilo Ansalone</span>
+      </span>
+    </a>
+    <div class="hd__right">
+      <p class="hd__hours">{orari.settimanaLabel.replace('-', '–')} · {orari.sabatoLabel.replace('Sabato', 'Sab')}<strong>Prima valutazione gratuita</strong></p>
+      <a href={contatti.telefonoTelLink} class="btn btn--act hd__call" aria-label={`Chiama lo studio al numero ${phoneShort}`}>
+        <V3Icon name="phone" />
+        <span>Chiama <span class="hd__call-num">{phoneShort}</span></span>
+      </a>
+    </div>
+  </div>
+</header>
