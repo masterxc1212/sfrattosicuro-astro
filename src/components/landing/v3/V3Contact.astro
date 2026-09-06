@@ -4,10 +4,10 @@
  * I link a #form-rapido e #contatti aprono il popup «Lascia il numero» (delega in LandingV3CallbackModal).
  */
 import V3Icon from './V3Icon.astro';
-import { contatti, orari } from '../../../lib/business';
+import { contatti, orari, telefonoBreve } from '../../../lib/business';
 interface Props { contactForm: any; formSource?: string; redirectUrl?: string }
 const { contactForm, formSource = 'bottom_form_v3', redirectUrl = '/grazie.html' } = Astro.props;
-const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 const hours = `${orari.settimanaLabel.replace('-', '–').replace(/:00/g, '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(/:00/g, '')}`;
 ---
 <section id={contactForm.sectionId} class="section cv" aria-labelledby="contatti-title">

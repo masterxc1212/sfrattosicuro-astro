@@ -5,12 +5,12 @@
  * Il testo del bottone contiene il numero: Google lo riscrive con quello d'inoltro.
  */
 import V3Icon from './V3Icon.astro';
-import { contatti, orari } from '../../../lib/business';
-const phoneShort = contatti.telefonoFormatted.replace('+39 ', '').replace(' 8089 ', ' 8089');
+import { contatti, orari, telefonoBreve } from '../../../lib/business';
+const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 ---
 <header id="site-header" role="banner">
   <div class="wrap hd">
-    <a href="/" class="hd__brand" aria-label="Sfratto Sicuro">
+    <a href="/" class="hd__brand">
       <img src="/assets/img/logo/logo-88.webp" width="40" height="40" alt="" fetchpriority="high" decoding="async">
       <span>
         <span class="hd__name">Sfratto Sicuro</span>

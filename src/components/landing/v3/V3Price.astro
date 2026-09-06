@@ -6,10 +6,10 @@
  * spese vive ~€100-150 / ~€300 totali, mai anticipate. Testi ripresi dal vecchio LandingV3PriceSection.
  */
 import V3Icon from './V3Icon.astro';
-import { pricing, contatti, formatBusinessEuro } from '../../../lib/business';
+import { pricing, contatti, formatBusinessEuro, telefonoBreve } from '../../../lib/business';
 const price = formatBusinessEuro(pricing.compensoComplessivo);
 const live = pricing.speseVive;
-const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 ---
 <section id="prezzo" class="price cv" aria-labelledby="prezzo-title">
   <div class="wrap">

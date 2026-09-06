@@ -173,6 +173,13 @@ export const contatti = businessConfig.contatti;
 // Convenience helpers
 // =============================================================================
 
+/**
+ * Numero di telefono in forma breve nazionale, "02 80898395": lo STESSO formato che
+ * WebsiteCallTracking dichiara a Google (PHONE_NUMBER). Le landing devono mostrare il
+ * numero in un solo formato, altrimenti il numero d'inoltro non sostituisce tutti i link.
+ */
+export const telefonoBreve = contatti.telefonoCanonical.replace('+39', '').replace(/^(\d{2})(\d+)$/, '$1 $2');
+
 /** Formatta un importo intero nello stile usato nelle landing: "€1.300". */
 export function formatBusinessEuro(value: number): string {
   return `€${Math.trunc(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;

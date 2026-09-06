@@ -205,3 +205,28 @@ Alcuni script che operano sulla campagna Google Ads vivono storicamente in `C:\U
 - **Cache CDN SiteGround**: modifiche a file statici (`main.js`, `calculator.js`, ecc.) NON si propagano istantaneamente al browser dopo il deploy. Il CDN continua a servire la versione cached finché non scade il TTL. **Soluzione**: helper `src/lib/asset-version.ts` con `versionedSrc('/path/to/file.js')` calcola SHA-256 del file a build time e aggiunge `?v=<hash>`. File invariato = hash uguale = cache CDN lavora normalmente. Applicato su landing-v2 e landing-v3.
 - **Dropbox + Astro build**: Dropbox client tiene handle aperti su cartelle sincronizzate -> EBUSY durante `rmdir .astro` fatto da Astro a inizio build. Fix: `Set-Content -Path ".astro" -Stream com.dropbox.ignored -Value 1` (idem per `dist` e `node_modules`). Per evitare del tutto il problema, il `dist/` di build è ridiretto fuori dalla cartella Dropbox tramite `outDir` in `astro.config.mjs` (`~/.astro-local-builds/retrograde-ring/dist`).
 - **Selezione file da committare**: usare `git add <path-specifici>` quando il `git status` mostra modifiche di lavori paralleli (es. `_gclid-patch/`, `public/.htaccess`) che non c'entrano con il commit corrente. Evitare `git add -A` se non si è sicuri di voler portare via tutto.
+
+## Landing V3 ridisegnata (aggiornamento 6 settembre 2026)
+
+`/landing-v3/` non usa più `LandingExperimentPage`: la rotta monta
+`src/components/landing/v3/V3Page.astro`, con componenti propri (`V3Hero`, `V3Price`, `V3Steps`, ...)
+e un foglio di stile unico `src/styles/landing-v3.css` (28 KB al posto di `landing.css` 78 KB +
+`landing-icons.css`). Icone SVG inline via `V3Icon.astro`, niente Font Awesome. `/landing-v4/` e le
+pagine agosto restano sul componente precedente e su `landing.css`: non toccarle per intervenire sulla v3.
+
+Cosa non cambiare senza controllare chi lo legge:
+- id dei moduli `hero-form`, `telefono-hero`, `email-hero`, `form-rapido`, sezioni `#prezzo`, `#faq`,
+  `#contatti`, `#recensioni-google`, `#il-tuo-avvocato`, `#come-funziona` (sitelink, main.js, BehaviourTracking);
+- `#google-reviews-grid`, `rating-number`, `rating-stars`, `total-reviews`, classe `review-card-google`
+  (li riscrive `reviews.js`); attributi `data-live-rating` / `data-live-total`;
+- i campi nascosti dei moduli (gclid/utm/keyword/matchtype/redirect_url/nome/form_source);
+- il numero di telefono va scritto SOLO come `telefonoBreve` (`src/lib/business.ts`, «02 80898395»):
+  è il formato che WebsiteCallTracking dichiara a Google per il numero d'inoltro.
+
+Lo script di testa Ads (gclid + gtag alla prima interazione) vive in
+`src/components/landing/LandingAdsBootstrap.astro`, condiviso da V3Page e LandingExperimentPage.
+
+Lighthouse mobile (build locale, `astro preview`): prima 0.94 (LCP 2,4 s, TBT 170 ms, 200 KiB),
+dopo 0.98-0.99 (LCP 2,1 s, TBT 40-70 ms, 172 KiB); accessibilità 1.0. Nota: con `content-visibility: auto`
+le schermate del pannello browser e di Chrome headless dopo lo scroll escono vuote (artefatto di cattura,
+succede anche sulla v4): per vedere una sezione nasconderla/mostrarla via JS o usare l'hash nell'URL.

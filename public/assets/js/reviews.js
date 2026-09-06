@@ -92,7 +92,8 @@
   function handleData(d) {
     const rating = Number(d.rating || 0) || 5;
     const total  = Number(d.total_reviews ?? d.total ?? 0);
-    const list   = Array.isArray(d.reviews) ? d.reviews : [];
+    // 2026-09-06: le recensioni senza testo (solo stelle) non si mostrano come card vuote.
+    const list   = (Array.isArray(d.reviews) ? d.reviews : []).filter(v => String(v.text || v.content || '').trim());
 
     updateWidgets(rating, total);
 

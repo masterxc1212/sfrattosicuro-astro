@@ -6,7 +6,7 @@
  * Su mobile l'ordine è: titolo → timbri → modulo → punti chiave (il modulo resta nella prima schermata).
  */
 import V3Icon from './V3Icon.astro';
-import { contatti, orari, pricing, socialProof, tempi, formatBusinessEuro } from '../../../lib/business';
+import { contatti, orari, pricing, socialProof, tempi, formatBusinessEuro, telefonoBreve } from '../../../lib/business';
 
 interface Props {
   hero: any;
@@ -15,7 +15,7 @@ interface Props {
 const { hero, redirectUrl = '/grazie.html' } = Astro.props;
 const bulletDetails: string[] = hero.bulletDetails || [];
 const price = formatBusinessEuro(pricing.compensoComplessivo);
-const phoneShort = contatti.telefonoFormatted.replace('+39 ', '');
+const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').replace(':00', '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(':00', '').replace(':00', '')}`;
 ---
 <section class="hero" id="hero" aria-labelledby="hero-title">
@@ -74,7 +74,7 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').rep
           <p class="card-form__hours">Ti richiamiamo entro 2 ore lavorative · {hours}</p>
 
           <p class="card-form__or">oppure</p>
-          <a href={contatti.telefonoTelLink} class="btn btn--ghost btn--block card-form__call" aria-label="Chiama ora lo studio">
+          <a href={contatti.telefonoTelLink} class="btn btn--ghost btn--block card-form__call">
             <V3Icon name="phone" />
             <span>Chiama ora: <strong>{phoneShort}</strong></span>
           </a>
