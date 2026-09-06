@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "verbale-di-rilascio-immobile",
+    title: "Verbale di rilascio dell'immobile: cos'è e a cosa serve per il proprietario",
+    description: "Verbale di rilascio dell'immobile: l'atto con cui l'ufficiale giudiziario ti riconsegna la casa dopo lo sfratto. Cosa contiene e a cosa serve.",
+    excerpt: "Dopo la convalida dello sfratto, il verbale di rilascio è il documento con cui l'ufficiale giudiziario ti riconsegna la casa e certifica data, stato dei luoghi, consegna delle chiavi e sorte delle cose lasciate dall'inquilino. Ecco cosa contiene e perché conservarlo.",
+    lead: "Il verbale di rilascio è l'atto che l'ufficiale giudiziario redige quando ti riconsegna l'immobile al termine dello sfratto. Ecco, dalla parte del proprietario, che cos'è, cosa contiene, in che momento arriva e perché conviene conservarlo con cura.",
+    publishedAt: "2026-09-06",
+    updatedAt: "2026-09-06",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-06. Keyword: verbale di rilascio immobile, vol 260, KD 0 (DataForSEO). Secondarie: verbale rilascio immobile e consegna chiavi, mobili lasciati dall'inquilino, spese esecuzione sfratto.",
+    html: `  <p>Hai ottenuto la convalida dello sfratto, l'inquilino è uscito e finalmente riprendi possesso della casa. Ma c'è un ultimo documento che vale la pena capire bene: il <strong>verbale di rilascio dell'immobile</strong>. È l'atto che l'ufficiale giudiziario redige nel momento in cui ti riconsegna l'appartamento al termine dell'esecuzione, e per te proprietario è molto più di una formalità: è la prova ufficiale che hai riavuto la casa, in che stato l'hai ritrovata e cosa è stato deciso per le eventuali cose lasciate dentro. Questa guida spiega, dalla parte del proprietario, che cos'è, cosa contiene, in che momento arriva e perché conviene conservarlo con cura.</p>
+
+  <h2>Che cos'è il verbale di rilascio dell'immobile</h2>
+  <p>Il <strong>verbale di rilascio dell'immobile</strong> è il processo verbale che l'<strong>ufficiale giudiziario</strong> (il pubblico ufficiale incaricato di eseguire i provvedimenti del giudice) scrive quando porta a termine l'esecuzione forzata per rilascio, cioè l'ultima fase dello sfratto. In quel momento l'ufficiale giudiziario ti <strong>immette nel possesso</strong> dell'immobile, ti consegna le chiavi e mette per iscritto tutto ciò che accade durante l'accesso.</p>
+  <p>È importante chiarire subito una cosa: il rilascio non è un atto "automatico" che scatta il giorno dopo la convalida. È una procedura vera e propria, disciplinata dal codice di procedura civile, che si conclude proprio con questo verbale. Il documento non lo prepari tu e non lo prepara il tuo avvocato: lo redige l'ufficiale giudiziario, che ne è l'autore pubblico. A te (o a chi designi al tuo posto) spetta essere presente e ricevere le chiavi.</p>
+
+  <h2>In che momento della procedura arriva il verbale</h2>
+  <p>Il verbale di rilascio è l'ultimo tassello di una sequenza. Vale la pena ricostruirla per capire dove si colloca.</p>
+  <h3>Prima: il preavviso di rilascio</h3>
+  <p>L'esecuzione non comincia a sorpresa. L'ufficiale giudiziario notifica prima un <strong>avviso</strong> con cui comunica alla persona tenuta a lasciare l'immobile il giorno e l'ora in cui si presenterà: la legge impone che questo preavviso arrivi <strong>almeno dieci giorni prima</strong>. È il cosiddetto <strong>preavviso di rilascio</strong>, che di solito segna l'inizio concreto del conto alla rovescia. Se vuoi approfondire questo passaggio, trovi una guida dedicata al <a href="/blog/preavviso-di-rilascio-immobile/">preavviso di rilascio dell'immobile</a>.</p>
+  <h3>Il giorno dell'accesso: immissione nel possesso e consegna delle chiavi</h3>
+  <p>Nel giorno e nell'ora fissati, l'ufficiale giudiziario si reca sul posto munito del <strong>titolo esecutivo</strong> (il documento, come l'ordinanza di convalida, che gli dà il potere di procedere) e del <strong>precetto</strong> (l'intimazione formale a rilasciare l'immobile). Se l'immobile è già libero, l'operazione è rapida: prende atto della situazione, ti immette nel possesso e ti consegna le chiavi. Se l'inquilino è ancora dentro o l'accesso è ostacolato, l'ufficiale giudiziario può tornare più volte e, quando serve, farsi assistere dalla <strong>forza pubblica</strong> e da un fabbro. In ogni caso, di ogni accesso resta traccia in un verbale. Su come funzionano concretamente questi accessi puoi leggere la guida allo <a href="/blog/sfratto-con-ufficiale-giudiziario/">sfratto con l'ufficiale giudiziario</a>.</p>
+
+  <h2>Cosa contiene il verbale di rilascio</h2>
+  <p>Non esiste un modulo unico valido per tutti i tribunali, ma il contenuto sostanziale è sempre lo stesso. In un verbale di rilascio ben fatto trovi in genere:</p>
+  <ul>
+    <li><strong>data, ora e luogo</strong> dell'accesso e i dati dell'ufficiale giudiziario procedente;</li>
+    <li>l'indicazione del <strong>titolo esecutivo</strong> in base al quale si procede (per esempio l'ordinanza di convalida) e degli estremi della causa;</li>
+    <li>chi era <strong>presente</strong>: il proprietario o il suo delegato, l'eventuale inquilino, l'avvocato, la forza pubblica, il fabbro;</li>
+    <li>l'<strong>immissione nel possesso</strong> a favore tuo o della persona che hai designato e la <strong>consegna delle chiavi</strong>;</li>
+    <li>una descrizione dello <strong>stato dei luoghi</strong> al momento della riconsegna;</li>
+    <li>l'indicazione degli eventuali <strong>beni mobili</strong> trovati nell'immobile e dei provvedimenti presi al riguardo;</li>
+    <li>le <strong>spese</strong> anticipate durante l'esecuzione, che l'ufficiale giudiziario è tenuto a specificare nel verbale.</li>
+  </ul>
+
+  <h2>I mobili e le cose lasciate dall'inquilino</h2>
+  <p>È una delle domande più frequenti: cosa succede se l'inquilino se ne va lasciando dentro mobili, elettrodomestici, scatoloni? Non puoi buttare via nulla di tua iniziativa, perché quei beni non sono tuoi. La legge prevede una procedura precisa e il verbale ne dà atto.</p>
+  <p>Quando nell'immobile ci sono <strong>beni mobili che non devono essere consegnati</strong> a te, l'ufficiale giudiziario <strong>intima</strong> a chi deve lasciarli (o a chi risulta esserne proprietario) di <strong>asportarli</strong>, assegnando un termine. Se il termine passa senza che nessuno li porti via, su richiesta e a spese di chi ha avviato l'esecuzione (cioè tu, come parte istante) l'ufficiale giudiziario stima il loro <strong>valore</strong> e le spese di custodia e asporto. Da lì due strade: se i beni valgono più di quanto costa custodirli, viene nominato un <strong>custode</strong> che li trasferisce altrove (in vista di un'eventuale vendita); se invece valgono poco o nessuno anticipa le spese, i beni si considerano <strong>abbandonati</strong> e l'ufficiale giudiziario può disporne lo smaltimento o la distruzione. Regole particolari valgono per i documenti legati a un'attività d'impresa o professionale, che vanno conservati per due anni.</p>
+  <p>Il punto pratico per te è semplice: <strong>lascia gestire questa fase all'ufficiale giudiziario e al tuo avvocato</strong>, e fai in modo che tutto risulti dal verbale. Agire "di testa tua", gettando le cose dell'inquilino, può esporti a richieste di risarcimento.</p>
+
+  <h2>Perché il verbale è importante per te proprietario</h2>
+  <p>Conservare il verbale di rilascio conviene per almeno tre motivi concreti.</p>
+  <p>Primo, è la <strong>prova ufficiale</strong> che hai riottenuto la disponibilità dell'immobile e da quando: una data certa utile in ogni rapporto successivo, dalla disdetta delle utenze all'eventuale nuova locazione. Secondo, la <strong>descrizione dello stato dei luoghi</strong> fotografa com'era la casa alla riconsegna: è la base per valutare danni e per capire se e in che misura trattenere il deposito cauzionale o chiedere il risarcimento. Terzo, il verbale <strong>specifica le spese</strong> anticipate nell'esecuzione: quelle spese vengono poi liquidate dal giudice dell'esecuzione con un provvedimento che <strong>costituisce titolo esecutivo</strong>, cioè un documento con cui puoi agire per recuperarle. In generale, nella procedura di sfratto le <strong>spese legali possono essere poste a carico dell'inquilino moroso</strong>: non è un automatismo garantito, ma una possibilità che dipende dalle decisioni del giudice.</p>
+
+  <h2>Verbale di rilascio e verbale di riconsegna: non confonderli</h2>
+  <p>Attenzione a due documenti che si somigliano nel nome ma sono cose diverse. Il <strong>verbale di riconsegna</strong> è quello che proprietario e inquilino firmano <strong>di comune accordo</strong> alla fine di una locazione che si chiude in modo pacifico: le due parti girano l'immobile, annotano lo stato e le letture dei contatori, si scambiano le chiavi. Il <strong>verbale di rilascio</strong>, invece, è redatto dall'<strong>ufficiale giudiziario</strong> all'esito di un'esecuzione forzata, quando la restituzione avviene sotto la spinta di un provvedimento del giudice e non per accordo. Se sei ancora nella fase amichevole, ti è più utile la guida al <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a>.</p>
+
+  <h2>Errori da evitare</h2>
+  <ul>
+    <li><strong>Non presentarsi (o non delegare nessuno) all'accesso.</strong> L'immissione nel possesso e la consegna delle chiavi avvengono a favore tuo o di una persona che designi: se non c'è nessuno, l'operazione si complica.</li>
+    <li><strong>Smaltire da soli i beni dell'inquilino.</strong> Vanno seguiti i passaggi previsti dalla legge; farne a meno può trasformarti da creditore in soggetto che deve risarcire.</li>
+    <li><strong>Non leggere lo stato dei luoghi riportato nel verbale.</strong> È il tuo punto di partenza per danni e cauzione: verifica che rispecchi la realtà prima che l'accesso si chiuda.</li>
+    <li><strong>Buttare via il verbale.</strong> Ti servirà per le utenze, per i conteggi con l'inquilino e per recuperare le spese.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Chi redige il verbale di rilascio?</h3>
+  <p>Lo redige l'ufficiale giudiziario, che è il pubblico ufficiale incaricato dell'esecuzione. Non lo prepara il proprietario né il suo avvocato.</p>
+  <h3>Devo essere presente il giorno del rilascio?</h3>
+  <p>Sì, tu o una persona che designi: l'immissione nel possesso e la consegna delle chiavi avvengono a favore tuo o del tuo delegato. In genere l'avvocato coordina l'accesso.</p>
+  <h3>Posso buttare i mobili lasciati dall'inquilino appena riavuta la casa?</h3>
+  <p>No. La legge prevede un'intimazione ad asportarli con un termine e, in mancanza, una procedura per la custodia, l'eventuale vendita o lo smaltimento. Meglio far gestire il tutto all'ufficiale giudiziario, con annotazione a verbale.</p>
+  <h3>Il verbale mi serve per recuperare le spese?</h3>
+  <p>Contribuisce: nel verbale l'ufficiale giudiziario specifica le spese anticipate, che il giudice dell'esecuzione liquida con un provvedimento che vale come titolo esecutivo per il recupero.</p>
+
+  <h2>In conclusione</h2>
+  <p>Il verbale di rilascio è il documento che chiude la procedura di sfratto e certifica che la casa è tornata nelle tue mani: attesta la data, lo stato dei luoghi, la consegna delle chiavi e la sorte delle cose lasciate dentro. Non è un foglio da archiviare e dimenticare, ma uno strumento che ti serve per le utenze, per i conteggi con l'inquilino e per recuperare le spese sostenute. Se stai affrontando uno sfratto e vuoi arrivare al rilascio senza passi falsi, puoi far esaminare la tua situazione dai professionisti di <a href="/servizi/sfratto-per-morosita/">Sfratto Sicuro</a>, che seguono la procedura dalla parte del proprietario.</p>
+  <p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale su un caso concreto. Norme richiamate: artt. 605 (precetto per consegna o rilascio), 608 (modo del rilascio), 609 (provvedimenti circa i mobili estranei all'esecuzione), 610 (provvedimenti temporanei) e 611 (spese dell'esecuzione) del codice di procedura civile.</em></p>
+`,
+  },
+  {
     slug: "come-ottenere-cin-affitti-brevi",
     title: "Come ottenere il CIN per gli affitti brevi: guida per il proprietario",
     description: "Come ottenere il CIN per gli affitti brevi: richiesta gratuita online con SPID, requisiti di sicurezza, dove esporlo e le sanzioni per il proprietario.",
