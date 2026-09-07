@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: 'affittare-una-stanza',
+    title: 'Affittare una stanza: la guida del proprietario a contratto, tasse e regole',
+    description: 'Affittare una stanza: che contratto usare, come registrarlo, la cedolare secca e gli errori da evitare. Guida pratica per il proprietario.',
+    excerpt: 'Anche affittare una singola stanza è a tutti gli effetti una locazione: serve un contratto scritto, la registrazione e la dichiarazione del canone. Ecco, dalla parte del proprietario, che contratto usare, come metterlo in regola con il fisco e quali errori evitare.',
+    lead: 'Affittare una stanza, in casa propria o in un immobile diviso tra coinquilini, è legittimo ma non informale: resta una locazione. Ecco che contratto scegliere, come registrarlo, quali tasse si pagano e cosa scrivere nero su bianco.',
+    publishedAt: '2026-09-07',
+    updatedAt: '2026-09-07',
+    category: 'Locazioni',
+    readingTime: '7 min',
+    sourceNote: 'Generato automaticamente 2026-09-07. Keyword: affittare una stanza, vol 110, KD 6 (DataForSEO). Secondarie: contratto per affittare una stanza, affittare una stanza della propria casa, affittare una stanza senza contratto.',
+    html: `  <p>Hai una stanza libera in casa o un immobile con una camera che vorresti mettere a reddito e ti stai chiedendo se e come si può fare in regola. <strong>Affittare una stanza</strong> è del tutto legittimo e può essere un'ottima integrazione al reddito, ma non è una faccenda informale da chiudere con una stretta di mano: anche l'affitto di una singola camera è a tutti gli effetti una locazione, con un contratto da scrivere, registrare e tassare. Questa guida spiega, dalla parte del proprietario, che contratto usare, come metterlo in regola con il fisco, cosa scrivere nero su bianco e quali errori evitare per non trasformare una piccola entrata in un problema.</p>
+
+  <h2>Affittare una stanza è comunque una locazione</h2>
+  <p>Il primo punto da chiarire è che dare in affitto una stanza, anche solo per qualche mese, resta una <strong>locazione ad uso abitativo</strong>. Non cambia nulla rispetto all'affitto di un intero appartamento sul piano dei principi: serve un contratto scritto, va registrato, il canone va dichiarato. La sola differenza pratica è che l'oggetto del contratto non è l'immobile intero, ma <strong>una porzione</strong> di esso (la stanza) più l'uso condiviso degli spazi comuni come cucina, bagno e ingresso.</p>
+  <p>Questo vale in due situazioni diverse. La prima è quando <strong>affitti una stanza della propria casa</strong>, cioè continui ad abitare nell'immobile e cedi una camera a un inquilino con cui condividi gli spazi. La seconda è quando affitti una stanza in un immobile dove non vivi, per esempio un appartamento che dividi in più camere date a persone diverse (i classici coinquilini). In entrambi i casi il rapporto è una locazione e il contratto va formalizzato. La forma scritta non è un vezzo: la legge sulle locazioni abitative la richiede espressamente per la validità del contratto.</p>
+
+  <h2>Che contratto usare per affittare una stanza</h2>
+  <p>Non esiste un "contratto per la stanza" a sé stante: si usano gli stessi schemi delle locazioni abitative, adattando l'oggetto. La scelta della <strong>durata</strong> dipende dall'uso e dalle tue esigenze.</p>
+  <h3>Canone libero 4+4</h3>
+  <p>È il contratto ordinario: <strong>quattro anni più quattro</strong> di rinnovo automatico. Il canone lo stabilisci liberamente con l'inquilino. È adatto se cerchi stabilità, meno se pensi di riavere presto la stanza a disposizione, perché per riprenderla alla prima scadenza servono i motivi previsti dalla legge (per esempio destinare l'immobile a uso proprio o venderlo).</p>
+  <h3>Canone concordato 3+2</h3>
+  <p>Dura <strong>tre anni più due</strong> e il canone non è libero: deve rispettare i valori fissati dagli accordi territoriali tra le associazioni di proprietari e inquilini della zona. In cambio ottieni vantaggi fiscali, tra cui, dove previsto, un'aliquota agevolata della cedolare secca. È molto usato nelle città universitarie.</p>
+  <h3>Contratto transitorio o per studenti</h3>
+  <p>Se la stanza serve per un periodo limitato e per una <strong>esigenza temporanea</strong> documentata (lavoro fuori sede, trasferta), esiste il contratto transitorio, di durata breve. Se l'inquilino è uno studente universitario fuori sede, c'è il contratto <strong>per studenti universitari</strong>, pensato proprio per chi frequenta l'università in un comune diverso da quello di residenza. Sono le forme più adatte all'affitto di camere in città con molti studenti o lavoratori pendolari.</p>
+  <p>Per orientarti tra le diverse tipologie e capire quale conviene al tuo caso, può esserti utile la nostra pagina dedicata ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+
+  <h2>Registrazione e tasse: cosa devi fare</h2>
+  <p>Qui si concentrano gli obblighi che molti sottovalutano. Se il contratto dura <strong>più di 30 giorni</strong> nell'anno con lo stesso inquilino, va <strong>registrato</strong> presso l'Agenzia delle Entrate. La legge mette l'onere della registrazione in capo a te proprietario, entro il termine di <strong>trenta giorni</strong> dalla firma, con l'obbligo di darne comunicazione all'inquilino e, se l'immobile è in condominio, all'amministratore.</p>
+  <p>Sul fronte delle imposte hai due strade. Con il <strong>regime ordinario</strong> paghi l'imposta di registro (in genere il 2% del canone annuo, divisibile con l'inquilino) e dichiari il reddito ai fini IRPEF. In alternativa puoi optare per la <strong>cedolare secca</strong>, un'imposta sostitutiva che assorbe IRPEF, addizionali e imposte di registro e bollo sul contratto. L'aliquota ordinaria è del <strong>21%</strong>, ridotta al <strong>10%</strong> per i contratti a canone concordato nei comuni ad alta tensione abitativa. Attenzione: con la cedolare secca rinunci ad aggiornare il canone (per esempio all'adeguamento ISTAT) per tutta la durata dell'opzione. Se vuoi approfondire, leggi la guida alla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</p>
+  <p>Un caso a parte è l'affitto della camera per <strong>periodi molto brevi</strong> (soggiorni sotto i 30 giorni, tipici della locazione turistica): lì non c'è obbligo di registrazione del contratto, ma valgono regole proprie, dal Codice Identificativo Nazionale agli adempimenti di sicurezza. È il mondo delle <a href="/blog/locazioni-brevi/">locazioni brevi</a>, che segue una logica diversa da quella descritta qui.</p>
+
+  <h2>Cosa scrivere nel contratto</h2>
+  <p>Un contratto per una stanza ben fatto evita la maggior parte dei litigi. Oltre ai dati delle parti e alla durata, cura in particolare questi punti:</p>
+  <ul>
+    <li><strong>Oggetto preciso</strong>: indica quale stanza viene locata (identificandola) e quali spazi comuni l'inquilino può usare (cucina, bagno, ingresso, eventuali balconi o cantine).</li>
+    <li><strong>Canone e modalità di pagamento</strong>: importo, scadenza mensile e mezzo tracciabile (bonifico), così hai sempre prova dei versamenti.</li>
+    <li><strong>Deposito cauzionale</strong>: di norma non oltre tre mensilità, con l'indicazione di quando e come verrà restituito.</li>
+    <li><strong>Spese</strong>: chiarisci come si dividono utenze (luce, gas, acqua, internet) e spese condominiali, per esempio a forfait o in quota tra i coinquilini.</li>
+    <li><strong>Regole della convivenza</strong>: uso degli spazi comuni, ospiti, orari, divieto di subaffitto della stanza senza il tuo consenso.</li>
+  </ul>
+  <p>Più il contratto è chiaro su questi aspetti, meno spazio lasci a incomprensioni quando, per esempio, arriva una bolletta alta o l'inquilino vuole ospitare qualcuno stabilmente.</p>
+
+  <h2>Affittare una stanza senza contratto: i rischi</h2>
+  <p>La tentazione di affittare "a voce" per risparmiare su tasse e adempimenti è comprensibile, ma è una scelta che espone soprattutto <strong>te proprietario</strong>. Un affitto in nero significa canoni non dichiarati, con sanzioni tributarie e recupero delle imposte se emerge. Non solo: senza un contratto scritto e registrato ti trovi in una posizione debole se l'inquilino smette di pagare o non vuole liberare la stanza, perché la legge àncora diverse tutele proprio all'esistenza di un contratto regolare. In caso di locazione non registrata, inoltre, l'inquilino può rivolgersi al giudice per far accertare il rapporto e ottenere condizioni di legge, con effetti che possono ritorcersi contro chi ha voluto restare "informale". In sintesi: mettere in regola la stanza costa poco e ti protegge molto.</p>
+
+  <h2>Errori da evitare</h2>
+  <ul>
+    <li><strong>Chiudere l'accordo a voce.</strong> Serve un contratto scritto: è una condizione di validità, non un dettaglio.</li>
+    <li><strong>Dimenticare la registrazione.</strong> Oltre 30 giorni scatta l'obbligo, con termine di trenta giorni e onere a tuo carico.</li>
+    <li><strong>Non dichiarare il canone.</strong> Il reddito da locazione va sempre dichiarato, anche per una sola stanza.</li>
+    <li><strong>Lasciare le spese nel vago.</strong> Definisci per iscritto chi paga cosa: è la prima fonte di litigi tra coinquilini.</li>
+    <li><strong>Scegliere la durata sbagliata.</strong> Un 4+4 quando pensavi a pochi mesi ti lega più di quanto immagini: valuta transitorio o contratto per studenti.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Posso affittare una stanza della casa in cui vivo?</h3>
+  <p>Sì. Puoi cedere in affitto una camera continuando ad abitare nell'immobile, condividendo gli spazi comuni. Resta comunque una locazione: serve un contratto scritto, la registrazione se supera i 30 giorni e la dichiarazione del canone.</p>
+  <h3>Devo registrare il contratto se affitto una singola camera?</h3>
+  <p>Sì, se il contratto dura più di 30 giorni nell'anno con la stessa persona. La registrazione va fatta entro trenta giorni ed è un onere che la legge pone a carico del proprietario.</p>
+  <h3>Posso usare la cedolare secca per una stanza?</h3>
+  <p>Sì. La cedolare secca si applica alle locazioni abitative tra privati, quindi anche all'affitto di una stanza, con aliquota del 21% (o del 10% per i contratti a canone concordato nei comuni ad alta tensione abitativa). Ricorda che, optando per la cedolare, rinunci all'aggiornamento del canone.</p>
+  <h3>Che deposito cauzionale posso chiedere?</h3>
+  <p>Di regola non oltre tre mensilità del canone. È buona norma indicare nel contratto l'importo e le condizioni di restituzione a fine locazione.</p>
+
+  <h2>In sintesi</h2>
+  <p>Affittare una stanza è un'operazione semplice se fatta con ordine: scegli la durata giusta, metti tutto per iscritto, registra il contratto ed opta per il regime fiscale più conveniente. La forma regolare non è un costo, è la tua garanzia se qualcosa va storto. Se hai dubbi sul tipo di contratto o vuoi impostare tutto in modo solido fin dall'inizio, il team di Sfratto Sicuro può affiancarti: dai un'occhiata al nostro servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> per capire come proteggere il tuo immobile e la tua entrata.</p>
+  <p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale personalizzata. Riferimenti normativi: legge 9 dicembre 1998, n. 431 (in particolare art. 1 sulla forma scritta, art. 2 sulle durate 4+4 e 3+2, art. 13 sull'obbligo e i termini di registrazione); art. 3 del d.lgs. 14 marzo 2011, n. 23 sulla cedolare secca e le relative aliquote.</em></p>
+`,
+  },
+  {
     slug: "verbale-di-rilascio-immobile",
     title: "Verbale di rilascio dell'immobile: cos'è e a cosa serve per il proprietario",
     description: "Verbale di rilascio dell'immobile: l'atto con cui l'ufficiale giudiziario ti riconsegna la casa dopo lo sfratto. Cosa contiene e a cosa serve.",
