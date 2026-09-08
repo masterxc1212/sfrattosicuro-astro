@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "rilascio-immobile-occupato-senza-titolo",
+    title: "Rilascio di un immobile occupato senza titolo: la guida per il proprietario",
+    description: "Immobile occupato senza titolo: perché lo sfratto spesso non basta e come il proprietario ottiene il rilascio con l'azione civile. Guida pratica.",
+    excerpt: "Un immobile in mano a chi non ha più diritto di restarci non si libera sempre con lo sfratto. Ecco, dalla parte del proprietario, quando serve l'azione civile di rilascio, come funziona il rito semplificato e i passi concreti per riprendere la casa.",
+    lead: "Se qualcuno occupa un tuo immobile senza un contratto che gli dia diritto di restare, lo sfratto spesso non è la strada giusta. Vediamo, dalla parte del proprietario, come ottenere il rilascio con l'azione civile di restituzione e cosa fare passo per passo.",
+    publishedAt: "2026-09-08",
+    updatedAt: "2026-09-08",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-08. Keyword: rilascio immobile occupato senza titolo, vol 110, KD 0 (DataForSEO). Secondarie: immobile occupato senza titolo, ricorso per rilascio immobile occupato senza titolo, rilascio immobile occupato senza titolo rito semplificato.",
+    html: `<p>Se un immobile che ti appartiene è occupato da qualcuno che non ha (più) alcun diritto di restarci, ti trovi davanti a un <strong>immobile occupato senza titolo</strong>. È una situazione frustrante: la persona non paga nulla, non se ne va e magari nemmeno risponde. La domanda pratica è una sola: come faccio a riprendermi la casa? Questa guida è pensata per il proprietario e spiega, in modo concreto, perché spesso non puoi usare lo sfratto e qual è invece la strada corretta per ottenere il <strong>rilascio dell'immobile occupato senza titolo</strong>.</p>
+
+<h2>Cosa significa "occupato senza titolo"</h2>
+<p>Un immobile è occupato senza titolo quando chi lo detiene non ha (o non ha più) un fondamento giuridico per restarci. Non è un'unica situazione, ma una famiglia di casi molto diversi tra loro:</p>
+<ul>
+<li>un <strong>familiare o un conoscente</strong> a cui avevi concesso la casa a voce, senza un contratto, e che ora si rifiuta di andarsene;</li>
+<li>un <strong>comodatario</strong> (chi usa la casa gratis) senza un contratto scritto con scadenza, a cui hai chiesto la restituzione ma che continua a occupare l'immobile;</li>
+<li>un <strong>ex convivente</strong> o un erede che resta nell'appartamento senza avere un titolo proprio;</li>
+<li>una persona che si è <strong>insediata di fatto</strong>, senza alcun rapporto con te.</li>
+</ul>
+<p>Attenzione a non confondere questa situazione con la vera e propria <strong>occupazione abusiva</strong> (l'ingresso arbitrario di uno sconosciuto in casa tua), che ha caratteristiche e rimedi in parte diversi e anche un rilievo penale. Se è il tuo caso, trovi indicazioni dedicate nella nostra guida sull'<a href="/blog/occupazione-abusiva-immobile/">occupazione abusiva di immobile</a>.</p>
+
+<h2>Perché di solito non puoi usare lo sfratto</h2>
+<p>Molti proprietari pensano allo "sfratto" come alla soluzione universale. In realtà la procedura veloce di convalida (intimazione di licenza o di sfratto con citazione per la convalida) è riservata a un rapporto ben preciso: quello tra <strong>locatore e conduttore</strong>, o tra chi ha concesso un bene e chi lo deteneva in base a un contratto (locazione, comodato, affitto d'azienda). In parole semplici: lo sfratto serve a <em>far cessare un contratto</em> e a riprendere l'immobile da chi lo teneva in forza di quel contratto.</p>
+<p>Se manca del tutto un contratto valido, o se il rapporto si è già esaurito e la via speciale non è più praticabile, non hai un contratto "da sciogliere": hai un immobile in mano a chi non ha titolo. In questi casi lo strumento non è lo sfratto, ma un ordinario giudizio civile per ottenere la restituzione della casa. Lo stesso vale, spesso, quando l'occupante non ha mai avuto un contratto scritto: ne parliamo nella guida sullo <a href="/blog/sfratto-inquilino-senza-contratto/">sfratto di un inquilino senza contratto</a>.</p>
+
+<h2>La strada giusta: l'azione di rilascio</h2>
+<p>Per riprendere un <strong>immobile occupato senza titolo</strong> il proprietario deve rivolgersi al giudice con un'azione diretta a ottenere la condanna dell'occupante a lasciare libero l'immobile. A seconda della situazione, l'azione assume due forme principali:</p>
+<ul>
+<li><strong>Azione di restituzione</strong>: si usa quando in origine c'era un titolo (per esempio un comodato o un altro accordo) che è poi venuto meno. Sul piano pratico è la via più agevole, perché non devi dimostrare di essere proprietario "da sempre": ti basta provare che avevi consegnato l'immobile in base a un rapporto ormai cessato.</li>
+<li><strong>Azione di rivendicazione</strong>: la usa il proprietario che non ha il possesso del bene e vuole recuperarlo da chiunque lo detenga. È più impegnativa, perché richiede la prova rigorosa della proprietà.</li>
+</ul>
+<p>Dal punto di vista della procedura, questo giudizio può svolgersi nelle forme del <strong>rito semplificato di cognizione</strong>, una modalità più snella introdotta dalla riforma della giustizia civile (la cosiddetta riforma Cartabia) e utilizzabile quando i fatti non sono contestati, la domanda si fonda su documenti oppure la causa è di pronta soluzione. Nei casi più semplici e documentati — tipici di molte occupazioni senza titolo — questo rito consente di arrivare più rapidamente a una decisione rispetto al giudizio ordinario.</p>
+
+<h2>I passi pratici per il proprietario</h2>
+<p>Ecco, in ordine, cosa conviene fare:</p>
+<ul>
+<li><strong>Raccogli i documenti</strong>: atto di proprietà o visura, eventuali accordi anche solo via messaggi o email, prove di quando e come è iniziata l'occupazione.</li>
+<li><strong>Invia una diffida scritta</strong> a lasciare l'immobile entro un termine, preferibilmente tramite raccomandata o PEC (posta elettronica certificata, che ha valore legale). Serve a mettere in mora l'occupante e a fissare una data da cui calcolare i danni.</li>
+<li><strong>Fai valutare il caso a un legale</strong>: è lui a scegliere l'azione corretta (restituzione o rivendicazione) e il rito più adatto, e a predisporre l'atto da depositare in Tribunale.</li>
+<li><strong>Ottieni il provvedimento di rilascio</strong>: la decisione del giudice che condanna l'occupante a liberare l'immobile è un titolo esecutivo.</li>
+<li><strong>Passa all'esecuzione</strong>: se l'occupante ancora non se ne va, si notifica il precetto (l'atto con cui si intima all'occupante di liberare l'immobile prima dell'esecuzione forzata) e si procede al rilascio forzato con l'ufficiale giudiziario, l'organo che materialmente immette il proprietario nel possesso della casa.</li>
+</ul>
+<p>Ricorda che, per il periodo di occupazione senza diritto, puoi in genere chiedere anche un <strong>risarcimento</strong> o un'indennità: chi tiene l'immobile senza titolo ti sta privando del suo godimento. Su come si quantifica trovi un approfondimento nella guida sull'<a href="/blog/indennita-occupazione-senza-titolo/">indennità di occupazione senza titolo</a>.</p>
+
+<h2>Gli errori da evitare</h2>
+<ul>
+<li><strong>Non farti giustizia da solo.</strong> Cambiare la serratura, staccare le utenze o portare via gli effetti dell'occupante può trasformarti da parte lesa in responsabile, con conseguenze civili e penali.</li>
+<li><strong>Non insistere con lo sfratto quando manca il contratto.</strong> Rischi di veder dichiarare inammissibile la domanda e di perdere tempo prezioso.</li>
+<li><strong>Non trascurare le prove.</strong> Messaggi, email, testimonianze e la data della diffida sono decisivi, soprattutto per ottenere il risarcimento.</li>
+<li><strong>Non aspettare troppo.</strong> Più a lungo dura l'occupazione, più diventa difficile e costosa da rimuovere: agisci appena è chiaro che l'occupante non collabora.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'occupante non ha mai firmato niente: posso comunque agire?</h3>
+<p>Sì. L'assenza di un contratto scritto non ti impedisce di riprendere l'immobile: semplicemente non potrai usare la procedura veloce di sfratto e dovrai promuovere l'azione civile di rilascio, appoggiandoti alle prove disponibili.</p>
+<h3>Quanto tempo serve per liberare l'immobile?</h3>
+<p>Dipende dal Tribunale competente, dalla complessità del caso e dall'eventuale resistenza dell'occupante. Un caso semplice e ben documentato, trattato con il rito semplificato, è più rapido di una causa ordinaria, ma non esiste un termine fisso valido per tutti.</p>
+<h3>Posso chiedere anche i soldi per il periodo di occupazione?</h3>
+<p>In genere sì. Chi occupa senza titolo deve un'indennità per il mancato godimento del bene, e l'ex detentore in mora nella restituzione risponde anche del maggior danno. Il legale può chiedere il rilascio e il risarcimento nello stesso giudizio.</p>
+<h3>Se l'occupante è un familiare, cambia qualcosa?</h3>
+<p>Il rapporto personale non crea, da solo, un diritto a restare. Cambiano però le prove utili (spesso solo verbali) e l'opportunità di tentare prima una soluzione bonaria. La sostanza giuridica, però, resta quella dell'occupazione senza titolo.</p>
+
+<h2>In sintesi</h2>
+<p>Quando la casa è occupata senza titolo e non c'è un contratto da sciogliere, lo strumento corretto non è lo sfratto ma l'azione civile di rilascio, che nei casi chiari può seguire il rito semplificato di cognizione. La sequenza per il proprietario è lineare: prove, diffida, giudizio, titolo esecutivo, esecuzione. Muoversi con l'atto sbagliato, invece, fa solo perdere tempo. Se hai un immobile in questa situazione, puoi richiedere una prima valutazione del tuo caso attraverso il nostro servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>: capire subito quale azione promuovere è il modo migliore per rientrare in possesso della casa nel minor tempo possibile.</p>
+
+<p><em>Riferimenti normativi: art. 657 del codice di procedura civile (intimazione di licenza e di sfratto, riservata al rapporto di locazione o comodato); artt. 281-decies e seguenti del codice di procedura civile sul rito semplificato di cognizione, introdotto dalla riforma Cartabia (D.Lgs. 149/2022) per i procedimenti avviati dopo il 28 febbraio 2023 e ritoccato dal correttivo D.Lgs. 164/2024; art. 948 del codice civile (azione di rivendicazione); art. 1591 del codice civile (danni per la ritardata restituzione dell'immobile).</em></p>
+
+<p><em>Contenuto informativo, aggiornato a settembre 2026: non sostituisce una consulenza legale sul caso concreto.</em></p>
+`,
+  },
+  {
     slug: 'affittare-una-stanza',
     title: 'Affittare una stanza: la guida del proprietario a contratto, tasse e regole',
     description: 'Affittare una stanza: che contratto usare, come registrarlo, la cedolare secca e gli errori da evitare. Guida pratica per il proprietario.',
