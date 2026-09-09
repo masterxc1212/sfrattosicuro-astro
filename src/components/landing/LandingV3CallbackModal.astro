@@ -2,9 +2,11 @@
 /**
  * LandingV3CallbackModal.astro — popup «Lascia il numero» (2026-09-05).
  * ------------------------------------------------------------------
- * Due campi soli (telefono + email), stile «un tocco e via». Decisioni titolare 05/09:
- * niente nome (si chiede al telefono), niente scelta proprietario/inquilino (solo nel testo),
- * email obbligatoria perché a ogni lead si manda il link della piattaforma.
+ * Un campo solo (telefono), stile «un tocco e via». Decisioni titolare 05/09:
+ * niente nome (si chiede al telefono), niente scelta proprietario/inquilino (solo nel testo).
+ * 2026-09-09: tolta anche l'email (era obbligatoria dal 05/09): dal 05/09 i moduli sono a zero
+ * e il popup è il punto d'ingresso da mobile; il link alla piattaforma si chiede al telefono.
+ * Il PHP valida l'email solo se presente, quindi il campo vuoto passa.
  * - Stesso intake dei moduli (/php/invia-email.php): gclid/utm arrivano dai campi nascosti
  *   riempiti da form-validation.js e AdAttributionFields; il PHP accetta `nome` vuoto.
  * - Invio in fetch: l'utente resta in pagina e vede la conferma; la conversione Ads «Modulo»
@@ -25,10 +27,6 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
       <label class="ss-callback-label" for="ss-cb-tel">Telefono</label>
       <input id="ss-cb-tel" class="ss-callback-input" type="tel" name="telefono" inputmode="tel" autocomplete="tel"
              placeholder="Il numero su cui richiamarti" required minlength="8" aria-required="true">
-
-      <label class="ss-callback-label" for="ss-cb-email">Email</label>
-      <input id="ss-cb-email" class="ss-callback-input" type="email" name="email" inputmode="email" autocomplete="email"
-             placeholder="Per inviarti l’accesso alla tua pratica" required aria-required="true">
 
       <!-- trappola anti-bot: resta vuoto -->
       <input type="text" name="website" class="ss-callback-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -54,7 +52,6 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
       <p class="ss-callback-done-icon" aria-hidden="true">✓</p>
       <h2 class="ss-callback-title">Fatto.</h2>
       <p class="ss-callback-sub" data-done-text>Ti chiamiamo entro 2 ore lavorative dal numero <strong>02 80898395</strong>: salvalo in rubrica.</p>
-      <p class="ss-callback-sub">Ti abbiamo mandato un’email con il link alla tua pratica.</p>
       <button type="button" class="ss-callback-submit is-secondary" data-close>Chiudi</button>
     </div>
     <div class="ss-callback-step" data-step="fail" hidden>
@@ -114,11 +111,10 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
       if (sending) return;
-      var tel = form.telefono.value.trim(), mail = form.email.value.trim();
-      var okTel = /^[0-9\s+]{8,}$/.test(tel), okMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
-      if (!okTel || !okMail) {
-        err.textContent = !okTel ? 'Controlla il numero di telefono.' : 'Controlla l’indirizzo email.';
-        err.hidden = false; (!okTel ? form.telefono : form.email).focus();
+      var tel = form.telefono.value.trim();
+      if (!/^[0-9\s+]{8,}$/.test(tel)) {
+        err.textContent = 'Controlla il numero di telefono.';
+        err.hidden = false; form.telefono.focus();
         return;
       }
       if (form.website && form.website.value) { show('done'); return; } // bot
