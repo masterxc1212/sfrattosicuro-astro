@@ -53,7 +53,7 @@ KO Non compatibile: *"Anticipiamo il 30% al deposito."* (contraddice "nessun acc
 | `email` (consulenza@sfrattosicuro.it) | OK in `site.json:organization.email` | OK |
 | `telephone` | Parziale: `site.json` ha "+39 02 8089 8395" (con spazi) ma altri file usano "+39 02 80898395" (senza spazi) → **INCOERENZA** da risolvere | 8+ componenti landing, `public/errore.html`, `public/grazie.html`, `landing-original.ts`, `landing-v2.ts` |
 | `whatsappUrl` | **CANONICO confermato 02/05/2026: `393291175957` (+39 329 117 5957)**. Il secondo numero `393519179179` in `social.whatsapp`/`errore.html`/`grazie.html` va sostituito col canonico in occasione della migration. | `public/errore.html`, `public/grazie.html`, `site.json:social.whatsapp` da allineare al canonico |
-| Prezzo EUR 1.300 | NO, hardcoded | 16 punti: `landing-original.ts`, `landing-configs.json`, `blog-posts.ts`, 5+ componenti `landing/*`. Legacy statico non allineato: `public/landing/index.html` (orfano, fuori sitemap) |
+| Prezzo EUR 1.300 | NO, hardcoded | 16 punti: `landing-original.ts`, `landing-configs.json`, `blog-posts.ts`, 5+ componenti `landing/*`. Statici allineati a mano il 2026-09-10: `public/landing/index.html` (landing v1 orfana, fuori sitemap), `public/grazie.html` (rimosso il ramo promo agosto, scaduto), `public/errore.html` |
 | Tempi 60 giorni | NO, hardcoded | 18+ punti: `HeroInstitutionalIsland`, `TimelineSection`, `FaqIsland`, `blog-posts.ts`, `landing-*` |
 | Orari studio | OK in `site.json:openingHoursSpecification` (struttura) | Stringa "Lun-Ven 9-19, Sab 9-13" hardcoded in `landing-v2.ts` |
 | Procedura 4 fasi | NO (definita in `landing-original.ts`) | Replica in `TimelineSection`, `ProcedureSection` |
