@@ -216,6 +216,9 @@ export function getTerritorialFaq(sede: SedeItem): LocalFaqItem[] {
   const compenso = pricing.compensoFormatted;
   const compensoLong = pricing.compensoFormattedLong;
   const modalitaPagamento = pricing.modalita;
+  const perimetroCompenso = pricing.perimetro;
+  const esclusioniCompenso = pricing.esclusioni;
+  const regolaOpposizione = pricing.opposizione;
   const disclaimerTempi = tempi.disclaimerStandard;
 
   // Dati territoriali (puo' essere undefined per sedi non ancora popolate).
@@ -232,17 +235,17 @@ export function getTerritorialFaq(sede: SedeItem): LocalFaqItem[] {
       : `In molti casi puntiamo ad arrivare all'udienza per la convalida di sfratto in ${tempiMedi}, grazie a una gestione rigorosa della pratica e dei tempi di notifica. ${disclaimerTempi}`;
 
   const opposizioneAnswer = prassiOpposizioniLocale
-    ? `${prassiOpposizioniLocale} Anche in caso di opposizione, il compenso complessivo a tuo carico resta ${compenso}: nessun costo aggiuntivo per la trasformazione del rito.`
-    : `Se l'inquilino propone opposizione, la procedura puo' trasformarsi in giudizio ordinario di cognizione e richiedere tempi piu' lunghi. Anche in questo scenario, il Giudice puo' emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario. Il compenso complessivo resta ${compenso}, senza costi aggiuntivi.`;
+    ? `${prassiOpposizioniLocale} Il compenso di ${compenso} copre la fase di convalida e resta dovuto dopo l'udienza, qualunque ne sia l'esito. ${regolaOpposizione}`
+    : `Se l'inquilino propone opposizione, la procedura puo' trasformarsi in giudizio ordinario di cognizione e richiedere tempi piu' lunghi. Anche in questo scenario, il Giudice puo' emettere ordinanza provvisoria di rilascio ex art. 665 c.p.c. tutelando il proprietario. Il compenso di ${compenso} copre la fase di convalida e resta dovuto dopo l'udienza, qualunque ne sia l'esito. ${regolaOpposizione}`;
 
   const terminieGraziaAnswer = terminieDiGraziaLocale
     ? terminieDiGraziaLocale
     : `Nel procedimento per sfratto per morosita' il giudice puo', in presenza dei presupposti di legge (art. 55 L. 392/1978), concedere un termine per sanare la morosita'. La concessione e' discrezionale e puo' allungare la procedura di 60-90 giorni. La nostra strategia tiene conto di questa variabile fin dalla preparazione dell'atto.`;
 
-  const costoAnswer = `Il nostro compenso complessivo e' ${compensoLong}. ${modalitaPagamento} ${pricing.compensoFormatted} comprende l'intero iter dalla prima diffida fino alla convalida di sfratto, incluse spese, contributi unificati, marche e rappresentanza in udienza.`;
+  const costoAnswer = `Il nostro compenso complessivo e' ${compensoLong}. ${perimetroCompenso} ${modalitaPagamento} ${esclusioniCompenso}`;
 
   const sezioneInfo = sezioneLocale ? ` (${sezioneLocale})` : '';
-  const competenzaAnswer = `La procedura va avviata davanti al ${sede.tribunale}${sezioneInfo}, competente per la zona di ${sede.nome} e provincia. Lo sfratto puo' essere avviato quando il conduttore non paga i canoni o gli oneri dovuti nei termini contrattuali. Il nostro compenso ${compenso} copre l'intero iter, senza acconti.`;
+  const competenzaAnswer = `La procedura va avviata davanti al ${sede.tribunale}${sezioneInfo}, competente per la zona di ${sede.nome} e provincia. Lo sfratto puo' essere avviato quando il conduttore non paga i canoni o gli oneri dovuti nei termini contrattuali. Il nostro compenso di ${compenso} (IVA e cassa incluse) copre l'intero percorso fino alla riconsegna delle chiavi, senza acconti.`;
 
   const generated: LocalFaqItem[] = [
     {

@@ -8,6 +8,12 @@
  * sez. 1). Devono essere centralizzati in un solo punto per evitare drift
  * tra componenti, sedi e blog.
  *
+ * In caso di conflitto **prevale la landing** `/landing-v3/` (termini approvati
+ * dall'avvocato il 2026-07-17): EUR 1.300 IVA e cassa incluse, convalida e fase
+ * esecutiva fino alla riconsegna delle chiavi, pagamento dopo l'**udienza** di
+ * convalida qualunque ne sia l'esito (mai "a risultato" / "a convalida ottenuta"),
+ * spese vive escluse e mai anticipate, giudizio di merito a preventivo separato.
+ *
  * Uso in un file .astro:
  *   ---
  *   import { pricing, tempi, contatti } from '../../lib/business';
@@ -35,10 +41,18 @@ export type Pricing = {
   compensoComplessivo: number;
   /** "EUR 1.300" — usabile inline, senza disclaimer. */
   compensoFormatted: string;
-  /** "EUR 1.300 fino al rilascio dell'immobile" — usabile come promessa primaria. */
+  /** "EUR 1.300 IVA e cassa incluse, fino alla riconsegna delle chiavi" — promessa primaria. */
   compensoFormattedLong: string;
-  /** Disclaimer "Nessun acconto. Pagamento solo dopo la convalida dello sfratto." */
+  /** True: il compenso e' comprensivo di IVA e contributo cassa forense. */
+  ivaCassaIncluse: boolean;
+  /** Modalita' di pagamento: nessun acconto, saldo dopo l'udienza di convalida qualunque sia l'esito. */
   modalita: string;
+  /** Perimetro del compenso: convalida + fase esecutiva fino alla riconsegna delle chiavi. */
+  perimetro: string;
+  /** Cosa resta fuori dal compenso: le sole spese vive di legge, mai anticipate. */
+  esclusioni: string;
+  /** Cosa succede in caso di opposizione: giudizio di merito a preventivo scritto separato. */
+  opposizione: string;
   /** Spese vive indicative, escluse dal compenso professionale. */
   speseVive: {
     convalidaMin: number;
@@ -242,9 +256,20 @@ export function getPatternPromessaSede(opts: {
     + `percorso operativo standard: ${procedura.fasi.map(f => f.titolo.toLowerCase()).join(', ')}. `
     + `Il deposito avviene ${cancelleria}. `
     + tempiFrase
-    + ` Il compenso complessivo di ${pricing.compensoFormatted} copre l'intero iter `
-    + `fino al rilascio dell'immobile, senza acconti.`
+    + ` Il compenso complessivo di ${pricing.compensoFormatted} (IVA e cassa incluse) copre `
+    + `la convalida e l'eventuale fase esecutiva, fino alla riconsegna delle chiavi, `
+    + `senza acconti: si paga dopo l'udienza per la convalida, qualunque ne sia l'esito.`
   );
+}
+
+/**
+ * Sintesi dell'offerta nella stessa forma usata dalla landing v3: prezzo con
+ * IVA e cassa, perimetro fino alle chiavi, modalita' di pagamento, spese vive
+ * escluse. Usare nei copy istituzionali (sede, servizi, FAQ) al posto di
+ * frasi scritte a mano, cosi' l'offerta resta identica ovunque.
+ */
+export function getOffertaSintesi(): string {
+  return `${pricing.compensoFormattedLong}. ${pricing.perimetro} ${pricing.modalita} ${pricing.esclusioni}`;
 }
 
 /**

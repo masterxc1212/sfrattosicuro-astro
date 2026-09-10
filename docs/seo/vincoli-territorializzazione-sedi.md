@@ -1,6 +1,6 @@
 # Vincoli operativi territorializzazione sedi — sfrattosicuro.it
 
-**Data ultima revisione:** 2 maggio 2026
+**Data ultima revisione:** 10 settembre 2026
 **Validita':** permanente, vincolante per ogni sessione di lavoro su sedi/landing/blog
 **Letture obbligatorie correlate:**
 - `CLAUDE.md` (paths, deploy, line endings)
@@ -11,11 +11,16 @@
 
 ## 1. Promesse landing inviolabili
 
-I contenuti delle landing-v2 / landing-v3 sono il riferimento commerciale di Sfratto Sicuro. Ogni pagina sede o blog DEVE essere coerente con queste promesse. NON si possono scrivere copy che le contraddicano.
+I contenuti della landing **/landing-v3/** sono il riferimento commerciale di Sfratto Sicuro: in caso di conflitto con una pagina istituzionale (home, sedi, servizi, tariffario, blog) **prevale sempre la landing**. Ogni pagina sede o blog DEVE essere coerente con queste promesse. NON si possono scrivere copy che le contraddicano.
+
+I termini sotto sono quelli approvati dall'avvocato il **2026-07-17** e allineati su tutto il sito istituzionale il **2026-09-10**.
 
 | Promessa | Valore | Disclaimer obbligatorio |
 |----------|--------|-------------------------|
-| Compenso complessivo | **EUR 1.300 fino al rilascio dell'immobile** | Nessun acconto. Pagamento solo dopo la convalida. |
+| Compenso complessivo | **EUR 1.300 IVA e cassa incluse** | Nessun acconto. Si paga **dopo l'udienza per la convalida, qualunque ne sia l'esito** — mai "a risultato" / "a convalida ottenuta". |
+| Perimetro del compenso | **Convalida + eventuale fase esecutiva, fino alla riconsegna delle chiavi** | Stesse condizioni per finita locazione e locali commerciali. |
+| Spese vive | **Escluse dal compenso**: ~EUR 100-150 per la convalida, ~EUR 300 in totale col rilascio forzato | Indicate per iscritto prima di partire, mai anticipate. Mai scrivere che contributo unificato, marche e notifiche sono "inclusi". |
+| Opposizione / merito | **Preventivo scritto separato** | Il compenso di EUR 1.300 copre la convalida e resta dovuto dopo l'udienza; nulla prosegue nel merito senza consenso scritto. Mai scrivere "nessun costo aggiuntivo in caso di opposizione". |
 | Tempi convalida | **Mediamente in circa 60 giorni** | "Dato medio operativo, non promessa assoluta. I tempi dipendono dal Tribunale competente e dall'eventuale opposizione dell'inquilino." Sempre presente quando si cita il dato. |
 | Prima consulenza | **Gratuita e senza impegno** | — |
 | Risposta callback | **Entro 2 ore** | Solo in orario d'ufficio (Lun-Ven 9-19, Sab 9-13) |
@@ -48,7 +53,7 @@ KO Non compatibile: *"Anticipiamo il 30% al deposito."* (contraddice "nessun acc
 | `email` (consulenza@sfrattosicuro.it) | OK in `site.json:organization.email` | OK |
 | `telephone` | Parziale: `site.json` ha "+39 02 8089 8395" (con spazi) ma altri file usano "+39 02 80898395" (senza spazi) → **INCOERENZA** da risolvere | 8+ componenti landing, `public/errore.html`, `public/grazie.html`, `landing-original.ts`, `landing-v2.ts` |
 | `whatsappUrl` | **CANONICO confermato 02/05/2026: `393291175957` (+39 329 117 5957)**. Il secondo numero `393519179179` in `social.whatsapp`/`errore.html`/`grazie.html` va sostituito col canonico in occasione della migration. | `public/errore.html`, `public/grazie.html`, `site.json:social.whatsapp` da allineare al canonico |
-| Prezzo EUR 1.300 | NO, hardcoded | 16 punti: `landing-original.ts`, `landing-configs.json`, `blog-posts.ts`, 5+ componenti `landing/*` |
+| Prezzo EUR 1.300 | NO, hardcoded | 16 punti: `landing-original.ts`, `landing-configs.json`, `blog-posts.ts`, 5+ componenti `landing/*`. Legacy statico non allineato: `public/landing/index.html` (orfano, fuori sitemap) |
 | Tempi 60 giorni | NO, hardcoded | 18+ punti: `HeroInstitutionalIsland`, `TimelineSection`, `FaqIsland`, `blog-posts.ts`, `landing-*` |
 | Orari studio | OK in `site.json:openingHoursSpecification` (struttura) | Stringa "Lun-Ven 9-19, Sab 9-13" hardcoded in `landing-v2.ts` |
 | Procedura 4 fasi | NO (definita in `landing-original.ts`) | Replica in `TimelineSection`, `ProcedureSection` |
@@ -60,8 +65,12 @@ KO Non compatibile: *"Anticipiamo il 30% al deposito."* (contraddice "nessun acc
   "pricing": {
     "compensoComplessivo": 1300,
     "compensoFormatted": "EUR 1.300",
-    "compensoFormattedLong": "EUR 1.300 fino al rilascio dell'immobile",
-    "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto."
+    "compensoFormattedLong": "EUR 1.300 IVA e cassa incluse, fino alla riconsegna delle chiavi",
+    "ivaCassaIncluse": true,
+    "modalita": "Nessun acconto: il compenso si paga in un'unica soluzione dopo l'udienza per la convalida, qualunque ne sia l'esito.",
+    "perimetro": "...",
+    "esclusioni": "...",
+    "opposizione": "..."
   },
   "tempi": {
     "convalidaMedia": "circa 60 giorni",

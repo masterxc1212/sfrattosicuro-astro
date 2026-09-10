@@ -4,9 +4,9 @@
   "lead": "Prezzi fissi, pubblicati. Nessun preventivo al buio.",
   "anchor": {
     "title": "Procedura di sfratto",
-    "subtitle": "Morosità o finita locazione · tutto incluso · nessun acconto · ~60 gg",
+    "subtitle": "Morosità o finita locazione · IVA e cassa incluse · convalida e fase esecutiva fino alla riconsegna delle chiavi · nessun acconto · ~60 gg",
     "price": "€1.300",
-    "priceNote": "pagamento alla convalida",
+    "priceNote": "si paga dopo l’udienza di convalida",
     "links": [
       { "label": "Sfratto per morosità", "href": "/servizi/sfratto-per-morosita/" },
       { "label": "Finita locazione", "href": "/servizi/sfratto-per-finita-locazione/" }
@@ -50,5 +50,5 @@
       ]
     }
   ],
-  "footnote": "Prezzi IVA esclusa. Spese vive (contributo unificato, notifiche, bolli) e imposte di registrazione indicate a parte. Preventivo scritto prima di ogni incarico."
+  "footnote": "Procedura di sfratto: €1.300 IVA e cassa incluse, senza acconti. Gli altri prezzi del listino sono IVA esclusa. Le spese vive (contributo unificato, notifiche, bolli) e le imposte di registrazione restano sempre a parte e sono indicate per iscritto prima di partire. Preventivo scritto prima di ogni incarico."
 }

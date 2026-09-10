@@ -28,9 +28,11 @@ const hasData = !!(m && (m.canoneMedioEur || m.canoneRange || m.note || (m.zoneR
         </p>
       )}
       <p class="note" style="font-size:0.9em;opacity:0.8;">
-        Il nostro compenso complessivo di <strong>{pricing.compensoFormatted}</strong> copre
-        l'intero iter fino al rilascio dell'immobile, senza acconti e senza commissioni
-        sul canone recuperato. Tempi medi di convalida: {tempi.convalidaMedia}.
+        Il nostro compenso complessivo di <strong>{pricing.compensoFormatted}</strong> (IVA e cassa
+        incluse) copre la convalida e l'eventuale fase esecutiva, fino alla riconsegna delle chiavi,
+        senza acconti e senza commissioni sul canone recuperato: si paga dopo l'udienza per la
+        convalida, qualunque ne sia l'esito. Restano escluse solo le spese vive di legge.
+        Tempi medi di convalida: {tempi.convalidaMedia}.
       </p>
     </div>
   </section>

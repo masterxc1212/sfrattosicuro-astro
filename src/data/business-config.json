@@ -3,10 +3,11 @@
   "_meta": {
     "purpose": "Single source of truth per i valori di business di Sfratto Sicuro: prezzi, tempi, garanzie, orari, procedura, contatti. NON hardcodare questi valori in componenti, sedi, blog: importarli sempre da qui (via src/lib/business.ts) cosi' un cambio di prezzo o di tempi si propaga automaticamente a tutto il sito.",
     "spec": "docs/seo/vincoli-territorializzazione-sedi.md - sez. 2.2",
-    "lastReview": "2026-05-05",
+    "lastReview": "2026-09-10",
     "owner": "skill linkbuilding-sfrattosicuro-ansalone (FASE 5)",
     "notes": [
       "Le promesse landing (sez. 1 del vincoli) sono inviolabili: ogni copy deve essere coerente con questi valori.",
+      "In caso di conflitto prevale sempre la landing /landing-v3/ (termini approvati dall'avvocato il 2026-07-17): EUR 1.300 IVA e cassa incluse, convalida + fase esecutiva fino alle chiavi, pagamento dopo l'UDIENZA di convalida qualunque ne sia l'esito (mai 'a risultato' o 'a convalida ottenuta'), spese vive escluse, giudizio di merito a preventivo separato.",
       "site.json:openingHoursSpecification attualmente dichiara solo Mon-Fri 09:00-18:00 mentre la promessa landing e Lun-Ven 9-19 + Sab 9-13. Allineamento da gestire in futuro: in caso di conflitto vale la promessa landing dichiarata qui.",
       "Mai duplicare questi valori in altri JSON. Per cambi globali, modificare solo questo file."
     ]
@@ -14,8 +15,12 @@
   "pricing": {
     "compensoComplessivo": 1300,
     "compensoFormatted": "EUR 1.300",
-    "compensoFormattedLong": "EUR 1.300 fino al rilascio dell'immobile",
-    "modalita": "Nessun acconto. Pagamento solo dopo la convalida dello sfratto.",
+    "compensoFormattedLong": "EUR 1.300 IVA e cassa incluse, fino alla riconsegna delle chiavi",
+    "ivaCassaIncluse": true,
+    "modalita": "Nessun acconto: il compenso si paga in un'unica soluzione dopo l'udienza per la convalida, qualunque ne sia l'esito.",
+    "perimetro": "Il compenso copre la fase di convalida e l'eventuale fase esecutiva, fino al rilascio dell'immobile e alla riconsegna delle chiavi. Stesse condizioni per la finita locazione e per i locali commerciali.",
+    "esclusioni": "Restano escluse solo le spese vive di legge (contributo unificato, marche, notifiche): indicativamente EUR 100-150 per la fase di convalida e circa EUR 300 in totale se serve il rilascio forzato con l'ufficiale giudiziario. Le indichiamo per iscritto prima di partire e non vanno mai anticipate.",
+    "opposizione": "Se l'inquilino si oppone e serve il giudizio di merito, ricevi un preventivo scritto separato: nulla prosegue senza il tuo consenso.",
     "speseVive": {
       "convalidaMin": 100,
       "convalidaMax": 150,

@@ -86,10 +86,10 @@ export const servicePages: ServicePage[] = [
         'La pratica arriva alla convalida e prosegue fino al rilascio. In parallelo viene impostata la tutela economica per il recupero delle somme dovute.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
+      fee: '1.300 € IVA e cassa incluse: convalida ed eventuale fase esecutiva, fino alla riconsegna delle chiavi.',
+      payment: 'Nessun acconto: il compenso si paga dopo l’udienza per la convalida, qualunque ne sia l’esito.',
       timing: 'In molti casi puntiamo ad arrivare all’udienza per la convalida in circa 60 giorni.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica. Oltre al compenso restano solo le spese vive di legge (contributo unificato, marche, notifiche): indicativamente 100-150 € per la convalida e circa 300 € in totale se serve il rilascio forzato, sempre indicate per iscritto prima di partire e mai anticipate. Se l’inquilino si oppone e serve il giudizio di merito, ricevi un preventivo scritto separato: nulla prosegue senza il tuo consenso.'
     },
     faqs: [
       {
@@ -165,10 +165,10 @@ export const servicePages: ServicePage[] = [
         'Il proprietario ottiene il provvedimento e la pratica viene seguita fino alla riconsegna effettiva.'
     },
     pricing: {
-      fee: '1.300 € tutto incluso fino alla convalida dello sfratto.',
-      payment: 'Nessun anticipo: pagamento al momento della convalida.',
+      fee: '1.300 € IVA e cassa incluse: convalida ed eventuale fase esecutiva, fino alla riconsegna delle chiavi.',
+      payment: 'Nessun acconto: il compenso si paga dopo l’udienza per la convalida, qualunque ne sia l’esito.',
       timing: 'In molti casi puntiamo ad arrivare all’udienza per la convalida in circa 60 giorni.',
-      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica.'
+      note: 'I tempi possono variare in base al Tribunale competente e alla situazione concreta della pratica. Oltre al compenso restano solo le spese vive di legge (contributo unificato, marche, notifiche): indicativamente 100-150 € per la convalida e circa 300 € in totale se serve il rilascio forzato, sempre indicate per iscritto prima di partire e mai anticipate. Se l’inquilino si oppone e serve il giudizio di merito, ricevi un preventivo scritto separato: nulla prosegue senza il tuo consenso.'
     },
     faqs: [
       {

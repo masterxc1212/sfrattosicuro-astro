@@ -7621,11 +7621,11 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       <h2>Costi: come parlarne senza creare aspettative sbagliate</h2>
       <p>Anche sul tema costi serve precisione. La pagina servizio dedicata allo <a href="/servizi/sfratto-per-morosita/#costi-tempi">sfratto per morosità</a> indica oggi una proposta commerciale molto chiara:</p>
       <ul>
-        <li>1.300 € tutto incluso fino alla convalida dello sfratto;</li>
-        <li>nessun anticipo;</li>
-        <li>pagamento al momento della convalida.</li>
+        <li>1.300 € IVA e cassa incluse, per la convalida e per l'eventuale fase esecutiva fino alla riconsegna delle chiavi;</li>
+        <li>nessun acconto;</li>
+        <li>pagamento dopo l'udienza per la convalida, qualunque ne sia l'esito.</li>
       </ul>
-      <p>Questo dato è utile perché rende l'offerta leggibile. Però va spiegato bene: il proprietario deve distinguere tra ciò che riguarda la fase fino alla convalida e ciò che, eventualmente, può riguardare attività ulteriori, fase esecutiva o gestione separata del credito.</p>
+      <p>Questo dato è utile perché rende l'offerta leggibile. Fuori dal compenso restano solo le spese vive di legge (contributo unificato, marche, notifiche): indicativamente 100-150 € per la convalida e circa 300 € in totale se serve il rilascio forzato, indicate per iscritto prima di partire e mai anticipate. Se invece l'inquilino si oppone e si apre il giudizio di merito, quella fase viene quotata con un preventivo scritto separato.</p>
       <p>Se oltre al rilascio vuoi valutare anche il recupero economico, la pagina dedicata al <a href="/servizi/recupero-canoni-non-pagati/#costi-tempi">recupero canoni non pagati</a> indica un'impostazione differente, orientata al risultato, con compenso del 10% delle somme da recuperare. Anche qui il punto non è memorizzare una cifra, ma capire se il tuo caso richiede un percorso unico o due binari coordinati.</p>
 
       <h2>Gli errori più comuni che fanno perdere tempo</h2>
@@ -7670,7 +7670,7 @@ Il ravvedimento operoso è uno strumento previsto dalla legge che consente al co
       <p>Sì. Anzi, spesso è la scelta più utile dal punto di vista strategico: il proprietario non deve solo rientrare in possesso del bene, ma anche capire se e come proteggere il proprio credito.</p>
 
       <h3>Quanto costa avviare la procedura con Sfratto Sicuro?</h3>
-      <p>Alla data attuale, la pagina servizio dedicata indica 1.300 € tutto incluso fino alla convalida dello sfratto, senza anticipo e con pagamento al momento della convalida. Eventuali attività ulteriori o complementari vanno comunque lette in base al caso concreto e ai servizi collegati.</p>
+      <p>Alla data attuale, la pagina servizio dedicata indica 1.300 € IVA e cassa incluse, per la convalida e per l'eventuale fase esecutiva fino alla riconsegna delle chiavi, senza acconti e con pagamento dopo l'udienza per la convalida, qualunque ne sia l'esito. Restano escluse le spese vive di legge; l'eventuale giudizio di merito dopo l'opposizione dell'inquilino viene quotato a parte, con preventivo scritto.</p>
 
       <h3>Qual è il primo errore da evitare?</h3>
       <p>Aspettare troppo senza ricostruire bene il debito e senza verificare la documentazione. Quando la morosità si prolunga, spesso peggiorano sia la posizione economica del proprietario sia la gestione pratica del rilascio.</p>
