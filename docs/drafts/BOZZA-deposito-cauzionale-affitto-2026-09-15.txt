@@ -1,0 +1,89 @@
+BOZZA ARTICOLO PRONTO ALLA PUBBLICAZIONE — Sfratto Sicuro
+Data: 2026-09-15  |  Categoria: Locazioni  |  Slug: deposito-cauzionale-affitto
+URL previsto: https://www.sfrattosicuro.it/blog/deposito-cauzionale-affitto/
+
+STATO: verificato (giurista + fact-checker + revisore = tutti PASS), sintassi TypeScript OK.
+NON pubblicato: la pubblicazione online e' stata bloccata (vedi report in chat).
+
+COME PUBBLICARLO (in un solo passo, quando l'ambiente e' di nuovo operativo):
+incollare il blocco qui sotto SUBITO DOPO la riga
+    const posts: BlogPost[] = [
+nel file src/data/blog-posts.ts del repo sfrattosicuro-astro, poi commit + push su main.
+
+------------------------------------------------------------------
+  {
+    slug: "deposito-cauzionale-affitto",
+    title: "Deposito cauzionale nell'affitto: quando il proprietario può trattenerlo e quando deve restituirlo",
+    description: "Deposito cauzionale: quanto puoi chiedere, quando trattenerlo per danni o canoni non pagati e quando restituirlo. Guida per il proprietario.",
+    excerpt: "Il deposito cauzionale è una garanzia, non un incasso. Ecco, dalla parte del proprietario, quanto puoi chiedere, quando puoi legittimamente trattenerlo per canoni non pagati o danni, e quando invece sei obbligato a restituirlo.",
+    lead: "Alla fine dell'affitto la cauzione diventa spesso motivo di lite: posso trattenerla per i danni? Devo restituirla tutta? Vediamo, dalla parte del proprietario, come funziona davvero il deposito cauzionale e come gestirlo senza sbagliare.",
+    publishedAt: "2026-09-15",
+    updatedAt: "2026-09-15",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-15. Keyword: deposito cauzionale, vol 2400, KD 0 (DataForSEO). Secondarie: deposito cauzionale affitto, cauzione affitto, restituzione deposito cauzionale.",
+    html: `<p>Il <strong>deposito cauzionale</strong> è la somma che l'inquilino versa alla firma del contratto d'affitto come garanzia per il proprietario. Sembra un dettaglio banale, ma alla fine della locazione diventa spesso motivo di discussione: posso trattenerlo per i danni? Devo restituirlo tutto? Entro quando? Questa guida spiega, dalla parte del proprietario, come funziona davvero il deposito cauzionale, quanto puoi chiedere, quando puoi legittimamente trattenerlo e quando invece sei obbligato a restituirlo.</p>
+
+<h2>Che cos'è il deposito cauzionale e a cosa serve</h2>
+<p>Il deposito cauzionale (chiamato comunemente "cauzione") è una somma di denaro che il conduttore, cioè l'inquilino, consegna al locatore, cioè il proprietario, all'inizio del rapporto. Serve a <strong>garantire l'adempimento di tutti gli obblighi</strong> che gravano sull'inquilino: non solo il pagamento del canone, ma anche gli oneri accessori (per esempio le spese condominiali a suo carico) e l'eventuale risarcimento dei danni all'immobile. È bene non confonderla con la <strong>caparra</strong>: la caparra si versa in genere alla stipula di un preliminare e ha una funzione diversa, legata alla conclusione del contratto.</p>
+<p>La regola di fondo è semplice: la cauzione <strong>non è un incasso definitivo</strong> per il proprietario. È un accantonamento a garanzia, che alla fine della locazione va restituito, salvo che tu abbia crediti concreti da farvi valere.</p>
+
+<h2>Quanto puoi chiedere: il limite delle tre mensilità</h2>
+<p>La legge fissa un tetto preciso. Il deposito cauzionale <strong>non può superare le tre mensilità del canone</strong>. Chiedere di più espone a un rischio concreto: la parte eccedente è ripetibile, cioè l'inquilino può chiedere indietro quanto ha versato oltre il limite. Lo stesso tetto vale anche per gli immobili a uso diverso da quello abitativo, come i locali commerciali.</p>
+<p>Un secondo obbligo, spesso trascurato dai proprietari, riguarda gli interessi: la cauzione <strong>produce interessi legali che vanno riconosciuti all'inquilino alla fine di ogni anno</strong>. Si tratta di un obbligo inderogabile di legge: una clausola del contratto che lo escluda è nulla, e gli interessi restano comunque dovuti. Se vuoi capire come calcolarli e gestirli in pratica, trovi tutti i dettagli nella nostra guida sugli <a href="/blog/interessi-legali-cauzione-affitto/">interessi legali sulla cauzione dell'affitto</a>.</p>
+
+<h2>Quando devi restituire il deposito cauzionale</h2>
+<p>Il punto che genera più liti è la restituzione. La regola, confermata più volte dalla giurisprudenza, è chiara: <strong>l'obbligo di restituire la cauzione sorge al termine del rapporto, non appena l'inquilino ti ha riconsegnato l'immobile</strong>. Non esiste un numero fisso di giorni stabilito dalla legge, ma la restituzione va fatta senza ritardi ingiustificati.</p>
+<p>Attenzione a un errore molto diffuso: <strong>trattenere l'intera cauzione "per sicurezza"</strong>, in attesa di capire se ci sono danni o pendenze. Se trattieni la somma senza un motivo concreto e senza attivarti, l'inquilino può chiederne la restituzione, e tu rischi di essere condannato non solo a restituirla, ma anche a pagare gli interessi e le spese legali. La riserva generica di "agire poi per i danni" non basta a giustificare il trattenimento.</p>
+
+<h2>Quando puoi trattenere la cauzione (e come farlo bene)</h2>
+<p>Il proprietario può legittimamente trattenere la cauzione, in tutto o in parte, quando ha <strong>crediti concreti e documentabili</strong> verso l'inquilino. In pratica, i casi tipici sono tre:</p>
+<ul>
+<li><strong>Canoni non pagati</strong> e oneri accessori rimasti a carico dell'inquilino;</li>
+<li><strong>Danni all'immobile</strong> che vanno oltre il normale deterioramento d'uso (di cui parliamo tra poco);</li>
+<li><strong>Spese di ripristino</strong> documentate, per riportare l'immobile allo stato in cui era stato consegnato.</li>
+</ul>
+<p>C'è però una distinzione pratica fondamentale. Se il tuo credito è certo — per esempio due mensilità arretrate — puoi compensarlo con la cauzione. Ma se vuoi trattenere la somma <strong>per danni che l'inquilino contesta</strong>, non è sufficiente lamentarli genericamente: secondo la Cassazione devi <strong>proporre una domanda giudiziale specifica</strong>, chiedendo al giudice di attribuirti la cauzione a copertura di quei danni. In altre parole, il trattenimento "a occhio" non regge: o il credito è pacifico, o va fatto valere davanti al giudice.</p>
+<p>Un altro punto decisivo è l'<strong>onere della prova</strong>: se vuoi trattenere la cauzione, sei tu proprietario a dover dimostrare l'inadempimento dell'inquilino o l'alterazione dello stato dell'immobile. Ecco perché la documentazione è tutto.</p>
+
+<h2>Danni veri o normale usura: come distinguerli</h2>
+<p>Non ogni segno del tempo è un danno. L'inquilino deve restituire l'immobile nello stato in cui l'ha ricevuto, <strong>salvo il normale deterioramento dovuto all'uso</strong> conforme al contratto, e non risponde di ciò che si logora per vetustà. Una parete leggermente ingiallita, piccoli fori dei quadri o l'usura del parquet dopo anni di vita rientrano nel normale uso: non puoi trattenere la cauzione per questi. Sono invece danni risarcibili, per esempio, una porta sfondata, sanitari rotti, pavimenti gravemente rovinati o modifiche non autorizzate. Per orientarti su cosa è manutenzione ordinaria a carico dell'inquilino e cosa no, può aiutarti la guida su <a href="/blog/manutenzione-riparazioni-affitto-chi-paga/">manutenzione e riparazioni nell'affitto</a>.</p>
+
+<h2>I passi pratici per il proprietario</h2>
+<p>Per gestire la cauzione senza brutte sorprese, muoviti così:</p>
+<ul>
+<li><strong>All'inizio</strong>: metti a verbale lo stato dei luoghi con una descrizione dettagliata e delle foto, allegata al contratto. Se manca una descrizione, si presume che l'immobile sia stato consegnato in buono stato, e questo rende più difficile dimostrare i danni al momento della riconsegna.</li>
+<li><strong>Alla riconsegna</strong>: redigi un <strong>verbale di riconsegna</strong>, confrontando lo stato attuale con quello iniziale, e annota eventuali danni con foto.</li>
+<li><strong>Fai i conti</strong>: quantifica per iscritto quanto trattieni e perché (canoni, oneri, danni documentati), consegnando all'inquilino un conteggio chiaro.</li>
+<li><strong>Restituisci il resto</strong>: versa senza ritardi la parte non trattenuta, insieme agli interessi legali maturati.</li>
+<li><strong>Se c'è contestazione sui danni</strong>: non tenere la somma "in ostaggio". Fai valutare a un legale se conviene proporre la domanda giudiziale per l'attribuzione della cauzione.</li>
+</ul>
+
+<h2>Gli errori più comuni da evitare</h2>
+<ul>
+<li><strong>Chiedere più di tre mensilità</strong>: l'eccedenza è ripetibile dall'inquilino.</li>
+<li><strong>Non riconoscere gli interessi legali</strong>: la clausola che li esclude è nulla e gli interessi restano dovuti.</li>
+<li><strong>Trattenere tutto senza titolo</strong>: rischi la condanna a restituire la somma, più interessi e spese.</li>
+<li><strong>Non fare il verbale iniziale</strong>: senza una descrizione dello stato dei luoghi, contestare i danni diventa molto più difficile.</li>
+<li><strong>Confondere usura e danno</strong>: il normale deterioramento d'uso non si scarica sulla cauzione.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Quante mensilità di cauzione posso chiedere?</h3>
+<p>Al massimo tre mensilità del canone. È un limite di legge: la parte versata oltre questo tetto può essere richiesta indietro dall'inquilino.</p>
+<h3>Devo davvero pagare gli interessi sulla cauzione?</h3>
+<p>Sì. Il deposito produce interessi legali che spettano all'inquilino. È un obbligo inderogabile: anche se il contratto dice il contrario, quella clausola è nulla.</p>
+<h3>Posso trattenere la cauzione per i danni?</h3>
+<p>Sì, ma solo per danni reali che vanno oltre il normale uso, e devi poterli documentare. Se l'inquilino li contesta, per trattenere legittimamente la somma occorre in genere una domanda giudiziale specifica.</p>
+<h3>Entro quando devo restituire la cauzione?</h3>
+<p>L'obbligo scatta alla riconsegna dell'immobile. Non c'è un termine fisso di giorni previsto dalla legge, ma un ritardo ingiustificato ti espone al pagamento di interessi ed eventuali spese.</p>
+<h3>La cauzione basta a coprire i canoni non pagati?</h3>
+<p>La cauzione garantisce anche i canoni, ma spesso l'importo dovuto è superiore. In quel caso conviene attivarsi per il recupero del credito e, se necessario, per lo sfratto, senza contare solo sul deposito.</p>
+
+<h2>In sintesi</h2>
+<p>Il deposito cauzionale è uno strumento di garanzia, non un incasso: puoi chiederne al massimo tre mensilità, devi riconoscere gli interessi legali e, alla fine, restituirlo dopo la riconsegna. Puoi trattenerlo per crediti certi o per danni documentati, ma non "a occhio": la legge protegge il proprietario diligente, quello che tiene le carte in ordine fin dal primo giorno. Se hai un inquilino che non paga o che ha lasciato l'immobile danneggiato, e vuoi capire come muoverti per tutelare i tuoi diritti, puoi richiedere una prima valutazione del caso attraverso il nostro servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità puramente informative e non sostituisce una consulenza legale personalizzata: ogni situazione ha le sue specificità e va valutata con l'assistenza di un avvocato.</em></p>
+
+<h3>Riferimenti normativi</h3>
+<p>Art. 11 della legge 27 luglio 1978, n. 392 (rubrica "Deposito cauzionale"): limite di tre mensilità e interessi legali annuali a favore del conduttore. Una clausola contraria a questi obblighi è nulla per contrasto con norma imperativa (art. 1418 del codice civile); per le locazioni a uso diverso resta applicabile anche l'art. 79 della stessa legge n. 392/1978 ("Patti contrari alla legge"), che consente al conduttore di ripetere quanto versato oltre i limiti di legge fino a sei mesi dopo la riconsegna. Artt. 1590 ("Restituzione della cosa locata") e 1591 ("Danni per ritardata restituzione") del codice civile. Sul momento in cui sorge l'obbligo di restituzione e sui limiti al trattenimento: Cassazione civile, ord. n. 3882/2015, ord. n. 194/2023 e sent. n. 14050/2013.</p>`,
+  },
