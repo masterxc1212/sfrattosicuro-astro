@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "contratto-affitto-box-auto",
+    title: "Contratto di affitto per box auto e garage: la guida del proprietario",
+    description: "Affittare un box auto o un garage: contratto, durata, registrazione, cedolare secca e i rischi dell'affitto senza contratto. Guida per il proprietario.",
+    excerpt: "Hai un box, un garage o un posto auto da mettere a reddito? Ecco, dalla parte del proprietario, come fare il contratto di affitto giusto: durata, registrazione, imposte, cedolare secca e i rischi dell'affitto senza contratto scritto.",
+    lead: "Affittare un box auto o un garage non segue le stesse regole dell'affitto di casa. Vediamo, dalla parte del proprietario, come impostare il contratto, registrarlo e non sbagliare con le tasse.",
+    publishedAt: "2026-09-16",
+    updatedAt: "2026-09-16",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-16. Keyword: contratto di affitto box auto, vol 140, KD 0 (DataForSEO). Secondarie: contratto locazione garage, locazione garage senza contratto, cedolare secca box auto.",
+    html: `<p>Hai un <strong>box auto</strong>, un <strong>garage</strong> o un <strong>posto auto</strong> che non usi e vuoi metterlo a reddito? Prima di consegnare le chiavi al primo interessato, conviene capire come si costruisce un <strong>contratto di affitto per box auto</strong> a regola d'arte. Le regole non sono le stesse dell'affitto di una casa: cambiano la durata, le tasse e persino l'obbligo di registrazione. Questa guida spiega, dalla parte del proprietario, cosa scrivere nel contratto, come registrarlo e quali errori evitare per non trovarsi con un inquilino difficile da mandare via o con una sanzione del Fisco.</p>
+
+<h2>Le due situazioni di partenza: box pertinenziale o box a sé stante</h2>
+<p>La prima domanda da farsi è: il box viene affittato <strong>insieme a un'abitazione</strong> oppure <strong>da solo</strong>? La risposta cambia tutto.</p>
+<p>Se affitti il box come <strong>pertinenza dell'appartamento</strong> (cioè un locale accessorio, al servizio della casa) che dai in locazione allo stesso inquilino, il box "segue" il contratto di casa: rientra nello stesso contratto abitativo, con la stessa durata e lo stesso regime fiscale. Se hai scelto la cedolare secca sull'abitazione, questa copre anche il box pertinenziale locato insieme.</p>
+<p>Se invece affitti il box <strong>da solo</strong>, a chi ti serve solo un posto dove tenere l'auto o la moto, sei di fronte a un contratto autonomo, con regole diverse e più libere di quelle dell'affitto di casa. È il caso più frequente e quello su cui questa guida si concentra.</p>
+
+<h2>Che tipo di contratto è la locazione di un box</h2>
+<p>Un box o un garage affittato da solo a un privato, per la semplice sosta del veicolo, non è una locazione abitativa: non ci si abita. Non rientra quindi nelle regole rigide della legge sugli affitti di casa (la <strong>Legge 431/1998</strong>), che impone durate minime come il classico 4+4. Non è nemmeno, di norma, una locazione "commerciale": quella riguarda gli immobili usati per un'attività d'impresa o professionale, disciplinati dalla <strong>Legge 392/1978</strong>.</p>
+<p>Il risultato è che l'affitto di un box a un privato, per uso personale, è retto essenzialmente dal <strong>Codice civile</strong> (gli articoli sulla locazione in generale) e dalla libertà di accordo tra le parti. In pratica: <strong>durata e canone li decidi tu</strong>, insieme all'inquilino, senza vincoli di legge sulla durata minima. Attenzione a un caso particolare: se affitti il box a un'azienda che lo usa per la propria attività (per esempio per i mezzi aziendali), il contratto può ricadere nelle regole delle locazioni a uso diverso dall'abitativo, con durata minima più lunga. In quel caso è prudente farsi assistere.</p>
+
+<h2>Cosa scrivere nel contratto di affitto del box auto</h2>
+<p>Anche se la legge lascia mano libera, mettere tutto per iscritto è la vera tutela del proprietario. Un contratto chiaro evita liti e serve come prova. Ecco gli elementi da non dimenticare:</p>
+<ul>
+<li><strong>Le parti</strong>: dati completi di proprietario e conduttore (chi prende in affitto).</li>
+<li><strong>L'identificazione del box</strong>: indirizzo, eventuale numero del posto, dati catastali (il box è in genere accatastato in categoria C/6).</li>
+<li><strong>L'uso consentito</strong>: solo ricovero di veicoli. Vietare espressamente di usarlo come deposito di materiali infiammabili, magazzino o, peggio, come abitazione o laboratorio.</li>
+<li><strong>Il canone</strong>: importo, scadenza mensile, modalità di pagamento (meglio il bonifico, che lascia traccia).</li>
+<li><strong>La durata</strong> e le condizioni di rinnovo o disdetta, con i termini di preavviso.</li>
+<li><strong>Il deposito cauzionale</strong>, se lo chiedi, e le condizioni di restituzione.</li>
+<li><strong>La ripartizione delle spese</strong>: chi paga eventuali oneri condominiali del garage, la manutenzione, le utenze se presenti.</li>
+</ul>
+<p>Indicare con precisione l'uso consentito è fondamentale: è la clausola che ti permette di intervenire se l'inquilino trasforma il box in qualcosa che non deve essere.</p>
+
+<h2>Registrazione e tasse: cosa deve fare il proprietario</h2>
+<p>Molti proprietari pensano che per un semplice box non serva registrare nulla. È un errore. La regola generale vale anche qui: <strong>ogni contratto di locazione di durata superiore a 30 giorni va registrato</strong> all'Agenzia delle Entrate entro 30 giorni dalla firma (o dall'inizio, se anteriore). La registrazione tardiva costa sanzioni.</p>
+<p>Sull'affitto di un box a sé stante l'<strong>imposta di registro</strong> è pari, di norma, al <strong>2% del canone annuo</strong>, con un minimo di legge (67 euro), e di norma si divide a metà tra proprietario e inquilino, anche se davanti all'Agenzia delle Entrate entrambi rispondono dell'intero importo; va aggiunta la <strong>marca da bollo</strong> sulle copie del contratto. Puoi approfondire il meccanismo nella nostra guida all'<a href="/blog/imposta-di-registro-locazione/">imposta di registro sul contratto di locazione</a>.</p>
+<p>Sul fronte delle imposte sul reddito, arriva la sorpresa più frequente: la <strong>cedolare secca non si può usare sul box affittato da solo</strong>. Quel regime agevolato è riservato alle abitazioni e alle loro pertinenze affittate <strong>insieme</strong> all'abitazione. Un box locato in modo autonomo resta fuori: il canone va dichiarato con la tassazione ordinaria (IRPEF). La cedolare torna possibile solo quando il box è pertinenza di un'abitazione e viene affittato insieme a questa, allo stesso inquilino (anche con un contratto separato ma collegato a quello di casa). Se vuoi capire come funziona il regime, leggi la guida sulla <a href="/blog/cedolare-secca-affitto/">cedolare secca sull'affitto</a>.</p>
+
+<h2>Posso affittare il box senza contratto scritto?</h2>
+<p>È la domanda che molti si pongono per un box, considerato "poca cosa". Sul piano teorico, per un immobile non abitativo un accordo verbale può anche essere valido. Ma per il proprietario è una strada da evitare. Senza un contratto scritto e registrato ti esponi a tre problemi seri: <strong>non hai una prova</strong> chiara di quanto pattuito se sorge una lite; <strong>rischi contestazioni fiscali</strong>, perché l'affitto non dichiarato è a tutti gli effetti un canone in nero, con sanzioni pesanti; e <strong>fai molta più fatica a liberare il box</strong> se l'inquilino smette di pagare o non se ne va. Il contratto scritto e registrato non è una formalità: è lo strumento che ti protegge. Vale sempre la pena metterlo nero su bianco.</p>
+
+<h2>Gli errori più comuni da evitare</h2>
+<ul>
+<li><strong>Affittare "a voce"</strong> per risparmiare sulla registrazione: il risparmio è minimo, il rischio enorme.</li>
+<li><strong>Dare per scontata la cedolare secca</strong> anche sul box autonomo, salvo poi scoprire in dichiarazione che non spetta.</li>
+<li><strong>Non definire l'uso</strong>: senza il vincolo scritto al solo ricovero dei veicoli, è più difficile contestare usi impropri.</li>
+<li><strong>Consegnare le chiavi prima della firma</strong> e della registrazione, restando senza tutele nella fase più delicata.</li>
+<li><strong>Dimenticare lo stato di consegna</strong>: annota le condizioni del box e la presenza di eventuali danni, per evitare discussioni alla riconsegna.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Quanto può durare l'affitto di un box?</h3>
+<p>Per un box affittato da solo a un privato la durata è libera: la concordi con l'inquilino. Non ci sono i vincoli di durata minima previsti per le case. È comunque bene fissare per iscritto durata, rinnovo e preavviso per la disdetta.</p>
+<h3>Devo per forza registrare il contratto?</h3>
+<p>Sì, se la durata supera 30 giorni. La registrazione all'Agenzia delle Entrate è obbligatoria e va fatta entro 30 giorni. Ometterla espone a sanzioni e alla contestazione dell'affitto in nero.</p>
+<h3>Posso chiedere una cauzione?</h3>
+<p>Sì. Puoi chiedere un deposito cauzionale a garanzia dei pagamenti e di eventuali danni. Concorda l'importo e le condizioni di restituzione nel contratto, così eviti contestazioni quando il box viene riconsegnato.</p>
+<h3>Se l'inquilino non paga, come lo mando via?</h3>
+<p>Anche per un box la strada è quella legale: diffida, poi eventuale azione per il rilascio e il recupero delle somme. Non puoi cambiare la serratura o togliere l'accesso da solo. Proprio perché il rilascio può diventare complicato, un contratto scritto e registrato ti mette in una posizione molto più forte.</p>
+<h3>Il box pertinenza dell'appartamento va affittato con un contratto a parte?</h3>
+<p>No. Se lo affitti allo stesso inquilino insieme alla casa, conviene inserirlo nello stesso contratto abitativo come pertinenza: seguirà durata e regime fiscale dell'abitazione, cedolare secca compresa se l'hai scelta.</p>
+
+<h2>In sintesi</h2>
+<p>Affittare un box auto o un garage è più semplice che affittare una casa, ma non è un affare da chiudere con una stretta di mano. Metti tutto per iscritto, definisci l'uso, registra il contratto entro 30 giorni e ricorda che la cedolare secca, sul box da solo, non spetta. Così trasformi un locale inutilizzato in una piccola rendita sicura, senza brutte sorprese fiscali o difficoltà a rientrare in possesso del tuo immobile.</p>
+<p>Se vuoi impostare il contratto nel modo giusto o hai un dubbio sulla tua situazione, <strong>Sfratto Sicuro</strong> affianca solo proprietari e locatori: puoi richiedere una prima valutazione senza impegno attraverso il servizio di <a href="/servizi/contratti-di-locazione/">assistenza sui contratti di locazione</a> o di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto a scopo informativo, aggiornato a settembre 2026. Non sostituisce una consulenza legale personalizzata: ogni situazione va valutata nel caso concreto. Riferimenti normativi: artt. 1571 e seguenti del Codice civile (nozione e disciplina generale della locazione); art. 1573 c.c. (durata massima trentennale); Legge 431/1998 (locazioni a uso abitativo e pertinenze); Legge 392/1978 (locazioni a uso diverso dall'abitativo); art. 3 D.Lgs. 23/2011 (cedolare secca, riservata agli immobili abitativi e alle pertinenze locate congiuntamente); DPR 131/1986, Testo unico dell'imposta di registro (obbligo di registrazione e aliquota del 2% sui canoni delle locazioni di fabbricati).</em></p>`
+  },
+
+  {
     slug: "rilascio-immobile-occupato-senza-titolo",
     title: "Rilascio di un immobile occupato senza titolo: la guida per il proprietario",
     description: "Immobile occupato senza titolo: perché lo sfratto spesso non basta e come il proprietario ottiene il rilascio con l'azione civile. Guida pratica.",
