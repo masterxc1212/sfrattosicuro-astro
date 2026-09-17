@@ -16,6 +16,81 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "termine-rilascio-immobile-sfratto",
+    title: "Termine per il rilascio dell'immobile: quanto tempo può dare il giudice all'inquilino",
+    description: "Termine per il rilascio dell'immobile dopo lo sfratto: quanto tempo il giudice può concedere all'inquilino (fino a 6 mesi) e cosa fare se scade.",
+    excerpt: "Hai ottenuto la convalida ma l'inquilino è ancora in casa? Il giudice fissa una data per il rilascio: fino a 6 mesi, eccezionalmente 12, molto meno nella morosità. Guida pratica per il proprietario.",
+    lead: "Dopo la convalida dello sfratto o l'ordinanza di rilascio l'immobile non torna libero subito: il giudice fissa un termine per il rilascio, cioè la data entro cui l'inquilino deve andarsene. Questa guida spiega al proprietario quanto tempo può essere concesso, da cosa dipende e cosa fare quando il termine scade.",
+    publishedAt: "2026-09-17",
+    updatedAt: "2026-09-17",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-09-17. Keyword: termine per il rilascio dell'immobile, vol 90, KD 0 (DataForSEO, long-tail 'sfratto finita locazione termine massimo rilascio'). Secondarie: termine massimo rilascio sfratto, quanto tempo dopo la convalida di sfratto, data di rilascio, sfratto finita locazione tempi.",
+    html: `  <p>Hai ottenuto la convalida dello sfratto o l'ordinanza di rilascio, ma l'inquilino è ancora dentro casa e ti chiedi entro quando dovrà lasciarla. È il momento in cui entra in gioco il <strong>termine per il rilascio dell'immobile</strong>: la data, fissata dal giudice, entro la quale l'occupante deve riconsegnarti le chiavi. Questa guida spiega al proprietario quanto tempo il giudice può concedere, da cosa dipende quella data, cosa cambia in caso di morosità e cosa puoi fare quando il termine scade senza che l'immobile venga liberato.</p>
+
+  <h2>Che cos'è il termine per il rilascio dell'immobile</h2>
+  <p>Quando il giudice pronuncia un provvedimento che dispone il rilascio dell'immobile — sia la convalida di uno sfratto, sia un'ordinanza di rilascio — non si limita a dare ragione al proprietario. Nello stesso provvedimento fissa anche la <strong>data dell'esecuzione</strong>, cioè il giorno entro cui l'inquilino deve andarsene. Questo è il termine per il rilascio: non è una gentilezza verso l'occupante, ma un passaggio previsto dalla legge per permettere una riconsegna ordinata dell'immobile.</p>
+  <p>Attenzione a non confondere due momenti diversi: prima il giudice stabilisce <em>chi ha ragione</em> e dispone il rilascio; poi indica <em>entro quando</em> la casa deve essere lasciata. Il proprietario che conosce questo meccanismo evita false aspettative — nessuno può pretendere che l'inquilino esca "il giorno dopo l'udienza" — e sa già quali saranno i passi successivi.</p>
+
+  <h2>Quanto tempo può dare il giudice: il termine massimo</h2>
+  <p>La regola di riferimento è l'articolo 56 della legge sull'equo canone (legge 392 del 1978), tuttora in vigore. Con il provvedimento che dispone il rilascio, il giudice fissa la data dell'esecuzione <strong>entro il termine massimo di sei mesi</strong> dalla data del provvedimento. Solo <strong>in casi eccezionali</strong> questo termine può arrivare fino a <strong>dodici mesi</strong>.</p>
+  <p>Non si tratta di un termine automatico: la legge chiede al giudice una motivazione che tenga conto di diversi elementi, confrontando la posizione dell'inquilino con quella del proprietario. In concreto il giudice valuta:</p>
+  <ul>
+    <li><strong>Le condizioni dell'inquilino</strong> a confronto con quelle del proprietario (situazione economica, familiare, abitativa di entrambi).</li>
+    <li><strong>Le ragioni per cui è stato disposto il rilascio</strong>: una morosità grave e prolungata pesa diversamente rispetto a una finita locazione fisiologica.</li>
+    <li><strong>Nei casi di finita locazione, il tempo trascorso dalla disdetta</strong>: se l'inquilino ha già avuto mesi di preavviso, ha meno motivi per ottenere ulteriore tempo.</li>
+  </ul>
+  <p>Questo significa che il "termine massimo rilascio" non è sempre sei mesi: in molti casi il giudice fissa una data più vicina, soprattutto quando la posizione del proprietario è più meritevole di tutela. I sei mesi (o eccezionalmente dodici) sono il tetto, non la regola fissa.</p>
+
+  <h2>Il caso della morosità: un termine molto più breve</h2>
+  <p>Quando lo sfratto è per morosità, la legge è più rigida a favore del proprietario. Se durante la procedura l'inquilino ha chiesto e ottenuto il cosiddetto <strong>termine di grazia</strong> per pagare i canoni arretrati (articolo 55 della legge 392 del 1978) ma poi <strong>non paga entro la scadenza</strong>, la data dell'esecuzione <strong>non può essere fissata oltre sessanta giorni</strong> dalla scadenza del termine concesso per il pagamento.</p>
+  <p>È bene non confondere le due cose, perché è un errore molto frequente. Il <strong>termine di grazia</strong> è il tempo dato all'inquilino moroso per saldare il debito ed evitare lo sfratto; ne parliamo in dettaglio nella guida al <a href="/blog/sfratto-termine-di-grazia/">termine di grazia nello sfratto per morosità</a>. Il <strong>termine per il rilascio</strong>, invece, presuppone che lo sfratto sia ormai deciso e riguarda solo la data entro cui liberare l'immobile. Nel primo caso l'inquilino può ancora salvare il contratto pagando; nel secondo lo sfratto è già stato disposto e si discute solo del "quando".</p>
+
+  <h2>Cosa succede quando il termine scade</h2>
+  <p>Il termine per il rilascio non è la fine della procedura, ma un traguardo intermedio. Se l'inquilino se ne va spontaneamente entro la data fissata, la vicenda si chiude con la riconsegna delle chiavi. Se invece <strong>la data passa e l'immobile non viene liberato</strong>, il proprietario non resta senza strumenti: la legge prevede che, trascorsa inutilmente la data fissata, il locatore possa <strong>promuovere l'esecuzione forzata</strong> secondo le regole del codice di procedura civile (articoli 605 e seguenti).</p>
+  <p>In pratica si passa alla fase esecutiva vera e propria: si notifica all'inquilino l'atto di <a href="/blog/precetto-per-rilascio-immobile/">precetto per il rilascio dell'immobile</a> e, se ancora non basta, interviene l'ufficiale giudiziario per l'esecuzione dello sgombero. È il momento in cui il titolo ottenuto dal giudice diventa concretamente operativo. Da ricordare: anche di fronte a un inquilino che "resiste", il proprietario non può mai riprendersi la casa con le proprie mani (cambiare la serratura, buttare fuori le cose): il rilascio passa sempre dall'ufficiale giudiziario.</p>
+
+  <h2>Si può contestare la data fissata dal giudice?</h2>
+  <p>Sia il proprietario sia l'inquilino possono, in qualsiasi momento e limitatamente alla data fissata per l'esecuzione, proporre una specifica <strong>opposizione</strong> al tribunale (prevista dall'articolo 6 della legge 431 del 1998). Serve proprio a discutere se quella data sia troppo lontana o troppo ravvicinata rispetto alle condizioni delle parti. Per il proprietario è lo strumento tecnico per provare ad anticipare un termine che ritiene eccessivo: una valutazione che conviene affidare a un legale, perché va motivata con elementi concreti.</p>
+
+  <h2>Cosa può fare il proprietario per non perdere tempo (e denaro)</h2>
+  <p>Il periodo tra il provvedimento e il rilascio effettivo è delicato: l'immobile resta occupato e spesso il proprietario non incassa nulla. Ecco alcuni accorgimenti pratici:</p>
+  <ul>
+    <li><strong>Fai valere fin dall'inizio la tua posizione.</strong> Poiché il giudice confronta le condizioni delle due parti, documentare per tempo le proprie esigenze (economiche, familiari, di utilizzo dell'immobile) aiuta a ottenere una data più ravvicinata.</li>
+    <li><strong>Non lasciar decorrere inutilmente la data fissata.</strong> Appena scade il termine senza rilascio, conviene attivare subito la fase esecutiva: ogni settimana di attesa in più significa altra occupazione senza incasso.</li>
+    <li><strong>Ricordati dell'indennità di occupazione.</strong> Per il periodo in cui l'inquilino resta nell'immobile senza titolo puoi chiedere una somma a titolo di indennità, oltre agli eventuali canoni arretrati.</li>
+    <li><strong>Fatti seguire da un professionista sui tempi tecnici.</strong> Notifiche, precetto ed esecuzione hanno scadenze precise: un errore procedurale può allungare i tempi molto più del termine concesso dal giudice.</li>
+  </ul>
+
+  <h2>Errori comuni del proprietario</h2>
+  <ul>
+    <li><strong>Pensare che lo sfratto significhi rilascio immediato.</strong> Il giudice fissa quasi sempre una data futura: prepararsi a questo evita frustrazioni e scelte avventate.</li>
+    <li><strong>Confondere termine di grazia e termine per il rilascio.</strong> Sono due istituti diversi, con presupposti e conseguenze opposte.</li>
+    <li><strong>Riprendersi la casa da soli allo scadere del termine.</strong> Cambiare la serratura o rimuovere i beni dell'inquilino è illegittimo: il rilascio va sempre eseguito con l'ufficiale giudiziario.</li>
+    <li><strong>Aspettare passivamente dopo la scadenza.</strong> La fase esecutiva non parte da sola: va promossa dal proprietario con precetto ed esecuzione.</li>
+  </ul>
+
+  <h2>Domande frequenti</h2>
+  <h3>Qual è il termine massimo che il giudice può concedere per il rilascio?</h3>
+  <p>Di regola non oltre sei mesi dalla data del provvedimento; solo in casi eccezionali il giudice può arrivare fino a dodici mesi. Nella morosità con termine di grazia non pagato, invece, la data non può superare i sessanta giorni dalla scadenza del termine per il pagamento.</p>
+  <h3>Da cosa dipende la data scelta dal giudice?</h3>
+  <p>Dal confronto tra le condizioni dell'inquilino e quelle del proprietario, dalle ragioni del rilascio e, nella finita locazione, dal tempo già trascorso dalla disdetta. Non è quindi un valore fisso: può essere anche molto più breve del massimo di legge.</p>
+  <h3>Se l'inquilino non se ne va entro la data, cosa posso fare?</h3>
+  <p>Puoi promuovere l'esecuzione forzata: si notifica il precetto per il rilascio e, se necessario, interviene l'ufficiale giudiziario. Non è mai consentito riprendersi l'immobile con la forza o cambiando la serratura.</p>
+  <h3>Posso far anticipare la data fissata dal giudice?</h3>
+  <p>Puoi proporre l'apposita opposizione sulla data prevista dalla legge, motivandola con elementi concreti sulla tua situazione. È un passaggio tecnico che conviene valutare con un legale.</p>
+  <h3>Durante l'attesa del rilascio ho diritto a qualcosa?</h3>
+  <p>Sì: per il periodo di occupazione senza titolo puoi chiedere un'indennità di occupazione, oltre al recupero dei canoni eventualmente arretrati.</p>
+
+  <h2>In sintesi</h2>
+  <p>Il termine per il rilascio è la data entro cui l'immobile deve essere liberato dopo che il giudice ha disposto il rilascio: di norma fino a sei mesi, eccezionalmente dodici, molto più breve nella morosità. Conoscere questa regola aiuta il proprietario a pianificare i tempi reali dello sfratto e a muoversi subito nella fase esecutiva quando la data scade a vuoto.</p>
+  <p>Se hai ottenuto (o stai per ottenere) un provvedimento di rilascio e vuoi capire come ridurre i tempi e gestire correttamente le fasi successive, puoi richiedere una prima valutazione del tuo caso tramite la pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+  <p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto.</em></p>
+
+  <p><em>Riferimenti normativi: modalità e termine per il rilascio (data dell'esecuzione entro sei mesi, in casi eccezionali dodici; sessanta giorni nella morosità non sanata; esecuzione ai sensi degli artt. 605 e seguenti del codice di procedura civile), art. 56 legge 27 luglio 1978 n. 392; termine di grazia per il pagamento dei canoni scaduti, art. 55 legge 392 del 1978; opposizione sulla data di esecuzione, art. 6 legge 9 dicembre 1998 n. 431; procedimento per convalida di sfratto, artt. 657-669 del codice di procedura civile.</em></p>
+`,
+  },
+  {
     slug: "contratto-affitto-box-auto",
     title: "Contratto di affitto per box auto e garage: la guida del proprietario",
     description: "Affittare un box auto o un garage: contratto, durata, registrazione, cedolare secca e i rischi dell'affitto senza contratto. Guida per il proprietario.",
