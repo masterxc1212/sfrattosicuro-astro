@@ -2,11 +2,12 @@
 /**
  * LandingV3CallbackModal.astro — popup «Lascia il numero» (2026-09-05).
  * ------------------------------------------------------------------
- * Due campi soli (telefono + email), stile «un tocco e via». Decisioni titolare 05/09:
- * niente nome (si chiede al telefono), niente scelta proprietario/inquilino (solo nel testo),
- * email obbligatoria perché a ogni lead si manda il link della piattaforma.
+ * Nome, cognome, telefono, email. Decisione titolare 06/10/2026: nome e cognome tornano
+ * obbligatori in tutti i moduli (prima, dal 05/09, il popup chiedeva solo telefono + email).
+ * Niente scelta proprietario/inquilino (solo nel testo); email obbligatoria perché a ogni
+ * lead si manda il link della piattaforma.
  * - Stesso intake dei moduli (/php/invia-email.php): gclid/utm arrivano dai campi nascosti
- *   riempiti da form-validation.js e AdAttributionFields; il PHP accetta `nome` vuoto.
+ *   riempiti da form-validation.js e AdAttributionFields; il PHP ha ancora il ripiego «Da richiamare» se `nome` arriva vuoto.
  * - Invio in fetch: l'utente resta in pagina e vede la conferma; la conversione Ads «Modulo»
  *   (che sui moduli scatta su grazie.html) qui parte da script con la stessa etichetta.
  * - Si apre da ogni link a #form-rapido / #contatti (delega in LandingExperimentPage).
@@ -19,8 +20,19 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
     <button type="button" class="ss-callback-close" aria-label="Chiudi" data-close>×</button>
     <div class="ss-callback-step" data-step="form">
       <p class="ss-callback-kicker">Ti richiamiamo noi</p>
-      <h2 id="ss-callback-title" class="ss-callback-title">Lascia il numero, al resto pensiamo noi</h2>
+      <h2 id="ss-callback-title" class="ss-callback-title">Lascia i tuoi dati, al resto pensiamo noi</h2>
       <p class="ss-callback-sub">Prima valutazione gratuita e senza impegno. Servizio riservato a proprietari e locatori.</p>
+
+      <div class="ss-callback-row">
+        <div>
+          <label class="ss-callback-label" for="ss-cb-nome">Nome</label>
+          <input id="ss-cb-nome" class="ss-callback-input" type="text" name="nome" autocomplete="given-name" placeholder="Mario" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+        </div>
+        <div>
+          <label class="ss-callback-label" for="ss-cb-cognome">Cognome</label>
+          <input id="ss-cb-cognome" class="ss-callback-input" type="text" name="cognome" autocomplete="family-name" placeholder="Rossi" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+        </div>
+      </div>
 
       <label class="ss-callback-label" for="ss-cb-tel">Telefono</label>
       <input id="ss-cb-tel" class="ss-callback-input" type="tel" name="telefono" inputmode="tel" autocomplete="tel"
@@ -33,7 +45,6 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
       <!-- trappola anti-bot: resta vuoto -->
       <input type="text" name="website" class="ss-callback-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-      <input type="hidden" name="nome" value="">
       <input type="hidden" name="form_source" value={formSource}>
       <input type="hidden" name="gclid" value="">
       <input type="hidden" name="utm_source" value="">
@@ -79,7 +90,7 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
       show('form'); err.hidden = true;
       dlg.dataset.origin = origin || '';
       dlg.showModal();
-      setTimeout(function () { var t = document.getElementById('ss-cb-tel'); if (t) t.focus(); }, 50);
+      setTimeout(function () { var t = document.getElementById('ss-cb-nome'); if (t) t.focus(); }, 50);
       try { if (typeof window.gtag === 'function') window.gtag('event', 'callback_popup_open', { origin: origin || '' }); } catch (e) {}
       try { if (typeof window.clarity === 'function') window.clarity('event', 'popup_aperto'); } catch (e) {}
     }
@@ -114,11 +125,16 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
       if (sending) return;
+      var nome = form.nome.value.trim(), cognome = form.cognome.value.trim();
       var tel = form.telefono.value.trim(), mail = form.email.value.trim();
       var okTel = /^[0-9\s+]{8,}$/.test(tel), okMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
-      if (!okTel || !okMail) {
-        err.textContent = !okTel ? 'Controlla il numero di telefono.' : 'Controlla l’indirizzo email.';
-        err.hidden = false; (!okTel ? form.telefono : form.email).focus();
+      var bad = nome.length < 2 ? [form.nome, 'Inserisci il tuo nome.']
+        : cognome.length < 2 ? [form.cognome, 'Inserisci il tuo cognome.']
+        : !okTel ? [form.telefono, 'Controlla il numero di telefono.']
+        : !okMail ? [form.email, 'Controlla l’indirizzo email.'] : null;
+      if (bad) {
+        err.textContent = bad[1];
+        err.hidden = false; bad[0].focus();
         return;
       }
       if (form.website && form.website.value) { show('done'); return; } // bot

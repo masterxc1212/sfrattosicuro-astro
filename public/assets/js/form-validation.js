@@ -66,19 +66,23 @@
 
       // Validazione campi
       const nome = document.getElementById('nome-hero');
+      const cognome = document.getElementById('cognome-hero');
       const telefono = document.getElementById('telefono-hero');
 
       let isValid = true;
       let errorMessage = '';
 
-      // Valida nome (facoltativo dal 2026-09-05: si controlla solo se compilato)
-      if (nome && nome.value.trim() && nome.value.trim().length < 2) {
-        isValid = false;
-        errorMessage += '• Inserisci un nome valido\n';
-        nome.classList.add('border-red-500');
-      } else if (nome) {
-        nome.classList.remove('border-red-500');
-      }
+      // Valida nome e cognome (di nuovo obbligatori dal 2026-10-06, quando il modulo li mostra)
+      [[nome, 'il tuo nome'], [cognome, 'il tuo cognome']].forEach(([field, label]) => {
+        if (!field || field.type === 'hidden') return;
+        if (field.value.trim().length < 2) {
+          isValid = false;
+          errorMessage += '• Inserisci ' + label + '\n';
+          field.classList.add('border-red-500');
+        } else {
+          field.classList.remove('border-red-500');
+        }
+      });
 
       // Valida telefono
       const phoneRegex = /^[\d\s+]{8,}$/;

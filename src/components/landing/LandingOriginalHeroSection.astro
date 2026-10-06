@@ -120,6 +120,17 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
               method="POST"
               id="hero-form"
             >
+              <div class="ss-name-row">
+                <div class="form-group">
+                  <label for="nome-hero" class="form-label">Nome *</label>
+                  <input type="text" name="nome" id="nome-hero" class="form-input" placeholder="Mario" autocomplete="given-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="cognome-hero" class="form-label">Cognome *</label>
+                  <input type="text" name="cognome" id="cognome-hero" class="form-input" placeholder="Rossi" autocomplete="family-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+                </div>
+              </div>
+
               <div class="form-group">
                 <label for="telefono-hero" class="form-label">Telefono *</label>
                 <input
@@ -144,7 +155,6 @@ const googleReviewsTotal = socialProof.googleReviewsTotal;
 
               <p class="hero-form-owners">Servizio riservato a proprietari e locatori.</p>
 
-              <input type="hidden" name="nome" value="">
               <input type="hidden" name="form_source" value={hero.formSource}>
               <input type="hidden" name="gclid" value="">
               <input type="hidden" name="utm_source" value="">

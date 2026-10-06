@@ -43,9 +43,19 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').rep
       <div class="card-form">
         <p class="card-form__eyebrow">Valutazione gratuita</p>
         <h2 class="card-form__title">{hero.formTitle}</h2>
-        <p class="card-form__sub">Ti richiamiamo noi, senza impegno. Bastano due dati.</p>
+        <p class="card-form__sub">Ti richiamiamo noi, senza impegno. Bastano pochi secondi.</p>
 
         <form action="/php/invia-email.php" method="POST" id="hero-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="nome-hero">Nome</label>
+              <input type="text" name="nome" id="nome-hero" placeholder="Mario" autocomplete="given-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="cognome-hero">Cognome</label>
+              <input type="text" name="cognome" id="cognome-hero" placeholder="Rossi" autocomplete="family-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+            </div>
+          </div>
           <div class="field">
             <label for="telefono-hero">Telefono</label>
             <input type="tel" name="telefono" id="telefono-hero" placeholder={hero.formPhonePlaceholder} inputmode="tel" minlength="8" required aria-required="true" autocomplete="tel">
@@ -55,7 +65,6 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').rep
             <input type="email" name="email" id="email-hero" placeholder="Per inviarti l’accesso alla tua pratica" autocomplete="email" inputmode="email" required aria-required="true">
           </div>
 
-          <input type="hidden" name="nome" value="">
           <input type="hidden" name="form_source" value={hero.formSource}>
           <input type="hidden" name="gclid" value="">
           <input type="hidden" name="utm_source" value="">

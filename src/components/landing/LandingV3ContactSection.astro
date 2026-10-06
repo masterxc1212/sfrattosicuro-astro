@@ -65,6 +65,17 @@ const {
         <div id="form-rapido" class="bg-white rounded-2xl card-shadow landing-v3-contact-formcol" style="padding:1.5rem; position:sticky; top:calc(var(--header-h) + 1rem);">
           <form action="/php/invia-email.php" method="POST" class="landing-v3-contact-form" aria-label="Form richiesta rapida proprietario" style="display:flex; flex-direction:column; gap:1rem;">
 
+            <div class="ss-name-row">
+              <div>
+                <label for="nome-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Nome *</label>
+                <input type="text" name="nome" id="nome-v3" class="form-input" placeholder="Mario" autocomplete="given-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+              </div>
+              <div>
+                <label for="cognome-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Cognome *</label>
+                <input type="text" name="cognome" id="cognome-v3" class="form-input" placeholder="Rossi" autocomplete="family-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
+              </div>
+            </div>
+
             <div>
               <label for="telefono-v3" class="block text-dark-gray" style="font-weight:600; margin-bottom:.4rem;">Telefono *</label>
               <input type="tel" name="telefono" id="telefono-v3" class="form-input" placeholder="Numero di telefono diretto" inputmode="tel" autocomplete="tel" required aria-required="true">
@@ -75,7 +86,6 @@ const {
               <input type="email" name="email" id="email-v3" class="form-input" placeholder="Per inviarti l’accesso alla tua pratica" inputmode="email" autocomplete="email" required aria-required="true">
             </div>
 
-            <input type="hidden" name="nome" value="">
             <input type="hidden" name="form_source" value={formSource}>
             <input type="hidden" name="gclid" value="">
             <input type="hidden" name="utm_source" value="">
