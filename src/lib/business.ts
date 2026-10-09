@@ -77,6 +77,12 @@ export type Pricing = {
     ivaCassaIncluse: boolean;
     experimentId: string;
   };
+  /** Variante V5 (test A/B ottobre 2026): compenso per la sola convalida, pagato dopo l'udienza. */
+  testV5: {
+    faseConvalida: number;
+    ivaCassaIncluse: boolean;
+    experimentId: string;
+  };
 };
 
 export type Tempi = {

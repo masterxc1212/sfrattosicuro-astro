@@ -9,6 +9,8 @@ interface Props { contactForm: any; formSource?: string; redirectUrl?: string }
 const { contactForm, formSource = 'bottom_form_v3', redirectUrl = '/grazie.html' } = Astro.props;
 const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 const hours = `${orari.settimanaLabel.replace('-', '–').replace(/:00/g, '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(/:00/g, '')}`;
+// Almeno due parole (nome e cognome). Come espressione: negli attributi Astro le barre rovesciate si perdono.
+const fullNamePattern = String.raw`\s*\S{2,}(\s+\S+)*\s+\S{2,}\s*`;
 ---
 <section id={contactForm.sectionId} class="section cv" aria-labelledby="contatti-title">
   <div class="wrap">
@@ -47,15 +49,9 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(/:00/g, '')} �
           <h3 class="card-form__title">Lascia i tuoi dati, al resto pensiamo noi</h3>
           <p class="card-form__sub">Prima valutazione gratuita e senza impegno.</p>
           <form action="/php/invia-email.php" method="POST" class="landing-v3-contact-form" aria-label="Modulo richiesta rapida proprietario">
-            <div class="field-row">
-              <div class="field">
-                <label for="nome-v3">Nome</label>
-                <input type="text" name="nome" id="nome-v3" placeholder="Mario" autocomplete="given-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-              </div>
-              <div class="field">
-                <label for="cognome-v3">Cognome</label>
-                <input type="text" name="cognome" id="cognome-v3" placeholder="Rossi" autocomplete="family-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-              </div>
+            <div class="field">
+              <label for="nome-v3">Nome e cognome</label>
+              <input type="text" name="nome" id="nome-v3" placeholder="Mario Rossi" pattern={fullNamePattern} title="Scrivi nome e cognome, per esempio Mario Rossi" autocomplete="name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="4" maxlength="120" required aria-required="true">
             </div>
             <div class="field">
               <label for="telefono-v3">Telefono</label>

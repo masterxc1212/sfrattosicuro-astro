@@ -19,6 +19,8 @@ const EXCLUDE_PATHS = new Set([
   '/landing/',
   '/landing-v2/',
   '/landing-v3/',
+  '/landing-v4/',
+  '/landing-v5/',
   '/nuova-landing/'
 ]);
 

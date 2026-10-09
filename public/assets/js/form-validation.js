@@ -72,10 +72,13 @@
       let isValid = true;
       let errorMessage = '';
 
-      // Valida nome e cognome (di nuovo obbligatori dal 2026-10-06, quando il modulo li mostra)
-      [[nome, 'il tuo nome'], [cognome, 'il tuo cognome']].forEach(([field, label]) => {
+      // Valida nome e cognome (di nuovo obbligatori dal 2026-10-06, quando il modulo li mostra).
+      // Dal 2026-10-09 la v3 ha un campo unico «Nome e cognome»: senza #cognome-hero si chiedono due parole.
+      const fullNameOk = v => /\S{2,}\s+\S{2,}/.test(v.trim());
+      [[nome, cognome ? 'il tuo nome' : 'nome e cognome', cognome ? (v => v.trim().length >= 2) : fullNameOk],
+       [cognome, 'il tuo cognome', v => v.trim().length >= 2]].forEach(([field, label, ok]) => {
         if (!field || field.type === 'hidden') return;
-        if (field.value.trim().length < 2) {
+        if (!ok(field.value)) {
           isValid = false;
           errorMessage += '• Inserisci ' + label + '\n';
           field.classList.add('border-red-500');

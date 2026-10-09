@@ -1,7 +1,7 @@
 import { landingOriginal } from './landing-original';
 import { formatBusinessEuro, pricing } from '../lib/business';
 
-export type LandingVersion = 'v2' | 'v3' | 'v4';
+export type LandingVersion = 'v2' | 'v3' | 'v4' | 'v5';
 export type LandingKeywordSlug = 'sfratto-per-morosita';
 export type LandingTerritorySlug = 'nazionale' | 'milano' | 'roma' | 'napoli';
 
@@ -696,11 +696,98 @@ function buildJsonLd(seo: LandingSeoConfig, territory: LandingTerritoryConfig, f
   return { legalService, organization, website, faq };
 }
 
+/**
+ * V5 (test A/B ottobre 2026): stessa pagina della v3, ma il compenso copre SOLO la convalida
+ * (€650 IVA e cassa incluse), sempre dovuto dopo l'udienza. La fase esecutiva NON è inclusa:
+ * si attiva solo con preventivo scritto e consenso del cliente. Si parte dalla config v3 e si
+ * riscrivono soltanto i testi che parlano di prezzo o di «fino alle chiavi».
+ */
+function applyOffertaConvalida(base: LandingPageConfig): LandingPageConfig {
+  const price = formatBusinessEuro(pricing.testV5.faseConvalida);
+  const live = pricing.speseVive;
+  const spese = `${formatBusinessEuro(live.convalidaMin)}–${formatBusinessEuro(live.convalidaMax)}`;
+
+  const hero = {
+    ...base.hero,
+    subtitle: `Ti assistiamo fino alla <strong class="text-white">convalida dello sfratto</strong> con un prezzo fisso, pagato solo dopo l’udienza. Solo per proprietari e locatori, in tutta Italia.`,
+    bullets: [
+      `<strong>${price} IVA e cassa incluse</strong>: prezzo fisso fino alla convalida`,
+      '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
+      '<strong>Convalida in ~60 giorni</strong> in media',
+      '<strong>Fase esecutiva solo se serve</strong>, con preventivo scritto',
+      '<strong>Vale anche per finita locazione</strong> e locali commerciali: stesse condizioni',
+    ],
+    bulletDetails: [
+      `Un compenso fisso di ${price} IVA e cassa incluse per tutta la fase di convalida: analisi, intimazione, notifica, deposito e udienza. Restano fuori solo le spese vive di legge (indicativamente ${spese}), che ti indichiamo per iscritto prima di partire.`,
+      `Oggi non paghi nulla e non versi acconti. I ${price} sono dovuti una volta sola, dopo l’udienza per la convalida, qualunque ne sia l’esito.`,
+      'Dato medio operativo, non promessa assoluta: i tempi dipendono dal Tribunale competente e dall’eventuale opposizione dell’inquilino.',
+      'Se dopo la convalida l’inquilino non lascia l’immobile, ti assistiamo anche nella fase esecutiva (precetto, preavviso di rilascio, ufficiale giudiziario) con un preventivo scritto separato: nulla parte senza il tuo consenso.',
+    ],
+    formSource: 'hero_form_v5',
+  };
+
+  const procedure = {
+    ...base.procedure,
+    steps: base.procedure.steps.map((step: any) =>
+      step.num === '✓'
+        ? {
+            ...step,
+            body: `Il Giudice convalida lo sfratto. <strong>I ${price} si pagano solo dopo l’udienza di convalida.</strong>`,
+            badge: 'Prezzo fisso fino alla convalida',
+            hint: 'Se dopo la convalida l’inquilino non lascia l’immobile, possiamo proseguire con precetto e rilascio forzato: ricevi prima un preventivo scritto e decidi tu.',
+          }
+        : step.num === '1'
+          ? { ...step, hint: 'Ti richiamiamo entro 2 ore lavorative. Se puoi partire, l’incarico si firma a distanza e un solo avvocato segue la pratica dall’inizio.' }
+          : step,
+    ),
+  };
+
+  const faqOverrides: Record<string, LandingFaqItem> = {
+    'fa-euro-sign': {
+      icon: 'fa-euro-sign',
+      q: `Quando si pagano i ${price} e cosa comprendono?`,
+      a: `Solo <strong>dopo l’udienza per la convalida</strong>: avvii la procedura senza anticipare nulla. Il compenso è di ${price} <strong>IVA e cassa incluse</strong> e comprende tutta l’assistenza legale <strong>fino alla convalida dello sfratto</strong>: analisi del caso, intimazione, notifica, deposito e udienza. Restano escluse le spese vive di legge (indicativamente <strong>${spese}</strong>), sempre indicate per iscritto prima e mai richieste in anticipo.`,
+    },
+    'fa-store': {
+      icon: 'fa-store',
+      q: 'Vale anche per negozi, uffici o per la finita locazione?',
+      a: `Sì. Trattiamo anche lo sfratto di immobili commerciali (negozi, uffici, capannoni) e lo sfratto per finita locazione, alle stesse condizioni: <strong>${price} IVA e cassa incluse fino alla convalida, zero anticipi</strong>.`,
+    },
+    'fa-exclamation-circle': {
+      icon: 'fa-exclamation-circle',
+      q: 'Cosa succede se l’inquilino si oppone?',
+      a: `L’opposizione apre un giudizio ordinario con tempi più lunghi. Il compenso di ${price} copre la fase di convalida e resta dovuto <strong>dopo l’udienza, qualunque ne sia l’esito</strong>; per l’eventuale giudizio di merito ricevi un <strong>preventivo scritto separato</strong> e nulla prosegue senza il tuo consenso.`,
+    },
+    'fa-key': {
+      icon: 'fa-key',
+      q: 'E se dopo la convalida l’inquilino non se ne va?',
+      a: 'Si passa alla fase esecutiva: precetto (l’intimazione formale a lasciare l’immobile), preavviso di rilascio e, se serve, accessi dell’ufficiale giudiziario fino alla riconsegna delle chiavi. <strong>Non è compresa nel prezzo della convalida</strong>: ti mandiamo prima un preventivo scritto e procediamo solo con il tuo consenso.',
+    },
+  };
+  const faqItems = base.faq.items.map((item) => (item.icon && faqOverrides[item.icon]) || item);
+  const faq = { ...base.faq, items: faqItems };
+
+  const title = `${base.keyword.titleStem} | ${price} fino alla convalida, paghi dopo l'udienza`;
+  const description = `Sfratto per morosità: ${price} IVA e cassa incluse fino alla convalida. Zero anticipi: paghi solo dopo l'udienza. Solo proprietari e locatori.`;
+  const url = 'https://www.sfrattosicuro.it/landing-v5/';
+  const seo = {
+    ...base.seo,
+    title, description, canonicalUrl: url, ogTitle: title, ogDescription: description, ogUrl: url,
+    twitterTitle: title, twitterDescription: description,
+  };
+
+  const jsonLd = buildJsonLd(seo, base.territory, faqItems);
+  jsonLd.legalService.priceRange = price;
+
+  return { ...base, version: 'v5', hero, procedure, faq, seo, jsonLd };
+}
+
 export function buildLandingPageConfig(options?: {
   version?: LandingVersion;
   territory?: LandingTerritorySlug;
   keyword?: LandingKeywordSlug;
 }): LandingPageConfig {
+  if (options?.version === 'v5') return applyOffertaConvalida(buildLandingPageConfig({ ...options, version: 'v3' }));
   const version = options?.version || 'v2';
   const territory = territories[options?.territory || 'nazionale'];
   const keyword = keywords[options?.keyword || 'sfratto-per-morosita'];

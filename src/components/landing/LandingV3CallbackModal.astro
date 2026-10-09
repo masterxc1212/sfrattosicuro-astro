@@ -2,8 +2,8 @@
 /**
  * LandingV3CallbackModal.astro — popup «Lascia il numero» (2026-09-05).
  * ------------------------------------------------------------------
- * Nome, cognome, telefono, email. Decisione titolare 06/10/2026: nome e cognome tornano
- * obbligatori in tutti i moduli (prima, dal 05/09, il popup chiedeva solo telefono + email).
+ * Nome e cognome (campo unico dal 09/10/2026), telefono, email. Decisione titolare 06/10/2026: nome e
+ * cognome tornano obbligatori in tutti i moduli (prima, dal 05/09, il popup chiedeva solo telefono + email).
  * Niente scelta proprietario/inquilino (solo nel testo); email obbligatoria perché a ogni
  * lead si manda il link della piattaforma.
  * - Stesso intake dei moduli (/php/invia-email.php): gclid/utm arrivano dai campi nascosti
@@ -23,16 +23,8 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
       <h2 id="ss-callback-title" class="ss-callback-title">Lascia i tuoi dati, al resto pensiamo noi</h2>
       <p class="ss-callback-sub">Prima valutazione gratuita e senza impegno. Servizio riservato a proprietari e locatori.</p>
 
-      <div class="ss-callback-row">
-        <div>
-          <label class="ss-callback-label" for="ss-cb-nome">Nome</label>
-          <input id="ss-cb-nome" class="ss-callback-input" type="text" name="nome" autocomplete="given-name" placeholder="Mario" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-        </div>
-        <div>
-          <label class="ss-callback-label" for="ss-cb-cognome">Cognome</label>
-          <input id="ss-cb-cognome" class="ss-callback-input" type="text" name="cognome" autocomplete="family-name" placeholder="Rossi" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-        </div>
-      </div>
+      <label class="ss-callback-label" for="ss-cb-nome">Nome e cognome</label>
+      <input id="ss-cb-nome" class="ss-callback-input" type="text" name="nome" autocomplete="name" placeholder="Mario Rossi" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="4" maxlength="120" required aria-required="true">
 
       <label class="ss-callback-label" for="ss-cb-tel">Telefono</label>
       <input id="ss-cb-tel" class="ss-callback-input" type="tel" name="telefono" inputmode="tel" autocomplete="tel"
@@ -125,11 +117,10 @@ const { formSource = 'popup_telefono', redirectUrl = '/grazie.html' } = Astro.pr
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
       if (sending) return;
-      var nome = form.nome.value.trim(), cognome = form.cognome.value.trim();
+      var nome = form.nome.value.trim();
       var tel = form.telefono.value.trim(), mail = form.email.value.trim();
       var okTel = /^[0-9\s+]{8,}$/.test(tel), okMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
-      var bad = nome.length < 2 ? [form.nome, 'Inserisci il tuo nome.']
-        : cognome.length < 2 ? [form.cognome, 'Inserisci il tuo cognome.']
+      var bad = !/\S{2,}\s+\S{2,}/.test(nome) ? [form.nome, 'Scrivi nome e cognome.']
         : !okTel ? [form.telefono, 'Controlla il numero di telefono.']
         : !okMail ? [form.email, 'Controlla l’indirizzo email.'] : null;
       if (bad) {

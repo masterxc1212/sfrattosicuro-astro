@@ -1,6 +1,6 @@
 ---
 /**
- * V3Hero.astro — prima schermata: promessa, tre timbri (prezzo, anticipi, tempi), modulo a due campi.
+ * V3Hero.astro — prima schermata: promessa, tre timbri (prezzo, anticipi, tempi), modulo a tre campi (nome e cognome in un campo unico dal 2026-10-09).
  * Il modulo mantiene id, name e campi nascosti del vecchio hero (#hero-form, telefono-hero, email-hero):
  * li usano form-validation.js, LandingAdsBootstrap, AdAttributionFields e l'intake PHP.
  * Su mobile l'ordine è: titolo → timbri → modulo → punti chiave (il modulo resta nella prima schermata).
@@ -11,12 +11,17 @@ import { contatti, orari, pricing, socialProof, tempi, formatBusinessEuro, telef
 interface Props {
   hero: any;
   redirectUrl?: string;
+  /** 'v5' = offerta «solo convalida» del test A/B di ottobre 2026. */
+  variant?: 'v3' | 'v5';
 }
-const { hero, redirectUrl = '/grazie.html' } = Astro.props;
+const { hero, redirectUrl = '/grazie.html', variant = 'v3' } = Astro.props;
+const isV5 = variant === 'v5';
 const bulletDetails: string[] = hero.bulletDetails || [];
-const price = formatBusinessEuro(pricing.compensoComplessivo);
+const price = formatBusinessEuro(isV5 ? pricing.testV5.faseConvalida : pricing.compensoComplessivo);
 const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').replace(':00', '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(':00', '').replace(':00', '')}`;
+// Almeno due parole (nome e cognome). Come espressione: negli attributi Astro le barre rovesciate si perdono.
+const fullNamePattern = String.raw`\s*\S{2,}(\s+\S+)*\s+\S{2,}\s*`;
 ---
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <div class="wrap hero__grid">
@@ -30,10 +35,12 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').rep
         <span class="rating"><V3Icon name="star" fill /><span><span data-live-rating>5.0</span> su Google (<span data-live-total>{socialProof.googleReviewsTotal}</span>)</span></span>
       </p>
       <h1 id="hero-title" class="hero__title">Avvocato per sfratto per morosità</h1>
-      <p class="hero__sub">Non solo la convalida: ti assistiamo <strong>fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.</p>
+      {isV5
+        ? <p class="hero__sub">Ti assistiamo fino alla <strong>convalida dello sfratto</strong> con un prezzo fisso, pagato solo dopo l’udienza. Solo per proprietari e locatori, in tutta Italia.</p>
+        : <p class="hero__sub">Non solo la convalida: ti assistiamo <strong>fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.</p>}
 
       <div class="stamps" role="list" aria-label="I tre punti fermi">
-        <div class="stamp" role="listitem"><span class="stamp__v">{price}</span><span class="stamp__l">IVA e cassa incluse, fino alle chiavi</span></div>
+        <div class="stamp" role="listitem"><span class="stamp__v">{price}</span><span class="stamp__l">{isV5 ? 'IVA e cassa incluse, fino alla convalida' : 'IVA e cassa incluse, fino alle chiavi'}</span></div>
         <div class="stamp" role="listitem"><span class="stamp__v">Zero</span><span class="stamp__l">anticipi: paghi dopo l’udienza</span></div>
         <div class="stamp" role="listitem"><span class="stamp__v">{tempi.convalidaMediaShort.replace(' gg', '')}<small style="font-size:.55em"> gg</small></span><span class="stamp__l">in media alla convalida</span></div>
       </div>
@@ -46,15 +53,9 @@ const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').rep
         <p class="card-form__sub">Ti richiamiamo noi, senza impegno. Bastano pochi secondi.</p>
 
         <form action="/php/invia-email.php" method="POST" id="hero-form">
-          <div class="field-row">
-            <div class="field">
-              <label for="nome-hero">Nome</label>
-              <input type="text" name="nome" id="nome-hero" placeholder="Mario" autocomplete="given-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-            </div>
-            <div class="field">
-              <label for="cognome-hero">Cognome</label>
-              <input type="text" name="cognome" id="cognome-hero" placeholder="Rossi" autocomplete="family-name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="2" maxlength="60" required aria-required="true">
-            </div>
+          <div class="field">
+            <label for="nome-hero">Nome e cognome</label>
+            <input type="text" name="nome" id="nome-hero" placeholder="Mario Rossi" pattern={fullNamePattern} title="Scrivi nome e cognome, per esempio Mario Rossi" autocomplete="name" autocapitalize="words" spellcheck="false" enterkeyhint="next" minlength="4" maxlength="120" required aria-required="true">
           </div>
           <div class="field">
             <label for="telefono-hero">Telefono</label>
