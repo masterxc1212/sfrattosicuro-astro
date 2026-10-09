@@ -11,13 +11,13 @@ import { contatti, orari, pricing, socialProof, tempi, formatBusinessEuro, telef
 interface Props {
   hero: any;
   redirectUrl?: string;
-  /** 'v5' = offerta «solo convalida» del test A/B di ottobre 2026. */
-  variant?: 'v3' | 'v5';
+  /** 'v4' = offerta «solo convalida» del test A/B di ottobre 2026. */
+  variant?: 'v3' | 'v4';
 }
 const { hero, redirectUrl = '/grazie.html', variant = 'v3' } = Astro.props;
-const isV5 = variant === 'v5';
+const isV4 = variant === 'v4';
 const bulletDetails: string[] = hero.bulletDetails || [];
-const price = formatBusinessEuro(isV5 ? pricing.testV5.faseConvalida : pricing.compensoComplessivo);
+const price = formatBusinessEuro(isV4 ? pricing.testV4.faseConvalida : pricing.compensoComplessivo);
 const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 const hours = `${orari.settimanaLabel.replace('-', '–').replace(':00', '').replace(':00', '')} · ${orari.sabatoLabel.replace('Sabato', 'Sab').replace(':00', '').replace(':00', '')}`;
 // Almeno due parole (nome e cognome). Come espressione: negli attributi Astro le barre rovesciate si perdono.
@@ -35,12 +35,12 @@ const fullNamePattern = String.raw`\s*\S{2,}(\s+\S+)*\s+\S{2,}\s*`;
         <span class="rating"><V3Icon name="star" fill /><span><span data-live-rating>5.0</span> su Google (<span data-live-total>{socialProof.googleReviewsTotal}</span>)</span></span>
       </p>
       <h1 id="hero-title" class="hero__title">Avvocato per sfratto per morosità</h1>
-      {isV5
+      {isV4
         ? <p class="hero__sub">Ti assistiamo fino alla <strong>convalida dello sfratto</strong> con un prezzo fisso, pagato solo dopo l’udienza. Solo per proprietari e locatori, in tutta Italia.</p>
         : <p class="hero__sub">Non solo la convalida: ti assistiamo <strong>fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.</p>}
 
       <div class="stamps" role="list" aria-label="I tre punti fermi">
-        <div class="stamp" role="listitem"><span class="stamp__v">{price}</span><span class="stamp__l">{isV5 ? 'IVA e cassa incluse, fino alla convalida' : 'IVA e cassa incluse, fino alle chiavi'}</span></div>
+        <div class="stamp" role="listitem"><span class="stamp__v">{price}</span><span class="stamp__l">{isV4 ? 'IVA e cassa incluse, fino alla convalida' : 'IVA e cassa incluse, fino alle chiavi'}</span></div>
         <div class="stamp" role="listitem"><span class="stamp__v">Zero</span><span class="stamp__l">anticipi: paghi dopo l’udienza</span></div>
         <div class="stamp" role="listitem"><span class="stamp__v">{tempi.convalidaMediaShort.replace(' gg', '')}<small style="font-size:.55em"> gg</small></span><span class="stamp__l">in media alla convalida</span></div>
       </div>

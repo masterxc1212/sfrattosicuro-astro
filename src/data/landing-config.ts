@@ -1,7 +1,7 @@
 import { landingOriginal } from './landing-original';
 import { formatBusinessEuro, pricing } from '../lib/business';
 
-export type LandingVersion = 'v2' | 'v3' | 'v4' | 'v5';
+export type LandingVersion = 'v2' | 'v3' | 'v4';
 export type LandingKeywordSlug = 'sfratto-per-morosita';
 export type LandingTerritorySlug = 'nazionale' | 'milano' | 'roma' | 'napoli';
 
@@ -122,7 +122,8 @@ const keywords: Record<LandingKeywordSlug, LandingKeywordConfig> = {
   },
 };
 
-const isConversionVersion = (version: LandingVersion) => version === 'v3' || version === 'v4';
+// La v4 si costruisce sopra la v3 (applyOffertaConvalida): qui conta solo la v3.
+const isConversionVersion = (version: LandingVersion) => version === 'v3';
 
 function withTerritoryCopy(text: string, territory: LandingTerritoryConfig) {
   if (territory.slug === 'nazionale') return text;
@@ -139,48 +140,37 @@ function buildHero(version: LandingVersion, territory: LandingTerritoryConfig, k
   });
 
   if (isConversionVersion(version)) {
-    const isV4 = version === 'v4';
     return {
       ...landingOriginal.hero,
       title: `Avvocato per Sfratto per Morosità${suffix}`,
       subtitle:
         territory.slug === 'nazionale'
-          ? (isV4
-              ? `Scegli la formula completa <strong class="text-white">fino alla riconsegna delle chiavi</strong>, oppure procedi per fasi. Prezzi chiari, solo per proprietari e locatori.`
-              : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.`)
+          ? `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori, in tutta Italia.`
           : `Non solo la convalida: ti assistiamo <strong class="text-white">fino alla riconsegna delle chiavi</strong>, con un solo prezzo. Solo per proprietari e locatori${territory.dynamicReplacement?.area ? `, ${territory.dynamicReplacement.area}` : ''}.`,
       prequalificationNote: undefined,
       ownerField: true,
       // 2026-09-05 (Clarity): ~16% dei tocchi mobile cadeva su bullet/chip non tappabili.
       // Ogni bullet apre una riga di dettaglio (v3). Testi allineati a PRODUCT.md: il compenso e'
       // dovuto dopo l'udienza, mai «a risultato»; spese vive escluse e indicate prima.
-      bulletDetails: isV4 ? undefined : [
+      bulletDetails: [
         'Un solo compenso, €1.300 IVA e cassa incluse, per la convalida e per l’eventuale fase esecutiva fino alla riconsegna delle chiavi. Restano fuori solo le spese vive di legge (indicativamente €100–150, circa €300 con il rilascio forzato), che ti indichiamo per iscritto prima di partire.',
         'Se dopo la convalida l’inquilino non lascia l’immobile, precetto, preavviso di rilascio e accessi dell’ufficiale giudiziario sono già compresi: nessun compenso aggiuntivo.',
         'Oggi non paghi nulla e non versi acconti. Il compenso è dovuto una volta sola, dopo l’udienza per la convalida, qualunque ne sia l’esito.',
       ],
-      bullets: isV4
-        ? [
-            `<strong>${formatBusinessEuro(pricing.testV4.faseConvalida)}</strong> per la fase di convalida`,
-            `<strong>${formatBusinessEuro(pricing.testV4.faseEsecutiva)}</strong> per l’eventuale fase esecutiva`,
-            `<strong>${formatBusinessEuro(pricing.compensoComplessivo)} formula completa</strong>: risparmi ${formatBusinessEuro(pricing.testV4.faseConvalida + pricing.testV4.faseEsecutiva - pricing.compensoComplessivo)}`,
-            '<strong>Nessun acconto</strong> per avviare la convalida',
-            '<strong>Convalida in ~60 giorni</strong> in media',
-          ]
-        : [
+      bullets: [
             '<strong>€1.300 IVA e cassa incluse</strong>: un solo prezzo, tutto il percorso',
             '<strong>Convalida + fase esecutiva</strong>, fino alle chiavi',
             '<strong>Zero anticipi</strong>: paghi solo dopo l’udienza',
             '<strong>Convalida in ~60 giorni</strong> in media',
             '<strong>Vale anche per finita locazione</strong> e locali commerciali: stesse condizioni',
-          ],
+      ],
       formTitle: 'Verifica se puoi partire',
       formSubtitle: 'Prima valutazione <strong>gratuita e senza impegno</strong>: ti richiamiamo noi.<br><span style="font-size: 0.75rem;">(Lun–Ven 9–19 • Sab 9–13)</span>',
       formSubmitLabel: 'Invia la richiesta',
       formNamePlaceholder: 'Nome e cognome del proprietario',
       formPhonePlaceholder: 'Numero di telefono diretto',
       formMorositaOptions: landingOriginal.contactForm.fields.morosita.options,
-      formSource: isV4 ? 'hero_form_v4' : 'hero_form_v3',
+      formSource: 'hero_form_v3',
       formTrustLine: true,
     };
   }
@@ -326,12 +316,10 @@ function buildProcedure(version: LandingVersion, territory: LandingTerritoryConf
         {
           num: '✓',
           title: 'Giorni 31-60: convalida dello sfratto',
-          body: version === 'v4'
-            ? 'Il Giudice decide sulla convalida. Se serve proseguire, la fase esecutiva è già inclusa nella formula completa oppure può essere attivata separatamente. <strong>Il compenso della convalida si paga solo dopo l’udienza.</strong>'
-            : 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
-          badge: version === 'v4' ? 'Formula completa o percorso per fasi' : 'Assistenza inclusa fino al rilascio',
+          body: 'Il Giudice convalida lo sfratto e, se serve, ti assistiamo fino al rilascio dell’immobile. <strong>Il compenso si paga solo dopo l’udienza di convalida.</strong>',
+          badge: 'Assistenza inclusa fino al rilascio',
           badgeEmoji: '',
-          hint: version === 'v4' ? undefined : 'Ottenuta la convalida, se l’inquilino non lascia l’immobile proseguiamo con precetto e rilascio forzato, senza compensi aggiuntivi. Tu non devi essere presente.',
+          hint: 'Ottenuta la convalida, se l’inquilino non lascia l’immobile proseguiamo con precetto e rilascio forzato, senza compensi aggiuntivi. Tu non devi essere presente.',
           isGold: true,
         },
       ],
@@ -606,17 +594,13 @@ function buildSeo(version: LandingVersion, territory: LandingTerritoryConfig, ke
   const title = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
   const description = isConversionVersion(version)
     ? (territory.slug === 'nazionale'
-        ? (version === 'v4'
-            ? `Sfratto per morosità: scegli la fase di convalida a ${formatBusinessEuro(pricing.testV4.faseConvalida)}, l'eventuale fase esecutiva a ${formatBusinessEuro(pricing.testV4.faseEsecutiva)} oppure la formula completa a ${formatBusinessEuro(pricing.compensoComplessivo)}. Solo proprietari e locatori.`
-            : `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
+        ? `Sfratto per morosità: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`
         : `Sfratto per morosità${territorySuffix}: €1.300 IVA e cassa incluse, tutta l'assistenza fino al rilascio. Zero anticipi: paghi solo dopo l'udienza di convalida. Solo proprietari e locatori.`)
     : territory.slug === 'nazionale'
       ? `Avvocato specializzato in sfratto per morosità. Procedura ottimizzata con convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile. Nessun anticipo. Consulenza senza impegno.`
       : `Avvocato specializzato in sfratto per morosità${territorySuffix}. Procedura ottimizzata, convalida mediamente in 60 giorni e compenso complessivo di 1.300€ fino al rilascio dell’immobile.`;
-  const landingPath = version === 'v4' ? '/landing-v4/' : version === 'v3' ? '/landing-v3/' : '/landing-v2/';
-  const conversionTitle = version === 'v4'
-    ? `${keyword.titleStem}${territorySuffix} | Da ${formatBusinessEuro(pricing.testV4.faseConvalida)} o formula completa ${formatBusinessEuro(pricing.compensoComplessivo)}`
-    : `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
+  const landingPath = version === 'v3' ? '/landing-v3/' : '/landing-v2/';
+  const conversionTitle = `${keyword.titleStem}${territorySuffix} | 1.300€ fino al rilascio dell'immobile`;
 
   return {
     title: isConversionVersion(version)
@@ -697,13 +681,13 @@ function buildJsonLd(seo: LandingSeoConfig, territory: LandingTerritoryConfig, f
 }
 
 /**
- * V5 (test A/B ottobre 2026): stessa pagina della v3, ma il compenso copre SOLO la convalida
+ * V4 (test A/B ottobre 2026; sostituisce la v4 «per fasi» di luglio): stessa pagina della v3, ma il compenso copre SOLO la convalida
  * (€650 IVA e cassa incluse), sempre dovuto dopo l'udienza. La fase esecutiva NON è inclusa:
  * si attiva solo con preventivo scritto e consenso del cliente. Si parte dalla config v3 e si
  * riscrivono soltanto i testi che parlano di prezzo o di «fino alle chiavi».
  */
 function applyOffertaConvalida(base: LandingPageConfig): LandingPageConfig {
-  const price = formatBusinessEuro(pricing.testV5.faseConvalida);
+  const price = formatBusinessEuro(pricing.testV4.faseConvalida);
   const live = pricing.speseVive;
   const spese = `${formatBusinessEuro(live.convalidaMin)}–${formatBusinessEuro(live.convalidaMax)}`;
 
@@ -723,7 +707,7 @@ function applyOffertaConvalida(base: LandingPageConfig): LandingPageConfig {
       'Dato medio operativo, non promessa assoluta: i tempi dipendono dal Tribunale competente e dall’eventuale opposizione dell’inquilino.',
       'Se dopo la convalida l’inquilino non lascia l’immobile, ti assistiamo anche nella fase esecutiva (precetto, preavviso di rilascio, ufficiale giudiziario) con un preventivo scritto separato: nulla parte senza il tuo consenso.',
     ],
-    formSource: 'hero_form_v5',
+    formSource: 'hero_form_v4',
   };
 
   const procedure = {
@@ -769,7 +753,7 @@ function applyOffertaConvalida(base: LandingPageConfig): LandingPageConfig {
 
   const title = `${base.keyword.titleStem} | ${price} fino alla convalida, paghi dopo l'udienza`;
   const description = `Sfratto per morosità: ${price} IVA e cassa incluse fino alla convalida. Zero anticipi: paghi solo dopo l'udienza. Solo proprietari e locatori.`;
-  const url = 'https://www.sfrattosicuro.it/landing-v5/';
+  const url = 'https://www.sfrattosicuro.it/landing-v4/';
   const seo = {
     ...base.seo,
     title, description, canonicalUrl: url, ogTitle: title, ogDescription: description, ogUrl: url,
@@ -779,7 +763,7 @@ function applyOffertaConvalida(base: LandingPageConfig): LandingPageConfig {
   const jsonLd = buildJsonLd(seo, base.territory, faqItems);
   jsonLd.legalService.priceRange = price;
 
-  return { ...base, version: 'v5', hero, procedure, faq, seo, jsonLd };
+  return { ...base, version: 'v4', hero, procedure, faq, seo, jsonLd };
 }
 
 export function buildLandingPageConfig(options?: {
@@ -787,7 +771,7 @@ export function buildLandingPageConfig(options?: {
   territory?: LandingTerritorySlug;
   keyword?: LandingKeywordSlug;
 }): LandingPageConfig {
-  if (options?.version === 'v5') return applyOffertaConvalida(buildLandingPageConfig({ ...options, version: 'v3' }));
+  if (options?.version === 'v4') return applyOffertaConvalida(buildLandingPageConfig({ ...options, version: 'v3' }));
   const version = options?.version || 'v2';
   const territory = territories[options?.territory || 'nazionale'];
   const keyword = keywords[options?.keyword || 'sfratto-per-morosita'];

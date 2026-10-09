@@ -70,15 +70,8 @@ export type Pricing = {
       ivaCassaIncluse: boolean;
     };
   };
-  /** Valori isolati della variante sperimentale V4; non alterano l'offerta permanente V3. */
+  /** Variante V4 (test A/B ottobre 2026): compenso per la sola convalida, pagato dopo l'udienza. */
   testV4: {
-    faseConvalida: number;
-    faseEsecutiva: number;
-    ivaCassaIncluse: boolean;
-    experimentId: string;
-  };
-  /** Variante V5 (test A/B ottobre 2026): compenso per la sola convalida, pagato dopo l'udienza. */
-  testV5: {
     faseConvalida: number;
     ivaCassaIncluse: boolean;
     experimentId: string;

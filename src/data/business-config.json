@@ -37,15 +37,9 @@
       }
     },
     "testV4": {
-      "faseConvalida": 800,
-      "faseEsecutiva": 700,
-      "ivaCassaIncluse": true,
-      "experimentId": "pricing_v3_v4_2026_07"
-    },
-    "testV5": {
       "faseConvalida": 650,
       "ivaCassaIncluse": true,
-      "experimentId": "pricing_v3_v5_2026_10"
+      "experimentId": "pricing_v3_v4_2026_10"
     }
   },
   "tempi": {

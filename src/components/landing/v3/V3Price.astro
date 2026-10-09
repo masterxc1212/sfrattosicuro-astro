@@ -7,11 +7,11 @@
  */
 import V3Icon from './V3Icon.astro';
 import { pricing, contatti, formatBusinessEuro, telefonoBreve } from '../../../lib/business';
-/** 'v5' = test A/B ottobre 2026: compenso fisso per la SOLA convalida, fase esecutiva a preventivo. */
-interface Props { variant?: 'v3' | 'v5' }
+/** 'v4' = test A/B ottobre 2026: compenso fisso per la SOLA convalida, fase esecutiva a preventivo. */
+interface Props { variant?: 'v3' | 'v4' }
 const { variant = 'v3' } = Astro.props;
-const isV5 = variant === 'v5';
-const price = formatBusinessEuro(isV5 ? pricing.testV5.faseConvalida : pricing.compensoComplessivo);
+const isV4 = variant === 'v4';
+const price = formatBusinessEuro(isV4 ? pricing.testV4.faseConvalida : pricing.compensoComplessivo);
 const live = pricing.speseVive;
 const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 80898395)
 ---
@@ -19,10 +19,10 @@ const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 8
   <div class="wrap">
     <p class="doc-label doc-label--light" data-n="01">Il compenso</p>
     <div class="price__head">
-      <h2 id="prezzo-title" class="price__title">{isV5 ? 'Prezzo fisso. Zero anticipi.' : 'Un solo prezzo. Zero anticipi.'}</h2>
+      <h2 id="prezzo-title" class="price__title">{isV4 ? 'Prezzo fisso. Zero anticipi.' : 'Un solo prezzo. Zero anticipi.'}</h2>
       <div class="price__figure">
         <span class="price__amount">{price}</span>
-        {isV5
+        {isV4
           ? <span class="price__scope">tutta la fase di convalida dello sfratto, dall’intimazione all’udienza. <strong>IVA e cassa incluse.</strong></span>
           : <span class="price__scope">convalida + fase esecutiva, fino alla riconsegna delle chiavi. <strong>IVA e cassa incluse.</strong></span>}
       </div>
@@ -33,7 +33,7 @@ const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 8
     <div class="price__grid">
       <ul class="price__list">
         <li><V3Icon name="bolt" /><span><strong>Avvii subito senza anticipare nulla</strong>: nessun acconto per partire.</span></li>
-        {isV5
+        {isV4
           ? <li><V3Icon name="key" /><span><strong>Fase esecutiva solo se serve</strong>: se l’inquilino non lascia l’immobile, ricevi prima un preventivo scritto e decidi tu.</span></li>
           : <li><V3Icon name="key" /><span><strong>Convalida e fase esecutiva incluse</strong>: ti assistiamo fino alla riconsegna delle chiavi.</span></li>}
         <li><V3Icon name="flag" /><span><strong>Il compenso si paga solo dopo l’udienza di convalida</strong>, mai prima, qualunque sia l’esito.</span></li>
@@ -47,7 +47,7 @@ const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 8
         <ol>
           <li><span>Parti con <strong>zero anticipi</strong>.</span></li>
           <li><span>Il compenso di <strong>{price} (IVA e cassa incluse)</strong> è dovuto solo <strong>dopo l’udienza per la convalida</strong> dello sfratto, qualunque ne sia l’esito.</span></li>
-          {isV5
+          {isV4
             ? <li><span>Se dopo la convalida serve la fase esecutiva, <strong>ricevi prima un preventivo scritto</strong>: nulla parte senza il tuo consenso.</span></li>
             : <li><span>Dopo la convalida ti assistiamo, senza compensi aggiuntivi, <strong>fino al rilascio dell’immobile e alla riconsegna delle chiavi</strong>.</span></li>}
           <li><span>Se l’inquilino si oppone e serve il giudizio di merito, <strong>nulla prosegue senza un preventivo scritto e il tuo consenso</strong>.</span></li>
@@ -55,14 +55,14 @@ const phoneShort = telefonoBreve; // stesso formato di WebsiteCallTracking (02 8
       </aside>
     </div>
 
-    {isV5 ? (
+    {isV4 ? (
       <p class="price__note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>{formatBusinessEuro(live.convalidaMin)}–{formatBusinessEuro(live.convalidaMax)}</strong> per la fase di convalida (contributo unificato, marca, notifiche). Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
     ) : (
       <Fragment>
     <p class="price__note">Oltre al compenso restano solo le spese vive di legge: indicativamente <strong>{formatBusinessEuro(live.convalidaMin)}–{formatBusinessEuro(live.convalidaMax)}</strong> per la fase di convalida (contributo unificato, marca, notifiche) e circa <strong>{formatBusinessEuro(live.totaleConEsecuzione)} in totale</strong> se serve il rilascio forzato con l’ufficiale giudiziario. Te le indichiamo <strong>per iscritto prima di partire</strong> e non le anticipi mai.</p>
 
-    {/* Il confronto con i preventivi «solo convalida» non ha senso sulla v5, che è essa stessa solo convalida. */}
-    {!isV5 && (
+    {/* Il confronto con i preventivi «solo convalida» non ha senso sulla v4, che è essa stessa solo convalida. */}
+    {!isV4 && (
     <details class="compare">
       <summary><h3>Occhio ai preventivi «solo convalida»</h3><span class="compare__caret" aria-hidden="true">+</span></summary>
       <p>Molte offerte online («da €500–800») coprono solo la prima fase. Se l’inquilino non lascia l’immobile, precetto e fase esecutiva si pagano a parte. Qui è tutto dentro, con un solo prezzo.</p>

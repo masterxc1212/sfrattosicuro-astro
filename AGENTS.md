@@ -124,3 +124,14 @@ Alcuni script che operano sulla campagna Google Ads vivono storicamente in `C:\U
 - **Cache CDN SiteGround**: modifiche a file statici (`main.js`, `calculator.js`, ecc.) NON si propagano istantaneamente al browser dopo il deploy. Il CDN continua a servire la versione cached finché non scade il TTL. **Soluzione**: helper `src/lib/asset-version.ts` con `versionedSrc('/path/to/file.js')` calcola SHA-256 del file a build time e aggiunge `?v=<hash>`. File invariato = hash uguale = cache CDN lavora normalmente. Applicato su landing-v2 e landing-v3.
 - **Dropbox + Astro build**: Dropbox client tiene handle aperti su cartelle sincronizzate -> EBUSY durante `rmdir .astro` fatto da Astro a inizio build. Fix: `Set-Content -Path ".astro" -Stream com.dropbox.ignored -Value 1` (idem per `dist` e `node_modules`). Per evitare del tutto il problema, il `dist/` di build è ridiretto fuori dalla cartella Dropbox tramite `outDir` in `astro.config.mjs` (`~/.astro-local-builds/retrograde-ring/dist`).
 - **Selezione file da committare**: usare `git add <path-specifici>` quando il `git status` mostra modifiche di lavori paralleli (es. `_gclid-patch/`, `public/.htaccess`) che non c'entrano con il commit corrente. Evitare `git add -A` se non si è sicuri di voler portare via tutto.
+## Nuova Landing V4 «€650 fino alla convalida» (aggiornamento 9 ottobre 2026)
+
+La vecchia `/landing-v4/` di luglio (formula per fasi €800 + €700) è **cancellata** insieme a
+`LandingExperimentPage.astro`, `LandingV4PricingSection` e `LandingV4FaqSection`: le sezioni
+sopra che li citano descrivono la storia, non il codice attuale. Le pagine agosto non esistono più.
+`/landing-v4/` ora è `V3Page variant="v4"`: stessa pagina della v3 con €650 IVA e cassa incluse per
+la **sola convalida**, pagati dopo l'udienza; fase esecutiva a preventivo separato. Testi della
+variante: `applyOffertaConvalida()` in `src/data/landing-config.ts`; prezzo in
+`business-config.json` → `pricing.testV4`. Test A/B: `docs/ab-test-landing-v3-v4-2026-10.md`.
+Dal 9/10 i moduli della v3/v4 hanno un campo unico «Nome e cognome» (almeno due parole); negli
+attributi Astro il `pattern` va passato come espressione, altrimenti le barre rovesciate si perdono.

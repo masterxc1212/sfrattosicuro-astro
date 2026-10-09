@@ -230,3 +230,15 @@ Lighthouse mobile (build locale, `astro preview`): prima 0.94 (LCP 2,4 s, TBT 17
 dopo 0.98-0.99 (LCP 2,1 s, TBT 40-70 ms, 172 KiB); accessibilità 1.0. Nota: con `content-visibility: auto`
 le schermate del pannello browser e di Chrome headless dopo lo scroll escono vuote (artefatto di cattura,
 succede anche sulla v4): per vedere una sezione nasconderla/mostrarla via JS o usare l'hash nell'URL.
+
+## Nuova Landing V4 «€650 fino alla convalida» (aggiornamento 9 ottobre 2026)
+
+La vecchia `/landing-v4/` di luglio (formula per fasi €800 + €700) è **cancellata** insieme a
+`LandingExperimentPage.astro`, `LandingV4PricingSection` e `LandingV4FaqSection`: le sezioni
+sopra che li citano descrivono la storia, non il codice attuale. Le pagine agosto non esistono più.
+`/landing-v4/` ora è `V3Page variant="v4"`: stessa pagina della v3 con €650 IVA e cassa incluse per
+la **sola convalida**, pagati dopo l'udienza; fase esecutiva a preventivo separato. Testi della
+variante: `applyOffertaConvalida()` in `src/data/landing-config.ts`; prezzo in
+`business-config.json` → `pricing.testV4`. Test A/B: `docs/ab-test-landing-v3-v4-2026-10.md`.
+Dal 9/10 i moduli della v3/v4 hanno un campo unico «Nome e cognome» (almeno due parole); negli
+attributi Astro il `pattern` va passato come espressione, altrimenti le barre rovesciate si perdono.

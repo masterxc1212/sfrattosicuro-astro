@@ -41,8 +41,8 @@ import V3Faq from './V3Faq.astro';
 import V3Contact from './V3Contact.astro';
 import V3Footer from './V3Footer.astro';
 
-/** 'v5' = /landing-v5/, test A/B di ottobre 2026: €650 fino alla convalida (vedi docs/ab-test-landing-v3-v5-2026-10.md). */
-interface Props { variant?: 'v3' | 'v5' }
+/** 'v4' = /landing-v4/, test A/B di ottobre 2026: €650 fino alla convalida (vedi docs/ab-test-landing-v3-v4-2026-10.md). */
+interface Props { variant?: 'v3' | 'v4' }
 const { variant = 'v3' } = Astro.props;
 const config = buildLandingPageConfig({ version: variant, territory: 'nazionale', keyword: 'sfratto-per-morosita' });
 const redirectUrl = '/grazie.html';
@@ -107,7 +107,7 @@ const redirectUrl = '/grazie.html';
       <a href="#form-rapido" class="landing-v3-sticky-btn is-form"><V3Icon name="send" /> Lascia il numero</a>
     </div>
     <V3Footer />
-    <LandingV3CallbackModal formSource={variant === 'v5' ? 'popup_telefono_v5' : 'popup_telefono'} redirectUrl={redirectUrl} />
+    <LandingV3CallbackModal formSource={variant === 'v4' ? 'popup_telefono_v4' : 'popup_telefono'} redirectUrl={redirectUrl} />
 
     <GA4TrackingIsland measurementId="G-509YE5HCYB" eager deferred />
     <script is:inline>
@@ -129,7 +129,7 @@ const redirectUrl = '/grazie.html';
     <MetaAdvancedMatching pixelId="1373903100373659" />
     <AdAttributionFields />
     <TikTokPixelTracking pixelId={tiktokPixelId} eager deferred />
-    <LandingExperimentTracking experimentId={pricing.testV5.experimentId} variant={variant} />
+    <LandingExperimentTracking experimentId={pricing.testV4.experimentId} variant={variant} />
     <BehaviourTracking />
     <ClarityTracking projectId={clarityProjectId} eager deferred />
     <script src={versionedSrc('/assets/js/reviews.js')} defer></script>
