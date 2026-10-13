@@ -151,7 +151,7 @@ GA4 e aggiunge ai form `experiment_id` e `experiment_variant`. Restano attivi
 anche gli eventi diagnostici `form_start`, `submit_attempt` e
 `submit_blocked`.
 
-Le recensioni Google reali sono **22**. Il fallback è centralizzato in
+Le recensioni Google pubbliche sono **30** (verificato il 13 ottobre 2026; Google ne trattiene altre col filtro antispam, il numero esposto è quello pubblico). Il fallback è centralizzato in
 `business-config.json` come `socialProof.googleReviewsTotal`; il caricamento
 live tramite `/php/get-reviews.php` può aggiornare il DOM, con fallback
 `public/assets/data/reviews-cache.json`. Non reintrodurre numeri hardcodati nei
