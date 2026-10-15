@@ -16,6 +16,79 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "contratto-affitto-scaduto-non-rinnovato",
+    title: "Contratto di affitto scaduto e non rinnovato: cosa succede e cosa deve fare il proprietario",
+    description: "Contratto di affitto scaduto e non rinnovato: cosa succede se l'inquilino resta e paga, quando scatta il rinnovo e come riavere la casa.",
+    excerpt: "Il contratto è scaduto, nessuno ha scritto nulla e l'inquilino è ancora in casa? Scopri quando il contratto si è rinnovato da solo, cosa rischi accettando i canoni e quali passi seguire per riavere l'immobile.",
+    lead: "Il contratto di affitto è scaduto ma l'inquilino è ancora in casa e magari continua a pagare. Nelle locazioni abitative la scadenza non coincide quasi mai con la fine del rapporto: ecco come capire se il contratto si è rinnovato e come muoversi da proprietario.",
+    publishedAt: "2026-10-15",
+    updatedAt: "2026-10-15",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-15. Keyword: contratto di affitto scaduto e non rinnovato, vol 70, KD 0 (secondarie: contratto affitto scaduto inquilino non esce, vol 210, KD 0; pagamento affitto con contratto scaduto, vol 390, KD 0).",
+    html: `<p>Il contratto di affitto è scaduto, nessuno ha scritto niente e l'inquilino è ancora in casa (magari continua anche a pagare). Se sei un proprietario, la domanda è una sola: <strong>il contratto di affitto scaduto e non rinnovato è finito davvero, oppure è andato avanti da solo?</strong> In questa guida trovi come capirlo, cosa rischi se accetti i canoni dopo la scadenza e i passi pratici per riavere l'immobile quando ne hai diritto.</p>
+
+<h2>Contratto scaduto non significa quasi mai contratto finito</h2>
+<p>Molti proprietari pensano che, arrivata la data scritta nel contratto, l'inquilino debba andarsene. Nelle locazioni abitative non funziona così: la legge prevede <strong>rinnovi automatici</strong> e dà al proprietario solo alcune strade per interromperli. Ecco i casi più comuni.</p>
+<ul>
+<li><strong>Contratto 4+4 (libero).</strong> Alla fine dei primi quattro anni il contratto si rinnova da solo per altri quattro. Il proprietario può dire no solo con una disdetta che indichi uno dei motivi tassativi previsti dalla legge (per esempio: la casa serve a lui, al coniuge, ai genitori, ai figli o a parenti entro il secondo grado; oppure vuole vendere, ma solo se non possiede altre abitazioni oltre a quella in cui vive). La disdetta va inviata con raccomandata (o PEC) almeno sei mesi prima; senza il motivo indicato è nulla, e se poi la casa non viene usata come dichiarato si rischia un risarcimento. Lo trovi spiegato in dettaglio nella <a href="/blog/contratto-affitto-4-4/">guida al contratto di affitto 4+4</a>.</li>
+<li><strong>Dopo gli otto anni.</strong> Se nessuno comunica nulla, il contratto si rinnova ancora per altri quattro anni alle stesse condizioni. Chi non vuole proseguire deve scriverlo con raccomandata (o PEC) almeno sei mesi prima della scadenza; a questo punto non servono motivi particolari.</li>
+<li><strong>Contratto 3+2 a canone concordato.</strong> Alla prima scadenza il locatore può negare il rinnovo solo per i motivi previsti dalla legge; altrimenti il contratto prosegue per altri due anni. Dopo il biennio ciascuna parte può comunicare con raccomandata, almeno sei mesi prima, il rinnovo a nuove condizioni o la rinuncia; se nessuno scrive, il contratto si rinnova tacitamente alle stesse condizioni.</li>
+<li><strong>Locazione commerciale 6+6.</strong> Anche qui il rinnovo è automatico: la disdetta va inviata con raccomandata almeno dodici mesi prima della scadenza, a pena di decadenza, e alla prima scadenza solo per i motivi indicati dalla legge.</li>
+<li><strong>Contratto transitorio o per studenti.</strong> Ha regole proprie (art. 5 della legge 431/1998) e una durata breve: nei transitori, se l'esigenza che lo giustificava non viene confermata per iscritto, il contratto rischia di essere considerato ordinario; in quelli per studenti il rinnovo è di pari durata, salvo disdetta dell'inquilino. Controlla bene clausole e documenti prima di muoverti.</li>
+</ul>
+<p>In sintesi: <strong>se non hai mandato la disdetta giusta, nei tempi giusti e con i motivi giusti, il contratto con ogni probabilità è ancora in vigore</strong>. Non è l'inquilino a occupare senza diritto: sei tu che non hai ancora chiuso il rapporto.</p>
+
+<h2>Contratto scaduto e inquilino che continua a pagare</h2>
+<p>Quando il contratto è davvero finito (per esempio perché c'è stata una disdetta valida) e l'inquilino resta e paga, la situazione è delicata. Accettare i canoni senza dire nulla può essere letto come <strong>consenso a proseguire</strong>: l'inquilino potrebbe sostenere che il contratto si è rinnovato tacitamente (la cosiddetta tacita riconduzione, art. 1597 del codice civile), cioè con il comportamento di entrambi. Se la licenza o la disdetta sono state comunicate prima, questa tesi è più debole, ma è meglio non darle spazio.</p>
+<p>Attenzione: tutto questo vale solo se hai già verificato che il contratto sia davvero finito. Se non ne sei sicuro, senti prima un professionista. Per evitare equivoci, quando incassi un pagamento dopo una scadenza effettiva:</p>
+<ul>
+<li>scrivi nella causale o nella ricevuta che la somma è ricevuta <strong>"a titolo di indennità di occupazione, con riserva di ogni diritto"</strong> e non come canone;</li>
+<li>conferma per iscritto, con raccomandata o PEC (la posta elettronica certificata, che ha valore legale), che il contratto è scaduto e che non intendi rinnovarlo;</li>
+<li>non cambiare la serratura e non entrare in casa senza consenso: la riconsegna si ottiene per via legale, non con le maniere forti.</li>
+</ul>
+<p>Sul tema delle somme dovute a chi occupa senza contratto valido puoi approfondire nell'articolo sull'<a href="/blog/indennita-occupazione-senza-titolo/">indennità di occupazione senza titolo</a>.</p>
+
+<h2>I passi pratici per chi vuole riavere la casa</h2>
+<ol>
+<li><strong>Rileggi il contratto.</strong> Controlla tipo (4+4, 3+2, transitorio, commerciale), data di inizio, durata e clausole sulla disdetta.</li>
+<li><strong>Verifica la disdetta.</strong> È stata inviata? Con raccomandata o PEC? Almeno sei mesi prima (dodici nelle locazioni commerciali)? Con un motivo ammesso, quando serve? Conserva le ricevute di spedizione e consegna.</li>
+<li><strong>Se la disdetta è valida e l'inquilino resta,</strong> la strada è la procedura di sfratto per finita locazione, che parte con l'intimazione notificata (tramite ufficiale giudiziario o, nei casi previsti, a cura dell'avvocato) e prosegue con l'udienza di convalida davanti al giudice. Se la scadenza non è ancora arrivata, puoi intimare prima la licenza per finita locazione, cioè l'atto con cui avvisi l'inquilino che alla scadenza dovrà lasciare l'immobile, rispettando i termini di disdetta.</li>
+<li><strong>Se la disdetta non c'è o è sbagliata,</strong> il contratto probabilmente si è rinnovato: pianifica la disdetta corretta per la prossima scadenza, invece di avviare una causa che rischi di perdere.</li>
+<li><strong>Controlla la registrazione.</strong> Il rinnovo o la proroga hanno adempimenti fiscali (versamento dell'imposta di registro oppure, con la cedolare secca, comunicazione all'Agenzia delle Entrate, di norma entro 30 giorni dalla scadenza): se non l'hai fatto, regolarizza con l'aiuto del tuo commercialista.</li>
+<li><strong>Mettiti in mano a un professionista prima di notificare.</strong> Un errore sui termini può far perdere mesi.</li>
+</ol>
+
+<h2>Errori comuni dei proprietari</h2>
+<ul>
+<li>Credere che la data di scadenza scritta nel contratto basti a far uscire l'inquilino.</li>
+<li>Mandare la disdetta in ritardo (anche di pochi giorni) o senza i motivi richiesti dalla legge.</li>
+<li>Incassare i canoni dopo la scadenza senza alcuna riserva scritta.</li>
+<li>Dimenticare la comunicazione di proroga o rinnovo all'Agenzia delle Entrate.</li>
+<li>Cambiare serratura o togliere le utenze per "convincere" l'inquilino: si rischiano conseguenze civili e penali.</li>
+<li>Usare un modello di disdetta trovato online senza verificare il tipo di contratto.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Il contratto di affitto scaduto si rinnova da solo?</h3>
+<p>Nelle locazioni abitative ordinarie, di norma sì: se nessuna delle parti manda una disdetta valida e tempestiva, il contratto continua alle stesse condizioni per il periodo previsto dalla legge. Il rinnovo automatico cambia a seconda del tipo di contratto.</p>
+<h3>L'inquilino può restare se il contratto è scaduto ma lui paga?</h3>
+<p>Dipende da come si è chiuso il rapporto. Se il contratto si è rinnovato, sì, ha diritto di restare. Se è finito davvero e lui resta senza diritto, devi comunque passare dal giudice per riavere la casa: non puoi cacciarlo da solo.</p>
+<h3>Posso mandare la disdetta dopo la scadenza?</h3>
+<p>Una disdetta tardiva di regola non ferma il rinnovo già scattato: in genere produce effetto solo per la scadenza successiva, con le regole di quella scadenza. Per questo contano le date.</p>
+<h3>Devo comunque registrare il rinnovo?</h3>
+<p>Sì, il rinnovo tacito e la proroga hanno adempimenti fiscali (imposta di registro o comunicazione, a seconda che tu abbia scelto o no la cedolare secca). Trovi un riepilogo nella guida alla <a href="/blog/proroga-contratto-locazione-agenzia-entrate/">proroga del contratto all'Agenzia delle Entrate</a>.</p>
+<h3>Quanto tempo serve per riavere l'immobile?</h3>
+<p>Dipende dal tribunale, da eventuali opposizioni e dalla fase di esecuzione con l'ufficiale giudiziario. Non esistono tempi garantiti: un professionista può darti una stima realistica sul tuo caso.</p>
+
+<h2>Il quadro normativo in breve</h2>
+<p>Le regole sulla durata e sul rinnovo delle locazioni abitative sono negli artt. 2 e 3 della legge 431/1998; i contratti transitori sono nell'art. 5; per le locazioni commerciali valgono gli artt. 27 (durata), 28 (rinnovazione) e 29 (diniego di rinnovazione alla prima scadenza) della legge 392/1978. La rinnovazione tacita è nell'art. 1597 del codice civile. Lo sfratto per finita locazione segue gli artt. 657 e seguenti del codice di procedura civile (intimazione, convalida, opposizione); la forma dell'intimazione (art. 660) è stata toccata dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo (D.Lgs. 164/2024).</p>
+
+<h2>Conclusione operativa</h2>
+<p>Prima di muoverti, scatta una foto alle date: tipo di contratto, scadenza, disdetta inviata, ricevute di pagamento. Se vuoi riavere l'immobile, il momento giusto per muoversi è <strong>almeno sei mesi prima della scadenza (dodici nelle locazioni commerciali)</strong>, meglio con un po' di margine, non dopo. Se sei già oltre, ti aiutiamo a capire se il contratto è ancora in vigore e quale strada è percorribile. Scopri come funziona il <a href="/servizi/sfratto-per-finita-locazione/">servizio di sfratto per finita locazione</a> e contatta Sfratto Sicuro per una valutazione del tuo caso.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale sul singolo caso.</em></p>`,
+  },
+  {
     slug: "termine-rilascio-immobile-sfratto",
     title: "Termine per il rilascio dell'immobile: quanto tempo può dare il giudice all'inquilino",
     description: "Termine per il rilascio dell'immobile dopo lo sfratto: quanto tempo il giudice può concedere all'inquilino (fino a 6 mesi) e cosa fare se scade.",
