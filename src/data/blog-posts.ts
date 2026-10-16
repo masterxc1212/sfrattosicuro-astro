@@ -16,6 +16,76 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "mobili-lasciati-inquilino-dopo-sfratto",
+    title: "Mobili lasciati dall'inquilino dopo lo sfratto: cosa può fare il proprietario",
+    description: "Mobili lasciati dall'inquilino dopo lo sfratto: cosa puoi fare, cosa prevede l'art. 609 c.p.c., chi paga custodia e smaltimento.",
+    excerpt: "Lo sfratto è stato eseguito ma in casa ci sono ancora i mobili dell'inquilino? Scopri se puoi buttarli o venderli, cosa prevede la legge e quali costi anticipare.",
+    lead: "Dopo il rilascio dell'immobile restano in casa i mobili dell'inquilino. Non puoi buttarli, venderli o tenerli di tua iniziativa: la legge prevede una procedura precisa, con scelte da fare prima dell'accesso dell'ufficiale giudiziario.",
+    publishedAt: "2026-10-16",
+    updatedAt: "2026-10-16",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-16. Keyword: mobili lasciati dall'inquilino dopo lo sfratto (long-tail, dati di volume DataForSEO non disponibili; domanda confermata da ricerca web), KD stimata bassa.",
+    html: `<p>Lo sfratto è stato eseguito, l'ufficiale giudiziario ti ha consegnato le chiavi, ma dentro casa ci sono ancora i mobili dell'inquilino: divani, armadi, scatoloni, magari elettrodomestici. Se sei un proprietario, la domanda è subito pratica: <strong>che cosa puoi fare dei mobili lasciati dall'inquilino dopo lo sfratto?</strong> Puoi buttarli, venderli, tenerli? La risposta è no a tutte e tre, almeno finché non segui la procedura prevista dalla legge. Qui trovi i passi da fare, i costi da mettere in conto e gli errori da evitare.</p>
+
+<h2>Perché non puoi disfarti dei mobili da solo</h2>
+<p>Quei beni, anche se vecchi o di poco valore, restano di proprietà dell'inquilino (o di chi li ha portati in casa). Svuotare l'appartamento di tua iniziativa, venderli o tenerli ti espone a richieste di risarcimento e a contestazioni anche più serie. Per questo il codice di procedura civile regola con precisione questo momento, all'articolo 609 (spiegato meglio in fondo). Tu non devi sapere a memoria la norma: devi sapere <strong>quando e come muoverti</strong>.</p>
+
+<h2>Cosa succede il giorno del rilascio</h2>
+<p>Il giorno dell'accesso, l'ufficiale giudiziario ti immette nel possesso dell'immobile e ti consegna le chiavi. Se nell'immobile ci sono beni mobili che non devono essere consegnati a te (cioè non fanno parte dell'esecuzione), l'ufficiale giudiziario <strong>intima all'inquilino di portarli via</strong>, dandogli un termine. Se l'inquilino è presente, l'intimazione viene messa a verbale. Se non c'è, l'intimazione gli viene notificata con un atto, e <strong>le spese della notifica sono a carico di chi ha avviato lo sfratto</strong>, cioè tue, salvo recupero successivo.</p>
+<p>Questo vale anche se i beni risultano di una terza persona: l'intimazione può riguardare chi risulta esserne il proprietario.</p>
+
+<h2>Se l'inquilino non ritira i mobili: le due strade</h2>
+<p>Scaduto il termine senza che i beni siano stati portati via, la legge ti mette davanti a una scelta. Dipende dal <strong>valore dei mobili</strong> rispetto ai costi.</p>
+<h3>Strada 1: chiedi la custodia e la vendita</h3>
+<p>Su tua richiesta e a tue spese, l'ufficiale giudiziario stima il presumibile valore di realizzo dei beni e indica le spese prevedibili di custodia e di trasporto. Se il valore sembra superiore a quei costi, nomina un custode che porta i beni in un altro luogo (un deposito, ad esempio). I beni possono poi essere venduti, senza incanto, secondo le indicazioni del giudice dell'esecuzione. Con il ricavato si pagano prima le spese di custodia, trasporto e vendita; l'eventuale resto serve a coprire le spese dell'esecuzione che hai anticipato. Se i beni appartengono a un terzo, l'eventuale eccedenza non va a te. Se la vendita non riesce nei termini fissati dal giudice, i beni vengono smaltiti o distrutti come beni abbandonati.</p>
+<h3>Strada 2: non anticipi nulla e i beni sono considerati abbandonati</h3>
+<p>Se non presenti l'istanza e non anticipi le spese, i beni, quando non è evidente l'utilità di tentarne la vendita, sono <strong>considerati abbandonati</strong>. L'ufficiale giudiziario, salva diversa richiesta tua, ne dispone lo smaltimento o la distruzione. È la soluzione più rapida e che costa meno, ma ha un rovescio: non recuperi nulla da quei beni.</p>
+<p>Quale strada scegliere? Con mobili ingombranti e di scarso valore, la seconda è spesso la più sensata. Con beni di valore reale (un arredo di pregio, attrezzature), la prima può valere la pena. Conviene decidere <strong>prima dell'accesso</strong>, con il tuo avvocato, così da non perdere tempo il giorno stesso.</p>
+
+<h2>I diritti dell'inquilino che il proprietario deve rispettare</h2>
+<ul>
+<li><strong>Può chiedere la restituzione.</strong> Dopo la scadenza del termine, ma prima della vendita o dello smaltimento, chi è proprietario dei beni può chiederne la consegna al giudice dell'esecuzione. Se il giudice accoglie, la riconsegna avviene dopo il pagamento delle spese e dei compensi di custodia e di trasporto.</li>
+<li><strong>Documenti di lavoro.</strong> Se trovi documenti legati a un'attività imprenditoriale o professionale, non buttarli e segnalalo subito all'ufficiale giudiziario. La legge prevede che siano conservati per due anni dalla parte istante (cioè da te) oppure, su tua istanza e con anticipo delle spese, da un custode. Passati i due anni si procede allo smaltimento.</li>
+<li><strong>Beni pignorati o sequestrati.</strong> Se risultano pignorati o sequestrati, l'ufficiale giudiziario avvisa subito il creditore interessato e il giudice.</li>
+</ul>
+
+<h2>Checklist pratica per il proprietario</h2>
+<ul>
+<li>Prima dell'accesso, <strong>valuta con il tuo avvocato</strong> se chiedere custodia e vendita o lasciare che i beni siano smaltiti.</li>
+<li>Il giorno del rilascio, <strong>fai foto e video</strong> dello stato dei locali e dei beni presenti, e fai mettere a verbale ciò che vedi.</li>
+<li>Non toccare, spostare o regalare nulla fino a quando l'ufficiale giudiziario non ha stabilito termini e modalità.</li>
+<li>Tieni da parte <strong>tutte le ricevute</strong> (notifiche, trasporto, deposito): l'ufficiale giudiziario indica a verbale le spese che hai anticipato e il giudice dell'esecuzione le liquida con un decreto che costituisce titolo esecutivo. Questo ti permette di chiederle all'inquilino.</li>
+<li>Se l'inquilino si presenta per ritirare i beni, <strong>non impedirglielo</strong> e fai mettere tutto per iscritto.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Svuotare la casa subito</strong> e portare tutto in discarica "per fare prima". Se poi l'inquilino contesta, il danno è tuo.</li>
+<li><strong>Trattenere i beni come garanzia</strong> per gli affitti non pagati. Non è consentito farsi giustizia da soli. Per recuperare i canoni serve un titolo esecutivo (ad esempio un'ordinanza di convalida con ingiunzione di pagamento o un decreto ingiuntivo) e, se necessario, un pignoramento: la vendita prevista dall'art. 609 copre soltanto le spese di custodia, di asporto, di vendita e di esecuzione.</li>
+<li><strong>Vendere online i mobili</strong> per rifarti del debito, senza autorizzazione.</li>
+<li><strong>Entrare in casa o cambiare la serratura</strong> prima che lo sfratto sia stato eseguito dall'ufficiale giudiziario. Se vuoi capire i rischi, leggi <a href="/blog/cambiare-serratura-inquilino-moroso/">cambiare la serratura all'inquilino moroso</a>.</li>
+<li><strong>Dimenticare di farsi dare copia del verbale</strong> di rilascio e di far annotare lo stato dei beni e le spese anticipate: il verbale è il documento che fotografa la situazione. Trovi i dettagli in <a href="/blog/verbale-di-rilascio-immobile/">verbale di rilascio dell'immobile</a>.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Quanto tempo ha l'inquilino per portare via i mobili?</h3>
+<p>Lo stabilisce l'ufficiale giudiziario nell'intimazione: la legge non fissa un numero di giorni uguale per tutti. Il termine che conta è quello scritto a verbale o nell'atto notificato.</p>
+<h3>Chi paga il trasloco e il deposito dei mobili?</h3>
+<p>In prima battuta le anticipa chi chiede la custodia, cioè il proprietario. Il giudice dell'esecuzione liquida poi le spese e, se vengono vendute, si recuperano dal ricavato; per il resto puoi agire contro l'inquilino (la parte esecutata) con il decreto di liquidazione.</p>
+<h3>Se i mobili valgono poco, posso buttarli?</h3>
+<p>Non da solo. Se non chiedi la custodia e non anticipi le spese, e non è evidente l'utilità di tentarne la vendita, i beni sono considerati abbandonati e lo smaltimento è disposto dall'ufficiale giudiziario, salva una tua diversa richiesta. Lo smaltimento passa quindi da lui, non da una tua iniziativa.</p>
+<h3>L'inquilino se n'è andato senza sfratto lasciando i mobili. Cosa faccio?</h3>
+<p>È un caso diverso, senza l'ufficiale giudiziario di mezzo. Non entrare e non svuotare di tua iniziativa: la prudenza impone di farsi guidare da un avvocato, che può indicare come documentare l'abbandono e come procedere. Senza titolo e senza ufficiale giudiziario il rischio di responsabilità per il proprietario è più alto.</p>
+
+<h2>La norma in sintesi</h2>
+<p>Il riferimento è l'<strong>art. 609 del codice di procedura civile</strong> (rubrica: «Provvedimenti circa i mobili estranei all'esecuzione»), nella versione modificata nel 2014 (D.L. 132/2014). Prima di agire, verifica con il tuo avvocato che il testo sia quello vigente. Si inserisce nell'esecuzione per rilascio disciplinata dagli artt. 605 («Precetto per consegna o rilascio») e 608 («Modo del rilascio»). Le spese anticipate sono indicate a verbale e liquidate dal giudice secondo l'art. 611 («Spese dell'esecuzione»); per le difficoltà che non ammettono dilazione l'art. 610 («Provvedimenti temporanei») consente di rivolgersi al giudice dell'esecuzione anche a voce.</p>
+
+<h2>Come ti può aiutare Sfratto Sicuro</h2>
+<p>Gestire bene il giorno del rilascio, e quello che succede ai mobili, aiuta a ridurre il rischio di costi e contestazioni. Se vuoi essere assistito nella fase del rilascio e nella gestione dei beni lasciati nell'immobile, scopri la <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro e contattaci per una valutazione del tuo caso.</p>
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "contratto-affitto-scaduto-non-rinnovato",
     title: "Contratto di affitto scaduto e non rinnovato: cosa succede e cosa deve fare il proprietario",
     description: "Contratto di affitto scaduto e non rinnovato: cosa succede se l'inquilino resta e paga, quando scatta il rinnovo e come riavere la casa.",
