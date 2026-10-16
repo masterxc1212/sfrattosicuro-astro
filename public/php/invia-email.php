@@ -126,6 +126,11 @@ $payload = [
     'note'     => $nota,
     'gclid'    => $gclid,
     'keyword'  => $utm_term,
+    // UTM: senza queste righe il CRM le riceveva vuote (attribuzione persa).
+    'utm_source'   => $utm_source,
+    'utm_medium'   => $utm_medium,
+    'utm_campaign' => $utm_campaign,
+    'utm_content'  => $utm_content,
 ];
 
 /* === BACKUP LOCALE (anti-perdita lead) === */
