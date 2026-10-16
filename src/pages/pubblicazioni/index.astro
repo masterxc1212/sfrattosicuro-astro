@@ -1,0 +1,197 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HeaderIsland from '../../components/HeaderIsland.astro';
+import Footer from '../../components/Footer.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import site from '../../data/site.json';
+import { pubblicazioni } from '../../data/pubblicazioni';
+
+const siteUrl = site.siteUrl.replace(/\/$/, '');
+const title = 'Pubblicazioni e white paper su sfratti e locazioni | Sfratto Sicuro';
+const description =
+  "Guide in PDF dello Studio Avv. Danilo Ansalone per i proprietari: sfratto di abitazioni e locali commerciali, fase esecutiva, fisco e canoni non pagati. Scaricabili gratuitamente.";
+
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${siteUrl}/pubblicazioni/#webpage`,
+      url: `${siteUrl}/pubblicazioni/`,
+      name: title,
+      description,
+      inLanguage: 'it-IT',
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      hasPart: pubblicazioni.map((p) => ({ '@id': `${siteUrl}/pubblicazioni/${p.slug}/#document` }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}/pubblicazioni/#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Pubblicazioni', item: `${siteUrl}/pubblicazioni/` }
+      ]
+    }
+  ]
+};
+
+const year = (iso: string) => iso.slice(0, 4);
+---
+
+<SiteLayout title={title} description={description} canonicalPath="/pubblicazioni/">
+  <Fragment slot="head">
+    <JsonLd graph={graph} />
+  </Fragment>
+  <HeaderIsland />
+
+  <main id="main-content" class="pubs-page">
+    <header class="pubs-head">
+      <div>
+        <p class="eyebrow">Pubblicazioni</p>
+        <h1 class="pubs-title">White paper<br />per chi affitta.</h1>
+      </div>
+      <p class="pubs-intro">
+        Guide scritte dallo Studio Avv. Danilo Ansalone per spiegare ai proprietari, in modo chiaro e
+        completo, che cosa prevede la legge quando un inquilino non paga o non lascia l'immobile.
+        Ogni documento è aggiornato alla normativa vigente e si scarica gratuitamente in PDF.
+      </p>
+    </header>
+
+    <ol class="pubs-list">
+      {pubblicazioni.map((p, i) => (
+        <li class="pubs-item">
+          <a class="pubs-cover" href={`/pubblicazioni/${p.slug}/`} tabindex="-1" aria-hidden="true">
+            <img src={`/pubblicazioni/${p.slug}.webp`} alt="" width="300" height="424" loading={i < 2 ? 'eager' : 'lazy'} decoding="async" />
+          </a>
+          <div class="pubs-main">
+            <p class="pubs-kind">
+              <span class="pubs-num">N°{String(i + 1).padStart(2, '0')}</span>
+              {p.kind} · {year(p.updated)} · {p.pages} pagine
+            </p>
+            <h2 class="pubs-name"><a href={`/pubblicazioni/${p.slug}/`}>{p.title}</a></h2>
+            <p class="pubs-sub">{p.subtitle}</p>
+            <p class="pubs-lede">{p.lede}</p>
+            <ul class="pubs-topics" aria-label="Argomenti">
+              {p.topics.map((t) => <li>{t}</li>)}
+            </ul>
+            <div class="pubs-cta">
+              <a class="pubs-btn" href={`/pubblicazioni/${p.slug}.pdf`} download data-pub-download={p.slug}>
+                Scarica il PDF
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"></path><path d="m7 10 5 5 5-5"></path><path d="M5 20h14"></path></svg>
+              </a>
+              <a class="pubs-link" href={`/pubblicazioni/${p.slug}/`}>Scheda completa <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <aside class="pubs-note">
+      <p>
+        Le guide hanno finalità informative e descrivono le regole in termini generali. Per una valutazione del
+        Suo caso può <a href="/#contatti">richiedere una consulenza</a> allo Studio.
+      </p>
+    </aside>
+  </main>
+
+  <Footer />
+</SiteLayout>
+
+<style>
+  .pubs-page {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 72px) var(--container-px) clamp(48px, 7vw, 96px);
+  }
+  .pubs-head {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(24px, 5vw, 64px);
+    align-items: end;
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--border-medium);
+  }
+  .pubs-head .eyebrow { margin: 0 0 12px; }
+  .pubs-title {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(2.3rem, 5vw, 3.6rem);
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    color: var(--text-strong);
+    margin: 0;
+  }
+  .pubs-intro {
+    margin: 0;
+    font-size: var(--text-lead);
+    line-height: 1.65;
+    color: var(--text-body);
+    max-width: 58ch;
+  }
+  .pubs-list { list-style: none; margin: 0; padding: 0; }
+  .pubs-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: clamp(20px, 4vw, 48px);
+    padding-block: clamp(28px, 4vw, 44px);
+    border-bottom: 1px solid var(--border-light);
+    align-items: start;
+  }
+  .pubs-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--shadow-elevated);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .pubs-cover:hover img { transform: translateY(-3px); box-shadow: var(--shadow-deep); }
+  .pubs-main { min-width: 0; }
+  .pubs-kind {
+    margin: 0 0 10px;
+    font-size: var(--text-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .pubs-num { color: var(--gold-refined); margin-right: 10px; letter-spacing: 0.16em; }
+  .pubs-name {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    line-height: 1.08;
+    margin: 0 0 6px;
+  }
+  .pubs-name a { color: var(--text-strong); text-decoration: none; }
+  .pubs-name a:hover { color: var(--green-security-deep); }
+  .pubs-sub { margin: 0 0 14px; font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: var(--gold-refined); }
+  .pubs-lede { margin: 0 0 16px; line-height: 1.65; color: var(--text-body); max-width: 70ch; }
+  .pubs-topics { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .pubs-topics li {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--blue-navy-soft);
+    background: var(--surface-soft);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
+  }
+  .pubs-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; }
+  .pubs-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--green-security-deep); color: #fff; text-decoration: none;
+    font-weight: 700; font-size: 0.95rem; padding: 11px 20px; border-radius: var(--radius-pill);
+    transition: background .2s ease;
+  }
+  .pubs-btn:hover { background: var(--blue-navy); color: #fff; }
+  .pubs-link { font-weight: 600; color: var(--link-blue); text-decoration: none; }
+  .pubs-link:hover { color: var(--link-blue-hover); }
+  .pubs-note { margin-top: var(--space-xl); color: var(--text-muted); font-size: var(--text-small); max-width: 80ch; }
+  .pubs-note a { color: var(--link-blue); }
+  @media (max-width: 760px) {
+    .pubs-head { grid-template-columns: 1fr; }
+    .pubs-item { grid-template-columns: 96px 1fr; gap: 16px; }
+    .pubs-name { font-size: 1.5rem; }
+  }
+</style>

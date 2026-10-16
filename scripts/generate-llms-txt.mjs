@@ -57,7 +57,8 @@ const PAGINE_PRINCIPALI = [
   { url: '/', title: 'Homepage' },
   { url: '/chi-siamo/', title: 'Chi siamo' },
   { url: '/servizi/', title: 'Servizi' },
-  { url: '/blog/', title: 'Blog' }
+  { url: '/blog/', title: 'Blog' },
+  { url: '/pubblicazioni/', title: 'Pubblicazioni e white paper in PDF' }
 ];
 
 const PAGINE_LEGALI = [

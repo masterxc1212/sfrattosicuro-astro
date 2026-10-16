@@ -61,3 +61,6 @@ social/
 
 # Contratti (engine legal design, non parte del sito)
 /contratti/
+
+# PDF delle guide per i clienti (copia di lavoro locale; quelli pubblicati stanno in public/pubblicazioni/)
+guide-clienti/
