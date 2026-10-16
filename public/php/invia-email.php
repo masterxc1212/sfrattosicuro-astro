@@ -68,6 +68,15 @@ $morosita      = ss_sanitize($_POST['morosità'] ?? $_POST['morosita'] ?? '');
 $note_utente   = ss_sanitize($_POST['note'] ?? '');
 
 $form_source   = ss_sanitize($_POST['form_source'] ?? 'unknown');
+/* Variante del test A/B: la aggiunge ai moduli LandingExperimentTracking (experiment_variant);
+   se manca si ricava dal form_source (..._v3 / ..._v4; popup_telefono esiste solo sulla v3). */
+$ab_variant    = strtolower(ss_sanitize($_POST['experiment_variant'] ?? ''));
+if (!preg_match('/^v\d+$/', $ab_variant)) {
+    if (preg_match('/_(v\d+)$/', $form_source, $m)) $ab_variant = $m[1];
+    elseif ($form_source === 'popup_telefono')       $ab_variant = 'v3';
+    else                                              $ab_variant = '';
+}
+$ab_label      = $ab_variant !== '' ? 'LANDING ' . strtoupper($ab_variant) : '';
 $gclid         = ss_sanitize($_POST['gclid'] ?? '');
 $utm_source    = ss_sanitize($_POST['utm_source'] ?? '');
 $utm_medium    = ss_sanitize($_POST['utm_medium'] ?? '');
@@ -110,6 +119,7 @@ $nome_completo = $nome . (!empty($cognome) ? ' ' . $cognome : '');
 /* === COMPOSIZIONE NOTA (dettagli extra dentro Richiesta Iniziale) === */
 $dettagli = [];
 if ($morosita !== '')    $dettagli[] = "Periodo morosità: $morosita";
+if ($ab_label !== '')    $dettagli[] = "[$ab_label]";
 if ($form_source !== '') $dettagli[] = "Form: $form_source";
 if ($matchtype !== '')   $dettagli[] = "Corrispondenza: $matchtype";
 $nota = implode(' | ', $dettagli);
@@ -196,7 +206,9 @@ $contenuto_text .= "Email: " . ($email_mit ?: 'N/A') . "\n";
 $contenuto_text .= "Città immobile: " . ($citta ?: 'N/A') . "\n";
 $contenuto_text .= "Periodo morosità: " . ($morosita ?: 'N/A') . "\n";
 if ($note_utente !== '') $contenuto_text .= "Note: $note_utente\n";
-$contenuto_text .= "\nForm: $form_source\n";
+$contenuto_text .= "\n";
+if ($ab_label !== '')     $contenuto_text .= "Landing: $ab_label\n";
+$contenuto_text .= "Form: $form_source\n";
 if ($utm_term !== '')     $contenuto_text .= "Keyword: $utm_term\n";
 if ($matchtype !== '')    $contenuto_text .= "Corrispondenza: $matchtype\n";
 if ($utm_campaign !== '') $contenuto_text .= "Campagna: $utm_campaign\n";
@@ -222,7 +234,9 @@ $contenuto_html = "<!DOCTYPE html><html lang='it'><head><meta charset='UTF-8'></
     . "<div style='background:linear-gradient(135deg,#1B2951 0%,#2a4073 100%);color:#fff;padding:26px 20px;text-align:center;'>"
     . "<h1 style='margin:0 0 8px 0;font-size:22px;'>🔔 Nuovo lead dal sito</h1>"
     . "<p style='margin:0;font-size:13px;opacity:.9;'>Sfratto Sicuro — notifica automatica (lead già inoltrato al CRM)</p>"
-    . "<p style='margin-top:10px;'><span style='display:inline-block;padding:4px 12px;background:#3BAE5D;color:#fff;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;'>$form_source</span></p>"
+    . "<p style='margin-top:10px;'><span style='display:inline-block;padding:4px 12px;background:#3BAE5D;color:#fff;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;'>$form_source</span>"
+    . ($ab_label !== '' ? " <span style='display:inline-block;padding:4px 12px;background:#F59E0B;color:#1B2951;border-radius:12px;font-size:11px;font-weight:700;'>$ab_label</span>" : '')
+    . "</p>"
     . "</div><div style='padding:26px 20px;'>"
     . $crm_badge
     . $riga('👤 Nominativo', $nome_completo)
@@ -256,6 +270,9 @@ $body .= "Content-Type: text/html; charset=utf-8\r\n";
 $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
 $body .= $contenuto_html . "\r\n\r\n";
 $body .= "--$boundary--";
+
+/* "[CRM]" deve restare nell'oggetto: centralino-poll della dashboard salta queste email. */
+if ($ab_label !== '') $notifica_oggetto .= " [$ab_label]";
 
 $mail_sent = @mail($notifica_destinatario, $notifica_oggetto, $body, implode("\r\n", $headers));
 if (!$mail_sent) {

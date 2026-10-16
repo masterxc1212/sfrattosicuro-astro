@@ -33,7 +33,11 @@ formula completa da €1.300 «fino alle chiavi», senza peggiorare il tasso di 
 
 ## Come riconoscere i lead nella dashboard
 
-Il PHP scrive `Form: <form_source>` nella richiesta iniziale del lead:
+Dal 16/10/2026 il PHP aggiunge un segnaposto `[LANDING V3]` / `[LANDING V4]` (preso dal campo
+nascosto `experiment_variant`, oppure ricavato dal `form_source`) in tre punti: nella richiesta
+iniziale del lead in dashboard (prima di `Form: …`), nell'oggetto dell'email di notifica
+(«Nuovo lead dal sito - Sfratto Sicuro [CRM] [LANDING V4]») e come etichetta arancione in testa
+all'email. Sotto, il dettaglio del modulo, che il PHP scrive come `Form: <form_source>`:
 
 | Modulo | V3 | V4 |
 |---|---|---|
