@@ -45,13 +45,22 @@ all'email. Sotto, il dettaglio del modulo, che il PHP scrive come `Form: <form_s
 | Fondo pagina | `bottom_form_v3` | `bottom_form_v4` |
 | Popup richiamata | `popup_telefono` | `popup_telefono_v4` |
 
-## Configurazione in Google Ads (da fare)
+## Configurazione in Google Ads (attiva dal 15/10/2026)
 
-Campagna `Avvocato per Sfratto` (customer `865-789-5088`, campaign `22849022328`):
-Esperimento personalizzato, split 50/50 per cookie, nella variante cambia solo l'URL finale
-da `/landing-v3/` a `/landing-v4/`. Attenzione ai **sitelink e callout**: se citano €1.300 o
-«fino alle chiavi», nella variante diventano incoerenti (vedi lezione di agosto in
-`promo-v3-agosto-2026.md`); vanno resi neutri sul prezzo per tutta la durata del test.
+Esperimento **«Landing v4»** (`10061787231`, personalizzato, split 50/50) dal 15/10 al
+13/11/2026: base `Avvocato per Sfratto` (`22849022328`, URL `/landing-v3/`), braccio
+sperimentale `Avvocato per Sfratto Landing v4` (`24354390158`, URL `/landing-v4/`).
+
+**Sitelink (corretti il 16/10/2026):** il braccio sperimentale aveva ereditato i 6 sitelink
+verso `/landing-v3/#…`, quindi chi cliccava un sitelink dal braccio v4 atterrava sulla v3.
+Sostituiti nel solo braccio sperimentale con copie identiche verso `/landing-v4/` (stesse
+ancore) — script `advertising/scripts/sitelink_v4_esperimento_20261016.py`. La base non è
+stata toccata. Se l'esperimento viene **applicato** alla base, controllare che i sitelink
+seguano la landing vincente.
+
+**Telefonate:** si contano per braccio nel report dell'esperimento (conversione primaria
+`MyCentralino – Telefonate`, chiamata dal numero d'inoltro Google ≥ 15 s). In dashboard una
+chiamata non porta la variante: MyCentralino non sa da quale pagina è partita.
 
 ## Misurazione
 
