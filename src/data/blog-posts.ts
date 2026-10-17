@@ -16,6 +16,91 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "indennita-avviamento-commerciale-locatore",
+    title: "Indennità di avviamento commerciale: quando il locatore deve pagarla",
+    description: "Indennità di avviamento commerciale: quando è dovuta, come si calcola (18 o 21 mensilità), quando non va pagata e come evitare blocchi al rilascio.",
+    excerpt: "Vuoi riprendere un negozio o un bar affittato? Scopri quando devi pagare l'indennità di avviamento, come si calcola, quando non è dovuta e cosa succede al rilascio.",
+    lead: "Riprendere un locale commerciale alla scadenza può costare 18 mensilità di canone, e senza pagamento il rilascio può bloccarsi. Ecco quando l'indennità è dovuta, come calcolarla e come muoverti.",
+    publishedAt: "2026-10-17",
+    updatedAt: "2026-10-17",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-10-17. Keyword: indennità di avviamento commerciale, vol 170-320, KD 0 (DataForSEO).",
+    html: `<p>Hai un negozio, un bar o un laboratorio affittato e vuoi riprenderti il locale alla scadenza? Prima di mandare la disdetta devi sapere una cosa: in molti casi, quando il contratto finisce per iniziativa tua, <strong>devi pagare all'inquilino l'indennità di avviamento commerciale</strong>. È una somma importante, e se la dimentichi può bloccare il rilascio dell'immobile. In questa guida vedi quando è dovuta, come si calcola, quando invece non devi pagarla e come muoverti in modo ordinato.</p>
+
+<h2>Che cos'è l'indennità di avviamento commerciale</h2>
+<p>L'avviamento è il valore che un'attività commerciale costruisce in un certo luogo: clienti abituali, passaggio, reputazione. Quando il locatore riprende il locale a fine contratto, l'inquilino perde quel valore. La legge gli riconosce quindi un'<strong>indennità per la perdita dell'avviamento</strong>, da pagare quando il rapporto cessa.</p>
+<p>La regola si applica ai contratti di locazione a uso diverso dall'abitativo (negozi, bar, ristoranti, botteghe artigiane aperte al pubblico) ed è prevista dalla legge sulle locazioni commerciali, la legge n. 392 del 1978. Se vuoi il quadro generale del contratto, leggi la guida al <a href="/blog/contratto-locazione-commerciale/">contratto di locazione commerciale</a>.</p>
+
+<h2>Quando l'indennità di avviamento è dovuta</h2>
+<p>L'indennità spetta, in sintesi, quando il contratto cessa <strong>senza colpa dell'inquilino e senza una sua scelta di andarsene</strong>. I casi tipici sono questi:</p>
+<ul>
+<li><strong>Disdetta del locatore alla prima scadenza</strong>, fatta per uno dei motivi che la legge ammette (ad esempio usare il locale tu, il coniuge o un parente fino al secondo grado in linea retta, oppure ristrutturarlo).</li>
+<li><strong>Disdetta valida del locatore alle scadenze successive alla prima</strong>: non devi più indicare un motivo, ma devi rispettare il preavviso. Se la disdetta è valida, il contratto non si rinnova e l'indennità è dovuta alla riconsegna.</li>
+</ul>
+<p>Attenzione al requisito dell'attività. L'indennità riguarda le attività che comportano <strong>contatto diretto con il pubblico degli utenti e dei consumatori</strong>: negozi, bar, ristoranti, parrucchieri, botteghe artigiane con vendita. Per i locali senza contatto con il pubblico (magazzini, uffici operativi, depositi) la regola non vale.</p>
+
+<h2>Quando NON devi pagare l'indennità</h2>
+<p>Ci sono situazioni in cui il proprietario è tutelato. L'indennità <strong>non è dovuta</strong> se il rapporto finisce per:</p>
+<ul>
+<li><strong>Risoluzione per inadempimento dell'inquilino</strong>, ad esempio per morosità: se ottieni lo sfratto perché non paga, non devi alcuna indennità.</li>
+<li><strong>Recesso o disdetta dell'inquilino</strong>: se è lui a decidere di andarsene, non la riceve.</li>
+<li><strong>Procedure concorsuali</strong> a carico del conduttore, come il fallimento (oggi liquidazione giudiziale).</li>
+</ul>
+<p>La legge esclude inoltre l'indennità per gli immobili destinati ad <strong>attività professionali</strong> (studi di avvocati, medici, commercialisti), per le <strong>attività di carattere transitorio</strong> e per i locali complementari o interni a stazioni ferroviarie, porti, aeroporti, aree di servizio stradali o autostradali, alberghi e villaggi turistici. Esistono poi altri casi previsti dalla legge o dalla giurisprudenza, come i provvedimenti della pubblica amministrazione (ad esempio l'espropriazione). Se il tuo caso è una morosità su un locale commerciale, trovi i dettagli in <a href="/blog/sfratto-morosita-locale-commerciale/">sfratto per morosità del locale commerciale</a>.</p>
+
+<h2>Come si calcola: 18 mensilità, 21 per gli alberghi</h2>
+<p>Il calcolo è semplice e si basa sull'<strong>ultimo canone corrisposto</strong>:</p>
+<ul>
+<li><strong>18 mensilità</strong> dell'ultimo canone per le attività commerciali, industriali e artigianali con contatto con il pubblico;</li>
+<li><strong>21 mensilità</strong> per le attività alberghiere.</li>
+</ul>
+<p>Esempio puramente indicativo: con un canone mensile di 1.000 euro, 18 mensilità fanno 18.000 euro. Non è una cifra da prendere alla leggera: per questo conviene metterla in conto prima di decidere di non rinnovare.</p>
+
+<h2>Il raddoppio: quando l'indennità vale il doppio</h2>
+<p>Esiste una seconda indennità, di pari importo, che si aggiunge alla prima. Scatta se l'immobile viene adibito, da chiunque, <strong>alla stessa attività o a un'attività affine</strong> a quella dell'inquilino uscente, e il nuovo esercizio inizia <strong>entro un anno</strong> dalla cessazione del precedente. Va pagata all'inizio della nuova attività.</p>
+<p>È una regola pensata per evitare che il proprietario si "appropri" dell'avviamento creato dal vecchio inquilino. Se hai intenzione di riaffittare il locale per un negozio dello stesso tipo, ricordalo nei tuoi conti.</p>
+
+<h2>Il punto più delicato: senza pagamento il rilascio può bloccarsi</h2>
+<p>L'indennità non è un dettaglio da regolare dopo. La legge stabilisce che <strong>l'esecuzione del provvedimento di rilascio dell'immobile è condizionata al pagamento dell'indennità</strong> (la prima). In pratica, se l'inquilino contesta l'importo o tu non paghi, il rilascio forzato può fermarsi.</p>
+<p>Quando c'è una causa per stabilire se l'indennità spetta e a quanto ammonta, ciascuna parte deve indicare con precisione la somma che chiede o che offre. Per poter eseguire il rilascio devi pagare la somma indicata dall'inquilino; se lui non ne indica una, quella che hai offerto tu o comunque quella fissata dalla sentenza di primo grado. Alla fine del giudizio si fa il conguaglio.</p>
+
+<h2>Cosa fare, passo dopo passo</h2>
+<ol>
+<li><strong>Controlla il contratto</strong>: durata (di norma 6 anni più 6), data di scadenza, tipo di attività svolta.</li>
+<li><strong>Verifica se l'attività ha contatto diretto con il pubblico</strong>: da questo dipende il diritto all'indennità.</li>
+<li><strong>Calcola l'importo</strong>: ultimo canone corrisposto per 18 (o 21) mensilità.</li>
+<li><strong>Manda la disdetta in tempo</strong>, per iscritto, con lettera raccomandata (come richiede la legge; la posta elettronica certificata, o PEC, è spesso ritenuta equivalente, ma per sicurezza invia comunque la raccomandata), almeno 12 mesi prima della scadenza (18 per gli alberghi), a pena di decadenza. Alla prima scadenza devi indicare, a pena di nullità, uno dei motivi previsti dall'art. 29. Per tempi e motivi usa la guida alla <a href="/blog/disdetta-contratto-locazione-commerciale-locatore/">disdetta del contratto commerciale da parte del locatore</a>.</li>
+<li><strong>Prepara il pagamento</strong> per il giorno della riconsegna, con una proposta chiara e documentata.</li>
+<li><strong>Documenta la riconsegna</strong> con un verbale firmato dalle parti.</li>
+</ol>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Dimenticare l'indennità</strong> nel piano finanziario del progetto (ristrutturazione, vendita, nuova locazione).</li>
+<li><strong>Inserire nel contratto una rinuncia anticipata</strong> all'indennità: le clausole in contrasto con la legge sono nulle (art. 79). La rinuncia ha valore solo se fatta dopo che il diritto è sorto, cioè a rapporto cessato, ad esempio in una transazione. Fa eccezione il canone annuo superiore a 250.000 euro (art. 79, comma 3), salvo per i locali di interesse storico qualificati con provvedimento regionale o comunale: qui le parti possono derogare alla legge, con un accordo provato per iscritto.</li>
+<li><strong>Disdetta tardiva o senza motivo</strong> alla prima scadenza: il contratto si rinnova di altri 6 anni (9 per gli alberghi). Non cessa, quindi per ora non c'è né rilascio né indennità, ma resti vincolato.</li>
+<li><strong>Confondere morosità e fine contratto</strong>: sono due strade diverse, con conseguenze economiche diverse.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Devo pagare l'indennità se l'inquilino non paga il canone?</h3>
+<p>No. Se il contratto si scioglie per inadempimento dell'inquilino, come nella morosità, l'indennità non è dovuta.</p>
+<h3>L'indennità spetta anche per lo studio di un professionista?</h3>
+<p>No. La legge la esclude per gli immobili destinati ad attività professionali e per quelle senza contatto diretto con il pubblico.</p>
+<h3>Quando devo pagarla?</h3>
+<p>La prima indennità va pagata alla cessazione del rapporto, perché da essa dipende l'esecuzione del rilascio. L'eventuale seconda si paga all'inizio della nuova attività.</p>
+<h3>Posso evitare l'indennità con una scrittura privata?</h3>
+<p>In generale no: i patti in contrasto con la legge sono nulli. Fa eccezione solo il caso dei canoni annui superiori a 250.000 euro (art. 79 della legge, con alcune esclusioni): verifica sempre con un avvocato prima di firmare.</p>
+
+<h2>La norma in sintesi</h2>
+<p>I riferimenti sono gli artt. 34 («Indennità per la perdita dell'avviamento») e 35 («Limiti») della legge n. 392 del 1978 (L. 392/1978); la durata e il rinnovo dei contratti (6 anni più 6; 9 più 9 per gli alberghi) sono negli artt. 27, 28 e 29, e i patti contrari alla legge sono regolati dall'art. 79. Verifica sempre con il tuo avvocato che il testo sia quello vigente e come lo interpretano i giudici nel tuo caso.</p>
+
+<h2>Come ti può aiutare Sfratto Sicuro</h2>
+<p>Se devi riprendere un locale commerciale e vuoi capire in anticipo costi, tempi e rischi, puoi contattare Sfratto Sicuro: scopri la <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "mobili-lasciati-inquilino-dopo-sfratto",
     title: "Mobili lasciati dall'inquilino dopo lo sfratto: cosa può fare il proprietario",
     description: "Mobili lasciati dall'inquilino dopo lo sfratto: cosa puoi fare, cosa prevede l'art. 609 c.p.c., chi paga custodia e smaltimento.",
