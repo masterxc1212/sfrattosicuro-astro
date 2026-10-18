@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "migliorie-addizioni-inquilino-affitto",
+    title: "Migliorie e addizioni dell'inquilino: cosa deve rimborsare il proprietario",
+    description: "Migliorie e addizioni dell'inquilino: quando il proprietario deve pagare l'indennità, cosa dicono gli artt. 1592-1593 c.c. e come tutelarsi.",
+    excerpt: "L'inquilino ha fatto lavori in casa tua e chiede un rimborso? Scopri quando spetta l'indennità, cosa può portare via e come scrivere le autorizzazioni.",
+    lead: "Bagno rifatto, cucina su misura, pavimenti nuovi: a fine contratto l'inquilino può chiedere un rimborso o portare via ciò che ha installato. Ecco cosa prevede la legge e come proteggerti prima dei lavori.",
+    publishedAt: "2026-10-18",
+    updatedAt: "2026-10-18",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-18. Keyword: migliorie e addizioni inquilino (long-tail; dati di volume DataForSEO non disponibili, volume molto basso stimato ~10; domanda confermata da ricerca web).",
+    html: `<p>L'inquilino ha rifatto il bagno, montato una cucina su misura o cambiato i pavimenti: ora il contratto sta per finire e ti chiede un rimborso, oppure vuole portarsi via ciò che ha installato. Se sei un proprietario, la domanda è: <strong>devo pagare le migliorie e le addizioni dell'inquilino?</strong> In questa guida trovi cosa prevede la legge, come comportarti prima, durante e dopo i lavori, e gli errori che costano di più.</p>
+
+<h2>Migliorie e addizioni dell'inquilino: che differenza c'è</h2>
+<p>Sono due cose diverse, e la differenza decide chi ha diritto a cosa.</p>
+<ul>
+<li><strong>Migliorie</strong>: interventi che fanno aumentare il valore o la qualità dell'immobile e non si possono separare da esso. Esempi: rifare l'impianto elettrico, sostituire i sanitari, posare un nuovo pavimento.</li>
+<li><strong>Addizioni</strong>: elementi nuovi che si aggiungono all'immobile e che, in molti casi, si possono togliere. Esempi: una cucina componibile, un condizionatore, una veranda smontabile, una tettoia in ferro.</li>
+</ul>
+<p>Non sono lavori di semplice manutenzione. Per chi paga la manutenzione ordinaria e straordinaria leggi anche la <a href="/blog/manutenzione-riparazioni-affitto-chi-paga/">guida su manutenzione e riparazioni nell'affitto</a>.</p>
+
+<h2>Il proprietario deve rimborsare le migliorie?</h2>
+<p>La regola generale è a favore del proprietario: <strong>senza il tuo consenso l'inquilino di regola non ha diritto ad alcuna indennità</strong> per le migliorie. Se invece hai dato il consenso, a fine locazione devi pagargli una somma pari alla <strong>più bassa tra due cifre</strong>: quanto è costato il lavoro e quanto vale il vantaggio che ne hai ricavato al momento della riconsegna dell'immobile.</p>
+<p>Un esempio semplice: l'inquilino ha speso 8.000 euro per rifare il bagno con il tuo consenso, ma oggi l'aumento di valore dell'immobile è stimato in 5.000 euro. L'indennità massima è 5.000 euro.</p>
+<h3>Che cosa vale come consenso</h3>
+<p>La giurisprudenza è rigorosa: il consenso deve essere chiaro e inequivocabile (anche tacito, se risulta da fatti concludenti). <strong>La semplice tolleranza non basta</strong>: se sapevi dei lavori e non hai protestato, questo di per sé non significa che hai accettato di pagarli. Ed è l'inquilino a dover dimostrare di averlo ottenuto. Per questo conviene sempre ragionare per iscritto (vedi la checklist più sotto).</p>
+
+<h2>Addizioni: l'inquilino può portarle via?</h2>
+<p>Qui la legge distingue due situazioni:</p>
+<ul>
+<li><strong>Addizioni che si possono togliere senza danni</strong>: di regola l'inquilino ha il diritto di rimuoverle alla fine del contratto, ripristinando i luoghi. Tu, se le preferisci, puoi invece decidere di trattenerle, ma in tal caso gli devi un'indennità (sempre la più bassa tra spesa e valore al momento della riconsegna).</li>
+<li><strong>Addizioni che non si possono togliere senza rovinare l'immobile</strong>: se costituiscono un miglioramento, valgono le regole viste sopra (indennità solo se c'è stato il tuo consenso).</li>
+</ul>
+<p>Attenzione: ciò che l'inquilino porta via deve essere lasciato in ordine. Se togliendo una struttura danneggia pareti o pavimenti, il costo del ripristino è a suo carico, e lo puoi far valere anche con il deposito cauzionale (approfondisci nella guida sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>).</p>
+
+<h2>Il contratto può escludere ogni rimborso</h2>
+<p>Le regole viste sono quelle di base del Codice civile, ma <strong>le parti possono derogarvi</strong>. Nella pratica molti contratti contengono già una clausola che dice, in sostanza, che l'inquilino non può fare lavori senza autorizzazione scritta e che eventuali migliorie restano al proprietario senza compenso. La giurisprudenza ritiene valida questa clausola: gli artt. 1592 e 1593 non sono norme imperative e le parti possono derogarvi.</p>
+<p>Se il tuo contratto non la prevede, aggiungerla al prossimo rinnovo è una delle modifiche più utili che puoi fare. Se vuoi farti aiutare nella stesura, guarda il servizio <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+
+<h2>Checklist: cosa fare prima dei lavori</h2>
+<ul>
+<li>Controlla cosa dice il contratto su lavori, modifiche e migliorie.</li>
+<li>Pretendi che l'inquilino ti chieda l'autorizzazione <strong>per iscritto</strong>, descrivendo i lavori.</li>
+<li>Se autorizzi, scrivi chiaramente se ci sarà o no un rimborso a fine contratto e con quale tetto massimo.</li>
+<li>Verifica se servono permessi edilizi o l'ok del condominio: i lavori in regola sono responsabilità di chi li esegue, ma l'immobile è tuo.</li>
+<li>Scatta foto prima e dopo, e conserva preventivi e fatture.</li>
+<li>Al termine del contratto, annota tutto nel verbale di riconsegna (ne parliamo nella <a href="/blog/verbale-riconsegna-immobile/">guida al verbale di riconsegna</a>).</li>
+</ul>
+
+<h2>Errori comuni dei proprietari</h2>
+<ul>
+<li><strong>Dire "va bene" a voce o su WhatsApp senza precisare nulla.</strong> Un messaggio ambiguo può essere usato come prova di consenso.</li>
+<li><strong>Restare in silenzio mentre i lavori vanno avanti.</strong> La sola tolleranza non basta a far nascere un obbligo di pagare, ma ti espone a una lite.</li>
+<li><strong>Non fotografare lo stato iniziale.</strong> Senza prove è difficile dimostrare danni o differenze.</li>
+<li><strong>Dimenticare il verbale finale.</strong> È il documento in cui si fissa cosa resta, cosa viene tolto e in che condizioni è la casa.</li>
+</ul>
+
+<h2>Se i lavori sono stati fatti senza permesso</h2>
+<p>Se l'inquilino ha modificato l'immobile contro il contratto, può essere un inadempimento: nei casi più seri può giustificare la richiesta di ripristino e di risarcimento dei danni e, se l'inadempimento è grave, anche la risoluzione del contratto. Prima di agire conviene inviare una contestazione scritta e valutare la gravità, con un professionista. Per i casi più complessi trovi supporto nella pagina dedicata alle <a href="/servizi/controversie-locazione/">controversie di locazione</a>.</p>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino può chiedermi i soldi di lavori che non ho autorizzato?</h3>
+<p>In linea generale no: per le migliorie senza consenso non spetta indennità. Resta il tema dei danni, se i lavori hanno peggiorato l'immobile.</p>
+<h3>Posso trattenere la cucina che l'inquilino ha montato?</h3>
+<p>Se è un'addizione removibile, l'inquilino può portarla via. Se vuoi tenerla, di regola devi corrispondere un'indennità. Meglio mettere d'accordo le parti per iscritto.</p>
+<h3>Una clausola "niente rimborsi" è valida?</h3>
+<p>Sì, nella generalità dei casi: le norme sul rimborso delle migliorie possono essere derogate dal contratto. Conviene però formularla in modo chiaro.</p>
+<h3>Quando l'inquilino può chiedere l'indennità?</h3>
+<p>Al momento della riconsegna dell'immobile, dopo la fine del contratto. Il calcolo si fa sul valore in quel momento, non su quello iniziale.</p>
+
+<h2>In sintesi</h2>
+<p>Senza un tuo consenso (meglio se scritto, per poterlo provare) non devi pagare le migliorie; con il consenso scatta un'indennità limitata alla cifra più bassa tra spesa e vantaggio. Le addizioni removibili restano dell'inquilino, salvo tua scelta di trattenerle. Il contratto può cambiare tutte queste regole: per questo conviene scrivere bene le autorizzazioni e il verbale finale. Se hai un caso concreto, puoi contattare Sfratto Sicuro per una valutazione, a partire dalla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+
+<p><em>Riferimenti normativi: artt. 1592 (Miglioramenti) e 1593 (Addizioni) del Codice civile. Contenuto informativo: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>
+`,
+  },
+  {
     slug: "indennita-avviamento-commerciale-locatore",
     title: "Indennità di avviamento commerciale: quando il locatore deve pagarla",
     description: "Indennità di avviamento commerciale: quando è dovuta, come si calcola (18 o 21 mensilità), quando non va pagata e come evitare blocchi al rilascio.",
