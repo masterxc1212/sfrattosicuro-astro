@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "disdetta-affitto-raccomandata-pec-come-inviarla",
+    title: "Disdetta dell'affitto: raccomandata, PEC o a mano? Come inviarla con meno rischi",
+    description: "Disdetta dell'affitto con raccomandata, PEC o a mano: quale scegliere, cosa succede con la giacenza e come provare che l'inquilino l'ha ricevuta.",
+    excerpt: "Devi mandare la disdetta all'inquilino? Scopri se conviene la raccomandata, la PEC o la consegna a mano, cosa succede se non ritira la lettera e come conservare le prove.",
+    lead: "La disdetta conta solo se arriva in tempo e se puoi provarlo. Ecco come scegliere tra raccomandata, PEC e consegna a mano, e quali ricevute conservare.",
+    publishedAt: "2026-10-20",
+    updatedAt: "2026-10-20",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-20. Keyword: disdetta affitto raccomandata, vol 1000, KD 0.",
+    html: `<p>Hai deciso di non rinnovare il contratto di affitto e devi mandare la <strong>disdetta all'inquilino</strong>. La domanda che ti fai subito è pratica: <strong>meglio la raccomandata, la PEC o la consegna a mano?</strong> La scelta conta più di quanto sembri: se un giorno l'inquilino dirà di non aver ricevuto nulla, sarai tu a dover dimostrare che la disdetta è arrivata in tempo. In questa guida vediamo come inviarla riducendo al minimo il rischio di contestazioni.</p>
+<p><strong>In breve:</strong> la forma che la legge indica per gli affitti abitativi è la raccomandata, quindi è la scelta più sicura. Se l'inquilino ha una PEC, puoi usarla (serve una PEC anche a te) e, nel dubbio, affiancarla alla raccomandata. La consegna a mano è un ripiego.</p>
+
+<h2>Perché il modo di invio è importante</h2>
+<p>La disdetta è la comunicazione con cui dici all'inquilino che alla scadenza il contratto non proseguirà. Per funzionare deve <strong>arrivare a destinazione nei tempi giusti</strong>. Il Codice civile (art. 1335, «presunzione di conoscenza») stabilisce che una dichiarazione rivolta a una persona precisa si considera conosciuta nel momento in cui <strong>arriva al suo indirizzo</strong>, a meno che il destinatario dimostri di non aver potuto saperne nulla senza sua colpa.</p>
+<p>In pratica: non conta quando l'inquilino ha letto la lettera, conta quando questa è arrivata a casa sua. Ma tu devi poterlo provare, ed è qui che il mezzo scelto fa la differenza.</p>
+
+<h2>I quattro modi per inviare la disdetta</h2>
+
+<h3>1. Raccomandata con avviso di ricevimento</h3>
+<p>È il metodo che la legge indica: per i contratti abitativi l'art. 2 della Legge 431/1998 parla di «lettera raccomandata» da inviare almeno sei mesi prima della scadenza. Ottieni due prove: la ricevuta di spedizione, con data certa (cioè non modificabile), e l'avviso di ricevimento, la cartolina di ritorno firmata dall'inquilino. È il canale più collaudato.</p>
+<p>Se l'inquilino <strong>non ritira</strong> la lettera, il plico resta in giacenza presso l'ufficio postale e all'inquilino viene lasciato un avviso. Secondo la giurisprudenza prevalente, la disdetta si presume conosciuta già dal momento in cui è giunta al suo indirizzo e l'avviso è stato lasciato, anche se lui non va mai a ritirarla. Se però l'inquilino contesta di aver ricevuto l'avviso, toccherà a te provare l'esito dell'invio. Per questo conserva sempre ricevuta di spedizione, tracciamento, avviso di giacenza e busta restituita.</p>
+
+<h3>2. PEC (posta elettronica certificata)</h3>
+<p>La PEC è una posta elettronica con valore legale: genera una ricevuta di invio e una di consegna. Viene spesso ritenuta equivalente alla raccomandata, ma poiché la legge sugli affitti abitativi parla di raccomandata, resta un margine di contestazione: nel dubbio, affiancala a una raccomandata. Il limite pratico è semplice: <strong>serve una PEC dell'inquilino</strong> e ne serve una anche a te come mittente. Un privato spesso non ce l'ha; se l'inquilino è un'impresa o un professionista, invece, è di solito la strada più rapida. Non inviare mai la disdetta a un'e-mail ordinaria sperando che valga come PEC.</p>
+
+<h3>3. Consegna a mano con firma</h3>
+<p>Puoi consegnare la lettera di persona e far firmare all'inquilino una copia «per ricevuta», con data. È immediata, ma, poiché la legge indica la raccomandata, può essere contestata sulla forma, e <strong>la prova dipende da una firma</strong>: se l'inquilino si rifiuta, resta poco in mano. È la meno sicura tra i canali visti finora e conviene usarla solo insieme alla raccomandata.</p>
+
+<h3>4. Messaggio, e-mail normale, WhatsApp</h3>
+<p>Meglio evitarli come unico canale. Possono servire come avviso in più, ma è difficile dimostrare chi ha letto cosa e quando. Se qualcuno contesta la comunicazione, rischi di non avere una prova solida.</p>
+
+<h2>Come inviare la disdetta, passo per passo</h2>
+<ul>
+<li><strong>Controlla il tipo di contratto e la scadenza.</strong> Nel 4+4 alla seconda scadenza servono almeno sei mesi di preavviso; alla prima scadenza puoi negare il rinnovo, sempre con almeno sei mesi di preavviso, solo per i motivi indicati dalla legge. Nelle locazioni commerciali (negozi, uffici) il preavviso è di almeno dodici mesi, diciotto per alberghi e attività teatrali (art. 28 della Legge 392/1978).</li>
+<li><strong>Scrivi in modo chiaro.</strong> Indica i dati del contratto, la data di scadenza e che non intendi rinnovarlo. Se serve un motivo di legge, scrivilo con precisione.</li>
+<li><strong>Scegli il canale più sicuro:</strong> raccomandata A/R (con avviso di ricevimento), eventualmente affiancata dalla PEC. Spedisci con alcune settimane di anticipo rispetto al termine, perché conta il momento in cui la lettera arriva, non solo quello in cui parte.</li>
+<li><strong>Usa l'indirizzo giusto.</strong> Di norma l'immobile affittato o l'indirizzo che il contratto indica per le comunicazioni.</li>
+<li><strong>Conserva tutto:</strong> copia della lettera, ricevuta, cartolina o avviso di giacenza, ricevute PEC.</li>
+</ul>
+
+<h2>Il tempo di preavviso e quando parte</h2>
+<p>Nei contratti abitativi di tipo 4+4, alla <strong>seconda scadenza</strong> ciascuna parte può comunicare la propria intenzione di non rinnovare con raccomandata inviata <strong>almeno sei mesi prima</strong>. Poiché la disdetta produce effetto quando arriva al destinatario, conviene che arrivi entro quel termine. Se nessuno scrive, il contratto si rinnova da solo alle stesse condizioni. Per approfondire trovi la guida al <a href="/blog/contratto-affitto-4-4/">contratto di affitto 4+4</a> e quella al <a href="/blog/disdetta-contratto-3-2/">contratto 3+2</a>, dove il discorso sul preavviso è analogo.</p>
+<p>Alla <strong>prima scadenza</strong>, invece, il locatore può negare il rinnovo, sempre con preavviso di almeno sei mesi, solo per i motivi previsti dall'art. 3 della Legge 431/1998 (per esempio, se vuoi destinare la casa a te o a un familiare stretto). Il motivo va specificato nella comunicazione: se manca, la disdetta è nulla. Per i dettagli, leggi la guida sulla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto da parte del locatore</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Aspettare l'ultimo momento.</strong> Se la lettera arriva dopo il termine, la disdetta può risultare tardiva e il contratto si rinnova.</li>
+<li><strong>Dimenticare il motivo</strong> quando la legge lo richiede.</li>
+<li><strong>Mandare la lettera all'indirizzo sbagliato</strong>, per esempio a un vecchio recapito.</li>
+<li><strong>Affidarsi solo a WhatsApp o all'e-mail ordinaria.</strong></li>
+<li><strong>Non conservare le ricevute.</strong> Senza la prova, la contestazione dell'inquilino diventa difficile da superare.</li>
+<li><strong>Usare un modulo scaricato senza verificare</strong> che sia adatto al tuo tipo di contratto.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>La disdetta può essere inviata via PEC?</h3>
+<p>Se l'inquilino ha una PEC, sì, e viene spesso ritenuta equivalente alla raccomandata. Per prudenza, affiancala a una raccomandata: PEC per la rapidità, raccomandata per maggiore sicurezza.</p>
+<h3>Cosa succede se l'inquilino non ritira la raccomandata?</h3>
+<p>Di norma la disdetta si considera conosciuta dal momento in cui il plico è giunto all'indirizzo e l'avviso di giacenza è stato lasciato, anche se l'inquilino non lo ritira. Se lui contesta di aver ricevuto l'avviso, devi poterne provare il rilascio: conserva tutta la documentazione postale.</p>
+<h3>Posso consegnare la disdetta a mano?</h3>
+<p>Si può, facendo firmare una copia con la data, ma per i contratti abitativi la forma indicata dalla legge è la raccomandata: nel dubbio spedisci anche quella.</p>
+<h3>Serve un avvocato per inviarla?</h3>
+<p>Non è obbligatorio, ma un controllo prima dell'invio evita errori su termini, motivi e indirizzo, che possono costare un rinnovo non voluto.</p>
+
+<h2>Riferimenti normativi</h2>
+<p>Le norme di riferimento sono: artt. 1334 (efficacia degli atti unilaterali) e 1335 (presunzione di conoscenza) del Codice civile; art. 2 (modalità di stipula e di rinnovo dei contratti di locazione) e art. 3 (disdetta del contratto da parte del locatore) della Legge 431/1998; art. 28 (rinnovazione del contratto) della Legge 392/1978 per le locazioni non abitative.</p>
+
+<h2>In sintesi</h2>
+<p>Per una disdetta con meno rischi: spedisci con anticipo, scegli la raccomandata A/R (con la PEC come rinforzo, se possibile), scrivi il motivo quando serve, usa l'indirizzo corretto e conserva ogni ricevuta. Se vuoi che qualcuno verifichi termini e testo prima dell'invio, Sfratto Sicuro può affiancarti: trovi tutti i dettagli nella pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>
+`,
+  },
+  {
     slug: "migliorie-addizioni-inquilino-affitto",
     title: "Migliorie e addizioni dell'inquilino: cosa deve rimborsare il proprietario",
     description: "Migliorie e addizioni dell'inquilino: quando il proprietario deve pagare l'indennità, cosa dicono gli artt. 1592-1593 c.c. e come tutelarsi.",
