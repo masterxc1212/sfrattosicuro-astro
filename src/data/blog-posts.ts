@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-immobile-in-comproprieta",
+    title: "Sfratto di un immobile in comproprietà: puoi agire da solo?",
+    description: "Sfratto immobile in comproprietà: il singolo proprietario può agire da solo? Quando basta il suo consenso e quando il no di un altro lo blocca.",
+    excerpt: "Hai affittato una casa insieme a fratelli o altri proprietari e l'inquilino non paga? Ecco quando puoi intimare lo sfratto da solo e quando il dissenso degli altri può fermarti.",
+    lead: "Immobile con più proprietari e inquilino moroso: serve la firma di tutti per lo sfratto? Di regola no, ma il dissenso esplicito degli altri può bloccarti. Ecco passi, errori da evitare e domande frequenti.",
+    publishedAt: "2026-10-22",
+    updatedAt: "2026-10-22",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-22. Keyword: sfratto immobile in comproprietà (long-tail, dati di volume DataForSEO non disponibili; tema non ancora coperto sul blog).",
+    html: `<p>Hai ereditato un appartamento con i fratelli, o lo hai comprato insieme al coniuge o a un socio, e lo avete dato in affitto. L'inquilino ha smesso di pagare. La domanda arriva subito: per lo <strong>sfratto di un immobile in comproprietà</strong> (cioè di una casa con più proprietari) serve la firma di tutti, oppure puoi agire da solo? Questa guida è per chi è locatore insieme ad altri e vuole capire come muoversi senza bloccare la pratica.</p>
+
+<h2>Sfratto immobile in comproprietà: di regola puoi agire anche da solo</h2>
+<p>Se l'immobile è in comproprietà e l'inquilino non paga, <strong>ciascun comproprietario può di regola intimare lo sfratto per morosità</strong>, chiedere la risoluzione del contratto e il rilascio della casa. Gli altri proprietari non devono necessariamente partecipare alla causa.</p>
+<p>La Corte di Cassazione ragiona così: tra i comproprietari-locatori valgono pari poteri di gestione e si presume che chi agisce lo faccia con il consenso degli altri. Chiedere il rilascio per morosità è un atto di ordinaria amministrazione, cioè di gestione normale dell'immobile.</p>
+<p>Attenzione: è la regola generale, non una garanzia. Il giudice valuta il singolo caso e ci sono situazioni che richiedono più cautela, come quelle che trovi qui sotto.</p>
+
+<h2>Perché si arriva a questa conclusione</h2>
+<p>Il codice civile (c.c.), agli artt. 1105 e seguenti, riconosce a tutti i comproprietari il diritto di partecipare all'amministrazione e prevede che, per la gestione ordinaria, decida la maggioranza calcolata sul valore delle quote. Sulla base di questa disciplina, la Cassazione ha stabilito che il comproprietario che agisce per la cosa comune ha, salvo prova contraria, il consenso degli altri.</p>
+<p>Diverso è il caso dei contratti di <strong>durata superiore a nove anni</strong>: per stipularli serve il consenso di tutti i comproprietari (art. 1108, terzo comma, c.c.). Se il contratto è nato senza questo consenso, la posizione del locatore è più delicata e conviene farla valutare prima di agire.</p>
+
+<h2>Quando il "no" di un altro proprietario può fermarti</h2>
+<p>La presunzione di consenso non è assoluta. Se l'inquilino dimostra che gli altri comproprietari, per una quota <strong>maggioritaria o pari alla metà</strong> dell'immobile, hanno espresso un dissenso esplicito, l'azione può essere bloccata. Un esempio: con due fratelli al 50%, il silenzio dell'altro di regola non ti ostacola, mentre un suo "no" scritto o comunque chiaro può bloccare l'azione.</p>
+<p>Il semplice disaccordo su altri temi (per esempio la divisione dell'eredità) non basta a dimostrare il dissenso sullo sfratto. Se in famiglia il conflitto è reale, è meglio chiarirlo prima di notificare l'atto.</p>
+
+<h2>Cosa cambia in pratica per te</h2>
+<ul>
+<li><strong>Il contratto:</strong> controlla chi risulta come locatore. Se compaiono tutti i comproprietari, la posizione è solida. Se ne compare uno solo, verifica che gli altri fossero d'accordo.</li>
+<li><strong>L'intimazione:</strong> la puoi promuovere tu come comproprietario locatore, allegando il contratto e la prova della tua quota (visura catastale o atto di provenienza).</li>
+<li><strong>I canoni arretrati:</strong> quando i locatori sono più di uno, ciascuno può chiedere il pagamento all'inquilino. Tra voi, però, le somme recuperate si dividono in base alle quote: conviene un accordo scritto su come ripartirle.</li>
+<li><strong>Le spese:</strong> contributo unificato (la tassa per avviare la causa), notifiche e compenso del legale sono anticipati da chi agisce. Di regola il giudice le pone a carico dell'inquilino che perde, ma accordatevi prima su come dividerle.</li>
+</ul>
+
+<h2>I passi da seguire (checklist)</h2>
+<ol>
+<li>Recupera il contratto di locazione e la prova della registrazione.</li>
+<li>Recupera visura catastale e atto di acquisto o dichiarazione di successione, per dimostrare le quote di ciascuno.</li>
+<li>Avvisa gli altri comproprietari e, se possibile, ottieni un loro consenso scritto (anche una semplice email): non è sempre obbligatorio, ma evita contestazioni.</li>
+<li>Calcola con precisione i canoni scaduti. Per il canone basta una mensilità non pagata da oltre venti giorni (per gli oneri accessori serve un importo superiore a due mensilità), come spieghiamo nella <a href="/blog/intimazione-di-sfratto-per-morosita/">guida all'intimazione di sfratto per morosità</a>.</li>
+<li>Affida a un legale la preparazione e la notifica dell'intimazione di sfratto con citazione per la convalida (l'udienza in cui il giudice verifica la morosità).</li>
+<li>Segui l'udienza e, se serve, la fase del rilascio con l'ufficiale giudiziario.</li>
+</ol>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Aspettare l'unanimità a tutti i costi:</strong> se un fratello è irreperibile o non risponde, di regola non sei costretto a fermarti mentre i canoni si accumulano, perché il suo consenso si presume. Diverso è il caso di un dissenso esplicito: non ignorarlo.</li>
+<li><strong>Trattare con l'inquilino senza avvisare gli altri:</strong> dilazioni o sconti concordati da uno solo possono creare conflitti tra voi e complicare la causa.</li>
+<li><strong>Non documentare le quote:</strong> senza visura o atto di provenienza il giudice può chiederti di provare la tua posizione.</li>
+<li><strong>Dimenticare la successione:</strong> se hai ereditato l'immobile, controlla che la successione sia completa e che i nuovi proprietari siano individuati. Ne parliamo nella guida sulla <a href="/blog/successione-contratto-locazione-morte-locatore/">successione nel contratto di locazione</a>.</li>
+</ul>
+
+<h2>Il quadro normativo in sintesi</h2>
+<p>La gestione della cosa comune è regolata dagli artt. 1100 e seguenti del codice civile (in particolare gli artt. 1105 e 1108). Per l'intimazione di sfratto per morosità e la convalida si applicano gli artt. 657 e seguenti del codice di procedura civile (in particolare gli artt. 658 e 663). Per i canoni non pagati vale l'art. 5 della legge 392/1978; per la possibilità dell'inquilino di sanare la morosità in udienza (il cosiddetto termine di grazia) l'art. 55 della stessa legge. La riforma Cartabia (D.Lgs. 149/2022, con il correttivo D.Lgs. 164/2024) ha inciso sul processo civile e va tenuta presente nei procedimenti più recenti. Le norme possono cambiare: verifica sempre la disciplina vigente.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Un comproprietario può sfrattare l'inquilino senza il consenso degli altri?</h3>
+<p>Di regola sì: si presume che agisca con il consenso degli altri. Se però gli altri comproprietari, per una quota maggioritaria o pari alla metà, dissentono in modo esplicito e l'inquilino lo dimostra, l'azione può essere bloccata.</p>
+<h3>Se agisco da solo, cosa succede ai canoni recuperati?</h3>
+<p>Ciascun locatore può chiedere all'inquilino il pagamento, ma nei rapporti tra voi le somme si dividono in base alle quote. Conviene mettere per iscritto l'accordo sulla ripartizione.</p>
+<h3>Gli altri comproprietari devono essere citati in causa?</h3>
+<p>Di regola no: non c'è un obbligo di far partecipare tutti i locatori al giudizio. Resta però utile informarli.</p>
+<h3>E se i comproprietari sono in disaccordo tra loro?</h3>
+<p>Il semplice disaccordo o l'inerzia degli altri non impedisce di agire. Un dissenso esplicito di chi ha la maggioranza o la metà delle quote, se dimostrato dall'inquilino, può invece impedire di proporre o proseguire lo sfratto. Se il conflitto è reale, fatti assistere prima di procedere.</p>
+<h3>Quanto tempo ci vuole?</h3>
+<p>I tempi dipendono dal Tribunale competente e dall'eventuale opposizione dell'inquilino. Per la convalida il nostro dato medio operativo è di circa 60 giorni: non è una promessa assoluta.</p>
+
+<h2>In conclusione</h2>
+<p>La comproprietà non ti impedisce di difendere i tuoi diritti di locatore: di regola puoi agire anche da solo, purché tu abbia i documenti in ordine e ti sia confrontato con gli altri proprietari. Se vuoi capire come procedere nel tuo caso, contatta Sfratto Sicuro: trovi i dettagli del servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>. La prima consulenza è gratuita e senza impegno.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "disdetta-affitto-raccomandata-pec-come-inviarla",
     title: "Disdetta dell'affitto: raccomandata, PEC o a mano? Come inviarla con meno rischi",
     description: "Disdetta dell'affitto con raccomandata, PEC o a mano: quale scegliere, cosa succede con la giacenza e come provare che l'inquilino l'ha ricevuta.",
