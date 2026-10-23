@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "contratto-affitto-arredato-inventario",
+    title: "Contratto di affitto arredato: inventario e tutela del proprietario",
+    description: "Affitti una casa arredata? Come redigere l'inventario degli arredi, cosa prevede la legge sui danni e come tutelarti alla riconsegna delle chiavi.",
+    excerpt: "Hai una casa arredata da affittare? Ecco come preparare l'inventario degli arredi, distinguere usura e danno e proteggerti dalle contestazioni a fine contratto.",
+    lead: "Affitto arredato: senza un inventario firmato è difficile provare i danni a fine contratto. Ecco cosa scrivere, cosa dice il Codice civile e gli errori da evitare.",
+    publishedAt: "2026-10-23",
+    updatedAt: "2026-10-23",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-23. Keyword: contratto affitto arredato (long-tail; dati di volume esatti non disponibili, query correlata 'case in affitto arredato' vol 880, KD 0).",
+    html: `<p>Se stai per affittare una casa con mobili ed elettrodomestici, il <strong>contratto di affitto arredato</strong> richiede una cura in più rispetto a un normale affitto a casa vuota. Il punto più delicato è uno solo: <strong>l'inventario degli arredi</strong>. Senza un elenco preciso di ciò che lasci in casa e in che condizioni, dimostrare un danno a fine contratto diventa molto difficile. Questa guida spiega al proprietario come prepararlo, cosa dice la legge e come evitare le contestazioni più comuni.</p>
+
+<h2>Cosa cambia quando la casa è arredata</h2>
+<p>Dal punto di vista giuridico l'affitto resta una locazione di immobile ad uso abitativo: valgono le regole ordinarie su durata, canone e disdetta. La differenza è pratica. Insieme alle pareti consegni all'inquilino divani, letti, cucina, lavatrice, magari un televisore. Tutti questi beni dovranno tornare a te a fine contratto, in condizioni compatibili con il normale uso.</p>
+<p>Alcuni vantaggi sono evidenti: puoi chiedere un canone più alto di una casa vuota e rivolgerti a studenti, lavoratori fuori sede e chi cerca soluzioni temporanee. Il rischio è che, se non documenti nulla, ogni graffio o elettrodomestico guasto diventi motivo di discussione.</p>
+
+<h2>L'inventario degli arredi: cos'è e perché è fondamentale</h2>
+<p>L'inventario è una lista scritta di tutti i beni mobili presenti nell'immobile al momento della consegna, con l'indicazione dello stato di ciascuno. Va <strong>firmato da entrambe le parti</strong> e allegato al contratto, così fa parte dell'accordo.</p>
+<p>Un buon inventario contiene:</p>
+<ul>
+<li><strong>Descrizione di ogni bene</strong>: tipo, quantità, marca o modello per gli elettrodomestici (es. "frigorifero combinato, 2 ante").</li>
+<li><strong>Stato di conservazione</strong>: nuovo, buono, usato, con difetti già presenti (es. "tavolo con graffio sul lato destro").</li>
+<li><strong>Stanza di appartenenza</strong>, per ritrovare facilmente ogni voce.</li>
+<li><strong>Dotazioni accessorie</strong>: pentole, stoviglie, tende, lampadari, se presenti.</li>
+<li><strong>Data e firme</strong> di locatore e conduttore.</li>
+</ul>
+<p>Accompagna l'elenco con <strong>fotografie datate</strong> di ogni ambiente e dei difetti già esistenti. Le foto non sostituiscono la firma, ma aiutano a chiarire eventuali dubbi.</p>
+
+<h2>Cosa dice la legge su danni e restituzione</h2>
+<p>Il Codice civile stabilisce che l'inquilino deve restituire ciò che ha ricevuto nello stesso stato in cui l'ha preso, "in conformità della descrizione" fatta dalle parti, salvo il normale deterioramento dovuto all'uso (art. 1590 c.c., <em>Restituzione della cosa locata</em>). Qui l'inventario diventa la prova decisiva: è proprio quella "descrizione" a cui la norma fa riferimento. Se manca, la legge presume che i beni siano stati consegnati in buono stato di manutenzione, salvo prova contraria: senza inventario sei tu a trovarti in difficoltà nel dimostrare lo stato iniziale.</p>
+<p>Il conduttore risponde inoltre della perdita e del deterioramento della cosa locata, se non prova che dipendono da causa a lui non imputabile (art. 1588 c.c., <em>Perdita e deterioramento della cosa locata</em>). Le piccole riparazioni dovute al deterioramento da uso sono invece a suo carico, non quelle dovute a vetustà o caso fortuito (art. 1609 c.c., <em>Piccole riparazioni a carico dell'inquilino</em>).</p>
+
+<h2>Usura normale e danno: dove sta il confine</h2>
+<p>È l'argomento su cui nascono più liti. In linea generale:</p>
+<ul>
+<li><strong>Usura normale</strong> (non puoi chiedere nulla): materasso un po' affossato dopo anni, vernice opaca, piccoli segni sul divano, fornelli meno lucidi.</li>
+<li><strong>Danno</strong> (puoi chiedere il ripristino o il risarcimento): macchie permanenti, ante rotte, vetri o piani cottura incrinati, elettrodomestici danneggiati per uso scorretto, mobili mancanti.</li>
+</ul>
+<p>Nei casi dubbi conta la durata del contratto: dopo molti anni, è ragionevole attendersi un deperimento naturale maggiore. Di norma il valore da chiedere non è quello del bene nuovo, ma tiene conto della sua vetustà. Il conduttore non risponde del deterioramento dovuto a semplice vetustà.</p>
+
+<h2>Passi pratici per il proprietario</h2>
+<ol>
+<li><strong>Prepara l'inventario prima della firma</strong>, con calma, stanza per stanza.</li>
+<li><strong>Scatta foto e video</strong> con data visibile e conservale.</li>
+<li><strong>Fai firmare l'elenco</strong> al conduttore e allegalo al contratto, indicandolo nel testo ("il conduttore dichiara di aver ricevuto l'immobile con gli arredi descritti nell'allegato A").</li>
+<li><strong>Registra il contratto</strong> entro 30 giorni dalla stipula (o dalla decorrenza, se anteriore), come per ogni locazione.</li>
+<li><strong>Valuta il deposito cauzionale</strong>: per le locazioni abitative non può superare tre mensilità e produce interessi legali, da corrispondere al conduttore ogni anno. Trovi i dettagli nella guida sul <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>.</li>
+<li><strong>Alla fine del contratto, verifica insieme all'inquilino</strong>: confronta lo stato attuale con l'inventario e redigi un verbale firmato, come spiegato nella guida al <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a>.</li>
+</ol>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Inventario generico</strong> ("cucina completa", "camera arredata"): non prova nulla. Serve il dettaglio.</li>
+<li><strong>Inventario non firmato</strong> o redatto solo da te: è molto più debole in caso di contestazione.</li>
+<li><strong>Nessuna foto</strong> dei difetti preesistenti.</li>
+<li><strong>Trattenere la cauzione senza documentare il danno</strong>: se l'inquilino contesta, dovrai comunque dimostrare il danno.</li>
+<li><strong>Dimenticare di aggiornare l'elenco</strong> se durante il contratto sostituisci un elettrodomestico.</li>
+<li><strong>Entrare in casa senza accordo</strong> per controllare i mobili: l'inquilino ha diritto al godimento esclusivo dell'immobile.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inventario è obbligatorio per legge?</h3>
+<p>No, la legge non lo impone espressamente. È però uno strumento indispensabile per dimostrare in che stato hai consegnato i beni, quindi nella pratica è altamente consigliato.</p>
+<h3>Si può usare la cedolare secca su un immobile arredato?</h3>
+<p>Sì, la cedolare secca può essere scelta anche per le locazioni abitative con arredi, se ricorrono i requisiti generali. Conviene verificare la propria situazione fiscale con un commercialista.</p>
+<h3>L'inquilino rompe un mobile: posso trattenere la cauzione?</h3>
+<p>Puoi chiedere il risarcimento del danno e, se c'è accordo, compensarlo con la cauzione. Se l'inquilino contesta, servono prove: inventario, foto e, se serve, un preventivo di riparazione.</p>
+<h3>Cosa succede se l'inquilino non restituisce i mobili?</h3>
+<p>Puoi chiedere il valore dei beni mancanti o danneggiati. Se l'inquilino occupa ancora l'immobile dopo la scadenza, puoi valutare la via giudiziale per il rilascio.</p>
+
+<h2>In sintesi</h2>
+<p>Un affitto arredato è vantaggioso, ma solo se prepari le basi: inventario dettagliato e firmato, foto, cauzione gestita correttamente e verbale finale. Se hai dubbi sul contratto o hai già un conflitto con l'inquilino per danni o mancato rilascio, puoi approfondire sulla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> e contattare Sfratto Sicuro per una valutazione del tuo caso.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale personalizzata.</em></p>
+`,
+  },
+  {
     slug: "sfratto-immobile-in-comproprieta",
     title: "Sfratto di un immobile in comproprietà: puoi agire da solo?",
     description: "Sfratto immobile in comproprietà: il singolo proprietario può agire da solo? Quando basta il suo consenso e quando il no di un altro lo blocca.",
