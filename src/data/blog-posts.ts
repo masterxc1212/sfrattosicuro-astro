@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "assicurazione-affitto-proprietario",
+    title: "Assicurazione sull'affitto: quali polizze proteggono davvero il proprietario",
+    description: "Assicurazione sull'affitto per il proprietario: polizza tutela canoni, danni all'immobile e fideiussione. Cosa coprono e quali limiti controllare.",
+    excerpt: "Esiste un'assicurazione che protegge chi affitta casa dall'inquilino che non paga e dai danni? Ecco le polizze utili, cosa coprono davvero, i limiti e gli errori da evitare.",
+    lead: "Una polizza può rimborsare i canoni non pagati e coprire l'immobile, ma non ti restituisce la casa. Ecco come funzionano le assicurazioni per chi affitta e cosa controllare prima di firmare.",
+    publishedAt: "2026-10-24",
+    updatedAt: "2026-10-24",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-24. Keyword: assicurazione casa in affitto, vol 390, KD 0 (correlate: assicurazione affitto vol 210).",
+    html: `<p>Se affitti casa, prima o poi ti chiedi se esista una <strong>assicurazione sull'affitto</strong> che ti protegga da due rischi: l'inquilino che smette di pagare e i danni all'appartamento. La risposta è sì, ma con un'avvertenza: nessuna polizza sostituisce il contratto scritto bene e, se serve, la procedura di sfratto. In questa guida vediamo quali polizze esistono, cosa coprono davvero e quali limiti devi conoscere prima di firmare.</p>
+
+<h2>Le assicurazioni utili a chi affitta casa</h2>
+<p>Quando si parla di assicurazione per l'affitto si mettono insieme prodotti diversi. Conviene distinguerli, perché rispondono a rischi diversi.</p>
+<ul>
+  <li><strong>Polizza tutela canoni (o "rischio locativo")</strong>: indennizza il proprietario se l'inquilino non paga il canone. È la più cercata.</li>
+  <li><strong>Polizza sul fabbricato (incendio, scoppio, danni da acqua)</strong>: protegge l'immobile, a prescindere dall'inquilino.</li>
+  <li><strong>Responsabilità civile del proprietario</strong>: copre i danni che l'immobile causa a terzi, per esempio un'infiltrazione che rovina l'appartamento del vicino.</li>
+  <li><strong>Tutela legale</strong>: rimborsa, entro un massimale, le spese di avvocato e di giudizio.</li>
+  <li><strong>Fideiussione assicurativa</strong>: è una garanzia che l'inquilino porta al proprietario, emessa da una compagnia. La trovi spiegata nella nostra guida sulla <a href="/blog/fideiussione-affitto/">fideiussione per l'affitto</a>.</li>
+</ul>
+
+<h2>Come funziona la polizza che copre i canoni non pagati</h2>
+<p>La polizza tutela canoni è un contratto tra il proprietario e una compagnia assicurativa. Se l'inquilino non paga, la compagnia riconosce al proprietario i canoni persi, di solito per un numero limitato di mensilità e fino a un tetto massimo. Molte polizze includono anche una quota di spese legali per avviare lo sfratto.</p>
+<p>Le condizioni cambiano molto da un prodotto all'altro, ma i meccanismi ricorrenti sono questi:</p>
+<ul>
+  <li><strong>Verifica dell'inquilino prima della firma</strong>: la compagnia vuole vedere reddito, tipo di lavoro e stabilità. Se l'inquilino non supera la verifica, la polizza non viene emessa.</li>
+  <li><strong>Contratto registrato</strong>: il contratto di locazione deve essere regolare e registrato. Un affitto in nero di solito esclude la copertura.</li>
+  <li><strong>Periodo di attesa</strong>: spesso la copertura parte solo dopo un certo tempo dalla stipula.</li>
+  <li><strong>Obbligo di avviare la procedura</strong>: per ottenere l'indennizzo il proprietario deve in genere attivarsi entro termini precisi, per esempio con la messa in mora (la diffida scritta di pagare) e poi con lo sfratto.</li>
+  <li><strong>Massimali e franchigie</strong>: l'indennizzo non copre tutto. Il massimale è la somma massima che la compagnia paga; la franchigia è la parte di danno che resta a carico tuo. Controlla quante mensilità vengono pagate e se restano escluse le spese condominiali o le utenze.</li>
+</ul>
+<p><strong>Attenzione</strong>: ricevere l'indennizzo non significa riavere la casa. La polizza ti rimborsa i soldi, ma l'inquilino resta nell'immobile finché non si conclude la procedura di sfratto. Inoltre la compagnia, dopo aver pagato, può rivalersi sull'inquilino: è il cosiddetto diritto di surrogazione (art. 1916 del codice civile), di solito prevista anche da una clausola della polizza.</p>
+
+<h2>Danni all'appartamento: chi risponde?</h2>
+<p>Qui entra in gioco la legge, oltre alla polizza. Il codice civile (c.c.) stabilisce che l'inquilino risponde della perdita e del deterioramento della cosa affittata durante la locazione. Vale anche per l'incendio, a meno che dimostri che non dipende da lui (art. 1588 c.c.). Alla fine del contratto deve restituire l'immobile nello stato in cui lo ha ricevuto, salvo il normale deterioramento dovuto all'uso (art. 1590 c.c.).</p>
+<p>Nella pratica, però, ottenere il risarcimento da un inquilino che non ha mezzi o che è sparito è difficile. Ecco perché una polizza sul fabbricato resta utile: per gli eventi coperti (incendio, danni da acqua e simili) paga anche quando recuperare i soldi dall'inquilino è impossibile. I danni da incuria o da dolo vanno verificati nelle condizioni di polizza.</p>
+<p>Per rendere dimostrabili i danni, due documenti fanno la differenza: il <strong>verbale di consegna</strong> con foto all'inizio dell'affitto e il <strong>verbale di riconsegna</strong> alla fine. Trovi un approfondimento nella guida al <a href="/blog/verbale-riconsegna-immobile/">verbale di riconsegna dell'immobile</a>.</p>
+
+<h2>Assicurazione, cauzione o fideiussione: cosa scegliere</h2>
+<p>Non sono alternative esclusive: ciascuno strumento copre un pezzo del rischio.</p>
+<ul>
+  <li>Il <strong>deposito cauzionale</strong> è una somma che l'inquilino versa e che il proprietario può trattenere in caso di danni o canoni non pagati. Per le abitazioni non può superare tre mensilità (art. 11 della legge 392/1978, la legge sulle locazioni). Vedi la guida al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>.</li>
+  <li>La <strong>fideiussione</strong> è una garanzia di un terzo, banca o assicurazione, che paga se l'inquilino non lo fa.</li>
+  <li>La <strong>polizza tutela canoni</strong> la stipula il proprietario, che ne sostiene il premio. La compagnia però chiederà i dati dell'inquilino per la verifica preventiva.</li>
+</ul>
+<p>Attenzione a non chiedere all'inquilino più garanzie del consentito: cauzione e fideiussione cumulate possono essere contestate come modo per aggirare il limite di legge. Una regola semplice: se affitti a una persona con reddito stabile e documentato, la cauzione e un buon contratto possono bastare. Se l'inquilino ha un profilo più fragile o l'affitto è importante per il tuo bilancio, valuta una garanzia in più.</p>
+
+<h2>Errori da evitare quando scegli una polizza</h2>
+<ul>
+  <li><strong>Non leggere le esclusioni</strong>: i casi non coperti stanno quasi sempre nelle ultime pagine.</li>
+  <li><strong>Contare sulla polizza al posto della selezione dell'inquilino</strong>: una buona verifica iniziale evita più problemi di qualsiasi copertura.</li>
+  <li><strong>Aspettare troppo ad agire</strong>: se non rispetti i termini per segnalare il mancato pagamento, rischi di perdere l'indennizzo.</li>
+  <li><strong>Confondere assicurazione e sfratto</strong>: la polizza non libera l'immobile. Per riprenderti la casa serve la procedura davanti al giudice.</li>
+  <li><strong>Trascurare il contratto</strong>: senza una locazione registrata e ben scritta, anche la polizza migliore può non pagare.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'assicurazione sull'affitto è obbligatoria per il proprietario?</h3>
+<p>No. Non esiste alcun obbligo di legge di stipulare una polizza per chi affitta. Controlla solo se te lo chiede un mutuo o un contratto specifico che hai firmato.</p>
+<h3>Se ho una polizza tutela canoni posso smettere di sollecitare l'inquilino?</h3>
+<p>No. Di solito la polizza richiede proprio che tu attivi per tempo i passaggi previsti. Se l'inquilino è in ritardo, resta fondamentale agire subito: leggi cosa fare in <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">inquilino che non paga l'affitto: cosa fare</a>.</p>
+<h3>La compagnia mi paga anche se l'inquilino viene sfrattato?</h3>
+<p>Dipende dal contratto di assicurazione. Molte polizze indennizzano i canoni persi fino alla riconsegna dell'immobile, ma con limiti di mensilità e importo. Chiedi sempre le condizioni per iscritto.</p>
+<h3>Posso stipulare la polizza dopo che l'inquilino ha già smesso di pagare?</h3>
+<p>In pratica no: le compagnie escludono le morosità già in atto. La polizza va attivata all'inizio del rapporto, o comunque prima di qualsiasi ritardo. Alcuni prodotti accettano anche contratti già in corso, se i pagamenti sono stati regolari.</p>
+
+<h2>Il quadro normativo in breve</h2>
+<p>Riferimenti utili per chi vuole approfondire (lo sfratto è la procedura davanti al giudice per riavere l'immobile): art. 1576 c.c. (mantenimento della cosa in buono stato locativo), art. 1588 c.c. (perdita e deterioramento della cosa locata), art. 1590 c.c. (restituzione della cosa locata), art. 1916 c.c. (diritto di surrogazione dell'assicuratore) e art. 11 della legge 392/1978 (deposito cauzionale).</p>
+
+<h2>In conclusione</h2>
+<p>Una polizza può ridurre l'impatto economico di un inquilino che non paga, ma non risolve il problema più grande: riavere l'immobile. Se l'inquilino è già in ritardo con i canoni, non perdere tempo: scopri come <a href="/servizi/tutela-proprietario/">Sfratto Sicuro tutela il proprietario</a> oppure come funziona il <a href="/servizi/recupero-canoni-non-pagati/">recupero dei canoni non pagati</a>. La prima consulenza è gratuita e senza impegno.</p>
+<p><em>Contenuto a carattere informativo: non sostituisce una consulenza legale o assicurativa personalizzata. Le condizioni delle polizze variano da compagnia a compagnia.</em></p>
+`,
+  },
+  {
     slug: "contratto-affitto-arredato-inventario",
     title: "Contratto di affitto arredato: inventario e tutela del proprietario",
     description: "Affitti una casa arredata? Come redigere l'inventario degli arredi, cosa prevede la legge sui danni e come tutelarti alla riconsegna delle chiavi.",
