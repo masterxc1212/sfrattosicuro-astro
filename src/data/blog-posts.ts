@@ -16,6 +16,78 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "affittare-casa-con-mutuo",
+    title: "Affittare casa con mutuo in corso: cosa deve sapere il proprietario",
+    description: "Affittare casa con mutuo in corso si pu�: cosa controllare con la banca, effetti fiscali e come tutelare il contratto se la casa va all'asta.",
+    excerpt: "Hai ancora il mutuo e vuoi mettere la casa in affitto? Ecco cosa verificare con la banca, cosa cambia sul fisco e perch� registrare il contratto ti protegge.",
+    lead: "Si pu� affittare una casa con il mutuo ancora in corso: l'ipoteca non lo vieta. Prima di firmare con l'inquilino, per�, servono tre verifiche: le clausole del mutuo, gli effetti fiscali e un contratto registrato con un canone corretto.",
+    publishedAt: "2026-10-25",
+    updatedAt: "2026-10-25",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-25. Keyword: posso affittare la prima casa con mutuo, vol 90, KD 0.",
+    html: `<p>Hai un mutuo ancora in corso sulla casa e vuoi metterla in affitto? Puoi farlo: <strong>affittare casa con mutuo</strong> non è vietato dalla legge. Ma ci sono alcune verifiche da fare prima di firmare con l'inquilino, perché un passo falso può costarti agevolazioni fiscali o creare contestazioni con la banca. Questa guida spiega, in modo pratico, cosa controllare e come proteggerti.</p>
+
+<h2>Si può affittare casa con mutuo in corso? Cosa dice la legge</h2>
+<p>Sì. Con il mutuo la banca iscrive un'<strong>ipoteca</strong> sull'immobile: è una garanzia che le permette, solo se smetti di pagare le rate, di far vendere la casa per recuperare il credito. L'ipoteca <strong>non toglie la proprietà</strong> e non ti impedisce di concedere la casa in locazione. Resti tu il proprietario e incassi i canoni.</p>
+<p>Attenzione però a due cose distinte: il rapporto con la banca (il contratto di mutuo) e il rapporto con l'inquilino (il contratto di affitto). Sono indipendenti: l'inquilino non paga la banca e la banca non è parte del contratto di locazione. Le rate del mutuo restano sempre a tuo carico, anche se l'inquilino non ti paga il canone.</p>
+
+<h2>Cosa controllare nel contratto di mutuo</h2>
+<p>Prima di pubblicare l'annuncio, rileggi il contratto di mutuo e l'atto di acquisto. Cerca in particolare:</p>
+<ul>
+<li><strong>Clausole su uso e destinazione dell'immobile:</strong> alcuni contratti prevedono che tu debba avvisare la banca o ottenere il suo consenso prima di dare la casa in locazione. Se esiste una clausola del genere e non la rispetti, la banca potrebbe contestarti un inadempimento.</li>
+<li><strong>Mutuo agevolato o con garanzie pubbliche:</strong> se il mutuo è stato concesso con condizioni particolari (per esempio legate alla prima casa), verifica con la banca se l'affitto cambia qualcosa.</li>
+<li><strong>Polizze collegate:</strong> controlla le assicurazioni abbinate al mutuo (incendio, scoppio): alcune vanno aggiornate quando la casa è abitata da un terzo.</li>
+</ul>
+<p>Il consiglio pratico è semplice: se hai dubbi, chiedi alla banca una conferma <strong>per iscritto</strong> (anche via PEC o email). Ti serve come prova di aver agito correttamente.</p>
+
+<h2>Il lato fiscale: attenzione alle agevolazioni sulla prima casa</h2>
+<p>Se hai comprato con le agevolazioni "prima casa" o detrai gli interessi passivi del mutuo (art. 15 del TUIR, il Testo unico delle imposte sui redditi), l'affitto può cambiare il quadro. In linea generale, la detrazione degli interessi passivi è pensata per l'<strong>abitazione principale</strong>: se la casa non è più la tua dimora abituale perché l'hai data in affitto, puoi perdere il diritto alla detrazione, salvo i casi previsti dalla norma (per esempio il trasferimento per motivi di lavoro). Prima di affittare chiedi conferma al tuo commercialista: la risposta dipende dalla tua situazione concreta.</p>
+<p>Sul fronte dei canoni incassati hai due strade: tassazione ordinaria o <a href="/blog/cedolare-secca-affitto/">cedolare secca</a>, l'imposta sostitutiva con aliquota fissa. La scelta incide sul netto che ti resta in tasca, da confrontare con la rata del mutuo.</p>
+
+<h2>Cosa succede all'inquilino se non paghi il mutuo</h2>
+<p>È la domanda che spaventa di più chi affitta: "se io non pago la banca, l'inquilino che fine fa?". La legge (art. 2923 del codice civile) protegge il contratto di affitto quando la casa viene venduta all'asta, ma solo a certe condizioni:</p>
+<ul>
+<li>l'affitto è opponibile a chi compra all'asta se il contratto ha <strong>data certa anteriore al pignoramento</strong> (cioè all'atto con cui l'esecuzione inizia); per le locazioni ultranovennali non trascritte la tutela vale comunque solo entro i nove anni dall'inizio;</li>
+<li>se invece il contratto non ha data certa, ma l'inquilino era già nell'immobile prima del pignoramento, chi compra deve rispettarlo solo per la durata prevista per le locazioni a tempo indeterminato;</li>
+<li>chi compra non è tenuto a rispettare l'affitto se il canone è <strong>inferiore di un terzo</strong> al giusto prezzo o a quello delle locazioni precedenti.</li>
+</ul>
+<p>Il modo normale per dare data certa è <a href="/blog/registrazione-contratto-locazione-online/">registrare il contratto</a> all'Agenzia delle Entrate entro 30 giorni. Registrare, quindi, non è solo un obbligo fiscale: è anche una protezione per te e per l'inquilino. E fissare un canone realistico, in linea con il mercato, evita contestazioni.</p>
+
+<h2>Passi pratici per affittare in sicurezza</h2>
+<ol>
+<li>Leggi il contratto di mutuo e cerca clausole su locazione e destinazione d'uso.</li>
+<li>Se serve, scrivi alla banca e conserva la risposta.</li>
+<li>Parla con il commercialista di detrazioni, agevolazioni e regime fiscale dei canoni.</li>
+<li>Scegli il tipo di contratto adatto (4+4, canone concordato, transitorio) e fai redigere un testo completo.</li>
+<li>Registra il contratto entro 30 giorni dalla stipula e conserva la ricevuta.</li>
+<li>Richiedi un deposito cauzionale e verifica la solvibilità dell'inquilino prima di consegnare le chiavi.</li>
+<li>Calcola il canone in modo che copra la rata anche nei mesi di eventuale ritardo dell'inquilino.</li>
+</ol>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Affittare "in nero" o non registrare il contratto:</strong> oltre alle sanzioni, perdi la protezione della data certa e la tua posizione diventa molto più debole se la casa finisce all'asta.</li>
+<li><strong>Contare sul canone per pagare la rata senza margine:</strong> se l'inquilino ritarda, rischi di andare in ritardo anche tu con la banca.</li>
+<li><strong>Ignorare le clausole del mutuo:</strong> una contestazione della banca arriva proprio quando hai meno margine.</li>
+<li><strong>Canone fuori mercato:</strong> un canone troppo basso può essere contestato in caso di vendita forzata.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Devo chiedere il permesso alla banca per affittare?</h3>
+<p>Non c'è una regola generale: dipende da cosa prevede il tuo contratto di mutuo. Molti contratti non richiedono alcuna autorizzazione, altri chiedono almeno una comunicazione. Controlla le clausole e, nel dubbio, chiedi conferma scritta.</p>
+<h3>L'ipoteca impedisce di vendere la casa con l'inquilino dentro?</h3>
+<p>No, ipoteca e affitto possono coesistere. La vendita segue regole proprie, e il contratto di affitto in corso di regola prosegue con il nuovo proprietario.</p>
+<h3>Perdo le agevolazioni prima casa se affitto?</h3>
+<p>Dipende dal tipo di agevolazione e dai tempi. Per la detrazione degli interessi passivi conta la destinazione ad abitazione principale; per le altre agevolazioni serve un controllo caso per caso con notaio o commercialista.</p>
+<h3>E se l'inquilino non paga il canone e io devo pagare la rata?</h3>
+<p>Le due cose restano separate: la rata va pagata comunque. Se il ritardo dell'inquilino si prolunga, puoi attivare la procedura di <a href="/blog/intimazione-di-sfratto-per-morosita/">sfratto per morosità</a> per liberare l'immobile e recuperare i canoni.</p>
+
+<h2>In conclusione</h2>
+<p>Affittare una casa con il mutuo in corso è possibile e spesso conveniente, a patto di fare tre verifiche: clausole del mutuo, effetti fiscali, contratto registrato con un canone corretto. Se vuoi un contratto di locazione costruito bene fin dall'inizio, oppure sei già alle prese con un inquilino che non paga, puoi vedere come lavoriamo sulla pagina <a href="/servizi/contratti-di-locazione/">contratti di locazione</a> o su <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo contenuto è puramente informativo e non sostituisce una consulenza legale o fiscale personalizzata.</p>`
+  },
+  {
     slug: "assicurazione-affitto-proprietario",
     title: "Assicurazione sull'affitto: quali polizze proteggono davvero il proprietario",
     description: "Assicurazione sull'affitto per il proprietario: polizza tutela canoni, danni all'immobile e fideiussione. Cosa coprono e quali limiti controllare.",
