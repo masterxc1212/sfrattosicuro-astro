@@ -16,6 +16,80 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "pagamento-affitto-contanti",
+    title: "Pagamento affitto in contanti: limiti e rischi per il locatore",
+    description: "Pagamento affitto in contanti: è consentito? Limite di 5.000 euro, rischi per il proprietario e come incassare i canoni in modo sicuro.",
+    excerpt: "Puoi farti pagare l'affitto in contanti? Ecco il limite di legge, cosa rischia il proprietario e come incassare i canoni con prove solide.",
+    lead: "Il pagamento dell'affitto in contanti è consentito solo entro il limite generale di legge e, anche quando è lecito, espone il proprietario a problemi di prova. Ecco cosa sapere e come incassare in modo sicuro.",
+    publishedAt: "2026-10-26",
+    updatedAt: "2026-10-26",
+    category: "Locazioni",
+    readingTime: "5 min",
+    sourceNote: "Generato automaticamente 2026-10-26. Keyword: pagamento affitto in contanti, vol 140, KD 0.",
+    html: `<p>Un inquilino ti propone di pagare l'affitto in contanti, "così è più comodo per tutti"? Il <strong>pagamento affitto in contanti</strong> è consentito, ma solo entro il limite generale che la legge fissa per i trasferimenti di denaro contante. E anche quando è lecito, per un proprietario è quasi sempre una pessima idea: senza traccia, provare quanto è stato incassato diventa difficile. In questa guida vediamo cosa dice la legge, quali rischi corri e come incassare i canoni in modo sicuro.</p>
+
+<h2>Pagamento affitto in contanti: cosa è consentito</h2>
+<p>Oggi non esiste un divieto specifico per gli affitti. Vale il <strong>limite generale all'uso del contante</strong> previsto dalla normativa antiriciclaggio, che riguarda tutti i pagamenti, quindi anche i canoni di abitazioni, negozi e uffici. Dal 1° gennaio 2023 il limite è di <strong>5.000 euro</strong>: un trasferimento in contanti pari o superiore a questa cifra è vietato. La soglia è cambiata più volte negli anni, quindi controlla sempre il valore in vigore al momento del pagamento.</p>
+<p>Un canone mensile ordinario è quasi sempre sotto soglia, quindi un singolo pagamento in contanti, di per sé, non è un illecito. Attenzione però a due situazioni: il pagamento in unica soluzione di più mensilità (o di canoni arretrati) che superi la soglia, e il frazionamento artificioso di una somma per restare sotto il limite, che la legge vieta.</p>
+<p>Una precisazione utile: fino al 2015 per gli affitti a uso abitativo esisteva un divieto speciale di pagare in contanti, qualunque fosse l'importo. È stato abrogato dalla legge di stabilità 2016. Se leggi vecchi articoli o senti dire che "l'affitto in contanti è sempre vietato", sono informazioni superate.</p>
+
+<h2>Cosa rischia il proprietario che incassa in contanti</h2>
+<p>I rischi sono di due tipi. Il primo è <strong>sanzionatorio</strong>: se il pagamento raggiunge o supera la soglia, la violazione può essere contestata sia a chi paga sia a chi riceve. Il secondo, molto più frequente, è <strong>pratico e di prova</strong>:</p>
+<ul>
+<li><strong>Difficoltà a provare i versamenti.</strong> Se nasce una lite su quanto è stato pagato, senza bonifici o ricevute la discussione diventa la tua parola contro la sua.</li>
+<li><strong>Sospetto di affitto in nero.</strong> Incassi senza traccia fanno pensare a canoni non dichiarati. Se il canone reale è più alto di quello registrato, il rischio è serio: ne parliamo nella guida sull'<a href="/blog/affitto-a-nero-rischi-proprietario/">affitto a nero e i rischi per il proprietario</a>.</li>
+<li><strong>Controlli fiscali.</strong> Somme in contanti non documentate sono più difficili da giustificare se l'amministrazione chiede chiarimenti.</li>
+</ul>
+
+<h2>Come incassare l'affitto in modo sicuro</h2>
+<p>Le soluzioni tracciabili sono semplici e gratuite o quasi:</p>
+<ul>
+<li><strong>Bonifico bancario o postale</strong>, con causale chiara (per esempio "Canone di locazione ottobre 2026 – immobile di via…").</li>
+<li><strong>Assegno</strong>, da versare sul tuo conto.</li>
+<li><strong>Altri strumenti elettronici</strong> che permettano di ricostruire chi ha pagato, quanto e quando.</li>
+</ul>
+<p>Indica nel contratto l'IBAN su cui versare il canone e la data entro cui il pagamento deve arrivare. Evita equivoci e, se serve, rende più semplice dimostrare un ritardo.</p>
+
+<h2>Checklist pratica per il locatore</h2>
+<ul>
+<li>Scrivi nel contratto che il canone si paga con <strong>bonifico sul conto indicato</strong>.</li>
+<li>Se l'inquilino chiede di pagare in contanti, rispondi per iscritto (anche con una email) che il contratto prevede il bonifico.</li>
+<li>Conserva gli estratti conto o le ricevute dei bonifici per tutta la durata del contratto e per alcuni anni dopo.</li>
+<li>Se l'inquilino lo chiede, rilascia una <strong>quietanza</strong>, cioè la dichiarazione scritta di aver ricevuto il pagamento: la legge lo prevede a richiesta e a spese di chi paga. Trovi un modello nella guida alla <a href="/blog/ricevuta-affitto/">ricevuta dell'affitto</a>.</li>
+<li>Tieni un prospetto dei canoni mese per mese: se i ritardi diventano frequenti ti sarà utile.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Accettare il contante "come favore".</strong> Spesso il vantaggio è solo dell'inquilino, che può dire di aver pagato senza che tu possa dimostrare il contrario.</li>
+<li><strong>Incassare più mensilità in contanti in un colpo solo.</strong> Il rischio di superare la soglia cresce, e con lui quello di sanzioni.</li>
+<li><strong>Rifiutare la quietanza a chi la chiede.</strong> Ti metti dalla parte del torto.</li>
+<li><strong>Usare lo stesso conto per spese personali e canoni.</strong> Ricostruire i pagamenti diventa più difficile.</li>
+<li><strong>Fare accordi solo a voce.</strong> Ogni modifica a importi, scadenze o modalità di pagamento va messa per iscritto.</li>
+</ul>
+
+<h2>E se l'inquilino sostiene di aver pagato in contanti?</h2>
+<p>Capita spesso in caso di morosità: l'inquilino afferma di aver consegnato il denaro a mano, magari senza ricevuta. In una procedura di <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">sfratto per morosità</a> il locatore deve provare il contratto e allegare il mancato pagamento, mentre spetta all'inquilino dimostrare di aver pagato. Una contestazione di questo tipo può però rendere il giudizio più lungo e incerto. La miglior difesa è la prevenzione: pagamenti tracciati dall'inizio e ricevute per ogni somma eventualmente ricevuta.</p>
+<p>Se in passato hai già incassato canoni in contanti, da adesso passa a pagamenti tracciati e metti per iscritto un riepilogo di quanto ricevuto, senza improvvisare. Raccogli estratti conto, messaggi e ricevute e fatti consigliare prima di prendere iniziative.</p>
+
+<h2>Domande frequenti</h2>
+<h3>L'affitto in contanti è sempre vietato?</h3>
+<p>No. È vietato quando il pagamento raggiunge o supera la soglia di legge sul contante (oggi 5.000 euro). Sotto soglia è lecito, ma sconsigliato per ragioni di prova.</p>
+<h3>Se l'inquilino paga in contanti, il contratto è nullo?</h3>
+<p>No. La modalità di pagamento non incide sulla validità del contratto.</p>
+<h3>Devo rilasciare la ricevuta se l'inquilino paga con bonifico?</h3>
+<p>La ricevuta del bonifico (la "contabile" della banca) è già una prova del pagamento. Se l'inquilino chiede una quietanza scritta, devi comunque rilasciarla.</p>
+<h3>Posso rifiutare il contante?</h3>
+<p>Sì: è una scelta contrattuale legittima. Meglio mettere per iscritto che il canone si paga con bonifico sull'IBAN indicato.</p>
+
+<h2>Riferimenti normativi essenziali</h2>
+<p>Il limite all'uso del contante è previsto dall'art. 49 del D.Lgs. 231/2007 (rubrica: «Limitazioni all'uso del contante e dei titoli al portatore»), con la soglia di 5.000 euro in vigore dal 1° gennaio 2023. Lo specifico divieto per i canoni abitativi, introdotto dall'art. 1, comma 50, della L. 147/2013, è stato abrogato dall'art. 1, comma 902, della L. 208/2015. L'obbligo di rilasciare quietanza a richiesta è previsto dall'art. 1199 del codice civile (rubrica: «Quietanza»); la regola sull'onere della prova è nell'art. 2697 c.c.</p>
+
+<h2>In sintesi</h2>
+<p>Incassare l'affitto con bonifico non è una formalità: ti tutela molto meglio da contestazioni, sanzioni e controlli. Se hai dubbi sul tuo contratto o un inquilino che non paga, Sfratto Sicuro assiste i proprietari nelle questioni di locazione e morosità: puoi vedere come lavoriamo nella pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto a scopo informativo: non sostituisce una consulenza legale personalizzata sul tuo caso.</em></p>`,
+  },
+  {
     slug: "affittare-casa-con-mutuo",
     title: "Affittare casa con mutuo in corso: cosa deve sapere il proprietario",
     description: "Affittare casa con mutuo in corso si pu�: cosa controllare con la banca, effetti fiscali e come tutelare il contratto se la casa va all'asta.",
