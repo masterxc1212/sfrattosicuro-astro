@@ -16,6 +16,88 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "lettera-di-sfratto-avviso-di-sfratto",
+    title: "Lettera di sfratto: esiste? Cosa serve davvero al proprietario per iniziare lo sfratto",
+    description: "Lettera di sfratto: non esiste come atto unico. Scopri quali lettere puoi inviare e quale atto fa davvero partire lo sfratto, passo per passo.",
+    excerpt: "Una lettera di sfratto mandata dal proprietario non fa partire lo sfratto. Ecco quali lettere puoi inviare e quale atto avvia davvero il procedimento davanti al Tribunale.",
+    lead: "Una lettera di sfratto mandata dal proprietario non fa partire lo sfratto. Ecco quali lettere puoi inviare e quale atto avvia davvero il procedimento davanti al Tribunale.",
+    publishedAt: "2026-10-27",
+    updatedAt: "2026-10-27",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-10-27. Keyword: lettera di sfratto, vol 140, KD 0 (correlate: avviso di sfratto vol 170).",
+    html: `
+<p>Se hai un inquilino che non paga o che non lascia l'immobile, è normale chiedersi: basta una <strong>lettera di sfratto</strong>? La risposta breve è no. Una "lettera di sfratto" mandata dal proprietario non fa partire lo sfratto e non obbliga l'inquilino ad andarsene. Lo sfratto è un procedimento davanti al Tribunale, che inizia con un atto preciso: l'<strong>intimazione di sfratto</strong>, notificata nelle forme di legge. In questa guida vedi cosa è davvero la "lettera" o "avviso di sfratto", quali lettere puoi inviare tu e in quale ordine muoverti.</p>
+
+<h2>Lettera di sfratto: cosa significa nel linguaggio comune</h2>
+<p>Quando si parla di "lettera di sfratto" o "avviso di sfratto" si indicano, a seconda dei casi, cose molto diverse:</p>
+<ul>
+<li><strong>La lettera che scrive il proprietario</strong> (raccomandata o PEC): un sollecito di pagamento, una diffida o una disdetta. È utile, ma non è lo sfratto.</li>
+<li><strong>L'atto di intimazione di sfratto</strong>: è l'atto giudiziario, preparato da un avvocato e notificato all'inquilino, che lo convoca davanti al giudice. È questo, in concreto, il vero "avviso di sfratto".</li>
+<li><strong>L'avviso dell'ufficiale giudiziario</strong>: arriva solo alla fine, dopo che il giudice ha ordinato il rilascio, e indica il giorno in cui verrà a far liberare la casa.</li>
+</ul>
+<p>Capire quale dei tre stai guardando evita errori costosi, per esempio aspettare la scadenza di una semplice lettera prima di agire.</p>
+
+<h2>Le lettere che puoi mandare tu (e a cosa servono)</h2>
+<h3>Il sollecito</h3>
+<p>È un messaggio, anche per PEC o raccomandata, in cui ricordi all'inquilino i canoni scaduti e chiedi di pagare. Non ha formule obbligatorie; anche un messaggio WhatsApp o un SMS vale come promemoria e prova, ma non sostituisce la diffida o la disdetta formali. Serve a dimostrare che hai chiesto il pagamento e a verificare se si tratta di una dimenticanza o di una vera difficoltà.</p>
+<h3>La diffida ad adempiere</h3>
+<p>È una lettera più formale: dai all'inquilino un termine (di regola non inferiore a 15 giorni) per pagare, avvisandolo che altrimenti il contratto potrà essere considerato risolto (art. 1454 del Codice civile). Ne parliamo nel dettaglio nella guida alla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>. Per lo sfratto per morosità di un immobile abitativo non è lo strumento principale né un passaggio obbligatorio: la strada è l'intimazione. La diffida è utile per documentare la richiesta di pagamento, ma se è scritta male fa perdere tempo, quindi prima di inviarla è prudente sentire un legale.</p>
+<h3>La disdetta</h3>
+<p>Se il problema non è la morosità ma la scadenza del contratto, serve la disdetta, cioè la comunicazione con cui il locatore dichiara che non rinnoverà il contratto. Nei contratti abitativi 4+4 la disdetta va comunicata con almeno sei mesi di anticipo sulla scadenza (art. 3 della legge 431/1998) e, alla prima scadenza, solo per i motivi indicati dalla legge; alla seconda scadenza basta il preavviso. La disdetta va inviata per raccomandata e con il motivo indicato: un errore sul motivo o sul termine la rende inefficace, quindi fai verificare il testo prima di spedirla. Se la disdetta è corretta e l'inquilino non libera l'immobile, si passa allo <a href="/servizi/sfratto-per-finita-locazione/">sfratto per finita locazione</a>.</p>
+
+<h2>L'atto che fa davvero partire lo sfratto: l'intimazione</h2>
+<p>Lo sfratto per morosità è disciplinato dagli articoli 657-669 del Codice di procedura civile (in particolare l'art. 658 per la morosità e l'art. 660 per le forme dell'atto). L'intimazione è un atto di citazione che contiene, di solito:</p>
+<ul>
+<li>i dati del proprietario e dell'inquilino e l'indicazione dell'immobile;</li>
+<li>gli estremi del contratto e l'importo dei canoni non pagati;</li>
+<li>la richiesta di rilascio dell'immobile;</li>
+<li>la data dell'udienza davanti al Tribunale in cui l'inquilino deve comparire;</li>
+<li>l'avvertimento che, se non compare o non si oppone, il giudice convalida lo sfratto.</li>
+</ul>
+<p>L'atto non si spedisce con una normale raccomandata: va <strong>notificato</strong> con le forme di legge, tramite ufficiale giudiziario o altra modalità di notifica consentita. Se vuoi capire tempi e passaggi, leggi la guida su <a href="/blog/notifica-sfratto-come-funziona/">come funziona la notifica dello sfratto</a> e quella sull'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+<p>La riforma Cartabia (D.Lgs. 149/2022) e il correttivo (D.Lgs. 164/2024) hanno aggiornato alcune regole del procedimento, in particolare gli artt. 658 e 660 c.p.c., ad esempio su notifiche telematiche e PEC. Le nuove regole si applicano ai procedimenti avviati dopo il 28 febbraio 2023: per questo conviene far preparare l'intimazione a un avvocato che conosca la disciplina attuale. La legge prevede anche un termine minimo tra la notifica e l'udienza, che il professionista calcola per te.</p>
+
+<h2>Cosa succede dopo: dall'udienza all'avviso dell'ufficiale giudiziario</h2>
+<p>Ricevuta l'intimazione, l'inquilino può comparire e opporsi, pagare, chiedere il termine di grazia (art. 55 della legge 392/1978, per gli immobili abitativi) oppure non fare nulla. Il termine di grazia non è automatico: lo decide il giudice, in presenza dei requisiti previsti dalla legge e con limiti nel numero di volte in cui può essere concesso. Se non compare o non si oppone, il giudice convalida lo sfratto e fissa la data entro cui l'immobile deve essere lasciato libero. Le tappe dopo la convalida sono spiegate nella guida sulla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</p>
+<p>Se l'inquilino non esce alla data fissata, si notifica il precetto per il rilascio e si chiede all'ufficiale giudiziario di procedere. È in quel momento che l'ufficiale giudiziario comunica con un avviso, almeno dieci giorni prima, il giorno e l'ora dell'accesso all'immobile (art. 608 c.p.c.). Sul tema trovi più dettagli nella guida al <a href="/blog/preavviso-di-rilascio-immobile/">preavviso di rilascio dell'immobile</a>. Questo è l'avviso che molti proprietari e inquilini chiamano "avviso di sfratto", ma arriva soltanto alla fine del percorso.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Aspettare che la lettera "scada".</strong> Una lettera non ha il valore di un ordine del giudice. Se l'inquilino non paga, non serve attendere ulteriormente: valuta subito l'intimazione.</li>
+<li><strong>Cambiare la serratura o togliere le utenze.</strong> Farsi giustizia da soli può esporre il proprietario a responsabilità civili e penali. Il rilascio si ottiene solo con il procedimento e con l'ufficiale giudiziario.</li>
+<li><strong>Inviare minacce o scrivere in modo aggressivo.</strong> Una lettera chiara e cortese è più efficace e non crea problemi in giudizio.</li>
+<li><strong>Accettare pagamenti parziali senza scriverlo.</strong> Se incassi qualcosa, fai una ricevuta che indichi a quali mensilità si riferisce, senza rinunciare agli altri diritti.</li>
+<li><strong>Incassare canoni dopo la disdetta o l'intimazione senza riserve.</strong> Rilascia sempre una ricevuta che precisi a che titolo ricevi la somma (per esempio come indennità di occupazione, senza rinunciare agli effetti della disdetta o dello sfratto) e fatti guidare.</li>
+<li><strong>Non conservare le prove.</strong> Tieni il contratto, le ricevute dei pagamenti, gli estratti conto, le ricevute di raccomandata o PEC.</li>
+</ul>
+
+<h2>Checklist: come muoverti passo per passo</h2>
+<ol>
+<li>Verifica l'importo preciso dei canoni scaduti e controlla che il contratto sia registrato.</li>
+<li>Invia un sollecito scritto (PEC o raccomandata) e, se opportuno, una diffida ad adempiere.</li>
+<li>Se l'inquilino non regolarizza, fai preparare l'intimazione di sfratto da un avvocato.</li>
+<li>Fai notificare l'atto e segui l'udienza di convalida.</li>
+<li>Dopo la convalida, se l'immobile non viene liberato, procedi con precetto e accesso dell'ufficiale giudiziario.</li>
+</ol>
+<p>Se hai dubbi su forma e termini di una lettera o di un atto, fallo verificare prima di inviarlo: un errore iniziale può costare mesi.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Una raccomandata di sfratto vale come sfratto?</h3>
+<p>No. La raccomandata del proprietario può essere un sollecito, una diffida o una disdetta, ma non sostituisce l'intimazione notificata e il provvedimento del giudice.</p>
+<h3>Devo mandare una lettera prima di avviare lo sfratto per morosità?</h3>
+<p>Non è obbligatorio, ma è consigliabile come prova di aver chiesto il pagamento e come tentativo di risolvere la questione senza il Tribunale.</p>
+<h3>Quanto tempo ha l'inquilino per lasciare casa dopo la lettera?</h3>
+<p>La lettera non fissa alcun obbligo di lasciare l'immobile. Il termine per il rilascio lo stabilisce il giudice con il provvedimento di convalida; i tempi concreti dipendono dal Tribunale e dalle eventuali opposizioni.</p>
+<h3>Posso avviare lo sfratto da solo, senza avvocato?</h3>
+<p>No, non per lo sfratto in Tribunale: il proprietario deve farsi assistere da un avvocato, che sottoscrive l'atto di citazione per la convalida. Solo l'inquilino può comparire personalmente nella prima fase di opposizione e convalida. Un sollecito o una diffida, invece, puoi inviarli anche tu.</p>
+
+<h2>In sintesi</h2>
+<p>La "lettera di sfratto" come atto unico non esiste: esistono lettere utili a preparare il terreno (sollecito, diffida, disdetta) e un atto giudiziario, l'intimazione, che apre davvero il procedimento. Se hai già un inquilino che non paga o che non libera l'immobile, ti consigliamo di non perdere tempo con lettere inefficaci. Puoi vedere come lavoriamo nella pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> e richiedere una prima valutazione del tuo caso a Sfratto Sicuro.</p>
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale sul caso specifico.</em></p>
+`,
+  },
+  {
     slug: "pagamento-affitto-contanti",
     title: "Pagamento affitto in contanti: limiti e rischi per il locatore",
     description: "Pagamento affitto in contanti: è consentito? Limite di 5.000 euro, rischi per il proprietario e come incassare i canoni in modo sicuro.",
