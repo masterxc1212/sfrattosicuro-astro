@@ -16,6 +16,101 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "contratto-locazione-uso-abitativo-clausole",
+    title: "Contratto di locazione ad uso abitativo: clausole da inserire e da evitare",
+    description: "Contratto di locazione ad uso abitativo: elementi obbligatori, clausole utili e clausole nulle. La guida pratica per il proprietario prima di firmare.",
+    excerpt: "Elementi obbligatori, clausole utili e clausole nulle del contratto di locazione ad uso abitativo: la guida pratica per il proprietario prima della firma.",
+    lead: "Il modello scaricato dal web non basta: molti problemi di morosità e rilascio nascono da clausole mancanti o nulle. Ecco cosa deve contenere il contratto e cosa evitare.",
+    publishedAt: "2026-10-28",
+    updatedAt: "2026-10-28",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-10-28. Keyword: contratto di locazione ad uso abitativo, vol 1300, KD 0 (correlate: modello/fac-simile vol 390).",
+    html: `
+<p>Stai per affittare un appartamento e cerchi un <strong>contratto di locazione ad uso abitativo</strong> da usare? Il modello scaricato dal web è un buon punto di partenza, ma da solo non basta: molti dei problemi che i proprietari affrontano dopo (morosità, lavori non autorizzati, rilascio difficile) nascono da clausole mancanti, vaghe o addirittura nulle. In questa guida vedi quali elementi devono esserci, quali clausole conviene aggiungere e quali, invece, la legge considera inefficaci anche se firmate.</p>
+
+<h2>Contratto di locazione ad uso abitativo: gli elementi che non possono mancare</h2>
+<p>Un contratto di locazione abitativa deve essere <strong>scritto</strong>: l'accordo solo verbale non è valido. Deve inoltre essere <strong>registrato</strong> entro 30 giorni dalla firma (o dall'inizio del contratto, se anteriore), pagando l'imposta di registro oppure scegliendo la cedolare secca. Prima ancora delle clausole "di tutela", controlla che il testo contenga:</p>
+<ul>
+<li><strong>Dati delle parti</strong>: nome, cognome, codice fiscale e residenza di locatore e conduttore (conduttore è il termine tecnico per l'inquilino). Se i proprietari sono più di uno, vanno indicati tutti.</li>
+<li><strong>Descrizione dell'immobile</strong>: indirizzo, piano, composizione dei locali, pertinenze (cantina, box) e <strong>dati catastali</strong> (foglio, particella, subalterno).</li>
+<li><strong>Tipo di contratto e durata</strong>: libero 4+4, a canone concordato 3+2 o transitorio. Il transitorio dura da 1 a 18 mesi e richiede di indicare per iscritto il motivo che lo giustifica; per il 3+2, in molti Comuni, serve l'attestazione di conformità all'accordo territoriale.</li>
+<li><strong>Canone, scadenze e modalità di pagamento</strong>: importo mensile, giorno di pagamento, IBAN o altro mezzo tracciabile.</li>
+<li><strong>Attestato di prestazione energetica (APE)</strong>: va consegnato e il contratto deve dichiarare che l'inquilino ne ha ricevuto copia.</li>
+<li><strong>Deposito cauzionale</strong> e, se previste, altre garanzie.</li>
+</ul>
+
+<h2>Le clausole che conviene aggiungere</h2>
+<p>La legge fissa un "telaio", ma molte tutele pratiche dipendono da ciò che scrivi tu. Ecco le più utili per un proprietario.</p>
+
+<h3>Uso dell'immobile e divieto di sublocazione</h3>
+<p>Indica che l'immobile è destinato ad <strong>abitazione del conduttore e del suo nucleo familiare</strong>, e scrivi chi può abitarvi. Aggiungi che il conduttore non può sublocare né cedere il contratto senza il tuo consenso scritto: per gli immobili abitativi l'art. 2 della L. 392/1978 vieta la sublocazione totale e la cessione del contratto senza il consenso del locatore, mentre la sublocazione parziale è ammessa salvo patto contrario (con comunicazione al locatore tramite raccomandata). Per questo conviene vietare per iscritto ogni sublocazione, anche parziale. Per approfondire il tema vedi la guida sulla <a href="/blog/sublocazione/">sublocazione</a>.</p>
+
+<h3>Pagamento del canone e interessi di mora</h3>
+<p>Prevedi la scadenza precisa (per esempio "entro il 5 di ogni mese") e gli interessi in caso di ritardo. Utile anche la clausola con cui l'inquilino rinuncia a sospendere o ridurre il pagamento del canone per sue contestazioni (clausola "solve et repete", art. 1462 c.c.): prima paga, poi eventualmente contesta. Non sostituisce il giudizio di un tribunale, ma limita le scuse per non pagare.</p>
+
+<h3>Clausola risolutiva espressa</h3>
+<p>Con questa clausola indichi quali inadempimenti fanno sciogliere il contratto di diritto, ai sensi dell'art. 1456 del codice civile. Va scritta in modo specifico, non con formule generiche. Attenzione: nelle locazioni abitative l'art. 5 della L. 392/1978 fissa soglie minime di gravità. Il canone non pagato giustifica la risoluzione solo se il ritardo supera 20 giorni dalla scadenza, e gli oneri accessori solo se superano l'importo di due mensilità del canone. Una clausola più severa rischia di essere inefficace. Trovi tutti i dettagli nell'articolo sulla <a href="/blog/clausola-risolutiva-espressa-locazione/">clausola risolutiva espressa</a>.</p>
+
+<h3>Spese, oneri accessori e aggiornamento ISTAT</h3>
+<p>Specifica quali spese sono a carico dell'inquilino (riscaldamento, acqua, pulizia scale, portineria) e come vengono calcolate e richieste. Se vuoi l'adeguamento annuale del canone all'inflazione, deve essere previsto per iscritto: in caso contrario non puoi pretenderlo. Attenzione: se opti per la cedolare secca, devi rinunciare all'aggiornamento ISTAT per tutta la durata dell'opzione, comunicandolo all'inquilino con raccomandata prima di esercitare l'opzione: senza questa comunicazione la cedolare non è valida. Approfondimento: <a href="/blog/adeguamento-istat-canone-locazione/">adeguamento ISTAT del canone</a>.</p>
+
+<h3>Deposito cauzionale</h3>
+<p>Il deposito non può superare <strong>tre mensilità</strong> del canone ed è produttivo di interessi legali a favore dell'inquilino, da corrispondergli alla fine di ogni anno. Scrivi come e quando verrà restituito (dopo la riconsegna e la verifica dello stato dell'immobile). Vedi anche la guida al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale</a>.</p>
+
+<h3>Stato dell'immobile, lavori e riconsegna</h3>
+<p>Allega un <strong>verbale di consegna con foto</strong> (e l'inventario, se la casa è arredata). Aggiungi che l'inquilino non può fare lavori o modifiche senza il tuo consenso scritto e che alla fine deve riconsegnare la casa nello stato in cui l'ha ricevuta, salvo il normale deterioramento dovuto all'uso. Questo ti aiuta a distinguere l'usura normale dai danni veri.</p>
+
+<h3>Recesso e disdetta</h3>
+<p>Riporta con precisione le regole di disdetta e di recesso. Nel contratto 4+4, per esempio, il proprietario può negare il rinnovo alla prima scadenza solo per i motivi tassativi previsti dalla legge (L. 431/1998, art. 3) e con preavviso di sei mesi tramite raccomandata. L'inquilino può recedere per gravi motivi, oppure liberamente se il contratto lo prevede (entrambi art. 3, comma 6, L. 431/1998), sempre con sei mesi di preavviso. Per i dettagli leggi la guida sul <a href="/blog/contratto-affitto-4-4/">contratto 4+4</a>.</p>
+
+<h2>Clausole da evitare: quelle che la legge considera nulle</h2>
+<p>Alcune clausole sembrano utili ma la legge le considera <strong>nulle</strong>, cioè prive di effetto. Inserirle non ti protegge e può creare contenzioso:</p>
+<ul>
+<li><strong>Canone "in nero" o diverso da quello scritto</strong>: è nullo ogni patto che fissa un canone superiore a quello del contratto registrato (art. 13 L. 431/1998). L'inquilino può chiedere la restituzione di quanto pagato in più, entro sei mesi dalla riconsegna dell'immobile.</li>
+<li><strong>Deposito cauzionale oltre le tre mensilità</strong>: la parte eccedente non è dovuta.</li>
+<li><strong>Patti che peggiorano la posizione dell'inquilino rispetto alla legge</strong> (per esempio sulla durata minima o sui casi di disdetta): prevale la regola di legge.</li>
+</ul>
+<p>Un contratto preparato con cura aiuta anche in caso di sfratto: se l'inquilino smette di pagare, la presenza di un titolo chiaro, registrato e con canone e scadenze precise rende molto più lineare il percorso davanti al Tribunale.</p>
+
+<h2>Checklist prima della firma</h2>
+<ol>
+<li>Verifica documento d'identità e codice fiscale dell'inquilino e, se serve, la sua capacità di pagare (busta paga, garante).</li>
+<li>Scegli il tipo di contratto (4+4, 3+2, transitorio) e controlla di avere i requisiti.</li>
+<li>Prepara APE, dati catastali e verbale di consegna con foto.</li>
+<li>Decidi se optare per la cedolare secca e comunica la scelta nel contratto.</li>
+<li>Registra il contratto entro 30 giorni e conserva la ricevuta.</li>
+<li>Conserva una copia firmata di tutto, comprese le raccomandate di disdetta future.</li>
+</ol>
+
+<h2>Errori comuni dei proprietari</h2>
+<ul>
+<li>Usare un modello generico senza adattarlo al caso concreto.</li>
+<li>Dimenticare di indicare i dati catastali o di allegare l'APE.</li>
+<li>Non scrivere nulla su spese accessorie e aggiornamento del canone, e scoprire dopo di non poterli pretendere.</li>
+<li>Accordarsi a voce su modifiche (sconti, lavori, ritardi) che non sono mai messe per iscritto.</li>
+<li>Registrare il contratto in ritardo: si pagano sanzioni e interessi, riducibili con il ravvedimento operoso.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso usare un fac-simile trovato online?</h3>
+<p>Sì, come base. Ma va adattato: durata, canone, spese, garanzie e uso dell'immobile cambiano da caso a caso. Un modello standard spesso non contiene clausole di tutela su misura per il tuo immobile.</p>
+<h3>Quanto costa registrare il contratto?</h3>
+<p>Con il regime ordinario l'imposta di registro è pari al 2% del canone annuo, più l'imposta di bollo. Con la cedolare secca non si pagano né registro né bollo sul contratto. Controlla sempre le aliquote aggiornate sul sito dell'Agenzia delle Entrate.</p>
+<h3>Cosa succede se il contratto è solo verbale?</h3>
+<p>Non è valido come contratto di locazione abitativa e ti espone a sanzioni fiscali. Rimedia subito con un accordo scritto e registrato, preferibilmente con l'aiuto di un professionista.</p>
+<h3>Posso modificare il contratto durante la locazione?</h3>
+<p>Sì, ma solo con accordo scritto firmato da entrambe le parti, e va comunicato all'Agenzia delle Entrate quando incide su elementi come canone o durata.</p>
+
+<h2>In sintesi</h2>
+<p>Un buon contratto di locazione ad uso abitativo è scritto, registrato, completo nei dati essenziali e ricco di clausole pratiche su uso, pagamenti, spese, lavori e riconsegna. Evita le clausole nulle e conserva tutta la documentazione. Se vuoi un contratto costruito sul tuo immobile, puoi vedere come lavoriamo nella pagina <a href="/servizi/contratti-di-locazione/">contratti di locazione</a> o contattare Sfratto Sicuro dalla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale personalizzata sul tuo caso. Per una valutazione specifica puoi rivolgerti a Sfratto Sicuro.</em></p>
+
+<p><small>Riferimenti normativi: L. 9 dicembre 1998 n. 431, artt. 1, 2, 3 e 13; L. 27 luglio 1978 n. 392, artt. 2, 5 e 11; artt. 1456 e 1462 del codice civile; D.Lgs. 14 marzo 2011 n. 23, art. 3 (cedolare secca).</small></p>
+`,
+  },
+  {
     slug: "lettera-di-sfratto-avviso-di-sfratto",
     title: "Lettera di sfratto: esiste? Cosa serve davvero al proprietario per iniziare lo sfratto",
     description: "Lettera di sfratto: non esiste come atto unico. Scopri quali lettere puoi inviare e quale atto fa davvero partire lo sfratto, passo per passo.",
