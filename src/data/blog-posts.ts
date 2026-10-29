@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-senza-avvocato-proprietario",
+    title: "Sfratto senza avvocato: il proprietario può fare da solo?",
+    description: "Sfratto senza avvocato: si può? Cosa puoi fare da solo da proprietario e quando il difensore è obbligatorio. Passi pratici ed errori da evitare.",
+    excerpt: "Per lo sfratto in tribunale l'avvocato è obbligatorio, ma molte attività puoi svolgerle tu. Ecco cosa fare da solo, cosa no e gli errori che allungano i tempi.",
+    lead: "Vuoi risparmiare e ti chiedi se puoi avviare lo sfratto senza avvocato. Ti spieghiamo cosa è obbligatorio, cosa puoi preparare da solo e come non perdere mesi per errori formali.",
+    publishedAt: "2026-10-29",
+    updatedAt: "2026-10-29",
+    category: "Sfratti",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-29. Keyword: sfratto senza avvocato (long-tail, volume non rilevato da DataForSEO; tema scelto per intento chiaro del locatore).",
+    html: `
+<p>Se hai un inquilino che non paga o che non libera l'immobile, la domanda arriva presto: <strong>lo sfratto senza avvocato</strong> si può fare, così da risparmiare? In questa guida ti spieghiamo cosa puoi fare da solo, cosa invece richiede obbligatoriamente un avvocato e come evitare gli errori che fanno perdere mesi.</p>
+
+<h2>La risposta breve: per lo sfratto in tribunale serve l'avvocato</h2>
+<p>Lo sfratto (per morosità o per finita locazione) si svolge davanti al <strong>tribunale</strong>, con un procedimento che parte da un atto chiamato <strong>intimazione di sfratto</strong>, di fatto una citazione a comparire in udienza. Davanti al tribunale, di regola, le parti devono stare in giudizio con l'assistenza di un avvocato (art. 82 del codice di procedura civile). Chi può difendersi da solo, salvo diverse previsioni di legge, è chi ha una causa di modesto valore davanti al giudice di pace. Lo sfratto è di competenza inderogabile del tribunale del luogo in cui si trova l'immobile (art. 661 c.p.c.): per il proprietario l'avvocato è quindi necessario.</p>
+<p>In pratica: <strong>il proprietario non può depositare e portare avanti da solo</strong> l'intimazione di sfratto. L'atto deve essere firmato da un difensore, che poi lo notifica, lo iscrive a ruolo e ti rappresenta in udienza.</p>
+
+<h2>Cosa puoi fare da solo, prima e durante la procedura</h2>
+<p>Dire che serve l'avvocato non significa che tu debba restare a guardare. Molte attività preparatorie le puoi svolgere in autonomia, e farle bene velocizza il lavoro e riduce i costi:</p>
+<ul>
+<li><strong>Raccogliere i documenti</strong>: contratto di locazione registrato, prova dei pagamenti ricevuti e di quelli mancanti, estratto conto, eventuali comunicazioni scambiate con l'inquilino.</li>
+<li><strong>Fare un conteggio preciso</strong> dei canoni e delle spese non pagati, mese per mese, con le date di scadenza.</li>
+<li><strong>Inviare un sollecito scritto</strong> con raccomandata o con posta elettronica certificata (PEC), che dimostra che hai chiesto il pagamento. Trovi un esempio nella guida alla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>.</li>
+<li><strong>Trattare un accordo</strong> con l'inquilino (rientro a rate, consegna anticipata delle chiavi), da far redigere o rivedere da un avvocato. Se l'inquilino poi non rispetta l'accordo, per ottenere il rilascio serve comunque il procedimento in tribunale.</li>
+<li><strong>Essere presente</strong> agli accessi dell'ufficiale giudiziario per il rilascio, quando richiesto, e riprendere possesso dell'immobile con verbale.</li>
+</ul>
+
+<h2>Perché il "fai da te" costa più di quanto sembra</h2>
+<p>Risparmiare sull'onorario può sembrare ragionevole, ma nello sfratto gli errori formali si pagano con il tempo. Un'intimazione con un vizio può essere contestata dall'inquilino e rallentare tutto, a volte costringendo a ricominciare. I punti più delicati sono:</p>
+<ul>
+<li><strong>Il contenuto dell'atto</strong>: l'intimazione deve contenere le indicazioni e gli avvisi previsti dalla legge (tra questi, l'informazione all'intimato sulla possibilità di ricorrere al patrocinio a spese dello Stato). Una dimenticanza può rendere l'atto contestabile.</li>
+<li><strong>La notifica</strong>: deve seguire regole precise, con tempi e modalità diverse se l'inquilino è irreperibile. Approfondisci nella guida sulla <a href="/blog/notifica-sfratto-come-funziona/">notifica dello sfratto</a>.</li>
+<li><strong>I termini e l'iscrizione a ruolo</strong> (cioè il deposito della causa in tribunale): dopo la notifica ci sono scadenze da rispettare per depositare gli atti.</li>
+<li><strong>L'udienza di convalida</strong>: se l'inquilino non compare o non si oppone, il giudice convalida lo sfratto con ordinanza; se si oppone, può comunque ordinare il rilascio, lasciando che il giudizio prosegua. Per la morosità l'inquilino può inoltre chiedere il termine di grazia, un breve periodo concesso dal giudice per pagare il dovuto, che può ritardare il rilascio. Sapere come comportarsi fa la differenza; vedi la guida alla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>.</li>
+</ul>
+
+<h2>Quanto costa l'avvocato e chi paga le spese</h2>
+<p>Il costo complessivo dipende dal caso. Contano il valore della causa, il numero di udienze e l'eventuale opposizione dell'inquilino. Non esiste una cifra valida per tutti, e anche i tempi variano molto da tribunale a tribunale. Ti conviene chiedere un preventivo scritto prima di dare l'incarico. Ricorda che, se vinci, il giudice di norma condanna la parte soccombente a rimborsare le spese processuali: il rimborso però è reale solo se l'inquilino ha beni o redditi da cui recuperarlo. Per le altre voci di spesa leggi anche la guida sul <a href="/blog/contributo-unificato-sfratto/">contributo unificato per lo sfratto</a>.</p>
+
+<h2>Checklist: come muoverti con ordine</h2>
+<ol>
+<li>Verifica che il contratto sia valido e registrato: se non lo è, parlane subito con il legale.</li>
+<li>Calcola con precisione cosa non è stato pagato.</li>
+<li>Invia un sollecito scritto e conserva la prova di invio.</li>
+<li>Affida l'incarico a un avvocato esperto di locazioni con un preventivo scritto.</li>
+<li>Consegna al legale tutta la documentazione già ordinata.</li>
+<li>Segui le udienze e, a rilascio fissato, organizza la presenza all'accesso.</li>
+</ol>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Cambiare la serratura o staccare le utenze</strong>: sono azioni illegali: possono configurare un reato (come l'esercizio arbitrario delle proprie ragioni) e dare all'inquilino il diritto di chiederti i danni.</li>
+<li><strong>Accettare pagamenti parziali senza una scrittura</strong>: possono essere letti come tolleranza e complicare la posizione. Prima di incassarli, concorda per iscritto con il tuo legale come trattarli.</li>
+<li><strong>Aspettare troppo</strong>: ogni mese di ritardo aumenta il debito e allunga i tempi.</li>
+<li><strong>Affidarsi a modelli trovati online</strong>: un fac-simile non tiene conto dei dettagli del tuo contratto e delle norme aggiornate, comprese le novità della riforma Cartabia.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso fare lo sfratto senza avvocato se l'inquilino è d'accordo?</h3>
+<p>Se l'inquilino collabora e lascia l'immobile, può bastare un accordo scritto ben redatto. Se invece serve un provvedimento del giudice, l'avvocato è necessario anche quando l'inquilino non si oppone.</p>
+<h3>Posso mandare io la lettera di sfratto?</h3>
+<p>Puoi inviare un sollecito, una diffida o una disdetta. Ma queste lettere non sono lo sfratto: non danno titolo per far liberare l'immobile, che si ottiene solo con il procedimento in tribunale.</p>
+<h3>L'inquilino può difendersi da solo?</h3>
+<p>Sì, ma solo nella fase di convalida. Per opporsi e per le attività dagli articoli 663 a 666 c.p.c. basta la sua comparizione personale (art. 660 c.p.c.). Se dopo l'opposizione il giudizio prosegue con il rito speciale, per le fasi successive valgono le regole generali sull'assistenza del difensore.</p>
+<h3>Se l'inquilino non può pagare l'avvocato, cosa cambia per me?</h3>
+<p>Può chiedere l'ammissione al patrocinio a spese dello Stato, se ne ha i requisiti. Questo non ti impedisce di procedere, ma rende ancora più importante curare ogni passaggio formale.</p>
+
+<h2>Riferimenti normativi essenziali</h2>
+<p>Gli articoli 657-669 del codice di procedura civile (c.p.c.) disciplinano il procedimento per convalida di sfratto. L'articolo 661 stabilisce il tribunale competente. L'articolo 447-bis rinvia al rito delle controversie di lavoro per le cause di locazione, che nello sfratto si applica dopo l'eventuale opposizione (art. 667). L'articolo 82 dice quando si può stare in giudizio senza avvocato. Il processo civile è stato riformato dalla riforma Cartabia (D.Lgs. 149/2022) e dal suo correttivo (D.Lgs. 164/2024).</p>
+
+<h2>In conclusione</h2>
+<p>Per ottenere il rilascio dell'immobile con lo sfratto l'avvocato è obbligatorio, ma il tuo ruolo resta decisivo: documenti ordinati, conteggi precisi e tempestività accorciano la procedura. Se vuoi capire come lavoriamo sulle procedure di sfratto, puoi consultare la pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>: da lì puoi contattare Sfratto Sicuro, che può valutare il tuo caso e indicarti i passi più adatti alla tua situazione.</p>
+<p><em>Contenuto informativo di carattere generale: non sostituisce una consulenza legale sul caso specifico.</em></p>
+`,
+  },
+  {
     slug: "contratto-locazione-uso-abitativo-clausole",
     title: "Contratto di locazione ad uso abitativo: clausole da inserire e da evitare",
     description: "Contratto di locazione ad uso abitativo: elementi obbligatori, clausole utili e clausole nulle. La guida pratica per il proprietario prima di firmare.",
