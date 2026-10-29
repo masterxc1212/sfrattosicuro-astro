@@ -681,7 +681,8 @@ section[id],
     text-transform: uppercase;
     letter-spacing: 0.12em;
   }
-  .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .site-footer ul + h3 { margin-top: 32px; }
   .site-footer a {
     color: rgba(245, 244, 240, 0.86) !important;
     text-decoration: none;
