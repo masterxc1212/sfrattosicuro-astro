@@ -16,6 +16,81 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "affittare-casa-in-comproprieta",
+    title: "Affittare una casa in comproprietà: chi firma, chi incassa e come registrare il contratto",
+    description: "Affittare casa in comproprietà: chi decide, chi firma, a chi vanno i canoni e come registrare il contratto. Guida pratica per il proprietario.",
+    excerpt: "Casa di famiglia o acquistata con altri e vuoi metterla in affitto? Ecco chi decide, chi firma il contratto, come si dividono i canoni e cosa fare per registrarlo.",
+    lead: "Affittare una casa in comproprietà richiede qualche accortezza in più: decisione condivisa, firme giuste, canoni ripartiti per quote e contratto registrato nei termini.",
+    publishedAt: "2026-10-30",
+    updatedAt: "2026-10-30",
+    category: "Locazioni",
+    readingTime: "6 min",
+    sourceNote: "Generato automaticamente 2026-10-30. Keyword: affitto casa in comproprietà (long-tail), vol 90, KD <30.",
+    html: `<p>Hai ereditato una casa con i fratelli, o l'hai comprata insieme al coniuge o a un socio, e ora vuoi metterla in affitto? Con più proprietari le domande si moltiplicano: chi firma il contratto? Serve il consenso di tutti? A chi va pagato il canone? Questa guida ti spiega, passo dopo passo, come <strong>affittare una casa in comproprietà</strong> evitando i problemi che di solito nascono dopo.</p>
+
+<h2>Affittare una casa in comproprietà: chi decide</h2>
+<p>Dare in affitto un immobile è, per la legge, un atto di <strong>amministrazione</strong> della cosa comune. Il codice civile (c.c.) prevede che tutti i comproprietari possano partecipare alla gestione e che le decisioni ordinarie si prendano <strong>a maggioranza, calcolata in base alle quote</strong> di ciascuno (art. 1105 c.c.). Non conta quindi il numero di teste, ma il valore delle quote: chi possiede il 60% pesa più di due fratelli che hanno il 20% a testa.</p>
+<p>C'è però una condizione importante: per la validità della decisione tutti i comproprietari devono essere stati <strong>informati in anticipo</strong>. Se la maggioranza decide senza avvisare gli altri, la decisione si espone a contestazioni.</p>
+<p>Fa eccezione il contratto di <strong>durata superiore a nove anni</strong>: in quel caso serve il consenso di tutti (art. 1108, comma 3, c.c.). I normali contratti abitativi (4 anni più 4 di rinnovo, oppure 3+2 a canone concordato) restano di regola sotto questa soglia.</p>
+
+<h2>Chi firma il contratto</h2>
+<p>La soluzione più sicura è semplice: <strong>firmano tutti i comproprietari</strong> come locatori. Così l'inquilino non può mettere in dubbio il contratto e nessuno degli altri può dire di non saperne nulla.</p>
+<p>Se non è comodo riunire tutti, hai due strade:</p>
+<ul>
+<li><strong>Una procura scritta</strong>: gli altri comproprietari incaricano uno di loro (o una persona di fiducia) di firmare in nome di tutti. Conserva l'originale insieme al contratto.</li>
+<li><strong>Un solo comproprietario firma da solo</strong>: la giurisprudenza tende a considerare valido il contratto se gli altri sanno e non si oppongono, perché si presume un consenso tacito. È però una base fragile: chi firma da solo non può vincolare gli altri senza il loro consenso, anche solo tacito, e se l'accordo salta il contratto può essere contestato.</li>
+</ul>
+<p>Il consiglio pratico è raccogliere il consenso di tutti gli altri per iscritto, anche con una semplice email, prima di pubblicare l'annuncio.</p>
+
+<h2>Canoni: a chi vanno pagati</h2>
+<p>I canoni sono i "frutti" dell'immobile e spettano ai comproprietari <strong>in proporzione alle quote</strong> (art. 1101 c.c.). Se la casa è di tre fratelli in parti uguali, ognuno ha diritto a un terzo dell'affitto.</p>
+<p>Per non creare confusione, scrivi nel contratto <strong>come e a chi paga l'inquilino</strong>. Due soluzioni comuni:</p>
+<ul>
+<li>un unico conto corrente (anche cointestato) su cui arriva il canone, poi ripartito tra i comproprietari;</li>
+<li>un IBAN di uno solo dei proprietari, indicato per iscritto come "referente per l'incasso" con il consenso degli altri.</li>
+</ul>
+<p>Evita i pagamenti in contanti e tieni sempre traccia dei bonifici: ti serviranno anche per la dichiarazione dei redditi. Chi incassa la parte degli altri deve poterla dimostrare e riversare.</p>
+
+<h2>Tasse e registrazione del contratto</h2>
+<p>Il contratto va <strong>registrato entro 30 giorni</strong> dalla data dell'atto o, se anteriore, dall'inizio della locazione (anche se scegli la cedolare secca), in via telematica con il modello RLI dell'Agenzia delle Entrate. La registrazione la può fare uno solo dei locatori, ma l'obbligo riguarda tutti: l'imposta è dovuta in solido. Se vuoi approfondire, leggi la guida su <a href="/blog/registrazione-contratto-locazione-online/">come registrare il contratto di locazione online</a>.</p>
+<p>Quanto al reddito, ciascun comproprietario <strong>dichiara la propria quota</strong> dei canoni nella sua dichiarazione dei redditi. Con più locatori, l'adesione alla <a href="/blog/cedolare-secca-affitto/">cedolare secca</a> è una scelta che ognuno compie per la propria quota; l'effetto sul contratto (niente imposta di registro e di bollo, rinuncia all'aggiornamento ISTAT, da comunicare all'inquilino) riguarda però il contratto nel suo insieme. Prima di decidere, confrontati con un commercialista: un errore di impostazione si ripercuote su tutti.</p>
+
+<h2>Checklist prima di affittare</h2>
+<ul>
+<li>Verifica sulla visura catastale o nell'atto di proprietà <strong>chi sono i comproprietari e le quote</strong>. Se c'è una successione non ancora completata, fermati: gli eredi vanno individuati prima.</li>
+<li>Avvisa tutti i comproprietari e ottieni il consenso scritto.</li>
+<li>Decidi chi firma e chi incassa il canone, e mettilo nero su bianco.</li>
+<li>Controlla i documenti dell'immobile, come l'attestato di prestazione energetica (APE).</li>
+<li>Prevedi nel contratto una cauzione e il metodo di pagamento tracciabile.</li>
+<li>Registra il contratto entro 30 giorni e conserva la ricevuta.</li>
+</ul>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Affittare senza dirlo agli altri comproprietari.</strong> Può nascere un contenzioso in famiglia e, se la maggioranza dissente, il rapporto con l'inquilino diventa instabile.</li>
+<li><strong>Contratto lungo senza consenso di tutti.</strong> Oltre i nove anni serve l'unanimità.</li>
+<li><strong>Canoni "in famiglia" senza traccia.</strong> Se uno incassa tutto e non divide, nascono liti e problemi fiscali.</li>
+<li><strong>Non ripartire i costi comuni in proporzione alle quote.</strong> Imposte, manutenzioni straordinarie e spese ricadono sui comproprietari in proporzione alle quote: mettetevi d'accordo in anticipo chi anticipa e come si recupera.</li>
+<li><strong>Non pensare a cosa succede se l'inquilino non paga.</strong> Concordate fin da subito chi si occuperà di un eventuale sfratto: ne parliamo nella guida allo <a href="/blog/sfratto-immobile-in-comproprieta/">sfratto di un immobile in comproprietà</a>.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso affittare la casa se un comproprietario non è d'accordo?</h3>
+<p>Dipende dalle quote. Se chi vuole affittare ha la maggioranza, di regola può decidere, purché abbia informato gli altri. Se la maggioranza è contraria, o le quote sono pari, il rischio di contestazione è alto: meglio cercare un accordo prima di firmare.</p>
+<h3>Ogni comproprietario può incassare l'intero canone?</h3>
+<p>No. Il canone spetta a ciascuno in proporzione alla quota. Chi lo incassa per tutti deve poi ripartirlo, e conviene indicarlo nel contratto.</p>
+<h3>Posso fare un contratto di dieci anni?</h3>
+<p>Solo con il consenso di tutti i comproprietari, perché la durata supera i nove anni.</p>
+<h3>Il contratto firmato da un solo proprietario è valido?</h3>
+<p>Spesso sì, se gli altri sono a conoscenza e non si oppongono, ma non vincola gli altri senza il loro consenso, nemmeno tacito. Per questo è la soluzione meno sicura: meglio avere la firma di tutti o una procura scritta.</p>
+
+<h2>In sintesi</h2>
+<p>Affittare in comproprietà non è complicato se ci si organizza prima: decisione condivisa, firme o procura, canone ripartito per quote, contratto registrato nei termini. Se vuoi essere affiancato nella scelta del contratto o nella tutela del tuo immobile, puoi contattare Sfratto Sicuro dalla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale o fiscale sul tuo caso specifico.</em></p>
+<p><small>Norme richiamate: artt. 1101, 1105 e 1108 del codice civile; disciplina sulla registrazione dei contratti di locazione (D.P.R. 131/1986).</small></p>
+`,
+  },
+  {
     slug: "sfratto-senza-avvocato-proprietario",
     title: "Sfratto senza avvocato: il proprietario può fare da solo?",
     description: "Sfratto senza avvocato: si può? Cosa puoi fare da solo da proprietario e quando il difensore è obbligatorio. Passi pratici ed errori da evitare.",
