@@ -538,7 +538,7 @@ export const landingOriginal = {
       phoneValue: '02 80898395',
       phoneHours: 'Lun-Ven 9:00-19:00 | Sab 9:00-13:00',
       whatsappLabel: 'WhatsApp',
-      whatsappValue: '+39 329 117 5957',
+      whatsappValue: '+39 352 093 2933',
       whatsappNote: 'Risposte rapide',
       emailLabel: 'Email',
       emailValue: 'consulenza@sfrattosicuro.it',

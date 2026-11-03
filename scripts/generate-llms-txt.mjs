@@ -145,7 +145,7 @@ function buildLlmsTxt({ sediByRegione, posts }) {
   lines.push(`- Sito web: ${SITE}`);
   lines.push('- Contatto: consulenza@sfrattosicuro.it');
   lines.push('- Telefono: +39 02 8089 8395');
-  lines.push('- WhatsApp: https://wa.me/393291175957');
+  lines.push('- WhatsApp: https://wa.me/393520932933');
   lines.push('- Sede: Via Francesco Paolo Volpe 2, 84122 Salerno (SA)');
   lines.push('- Orari: Lunedì–Venerdì, 09:00–18:00');
   lines.push('');

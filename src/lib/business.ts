@@ -131,7 +131,7 @@ export type Procedura = {
 };
 
 export type WhatsappContatto = {
-  /** Numero formattato per display, "+39 329 117 5957". */
+  /** Numero formattato per display, "+39 352 093 2933". */
   numero: string;
   /** URL wa.me canonico per click-to-chat. */
   url: string;
