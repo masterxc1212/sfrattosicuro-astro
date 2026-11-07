@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-inquilino-anziano-over-65",
+    title: "Sfratto di un inquilino anziano over 65: cosa può fare il proprietario",
+    description: "Sfratto di un anziano ultrasessantacinquenne: non c'è nessun blocco. Cosa vale oggi per morosità e finita locazione e come muoversi.",
+    excerpt: "Inquilino over 65 che non paga o con il contratto scaduto? Non esiste un blocco degli sfratti: ecco dove l'età allunga i tempi e cosa fare.",
+    lead: "Lo sfratto di un inquilino ultrasessantacinquenne si può fare: le vecchie sospensioni sono finite e il rinvio a 18 mesi non si applica più. Contano la data fissata dal giudice e la tua preparazione.",
+    publishedAt: "2026-11-07",
+    updatedAt: "2026-11-07",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-07. Keyword: sfratto anziano ultrasessantacinquenne, vol 90, KD 0.",
+    html: `<p>Hai un inquilino che ha superato i 65 anni, non paga più l'affitto oppure il contratto è scaduto, e ti chiedi se puoi davvero riavere la casa. Molti proprietari pensano che lo <strong>sfratto di un anziano ultrasessantacinquenne</strong> sia vietato o bloccato per legge. Non è così. Questa guida spiega, dalla parte del proprietario, cosa prevede oggi la legge, dove l'età dell'inquilino può allungare i tempi e come muoversi senza errori.</p>
+
+<h2>Sfratto di un anziano ultrasessantacinquenne: si può fare?</h2>
+<p>Sì. Nella legge italiana non c'è una regola che impedisca di sfrattare un inquilino solo perché ha più di 65 anni. Se c'è un motivo valido, la procedura si avvia e si conclude come negli altri casi. I motivi tipici sono due:</p>
+<ul>
+<li><strong>la morosità</strong>, cioè il mancato pagamento dei canoni;</li>
+<li><strong>la finita locazione</strong>, cioè il contratto arrivato a scadenza dopo una disdetta valida.</li>
+</ul>
+<p>L'età non cancella il diritto del proprietario. Può però <strong>allungare i tempi</strong> in alcuni momenti precisi della procedura, soprattutto quando lo sfratto è per finita locazione. Conoscere questi momenti ti permette di programmare le tue scelte con realismo.</p>
+
+<h2>Da dove nasce l'idea che gli anziani non si possano sfrattare</h2>
+<p>La convinzione non è nata dal nulla. Nel 2007 una legge (la Legge n. 9 del 2007) aveva sospeso, per un periodo limitato, gli sfratti <strong>per finita locazione</strong> nei confronti di alcune famiglie fragili: inquilini con un reddito familiare lordo sotto i 27.000 euro l'anno, senza un'altra casa adeguata nella Regione, che avevano in famiglia persone con più di 65 anni, malati terminali, persone con invalidità oltre il 66% o figli fiscalmente a carico. La sospensione valeva solo nei capoluoghi di provincia, in alcuni Comuni vicini e in quelli ad alta tensione abitativa, cioè dove trovare casa è più difficile.</p>
+<p>Quella sospensione è stata prorogata più volte, ma <strong>il blocco è scaduto il 31 dicembre 2014</strong>. Nel 2015 è rimasta solo una breve sospensione residua, concessa dal giudice su richiesta, terminata a giugno 2015 e poi non più rinnovata. Anche il blocco degli sfratti deciso durante l'emergenza Covid è terminato da anni. Oggi, quindi, non esiste alcun blocco automatico a favore degli inquilini anziani.</p>
+
+<h2>Sfratto per morosità: l'età non cambia le regole</h2>
+<p>Se l'inquilino anziano non paga, la strada è l'intimazione di sfratto per morosità con la citazione per la convalida davanti al tribunale. Le regole sono le stesse previste per qualsiasi altro inquilino.</p>
+<p>All'udienza l'inquilino può chiedere il cosiddetto <strong>termine di grazia</strong>: un periodo per pagare tutto il dovuto, compresi interessi e spese. Il giudice può concederlo, fino a 90 giorni, solo se l'inquilino dimostra di essere in difficoltà. Si arriva a 120 giorni se il mancato pagamento non dura da più di due mesi ed è dovuto a problemi economici nati dopo la firma del contratto, come disoccupazione o malattia. Se paga tutto entro quel termine, lo sfratto si ferma. Se non paga, il giudice convalida lo sfratto. In questo caso la data per lasciare l'immobile non può essere fissata oltre 60 giorni dalla scadenza del termine concesso per pagare.</p>
+
+<h2>Sfratto per finita locazione: dove l'età pesa davvero</h2>
+<p>È nello sfratto per finita locazione che l'età dell'inquilino conta di più. Ci sono due punti da conoscere: uno vale oggi, l'altro è un vecchio rinvio che molti citano ancora ma che non si applica più.</p>
+<h3>1. La data di rilascio fissata dal giudice</h3>
+<p>Quando ordina il rilascio, il giudice fissa la data entro cui l'inquilino deve lasciare la casa. Per farlo confronta la situazione dell'inquilino con quella del proprietario e, nella finita locazione, tiene conto anche del tempo passato dalla disdetta. Il termine è di massimo <strong>6 mesi</strong> e, in casi eccezionali, di <strong>12 mesi</strong>. L'età avanzata o una salute fragile possono spingere il giudice verso un termine più lungo. Ne parliamo nella guida sul <a href="/blog/termine-rilascio-immobile-sfratto/">termine per il rilascio dell'immobile</a>.</p>
+<h3>2. Il vecchio rinvio fino a 18 mesi non vale più</h3>
+<p>La Legge 431 del 1998 prevedeva che, nei Comuni ad alta tensione abitativa, l'inquilino sfrattato per finita locazione potesse chiedere una nuova data di uscita, fino a 18 mesi se aveva compiuto 65 anni. Secondo la Corte di Cassazione (sentenza n. 11961 del 2010) era però una norma <strong>transitoria</strong>, valida solo per gli sfratti emessi entro il 27 giugno 1999. Per questo i tribunali oggi, di regola, respingono queste richieste, anche quando l'inquilino è molto anziano.</p>
+<p>Resta invece uno strumento che vale per entrambe le parti: inquilino e proprietario possono chiedere al tribunale, in qualsiasi momento, di modificare <strong>la sola data fissata per il rilascio</strong>. L'inquilino può farlo per avere più tempo. Il proprietario può farlo per anticiparla, ad esempio facendo valere una propria necessità urgente di riavere la casa.</p>
+<p>Fino alla riconsegna delle chiavi l'inquilino resta obbligato a pagare ogni mese l'importo del canone pattuito, come indennità per l'occupazione, oltre all'eventuale danno maggiore.</p>
+
+<h2>La fase esecutiva e la forza pubblica</h2>
+<p>Superata la data fissata, se l'inquilino non se ne va, si passa all'esecuzione: si notifica il precetto, cioè l'intimazione formale a lasciare la casa, e l'ufficiale giudiziario fissa gli accessi. Davanti a una persona anziana o malata l'ufficiale giudiziario può concedere qualche rinvio. Se serve l'aiuto delle forze dell'ordine, nelle città più grandi la Prefettura stabilisce un ordine di priorità e può mettere più in fondo i casi con persone fragili. Il funzionamento è spiegato nella guida sull'<a href="/blog/esecuzione-sfratto-forza-pubblica/">esecuzione dello sfratto con la forza pubblica</a>.</p>
+
+<h2>Cosa fare, passo per passo</h2>
+<ul>
+<li><strong>Muoviti per tempo.</strong> Ogni mese di attesa è un canone in più che rischi di non incassare.</li>
+<li><strong>Verifica il motivo.</strong> Morosità o finita locazione seguono regole e tempi diversi: per la finita locazione controlla che la disdetta sia stata inviata nei tempi giusti.</li>
+<li><strong>Raccogli i documenti.</strong> Contratto registrato, ricevute, solleciti scritti, disdetta e prova della sua consegna.</li>
+<li><strong>Documenta le tue esigenze.</strong> Mutuo, necessità di abitare la casa, figli che devono trasferirsi: sono elementi che il giudice può mettere sulla bilancia quando fissa la data.</li>
+<li><strong>Valuta un accordo.</strong> Una data di uscita concordata, magari con un aiuto per il trasloco, a volte libera la casa prima di un'esecuzione forzata.</li>
+<li><strong>Segnala la situazione ai servizi sociali del Comune</strong> se l'inquilino è solo e in difficoltà: può aiutare a trovare una nuova sistemazione e rendere più ordinata l'uscita.</li>
+</ul>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Rinunciare in partenza</strong> pensando che "gli anziani non si possono sfrattare": non è vero.</li>
+<li><strong>Farsi giustizia da soli</strong>: cambiare la serratura, staccare luce o gas, portare via i mobili è vietato e può essere un reato.</li>
+<li><strong>Fare pressioni</strong> sull'inquilino o sui familiari: oltre a essere scorretto, si ritorce contro di te in tribunale.</li>
+<li><strong>Aspettare la scadenza del contratto quando c'è morosità</strong>: se l'inquilino non paga, lo sfratto per morosità è di solito più rapido: ad esempio, se il giudice concede il termine di grazia e l'inquilino non paga, la data di uscita non può superare 60 giorni dalla sua scadenza.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Esiste ancora il blocco degli sfratti per gli over 65?</h3>
+<p>No. Le sospensioni per le famiglie con persone over 65 sono terminate tra la fine del 2014 e giugno 2015, e il blocco Covid è finito alla fine del 2021. Oggi l'età può solo allungare alcuni termini.</p>
+<h3>Se l'inquilino anziano non paga, ha più tempo di un altro inquilino?</h3>
+<p>No, nello sfratto per morosità le regole sono le stesse. Come per chiunque, il giudice può concedere il termine di grazia se l'inquilino dimostra difficoltà economiche: fino a 90 giorni, o 120 nei casi previsti dalla legge.</p>
+<h3>Quanto tempo può avere al massimo un inquilino over 65 per lasciare casa?</h3>
+<p>Nella finita locazione il giudice fissa la data di uscita entro 6 mesi, o 12 in casi eccezionali, e l'età può pesare in questa scelta. Il vecchio rinvio fino a 18 mesi non è più applicabile.</p>
+<h3>Finché resta in casa l'inquilino deve pagare?</h3>
+<p>Sì. Fino alla riconsegna deve pagare ogni mese l'importo del canone pattuito come indennità di occupazione. Se non lo fa, puoi chiederne il pagamento in tribunale.</p>
+
+<h2>Le norme di riferimento</h2>
+<p>Per chi vuole approfondire: art. 55 della Legge 392/1978 (termine per il pagamento dei canoni scaduti, il "termine di grazia"); art. 56 della Legge 392/1978 (modalità per il rilascio); art. 1591 del Codice civile (danni per ritardata restituzione); art. 6, commi 4 e 5, della Legge 431/1998 (rilascio degli immobili), norma transitoria non più applicabile secondo Cass. n. 11961/2010; artt. 657-669 del Codice di procedura civile (c.p.c.) sul procedimento per convalida di sfratto, nel testo aggiornato dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo (D.Lgs. 164/2024); art. 1 della Legge 9/2007, oggi non più operativo.</p>
+
+<h2>In conclusione</h2>
+<p>Un inquilino over 65 non rende lo sfratto impossibile. Cambiano soprattutto i tempi, e quasi solo nello sfratto per finita locazione. Partire subito, con i documenti in ordine e le tue esigenze ben spiegate, è il modo migliore per riavere la casa nel minor tempo. Se vuoi capire come impostare il tuo caso, il team di Sfratto Sicuro può aiutarti: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha carattere informativo e non sostituisce una consulenza legale sul singolo caso.</em></p>`,
+  },
+  {
     slug: "affittare-casa-in-comproprieta",
     title: "Affittare una casa in comproprietà: chi firma, chi incassa e come registrare il contratto",
     description: "Affittare casa in comproprietà: chi decide, chi firma, a chi vanno i canoni e come registrare il contratto. Guida pratica per il proprietario.",
