@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "attestazione-rispondenza-canone-concordato",
+    title: "Attestazione di rispondenza del canone concordato: quando serve e come ottenerla",
+    description: "Attestazione di rispondenza del canone concordato: quando serve per cedolare al 10% e IMU, chi la rilascia e come non perdere le agevolazioni.",
+    excerpt: "Contratto a canone concordato senza associazioni? Ecco quando serve l'attestazione di rispondenza, chi può rilasciarla, quanto vale e gli errori che fanno perdere le agevolazioni fiscali.",
+    lead: "L'attestazione di rispondenza conferma che il tuo contratto a canone concordato rispetta l'accordo territoriale. Senza, nei contratti non assistiti, lo sconto fiscale è a rischio: ecco come ottenerla e quando non serve.",
+    publishedAt: "2026-11-09",
+    updatedAt: "2026-11-09",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-09. Keyword: attestazione di rispondenza canone concordato, vol 140, KD 0.",
+    html: `<p>Hai firmato, o stai per firmare, un contratto a canone concordato e qualcuno ti ha parlato di un documento da chiedere a un'associazione? L'<strong>attestazione di rispondenza del canone concordato</strong> è il foglio che può fare la differenza tra tenere lo sconto fiscale e vederselo contestare. Questa guida spiega al proprietario quando serve, chi la rilascia, come ottenerla e quali errori evitare.</p>
+
+<h2>Che cos'è l'attestazione di rispondenza del canone concordato</h2>
+<p>Nel <a href="/blog/canone-concordato/">canone concordato</a> l'affitto non si fissa liberamente: deve stare dentro le fasce stabilite dall'<strong>accordo territoriale</strong>, cioè l'intesa locale tra associazioni dei proprietari e sindacati degli inquilini. Le fasce cambiano in base alla zona e alle caratteristiche della casa.</p>
+<p>L'attestazione è il documento con cui un'organizzazione che ha firmato quell'accordo conferma che il canone e le clausole del tuo contratto lo rispettano. Riguarda i contratti 3+2 (tre anni più due di proroga), quelli transitori e quelli per studenti universitari. A volte la trovi chiamata "attestazione di conformità" o "di congruità": la sostanza è la stessa.</p>
+
+<h2>Quando serve e quando no</h2>
+<p>Il caso tipico è il contratto <strong>non assistito</strong>, cioè firmato da proprietario e inquilino senza l'aiuto delle organizzazioni di categoria. Per questi contratti l'Agenzia delle Entrate considera l'attestazione un elemento necessario per ottenere le agevolazioni fiscali. Se invece le organizzazioni ti hanno assistito alla firma, l'attestazione separata non è richiesta, ma è bene che l'assistenza risulti dal contratto.</p>
+<p>L'attestazione non è necessaria, secondo la prassi e i giudici, in due situazioni:</p>
+<ul>
+<li>il contratto è stato firmato <strong>prima dell'entrata in vigore del decreto ministeriale del 16 gennaio 2017</strong>;</li>
+<li>al momento della firma, nel tuo Comune <strong>non esisteva ancora un accordo territoriale adeguato a quel decreto</strong> (così, ad esempio, la Corte d'appello di Roma nella sentenza n. 1841 del 2026).</li>
+</ul>
+<p>Una precisazione importante: l'attestazione serve per le agevolazioni, non per la validità del contratto. Lo ha osservato il Tribunale di Sassari (sentenza n. 659 del 2025). Quindi, se manca, il contratto non cade per questo motivo, ma lo sconto fiscale è a rischio.</p>
+
+<h2>Quali agevolazioni sono in gioco</h2>
+<ul>
+<li><strong>Cedolare secca al 10%</strong> invece del 21%, nei Comuni ad alta tensione abitativa (grandi città, capoluoghi e altri Comuni individuati dalla legge o dal CIPE, il Comitato interministeriale per la programmazione economica: verifica se il tuo è nell'elenco) e negli altri indicati dalla legge. La cedolare è la tassa fissa che sostituisce l'IRPEF, cioè l'imposta sul reddito, le addizionali, il registro e il bollo (trovi i dettagli nella guida alla <a href="/blog/cedolare-secca-affitto/">cedolare secca</a>).</li>
+<li><strong>Ulteriore riduzione del 30% del reddito imponibile</strong>, se resti nel regime IRPEF ordinario, nei Comuni ad alta tensione abitativa.</li>
+<li><strong>Imposta di registro ridotta</strong>: nei Comuni ad alta tensione abitativa la base di calcolo è il 70% del canone annuo, se non scegli la cedolare.</li>
+<li><strong>IMU al 75%</strong> dell'importo calcolato con l'aliquota comunale. L'IMU è l'imposta municipale sugli immobili.</li>
+</ul>
+<p>La riduzione del 30% e la base del 70% non valgono per i contratti transitori ordinari: si applicano ai 3+2 e a quelli per studenti universitari.</p>
+<p>Per l'IMU la norma nazionale non nomina l'attestazione, ma le fonti non sono uniformi e alcuni Comuni chiedono documenti o comunicazioni per riconoscere la riduzione. La scelta prudente è averla comunque e controllare il regolamento IMU del tuo Comune.</p>
+<p><strong>Una novità da seguire.</strong> Il disegno di legge di bilancio 2027, approvato dal Consiglio dei ministri il 28 ottobre 2026 e ora all'esame del Parlamento, secondo la stampa specializzata porterebbe la cedolare al 5% (all'1% con inquilini sotto i 36 anni) per i nuovi contratti concordati firmati nel 2027, escluse proroghe e rinnovi di contratti già in corso. Non è ancora legge e il testo può cambiare. Ma se lo sconto cresce, avere i documenti in ordine conta ancora di più.</p>
+
+<h2>Come ottenerla: i passi da seguire</h2>
+<ul>
+<li><strong>Trova l'accordo territoriale in vigore.</strong> Di solito è pubblicato dal Comune o dalle associazioni. Controlla la data: deve essere quello valido al momento della firma.</li>
+<li><strong>Scegli un'organizzazione firmataria.</strong> L'attestazione deve venire da almeno una delle organizzazioni che hanno sottoscritto l'accordo del tuo Comune. Lo prevede il decreto del 2017; per il Ministero delle Infrastrutture l'adesione unilaterale di un'associazione non firmataria non basta.</li>
+<li><strong>Prepara i dati della casa.</strong> Contratto o bozza, visura e planimetria catastale, superficie, zona, dotazioni: ascensore, balconi, box, riscaldamento, arredi. Sono questi elementi a collocare il canone nella fascia giusta.</li>
+<li><strong>Chiedila prima di firmare.</strong> Se il canone è fuori fascia lo scopri in tempo e puoi correggerlo. Ricorda che il contratto va registrato entro 30 giorni.</li>
+<li><strong>Conservala e valuta di allegarla alla registrazione.</strong> L'Agenzia delle Entrate non impone di allegarla, ma lo ritiene opportuno se chiedi la riduzione sull'imposta di registro. In caso di controllo dovrai comunque poterla esibire.</li>
+</ul>
+
+<h2>Per quanto tempo vale l'attestazione</h2>
+<p>Dal 2022 non serve più un'attestazione nuova a ogni contratto. Il decreto Semplificazioni (decreto-legge 73/2022) prevede che resti valida per i contratti successivi con lo stesso contenuto, finché non cambiano le <strong>caratteristiche dell'immobile</strong> o l'<strong>accordo territoriale</strong> del Comune. Se cambi inquilino e nulla è variato, puoi quindi riutilizzarla.</p>
+<p>La norma non affronta espressamente la proroga biennale dello stesso contratto. Se nel frattempo è arrivato un nuovo accordo o hai fatto lavori che cambiano la casa, chiedi all'organizzazione se conviene aggiornarla.</p>
+
+<h2>Gli errori che costano di più</h2>
+<ul>
+<li><strong>Scrivere "canone concordato" e basta.</strong> Il Tribunale di Palermo (sentenza n. 433 del 2026) ha trattato come canone libero un contratto che richiamava la legge ma non riportava gli elementi del modello ministeriale, come la zona e le dotazioni dell'edificio. Il rischio, per il proprietario, è perdere proprio le agevolazioni.</li>
+<li><strong>Chiedere un canone oltre il massimo.</strong> La pattuizione eccedente è nulla e l'inquilino può chiedere la restituzione di quanto pagato in più. La legge indica sei mesi dalla riconsegna della casa, ma secondo la Cassazione, su una norma analoga, superarli non fa perdere il diritto: espone solo alla prescrizione delle somme più vecchie. Dopo sei mesi, quindi, non sei al riparo.</li>
+<li><strong>Fornire dati imprecisi.</strong> L'attestazione si basa su quanto dichiari e la responsabilità di ciò che comunichi resta tua. In una vicenda del 2009 la Cassazione (ordinanza n. 26029 del 2026) ha lasciato ferma la responsabilità di un'associazione che non aveva verificato la corrispondenza dell'immobile ai parametri dell'accordo: controllate i dati insieme.</li>
+<li><strong>Riutilizzare una vecchia attestazione</strong> dopo che l'accordo territoriale è cambiato.</li>
+<li><strong>Affidarsi a modelli trovati online</strong> senza passare da un'organizzazione firmataria.</li>
+</ul>
+
+<h2>Il quadro normativo in breve</h2>
+<p>Legge 9 dicembre 1998, n. 431: art. 2, comma 3 (Modalità di stipula e di rinnovo dei contratti di locazione), art. 8 (Agevolazioni fiscali), art. 13 (Patti contrari alla legge). Decreto ministeriale 16 gennaio 2017: art. 1, comma 8, art. 2, comma 8, art. 3, comma 5. Decreto-legge 21 giugno 2022, n. 73, art. 7, convertito dalla legge 4 agosto 2022, n. 122. Decreto legislativo 14 marzo 2011, n. 23, art. 3 (Cedolare secca sugli affitti). Legge 27 dicembre 2019, n. 160, art. 1, comma 760. Agenzia delle Entrate, risoluzione n. 31/E del 20 aprile 2018.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Esiste un fac-simile da compilare da solo?</h3>
+<p>No, non da solo. Le modalità sono definite dagli accordi locali e l'attestazione la emette l'organizzazione firmataria, assumendosene la responsabilità. Un modulo compilato dal proprietario non la sostituisce.</p>
+<h3>Si può ottenere online?</h3>
+<p>Alcune organizzazioni gestiscono la richiesta anche a distanza. Quello che conta non è il canale, ma che l'organizzazione abbia firmato l'accordo del tuo Comune.</p>
+<h3>Ho già registrato il contratto senza attestazione: cosa faccio?</h3>
+<p>Verifica prima se nel tuo caso era necessaria, guardando la data del contratto e quella dell'accordo territoriale. Se lo era, parla subito con un professionista: la soluzione dipende dagli anni interessati e da come hai dichiarato il reddito.</p>
+<h3>Devo pagarla io o l'inquilino?</h3>
+<p>Il costo lo stabilisce l'organizzazione e la legge non lo divide tra le parti: potete accordarvi. Chiedi l'importo prima di incaricarla.</p>
+
+<h2>Cosa fare adesso</h2>
+<p>Prendi il contratto, controlla la data e l'accordo territoriale del tuo Comune, e verifica di avere l'attestazione se il contratto non è assistito. Se stai per affittare, chiedila prima della firma. Se vuoi che qualcuno controlli il contratto o ti aiuti a impostarlo correttamente, trovi l'assistenza di Sfratto Sicuro nella pagina dedicata ai <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale o fiscale sul singolo caso.</em></p>`,
+  },
+  {
     slug: "sfratto-inquilino-anziano-over-65",
     title: "Sfratto di un inquilino anziano over 65: cosa può fare il proprietario",
     description: "Sfratto di un anziano ultrasessantacinquenne: non c'è nessun blocco. Cosa vale oggi per morosità e finita locazione e come muoversi.",
