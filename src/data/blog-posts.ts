@@ -16,6 +16,83 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-per-morosita-e-finita-locazione-insieme",
+    title: "Sfratto per morosità e finita locazione insieme: quando conviene unirli",
+    description: "Sfratto per morosità e finita locazione insieme: quando il proprietario può unirli, come formulare l'atto e gli errori che fanno perdere mesi.",
+    excerpt: "Inquilino che non paga e contratto scaduto o in scadenza? Ecco quando conviene chiedere sfratto per morosità e per finita locazione nello stesso atto, come impostarlo e le trappole da evitare.",
+    lead: "Morosità e scadenza del contratto si sovrappongono? Chiedere i due sfratti insieme può darti un piano B già dentro l'atto, ma solo se date, disdetta e richiesta di pagamento sono in ordine.",
+    publishedAt: "2026-11-13",
+    updatedAt: "2026-11-13",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-13. Keyword: sfratto per morosità e finita locazione (insieme/cumulo), vol 90, KD 0.",
+    html: `<p>L'inquilino ha smesso di pagare e, nello stesso tempo, il contratto è scaduto o sta per scadere dopo la tua disdetta. Meglio chiedere lo <strong>sfratto per morosità e finita locazione insieme</strong>, nello stesso atto, oppure sceglierne uno? Questa guida spiega al proprietario quando conviene unire le due richieste, come vanno formulate e quali errori possono far perdere mesi.</p>
+
+<h2>Due strade diverse per arrivare allo stesso risultato</h2>
+<p>La legge prevede due procedure rapide per riavere la casa, entrambe davanti al Tribunale con un'udienza chiamata di <strong>convalida</strong>, cioè l'udienza in cui il giudice, se l'inquilino non si oppone, conferma lo sfratto e lo rende eseguibile.</p>
+<ul>
+<li><strong>Sfratto per finita locazione</strong>: si usa quando il contratto è finito, oppure sta per finire, e il rinnovo è escluso, ad esempio per una disdetta valida inviata nei tempi. Il motivo è la <strong>scadenza</strong> del contratto.</li>
+<li><strong>Sfratto per morosità</strong>: si usa quando l'inquilino non paga il canone. Per le case, basta un mese non pagato trascorsi venti giorni dalla scadenza, oppure spese accessorie non pagate per più di due mensilità di canone. Il motivo è l'<strong>inadempimento</strong>, e presuppone un contratto ancora in corso.</li>
+</ul>
+<p>Il punto di arrivo è lo stesso, la liberazione dell'immobile, ma le "ragioni" sono diverse. Ed è qui che nasce la domanda: se ci sono entrambe, si possono far valere insieme?</p>
+
+<h2>Sfratto per morosità e finita locazione insieme: si può fare?</h2>
+<p>Sì. Nella pratica dei tribunali l'intimazione (cioè l'atto con cui il proprietario avvia lo sfratto) che unisce le due richieste, detta anche <strong>cumulo</strong>, è diffusa, e i giudici in genere la ammettono. La Corte d'appello di Venezia (sentenza n. 644 del 2023) ha spiegato che le due domande non sono incompatibili, perché si basano su motivi diversi e restano autonome. Il Tribunale di Rimini (sentenza n. 192 del 2024) ha osservato che il cumulo ha senso anche perché un contratto valido quando parte lo sfratto può scadere mentre la causa è in corso.</p>
+<p>C'è però un'avvertenza. Alcuni giudici chiedono che le due domande non siano messe sullo stesso piano, ma <strong>una in via principale e l'altra in subordine</strong>, cioè da esaminare solo se la prima non viene accolta. Il Tribunale di Agrigento (sentenza n. 262 del 2025) ha dichiarato inammissibile un cumulo proposto con entrambe le domande in via principale. L'orientamento non è uniforme, e proprio per questo la formulazione dell'atto conta quanto i fatti.</p>
+
+<h2>Perché al proprietario può convenire unirle</h2>
+<p>Il vantaggio principale è avere un "piano B" già dentro l'atto, senza dover ricominciare da capo.</p>
+<ul>
+<li><strong>Se l'inquilino sana la morosità.</strong> Nelle locazioni di abitazioni l'inquilino può pagare tutto alla prima udienza, oppure chiedere un termine (il cosiddetto <a href="/blog/sfratto-termine-di-grazia/">termine di grazia</a>), e così evitare la risoluzione (lo scioglimento) del contratto per morosità. Questa possibilità è limitata: non più di tre volte in quattro anni, salvo casi particolari. Se la disdetta era valida, resta comunque in piedi la richiesta per finita locazione: la casa torna libera alla scadenza.</li>
+<li><strong>Se la disdetta viene contestata.</strong> Se l'inquilino sostiene che la disdetta non era valida (ad esempio per un motivo non indicato o un preavviso sbagliato), la richiesta per morosità può reggere da sola, se i canoni restano non pagati.</li>
+<li><strong>Un solo procedimento</strong> invece di due cause separate: meno notifiche, meno udienze, un unico fascicolo.</li>
+</ul>
+
+<h2>La trappola più comune: contratto già scaduto quando parte lo sfratto</h2>
+<p>Molti proprietari scoprono tardi questo punto. Se il contratto è <strong>già finito</strong> quando l'atto viene notificato, lo sfratto per morosità di regola non funziona: manca il contratto in corso su cui si basa. Lo hanno affermato, tra gli altri, il Tribunale di Prato (sentenza n. 383 del 2025) e il Tribunale di Civitavecchia (sentenza n. 651 del 2026).</p>
+<p>Le somme che l'inquilino non versa <strong>dopo la scadenza</strong>, infatti, non sono più canoni in senso tecnico, ma un'<strong>indennità di occupazione</strong>: la legge (art. 1591 del Codice civile) prevede che l'inquilino che non restituisce la casa debba pagare il corrispettivo pattuito fino alla riconsegna, oltre all'eventuale danno maggiore. In questa situazione la strada corretta è di norma lo <a href="/blog/sfratto-per-finita-locazione/">sfratto per finita locazione</a>, accompagnato dalla richiesta di pagamento.</p>
+
+<h2>Il secondo errore: chiedere i soldi troppo tardi</h2>
+<p>Se l'inquilino si oppone, il giudice fa proseguire la causa con il rito speciale delle locazioni e le parti possono depositare delle memorie integrative. Ma attenzione: secondo diversi giudici <strong>neppure in queste memorie si possono aggiungere domande nuove</strong>. Il Tribunale di Santa Maria Capua Vetere (sentenza n. 4013 del 2025) ha dichiarato inammissibile la richiesta di pagare i canoni proposta per la prima volta nella memoria integrativa, in una causa nata come sfratto per finita locazione.</p>
+<p>La lezione è semplice: se vuoi recuperare anche il denaro, la richiesta di pagamento va messa <strong>nell'atto iniziale</strong>, con un conteggio chiaro. Tieni presente che l'ingiunzione di pagamento "accelerata" prevista dalla legge riguarda lo sfratto per morosità; con la finita locazione si chiede invece al giudice una condanna al pagamento.</p>
+
+<h2>Checklist per il proprietario prima di partire</h2>
+<ul>
+<li><strong>Verifica le date.</strong> Qual è la scadenza esatta del contratto? È già passata o arriverà durante la causa?</li>
+<li><strong>Controlla la disdetta.</strong> È stata inviata nei tempi, nella forma prevista e, se serve, con il motivo indicato? Conserva la prova di ricezione.</li>
+<li><strong>Fai il conteggio separato.</strong> Distingui i canoni non pagati fino alla scadenza dalle somme maturate dopo, che sono indennità di occupazione.</li>
+<li><strong>Raccogli i documenti.</strong> Contratto registrato, eventuali proroghe, ricevute, estratti conto, comunicazioni con l'inquilino.</li>
+<li><strong>Decidi l'ordine delle domande.</strong> Quale in via principale e quale in subordine: è una scelta tecnica che va fatta caso per caso con l'avvocato.</li>
+<li><strong>Tieni conto dei tempi.</strong> Tra la notifica e l'udienza devono passare almeno venti giorni liberi.</li>
+</ul>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li>Intimare solo la morosità quando il contratto è già scaduto.</li>
+<li>Mettere le due domande entrambe in via principale senza valutare l'orientamento del Tribunale competente.</li>
+<li>Dimenticare la richiesta di pagamento nell'atto iniziale.</li>
+<li>Continuare a incassare dopo la scadenza senza chiarire a che titolo: il Tribunale di Napoli Nord (sentenza n. 1501 del 2026) ha respinto la domanda di indennità di occupazione perché il proprietario aveva dichiarato di aver accettato il canone come indennità congrua.</li>
+<li>Usare la finita locazione quando il contratto non è scaduto e il vero problema è solo il mancato pagamento.</li>
+</ul>
+
+<h2>Le norme di riferimento</h2>
+<p>Lo sfratto per finita locazione è regolato dall'art. 657 del Codice di procedura civile (c.p.c.), quello per morosità dall'art. 658 c.p.c. La forma dell'atto e i venti giorni liberi prima dell'udienza sono nell'art. 660 c.p.c., aggiornato dal decreto legislativo (D.Lgs.) 164/2024, correttivo della riforma Cartabia, che ha lasciato invariato il termine di venti giorni; la convalida, e l'attestazione che la morosità persiste, nell'art. 663 c.p.c.; l'ingiunzione di pagamento per i canoni nell'art. 664 c.p.c. Per le abitazioni, l'art. 5 della legge 392/1978 fissa quando il mancato pagamento giustifica la risoluzione, l'art. 55 regola il termine di grazia e l'art. 56 la data del rilascio, fissata dal giudice di norma entro sei mesi (dodici nei casi eccezionali). La disdetta alla prima scadenza è nell'art. 3 della legge 431/1998; l'indennità dopo la scadenza nell'art. 1591 del Codice civile.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Se l'inquilino paga gli arretrati, lo sfratto per finita locazione va avanti?</h3>
+<p>In genere sì, se la disdetta era valida e il contratto è scaduto o sta per scadere. Il pagamento può bloccare la risoluzione per morosità, ma non cancella la scadenza del contratto.</p>
+<h3>Il contratto è scaduto da mesi e l'inquilino non paga: che sfratto devo chiedere?</h3>
+<p>Di regola lo sfratto per finita locazione, con la richiesta di pagamento delle somme dovute. Dopo la scadenza quelle somme sono un'indennità di occupazione, non canoni.</p>
+<h3>Unire le due domande allunga i tempi?</h3>
+<p>Non di per sé: il procedimento è uno solo. I tempi dipendono soprattutto dal Tribunale e dall'eventuale opposizione dell'inquilino.</p>
+<h3>Posso fare tutto da solo?</h3>
+<p>Davanti al Tribunale serve un avvocato. La scelta di come combinare le due domande, inoltre, è proprio il punto in cui un errore costa di più.</p>
+
+<h2>In sintesi</h2>
+<p>Quando morosità e scadenza del contratto si sovrappongono, chiederle insieme può proteggerti: se una strada si chiude, resta aperta l'altra. Ma funziona solo con le date verificate, la disdetta in ordine, la richiesta di pagamento già nell'atto e le domande ordinate nel modo giusto. Se ti trovi in questa situazione, il team di Sfratto Sicuro può esaminare contratto, disdetta e conteggi e indicarti la strada più adatta: trovi come funziona il servizio nella pagina dedicata allo <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul singolo caso.</em></p>`,
+  },
+  {
     slug: "attestazione-rispondenza-canone-concordato",
     title: "Attestazione di rispondenza del canone concordato: quando serve e come ottenerla",
     description: "Attestazione di rispondenza del canone concordato: quando serve per cedolare al 10% e IMU, chi la rilascia e come non perdere le agevolazioni.",
