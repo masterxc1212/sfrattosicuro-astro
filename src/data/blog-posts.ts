@@ -16,6 +16,98 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "cessione-contratto-locazione-commerciale",
+    title: "Cessione del contratto di locazione commerciale: le tutele",
+    description: "Cessione del contratto di locazione commerciale con l'azienda: quando non serve il tuo consenso, come opporti in 30 giorni e chi paga se il nuovo è moroso.",
+    excerpt: "L'inquilino vende l'attività e il contratto passa al nuovo titolare? Ecco quando la cessione vale anche senza il tuo consenso, come opporti per gravi motivi e come conservare la garanzia del vecchio inquilino.",
+    lead: "Nei locali commerciali l'inquilino può cedere il contratto insieme all'azienda senza chiederti il permesso. Il proprietario ha però 30 giorni per opporsi e una garanzia da non perdere.",
+    publishedAt: "2026-11-16",
+    updatedAt: "2026-11-16",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-16. Keyword: cessione del contratto di locazione commerciale, vol 210, KD 0 (secondaria: cessione del contratto di locazione, vol 880, KD 0).",
+    html: `<p>Il tuo inquilino ha un negozio, un bar o un laboratorio nel tuo immobile e ti arriva una raccomandata: ha venduto l'attività e il contratto di affitto passa al nuovo titolare. Molti proprietari pensano di poter dire semplicemente di no. Non è così: la <strong>cessione del contratto di locazione commerciale</strong> insieme all'azienda può avvenire anche senza il tuo consenso. Hai però strumenti precisi per tutelarti, con tempi stretti da rispettare.</p>
+<p>Vediamo quando la cessione vale senza il tuo assenso, come opporti, chi risponde se il nuovo conduttore (cioè il nuovo inquilino) non paga e quali controlli fare subito.</p>
+
+<h2>Cessione del contratto di locazione: la regola generale e l'eccezione commerciale</h2>
+<p>Nella locazione, la regola di base è che l'inquilino <strong>non può cedere il contratto senza il consenso del proprietario</strong>. Lo prevede il Codice civile. Vale per le abitazioni: se l'inquilino di casa vuole far entrare un'altra persona al suo posto, serve il tuo sì (ne parliamo nella guida sul <a href="/blog/subentro-contratto-locazione/">subentro nel contratto di locazione</a>).</p>
+<p>Per gli immobili usati per attività commerciali, industriali, artigianali o turistiche la legge sull'equo canone (Legge 392 del 1978) prevede invece un'eccezione importante. L'inquilino può cedere il contratto <strong>anche senza il consenso del locatore</strong> (il proprietario che dà in affitto), a due condizioni:</p>
+<ul>
+<li>insieme al contratto deve essere ceduta (o data in affitto) anche l'<strong>azienda</strong>, cioè l'attività vera e propria con i suoi beni organizzati;</li>
+<li>il proprietario deve ricevere una <strong>comunicazione con lettera raccomandata con avviso di ricevimento</strong>.</li>
+</ul>
+
+<h2>Cessione del contratto di locazione commerciale: quando non vale senza il tuo consenso</h2>
+<p>L'eccezione funziona solo se c'è davvero un passaggio di azienda. Ecco i casi in cui conviene fermarsi e verificare:</p>
+<ul>
+<li><strong>Cessione "del solo contratto"</strong>: se l'inquilino passa il locale a un terzo senza cedergli l'attività (per esempio il nuovo arrivato apre un'attività del tutto diversa e non riceve nulla della vecchia), non si applica l'eccezione e torna la regola generale: serve il tuo consenso.</li>
+<li><strong>Azienda solo sulla carta</strong>: un passaggio fittizio, con un'attività ormai chiusa o senza alcun bene, clientela o organizzazione, può essere contestato. La valutazione dipende dal caso concreto.</li>
+<li><strong>Uso non commerciale</strong>: l'eccezione riguarda gli immobili adibiti alle attività previste dalla legge (commerciali, industriali, artigianali, turistiche e simili). Per gli usi abitativi resta sempre necessario il consenso.</li>
+<li><strong>Comunicazione mancante</strong>: se non ti è mai arrivata la comunicazione, la cessione non ti è opponibile e l'inquilino originario resta il tuo interlocutore, salvo che tu l'abbia comunque accettata.</li>
+</ul>
+
+<h2>Come opporsi: i "gravi motivi" e il termine di 30 giorni</h2>
+<p>Anche quando la cessione è regolare, il proprietario non è senza difese. Puoi <strong>opporti per gravi motivi entro 30 giorni dal ricevimento della comunicazione</strong>. Il termine è breve: se lo lasci passare, perdi la possibilità di opporti e la cessione resta definitivamente efficace nei tuoi confronti.</p>
+<p>Che cosa sono i gravi motivi? La legge non li elenca. In generale devono riguardare il <strong>nuovo conduttore</strong> (chi subentra, detto anche cessionario) e mettere a rischio concreto i tuoi interessi. Esempi che possono rilevare:</p>
+<ul>
+<li>il nuovo titolare è chiaramente insolvibile o ha già precedenti di morosità documentati, oppure è una società appena costituita con un capitale minimo rispetto al canone;</li>
+<li>l'attività che intende svolgere è incompatibile con la destinazione pattuita nel contratto;</li>
+<li>ci sono elementi seri sulla sua scarsa affidabilità, che rendono rischiosa la prosecuzione del rapporto.</li>
+</ul>
+<p>Una semplice antipatia o la preferenza per un altro inquilino non bastano. Se ti opponi e il nuovo conduttore contesta, la questione può arrivare davanti al giudice, che valuterà se i motivi sono davvero gravi.</p>
+<p><strong>Come inviare l'opposizione</strong>: per iscritto, motivata, con un mezzo che dia prova della data di ricevimento (raccomandata con ricevuta di ritorno o PEC, la posta elettronica certificata, se l'inquilino ne ha una). Conviene indirizzarla sia all'inquilino uscente sia al nuovo titolare.</p>
+
+<h2>Chi paga se il nuovo inquilino non paga</h2>
+<p>Questo è il punto che interessa di più ai proprietari. Con la cessione, il nuovo conduttore prende il posto del vecchio. Però la legge prevede una garanzia a tuo favore: se <strong>non hai liberato</strong> l'inquilino originario (chi cede, detto cedente), puoi agire contro di lui quando il nuovo non adempie, ad esempio non paga i canoni.</p>
+<p>In pratica:</p>
+<ul>
+<li>la responsabilità del vecchio inquilino è <strong>sussidiaria</strong>, cioè di riserva: prima devi chiedere il pagamento al nuovo conduttore (basta una diffida scritta, non serve fargli causa); se non paga, puoi rivolgerti al cedente;</li>
+<li>se firmi un documento in cui dichiari di liberare il cedente, perdi questa garanzia (il semplice prendere atto della cessione, invece, non equivale a liberarlo). Leggi con attenzione qualsiasi accordo ti venga proposto in occasione della vendita dell'attività;</li>
+<li>le eventuali garanzie già prestate (fideiussione, deposito cauzionale) vanno verificate caso per caso: chiarisci per iscritto se restano valide o devono essere rinnovate dal nuovo titolare.</li>
+</ul>
+<p>Se il nuovo conduttore smette di pagare, resta comunque possibile avviare lo sfratto per morosità nei suoi confronti: ne parliamo nella guida allo <a href="/blog/sfratto-morosita-locale-commerciale/">sfratto per morosità di un locale commerciale</a>.</p>
+
+<h2>Checklist del proprietario quando arriva la comunicazione</h2>
+<ul>
+<li><strong>Segna la data di ricevimento</strong> della raccomandata e calcola subito i 30 giorni.</li>
+<li><strong>Chiedi copia dell'atto di cessione d'azienda</strong> (di solito redatto da un notaio) per verificare che l'attività sia stata davvero trasferita insieme al contratto.</li>
+<li><strong>Raccogli informazioni sul nuovo titolare</strong>: visura camerale, attività che intende svolgere, eventuali garanzie offerte.</li>
+<li><strong>Controlla il contratto</strong>: destinazione d'uso pattuita, scadenze, garanzie, eventuali canoni arretrati del vecchio inquilino.</li>
+<li><strong>Verifica la situazione dei pagamenti</strong> al giorno della cessione e mettila per iscritto.</li>
+<li><strong>Non firmare liberatorie</strong> verso il vecchio inquilino senza averne valutato le conseguenze.</li>
+<li><strong>Verifica gli adempimenti fiscali</strong>: la cessione va comunicata all'Agenzia delle Entrate entro 30 giorni con il modello RLI (il modulo per registrare i contratti di affitto e le loro modifiche), pagando l'imposta di registro: 67 euro se la cessione è senza corrispettivo, altrimenti il 2% del corrispettivo con un minimo di 67 euro. Di solito se ne occupano le parti della cessione: chiedi la ricevuta.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Ignorare la raccomandata</strong> pensando che "senza la mia firma non vale": la cessione regolare produce effetti già dalla comunicazione e, dopo 30 giorni senza opposizione, non è più contestabile per gravi motivi.</li>
+<li><strong>Opporsi senza motivi concreti</strong>: un'opposizione generica rischia di essere respinta e di aprire un contenzioso inutile.</li>
+<li><strong>Accettare pagamenti dal nuovo titolare senza chiarire la situazione</strong>: conviene definire per iscritto da quale data paga lui e cosa resta a carico del vecchio inquilino.</li>
+<li><strong>Liberare il cedente</strong> per cortesia: perdi un debitore in più in caso di problemi.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso vietare nel contratto la cessione insieme all'azienda?</h3>
+<p>In linea generale no. Secondo la giurisprudenza prevalente, la clausola che vieta di cedere il contratto insieme all'azienda è nulla, perché contrasta con una norma inderogabile (art. 79 della Legge 392/1978). Il divieto resta invece valido per la cessione del solo contratto, senza azienda. Regole diverse possono valere per le cosiddette grandi locazioni, con canone annuo oltre 250.000 euro.</p>
+<h3>Il nuovo titolare deve firmare un nuovo contratto?</h3>
+<p>No, con la cessione subentra nel contratto esistente, alle stesse condizioni e con la stessa scadenza. Un nuovo contratto è possibile solo se tu e il nuovo conduttore lo concordate.</p>
+<h3>Cosa succede se l'inquilino affitta l'azienda invece di venderla?</h3>
+<p>La legge prevede la stessa regola anche quando l'azienda viene data in affitto: l'inquilino può sublocare il locale all'affittuario dell'azienda senza il tuo consenso, con comunicazione e possibilità di opposizione per gravi motivi entro 30 giorni. Per le differenze tra sublocazione e cessione vedi la guida al <a href="/blog/contratto-locazione-commerciale/">contratto di locazione commerciale</a>.</p>
+<h3>E se il vecchio inquilino aveva canoni arretrati?</h3>
+<p>Gli arretrati maturati prima della cessione restano un tuo credito da chiarire e tutelare. Mettili per iscritto prima di accettare la nuova situazione e valuta con un legale come recuperarli.</p>
+
+<h2>Il quadro normativo in breve</h2>
+<ul>
+<li><strong>Art. 1594 Codice civile</strong> (Sublocazione o cessione della locazione): regola generale, la cessione del contratto richiede il consenso del locatore.</li>
+<li><strong>Art. 36 Legge 27 luglio 1978, n. 392</strong> (Sublocazione e cessione del contratto di locazione): cessione o sublocazione senza consenso se ceduta o locata anche l'azienda, comunicazione con raccomandata, opposizione per gravi motivi entro 30 giorni, responsabilità del cedente non liberato.</li>
+<li><strong>Art. 27 Legge 392/1978</strong> (Durata della locazione): individua gli immobili adibiti ad attività commerciali, industriali, artigianali, turistiche e simili.</li>
+</ul>
+
+<h2>Conclusione: agisci entro i 30 giorni</h2>
+<p>La cessione del contratto di locazione commerciale non si può bloccare a piacimento, ma il proprietario che si muove subito ha margini concreti: verificare che ci sia davvero un passaggio d'azienda, valutare il nuovo titolare, opporsi per gravi motivi se ce ne sono e conservare la garanzia del vecchio inquilino. Se hai ricevuto una comunicazione di cessione e vuoi capire come muoverti prima che scadano i termini, puoi rivolgerti a Sfratto Sicuro tramite la pagina sui <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+<p><em>Contenuto informativo: non sostituisce una consulenza legale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "sfratto-per-morosita-e-finita-locazione-insieme",
     title: "Sfratto per morosità e finita locazione insieme: quando conviene unirli",
     description: "Sfratto per morosità e finita locazione insieme: quando il proprietario può unirli, come formulare l'atto e gli errori che fanno perdere mesi.",
