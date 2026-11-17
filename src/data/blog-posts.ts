@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "cancellazione-anagrafica-irreperibilita-ex-inquilino",
+    title: "Cancellazione anagrafica per irreperibilità dell'ex inquilino: guida",
+    description: "Cancellazione anagrafica per irreperibilità: come il proprietario fa togliere la residenza all'ex inquilino, documenti, passi e tempi realistici.",
+    excerpt: "L'ex inquilino se n'è andato ma risulta ancora residente a casa tua? Ecco come segnalarlo al Comune, quando scatta la cancellazione per irreperibilità e cosa fare nel frattempo.",
+    lead: "Dopo lo sfratto o la riconsegna delle chiavi, la residenza dell'ex inquilino può restare nel tuo immobile. Non gli dà diritto di rientrare, ma va corretta: ecco come.",
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-17. Keyword: cancellazione anagrafica per irreperibilità, vol 140, KD 0 (secondarie: come cancellare la residenza di un inquilino, vol 20; richiesta cancellazione anagrafica di altra persona, vol 30).",
+    html: `<p>Hai riavuto le chiavi di casa dopo uno sfratto o dopo la fine del contratto, ma l'ex inquilino risulta ancora residente nel tuo immobile. Ti arrivano raccomandate a suo nome e magari stai per affittare a qualcun altro. Questa guida spiega al proprietario come funziona la <strong>cancellazione anagrafica per irreperibilità</strong>, quando chiederla, quali documenti preparare e quanto aspettarsi in termini di tempi.</p>
+<p>In breve: la residenza dell'ex inquilino non gli dà alcun diritto di rientrare in casa, ma è bene farla correggere. Lo fa il Comune, su segnalazione di chiunque ne sia a conoscenza, compreso il proprietario.</p>
+
+<h2>Perché la residenza dell'ex inquilino è un problema per il proprietario</h2>
+<p>La residenza anagrafica è il luogo dove una persona vive abitualmente, registrato all'anagrafe del Comune. Quando l'inquilino se ne va, dovrebbe essere lui a dichiarare il nuovo indirizzo entro 20 giorni. Molti non lo fanno, soprattutto dopo uno sfratto per morosità o quando spariscono senza lasciare recapiti.</p>
+<p>Le conseguenze pratiche per te sono diverse:</p>
+<ul>
+<li><strong>Posta e atti a suo nome</strong>: cartelle esattoriali, multe, solleciti di altri creditori e atti giudiziari continuano ad arrivare al tuo indirizzo.</li>
+<li><strong>Visite di creditori dell'ex inquilino</strong>: chi deve recuperare un credito da lui cercherà i suoi beni dove risulta residente, cioè a casa tua.</li>
+<li><strong>Confusione con il nuovo inquilino</strong>: il nuovo conduttore (cioè chi prende in affitto) può comunque prendere la residenza, ma una situazione anagrafica non aggiornata crea disagi e domande.</li>
+</ul>
+<p>Attenzione a un equivoco frequente: la residenza è solo un dato anagrafico. <strong>Non è un titolo per abitare</strong> l'immobile. Se l'ex inquilino ha riconsegnato le chiavi o è stato eseguito il rilascio, non può pretendere di rientrare solo perché risulta ancora residente.</p>
+
+<h2>Le due strade: trasferimento d'ufficio o cancellazione per irreperibilità</h2>
+<p>Il Comune può correggere la situazione in due modi, a seconda di quello che sai sull'ex inquilino.</p>
+<h3>1. Sai dove vive adesso</h3>
+<p>Se conosci il nuovo indirizzo (per esempio perché te lo ha comunicato o risulta da una disdetta), indicalo nella segnalazione. L'ufficio anagrafe deve avvisare il Comune dove la persona si è trasferita, che la inviterà a regolarizzarsi o provvederà d'ufficio. Quando l'ex inquilino viene iscritto nel nuovo Comune, la residenza presso di te si chiude automaticamente. È di solito la strada più rapida.</p>
+<h3>2. Non sai dove sia finito</h3>
+<p>Se l'ex inquilino è sparito, la strada è la <strong>cancellazione anagrafica per irreperibilità</strong>. Il Comune effettua più controlli all'indirizzo, a distanza di tempo l'uno dall'altro, di norma tramite la polizia locale. Se la persona non viene mai trovata, l'ufficiale d'anagrafe la cancella dalla popolazione residente.</p>
+
+<h2>Come chiedere la cancellazione anagrafica per irreperibilità: i passi</h2>
+<p>Non esiste un modulo nazionale unico: ogni Comune ha la propria modulistica o accetta una segnalazione scritta. Il percorso tipico è questo.</p>
+<ol>
+<li><strong>Raccogli le prove che l'ex inquilino non vive più lì</strong>: verbale di riconsegna delle chiavi o verbale di rilascio dell'ufficiale giudiziario, disdetta o risoluzione del contratto, eventuale nuovo contratto di locazione registrato.</li>
+<li><strong>Prepara la segnalazione all'ufficio anagrafe</strong> (in pratica, una richiesta di cancellazione anagrafica di altra persona) del Comune dove si trova l'immobile: i tuoi dati, quelli dell'ex inquilino, l'indirizzo, da quando non vi abita più e, se lo conosci, dove potrebbe trovarsi.</li>
+<li><strong>Allega un documento d'identità</strong> e le prove raccolte. Molti Comuni accettano l'invio via PEC (posta elettronica certificata) o allo sportello. Verifica sul sito del tuo Comune.</li>
+<li><strong>Conserva la ricevuta</strong> di presentazione e annota la data: ti servirà per seguire la pratica.</li>
+<li><strong>Collabora agli accertamenti</strong>: gli agenti possono passare più volte all'indirizzo. Se nel frattempo hai affittato a un nuovo inquilino, avvisalo che potrebbe ricevere queste visite.</li>
+</ol>
+<p>Di regola la segnalazione all'anagrafe non ha costi.</p>
+
+<h2>Tempi realistici</h2>
+<p>Qui serve pazienza. La legge non fissa un numero preciso di controlli, ma richiede accertamenti «ripetuti» e «opportunamente intervallati». Secondo le indicazioni dell'ISTAT (l'Istituto nazionale di statistica, che coordina le regole sulle anagrafi), seguite dai Comuni, la cancellazione si fa di norma quando l'irreperibilità all'indirizzo dura <strong>da almeno un anno</strong>. Per questo è realistico mettere in conto almeno dodici mesi, con differenze da Comune a Comune.</p>
+<p>Conviene quindi muoversi subito dopo il rilascio: ogni mese di attesa prima della segnalazione si aggiunge ai tempi del Comune.</p>
+
+<h2>Cosa fare nel frattempo</h2>
+<ul>
+<li><strong>Non aprire e non buttare la posta</strong> indirizzata all'ex inquilino: aprire corrispondenza altrui è vietato. Puoi restituirla al portalettere o all'ufficio postale segnalando che il destinatario non abita più lì («trasferito» o «sconosciuto»), così che venga rinviata al mittente. Non firmare e non ritirare raccomandate o atti giudiziari a suo nome.</li>
+<li><strong>Tieni a portata di mano il verbale di rilascio</strong>: se qualcuno cerca l'ex inquilino o i suoi beni a casa tua, è la prova più semplice che lui non abita più lì. Per dimostrare che i mobili sono tuoi, conserva anche fatture, inventari o l'elenco allegato al contratto.</li>
+<li><strong>Non cambiare da solo i dati anagrafici</strong> né presentare dichiarazioni a nome dell'ex inquilino: solo l'interessato o il Comune possono modificarli.</li>
+</ul>
+<p>Se in casa sono rimasti oggetti dell'ex inquilino, prima di disfartene leggi la guida su <a href="/blog/mobili-lasciati-inquilino-dopo-sfratto/">cosa fare con i mobili lasciati dall'inquilino dopo lo sfratto</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Pensare che la residenza blocchi il nuovo affitto</strong>: non è così, puoi affittare di nuovo l'immobile.</li>
+<li><strong>Chiedere la cancellazione mentre l'inquilino abita ancora la casa</strong>: se vive lì, non è irreperibile. Se non paga o non se ne va, serve la procedura di sfratto, non l'anagrafe.</li>
+<li><strong>Cambiare la serratura se l'inquilino è sparito senza riconsegnare le chiavi</strong>: senza una riconsegna o un rilascio formale rischi una denuncia. Prima va recuperato il possesso in modo legale.</li>
+<li><strong>Segnalare senza prove</strong>: una richiesta documentata (verbale di rilascio, chiavi riconsegnate) aiuta il Comune a lavorare più in fretta.</li>
+<li><strong>Dimenticare di indicare il nuovo indirizzo</strong> quando lo conosci: fa perdere la strada più veloce, quella del trasferimento d'ufficio.</li>
+</ul>
+
+<h2>Il quadro normativo, in breve</h2>
+<p>Le regole sono nella legge anagrafica (legge 24 dicembre 1954, n. 1228) e nel regolamento anagrafico, il D.P.R. 30 maggio 1989, n. 223. In particolare: l'art. 11 («Cancellazioni anagrafiche») prevede la cancellazione per irreperibilità dopo ripetuti accertamenti; l'art. 13 («Dichiarazioni anagrafiche») impone di dichiarare il cambio di residenza entro 20 giorni; l'art. 15 («Accertamenti di ufficio in caso di omessa dichiarazione delle parti») e l'art. 16 («Segnalazioni particolari») regolano gli interventi d'ufficio quando la persona si è trasferita senza dirlo; l'art. 19 («Accertamenti richiesti dall'ufficiale di anagrafe») prevede che gli accertamenti sulla dimora abituale siano svolti dalla polizia municipale o da altro personale comunale formalmente autorizzato.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Come cancellare la residenza di un inquilino che se n'è andato?</h3>
+<p>Il proprietario non può cancellarla direttamente, ma può segnalare al Comune che la persona non vive più nell'immobile. Gli accertamenti e la decisione spettano all'ufficiale d'anagrafe.</p>
+<h3>Quanto tempo ci vuole?</h3>
+<p>Dipende dal Comune e da cosa sai dell'ex inquilino. Se conosci il nuovo indirizzo i tempi sono in genere più brevi. Per la cancellazione per irreperibilità occorre di norma che la persona non sia reperibile da almeno un anno.</p>
+<h3>Posso affittare di nuovo la casa prima della cancellazione?</h3>
+<p>Sì. La residenza dell'ex inquilino non impedisce un nuovo contratto, e il nuovo inquilino può chiedere a sua volta la residenza.</p>
+<h3>E se l'ex inquilino ricompare?</h3>
+<p>Una persona cancellata per irreperibilità che ricompare deve chiedere una nuova iscrizione anagrafica, nel Comune dove vive davvero. Non può tornare a risultare residente da te se lì non abita.</p>
+
+<h2>In sintesi</h2>
+<p>Dopo il rilascio, raccogli verbale e chiavi, segnala subito all'anagrafe e, se lo conosci, indica dove vive ora l'ex inquilino. Se non sai dove sia, la cancellazione per irreperibilità richiede tempo ma, se la persona davvero non abita più lì, di norma il Comune la dispone. Attenzione: se l'inquilino è sparito senza riconsegnare le chiavi, prima va recuperato il possesso della casa; leggi <a href="/blog/inquilino-sparisce-non-paga-affitto/">cosa fare se l'inquilino sparisce senza pagare</a>.</p>
+<p>Se vuoi qualcuno che segua per te rilascio, segnalazione al Comune e recupero dei canoni, scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> di Sfratto Sicuro.</p>
+<p><em>Questo articolo ha scopo informativo e non sostituisce una consulenza legale sul tuo caso specifico. Procedure e modulistica possono variare da Comune a Comune.</em></p>`,
+  },
+  {
     slug: "cessione-contratto-locazione-commerciale",
     title: "Cessione del contratto di locazione commerciale: le tutele",
     description: "Cessione del contratto di locazione commerciale con l'azienda: quando non serve il tuo consenso, come opporti in 30 giorni e chi paga se il nuovo è moroso.",
