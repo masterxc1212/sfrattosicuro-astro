@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "codice-ufficio-contratto-locazione",
+    title: "Codice ufficio del contratto di locazione: dove trovarlo e a cosa serve",
+    description: "Codice ufficio del contratto di locazione, serie, numero e codice identificativo: dove trovarli, come recuperarli e quando servono al proprietario.",
+    excerpt: "L'inquilino ti chiede gli estremi del contratto per l'ISEE o devi pagare l'imposta degli anni successivi? Ecco dove trovare codice ufficio, serie, numero e codice identificativo, e come usarli senza errori.",
+    lead: "Codice ufficio, serie, numero e codice identificativo sono la carta d'identità fiscale del tuo contratto di affitto. Ecco dove trovarli e quando ti servono come proprietario.",
+    publishedAt: "2026-11-18",
+    updatedAt: "2026-11-18",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-18. Keyword: codice ufficio contratto locazione, vol 720, KD 0 (secondarie: codice ufficio serie e numero contratto locazione, vol 90; codice ufficio contratto locazione isee, vol 170; codice ufficio contratto locazione dove lo trovo, vol 50, KD 13).",
+    html: `<p>L'inquilino ti chiede i dati del contratto per l'ISEE, devi pagare l'imposta di registro per il nuovo anno o comunicare una proroga. In questi casi ti servono il <strong>codice ufficio del contratto di locazione</strong>, la serie, il numero e il codice identificativo. Questa guida spiega al proprietario dove trovarli, come recuperarli se hai perso la ricevuta e a cosa servono davvero.</p>
+<p>In breve: questi dati sono la "carta d'identità" fiscale del contratto. Li assegna l'Agenzia delle Entrate al momento della registrazione e li ritrovi sulla ricevuta. Se l'hai persa, puoi recuperarli online.</p>
+
+<h2>Codice ufficio, serie, numero e codice identificativo: cosa sono</h2>
+<p>Quando un contratto di locazione viene registrato, l'Agenzia delle Entrate gli assegna alcuni dati che lo identificano in modo univoco. Sono gli <strong>estremi di registrazione</strong>:</p>
+<ul>
+<li><strong>Codice ufficio</strong>: è il codice alfanumerico dell'ufficio dell'Agenzia delle Entrate presso cui risulta registrato il contratto.</li>
+<li><strong>Anno e data di registrazione</strong>: il giorno in cui la registrazione è stata eseguita.</li>
+<li><strong>Serie</strong>: indica il tipo di registrazione. Per i contratti registrati per via telematica di solito compare la sigla <strong>3T</strong>; per quelli registrati allo sportello la serie è <strong>3</strong>.</li>
+<li><strong>Numero ed eventuale sottonumero</strong>: il numero progressivo assegnato al contratto in quell'ufficio e in quell'anno.</li>
+</ul>
+<p>Poi c'è il <strong>codice identificativo del contratto</strong>: un codice alfanumerico unico (di solito di 17 caratteri) che compare sulla ricevuta di registrazione. È il dato che viene chiesto per pagare e comunicare gli adempimenti successivi alla prima registrazione.</p>
+<p>In pratica: codice ufficio, serie e numero servono soprattutto quando qualcuno ti chiede gli "estremi" del contratto (come l'ISEE); il codice identificativo serve per i rapporti con l'Agenzia delle Entrate negli anni successivi.</p>
+<p>Un consiglio pratico: non confondere questi dati con il <strong>numero di protocollo</strong> della trasmissione telematica. Il protocollo indica solo l'invio del file; non identifica il contratto.</p>
+
+<h2>Dove trovare il codice ufficio del contratto di locazione</h2>
+<h3>1. Nella ricevuta di registrazione</h3>
+<p>Se il contratto è stato registrato online (con il servizio web o con il modello RLI, cioè il modello per la "Registrazione Locazioni Immobili"), alla fine della procedura l'Agenzia rilascia una <strong>ricevuta di registrazione</strong>. Lì trovi codice ufficio, serie, numero, data e codice identificativo. Conservala insieme al contratto: è il documento che ti servirà per anni.</p>
+<h3>2. Sulla copia registrata in ufficio</h3>
+<p>Per i contratti più vecchi, registrati di persona presentando il modello cartaceo allo sportello, gli estremi compaiono sulla copia del modello o del contratto restituita dall'ufficio.</p>
+<h3>3. Nell'area riservata dell'Agenzia delle Entrate</h3>
+<p>Entrando nell'area riservata del sito dell'Agenzia (con SPID, CIE o CNS), nel <strong>Cassetto fiscale</strong> alla voce dedicata ai dati del Registro, trovi gli atti registrati in cui sei parte, con ufficio ed estremi di registrazione. È la strada più rapida se hai perso la ricevuta.</p>
+<h3>4. Con il servizio "Ricerca codice identificativo del contratto di locazione"</h3>
+<p>Sul sito dell'Agenzia c'è un servizio gratuito che, partendo dagli estremi (ufficio di registrazione, serie, numero, eventuale sottonumero, data di registrazione) e dal codice fiscale di una delle parti, ti aiuta a ritrovare il codice identificativo. È utile quando hai i vecchi estremi ma ti manca il codice unico.</p>
+<h3>5. Chiedendo a chi ha registrato il contratto</h3>
+<p>Se la registrazione l'ha fatta un'agenzia immobiliare, un CAF o il commercialista, chiedi a loro copia della ricevuta. Come ultima possibilità puoi rivolgerti a un ufficio territoriale dell'Agenzia delle Entrate.</p>
+
+<h2>A cosa servono questi dati al proprietario</h2>
+<ul>
+<li><strong>Imposta di registro degli anni successivi</strong>. Se non hai scelto la cedolare secca e paghi l'imposta anno per anno, la versi entro 30 giorni dall'inizio di ogni nuova annualità con il modello F24 ELIDE (il modello di pagamento per "Elementi identificativi"), codice tributo 1501. Attenzione a come si compila: i campi "codice ufficio" e "codice atto" restano vuoti, nel campo "tipo" scrivi F e negli "elementi identificativi" inserisci il codice identificativo del contratto. Per approfondire importi e scadenze leggi la guida sull'<a href="/blog/imposta-di-registro-locazione/">imposta di registro sul contratto di locazione</a>.</li>
+<li><strong>Proroga, cessione e risoluzione</strong>. Ogni evento successivo alla prima registrazione va comunicato all'Agenzia entro 30 giorni (per la proroga, dalla scadenza del contratto), e serve il codice identificativo. Nei pagamenti si usano codici tributo diversi: 1504 per le proroghe, 1502 per le cessioni, 1503 per le risoluzioni. Se applichi la cedolare secca, l'imposta di registro non si paga per proroghe e risoluzioni, ma resta dovuta per la cessione del contratto; in ogni caso la comunicazione va presentata. Trovi i passaggi nella guida sulla <a href="/blog/proroga-contratto-locazione-agenzia-entrate/">proroga del contratto all'Agenzia delle Entrate</a>.</li>
+<li><strong>Comunicazione all'inquilino e all'amministratore</strong>. La legge mette a carico del locatore la registrazione entro 30 giorni e la comunicazione documentata dell'avvenuta registrazione, nei 60 giorni successivi, al conduttore (l'inquilino) e all'amministratore di condominio. Mandare una copia della ricevuta è il modo più semplice per dimostrarlo.</li>
+<li><strong>ISEE e detrazioni dell'inquilino</strong>. Nella dichiarazione per l'ISEE (la DSU) l'inquilino deve indicare gli estremi di registrazione: data, serie, numero e codice ufficio. Per la detrazione sull'affitto, invece, il CAF di solito gli chiede copia del contratto registrato. Se te li chiede, fornirli è nel tuo interesse: evita contestazioni e conferma che il contratto è in regola.</li>
+<li><strong>Uno sfratto</strong>. Se l'inquilino smette di pagare, l'avvocato ti chiederà il contratto e la prova della registrazione. Averli in ordine fa risparmiare tempo nella preparazione degli atti.</li>
+</ul>
+
+<h2>Checklist: cosa conservare per ogni contratto</h2>
+<ul>
+<li>Il contratto firmato da entrambe le parti.</li>
+<li>La ricevuta di registrazione con codice ufficio, serie, numero e codice identificativo.</li>
+<li>Le ricevute degli F24 pagati (se paghi l'imposta di registro).</li>
+<li>Le ricevute di proroghe, cessioni o risoluzioni comunicate negli anni.</li>
+<li>La prova di aver comunicato la registrazione all'inquilino e all'amministratore (ad esempio PEC o raccomandata).</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Usare il codice di un contratto vecchio</strong>. Se alla scadenza hai firmato un contratto nuovo, registrato a parte, ha estremi nuovi. Il codice del contratto precedente non va più usato.</li>
+<li><strong>Sbagliare la compilazione dell'F24 ELIDE</strong>. Non va inserito il codice ufficio, né il numero di protocollo telematico: negli "elementi identificativi" va il codice identificativo del contratto.</li>
+<li><strong>Delegare e non conservare nulla</strong>. Anche se ha registrato l'agenzia, la responsabilità resta anche del proprietario. Chiedi sempre copia della ricevuta.</li>
+<li><strong>Dimenticare la proroga perché si è in cedolare secca</strong>. Con la cedolare non paghi l'imposta di registro, ma la proroga va comunque comunicata.</li>
+<li><strong>Scoprire che il contratto non è mai stato registrato</strong>. Se non trovi alcuna traccia, verifica subito: un contratto non registrato espone a sanzioni e crea problemi seri in caso di sfratto. La registrazione tardiva permette in genere di rimediare: leggi la guida sulla <a href="/blog/registrazione-tardiva-contratto-locazione/">registrazione tardiva del contratto di locazione</a>.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino mi chiede codice ufficio, serie e numero per l'ISEE: devo darglieli?</h3>
+<p>Sì, è opportuno. Sono dati del contratto di cui anche lui è parte, e la legge prevede già che il locatore gli comunichi l'avvenuta registrazione. Una copia della ricevuta risolve la richiesta.</p>
+<h3>Ho perso la ricevuta di registrazione: il contratto è ancora valido?</h3>
+<p>Sì. La ricevuta serve a provare la registrazione, non è il contratto stesso. Puoi recuperare i dati dall'area riservata dell'Agenzia delle Entrate o da chi ha eseguito la registrazione.</p>
+<h3>Con la cedolare secca mi serve comunque il codice identificativo?</h3>
+<p>Sì. Non lo userai per pagare l'imposta di registro annuale, ma ti servirà per comunicare proroghe, cessioni e risoluzioni (e per pagare l'imposta sull'eventuale cessione).</p>
+
+<h2>Il quadro normativo in sintesi</h2>
+<p>L'obbligo di registrare i contratti di locazione entro 30 giorni discende dal Testo unico dell'imposta di registro (D.P.R. 131/1986). L'art. 17, "Cessioni, risoluzioni e proroghe anche tacite dei contratti di locazione e di affitto di beni immobili", fissa anche il termine di 30 giorni per versare l'imposta e comunicare cessioni, risoluzioni e proroghe. L'art. 13, comma 1, della Legge 431/1998 ("Patti contrari alla legge") pone a carico del locatore di immobili abitativi la registrazione e la comunicazione documentata all'inquilino e all'amministratore nei 60 giorni successivi. L'art. 1, comma 346, della Legge 311/2004 prevede la nullità dei contratti di locazione non registrati; secondo le Sezioni Unite della Cassazione (sentenza n. 23601/2017) la registrazione tardiva sana il contratto. Per la cedolare secca vale l'art. 3 del D.Lgs. 23/2011.</p>
+
+<h2>Conclusione: cosa fare oggi</h2>
+<p>Prendi i contratti in essere e verifica di avere, per ognuno, la ricevuta con codice ufficio, serie, numero e codice identificativo. Se manca qualcosa, recuperala adesso: è un'operazione di pochi minuti che riduce il rischio di sanzioni e ritardi.</p>
+<p>Se vuoi che un professionista controlli la regolarità dei tuoi contratti o ti aiuti a impostarne uno nuovo, <a href="/servizi/contratti-di-locazione/">Sfratto Sicuro può assisterti nella redazione e nella verifica dei contratti di locazione</a>.</p>
+<p><em>Questo articolo ha carattere informativo e non sostituisce una consulenza legale o fiscale sul caso concreto.</em></p>`,
+  },
+  {
     slug: "cancellazione-anagrafica-irreperibilita-ex-inquilino",
     title: "Cancellazione anagrafica per irreperibilità dell'ex inquilino: guida",
     description: "Cancellazione anagrafica per irreperibilità: come il proprietario fa togliere la residenza all'ex inquilino, documenti, passi e tempi realistici.",
