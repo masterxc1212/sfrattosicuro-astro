@@ -16,6 +16,82 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "prenotazione-udienza-sfratto",
+    title: "Prenotazione udienza sfratto: cos'è e cosa deve sapere il proprietario",
+    description: "Prenotazione udienza sfratto: perché in molti tribunali la data della convalida si prenota online, i 20 giorni liberi e cosa controllare.",
+    excerpt: "Il tuo avvocato deve prenotare l'udienza di sfratto prima di notificare l'atto? Ecco cos'è la prenotazione, perché incide sui tempi della convalida e quali errori evitare.",
+    lead: "In molti tribunali la data dell'udienza di convalida si prenota online prima della notifica. Ecco come funziona e cosa può controllare il proprietario per non perdere tempo.",
+    publishedAt: "2026-11-19",
+    updatedAt: "2026-11-19",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-19. Keyword: prenotazione udienza sfratto, vol 70, KD 0 (secondarie: prenotazione udienza sfratto milano, vol 50; udienza convalida sfratto, vol 40).",
+    html: `<p>Hai deciso di avviare lo sfratto e il tuo avvocato ti dice che prima di notificare l'atto deve <strong>prenotare l'udienza di sfratto</strong> sul portale del tribunale? Non è una formalità burocratica fine a sé stessa. In molti tribunali la <strong>prenotazione udienza sfratto</strong> (cioè la scelta online della data davanti al giudice) decide quando il giudice vedrà la tua pratica, e un errore in questa fase può far slittare la convalida di settimane. In questa guida spieghiamo, in parole semplici, cos'è la prenotazione, perché conta per te proprietario e cosa puoi controllare.</p>
+
+<h2>Perché nello sfratto la data dell'udienza viene decisa prima della notifica</h2>
+<p>Nella causa ordinaria il giudice fissa la data dell'udienza dopo che la causa è stata avviata. Nello sfratto è diverso. L'atto con cui si avvia la procedura, chiamato <strong>intimazione di sfratto con citazione per la convalida</strong>, deve già contenere il giorno e il luogo in cui l'inquilino è chiamato a presentarsi davanti al giudice. Se l'inquilino non si presenta, o si presenta senza opporsi, il giudice convalida lo sfratto. Nello sfratto per morosità l'inquilino può anche chiedere un termine per pagare (il cosiddetto "termine di grazia"): in quel caso l'udienza viene rinviata.</p>
+<p>Quindi la data dell'udienza va scelta <strong>prima</strong> di notificare l'atto all'inquilino. Il problema è pratico: i tribunali hanno un numero limitato di udienze dedicate agli sfratti. Se ogni avvocato scegliesse una data a piacere, alcune udienze sarebbero sovraffollate e altre vuote.</p>
+<p>Per questo molti tribunali hanno introdotto un <strong>sistema di prenotazione online</strong>: l'avvocato del proprietario entra in un portale, vede le date e le fasce orarie libere, ne prenota una e solo dopo scrive quella data nell'atto da notificare. Se vuoi capire meglio cosa contiene l'atto, trovi tutto nella guida sull'<a href="/blog/intimazione-di-sfratto-per-morosita/">intimazione di sfratto per morosità</a>.</p>
+
+<h2>Come funziona la prenotazione dell'udienza di sfratto</h2>
+<p>Non esiste una regola nazionale unica: ogni tribunale organizza il servizio in autonomia, con propri portali e proprie indicazioni. In linea generale, però, il percorso è simile.</p>
+<ul>
+<li><strong>Chi prenota:</strong> di regola l'avvocato del proprietario, dopo essersi registrato al portale indicato dal tribunale (a volte gestito dal tribunale stesso, a volte dall'Ordine degli Avvocati o da un fornitore esterno).</li>
+<li><strong>Cosa si sceglie:</strong> un giorno e una fascia oraria tra quelli ancora disponibili nel calendario delle udienze di convalida.</li>
+<li><strong>Cosa si ottiene:</strong> una conferma della prenotazione, che l'avvocato conserva e, in diversi tribunali, deposita insieme agli atti della causa o esibisce in udienza.</li>
+<li><strong>Quando si fa:</strong> prima della notifica, perché la data prenotata va scritta nell'intimazione.</li>
+</ul>
+<p>Alcuni tribunali fissano anche limiti di prenotazioni per giorno o per avvocato, oppure chiedono di annullare la prenotazione se lo sfratto non va più avanti (per esempio perché l'inquilino ha pagato prima della notifica). Sono regole locali: vanno controllate sul sito del tribunale del luogo in cui si trova l'immobile.</p>
+
+<h3>Prenotazione udienza sfratto a Milano: come funziona al Tribunale</h3>
+<p>Il Tribunale di Milano è uno dei casi più citati. Secondo le indicazioni pubblicate sul sito del tribunale (risalenti al 2020-2021, con il calendario gestito tramite l'Ordine degli Avvocati di Milano), le intimazioni vanno notificate solo dopo aver prenotato una data disponibile nel calendario. L'orario viene assegnato dal sistema e va riportato nell'atto. In udienza ai difensori viene chiesto di dimostrare l'avvenuta prenotazione. Se la prenotazione manca, la causa viene trattata solo dopo tutte quelle regolarmente prenotate e può anche slittare. Per il proprietario significa una cosa sola: <strong>tempo perso</strong>.</p>
+
+<h2>Il collegamento con i termini per l'inquilino</h2>
+<p>La prenotazione non si sceglie solo guardando il calendario. La legge impone che tra il giorno della notifica dell'intimazione e quello dell'udienza passino <strong>almeno 20 giorni "liberi"</strong>, cioè senza contare il giorno della notifica e quello dell'udienza. È il tempo minimo che la legge lascia all'inquilino per organizzarsi, pagare o difendersi. In casi urgenti il giudice, su richiesta del proprietario, può ridurre questo termine fino alla metà, con un decreto da chiedere prima della notifica.</p>
+<p>In pratica l'avvocato deve prenotare una data abbastanza lontana da permettere una notifica regolare, ma non così lontana da allungare inutilmente i tempi. Se la notifica arriva troppo tardi (per esempio perché l'inquilino non viene trovato al primo tentativo) e i 20 giorni non sono rispettati, l'udienza prenotata non basta: bisognerà rinnovare la citazione per una nuova udienza (a seconda del tribunale, fissata dal giudice o da prenotare di nuovo). Su come avviene la notifica e cosa può andare storto trovi una guida dedicata: <a href="/blog/notifica-sfratto-come-funziona/">notifica dello sfratto, come funziona</a>.</p>
+
+<h2>Cosa può controllare il proprietario: la checklist</h2>
+<p>La prenotazione la gestisce l'avvocato, ma tu puoi fare alcune domande semplici per capire se la pratica è impostata bene.</p>
+<ul>
+<li><strong>Il tribunale competente usa la prenotazione online?</strong> Chiedi al tuo avvocato se per quel tribunale la data va prenotata e con quale sistema.</li>
+<li><strong>Qual è la data prenotata?</strong> Fatti comunicare giorno, ora e aula dell'udienza di convalida dello sfratto.</li>
+<li><strong>I tempi della notifica sono compatibili?</strong> Tra notifica e udienza devono restare almeno 20 giorni liberi: chiedi quando partirà la notifica.</li>
+<li><strong>Il tuo materiale è pronto?</strong> Contratto registrato, conteggio dei canoni non pagati, eventuali solleciti: averli subito evita di prenotare una data e poi non riuscire a notificare in tempo.</li>
+<li><strong>Cosa succede se l'inquilino paga prima?</strong> Concorda con l'avvocato come comportarsi, anche per l'eventuale annullamento della prenotazione.</li>
+</ul>
+
+<h2>Gli errori più comuni</h2>
+<ul>
+<li><strong>Notificare senza prenotazione dove è richiesta:</strong> la causa può essere rinviata o messa in coda.</li>
+<li><strong>Prenotare una data troppo vicina:</strong> se la notifica non si perfeziona in tempo, i 20 giorni liberi non sono rispettati: se l'inquilino non compare, il giudice non può convalidare e la citazione andrà rinnovata, con un nuovo rinvio.</li>
+<li><strong>Dimenticare l'iscrizione a ruolo:</strong> la prenotazione non sostituisce il deposito della causa in tribunale. Il codice consente in teoria di presentare gli atti al giudice direttamente in udienza, ma con il deposito telematico molti tribunali chiedono di iscrivere la causa qualche giorno prima (a Milano, ad esempio, almeno due giorni prima). Ne parliamo nella guida sull'<a href="/blog/iscrizione-a-ruolo-sfratto-per-morosita/">iscrizione a ruolo dello sfratto per morosità</a>.</li>
+<li><strong>Dare per scontato che valgano le regole di un altro tribunale:</strong> limiti, fasce orarie e portali cambiano da sede a sede.</li>
+</ul>
+
+<h2>Il quadro normativo, in breve</h2>
+<p>Per chi vuole approfondire, queste sono le norme di riferimento:</p>
+<ul>
+<li><strong>Art. 657 e art. 658 c.p.c.</strong> (codice di procedura civile): permettono al locatore di intimare la licenza o lo sfratto con la contestuale citazione per la convalida, cioè indicando già l'udienza.</li>
+<li><strong>Art. 660 c.p.c.</strong>: regola la forma dell'intimazione e fissa il termine di almeno 20 giorni liberi tra notifica e udienza, riducibile dal giudice fino alla metà nei casi urgenti.</li>
+<li><strong>Art. 663 c.p.c.</strong>: se l'inquilino non compare o non si oppone, il giudice convalida; se risulta o appare probabile che l'inquilino non abbia avuto conoscenza dell'atto, o non abbia potuto comparire per caso fortuito o forza maggiore, il giudice ordina di rinnovare la citazione. Nello sfratto per morosità, inoltre, la convalida richiede che il proprietario (o il suo avvocato) attesti in udienza che la morosità persiste.</li>
+<li><strong>Riforma Cartabia</strong> (D.Lgs. 149/2022) e correttivo (D.Lgs. 164/2024): hanno rivisto il processo civile, anche con ritocchi all'art. 660 c.p.c., ma non hanno introdotto una disciplina nazionale della prenotazione, che resta affidata all'organizzazione dei singoli tribunali.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>La prenotazione dell'udienza di sfratto è obbligatoria per legge?</h3>
+<p>Non c'è una norma nazionale che la imponga. È una regola organizzativa dei singoli tribunali. Dove è prevista, però, ignorarla può far slittare l'udienza, quindi nella pratica va rispettata.</p>
+<h3>Posso prenotare io la data come proprietario?</h3>
+<p>Di norma no: i portali sono pensati per gli avvocati, che devono registrarsi e poi redigere e notificare l'atto con la data prenotata.</p>
+<h3>Quanto tempo passa tra la prenotazione e l'udienza?</h3>
+<p>Dipende dal carico del tribunale: in alcune sedi le prime date libere sono a poche settimane, in altre più lontane. In ogni caso tra notifica e udienza servono almeno 20 giorni liberi.</p>
+<h3>Cosa succede se l'inquilino paga prima dell'udienza?</h3>
+<p>Dipende da quanto paga e da quando. Se salda tutto prima della notifica, lo sfratto di solito non parte e la prenotazione va gestita secondo le regole del tribunale. Se paga dopo la notifica, la situazione cambia: lo spieghiamo in <a href="/blog/sfratto-morosita-inquilino-paga/">cosa succede se l'inquilino paga dopo la notifica</a>.</p>
+
+<h2>In conclusione</h2>
+<p>La prenotazione dell'udienza è un passaggio tecnico, ma incide direttamente sui tempi del tuo sfratto: una data scelta bene, coordinata con la notifica e con l'iscrizione a ruolo, evita rinvii inutili. Se vuoi avviare la procedura con un avvocato che conosce le prassi del tribunale competente, puoi rivolgerti a Sfratto Sicuro: trovi come funziona il nostro servizio nella pagina <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a> o puoi chiedere una prima valutazione dalla pagina <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Le prassi dei tribunali possono cambiare: verifica sempre le indicazioni aggiornate del tribunale competente.</em></p>`,
+  },
+  {
     slug: "codice-ufficio-contratto-locazione",
     title: "Codice ufficio del contratto di locazione: dove trovarlo e a cosa serve",
     description: "Codice ufficio del contratto di locazione, serie, numero e codice identificativo: dove trovarli, come recuperarli e quando servono al proprietario.",
