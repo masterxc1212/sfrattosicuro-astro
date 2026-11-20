@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "riduzione-canone-locazione",
+    title: "Riduzione canone locazione: come concederla e registrarla senza imposte",
+    description: "Riduzione canone locazione: come metterla per iscritto, registrarla gratis con il modello RLI e non pagare tasse sul canone pieno. Guida al proprietario.",
+    excerpt: "L'inquilino ti chiede di abbassare l'affitto? Ecco come concedere una riduzione del canone senza rischi: accordo scritto, registrazione esente da imposte, arretrati, ISTAT e cedolare secca.",
+    lead: "Abbassare l'affitto può convenire, ma solo se lo fai nel modo giusto. Ecco come scrivere e registrare la riduzione del canone per non pagare tasse sul canone vecchio.",
+    publishedAt: "2026-11-20",
+    updatedAt: "2026-11-20",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-20. Keyword: riduzione canone locazione, vol 110, KD 0 (secondarie: riduzione del canone di locazione, vol 110; registrazione riduzione canone locazione, vol 50).",
+    html: `<p>L'inquilino ti chiede di abbassare l'affitto perché ha perso il lavoro, perché il mercato della zona è sceso o perché altrimenti se ne va. Concedere una <strong>riduzione del canone di locazione</strong> può essere una scelta sensata: meglio un inquilino che paga un po' meno ma con regolarità che un appartamento vuoto o uno sfratto. Questa guida spiega al proprietario come mettere per iscritto la <strong>riduzione canone locazione</strong>, come registrarla senza pagare imposte e quali errori evitare per non perdere soldi con il Fisco o, in futuro, davanti al giudice.</p>
+<p>In breve: la riduzione va fatta con un accordo scritto e firmato da entrambi, va comunicata all'Agenzia delle Entrate con il modello RLI (il modulo con cui si registrano i contratti d'affitto e le loro modifiche) e la registrazione è gratuita. Se non la registri, rischi di pagare le tasse sul canone vecchio, più alto di quello che incassi.</p>
+
+<h2>Riduzione canone locazione: cos'è e quando conviene al proprietario</h2>
+<p>La riduzione del canone è un accordo con cui locatore e inquilino abbassano l'affitto di un contratto <strong>ancora in corso</strong>. Il contratto resta lo stesso: cambiano solo l'importo mensile e, se lo decidete, il periodo in cui vale lo sconto.</p>
+<p>Il proprietario <strong>non è obbligato</strong> ad accettare. La legge prevede che l'inquilino possa presentare una richiesta motivata di riduzione, ma non gli dà il diritto di ottenerla: la decisione finale spetta a te. Di solito conviene valutarla quando:</p>
+<ul>
+<li>l'inquilino ha sempre pagato e attraversa una difficoltà temporanea;</li>
+<li>i prezzi degli affitti in zona sono scesi e trovare un nuovo inquilino allo stesso canone sarebbe difficile;</li>
+<li>preferisci evitare mesi di immobile sfitto, le spese di una nuova ricerca e il rischio di uno sfratto.</li>
+</ul>
+<p>Se invece l'inquilino è già indietro con molti pagamenti, la riduzione da sola difficilmente risolve il problema. In quel caso leggi prima la guida su <a href="/blog/inquilino-non-paga-affitto-cosa-fare/">cosa fare se l'inquilino non paga l'affitto</a>.</p>
+
+<h2>Perché va messa per iscritto e registrata</h2>
+<p>Molti proprietari si accordano a voce o con un messaggio. È un errore che può costare caro, per due motivi.</p>
+<h3>1. Il Fisco</h3>
+<p>Per gli affitti di abitazioni, le tasse si pagano sul canone indicato nel contratto, anche se non lo incassi tutto. Se il contratto registrato dice 900 euro e tu ne ricevi 700, per l'Agenzia delle Entrate il tuo reddito resta 900, finché non dimostri la riduzione.</p>
+<p>La Corte di Cassazione ha chiarito che l'accordo di riduzione <strong>non ha un obbligo di registrazione</strong> e resta valido tra le parti anche senza. Però, nei confronti del Fisco, conta la <strong>data certa</strong> dell'accordo, cioè una data che il Fisco non può contestare. La registrazione è il modo più semplice per ottenerla. Senza registrazione la data certa si può provare anche in altri modi, ma solo con fatti oggettivi e non controllabili dalle parti: tocca al proprietario dimostrarli e la valutazione spetta al giudice, caso per caso. Non sempre, ad esempio, bastano i bonifici del canone ridotto.</p>
+<p><strong>Attenzione:</strong> senza questa prova, la riduzione vale per il Fisco solo dalla data di registrazione e <strong>non per il passato</strong>. Per i mesi precedenti puoi essere tassato sul canone pieno.</p>
+<h3>2. Un eventuale sfratto</h3>
+<p>Se un domani l'inquilino smette di pagare, dovrai indicare con precisione quanto ti deve. Un accordo scritto e chiaro evita contestazioni su quale fosse il canone dovuto mese per mese e rende più lineare un'eventuale procedura.</p>
+
+<h2>Come registrare la riduzione del canone senza pagare imposte</h2>
+<p>La buona notizia è che la <strong>registrazione della riduzione del canone</strong> è esente sia dall'imposta di registro sia dall'imposta di bollo. Non paghi nulla, purché l'atto contenga <strong>solo</strong> la riduzione dell'affitto. Se nello stesso documento inserisci altre modifiche (ad esempio una proroga o un cambio di inquilino), l'esenzione può non applicarsi a tutto l'atto: meglio tenere le cose separate.</p>
+<p>I passi pratici:</p>
+<ul>
+<li><strong>Prepara l'accordo scritto</strong> con: dati delle parti, estremi di registrazione del contratto originario (codice ufficio, serie e numero), nuovo importo, data da cui decorre, durata della riduzione.</li>
+<li><strong>Firmatelo entrambi</strong> e conservane una copia ciascuno.</li>
+<li><strong>Comunicalo all'Agenzia delle Entrate</strong> con il modello RLI, online dai servizi telematici dell'Agenzia oppure tramite un intermediario abilitato (CAF, cioè centro di assistenza fiscale, commercialista, agenzia immobiliare) o in ufficio.</li>
+<li><strong>Conserva la ricevuta</strong> insieme al contratto: attesta la data della registrazione, da cui la riduzione è opponibile al Fisco.</li>
+</ul>
+<p>La legge non fissa un termine per comunicarla, ma conviene farlo <strong>subito</strong>, idealmente prima che decorra il primo mese ridotto: dalla data di registrazione la riduzione è opponibile al Fisco, così il risparmio fiscale parte subito. Se non hai a portata di mano gli estremi del contratto, la guida sul <a href="/blog/codice-ufficio-contratto-locazione/">codice ufficio del contratto di locazione</a> spiega dove trovarli.</p>
+
+<h2>Cosa scrivere nell'accordo: la checklist del proprietario</h2>
+<ul>
+<li><strong>Riduzione temporanea o definitiva.</strong> Se è temporanea, scrivi la data di fine e che dopo torna il canone originario, così non serve un nuovo accordo per tornare all'importo pieno.</li>
+<li><strong>Arretrati.</strong> Chiarisci che gli eventuali canoni già scaduti e non pagati restano dovuti per intero. Uno sconto sul futuro non deve trasformarsi in una rinuncia involontaria a quanto ti spetta.</li>
+<li><strong>Aggiornamento ISTAT.</strong> Indica se e da quando l'aggiornamento annuale si calcola sul canone ridotto o su quello originario. Su questo trovi indicazioni nella guida all'<a href="/blog/adeguamento-istat-canone-locazione/">adeguamento ISTAT del canone</a>.</li>
+<li><strong>Spese condominiali e altri oneri.</strong> Precisa che restano invariati, se è così.</li>
+<li><strong>Clausola sui ritardi.</strong> Si può prevedere che, se l'inquilino non paga puntualmente il canone ridotto, la riduzione venga meno. È una clausola da scrivere con cura, meglio con l'aiuto di un legale.</li>
+</ul>
+
+<h2>Cedolare secca, canone concordato e IMU</h2>
+<p>Se hai scelto la <strong>cedolare secca</strong>, la riduzione non la fa venire meno: l'imposta sostitutiva si calcola sul canone ridotto, dalla data in cui la riduzione è opponibile al Fisco. Se il contratto è a <strong>canone concordato</strong>, fai verificare che il nuovo importo resti coerente con l'accordo territoriale del tuo Comune, per non mettere a rischio le agevolazioni.</p>
+<p>Sul fronte IMU (l'imposta municipale sugli immobili), la legge consente ai Comuni di riconoscere un'aliquota ridotta quando la trattativa si chiude con un canone più basso. Non è automatico: dipende dalle delibere del tuo Comune, quindi conviene chiedere all'ufficio tributi.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Accordo solo a voce o via chat:</strong> rischi di pagare le tasse sul canone pieno.</li>
+<li><strong>Registrazione tardiva:</strong> la riduzione, di regola, non vale ai fini fiscali per i mesi precedenti.</li>
+<li><strong>Atto "misto":</strong> riduzione e altre modifiche nello stesso documento possono far perdere l'esenzione.</li>
+<li><strong>Nessuna data di fine:</strong> una riduzione pensata come temporanea diventa, di fatto, definitiva.</li>
+<li><strong>Sconto che cancella gli arretrati:</strong> se non scrivi nulla, l'inquilino potrebbe sostenere che il debito pregresso sia stato "assorbito" dall'accordo.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Sono obbligato ad accettare la richiesta di riduzione dell'inquilino?</h3>
+<p>No. L'inquilino può chiederla con una richiesta motivata, ma non ha diritto a ottenerla: il proprietario è libero di accettare, rifiutare o fare una controproposta.</p>
+<h3>Quanto costa registrare la riduzione del canone?</h3>
+<p>Nulla in imposte: l'atto che prevede solo la riduzione è esente da imposta di registro e di bollo. Se ti affidi a un intermediario potresti pagare solo il suo compenso.</p>
+<h3>Posso riportare l'affitto all'importo originario più avanti?</h3>
+<p>Sì, se l'accordo lo prevede (riduzione con scadenza). Se la riduzione è definitiva, per tornare al canone pieno serve il consenso dell'inquilino. Per gli aumenti in generale vedi la guida sull'<a href="/blog/aumento-canone-locazione/">aumento del canone di locazione</a>.</p>
+<h3>Se l'inquilino non paga nemmeno il canone ridotto, posso sfrattarlo?</h3>
+<p>Sì: il mancato pagamento del canone, anche ridotto, è morosità. In quel caso è importante avere un accordo chiaro su importi e scadenze.</p>
+
+<h2>Conclusione: uno sconto sì, ma documentato</h2>
+<p>Ridurre l'affitto può tutelare il tuo reddito nel lungo periodo, a patto di farlo bene: accordo scritto, contenuto chiaro su durata e arretrati, registrazione immediata e gratuita con il modello RLI. Se vuoi un accordo su misura o devi valutare se la riduzione è davvero la strada giusta rispetto ad altre soluzioni, il team di Sfratto Sicuro può aiutarti: scopri il servizio di <a href="/servizi/contratti-di-locazione/">assistenza sui contratti di locazione</a> o quello di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><strong>Riferimenti normativi:</strong> art. 19 D.L. 12 settembre 2014, n. 133, convertito dalla L. 11 novembre 2014, n. 164 (Esenzione da ogni imposta degli accordi di riduzione dei canoni di locazione), trasfuso nell'art. 179 del D.Lgs. 1 agosto 2025, n. 123, Testo unico dell'imposta di registro (Accordi di riduzione dei canoni di locazione), che si applicherà dal 1° gennaio 2027; art. 2704 c.c. (Data della scrittura privata nei confronti dei terzi); art. 26 D.P.R. 917/1986, TUIR (Imputazione dei redditi fondiari); art. 3 D.Lgs. 23/2011 (Cedolare secca sugli affitti). Giurisprudenza: Cass. ord. n. 7644/2022; Cass. ord. n. 34533/2024; Cass. ord. n. 21394/2026.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale sul caso specifico.</em></p>`,
+  },
+  {
     slug: "prenotazione-udienza-sfratto",
     title: "Prenotazione udienza sfratto: cos'è e cosa deve sapere il proprietario",
     description: "Prenotazione udienza sfratto: perché in molti tribunali la data della convalida si prenota online, i 20 giorni liberi e cosa controllare.",
