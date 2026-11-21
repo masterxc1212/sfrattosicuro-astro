@@ -16,6 +16,87 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-familiari-conviventi-occupanti",
+    title: "Sfratto e familiari conviventi: vale anche per chi vive con l'inquilino?",
+    description: "Sfratto e familiari conviventi: contro chi va fatto, quando vale per coniuge, figli, partner e subinquilini, cosa controllare prima. Guida al proprietario.",
+    excerpt: "In casa non vive solo l'inquilino? Ecco contro chi va fatto lo sfratto, quando il provvedimento vale anche per familiari, ospiti e subinquilini e i casi (separazione, morte, contratti cointestati) in cui serve più attenzione.",
+    lead: "Moglie, figli, compagno o subinquilino: lo sfratto si fa contro chi ha firmato il contratto, ma alcuni occupanti possono averne preso il posto. Ecco cosa controllare prima di partire.",
+    publishedAt: "2026-11-21",
+    updatedAt: "2026-11-21",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-21. Keyword: sfratto familiari conviventi, vol n.d. (long-tail, dati DataForSEO non disponibili), KD n.d.",
+    html: `<p>Hai deciso di avviare lo sfratto, ma in casa non vive solo l'inquilino che ha firmato il contratto: ci sono la moglie, i figli ormai grandi, un compagno, magari una persona a cui ha subaffittato una stanza. La domanda è inevitabile: <strong>lo sfratto vale anche per i familiari conviventi e per gli altri occupanti</strong>, oppure devi fare una causa per ciascuno? Questa guida spiega al proprietario contro chi va fatto lo sfratto, chi è coinvolto automaticamente e in quali casi, invece, serve fare attenzione prima di partire.</p>
+<p>In breve: di regola lo sfratto si fa contro chi ha firmato il contratto (il conduttore, cioè l'inquilino) e il provvedimento del giudice si può far valere anche contro chi abita in casa grazie a lui, come familiari, ospiti e subinquilini. Il problema nasce quando un occupante ha un titolo proprio, che non dipende dall'inquilino: lì l'errore sul destinatario può costarti mesi.</p>
+
+<h2>Sfratto familiari conviventi: la regola di base</h2>
+<p>Il contratto di locazione lega il proprietario (il locatore) a chi lo ha firmato. Le persone che vivono con l'inquilino, nella maggior parte dei casi, non hanno un rapporto diretto con te: abitano lì perché l'inquilino le ospita o perché fanno parte della sua famiglia. Per questo motivo l'atto di sfratto (l'intimazione) va notificato al conduttore, non a ciascun occupante.</p>
+<p>Quando il giudice convalida lo sfratto, il provvedimento ordina di liberare l'immobile. Secondo l'orientamento consolidato della giurisprudenza, l'ordine di rilascio si può eseguire anche nei confronti di chi occupa la casa senza un titolo autonomo, cioè in base a un rapporto che dipende da quello dell'inquilino. In pratica, il giorno dell'accesso l'ufficiale giudiziario libera l'immobile da tutti coloro che lo abitano "per conto" dell'inquilino: coniuge, figli, partner, parenti, ospiti.</p>
+
+<h3>Chi è normalmente coinvolto dallo sfratto</h3>
+<ul>
+<li><strong>Familiari conviventi</strong>: coniuge, figli (anche maggiorenni), genitori o altri parenti che vivono con l'inquilino.</li>
+<li><strong>Partner e conviventi di fatto</strong>, finché l'inquilino è in vita e il rapporto con lui è in corso.</li>
+<li><strong>Ospiti</strong>, anche se si trovano in casa da molto tempo.</li>
+<li><strong>Subinquilini</strong>: il codice civile prevede espressamente che la sentenza tra locatore e conduttore abbia effetto anche contro il subconduttore, cioè chi ha preso in affitto una parte o tutta la casa dall'inquilino (art. 1595 del codice civile).</li>
+</ul>
+<p>Sulle regole del subaffitto c'è una guida dedicata alla <a href="/blog/sublocazione/">sublocazione</a>.</p>
+
+<h2>Quando l'occupante ha un titolo proprio: i casi da controllare</h2>
+<p>Ci sono situazioni in cui chi vive in casa non è più un semplice "ospite" dell'inquilino, ma ha preso il suo posto nel contratto o ha un diritto proprio. Qui bisogna ragionare prima di notificare.</p>
+
+<h3>1. L'inquilino si è separato e in casa è rimasto l'ex coniuge</h3>
+<p>È il caso più frequente. La legge sull'equo canone, ancora in vigore su questo punto, stabilisce che in caso di separazione giudiziale o di divorzio il contratto passa all'altro coniuge se il giudice gli ha attribuito il diritto di abitare nella casa familiare. In caso di separazione consensuale (o di nullità del matrimonio) il contratto passa all'altro coniuge se i due si sono accordati così (art. 6 della legge 392 del 1978). La Corte costituzionale, con la sentenza n. 404 del 1988, ha esteso questa regola al convivente non sposato quando cessa la convivenza e in casa restano figli della coppia.</p>
+<p>Conseguenza pratica: se il marito che aveva firmato il contratto se n'è andato e la casa è stata assegnata alla moglie con i figli, l'inquilina ora potrebbe essere lei. Uno sfratto notificato solo all'ex marito rischia di essere inutile o contestato.</p>
+
+<h3>2. L'inquilino è morto e in casa vive un familiare</h3>
+<p>In caso di morte del conduttore, nel contratto possono subentrare il coniuge, gli eredi, i parenti e affini che convivevano abitualmente con lui e, a determinate condizioni, il convivente di fatto. Se uno di loro è subentrato, lo sfratto va rivolto a lui. Abbiamo spiegato chi ha diritto a restare nella guida su <a href="/blog/morte-inquilino-contratto-affitto/">morte dell'inquilino e contratto d'affitto</a>.</p>
+
+<h3>3. L'occupante ha un accordo diretto con te o con un precedente proprietario</h3>
+<p>Se la persona che abita in casa ha un contratto o un altro titolo che deriva da te (o da chi ti ha venduto l'immobile) e non dall'inquilino, il provvedimento ottenuto contro l'inquilino non basta contro di lei. In questi casi il terzo può contestare davanti al giudice l'esecuzione nei suoi confronti (con l'opposizione all'esecuzione, art. 615 c.p.c., o con l'opposizione di terzo contro il provvedimento, art. 404 c.p.c.) e il giudice può sospendere il rilascio. La sua posizione va valutata a parte.</p>
+
+<h3>4. Più inquilini hanno firmato il contratto</h3>
+<p>Se il contratto è cointestato, cioè firmato da due o più conduttori, l'intimazione va notificata a tutti i firmatari. Dimenticarne uno può complicare la convalida.</p>
+
+<h2>Cosa controllare prima di avviare lo sfratto: la checklist</h2>
+<ul>
+<li><strong>Chi ha firmato il contratto</strong>: rileggi il contratto registrato e gli eventuali subentri comunicati all'Agenzia delle Entrate.</li>
+<li><strong>Chi vive davvero in casa</strong>: se l'inquilino è irreperibile o non risponde, un certificato di residenza o di stato di famiglia (che il tuo avvocato può richiedere) aiuta a capire chi abita all'indirizzo.</li>
+<li><strong>Separazioni e divorzi</strong>: se sai che l'inquilino si è separato, chiedi per iscritto chi è rimasto in casa e se esiste un provvedimento del giudice o un accordo sull'assegnazione.</li>
+<li><strong>Subaffitti</strong>: verifica se il contratto vietava o permetteva la sublocazione e se ti è mai stata comunicata.</li>
+<li><strong>Chi ti paga l'affitto</strong>: se i bonifici arrivano da una persona diversa dall'inquilino, annotalo e parlane con l'avvocato prima di agire.</li>
+<li><strong>Persone fragili</strong>: la presenza di minori, anziani o persone con disabilità non impedisce lo sfratto, ma incide sui tempi dell'esecuzione. Ne parliamo nella guida sullo <a href="/blog/sfratto-con-figli-minori/">sfratto con figli minori</a>.</li>
+</ul>
+
+<h2>Gli errori più comuni</h2>
+<ul>
+<li><strong>Intimare lo sfratto solo all'ex inquilino</strong> che se n'è andato, quando nel contratto è subentrato il coniuge rimasto in casa.</li>
+<li><strong>Accettare a lungo il pagamento da un terzo</strong> senza chiarire a che titolo paga: in seguito quella persona potrebbe sostenere di avere un rapporto diretto con te.</li>
+<li><strong>Trattare con gli occupanti "per le vie brevi"</strong>, promettendo tempi o accordi a voce che poi vengono usati contro di te.</li>
+<li><strong>Cambiare la serratura o staccare le utenze</strong> per far uscire familiari o ospiti: è sempre vietato e ti espone a conseguenze anche penali. Il rilascio si ottiene solo con l'ufficiale giudiziario.</li>
+<li><strong>Dimenticare un cointestatario</strong> del contratto nell'atto di sfratto.</li>
+</ul>
+
+<h2>Cosa succede il giorno del rilascio</h2>
+<p>Ottenuto il provvedimento del giudice, si notificano il titolo esecutivo e l'atto di precetto e poi il preavviso di rilascio. Il giorno fissato l'ufficiale giudiziario si presenta all'immobile e ti immette nel possesso, se necessario con l'aiuto della forza pubblica (artt. 608 e 513 del codice di procedura civile). Se trova in casa familiari, ospiti o subinquilini privi di un titolo autonomo, il rilascio riguarda anche loro. Il percorso è spiegato nella guida allo <a href="/blog/sfratto-con-ufficiale-giudiziario/">sfratto con l'ufficiale giudiziario</a>.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Devo fare lo sfratto anche ai figli maggiorenni dell'inquilino?</h3>
+<p>No, di regola no. I figli che vivono con il genitore inquilino occupano la casa in base al suo contratto: lo sfratto si fa contro il genitore e il provvedimento vale anche per loro al momento del rilascio.</p>
+<h3>La compagna dell'inquilino può bloccare lo sfratto?</h3>
+<p>Finché l'inquilino è in vita e la convivenza continua, la compagna non ha un titolo autonomo. Diverso è il caso in cui l'inquilino muoia o la coppia si separi con figli e lei resti in casa: allora può essere subentrata nel contratto.</p>
+<h3>In casa c'è un subinquilino che non conosco: devo notificare anche a lui?</h3>
+<p>Il codice civile prevede che la sentenza tra locatore e inquilino abbia effetto anche contro il subconduttore. In casi dubbi, però, è prudente valutare con l'avvocato se coinvolgerlo fin dall'inizio, per evitare contestazioni nella fase di esecuzione.</p>
+<h3>E se l'inquilino se n'è andato e in casa è rimasto solo un estraneo?</h3>
+<p>Dipende da come quella persona è entrata in casa. Se è lì senza alcun titolo, si valuta una procedura diversa: ne parliamo nella guida sul <a href="/blog/rilascio-immobile-occupato-senza-titolo/">rilascio dell'immobile occupato senza titolo</a>.</p>
+
+<h2>In conclusione</h2>
+<p>Nella maggior parte dei casi lo sfratto si fa contro l'inquilino che ha firmato il contratto e libera la casa anche da familiari, ospiti e subinquilini. Il punto delicato è riconoscere per tempo chi ha preso il posto dell'inquilino o ha un diritto proprio: separazioni, morte del conduttore, accordi diretti e contratti cointestati.</p>
+<p>Se hai dubbi su chi abita davvero nel tuo immobile e contro chi agire, Sfratto Sicuro può esaminare il tuo caso: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a> o quello dedicato allo <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
+<p><strong>Riferimenti normativi:</strong> art. 1595 codice civile (Rapporti tra il locatore e il subconduttore); art. 6 L. 27 luglio 1978, n. 392 (Successione nel contratto); Corte costituzionale, sentenza n. 404 del 1988; artt. 657 e 658 c.p.c. (Intimazione di licenza e di sfratto per finita locazione; Intimazione di sfratto per morosità); art. 608 c.p.c. (Modo del rilascio); art. 615 c.p.c. (Forma dell'opposizione); art. 404 c.p.c. (Casi di opposizione di terzo); procedimento di convalida come modificato dalla riforma Cartabia (D.Lgs. 149/2022).</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso specifico.</em></p>`,
+  },
+  {
     slug: "riduzione-canone-locazione",
     title: "Riduzione canone locazione: come concederla e registrarla senza imposte",
     description: "Riduzione canone locazione: come metterla per iscritto, registrarla gratis con il modello RLI e non pagare tasse sul canone pieno. Guida al proprietario.",
