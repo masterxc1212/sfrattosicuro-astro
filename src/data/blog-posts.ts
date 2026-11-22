@@ -16,6 +16,88 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "annuncio-per-affittare-casa",
+    title: "Annuncio per affittare casa: cosa scrivere e gli obblighi del proprietario",
+    description: "Annuncio per affittare casa: cosa scrivere, classe energetica obbligatoria, errori da evitare e come gestire visite e candidati. Guida per il proprietario.",
+    excerpt: "Vuoi mettere in affitto un appartamento? Ecco cosa scrivere nell'annuncio, perché la classe energetica è obbligatoria, quali frasi evitare (requisiti discriminatori, depositi oltre il limite) e come selezionare i candidati prima di consegnare le chiavi.",
+    lead: "Un annuncio chiaro ti porta gli inquilini giusti e ti evita sanzioni e contestazioni. Ecco la checklist del proprietario, dalle informazioni obbligatorie alla gestione delle visite.",
+    publishedAt: "2026-11-22",
+    updatedAt: "2026-11-22",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-22. Keyword: annuncio per affittare casa, vol 1000, KD 3.",
+    html: `<p>Hai un appartamento libero e vuoi trovare un inquilino. Il primo passo è quasi sempre lo stesso: scrivere un <strong>annuncio per affittare casa</strong>. Sembra una formalità, ma non lo è. Un annuncio fatto bene ti porta candidati in linea con quello che offri e ti fa perdere meno tempo in visite inutili. Un annuncio fatto male può costarti una sanzione, attirare le persone sbagliate o creare aspettative che poi ti ritrovi nel contratto.</p>
+<p>Questa guida è pensata per il proprietario che affitta casa con un contratto di locazione abitativa ordinario (non per gli affitti turistici di pochi giorni). Vedrai cosa scrivere, quali informazioni sono obbligatorie per legge, cosa evitare e come gestire i contatti che arrivano.</p>
+
+<h2>Annuncio per affittare casa: perché conta più di quanto pensi</h2>
+<p>L'annuncio è la prima selezione degli inquilini. Chi legge un testo chiaro su canone, spese, tipo di contratto e garanzie richieste si autoseleziona: se non può permettersi l'affitto o non ha le garanzie, di solito non chiama. Chi invece legge un annuncio vago ("bilocale luminoso, info in privato") ti contatterà comunque, e scoprirai solo alla visita che non c'è compatibilità.</p>
+<p>C'è poi un aspetto meno evidente: quello che scrivi nell'annuncio è ciò che hai <strong>promesso</strong>. Meglio che annuncio e contratto dicano la stessa cosa.</p>
+
+<h2>Cosa scrivere: le informazioni che non devono mancare</h2>
+<p>Un buon annuncio risponde in anticipo alle domande che ti farebbero tutti. Ecco la lista di controllo.</p>
+<ul>
+<li><strong>Tipologia e dimensioni:</strong> numero di locali, metri quadri, piano, presenza di ascensore, balconi, cantina o box.</li>
+<li><strong>Zona:</strong> quartiere e servizi vicini (mezzi pubblici, scuole, negozi). Non serve l'indirizzo preciso: puoi darlo solo a chi fissa la visita.</li>
+<li><strong>Canone mensile:</strong> l'importo chiaro. Gli annunci "prezzo su richiesta" generano molti contatti inutili.</li>
+<li><strong>Spese condominiali e utenze:</strong> l'importo indicativo delle spese a carico dell'inquilino e se le utenze vanno intestate a lui.</li>
+<li><strong>Tipo di contratto:</strong> per esempio contratto a canone libero 4+4 (quattro anni rinnovabili di altri quattro), a canone concordato 3+2 o transitorio. Il tipo di contratto cambia durata, canone e tassazione: dichiararlo subito evita equivoci.</li>
+<li><strong>Arredamento:</strong> arredato, parzialmente arredato o vuoto. Se è arredato, prepara un inventario da allegare al contratto.</li>
+<li><strong>Disponibilità:</strong> da quando è libero l'immobile.</li>
+<li><strong>Garanzie richieste:</strong> deposito cauzionale e, se le chiedi, altre garanzie come la fideiussione (l'impegno di una banca o di un terzo a pagare al posto dell'inquilino).</li>
+<li><strong>Classe energetica:</strong> è un'informazione obbligatoria, come vediamo tra poco.</li>
+</ul>
+<h3>Le foto e la descrizione</h3>
+<p>Le foto devono mostrare la casa com'è davvero, con una buona luce e gli ambienti in ordine. Evita foto vecchie o di un arredamento che non c'è più: chi arriva alla visita e trova una casa diversa perde fiducia, e tu perdi tempo. Nella descrizione bastano poche righe concrete: cosa c'è, in che condizioni, cosa è stato rinnovato di recente.</p>
+
+<h2>La classe energetica nell'annuncio è obbligatoria</h2>
+<p>Molti proprietari lo ignorano: quando metti in affitto un immobile, l'annuncio deve indicare i dati dell'<strong>APE</strong>, l'Attestato di Prestazione Energetica, cioè il documento che misura quanto consuma la casa. In particolare l'annuncio deve riportare gli <strong>indici di prestazione energetica</strong> e la <strong>classe energetica</strong> dell'immobile. Vale per gli annunci diffusi con qualsiasi mezzo commerciale: portali online, cartello in vetrina dell'agenzia, inserzione sui giornali. L'obbligo non riguarda le abitazioni affittate per meno di quattro mesi all'anno.</p>
+<p>La conseguenza pratica è semplice: <strong>procurati l'APE prima di pubblicare</strong>, non dopo aver trovato l'inquilino. Se l'annuncio non riporta questi dati, la legge prevede una sanzione amministrativa da 500 a 3.000 euro a carico del responsabile dell'annuncio. Se ti affidi a un'agenzia, controlla comunque che il dato compaia. Per sapere quando serve l'attestato, quanto dura e cosa scrivere nel contratto, puoi leggere la nostra guida su <a href="/blog/ape-contratto-locazione/">APE e contratto di locazione</a>.</p>
+
+<h2>Cosa non scrivere: gli errori che espongono il proprietario</h2>
+<h3>Requisiti discriminatori</h3>
+<p>È giusto valutare l'affidabilità economica di chi vuole affittare la tua casa. Non puoi però escludere i candidati per nazionalità, origine etnica o religione. Frasi come "no stranieri" o "solo italiani" sono discriminatorie: la legge considera discriminazione anche il rifiuto di dare in affitto un alloggio per questi motivi, e la persona esclusa può rivolgersi al giudice civile chiedendo la cessazione del comportamento e il risarcimento del danno. Concentrati su criteri oggettivi: reddito, tipo di lavoro, garanzie.</p>
+<h3>Promesse che non puoi mantenere</h3>
+<p>Non scrivere "spese incluse" se non lo sono, né "contratto con cedolare secca" (la tassazione fissa sostitutiva dell'IRPEF) se non hai ancora deciso il regime fiscale. Non indicare una durata diversa da quella prevista dal tipo di contratto che userai. Ogni promessa dell'annuncio deve trovare riscontro nel contratto.</p>
+<h3>Un deposito cauzionale oltre il limite</h3>
+<p>Per le locazioni abitative il deposito cauzionale non può superare <strong>tre mensilità</strong> del canone. Chiedere nell'annuncio "cinque mesi di deposito" è un errore: la clausola che supera il limite non vale per la parte eccedente. Sul tema trovi tutti i dettagli nella guida al <a href="/blog/deposito-cauzionale-affitto/">deposito cauzionale nell'affitto</a>.</p>
+<h3>Dati personali inutili</h3>
+<p>Non chiedere già nell'annuncio di inviare copie di documenti, buste paga o dichiarazioni dei redditi a chiunque scriva. Raccogli questi documenti solo dai candidati seri, dopo la visita, e conservali con cura: la normativa sulla privacy chiede di trattare solo i dati necessari e per il tempo necessario.</p>
+
+<h2>Dopo l'annuncio: come gestire contatti e visite</h2>
+<p>Pubblicato l'annuncio, inizia la parte più importante: scegliere bene. Ecco un metodo semplice.</p>
+<ul>
+<li><strong>Prima telefonata breve:</strong> chiedi chi abiterà in casa, che lavoro fa, da quando vorrebbe entrare e se ha già letto canone e spese. Bastano cinque minuti per capire se ha senso fissare la visita.</li>
+<li><strong>Visite concentrate:</strong> organizza più visite nella stessa fascia oraria, così risparmi tempo.</li>
+<li><strong>Documenti dopo la visita:</strong> a chi è davvero interessato chiedi documento d'identità, codice fiscale e prova del reddito (buste paga recenti, contratto di lavoro o dichiarazione dei redditi).</li>
+<li><strong>Nessuna chiave prima della firma:</strong> consegna le chiavi solo dopo la firma del contratto e il versamento del deposito con un mezzo tracciabile.</li>
+<li><strong>Registrazione nei tempi:</strong> il contratto va registrato all'Agenzia delle Entrate entro 30 giorni dalla firma (o dalla data di decorrenza, se anteriore).</li>
+</ul>
+<p>Attenzione anche alle truffe: diffida di chi propone di pagare senza vedere la casa, di chi invia un bonifico più alto del dovuto chiedendo di restituire la differenza o di chi ha fretta di entrare senza firmare nulla.</p>
+
+<h2>Le norme di riferimento, in breve</h2>
+<ul>
+<li><strong>Art. 6, comma 8, D.Lgs. 192/2005</strong> (Attestato di prestazione energetica, rilascio e affissione): indici e classe energetica negli annunci di vendita e locazione; <strong>art. 15, comma 9</strong> (Sanzioni): sanzione da 500 a 3.000 euro.</li>
+<li><strong>Art. 11 L. 392/1978</strong> (deposito cauzionale): limite di tre mensilità.</li>
+<li><strong>Art. 2 L. 431/1998</strong> (Modalità di stipula e di rinnovo dei contratti di locazione): contratti 4+4 e a canone concordato; <strong>art. 5</strong> (Contratti di locazione di natura transitoria).</li>
+<li><strong>Art. 43 D.Lgs. 286/1998</strong> (Testo unico sull'immigrazione: discriminazione per motivi razziali, etnici, nazionali o religiosi) e <strong>D.Lgs. 215/2003</strong> (parità di trattamento per razza e origine etnica): divieto di discriminazioni, anche nell'accesso all'alloggio.</li>
+<li><strong>Art. 5 Regolamento UE 2016/679</strong> (GDPR, il regolamento europeo sulla privacy; Principi applicabili al trattamento di dati personali).</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Devo indicare il prezzo nell'annuncio per affittare casa?</h3>
+<p>Non c'è un obbligo di legge, ma è fortemente consigliato. Un canone chiaro filtra i contatti e ti fa risparmiare visite inutili. Indica anche le spese condominiali a carico dell'inquilino.</p>
+<h3>Se non ho ancora l'APE posso pubblicare l'annuncio?</h3>
+<p>No. L'annuncio deve riportare la classe energetica e gli indici di prestazione energetica: senza APE non puoi indicarli e rischi la sanzione. Fai redigere l'attestato da un tecnico abilitato prima di pubblicare.</p>
+<h3>Posso scrivere che non accetto animali o fumatori?</h3>
+<p>Sì, puoi indicare le tue preferenze sull'uso della casa, ad esempio sugli animali, purché le riporti poi in modo chiaro nel contratto. Quello che non puoi fare è escludere persone per nazionalità, origine o religione.</p>
+<h3>L'annuncio vale come proposta vincolante?</h3>
+<p>Di regola l'annuncio è un invito a farsi avanti, non un contratto. Il rapporto nasce con la firma del contratto, che per le locazioni abitative deve essere scritto (art. 1, comma 4, L. 431/1998). Per questo è importante che il contratto riporti per iscritto tutte le condizioni concordate.</p>
+
+<h2>Conclusione: prima l'annuncio giusto, poi il contratto giusto</h2>
+<p>Un annuncio chiaro, completo e corretto ti fa trovare prima l'inquilino giusto e ti evita sanzioni e contestazioni. Prepara l'APE, scegli il tipo di contratto, indica canone, spese e garanzie, evita requisiti discriminatori e verifica con cura i candidati prima di consegnare le chiavi. Il passo successivo è un contratto scritto bene, che rispecchi quello che hai promesso: se vuoi farlo preparare o controllare da un avvocato, Sfratto Sicuro offre assistenza dedicata ai proprietari per i <a href="/servizi/contratti-di-locazione/">contratti di locazione</a>.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul caso specifico.</em></p>`,
+  },
+  {
     slug: "sfratto-familiari-conviventi-occupanti",
     title: "Sfratto e familiari conviventi: vale anche per chi vive con l'inquilino?",
     description: "Sfratto e familiari conviventi: contro chi va fatto, quando vale per coniuge, figli, partner e subinquilini, cosa controllare prima. Guida al proprietario.",
