@@ -16,6 +16,84 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-contratto-non-registrato",
+    title: "Sfratto con contratto non registrato: cosa può fare il proprietario",
+    description: "Sfratto con contratto non registrato: rischi per il proprietario, effetti della registrazione tardiva e i passi da fare prima di avviare lo sfratto.",
+    excerpt: "Il contratto d'affitto non è mai stato registrato e l'inquilino non paga? Ecco perché lo sfratto rischia di fermarsi e come rimediare con la registrazione tardiva prima di andare in tribunale.",
+    lead: "Un contratto non registrato non ti toglie il diritto di riavere casa, ma rende lo sfratto fragile. Ecco l'ordine giusto: verifica, registra, comunica, documenta e solo dopo avvia lo sfratto.",
+    publishedAt: "2026-11-23",
+    updatedAt: "2026-11-23",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-23. Keyword: sfratto contratto non registrato, vol 50, KD 0.",
+    html: `<p>Hai un inquilino che non paga, vuoi avviare lo sfratto e ti accorgi che il contratto non è mai stato registrato all'Agenzia delle Entrate? È una situazione più comune di quanto si pensi. Questa guida è per il proprietario che si trova in questo caso: spiega <strong>se lo sfratto con contratto non registrato è possibile</strong>, quali rischi corri e quali passi fare, nell'ordine giusto, prima di rivolgerti al tribunale.</p>
+<p>La risposta breve: un contratto non registrato è un problema serio, ma quasi sempre si può rimediare. L'errore da evitare è partire con lo sfratto senza aver prima sistemato la registrazione.</p>
+
+<h2>Perché la registrazione conta così tanto</h2>
+<p>Il contratto di locazione va registrato entro 30 giorni dalla stipula (o dalla data di inizio, se è precedente). La legge mette questo obbligo a carico del <strong>locatore</strong> (cioè il proprietario che dà in affitto) e gli chiede anche di comunicare, nei 60 giorni successivi e in modo documentato, l'avvenuta registrazione all'inquilino e all'amministratore di condominio.</p>
+<p>La conseguenza più pesante della mancata registrazione non è solo fiscale. Una norma della legge finanziaria 2005 stabilisce che i contratti di locazione <strong>sono nulli se, ricorrendone i presupposti, non sono registrati</strong>. "Nullo" significa che, finché il problema resta, il contratto non produce i suoi effetti normali.</p>
+<p>Per lo sfratto questo pesa molto. Lo sfratto per morosità segue una procedura veloce (la "convalida di sfratto") che parte da un presupposto: tra te e l'inquilino esiste un contratto di locazione valido. Se l'inquilino contesta proprio la validità del contratto, la strada si complica.</p>
+
+<h2>Sfratto con contratto non registrato: cosa dicono i giudici</h2>
+<p>Sul tema la giurisprudenza ha fissato alcuni punti utili al proprietario.</p>
+<ul>
+<li><strong>La registrazione tardiva sana il contratto.</strong> Le Sezioni Unite della Corte di Cassazione (sentenza n. 23601 del 2017) hanno chiarito che, se il contratto viene registrato in ritardo, la nullità viene sanata con effetto retroattivo, cioè come se il contratto fosse stato valido fin dall'inizio.</li>
+<li><strong>Per le case in affitto la nullità "protegge" l'inquilino.</strong> Secondo la Cassazione (sentenza n. 9475 del 2021), per i contratti a uso abitativo si tratta di una nullità "di protezione": può farla valere solo l'inquilino, non il proprietario.</li>
+<li><strong>Se il contratto resta non registrato, lo sfratto rischia di fermarsi.</strong> Se l'inquilino si oppone e contesta la nullità di un contratto mai registrato, il giudice non convalida lo sfratto e la causa prosegue con un giudizio ordinario, più lungo. In alcuni casi i tribunali hanno poi respinto la domanda, lasciando al proprietario solo la strada dell'azione per occupazione senza titolo.</li>
+</ul>
+<p>In pratica: il giudice non ti "punisce" automaticamente, ma un contratto non registrato dà all'inquilino un argomento forte per difendersi e farti perdere tempo.</p>
+
+<h2>Il rischio sul canone</h2>
+<p>C'è un secondo aspetto da conoscere. Quando il locatore non registra il contratto nel termine di legge, l'inquilino di un immobile abitativo può chiedere al giudice di <strong>ricondurre il contratto a condizioni conformi alla legge</strong>. In questo giudizio il giudice fissa il canone, che non può superare il valore minimo previsto dagli accordi locali per i contratti a canone concordato. Il conduttore può anche chiedere indietro quanto pagato in più.</p>
+<p>La registrazione tardiva è sempre il primo passo da fare. Ma se l'inquilino ha già sollevato contestazioni sul canone, conviene valutare con un avvocato quanto il rischio resti aperto nel tuo caso specifico.</p>
+
+<h2>I passi da fare, in ordine</h2>
+<h3>1. Verifica se il contratto è davvero registrato</h3>
+<p>Prima di allarmarti, controlla. Cerca la ricevuta di registrazione del modello RLI (il modulo dell'Agenzia delle Entrate per registrare i contratti di locazione) o il codice identificativo del contratto. Puoi verificare anche nel tuo cassetto fiscale sul sito dell'Agenzia delle Entrate. Se il contratto l'ha registrato un'agenzia immobiliare o un commercialista, chiedi a loro la ricevuta.</p>
+
+<h3>2. Se non è registrato, registralo subito</h3>
+<p>La registrazione si può fare anche in ritardo. Si usa lo stesso modello RLI, si pagano l'imposta di registro (se dovuta) e la sanzione, che si può ridurre con il <strong>ravvedimento operoso</strong>: un meccanismo che permette di pagare una sanzione più bassa se ci si mette in regola spontaneamente. Trovi i dettagli nella guida sulla <a href="/blog/registrazione-tardiva-contratto-locazione/">registrazione tardiva del contratto di locazione</a>.</p>
+<p>Un punto importante: registra il contratto <strong>con il canone realmente pattuito</strong>, quello indicato nel testo firmato. Registrare un importo diverso da quello reale crea nuovi problemi invece di risolverli.</p>
+
+<h3>3. Comunica la registrazione all'inquilino e all'amministratore</h3>
+<p>La legge chiede una comunicazione documentata. Usa la PEC (posta elettronica certificata) o una raccomandata con ricevuta di ritorno e conserva la prova di invio. Ti servirà anche in tribunale.</p>
+
+<h3>4. Prepara la documentazione della morosità</h3>
+<p>Raccogli il contratto, la ricevuta di registrazione, l'elenco dei canoni non pagati con le scadenze, gli estratti conto da cui risultano i pagamenti ricevuti e le eventuali diffide già inviate. Più la morosità è documentata, meno spazio resta per contestazioni.</p>
+
+<h3>5. Solo ora avvia lo sfratto</h3>
+<p>Con il contratto in regola puoi procedere con l'intimazione di sfratto per morosità e la citazione per la convalida. Se vuoi capire come funziona l'intera procedura, guarda la pagina sullo <a href="/servizi/sfratto-per-morosita/">sfratto per morosità</a>.</p>
+
+<h2>E se il contratto non è mai stato scritto?</h2>
+<p>Diverso è il caso in cui non esiste alcun contratto firmato: l'affitto è stato concordato solo a voce. Qui non c'è un documento da registrare in ritardo, e la procedura veloce di sfratto di solito non è percorribile allo stesso modo. Ne parliamo nella guida sullo <a href="/blog/sfratto-inquilino-senza-contratto/">sfratto di un inquilino senza contratto</a>.</p>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Avviare lo sfratto "e intanto vediamo".</strong> Se l'inquilino eccepisce la nullità, rischi di perdere mesi e di dover ricominciare.</li>
+<li><strong>Registrare un canone più basso di quello reale.</strong> Peggiora la tua posizione, sia fiscale sia in giudizio.</li>
+<li><strong>Dimenticare la comunicazione all'inquilino e all'amministratore.</strong> È un obbligo previsto dalla legge e la prova dell'invio è utile.</li>
+<li><strong>Pensare che basti pagare la multa.</strong> La sanzione fiscale è solo una parte: quello che conta per lo sfratto è che il contratto risulti registrato.</li>
+<li><strong>Accordarsi con l'inquilino per "non dire nulla".</strong> Un accordo informale non elimina il problema e può ritorcersi contro di te.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Posso sfrattare un inquilino se il contratto non è registrato?</h3>
+<p>È possibile, ma rischioso: se l'inquilino contesta la nullità del contratto, il giudice può respingere la convalida. La strada più sicura è registrare prima il contratto, anche in ritardo, e poi avviare lo sfratto.</p>
+<h3>La registrazione tardiva vale anche per i canoni già scaduti?</h3>
+<p>Secondo le Sezioni Unite della Cassazione la registrazione tardiva sana il contratto con effetto retroattivo. In linea di principio, quindi, il contratto torna valido anche per il periodo precedente, compresi i canoni già scaduti.</p>
+<h3>Chi paga la sanzione per la registrazione tardiva?</h3>
+<p>La legge mette l'obbligo di registrare a carico del locatore, quindi nella pratica la sanzione ricade su di te. Verso il Fisco, però, proprietario e inquilino rispondono insieme (in solido) dell'imposta e della sanzione. Il ravvedimento operoso permette di ridurla.</p>
+<h3>L'inquilino può denunciarmi se il contratto non è registrato?</h3>
+<p>L'inquilino può segnalare la situazione e, per gli immobili abitativi, chiedere al giudice di rivedere il canone. Per questo conviene mettersi in regola il prima possibile, senza aspettare che sia lui a muoversi.</p>
+<h3>Vale lo stesso per un negozio o un ufficio?</h3>
+<p>La nullità per mancata registrazione riguarda anche le locazioni commerciali. Le regole sulla riduzione del canone, invece, sono quelle della legge sulle locazioni abitative e riguardano le case. Per i locali commerciali manca la tutela "di protezione" pensata per l'inquilino di casa: registrare prima dello sfratto è quindi ancora più importante.</p>
+
+<h2>In sintesi</h2>
+<p>Un contratto non registrato non ti toglie il diritto di riavere il tuo immobile, ma rende lo sfratto più fragile. L'ordine giusto è: verifica, registra (anche in ritardo), comunica, documenta la morosità e solo dopo avvia lo sfratto. Se hai dubbi sulla tua situazione, o se l'inquilino ha già contestato il contratto, Sfratto Sicuro può valutare il tuo caso e indicarti la strada più adatta: trovi i dettagli nella pagina dedicata alla <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Riferimenti normativi: art. 1, comma 346, legge 30 dicembre 2004, n. 311 (legge finanziaria 2005); art. 13 della legge 9 dicembre 1998, n. 431 ("Patti contrari alla legge"); artt. 657-669 del codice di procedura civile (procedimento per convalida di sfratto); Cass. civ., Sezioni Unite, sentenza n. 23601 del 9 ottobre 2017; Cass. civ., Sez. III, sentenza n. 9475 del 9 aprile 2021; art. 57 del D.P.R. 26 aprile 1986, n. 131 (testo unico dell'imposta di registro).</em></p>
+<p><em>Questo articolo ha carattere informativo e non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+  {
     slug: "annuncio-per-affittare-casa",
     title: "Annuncio per affittare casa: cosa scrivere e gli obblighi del proprietario",
     description: "Annuncio per affittare casa: cosa scrivere, classe energetica obbligatoria, errori da evitare e come gestire visite e candidati. Guida per il proprietario.",
