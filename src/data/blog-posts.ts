@@ -16,6 +16,89 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "prescrizione-canone-locazione",
+    title: "Prescrizione canone locazione: 5 anni per recuperare gli affitti",
+    description: "Prescrizione canone locazione: i canoni non pagati si prescrivono in 5 anni, rata per rata. Scopri come interrompere il termine e non perdere il credito.",
+    excerpt: "Hai affitti arretrati da anni? Ogni canone non pagato si prescrive in cinque anni dalla sua scadenza. Ecco da quando si contano, come fermare il termine e cosa fare subito.",
+    lead: "Le mensilità non pagate non restano esigibili per sempre: ciascuna si prescrive in cinque anni. Una richiesta scritta fatta bene, il riconoscimento dell'inquilino o un'azione in tribunale fermano il conto.",
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-24. Keyword: prescrizione canone locazione, vol 390, KD 0.",
+    html: `<p>L'inquilino ha lasciato indietro alcune mensilità, magari anni fa, e ti chiedi se puoi ancora pretenderle. È la domanda giusta da farsi, perché la <strong>prescrizione del canone di locazione</strong> è un termine che corre anche se tu non fai nulla. Questa guida è per il proprietario che vuole sapere entro quanto tempo può chiedere gli affitti non pagati, da quando si contano gli anni e cosa fare in concreto per non perdere il credito.</p>
+<p>La risposta breve: ogni canone non pagato si prescrive in <strong>cinque anni</strong>. Ma il conto parte rata per rata e si può fermare con atti semplici, purché fatti nel modo giusto e conservati con cura.</p>
+
+<h2>Cosa significa "prescrizione" per il proprietario</h2>
+<p>La prescrizione è il meccanismo con cui un diritto si estingue se il titolare non lo esercita per il tempo fissato dalla legge. Nel caso degli affitti, significa che dopo un certo periodo di silenzio l'inquilino può rifiutarsi di pagare quelle mensilità, anche se le doveva davvero.</p>
+<p>Due precisazioni importanti:</p>
+<ul>
+<li><strong>Il giudice non la applica da solo.</strong> La prescrizione deve essere sollevata dall'inquilino (si dice "eccepita"). Se lui non la fa valere, il giudice non può rilevarla di propria iniziativa.</li>
+<li><strong>Se l'inquilino paga spontaneamente un debito prescritto, non può chiedere indietro i soldi.</strong> Il pagamento resta valido.</li>
+</ul>
+<p>Questo però non deve rassicurarti troppo: chi riceve una richiesta di pagamento per canoni vecchi, di solito, si fa assistere e la prescrizione la solleva.</p>
+
+<h2>Prescrizione canone locazione: il termine è di cinque anni</h2>
+<p>Il Codice civile stabilisce che si prescrivono in cinque anni le pigioni delle case, i fitti dei beni rustici e ogni altro corrispettivo di locazioni. Vale quindi per l'affitto di un appartamento, di un negozio, di un ufficio o di un box.</p>
+<p>Il punto che molti proprietari sottovalutano è <strong>da quando</strong> si contano i cinque anni. La prescrizione inizia a decorrere dal giorno in cui il diritto può essere fatto valere, cioè dalla <strong>scadenza di ciascuna rata</strong>. Non si parte dalla fine del contratto, né dal giorno in cui l'inquilino ha lasciato l'immobile.</p>
+<p>Un esempio concreto: se il canone di marzo 2022 scadeva il 5 marzo 2022 e non è mai stato pagato, in assenza di atti che interrompano la prescrizione quel singolo canone si prescrive dopo cinque anni da quella data, cioè il 5 marzo 2027. Il canone di aprile 2022 ha una sua scadenza autonoma, e così via. In pratica, con il passare dei mesi le rate più vecchie "escono" una alla volta dal credito che puoi pretendere.</p>
+
+<h2>Come si interrompe la prescrizione</h2>
+<p>La buona notizia è che fermare il conto è semplice. Quando la prescrizione viene <strong>interrotta</strong>, il periodo già trascorso si azzera e inizia a decorrere un nuovo periodo di cinque anni. Gli strumenti principali sono tre.</p>
+
+<h3>1. La lettera di messa in mora</h3>
+<p>Basta una richiesta di pagamento <strong>scritta</strong> inviata all'inquilino: la legge riconosce l'effetto interruttivo a ogni atto che valga a costituire in mora il debitore. Per poterlo dimostrare usa una raccomandata con avviso di ricevimento o una PEC (posta elettronica certificata), se l'inquilino ne ha una. La lettera deve:</p>
+<ul>
+<li>indicare chiaramente chi chiede e a chi;</li>
+<li>elencare le mensilità non pagate, con importi e scadenze;</li>
+<li>contenere una richiesta esplicita di pagamento.</li>
+</ul>
+<p>Telefonate, messaggi vocali o richieste a voce non bastano: senza un atto scritto e la prova della sua ricezione, il rischio è di non riuscire a dimostrare l'interruzione. Per impostare bene la richiesta puoi leggere la nostra guida sulla <a href="/blog/lettera-diffida-inquilino-moroso/">lettera di diffida all'inquilino moroso</a>.</p>
+
+<h3>2. Il riconoscimento del debito da parte dell'inquilino</h3>
+<p>La prescrizione si interrompe anche quando è l'inquilino a riconoscere di doverti quei soldi. Una email in cui ammette il debito, un piano di rientro firmato o una scrittura in cui riconosce gli arretrati sono documenti preziosi: conservali sempre. Anche un pagamento parziale, se riferito chiaramente al debito arretrato, può valere come riconoscimento, ma è meglio non affidarsi solo a questo.</p>
+
+<h3>3. L'azione in tribunale</h3>
+<p>La notifica di un atto giudiziario interrompe la prescrizione: per esempio l'intimazione di sfratto per morosità con la richiesta di pagamento dei canoni, oppure un ricorso per decreto ingiuntivo. In questo caso l'effetto è più forte: la prescrizione resta ferma per tutta la durata del processo, fino a quando la decisione diventa definitiva.</p>
+<p>Una volta ottenuto un provvedimento definitivo, il termine per farlo valere diventa di <strong>dieci anni</strong>. Per questo, quando gli arretrati sono consistenti, ottenere un titolo è spesso la scelta più prudente. Se vuoi capire come funziona questa strada, leggi la guida sul <a href="/blog/decreto-ingiuntivo-canoni-locazione/">decreto ingiuntivo per i canoni di locazione</a>.</p>
+
+<h2>Cosa fare subito: la checklist del proprietario</h2>
+<ol>
+<li><strong>Fai l'elenco preciso degli arretrati.</strong> Per ogni mensilità segna importo, data di scadenza ed eventuali pagamenti parziali.</li>
+<li><strong>Individua le rate più vecchie.</strong> Sono quelle a rischio: controlla quanto manca ai cinque anni dalla loro scadenza.</li>
+<li><strong>Raccogli le prove</strong> di eventuali richieste già fatte per iscritto: copie delle lettere, ricevute di ritorno, ricevute di consegna PEC, email dell'inquilino.</li>
+<li><strong>Invia una messa in mora scritta</strong> se l'ultima richiesta formale risale a molto tempo fa o non è dimostrabile.</li>
+<li><strong>Annota la data di ricezione</strong> di ogni atto interruttivo: da lì riparte il nuovo periodo di cinque anni (con un'azione in tribunale, invece, il termine resta fermo fino alla decisione definitiva).</li>
+<li><strong>Valuta l'azione giudiziale</strong> se gli arretrati sono rilevanti o se l'inquilino continua a non pagare.</li>
+</ol>
+
+<h2>Gli errori più comuni</h2>
+<ul>
+<li><strong>Contare dalla fine del contratto.</strong> I cinque anni partono dalla scadenza di ogni singola rata, non dal giorno in cui l'inquilino se n'è andato.</li>
+<li><strong>Affidarsi a solleciti a voce o su chat</strong> senza una richiesta scritta di cui puoi provare l'arrivo.</li>
+<li><strong>Aspettare "che le cose si sistemino".</strong> Ogni mese di attesa può costare una mensilità che non potrai più chiedere.</li>
+<li><strong>Non conservare le ricevute</strong> delle raccomandate o le ricevute di consegna delle PEC: senza prova, l'interruzione è difficile da dimostrare.</li>
+<li><strong>Confondere il recupero dei soldi con il rilascio della casa.</strong> Sono due obiettivi diversi: anche dopo che l'inquilino è uscito, il credito per i canoni resta e va tutelato.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>Dopo quanto tempo non posso più chiedere l'affitto non pagato?</h3>
+<p>Dopo cinque anni dalla scadenza di ciascuna rata, se nel frattempo non hai interrotto la prescrizione con una richiesta scritta, un riconoscimento del debito da parte dell'inquilino o un'azione in tribunale.</p>
+<h3>Una raccomandata semplice basta a interrompere la prescrizione?</h3>
+<p>Una richiesta scritta di pagamento interrompe la prescrizione, ma devi poter provare che l'inquilino l'ha ricevuta. Per questo è preferibile la raccomandata con avviso di ricevimento o la PEC.</p>
+<h3>Se l'inquilino ha lasciato casa, posso ancora chiedere gli arretrati?</h3>
+<p>Sì. L'uscita dall'immobile non cancella il debito. Contano le scadenze delle singole rate e gli eventuali atti che hai fatto per interrompere la prescrizione.</p>
+<h3>Quanto vale una sentenza o un decreto ingiuntivo definitivo?</h3>
+<p>Una volta definitivo, il diritto riconosciuto dal giudice si prescrive in dieci anni. In quel periodo puoi tentare il recupero anche più volte, per esempio se l'ex inquilino trova un lavoro o acquista dei beni.</p>
+
+<h2>Il quadro normativo in sintesi</h2>
+<p>Per chi vuole approfondire, queste sono le norme di riferimento del Codice civile: art. 2948, n. 3 (prescrizione di cinque anni dei canoni di locazione); art. 2935 (decorrenza della prescrizione); art. 2938 (non rilevabilità d'ufficio); art. 2940 (pagamento del debito prescritto); art. 2943 (interruzione da parte del titolare); art. 2944 (interruzione per effetto di riconoscimento); art. 2945 (effetti e durata dell'interruzione); art. 2953 (effetti del giudicato sulle prescrizioni brevi); art. 1219 (costituzione in mora). Per il recupero dei canoni nel procedimento di sfratto si vedano gli artt. 658 e 664 c.p.c. (codice di procedura civile), nel testo oggi in vigore, come modificato dal correttivo alla riforma Cartabia (decreto legislativo n. 164/2024).</p>
+
+<h2>Conclusione: muoviti finché sei in tempo</h2>
+<p>La prescrizione dei canoni non è un rischio teorico: le mensilità più vecchie si perdono una alla volta, in silenzio. Fai subito il punto sugli arretrati, invia una richiesta scritta di cui puoi provare la ricezione e valuta se ottenere un titolo dal giudice. Se vuoi un controllo sulle date e sulla strategia più adatta al tuo caso, il team di Sfratto Sicuro può aiutarti con il servizio di <a href="/servizi/recupero-canoni-non-pagati/">recupero canoni non pagati</a>.</p>
+<p><em>Questo articolo ha carattere informativo e non sostituisce una consulenza legale sul singolo caso.</em></p>`,
+  },
+  {
     slug: "sfratto-contratto-non-registrato",
     title: "Sfratto con contratto non registrato: cosa può fare il proprietario",
     description: "Sfratto con contratto non registrato: rischi per il proprietario, effetti della registrazione tardiva e i passi da fare prima di avviare lo sfratto.",
