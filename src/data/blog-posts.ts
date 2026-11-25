@@ -16,6 +16,105 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "sfratto-dolce",
+    title: "Sfratto dolce: come far lasciare casa all'inquilino moroso con un accordo",
+    description: "Sfratto dolce: come far uscire l'inquilino moroso con un accordo che si può far valere davvero. Passi, checklist ed errori da evitare per il proprietario.",
+    excerpt: "L'inquilino non paga ma è disposto ad andarsene? Un'uscita concordata può far risparmiare tempo, a patto di darle la forma giusta. Ecco come impostarla senza rischi.",
+    lead: "Lo sfratto dolce è un accordo sulla data di uscita dell'inquilino moroso. Funziona solo se è contenuto in un atto che, in caso di inadempimento, permette di liberare la casa: vediamo quali.",
+    publishedAt: "2026-11-25",
+    updatedAt: "2026-11-25",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-25. Keyword: sfratto dolce, vol 110, KD 0.",
+    html: `<p>Hai un inquilino che non paga e ti chiedi se esiste un modo per fargli lasciare la casa senza mesi di udienze e accessi dell'ufficiale giudiziario. Nel linguaggio comune si parla di <strong>sfratto dolce</strong>: un accordo con cui l'inquilino moroso si impegna a riconsegnare le chiavi entro una data precisa, spesso in cambio di qualcosa, come la rinuncia a una parte degli arretrati o un piccolo contributo per il trasloco. Questa guida spiega al proprietario quando conviene, come metterlo per iscritto e, soprattutto, come non restare con un pezzo di carta che non serve a nulla.</p>
+
+<h2>Cos'è lo sfratto dolce e perché interessa al proprietario</h2>
+<p>"Sfratto dolce" non è un termine di legge. Indica una <strong>uscita concordata</strong>: invece di arrivare al rilascio forzato, proprietario e inquilino trovano un'intesa sulla data di consegna dell'immobile. Per il proprietario i vantaggi possono essere concreti:</p>
+<ul>
+<li><strong>tempi più certi</strong>: una data fissata insieme, invece dei rinvii tipici della fase esecutiva;</li>
+<li><strong>casa riconsegnata in condizioni migliori</strong>: chi esce d'accordo ha meno motivi di lasciare danni o mobili abbandonati;</li>
+<li><strong>meno costi e meno stress</strong>: si evitano accessi ripetuti, forza pubblica e trasloco a carico del proprietario.</li>
+</ul>
+<p>Il rovescio della medaglia è che un accordo vale solo se l'inquilino lo rispetta. Per questo la differenza tra un accordo utile e uno inutile sta nella <strong>forma</strong> che gli dai.</p>
+
+<h2>Quando conviene trattare con l'inquilino moroso</h2>
+<p>Lo sfratto dolce ha senso soprattutto in tre situazioni:</p>
+<ul>
+<li>l'inquilino ha difficoltà economiche reali e sa che non potrà recuperare l'arretrato, ma è disposto ad andarsene;</li>
+<li>gli arretrati sono difficili da incassare comunque (per esempio perché l'inquilino non ha stipendio né beni da pignorare): rinunciarvi in parte costa poco e fa guadagnare tempo;</li>
+<li>hai bisogno di riavere la casa entro una data certa, per venderla o riaffittarla.</li>
+</ul>
+<p>Non conviene, invece, quando l'inquilino usa la trattativa solo per prendere tempo: promesse a voce, date che slittano, richieste che crescono. In quel caso la strada giusta resta la procedura di sfratto, che può comunque proseguire mentre si parla.</p>
+
+<h2>Lo sfratto dolce passo per passo</h2>
+
+<h3>1. Non fermare la procedura di sfratto</h3>
+<p>È l'errore più frequente: il proprietario sospende tutto perché l'inquilino "ha promesso". Se hai già notificato l'intimazione di sfratto, cioè l'atto con cui l'inquilino viene citato davanti al giudice, lascia che il procedimento vada avanti fino a quando le chiavi non sono nelle tue mani. La trattativa e la causa possono camminare in parallelo.</p>
+
+<h3>2. Decidi cosa sei disposto a concedere</h3>
+<p>Le leve più usate sono: una data di uscita più comoda per l'inquilino, la rinuncia a tutti o a parte dei canoni arretrati, la rinuncia a chiedere le spese legali, a volte un contributo per il trasloco. Ogni concessione va legata a una condizione: <strong>vale solo se l'inquilino esce davvero entro la data stabilita</strong>.</p>
+
+<h3>3. Scegli la forma giusta per l'accordo</h3>
+<p>Qui si gioca tutto. Una scrittura privata firmata dalle parti, anche con firme autenticate, è utile come prova, ma <strong>non è un titolo esecutivo per il rilascio</strong>, cioè il documento che permette di far liberare la casa con l'ufficiale giudiziario: se l'inquilino non esce, l'ufficiale giudiziario non può liberare la casa sulla base di quel foglio, e dovrai comunque ottenere un provvedimento del giudice. Le strade che danno invece un titolo valido per il rilascio sono:</p>
+<ul>
+<li><strong>l'accordo davanti al giudice nell'udienza di convalida</strong>: l'inquilino non si oppone e il giudice convalida lo sfratto fissando una data di rilascio che tiene conto dell'accordo, entro i limiti di legge; se serve una data più lontana, le parti firmano un verbale di conciliazione in udienza. È la soluzione più usata e la più sicura (approfondisci nella nostra guida sulla <a href="/blog/convalida-di-sfratto/">convalida di sfratto</a>);</li>
+<li><strong>l'accordo raggiunto in mediazione o in negoziazione assistita</strong>, firmato dalle parti e dai loro avvocati: la legge lo considera titolo esecutivo;</li>
+<li><strong>l'atto pubblico ricevuto da un notaio</strong> in cui l'inquilino si obbliga a rilasciare l'immobile (non basta la semplice autentica delle firme).</li>
+</ul>
+
+<h3>4. Paga solo alla consegna delle chiavi</h3>
+<p>Se hai promesso un contributo per il trasloco, versalo <strong>al momento della riconsegna</strong>, non prima. Lo stesso vale per la rinuncia agli arretrati: scrivi che diventa definitiva solo con il rilascio nei tempi pattuiti. Se l'inquilino non esce, il debito resta intero.</p>
+
+<h3>5. Chiudi bene la riconsegna</h3>
+<p>Il giorno dell'uscita redigi un verbale di riconsegna con lo stato dell'immobile, le letture dei contatori e la consegna di tutte le chiavi. Se il contratto era registrato, entro 30 giorni comunica la cessazione all'Agenzia delle Entrate e versa l'imposta di registro di 67 euro; con la cedolare secca scelta da tutti i proprietari l'imposta non è dovuta, ma la comunicazione sì.</p>
+
+<h2>Checklist dell'accordo con l'inquilino moroso</h2>
+<ul>
+<li>dati delle parti e dell'immobile, estremi del contratto;</li>
+<li>importo esatto dell'arretrato riconosciuto dall'inquilino;</li>
+<li>data precisa del rilascio, libero da persone e cose;</li>
+<li>cosa concede il proprietario e a quale condizione;</li>
+<li>cosa succede se l'inquilino non esce (decadenza dalle concessioni, debito pieno);</li>
+<li>sorte del deposito cauzionale e posizione dell'eventuale garante;</li>
+<li>forma che rende l'accordo eseguibile (verbale in udienza, mediazione, negoziazione assistita o atto notarile).</li>
+</ul>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Accontentarsi di una promessa a voce</strong> o di un messaggio WhatsApp: non ti permette di liberare la casa.</li>
+<li><strong>Rinunciare all'udienza</strong> prima di avere le chiavi: se l'accordo salta, riparti da zero.</li>
+<li><strong>Pagare in anticipo</strong> la buonuscita: perdi l'unica leva che hai.</li>
+<li><strong>Farsi giustizia da soli</strong>: cambiare la serratura, staccare le utenze o portare via i mobili espone il proprietario a conseguenze anche penali. Ne parliamo nell'articolo su <a href="/blog/cambiare-serratura-inquilino-moroso/">cambiare la serratura all'inquilino moroso</a>.</li>
+<li><strong>Dimenticare il fisco</strong>: rinunciare ai canoni arretrati può avere effetti sulla tua dichiarazione dei redditi. Prima di firmare, chiedi un parere al tuo commercialista.</li>
+</ul>
+
+<h2>Il quadro normativo in breve</h2>
+<ul>
+<li><strong>Art. 474 del Codice di procedura civile (c.p.c.)</strong>, «Titolo esecutivo»: per la consegna o il rilascio servono un provvedimento del giudice, un atto a cui la legge dà espressamente efficacia esecutiva oppure un atto ricevuto da notaio. Una scrittura privata, anche autenticata, non basta.</li>
+<li><strong>Artt. 657-669 c.p.c.</strong>: procedimento per convalida di sfratto. L'art. 663 c.p.c. prevede la convalida se l'inquilino non compare o non si oppone; nello sfratto per morosità il proprietario deve dichiarare in udienza che la morosità continua.</li>
+<li><strong>Art. 56 della legge 392/1978</strong>: il giudice fissa la data del rilascio, di regola entro sei mesi (dodici in casi eccezionali).</li>
+<li><strong>Art. 185 c.p.c.</strong>: il verbale di conciliazione redatto in udienza è titolo esecutivo.</li>
+<li><strong>Art. 12 del decreto legislativo (D.Lgs.) 28/2010</strong>: l'accordo di mediazione firmato dalle parti e dagli avvocati è titolo esecutivo anche per il rilascio. Nella fase di convalida la mediazione non è obbligatoria: è una scelta volontaria.</li>
+<li><strong>Art. 5 del decreto-legge (D.L.) 132/2014</strong>: anche l'accordo di negoziazione assistita firmato da parti e avvocati è titolo esecutivo e, secondo l'interpretazione prevalente, vale anche per il rilascio.</li>
+<li><strong>Art. 1965 del Codice civile</strong>: la rinuncia reciproca a parte delle pretese è una transazione.</li>
+</ul>
+<p>Le norme processuali citate sono state aggiornate dalla riforma Cartabia (D.Lgs. 149/2022) e dal correttivo (D.Lgs. 164/2024).</p>
+
+<h2>Domande frequenti</h2>
+<h3>Lo sfratto dolce è legale?</h3>
+<p>Sì. Proprietario e inquilino sono liberi di accordarsi sulla data di uscita e sugli arretrati. Ciò che conta è dare all'accordo una forma che, in caso di inadempimento, ti permetta di liberare l'immobile senza ricominciare da capo.</p>
+<h3>Posso fare l'accordo anche prima di notificare lo sfratto?</h3>
+<p>Sì, ma in quel momento hai meno strumenti per renderlo eseguibile: servono la mediazione, la negoziazione assistita o un notaio. Spesso è più efficace notificare l'intimazione e chiudere l'accordo davanti al giudice nell'udienza di convalida.</p>
+<h3>Se l'inquilino non esce alla data concordata cosa succede?</h3>
+<p>Se l'accordo è contenuto in un titolo esecutivo (convalida con data di rilascio, verbale di conciliazione, accordo di mediazione o negoziazione assistita, atto notarile) puoi notificare il precetto (l'ordine formale di lasciare l'immobile) e poi procedere con l'ufficiale giudiziario. Se è solo una scrittura privata, dovrai ottenere un provvedimento del giudice.</p>
+<h3>Devo per forza rinunciare agli arretrati?</h3>
+<p>No. La rinuncia è solo una delle possibili concessioni. Puoi anche concedere più tempo mantenendo il credito, oppure chiedere un pagamento parziale a rate. L'importante è che ogni concessione sia legata all'uscita effettiva.</p>
+
+<h2>Come muoversi adesso</h2>
+<p>Lo sfratto dolce funziona quando il proprietario tratta da una posizione di forza: procedura avviata, condizioni chiare, accordo in una forma che si possa far valere. Se stai valutando un'uscita concordata con il tuo inquilino moroso, Sfratto Sicuro può aiutarti a impostare la trattativa e, quando possibile, a chiudere l'accordo nell'udienza di convalida, senza fermare la tutela dei tuoi diritti: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha carattere informativo e non sostituisce una consulenza legale sul caso specifico.</em></p>`,
+  },
+  {
     slug: "prescrizione-canone-locazione",
     title: "Prescrizione canone locazione: 5 anni per recuperare gli affitti",
     description: "Prescrizione canone locazione: i canoni non pagati si prescrivono in 5 anni, rata per rata. Scopri come interrompere il termine e non perdere il credito.",
