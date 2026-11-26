@@ -16,6 +16,97 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modello-rli",
+    title: "Modello RLI: cos'è e come lo usa il proprietario che affitta",
+    description: "Modello RLI: a cosa serve, quando usarlo (registrazione, proroga, risoluzione, cedolare secca), come presentarlo e gli errori che il proprietario evita.",
+    excerpt: "Registrazione, proroga, cedolare secca, risoluzione: con il modello RLI passa tutta la vita fiscale del contratto di affitto. Ecco cosa deve sapere il proprietario e quali scadenze non mancare.",
+    lead: "Il modello RLI è il modulo dell'Agenzia delle Entrate con cui il locatore registra il contratto di locazione e comunica ogni passaggio successivo. Vediamo quando serve, come si presenta e gli errori più frequenti.",
+    publishedAt: "2026-11-26",
+    updatedAt: "2026-11-26",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-26. Keyword: modello rli, vol 6600, KD 0.",
+    html: `<p>Se affitti un appartamento, prima o poi incontri il <strong>modello RLI</strong>: è il modulo dell'Agenzia delle Entrate con cui si registra il contratto di locazione e si comunicano tutti i passaggi successivi, dalla proroga alla risoluzione. In questa guida vediamo, dal punto di vista del proprietario, a cosa serve, quando va usato, come si presenta e quali errori evitare. Un RLI sbagliato o dimenticato può costare sanzioni e creare problemi anche in un futuro sfratto.</p>
+
+<h2>Cos'è il modello RLI e a chi serve</h2>
+<p>La sigla RLI sta per "Richiesta di registrazione e adempimenti successivi - contratti di locazione e affitto di immobili". In pratica è il modulo unico con cui il locatore (cioè il proprietario che affitta) dialoga con l'Agenzia delle Entrate per tutta la vita del contratto.</p>
+<p>La registrazione del contratto è un obbligo del locatore: la legge gli affida il compito di registrarlo entro 30 giorni e di darne comunicazione documentata all'inquilino e, se c'è, all'amministratore di condominio nei 60 giorni successivi. Anche se nel contratto si stabilisce chi paga l'imposta, la responsabilità di presentare il modello resta quindi, prima di tutto, sul proprietario.</p>
+
+<h2>Quando il proprietario deve usare il modello RLI</h2>
+<p>Il modello RLI non serve solo il giorno in cui si firma il contratto. Si usa in molti momenti diversi:</p>
+<ul>
+<li><strong>Registrazione del contratto</strong>: entro 30 giorni dalla firma o dalla data di decorrenza, se precedente.</li>
+<li><strong>Opzione o revoca della cedolare secca</strong>: il regime fiscale agevolato sui canoni abitativi si sceglie (o si abbandona) proprio con questo modello, in sede di registrazione o nelle annualità successive.</li>
+<li><strong>Proroga del contratto</strong>: quando il contratto si rinnova alla scadenza, va comunicata la proroga e, se non c'è la cedolare secca, va pagata l'imposta.</li>
+<li><strong>Cessione del contratto</strong>: quando una delle parti cede il contratto a un altro soggetto.</li>
+<li><strong>Subentro</strong>: ad esempio per morte del locatore o per vendita dell'immobile con il contratto in corso.</li>
+<li><strong>Risoluzione anticipata</strong>: quando il contratto finisce prima della scadenza, per accordo o per recesso.</li>
+<li><strong>Rinegoziazione del canone</strong>: ad esempio quando si concorda una riduzione dell'affitto.</li>
+<li><strong>Pagamento delle annualità successive</strong>, se all'inizio non si è scelto di pagare l'imposta per tutta la durata e non si applica la cedolare secca.</li>
+</ul>
+<p>Per gli adempimenti successivi alla registrazione il termine da tenere a mente è, di regola, sempre lo stesso: <strong>30 giorni</strong> dall'evento (proroga, cessione, risoluzione, subentro).</p>
+
+<h2>Come è fatto il modello RLI: i quadri principali</h2>
+<p>Non serve diventare esperti di moduli fiscali, ma conoscere la struttura aiuta a controllare il lavoro di chi lo compila per te. Il modello è diviso in quadri:</p>
+<ul>
+<li><strong>Quadro A</strong>: dati generali del contratto (tipo di contratto, durata, canone, data di stipula) oppure, per gli adempimenti successivi, il tipo di comunicazione (proroga, cessione, risoluzione, subentro e così via).</li>
+<li><strong>Quadro B</strong>: i soggetti, cioè locatori e conduttori (gli inquilini), con i rispettivi codici fiscali.</li>
+<li><strong>Quadro C</strong>: i dati catastali degli immobili affittati, comprese eventuali pertinenze come box o cantine.</li>
+<li><strong>Quadro D</strong>: la scelta o la revoca della cedolare secca, locatore per locatore.</li>
+<li><strong>Quadro E</strong>: i canoni differenti per annualità, se il contratto prevede un affitto che cambia nel tempo (ad esempio canone a scaletta).</li>
+</ul>
+
+<h2>Come si presenta il modello RLI</h2>
+<p>Le strade sono due.</p>
+<h3>Online</h3>
+<p>Dal sito dell'Agenzia delle Entrate, accedendo con SPID (Sistema pubblico di identità digitale), CIE (Carta d'identità elettronica) o CNS (Carta nazionale dei servizi), si usa il servizio "RLI web". Si compilano i quadri, si allega il contratto in formato elettronico quando richiesto, e imposte e bolli vengono pagati con addebito diretto sul conto corrente indicato nel modello. È la via più rapida e lascia una ricevuta telematica, utile da conservare.</p>
+<h3>In ufficio</h3>
+<p>In alternativa si può presentare il modello firmato presso un ufficio territoriale dell'Agenzia, insieme al contratto e alla prova del pagamento delle imposte, effettuato con il modello F24 Elide (la versione dell'F24 dedicata alle imposte di registro sulle locazioni).</p>
+<p>Molti proprietari si affidano a un professionista o a un CAF (Centro di assistenza fiscale): va benissimo, ma la responsabilità dell'adempimento resta del locatore. Chiedi sempre copia della ricevuta di registrazione e delle comunicazioni successive.</p>
+
+<h2>Checklist del proprietario prima di inviare l'RLI</h2>
+<ul>
+<li>Codici fiscali di tutti i locatori e di tutti gli inquilini, senza errori.</li>
+<li>Dati catastali completi (foglio, particella, subalterno, categoria, rendita) di casa e pertinenze.</li>
+<li>Tipo di contratto corretto: libero 4+4, concordato 3+2, transitorio, per studenti universitari, commerciale.</li>
+<li>Canone annuo esatto e, se cambia negli anni, compilazione del quadro E.</li>
+<li>Scelta consapevole sulla cedolare secca, fatta da ciascun comproprietario che la vuole applicare.</li>
+<li>Conto corrente intestato a chi presenta il modello, se paghi online.</li>
+<li>Agenda con le scadenze: 30 giorni per registrazione e adempimenti successivi, data di scadenza del contratto per la proroga.</li>
+<li>Ricevuta di registrazione conservata insieme al contratto, e copia inviata all'inquilino: i suoi estremi serviranno per proroghe e risoluzione.</li>
+</ul>
+
+<h2>Errori comuni da evitare</h2>
+<ul>
+<li><strong>Dimenticare la proroga o la risoluzione</strong>. Molti registrano il contratto e poi non comunicano più nulla. Una proroga non comunicata o una risoluzione mai registrata possono portare a sanzioni e a un quadro confuso all'Agenzia. Ne parliamo nella guida sulla <a href="/blog/proroga-contratto-locazione-agenzia-entrate/">proroga del contratto all'Agenzia delle Entrate</a>.</li>
+<li><strong>Pensare che la cedolare secca valga "per sempre"</strong>. L'opzione si esercita con il modello e va gestita anche alle proroghe; non va data per scontata.</li>
+<li><strong>Sbagliare i dati catastali</strong>, soprattutto dimenticando box o cantina affittati insieme alla casa.</li>
+<li><strong>Lasciare che sia l'inquilino a occuparsene senza controllare</strong>. La legge mette l'obbligo in capo al locatore: se la registrazione manca, il problema è anzitutto suo.</li>
+<li><strong>Non chiudere il contratto quando l'inquilino va via</strong>. Se il contratto finisce in anticipo, la risoluzione va comunicata entro 30 giorni con il pagamento dell'imposta fissa di 67 euro, se dovuta.</li>
+</ul>
+
+<h2>Perché il modello RLI conta anche in caso di sfratto</h2>
+<p>Un contratto di locazione non registrato è nullo per legge, anche se la giurisprudenza ammette che una registrazione tardiva possa sanarlo. Se l'inquilino smette di pagare, la regolarità della registrazione e degli adempimenti successivi incide sugli strumenti a disposizione del proprietario per riavere la casa e recuperare gli affitti. Tenere in ordine RLI, ricevute e proroghe significa arrivare preparati a un eventuale sfratto per morosità, senza dover prima sistemare irregolarità fiscali. Cosa succede quando il contratto non è stato registrato lo spieghiamo nella guida sullo <a href="/blog/sfratto-contratto-non-registrato/">sfratto con contratto non registrato</a>.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Il modello RLI lo deve presentare il proprietario o l'inquilino?</h3>
+<p>Possono presentarlo entrambi, ma l'obbligo di registrare il contratto e comunicarlo all'inquilino è posto dalla legge a carico del locatore. Per questo è il proprietario che deve assicurarsi che sia fatto, e nei termini.</p>
+<h3>Se ho scelto la cedolare secca devo comunque presentare l'RLI alla proroga?</h3>
+<p>Sì: la proroga va comunicata anche con la cedolare secca, anche se in quel caso non si paga l'imposta di registro. È anche il momento per confermare o revocare l'opzione.</p>
+<h3>Quanto costa registrare un contratto con il modello RLI?</h3>
+<p>Dipende dal regime: con la cedolare secca non si pagano imposta di registro e bollo; nel regime ordinario si paga l'imposta di registro (per gli abitativi di regola il 2% del canone annuo, con un minimo di 67 euro) più i bolli sul contratto. Per i contratti commerciali le regole cambiano.</p>
+<h3>Ho registrato in ritardo: cosa succede?</h3>
+<p>Si applicano sanzioni, che però possono essere ridotte regolarizzandosi spontaneamente con il ravvedimento operoso (pagando spontaneamente imposta e sanzione ridotta), prima che l'Agenzia contesti la violazione.</p>
+
+<h2>Riferimenti normativi essenziali</h2>
+<p>Art. 13, comma 1, della Legge 9 dicembre 1998, n. 431 (obbligo di registrazione a carico del locatore e comunicazione a conduttore e amministratore); art. 1, comma 346, della Legge 30 dicembre 2004, n. 311 (nullità dei contratti di locazione non registrati); art. 3 del D.Lgs. 14 marzo 2011, n. 23 (cedolare secca sugli affitti); D.P.R. 26 aprile 1986, n. 131 (Testo unico dell'imposta di registro, tuttora applicabile; il nuovo testo unico, D.Lgs. 1 agosto 2025, n. 123, si applicherà dal 1° gennaio 2027 per effetto del D.L. 200/2025, convertito dalla L. 26/2026); istruzioni al modello RLI dell'Agenzia delle Entrate.</p>
+
+<h2>In sintesi</h2>
+<p>Il modello RLI accompagna il contratto di affitto dalla firma alla chiusura: registrazione, cedolare secca, proroghe, cessioni e risoluzioni passano tutte da qui, quasi sempre con un termine di 30 giorni. Tenere un calendario delle scadenze e conservare ogni ricevuta è il modo più semplice per evitare sanzioni e arrivare preparati se il rapporto con l'inquilino si complica.</p>
+<p>Se vuoi un contratto impostato bene fin dall'inizio, o hai dubbi su un rapporto di locazione in corso, Sfratto Sicuro può affiancarti: trovi i dettagli nella pagina dedicata alla <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale o fiscale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "sfratto-dolce",
     title: "Sfratto dolce: come far lasciare casa all'inquilino moroso con un accordo",
     description: "Sfratto dolce: come far uscire l'inquilino moroso con un accordo che si può far valere davvero. Passi, checklist ed errori da evitare per il proprietario.",
