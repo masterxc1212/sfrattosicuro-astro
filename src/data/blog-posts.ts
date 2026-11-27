@@ -16,6 +16,92 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "mandare-via-inquilino-prima-della-scadenza",
+    title: "Mandare via l'inquilino prima della scadenza del contratto: quando si può",
+    description: "Mandare via l'inquilino prima della scadenza del contratto: quando il proprietario può farlo, le strade legali possibili e gli errori da evitare.",
+    excerpt: "Il proprietario non ha un recesso libero, ma può liberare la casa in anticipo se l'inquilino non paga, commette un inadempimento grave o accetta un accordo. Ecco le strade legali e gli errori da evitare.",
+    lead: "Durante il contratto il locatore è vincolato, ma non senza strumenti: morosità, risoluzione per inadempimento, clausola risolutiva espressa e risoluzione consensuale. Vediamo quando si possono usare e come prepararsi.",
+    publishedAt: "2026-11-27",
+    updatedAt: "2026-11-27",
+    category: "Sfratti",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-27. Keyword: si può mandare via inquilino prima della scadenza del contratto, vol 140, KD 0.",
+    html: `<p>Ti sei pentito di aver affittato, l'inquilino ti crea problemi o semplicemente vorresti tornare a disporre della casa: è normale chiedersi se si può <strong>mandare via l'inquilino prima della scadenza del contratto</strong>. La risposta breve è che il proprietario non può farlo quando vuole, ma ci sono strade legali precise per liberare l'immobile in anticipo. In questa guida le vediamo una per una, con i passi da fare e gli errori che possono costarti caro.</p>
+
+<h2>La regola di partenza: durante il contratto sei vincolato</h2>
+<p>Il contratto di locazione obbliga entrambe le parti per tutta la sua durata. La legge dà all'inquilino la possibilità di recedere in anticipo (con il preavviso e nei casi previsti dal contratto o per gravi motivi), ma <strong>non dà al proprietario un diritto di recesso libero</strong>. Non basta quindi una lettera che comunica "entro tre mesi deve lasciare la casa": senza una ragione prevista dalla legge, quella lettera non produce alcun effetto e l'inquilino può restare fino alla scadenza.</p>
+<p>Anche la vendita dell'immobile non è un motivo per far uscire l'inquilino prima del tempo: il contratto prosegue con il nuovo proprietario. Lo stesso vale se l'inquilino ti è semplicemente antipatico o se vorresti affittare a un canone più alto.</p>
+
+<h2>Quando si può mandare via l'inquilino prima della scadenza del contratto</h2>
+<p>Le strade per liberare la casa in anticipo sono essenzialmente quattro. Le prime tre si basano su un comportamento scorretto dell'inquilino, la quarta su un accordo.</p>
+
+<h3>1. L'inquilino non paga: lo sfratto per morosità</h3>
+<p>È il caso più frequente. Per le abitazioni, la legge considera un inadempimento sufficiente il mancato pagamento anche di <strong>un solo canone</strong>, trascorsi venti giorni dalla scadenza, oppure il mancato pagamento degli oneri accessori (per esempio la quota di spese condominiali a carico dell'inquilino) per un importo superiore a due mensilità del canone. In questi casi puoi avviare lo <strong>sfratto per morosità</strong>, un procedimento rapido davanti al tribunale che porta alla convalida e, se l'inquilino non se ne va, all'esecuzione con l'ufficiale giudiziario.</p>
+<p>Tieni presente che, per gli immobili ad uso abitativo, alla prima udienza l'inquilino può chiedere un <strong>termine di grazia</strong> per saldare il debito: se paga tutto, comprese spese e interessi, entro il termine fissato dal giudice, il contratto prosegue.</p>
+
+<h3>2. Altri inadempimenti gravi: la causa di risoluzione</h3>
+<p>L'inquilino non ha solo l'obbligo di pagare. Deve anche usare la casa con diligenza e per l'uso pattuito. Se commette un inadempimento di <strong>non scarsa importanza</strong>, puoi chiedere al giudice di sciogliere il contratto. Alcuni esempi tipici:</p>
+<ul>
+<li><strong>Sublocazione o cessione non autorizzata</strong>: per le abitazioni, subaffittare l'intero immobile senza il tuo consenso è vietato.</li>
+<li><strong>Uso diverso da quello pattuito</strong>: per esempio un'abitazione trasformata in ufficio o in struttura per affitti brevi senza autorizzazione.</li>
+<li><strong>Danni seri all'immobile</strong> o un uso che ne mette a rischio la conservazione.</li>
+<li><strong>Comportamenti gravi e ripetuti</strong> che violano il regolamento condominiale o disturbano in modo rilevante gli altri condomini.</li>
+</ul>
+<p>Qui non si usa la procedura rapida dello sfratto, ma una <strong>causa di risoluzione del contratto</strong> (con il rito speciale previsto per le locazioni), di regola preceduta da un tentativo obbligatorio di mediazione. I tempi sono più lunghi e conta molto la prova: fotografie, verbali, diffide scritte, segnalazioni dell'amministratore di condominio.</p>
+
+<h3>3. La clausola risolutiva espressa</h3>
+<p>Se nel contratto è prevista una <strong>clausola risolutiva espressa</strong> per un certo inadempimento (per esempio la sublocazione non autorizzata), il contratto si scioglie quando comunichi per iscritto all'inquilino che intendi avvalertene. Il vantaggio è che il giudice non deve valutare quanto sia grave l'inadempimento: deve solo accertare che si sia verificato quello indicato nella clausola e che sia imputabile all'inquilino. Attenzione però: se l'inquilino non esce spontaneamente, serve comunque un provvedimento del giudice per ottenere il rilascio.</p>
+
+<h3>4. L'accordo con l'inquilino: la risoluzione consensuale</h3>
+<p>Quando non c'è alcun inadempimento, l'unica strada per anticipare l'uscita è <strong>mettersi d'accordo</strong>. Spesso funziona: l'inquilino può essere disponibile a lasciare la casa in cambio di tempo per trovare un'altra soluzione, della rinuncia a qualche pagamento o di un contributo economico per il trasloco. L'accordo va messo per iscritto, con una data precisa di riconsegna delle chiavi, e la risoluzione va comunicata all'Agenzia delle Entrate entro 30 giorni.</p>
+
+<h2>Se non c'è inadempimento: preparare l'uscita alla scadenza</h2>
+<p>Se l'inquilino paga e si comporta correttamente, e non vuole accordarsi, il tuo strumento è la <strong>disdetta</strong>, cioè la comunicazione con cui impedisci il rinnovo. Le regole cambiano in base al momento:</p>
+<ul>
+<li><strong>Alla prima scadenza</strong> (dopo 4 anni nel contratto 4+4 a canone libero, dopo 3 anni nel 3+2 a canone concordato) puoi dare disdetta solo per i motivi previsti dalla legge, per esempio per abitarci tu o un tuo familiare (coniuge, genitori, figli o parenti entro il secondo grado), con almeno sei mesi di preavviso.</li>
+<li><strong>Alla seconda scadenza</strong> puoi comunicare la rinuncia al rinnovo senza dover indicare un motivo, con lettera raccomandata inviata almeno sei mesi prima.</li>
+<li>Nei <strong>contratti transitori</strong> il contratto cessa alla data concordata, se l'esigenza transitoria è indicata e documentata.</li>
+</ul>
+<p>Per non sbagliare tempi e contenuto della lettera, leggi la nostra guida sulla <a href="/blog/disdetta-contratto-locatore/">disdetta del contratto di locazione da parte del locatore</a>. Se alla scadenza l'inquilino resta in casa, si procede con lo sfratto per finita locazione.</p>
+
+<h2>Checklist pratica prima di muoverti</h2>
+<ul>
+<li>Rileggi il contratto: tipo (4+4, 3+2, transitorio, commerciale), date di scadenza, eventuali clausole risolutive.</li>
+<li>Verifica che il contratto sia regolarmente registrato e che le proroghe siano state comunicate.</li>
+<li>Raccogli le prove: estratti conto con i pagamenti mancati, fotografie dei danni, comunicazioni dell'amministratore.</li>
+<li>Invia una diffida scritta (raccomandata o PEC, cioè posta elettronica certificata) che descriva l'inadempimento e chieda di rimediare.</li>
+<li>Valuta se un accordo è più rapido e meno costoso di una causa.</li>
+<li>Fai controllare la situazione da un avvocato prima di avviare qualsiasi procedura.</li>
+</ul>
+
+<h2>Gli errori da non fare mai</h2>
+<p>La fretta di riavere la casa porta alcuni proprietari a "farsi giustizia da soli". È la scelta peggiore:</p>
+<ul>
+<li><strong>Cambiare la serratura</strong> o portare via i mobili dell'inquilino.</li>
+<li><strong>Staccare luce, gas o acqua</strong> per costringerlo ad andarsene.</li>
+<li><strong>Entrare in casa senza permesso</strong>, anche se l'immobile è tuo.</li>
+</ul>
+<p>Questi comportamenti possono costituire reato (per esempio l'esercizio arbitrario delle proprie ragioni o la violazione di domicilio) e ti espongono a una richiesta di risarcimento, oltre a indebolire la tua posizione nella causa. Approfondiamo il tema nell'articolo su <a href="/blog/cambiare-serratura-inquilino-moroso/">cosa rischi se cambi la serratura all'inquilino moroso</a>.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Posso mandare via l'inquilino perché devo vendere la casa?</h3>
+<p>Non durante il contratto: la vendita non lo scioglie e l'acquirente subentra come nuovo locatore. Solo alla prima scadenza, e a condizioni precise (per esempio se non possiedi altre abitazioni oltre alla tua), l'intenzione di vendere può giustificare la disdetta. Puoi vendere la casa con l'inquilino dentro oppure provare a trovare un accordo per farla liberare prima del rogito.</p>
+<h3>Posso mandare via l'inquilino perché ho bisogno della casa per mio figlio?</h3>
+<p>Non durante il contratto. La necessità di destinare l'immobile a un familiare è un motivo valido per la disdetta alla prima scadenza, rispettando il preavviso di sei mesi, non per interrompere il contratto in corso.</p>
+<h3>Come mandare via un inquilino indesiderato che però paga?</h3>
+<p>Se paga e rispetta gli altri obblighi, puoi solo cercare un accordo oppure dare disdetta alla scadenza. Se invece ci sono comportamenti gravi (danni, sublocazione, disturbo grave e documentato), si può valutare la causa di risoluzione.</p>
+<h3>Quanto tempo ci vuole per mandare via un inquilino moroso?</h3>
+<p>Dipende dal tribunale e dal comportamento dell'inquilino, che può fare opposizione o pagare con il termine di grazia. Lo sfratto per morosità è comunque la via più rapida tra quelle disponibili.</p>
+
+<h2>Riferimenti normativi essenziali</h2>
+<p>Art. 1453, 1455 e 1456 del Codice civile (risoluzione per inadempimento, importanza dell'inadempimento, clausola risolutiva espressa); art. 1587 del Codice civile (obblighi del conduttore); artt. 2, 5 e 55 della Legge 27 luglio 1978, n. 392 (sublocazione e cessione, inadempimento del conduttore, termine di grazia); artt. 2 e 3 della Legge 9 dicembre 1998, n. 431 (durata, rinnovo e disdetta delle locazioni abitative); artt. 657-669 del Codice di procedura civile (procedimento per convalida di sfratto); art. 5 del D.Lgs. 4 marzo 2010, n. 28 (mediazione obbligatoria in materia di locazione); artt. 392 e 614 del Codice penale.</p>
+
+<h2>In sintesi</h2>
+<p>Mandare via l'inquilino prima della scadenza è possibile solo se non paga, se commette un inadempimento grave o se accetta di andarsene con un accordo. Negli altri casi bisogna pianificare l'uscita alla scadenza con una disdetta corretta. In ogni caso, la scelta della strada giusta e la raccolta delle prove fanno la differenza su tempi e risultati.</p>
+<p>Se vuoi capire quale strada è percorribile nel tuo caso, Sfratto Sicuro può valutare la tua situazione: trovi i dettagli nella pagina dedicata alla <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+<p><em>Questo articolo ha finalità informative e non sostituisce una consulenza legale sul tuo caso specifico.</em></p>`,
+  },
+  {
     slug: "modello-rli",
     title: "Modello RLI: cos'è e come lo usa il proprietario che affitta",
     description: "Modello RLI: a cosa serve, quando usarlo (registrazione, proroga, risoluzione, cedolare secca), come presentarlo e gli errori che il proprietario evita.",
