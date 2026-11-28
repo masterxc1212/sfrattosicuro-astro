@@ -16,6 +16,77 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "ospitare-persona-casa-in-affitto",
+    title: "Ospitare una persona in casa in affitto: cosa può fare il proprietario",
+    description: "Ospitare una persona in casa in affitto: l'inquilino può farlo? Limiti, differenza con la sublocazione, ospiti stranieri e tutele del proprietario.",
+    excerpt: "L'inquilino può ospitare amici e familiari e il divieto nel contratto rischia di essere nullo. Ma il proprietario ha tutele precise: divieto di sublocazione totale, uso diligente e responsabilità per i danni degli ospiti.",
+    lead: "Ospite, convivente o subinquilino: capire a che titolo qualcuno vive nella tua casa affittata cambia tutto. Ecco cosa dice la legge e cosa puoi fare concretamente come locatore.",
+    publishedAt: "2026-11-28",
+    updatedAt: "2026-11-28",
+    category: "Locazioni",
+    readingTime: "7 min",
+    sourceNote: "Generato automaticamente 2026-11-28. Keyword: ospitare una persona in casa in affitto, vol 70 (variante 'si può ospitare una persona in casa in affitto', vol 90), KD 0.",
+    html: `<p>Il tuo inquilino ha in casa una persona che non compare nel contratto: il compagno, un parente, un amico "di passaggio" che però non se ne va più. È una delle domande più frequenti dei proprietari: <strong>si può ospitare una persona in casa in affitto</strong> senza chiedere il permesso al locatore? E il proprietario può impedirlo? Questa guida ti spiega cosa dice la legge, dove passa il confine tra ospitalità e sublocazione e cosa puoi fare concretamente per tutelare il tuo immobile.</p>
+
+<h2>Ospitare una persona in casa in affitto: la regola di base</h2>
+<p>Con il contratto di locazione tu cedi all'inquilino (il <strong>conduttore</strong>) il godimento della casa. Dentro quella casa l'inquilino organizza la propria vita privata: può ricevere visite, far dormire un familiare, accogliere un amico in difficoltà. In linea generale <strong>non deve chiederti il permesso</strong> e non deve nemmeno avvisarti per un'ospitalità occasionale.</p>
+<p>La Corte di Cassazione (sentenza n. 14343 del 19 giugno 2009, terza sezione civile) è andata oltre: ha dichiarato <strong>nulla</strong> la clausola che vietava al conduttore di ospitare in modo non temporaneo persone estranee al nucleo familiare. Il motivo è che un divieto del genere contrasta con l'articolo 2 della Costituzione, che tutela i rapporti familiari, le convivenze di fatto, le amicizie e i doveri di solidarietà.</p>
+<p>In pratica: se nel tuo contratto c'è scritto "è vietato ospitare persone estranee al nucleo familiare", quella frase con ogni probabilità non ti protegge, e basarci sopra una richiesta di risoluzione del contratto è un rischio.</p>
+
+<h2>Ospite, convivente o subinquilino: le differenze che contano</h2>
+<p>Il punto non è <em>se</em> l'inquilino ospita qualcuno, ma <em>a che titolo</em>. Ci sono tre situazioni molto diverse.</p>
+<h3>1. L'ospite</h3>
+<p>Vive in casa grazie all'inquilino, senza pagargli un affitto e senza avere un rapporto con te. L'inquilino resta l'unico responsabile verso il proprietario. È la situazione lecita per eccellenza.</p>
+<h3>2. Il convivente stabile</h3>
+<p>Il partner o un familiare che si trasferisce stabilmente. Anche qui non serve il tuo consenso. Va però tenuto presente che, in caso di morte del conduttore, alcune persone che convivono con lui (il coniuge, gli eredi, i parenti e gli affini abitualmente conviventi e, secondo la Corte costituzionale, anche il convivente di fatto) possono subentrare nel contratto secondo l'articolo 6 della legge sull'equo canone (L. 392/1978).</p>
+<h3>3. Il subinquilino</h3>
+<p>Se l'"ospite" <strong>paga all'inquilino</strong> un corrispettivo per occupare una stanza o l'intera casa, non si tratta più di ospitalità ma di <strong>sublocazione</strong>. Per le abitazioni l'articolo 2 della L. 392/1978 prevede che il conduttore <strong>non possa sublocare tutto l'immobile</strong> senza il consenso del locatore; la sublocazione <strong>parziale</strong> è invece ammessa, salvo patto contrario nel contratto, ma solo dopo averti avvisato con raccomandata indicando chi è il subconduttore, la durata e le stanze sublocate. Approfondisci nella guida alla <a href="/blog/sublocazione/">sublocazione</a>.</p>
+<p>Un segnale tipico di "falsa ospitalità": l'inquilino non vive più nella casa, ma dentro ci sono altre persone che gli versano dei soldi. In questo caso il rapporto tra te e l'inquilino può essere davvero compromesso.</p>
+
+<h2>Cosa può fare il proprietario: i passi concreti</h2>
+<p>Anche se non puoi vietare l'ospitalità, non sei senza strumenti. Ecco come muoverti.</p>
+<ul>
+<li><strong>Raccogli informazioni senza invadere.</strong> Non puoi entrare in casa a sorpresa per controllare chi ci abita: per i limiti leggi la guida su <a href="/blog/proprietario-entrare-casa-affittata/">quando il proprietario può entrare nella casa affittata</a>. Puoi però osservare i segnali esterni: nomi sul citofono, segnalazioni dell'amministratore, consumi anomali.</li>
+<li><strong>Chiedi chiarimenti per iscritto.</strong> Una lettera cortese (meglio PEC, cioè posta elettronica certificata, o raccomandata) in cui chiedi chi occupa l'immobile e a che titolo. Una risposta scritta ti sarà utile se la situazione degenera.</li>
+<li><strong>Verifica se è una sublocazione.</strong> Se emergono pagamenti all'inquilino o l'inquilino si è trasferito altrove, la questione cambia: una sublocazione totale non autorizzata è un inadempimento.</li>
+<li><strong>Controlla l'uso della casa.</strong> L'articolo 1587 del codice civile (c.c.) obbliga l'inquilino a usare l'immobile con la diligenza del "buon padre di famiglia" e per l'uso stabilito. Se il numero di persone diventa tale da danneggiare la casa o da creare problemi seri al condominio, è questo l'obbligo da far valere.</li>
+<li><strong>Ricorda chi paga i danni.</strong> L'articolo 1588 c.c. stabilisce che l'inquilino risponde anche dei danni causati da persone che ha ammesso, anche solo temporaneamente, all'uso della casa. Se l'ospite rompe qualcosa, ne risponde il tuo inquilino.</li>
+<li><strong>Fatti assistere prima di agire.</strong> Una richiesta di risoluzione del contratto richiede un inadempimento di non scarsa importanza (art. 1455 c.c.) e, di regola, un tentativo di mediazione obbligatoria prima della causa. Muoversi con prove deboli espone a perdere tempo e spese.</li>
+</ul>
+
+<h2>Il caso dell'ospite straniero: un obbligo da conoscere</h2>
+<p>Quando qualcuno dà alloggio o ospitalità a un cittadino straniero o apolide, anche se parente, l'articolo 7 del Testo unico sull'immigrazione (decreto legislativo n. 286/1998) impone di darne <strong>comunicazione scritta entro 48 ore</strong> all'autorità locale di pubblica sicurezza (Questura o Commissariato; nei comuni senza un ufficio di polizia, il sindaco). L'obbligo riguarda chi ospita, quindi di regola l'inquilino; la violazione è punita con una sanzione amministrativa da 500 a 3.500 euro.</p>
+<p>Lo stesso articolo si applica anche a te, come proprietario, quando affitti direttamente a un inquilino straniero. Le differenze con la vecchia "cessione di fabbricato" sono spiegate nella guida dedicata alla <a href="/blog/cessione-di-fabbricato/">cessione di fabbricato</a>. Un consiglio pratico: quando sai che in casa vive un ospite straniero, ricorda all'inquilino questo adempimento con un messaggio scritto.</p>
+
+<h2>Quante persone si possono ospitare in una casa in affitto?</h2>
+<p>La legge non fissa un numero massimo di ospiti per un contratto di locazione. Esistono però regole igienico-sanitarie: il decreto del Ministero della Sanità del 5 luglio 1975 prevede, per ogni abitante, una superficie abitabile di almeno 14 metri quadrati per i primi quattro abitanti e 10 per ciascuno dei successivi. Sono parametri pensati soprattutto per l'abitabilità degli alloggi, ma un sovraffollamento evidente può avere un peso nel valutare se l'inquilino sta usando la casa in modo diligente. Conta anche il regolamento del condominio, se vieta usi che arrecano disturbo.</p>
+
+<h2>Errori da evitare</h2>
+<ul>
+<li><strong>Inserire nel contratto un divieto assoluto di ospitare.</strong> Rischia di essere nullo e dà una falsa sicurezza. Meglio clausole chiare su sublocazione, uso dell'immobile e responsabilità per i danni.</li>
+<li><strong>Cambiare la serratura o staccare le utenze</strong> per "mandare via" l'ospite: sono comportamenti illeciti che si ritorcono contro il proprietario.</li>
+<li><strong>Aumentare il canone di propria iniziativa</strong> perché in casa vivono più persone: il canone è quello pattuito nel contratto. Le spese a consumo (acqua, riscaldamento) seguono le regole del contratto e del condominio.</li>
+<li><strong>Confondere ospite e occupante senza titolo.</strong> Finché l'inquilino è nel contratto, l'ospite dipende da lui. Il problema diventa diverso se l'inquilino se ne va e l'ospite resta: lì servono gli strumenti per liberare l'immobile, spiegati nella guida su <a href="/blog/sfratto-familiari-conviventi-occupanti/">sfratto e familiari conviventi</a>.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<h3>L'inquilino deve comunicarmi che ospita una persona?</h3>
+<p>Per un'ospitalità, anche prolungata, non esiste un obbligo generale di avvisare il proprietario, salvo quanto eventualmente previsto in modo lecito dal contratto. L'avviso con raccomandata è invece obbligatorio per la sublocazione parziale.</p>
+<h3>L'ospite può prendere la residenza nella mia casa?</h3>
+<p>L'iscrizione all'anagrafe dipende dalla dimora abituale, cioè da dove la persona vive davvero, ed è il Comune ad accertarla. La residenza da sola non dà all'ospite alcun diritto di restare in casa nei confronti del proprietario.</p>
+<h3>Se l'ospite danneggia l'appartamento, chi paga?</h3>
+<p>L'inquilino. L'articolo 1588 c.c. lo rende responsabile anche dei danni causati dalle persone che ha ammesso in casa. Puoi chiedere di imputare il deposito cauzionale ai danni (se l'inquilino non è d'accordo decide il giudice) e, per la parte eccedente, chiedere il risarcimento.</p>
+<h3>Posso chiedere lo sfratto perché l'inquilino ospita qualcuno?</h3>
+<p>La sola ospitalità, di norma, non basta. Diverso è il caso di una sublocazione totale non autorizzata, di un uso dell'immobile che lo danneggia o, naturalmente, del mancato pagamento del canone. Ogni situazione va valutata sui fatti e sulle prove disponibili.</p>
+
+<h2>In sintesi</h2>
+<p>Ospitare una persona in casa in affitto è, in linea di principio, un diritto dell'inquilino e una clausola che lo vieta rischia di essere nulla. Il proprietario però mantiene tutele precise: il divieto di sublocazione totale senza consenso, l'obbligo di usare la casa con diligenza e la responsabilità dell'inquilino per i danni causati dagli ospiti. Raccogli i fatti, chiedi chiarimenti per iscritto e valuta con un professionista prima di passare alle vie legali.</p>
+<p>Se vuoi un contratto scritto bene fin dall'inizio, o hai un dubbio su chi sta occupando il tuo immobile, il team di Sfratto Sicuro può aiutarti: scopri il servizio di <a href="/servizi/tutela-proprietario/">tutela del proprietario</a>.</p>
+
+<p><small>Riferimenti normativi: art. 2 Cost.; artt. 1455 («Importanza dell'inadempimento»), 1587 («Obbligazioni principali del conduttore») e 1588 («Perdita e deterioramento della cosa locata») c.c.; artt. 2 («Disciplina della sublocazione») e 6 («Successione nel contratto») L. 27 luglio 1978, n. 392; art. 7 D.Lgs. 25 luglio 1998, n. 286 («Obblighi dell'ospitante e del datore di lavoro»); D.M. Sanità 5 luglio 1975; art. 5 D.Lgs. 4 marzo 2010, n. 28; Corte cost. n. 404/1988; Cass. civ., sez. III, 19 giugno 2009, n. 14343.</small></p>
+<p><em>Contenuto a scopo informativo, aggiornato a novembre 2026: non sostituisce una consulenza legale sul caso concreto.</em></p>`,
+  },
+  {
     slug: "mandare-via-inquilino-prima-della-scadenza",
     title: "Mandare via l'inquilino prima della scadenza del contratto: quando si può",
     description: "Mandare via l'inquilino prima della scadenza del contratto: quando il proprietario può farlo, le strade legali possibili e gli errori da evitare.",
